@@ -1,0 +1,167 @@
+{
+  "n": 1,
+  "cn": "第一课",
+  "title": "你好",
+  "words": [
+    {
+      "w": "你好",
+      "py": "nǐ hǎo",
+      "en": "hello",
+      "ex": {
+        "hz": "你好！我叫白怀诚。",
+        "py": "Nǐ hǎo! Wǒ jiào Bái Huáichéng.",
+        "en": "Hello! My name is Bai Huaicheng."
+      }
+    },
+    {
+      "w": "您",
+      "py": "nín",
+      "en": "you (polite)",
+      "ex": {
+        "hz": "老师，您好！",
+        "py": "Lǎoshī, nín hǎo!",
+        "en": "Hello, teacher!"
+      }
+    },
+    {
+      "w": "你们",
+      "py": "nǐmen",
+      "en": "you (plural)",
+      "ex": {
+        "hz": "你们好！",
+        "py": "Nǐmen hǎo!",
+        "en": "Hello, everyone!"
+      }
+    },
+    {
+      "w": "老师",
+      "py": "lǎoshī",
+      "en": "teacher",
+      "ex": {
+        "hz": "她是我的老师。",
+        "py": "Tā shì wǒ de lǎoshī.",
+        "en": "She is my teacher."
+      }
+    },
+    {
+      "w": "谢谢",
+      "py": "xièxie",
+      "en": "thank you",
+      "ex": {
+        "hz": "谢谢你！",
+        "py": "Xièxie nǐ!",
+        "en": "Thank you!"
+      }
+    },
+    {
+      "w": "不客气",
+      "py": "bú kèqi",
+      "en": "you're welcome",
+      "ex": {
+        "hz": "A: 谢谢！ B: 不客气！",
+        "py": "A: Xièxie! B: Bú kèqi!",
+        "en": "A: Thanks! B: You're welcome!"
+      }
+    },
+    {
+      "w": "对不起",
+      "py": "duìbuqǐ",
+      "en": "sorry",
+      "ex": {
+        "hz": "对不起，老师！",
+        "py": "Duìbuqǐ, lǎoshī!",
+        "en": "Sorry, teacher!"
+      }
+    },
+    {
+      "w": "没关系",
+      "py": "méi guānxi",
+      "en": "never mind",
+      "ex": {
+        "hz": "A: 对不起！ B: 没关系。",
+        "py": "A: Duìbuqǐ! B: Méi guānxi.",
+        "en": "A: Sorry! B: It's okay."
+      }
+    },
+    {
+      "w": "再见",
+      "py": "zàijiàn",
+      "en": "goodbye",
+      "ex": {
+        "hz": "老师，再见！",
+        "py": "Lǎoshī, zàijiàn!",
+        "en": "Goodbye, teacher!"
+      }
+    },
+    {
+      "w": "请",
+      "py": "qǐng",
+      "en": "please",
+      "ex": {
+        "hz": "请进！",
+        "py": "Qǐng jìn!",
+        "en": "Please come in!"
+      }
+    },
+    {
+      "w": "进",
+      "py": "jìn",
+      "en": "to enter",
+      "ex": {
+        "hz": "老师，我可以进吗？",
+        "py": "Lǎoshī, wǒ kěyǐ jìn ma?",
+        "en": "Teacher, may I come in?"
+      }
+    },
+    {
+      "w": "坐",
+      "py": "zuò",
+      "en": "to sit",
+      "ex": {
+        "hz": "请坐！",
+        "py": "Qǐng zuò!",
+        "en": "Please sit down!"
+      }
+    },
+    {
+      "w": "听",
+      "py": "tīng",
+      "en": "to listen",
+      "ex": {
+        "hz": "请听我说。",
+        "py": "Qǐng tīng wǒ shuō.",
+        "en": "Please listen to me."
+      }
+    },
+    {
+      "w": "说",
+      "py": "shuō",
+      "en": "to say",
+      "ex": {
+        "hz": "请再说一遍。",
+        "py": "Qǐng zài shuō yí biàn.",
+        "en": "Please say it again."
+      }
+    },
+    {
+      "w": "读",
+      "py": "dú",
+      "en": "to read",
+      "ex": {
+        "hz": "请读一下。",
+        "py": "Qǐng dú yíxià.",
+        "en": "Please read it."
+      }
+    },
+    {
+      "w": "写",
+      "py": "xiě",
+      "en": "to write",
+      "ex": {
+        "hz": "我会写“你好”。",
+        "py": "Wǒ huì xiě “nǐ hǎo”.",
+        "en": "I can write “nǐ hǎo”."
+      }
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "横": {
+    "py": "héng",
+    "en": "horizontal"
+  },
+  "竖": {
+    "py": "shù",
+    "en": "vertical"
+  },
+  "撇": {
+    "py": "piě",
+    "en": "falling left"
+  },
+  "点": {
+    "py": "diǎn",
+    "en": "dot"
+  },
+  "捺": {
+    "py": "nà",
+    "en": "falling right"
+  },
+  "提": {
+    "py": "tí",
+    "en": "rising"
+  },
+  "横钩": {
+    "py": "hénggōu",
+    "en": "horizontal with hook"
+  },
+  "竖钩": {
+    "py": "shùgōu",
+    "en": "vertical with hook"
+  },
+  "横折": {
+    "py": "héngzhé",
+    "en": "horizontal, turn down"
+  },
+  "横撇": {
+    "py": "héngpiě",
+    "en": "horizontal, then fall left"
+  },
+  "撇点": {
+    "py": "piědiǎn",
+    "en": "fall left, then dot"
+  },
+  "弯钩": {
+    "py": "wāngōu",
+    "en": "curved hook"
+  },
+  "卧钩": {
+    "py": "wògōu",
+    "en": "lying hook"
+  },
+  "横折钩": {
+    "py": "héngzhégōu",
+    "en": "horizontal, turn down, hook"
+  },
+  "竖弯钩": {
+    "py": "shùwāngōu",
+    "en": "vertical, bend right, hook"
+  },
+  "横折提": {
+    "py": "héngzhétí",
+    "en": "horizontal, turn down, rise"
+  },
+  "横折弯钩": {
+    "py": "héngzhéwāngōu",
+    "en": "horizontal, turn, bend, hook"
+  },
+  "横折弯": {
+    "py": "héngzhéwān",
+    "en": "horizontal, turn, bend"
+  },
+  "撇折": {
+    "py": "piězhé",
+    "en": "fall left, then turn right"
+  },
+  "横折折撇": {
+    "py": "héngzhézhépiě",
+    "en": "horizontal, turn, turn, fall left"
+  },
+  "竖折折钩": {
+    "py": "shùzhézhégōu",
+    "en": "vertical, turn, turn, hook"
+  }
+}

@@ -1,0 +1,340 @@
+{
+  "你": {
+    "py": "nǐ",
+    "en": "you",
+    "tip": "亻 (person) + 尔. The other person you talk to is <b>you</b>.",
+    "strokes": [
+      "撇",
+      "竖",
+      "撇",
+      "横钩",
+      "竖钩",
+      "撇",
+      "点"
+    ]
+  },
+  "好": {
+    "py": "hǎo",
+    "en": "good",
+    "tip": "女 (woman) + 子 (child). A mother with her child is <b>good</b>.",
+    "strokes": [
+      "撇点",
+      "撇",
+      "提",
+      "横撇",
+      "弯钩",
+      "横"
+    ]
+  },
+  "您": {
+    "py": "nín",
+    "en": "you (polite)",
+    "tip": "你 on top of 心 (heart). You, with respect from my heart.",
+    "strokes": [
+      "撇",
+      "竖",
+      "撇",
+      "横钩",
+      "竖钩",
+      "撇",
+      "点",
+      "点",
+      "卧钩",
+      "点",
+      "点"
+    ]
+  },
+  "们": {
+    "py": "men",
+    "en": "plural ending",
+    "tip": "亻 (person) + 门 (mén, door). Many people at the door, so 们 makes words plural.",
+    "strokes": [
+      "撇",
+      "竖",
+      "点",
+      "竖",
+      "横折钩"
+    ]
+  },
+  "老": {
+    "py": "lǎo",
+    "en": "old",
+    "tip": "Picture an old man bending over his walking stick. 老 = old.",
+    "strokes": [
+      "横",
+      "竖",
+      "横",
+      "撇",
+      "撇",
+      "竖弯钩"
+    ]
+  },
+  "师": {
+    "py": "shī",
+    "en": "teacher",
+    "tip": "The left part is the teacher's pointer stick, the right part is the board.",
+    "strokes": [
+      "竖",
+      "撇",
+      "横",
+      "竖",
+      "横折钩",
+      "竖"
+    ]
+  },
+  "谢": {
+    "py": "xiè",
+    "en": "to thank",
+    "tip": "讠 (speech) + 身 (body) + 寸 (hand). Bow your body and say thank you.",
+    "strokes": [
+      "点",
+      "横折提",
+      "撇",
+      "竖",
+      "横折",
+      "横",
+      "横",
+      "提",
+      "撇",
+      "横",
+      "竖钩",
+      "点"
+    ]
+  },
+  "不": {
+    "py": "bù",
+    "en": "not",
+    "tip": "一 is the sky. A little bird flies up but can <b>not</b> pass it.",
+    "strokes": [
+      "横",
+      "撇",
+      "竖",
+      "点"
+    ]
+  },
+  "客": {
+    "py": "kè",
+    "en": "guest",
+    "tip": "宀 (roof) + 各 (each). Each person under your roof is a guest.",
+    "strokes": [
+      "点",
+      "点",
+      "横钩",
+      "撇",
+      "横撇",
+      "捺",
+      "竖",
+      "横折",
+      "横"
+    ]
+  },
+  "气": {
+    "py": "qì",
+    "en": "air, spirit",
+    "tip": "Lines of steam rising up into the air.",
+    "strokes": [
+      "撇",
+      "横",
+      "横",
+      "横折弯钩"
+    ]
+  },
+  "对": {
+    "py": "duì",
+    "en": "to face, correct",
+    "tip": "又 (hand) + 寸 (hand). Two hands facing each other.",
+    "strokes": [
+      "横撇",
+      "点",
+      "横",
+      "竖钩",
+      "点"
+    ]
+  },
+  "起": {
+    "py": "qǐ",
+    "en": "to rise",
+    "tip": "走 (walk) + 己 (self). Get yourself up and walking.",
+    "strokes": [
+      "横",
+      "竖",
+      "横",
+      "竖",
+      "横",
+      "撇",
+      "捺",
+      "横折",
+      "横",
+      "竖弯钩"
+    ]
+  },
+  "没": {
+    "py": "méi",
+    "en": "not have",
+    "tip": "氵 (water) on the left. Something sank in the water, now it's gone.",
+    "strokes": [
+      "点",
+      "点",
+      "提",
+      "撇",
+      "横折弯",
+      "横撇",
+      "捺"
+    ]
+  },
+  "关": {
+    "py": "guān",
+    "en": "to close, relate",
+    "tip": "Two little horns on top of 天. Think of a gate with a bolt across it.",
+    "strokes": [
+      "点",
+      "撇",
+      "横",
+      "横",
+      "撇",
+      "捺"
+    ]
+  },
+  "系": {
+    "py": "xì",
+    "en": "to tie, connect",
+    "tip": "Silk thread 糸 hanging down. Threads tie things together.",
+    "strokes": [
+      "撇",
+      "撇折",
+      "撇折",
+      "点",
+      "竖钩",
+      "撇",
+      "点"
+    ]
+  },
+  "再": {
+    "py": "zài",
+    "en": "again",
+    "tip": "Layers stacked one on top of another, again and again.",
+    "strokes": [
+      "横",
+      "竖",
+      "横折钩",
+      "竖",
+      "横",
+      "横"
+    ]
+  },
+  "见": {
+    "py": "jiàn",
+    "en": "to see",
+    "tip": "An eye walking on two legs: it goes out to <b>see</b>.",
+    "strokes": [
+      "竖",
+      "横折",
+      "撇",
+      "竖弯钩"
+    ]
+  },
+  "请": {
+    "py": "qǐng",
+    "en": "please",
+    "tip": "讠 (speech) + 青 (qīng, sounds like qǐng). Speak nicely: please.",
+    "strokes": [
+      "点",
+      "横折提",
+      "横",
+      "横",
+      "竖",
+      "横",
+      "竖",
+      "横折钩",
+      "横",
+      "横"
+    ]
+  },
+  "进": {
+    "py": "jìn",
+    "en": "to enter",
+    "tip": "辶 (walking road) + 井 (jǐng, sounds like jìn). Walk in.",
+    "strokes": [
+      "横",
+      "横",
+      "撇",
+      "竖",
+      "点",
+      "横折折撇",
+      "捺"
+    ]
+  },
+  "坐": {
+    "py": "zuò",
+    "en": "to sit",
+    "tip": "Two people 人 人 sitting on the ground 土.",
+    "strokes": [
+      "撇",
+      "点",
+      "撇",
+      "点",
+      "横",
+      "竖",
+      "横"
+    ]
+  },
+  "听": {
+    "py": "tīng",
+    "en": "to listen",
+    "tip": "口 (mouth) on the left. Someone speaks, you listen.",
+    "strokes": [
+      "竖",
+      "横折",
+      "横",
+      "撇",
+      "撇",
+      "横",
+      "竖"
+    ]
+  },
+  "说": {
+    "py": "shuō",
+    "en": "to say",
+    "tip": "讠 (speech) + 兑, a person with an open mouth talking.",
+    "strokes": [
+      "点",
+      "横折提",
+      "点",
+      "撇",
+      "竖",
+      "横折",
+      "横",
+      "撇",
+      "竖弯钩"
+    ]
+  },
+  "读": {
+    "py": "dú",
+    "en": "to read",
+    "tip": "讠 (speech) + 卖 (mài, sell). Read out loud, like a seller calling out.",
+    "strokes": [
+      "点",
+      "横折提",
+      "横",
+      "竖",
+      "横钩",
+      "点",
+      "点",
+      "横",
+      "撇",
+      "点"
+    ]
+  },
+  "写": {
+    "py": "xiě",
+    "en": "to write",
+    "tip": "冖 is the desk cover, 与 is your hand holding the pen.",
+    "strokes": [
+      "点",
+      "横钩",
+      "横",
+      "竖折折钩",
+      "横"
+    ]
+  }
+}

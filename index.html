@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>写字本</title>
+  <meta name="description" content="白怀诚的写字本: Chinese stroke order, dictation, flashcards and tones.">
+  <meta name="theme-color" content="#f7f5ee" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#191815" media="(prefers-color-scheme: dark)">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="写字本">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+</head>
+<body>
+<div class="wrap">
+  <button class="fs-btn" id="fsBtn" type="button" aria-label="Full screen" title="Full screen">⛶</button>
+  <p class="fsnote" id="fsNote" hidden>Full screen isn't available here. Add 写字本 to your Home Screen to use it full screen.</p>
+
+  <!-- START MENU -->
+  <section id="home" class="home">
+    <header class="hero">
+      <svg class="emblem" viewBox="0 0 100 100" aria-hidden="true">
+        <rect x="2" y="2" width="96" height="96" fill="var(--card)" stroke="var(--grid)" stroke-width="2"/>
+        <g stroke="var(--grid)" stroke-width="1" stroke-dasharray="4 4"><line x1="50" y1="2" x2="50" y2="98"/><line x1="2" y1="50" x2="98" y2="50"/></g>
+        <text x="50" y="52" text-anchor="middle" dominant-baseline="central" font-family="Xiezi Serif, Noto Serif SC, Songti SC, serif" font-size="64" font-weight="700" fill="var(--ink)">写</text>
+      </svg>
+      <h1>白怀诚的写字本</h1>
+      <p class="hero-py py" id="heroPy"></p>
+      <p class="hero-en">My Chinese writing book</p>
+      <button class="account-chip" id="accountChip" type="button">○ Sync</button>
+    </header>
+
+    <button class="continue" type="button" id="resume" hidden></button>
+
+    <div class="list-head"><span>课 · Lessons</span><span class="book">汉语口语速成 · 入门篇</span></div>
+    <div class="lesson-list" id="lessonCards"></div>
+  </section>
+
+  <!-- LESSON -->
+  <section id="lessonView" class="inner" hidden>
+    <div class="topbar">
+      <button class="btn" type="button" id="backBtn">← Lessons</button>
+      <div><span class="eyebrow" id="lessonEyebrow"></span><h2 id="lessonTitle"></h2></div>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Practice type">
+      <button class="tab" role="tab" data-tab="write">✍ <span class="tl">Write</span></button>
+      <button class="tab" role="tab" data-tab="dict">🎧 <span class="tl">Dictation</span></button>
+      <button class="tab" role="tab" data-tab="cards">🃏 <span class="tl">Cards</span></button>
+      <button class="tab" role="tab" data-tab="tones">🎵 <span class="tl">Tones</span></button>
+      <button class="tab" role="tab" data-tab="review">🔁 <span class="tl">Review</span></button>
+    </div>
+    <p class="note" id="voiceNote" hidden>This device has no Chinese voice installed, so 🔊 can't play. On Android: Settings → Text-to-speech → install Chinese. On iPhone: Settings → Accessibility → Spoken Content → Voices → Chinese.</p>
+
+    <div id="tab-write" class="write-layout">
+      <aside class="write-side">
+        <nav class="words" id="words" aria-label="Words in this lesson"></nav>
+        <div class="word-head" id="wordHead"></div>
+        <div class="example" id="example"></div>
+        <p class="note"><b>▶ Non-stop</b> writes the whole character. <b>Stroke by stroke</b> draws one stroke, names it, and stops; tap <b>Next stroke</b> to go on. <b>✍ Write it</b> lets you trace it; after 2 mistakes it shows a hint. Dots on words: <span style="color:var(--amber)">●</span> learning, <span style="color:var(--jade)">●</span> known.</p>
+        <p class="note kbd-note">Keys: ← → strokes · space replay · W write it · P play · [ ] previous / next word · Esc lessons</p>
+      </aside>
+      <section style="display:grid;gap:16px;min-width:0">
+        <div id="chars" style="display:grid;gap:16px"></div>
+        <div class="word-nav" id="wordNav"></div>
+      </section>
+    </div>
+
+    <div id="tab-dict" class="inner" hidden></div>
+    <div id="tab-cards" hidden></div>
+    <div id="tab-tones" hidden></div>
+    <div id="tab-review" class="inner" hidden></div>
+  </section>
+</div>
+
+<dialog class="sheet" id="accountSheet" aria-labelledby="accountTitle">
+  <div class="sheet-head"><h3 id="accountTitle">Sync &amp; backup</h3>
+    <form method="dialog"><button class="sheet-close" aria-label="Close">✕</button></form></div>
+  <div id="accountBody"></div>
+</dialog>
+
+<div class="toast" id="updateToast" role="status" hidden>
+  <span>A new version of 写字本 is ready.</span>
+  <button class="btn primary" type="button" id="updateBtn">Update now</button>
+  <button class="btn" type="button" id="updateLater">Later</button>
+</div>
+<div class="toast" id="offlineToast" role="status" hidden>✓ 写字本 now works offline.</div>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "name": "xiezi",
+  "private": true,
+  "version": "1.0.0",
+  "description": "写字本 — Chinese stroke-order practice app (PWA)",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview --host",
+    "test": "vitest run",
+    "gen:data": "node scripts/gen-data.mjs",
+    "gen:font": "python scripts/subset-font.py",
+    "gen:icons": "node scripts/gen-icons.mjs",
+    "add-lesson": "node scripts/add-lesson.mjs",
+    "check": "node scripts/check-data.mjs",
+    "setup:firebase": "node scripts/setup-firebase.mjs"
+  },
+  "dependencies": {
+    "@fontsource/atkinson-hyperlegible": "^5.3.0",
+    "firebase": "^13.1.0",
+    "hanzi-writer": "^3.7.3"
+  },
+  "devDependencies": {
+    "hanzi-writer-data": "^2.0.1",
+    "sharp": "^0.35.5",
+    "vite": "^8.3.5",
+    "vite-plugin-pwa": "^2.0.0",
+    "vitest": "^5.0.5"
+  }
+}
