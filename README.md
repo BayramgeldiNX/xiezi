@@ -43,8 +43,12 @@ and one `lessonNN.json` per lesson. Lesson 1 of 汉语口语速成 · 入门篇 
    `word  pinyin  English  example汉字  example pinyin  example English`
 2. `npm run add-lesson -- <book-id> lessons-in/lessonNN.tsv` creates the lesson and lists what to fill in
    (meanings, memory tricks and stroke names for new characters, in `src/data/chars.json`).
-3. `npm run gen:data` (stroke shapes + checks) and `npm run gen:font` (font; needs `fonts-src/NotoSerifSC-VF.ttf`, see below).
-4. `npm test`, then commit and push. GitHub tests, builds and publishes automatically.
+3. Optional: reading texts in the lesson file's `"readings"` (lines with `who`, `hz`, `py`, `en`, plus
+   multiple-choice `questions`). Words used in texts that aren't lesson words go in `src/data/glossary.json`.
+4. `npm run gen:data` (stroke shapes + checks), `npm run gen:font` (font; needs `fonts-src/NotoSerifSC-VF.ttf`,
+   see below) and `npm run gen:audio` (records new words and sentences with the neural voice; needs
+   `python -m pip install --user edge-tts`).
+5. `npm test`, then commit and push. GitHub tests, builds and publishes automatically.
 
 The font tool needs the full font once:
 `curl -L -o fonts-src/NotoSerifSC-VF.ttf "https://github.com/google/fonts/raw/main/ofl/notoserifsc/NotoSerifSC%5Bwght%5D.ttf"`
