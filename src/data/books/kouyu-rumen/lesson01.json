@@ -163,5 +163,69 @@
         "en": "I can write “nǐ hǎo”."
       }
     }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "请进",
+      "py": "Qǐng jìn",
+      "en": "Please come in",
+      "lines": [
+        { "who": "学生", "hz": "老师，您好！", "py": "Lǎoshī, nín hǎo!", "en": "Hello, teacher!" },
+        { "who": "老师", "hz": "你好！请进。", "py": "Nǐ hǎo! Qǐng jìn.", "en": "Hello! Please come in." },
+        { "who": "学生", "hz": "谢谢老师。", "py": "Xièxie lǎoshī.", "en": "Thank you, teacher." },
+        { "who": "老师", "hz": "不客气。请坐。", "py": "Bú kèqi. Qǐng zuò.", "en": "You're welcome. Please sit down." },
+        { "who": "学生", "hz": "对不起，老师！", "py": "Duìbuqǐ, lǎoshī!", "en": "Sorry, teacher!" },
+        { "who": "老师", "hz": "没关系。", "py": "Méi guānxi.", "en": "It's okay." }
+      ],
+      "questions": [
+        { "q": "What does the teacher say when the student arrives?", "options": ["你好！请进。", "再见！", "没关系。", "谢谢。"], "answer": 0 },
+        { "q": "What does the teacher ask the student to do after coming in?", "options": ["请坐。", "请读。", "请写。", "请听。"], "answer": 0 },
+        { "q": "How does the teacher answer “对不起”?", "options": ["没关系。", "不客气。", "谢谢。", "您好。"], "answer": 0 }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "请听，请读",
+      "py": "Qǐng tīng, qǐng dú",
+      "en": "Please listen, please read",
+      "lines": [
+        { "who": "老师", "hz": "你们好！", "py": "Nǐmen hǎo!", "en": "Hello, everyone!" },
+        { "who": "学生", "hz": "老师好！", "py": "Lǎoshī hǎo!", "en": "Hello, teacher!" },
+        { "who": "老师", "hz": "请听：你好，您好，你们好。", "py": "Qǐng tīng: nǐ hǎo, nín hǎo, nǐmen hǎo.", "en": "Listen: nǐ hǎo, nín hǎo, nǐmen hǎo." },
+        { "who": "老师", "hz": "请读一下。", "py": "Qǐng dú yíxià.", "en": "Please read it." },
+        { "who": "学生", "hz": "你好，您好，你们好。", "py": "Nǐ hǎo, nín hǎo, nǐmen hǎo.", "en": "Nǐ hǎo, nín hǎo, nǐmen hǎo." },
+        { "who": "老师", "hz": "很好！请再说一遍。", "py": "Hěn hǎo! Qǐng zài shuō yí biàn.", "en": "Very good! Please say it again." },
+        { "who": "学生", "hz": "老师，我会写“你好”。", "py": "Lǎoshī, wǒ huì xiě “nǐ hǎo”.", "en": "Teacher, I can write “nǐ hǎo”." },
+        { "who": "老师", "hz": "好，请写。", "py": "Hǎo, qǐng xiě.", "en": "Good, please write it." }
+      ],
+      "questions": [
+        { "q": "What does the teacher say to the whole class?", "options": ["你们好！", "您好！", "再见！", "请坐！"], "answer": 0 },
+        { "q": "The teacher says “很好！请再说一遍。” What does the student do next?", "options": ["Says it again", "Sits down", "Says goodbye", "Says sorry"], "answer": 0 },
+        { "q": "What can the student write?", "options": ["你好", "谢谢", "再见", "老师"], "answer": 0 }
+      ]
+    },
+    {
+      "id": "r3",
+      "source": "practice",
+      "title": "再见",
+      "py": "Zàijiàn",
+      "en": "Goodbye",
+      "lines": [
+        { "who": "学生", "hz": "老师，谢谢您！", "py": "Lǎoshī, xièxie nín!", "en": "Teacher, thank you!" },
+        { "who": "老师", "hz": "不客气。", "py": "Bú kèqi.", "en": "You're welcome." },
+        { "who": "学生", "hz": "我是白怀诚。我会说“谢谢”，也会说“再见”。", "py": "Wǒ shì Bái Huáichéng. Wǒ huì shuō “xièxie”, yě huì shuō “zàijiàn”.", "en": "I'm Bai Huaicheng. I can say “thank you” and also “goodbye”." },
+        { "who": "老师", "hz": "很好！", "py": "Hěn hǎo!", "en": "Very good!" },
+        { "who": "学生", "hz": "老师，再见！", "py": "Lǎoshī, zàijiàn!", "en": "Goodbye, teacher!" },
+        { "who": "老师", "hz": "再见！", "py": "Zàijiàn!", "en": "Goodbye!" }
+      ],
+      "questions": [
+        { "q": "Why does the student say “谢谢您”?", "options": ["To thank the teacher", "To say sorry", "To say hello", "To ask a question"], "answer": 0 },
+        { "q": "Which two words can the student say?", "options": ["谢谢 and 再见", "你好 and 请坐", "对不起 and 没关系", "老师 and 你们"], "answer": 0 },
+        { "q": "What is the student's name?", "options": ["白怀诚", "老师", "你们", "谢谢"], "answer": 0 }
+      ]
+    }
   ]
 }

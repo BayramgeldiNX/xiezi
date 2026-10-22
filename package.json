@@ -2,7 +2,7 @@
   "name": "xiezi",
   "private": true,
   "version": "1.0.0",
-  "description": "写字本 — Chinese stroke-order practice app (PWA)",
+  "description": "写字本 — Chinese writing, listening, speaking, reading and vocabulary practice (PWA)",
   "type": "module",
   "scripts": {
     "dev": "vite --host",
@@ -11,6 +11,7 @@
     "test": "vitest run",
     "gen:data": "node scripts/gen-data.mjs",
     "gen:font": "python scripts/subset-font.py",
+    "gen:audio": "python scripts/gen-audio.py",
     "gen:icons": "node scripts/gen-icons.mjs",
     "add-lesson": "node scripts/add-lesson.mjs",
     "check": "node scripts/check-data.mjs",

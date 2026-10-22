@@ -43,6 +43,23 @@ export function tonePy(text) {
 
 export const stripTone = (s) => [...s].map((ch) => (TONED[ch] ? TONED[ch][0].replace("v", "ü") : ch)).join("");
 
+// Up to 3 wrong versions of a pinyin word: one syllable gets a different tone ("nǐhǎo" → "nīhǎo").
+export function toneVariants(py) {
+  const out = new Set();
+  const parts = py.split(" ").flatMap((w) => syllables(w).map(([p, t]) => ({ p, t })));
+  const target = py.replace(/\s/g, "").toLowerCase();
+  for (let tries = 0; tries < 40 && out.size < 3; tries++) {
+    const k = Math.floor(Math.random() * parts.length);
+    const t = 1 + Math.floor(Math.random() * 4);
+    if (t === parts[k].t) continue;
+    const plain = stripTone(parts[k].p).toLowerCase();
+    if (!/[aeiouü]/.test(plain)) continue;
+    const v = parts.map((x, i) => (i === k ? addTone(plain, t) : x.p)).join("");
+    if (v.toLowerCase() !== target) out.add(v);
+  }
+  return [...out];
+}
+
 export function addTone(plain, tone) {
   const MARK = { a: "āáǎà", e: "ēéěè", i: "īíǐì", o: "ōóǒò", u: "ūúǔù", "ü": "ǖǘǚǜ" };
   let idx = plain.search(/[ae]/);

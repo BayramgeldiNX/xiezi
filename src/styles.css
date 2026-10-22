@@ -347,6 +347,43 @@ details summary { cursor: pointer; color: var(--muted); }
 .word-table .en { color: var(--muted); font-size: .9rem; }
 .search { width: 100%; font: inherit; font-size: 16px; padding: 10px 14px; border-radius: 12px; border: 1px solid var(--line2); background: transparent; color: var(--ink); }
 
+/* ---------- Reading ---------- */
+.rd-item { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 14px; width: 100%; padding: 12px 14px; border-radius: 14px; border: 1px solid var(--line); background: transparent; color: var(--ink); text-align: left; cursor: pointer; }
+.rd-item:hover { border-color: var(--line2); }
+.rd-item-hz { font-family: var(--display); font-size: 1.4rem; font-weight: 700; min-width: 3em; }
+.rd-item-txt { display: grid; line-height: 1.35; font-size: .9rem; }
+.rd { width: 100%; }
+.rd-title { margin: 0; font-family: var(--display); font-size: 1.6rem; display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; }
+.rd-title .py { font-family: var(--body); font-size: 1rem; }
+.rd-lines { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; width: 100%; }
+.rd-line { display: grid; grid-template-columns: 3.2em 1fr auto; gap: 10px; align-items: start; padding: 10px 8px; border-radius: 12px; transition: background .2s; }
+.rd-line.playing { background: var(--card2); box-shadow: inset 2px 0 0 var(--cinnabar); }
+.rd-line .who, .rd-mini .who { font-family: var(--display); color: var(--gold); font-size: .9rem; padding-top: .35em; }
+.rd-text { display: grid; gap: 2px; min-width: 0; }
+.rd-text p { margin: 0; }
+.rd-hz { font-family: var(--display); font-size: 1.45rem; line-height: 1.6; }
+.rd-py { font-size: .95rem; }
+.rd-en { color: var(--muted); font-size: .92rem; }
+.rd.hide-py .rd-py, .rd.hide-en .rd-en { display: none; }
+.tok { font: inherit; color: inherit; background: none; border: 0; padding: 0 1px; margin: 0; cursor: pointer; border-radius: 4px; border-bottom: 1px dotted var(--line2); -webkit-user-select: none; user-select: none; }
+.tok:hover, .tok:focus-visible { background: var(--card2); }
+.gloss {
+  position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(14px + var(--safe-b)); z-index: 9;
+  display: flex; align-items: center; gap: 12px; width: min(100% - 24px, 520px); padding: 10px 12px 10px 16px;
+  border-radius: 16px; background: var(--card2); border: 1px solid var(--line2); box-shadow: 0 12px 40px rgb(0 0 0 / .35);
+}
+.g-hz { font-family: var(--display); font-size: 1.8rem; font-weight: 700; }
+.g-txt { display: grid; flex: 1; min-width: 0; line-height: 1.3; }
+.rd-peek { width: 100%; }
+.rd-peek summary { font-size: .88rem; }
+.rd-mini { padding: 8px 0 0; display: grid; gap: 2px; font-family: var(--display); font-size: 1.15rem; }
+.rd-mini p { margin: 0; }
+.build { display: flex; flex-wrap: wrap; gap: 8px; min-height: 56px; width: 100%; padding: 10px; border-radius: 14px; border: 1px dashed var(--line2); align-items: center; }
+.build.pool { border: 0; padding: 0; min-height: 0; }
+.chip { font-family: var(--display); font-size: 1.3rem; font-weight: 700; padding: 6px 14px; min-height: 44px; border-radius: 12px; border: 1px solid var(--line2); background: transparent; color: var(--ink); cursor: pointer; }
+.chip.on { background: var(--card2); border-color: var(--ink); }
+.chip:disabled { cursor: default; }
+
 /* ---------- Account sheet ---------- */
 dialog.sheet { width: min(100% - 32px, 460px); max-height: calc(100dvh - 32px - var(--safe-t) - var(--safe-b)); border: 1px solid var(--line2); border-radius: 20px; padding: 0; background: var(--card); color: var(--ink); }
 dialog.sheet::backdrop { background: rgb(0 0 0 / .5); }
@@ -375,9 +412,12 @@ dialog.sheet::backdrop { background: rgb(0 0 0 / .5); }
 .toast .btn { min-height: 36px; padding: 6px 12px; }
 
 /* ---------- Larger screens ---------- */
+/* Phones: 2 columns; the 5th section card spans the row. Wider: all 5 in one row. */
+#skillCards > .hub-card:last-child:nth-child(odd) { grid-column: 1 / -1; min-height: 0; grid-template-columns: auto 1fr; align-items: center; }
 @media (min-width: 760px) {
-  .home { max-width: 720px; }
-  .hub { grid-template-columns: repeat(4, 1fr); }
+  .home { max-width: 900px; }
+  .hub { grid-template-columns: repeat(5, 1fr); }
+  #skillCards > .hub-card:last-child:nth-child(odd) { grid-column: auto; min-height: 148px; grid-template-columns: none; align-items: stretch; }
 }
 /* Tablets and computers in landscape: word list on the left, characters on the right. */
 @media (min-width: 1000px) and (orientation: landscape) {

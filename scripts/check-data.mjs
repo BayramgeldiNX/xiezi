@@ -34,6 +34,19 @@ export function checkData() {
     }
   });
 
+  // Reading texts: every Chinese character must have a meaning to show when tapped,
+  // and every question a valid answer.
+  const glossary = readJSON(path.join(DATA_DIR, "glossary.json"));
+  const known = new Set([...Object.keys(chars), ...Object.keys(glossary).flatMap((w) => [...w]), ...lessons.flatMap((l) => l.words.flatMap((w) => [...w.w]))]);
+  for (const l of lessons) for (const r of l.readings || []) {
+    for (const k of ["id", "title", "py", "en"]) if (!r[k]) problems.push(`${l.file}: reading ${r.id || "?"} missing "${k}"`);
+    for (const line of r.lines || []) {
+      for (const k of ["hz", "py", "en"]) if (!line[k]) problems.push(`${l.file}: reading ${r.id} has a line missing "${k}"`);
+      for (const ch of line.hz || "") if (/\p{Script=Han}/u.test(ch) && !known.has(ch)) problems.push(`${l.file}: reading ${r.id}: ${ch} has no meaning (add it to glossary.json)`);
+    }
+    for (const q of r.questions || []) if (!q.options?.[q.answer]) problems.push(`${l.file}: reading ${r.id}: question "${q.q}" has no valid answer`);
+  }
+
   for (const c of lessonChars(lessons)) {
     const info = chars[c];
     if (!info) { problems.push(`chars.json: no entry for ${c}`); continue; }

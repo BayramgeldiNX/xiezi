@@ -6,7 +6,8 @@ import { say, sayBtns, stopSpeech } from "../lib/speech.js";
 import { icon } from "../lib/icons.js";
 import { clearWriters } from "../lib/draw.js";
 import { overlap } from "../lib/compare.js";
-import { LESSONS, wordsOf, lessonChars, wordChars } from "../data/index.js";
+import { LESSONS, READINGS, wordsOf, lessonChars, wordChars } from "../data/index.js";
+import { textList, textQuiz, orderGame, pinyinQuiz, hideGloss } from "./reading.js";
 import * as progress from "../progress/store.js";
 import { charStatus, wordStatus } from "../progress/model.js";
 import { dictIntro } from "./dictation.js";
@@ -38,6 +39,15 @@ export const SKILLS = {
     modes: [
       { id: "say-word", seal: "词", name: "Say the word", sub: "Read the word aloud; the app checks it" },
       { id: "say-sentence", seal: "句", name: "Say the sentence", sub: "Read a whole sentence aloud" },
+    ],
+  },
+  reading: {
+    seal: "读", name: "Reading", cn: "阅读", sub: "Texts, questions, sentences",
+    modes: [
+      { id: "texts", seal: "文", name: "Read texts", sub: "Dialogues line by line; tap any word for its meaning" },
+      { id: "text-quiz", seal: "问", name: "Read & answer", sub: "Questions about the texts" },
+      { id: "order", seal: "组", name: "Build the sentence", sub: "Put the words in the right order" },
+      { id: "read-pinyin", seal: "音", name: "How do you read it?", sub: "See the word, pick the right pinyin" },
     ],
   },
   vocab: {
@@ -96,6 +106,7 @@ export function openSkill(id) {
 function showMenu() {
   clearWriters();
   stopSpeech();
+  hideGloss();
   const s = SKILLS[skill];
   const n = scopeWords().length;
   body().innerHTML = `<p class="note">${n} word${n === 1 ? "" : "s"} from ${scopeIds().length === LESSONS.length ? "all lessons" : "the lessons you picked"}.</p>
@@ -141,8 +152,19 @@ function startMode(mode) {
       ask: (w) => ({ html: `<div class="prompt-big">${esc(w.en)}</div>` }),
       option: (w) => `<span class="hz">${w.w}</span>`, reveal: (w) => `<span class="hz">${w.w}</span> <span class="py">${tonePy(w.py)}</span> ${sayBtns(w.w, w.py, true)}` });
     case "list": return wordList(words);
+    case "texts": return textList(ui, scopeReadings());
+    case "text-quiz": return textQuiz(ui, scopeReadings());
+    case "order": return orderGame(ui, [
+      ...words.filter((w) => w.ex?.hz).map((w) => ({ hz: w.ex.hz.replace(/[AB]: /g, ""), py: w.ex.py.replace(/[AB]: /g, ""), en: w.ex.en })),
+      ...scopeReadings().flatMap((r) => r.lines),
+    ].filter((s, i, a) => a.findIndex((x) => x.hz === s.hz) === i));
+    case "read-pinyin": return pinyinQuiz(ui, words);
   }
 }
+
+const scopeReadings = () => READINGS.filter((r) => scopeIds().includes(r.lesson));
+// What the reading screens need from this page.
+const ui = { body, backBtn: () => backBtn(), wireBack: (el) => wireBack(el), choiceQuiz: (cfg) => choiceQuiz(cfg) };
 
 const backBtn = () => `<button class="btn ghost" type="button" data-back>Back</button>`;
 const wireBack = (el) => $$("[data-back]", el).forEach((b) => b.addEventListener("click", showMenu));
@@ -157,14 +179,18 @@ function distractors(w, pool, label) {
 
 function choiceQuiz(cfg) {
   const items = shuffle(cfg.words).slice(0, cfg.count || 10);
-  if (items.length < 2) { body().innerHTML = `<div class="panel"><p>Not enough words here yet.</p>${backBtn()}</div>`; return wireBack(body()); }
+  // "Back" returns to cfg.back (e.g. the text being read) or the section menu.
+  const wireBack = (el) => $$("[data-back]", el).forEach((b) => b.addEventListener("click", cfg.back || showMenu));
+  if (items.length < 2 && !cfg.makeOptions) { body().innerHTML = `<div class="panel"><p>Not enough words here yet.</p>${backBtn()}</div>`; return wireBack(body()); }
   let pos = 0, right = 0;
   const missed = [];
   function ask() {
     if (pos >= items.length) return end();
     const w = items[pos];
     const q = cfg.ask(w);
-    const opts = shuffle([w, ...distractors(w, cfg.words, cfg.option)]);
+    // Each choice: { html, correct }. Custom makers (e.g. pinyin tone variants) or other words.
+    const opts = shuffle(cfg.makeOptions ? cfg.makeOptions(w)
+      : [w, ...distractors(w, cfg.words, cfg.option)].map((o) => ({ html: cfg.option(o), correct: o === w })));
     body().innerHTML = `<div class="panel">
       <span class="lbl">${cfg.title}</span>
       <div class="progress">Question ${pos + 1} of ${items.length} · ${right} right</div>
@@ -172,21 +198,21 @@ function choiceQuiz(cfg) {
       ${q.html}
       ${q.say ? `<div class="controls"><button class="btn primary big" type="button" data-say="${esc(q.say)}" id="qListen">${icon("speaker")} Listen</button>
         <button class="btn big" type="button" data-say="${esc(q.say)}" data-slow>${icon("slow")} Slow</button></div>` : ""}
-      <div class="choices">${opts.map((o, i) => `<button class="choice" type="button" data-i="${i}">${cfg.option(o)}</button>`).join("")}</div>
+      <div class="choices">${opts.map((o, i) => `<button class="choice" type="button" data-i="${i}">${o.html}</button>`).join("")}</div>
       <div class="status" id="qStatus" aria-live="polite"></div>
       <div class="answer" id="qAnswer" hidden></div>
       <div class="controls"><button class="btn primary" type="button" id="qNext" hidden>${pos + 1 >= items.length ? "See results" : "Next"}</button>${backBtn()}</div>
     </div>`;
     wireBack(body());
     $$(".choice", body()).forEach((b) => b.addEventListener("click", () => {
-      const ok = opts[+b.dataset.i] === w;
+      const ok = opts[+b.dataset.i].correct;
       $$(".choice", body()).forEach((c) => {
         c.disabled = true;
-        if (opts[+c.dataset.i] === w) c.classList.add("right");
+        if (opts[+c.dataset.i].correct) c.classList.add("right");
         else if (c === b) c.classList.add("wrong");
       });
-      progress.record(cfg.key + w.w, { ok, miss: ok ? 0 : 1 });
-      if (ok) right++; else missed.push(w.w);
+      progress.record(cfg.key + (cfg.id ? cfg.id(w) : w.w), { ok, miss: ok ? 0 : 1 });
+      if (ok) right++; else missed.push(cfg.label ? cfg.label(w) : w.w);
       const st = $("#qStatus");
       st.style.color = ok ? "" : "var(--cinnabar)";
       st.textContent = ok ? "对了！Correct!" : "Not quite.";
@@ -194,13 +220,14 @@ function choiceQuiz(cfg) {
       $("#qAnswer").hidden = false;
       $("#qNext").hidden = false;
       $("#qNext").focus({ preventScroll: true });
-      if (!q.say) say(w.w);
+      if (!q.say && !cfg.silent) say(w.w);
     }));
     $("#qNext").addEventListener("click", () => { pos++; ask(); });
     if (q.say) setTimeout(() => say(q.say), 250);
   }
   function end() {
     progress.addSession({ type: cfg.kind, lesson: 0, score: right, total: items.length, missed });
+    cfg.onDone?.(right, items.length);
     body().innerHTML = `<div class="panel">
       <span class="lbl">Results · ${cfg.title}</span>
       <div class="score">${right} / ${items.length} right</div>

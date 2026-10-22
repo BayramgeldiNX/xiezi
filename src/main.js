@@ -16,6 +16,7 @@ import { cardsStart, cardsKey } from "./views/cards.js";
 import { tonesIntro, tonesKey } from "./views/tones.js";
 import { reviewIntro } from "./views/review.js";
 import { openSkill, skillCards } from "./views/skills.js";
+import { hideGloss } from "./views/reading.js";
 import { initAccountChip } from "./views/account.js";
 import { initSync } from "./sync/sync.js";
 import { initPWA } from "./pwa.js";
@@ -34,6 +35,7 @@ let current = "home";
 function showPage(id) {
   clearWriters();
   stopSpeech();
+  hideGloss();
   current = id;
   for (const p of PAGES) $("#" + p).hidden = p !== id;
   scrollTo(0, 0);
