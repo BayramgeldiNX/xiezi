@@ -6,31 +6,32 @@ import { tonePy } from "./lib/pinyin.js";
 import { stopSpeech } from "./lib/speech.js";
 import { clearWriters } from "./lib/draw.js";
 import { icon } from "./lib/icons.js";
-import { BOOKS, LESSONS, bookOf, lessonIndex, lessonChars, wordChars } from "./data/index.js";
+import { BOOKS, LESSONS, READINGS, bookOf, lessonIndex, lessonChars, wordChars } from "./data/index.js";
 import { app, TAB_NAME } from "./app.js";
 import * as progress from "./progress/store.js";
 import { charStatus, wordStatus } from "./progress/model.js";
 import { renderWords, renderWord, markWords, writeKey } from "./views/write.js";
-import { dictIntro, dictRedraw } from "./views/dictation.js";
-import { cardsStart, cardsKey } from "./views/cards.js";
-import { tonesIntro, tonesKey } from "./views/tones.js";
-import { reviewIntro } from "./views/review.js";
-import { openSkill, skillCards } from "./views/skills.js";
+import { dictRedraw } from "./views/dictation.js";
+import { cardsKey } from "./views/cards.js";
+import { tonesKey } from "./views/tones.js";
+import { openPractice, runMode, SKILLS } from "./views/practice.js";
+import { openReview, dueCount } from "./views/bookreview.js";
 import { hideGloss } from "./views/reading.js";
 import { initAccountChip } from "./views/account.js";
 import { initSync } from "./sync/sync.js";
 import { initPWA } from "./pwa.js";
 
-const TABS = ["write", "dict", "cards", "tones", "review"];
+const TABS = ["write", "listen", "speak", "read", "words"];
+// Tabs of older versions (saved places, old links) → their new home.
+const OLD_TABS = { dict: "write", review: "write", cards: "words", tones: "listen" };
 
 /* ---------- Pages ----------
-   #/                         home
-   #/books                    all books
-   #/book/<book>              one book's lessons
-   #/lesson/<book>/<n>/<tab>  a lesson
-   #/skill/<id>               Writing / Listening / Speaking / Vocabulary
+   #/                           home
+   #/books                      all books
+   #/book/<book>[/review]       one book: its lessons, or its review
+   #/lesson/<book>/<n>/<tab>    a lesson (tabs: write, listen, speak, read, words)
    Each page has its own address, so the Android / browser back gesture steps back one page. */
-const PAGES = ["home", "booksView", "bookView", "lessonView", "skillView"];
+const PAGES = ["home", "booksView", "bookView", "lessonView"];
 let current = "home";
 function showPage(id) {
   clearWriters();
@@ -47,7 +48,7 @@ const pageOf = (url) => new URL(url).hash || "#/";
 function route() {
   const [, page, a, b, c] = location.hash.split("/");
   if (page === "books") return showBooks();
-  if (page === "book" && BOOKS.some((x) => x.id === a)) return showBook(a);
+  if (page === "book" && BOOKS.some((x) => x.id === a)) return showBook(a, b === "review" ? "review" : "lessons");
   if (page === "lesson") {
     const li = lessonIndex(`${a}/${b}`);
     if (li >= 0) {
@@ -55,7 +56,6 @@ function route() {
       return openLesson(li, saved?.lesson === li ? saved.word : 0, c);
     }
   }
-  if (page === "skill") { showPage("skillView"); return openSkill(a); }
   showHome();
 }
 addEventListener("hashchange", (e) => {
@@ -71,16 +71,17 @@ function back(to) {
   else go(to);
 }
 const upFrom = () => ({
-  booksView: "#/", skillView: "#/", bookView: "#/books",
+  booksView: "#/", bookView: "#/books",
   lessonView: `#/book/${app.L()?.book}`,
 })[current];
 
-// Last place (per device). Older versions stored the lesson's position; now its id.
+// Last place (per device). Older versions stored the lesson's position and other tab names.
 function place() {
   const p = progress.place.get();
   if (!p) return null;
   const li = p.lid ? lessonIndex(p.lid) : typeof p.lesson === "number" && LESSONS[p.lesson] ? p.lesson : -1;
-  return li >= 0 ? { lesson: li, word: p.word || 0, tab: p.tab || "write" } : null;
+  const tab = TABS.includes(p.tab) ? p.tab : OLD_TABS[p.tab] || "write";
+  return li >= 0 ? { lesson: li, word: p.word || 0, tab } : null;
 }
 
 /* ---------- Progress summaries ---------- */
@@ -117,7 +118,7 @@ function showHome() {
   const r = $("#resume");
   if (saved) {
     const les = LESSONS[saved.lesson], w = les.words[saved.word] || les.words[0];
-    r.innerHTML = `<span class="play" aria-hidden="true">${icon("play")}</span><span class="txt"><b>Continue</b><span>${les.cn} ${esc(les.title)} · ${w.w} · ${TAB_NAME[saved.tab] || TAB_NAME.write}</span></span><span class="chev">${icon("next")}</span>`;
+    r.innerHTML = `<span class="play" aria-hidden="true">${icon("play")}</span><span class="txt"><b>Continue</b><span>${les.cn} ${esc(les.title)} · ${saved.tab === "write" ? w.w + " · " : ""}${TAB_NAME[saved.tab]}</span></span><span class="chev">${icon("next")}</span>`;
     r.onclick = () => go(`#/lesson/${les.id}/${saved.tab}`);
     r.hidden = false;
   } else r.hidden = true;
@@ -125,9 +126,10 @@ function showHome() {
 
 function renderHub() {
   const p = sumProgress(LESSONS);
+  const due = BOOKS.reduce((n, b) => n + dueCount(b), 0);
   $("#hubBar").style.width = `${pct(p.mastered, p.chars)}%`;
   $("#hubBooksSub").textContent = BOOKS.map((b) => `${b.title} · ${b.part}`).join(" / ");
-  $("#hubMeta").textContent = `${BOOKS.length} book${BOOKS.length > 1 ? "s" : ""} · ${LESSONS.length} lesson${LESSONS.length > 1 ? "s" : ""} · ${p.mastered}/${p.chars} characters mastered`;
+  $("#hubMeta").textContent = `${LESSONS.length} lesson${LESSONS.length > 1 ? "s" : ""} · ${p.mastered}/${p.chars} characters mastered${due ? ` · ${due} to review` : ""}`;
 }
 
 /* ---------- Books ---------- */
@@ -135,11 +137,11 @@ function showBooks() {
   showPage("booksView");
   document.title = "Books · 写字本";
   $("#bookList").innerHTML = BOOKS.map((b) => {
-    const p = sumProgress(b.lessons);
+    const p = sumProgress(b.lessons), due = dueCount(b);
     return `<button class="book-card" type="button" data-book="${b.id}">
       <span class="cover" style="--book:${b.color || "var(--cta)"}" aria-hidden="true">${b.title}</span>
       <span class="book-txt"><b>${b.title}</b><span>${b.part} · ${esc(b.en || "")}</span>
-        <span>${b.lessons.length} lesson${b.lessons.length > 1 ? "s" : ""}</span>
+        <span>${b.lessons.length} lesson${b.lessons.length > 1 ? "s" : ""}${due ? ` · <span class="due">${due} to review</span>` : ""}</span>
         <span class="lp"><span class="lp-bar" aria-hidden="true"><i style="width:${pct(p.mastered, p.chars)}%"></i></span><span class="lp-txt">${p.mastered}/${p.chars} characters mastered</span></span></span>
       <span class="chev" aria-hidden="true">${icon("next")}</span>
     </button>`;
@@ -147,14 +149,28 @@ function showBooks() {
   $$("[data-book]", $("#bookList")).forEach((el) => el.addEventListener("click", () => go(`#/book/${el.dataset.book}`)));
 }
 
-function showBook(id) {
-  showPage("bookView");
+let openBookId = null;
+function showBook(id, section = "lessons") {
+  if (current !== "bookView" || openBookId !== id) showPage("bookView");
+  else { clearWriters(); stopSpeech(); hideGloss(); }
+  openBookId = id;
   const book = BOOKS.find((b) => b.id === id);
   document.title = `${book.title} · 写字本`;
   $("#bookEyebrow").textContent = `${book.part} · ${book.en || ""}`;
   $("#bookTitle").textContent = book.title;
-  renderLessonList(book);
+  const due = dueCount(book);
+  $("#reviewDue").textContent = due;
+  $("#reviewDue").hidden = !due;
+  $$("[data-btab]").forEach((b) => b.setAttribute("aria-pressed", b.dataset.btab === section));
+  $("#lessonCards").hidden = section !== "lessons";
+  $("#bookReview").hidden = section !== "review";
+  if (section === "review") openReview(book, "#bookReview");
+  else renderLessonList(book);
 }
+$$("[data-btab]").forEach((b) => b.addEventListener("click", () => {
+  setHash(`#/book/${openBookId}${b.dataset.btab === "review" ? "/review" : ""}`);
+  showBook(openBookId, b.dataset.btab);
+}));
 
 function renderLessonList(book) {
   const list = $("#lessonCards");
@@ -171,7 +187,7 @@ function renderLessonList(book) {
     b.addEventListener("click", () => {
       const li = lessonIndex(les.id);
       if (place()?.lesson !== li) progress.place.set({ lid: les.id, word: 0, tab: "write" });
-      go(`#/lesson/${les.id}/write`);
+      go(`#/lesson/${les.id}/${place()?.tab || "write"}`);
     });
     list.appendChild(b);
   });
@@ -182,7 +198,7 @@ function renderLessonList(book) {
   list.appendChild(soon);
 }
 
-/* ---------- Lesson ---------- */
+/* ---------- Lesson: 写 听 说 读 词 ---------- */
 function openLesson(li, wi = 0, tab = "write") {
   showPage("lessonView");
   app.lesson = li;
@@ -192,30 +208,50 @@ function openLesson(li, wi = 0, tab = "write") {
   $("#lessonTitle").textContent = L.title;
   document.title = `${L.title} · 写字本`;
   renderWords();
-  showTab(TABS.includes(tab) ? tab : "write");
+  showTab(TABS.includes(tab) ? tab : OLD_TABS[tab] || "write");
 }
+
+// The words and texts every exercise of this lesson uses.
+const lessonCtx = () => {
+  const L = app.L();
+  return { words: L.words.map((w) => ({ ...w, lesson: L.id })), readings: READINGS.filter((r) => r.lesson === L.id), lesson: L.n };
+};
 
 function showTab(tab) {
   clearWriters();
   stopSpeech();
+  hideGloss();
   app.tab = tab;
   $$(".tab").forEach((b) => b.setAttribute("aria-selected", b.dataset.tab === tab));
   for (const t of TABS) $("#tab-" + t).hidden = t !== tab;
-  if (tab === "write") renderWord(app.word);
-  else if (tab === "dict") dictIntro();
-  else if (tab === "cards") cardsStart(null, {});
-  else if (tab === "tones") tonesIntro({});
-  else reviewIntro();
+  if (tab === "write") showWriteStudy();
+  else openPractice(`#tab-${tab}`, tab, lessonCtx());
   app.savePlace();
   setHash(`#/lesson/${app.L().id}/${tab}`);
+}
+
+// Write tab: stroke order study, with the writing exercises one tap away.
+function showWriteStudy() {
+  clearWriters();
+  $("#writePractice").hidden = true;
+  $("#writeStudy").hidden = false;
+  $("#writeStrip").hidden = false;
+  $("#writeStrip").innerHTML = `<span class="lbl">Practice</span>${SKILLS.write.modes.map((m) =>
+    `<button class="btn" type="button" data-wmode="${m.id}"><span class="mini-seal">${m.seal}</span>${m.name}</button>`).join("")}`;
+  $$("[data-wmode]").forEach((b) => b.addEventListener("click", () => {
+    clearWriters();
+    $("#writeStudy").hidden = true;
+    $("#writeStrip").hidden = true;
+    $("#writePractice").hidden = false;
+    runMode("#writePractice", b.dataset.wmode, { ...lessonCtx(), back: showWriteStudy });
+  }));
+  renderWord(app.word);
 }
 
 $$(".tab").forEach((b) => b.addEventListener("click", () => showTab(b.dataset.tab)));
 $("#backBtn").addEventListener("click", () => back(upFrom()));
 $$("[data-back-to]").forEach((b) => b.addEventListener("click", () => back(b.dataset.backTo)));
 $("#openBooks").addEventListener("click", () => go("#/books"));
-$("#skillCards").innerHTML = skillCards();
-$$("[data-skill]").forEach((b) => b.addEventListener("click", () => go(`#/skill/${b.dataset.skill}`)));
 $("#wordNav").addEventListener("click", (e) => {
   const g = e.target.closest("[data-go]");
   if (g) { renderWord(app.word + +g.dataset.go); scrollTo({ top: 0, behavior: "smooth" }); }
@@ -224,7 +260,7 @@ $("#wordNav").addEventListener("click", (e) => {
 // Synced results from another device: refresh what's on screen without interrupting practice.
 progress.onProgress(() => {
   if (current === "home") renderHub();
-  else if (current === "bookView") renderLessonList(BOOKS.find((b) => b.id === location.hash.split("/")[2]) || BOOKS[0]);
+  else if (current === "bookView" && !$("#lessonCards").hidden) renderLessonList(BOOKS.find((b) => b.id === openBookId) || BOOKS[0]);
   else if (current === "lessonView" && app.tab === "write") markWords();
 });
 
@@ -237,7 +273,7 @@ addEventListener("keydown", (e) => {
   if ((e.key === "Enter" || e.key === " ") && t.closest?.("button, label")) return;
   if (e.key === "Escape") { if (upFrom()) back(upFrom()); return; }
   if (current !== "lessonView") return;
-  const handled = app.tab === "write" ? writeKey(e) : app.tab === "cards" ? cardsKey(e) : app.tab === "tones" ? tonesKey(e) : false;
+  const handled = app.tab === "write" ? !$("#writeStudy").hidden && writeKey(e) : app.tab === "words" ? cardsKey(e) : app.tab === "listen" ? tonesKey(e) : false;
   if (handled) e.preventDefault();
 });
 

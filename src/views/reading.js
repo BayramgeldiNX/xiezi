@@ -1,5 +1,5 @@
 // 读 Reading: read texts (tap any word for its meaning), answer questions, build sentences,
-// and say how a word is read. `ui` comes from skills.js: { body, backBtn, wireBack, choiceQuiz }.
+// and say how a word is read. `ui` comes from practice.js: { body, backBtn, wireBack, choiceQuiz }.
 import { $, $$, esc, shuffle, store } from "../lib/util.js";
 import { tonePy, toneVariants } from "../lib/pinyin.js";
 import { say, sayBtns, stopSpeech } from "../lib/speech.js";
@@ -143,10 +143,13 @@ export function textQuiz(ui, readings, back, single) {
 }
 
 /* ---------- Build the sentence ---------- */
-export function orderGame(ui, sentences) {
-  // Sentences with 3–8 words; punctuation is shown at the end, not placed.
-  const items = shuffle(sentences.map((s) => ({ ...s, parts: segment(s.hz).filter((p) => p.word).map((p) => p.t) }))
-    .filter((s) => s.parts.length >= 3 && s.parts.length <= 8)).slice(0, 8);
+// Sentences that can be built: 3–8 words (punctuation is shown at the end, not placed).
+export const buildable = (sentences) => sentences.map((s) => ({ ...s, parts: segment(s.hz).filter((p) => p.word).map((p) => p.t) }))
+  .filter((s) => s.parts.length >= 3 && s.parts.length <= 8);
+
+// opts.all: use every sentence given (Review picks them); opts.then: continue a review chain.
+export function orderGame(ui, sentences, opts = {}) {
+  const items = opts.all ? buildable(sentences) : shuffle(buildable(sentences)).slice(0, 8);
   if (!items.length) {
     ui.body().innerHTML = `<div class="panel"><p>No sentences to build yet.</p>${ui.backBtn()}</div>`;
     return ui.wireBack(ui.body());
@@ -171,7 +174,7 @@ export function orderGame(ui, sentences) {
       <div class="build pool" id="oPool"></div>
       <div class="status" id="oStatus" aria-live="polite"></div>
       <div class="answer" id="oReveal" hidden></div>
-      <div class="controls"><button class="btn primary" type="button" id="oNext" hidden>${pos + 1 >= items.length ? "See results" : "Next"}</button>${ui.backBtn()}</div>
+      <div class="controls"><button class="btn primary" type="button" id="oNext" hidden>${pos + 1 >= items.length ? (opts.then ? "Continue" : "See results") : "Next"}</button>${ui.backBtn(opts.then ? "Stop" : "Back")}</div>
     </div>`;
     ui.wireBack(ui.body());
     const draw = () => {
@@ -208,6 +211,7 @@ export function orderGame(ui, sentences) {
   }
   function end() {
     progress.addSession({ type: "order", lesson: 0, score: right, total: items.length, missed });
+    if (opts.then) return opts.then({ title: "Build the sentence", right, total: items.length, missed });
     ui.body().innerHTML = `<div class="panel">
       <span class="lbl">Results · Build the sentence</span>
       <div class="score">${right} / ${items.length} first try</div>

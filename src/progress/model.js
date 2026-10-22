@@ -89,3 +89,24 @@ export function weakReasons(word, chars, get) {
   if (bad.length) out.push(`mistakes writing ${bad.join("")}`);
   return out;
 }
+
+/* ---------- Review schedule (spaced repetition) ----------
+   Each word has its own schedule per review type. Right → it comes back later each time
+   (1 day, 3 days, 1 week, 2 weeks, 1 month, 2 months, 4 months); wrong → back the next day. */
+export const INTERVALS = [1, 3, 7, 14, 30, 60, 120];
+const DAY = 864e5;
+
+// The most recent of several stats (e.g. flashcards and quizzes both count for vocabulary).
+export const latest = (stats) => stats.filter((s) => s?.n).reduce((a, b) => (!a || b.last > a.last ? b : a), null);
+
+export function nextReview(stat) {
+  if (!stat?.n) return null;
+  const days = stat.lastOk ? INTERVALS[Math.min(Math.max(stat.streak || 1, 1), INTERVALS.length) - 1] : 1;
+  return stat.last + days * DAY;
+}
+
+// Due = practiced before and its next review time has come. Never practiced = not due (learn it first).
+export const isDue = (stat, now = Date.now()) => {
+  const t = nextReview(stat);
+  return t != null && t <= now;
+};

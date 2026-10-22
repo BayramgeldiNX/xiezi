@@ -1,32 +1,32 @@
-// The four skill sections on the home screen: 写 Writing, 听 Listening, 说 Speaking, 词 Vocabulary.
-// Each works on the words of the lessons you pick (all lessons by default).
-import { $, $$, esc, shuffle, store } from "../lib/util.js";
+// Practice engine: the exercises behind each lesson's 写 听 说 读 词 tabs and the book Review.
+// openPractice(host, skill, ctx) shows a skill's exercises for ctx.words inside `host`.
+// Every exercise can also run on its own with fixed items and a `then` callback, so the
+// book Review can chain several of them into one mixed session.
+import { $, $$, esc, shuffle } from "../lib/util.js";
 import { tonePy, stripTone } from "../lib/pinyin.js";
 import { say, sayBtns, stopSpeech } from "../lib/speech.js";
 import { icon } from "../lib/icons.js";
 import { clearWriters } from "../lib/draw.js";
 import { overlap } from "../lib/compare.js";
-import { LESSONS, READINGS, wordsOf, lessonChars, wordChars } from "../data/index.js";
+import { LESSONS, wordsOf, wordChars } from "../data/index.js";
 import { textList, textQuiz, orderGame, pinyinQuiz, hideGloss } from "./reading.js";
 import * as progress from "../progress/store.js";
-import { charStatus, wordStatus } from "../progress/model.js";
+import { wordStatus } from "../progress/model.js";
 import { dictIntro } from "./dictation.js";
 import { cardsOpen } from "./cards.js";
 import { tonesIntro } from "./tones.js";
-import { buildCharCard } from "./write.js";
 
 export const SKILLS = {
-  writing: {
-    seal: "写", name: "Writing", cn: "写字", sub: "Dictation, pinyin, stroke order",
+  write: {
+    seal: "写", name: "Write",
     modes: [
       { id: "dict", seal: "听", name: "Dictation", sub: "Hear a word, write it from memory" },
       { id: "pinyin", seal: "拼", name: "From pinyin", sub: "See the pinyin, write the characters" },
       { id: "meaning", seal: "意", name: "From meaning", sub: "See the English, write the Chinese" },
-      { id: "chars", seal: "笔", name: "Stroke order", sub: "Every character: watch, step through, trace" },
     ],
   },
-  listening: {
-    seal: "听", name: "Listening", cn: "听力", sub: "Words, sentences, tones",
+  listen: {
+    seal: "听", name: "Listen",
     modes: [
       { id: "pick-word", seal: "字", name: "Hear & pick the word", sub: "Listen, then choose the characters" },
       { id: "pick-meaning", seal: "意", name: "Hear & pick the meaning", sub: "Listen, then choose the English" },
@@ -34,15 +34,15 @@ export const SKILLS = {
       { id: "tones", seal: "声", name: "Tones", sub: "Hear a syllable, pick its tone" },
     ],
   },
-  speaking: {
-    seal: "说", name: "Speaking", cn: "口语", sub: "Say it, the app listens",
+  speak: {
+    seal: "说", name: "Speak",
     modes: [
       { id: "say-word", seal: "词", name: "Say the word", sub: "Read the word aloud; the app checks it" },
       { id: "say-sentence", seal: "句", name: "Say the sentence", sub: "Read a whole sentence aloud" },
     ],
   },
-  reading: {
-    seal: "读", name: "Reading", cn: "阅读", sub: "Texts, questions, sentences",
+  read: {
+    seal: "读", name: "Read",
     modes: [
       { id: "texts", seal: "文", name: "Read texts", sub: "Dialogues line by line; tap any word for its meaning" },
       { id: "text-quiz", seal: "问", name: "Read & answer", sub: "Questions about the texts" },
@@ -50,8 +50,8 @@ export const SKILLS = {
       { id: "read-pinyin", seal: "音", name: "How do you read it?", sub: "See the word, pick the right pinyin" },
     ],
   },
-  vocab: {
-    seal: "词", name: "Vocabulary", cn: "词汇", sub: "Cards, matching, quizzes",
+  words: {
+    seal: "词", name: "Words",
     modes: [
       { id: "cards", seal: "卡", name: "Flashcards", sub: "Flip, then say if you knew it" },
       { id: "match", seal: "配", name: "Match pairs", sub: "Match each word to its meaning" },
@@ -62,135 +62,127 @@ export const SKILLS = {
   },
 };
 
-let skill = null;   // current skill id
-const body = () => $("#skillBody");
+// Current place: where exercises draw (host), which skill, and the words / texts to use.
+// ctx: { words, readings, lesson, back }  (back: where "Back" goes; default = this skill's menu)
+let P = { host: "#tab-listen", skill: "listen", ctx: { words: [], readings: [] } };
+const body = () => $(P.host);
+const goBack = () => (P.ctx.back || showMenu)();
+const backBtn = (label = "Back") => `<button class="btn ghost" type="button" data-back>${label}</button>`;
+const wireBack = (el) => $$("[data-back]", el).forEach((b) => b.addEventListener("click", goBack));
+const notEnough = () => { body().innerHTML = `<div class="panel"><p>Not enough words here yet.</p>${backBtn()}</div>`; wireBack(body()); };
 
-/* ---------- Which lessons ---------- */
-function scopeIds() {
-  const saved = store.get("xz-scope", "all");
-  const ids = saved === "all" ? LESSONS.map((l) => l.id) : saved.filter((id) => LESSONS.some((l) => l.id === id));
-  return ids.length ? ids : LESSONS.map((l) => l.id);
-}
-const scopeWords = () => wordsOf(LESSONS.filter((l) => scopeIds().includes(l.id)));
-
-function renderScope() {
-  const el = $("#skillScope");
-  if (LESSONS.length < 2) { el.hidden = true; return; }
-  el.hidden = false;
-  const ids = scopeIds(), all = ids.length === LESSONS.length;
-  el.innerHTML = `<button type="button" data-id="all" aria-pressed="${all}">All lessons</button>` +
-    LESSONS.map((l) => `<button type="button" data-id="${l.id}" aria-pressed="${!all && ids.includes(l.id)}"><span class="zh">${l.cn}</span> ${esc(l.title)}</button>`).join("");
-  $$("button", el).forEach((b) => b.addEventListener("click", () => {
-    if (b.dataset.id === "all") store.set("xz-scope", "all");
-    else {
-      const cur = all ? [] : scopeIds();
-      const next = cur.includes(b.dataset.id) ? cur.filter((x) => x !== b.dataset.id) : [...cur, b.dataset.id];
-      store.set("xz-scope", next.length ? next : "all");
-    }
-    renderScope();
-    showMenu();
-  }));
-}
-
-/* ---------- Section page ---------- */
-export function openSkill(id) {
-  skill = SKILLS[id] ? id : "writing";
-  const s = SKILLS[skill];
-  $("#skillEyebrow").textContent = `${s.seal} · ${s.cn}`;
-  $("#skillTitle").textContent = s.name;
-  document.title = `${s.name} · 写字本`;
-  renderScope();
+export function openPractice(host, skill, ctx) {
+  P = { host, skill, ctx };
   showMenu();
 }
 
-function showMenu() {
+export function showMenu() {
   clearWriters();
   stopSpeech();
   hideGloss();
-  const s = SKILLS[skill];
-  const n = scopeWords().length;
-  body().innerHTML = `<p class="note">${n} word${n === 1 ? "" : "s"} from ${scopeIds().length === LESSONS.length ? "all lessons" : "the lessons you picked"}.</p>
-    <div class="mode-grid">${s.modes.map((m) => `<button class="mode-card" type="button" data-mode="${m.id}">
+  const s = SKILLS[P.skill];
+  body().innerHTML = `<div class="mode-grid">${s.modes.map((m) => `<button class="mode-card" type="button" data-mode="${m.id}">
       <span class="seal">${m.seal}</span><b>${m.name}</b><small>${m.sub}</small></button>`).join("")}</div>`;
   $$("[data-mode]", body()).forEach((b) => b.addEventListener("click", () => startMode(b.dataset.mode)));
-  scrollTo(0, 0);
 }
 
+// Run one exercise in a host (used by the Write tab's practice buttons).
+export function runMode(host, mode, ctx) {
+  P = { host, skill: P.skill, ctx };
+  startMode(mode);
+}
+
+/* ---------- Exercise builders (also used by the book Review) ---------- */
+const reveal = (w) => `<span class="hz">${w.w}</span> <span class="py">${tonePy(w.py)}</span> <span class="muted">${esc(w.en)}</span> ${sayBtns(w.w, w.py, true)}`;
+
+// Four choices for a word: the word and 3 others with a different label.
+function wordChoices(w, pool, label) {
+  const others = pool.filter((x) => x.w !== w.w && label(x) !== label(w));
+  const extra = wordsOf(LESSONS).filter((x) => x.w !== w.w && label(x) !== label(w) && !others.some((o) => o.w === x.w));
+  const picks = shuffle(others).concat(shuffle(extra)).slice(0, 3);
+  return [w, ...picks].map((o) => ({ html: label(o), correct: o.w === w.w }));
+}
+const hzLabel = (x) => `<span class="hz">${x.w}</span>`;
+const enLabel = (x) => `<span class="en">${esc(x.en)}</span>`;
+
+// Listening: hear a word, pick the word or its meaning. mode: "word" | "meaning" | "mixed"
+export function listenQuiz({ items, pool, mode = "mixed", title = "Listening", kind = "listen", then }) {
+  const pick = (x) => (mode === "mixed" ? (x.w.charCodeAt(0) + x.w.length) % 2 ? "word" : "meaning" : mode);
+  choiceQuiz({ kind, title, items, key: "l:", then,
+    ask: (w) => ({ html: `<p class="hint">${pick(w) === "word" ? "Which word do you hear?" : "What does it mean?"}</p>`, say: w.w }),
+    makeOptions: (w) => wordChoices(w, pool || items, pick(w) === "word" ? hzLabel : enLabel),
+    reveal });
+}
+
+// Vocabulary: see the word → pick the meaning, or see the meaning → pick the word.
+export function vocabQuiz({ items, pool, mode = "mixed", title = "Vocabulary", kind = "vocab", then }) {
+  const pick = (x) => (mode === "mixed" ? (x.w.charCodeAt(0) + x.w.length) % 2 ? "meaning" : "word" : mode);
+  choiceQuiz({ kind, title, items, key: "q:", then,
+    ask: (w) => ({ html: pick(w) === "meaning" ? `<div class="big-hz">${w.w}</div>` : `<div class="prompt-big">${esc(w.en)}</div>` }),
+    makeOptions: (w) => wordChoices(w, pool || items, pick(w) === "meaning" ? enLabel : hzLabel),
+    reveal });
+}
+
+const sentenceItems = (words) => words.filter((w) => w.ex?.hz);
+const lessonSentences = (words, readings) => [
+  ...sentenceItems(words).map((w) => ({ hz: w.ex.hz.replace(/[AB]: /g, ""), py: w.ex.py.replace(/[AB]: /g, ""), en: w.ex.en })),
+  ...readings.flatMap((r) => r.lines),
+].filter((s, i, a) => a.findIndex((x) => x.hz === s.hz) === i);
+export { lessonSentences };
+
 function startMode(mode) {
-  const words = scopeWords();
-  const back = showMenu;
-  const host = "#skillBody";
-  const lesson = 0;
+  const { words, readings = [] } = P.ctx;
+  const host = P.host, back = goBack, lesson = P.ctx.lesson;
+  const ten = (list) => shuffle(list).slice(0, 10);
   scrollTo(0, 0);
   switch (mode) {
     case "dict": return dictIntro({ host, words, prompt: "audio", kind: "dict", back, lesson });
     case "pinyin": return dictIntro({ host, words, prompt: "pinyin", kind: "dict-pinyin", back, lesson });
     case "meaning": return dictIntro({ host, words, prompt: "meaning", kind: "dict-meaning", back, lesson });
-    case "chars": return charGrid();
-    case "pick-word": return choiceQuiz({ kind: "listen-word", title: "Hear & pick the word", words, key: "l:",
-      ask: (w) => ({ html: `<p class="hint">Which word do you hear?</p>`, say: w.w }),
-      option: (w) => `<span class="hz">${w.w}</span>`, reveal: (w) => `<span class="hz">${w.w}</span> <span class="py">${tonePy(w.py)}</span> <span class="muted">${esc(w.en)}</span>` });
-    case "pick-meaning": return choiceQuiz({ kind: "listen-meaning", title: "Hear & pick the meaning", words, key: "l:",
-      ask: (w) => ({ html: `<p class="hint">What does it mean?</p>`, say: w.w }),
-      option: (w) => `<span class="en">${esc(w.en)}</span>`, reveal: (w) => `<span class="hz">${w.w}</span> <span class="py">${tonePy(w.py)}</span>` });
+    case "pick-word": return words.length < 2 ? notEnough() : listenQuiz({ items: ten(words), pool: words, mode: "word", title: "Hear & pick the word" });
+    case "pick-meaning": return words.length < 2 ? notEnough() : listenQuiz({ items: ten(words), pool: words, mode: "meaning", title: "Hear & pick the meaning" });
     case "sentence": {
-      const sw = words.filter((w) => w.ex?.hz);
-      return choiceQuiz({ kind: "listen-sentence", title: "Sentences", words: sw, key: "ls:", count: 8,
+      const sw = sentenceItems(words);
+      if (sw.length < 2) return notEnough();
+      return choiceQuiz({ kind: "listen-sentence", title: "Sentences", items: shuffle(sw).slice(0, 8), key: "ls:",
         ask: (w) => ({ html: `<p class="hint">What does this sentence mean?</p>`, say: w.ex.hz }),
-        option: (w) => `<span class="en">${esc(w.ex.en)}</span>`,
+        makeOptions: (w) => [w, ...shuffle(sw.filter((x) => x.ex.en !== w.ex.en)).slice(0, 3)].map((o) => ({ html: `<span class="en">${esc(o.ex.en)}</span>`, correct: o === w })),
         reveal: (w) => `<span class="hz" style="font-size:1.3rem">${w.ex.hz}</span> ${sayBtns(w.ex.hz, "sentence", true)}<br><span class="py">${tonePy(w.ex.py)}</span>` });
     }
-    case "tones": return tonesIntro({ host, words, label: "Characters from your lessons", lesson, back });
-    case "say-word": return speak({ title: "Say the word", items: words.map((w) => ({ w, text: w.w, py: w.py, en: w.en })) });
-    case "say-sentence": return speak({ title: "Say the sentence", items: words.filter((w) => w.ex?.hz).map((w) => ({ w, text: w.ex.hz, py: w.ex.py, en: w.ex.en, sentence: true })) });
+    case "tones": return tonesIntro({ host, words, label: "Characters from this lesson", lesson, back });
+    case "say-word": return speak({ title: "Say the word", items: ten(words).map((w) => ({ w, text: w.w, py: w.py, en: w.en })) });
+    case "say-sentence": return speak({ title: "Say the sentence", items: ten(sentenceItems(words)).map((w) => ({ w, text: w.ex.hz.replace(/[AB]: /g, ""), py: w.ex.py.replace(/[AB]: /g, ""), en: w.ex.en, sentence: true })) });
     case "cards": return cardsOpen({ host, words, lesson, back });
     case "match": return matchGame(words);
-    case "quiz-meaning": return choiceQuiz({ kind: "quiz-meaning", title: "What does it mean?", words, key: "q:",
-      ask: (w) => ({ html: `<div class="big-hz">${w.w}</div>` }),
-      option: (w) => `<span class="en">${esc(w.en)}</span>`, reveal: (w) => `<span class="hz">${w.w}</span> <span class="py">${tonePy(w.py)}</span> ${sayBtns(w.w, w.py, true)}` });
-    case "quiz-word": return choiceQuiz({ kind: "quiz-word", title: "Which word?", words, key: "q:",
-      ask: (w) => ({ html: `<div class="prompt-big">${esc(w.en)}</div>` }),
-      option: (w) => `<span class="hz">${w.w}</span>`, reveal: (w) => `<span class="hz">${w.w}</span> <span class="py">${tonePy(w.py)}</span> ${sayBtns(w.w, w.py, true)}` });
+    case "quiz-meaning": return words.length < 2 ? notEnough() : vocabQuiz({ items: ten(words), pool: words, mode: "meaning", title: "What does it mean?" });
+    case "quiz-word": return words.length < 2 ? notEnough() : vocabQuiz({ items: ten(words), pool: words, mode: "word", title: "Which word?" });
     case "list": return wordList(words);
-    case "texts": return textList(ui, scopeReadings());
-    case "text-quiz": return textQuiz(ui, scopeReadings());
-    case "order": return orderGame(ui, [
-      ...words.filter((w) => w.ex?.hz).map((w) => ({ hz: w.ex.hz.replace(/[AB]: /g, ""), py: w.ex.py.replace(/[AB]: /g, ""), en: w.ex.en })),
-      ...scopeReadings().flatMap((r) => r.lines),
-    ].filter((s, i, a) => a.findIndex((x) => x.hz === s.hz) === i));
+    case "texts": return textList(ui, readings);
+    case "text-quiz": return textQuiz(ui, readings);
+    case "order": return orderGame(ui, lessonSentences(words, readings));
     case "read-pinyin": return pinyinQuiz(ui, words);
   }
 }
 
-const scopeReadings = () => READINGS.filter((r) => scopeIds().includes(r.lesson));
-// What the reading screens need from this page.
-const ui = { body, backBtn: () => backBtn(), wireBack: (el) => wireBack(el), choiceQuiz: (cfg) => choiceQuiz(cfg) };
+// What the reading screens need from this module.
+export const ui = { body: () => body(), backBtn: (l) => backBtn(l), wireBack: (el) => wireBack(el), choiceQuiz: (cfg) => choiceQuiz(cfg) };
+export const setHost = (host, ctx) => { P = { ...P, host, ctx: { ...P.ctx, ...ctx } }; };
 
-const backBtn = () => `<button class="btn ghost" type="button" data-back>Back</button>`;
-const wireBack = (el) => $$("[data-back]", el).forEach((b) => b.addEventListener("click", showMenu));
-
-/* ---------- Multiple choice (listening + vocabulary quizzes) ---------- */
-// Wrong answers come from the chosen words; if there are too few, from every lesson.
-function distractors(w, pool, label) {
-  const others = pool.filter((x) => x.w !== w.w && label(x) !== label(w));
-  const extra = wordsOf(LESSONS).filter((x) => x.w !== w.w && label(x) !== label(w) && !others.includes(x));
-  return shuffle(others).concat(shuffle(extra)).slice(0, 3);
-}
-
-function choiceQuiz(cfg) {
-  const items = shuffle(cfg.words).slice(0, cfg.count || 10);
-  // "Back" returns to cfg.back (e.g. the text being read) or the section menu.
-  const wireBack = (el) => $$("[data-back]", el).forEach((b) => b.addEventListener("click", cfg.back || showMenu));
-  if (items.length < 2 && !cfg.makeOptions) { body().innerHTML = `<div class="panel"><p>Not enough words here yet.</p>${backBtn()}</div>`; return wireBack(body()); }
+/* ---------- Multiple choice ---------- */
+// cfg: { items (or words + count), makeOptions(w) → [{html, correct}], ask(w) → {html, say?},
+//        reveal(w), key, id?(w), label?(w), title, kind, silent?, back?, onDone?, then? }
+export function choiceQuiz(cfg) {
+  const items = cfg.items || shuffle(cfg.words).slice(0, cfg.count || 10);
+  const leave = cfg.back || goBack;
+  const wire = (el) => $$("[data-back]", el).forEach((b) => b.addEventListener("click", leave));
+  if (!items.length) return notEnough();
   let pos = 0, right = 0;
   const missed = [];
   function ask() {
     if (pos >= items.length) return end();
     const w = items[pos];
     const q = cfg.ask(w);
-    // Each choice: { html, correct }. Custom makers (e.g. pinyin tone variants) or other words.
-    const opts = shuffle(cfg.makeOptions ? cfg.makeOptions(w)
-      : [w, ...distractors(w, cfg.words, cfg.option)].map((o) => ({ html: cfg.option(o), correct: o === w })));
+    const opts = shuffle(cfg.makeOptions(w));
     body().innerHTML = `<div class="panel">
       <span class="lbl">${cfg.title}</span>
       <div class="progress">Question ${pos + 1} of ${items.length} · ${right} right</div>
@@ -201,9 +193,9 @@ function choiceQuiz(cfg) {
       <div class="choices">${opts.map((o, i) => `<button class="choice" type="button" data-i="${i}">${o.html}</button>`).join("")}</div>
       <div class="status" id="qStatus" aria-live="polite"></div>
       <div class="answer" id="qAnswer" hidden></div>
-      <div class="controls"><button class="btn primary" type="button" id="qNext" hidden>${pos + 1 >= items.length ? "See results" : "Next"}</button>${backBtn()}</div>
+      <div class="controls"><button class="btn primary" type="button" id="qNext" hidden>${pos + 1 >= items.length ? (cfg.then ? "Continue" : "See results") : "Next"}</button>${backBtn(cfg.then ? "Stop" : "Back")}</div>
     </div>`;
-    wireBack(body());
+    wire(body());
     $$(".choice", body()).forEach((b) => b.addEventListener("click", () => {
       const ok = opts[+b.dataset.i].correct;
       $$(".choice", body()).forEach((c) => {
@@ -226,24 +218,30 @@ function choiceQuiz(cfg) {
     if (q.say) setTimeout(() => say(q.say), 250);
   }
   function end() {
-    progress.addSession({ type: cfg.kind, lesson: 0, score: right, total: items.length, missed });
+    progress.addSession({ type: cfg.kind, lesson: P.ctx.lesson ?? 0, score: right, total: items.length, missed });
     cfg.onDone?.(right, items.length);
-    body().innerHTML = `<div class="panel">
-      <span class="lbl">Results · ${cfg.title}</span>
-      <div class="score">${right} / ${items.length} right</div>
-      ${missed.length ? `<p>Practice these again:</p><div class="result-list">${missed.map((w) => `<span>${w}</span>`).join("")}</div>` : `<p>全对！Quán duì! Everything correct!</p>`}
-      <div class="controls"><button class="btn primary big" type="button" id="qAgain">${icon("replay")} Again</button>${backBtn()}</div>
-    </div>`;
-    wireBack(body());
-    $("#qAgain").addEventListener("click", () => choiceQuiz(cfg));
+    if (cfg.then) return cfg.then({ title: cfg.title, right, total: items.length, missed });
+    showResults(cfg.title, right, items.length, missed, () => choiceQuiz(cfg), "全对！Quán duì! Everything correct!");
   }
   ask();
+}
+
+// Shared results screen.
+export function showResults(title, right, total, missed, again, perfect = "全对！Quán duì!") {
+  body().innerHTML = `<div class="panel">
+    <span class="lbl">Results · ${esc(title)}</span>
+    <div class="score">${right} / ${total}</div>
+    ${missed.length ? `<p>Practice these again:</p><div class="result-list">${missed.map((w) => `<span>${esc(w)}</span>`).join("")}</div>` : `<p>${perfect}</p>`}
+    <div class="controls">${again ? `<button class="btn primary big" type="button" id="resAgain">${icon("replay")} Again</button>` : ""}${backBtn()}</div>
+  </div>`;
+  wireBack(body());
+  $("#resAgain")?.addEventListener("click", again);
 }
 
 /* ---------- Match pairs ---------- */
 function matchGame(words) {
   const set = shuffle(words).slice(0, 6);
-  if (set.length < 2) { body().innerHTML = `<div class="panel"><p>Not enough words here yet.</p>${backBtn()}</div>`; return wireBack(body()); }
+  if (set.length < 2) return notEnough();
   const tiles = shuffle([...set.map((w) => ({ w, side: "hz" })), ...set.map((w) => ({ w, side: "en" }))]);
   let sel = null, done = 0, errors = 0;
   const firstTry = new Set(set.map((w) => w.w));
@@ -268,7 +266,7 @@ function matchGame(words) {
       say(t.w.w);
       if (++done === set.length) {
         const secs = Math.round((Date.now() - t0) / 1000);
-        progress.addSession({ type: "match", lesson: 0, score: set.length - (set.length - firstTry.size), total: set.length, missed: set.filter((w) => !firstTry.has(w.w)).map((w) => w.w) });
+        progress.addSession({ type: "match", lesson: P.ctx.lesson ?? 0, score: firstTry.size, total: set.length, missed: set.filter((w) => !firstTry.has(w.w)).map((w) => w.w) });
         $("#mStatus").textContent = `全部配对！All matched in ${secs} s${errors ? ` with ${errors} mistake${errors > 1 ? "s" : ""}` : ", no mistakes"}.`;
         $("#mEnd").innerHTML = `<button class="btn primary big" type="button" id="mAgain">${icon("replay")} New round</button>${backBtn()}`;
         wireBack(body());
@@ -285,9 +283,9 @@ function matchGame(words) {
 /* ---------- Speaking ---------- */
 const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
-function speak({ title, items }) {
-  items = shuffle(items).slice(0, 10);
-  if (!items.length) { body().innerHTML = `<div class="panel"><p>Not enough words here yet.</p>${backBtn()}</div>`; return wireBack(body()); }
+// items: [{ w, text, py, en, sentence? }]
+export function speak({ title, items, then }) {
+  if (!items.length) return notEnough();
   let pos = 0, right = 0, useRecorder = !Recognition;
   const missed = [];
   function show() {
@@ -307,8 +305,8 @@ function speak({ title, items }) {
         <div class="heard" id="heard" aria-live="polite"></div>
         <div class="controls" id="judge" style="justify-content:center"></div>
       </div>
-      <div class="controls"><button class="btn primary" type="button" id="sNext" hidden>${pos + 1 >= items.length ? "See results" : "Next"}</button>
-        <button class="btn ghost" type="button" id="sSkip">Skip</button>${backBtn()}</div>
+      <div class="controls"><button class="btn primary" type="button" id="sNext" hidden>${pos + 1 >= items.length ? (then ? "Continue" : "See results") : "Next"}</button>
+        <button class="btn ghost" type="button" id="sSkip">Skip</button>${backBtn(then ? "Stop" : "Back")}</div>
     </div>`;
     wireBack(body());
     $("#micBtn").addEventListener("click", () => (useRecorder ? recordToggle(it) : listen(it)));
@@ -390,37 +388,11 @@ function speak({ title, items }) {
     }
   }
   function end() {
-    progress.addSession({ type: "speak", lesson: 0, score: right, total: items.length, missed });
-    body().innerHTML = `<div class="panel">
-      <span class="lbl">Results · ${title}</span>
-      <div class="score">${right} / ${items.length}</div>
-      ${missed.length ? `<p>Practice these again:</p><div class="result-list">${missed.map((t) => `<span>${t}</span>`).join("")}</div>` : `<p>说得很好！Shuō de hěn hǎo!</p>`}
-      <div class="controls"><button class="btn primary big" type="button" id="sAgain">${icon("replay")} Again</button>${backBtn()}</div>
-    </div>`;
-    wireBack(body());
-    $("#sAgain").addEventListener("click", () => speak({ title, items }));
+    progress.addSession({ type: "speak", lesson: P.ctx.lesson ?? 0, score: right, total: items.length, missed });
+    if (then) return then({ title, right, total: items.length, missed });
+    showResults(title, right, items.length, missed, () => speak({ title, items }), "说得很好！Shuō de hěn hǎo!");
   }
   show();
-}
-
-/* ---------- Stroke order: every character ---------- */
-function charGrid() {
-  clearWriters();
-  const chars = [...new Set(LESSONS.filter((l) => scopeIds().includes(l.id)).flatMap(lessonChars))];
-  body().innerHTML = `<div class="panel">
-    <span class="lbl">笔顺 · Stroke order</span>
-    <p>${chars.length} characters. Dots: <span style="color:var(--amber)">●</span> learning, <span style="color:var(--jade)">●</span> mastered.</p>
-    <div class="char-grid">${chars.map((c) => `<button type="button" data-c="${c}" data-status="${charStatus(progress.get("w:" + c))}">${c}</button>`).join("")}</div>
-    ${backBtn()}
-  </div>`;
-  wireBack(body());
-  $$("[data-c]", body()).forEach((b) => b.addEventListener("click", () => {
-    clearWriters();
-    body().innerHTML = `<div style="display:grid;gap:12px"><div class="controls"><button class="btn" type="button" id="cgBack">${icon("back")} All characters</button></div><div id="cgCard"></div></div>`;
-    $("#cgBack").addEventListener("click", charGrid);
-    buildCharCard($("#cgCard"), b.dataset.c);
-    scrollTo(0, 0);
-  }));
 }
 
 /* ---------- Word list ---------- */
@@ -445,12 +417,4 @@ function wordList(words) {
   };
   $("#wlSearch").addEventListener("input", (e) => render(e.target.value));
   render();
-}
-
-/* ---------- Home: section cards ---------- */
-export function skillCards() {
-  return Object.entries(SKILLS).map(([id, s]) => `<button class="hub-card" type="button" data-skill="${id}">
-    <span class="seal">${s.seal}</span>
-    <span class="hub-txt"><b>${s.name}<span class="hub-cn">${s.cn}</span></b><span class="hub-sub">${s.sub}</span></span>
-  </button>`).join("");
 }

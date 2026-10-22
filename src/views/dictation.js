@@ -12,12 +12,14 @@ const PROMPT = {
   audio: { title: "听写 tīngxiě · Dictation", how: "老师 says a word. Write it from memory, with no grey outline." },
   pinyin: { title: "看拼音写汉字 · From pinyin", how: "Read the pinyin, then write the characters from memory." },
   meaning: { title: "看意思写汉字 · From meaning", how: "Read the English meaning, then write the Chinese word." },
+  mixed: { title: "写 · Writing review", how: "Each word comes as sound, pinyin or meaning. Write it from memory." },
 };
 
 let dict = null;
 let hostSel = "#tab-dict";
 
-// opts: { host, words, title, prompt, kind, back, lesson }
+// opts: { host, words, title, prompt, kind, back, lesson, autostart, then }
+// autostart: skip the start screen (Review). then(result): continue a review chain instead of showing results.
 export function dictIntro(opts = {}) {
   dict = null;
   hostSel = opts.host || "#tab-dict";
@@ -33,10 +35,12 @@ export function dictIntro(opts = {}) {
       ${opts.back ? `<button class="btn big" type="button" id="dictBack">Back</button>` : ""}
     </div>
   </div>`;
-  $("#dictStart").addEventListener("click", () => {
+  const start = () => {
     dict = { ...opts, words, prompt, order: shuffle(words.map((_, i) => i)), pos: 0, perfect: 0, missed: [], kind: opts.kind || "dict" };
     dictWord();
-  });
+  };
+  if (opts.autostart) return start();
+  $("#dictStart").addEventListener("click", start);
   if (opts.back) $("#dictBack").addEventListener("click", opts.back);
 }
 
@@ -53,8 +57,9 @@ export function dictWord() {
   if (dict.pos >= total) return dictEnd();
   const word = dict.words[dict.order[dict.pos]];
   const chars = [...word.w];
-  const audio = dict.prompt === "audio";
-  const promptHtml = audio ? "" : dict.prompt === "pinyin"
+  const prompt = dict.prompt === "mixed" ? ["audio", "pinyin", "meaning"][dict.pos % 3] : dict.prompt;
+  const audio = prompt === "audio";
+  const promptHtml = audio ? "" : prompt === "pinyin"
     ? `<div class="prompt-big py">${tonePy(word.py)}</div>`
     : `<div class="prompt-big">${esc(word.en)}</div>`;
   host.innerHTML = `<div class="panel">
@@ -73,6 +78,7 @@ export function dictWord() {
     <div class="controls">
       <button class="btn" type="button" id="dictShow">Show answer</button>
       <button class="btn primary" type="button" id="dictNext" hidden>Next word</button>
+      ${dict.back ? `<button class="btn ghost" type="button" id="dictStop">${dict.then ? "Stop" : "Back"}</button>` : ""}
     </div>
   </div>`;
   let hintLevel = 0, mistakes = 0, doneCount = 0, gaveUp = false, finished = false;
@@ -98,7 +104,7 @@ export function dictWord() {
     $("#dictAnswer").hidden = false;
     $("#dictShow").hidden = true;
     $("#dictNext").hidden = false;
-    $("#dictNext").textContent = dict.pos + 1 >= total ? "See results" : "Next word";
+    $("#dictNext").textContent = dict.pos + 1 >= total ? (dict.then ? "Continue" : "See results") : "Next word";
     $("#dictNext").focus({ preventScroll: true });
     if (!audio) say(word.w);
   }
@@ -108,8 +114,8 @@ export function dictWord() {
     const t = $("#dictHintText");
     t.hidden = false;
     const mean = `Meaning: <b>${esc(word.en)}</b>`, py = `<span class="py">${tonePy(word.py)}</span>`;
-    if (dict.prompt === "audio") t.innerHTML = hintLevel === 1 ? mean : `${mean} · ${py}`;
-    else if (dict.prompt === "pinyin") { t.innerHTML = mean; if (hintLevel >= 2) say(word.w); }
+    if (prompt === "audio") t.innerHTML = hintLevel === 1 ? mean : `${mean} · ${py}`;
+    else if (prompt === "pinyin") { t.innerHTML = mean; if (hintLevel >= 2) say(word.w); }
     else { t.innerHTML = py; if (hintLevel >= 2) say(word.w); }
     $("#dictHint").disabled = hintLevel >= 2;
   }
@@ -120,6 +126,7 @@ export function dictWord() {
     finish();
   });
   $("#dictNext").addEventListener("click", () => { dict.pos++; dictWord(); });
+  $("#dictStop")?.addEventListener("click", () => { const back = dict.back; dict = null; clearWriters(); back(); });
   if (audio) {
     // Without any sound for this word, dictation still works from meaning + pinyin (and that doesn't count as a hint).
     if (!canSay(word.w)) { showHint(2); hintLevel = 0; }
@@ -132,6 +139,7 @@ function dictEnd() {
   const total = dict.order.length;
   progress.addSession({ type: dict.kind, lesson: dict.lesson ?? app.L()?.n ?? 0, score: dict.perfect, total, missed: dict.missed });
   const { words, missed } = dict, opts = { ...dict };
+  if (opts.then) { dict = null; return opts.then({ title: "Writing", right: opts.perfect, total, missed }); }
   $(hostSel).innerHTML = `<div class="panel">
     <span class="lbl">Results</span>
     <div class="score">${dict.perfect} / ${total} perfect</div>

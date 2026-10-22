@@ -60,7 +60,6 @@
         </span>
         <span class="chev" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></span>
       </button>
-      <div id="skillCards" style="display:contents"></div>
     </nav>
   </section>
 
@@ -79,17 +78,12 @@
       <button class="back" type="button" data-back-to="#/books" aria-label="Books"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button>
       <div><span class="eyebrow" id="bookEyebrow"></span><h2 id="bookTitle"></h2></div>
     </div>
-    <div class="lesson-list" id="lessonCards"></div>
-  </section>
-
-  <!-- SKILL SECTION -->
-  <section id="skillView" class="page" style="max-width:900px" hidden>
-    <div class="topbar">
-      <button class="back" type="button" data-back-to="#/" aria-label="Home"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button>
-      <div><span class="eyebrow" id="skillEyebrow"></span><h2 id="skillTitle"></h2></div>
+    <div class="seg book-tabs" role="tablist" aria-label="Book sections">
+      <button type="button" role="tab" data-btab="lessons" aria-pressed="true">课 Lessons</button>
+      <button type="button" role="tab" data-btab="review" aria-pressed="false">复习 Review <span class="due" id="reviewDue" hidden></span></button>
     </div>
-    <div class="scope" id="skillScope" aria-label="Which lessons" hidden></div>
-    <div id="skillBody" class="inner"></div>
+    <div class="lesson-list" id="lessonCards"></div>
+    <div id="bookReview" class="inner" hidden></div>
   </section>
 
   <!-- LESSON -->
@@ -100,14 +94,17 @@
     </div>
     <div class="tabs" role="tablist" aria-label="Practice type">
       <button class="tab" role="tab" data-tab="write"><span class="tz">写</span><span class="tl">Write</span></button>
-      <button class="tab" role="tab" data-tab="dict"><span class="tz">听</span><span class="tl">Dictation</span></button>
-      <button class="tab" role="tab" data-tab="cards"><span class="tz">卡</span><span class="tl">Cards</span></button>
-      <button class="tab" role="tab" data-tab="tones"><span class="tz">声</span><span class="tl">Tones</span></button>
-      <button class="tab" role="tab" data-tab="review"><span class="tz">复</span><span class="tl">Review</span></button>
+      <button class="tab" role="tab" data-tab="listen"><span class="tz">听</span><span class="tl">Listen</span></button>
+      <button class="tab" role="tab" data-tab="speak"><span class="tz">说</span><span class="tl">Speak</span></button>
+      <button class="tab" role="tab" data-tab="read"><span class="tz">读</span><span class="tl">Read</span></button>
+      <button class="tab" role="tab" data-tab="words"><span class="tz">词</span><span class="tl">Words</span></button>
     </div>
     <p class="note" id="voiceNote" hidden>This device has no Chinese voice installed, so sound can't play. On Android: Settings → Text-to-speech → install Chinese. On iPhone: Settings → Accessibility → Spoken Content → Voices → Chinese.</p>
 
-    <div id="tab-write" class="write-layout">
+    <div id="tab-write" class="inner">
+    <div class="practice-strip" id="writeStrip"></div>
+    <div id="writePractice" class="inner" hidden></div>
+    <div id="writeStudy" class="write-layout">
       <aside class="write-side">
         <nav class="words" id="words" aria-label="Words in this lesson"></nav>
         <div class="word-head" id="wordHead"></div>
@@ -120,11 +117,12 @@
         <div class="word-nav" id="wordNav"></div>
       </section>
     </div>
+    </div>
 
-    <div id="tab-dict" class="inner" hidden></div>
-    <div id="tab-cards" hidden></div>
-    <div id="tab-tones" hidden></div>
-    <div id="tab-review" class="inner" hidden></div>
+    <div id="tab-listen" class="inner" hidden></div>
+    <div id="tab-speak" class="inner" hidden></div>
+    <div id="tab-read" class="inner" hidden></div>
+    <div id="tab-words" class="inner" hidden></div>
   </section>
 </div>
 

@@ -384,6 +384,16 @@ details summary { cursor: pointer; color: var(--muted); }
 .chip.on { background: var(--card2); border-color: var(--ink); }
 .chip:disabled { cursor: default; }
 
+/* ---------- Book tabs, review, practice strip ---------- */
+.book-tabs { width: fit-content; }
+.due { display: inline-block; font-size: .72rem; font-weight: 700; padding: 1px 8px; border-radius: 999px; background: var(--cta); color: #fff; vertical-align: 2px; margin-left: 4px; }
+.review-hero { justify-items: start; }
+.review-hero .score small { font-family: var(--body); font-size: 1rem; font-weight: 400; }
+.review-types .mode-card b { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.practice-strip { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.practice-strip .lbl { margin-right: 4px; }
+.mini-seal { font-family: var(--display); font-size: 1.05rem; color: var(--gold); }
+
 /* ---------- Account sheet ---------- */
 dialog.sheet { width: min(100% - 32px, 460px); max-height: calc(100dvh - 32px - var(--safe-t) - var(--safe-b)); border: 1px solid var(--line2); border-radius: 20px; padding: 0; background: var(--card); color: var(--ink); }
 dialog.sheet::backdrop { background: rgb(0 0 0 / .5); }
@@ -412,13 +422,7 @@ dialog.sheet::backdrop { background: rgb(0 0 0 / .5); }
 .toast .btn { min-height: 36px; padding: 6px 12px; }
 
 /* ---------- Larger screens ---------- */
-/* Phones: 2 columns; the 5th section card spans the row. Wider: all 5 in one row. */
-#skillCards > .hub-card:last-child:nth-child(odd) { grid-column: 1 / -1; min-height: 0; grid-template-columns: auto 1fr; align-items: center; }
-@media (min-width: 760px) {
-  .home { max-width: 900px; }
-  .hub { grid-template-columns: repeat(5, 1fr); }
-  #skillCards > .hub-card:last-child:nth-child(odd) { grid-column: auto; min-height: 148px; grid-template-columns: none; align-items: stretch; }
-}
+@media (min-width: 760px) { .home { max-width: 720px; } }
 /* Tablets and computers in landscape: word list on the left, characters on the right. */
 @media (min-width: 1000px) and (orientation: landscape) {
   .wrap { max-width: 1400px; }

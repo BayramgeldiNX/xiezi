@@ -59,25 +59,10 @@ const CHECK = `
   return out;`;
 
 const W = "await new Promise(r => setTimeout(r, 450));";
-const STEPS = [
-  ["home", ""],
-  ["books", "#/books"],
-  ["book", "#/book/kouyu-rumen"],
-  ["lesson-write", "#/lesson/kouyu-rumen/1/write", `document.querySelector('[data-m=step]').click(); ${W} document.querySelector('[data-a=next]').click(); ${W} document.querySelector('[data-m=quiz]').click(); ${W}`],
-  ["lesson-dict", "#/lesson/kouyu-rumen/1/dict", `document.querySelector('#dictStart').click(); ${W} document.querySelector('#dictHint').click(); document.querySelector('#dictShow').click(); ${W}`],
-  ["lesson-cards", "#/lesson/kouyu-rumen/1/cards", `document.querySelector('#fcFlip').click(); ${W} document.querySelector('#fcAgainOne').click(); ${W}`],
-  ["lesson-tones", "#/lesson/kouyu-rumen/1/tones", `document.querySelector('[data-src=classic]').click(); ${W} document.querySelector('.tone-opt').click(); ${W}`],
-  ["lesson-review", "#/lesson/kouyu-rumen/1/review"],
-];
-const SKILL_MODES = {
-  writing: ["dict", "pinyin", "meaning", "chars"],
-  listening: ["pick-word", "pick-meaning", "sentence", "tones"],
-  speaking: ["say-word", "say-sentence"],
-  reading: ["texts", "text-quiz", "order", "read-pinyin"],
-  vocab: ["cards", "match", "quiz-meaning", "quiz-word", "list"],
-};
-const MODE_STEP = `
-  const b = document.querySelector('#skillBody');
+const B = "#/lesson/kouyu-rumen/1";
+// First steps inside any exercise, whichever it is.
+const MODE_STEP = (host) => `
+  const b = document.querySelector('${host}');
   b.querySelector('#dictStart, [data-src=lesson]')?.click(); ${W}
   b.querySelector('.choice')?.click(); ${W}
   b.querySelector('#qNext')?.click(); ${W}
@@ -85,14 +70,49 @@ const MODE_STEP = `
   b.querySelector('.rd-item')?.click(); ${W}
   b.querySelector('.tok')?.click(); ${W}
   b.querySelector('#oPool .chip')?.click(); ${W}
-  b.querySelector('[data-c]')?.click(); ${W}
   b.querySelector('#fcFlip')?.click(); ${W}`;
-for (const [sk, modes] of Object.entries(SKILL_MODES)) {
-  STEPS.push([`skill-${sk}`, `#/skill/${sk}`]);
-  for (const m of modes) STEPS.push([`${sk}-${m}`, `#/skill/${sk}`, `document.querySelector('[data-mode="${m}"]').click(); ${W} ${MODE_STEP}`]);
+// Practice results from 2 days ago, so the book Review has items due.
+const SEED = `
+  const store = await import('/xiezi/src/progress/store.js'), old = Date.now() - 2 * 864e5, mine = {};
+  for (const w of ['你好', '谢谢', '老师', '再见']) for (const pre of ['q:', 'l:', 'd:', 's:']) mine[pre + w] = { n: 1, ok: 1, miss: 0, last: old, lastOk: true, streak: 1 };
+  mine['o:老师，您好！'] = { n: 1, ok: 0, miss: 1, last: old, lastOk: false, streak: 0 };
+  store.importBackup({ app: 'xiezi', device: 'dev-screens-seed', mine });
+  document.querySelector('[data-btab=lessons]').click(); ${W}
+  document.querySelector('[data-btab=review]').click(); ${W}`;// Click through a whole review session until the summary appears.
+const FINISH_REVIEW = `
+  (document.querySelector('#rvMixed') || document.querySelector('#rvAhead')).click(); ${W}
+  const b = document.querySelector('#bookReview');
+  for (let i = 0; i < 80 && !b.querySelector('#rvDone'); i++) {
+    // Build the sentence: tap the words in the right order (the test knows the sentence).
+    const need = ['老师', '您', '好'][b.querySelectorAll('#oAnswer .chip').length];
+    const chip = [...b.querySelectorAll('#oPool .chip')].find((x) => x.textContent === need);
+    const el = chip || b.querySelector('.choice:not(:disabled), #qNext:not([hidden]), #dictShow:not([hidden]), #dictNext:not([hidden]), #sSkip:not([hidden]), #sNext:not([hidden]), #oNext:not([hidden])');
+    if (!el) break;
+    el.click(); ${W}
+  }
+  if (!b.querySelector('#rvDone')) throw new Error('review session did not reach its summary: ' + b.innerText.slice(0, 120));`;
+const STEPS = [
+  ["home", ""],
+  ["books", "#/books"],
+  ["book", "#/book/kouyu-rumen"],
+  ["review-empty", "#/book/kouyu-rumen/review"],
+  ["lesson-write", `${B}/write`, `document.querySelector('[data-m=step]').click(); ${W} document.querySelector('[data-a=next]').click(); ${W} document.querySelector('[data-m=quiz]').click(); ${W}`],
+];
+for (const m of ["dict", "pinyin", "meaning"]) STEPS.push([`write-${m}`, `${B}/write`, `document.querySelector('[data-wmode="${m}"]').click(); ${W} ${MODE_STEP("#writePractice")}`]);
+const TAB_MODES = {
+  listen: ["pick-word", "pick-meaning", "sentence", "tones"],
+  speak: ["say-word", "say-sentence"],
+  read: ["texts", "text-quiz", "order", "read-pinyin"],
+  words: ["cards", "match", "quiz-meaning", "quiz-word", "list"],
+};
+for (const [tab, modes] of Object.entries(TAB_MODES)) {
+  STEPS.push([`tab-${tab}`, `${B}/${tab}`]);
+  for (const m of modes) STEPS.push([`${tab}-${m}`, `${B}/${tab}`, `document.querySelector('#tab-${tab} [data-mode="${m}"]').click(); ${W} ${MODE_STEP(`#tab-${tab}`)}`]);
 }
+STEPS.push(["review-seeded", "#/book/kouyu-rumen/review", SEED]);
+STEPS.push(["review-session", "#/book/kouyu-rumen/review", SEED + FINISH_REVIEW]);
 STEPS.push(["settings", "", `document.querySelector('#accountChip').click(); ${W}`]);
-
+const SHOTS = ["home", "book", "review-seeded", "review-session", "lesson-write", "tab-listen", "read-texts", "words-match", "settings"];
 for (const s of SIZES) {
   await send("Emulation.setDeviceMetricsOverride", { width: s.w, height: s.h, deviceScaleFactor: s.dpr, mobile: s.mobile });
   await send("Emulation.setTouchEmulationEnabled", { enabled: s.mobile });
@@ -105,7 +125,7 @@ for (const s of SIZES) {
     if (act) await run(act);
     const found = await run(CHECK);
     for (const f of found || []) problems.push(`[${where}] ${f}`);
-    if (["home", "lesson-write", "reading-texts", "vocab-match", "settings", "speaking-say-word"].includes(name)) {
+    if (SHOTS.includes(name)) {
       const shot = await send("Page.captureScreenshot", { format: "png" });
       if (shot?.data) fs.writeFileSync(path.join(outDir, `${s.name}-${name}.png`), Buffer.from(shot.data, "base64"));
     }
