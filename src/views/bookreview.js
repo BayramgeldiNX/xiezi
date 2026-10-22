@@ -68,9 +68,18 @@ export function openReview(b, hostSel = "#bookReview") {
   showReview();
 }
 
+// The red count on the book's Review tab.
+function updateBadge(total) {
+  const b = $("#reviewDue");
+  if (!b) return;
+  b.textContent = total;
+  b.hidden = !total;
+}
+
 function showReview() {
   const scans = TYPES.map((t) => ({ t, ...scan(t) }));
   const total = scans.reduce((n, s) => n + s.due.length, 0);
+  updateBadge(total);
   const practicedAny = scans.some((s) => s.practiced);
   const nextAll = scans.map((s) => s.next).filter(Boolean).sort((a, b) => a - b)[0];
   body().innerHTML = `
@@ -124,8 +133,10 @@ function runChain(steps) {
   next();
 }
 
-function runStep({ t, items }, then) {
+function runStep({ t, items }, done) {
   scrollTo(0, 0);
+  // One name per type in the summary, whatever the exercise calls itself.
+  const then = (res) => done({ ...res, title: `${t.seal} · ${t.name}` });
   const pool = wordsOf(book.lessons);
   const words = items.map((i) => i.w);
   switch (t.id) {
@@ -140,6 +151,7 @@ function runStep({ t, items }, then) {
 function summary(results) {
   const right = results.reduce((n, r) => n + r.right, 0), total = results.reduce((n, r) => n + r.total, 0);
   const missed = [...new Set(results.flatMap((r) => r.missed))];
+  updateBadge(TYPES.reduce((n, t) => n + scan(t).due.length, 0));
   body().innerHTML = `<div class="panel">
     <span class="lbl">复习完了 · Review done</span>
     <div class="score">${right} / ${total}</div>

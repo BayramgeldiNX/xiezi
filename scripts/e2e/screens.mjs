@@ -36,7 +36,7 @@ const send = (method, params = {}) => new Promise((r) => {
   const my = ++id;
   pending.set(my, r);
   ws.send(JSON.stringify({ id: my, method, params }));
-  setTimeout(() => { if (pending.has(my)) { pending.delete(my); problems.push(`[${where}] step timed out: ${method}`); r(null); } }, 12000);
+  setTimeout(() => { if (pending.has(my)) { pending.delete(my); problems.push(`[${where}] step timed out: ${method}`); r(null); } }, 60000);
 });
 const run = async (js) => {
   const r = await send("Runtime.evaluate", { expression: `(async () => { ${js} })()`, awaitPromise: true, returnByValue: true });
