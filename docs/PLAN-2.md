@@ -9,10 +9,9 @@ Sync code is written but waits for the Firebase project (your steps below).
 ## Part A: debugging (do first)
 
 ### A1. Your morning steps (≈10 minutes)
-- [ ] **Firebase project:** console.firebase.google.com → Create project `xiezi` → accept terms → Analytics **off**.
-      Tell Claude the **project ID**.
-- [ ] **Email sign-in:** in that project, Build → Authentication → Get started → Email/Password → Enable → Save.
-- [ ] Claude runs `npm run setup:firebase -- <project-id>` and publishes.
+- [x] **Firebase project:** `learn-chinese-a5c0d` (Firestore region `nam5`, USA; fine for one learner).
+- [x] **Email sign-in** enabled.
+- [x] `npm run setup:firebase -- learn-chinese-a5c0d` run, rules uploaded (outsiders get 403), published 2026-10-22.
 - [ ] **Install** the app: iPhone (Safari → Share → Add to Home Screen), Mi Pad (Chrome → ⋮ → Add to home screen),
       Windows (Edge → ⊕ install icon in the address bar).
 - [ ] **Voices:** iPhone Chinese voice; Mi Pad *Speech Services by Google* + Chinese.
