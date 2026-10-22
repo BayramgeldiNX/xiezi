@@ -4,4 +4,4 @@ dev-dist/
 fonts-src/
 *.log
 .firebase/
-.env*
+.env*.local

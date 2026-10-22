@@ -129,7 +129,12 @@ export function buildCharCard(host, c) {
     };
     requestAnimationFrame(tick);
     figs.forEach((f, j) => f.classList.toggle("on", j === i));
-    figs[i].scrollIntoView({ block: "nearest", inline: "nearest" });
+    // Scroll only the stroke strip sideways; scrollIntoView would also jump the whole page on phones.
+    const strip = figs[i].parentElement;
+    const sr = strip.getBoundingClientRect(), fr = figs[i].getBoundingClientRect();
+    if (fr.left < sr.left || fr.right > sr.right) {
+      strip.scrollBy({ left: fr.left - sr.left - sr.width / 2 + fr.width / 2, behavior: "smooth" });
+    }
     const nm = names[i], info = STROKE_NAMES[nm];
     sname.innerHTML = nm && info ? `<b>${nm}</b><span class="py">${tonePy(info.py)}</span><span>${info.en}</span>` : "";
     sname.toggleAttribute("hidden", !(nm && info));

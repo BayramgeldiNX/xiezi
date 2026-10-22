@@ -4,8 +4,14 @@
 //   users/{uid}/items/{key}     { k: key, d: { [deviceId]: stat }, t: serverTime }
 //   users/{uid}/sessions/{id}   one finished practice session
 // Each device writes only its own d.{deviceId} entry, so devices never overwrite each other.
-import config from "./firebase-config.js";
+import realConfig from "./firebase-config.js";
 import * as progress from "../progress/store.js";
+import { docId } from "./ids.js";
+
+// Test mode (only when started with VITE_FIREBASE_EMULATOR=1): talk to the local Firebase emulators
+// with a throw-away demo project instead of the real one. Never on in the published app.
+const EMULATOR = import.meta.env.VITE_FIREBASE_EMULATOR === "1";
+const config = EMULATOR ? { apiKey: "demo-key", authDomain: "localhost", projectId: "demo-xiezi", appId: "demo" } : realConfig;
 
 export const syncAvailable = !!config;
 
@@ -38,11 +44,16 @@ async function load() {
   let db;
   try {
     db = fsMod.initializeFirestore(app, {
+      ignoreUndefinedProperties: true,
       localCache: fsMod.persistentLocalCache({ tabManager: fsMod.persistentMultipleTabManager() }),
     });
   } catch (e) {
     console.warn("Offline cache unavailable, using memory cache", e);
-    db = fsMod.initializeFirestore(app, { localCache: fsMod.memoryLocalCache() });
+    db = fsMod.initializeFirestore(app, { ignoreUndefinedProperties: true, localCache: fsMod.memoryLocalCache() });
+  }
+  if (EMULATOR) {
+    authMod.connectAuthEmulator(auth, "http://127.0.0.1:9099", { disableWarnings: true });
+    fsMod.connectFirestoreEmulator(db, "127.0.0.1", 8080);
   }
   fb = { auth, db, A: authMod, F: fsMod };
   return fb;
@@ -70,15 +81,17 @@ function stop() {
 async function start(user) {
   const { db, F } = fb;
   const uid = user.uid;
-  const itemRef = (key) => F.doc(db, "users", uid, "items", key);
-  const sessionRef = (id) => F.doc(db, "users", uid, "sessions", id);
+  const itemRef = (key) => F.doc(db, "users", uid, "items", docId(key));
+  const sessionRef = (id) => F.doc(db, "users", uid, "sessions", docId(id));
   const dev = progress.deviceId();
   const fail = (e) => { console.error(e); emit({ status: "error", error: friendly(e) }); };
+  // A sync problem must never interrupt practice: the result is already saved on the device.
+  const safely = (fn) => { try { fn().catch(fail); } catch (e) { fail(e); } };
 
   progress.setSyncer({
     pushItem: (key, stat) =>
-      F.setDoc(itemRef(key), { k: key, d: { [dev]: stat }, t: F.serverTimestamp() }, { merge: true }).catch(fail),
-    pushSession: (s) => F.setDoc(sessionRef(s.id), s).catch(fail),
+      safely(() => F.setDoc(itemRef(key), { k: key, d: { [dev]: stat }, t: F.serverTimestamp() }, { merge: true })),
+    pushSession: (s) => safely(() => F.setDoc(sessionRef(s.id), s)),
   });
   emit({ status: "syncing", email: user.email, error: null });
 
