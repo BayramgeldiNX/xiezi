@@ -36,9 +36,12 @@ Then open 写字本 from the icon. It runs full screen and works without interne
 
 ## Adding a lesson
 
+Each book is a folder `src/data/books/<book-id>/` with `book.json` (title, part, English name, cover color)
+and one `lessonNN.json` per lesson. Lesson 1 of 汉语口语速成 · 入门篇 is in `src/data/books/kouyu-rumen/`.
+
 1. Write `lessons-in/lessonNN.tsv`: first line is the Chinese title, then one word per line, tab-separated:
    `word  pinyin  English  example汉字  example pinyin  example English`
-2. `npm run add-lesson -- lessons-in/lessonNN.tsv` creates the lesson and lists what to fill in
+2. `npm run add-lesson -- <book-id> lessons-in/lessonNN.tsv` creates the lesson and lists what to fill in
    (meanings, memory tricks and stroke names for new characters, in `src/data/chars.json`).
 3. `npm run gen:data` (stroke shapes + checks) and `npm run gen:font` (font; needs `fonts-src/NotoSerifSC-VF.ttf`, see below).
 4. `npm test`, then commit and push. GitHub tests, builds and publishes automatically.
@@ -59,10 +62,10 @@ npm run preview    # serve the build (to test offline mode)
 
 | Folder | What's in it |
 |---|---|
-| `src/views/` | the tabs: write, dictation, cards, tones, review, account |
+| `src/views/` | lesson tabs (write, dictation, cards, tones, review), `skills.js` (Writing, Listening, Speaking, Vocabulary sections), account |
 | `src/progress/` | progress records (`model.js` is pure logic, `store.js` saves on the device) |
 | `src/sync/` | Firebase sign-in and sync |
-| `src/data/` | lessons, characters, stroke names; `strokes.gen.json` is generated |
+| `src/data/` | `books/<id>/` (book + lessons), characters, stroke names; `strokes.gen.json` is generated |
 | `scripts/` | data, font, icon, lesson and Firebase tools |
 | `reference/` | the original single-page artifact this app grew from |
 

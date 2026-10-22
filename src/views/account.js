@@ -1,5 +1,6 @@
 // Account sheet: sign in for sync, sync status, backup file.
 import { $, esc } from "../lib/util.js";
+import { getTheme, setTheme } from "../lib/theme.js";
 import * as progress from "../progress/store.js";
 import { syncAvailable, onSync, syncState, signIn, signUp, signOut, resetPassword } from "../sync/sync.js";
 
@@ -20,7 +21,7 @@ export function initAccountChip() {
   onSync((s) => {
     const [icon, text] = STATUS[s.status] || STATUS.off;
     chip.dataset.status = s.status;
-    chip.innerHTML = `<span aria-hidden="true">${icon}</span> ${s.status === "signed-out" ? "Sign in to sync" : text}`;
+    chip.innerHTML = `<span aria-hidden="true">${icon}</span> ${s.status === "signed-out" ? "Sign in" : s.status === "offline" ? "Offline" : text}`;
     if ($("#accountSheet").open) renderSheet();
   });
 }
@@ -60,17 +61,29 @@ function renderSheet() {
       ${s.error ? `<p class="err">${esc(s.error)}</p>` : ""}
       <div class="controls"><button class="btn" type="button" id="signOut">Sign out</button></div>`;
   }
-  body.innerHTML = `${top}
+  const theme = getTheme();
+  body.innerHTML = `<span class="lbl">Appearance</span>
+    <div class="seg" role="group" aria-label="Theme">
+      <button type="button" data-theme-set="ink" aria-pressed="${theme === "ink"}">墨 Ink</button>
+      <button type="button" data-theme-set="paper" aria-pressed="${theme === "paper"}">宣纸 Paper</button>
+    </div>
+    <hr>
+    <span class="lbl">Sync</span>
+    ${top}
     ${msg ? `<p class="err" role="alert">${esc(msg)}</p>` : ""}
     <hr>
     <span class="lbl">Backup file</span>
     <p class="note">Saves all your progress into one file, as an extra safety copy or to move it by hand.</p>
     <div class="controls">
-      <button class="btn" type="button" id="exportBtn">⬇ Save backup</button>
-      <label class="btn" for="importFile">⬆ Load backup</label>
+      <button class="btn" type="button" id="exportBtn">Save backup</button>
+      <label class="btn" for="importFile">Load backup</label>
       <input type="file" id="importFile" accept="application/json,.json" hidden>
     </div>
     <p class="note">This device: <code>${progress.deviceId()}</code></p>`;
+  body.querySelectorAll("[data-theme-set]").forEach((b) => b.addEventListener("click", () => {
+    setTheme(b.dataset.themeSet);
+    renderSheet();
+  }));
 
   const form = $("#authForm");
   if (form) {

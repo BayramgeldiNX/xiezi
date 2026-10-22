@@ -60,7 +60,7 @@ export function reviewIntro() {
     ${pick.length ? `
       <p style="margin:0">Your ${pick.length} weakest word${pick.length > 1 ? "s" : ""}, weakest first:</p>
       <ul class="rv-list">${pick.map(row).join("")}</ul>
-      <div class="controls"><button class="btn primary big" type="button" id="rvGo">✍ Practice these in dictation</button></div>`
+      <div class="controls"><button class="btn primary big" type="button" id="rvGo">Practice these in dictation</button></div>`
     : `<p style="margin:0">${known.length === total ? "全对！Everything here is known. 太棒了!" : fresh.length === total ? "Nothing to review yet. Practice in Write, Dictation or Flashcards first, and your weak words will show up here." : "No weak words right now. 很好! Keep practicing the ones you haven't started."}</p>`}
     ${fresh.length && fresh.length < total ? `<details><summary>Not started yet (${fresh.length})</summary><div class="result-list" style="margin-top:8px">${fresh.map((r) => `<span>${r.w.w}</span>`).join("")}</div></details>` : ""}
   </div>

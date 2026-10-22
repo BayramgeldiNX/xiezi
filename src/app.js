@@ -8,10 +8,10 @@ export const app = {
   tab: "write",
   L: () => LESSONS[app.lesson],
   savePlace() {
-    place.set({ lesson: app.lesson, word: app.word, tab: app.tab });
+    place.set({ lid: app.L().id, word: app.word, tab: app.tab });
   },
 };
 
 export const TAB_NAME = {
-  write: "✍ Write", dict: "🎧 Dictation", cards: "🃏 Flashcards", tones: "🎵 Tones", review: "🔁 Review",
+  write: "Write", dict: "Dictation", cards: "Flashcards", tones: "Tones", review: "Review",
 };

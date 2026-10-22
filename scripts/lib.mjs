@@ -6,7 +6,7 @@ import { createRequire } from "node:module";
 
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 export const DATA_DIR = path.join(ROOT, "src/data");
-export const LESSON_DIR = path.join(DATA_DIR, "lessons");
+export const BOOKS_DIR = path.join(DATA_DIR, "books");
 const require = createRequire(path.join(ROOT, "package.json"));
 
 export const readJSON = (p) => JSON.parse(fs.readFileSync(p, "utf8"));
@@ -15,9 +15,19 @@ export const writeJSON = (p, v, pretty = true) =>
 
 export const isHanzi = (ch) => /\p{Script=Han}/u.test(ch);
 
-export function loadLessons() {
-  return fs.readdirSync(LESSON_DIR).filter(f => /^lesson\d+\.json$/.test(f)).sort()
-    .map(f => ({ file: f, ...readJSON(path.join(LESSON_DIR, f)) }));
+export function loadBooks() {
+  return fs.readdirSync(BOOKS_DIR).filter(d => fs.existsSync(path.join(BOOKS_DIR, d, "book.json")))
+    .map(d => ({ dir: d, ...readJSON(path.join(BOOKS_DIR, d, "book.json")) }))
+    .sort((a, b) => (a.order ?? 99) - (b.order ?? 99));
+}
+
+// Lessons of one book (or of all books), each with its file name and book id.
+export function loadLessons(bookId) {
+  return loadBooks().filter(b => !bookId || b.id === bookId).flatMap(b => {
+    const dir = path.join(BOOKS_DIR, b.dir);
+    return fs.readdirSync(dir).filter(f => /^lesson\d+\.json$/.test(f)).sort()
+      .map(f => ({ file: `${b.dir}/${f}`, book: b.id, ...readJSON(path.join(dir, f)) }));
+  });
 }
 
 // Every character a learner writes: the characters of each lesson word.

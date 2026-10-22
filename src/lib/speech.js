@@ -1,5 +1,6 @@
 // Text-to-speech with the device's Chinese voice.
 import { $, esc } from "./util.js";
+import { icon } from "./icons.js";
 
 let zhVoice = null;
 const listeners = new Set();
@@ -46,5 +47,5 @@ document.addEventListener("click", (e) => {
 }, true);
 
 export const sayBtns = (text, label, sm) =>
-  `<button class="say${sm ? " sm" : ""}" type="button" data-say="${esc(text)}" aria-label="Play ${esc(label)}">🔊</button>` +
-  `<button class="say${sm ? " sm" : ""}" type="button" data-say="${esc(text)}" data-slow aria-label="Play ${esc(label)} slowly">🐢${sm ? "" : " Slow"}</button>`;
+  `<button class="say${sm ? " sm" : ""}" type="button" data-say="${esc(text)}" aria-label="Play ${esc(label)}">${icon("speaker")}</button>` +
+  `<button class="say${sm ? " sm" : ""}" type="button" data-say="${esc(text)}" data-slow aria-label="Play ${esc(label)} slowly">${icon("slow")}${sm ? "" : " Slow"}</button>`;

@@ -2,7 +2,7 @@
 import path from "node:path";
 import fs from "node:fs";
 import { fileURLToPath } from "node:url";
-import { DATA_DIR, loadLessons, lessonChars, readJSON } from "./lib.mjs";
+import { DATA_DIR, loadBooks, loadLessons, lessonChars, readJSON } from "./lib.mjs";
 
 export function checkData() {
   const lessons = loadLessons();
@@ -11,9 +11,19 @@ export function checkData() {
   const strokesFile = path.join(DATA_DIR, "strokes.gen.json");
   const strokes = fs.existsSync(strokesFile) ? readJSON(strokesFile) : {};
   const problems = [];
+  const books = loadBooks();
+  const ids = new Set();
+  for (const b of books) {
+    for (const k of ["id", "title"]) if (!b[k]) problems.push(`books/${b.dir}/book.json: missing "${k}"`);
+    if (b.id !== b.dir) problems.push(`books/${b.dir}/book.json: id "${b.id}" must match its folder name`);
+    if (ids.has(b.id)) problems.push(`book id ${b.id} used twice`);
+    ids.add(b.id);
+  }
 
-  lessons.forEach((l, i) => {
-    if (l.n !== i + 1) problems.push(`${l.file}: lesson number ${l.n}, expected ${i + 1}`);
+  const perBook = {};
+  lessons.forEach((l) => {
+    const expect = (perBook[l.book] = (perBook[l.book] || 0) + 1);
+    if (l.n !== expect) problems.push(`${l.file}: lesson number ${l.n}, expected ${expect}`);
     for (const k of ["cn", "title"]) if (!l[k]) problems.push(`${l.file}: missing "${k}"`);
     const seen = new Set();
     for (const w of l.words || []) {
@@ -40,7 +50,7 @@ export function checkData() {
     console.error(`Data check found ${problems.length} problem(s):\n  ` + problems.join("\n  "));
     return false;
   }
-  console.log(`Data check OK: ${lessons.length} lesson(s), ${lessonChars(lessons).length} characters.`);
+  console.log(`Data check OK: ${books.length} book(s), ${lessons.length} lesson(s), ${lessonChars(lessons).length} characters.`);
   return true;
 }
 

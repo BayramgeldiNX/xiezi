@@ -4,23 +4,33 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>写字本</title>
-  <meta name="description" content="白怀诚的写字本: Chinese stroke order, dictation, flashcards and tones.">
-  <meta name="theme-color" content="#f7f5ee" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#121822" media="(prefers-color-scheme: dark)">
+  <meta name="description" content="白怀诚的写字本: Chinese writing, listening, speaking and vocabulary practice.">
+  <meta name="theme-color" content="#0f141b">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="写字本">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="format-detection" content="telephone=no">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <script>
+    // Apply the saved theme before anything draws (no white flash). Ink is the default.
+    try {
+      var t = JSON.parse(localStorage.getItem("xz-theme"));
+      if (t === "paper") {
+        document.documentElement.dataset.theme = "paper";
+        document.querySelector('meta[name="theme-color"]').content = "#ebe4d6";
+        document.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]').content = "default";
+      }
+    } catch (e) {}
+  </script>
 </head>
 <body>
 <div class="wrap">
   <button class="fs-btn" id="fsBtn" type="button" aria-label="Full screen" title="Full screen">⛶</button>
   <p class="fsnote" id="fsNote" hidden>Full screen isn't available here. Add 写字本 to your Home Screen to use it full screen.</p>
 
-  <!-- HOME: sections -->
+  <!-- HOME -->
   <section id="home" class="home">
     <div class="hub-top">
       <div class="greet"><b id="greetCn"></b><span id="greetPy" class="py"></span><span id="greetDate" class="muted"></span></div>
@@ -29,9 +39,9 @@
 
     <header class="hero">
       <svg class="emblem" viewBox="0 0 100 100" aria-hidden="true">
-        <rect x="2" y="2" width="96" height="96" rx="6" fill="var(--card)" stroke="var(--grid)" stroke-width="2"/>
-        <g stroke="var(--grid)" stroke-width="1" stroke-dasharray="4 4" opacity=".7"><line x1="50" y1="2" x2="50" y2="98"/><line x1="2" y1="50" x2="98" y2="50"/></g>
-        <text x="50" y="52" text-anchor="middle" dominant-baseline="central" font-family="Xiezi Serif, Noto Serif SC, Songti SC, serif" font-size="64" font-weight="700" fill="var(--ink)">写</text>
+        <rect x="2" y="2" width="96" height="96" rx="10" fill="none" stroke="var(--grid)" stroke-width="2"/>
+        <g stroke="var(--grid)" stroke-width="1" stroke-dasharray="4 4" opacity=".6"><line x1="50" y1="2" x2="50" y2="98"/><line x1="2" y1="50" x2="98" y2="50"/></g>
+        <text x="50" y="52" text-anchor="middle" dominant-baseline="central" font-family="Xiezi Serif, Noto Serif SC, Songti SC, serif" font-size="62" font-weight="700" fill="var(--ink)">写</text>
       </svg>
       <h1>白怀诚的写字本</h1>
       <p class="hero-py py" id="heroPy"></p>
@@ -41,49 +51,69 @@
     <button class="continue" type="button" id="resume" hidden></button>
 
     <nav class="hub" aria-label="Sections">
-      <button class="hub-card" type="button" id="openLessons">
-        <span class="seal" aria-hidden="true">课</span>
+      <button class="hub-card wide" type="button" id="openBooks">
+        <span class="seal red" aria-hidden="true">书</span>
         <span class="hub-txt">
-          <b>Lessons <span class="hub-cn">课文</span></b>
-          <span class="hub-sub">汉语口语速成 · 入门篇</span>
+          <b>Books<span class="hub-cn">课本</span></b>
+          <span class="hub-sub" id="hubBooksSub"></span>
           <span class="lp"><span class="lp-bar" aria-hidden="true"><i id="hubBar"></i></span><span class="lp-txt" id="hubMeta"></span></span>
         </span>
-        <span class="chev" aria-hidden="true">›</span>
+        <span class="chev" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></span>
       </button>
+      <div id="skillCards" style="display:contents"></div>
     </nav>
   </section>
 
-  <!-- LESSONS LIST -->
-  <section id="lessonsView" class="lessons-page" hidden>
+  <!-- BOOKS -->
+  <section id="booksView" class="page" hidden>
     <div class="topbar">
-      <button class="btn" type="button" id="lessonsBack">← Home</button>
-      <div><span class="eyebrow">课文 · Lessons</span><h2>汉语口语速成 · 入门篇</h2></div>
+      <button class="back" type="button" data-back-to="#/" aria-label="Home"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <div><span class="eyebrow">书 · 课本</span><h2>Books</h2></div>
+    </div>
+    <div class="book-list" id="bookList"></div>
+  </section>
+
+  <!-- ONE BOOK: its lessons -->
+  <section id="bookView" class="page" hidden>
+    <div class="topbar">
+      <button class="back" type="button" data-back-to="#/books" aria-label="Books"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <div><span class="eyebrow" id="bookEyebrow"></span><h2 id="bookTitle"></h2></div>
     </div>
     <div class="lesson-list" id="lessonCards"></div>
+  </section>
+
+  <!-- SKILL SECTION -->
+  <section id="skillView" class="page" style="max-width:900px" hidden>
+    <div class="topbar">
+      <button class="back" type="button" data-back-to="#/" aria-label="Home"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <div><span class="eyebrow" id="skillEyebrow"></span><h2 id="skillTitle"></h2></div>
+    </div>
+    <div class="scope" id="skillScope" aria-label="Which lessons" hidden></div>
+    <div id="skillBody" class="inner"></div>
   </section>
 
   <!-- LESSON -->
   <section id="lessonView" class="inner" hidden>
     <div class="topbar">
-      <button class="btn" type="button" id="backBtn">← Lessons</button>
+      <button class="back" type="button" id="backBtn" aria-label="Lessons"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button>
       <div><span class="eyebrow" id="lessonEyebrow"></span><h2 id="lessonTitle"></h2></div>
     </div>
     <div class="tabs" role="tablist" aria-label="Practice type">
-      <button class="tab" role="tab" data-tab="write">✍ <span class="tl">Write</span></button>
-      <button class="tab" role="tab" data-tab="dict">🎧 <span class="tl">Dictation</span></button>
-      <button class="tab" role="tab" data-tab="cards">🃏 <span class="tl">Cards</span></button>
-      <button class="tab" role="tab" data-tab="tones">🎵 <span class="tl">Tones</span></button>
-      <button class="tab" role="tab" data-tab="review">🔁 <span class="tl">Review</span></button>
+      <button class="tab" role="tab" data-tab="write"><span class="tz">写</span><span class="tl">Write</span></button>
+      <button class="tab" role="tab" data-tab="dict"><span class="tz">听</span><span class="tl">Dictation</span></button>
+      <button class="tab" role="tab" data-tab="cards"><span class="tz">卡</span><span class="tl">Cards</span></button>
+      <button class="tab" role="tab" data-tab="tones"><span class="tz">声</span><span class="tl">Tones</span></button>
+      <button class="tab" role="tab" data-tab="review"><span class="tz">复</span><span class="tl">Review</span></button>
     </div>
-    <p class="note" id="voiceNote" hidden>This device has no Chinese voice installed, so 🔊 can't play. On Android: Settings → Text-to-speech → install Chinese. On iPhone: Settings → Accessibility → Spoken Content → Voices → Chinese.</p>
+    <p class="note" id="voiceNote" hidden>This device has no Chinese voice installed, so sound can't play. On Android: Settings → Text-to-speech → install Chinese. On iPhone: Settings → Accessibility → Spoken Content → Voices → Chinese.</p>
 
     <div id="tab-write" class="write-layout">
       <aside class="write-side">
         <nav class="words" id="words" aria-label="Words in this lesson"></nav>
         <div class="word-head" id="wordHead"></div>
         <div class="example" id="example"></div>
-        <p class="note"><b>▶ Non-stop</b> writes the whole character. <b>Stroke by stroke</b> draws one stroke, names it, and stops; tap <b>Next stroke</b> to go on. <b>✍ Write it</b> lets you trace it; after 2 mistakes it shows a hint. Dots on words: <span style="color:var(--amber)">●</span> learning, <span style="color:var(--jade)">●</span> known.</p>
-        <p class="note kbd-note">Keys: ← → strokes · space replay · W write it · P play · [ ] previous / next word · Esc lessons</p>
+        <p class="note"><b>Non-stop</b> writes the whole character. <b>Stroke by stroke</b> draws one stroke, names it, and stops. <b>Write it</b> lets you trace it; after 2 mistakes it shows a hint. Dots on words: <span style="color:var(--amber)">●</span> learning, <span style="color:var(--jade)">●</span> known.</p>
+        <p class="note kbd-note">Keys: ← → strokes · space replay · W write it · P play · [ ] previous / next word · Esc back</p>
       </aside>
       <section style="display:grid;gap:16px;min-width:0">
         <div id="chars" style="display:grid;gap:16px"></div>
@@ -99,8 +129,8 @@
 </div>
 
 <dialog class="sheet" id="accountSheet" aria-labelledby="accountTitle">
-  <div class="sheet-head"><h3 id="accountTitle">Sync &amp; backup</h3>
-    <form method="dialog"><button class="sheet-close" aria-label="Close">✕</button></form></div>
+  <div class="sheet-head"><h3 id="accountTitle">Settings &amp; sync</h3>
+    <form method="dialog"><button class="sheet-close" aria-label="Close"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></form></div>
   <div id="accountBody"></div>
 </dialog>
 
@@ -109,7 +139,7 @@
   <button class="btn primary" type="button" id="updateBtn">Update now</button>
   <button class="btn" type="button" id="updateLater">Later</button>
 </div>
-<div class="toast" id="offlineToast" role="status" hidden>✓ 写字本 now works offline.</div>
+<div class="toast" id="offlineToast" role="status" hidden>写字本 now works offline.</div>
 
 <script type="module" src="/src/main.js"></script>
 </body>

@@ -2,6 +2,7 @@
 import { $, $$ } from "../lib/util.js";
 import { tonePy } from "../lib/pinyin.js";
 import { sayBtns } from "../lib/speech.js";
+import { icon } from "../lib/icons.js";
 import { gridSVG, stripSVG, makeWriter, trackWriter, clearWriters } from "../lib/draw.js";
 import { CHARS, STROKE_NAMES, STROKE_DATA, wordChars } from "../data/index.js";
 import { app } from "../app.js";
@@ -51,8 +52,8 @@ export function renderWord(idx) {
   activeCard = null;
   wordChars(word).forEach((c) => buildCharCard(host, c));
   const nav = $("#wordNav");
-  nav.innerHTML = `<button class="btn" type="button" data-go="-1" ${idx === 0 ? "disabled" : ""}>◀ ${idx > 0 ? app.L().words[idx - 1].w : ""}</button>
-    <button class="btn" type="button" data-go="1" ${idx === app.L().words.length - 1 ? "disabled" : ""}>${idx < app.L().words.length - 1 ? app.L().words[idx + 1].w : ""} ▶</button>`;
+  nav.innerHTML = `<button class="btn" type="button" data-go="-1" ${idx === 0 ? "disabled" : ""}>${icon("back")} ${idx > 0 ? app.L().words[idx - 1].w : ""}</button>
+    <button class="btn" type="button" data-go="1" ${idx === app.L().words.length - 1 ? "disabled" : ""}>${idx < app.L().words.length - 1 ? app.L().words[idx + 1].w : ""} ${icon("next")}</button>`;
 }
 
 function badgeText(c) {
@@ -65,7 +66,7 @@ function badgeText(c) {
     : `<span class="badge learning">Learning</span><span class="count">${tries} · ${s.ok} perfect</span>`;
 }
 
-function buildCharCard(host, c) {
+export function buildCharCard(host, c) {
   const { py, en, tip, strokes: names } = CHARS[c];
   const n = STROKE_DATA[c].strokes.length;
   const el = document.createElement("article");
@@ -78,18 +79,18 @@ function buildCharCard(host, c) {
       <div class="badges">${badgeText(c)}</div>
       <p class="tip"><strong>Memory trick:</strong> ${tip}</p>
       <div class="modes" role="tablist" aria-label="Mode">
-        <button class="mode" role="tab" data-m="flow">▶ Non-stop</button>
+        <button class="mode" role="tab" data-m="flow">Non-stop</button>
         <button class="mode" role="tab" data-m="step">Stroke by stroke</button>
-        <button class="mode" role="tab" data-m="quiz">✍ Write it</button>
+        <button class="mode" role="tab" data-m="quiz">Write it</button>
       </div>
-      <div class="controls" data-for="flow"><button class="btn primary" data-a="play">▶ Play</button></div>
+      <div class="controls" data-for="flow"><button class="btn primary" data-a="play">${icon("play")} Play</button></div>
       <div class="controls" data-for="step" hidden>
-        <button class="btn" data-a="back">◀ Back</button>
-        <button class="btn primary" data-a="next">Next stroke ▶</button>
-        <button class="btn" data-a="replay">↺ Replay</button>
+        <button class="btn" data-a="back">${icon("back")} Back</button>
+        <button class="btn primary" data-a="next">Next stroke ${icon("next")}</button>
+        <button class="btn" data-a="replay">${icon("replay")} Replay</button>
       </div>
       <div class="strokename" data-for="step" hidden></div>
-      <div class="controls" data-for="quiz" hidden><button class="btn primary" data-a="quiz">↺ Start again</button></div>
+      <div class="controls" data-for="quiz" hidden><button class="btn primary" data-a="quiz">${icon("replay")} Start again</button></div>
       <div class="status" aria-live="polite"></div>
     </div>
     <div class="strip">${STROKE_DATA[c].strokes.map((_, i) => `<figure data-i="${i}">${stripSVG(c, i)}<figcaption>${i + 1}${names[i] ? " " + names[i] : ""}</figcaption></figure>`).join("")}</div>`;

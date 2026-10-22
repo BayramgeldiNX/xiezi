@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { syllables, stripTone, addTone } from "../src/lib/pinyin.js";
-import lesson1 from "../src/data/lessons/lesson01.json";
+import lesson1 from "../src/data/books/kouyu-rumen/lesson01.json";
 import chars from "../src/data/chars.json";
 
 describe("pinyin", () => {

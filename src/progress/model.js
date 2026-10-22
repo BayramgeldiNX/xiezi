@@ -5,6 +5,9 @@
 //   d:<word>  writing a word in Dictation
 //   f:<word>  a flashcard answer
 //   t:<char>  a tone-quiz answer
+//   l:<word>  listening: heard the word, picked it / its meaning   (ls:<word> = its example sentence)
+//   q:<word>  vocabulary quizzes and match pairs
+//   s:<word>  speaking the word                                     (s:<word>#ex = its example sentence)
 // Each device keeps its own stat per item and only ever writes its own, so devices
 // can sync without overwriting each other; the totals are combined when read.
 
@@ -58,14 +61,16 @@ export function wordStatus(chars, get) {
 // How much a word needs review: 0 = fine, higher = weaker. null = never practiced.
 export function weakness(word, chars, get) {
   const d = get("d:" + word), f = get("f:" + word);
+  const extra = ["l:", "q:", "s:"].map((k) => get(k + word)).filter((s) => s?.n);
   const ws = chars.map((c) => get("w:" + c)).filter((s) => s?.n);
-  if (!d?.n && !f?.n && !ws.length) return null;
+  if (!d?.n && !f?.n && !ws.length && !extra.length) return null;
   let score = 0;
   if (d?.n) score += ((d.n - d.ok) / d.n) * 3 + (d.lastOk ? 0 : 2);
   if (f?.n) score += (f.miss / f.n) * 2 + (f.lastOk ? 0 : 1.5);
   for (const w of ws) score += Math.min(3, w.miss / w.n) + (w.lastOk ? 0 : 1);
+  for (const s of extra) score += ((s.n - s.ok) / s.n) + (s.lastOk ? 0 : 1);
   // Old results count a little more: practice fades.
-  const last = Math.max(d?.last || 0, f?.last || 0, ...ws.map((s) => s.last));
+  const last = Math.max(d?.last || 0, f?.last || 0, ...ws.map((s) => s.last), ...extra.map((s) => s.last));
   const days = (Date.now() - last) / 864e5;
   if (days > 3) score += Math.min(2, days / 7);
   return Math.round(score * 100) / 100;
@@ -77,6 +82,9 @@ export function weakReasons(word, chars, get) {
   const d = get("d:" + word), f = get("f:" + word);
   if (d?.n && !d.lastOk) out.push("missed in dictation");
   if (f?.n && !f.lastOk) out.push("flashcard “again”");
+  if (get("l:" + word)?.n && !get("l:" + word).lastOk) out.push("missed in listening");
+  if (get("q:" + word)?.n && !get("q:" + word).lastOk) out.push("missed in a quiz");
+  if (get("s:" + word)?.n && !get("s:" + word).lastOk) out.push("not yet in speaking");
   const bad = chars.filter((c) => { const s = get("w:" + c); return s?.n && !s.lastOk; });
   if (bad.length) out.push(`mistakes writing ${bad.join("")}`);
   return out;

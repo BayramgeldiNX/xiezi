@@ -2,6 +2,7 @@
 import { $, $$, shuffle, esc } from "../lib/util.js";
 import { syllables, tonePy, stripTone, addTone } from "../lib/pinyin.js";
 import { say, sayBtns } from "../lib/speech.js";
+import { icon } from "../lib/icons.js";
 import { CHARS, TONE_SETS } from "../data/index.js";
 import { app } from "../app.js";
 import * as progress from "../progress/store.js";
@@ -13,7 +14,7 @@ const shape = (t, cls = "") => `<svg class="tone-shape ${cls}" viewBox="0 0 44 2
 function toneQuestions(source) {
   if (source === "lesson") {
     const seen = new Set(), qs = [];
-    app.L().words.forEach((w) => [...w.w].forEach((c) => {
+    tOpts.words.forEach((w) => [...w.w].forEach((c) => {
       const py = CHARS[c]?.py;
       if (!py || seen.has(c)) return;
       const tone = syllables(py)[0][1];
@@ -29,42 +30,47 @@ function toneQuestions(source) {
 }
 
 let tq = null;
+let tOpts = {};
 
-export function tonesIntro() {
+// opts: { host, words, label, lesson, back }; {} = the open lesson's Tones tab; no argument = same set again.
+export function tonesIntro(opts) {
   tq = null;
-  $("#tab-tones").innerHTML = `<div class="panel">
+  if (opts) tOpts = { host: "#tab-tones", words: app.L().words, label: `${app.L().cn} characters`, lesson: app.L().n, ...opts };
+  $(tOpts.host).innerHTML = `<div class="panel">
     <span class="lbl">声调 shēngdiào · Tone quiz</span>
-    <p style="margin:0">Listen to one syllable, then tap its tone. 10 questions.</p>
+    <p>Listen to one syllable, then tap its tone. 10 questions.</p>
     <div class="legend">${[1, 2, 3, 4].map((t) => `<span class="t${t}">${shape(t)} ${TONE_NAMES[t]}</span>`).join("")}</div>
     <div class="sets">
-      <button class="btn primary big" type="button" data-src="lesson">▶ ${app.L().cn} characters</button>
-      <button class="btn big" type="button" data-src="classic">▶ mā má mǎ mà practice</button>
+      <button class="btn primary big" type="button" data-src="lesson">${tOpts.label}</button>
+      <button class="btn big" type="button" data-src="classic">mā má mǎ mà practice</button>
     </div>
-    <p class="note">Turn your sound on. This quiz needs your device's Chinese voice. Keys: 1–4 pick a tone, space plays again.</p>
+    <p class="note">Turn your sound on. Keys: 1–4 pick a tone, space plays again.</p>
+    ${tOpts.back ? `<button class="btn ghost" type="button" id="toneBack">Back</button>` : ""}
   </div>`;
-  $$("[data-src]", $("#tab-tones")).forEach((b) => b.addEventListener("click", () => {
+  $("#toneBack")?.addEventListener("click", tOpts.back);
+  $$("[data-src]", $(tOpts.host)).forEach((b) => b.addEventListener("click", () => {
     tq = { qs: toneQuestions(b.dataset.src), pos: 0, right: 0, missed: [], src: b.dataset.src };
     toneAsk();
   }));
 }
 
 function toneAsk() {
-  const host = $("#tab-tones");
+  const host = $(tOpts.host);
   if (tq.pos >= tq.qs.length) return toneEnd();
   const q = tq.qs[tq.pos], total = tq.qs.length;
   host.innerHTML = `<div class="panel">
-    <div class="progress">Question ${tq.pos + 1} of ${total} · ✓ ${tq.right} right</div>
+    <div class="progress">Question ${tq.pos + 1} of ${total} · ${tq.right} right</div>
     <div class="bar"><i style="width:${(tq.pos / total) * 100}%"></i></div>
     <div class="controls">
-      <button class="btn primary big" type="button" data-say="${esc(q.say)}" id="toneListen">🔊 Listen</button>
-      <button class="btn big" type="button" data-say="${esc(q.say)}" data-slow>🐢 Slow</button>
+      <button class="btn primary big" type="button" data-say="${esc(q.say)}" id="toneListen">${icon("speaker")} Listen</button>
+      <button class="btn big" type="button" data-say="${esc(q.say)}" data-slow>${icon("slow")} Slow</button>
     </div>
     <div class="tone-opts">${[1, 2, 3, 4].map((t) => `<button class="tone-opt" type="button" data-t="${t}">
       <b class="t${t}">${addTone(q.plain, t)}</b>${shape(t, "t" + t)}
       <small>${TONE_NAMES[t].split(" · ")[0]}</small></button>`).join("")}</div>
     <div class="status" id="toneStatus" aria-live="polite">Which tone do you hear?</div>
     <div class="answer" id="toneAnswer" hidden></div>
-    <button class="btn primary" type="button" id="toneNext" hidden>${tq.pos + 1 >= total ? "See results ▶" : "Next ▶"}</button>
+    <button class="btn primary" type="button" id="toneNext" hidden>${tq.pos + 1 >= total ? "See results" : "Next"}</button>
   </div>`;
   $$(".tone-opt", host).forEach((b) => b.addEventListener("click", () => {
     const t = +b.dataset.t, ok = t === q.tone;
@@ -88,23 +94,23 @@ function toneAsk() {
 
 function toneEnd() {
   const total = tq.qs.length;
-  progress.addSession({ type: "tones", lesson: app.L().n, set: tq.src, score: tq.right, total, missed: tq.missed.map((q) => q.hz) });
-  $("#tab-tones").innerHTML = `<div class="panel">
+  progress.addSession({ type: "tones", lesson: tOpts.lesson ?? 0, set: tq.src, score: tq.right, total, missed: tq.missed.map((q) => q.hz) });
+  $(tOpts.host).innerHTML = `<div class="panel">
     <span class="lbl">Results</span>
     <div class="score">${tq.right} / ${total} right</div>
-    ${tq.missed.length ? `<p style="margin:0">Listen to these again:</p><div class="result-list">${tq.missed.map((q) => `<span>${q.hz} <span class="py">${tonePy(addTone(q.plain, q.tone))}</span> ${sayBtns(q.say, q.plain, true)}</span>`).join("")}</div>`
-      : `<p style="margin:0">全对！Quán duì! Perfect ears!</p>`}
-    <div class="controls"><button class="btn primary big" type="button" id="toneAgain">↺ Play again</button><button class="btn big" type="button" id="toneMenu">Choose a set</button></div>
+    ${tq.missed.length ? `<p>Listen to these again:</p><div class="result-list">${tq.missed.map((q) => `<span>${q.hz} <span class="py">${tonePy(addTone(q.plain, q.tone))}</span> ${sayBtns(q.say, q.plain, true)}</span>`).join("")}</div>`
+      : `<p>全对！Quán duì! Perfect ears!</p>`}
+    <div class="controls"><button class="btn primary big" type="button" id="toneAgain">${icon("replay")} Play again</button><button class="btn big" type="button" id="toneMenu">Choose a set</button></div>
   </div>`;
   const src = tq.src;
   $("#toneAgain").addEventListener("click", () => { tq = { qs: toneQuestions(src), pos: 0, right: 0, missed: [], src }; toneAsk(); });
-  $("#toneMenu").addEventListener("click", tonesIntro);
+  $("#toneMenu").addEventListener("click", () => tonesIntro());
 }
 
 // Keyboard: 1–4 answer, space replays, enter goes on.
 export function tonesKey(e) {
   if (!tq || tq.pos >= tq.qs.length) return false;
-  const host = $("#tab-tones");
+  const host = $(tOpts.host);
   if (/^[1-4]$/.test(e.key)) { const b = $(`.tone-opt[data-t="${e.key}"]`, host); if (b && !b.disabled) b.click(); return true; }
   if (e.key === " ") { $("#toneListen")?.click(); return true; }
   if (e.key === "Enter" && !$("#toneNext").hidden) { $("#toneNext").click(); return true; }
