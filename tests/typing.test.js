@@ -32,11 +32,11 @@ describe("typing pinyin with tone numbers", () => {
     for (const t of ["lv4", "lü4", "lu:4"]) expect(checkPinyin("lǜ", t).ok, t).toBe(true);
   });
   it("finds a wrong tone but right spelling", () => {
-    const r = checkPinyin("nǐ hǎo", "ni2 hao3");
+    const r = checkPinyin("nǐ hǎo", "ni4 hao3");
     expect(r.ok).toBe(false);
     expect(r.spellingOk).toBe(true);
     expect(r.syllables.map((s) => s.toneOk)).toEqual([false, true]);
-    expect(r.syllables[0].gotTone).toBe(2);
+    expect(r.syllables[0].gotTone).toBe(4);
   });
   it("accepts the spoken tone change 3+3 → 2+3, and notes it", () => {
     const r = checkPinyin("nǐ hǎo", "ni2 hao3");
