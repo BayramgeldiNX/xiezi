@@ -60,7 +60,25 @@
         </span>
         <span class="chev" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></span>
       </button>
+      <button class="hub-card wide" type="button" id="openTyping">
+        <span class="seal" aria-hidden="true">键</span>
+        <span class="hub-txt">
+          <b>Typing<span class="hub-cn">打字</span></b>
+          <span class="hub-sub">Type the Chinese, or the pinyin with tone numbers</span>
+          <span class="lp-txt" id="typingMeta"></span>
+        </span>
+        <span class="chev" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></span>
+      </button>
     </nav>
+  </section>
+
+  <!-- TYPING -->
+  <section id="typingView" class="page" hidden>
+    <div class="topbar">
+      <button class="back" type="button" data-back-to="#/" aria-label="Home"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <div><span class="eyebrow">键 · 打字</span><h2>Typing</h2></div>
+    </div>
+    <div id="typingBody" class="inner"></div>
   </section>
 
   <!-- BOOKS -->

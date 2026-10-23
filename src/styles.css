@@ -394,6 +394,25 @@ details summary { cursor: pointer; color: var(--muted); }
 .practice-strip .lbl { margin-right: 4px; }
 .mini-seal { font-family: var(--display); font-size: 1.05rem; color: var(--gold); }
 
+/* ---------- Typing ---------- */
+.type-in { width: 100%; font: inherit; font-family: var(--display); font-size: 1.6rem; padding: 12px 16px; border-radius: 14px; border: 1px solid var(--line2); background: var(--card2); color: var(--ink); }
+.type-in:focus { outline: 2px solid var(--jade); outline-offset: 1px; }
+.type-in[lang="en"] { font-family: var(--body); font-size: 1.35rem; letter-spacing: .02em; }
+.type-in[readonly] { opacity: .8; }
+.ty-feedback { display: grid; gap: 8px; width: 100%; }
+.ty-feedback p { margin: 0; }
+.ty-chars { display: flex; flex-wrap: wrap; gap: 6px; }
+.ty-chars > span { font-family: var(--display); font-size: 1.5rem; min-width: 1.8em; text-align: center; padding: 2px 8px; border-radius: 10px; border: 1px solid var(--line2); }
+.ty-chars .ok { color: var(--jade); border-color: var(--jade); }
+.ty-chars .bad { color: var(--cinnabar); border-color: var(--cinnabar); }
+.ty-syl { display: grid; justify-items: center; font-family: var(--body) !important; font-size: 1.1rem !important; }
+.ty-syl small { font-size: .7rem; font-weight: 700; }
+.tone-legend { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.tone-legend li { display: flex; gap: 12px; align-items: baseline; }
+.tone-legend b { font-size: 1.3rem; min-width: 1em; }
+details.panel summary { cursor: pointer; }
+details.panel p { margin: 0; font-size: .92rem; }
+
 /* ---------- Account sheet ---------- */
 dialog.sheet { width: min(100% - 32px, 460px); max-height: calc(100dvh - 32px - var(--safe-t) - var(--safe-b)); border: 1px solid var(--line2); border-radius: 20px; padding: 0; background: var(--card); color: var(--ink); }
 dialog.sheet::backdrop { background: rgb(0 0 0 / .5); }

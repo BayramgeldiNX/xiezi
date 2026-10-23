@@ -16,6 +16,7 @@ import { cardsKey } from "./views/cards.js";
 import { tonesKey } from "./views/tones.js";
 import { openPractice, runMode, SKILLS } from "./views/practice.js";
 import { openReview, dueCount } from "./views/bookreview.js";
+import { openTyping, typingDue } from "./views/typing.js";
 import { hideGloss } from "./views/reading.js";
 import { initAccountChip } from "./views/account.js";
 import { initSync } from "./sync/sync.js";
@@ -27,11 +28,12 @@ const OLD_TABS = { dict: "write", review: "write", cards: "words", tones: "liste
 
 /* ---------- Pages ----------
    #/                           home
+   #/typing                     typing practice
    #/books                      all books
    #/book/<book>[/review]       one book: its lessons, or its review
    #/lesson/<book>/<n>/<tab>    a lesson (tabs: write, listen, speak, read, words)
    Each page has its own address, so the Android / browser back gesture steps back one page. */
-const PAGES = ["home", "booksView", "bookView", "lessonView"];
+const PAGES = ["home", "typingView", "booksView", "bookView", "lessonView"];
 let current = "home";
 function showPage(id) {
   clearWriters();
@@ -48,6 +50,7 @@ const pageOf = (url) => new URL(url).hash || "#/";
 function route() {
   const [, page, a, b, c] = location.hash.split("/");
   if (page === "books") return showBooks();
+  if (page === "typing") { showPage("typingView"); document.title = "Typing · 写字本"; return openTyping(); }
   if (page === "book" && BOOKS.some((x) => x.id === a)) return showBook(a, b === "review" ? "review" : "lessons");
   if (page === "lesson") {
     const li = lessonIndex(`${a}/${b}`);
@@ -71,7 +74,7 @@ function back(to) {
   else go(to);
 }
 const upFrom = () => ({
-  booksView: "#/", bookView: "#/books",
+  booksView: "#/", typingView: "#/", bookView: "#/books",
   lessonView: `#/book/${app.L()?.book}`,
 })[current];
 
@@ -129,6 +132,8 @@ function renderHub() {
   const due = BOOKS.reduce((n, b) => n + dueCount(b), 0);
   $("#hubBar").style.width = `${pct(p.mastered, p.chars)}%`;
   $("#hubBooksSub").textContent = BOOKS.map((b) => `${b.title} · ${b.part}`).join(" / ");
+  const tdue = typingDue();
+  $("#typingMeta").textContent = tdue ? `${tdue} to review` : "";
   $("#hubMeta").textContent = `${LESSONS.length} lesson${LESSONS.length > 1 ? "s" : ""} · ${p.mastered}/${p.chars} characters mastered${due ? ` · ${due} to review` : ""}`;
 }
 
@@ -252,6 +257,7 @@ $$(".tab").forEach((b) => b.addEventListener("click", () => showTab(b.dataset.ta
 $("#backBtn").addEventListener("click", () => back(upFrom()));
 $$("[data-back-to]").forEach((b) => b.addEventListener("click", () => back(b.dataset.backTo)));
 $("#openBooks").addEventListener("click", () => go("#/books"));
+$("#openTyping").addEventListener("click", () => go("#/typing"));
 $("#wordNav").addEventListener("click", (e) => {
   const g = e.target.closest("[data-go]");
   if (g) { renderWord(app.word + +g.dataset.go); scrollTo({ top: 0, behavior: "smooth" }); }

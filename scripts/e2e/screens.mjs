@@ -111,8 +111,11 @@ for (const [tab, modes] of Object.entries(TAB_MODES)) {
 }
 STEPS.push(["review-seeded", "#/book/kouyu-rumen/review", SEED]);
 STEPS.push(["review-session", "#/book/kouyu-rumen/review", SEED + FINISH_REVIEW]);
+STEPS.push(["typing", "#/typing"]);
+STEPS.push(["typing-hz", "#/typing", `document.querySelector('[data-opt=mode][data-v=hz]').click(); ${W} document.querySelector('#tyStart').click(); ${W} document.querySelector('#tyIn').value = '我'; document.querySelector('#tyCheck').click(); ${W}`]);
+STEPS.push(["typing-py", "#/typing", `document.querySelector('[data-opt=mode][data-v=py]').click(); ${W} document.querySelector('#tyStart').click(); ${W} document.querySelector('#tyIn').value = 'ni2 hao3'; document.querySelector('#tyCheck').click(); ${W}`]);
 STEPS.push(["settings", "", `document.querySelector('#accountChip').click(); ${W}`]);
-const SHOTS = ["home", "book", "review-seeded", "review-session", "lesson-write", "tab-listen", "read-texts", "words-match", "settings"];
+const SHOTS = ["typing", "typing-hz", "typing-py", "home", "book", "review-seeded", "review-session", "lesson-write", "tab-listen", "read-texts", "words-match", "settings"];
 for (const s of SIZES) {
   await send("Emulation.setDeviceMetricsOverride", { width: s.w, height: s.h, deviceScaleFactor: s.dpr, mobile: s.mobile });
   await send("Emulation.setTouchEmulationEnabled", { enabled: s.mobile });
