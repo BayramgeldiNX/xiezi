@@ -79,7 +79,7 @@ function renderSheet() {
       <label class="btn" for="importFile">Load backup</label>
       <input type="file" id="importFile" accept="application/json,.json" hidden>
     </div>
-    <p class="note">This device: <code>${progress.deviceId()}</code></p>`;
+    <p class="note">This device: <code>${progress.deviceId()}</code> · Version: <code>${__BUILD__}</code></p>`;
   body.querySelectorAll("[data-theme-set]").forEach((b) => b.addEventListener("click", () => {
     setTheme(b.dataset.themeSet);
     renderSheet();

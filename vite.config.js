@@ -6,6 +6,8 @@ const base = process.env.BASE || "/xiezi/";
 
 export default defineConfig({
   base,
+  // Shown in Settings so you can see which version a device runs.
+  define: { __BUILD__: JSON.stringify(new Date().toISOString().slice(0, 16).replace("T", " ") + " UTC") },
   build: { target: "es2020", chunkSizeWarningLimit: 900 },
   plugins: [
     VitePWA({
