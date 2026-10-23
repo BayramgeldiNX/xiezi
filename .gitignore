@@ -6,3 +6,4 @@ fonts-src/
 .firebase/
 .env*.local
 data-src/
+screenshots-*/
