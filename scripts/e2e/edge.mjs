@@ -104,8 +104,10 @@ try {
   const key = (k) => send("Input.dispatchKeyEvent", { type: "keyDown", key: k, code: k === " " ? "Space" : k.length === 1 ? "Key" + k.toUpperCase() : k, windowsVirtualKeyCode: { ArrowRight: 39, ArrowLeft: 37, Escape: 27, " ": 32, "]": 221, "[": 219 }[k] || k.toUpperCase().charCodeAt(0) });
   await key("ArrowRight"); await sleep(300); await key("ArrowRight"); await sleep(300);
   check("→ steps through strokes", /Stroke 2 of/.test(await js(`return document.querySelector('.char .status').textContent`) || ""));
+  const wordBefore = await js(`return [...document.querySelectorAll('#words button')].findIndex(b => b.getAttribute('aria-pressed') === 'true')`);
   await key("]"); await sleep(500);
-  check("] goes to the next word", (await js(`return document.querySelector('#words [aria-pressed=true]')?.textContent`))?.startsWith("您"));
+  const pressed = () => js(`return [...document.querySelectorAll('#words button')].findIndex(b => b.getAttribute('aria-pressed') === 'true')`);
+  check("] goes to the next word", (await pressed()) === wordBefore + 1, `word ${wordBefore} → ${await pressed()}`);
   await key("Escape"); await sleep(700);
   check("Esc goes back to the book", (await page()) === "bookView");
   await key("Escape"); await sleep(700);
@@ -126,8 +128,10 @@ try {
 
   /* 7. Offline: works with no internet after the first visit */
   where = "offline";
-  await go("", 6000); // let the offline copy finish saving
-  const ready = await js(`const r = await navigator.serviceWorker.getRegistration(); return !!r?.active;`);
+  await go("", 2000);
+  // The offline copy (~2.4 MB with all recordings) downloads in the background on the first visit.
+  let ready = false;
+  for (let i = 0; i < 120 && !ready; i++) { await sleep(1000); ready = await js(`const r = await navigator.serviceWorker.getRegistration(); return !!r?.active;`) === true; }
   check("offline copy installed", ready);
   await send("Network.emulateNetworkConditions", { offline: true, latency: 0, downloadThroughput: 0, uploadThroughput: 0 });
   await send("Network.setCacheDisabled", { cacheDisabled: true });
@@ -135,7 +139,7 @@ try {
   check("offline: home opens", (await page()) === "home");
   await go("#/lesson/kouyu-rumen/1/write", 2000);
   check("offline: lesson opens with the writing grid", !!(await js(`return document.querySelector('#chars .hw svg')`)));
-  const anyAudio = await js(`const res = await caches.keys().then(k => caches.open(k[0])).then(c => c.keys()); const a = res.find(r => r.url.includes('/audio/')); if (!a) return 'none cached'; const r = await fetch(a.url); return r.ok ? 'ok' : 'status ' + r.status;`);
+  const anyAudio = await js(`const res = await caches.keys().then(k => caches.open(k[0])).then(c => c.keys()); const a = res.find(r => r.url.includes('/audio/')); if (!a) return 'none cached'; const r = await fetch(a.url.split('?')[0]); return r.ok ? 'ok' : 'status ' + r.status;`);
   check("offline: recordings play from the saved copy", anyAudio === "ok", anyAudio);
   await go("#/typing", 1500);
   check("offline: typing works", (await page()) === "typingView");

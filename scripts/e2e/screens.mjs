@@ -115,6 +115,16 @@ STEPS.push(["typing", "#/typing"]);
 STEPS.push(["typing-hz", "#/typing", `document.querySelector('[data-opt=mode][data-v=hz]').click(); ${W} document.querySelector('#tyStart').click(); ${W} document.querySelector('#tyIn').value = '我'; document.querySelector('#tyCheck').click(); ${W}`]);
 STEPS.push(["typing-py", "#/typing", `document.querySelector('[data-opt=mode][data-v=py]').click(); ${W} document.querySelector('#tyStart').click(); ${W} document.querySelector('#tyIn').value = 'ni2 hao3'; document.querySelector('#tyCheck').click(); ${W}`]);
 STEPS.push(["settings", "", `document.querySelector('#accountChip').click(); ${W}`]);
+// On the published site the source modules aren't available, so sample results are written straight into
+// storage from a page of the same site where the app isn't running (it would overwrite them on unload).
+const LIVE = !/localhost|127\.0\.0\.1/.test(base);
+const LIVE_SEED = `
+  const k = 'xz-progress-v1', p = JSON.parse(localStorage.getItem(k) || '{}'), old = Date.now() - 2 * 864e5, dev = 'dev-screens-seed';
+  p.device ||= 'dev-screens'; p.mine ||= {}; p.others ||= {}; p.sessions ||= [];
+  const put = (key, ok) => { (p.others[key] ||= {})[dev] = { n: 1, ok: ok ? 1 : 0, miss: ok ? 0 : 1, last: old, lastOk: ok, streak: ok ? 1 : 0 }; };
+  for (const w of ['你好', '谢谢', '老师', '再见']) for (const pre of ['q:', 'l:', 'd:', 's:']) put(pre + w, true);
+  put('o:老师，您好！', false);
+  localStorage.setItem(k, JSON.stringify(p)); return 1;`;
 const SHOTS = ["typing", "typing-hz", "typing-py", "home", "book", "review-seeded", "review-session", "lesson-write", "tab-listen", "read-texts", "words-match", "settings"];
 for (const s of SIZES) {
   await send("Emulation.setDeviceMetricsOverride", { width: s.w, height: s.h, deviceScaleFactor: s.dpr, mobile: s.mobile });
@@ -125,7 +135,12 @@ for (const s of SIZES) {
     await sleep(250);
     await send("Page.navigate", { url: base + hash });
     await sleep(name === "home" ? 2500 : 900);
-    if (act) await run(act);
+    if (LIVE && name.startsWith("review-") && name !== "review-empty") {
+      await send("Page.navigate", { url: base + "manifest.webmanifest" }); await sleep(600);
+      await run(LIVE_SEED);
+      await send("Page.navigate", { url: base + hash }); await sleep(1500);
+      if (name === "review-session") await run(FINISH_REVIEW);
+    } else if (act) await run(act);
     const found = await run(CHECK);
     for (const f of found || []) problems.push(`[${where}] ${f}`);
     if (SHOTS.includes(name)) {

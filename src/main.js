@@ -161,7 +161,7 @@ function showBook(id, section = "lessons") {
   openBookId = id;
   const book = BOOKS.find((b) => b.id === id);
   document.title = `${book.title} · 写字本`;
-  $("#bookEyebrow").textContent = `${book.part} · ${book.en || ""}`;
+  $("#bookEyebrow").textContent = `书 · ${book.part}`;
   $("#bookTitle").textContent = book.title;
   const due = dueCount(book);
   $("#reviewDue").textContent = due;

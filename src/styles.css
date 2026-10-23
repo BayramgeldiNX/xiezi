@@ -393,6 +393,13 @@ details summary { cursor: pointer; color: var(--muted); }
 .practice-strip { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
 .practice-strip .lbl { margin-right: 4px; }
 .mini-seal { font-family: var(--display); font-size: 1.05rem; color: var(--gold); }
+/* Phones: the three writing exercises as one even row. */
+@media (max-width: 600px) {
+  .practice-strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+  .practice-strip .lbl { grid-column: 1 / -1; }
+  .practice-strip .btn { flex-direction: column; gap: 0; padding: 8px 4px; font-size: .8rem; line-height: 1.2; text-align: center; }
+  .practice-strip .mini-seal { font-size: 1.2rem; }
+}
 
 /* ---------- Typing ---------- */
 .type-in { width: 100%; font: inherit; font-family: var(--display); font-size: 1.6rem; padding: 12px 16px; border-radius: 14px; border: 1px solid var(--line2); background: var(--card2); color: var(--ink); }

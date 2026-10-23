@@ -144,8 +144,13 @@ function run(items) {
       if (hz) {
         const r = checkHanzi(it.hz, input.value);
         if (r.ok) { fb.innerHTML = `<p class="status">${tries === 1 && !hints ? "太好了！Perfect!" : "对了！Correct."}</p>${answerLine()}`; return finish(true); }
-        fb.innerHTML = `<p class="status" style="color:var(--cinnabar)">Not quite. Wrong characters are marked:</p>
-          <div class="ty-chars">${r.chars.map((c) => `<span class="${c.ok ? "ok" : "bad"}">${c.ok ? c.c : "？"}</span>`).join("")}</div>`;
+        // Your own characters: green where right, red where wrong, ＿ where one is missing, extra ones red.
+        const typed = [...r.typed];
+        const cells = r.chars.map((c, i) => `<span class="${c.ok ? "ok" : "bad"}">${typed[i] ? esc(typed[i]) : "＿"}</span>`)
+          .concat(typed.slice(r.chars.length).map((t) => `<span class="bad">${esc(t)}</span>`));
+        const n = r.chars.length;
+        fb.innerHTML = `<p class="status" style="color:var(--cinnabar)">Not quite. ${typed.length < n ? `It has ${n} characters.` : typed.length > n ? `It has only ${n} character${n > 1 ? "s" : ""}.` : "Red ones are wrong:"}</p>
+          <div class="ty-chars">${cells.join("")}</div>`;
       } else {
         const r = checkPinyin(it.py, input.value);
         const chips = r.syllables.map((s) => `<span class="ty-syl ${s.spellOk && s.toneOk ? "ok" : "bad"}">
