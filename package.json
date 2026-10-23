@@ -13,6 +13,7 @@
     "dev:emulator": "vite --mode emulator --host 127.0.0.1 --port 5174 --strictPort",
     "test:sync": "node scripts/e2e/sync.mjs",
     "test:screens": "node scripts/e2e/screens.mjs",
+    "test:edge": "node scripts/e2e/edge.mjs",
     "sync:report": "node --use-env-proxy scripts/sync-report.mjs",
     "gen:data": "node scripts/gen-data.mjs",
     "gen:font": "python scripts/subset-font.py",

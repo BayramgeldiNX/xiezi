@@ -301,7 +301,8 @@ fsBtn.addEventListener("click", async () => {
 
 /* ---------- Resize / rotation: writers have a fixed pixel size, so redraw ---------- */
 function redraw() {
-  if (current === "lessonView" && app.tab === "write") renderWord(app.word);
+  // Write tab shows either stroke-order study or a writing exercise; redraw the one on screen.
+  if (current === "lessonView" && app.tab === "write" && !$("#writeStudy").hidden) renderWord(app.word);
   else dictRedraw();
 }
 const fsSync = () => {

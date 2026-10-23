@@ -110,7 +110,7 @@ function run(items) {
         : `<div class="${it.hz.length > 4 ? "prompt-big" : "big-hz"}" style="font-family:var(--display)">${it.hz}</div><div class="muted">${esc(it.en)}</div>`}
       <div class="controls"><button class="btn" type="button" id="tyListen">${icon("speaker")} Listen</button></div>
       <input class="type-in" id="tyIn" type="text" ${hz ? 'lang="zh-CN"' : 'lang="en" inputmode="text"'} autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
-        placeholder="${hz ? "Type in Chinese…" : "e.g. ni3 hao3"}" aria-label="Your answer">
+        placeholder="${hz ? "Type in Chinese…" : "pinyin + tone numbers"}" aria-label="Your answer">
       <div class="ty-feedback" id="tyFb" aria-live="polite"></div>
       <div class="controls">
         <button class="btn primary" type="button" id="tyCheck">${icon("check")} Check</button>

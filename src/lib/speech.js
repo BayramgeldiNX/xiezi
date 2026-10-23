@@ -55,6 +55,7 @@ export function say(text, slow) {
   const file = AUDIO[t];
   if (file) {
     return new Promise((resolve) => {
+      player.muted = false; // the unlock trick may still be muting the player on the very first tap
       player.src = `${import.meta.env.BASE_URL}audio/${file}.mp3`;
       player.playbackRate = slow ? 0.65 : 1;
       player.preservesPitch = true;
