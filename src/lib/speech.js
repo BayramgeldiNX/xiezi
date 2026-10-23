@@ -6,7 +6,10 @@ import AUDIO from "../data/audio.gen.json";
 import { setting } from "./settings.js";
 
 const clean = (text) => text.replace(/[AB]: /g, "").trim();
-export const hasRecording = (text) => !!AUDIO[clean(text)];
+// Recordings that arrive after sign-in (the private book texts): text → blob URL.
+const EXTRA = {};
+export const addRecordings = (map) => Object.assign(EXTRA, map);
+export const hasRecording = (text) => !!(AUDIO[clean(text)] || EXTRA[clean(text)]);
 
 // One shared player. Phones only let a page play sound after a tap, so it is "unlocked" on the
 // first touch; later plays (e.g. dictation saying the next word on its own) then work too.
@@ -54,10 +57,10 @@ export function say(text, slow) {
   stopSpeech();
   const token = ++playToken;
   const file = AUDIO[t];
-  if (file) {
+  if (file || EXTRA[t]) {
     return new Promise((resolve) => {
       player.muted = false; // the unlock trick may still be muting the player on the very first tap
-      player.src = `${import.meta.env.BASE_URL}audio/${file}.mp3`;
+      player.src = file ? `${import.meta.env.BASE_URL}audio/${file}.mp3` : EXTRA[t];
       player.playbackRate = slow ? setting("slowRate") : 1;
       player.preservesPitch = true;
       player.onended = () => resolve(true);

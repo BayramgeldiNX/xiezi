@@ -20,6 +20,9 @@
     "gen:audio": "python scripts/gen-audio.py",
     "gen:icons": "node scripts/gen-icons.mjs",
     "add-lesson": "node scripts/add-lesson.mjs",
+    "import-book": "node scripts/import-book.mjs",
+    "gen:private-audio": "python scripts/gen-private-audio.py",
+    "upload:private": "node --use-env-proxy scripts/upload-private.mjs",
     "check": "node scripts/check-data.mjs",
     "setup:firebase": "node scripts/setup-firebase.mjs"
   },

@@ -1,6 +1,6 @@
 // Pinyin helpers: split into syllables, color by tone, add/remove tone marks.
 export const TONED = { ā:"a1",á:"a2",ǎ:"a3",à:"a4",ē:"e1",é:"e2",ě:"e3",è:"e4",ī:"i1",í:"i2",ǐ:"i3",ì:"i4",ō:"o1",ó:"o2",ǒ:"o3",ò:"o4",ū:"u1",ú:"u2",ǔ:"u3",ù:"u4",ǖ:"v1",ǘ:"v2",ǚ:"v3",ǜ:"v4",ü:"v5" };
-const FINALS = ["iang","iong","uang","ueng","ang","eng","ing","ong","ian","iao","uai","uan","van","ai","ei","ao","ou","an","en","in","un","vn","ia","ie","iu","ua","uo","ui","ve","er","a","o","e","i","u","v"];
+const FINALS = ["iang","iong","uang","ueng","ang","eng","ing","ong","ian","iao","uai","uan","van","ai","ei","ao","ou","an","en","in","un","vn","ia","ie","iu","ua","uo","ui","ue","ve","er","a","o","e","i","u","v"];
 const INITIALS = ["zh","ch","sh","b","p","m","f","d","t","n","l","g","k","h","j","q","x","r","z","c","s","y","w"];
 
 // Split one pinyin word ("Huáichéng") into syllables, each with its tone (5 = neutral).
@@ -28,6 +28,8 @@ export function syllables(word) {
       break;
     }
     if (!len) len = 1;
+    // erhua: 哪儿 nǎr, 一点儿 yìdiǎnr — the r belongs to the syllable before it
+    else if (s[i + len] === "r" && !/[aeiouv]/.test(s[i + len + 1] || "") && !s.startsWith("er", i + len - 1)) len++;
     const part = chars.slice(i, i + len).join("");
     out.push([part, tones.slice(i, i + len).find((t) => t) || 5]);
     i += len;

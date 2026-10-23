@@ -35,6 +35,9 @@ def collect():
             texts.add(w["w"])
             if w.get("ex", {}).get("hz"):
                 texts.add(clean(w["ex"]["hz"]))
+        for g in data.get("grammar", []):
+            for d in g["drills"]:
+                texts.add(clean(d["q"].replace("___", d["options"][d["answer"]])))
         for r in data.get("readings", []):
             for line in r["lines"]:
                 texts.add(line["hz"])

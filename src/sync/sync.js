@@ -132,6 +132,29 @@ async function start(user) {
   stopFns.push(items, sess);
 }
 
+/* ---------- private book content ---------- */
+// Texts and grammar notes of a printed book's lesson, with their recordings. Only the owner's
+// account can read them (firestore.rules); returns { status: "ok" | "signed-out" | "none" | "error", ... }.
+export async function bookContent(book, n) {
+  if (!syncAvailable) return { status: "none" };
+  const { auth, db, F } = await load();
+  await auth.authStateReady();
+  if (!auth.currentUser) return { status: "signed-out" };
+  try {
+    const [t, a] = await Promise.all([
+      F.getDoc(F.doc(db, "books", book, "private", String(n))),
+      F.getDoc(F.doc(db, "books", book, "audio", String(n))).catch(() => null),
+    ]);
+    if (!t.exists()) return { status: "none" };
+    const audio = {};
+    for (const [k, v] of Object.entries(a?.data()?.a || {})) audio[k] = v.toUint8Array();
+    return { status: "ok", texts: JSON.parse(t.data().texts || "[]"), notes: JSON.parse(t.data().notes || "[]"), audio };
+  } catch (e) {
+    console.warn(e);
+    return { status: e?.code === "permission-denied" ? "none" : "error" };
+  }
+}
+
 /* ---------- account actions (return an error message or null) ---------- */
 async function run(fn) {
   try {

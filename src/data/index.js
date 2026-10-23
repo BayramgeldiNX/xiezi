@@ -42,7 +42,11 @@ export const DICT = (() => {
   return d;
 })();
 
-export const wordChars = (w) => [...new Set(w.w)].filter((c) => STROKE_DATA[c]);
+// Grammar drills (fill the blank) of the given lessons, each with a stable id for its schedule.
+export const grammarOf = (lessons) => lessons.flatMap((l) => (l.grammar || []).flatMap((g, gi) =>
+  g.drills.map((d, di) => ({ ...d, id: `${l.id}/${gi + 1}.${di + 1}`, point: g.point, rule: g.en, lesson: l.id }))));
+
+export const wordChars =(w) => [...new Set(w.w)].filter((c) => STROKE_DATA[c]);
 export const lessonChars = (lesson) => [...new Set(lesson.words.flatMap(wordChars))];
 
 // Every word of the given lessons, each tagged with its lesson (a word can appear in several lessons;

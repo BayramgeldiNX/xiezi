@@ -30,6 +30,8 @@ describe("typing pinyin with tone numbers", () => {
   });
   it("accepts v, ü and u: for ü", () => {
     for (const t of ["lv4", "lü4", "lu:4"]) expect(checkPinyin("lǜ", t).ok, t).toBe(true);
+    for (const t of ["yi4dian3r", "yi4dianr3"]) expect(checkPinyin("yìdiǎnr", t).ok, t).toBe(true);
+    expect(checkPinyin("xuésheng", "xue2sheng").ok).toBe(true);
   });
   it("finds a wrong tone but right spelling", () => {
     const r = checkPinyin("nǐ hǎo", "ni4 hao3");

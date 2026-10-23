@@ -1,0 +1,304 @@
+{
+  "n": 10,
+  "cn": "第十课",
+  "title": "我能坐这儿吗",
+  "en": "Can I sit here",
+  "words": [
+    {
+      "w": "桌子",
+      "py": "zhuōzi",
+      "en": "table; desk",
+      "ex": {
+        "hz": "桌子上有什么？",
+        "py": "Zhuōzi shang yǒu shénme?",
+        "en": "What's on the table?"
+      }
+    },
+    {
+      "w": "上",
+      "py": "shang",
+      "en": "on; above",
+      "ex": {
+        "hz": "书在桌子上。",
+        "py": "Shū zài zhuōzi shang.",
+        "en": "The book is on the desk."
+      }
+    },
+    {
+      "w": "电脑",
+      "py": "diànnǎo",
+      "en": "computer",
+      "ex": {
+        "hz": "桌子上有一个电脑。",
+        "py": "Zhuōzi shang yǒu yí ge diànnǎo.",
+        "en": "There's a computer on the desk."
+      }
+    },
+    {
+      "w": "和",
+      "py": "hé",
+      "en": "and",
+      "ex": {
+        "hz": "我和我朋友去商店。",
+        "py": "Wǒ hé wǒ péngyou qù shāngdiàn.",
+        "en": "My friend and I are going to the shop."
+      }
+    },
+    {
+      "w": "本",
+      "py": "běn",
+      "en": "(measure word for books)",
+      "ex": {
+        "hz": "我有三本书。",
+        "py": "Wǒ yǒu sān běn shū.",
+        "en": "I have three books."
+      }
+    },
+    {
+      "w": "里",
+      "py": "li",
+      "en": "in; inside",
+      "ex": {
+        "hz": "杯子里有茶。",
+        "py": "Bēizi li yǒu chá.",
+        "en": "There's tea in the cup."
+      }
+    },
+    {
+      "w": "前面",
+      "py": "qiánmiàn",
+      "en": "in front",
+      "ex": {
+        "hz": "学校前面有一个商店。",
+        "py": "Xuéxiào qiánmiàn yǒu yí ge shāngdiàn.",
+        "en": "There's a shop in front of the school."
+      }
+    },
+    {
+      "w": "后面",
+      "py": "hòumiàn",
+      "en": "behind; at the back",
+      "ex": {
+        "hz": "椅子在桌子后面。",
+        "py": "Yǐzi zài zhuōzi hòumiàn.",
+        "en": "The chair is behind the desk."
+      }
+    },
+    {
+      "w": "这儿",
+      "py": "zhèr",
+      "en": "here",
+      "ex": {
+        "hz": "你的书在这儿。",
+        "py": "Nǐ de shū zài zhèr.",
+        "en": "Your book is here."
+      }
+    },
+    {
+      "w": "没有",
+      "py": "méiyǒu",
+      "en": "not have; there isn't",
+      "ex": {
+        "hz": "这儿没有人。",
+        "py": "Zhèr méiyǒu rén.",
+        "en": "There's nobody here."
+      }
+    },
+    {
+      "w": "能",
+      "py": "néng",
+      "en": "can; may",
+      "ex": {
+        "hz": "我能坐这儿吗？",
+        "py": "Wǒ néng zuò zhèr ma?",
+        "en": "May I sit here?"
+      }
+    },
+    {
+      "w": "坐",
+      "py": "zuò",
+      "en": "to sit; to take (a vehicle)",
+      "ex": {
+        "hz": "请坐这儿。",
+        "py": "Qǐng zuò zhèr.",
+        "en": "Please sit here."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "我能坐这儿吗",
+      "py": "Wǒ néng zuò zhèr ma",
+      "en": "May I sit here",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "这儿有人吗？",
+          "py": "Zhèr yǒu rén ma?",
+          "en": "Is anyone sitting here?"
+        },
+        {
+          "who": "B",
+          "hz": "没有。",
+          "py": "Méiyǒu.",
+          "en": "No."
+        },
+        {
+          "who": "A",
+          "hz": "我能坐这儿吗？",
+          "py": "Wǒ néng zuò zhèr ma?",
+          "en": "May I sit here?"
+        },
+        {
+          "who": "B",
+          "hz": "请坐。",
+          "py": "Qǐng zuò.",
+          "en": "Please, have a seat."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Is anyone sitting there?",
+          "options": [
+            "No",
+            "Yes",
+            "We don't know",
+            "B's friend"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What does B say at the end?",
+          "options": [
+            "请坐。",
+            "没有。",
+            "谢谢。",
+            "再见。"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "桌子上有什么",
+      "py": "Zhuōzi shang yǒu shénme",
+      "en": "What's on the desk",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "桌子上有什么？",
+          "py": "Zhuōzi shang yǒu shénme?",
+          "en": "What's on the desk?"
+        },
+        {
+          "who": "B",
+          "hz": "桌子上有一个电脑和三本书。",
+          "py": "Zhuōzi shang yǒu yí ge diànnǎo hé sān běn shū.",
+          "en": "A computer and three books."
+        },
+        {
+          "who": "A",
+          "hz": "杯子在哪儿？",
+          "py": "Bēizi zài nǎr?",
+          "en": "Where's the cup?"
+        },
+        {
+          "who": "B",
+          "hz": "杯子在电脑后面，杯子里有茶。",
+          "py": "Bēizi zài diànnǎo hòumiàn, bēizi li yǒu chá.",
+          "en": "Behind the computer, with tea in it."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How many books are on the desk?",
+          "options": [
+            "3",
+            "1",
+            "2",
+            "None"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Where is the cup?",
+          "options": [
+            "Behind the computer",
+            "In front of the computer",
+            "Under the desk",
+            "On the chair"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "有 for places",
+      "en": "place + 有 + thing: there is …",
+      "drills": [
+        {
+          "q": "桌子上___一个电脑。",
+          "options": [
+            "有",
+            "在",
+            "是",
+            "能"
+          ],
+          "answer": 0,
+          "en": "There's a computer on the desk."
+        },
+        {
+          "q": "这儿___人吗？",
+          "options": [
+            "有",
+            "在",
+            "是",
+            "的"
+          ],
+          "answer": 0,
+          "en": "Is anyone sitting here?"
+        }
+      ]
+    },
+    {
+      "point": "能 + verb",
+      "en": "能: can / may (allowed, able)",
+      "drills": [
+        {
+          "q": "我___坐这儿吗？",
+          "options": [
+            "能",
+            "有",
+            "在",
+            "是"
+          ],
+          "answer": 0,
+          "en": "May I sit here?"
+        }
+      ]
+    },
+    {
+      "point": "Measure word 本",
+      "en": "本 counts books",
+      "drills": [
+        {
+          "q": "桌子上有三___书。",
+          "options": [
+            "本",
+            "个",
+            "口",
+            "块"
+          ],
+          "answer": 0,
+          "en": "There are three books on the desk."
+        }
+      ]
+    }
+  ]
+}

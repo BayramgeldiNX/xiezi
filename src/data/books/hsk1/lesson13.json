@@ -1,0 +1,284 @@
+{
+  "n": 13,
+  "cn": "第十三课",
+  "title": "他在学做中国菜呢",
+  "en": "He is learning to cook Chinese food",
+  "words": [
+    {
+      "w": "喂",
+      "py": "wèi",
+      "en": "hello (on the phone)",
+      "ex": {
+        "hz": "喂，你好！",
+        "py": "Wèi, nǐ hǎo!",
+        "en": "Hello? (on the phone)"
+      }
+    },
+    {
+      "w": "也",
+      "py": "yě",
+      "en": "also; too",
+      "ex": {
+        "hz": "我也是学生。",
+        "py": "Wǒ yě shì xuésheng.",
+        "en": "I'm a student too."
+      }
+    },
+    {
+      "w": "学习",
+      "py": "xuéxí",
+      "en": "to study",
+      "ex": {
+        "hz": "我在学习汉语。",
+        "py": "Wǒ zài xuéxí Hànyǔ.",
+        "en": "I'm studying Chinese."
+      }
+    },
+    {
+      "w": "上午",
+      "py": "shàngwǔ",
+      "en": "morning",
+      "ex": {
+        "hz": "上午我在学校。",
+        "py": "Shàngwǔ wǒ zài xuéxiào.",
+        "en": "I'm at school in the morning."
+      }
+    },
+    {
+      "w": "睡觉",
+      "py": "shuì jiào",
+      "en": "to sleep",
+      "ex": {
+        "hz": "他在睡觉呢。",
+        "py": "Tā zài shuì jiào ne.",
+        "en": "He's sleeping."
+      }
+    },
+    {
+      "w": "电视",
+      "py": "diànshì",
+      "en": "TV",
+      "ex": {
+        "hz": "爸爸在看电视。",
+        "py": "Bàba zài kàn diànshì.",
+        "en": "Dad is watching TV."
+      }
+    },
+    {
+      "w": "喜欢",
+      "py": "xǐhuan",
+      "en": "to like",
+      "ex": {
+        "hz": "我喜欢看电影。",
+        "py": "Wǒ xǐhuan kàn diànyǐng.",
+        "en": "I like watching movies."
+      }
+    },
+    {
+      "w": "给",
+      "py": "gěi",
+      "en": "to give; for; to",
+      "ex": {
+        "hz": "我给你打电话。",
+        "py": "Wǒ gěi nǐ dǎ diànhuà.",
+        "en": "I'll call you."
+      }
+    },
+    {
+      "w": "打电话",
+      "py": "dǎ diànhuà",
+      "en": "to make a phone call",
+      "ex": {
+        "hz": "妈妈在打电话。",
+        "py": "Māma zài dǎ diànhuà.",
+        "en": "Mom is on the phone."
+      }
+    },
+    {
+      "w": "吧",
+      "py": "ba",
+      "en": "(suggestion: let's …)",
+      "ex": {
+        "hz": "我们去吃饭吧。",
+        "py": "Wǒmen qù chī fàn ba.",
+        "en": "Let's go eat."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "你在做什么呢",
+      "py": "Nǐ zài zuò shénme ne",
+      "en": "What are you doing",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "喂，你在做什么呢？",
+          "py": "Wèi, nǐ zài zuò shénme ne?",
+          "en": "Hello, what are you doing?"
+        },
+        {
+          "who": "B",
+          "hz": "我在看电视呢。",
+          "py": "Wǒ zài kàn diànshì ne.",
+          "en": "I'm watching TV."
+        },
+        {
+          "who": "A",
+          "hz": "你爸爸呢？",
+          "py": "Nǐ bàba ne?",
+          "en": "And your dad?"
+        },
+        {
+          "who": "B",
+          "hz": "他在学做中国菜呢。",
+          "py": "Tā zài xué zuò Zhōngguó cài ne.",
+          "en": "He's learning to cook Chinese food."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What is B doing?",
+          "options": [
+            "Watching TV",
+            "Cooking",
+            "Sleeping",
+            "Studying"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What is B's dad doing?",
+          "options": [
+            "Learning to cook Chinese food",
+            "Watching TV",
+            "Sleeping",
+            "Working"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "我们去看电影吧",
+      "py": "Wǒmen qù kàn diànyǐng ba",
+      "en": "Let's see a movie",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你喜欢看电影吗？",
+          "py": "Nǐ xǐhuan kàn diànyǐng ma?",
+          "en": "Do you like movies?"
+        },
+        {
+          "who": "B",
+          "hz": "喜欢。我也喜欢看电视。",
+          "py": "Xǐhuan. Wǒ yě xǐhuan kàn diànshì.",
+          "en": "Yes. I like TV too."
+        },
+        {
+          "who": "A",
+          "hz": "明天上午我们去看电影吧。",
+          "py": "Míngtiān shàngwǔ wǒmen qù kàn diànyǐng ba.",
+          "en": "Let's see a movie tomorrow morning."
+        },
+        {
+          "who": "B",
+          "hz": "好，明天我给你打电话。",
+          "py": "Hǎo, míngtiān wǒ gěi nǐ dǎ diànhuà.",
+          "en": "Okay, I'll call you tomorrow."
+        }
+      ],
+      "questions": [
+        {
+          "q": "When will they see the movie?",
+          "options": [
+            "Tomorrow morning",
+            "Tomorrow afternoon",
+            "Today",
+            "Never"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What will B do tomorrow?",
+          "options": [
+            "Call A",
+            "Cook",
+            "Go to school",
+            "Sleep"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "在…呢",
+      "en": "在 + verb + 呢: doing it right now",
+      "drills": [
+        {
+          "q": "他___学做中国菜呢。",
+          "options": [
+            "在",
+            "是",
+            "有",
+            "去"
+          ],
+          "answer": 0,
+          "en": "He is learning to cook Chinese food."
+        },
+        {
+          "q": "我在看电视___。",
+          "options": [
+            "呢",
+            "吗",
+            "吧",
+            "的"
+          ],
+          "answer": 0,
+          "en": "I'm watching TV."
+        }
+      ]
+    },
+    {
+      "point": "吧",
+      "en": "Suggestion + 吧: let's …",
+      "drills": [
+        {
+          "q": "我们去吃饭___。",
+          "options": [
+            "吧",
+            "吗",
+            "呢",
+            "的"
+          ],
+          "answer": 0,
+          "en": "Let's go eat."
+        }
+      ]
+    },
+    {
+      "point": "给 + person + 打电话",
+      "en": "Calling someone",
+      "drills": [
+        {
+          "q": "明天我___你打电话。",
+          "options": [
+            "给",
+            "在",
+            "和",
+            "是"
+          ],
+          "answer": 0,
+          "en": "I'll call you tomorrow."
+        }
+      ]
+    }
+  ]
+}

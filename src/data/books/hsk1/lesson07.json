@@ -1,0 +1,298 @@
+{
+  "n": 7,
+  "cn": "第七课",
+  "title": "今天几号",
+  "en": "What's the date today",
+  "words": [
+    {
+      "w": "请",
+      "py": "qǐng",
+      "en": "please; to invite",
+      "ex": {
+        "hz": "请坐！",
+        "py": "Qǐng zuò!",
+        "en": "Please sit down!"
+      }
+    },
+    {
+      "w": "问",
+      "py": "wèn",
+      "en": "to ask",
+      "ex": {
+        "hz": "请问，今天几号？",
+        "py": "Qǐngwèn, jīntiān jǐ hào?",
+        "en": "Excuse me, what's the date today?"
+      }
+    },
+    {
+      "w": "今天",
+      "py": "jīntiān",
+      "en": "today",
+      "ex": {
+        "hz": "今天是星期一。",
+        "py": "Jīntiān shì xīngqīyī.",
+        "en": "Today is Monday."
+      }
+    },
+    {
+      "w": "号",
+      "py": "hào",
+      "en": "day of the month",
+      "ex": {
+        "hz": "今天九月一号。",
+        "py": "Jīntiān jiǔ yuè yī hào.",
+        "en": "Today is September 1st."
+      }
+    },
+    {
+      "w": "月",
+      "py": "yuè",
+      "en": "month",
+      "ex": {
+        "hz": "我十月去中国。",
+        "py": "Wǒ shí yuè qù Zhōngguó.",
+        "en": "I'm going to China in October."
+      }
+    },
+    {
+      "w": "星期",
+      "py": "xīngqī",
+      "en": "week",
+      "ex": {
+        "hz": "明天星期几？",
+        "py": "Míngtiān xīngqī jǐ?",
+        "en": "What day is tomorrow?"
+      }
+    },
+    {
+      "w": "昨天",
+      "py": "zuótiān",
+      "en": "yesterday",
+      "ex": {
+        "hz": "昨天是星期天。",
+        "py": "Zuótiān shì xīngqītiān.",
+        "en": "Yesterday was Sunday."
+      }
+    },
+    {
+      "w": "明天",
+      "py": "míngtiān",
+      "en": "tomorrow",
+      "ex": {
+        "hz": "明天我去学校。",
+        "py": "Míngtiān wǒ qù xuéxiào.",
+        "en": "Tomorrow I'm going to school."
+      }
+    },
+    {
+      "w": "去",
+      "py": "qù",
+      "en": "to go",
+      "ex": {
+        "hz": "你去哪儿？",
+        "py": "Nǐ qù nǎr?",
+        "en": "Where are you going?"
+      }
+    },
+    {
+      "w": "学校",
+      "py": "xuéxiào",
+      "en": "school",
+      "ex": {
+        "hz": "我们学校很大。",
+        "py": "Wǒmen xuéxiào hěn dà.",
+        "en": "Our school is big."
+      }
+    },
+    {
+      "w": "看",
+      "py": "kàn",
+      "en": "to look; to read; to watch",
+      "ex": {
+        "hz": "我去学校看书。",
+        "py": "Wǒ qù xuéxiào kàn shū.",
+        "en": "I'm going to school to read."
+      }
+    },
+    {
+      "w": "书",
+      "py": "shū",
+      "en": "book",
+      "ex": {
+        "hz": "这是谁的书？",
+        "py": "Zhè shì shéi de shū?",
+        "en": "Whose book is this?"
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "今天几号",
+      "py": "Jīntiān jǐ hào",
+      "en": "What's the date today",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "请问，今天几号？",
+          "py": "Qǐngwèn, jīntiān jǐ hào?",
+          "en": "Excuse me, what's the date today?"
+        },
+        {
+          "who": "B",
+          "hz": "今天十月八号。",
+          "py": "Jīntiān shí yuè bā hào.",
+          "en": "Today is October 8th."
+        },
+        {
+          "who": "A",
+          "hz": "今天星期几？",
+          "py": "Jīntiān xīngqī jǐ?",
+          "en": "What day is it today?"
+        },
+        {
+          "who": "B",
+          "hz": "今天星期三。",
+          "py": "Jīntiān xīngqīsān.",
+          "en": "It's Wednesday."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What's the date today?",
+          "options": [
+            "October 8",
+            "August 10",
+            "October 3",
+            "March 8"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What day of the week is it?",
+          "options": [
+            "Wednesday",
+            "Monday",
+            "Thursday",
+            "Sunday"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "明天你去哪儿",
+      "py": "Míngtiān nǐ qù nǎr",
+      "en": "Where are you going tomorrow",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "明天你去学校吗？",
+          "py": "Míngtiān nǐ qù xuéxiào ma?",
+          "en": "Are you going to school tomorrow?"
+        },
+        {
+          "who": "B",
+          "hz": "去。我去学校看书。",
+          "py": "Qù. Wǒ qù xuéxiào kàn shū.",
+          "en": "Yes. I'm going to school to read."
+        },
+        {
+          "who": "A",
+          "hz": "明天星期几？",
+          "py": "Míngtiān xīngqī jǐ?",
+          "en": "What day is tomorrow?"
+        },
+        {
+          "who": "B",
+          "hz": "明天星期六。",
+          "py": "Míngtiān xīngqīliù.",
+          "en": "Tomorrow is Saturday."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Why is B going to school?",
+          "options": [
+            "To read",
+            "To teach",
+            "To eat",
+            "To see a friend"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What day is tomorrow?",
+          "options": [
+            "Saturday",
+            "Sunday",
+            "Monday",
+            "Friday"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "Dates",
+      "en": "year → month 月 → day 号 → 星期",
+      "drills": [
+        {
+          "q": "今天九月一___。",
+          "options": [
+            "号",
+            "月",
+            "年",
+            "点"
+          ],
+          "answer": 0,
+          "en": "Today is September 1st."
+        },
+        {
+          "q": "明天星期___？",
+          "options": [
+            "几",
+            "什么",
+            "多少",
+            "谁"
+          ],
+          "answer": 0,
+          "en": "What day is tomorrow?"
+        }
+      ]
+    },
+    {
+      "point": "去 + place + verb",
+      "en": "Going somewhere to do something",
+      "drills": [
+        {
+          "q": "我___学校看书。",
+          "options": [
+            "去",
+            "是",
+            "有",
+            "会"
+          ],
+          "answer": 0,
+          "en": "I'm going to school to read."
+        },
+        {
+          "q": "明天我去商店___杯子。",
+          "options": [
+            "买",
+            "吃",
+            "喝",
+            "看"
+          ],
+          "answer": 0,
+          "en": "Tomorrow I'm going to the shop to buy a cup."
+        }
+      ]
+    }
+  ]
+}

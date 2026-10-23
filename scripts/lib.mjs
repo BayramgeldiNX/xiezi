@@ -9,7 +9,7 @@ export const DATA_DIR = path.join(ROOT, "src/data");
 export const BOOKS_DIR = path.join(DATA_DIR, "books");
 const require = createRequire(path.join(ROOT, "package.json"));
 
-export const readJSON = (p) => JSON.parse(fs.readFileSync(p, "utf8"));
+export const readJSON = (p) => JSON.parse(fs.readFileSync(p, "utf8").replace(/^﻿/, ""));
 export const writeJSON = (p, v, pretty = true) =>
   fs.writeFileSync(p, (pretty ? JSON.stringify(v, null, 2) : JSON.stringify(v)) + "\n");
 

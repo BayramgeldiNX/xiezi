@@ -228,7 +228,7 @@ function openLesson(li, wi = 0, tab = "write") {
 // The words and texts every exercise of this lesson uses.
 const lessonCtx = () => {
   const L = app.L();
-  return { words: L.words.map((w) => ({ ...w, lesson: L.id })), readings: READINGS.filter((r) => r.lesson === L.id), lesson: L.n };
+  return { words: L.words.map((w) => ({ ...w, lesson: L.id })), readings: READINGS.filter((r) => r.lesson === L.id), lesson: L.n, book: L.book };
 };
 
 function showTab(tab) {

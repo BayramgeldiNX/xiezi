@@ -5,5 +5,14 @@ service cloud.firestore {
     match /users/{uid}/{document=**} {
       allow read, write: if request.auth != null && request.auth.uid == uid;
     }
+    // Book texts and grammar notes from the printed books: only the owner's account may read them.
+    // They are uploaded from the owner's computer (scripts/upload-private.mjs); nobody writes from the app.
+    match /owners/{uid} {
+      allow read: if request.auth != null && request.auth.uid == uid;
+    }
+    match /books/{book}/{document=**} {
+      allow read: if request.auth != null
+        && exists(/databases/$(database)/documents/owners/$(request.auth.uid));
+    }
   }
 }

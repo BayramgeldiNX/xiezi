@@ -1,0 +1,315 @@
+{
+  "n": 6,
+  "cn": "第六课",
+  "title": "我会说汉语",
+  "en": "I can speak Chinese",
+  "words": [
+    {
+      "w": "会",
+      "py": "huì",
+      "en": "can; know how to",
+      "ex": {
+        "hz": "我会说汉语。",
+        "py": "Wǒ huì shuō Hànyǔ.",
+        "en": "I can speak Chinese."
+      }
+    },
+    {
+      "w": "说",
+      "py": "shuō",
+      "en": "to speak; to say",
+      "ex": {
+        "hz": "请你说汉语。",
+        "py": "Qǐng nǐ shuō Hànyǔ.",
+        "en": "Please speak Chinese."
+      }
+    },
+    {
+      "w": "妈妈",
+      "py": "māma",
+      "en": "mom",
+      "ex": {
+        "hz": "我妈妈会做中国菜。",
+        "py": "Wǒ māma huì zuò Zhōngguó cài.",
+        "en": "My mom can cook Chinese food."
+      }
+    },
+    {
+      "w": "菜",
+      "py": "cài",
+      "en": "dish; food; vegetable",
+      "ex": {
+        "hz": "中国菜很好吃。",
+        "py": "Zhōngguó cài hěn hǎochī.",
+        "en": "Chinese food is delicious."
+      }
+    },
+    {
+      "w": "很",
+      "py": "hěn",
+      "en": "very",
+      "ex": {
+        "hz": "汉语很好。",
+        "py": "Hànyǔ hěn hǎo.",
+        "en": "Chinese is great."
+      }
+    },
+    {
+      "w": "好吃",
+      "py": "hǎochī",
+      "en": "tasty",
+      "ex": {
+        "hz": "妈妈做的菜很好吃。",
+        "py": "Māma zuò de cài hěn hǎochī.",
+        "en": "The food Mom makes is tasty."
+      }
+    },
+    {
+      "w": "做",
+      "py": "zuò",
+      "en": "to do; to make",
+      "ex": {
+        "hz": "你会做中国菜吗？",
+        "py": "Nǐ huì zuò Zhōngguó cài ma?",
+        "en": "Can you cook Chinese food?"
+      }
+    },
+    {
+      "w": "写",
+      "py": "xiě",
+      "en": "to write",
+      "ex": {
+        "hz": "你会写汉字吗？",
+        "py": "Nǐ huì xiě Hànzì ma?",
+        "en": "Can you write Chinese characters?"
+      }
+    },
+    {
+      "w": "汉字",
+      "py": "Hànzì",
+      "en": "Chinese character",
+      "ex": {
+        "hz": "这个汉字怎么写？",
+        "py": "Zhège Hànzì zěnme xiě?",
+        "en": "How do you write this character?"
+      }
+    },
+    {
+      "w": "字",
+      "py": "zì",
+      "en": "character; word",
+      "ex": {
+        "hz": "这个字怎么读？",
+        "py": "Zhège zì zěnme dú?",
+        "en": "How do you read this character?"
+      }
+    },
+    {
+      "w": "怎么",
+      "py": "zěnme",
+      "en": "how",
+      "ex": {
+        "hz": "“谢谢”怎么说？",
+        "py": "“Xièxie” zěnme shuō?",
+        "en": "How do you say “thank you”?"
+      }
+    },
+    {
+      "w": "读",
+      "py": "dú",
+      "en": "to read (aloud)",
+      "ex": {
+        "hz": "请你读一读。",
+        "py": "Qǐng nǐ dú yi dú.",
+        "en": "Please read it."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "你会说汉语吗",
+      "py": "Nǐ huì shuō Hànyǔ ma",
+      "en": "Can you speak Chinese",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你会说汉语吗？",
+          "py": "Nǐ huì shuō Hànyǔ ma?",
+          "en": "Can you speak Chinese?"
+        },
+        {
+          "who": "B",
+          "hz": "我会说汉语。",
+          "py": "Wǒ huì shuō Hànyǔ.",
+          "en": "Yes, I can."
+        },
+        {
+          "who": "A",
+          "hz": "你会写汉字吗？",
+          "py": "Nǐ huì xiě Hànzì ma?",
+          "en": "Can you write characters?"
+        },
+        {
+          "who": "B",
+          "hz": "我会写，我会写“你好”。",
+          "py": "Wǒ huì xiě, wǒ huì xiě “nǐ hǎo”.",
+          "en": "Yes, I can write “nǐ hǎo”."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What can B do?",
+          "options": [
+            "Speak Chinese and write characters",
+            "Only speak",
+            "Only write",
+            "Neither"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which word can B write?",
+          "options": [
+            "你好",
+            "谢谢",
+            "再见",
+            "汉语"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "妈妈的菜",
+      "py": "Māma de cài",
+      "en": "Mom's cooking",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你妈妈会做中国菜吗？",
+          "py": "Nǐ māma huì zuò Zhōngguó cài ma?",
+          "en": "Can your mom cook Chinese food?"
+        },
+        {
+          "who": "B",
+          "hz": "会，她做的菜很好吃。",
+          "py": "Huì, tā zuò de cài hěn hǎochī.",
+          "en": "Yes, her cooking is delicious."
+        },
+        {
+          "who": "A",
+          "hz": "你呢？你会做吗？",
+          "py": "Nǐ ne? Nǐ huì zuò ma?",
+          "en": "And you? Can you?"
+        },
+        {
+          "who": "B",
+          "hz": "我不会。",
+          "py": "Wǒ bú huì.",
+          "en": "No, I can't."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Who can cook Chinese food?",
+          "options": [
+            "B's mom",
+            "B",
+            "A",
+            "Nobody"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How is the food B's mom makes?",
+          "options": [
+            "很好吃",
+            "不好吃",
+            "We don't know",
+            "Not Chinese"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "会 + verb",
+      "en": "会: can (a learned skill)",
+      "drills": [
+        {
+          "q": "我___说汉语。",
+          "options": [
+            "会",
+            "是",
+            "在",
+            "有"
+          ],
+          "answer": 0,
+          "en": "I can speak Chinese."
+        },
+        {
+          "q": "你___写汉字吗？",
+          "options": [
+            "会",
+            "是",
+            "叫",
+            "的"
+          ],
+          "answer": 0,
+          "en": "Can you write Chinese characters?"
+        }
+      ]
+    },
+    {
+      "point": "很 + adjective",
+      "en": "Adjectives normally take 很: 很好, 很好吃",
+      "drills": [
+        {
+          "q": "中国菜___好吃。",
+          "options": [
+            "很",
+            "是",
+            "会",
+            "吗"
+          ],
+          "answer": 0,
+          "en": "Chinese food is delicious."
+        }
+      ]
+    },
+    {
+      "point": "怎么 + verb",
+      "en": "怎么 asks how to do something",
+      "drills": [
+        {
+          "q": "这个字___读？",
+          "options": [
+            "怎么",
+            "什么",
+            "几",
+            "谁"
+          ],
+          "answer": 0,
+          "en": "How do you read this character?"
+        },
+        {
+          "q": "“谢谢”___说？",
+          "options": [
+            "怎么",
+            "什么",
+            "哪",
+            "谁"
+          ],
+          "answer": 0,
+          "en": "How do you say “thank you”?"
+        }
+      ]
+    }
+  ]
+}

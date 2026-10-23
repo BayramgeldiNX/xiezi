@@ -8,7 +8,7 @@ import { say, autoSay, sayBtns, stopSpeech } from "../lib/speech.js";
 import { icon } from "../lib/icons.js";
 import { clearWriters } from "../lib/draw.js";
 import { overlap } from "../lib/compare.js";
-import { LESSONS, wordsOf, wordChars } from "../data/index.js";
+import { LESSONS, wordsOf, wordChars, grammarOf } from "../data/index.js";
 import { textList, textQuiz, orderGame, pinyinQuiz, hideGloss } from "./reading.js";
 import * as progress from "../progress/store.js";
 import { wordStatus } from "../progress/model.js";
@@ -16,6 +16,7 @@ import { dictIntro } from "./dictation.js";
 import { charLinks } from "./charsheet.js";
 import { cardsOpen } from "./cards.js";
 import { tonesIntro } from "./tones.js";
+import { lessonContent } from "../sync/content.js";
 
 export const SKILLS = {
   write: {
@@ -46,6 +47,7 @@ export const SKILLS = {
     seal: "读", name: "Read",
     modes: [
       { id: "texts", seal: "文", name: "Read texts", sub: "Dialogues line by line; tap any word for its meaning" },
+      { id: "grammar", seal: "法", name: "Grammar", sub: "This lesson's grammar points with examples" },
       { id: "text-quiz", seal: "问", name: "Read & answer", sub: "Questions about the texts" },
       { id: "order", seal: "组", name: "Build the sentence", sub: "Put the words in the right order" },
       { id: "read-pinyin", seal: "音", name: "How do you read it?", sub: "See the word, pick the right pinyin" },
@@ -158,11 +160,58 @@ function startMode(mode) {
     case "quiz-meaning": return words.length < 2 ? notEnough() : vocabQuiz({ items: ten(words), pool: words, mode: "meaning", title: "What does it mean?" });
     case "quiz-word": return words.length < 2 ? notEnough() : vocabQuiz({ items: ten(words), pool: words, mode: "word", title: "Which word?" });
     case "list": return wordList(words);
-    case "texts": return textList(ui, readings);
+    case "texts": return withBook((b) => textList(ui, [...b.texts, ...readings], bookNote(b)));
+    case "grammar": return withBook((b) => grammarNotes(b));
     case "text-quiz": return textQuiz(ui, readings);
     case "order": return orderGame(ui, lessonSentences(words, readings));
     case "read-pinyin": return pinyinQuiz(ui, words);
   }
+}
+
+/* ---------- The printed book's texts and grammar (private, after sign-in) ---------- */
+function withBook(show) {
+  const { book, lesson } = P.ctx;
+  const empty = { status: "none", texts: [], notes: [] };
+  if (!book || !lesson) return show(empty);
+  const host = body();
+  host.innerHTML = `<div class="panel"><p class="muted">Loading the book…</p></div>`;
+  lessonContent(book, lesson).then((b) => { if (body() === host) show(b); }, () => show(empty));
+}
+const bookNote = (b) =>
+  b.status === "signed-out" ? `<p class="note">Sign in (Sync, on the home screen) to see this lesson's texts and grammar from the book.</p>`
+  : b.status === "error" ? `<p class="note">Couldn't load the book's texts. Check your internet or VPN.</p>` : "";
+
+function grammarNotes(b) {
+  const notes = b.notes || [];
+  const L = LESSONS.find((l) => l.book === P.ctx.book && l.n === P.ctx.lesson);
+  const drills = L ? grammarOf([L]) : [];
+  const points = L?.grammar || [];
+  body().innerHTML = `<div class="panel gr">
+    <span class="lbl">语法 · Grammar</span>
+    ${points.length ? `<section class="gr-note">
+      <h3>Practice</h3>
+      <ul>${points.map((g) => `<li><b>${esc(g.point)}</b> <span class="muted">${esc(g.en)}</span></li>`).join("")}</ul>
+      <div class="controls"><button class="btn primary" type="button" id="grGo">${icon("play")} Fill the blanks · ${drills.length} questions</button></div>
+    </section>` : ""}
+    ${notes.length ? notes.map((x, i) => `<section class="gr-note">
+      <h3><span class="gr-n">${i + 1}</span> ${esc(x.cn)}</h3>
+      <p>${esc(x.en)}</p>
+      <ul>${(x.examples || []).map((e) => `<li><span class="hz">${charLinks(e)}</span> ${sayBtns(e, "example", true)}</li>`).join("")}</ul>
+    </section>`).join("") : bookNote(b) || (points.length ? "" : `<p>No grammar notes for this lesson yet.</p>`)}
+    ${backBtn()}
+  </div>`;
+  wireBack(body());
+  $("#grGo")?.addEventListener("click", () => grammarQuiz({ items: shuffle(drills), title: "Grammar · fill the blank" }));
+}
+
+// Fill the blank: choose the word that completes the sentence. Results are saved as g:<drill id>.
+export function grammarQuiz(cfg) {
+  const blank = (q, fill) => esc(q).replace("___", fill ? `<u class="gr-fill">${esc(fill)}</u>` : `<span class="gr-blank">？</span>`);
+  return choiceQuiz({ kind: "grammar", key: "g:", id: (d) => d.id, label: (d) => d.q.replace("___", d.options[d.answer]), ...cfg,
+    ask: (d) => ({ html: `<p class="hint">${esc(d.point)}</p><p class="hz gr-q">${blank(d.q)}</p><p class="muted">${esc(d.en)}</p>` }),
+    makeOptions: (d) => d.options.map((o, i) => ({ html: `<span class="hz" style="font-size:1.3rem">${esc(o)}</span>`, correct: i === d.answer })),
+    reveal: (d) => { const s = d.q.replace("___", d.options[d.answer]); return `<span class="hz" style="font-size:1.3rem">${blank(d.q, d.options[d.answer])}</span> ${sayBtns(s, "sentence", true)}<br><span class="muted">${esc(d.rule)}</span>`; },
+  });
 }
 
 // What the reading screens need from this module.

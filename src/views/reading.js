@@ -28,26 +28,26 @@ export const hideGloss = () => { const g = $("#gloss"); if (g) g.hidden = true; 
 const tokensHtml = (hz) => segment(hz).map((s) => (s.word ? `<button type="button" class="tok" data-t="${s.t}">${s.t}</button>` : `<span>${esc(s.t)}</span>`)).join("");
 
 /* ---------- Texts: list ---------- */
-export function textList(ui, readings) {
+export function textList(ui, readings, note = "") {
   if (!readings.length) {
-    ui.body().innerHTML = `<div class="panel"><p>No reading texts in these lessons yet.</p>${ui.backBtn()}</div>`;
+    ui.body().innerHTML = `<div class="panel"><p>No reading texts in these lessons yet.</p>${note}${ui.backBtn()}</div>`;
     return ui.wireBack(ui.body());
   }
   ui.body().innerHTML = `<div class="panel">
     <span class="lbl">课文 · Texts</span>
-    <p>Tap a text to read it. Inside, tap any word for its meaning.</p>
+    <p>Tap a text to read it. Inside, tap any word for its meaning.</p>${note}
     <div class="rv-list" style="display:grid;gap:8px;width:100%">${readings.map((r, i) => {
       const done = progress.get("r:" + r.key);
       return `<button class="rd-item" type="button" data-i="${i}">
         <span class="rd-item-hz">${r.title}</span>
-        <span class="rd-item-txt"><span class="py">${tonePy(r.py)}</span><span class="muted">${esc(r.en)} · ${r.lines.length} lines</span></span>
+        <span class="rd-item-txt"><span class="py">${tonePy(r.py)}</span><span class="muted">${esc(r.en)} · ${r.lines.length} lines${r.source === "book" ? " · from the book" : ""}</span></span>
         ${done?.n ? `<span class="badge ok">${done.ok}/${done.n} read</span>` : ""}
       </button>`;
     }).join("")}</div>
     ${ui.backBtn()}
   </div>`;
   ui.wireBack(ui.body());
-  $$("[data-i]", ui.body()).forEach((b) => b.addEventListener("click", () => reader(ui, readings[+b.dataset.i], () => textList(ui, readings))));
+  $$("[data-i]", ui.body()).forEach((b) => b.addEventListener("click", () => reader(ui, readings[+b.dataset.i], () => textList(ui, readings, note))));
 }
 
 /* ---------- Texts: reader ---------- */

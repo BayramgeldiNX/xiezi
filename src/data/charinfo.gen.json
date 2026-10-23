@@ -950,5 +950,3774 @@
         "en": "bird"
       }
     ]
+  },
+  "叫": {
+    "dec": "⿰口丩",
+    "parts": [
+      {
+        "c": "口",
+        "py": "kǒu",
+        "en": "mouth"
+      },
+      {
+        "c": "丩",
+        "py": "jiū",
+        "en": "to connect"
+      }
+    ],
+    "radical": {
+      "c": "口",
+      "py": "kǒu",
+      "en": "mouth"
+    },
+    "hint": "mouth",
+    "type": "pictophonetic",
+    "phonetic": "丩",
+    "semantic": "口",
+    "similar": []
+  },
+  "什": {
+    "dec": "⿰亻十",
+    "parts": [
+      {
+        "c": "亻",
+        "py": "rén",
+        "en": "man"
+      },
+      {
+        "c": "十",
+        "py": "shí",
+        "en": "ten"
+      }
+    ],
+    "radical": {
+      "c": "亻",
+      "py": "rén",
+      "en": "man"
+    },
+    "hint": "A file of ten 十 people 亻",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "么": {
+    "dec": "⿱丿厶",
+    "parts": [
+      {
+        "c": "丿",
+        "py": "piě",
+        "en": "slash"
+      },
+      {
+        "c": "厶",
+        "py": "sī",
+        "en": "private"
+      }
+    ],
+    "radical": {
+      "c": "丿",
+      "py": "piě",
+      "en": "slash"
+    },
+    "hint": "",
+    "type": "",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "名": {
+    "dec": "⿸夕口",
+    "parts": [
+      {
+        "c": "夕",
+        "py": "xī",
+        "en": "evening"
+      },
+      {
+        "c": "口",
+        "py": "kǒu",
+        "en": "mouth"
+      }
+    ],
+    "radical": {
+      "c": "口",
+      "py": "kǒu",
+      "en": "mouth"
+    },
+    "hint": "A name called out 口 to hail someone at night 夕",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "字": {
+    "dec": "⿱宀子",
+    "parts": [
+      {
+        "c": "宀",
+        "py": "gài",
+        "en": "roof"
+      },
+      {
+        "c": "子",
+        "py": "zi",
+        "en": "son"
+      }
+    ],
+    "radical": {
+      "c": "子",
+      "py": "zi",
+      "en": "son"
+    },
+    "hint": "A child 子 in a house 宀; 子 also provides the pronunciation",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "我": {
+    "dec": "⿰扌戈",
+    "parts": [
+      {
+        "c": "扌",
+        "py": "shǒu",
+        "en": "hand"
+      },
+      {
+        "c": "戈",
+        "py": "gē",
+        "en": "spear"
+      }
+    ],
+    "radical": {
+      "c": "戈",
+      "py": "gē",
+      "en": "spear"
+    },
+    "hint": "A hand 扌 holding a weapon 戈",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "是": {
+    "dec": "⿱日疋",
+    "parts": [
+      {
+        "c": "日",
+        "py": "rì",
+        "en": "sun"
+      },
+      {
+        "c": "疋",
+        "py": "pǐ",
+        "en": "roll"
+      }
+    ],
+    "radical": {
+      "c": "日",
+      "py": "rì",
+      "en": "sun"
+    },
+    "hint": "To speak 日 directly 疋",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "吗": {
+    "dec": "⿰口马",
+    "parts": [
+      {
+        "c": "口",
+        "py": "kǒu",
+        "en": "mouth"
+      },
+      {
+        "c": "马",
+        "py": "mǎ",
+        "en": "horse"
+      }
+    ],
+    "radical": {
+      "c": "口",
+      "py": "kǒu",
+      "en": "mouth"
+    },
+    "hint": "mouth",
+    "type": "pictophonetic",
+    "phonetic": "马",
+    "semantic": "口",
+    "similar": []
+  },
+  "学": {
+    "dec": "⿱⿱⺍冖子",
+    "parts": [
+      {
+        "c": "⺍",
+        "py": "",
+        "en": ""
+      },
+      {
+        "c": "冖",
+        "py": "mì",
+        "en": "cover"
+      },
+      {
+        "c": "子",
+        "py": "zi",
+        "en": "son"
+      }
+    ],
+    "radical": {
+      "c": "子",
+      "py": "zi",
+      "en": "son"
+    },
+    "hint": "A building 冖 where children 子 study; ⺍ provides the pronunciation",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "生": {
+    "dec": "⿻一土",
+    "parts": [
+      {
+        "c": "一",
+        "py": "yī",
+        "en": "one"
+      },
+      {
+        "c": "土",
+        "py": "tǔ",
+        "en": "soil"
+      }
+    ],
+    "radical": {
+      "c": "生",
+      "py": "shēng",
+      "en": "life"
+    },
+    "hint": " A shoot 屮 growing in the soil 土",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "人": {
+    "dec": "？",
+    "parts": [],
+    "radical": {
+      "c": "人",
+      "py": "rén",
+      "en": "man"
+    },
+    "hint": "The legs of a human being",
+    "type": "pictographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "她": {
+    "dec": "⿰女也",
+    "parts": [
+      {
+        "c": "女",
+        "py": "nǚ",
+        "en": "woman"
+      },
+      {
+        "c": "也",
+        "py": "yě",
+        "en": "also"
+      }
+    ],
+    "radical": {
+      "c": "女",
+      "py": "nǚ",
+      "en": "woman"
+    },
+    "hint": "A woman 女 beside you 也",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "谁": {
+    "dec": "⿰讠隹",
+    "parts": [
+      {
+        "c": "讠",
+        "py": "yán",
+        "en": "words"
+      },
+      {
+        "c": "隹",
+        "py": "zhuī",
+        "en": "short-tailed bird"
+      }
+    ],
+    "radical": {
+      "c": "讠",
+      "py": "yán",
+      "en": "words"
+    },
+    "hint": "speech",
+    "type": "pictophonetic",
+    "phonetic": "隹",
+    "semantic": "讠",
+    "similar": []
+  },
+  "的": {
+    "dec": "⿰白勺",
+    "parts": [
+      {
+        "c": "白",
+        "py": "bái",
+        "en": "white"
+      },
+      {
+        "c": "勺",
+        "py": "sháo",
+        "en": "spoon"
+      }
+    ],
+    "radical": {
+      "c": "白",
+      "py": "bái",
+      "en": "white"
+    },
+    "hint": "",
+    "type": "",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "汉": {
+    "dec": "⿰氵又",
+    "parts": [
+      {
+        "c": "氵",
+        "py": "shuǐ",
+        "en": "water"
+      },
+      {
+        "c": "又",
+        "py": "yòu",
+        "en": "and"
+      }
+    ],
+    "radical": {
+      "c": "氵",
+      "py": "shuǐ",
+      "en": "water"
+    },
+    "hint": "Simplified form of 漢; the Han 𦰩 river 氵",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "语": {
+    "dec": "⿰讠吾",
+    "parts": [
+      {
+        "c": "讠",
+        "py": "yán",
+        "en": "words"
+      },
+      {
+        "c": "吾",
+        "py": "wú",
+        "en": "I"
+      }
+    ],
+    "radical": {
+      "c": "讠",
+      "py": "yán",
+      "en": "words"
+    },
+    "hint": "words",
+    "type": "pictophonetic",
+    "phonetic": "吾",
+    "semantic": "讠",
+    "similar": []
+  },
+  "哪": {
+    "dec": "⿰口那",
+    "parts": [
+      {
+        "c": "口",
+        "py": "kǒu",
+        "en": "mouth"
+      },
+      {
+        "c": "那",
+        "py": "nà",
+        "en": "that"
+      }
+    ],
+    "radical": {
+      "c": "口",
+      "py": "kǒu",
+      "en": "mouth"
+    },
+    "hint": "mouth",
+    "type": "pictophonetic",
+    "phonetic": "那",
+    "semantic": "口",
+    "similar": []
+  },
+  "国": {
+    "dec": "⿴囗玉",
+    "parts": [
+      {
+        "c": "囗",
+        "py": "wéi",
+        "en": "enclosure"
+      },
+      {
+        "c": "玉",
+        "py": "yù",
+        "en": "jade"
+      }
+    ],
+    "radical": {
+      "c": "囗",
+      "py": "wéi",
+      "en": "enclosure"
+    },
+    "hint": "Treasure 玉 within a country's borders 囗",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "呢": {
+    "dec": "⿰口尼",
+    "parts": [
+      {
+        "c": "口",
+        "py": "kǒu",
+        "en": "mouth"
+      },
+      {
+        "c": "尼",
+        "py": "ní",
+        "en": "Buddhist nun"
+      }
+    ],
+    "radical": {
+      "c": "口",
+      "py": "kǒu",
+      "en": "mouth"
+    },
+    "hint": "mouth",
+    "type": "pictophonetic",
+    "phonetic": "尼",
+    "semantic": "口",
+    "similar": []
+  },
+  "他": {
+    "dec": "⿰亻也",
+    "parts": [
+      {
+        "c": "亻",
+        "py": "rén",
+        "en": "man"
+      },
+      {
+        "c": "也",
+        "py": "yě",
+        "en": "also"
+      }
+    ],
+    "radical": {
+      "c": "亻",
+      "py": "rén",
+      "en": "man"
+    },
+    "hint": "An additional, \"also\" 也  person 亻",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "同": {
+    "dec": "⿵凡口",
+    "parts": [
+      {
+        "c": "凡",
+        "py": "fán",
+        "en": "any"
+      },
+      {
+        "c": "口",
+        "py": "kǒu",
+        "en": "mouth"
+      }
+    ],
+    "radical": {
+      "c": "口",
+      "py": "kǒu",
+      "en": "mouth"
+    },
+    "hint": "Sharing a common 凡 tongue 口",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "朋": {
+    "dec": "⿰月月",
+    "parts": [
+      {
+        "c": "月",
+        "py": "yuè",
+        "en": "moon"
+      }
+    ],
+    "radical": {
+      "c": "月",
+      "py": "yuè",
+      "en": "moon"
+    },
+    "hint": "Two people 月 walking together",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "友": {
+    "dec": "⿸？又",
+    "parts": [],
+    "radical": {
+      "c": "又",
+      "py": "yòu",
+      "en": "and"
+    },
+    "hint": "Two hands 又 joined, representing friendship; 又 also provides the pronunciation",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "家": {
+    "dec": "⿱宀豕",
+    "parts": [
+      {
+        "c": "宀",
+        "py": "gài",
+        "en": "roof"
+      },
+      {
+        "c": "豕",
+        "py": "shǐ",
+        "en": "pig"
+      }
+    ],
+    "radical": {
+      "c": "宀",
+      "py": "gài",
+      "en": "roof"
+    },
+    "hint": "roof",
+    "type": "pictophonetic",
+    "phonetic": "豕",
+    "semantic": "宀",
+    "similar": []
+  },
+  "有": {
+    "dec": "⿸？月",
+    "parts": [],
+    "radical": {
+      "c": "月",
+      "py": "yuè",
+      "en": "moon"
+    },
+    "hint": "",
+    "type": "pictophonetic",
+    "phonetic": "月",
+    "semantic": "",
+    "similar": []
+  },
+  "口": {
+    "dec": "⿱冂一",
+    "parts": [
+      {
+        "c": "冂",
+        "py": "jiōng",
+        "en": "wide"
+      },
+      {
+        "c": "一",
+        "py": "yī",
+        "en": "one"
+      }
+    ],
+    "radical": {
+      "c": "口",
+      "py": "kǒu",
+      "en": "mouth"
+    },
+    "hint": "An open mouth",
+    "type": "pictographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "女": {
+    "dec": "？",
+    "parts": [],
+    "radical": {
+      "c": "女",
+      "py": "nǚ",
+      "en": "woman"
+    },
+    "hint": "A woman turned to the side",
+    "type": "pictographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "儿": {
+    "dec": "⿰丿乚",
+    "parts": [
+      {
+        "c": "丿",
+        "py": "piě",
+        "en": "slash"
+      },
+      {
+        "c": "乚",
+        "py": "gōu",
+        "en": "secret"
+      }
+    ],
+    "radical": {
+      "c": "儿",
+      "py": "ér",
+      "en": "son"
+    },
+    "hint": "Simplified form of 兒, a picture of a child; compare 人",
+    "type": "pictographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "几": {
+    "dec": "⿰丿乙",
+    "parts": [
+      {
+        "c": "丿",
+        "py": "piě",
+        "en": "slash"
+      },
+      {
+        "c": "乙",
+        "py": "yǐ",
+        "en": "second"
+      }
+    ],
+    "radical": {
+      "c": "几",
+      "py": "jǐ",
+      "en": "small table"
+    },
+    "hint": "A small table; compare 丌",
+    "type": "pictographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "岁": {
+    "dec": "⿱山夕",
+    "parts": [
+      {
+        "c": "山",
+        "py": "shān",
+        "en": "mountain"
+      },
+      {
+        "c": "夕",
+        "py": "xī",
+        "en": "evening"
+      }
+    ],
+    "radical": {
+      "c": "山",
+      "py": "shān",
+      "en": "mountain"
+    },
+    "hint": "",
+    "type": "",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "了": {
+    "dec": "⿱乛亅",
+    "parts": [
+      {
+        "c": "乛",
+        "py": "ya",
+        "en": "kwukyel"
+      },
+      {
+        "c": "亅",
+        "py": "jué",
+        "en": "hook"
+      }
+    ],
+    "radical": {
+      "c": "亅",
+      "py": "jué",
+      "en": "hook"
+    },
+    "hint": "A child swaddled in blanklets; compare 子",
+    "type": "pictographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "今": {
+    "dec": "⿱人？",
+    "parts": [],
+    "radical": {
+      "c": "人",
+      "py": "rén",
+      "en": "man"
+    },
+    "hint": "A mouth 亼 talking about things",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "年": {
+    "dec": "⿻干？",
+    "parts": [],
+    "radical": {
+      "c": "干",
+      "py": "gàn",
+      "en": "arid"
+    },
+    "hint": "A man 干 carrying grain, representing the annual harvest",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "多": {
+    "dec": "⿱夕夕",
+    "parts": [
+      {
+        "c": "夕",
+        "py": "xī",
+        "en": "evening"
+      }
+    ],
+    "radical": {
+      "c": "夕",
+      "py": "xī",
+      "en": "evening"
+    },
+    "hint": "Two nights 夕, suggesting many",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "大": {
+    "dec": "⿻一人",
+    "parts": [
+      {
+        "c": "一",
+        "py": "yī",
+        "en": "one"
+      },
+      {
+        "c": "人",
+        "py": "rén",
+        "en": "man"
+      }
+    ],
+    "radical": {
+      "c": "大",
+      "py": "dà",
+      "en": "big"
+    },
+    "hint": "A man 人 with outstretched arms",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "一": {
+    "dec": "？",
+    "parts": [],
+    "radical": {
+      "c": "一",
+      "py": "yī",
+      "en": "one"
+    },
+    "hint": "Represents heaven (天), earth (旦), or the number 1",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "二": {
+    "dec": "⿱一一",
+    "parts": [
+      {
+        "c": "一",
+        "py": "yī",
+        "en": "one"
+      }
+    ],
+    "radical": {
+      "c": "二",
+      "py": "èr",
+      "en": "two"
+    },
+    "hint": "Two  parallel lines; compare 一 (one) and 三 (three)",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "三": {
+    "dec": "⿱一二",
+    "parts": [
+      {
+        "c": "一",
+        "py": "yī",
+        "en": "one"
+      },
+      {
+        "c": "二",
+        "py": "èr",
+        "en": "two"
+      }
+    ],
+    "radical": {
+      "c": "一",
+      "py": "yī",
+      "en": "one"
+    },
+    "hint": "Three  parallel lines; compare 一 (one) and 二 (two)",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "四": {
+    "dec": "⿴囗儿",
+    "parts": [
+      {
+        "c": "囗",
+        "py": "wéi",
+        "en": "enclosure"
+      },
+      {
+        "c": "儿",
+        "py": "ér",
+        "en": "son"
+      }
+    ],
+    "radical": {
+      "c": "囗",
+      "py": "wéi",
+      "en": "enclosure"
+    },
+    "hint": "A child 儿 in a room with four walls 囗",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "五": {
+    "dec": "⿴二？",
+    "parts": [],
+    "radical": {
+      "c": "二",
+      "py": "èr",
+      "en": "two"
+    },
+    "hint": "Five elements (the cross with the extra stroke) between heaven 一 and earth 一 ",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "六": {
+    "dec": "⿱亠八",
+    "parts": [
+      {
+        "c": "亠",
+        "py": "tóu",
+        "en": "lid"
+      },
+      {
+        "c": "八",
+        "py": "bā",
+        "en": "eight"
+      }
+    ],
+    "radical": {
+      "c": "八",
+      "py": "bā",
+      "en": "eight"
+    },
+    "hint": "",
+    "type": "",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "七": {
+    "dec": "⿻一乚",
+    "parts": [
+      {
+        "c": "一",
+        "py": "yī",
+        "en": "one"
+      },
+      {
+        "c": "乚",
+        "py": "gōu",
+        "en": "secret"
+      }
+    ],
+    "radical": {
+      "c": "一",
+      "py": "yī",
+      "en": "one"
+    },
+    "hint": "",
+    "type": "",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "八": {
+    "dec": "？",
+    "parts": [],
+    "radical": {
+      "c": "八",
+      "py": "bā",
+      "en": "eight"
+    },
+    "hint": "Two bent lines meaning \"to divide\"",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "九": {
+    "dec": "⿻丿乙",
+    "parts": [
+      {
+        "c": "丿",
+        "py": "piě",
+        "en": "slash"
+      },
+      {
+        "c": "乙",
+        "py": "yǐ",
+        "en": "second"
+      }
+    ],
+    "radical": {
+      "c": "乙",
+      "py": "yǐ",
+      "en": "second"
+    },
+    "hint": "An elbow",
+    "type": "pictographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "十": {
+    "dec": "⿻一丨",
+    "parts": [
+      {
+        "c": "一",
+        "py": "yī",
+        "en": "one"
+      },
+      {
+        "c": "丨",
+        "py": "shù",
+        "en": "number one"
+      }
+    ],
+    "radical": {
+      "c": "十",
+      "py": "shí",
+      "en": "ten"
+    },
+    "hint": "",
+    "type": "",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "会": {
+    "dec": "⿱人云",
+    "parts": [
+      {
+        "c": "人",
+        "py": "rén",
+        "en": "man"
+      },
+      {
+        "c": "云",
+        "py": "yún",
+        "en": "cloud"
+      }
+    ],
+    "radical": {
+      "c": "人",
+      "py": "rén",
+      "en": "man"
+    },
+    "hint": "People 人 speaking 云",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "妈": {
+    "dec": "⿰女马",
+    "parts": [
+      {
+        "c": "女",
+        "py": "nǚ",
+        "en": "woman"
+      },
+      {
+        "c": "马",
+        "py": "mǎ",
+        "en": "horse"
+      }
+    ],
+    "radical": {
+      "c": "女",
+      "py": "nǚ",
+      "en": "woman"
+    },
+    "hint": "woman",
+    "type": "pictophonetic",
+    "phonetic": "马",
+    "semantic": "女",
+    "similar": []
+  },
+  "菜": {
+    "dec": "⿱艹采",
+    "parts": [
+      {
+        "c": "艹",
+        "py": "cǎo",
+        "en": "grass"
+      },
+      {
+        "c": "采",
+        "py": "cǎi",
+        "en": "to collect"
+      }
+    ],
+    "radical": {
+      "c": "艹",
+      "py": "cǎo",
+      "en": "grass"
+    },
+    "hint": "plant",
+    "type": "pictophonetic",
+    "phonetic": "采",
+    "semantic": "艹",
+    "similar": []
+  },
+  "很": {
+    "dec": "⿰彳艮",
+    "parts": [
+      {
+        "c": "彳",
+        "py": "chì",
+        "en": "to step with the left foot"
+      },
+      {
+        "c": "艮",
+        "py": "gěn",
+        "en": "blunt"
+      }
+    ],
+    "radical": {
+      "c": "彳",
+      "py": "chì",
+      "en": "to step with the left foot"
+    },
+    "hint": "step",
+    "type": "pictophonetic",
+    "phonetic": "艮",
+    "semantic": "彳",
+    "similar": []
+  },
+  "吃": {
+    "dec": "⿰口乞",
+    "parts": [
+      {
+        "c": "口",
+        "py": "kǒu",
+        "en": "mouth"
+      },
+      {
+        "c": "乞",
+        "py": "qǐ",
+        "en": "to beg"
+      }
+    ],
+    "radical": {
+      "c": "口",
+      "py": "kǒu",
+      "en": "mouth"
+    },
+    "hint": "mouth",
+    "type": "pictophonetic",
+    "phonetic": "乞",
+    "semantic": "口",
+    "similar": []
+  },
+  "做": {
+    "dec": "⿰亻故",
+    "parts": [
+      {
+        "c": "亻",
+        "py": "rén",
+        "en": "man"
+      },
+      {
+        "c": "故",
+        "py": "gù",
+        "en": "reason"
+      }
+    ],
+    "radical": {
+      "c": "亻",
+      "py": "rén",
+      "en": "man"
+    },
+    "hint": "Someone 亻 who causes things to happen 故; 故 also provides the pronuncation",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "怎": {
+    "dec": "⿱乍心",
+    "parts": [
+      {
+        "c": "乍",
+        "py": "zhà",
+        "en": "first time"
+      },
+      {
+        "c": "心",
+        "py": "xīn",
+        "en": "heart"
+      }
+    ],
+    "radical": {
+      "c": "心",
+      "py": "xīn",
+      "en": "heart"
+    },
+    "hint": "heart",
+    "type": "pictophonetic",
+    "phonetic": "乍",
+    "semantic": "心",
+    "similar": []
+  },
+  "问": {
+    "dec": "⿵门口",
+    "parts": [
+      {
+        "c": "门",
+        "py": "mén",
+        "en": "gate"
+      },
+      {
+        "c": "口",
+        "py": "kǒu",
+        "en": "mouth"
+      }
+    ],
+    "radical": {
+      "c": "门",
+      "py": "mén",
+      "en": "gate"
+    },
+    "hint": "mouth",
+    "type": "pictophonetic",
+    "phonetic": "门",
+    "semantic": "口",
+    "similar": []
+  },
+  "天": {
+    "dec": "⿱一大",
+    "parts": [
+      {
+        "c": "一",
+        "py": "yī",
+        "en": "one"
+      },
+      {
+        "c": "大",
+        "py": "dà",
+        "en": "big"
+      }
+    ],
+    "radical": {
+      "c": "大",
+      "py": "dà",
+      "en": "big"
+    },
+    "hint": "The heavens 一 above a man 大",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "号": {
+    "dec": "⿱口丂",
+    "parts": [
+      {
+        "c": "口",
+        "py": "kǒu",
+        "en": "mouth"
+      },
+      {
+        "c": "丂",
+        "py": "kǎo",
+        "en": "obstruction of breath (qi)"
+      }
+    ],
+    "radical": {
+      "c": "口",
+      "py": "kǒu",
+      "en": "mouth"
+    },
+    "hint": "mouth",
+    "type": "pictophonetic",
+    "phonetic": "丂",
+    "semantic": "口",
+    "similar": []
+  },
+  "月": {
+    "dec": "⿵冂二",
+    "parts": [
+      {
+        "c": "冂",
+        "py": "jiōng",
+        "en": "wide"
+      },
+      {
+        "c": "二",
+        "py": "èr",
+        "en": "two"
+      }
+    ],
+    "radical": {
+      "c": "月",
+      "py": "yuè",
+      "en": "moon"
+    },
+    "hint": "A crescent moon",
+    "type": "pictographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "星": {
+    "dec": "⿱日生",
+    "parts": [
+      {
+        "c": "日",
+        "py": "rì",
+        "en": "sun"
+      },
+      {
+        "c": "生",
+        "py": "shēng",
+        "en": "life"
+      }
+    ],
+    "radical": {
+      "c": "日",
+      "py": "rì",
+      "en": "sun"
+    },
+    "hint": "sun",
+    "type": "pictophonetic",
+    "phonetic": "生",
+    "semantic": "日",
+    "similar": []
+  },
+  "期": {
+    "dec": "⿰其月",
+    "parts": [
+      {
+        "c": "其",
+        "py": "qí",
+        "en": "his"
+      },
+      {
+        "c": "月",
+        "py": "yuè",
+        "en": "moon"
+      }
+    ],
+    "radical": {
+      "c": "月",
+      "py": "yuè",
+      "en": "moon"
+    },
+    "hint": "moon",
+    "type": "pictophonetic",
+    "phonetic": "其",
+    "semantic": "月",
+    "similar": []
+  },
+  "昨": {
+    "dec": "⿰日乍",
+    "parts": [
+      {
+        "c": "日",
+        "py": "rì",
+        "en": "sun"
+      },
+      {
+        "c": "乍",
+        "py": "zhà",
+        "en": "first time"
+      }
+    ],
+    "radical": {
+      "c": "日",
+      "py": "rì",
+      "en": "sun"
+    },
+    "hint": "day",
+    "type": "pictophonetic",
+    "phonetic": "乍",
+    "semantic": "日",
+    "similar": []
+  },
+  "明": {
+    "dec": "⿰日月",
+    "parts": [
+      {
+        "c": "日",
+        "py": "rì",
+        "en": "sun"
+      },
+      {
+        "c": "月",
+        "py": "yuè",
+        "en": "moon"
+      }
+    ],
+    "radical": {
+      "c": "日",
+      "py": "rì",
+      "en": "sun"
+    },
+    "hint": "The light of the sun 日 and moon 月",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "去": {
+    "dec": "⿱土厶",
+    "parts": [
+      {
+        "c": "土",
+        "py": "tǔ",
+        "en": "soil"
+      },
+      {
+        "c": "厶",
+        "py": "sī",
+        "en": "private"
+      }
+    ],
+    "radical": {
+      "c": "厶",
+      "py": "sī",
+      "en": "private"
+    },
+    "hint": "",
+    "type": "",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "校": {
+    "dec": "⿰木交",
+    "parts": [
+      {
+        "c": "木",
+        "py": "mù",
+        "en": "tree"
+      },
+      {
+        "c": "交",
+        "py": "jiāo",
+        "en": "to connect"
+      }
+    ],
+    "radical": {
+      "c": "木",
+      "py": "mù",
+      "en": "tree"
+    },
+    "hint": "wood",
+    "type": "pictophonetic",
+    "phonetic": "交",
+    "semantic": "木",
+    "similar": []
+  },
+  "看": {
+    "dec": "⿱手目",
+    "parts": [
+      {
+        "c": "手",
+        "py": "shǒu",
+        "en": "hand"
+      },
+      {
+        "c": "目",
+        "py": "mù",
+        "en": "eye"
+      }
+    ],
+    "radical": {
+      "c": "目",
+      "py": "mù",
+      "en": "eye"
+    },
+    "hint": "Shielding one's eyes 目 with a hand 手 to look to the distance",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "书": {
+    "dec": "⿻？丨",
+    "parts": [],
+    "radical": {
+      "c": "丨",
+      "py": "shù",
+      "en": "number one"
+    },
+    "hint": "A mark made by a pen ⺺",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "想": {
+    "dec": "⿱相心",
+    "parts": [
+      {
+        "c": "相",
+        "py": "xiāng",
+        "en": "mutual"
+      },
+      {
+        "c": "心",
+        "py": "xīn",
+        "en": "heart"
+      }
+    ],
+    "radical": {
+      "c": "心",
+      "py": "xīn",
+      "en": "heart"
+    },
+    "hint": "mind",
+    "type": "pictophonetic",
+    "phonetic": "相",
+    "semantic": "心",
+    "similar": []
+  },
+  "喝": {
+    "dec": "⿰口曷",
+    "parts": [
+      {
+        "c": "口",
+        "py": "kǒu",
+        "en": "mouth"
+      },
+      {
+        "c": "曷",
+        "py": "hé",
+        "en": "what"
+      }
+    ],
+    "radical": {
+      "c": "口",
+      "py": "kǒu",
+      "en": "mouth"
+    },
+    "hint": "mouth",
+    "type": "pictophonetic",
+    "phonetic": "曷",
+    "semantic": "口",
+    "similar": []
+  },
+  "茶": {
+    "dec": "⿱艹⿱人木",
+    "parts": [
+      {
+        "c": "艹",
+        "py": "cǎo",
+        "en": "grass"
+      },
+      {
+        "c": "人",
+        "py": "rén",
+        "en": "man"
+      },
+      {
+        "c": "木",
+        "py": "mù",
+        "en": "tree"
+      }
+    ],
+    "radical": {
+      "c": "艹",
+      "py": "cǎo",
+      "en": "grass"
+    },
+    "hint": "plant",
+    "type": "pictophonetic",
+    "phonetic": "",
+    "semantic": "艹",
+    "similar": []
+  },
+  "米": {
+    "dec": "⿻丷木",
+    "parts": [
+      {
+        "c": "丷",
+        "py": "ha",
+        "en": "kwukyel"
+      },
+      {
+        "c": "木",
+        "py": "mù",
+        "en": "tree"
+      }
+    ],
+    "radical": {
+      "c": "米",
+      "py": "mǐ",
+      "en": "rice"
+    },
+    "hint": "Grains of rice",
+    "type": "pictographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "饭": {
+    "dec": "⿰饣反",
+    "parts": [
+      {
+        "c": "饣",
+        "py": "shí",
+        "en": "food"
+      },
+      {
+        "c": "反",
+        "py": "fǎn",
+        "en": "reverse"
+      }
+    ],
+    "radical": {
+      "c": "饣",
+      "py": "shí",
+      "en": "food"
+    },
+    "hint": "food",
+    "type": "pictophonetic",
+    "phonetic": "反",
+    "semantic": "饣",
+    "similar": []
+  },
+  "下": {
+    "dec": "⿱一卜",
+    "parts": [
+      {
+        "c": "一",
+        "py": "yī",
+        "en": "one"
+      },
+      {
+        "c": "卜",
+        "py": "bo",
+        "en": "divination"
+      }
+    ],
+    "radical": {
+      "c": "一",
+      "py": "yī",
+      "en": "one"
+    },
+    "hint": "One stroke under another; compare 上 (above)",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "午": {
+    "dec": "⿻丿干",
+    "parts": [
+      {
+        "c": "丿",
+        "py": "piě",
+        "en": "slash"
+      },
+      {
+        "c": "干",
+        "py": "gàn",
+        "en": "arid"
+      }
+    ],
+    "radical": {
+      "c": "十",
+      "py": "shí",
+      "en": "ten"
+    },
+    "hint": "",
+    "type": "",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "商": {
+    "dec": "⿱⿱亠丷冏",
+    "parts": [
+      {
+        "c": "亠",
+        "py": "tóu",
+        "en": "lid"
+      },
+      {
+        "c": "丷",
+        "py": "ha",
+        "en": "kwukyel"
+      },
+      {
+        "c": "冏",
+        "py": "jiǒng",
+        "en": "bright"
+      }
+    ],
+    "radical": {
+      "c": "口",
+      "py": "kǒu",
+      "en": "mouth"
+    },
+    "hint": "bright",
+    "type": "pictophonetic",
+    "phonetic": "章",
+    "semantic": "冏",
+    "similar": []
+  },
+  "店": {
+    "dec": "⿸广占",
+    "parts": [
+      {
+        "c": "广",
+        "py": "guǎng",
+        "en": "broad"
+      },
+      {
+        "c": "占",
+        "py": "zhàn",
+        "en": "to divine"
+      }
+    ],
+    "radical": {
+      "c": "广",
+      "py": "guǎng",
+      "en": "broad"
+    },
+    "hint": "building",
+    "type": "pictophonetic",
+    "phonetic": "占",
+    "semantic": "广",
+    "similar": []
+  },
+  "买": {
+    "dec": "⿱乛头",
+    "parts": [
+      {
+        "c": "乛",
+        "py": "ya",
+        "en": "kwukyel"
+      },
+      {
+        "c": "头",
+        "py": "tóu",
+        "en": "head"
+      }
+    ],
+    "radical": {
+      "c": "大",
+      "py": "dà",
+      "en": "big"
+    },
+    "hint": "",
+    "type": "",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "个": {
+    "dec": "⿱人丨",
+    "parts": [
+      {
+        "c": "人",
+        "py": "rén",
+        "en": "man"
+      },
+      {
+        "c": "丨",
+        "py": "shù",
+        "en": "number one"
+      }
+    ],
+    "radical": {
+      "c": "丨",
+      "py": "shù",
+      "en": "number one"
+    },
+    "hint": "A tally 丨 of people 人",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "杯": {
+    "dec": "⿰木不",
+    "parts": [
+      {
+        "c": "木",
+        "py": "mù",
+        "en": "tree"
+      },
+      {
+        "c": "不",
+        "py": "bù",
+        "en": "no"
+      }
+    ],
+    "radical": {
+      "c": "木",
+      "py": "mù",
+      "en": "tree"
+    },
+    "hint": "tree",
+    "type": "pictophonetic",
+    "phonetic": "不",
+    "semantic": "木",
+    "similar": []
+  },
+  "子": {
+    "dec": "⿻了一",
+    "parts": [
+      {
+        "c": "了",
+        "py": "le",
+        "en": "clear"
+      },
+      {
+        "c": "一",
+        "py": "yī",
+        "en": "one"
+      }
+    ],
+    "radical": {
+      "c": "子",
+      "py": "zi",
+      "en": "son"
+    },
+    "hint": "A child in a wrap, with outstretched arms but bundled legs",
+    "type": "pictographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "这": {
+    "dec": "⿺辶文",
+    "parts": [
+      {
+        "c": "辶",
+        "py": "chuò",
+        "en": "to walk"
+      },
+      {
+        "c": "文",
+        "py": "wén",
+        "en": "culture"
+      }
+    ],
+    "radical": {
+      "c": "辶",
+      "py": "chuò",
+      "en": "to walk"
+    },
+    "hint": "",
+    "type": "",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "少": {
+    "dec": "⿱小丿",
+    "parts": [
+      {
+        "c": "小",
+        "py": "xiǎo",
+        "en": "small"
+      },
+      {
+        "c": "丿",
+        "py": "piě",
+        "en": "slash"
+      }
+    ],
+    "radical": {
+      "c": "小",
+      "py": "xiǎo",
+      "en": "small"
+    },
+    "hint": "Grains of sand; 小 provides the pronunciation and meaning",
+    "type": "pictographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "钱": {
+    "dec": "⿰钅戋",
+    "parts": [
+      {
+        "c": "钅",
+        "py": "jīn",
+        "en": "gold"
+      },
+      {
+        "c": "戋",
+        "py": "jiān",
+        "en": "small"
+      }
+    ],
+    "radical": {
+      "c": "钅",
+      "py": "jīn",
+      "en": "gold"
+    },
+    "hint": "money",
+    "type": "pictophonetic",
+    "phonetic": "戋",
+    "semantic": "钅",
+    "similar": []
+  },
+  "块": {
+    "dec": "⿰土夬",
+    "parts": [
+      {
+        "c": "土",
+        "py": "tǔ",
+        "en": "soil"
+      },
+      {
+        "c": "夬",
+        "py": "guài",
+        "en": "decisive"
+      }
+    ],
+    "radical": {
+      "c": "土",
+      "py": "tǔ",
+      "en": "soil"
+    },
+    "hint": "earth",
+    "type": "pictophonetic",
+    "phonetic": "夬",
+    "semantic": "土",
+    "similar": []
+  },
+  "那": {
+    "dec": "⿰⿹？？阝",
+    "parts": [],
+    "radical": {
+      "c": "阝",
+      "py": "yì",
+      "en": "place"
+    },
+    "hint": "",
+    "type": "",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "小": {
+    "dec": "⿻亅八",
+    "parts": [
+      {
+        "c": "亅",
+        "py": "jué",
+        "en": "hook"
+      },
+      {
+        "c": "八",
+        "py": "bā",
+        "en": "eight"
+      }
+    ],
+    "radical": {
+      "c": "小",
+      "py": "xiǎo",
+      "en": "small"
+    },
+    "hint": "Dividing 八 by a line 亅",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "猫": {
+    "dec": "⿰犭苗",
+    "parts": [
+      {
+        "c": "犭",
+        "py": "quǎn",
+        "en": "dog"
+      },
+      {
+        "c": "苗",
+        "py": "miáo",
+        "en": "sprouts"
+      }
+    ],
+    "radical": {
+      "c": "犭",
+      "py": "quǎn",
+      "en": "dog"
+    },
+    "hint": "animal",
+    "type": "pictophonetic",
+    "phonetic": "苗",
+    "semantic": "犭",
+    "similar": []
+  },
+  "在": {
+    "dec": "⿸才土",
+    "parts": [
+      {
+        "c": "才",
+        "py": "cái",
+        "en": "ability"
+      },
+      {
+        "c": "土",
+        "py": "tǔ",
+        "en": "soil"
+      }
+    ],
+    "radical": {
+      "c": "土",
+      "py": "tǔ",
+      "en": "soil"
+    },
+    "hint": "earth",
+    "type": "pictophonetic",
+    "phonetic": "才",
+    "semantic": "土",
+    "similar": []
+  },
+  "狗": {
+    "dec": "⿰犭句",
+    "parts": [
+      {
+        "c": "犭",
+        "py": "quǎn",
+        "en": "dog"
+      },
+      {
+        "c": "句",
+        "py": "jù",
+        "en": "sentence"
+      }
+    ],
+    "radical": {
+      "c": "犭",
+      "py": "quǎn",
+      "en": "dog"
+    },
+    "hint": "dog",
+    "type": "pictophonetic",
+    "phonetic": "句",
+    "semantic": "犭",
+    "similar": []
+  },
+  "椅": {
+    "dec": "⿰木奇",
+    "parts": [
+      {
+        "c": "木",
+        "py": "mù",
+        "en": "tree"
+      },
+      {
+        "c": "奇",
+        "py": "qí",
+        "en": "strange"
+      }
+    ],
+    "radical": {
+      "c": "木",
+      "py": "mù",
+      "en": "tree"
+    },
+    "hint": "wood",
+    "type": "pictophonetic",
+    "phonetic": "奇",
+    "semantic": "木",
+    "similar": []
+  },
+  "面": {
+    "dec": "⿱？？",
+    "parts": [],
+    "radical": {
+      "c": "面",
+      "py": "miàn",
+      "en": "face"
+    },
+    "hint": "A person's face",
+    "type": "pictographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "工": {
+    "dec": "⿱一丄",
+    "parts": [
+      {
+        "c": "一",
+        "py": "yī",
+        "en": "one"
+      },
+      {
+        "c": "丄",
+        "py": "shàng",
+        "en": "above"
+      }
+    ],
+    "radical": {
+      "c": "工",
+      "py": "gōng",
+      "en": "labor"
+    },
+    "hint": "A spade or other workman's tool",
+    "type": "pictographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "作": {
+    "dec": "⿰亻乍",
+    "parts": [
+      {
+        "c": "亻",
+        "py": "rén",
+        "en": "man"
+      },
+      {
+        "c": "乍",
+        "py": "zhà",
+        "en": "first time"
+      }
+    ],
+    "radical": {
+      "c": "亻",
+      "py": "rén",
+      "en": "man"
+    },
+    "hint": "A person 亻 making something for the first time 乍; 乍 also provides the pronunciation",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "医": {
+    "dec": "⿷匸矢",
+    "parts": [
+      {
+        "c": "匸",
+        "py": "xì",
+        "en": "box"
+      },
+      {
+        "c": "矢",
+        "py": "shǐ",
+        "en": "arrow"
+      }
+    ],
+    "radical": {
+      "c": "匸",
+      "py": "xì",
+      "en": "box"
+    },
+    "hint": "arrow",
+    "type": "pictophonetic",
+    "phonetic": "匸",
+    "semantic": "矢",
+    "similar": []
+  },
+  "院": {
+    "dec": "⿰阝完",
+    "parts": [
+      {
+        "c": "阝",
+        "py": "yì",
+        "en": "place"
+      },
+      {
+        "c": "完",
+        "py": "wán",
+        "en": "to complete"
+      }
+    ],
+    "radical": {
+      "c": "阝",
+      "py": "yì",
+      "en": "place"
+    },
+    "hint": "place",
+    "type": "pictophonetic",
+    "phonetic": "完",
+    "semantic": "阝",
+    "similar": []
+  },
+  "爸": {
+    "dec": "⿱父巴",
+    "parts": [
+      {
+        "c": "父",
+        "py": "fù",
+        "en": "father"
+      },
+      {
+        "c": "巴",
+        "py": "bā",
+        "en": "to desire"
+      }
+    ],
+    "radical": {
+      "c": "父",
+      "py": "fù",
+      "en": "father"
+    },
+    "hint": "father",
+    "type": "pictophonetic",
+    "phonetic": "巴",
+    "semantic": "父",
+    "similar": []
+  },
+  "桌": {
+    "dec": "⿱卓木",
+    "parts": [
+      {
+        "c": "卓",
+        "py": "zhuō",
+        "en": "profound"
+      },
+      {
+        "c": "木",
+        "py": "mù",
+        "en": "tree"
+      }
+    ],
+    "radical": {
+      "c": "木",
+      "py": "mù",
+      "en": "tree"
+    },
+    "hint": "",
+    "type": "",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "上": {
+    "dec": "⿱⺊一",
+    "parts": [
+      {
+        "c": "⺊",
+        "py": "",
+        "en": ""
+      },
+      {
+        "c": "一",
+        "py": "yī",
+        "en": "one"
+      }
+    ],
+    "radical": {
+      "c": "一",
+      "py": "yī",
+      "en": "one"
+    },
+    "hint": "One stroke on top of another; compare 下 (below)",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "电": {
+    "dec": "⿻曰乚",
+    "parts": [
+      {
+        "c": "曰",
+        "py": "yuē",
+        "en": "to speak"
+      },
+      {
+        "c": "乚",
+        "py": "gōu",
+        "en": "secret"
+      }
+    ],
+    "radical": {
+      "c": "曰",
+      "py": "yuē",
+      "en": "to speak"
+    },
+    "hint": "Simplified form of 電; lightning 申 from a storm cloud 雨",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "脑": {
+    "dec": "⿰⺼⿱亠凶",
+    "parts": [
+      {
+        "c": "⺼",
+        "py": "",
+        "en": "meat"
+      },
+      {
+        "c": "亠",
+        "py": "tóu",
+        "en": "lid"
+      },
+      {
+        "c": "凶",
+        "py": "xiōng",
+        "en": "culprit"
+      }
+    ],
+    "radical": {
+      "c": "⺼",
+      "py": "",
+      "en": "meat"
+    },
+    "hint": "flesh",
+    "type": "pictophonetic",
+    "phonetic": "",
+    "semantic": "⺼",
+    "similar": []
+  },
+  "和": {
+    "dec": "⿰禾口",
+    "parts": [
+      {
+        "c": "禾",
+        "py": "hé",
+        "en": "cereal"
+      },
+      {
+        "c": "口",
+        "py": "kǒu",
+        "en": "mouth"
+      }
+    ],
+    "radical": {
+      "c": "口",
+      "py": "kǒu",
+      "en": "mouth"
+    },
+    "hint": "mouth",
+    "type": "pictophonetic",
+    "phonetic": "禾",
+    "semantic": "口",
+    "similar": []
+  },
+  "本": {
+    "dec": "⿻木一",
+    "parts": [
+      {
+        "c": "木",
+        "py": "mù",
+        "en": "tree"
+      },
+      {
+        "c": "一",
+        "py": "yī",
+        "en": "one"
+      }
+    ],
+    "radical": {
+      "c": "木",
+      "py": "mù",
+      "en": "tree"
+    },
+    "hint": "A tree 木 with its roots highlighted",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "里": {
+    "dec": "⿱田土",
+    "parts": [
+      {
+        "c": "田",
+        "py": "tián",
+        "en": "field"
+      },
+      {
+        "c": "土",
+        "py": "tǔ",
+        "en": "soil"
+      }
+    ],
+    "radical": {
+      "c": "里",
+      "py": "lǐ",
+      "en": "unit of distance equal to 0.5km"
+    },
+    "hint": "Unit of measure for farm 田 land 土",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "前": {
+    "dec": "⿱⿱丷一刖",
+    "parts": [
+      {
+        "c": "丷",
+        "py": "ha",
+        "en": "kwukyel"
+      },
+      {
+        "c": "一",
+        "py": "yī",
+        "en": "one"
+      },
+      {
+        "c": "刖",
+        "py": "yuè",
+        "en": "cutting off the feet as a form of punishment"
+      }
+    ],
+    "radical": {
+      "c": "刂",
+      "py": "dāo",
+      "en": "knife"
+    },
+    "hint": "",
+    "type": "",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "后": {
+    "dec": "⿸？口",
+    "parts": [],
+    "radical": {
+      "c": "口",
+      "py": "kǒu",
+      "en": "mouth"
+    },
+    "hint": "",
+    "type": "",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "能": {
+    "dec": "⿰⿱厶⺼⿱匕匕",
+    "parts": [
+      {
+        "c": "厶",
+        "py": "sī",
+        "en": "private"
+      },
+      {
+        "c": "⺼",
+        "py": "",
+        "en": "meat"
+      },
+      {
+        "c": "匕",
+        "py": "bǐ",
+        "en": "spoon"
+      }
+    ],
+    "radical": {
+      "c": "⺼",
+      "py": "",
+      "en": "meat"
+    },
+    "hint": "A bear's head 厶, body ⺼, and claws 匕",
+    "type": "pictographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "现": {
+    "dec": "⿰王见",
+    "parts": [
+      {
+        "c": "王",
+        "py": "wáng",
+        "en": "king"
+      },
+      {
+        "c": "见",
+        "py": "jiàn",
+        "en": "to see"
+      }
+    ],
+    "radical": {
+      "c": "王",
+      "py": "wáng",
+      "en": "king"
+    },
+    "hint": "To see 见 jade 王; 见 also provides the pronunciation",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "点": {
+    "dec": "⿱占灬",
+    "parts": [
+      {
+        "c": "占",
+        "py": "zhàn",
+        "en": "to divine"
+      },
+      {
+        "c": "灬",
+        "py": "huǒ",
+        "en": "fire"
+      }
+    ],
+    "radical": {
+      "c": "灬",
+      "py": "huǒ",
+      "en": "fire"
+    },
+    "hint": "fire",
+    "type": "pictophonetic",
+    "phonetic": "占",
+    "semantic": "灬",
+    "similar": []
+  },
+  "分": {
+    "dec": "⿱八刀",
+    "parts": [
+      {
+        "c": "八",
+        "py": "bā",
+        "en": "eight"
+      },
+      {
+        "c": "刀",
+        "py": "dāo",
+        "en": "knife"
+      }
+    ],
+    "radical": {
+      "c": "刀",
+      "py": "dāo",
+      "en": "knife"
+    },
+    "hint": "Pieces 八 being further subdivided with a knife 刀 ",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "中": {
+    "dec": "⿻口丨",
+    "parts": [
+      {
+        "c": "口",
+        "py": "kǒu",
+        "en": "mouth"
+      },
+      {
+        "c": "丨",
+        "py": "shù",
+        "en": "number one"
+      }
+    ],
+    "radical": {
+      "c": "丨",
+      "py": "shù",
+      "en": "number one"
+    },
+    "hint": "A line 丨 through the center of a box 口",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "时": {
+    "dec": "⿰日寸",
+    "parts": [
+      {
+        "c": "日",
+        "py": "rì",
+        "en": "sun"
+      },
+      {
+        "c": "寸",
+        "py": "cùn",
+        "en": "inch"
+      }
+    ],
+    "radical": {
+      "c": "日",
+      "py": "rì",
+      "en": "sun"
+    },
+    "hint": "day",
+    "type": "pictophonetic",
+    "phonetic": "",
+    "semantic": "日",
+    "similar": []
+  },
+  "候": {
+    "dec": "⿰亻矦",
+    "parts": [
+      {
+        "c": "亻",
+        "py": "rén",
+        "en": "man"
+      },
+      {
+        "c": "矦",
+        "py": "hóu",
+        "en": "target in archery"
+      }
+    ],
+    "radical": {
+      "c": "亻",
+      "py": "rén",
+      "en": "man"
+    },
+    "hint": "person",
+    "type": "pictophonetic",
+    "phonetic": "矦",
+    "semantic": "亻",
+    "similar": []
+  },
+  "回": {
+    "dec": "⿴囗口",
+    "parts": [
+      {
+        "c": "囗",
+        "py": "wéi",
+        "en": "enclosure"
+      },
+      {
+        "c": "口",
+        "py": "kǒu",
+        "en": "mouth"
+      }
+    ],
+    "radical": {
+      "c": "囗",
+      "py": "wéi",
+      "en": "enclosure"
+    },
+    "hint": "Originally, a spiral signifying return",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "影": {
+    "dec": "⿰景彡",
+    "parts": [
+      {
+        "c": "景",
+        "py": "jǐng",
+        "en": "scenery"
+      },
+      {
+        "c": "彡",
+        "py": "shān",
+        "en": "hair"
+      }
+    ],
+    "radical": {
+      "c": "彡",
+      "py": "shān",
+      "en": "hair"
+    },
+    "hint": "sunlight",
+    "type": "pictophonetic",
+    "phonetic": "景",
+    "semantic": "彡",
+    "similar": []
+  },
+  "住": {
+    "dec": "⿰亻主",
+    "parts": [
+      {
+        "c": "亻",
+        "py": "rén",
+        "en": "man"
+      },
+      {
+        "c": "主",
+        "py": "zhǔ",
+        "en": "to own"
+      }
+    ],
+    "radical": {
+      "c": "亻",
+      "py": "rén",
+      "en": "man"
+    },
+    "hint": "A person 亻 who hosts 主; 主 also provides the pronunciation",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "样": {
+    "dec": "⿰木羊",
+    "parts": [
+      {
+        "c": "木",
+        "py": "mù",
+        "en": "tree"
+      },
+      {
+        "c": "羊",
+        "py": "yáng",
+        "en": "sheep"
+      }
+    ],
+    "radical": {
+      "c": "木",
+      "py": "mù",
+      "en": "tree"
+    },
+    "hint": "tree",
+    "type": "pictophonetic",
+    "phonetic": "羊",
+    "semantic": "木",
+    "similar": []
+  },
+  "太": {
+    "dec": "⿵大丶",
+    "parts": [
+      {
+        "c": "大",
+        "py": "dà",
+        "en": "big"
+      },
+      {
+        "c": "丶",
+        "py": "diǎn",
+        "en": "dot"
+      }
+    ],
+    "radical": {
+      "c": "大",
+      "py": "dà",
+      "en": "big"
+    },
+    "hint": "A giant 大 with a normal-sized man 丶 for scale",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "热": {
+    "dec": "⿱执灬",
+    "parts": [
+      {
+        "c": "执",
+        "py": "zhí",
+        "en": "to execute"
+      },
+      {
+        "c": "灬",
+        "py": "huǒ",
+        "en": "fire"
+      }
+    ],
+    "radical": {
+      "c": "灬",
+      "py": "huǒ",
+      "en": "fire"
+    },
+    "hint": "fire",
+    "type": "pictophonetic",
+    "phonetic": "执",
+    "semantic": "灬",
+    "similar": []
+  },
+  "冷": {
+    "dec": "⿰冫令",
+    "parts": [
+      {
+        "c": "冫",
+        "py": "bīng",
+        "en": "ice"
+      },
+      {
+        "c": "令",
+        "py": "lìng",
+        "en": "command"
+      }
+    ],
+    "radical": {
+      "c": "冫",
+      "py": "bīng",
+      "en": "ice"
+    },
+    "hint": "ice",
+    "type": "pictophonetic",
+    "phonetic": "令",
+    "semantic": "冫",
+    "similar": []
+  },
+  "雨": {
+    "dec": "⿻帀？",
+    "parts": [],
+    "radical": {
+      "c": "雨",
+      "py": "yǔ",
+      "en": "rain"
+    },
+    "hint": "Rain drops falling from a cloud 帀",
+    "type": "pictographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "姐": {
+    "dec": "⿰女且",
+    "parts": [
+      {
+        "c": "女",
+        "py": "nǚ",
+        "en": "woman"
+      },
+      {
+        "c": "且",
+        "py": "qiě",
+        "en": "moreover"
+      }
+    ],
+    "radical": {
+      "c": "女",
+      "py": "nǚ",
+      "en": "woman"
+    },
+    "hint": "woman",
+    "type": "pictophonetic",
+    "phonetic": "且",
+    "semantic": "女",
+    "similar": []
+  },
+  "来": {
+    "dec": "⿻未丷",
+    "parts": [
+      {
+        "c": "未",
+        "py": "wèi",
+        "en": "not yet"
+      },
+      {
+        "c": "丷",
+        "py": "ha",
+        "en": "kwukyel"
+      }
+    ],
+    "radical": {
+      "c": "木",
+      "py": "mù",
+      "en": "tree"
+    },
+    "hint": "A wheat plant that has not yet borne fruit; compare 來",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "身": {
+    "dec": "？",
+    "parts": [],
+    "radical": {
+      "c": "身",
+      "py": "shēn",
+      "en": "body"
+    },
+    "hint": "A pregnant woman",
+    "type": "pictographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "体": {
+    "dec": "⿰亻本",
+    "parts": [
+      {
+        "c": "亻",
+        "py": "rén",
+        "en": "man"
+      },
+      {
+        "c": "本",
+        "py": "běn",
+        "en": "root"
+      }
+    ],
+    "radical": {
+      "c": "亻",
+      "py": "rén",
+      "en": "man"
+    },
+    "hint": "",
+    "type": "",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "爱": {
+    "dec": "⿱⿱爫冖友",
+    "parts": [
+      {
+        "c": "爫",
+        "py": "zhǎo",
+        "en": "claws"
+      },
+      {
+        "c": "冖",
+        "py": "mì",
+        "en": "cover"
+      },
+      {
+        "c": "友",
+        "py": "yǒu",
+        "en": "friend"
+      }
+    ],
+    "radical": {
+      "c": "爫",
+      "py": "zhǎo",
+      "en": "claws"
+    },
+    "hint": "To bring a friend 友 into one's house 冖",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "些": {
+    "dec": "⿱此二",
+    "parts": [
+      {
+        "c": "此",
+        "py": "cǐ",
+        "en": "this"
+      },
+      {
+        "c": "二",
+        "py": "èr",
+        "en": "two"
+      }
+    ],
+    "radical": {
+      "c": "二",
+      "py": "èr",
+      "en": "two"
+    },
+    "hint": "two",
+    "type": "pictophonetic",
+    "phonetic": "此",
+    "semantic": "二",
+    "similar": []
+  },
+  "水": {
+    "dec": "⿻亅？",
+    "parts": [],
+    "radical": {
+      "c": "水",
+      "py": "shuǐ",
+      "en": "water"
+    },
+    "hint": "A river running between two banks; compare 川",
+    "type": "pictographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "果": {
+    "dec": "⿱田木",
+    "parts": [
+      {
+        "c": "田",
+        "py": "tián",
+        "en": "field"
+      },
+      {
+        "c": "木",
+        "py": "mù",
+        "en": "tree"
+      }
+    ],
+    "radical": {
+      "c": "木",
+      "py": "mù",
+      "en": "tree"
+    },
+    "hint": "Fruit 田 growing on a tree 木",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "喂": {
+    "dec": "⿰口畏",
+    "parts": [
+      {
+        "c": "口",
+        "py": "kǒu",
+        "en": "mouth"
+      },
+      {
+        "c": "畏",
+        "py": "wèi",
+        "en": "fear"
+      }
+    ],
+    "radical": {
+      "c": "口",
+      "py": "kǒu",
+      "en": "mouth"
+    },
+    "hint": "mouth",
+    "type": "pictophonetic",
+    "phonetic": "畏",
+    "semantic": "口",
+    "similar": []
+  },
+  "也": {
+    "dec": "⿻？乚",
+    "parts": [],
+    "radical": {
+      "c": "乚",
+      "py": "gōu",
+      "en": "secret"
+    },
+    "hint": "",
+    "type": "",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "习": {
+    "dec": "⿹？冫",
+    "parts": [],
+    "radical": {
+      "c": "冫",
+      "py": "bīng",
+      "en": "ice"
+    },
+    "hint": "",
+    "type": "",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "睡": {
+    "dec": "⿰目垂",
+    "parts": [
+      {
+        "c": "目",
+        "py": "mù",
+        "en": "eye"
+      },
+      {
+        "c": "垂",
+        "py": "chuí",
+        "en": "to hang"
+      }
+    ],
+    "radical": {
+      "c": "目",
+      "py": "mù",
+      "en": "eye"
+    },
+    "hint": "eye",
+    "type": "pictophonetic",
+    "phonetic": "垂",
+    "semantic": "目",
+    "similar": []
+  },
+  "觉": {
+    "dec": "⿳⺍冖见",
+    "parts": [
+      {
+        "c": "⺍",
+        "py": "",
+        "en": ""
+      },
+      {
+        "c": "冖",
+        "py": "mì",
+        "en": "cover"
+      },
+      {
+        "c": "见",
+        "py": "jiàn",
+        "en": "to see"
+      }
+    ],
+    "radical": {
+      "c": "见",
+      "py": "jiàn",
+      "en": "to see"
+    },
+    "hint": "see",
+    "type": "pictophonetic",
+    "phonetic": "⺍",
+    "semantic": "见",
+    "similar": []
+  },
+  "视": {
+    "dec": "⿰礻见",
+    "parts": [
+      {
+        "c": "礻",
+        "py": "shì",
+        "en": "spirit"
+      },
+      {
+        "c": "见",
+        "py": "jiàn",
+        "en": "to see"
+      }
+    ],
+    "radical": {
+      "c": "见",
+      "py": "jiàn",
+      "en": "to see"
+    },
+    "hint": "see",
+    "type": "pictophonetic",
+    "phonetic": "礻",
+    "semantic": "见",
+    "similar": []
+  },
+  "喜": {
+    "dec": "⿱壴口",
+    "parts": [
+      {
+        "c": "壴",
+        "py": "zhù",
+        "en": "drum"
+      },
+      {
+        "c": "口",
+        "py": "kǒu",
+        "en": "mouth"
+      }
+    ],
+    "radical": {
+      "c": "口",
+      "py": "kǒu",
+      "en": "mouth"
+    },
+    "hint": "Singing 口 and beating drums 壴",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "欢": {
+    "dec": "⿰又欠",
+    "parts": [
+      {
+        "c": "又",
+        "py": "yòu",
+        "en": "and"
+      },
+      {
+        "c": "欠",
+        "py": "qiàn",
+        "en": "to lack"
+      }
+    ],
+    "radical": {
+      "c": "欠",
+      "py": "qiàn",
+      "en": "to lack"
+    },
+    "hint": "",
+    "type": "",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "给": {
+    "dec": "⿰纟合",
+    "parts": [
+      {
+        "c": "纟",
+        "py": "sī",
+        "en": "silk"
+      },
+      {
+        "c": "合",
+        "py": "hé",
+        "en": "to combine"
+      }
+    ],
+    "radical": {
+      "c": "纟",
+      "py": "sī",
+      "en": "silk"
+    },
+    "hint": "thread",
+    "type": "pictophonetic",
+    "phonetic": "合",
+    "semantic": "纟",
+    "similar": []
+  },
+  "打": {
+    "dec": "⿰扌丁",
+    "parts": [
+      {
+        "c": "扌",
+        "py": "shǒu",
+        "en": "hand"
+      },
+      {
+        "c": "丁",
+        "py": "dīng",
+        "en": "male adult"
+      }
+    ],
+    "radical": {
+      "c": "扌",
+      "py": "shǒu",
+      "en": "hand"
+    },
+    "hint": "hand",
+    "type": "pictophonetic",
+    "phonetic": "丁",
+    "semantic": "扌",
+    "similar": []
+  },
+  "话": {
+    "dec": "⿰讠舌",
+    "parts": [
+      {
+        "c": "讠",
+        "py": "yán",
+        "en": "words"
+      },
+      {
+        "c": "舌",
+        "py": "shé",
+        "en": "tongue"
+      }
+    ],
+    "radical": {
+      "c": "讠",
+      "py": "yán",
+      "en": "words"
+    },
+    "hint": "A spoken 讠 tongue 舌; 舌 also provides the pronunciation",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "吧": {
+    "dec": "⿰口巴",
+    "parts": [
+      {
+        "c": "口",
+        "py": "kǒu",
+        "en": "mouth"
+      },
+      {
+        "c": "巴",
+        "py": "bā",
+        "en": "to desire"
+      }
+    ],
+    "radical": {
+      "c": "口",
+      "py": "kǒu",
+      "en": "mouth"
+    },
+    "hint": "mouth",
+    "type": "pictophonetic",
+    "phonetic": "巴",
+    "semantic": "口",
+    "similar": []
+  },
+  "东": {
+    "dec": "⿻七小",
+    "parts": [
+      {
+        "c": "七",
+        "py": "qī",
+        "en": "seven"
+      },
+      {
+        "c": "小",
+        "py": "xiǎo",
+        "en": "small"
+      }
+    ],
+    "radical": {
+      "c": "一",
+      "py": "yī",
+      "en": "one"
+    },
+    "hint": "Simplified form of 東, the sun 日 rising behind a tree 木",
+    "type": "pictographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "西": {
+    "dec": "⿻兀囗",
+    "parts": [
+      {
+        "c": "兀",
+        "py": "wù",
+        "en": "weak"
+      },
+      {
+        "c": "囗",
+        "py": "wéi",
+        "en": "enclosure"
+      }
+    ],
+    "radical": {
+      "c": "西",
+      "py": "xī",
+      "en": "west"
+    },
+    "hint": "A bird settling into its nest, representing sunset; compare 東",
+    "type": "pictographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "苹": {
+    "dec": "⿱艹平",
+    "parts": [
+      {
+        "c": "艹",
+        "py": "cǎo",
+        "en": "grass"
+      },
+      {
+        "c": "平",
+        "py": "píng",
+        "en": "flat"
+      }
+    ],
+    "radical": {
+      "c": "艹",
+      "py": "cǎo",
+      "en": "grass"
+    },
+    "hint": "plant",
+    "type": "pictophonetic",
+    "phonetic": "平",
+    "semantic": "艹",
+    "similar": []
+  },
+  "先": {
+    "dec": "⿱⿰？土儿",
+    "parts": [],
+    "radical": {
+      "c": "儿",
+      "py": "ér",
+      "en": "son"
+    },
+    "hint": "Someone stepping 止 in front of another person 儿",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "开": {
+    "dec": "⿱一廾",
+    "parts": [
+      {
+        "c": "一",
+        "py": "yī",
+        "en": "one"
+      },
+      {
+        "c": "廾",
+        "py": "gǒng",
+        "en": "two hands"
+      }
+    ],
+    "radical": {
+      "c": "廾",
+      "py": "gǒng",
+      "en": "two hands"
+    },
+    "hint": "Simplified form of 開; hands 廾 lifting the latch 一 of a door",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "车": {
+    "dec": "⿻七十",
+    "parts": [
+      {
+        "c": "七",
+        "py": "qī",
+        "en": "seven"
+      },
+      {
+        "c": "十",
+        "py": "shí",
+        "en": "ten"
+      }
+    ],
+    "radical": {
+      "c": "车",
+      "py": "chē",
+      "en": "cart"
+    },
+    "hint": "Simplified form of 車, a cart with two wheels, seen from above",
+    "type": "pictographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "钟": {
+    "dec": "⿰钅中",
+    "parts": [
+      {
+        "c": "钅",
+        "py": "jīn",
+        "en": "gold"
+      },
+      {
+        "c": "中",
+        "py": "zhōng",
+        "en": "central"
+      }
+    ],
+    "radical": {
+      "c": "钅",
+      "py": "jīn",
+      "en": "gold"
+    },
+    "hint": "metal",
+    "type": "pictophonetic",
+    "phonetic": "中",
+    "semantic": "钅",
+    "similar": []
+  },
+  "衣": {
+    "dec": "⿱亠？",
+    "parts": [],
+    "radical": {
+      "c": "衣",
+      "py": "yī",
+      "en": "cloth"
+    },
+    "hint": "A woman's dress",
+    "type": "pictographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "服": {
+    "dec": "⿰月⿸卩又",
+    "parts": [
+      {
+        "c": "月",
+        "py": "yuè",
+        "en": "moon"
+      },
+      {
+        "c": "卩",
+        "py": "jié",
+        "en": "seal"
+      },
+      {
+        "c": "又",
+        "py": "yòu",
+        "en": "and"
+      }
+    ],
+    "radical": {
+      "c": "月",
+      "py": "yuè",
+      "en": "moon"
+    },
+    "hint": "A person 卩 putting on 又 a coat 月",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "漂": {
+    "dec": "⿰氵票",
+    "parts": [
+      {
+        "c": "氵",
+        "py": "shuǐ",
+        "en": "water"
+      },
+      {
+        "c": "票",
+        "py": "piào",
+        "en": "bank note"
+      }
+    ],
+    "radical": {
+      "c": "氵",
+      "py": "shuǐ",
+      "en": "water"
+    },
+    "hint": "water",
+    "type": "pictophonetic",
+    "phonetic": "票",
+    "semantic": "氵",
+    "similar": []
+  },
+  "亮": {
+    "dec": "⿳亠口⿱冖几",
+    "parts": [
+      {
+        "c": "亠",
+        "py": "tóu",
+        "en": "lid"
+      },
+      {
+        "c": "口",
+        "py": "kǒu",
+        "en": "mouth"
+      },
+      {
+        "c": "冖",
+        "py": "mì",
+        "en": "cover"
+      },
+      {
+        "c": "几",
+        "py": "jǐ",
+        "en": "small table"
+      }
+    ],
+    "radical": {
+      "c": "亠",
+      "py": "tóu",
+      "en": "lid"
+    },
+    "hint": "A lit oil lamp",
+    "type": "pictographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "啊": {
+    "dec": "⿰口阿",
+    "parts": [
+      {
+        "c": "口",
+        "py": "kǒu",
+        "en": "mouth"
+      },
+      {
+        "c": "阿",
+        "py": "ā",
+        "en": "an initial particle"
+      }
+    ],
+    "radical": {
+      "c": "口",
+      "py": "kǒu",
+      "en": "mouth"
+    },
+    "hint": "mouth",
+    "type": "pictophonetic",
+    "phonetic": "阿",
+    "semantic": "口",
+    "similar": []
+  },
+  "都": {
+    "dec": "⿰者阝",
+    "parts": [
+      {
+        "c": "者",
+        "py": "zhě",
+        "en": "that which"
+      },
+      {
+        "c": "阝",
+        "py": "yì",
+        "en": "place"
+      }
+    ],
+    "radical": {
+      "c": "阝",
+      "py": "yì",
+      "en": "place"
+    },
+    "hint": "city",
+    "type": "pictophonetic",
+    "phonetic": "者",
+    "semantic": "阝",
+    "similar": []
+  },
+  "认": {
+    "dec": "⿰讠人",
+    "parts": [
+      {
+        "c": "讠",
+        "py": "yán",
+        "en": "words"
+      },
+      {
+        "c": "人",
+        "py": "rén",
+        "en": "man"
+      }
+    ],
+    "radical": {
+      "c": "讠",
+      "py": "yán",
+      "en": "words"
+    },
+    "hint": "speech",
+    "type": "pictophonetic",
+    "phonetic": "人",
+    "semantic": "讠",
+    "similar": []
+  },
+  "识": {
+    "dec": "⿰讠只",
+    "parts": [
+      {
+        "c": "讠",
+        "py": "yán",
+        "en": "words"
+      },
+      {
+        "c": "只",
+        "py": "zhī",
+        "en": "only"
+      }
+    ],
+    "radical": {
+      "c": "讠",
+      "py": "yán",
+      "en": "words"
+    },
+    "hint": "speech",
+    "type": "pictophonetic",
+    "phonetic": "只",
+    "semantic": "讠",
+    "similar": []
+  },
+  "出": {
+    "dec": "⿱屮凵",
+    "parts": [
+      {
+        "c": "屮",
+        "py": "chè",
+        "en": "sprout"
+      },
+      {
+        "c": "凵",
+        "py": "qiǎn",
+        "en": "container"
+      }
+    ],
+    "radical": {
+      "c": "凵",
+      "py": "qiǎn",
+      "en": "container"
+    },
+    "hint": "A sprout 屮 growing out of a container 凵",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "租": {
+    "dec": "⿰禾且",
+    "parts": [
+      {
+        "c": "禾",
+        "py": "hé",
+        "en": "cereal"
+      },
+      {
+        "c": "且",
+        "py": "qiě",
+        "en": "moreover"
+      }
+    ],
+    "radical": {
+      "c": "禾",
+      "py": "hé",
+      "en": "cereal"
+    },
+    "hint": "Regularly paid 且 tribute in grain 禾",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "高": {
+    "dec": "⿳亠口冋",
+    "parts": [
+      {
+        "c": "亠",
+        "py": "tóu",
+        "en": "lid"
+      },
+      {
+        "c": "口",
+        "py": "kǒu",
+        "en": "mouth"
+      },
+      {
+        "c": "冋",
+        "py": "jiōng",
+        "en": "desert"
+      }
+    ],
+    "radical": {
+      "c": "高",
+      "py": "gāo",
+      "en": "tall"
+    },
+    "hint": "A tall palace",
+    "type": "pictographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "兴": {
+    "dec": "⿳⺍一八",
+    "parts": [
+      {
+        "c": "⺍",
+        "py": "",
+        "en": ""
+      },
+      {
+        "c": "一",
+        "py": "yī",
+        "en": "one"
+      },
+      {
+        "c": "八",
+        "py": "bā",
+        "en": "eight"
+      }
+    ],
+    "radical": {
+      "c": "八",
+      "py": "bā",
+      "en": "eight"
+    },
+    "hint": "",
+    "type": "",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "飞": {
+    "dec": "⿻？？",
+    "parts": [],
+    "radical": {
+      "c": "飞",
+      "py": "fēi",
+      "en": "to fly"
+    },
+    "hint": "A bird flapping its wings",
+    "type": "pictographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
+  },
+  "机": {
+    "dec": "⿰木几",
+    "parts": [
+      {
+        "c": "木",
+        "py": "mù",
+        "en": "tree"
+      },
+      {
+        "c": "几",
+        "py": "jǐ",
+        "en": "small table"
+      }
+    ],
+    "radical": {
+      "c": "木",
+      "py": "mù",
+      "en": "tree"
+    },
+    "hint": "A table 几 made of wood 木; 几 also provides the pronunciation",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": []
   }
 }

@@ -530,3 +530,16 @@ dialog.sheet::backdrop { background: rgb(0 0 0 / .5); }
 }
 
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; animation: none !important; } }
+
+/* Grammar notes (Read tab) */
+.gr { align-items: stretch; }
+.gr-note { border-top: 1px solid var(--line); padding: 14px 0 4px; display: grid; gap: 6px; }
+.gr-note h3 { margin: 0; font-size: 1.15rem; font-weight: 600; display: flex; align-items: center; gap: 10px; }
+.gr-n { width: 24px; height: 24px; border-radius: 50%; border: 1px solid var(--line2); display: inline-grid; place-items: center; font-size: .8rem; color: var(--muted); flex: none; }
+.gr-note p { margin: 0; color: var(--muted); }
+.gr-note ul { list-style: none; margin: 4px 0 0; padding: 0; display: grid; gap: 6px; }
+.gr-note li { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.gr-note li .hz { font-size: 1.2rem; }
+.gr-q { font-size: 1.6rem; margin: 6px 0; line-height: 1.5; }
+.gr-blank { display: inline-block; min-width: 2.2em; border-bottom: 2px solid var(--line2); color: var(--muted); text-align: center; }
+.gr-fill { text-decoration-color: var(--cinnabar, currentColor); text-underline-offset: 6px; }

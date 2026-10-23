@@ -126,6 +126,26 @@ try {
   check("A stays signed in after closing and reopening", await A.waitStatus("synced"));
   check("A data intact after reopen", (await A.get("w:你"))?.n === 3);
 
+  // 9. Private book content: only the owner's account can read it.
+  const FS = "http://127.0.0.1:8080/v1/projects/demo-xiezi/databases/(default)/documents";
+  const admin = { Authorization: "Bearer owner", "Content-Type": "application/json" }; // emulator-only bypass
+  const seed = (doc, fields) => fetch(`${FS}/${doc}`, { method: "PATCH", headers: admin, body: JSON.stringify({ fields }) });
+  const texts = [{ title: "测试 · Test", lines: [["A", "你好！", "Nǐ hǎo!", "Hello!"]] }];
+  await seed("books/hsk1/private/8", { texts: { stringValue: JSON.stringify(texts) }, notes: { stringValue: JSON.stringify([{ cn: "测试", en: "test note", examples: ["你好！"] }]) } });
+  await seed("books/hsk1/audio/8", { a: { mapValue: { fields: {} } } });
+  const content = () => A.js(`const c = await import('/xiezi/src/sync/content.js'); const r = await c.lessonContent('hsk1', 8); return r.status + ':' + r.texts.length + ':' + r.notes.length;`);
+  check("Signed in but not the owner: book texts refused", (await content()) === "none:0:0", await content());
+  const login = await (await fetch("http://127.0.0.1:9099/identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=demo-key", {
+    method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email: EMAIL, password: PASS, returnSecureToken: true }),
+  })).json();
+  await seed(`owners/${login.localId}`, { owner: { booleanValue: true } });
+  check("Owner: book texts and grammar load", (await content()) === "ok:1:1", await content());
+  await A.open("#/lesson/hsk1/8/read");
+  const listed = await A.js(`document.querySelector('[data-mode=texts]').click(); await new Promise(r => setTimeout(r, 1500)); return document.querySelector('#tab-read').textContent;`);
+  check("Owner: Read tab lists the book's text first", /测试[\s\S]*from the book/.test(listed || ""), (listed || "").slice(0, 80));
+  const anonBook = await fetch(`${FS}/books/hsk1/private/8`);
+  check("Not signed in: book texts refused", anonBook.status === 403, `HTTP ${anonBook.status}`);
+
   check("No JS errors on either device", A.errors.length === 0 && B.errors.length === 0, [...A.errors, ...B.errors].join(" | "));
 } finally {
   A.close(); B.close();

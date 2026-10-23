@@ -47,6 +47,14 @@ export function checkData() {
     for (const q of r.questions || []) if (!q.options?.[q.answer]) problems.push(`${l.file}: reading ${r.id}: question "${q.q}" has no valid answer`);
   }
 
+  for (const l of lessons) for (const g of l.grammar || []) {
+    if (!g.point || !g.en || !g.drills?.length) problems.push(`${l.file}: grammar point "${g.point || "?"}" needs point, en and drills`);
+    for (const d of g.drills || []) {
+      if (!d.q?.includes("___")) problems.push(`${l.file}: grammar drill "${d.q}" needs ___ for the blank`);
+      if (!d.options?.[d.answer] || new Set(d.options).size !== d.options.length) problems.push(`${l.file}: grammar drill "${d.q}" needs distinct options and a valid answer`);
+    }
+  }
+
   for (const c of lessonChars(lessons)) {
     const info = chars[c];
     if (!info) { problems.push(`chars.json: no entry for ${c}`); continue; }

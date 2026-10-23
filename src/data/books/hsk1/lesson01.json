@@ -1,0 +1,221 @@
+{
+  "n": 1,
+  "cn": "第一课",
+  "title": "你好",
+  "en": "Hello",
+  "words": [
+    {
+      "w": "你",
+      "py": "nǐ",
+      "en": "you",
+      "ex": {
+        "hz": "你好！",
+        "py": "Nǐ hǎo!",
+        "en": "Hello!"
+      }
+    },
+    {
+      "w": "好",
+      "py": "hǎo",
+      "en": "good; well",
+      "ex": {
+        "hz": "很好！",
+        "py": "Hěn hǎo!",
+        "en": "Very good!"
+      }
+    },
+    {
+      "w": "您",
+      "py": "nín",
+      "en": "you (polite)",
+      "ex": {
+        "hz": "老师，您好！",
+        "py": "Lǎoshī, nín hǎo!",
+        "en": "Hello, teacher!"
+      }
+    },
+    {
+      "w": "你们",
+      "py": "nǐmen",
+      "en": "you (plural)",
+      "ex": {
+        "hz": "你们好！",
+        "py": "Nǐmen hǎo!",
+        "en": "Hello, everyone!"
+      }
+    },
+    {
+      "w": "对不起",
+      "py": "duìbuqǐ",
+      "en": "sorry",
+      "ex": {
+        "hz": "对不起，我不会说汉语。",
+        "py": "Duìbuqǐ, wǒ bú huì shuō Hànyǔ.",
+        "en": "Sorry, I can't speak Chinese."
+      }
+    },
+    {
+      "w": "没关系",
+      "py": "méi guānxi",
+      "en": "it doesn't matter",
+      "ex": {
+        "hz": "A：对不起！ B：没关系。",
+        "py": "A: Duìbuqǐ! B: Méi guānxi.",
+        "en": "A: Sorry! B: That's okay."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "你好",
+      "py": "Nǐ hǎo",
+      "en": "Hello",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你好！",
+          "py": "Nǐ hǎo!",
+          "en": "Hello!"
+        },
+        {
+          "who": "B",
+          "hz": "你好！",
+          "py": "Nǐ hǎo!",
+          "en": "Hello!"
+        },
+        {
+          "who": "A",
+          "hz": "您好！",
+          "py": "Nín hǎo!",
+          "en": "Hello! (polite)"
+        },
+        {
+          "who": "B",
+          "hz": "你们好！",
+          "py": "Nǐmen hǎo!",
+          "en": "Hello, everyone!"
+        }
+      ],
+      "questions": [
+        {
+          "q": "How do you greet a group of people?",
+          "options": [
+            "你们好！",
+            "您好！",
+            "没关系。",
+            "对不起！"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which greeting is the polite one?",
+          "options": [
+            "您好！",
+            "你好！",
+            "你们好！",
+            "没关系。"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "没关系",
+      "py": "Méi guānxi",
+      "en": "That's okay",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "对不起！",
+          "py": "Duìbuqǐ!",
+          "en": "Sorry!"
+        },
+        {
+          "who": "B",
+          "hz": "没关系。",
+          "py": "Méi guānxi.",
+          "en": "That's okay."
+        },
+        {
+          "who": "A",
+          "hz": "对不起，对不起！",
+          "py": "Duìbuqǐ, duìbuqǐ!",
+          "en": "Sorry, so sorry!"
+        },
+        {
+          "who": "B",
+          "hz": "没关系，没关系。",
+          "py": "Méi guānxi, méi guānxi.",
+          "en": "It's fine, it's fine."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How does B answer “对不起”?",
+          "options": [
+            "没关系。",
+            "你好！",
+            "您好！",
+            "你们好！"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What does A say?",
+          "options": [
+            "Sorry",
+            "Hello",
+            "Goodbye",
+            "Thank you"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "你好 / 您好",
+      "en": "Greeting: name or 你 / 您 / 你们 + 好",
+      "drills": [
+        {
+          "q": "老师，___好！",
+          "options": [
+            "您",
+            "不",
+            "吗",
+            "没"
+          ],
+          "answer": 0,
+          "en": "Hello, teacher! (polite)"
+        },
+        {
+          "q": "___好！（to a group）",
+          "options": [
+            "你们",
+            "您",
+            "好",
+            "不"
+          ],
+          "answer": 0,
+          "en": "Hello, everyone!"
+        },
+        {
+          "q": "A：对不起！ B：___。",
+          "options": [
+            "没关系",
+            "你好",
+            "你们",
+            "您好"
+          ],
+          "answer": 0,
+          "en": "A: Sorry! B: That's okay."
+        }
+      ]
+    }
+  ]
+}

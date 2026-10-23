@@ -1,0 +1,201 @@
+{
+  "n": 2,
+  "cn": "第二课",
+  "title": "谢谢你",
+  "en": "Thank you",
+  "words": [
+    {
+      "w": "谢谢",
+      "py": "xièxie",
+      "en": "thank you",
+      "ex": {
+        "hz": "谢谢你！",
+        "py": "Xièxie nǐ!",
+        "en": "Thank you!"
+      }
+    },
+    {
+      "w": "不",
+      "py": "bù",
+      "en": "not; no",
+      "ex": {
+        "hz": "我不是老师。",
+        "py": "Wǒ bú shì lǎoshī.",
+        "en": "I'm not a teacher."
+      }
+    },
+    {
+      "w": "不客气",
+      "py": "bú kèqi",
+      "en": "you're welcome",
+      "ex": {
+        "hz": "A：谢谢！ B：不客气。",
+        "py": "A: Xièxie! B: Bú kèqi.",
+        "en": "A: Thanks! B: You're welcome."
+      }
+    },
+    {
+      "w": "再见",
+      "py": "zàijiàn",
+      "en": "goodbye",
+      "ex": {
+        "hz": "老师，再见！",
+        "py": "Lǎoshī, zàijiàn!",
+        "en": "Goodbye, teacher!"
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "谢谢",
+      "py": "Xièxie",
+      "en": "Thanks",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "谢谢你！",
+          "py": "Xièxie nǐ!",
+          "en": "Thank you!"
+        },
+        {
+          "who": "B",
+          "hz": "不客气。",
+          "py": "Bú kèqi.",
+          "en": "You're welcome."
+        },
+        {
+          "who": "A",
+          "hz": "再见！",
+          "py": "Zàijiàn!",
+          "en": "Goodbye!"
+        },
+        {
+          "who": "B",
+          "hz": "再见！",
+          "py": "Zàijiàn!",
+          "en": "Goodbye!"
+        }
+      ],
+      "questions": [
+        {
+          "q": "How does B answer “谢谢你”?",
+          "options": [
+            "不客气。",
+            "再见！",
+            "对不起。",
+            "你好！"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How do they end the talk?",
+          "options": [
+            "再见！",
+            "谢谢！",
+            "没关系。",
+            "您好！"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "不客气",
+      "py": "Bú kèqi",
+      "en": "You're welcome",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "您好！",
+          "py": "Nín hǎo!",
+          "en": "Hello!"
+        },
+        {
+          "who": "B",
+          "hz": "你好！",
+          "py": "Nǐ hǎo!",
+          "en": "Hello!"
+        },
+        {
+          "who": "A",
+          "hz": "谢谢您！",
+          "py": "Xièxie nín!",
+          "en": "Thank you!"
+        },
+        {
+          "who": "B",
+          "hz": "不客气，再见！",
+          "py": "Bú kèqi, zàijiàn!",
+          "en": "You're welcome, goodbye!"
+        }
+      ],
+      "questions": [
+        {
+          "q": "Who does A thank politely?",
+          "options": [
+            "您",
+            "你们",
+            "老师",
+            "我"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What does B say last?",
+          "options": [
+            "再见！",
+            "你好！",
+            "谢谢！",
+            "对不起！"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "不 + verb / adjective",
+      "en": "不 makes a sentence negative",
+      "drills": [
+        {
+          "q": "A：谢谢！ B：___客气。",
+          "options": [
+            "不",
+            "没",
+            "很",
+            "吗"
+          ],
+          "answer": 0,
+          "en": "A: Thanks! B: You're welcome."
+        },
+        {
+          "q": "我___是老师。",
+          "options": [
+            "不",
+            "吗",
+            "很",
+            "的"
+          ],
+          "answer": 0,
+          "en": "I'm not a teacher."
+        },
+        {
+          "q": "A：谢谢你！ B：不客气，___！",
+          "options": [
+            "再见",
+            "对不起",
+            "没关系",
+            "谢谢"
+          ],
+          "answer": 0,
+          "en": "You're welcome, goodbye!"
+        }
+      ]
+    }
+  ]
+}

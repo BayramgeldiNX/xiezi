@@ -1,0 +1,296 @@
+{
+  "n": 3,
+  "cn": "第三课",
+  "title": "你叫什么名字",
+  "en": "What's your name",
+  "words": [
+    {
+      "w": "叫",
+      "py": "jiào",
+      "en": "to be called",
+      "ex": {
+        "hz": "我叫小王。",
+        "py": "Wǒ jiào Xiǎo Wáng.",
+        "en": "My name is Xiao Wang."
+      }
+    },
+    {
+      "w": "什么",
+      "py": "shénme",
+      "en": "what",
+      "ex": {
+        "hz": "你叫什么名字？",
+        "py": "Nǐ jiào shénme míngzi?",
+        "en": "What's your name?"
+      }
+    },
+    {
+      "w": "名字",
+      "py": "míngzi",
+      "en": "name",
+      "ex": {
+        "hz": "你的名字很好。",
+        "py": "Nǐ de míngzi hěn hǎo.",
+        "en": "Your name is nice."
+      }
+    },
+    {
+      "w": "我",
+      "py": "wǒ",
+      "en": "I; me",
+      "ex": {
+        "hz": "我是学生。",
+        "py": "Wǒ shì xuésheng.",
+        "en": "I'm a student."
+      }
+    },
+    {
+      "w": "是",
+      "py": "shì",
+      "en": "to be (am / is / are)",
+      "ex": {
+        "hz": "她是老师。",
+        "py": "Tā shì lǎoshī.",
+        "en": "She is a teacher."
+      }
+    },
+    {
+      "w": "老师",
+      "py": "lǎoshī",
+      "en": "teacher",
+      "ex": {
+        "hz": "你是老师吗？",
+        "py": "Nǐ shì lǎoshī ma?",
+        "en": "Are you a teacher?"
+      }
+    },
+    {
+      "w": "吗",
+      "py": "ma",
+      "en": "(makes a yes/no question)",
+      "ex": {
+        "hz": "你是学生吗？",
+        "py": "Nǐ shì xuésheng ma?",
+        "en": "Are you a student?"
+      }
+    },
+    {
+      "w": "学生",
+      "py": "xuésheng",
+      "en": "student",
+      "ex": {
+        "hz": "我不是老师，我是学生。",
+        "py": "Wǒ bú shì lǎoshī, wǒ shì xuésheng.",
+        "en": "I'm not a teacher, I'm a student."
+      }
+    },
+    {
+      "w": "人",
+      "py": "rén",
+      "en": "person; people",
+      "ex": {
+        "hz": "你是中国人吗？",
+        "py": "Nǐ shì Zhōngguó rén ma?",
+        "en": "Are you Chinese?"
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "你叫什么名字",
+      "py": "Nǐ jiào shénme míngzi",
+      "en": "What's your name",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你好！我叫小王。你叫什么名字？",
+          "py": "Nǐ hǎo! Wǒ jiào Xiǎo Wáng. Nǐ jiào shénme míngzi?",
+          "en": "Hi! I'm Xiao Wang. What's your name?"
+        },
+        {
+          "who": "B",
+          "hz": "我叫小李。",
+          "py": "Wǒ jiào Xiǎo Lǐ.",
+          "en": "I'm Xiao Li."
+        },
+        {
+          "who": "A",
+          "hz": "你是老师吗？",
+          "py": "Nǐ shì lǎoshī ma?",
+          "en": "Are you a teacher?"
+        },
+        {
+          "who": "B",
+          "hz": "我不是老师，我是学生。",
+          "py": "Wǒ bú shì lǎoshī, wǒ shì xuésheng.",
+          "en": "I'm not a teacher, I'm a student."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What is B's name?",
+          "options": [
+            "小李",
+            "小王",
+            "老师",
+            "学生"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Is B a teacher?",
+          "options": [
+            "No, a student",
+            "Yes",
+            "No, a doctor",
+            "We don't know"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "你是中国人吗",
+      "py": "Nǐ shì Zhōngguó rén ma",
+      "en": "Are you Chinese",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你是中国人吗？",
+          "py": "Nǐ shì Zhōngguó rén ma?",
+          "en": "Are you Chinese?"
+        },
+        {
+          "who": "B",
+          "hz": "我不是中国人，我是美国人。",
+          "py": "Wǒ bú shì Zhōngguó rén, wǒ shì Měiguó rén.",
+          "en": "I'm not Chinese, I'm American."
+        },
+        {
+          "who": "A",
+          "hz": "你是学生吗？",
+          "py": "Nǐ shì xuésheng ma?",
+          "en": "Are you a student?"
+        },
+        {
+          "who": "B",
+          "hz": "是，我是学生。",
+          "py": "Shì, wǒ shì xuésheng.",
+          "en": "Yes, I'm a student."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Where is B from?",
+          "options": [
+            "美国",
+            "中国",
+            "We don't know",
+            "Both"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What does B do?",
+          "options": [
+            "Student",
+            "Teacher",
+            "Doctor",
+            "Nothing"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "是 sentences",
+      "en": "A 是 B: A is B",
+      "drills": [
+        {
+          "q": "我___学生。",
+          "options": [
+            "是",
+            "叫",
+            "有",
+            "很"
+          ],
+          "answer": 0,
+          "en": "I am a student."
+        },
+        {
+          "q": "她不___老师。",
+          "options": [
+            "是",
+            "叫",
+            "吗",
+            "好"
+          ],
+          "answer": 0,
+          "en": "She isn't a teacher."
+        }
+      ]
+    },
+    {
+      "point": "吗 questions",
+      "en": "Statement + 吗 = a yes/no question",
+      "drills": [
+        {
+          "q": "你是中国人___？",
+          "options": [
+            "吗",
+            "呢",
+            "的",
+            "什么"
+          ],
+          "answer": 0,
+          "en": "Are you Chinese?"
+        },
+        {
+          "q": "你是老师___？",
+          "options": [
+            "吗",
+            "什么",
+            "谁",
+            "哪"
+          ],
+          "answer": 0,
+          "en": "Are you a teacher?"
+        }
+      ]
+    },
+    {
+      "point": "什么",
+      "en": "什么 asks “what”, in the place of the answer",
+      "drills": [
+        {
+          "q": "你叫___名字？",
+          "options": [
+            "什么",
+            "吗",
+            "谁",
+            "哪"
+          ],
+          "answer": 0,
+          "en": "What's your name?"
+        },
+        {
+          "q": "这是___？",
+          "options": [
+            "什么",
+            "吗",
+            "哪",
+            "几"
+          ],
+          "answer": 0,
+          "en": "What is this?"
+        }
+      ]
+    }
+  ]
+}

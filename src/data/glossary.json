@@ -1,19 +1,102 @@
 {
-  "我": { "py": "wǒ", "en": "I, me" },
-  "我们": { "py": "wǒmen", "en": "we, us" },
-  "他": { "py": "tā", "en": "he, him" },
-  "她": { "py": "tā", "en": "she, her" },
-  "是": { "py": "shì", "en": "to be (am / is / are)" },
-  "叫": { "py": "jiào", "en": "to be called" },
-  "的": { "py": "de", "en": "'s (shows belonging)" },
-  "很": { "py": "hěn", "en": "very" },
-  "也": { "py": "yě", "en": "also, too" },
-  "会": { "py": "huì", "en": "can, know how to" },
-  "可以": { "py": "kěyǐ", "en": "may, can" },
-  "吗": { "py": "ma", "en": "question word (yes/no?)" },
-  "一下": { "py": "yíxià", "en": "a little, briefly" },
-  "一遍": { "py": "yí biàn", "en": "once (one time through)" },
-  "学生": { "py": "xuésheng", "en": "student" },
-  "好": { "py": "hǎo", "en": "good, well; OK" },
-  "白怀诚": { "py": "Bái Huáichéng", "en": "Bai Huaicheng (a name)" }
+  "我": {
+    "py": "wǒ",
+    "en": "I, me"
+  },
+  "我们": {
+    "py": "wǒmen",
+    "en": "we, us"
+  },
+  "他": {
+    "py": "tā",
+    "en": "he, him"
+  },
+  "她": {
+    "py": "tā",
+    "en": "she, her"
+  },
+  "是": {
+    "py": "shì",
+    "en": "to be (am / is / are)"
+  },
+  "叫": {
+    "py": "jiào",
+    "en": "to be called"
+  },
+  "的": {
+    "py": "de",
+    "en": "'s (shows belonging)"
+  },
+  "很": {
+    "py": "hěn",
+    "en": "very"
+  },
+  "也": {
+    "py": "yě",
+    "en": "also, too"
+  },
+  "会": {
+    "py": "huì",
+    "en": "can, know how to"
+  },
+  "可以": {
+    "py": "kěyǐ",
+    "en": "may, can"
+  },
+  "吗": {
+    "py": "ma",
+    "en": "question word (yes/no?)"
+  },
+  "一下": {
+    "py": "yíxià",
+    "en": "a little, briefly"
+  },
+  "一遍": {
+    "py": "yí biàn",
+    "en": "once (one time through)"
+  },
+  "学生": {
+    "py": "xuésheng",
+    "en": "student"
+  },
+  "好": {
+    "py": "hǎo",
+    "en": "good, well; OK"
+  },
+  "白怀诚": {
+    "py": "Bái Huáichéng",
+    "en": "Bai Huaicheng (a name)"
+  },
+  "小王": {
+    "py": "Xiǎo Wáng",
+    "en": "Xiao Wang (a name)"
+  },
+  "小李": {
+    "py": "Xiǎo Lǐ",
+    "en": "Xiao Li (a name)"
+  },
+  "王": {
+    "py": "Wáng",
+    "en": "Wang (a surname)"
+  },
+  "李": {
+    "py": "Lǐ",
+    "en": "Li (a surname)"
+  },
+  "中国": {
+    "py": "Zhōngguó",
+    "en": "China"
+  },
+  "美国": {
+    "py": "Měiguó",
+    "en": "the USA"
+  },
+  "美": {
+    "py": "měi",
+    "en": "beautiful"
+  },
+  "北京": {
+    "py": "Běijīng",
+    "en": "Beijing"
+  }
 }

@@ -1,0 +1,312 @@
+{
+  "n": 4,
+  "cn": "第四课",
+  "title": "她是我的汉语老师",
+  "en": "She is my Chinese teacher",
+  "words": [
+    {
+      "w": "她",
+      "py": "tā",
+      "en": "she; her",
+      "ex": {
+        "hz": "她是我的老师。",
+        "py": "Tā shì wǒ de lǎoshī.",
+        "en": "She is my teacher."
+      }
+    },
+    {
+      "w": "谁",
+      "py": "shéi",
+      "en": "who",
+      "ex": {
+        "hz": "她是谁？",
+        "py": "Tā shì shéi?",
+        "en": "Who is she?"
+      }
+    },
+    {
+      "w": "的",
+      "py": "de",
+      "en": "('s; shows belonging)",
+      "ex": {
+        "hz": "这是我的书。",
+        "py": "Zhè shì wǒ de shū.",
+        "en": "This is my book."
+      }
+    },
+    {
+      "w": "汉语",
+      "py": "Hànyǔ",
+      "en": "Chinese (language)",
+      "ex": {
+        "hz": "我学汉语。",
+        "py": "Wǒ xué Hànyǔ.",
+        "en": "I study Chinese."
+      }
+    },
+    {
+      "w": "哪",
+      "py": "nǎ",
+      "en": "which",
+      "ex": {
+        "hz": "你是哪国人？",
+        "py": "Nǐ shì nǎ guó rén?",
+        "en": "Which country are you from?"
+      }
+    },
+    {
+      "w": "国",
+      "py": "guó",
+      "en": "country",
+      "ex": {
+        "hz": "他是哪国人？",
+        "py": "Tā shì nǎ guó rén?",
+        "en": "Which country is he from?"
+      }
+    },
+    {
+      "w": "呢",
+      "py": "ne",
+      "en": "(and you? / what about …?)",
+      "ex": {
+        "hz": "我是学生，你呢？",
+        "py": "Wǒ shì xuésheng, nǐ ne?",
+        "en": "I'm a student, and you?"
+      }
+    },
+    {
+      "w": "他",
+      "py": "tā",
+      "en": "he; him",
+      "ex": {
+        "hz": "他是我的同学。",
+        "py": "Tā shì wǒ de tóngxué.",
+        "en": "He is my classmate."
+      }
+    },
+    {
+      "w": "同学",
+      "py": "tóngxué",
+      "en": "classmate",
+      "ex": {
+        "hz": "你的同学是哪国人？",
+        "py": "Nǐ de tóngxué shì nǎ guó rén?",
+        "en": "Where is your classmate from?"
+      }
+    },
+    {
+      "w": "朋友",
+      "py": "péngyou",
+      "en": "friend",
+      "ex": {
+        "hz": "她是我的朋友。",
+        "py": "Tā shì wǒ de péngyou.",
+        "en": "She is my friend."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "她是谁",
+      "py": "Tā shì shéi",
+      "en": "Who is she",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "她是谁？",
+          "py": "Tā shì shéi?",
+          "en": "Who is she?"
+        },
+        {
+          "who": "B",
+          "hz": "她是我的汉语老师。",
+          "py": "Tā shì wǒ de Hànyǔ lǎoshī.",
+          "en": "She is my Chinese teacher."
+        },
+        {
+          "who": "A",
+          "hz": "她是哪国人？",
+          "py": "Tā shì nǎ guó rén?",
+          "en": "Where is she from?"
+        },
+        {
+          "who": "B",
+          "hz": "她是中国人。",
+          "py": "Tā shì Zhōngguó rén.",
+          "en": "She is Chinese."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Who is she?",
+          "options": [
+            "B's Chinese teacher",
+            "B's friend",
+            "B's classmate",
+            "B's mother"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which country is she from?",
+          "options": [
+            "中国",
+            "美国",
+            "We don't know",
+            "Both"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "他是我的同学",
+      "py": "Tā shì wǒ de tóngxué",
+      "en": "He is my classmate",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "他是你的朋友吗？",
+          "py": "Tā shì nǐ de péngyou ma?",
+          "en": "Is he your friend?"
+        },
+        {
+          "who": "B",
+          "hz": "他是我的同学，也是我的朋友。",
+          "py": "Tā shì wǒ de tóngxué, yě shì wǒ de péngyou.",
+          "en": "He's my classmate and also my friend."
+        },
+        {
+          "who": "A",
+          "hz": "他是美国人吗？",
+          "py": "Tā shì Měiguó rén ma?",
+          "en": "Is he American?"
+        },
+        {
+          "who": "B",
+          "hz": "是。我是中国人，你呢？",
+          "py": "Shì. Wǒ shì Zhōngguó rén, nǐ ne?",
+          "en": "Yes. I'm Chinese, and you?"
+        },
+        {
+          "who": "A",
+          "hz": "我也是中国人。",
+          "py": "Wǒ yě shì Zhōngguó rén.",
+          "en": "I'm Chinese too."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Who is he to B?",
+          "options": [
+            "Classmate and friend",
+            "Teacher",
+            "Son",
+            "Doctor"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which country is A from?",
+          "options": [
+            "中国",
+            "美国",
+            "We don't know",
+            "Both"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "谁 / 哪",
+      "en": "谁 = who, 哪 + 国 = which country",
+      "drills": [
+        {
+          "q": "她是___？",
+          "options": [
+            "谁",
+            "吗",
+            "哪",
+            "几"
+          ],
+          "answer": 0,
+          "en": "Who is she?"
+        },
+        {
+          "q": "你是___国人？",
+          "options": [
+            "哪",
+            "谁",
+            "什么",
+            "几"
+          ],
+          "answer": 0,
+          "en": "Which country are you from?"
+        }
+      ]
+    },
+    {
+      "point": "的",
+      "en": "A 的 B: A's B",
+      "drills": [
+        {
+          "q": "她是我___老师。",
+          "options": [
+            "的",
+            "是",
+            "吗",
+            "呢"
+          ],
+          "answer": 0,
+          "en": "She is my teacher."
+        },
+        {
+          "q": "这是谁___书？",
+          "options": [
+            "的",
+            "吗",
+            "是",
+            "呢"
+          ],
+          "answer": 0,
+          "en": "Whose book is this?"
+        }
+      ]
+    },
+    {
+      "point": "呢",
+      "en": "…呢? = and what about …?",
+      "drills": [
+        {
+          "q": "我是学生，你___？",
+          "options": [
+            "呢",
+            "吗",
+            "的",
+            "谁"
+          ],
+          "answer": 0,
+          "en": "I'm a student, and you?"
+        },
+        {
+          "q": "我是中国人，他___？",
+          "options": [
+            "呢",
+            "的",
+            "是",
+            "什么"
+          ],
+          "answer": 0,
+          "en": "I'm Chinese; what about him?"
+        }
+      ]
+    }
+  ]
+}

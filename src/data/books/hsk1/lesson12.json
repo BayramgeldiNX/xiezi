@@ -1,0 +1,303 @@
+{
+  "n": 12,
+  "cn": "第十二课",
+  "title": "明天天气怎么样",
+  "en": "What will the weather be like tomorrow",
+  "words": [
+    {
+      "w": "天气",
+      "py": "tiānqì",
+      "en": "weather",
+      "ex": {
+        "hz": "今天天气很好。",
+        "py": "Jīntiān tiānqì hěn hǎo.",
+        "en": "The weather is nice today."
+      }
+    },
+    {
+      "w": "怎么样",
+      "py": "zěnmeyàng",
+      "en": "how is it",
+      "ex": {
+        "hz": "明天天气怎么样？",
+        "py": "Míngtiān tiānqì zěnmeyàng?",
+        "en": "How's the weather tomorrow?"
+      }
+    },
+    {
+      "w": "太",
+      "py": "tài",
+      "en": "too; so",
+      "ex": {
+        "hz": "今天太热了！",
+        "py": "Jīntiān tài rè le!",
+        "en": "It's too hot today!"
+      }
+    },
+    {
+      "w": "热",
+      "py": "rè",
+      "en": "hot",
+      "ex": {
+        "hz": "北京的天气很热。",
+        "py": "Běijīng de tiānqì hěn rè.",
+        "en": "Beijing's weather is hot."
+      }
+    },
+    {
+      "w": "冷",
+      "py": "lěng",
+      "en": "cold",
+      "ex": {
+        "hz": "明天很冷。",
+        "py": "Míngtiān hěn lěng.",
+        "en": "It'll be cold tomorrow."
+      }
+    },
+    {
+      "w": "下雨",
+      "py": "xià yǔ",
+      "en": "to rain",
+      "ex": {
+        "hz": "今天下雨了。",
+        "py": "Jīntiān xià yǔ le.",
+        "en": "It rained today."
+      }
+    },
+    {
+      "w": "小姐",
+      "py": "xiǎojiě",
+      "en": "Miss; young lady",
+      "ex": {
+        "hz": "王小姐，你好！",
+        "py": "Wáng xiǎojiě, nǐ hǎo!",
+        "en": "Hello, Miss Wang!"
+      }
+    },
+    {
+      "w": "来",
+      "py": "lái",
+      "en": "to come",
+      "ex": {
+        "hz": "你什么时候来？",
+        "py": "Nǐ shénme shíhou lái?",
+        "en": "When are you coming?"
+      }
+    },
+    {
+      "w": "身体",
+      "py": "shēntǐ",
+      "en": "body; health",
+      "ex": {
+        "hz": "你身体怎么样？",
+        "py": "Nǐ shēntǐ zěnmeyàng?",
+        "en": "How's your health?"
+      }
+    },
+    {
+      "w": "爱",
+      "py": "ài",
+      "en": "to love; to like",
+      "ex": {
+        "hz": "我爱吃水果。",
+        "py": "Wǒ ài chī shuǐguǒ.",
+        "en": "I love eating fruit."
+      }
+    },
+    {
+      "w": "些",
+      "py": "xiē",
+      "en": "some",
+      "ex": {
+        "hz": "我想买些水果。",
+        "py": "Wǒ xiǎng mǎi xiē shuǐguǒ.",
+        "en": "I want to buy some fruit."
+      }
+    },
+    {
+      "w": "水果",
+      "py": "shuǐguǒ",
+      "en": "fruit",
+      "ex": {
+        "hz": "你爱吃什么水果？",
+        "py": "Nǐ ài chī shénme shuǐguǒ?",
+        "en": "What fruit do you like?"
+      }
+    },
+    {
+      "w": "水",
+      "py": "shuǐ",
+      "en": "water",
+      "ex": {
+        "hz": "我想喝水。",
+        "py": "Wǒ xiǎng hē shuǐ.",
+        "en": "I'd like some water."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "明天天气怎么样",
+      "py": "Míngtiān tiānqì zěnmeyàng",
+      "en": "How's the weather tomorrow",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "今天天气太热了！",
+          "py": "Jīntiān tiānqì tài rè le!",
+          "en": "It's so hot today!"
+        },
+        {
+          "who": "B",
+          "hz": "是，太热了。",
+          "py": "Shì, tài rè le.",
+          "en": "Yes, way too hot."
+        },
+        {
+          "who": "A",
+          "hz": "明天天气怎么样？",
+          "py": "Míngtiān tiānqì zěnmeyàng?",
+          "en": "What about tomorrow?"
+        },
+        {
+          "who": "B",
+          "hz": "明天下雨，不热。",
+          "py": "Míngtiān xià yǔ, bú rè.",
+          "en": "It'll rain tomorrow; not hot."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How is the weather today?",
+          "options": [
+            "Too hot",
+            "Cold",
+            "Rainy",
+            "Nice"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What will happen tomorrow?",
+          "options": [
+            "It will rain",
+            "It will be hot",
+            "It will be cold",
+            "We don't know"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "你身体怎么样",
+      "py": "Nǐ shēntǐ zěnmeyàng",
+      "en": "How are you",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "王小姐，你身体怎么样？",
+          "py": "Wáng xiǎojiě, nǐ shēntǐ zěnmeyàng?",
+          "en": "Miss Wang, how's your health?"
+        },
+        {
+          "who": "B",
+          "hz": "很好，谢谢！你来了！",
+          "py": "Hěn hǎo, xièxie! Nǐ lái le!",
+          "en": "Very well, thanks! You came!"
+        },
+        {
+          "who": "A",
+          "hz": "我买了些水果。你爱吃水果吗？",
+          "py": "Wǒ mǎi le xiē shuǐguǒ. Nǐ ài chī shuǐguǒ ma?",
+          "en": "I bought some fruit. Do you like fruit?"
+        },
+        {
+          "who": "B",
+          "hz": "我很爱吃。谢谢你！",
+          "py": "Wǒ hěn ài chī. Xièxie nǐ!",
+          "en": "I love it. Thank you!"
+        }
+      ],
+      "questions": [
+        {
+          "q": "How is Miss Wang?",
+          "options": [
+            "Very well",
+            "Not well",
+            "Cold",
+            "We don't know"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What did A bring?",
+          "options": [
+            "Some fruit",
+            "Tea",
+            "Water",
+            "Books"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "怎么样",
+      "en": "…怎么样？ = how is …?",
+      "drills": [
+        {
+          "q": "明天天气___？",
+          "options": [
+            "怎么样",
+            "什么",
+            "几",
+            "哪儿"
+          ],
+          "answer": 0,
+          "en": "How's the weather tomorrow?"
+        }
+      ]
+    },
+    {
+      "point": "太…了",
+      "en": "太 + adjective + 了: too / so …",
+      "drills": [
+        {
+          "q": "今天___热了！",
+          "options": [
+            "太",
+            "很",
+            "不",
+            "都"
+          ],
+          "answer": 0,
+          "en": "It's so hot today!"
+        }
+      ]
+    },
+    {
+      "point": "能 / 会",
+      "en": "会 a skill; 能 able or allowed",
+      "drills": [
+        {
+          "q": "明天下雨，我们不___去。",
+          "options": [
+            "能",
+            "是",
+            "有",
+            "的"
+          ],
+          "answer": 0,
+          "en": "It will rain tomorrow; we can't go."
+        }
+      ]
+    }
+  ]
+}

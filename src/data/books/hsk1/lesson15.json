@@ -1,0 +1,257 @@
+{
+  "n": 15,
+  "cn": "第十五课",
+  "title": "我是坐飞机来的",
+  "en": "I came here by air",
+  "words": [
+    {
+      "w": "认识",
+      "py": "rènshi",
+      "en": "to know (a person)",
+      "ex": {
+        "hz": "认识你很高兴。",
+        "py": "Rènshi nǐ hěn gāoxìng.",
+        "en": "Nice to meet you."
+      }
+    },
+    {
+      "w": "年",
+      "py": "nián",
+      "en": "year",
+      "ex": {
+        "hz": "我在北京住了三年。",
+        "py": "Wǒ zài Běijīng zhù le sān nián.",
+        "en": "I've lived in Beijing for three years."
+      }
+    },
+    {
+      "w": "大学",
+      "py": "dàxué",
+      "en": "university",
+      "ex": {
+        "hz": "他在大学学习汉语。",
+        "py": "Tā zài dàxué xuéxí Hànyǔ.",
+        "en": "He studies Chinese at university."
+      }
+    },
+    {
+      "w": "饭店",
+      "py": "fàndiàn",
+      "en": "restaurant; hotel",
+      "ex": {
+        "hz": "这个饭店的菜很好吃。",
+        "py": "Zhège fàndiàn de cài hěn hǎochī.",
+        "en": "This restaurant's food is good."
+      }
+    },
+    {
+      "w": "出租车",
+      "py": "chūzūchē",
+      "en": "taxi",
+      "ex": {
+        "hz": "我坐出租车去饭店。",
+        "py": "Wǒ zuò chūzūchē qù fàndiàn.",
+        "en": "I'm taking a taxi to the restaurant."
+      }
+    },
+    {
+      "w": "一起",
+      "py": "yìqǐ",
+      "en": "together",
+      "ex": {
+        "hz": "我们一起去吧。",
+        "py": "Wǒmen yìqǐ qù ba.",
+        "en": "Let's go together."
+      }
+    },
+    {
+      "w": "高兴",
+      "py": "gāoxìng",
+      "en": "happy; glad",
+      "ex": {
+        "hz": "我今天很高兴。",
+        "py": "Wǒ jīntiān hěn gāoxìng.",
+        "en": "I'm happy today."
+      }
+    },
+    {
+      "w": "听",
+      "py": "tīng",
+      "en": "to listen",
+      "ex": {
+        "hz": "我喜欢听老师说汉语。",
+        "py": "Wǒ xǐhuan tīng lǎoshī shuō Hànyǔ.",
+        "en": "I like listening to the teacher speak Chinese."
+      }
+    },
+    {
+      "w": "飞机",
+      "py": "fēijī",
+      "en": "plane",
+      "ex": {
+        "hz": "我是坐飞机来的。",
+        "py": "Wǒ shì zuò fēijī lái de.",
+        "en": "I came by plane."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "你是怎么来的",
+      "py": "Nǐ shì zěnme lái de",
+      "en": "How did you get here",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你是什么时候来北京的？",
+          "py": "Nǐ shì shénme shíhou lái Běijīng de?",
+          "en": "When did you come to Beijing?"
+        },
+        {
+          "who": "B",
+          "hz": "我是昨天来的。",
+          "py": "Wǒ shì zuótiān lái de.",
+          "en": "I came yesterday."
+        },
+        {
+          "who": "A",
+          "hz": "你是怎么来的？",
+          "py": "Nǐ shì zěnme lái de?",
+          "en": "How did you come?"
+        },
+        {
+          "who": "B",
+          "hz": "我是坐飞机来的。",
+          "py": "Wǒ shì zuò fēijī lái de.",
+          "en": "I came by plane."
+        }
+      ],
+      "questions": [
+        {
+          "q": "When did B come to Beijing?",
+          "options": [
+            "Yesterday",
+            "Today",
+            "Last year",
+            "Tomorrow"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How did B come?",
+          "options": [
+            "By plane",
+            "By taxi",
+            "By car",
+            "We don't know"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "认识你很高兴",
+      "py": "Rènshi nǐ hěn gāoxìng",
+      "en": "Nice to meet you",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你好，我叫小王，是大学老师。",
+          "py": "Nǐ hǎo, wǒ jiào Xiǎo Wáng, shì dàxué lǎoshī.",
+          "en": "Hi, I'm Xiao Wang, a university teacher."
+        },
+        {
+          "who": "B",
+          "hz": "认识你很高兴！",
+          "py": "Rènshi nǐ hěn gāoxìng!",
+          "en": "Nice to meet you!"
+        },
+        {
+          "who": "A",
+          "hz": "中午我们一起去饭店吃饭吧。",
+          "py": "Zhōngwǔ wǒmen yìqǐ qù fàndiàn chī fàn ba.",
+          "en": "Let's eat at a restaurant together at noon."
+        },
+        {
+          "who": "B",
+          "hz": "好！我们坐出租车去吧。",
+          "py": "Hǎo! Wǒmen zuò chūzūchē qù ba.",
+          "en": "Great! Let's take a taxi."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What does Xiao Wang do?",
+          "options": [
+            "University teacher",
+            "Doctor",
+            "Student",
+            "Taxi driver"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How will they go to the restaurant?",
+          "options": [
+            "By taxi",
+            "By plane",
+            "On foot",
+            "By bus"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "是…的",
+      "en": "是 … 的 stresses when / how / where something happened",
+      "drills": [
+        {
+          "q": "我是坐飞机来___。",
+          "options": [
+            "的",
+            "了",
+            "吗",
+            "呢"
+          ],
+          "answer": 0,
+          "en": "I came by plane."
+        },
+        {
+          "q": "你___什么时候来北京的？",
+          "options": [
+            "是",
+            "在",
+            "有",
+            "会"
+          ],
+          "answer": 0,
+          "en": "When did you come to Beijing?"
+        }
+      ]
+    },
+    {
+      "point": "坐 + vehicle",
+      "en": "坐 飞机 / 出租车: travelling by …",
+      "drills": [
+        {
+          "q": "我们___出租车去饭店吧。",
+          "options": [
+            "坐",
+            "开",
+            "在",
+            "去"
+          ],
+          "answer": 0,
+          "en": "Let's take a taxi to the restaurant."
+        }
+      ]
+    }
+  ]
+}

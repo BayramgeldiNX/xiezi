@@ -1,0 +1,354 @@
+{
+  "n": 14,
+  "cn": "第十四课",
+  "title": "她买了不少衣服",
+  "en": "She has bought quite a few clothes",
+  "words": [
+    {
+      "w": "东西",
+      "py": "dōngxi",
+      "en": "thing; stuff",
+      "ex": {
+        "hz": "你买什么东西了？",
+        "py": "Nǐ mǎi shénme dōngxi le?",
+        "en": "What did you buy?"
+      }
+    },
+    {
+      "w": "一点儿",
+      "py": "yìdiǎnr",
+      "en": "a little",
+      "ex": {
+        "hz": "我会说一点儿汉语。",
+        "py": "Wǒ huì shuō yìdiǎnr Hànyǔ.",
+        "en": "I can speak a little Chinese."
+      }
+    },
+    {
+      "w": "苹果",
+      "py": "píngguǒ",
+      "en": "apple",
+      "ex": {
+        "hz": "我买了一些苹果。",
+        "py": "Wǒ mǎi le yìxiē píngguǒ.",
+        "en": "I bought some apples."
+      }
+    },
+    {
+      "w": "看见",
+      "py": "kànjiàn",
+      "en": "to see",
+      "ex": {
+        "hz": "你看见我的猫了吗？",
+        "py": "Nǐ kànjiàn wǒ de māo le ma?",
+        "en": "Did you see my cat?"
+      }
+    },
+    {
+      "w": "先生",
+      "py": "xiānsheng",
+      "en": "Mr.; sir; husband",
+      "ex": {
+        "hz": "王先生是医生。",
+        "py": "Wáng xiānsheng shì yīshēng.",
+        "en": "Mr. Wang is a doctor."
+      }
+    },
+    {
+      "w": "开",
+      "py": "kāi",
+      "en": "to drive; to open",
+      "ex": {
+        "hz": "他会开车。",
+        "py": "Tā huì kāi chē.",
+        "en": "He can drive."
+      }
+    },
+    {
+      "w": "车",
+      "py": "chē",
+      "en": "car",
+      "ex": {
+        "hz": "这是谁的车？",
+        "py": "Zhè shì shéi de chē?",
+        "en": "Whose car is this?"
+      }
+    },
+    {
+      "w": "回来",
+      "py": "huílai",
+      "en": "to come back",
+      "ex": {
+        "hz": "你什么时候回来？",
+        "py": "Nǐ shénme shíhou huílai?",
+        "en": "When will you be back?"
+      }
+    },
+    {
+      "w": "分钟",
+      "py": "fēnzhōng",
+      "en": "minute (length of time)",
+      "ex": {
+        "hz": "我十分钟后回来。",
+        "py": "Wǒ shí fēnzhōng hòu huílai.",
+        "en": "I'll be back in ten minutes."
+      }
+    },
+    {
+      "w": "后",
+      "py": "hòu",
+      "en": "after; later",
+      "ex": {
+        "hz": "吃饭后我看电视。",
+        "py": "Chī fàn hòu wǒ kàn diànshì.",
+        "en": "After eating I watch TV."
+      }
+    },
+    {
+      "w": "衣服",
+      "py": "yīfu",
+      "en": "clothes",
+      "ex": {
+        "hz": "她买了不少衣服。",
+        "py": "Tā mǎi le bùshǎo yīfu.",
+        "en": "She bought quite a few clothes."
+      }
+    },
+    {
+      "w": "漂亮",
+      "py": "piàoliang",
+      "en": "pretty",
+      "ex": {
+        "hz": "这些衣服很漂亮。",
+        "py": "Zhèxiē yīfu hěn piàoliang.",
+        "en": "These clothes are pretty."
+      }
+    },
+    {
+      "w": "啊",
+      "py": "a",
+      "en": "(softens or adds feeling)",
+      "ex": {
+        "hz": "你的衣服真漂亮啊！",
+        "py": "Nǐ de yīfu zhēn piàoliang a!",
+        "en": "Your clothes are so pretty!"
+      }
+    },
+    {
+      "w": "少",
+      "py": "shǎo",
+      "en": "few; little",
+      "ex": {
+        "hz": "我的钱很少。",
+        "py": "Wǒ de qián hěn shǎo.",
+        "en": "I have very little money."
+      }
+    },
+    {
+      "w": "不少",
+      "py": "bùshǎo",
+      "en": "quite a few; a lot",
+      "ex": {
+        "hz": "她有不少朋友。",
+        "py": "Tā yǒu bùshǎo péngyou.",
+        "en": "She has quite a few friends."
+      }
+    },
+    {
+      "w": "这些",
+      "py": "zhèxiē",
+      "en": "these",
+      "ex": {
+        "hz": "这些是什么？",
+        "py": "Zhèxiē shì shénme?",
+        "en": "What are these?"
+      }
+    },
+    {
+      "w": "都",
+      "py": "dōu",
+      "en": "all; both",
+      "ex": {
+        "hz": "我们都是学生。",
+        "py": "Wǒmen dōu shì xuésheng.",
+        "en": "We're all students."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "你买了什么",
+      "py": "Nǐ mǎi le shénme",
+      "en": "What did you buy",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你买什么东西了？",
+          "py": "Nǐ mǎi shénme dōngxi le?",
+          "en": "What did you buy?"
+        },
+        {
+          "who": "B",
+          "hz": "我买了一点儿苹果。",
+          "py": "Wǒ mǎi le yìdiǎnr píngguǒ.",
+          "en": "I bought a few apples."
+        },
+        {
+          "who": "A",
+          "hz": "你没买衣服吗？",
+          "py": "Nǐ méi mǎi yīfu ma?",
+          "en": "You didn't buy clothes?"
+        },
+        {
+          "who": "B",
+          "hz": "没买。小李买了不少衣服，都很漂亮。",
+          "py": "Méi mǎi. Xiǎo Lǐ mǎi le bùshǎo yīfu, dōu hěn piàoliang.",
+          "en": "No. Xiao Li bought lots of clothes; they're all pretty."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What did B buy?",
+          "options": [
+            "Apples",
+            "Clothes",
+            "A car",
+            "Nothing"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Who bought a lot of clothes?",
+          "options": [
+            "小李",
+            "B",
+            "A",
+            "Nobody"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "王先生回来了吗",
+      "py": "Wáng xiānsheng huílai le ma",
+      "en": "Is Mr. Wang back",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "王先生回来了吗？",
+          "py": "Wáng xiānsheng huílai le ma?",
+          "en": "Is Mr. Wang back?"
+        },
+        {
+          "who": "B",
+          "hz": "没有。他开车去商店了。",
+          "py": "Méiyǒu. Tā kāi chē qù shāngdiàn le.",
+          "en": "No. He drove to the shop."
+        },
+        {
+          "who": "A",
+          "hz": "他什么时候回来？",
+          "py": "Tā shénme shíhou huílai?",
+          "en": "When will he be back?"
+        },
+        {
+          "who": "B",
+          "hz": "二十分钟后回来。",
+          "py": "Èrshí fēnzhōng hòu huílai.",
+          "en": "In twenty minutes."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Where did Mr. Wang go?",
+          "options": [
+            "The shop",
+            "The hospital",
+            "School",
+            "Home"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "When will he be back?",
+          "options": [
+            "In 20 minutes",
+            "In 2 minutes",
+            "At 2 o'clock",
+            "Tomorrow"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "了 (done)",
+      "en": "verb + 了: the action happened",
+      "drills": [
+        {
+          "q": "她买___不少衣服。",
+          "options": [
+            "了",
+            "的",
+            "吗",
+            "呢"
+          ],
+          "answer": 0,
+          "en": "She bought quite a few clothes."
+        }
+      ]
+    },
+    {
+      "point": "没 + verb",
+      "en": "没 makes a past action negative (no 了)",
+      "drills": [
+        {
+          "q": "我___买衣服。",
+          "options": [
+            "没",
+            "不",
+            "了",
+            "很"
+          ],
+          "answer": 0,
+          "en": "I didn't buy clothes."
+        }
+      ]
+    },
+    {
+      "point": "都",
+      "en": "都: all, both (before the verb)",
+      "drills": [
+        {
+          "q": "我们___是学生。",
+          "options": [
+            "都",
+            "很",
+            "太",
+            "也"
+          ],
+          "answer": 0,
+          "en": "We're all students."
+        },
+        {
+          "q": "这些衣服___很漂亮。",
+          "options": [
+            "都",
+            "太",
+            "了",
+            "的"
+          ],
+          "answer": 0,
+          "en": "These clothes are all pretty."
+        }
+      ]
+    }
+  ]
+}

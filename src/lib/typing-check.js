@@ -26,6 +26,13 @@ export function checkPinyin(expectedPy, typed) {
   const input = typed.toLowerCase().replace(/u:/g, "v").replace(/ü/g, "v").replace(/[^a-z0-9]/g, "");
   let i = 0;
   const out = exp.map((x) => {
+    // erhua typed with the tone before the r: "dian3r" for diǎnr
+    const base = x.p.slice(0, -1);
+    if (/[^e]r$/.test(x.p) && input.startsWith(base, i) && /^[0-5]r/.test(input.slice(i + base.length))) {
+      const gotTone = +input[i + base.length] || 5;
+      i += base.length + 2;
+      return { ...x, got: x.p, gotTone, spellOk: true, toneOk: gotTone === x.tone };
+    }
     let got = input.slice(i, i + x.p.length);
     const spellOk = got === x.p;
     if (spellOk) i += x.p.length;

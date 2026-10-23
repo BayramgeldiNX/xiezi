@@ -1,0 +1,297 @@
+{
+  "n": 9,
+  "cn": "第九课",
+  "title": "你儿子在哪儿工作",
+  "en": "Where does your son work",
+  "words": [
+    {
+      "w": "小",
+      "py": "xiǎo",
+      "en": "small; little",
+      "ex": {
+        "hz": "我家很小。",
+        "py": "Wǒ jiā hěn xiǎo.",
+        "en": "My home is small."
+      }
+    },
+    {
+      "w": "猫",
+      "py": "māo",
+      "en": "cat",
+      "ex": {
+        "hz": "我有一个小猫。",
+        "py": "Wǒ yǒu yí ge xiǎo māo.",
+        "en": "I have a little cat."
+      }
+    },
+    {
+      "w": "在",
+      "py": "zài",
+      "en": "to be at; in",
+      "ex": {
+        "hz": "小猫在哪儿？",
+        "py": "Xiǎo māo zài nǎr?",
+        "en": "Where's the kitten?"
+      }
+    },
+    {
+      "w": "那儿",
+      "py": "nàr",
+      "en": "there",
+      "ex": {
+        "hz": "我的书在那儿。",
+        "py": "Wǒ de shū zài nàr.",
+        "en": "My book is over there."
+      }
+    },
+    {
+      "w": "狗",
+      "py": "gǒu",
+      "en": "dog",
+      "ex": {
+        "hz": "小狗在那儿。",
+        "py": "Xiǎo gǒu zài nàr.",
+        "en": "The puppy is over there."
+      }
+    },
+    {
+      "w": "椅子",
+      "py": "yǐzi",
+      "en": "chair",
+      "ex": {
+        "hz": "猫在椅子上。",
+        "py": "Māo zài yǐzi shang.",
+        "en": "The cat is on the chair."
+      }
+    },
+    {
+      "w": "下面",
+      "py": "xiàmiàn",
+      "en": "under; below",
+      "ex": {
+        "hz": "小狗在椅子下面。",
+        "py": "Xiǎo gǒu zài yǐzi xiàmiàn.",
+        "en": "The puppy is under the chair."
+      }
+    },
+    {
+      "w": "哪儿",
+      "py": "nǎr",
+      "en": "where",
+      "ex": {
+        "hz": "你在哪儿？",
+        "py": "Nǐ zài nǎr?",
+        "en": "Where are you?"
+      }
+    },
+    {
+      "w": "工作",
+      "py": "gōngzuò",
+      "en": "to work; job",
+      "ex": {
+        "hz": "你在哪儿工作？",
+        "py": "Nǐ zài nǎr gōngzuò?",
+        "en": "Where do you work?"
+      }
+    },
+    {
+      "w": "儿子",
+      "py": "érzi",
+      "en": "son",
+      "ex": {
+        "hz": "我儿子是学生。",
+        "py": "Wǒ érzi shì xuésheng.",
+        "en": "My son is a student."
+      }
+    },
+    {
+      "w": "医院",
+      "py": "yīyuàn",
+      "en": "hospital",
+      "ex": {
+        "hz": "她在医院工作。",
+        "py": "Tā zài yīyuàn gōngzuò.",
+        "en": "She works at a hospital."
+      }
+    },
+    {
+      "w": "医生",
+      "py": "yīshēng",
+      "en": "doctor",
+      "ex": {
+        "hz": "我妈妈是医生。",
+        "py": "Wǒ māma shì yīshēng.",
+        "en": "My mom is a doctor."
+      }
+    },
+    {
+      "w": "爸爸",
+      "py": "bàba",
+      "en": "dad",
+      "ex": {
+        "hz": "我爸爸在学校工作。",
+        "py": "Wǒ bàba zài xuéxiào gōngzuò.",
+        "en": "My dad works at a school."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "小猫在哪儿",
+      "py": "Xiǎo māo zài nǎr",
+      "en": "Where's the kitten",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "我的小猫在哪儿？",
+          "py": "Wǒ de xiǎo māo zài nǎr?",
+          "en": "Where's my kitten?"
+        },
+        {
+          "who": "B",
+          "hz": "小猫在椅子下面。",
+          "py": "Xiǎo māo zài yǐzi xiàmiàn.",
+          "en": "It's under the chair."
+        },
+        {
+          "who": "A",
+          "hz": "小狗呢？",
+          "py": "Xiǎo gǒu ne?",
+          "en": "And the puppy?"
+        },
+        {
+          "who": "B",
+          "hz": "小狗在那儿。",
+          "py": "Xiǎo gǒu zài nàr.",
+          "en": "The puppy is over there."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Where is the kitten?",
+          "options": [
+            "Under the chair",
+            "On the chair",
+            "Over there",
+            "At school"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Where is the puppy?",
+          "options": [
+            "Over there",
+            "Under the chair",
+            "At home",
+            "At the hospital"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "你爸爸在哪儿工作",
+      "py": "Nǐ bàba zài nǎr gōngzuò",
+      "en": "Where does your dad work",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你爸爸在哪儿工作？",
+          "py": "Nǐ bàba zài nǎr gōngzuò?",
+          "en": "Where does your dad work?"
+        },
+        {
+          "who": "B",
+          "hz": "他在医院工作，他是医生。",
+          "py": "Tā zài yīyuàn gōngzuò, tā shì yīshēng.",
+          "en": "At a hospital; he's a doctor."
+        },
+        {
+          "who": "A",
+          "hz": "你妈妈呢？",
+          "py": "Nǐ māma ne?",
+          "en": "And your mom?"
+        },
+        {
+          "who": "B",
+          "hz": "我妈妈在学校工作，她是老师。",
+          "py": "Wǒ māma zài xuéxiào gōngzuò, tā shì lǎoshī.",
+          "en": "She works at a school; she's a teacher."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What does B's dad do?",
+          "options": [
+            "Doctor",
+            "Teacher",
+            "Student",
+            "Shop worker"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Where does B's mom work?",
+          "options": [
+            "School",
+            "Hospital",
+            "Shop",
+            "At home"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "在 + place",
+      "en": "在 = to be at / in",
+      "drills": [
+        {
+          "q": "小猫___椅子下面。",
+          "options": [
+            "在",
+            "是",
+            "有",
+            "去"
+          ],
+          "answer": 0,
+          "en": "The kitten is under the chair."
+        },
+        {
+          "q": "你爸爸___哪儿工作？",
+          "options": [
+            "在",
+            "是",
+            "有",
+            "去"
+          ],
+          "answer": 0,
+          "en": "Where does your dad work?"
+        }
+      ]
+    },
+    {
+      "point": "哪儿",
+      "en": "哪儿 asks “where”",
+      "drills": [
+        {
+          "q": "我的书在___？",
+          "options": [
+            "哪儿",
+            "什么",
+            "谁",
+            "几"
+          ],
+          "answer": 0,
+          "en": "Where is my book?"
+        }
+      ]
+    }
+  ]
+}

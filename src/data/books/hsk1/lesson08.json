@@ -1,0 +1,351 @@
+{
+  "n": 8,
+  "cn": "第八课",
+  "title": "我想喝茶",
+  "en": "I'd like some tea",
+  "words": [
+    {
+      "w": "想",
+      "py": "xiǎng",
+      "en": "to want to; would like",
+      "ex": {
+        "hz": "我想去中国。",
+        "py": "Wǒ xiǎng qù Zhōngguó.",
+        "en": "I want to go to China."
+      }
+    },
+    {
+      "w": "喝",
+      "py": "hē",
+      "en": "to drink",
+      "ex": {
+        "hz": "你想喝什么？",
+        "py": "Nǐ xiǎng hē shénme?",
+        "en": "What would you like to drink?"
+      }
+    },
+    {
+      "w": "茶",
+      "py": "chá",
+      "en": "tea",
+      "ex": {
+        "hz": "我想喝茶。",
+        "py": "Wǒ xiǎng hē chá.",
+        "en": "I'd like some tea."
+      }
+    },
+    {
+      "w": "吃",
+      "py": "chī",
+      "en": "to eat",
+      "ex": {
+        "hz": "你想吃什么？",
+        "py": "Nǐ xiǎng chī shénme?",
+        "en": "What would you like to eat?"
+      }
+    },
+    {
+      "w": "米饭",
+      "py": "mǐfàn",
+      "en": "cooked rice",
+      "ex": {
+        "hz": "我想吃米饭。",
+        "py": "Wǒ xiǎng chī mǐfàn.",
+        "en": "I'd like some rice."
+      }
+    },
+    {
+      "w": "下午",
+      "py": "xiàwǔ",
+      "en": "afternoon",
+      "ex": {
+        "hz": "下午你做什么？",
+        "py": "Xiàwǔ nǐ zuò shénme?",
+        "en": "What are you doing this afternoon?"
+      }
+    },
+    {
+      "w": "商店",
+      "py": "shāngdiàn",
+      "en": "shop; store",
+      "ex": {
+        "hz": "我下午去商店。",
+        "py": "Wǒ xiàwǔ qù shāngdiàn.",
+        "en": "I'm going to the shop this afternoon."
+      }
+    },
+    {
+      "w": "买",
+      "py": "mǎi",
+      "en": "to buy",
+      "ex": {
+        "hz": "你想买什么？",
+        "py": "Nǐ xiǎng mǎi shénme?",
+        "en": "What do you want to buy?"
+      }
+    },
+    {
+      "w": "个",
+      "py": "gè",
+      "en": "(general measure word)",
+      "ex": {
+        "hz": "我想买一个杯子。",
+        "py": "Wǒ xiǎng mǎi yí ge bēizi.",
+        "en": "I want to buy a cup."
+      }
+    },
+    {
+      "w": "杯子",
+      "py": "bēizi",
+      "en": "cup; glass",
+      "ex": {
+        "hz": "这个杯子很好。",
+        "py": "Zhège bēizi hěn hǎo.",
+        "en": "This cup is nice."
+      }
+    },
+    {
+      "w": "这",
+      "py": "zhè",
+      "en": "this",
+      "ex": {
+        "hz": "这是什么？",
+        "py": "Zhè shì shénme?",
+        "en": "What is this?"
+      }
+    },
+    {
+      "w": "多少",
+      "py": "duōshao",
+      "en": "how many; how much",
+      "ex": {
+        "hz": "这个多少钱？",
+        "py": "Zhège duōshao qián?",
+        "en": "How much is this?"
+      }
+    },
+    {
+      "w": "钱",
+      "py": "qián",
+      "en": "money",
+      "ex": {
+        "hz": "我没有钱。",
+        "py": "Wǒ méiyǒu qián.",
+        "en": "I don't have money."
+      }
+    },
+    {
+      "w": "块",
+      "py": "kuài",
+      "en": "yuan (money, spoken)",
+      "ex": {
+        "hz": "这个杯子十块钱。",
+        "py": "Zhège bēizi shí kuài qián.",
+        "en": "This cup is ten yuan."
+      }
+    },
+    {
+      "w": "那",
+      "py": "nà",
+      "en": "that",
+      "ex": {
+        "hz": "那个杯子多少钱？",
+        "py": "Nàge bēizi duōshao qián?",
+        "en": "How much is that cup?"
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "你想吃什么",
+      "py": "Nǐ xiǎng chī shénme",
+      "en": "What would you like to eat",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你想喝什么？",
+          "py": "Nǐ xiǎng hē shénme?",
+          "en": "What would you like to drink?"
+        },
+        {
+          "who": "B",
+          "hz": "我想喝茶。",
+          "py": "Wǒ xiǎng hē chá.",
+          "en": "Tea, please."
+        },
+        {
+          "who": "A",
+          "hz": "你想吃什么？",
+          "py": "Nǐ xiǎng chī shénme?",
+          "en": "And to eat?"
+        },
+        {
+          "who": "B",
+          "hz": "我想吃米饭和中国菜。",
+          "py": "Wǒ xiǎng chī mǐfàn hé Zhōngguó cài.",
+          "en": "Rice and Chinese dishes."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What does B want to drink?",
+          "options": [
+            "茶",
+            "水",
+            "米饭",
+            "Nothing"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What does B want to eat?",
+          "options": [
+            "Rice and Chinese dishes",
+            "Only rice",
+            "Fruit",
+            "Nothing"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "多少钱",
+      "py": "Duōshao qián",
+      "en": "How much",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你好！这个杯子多少钱？",
+          "py": "Nǐ hǎo! Zhège bēizi duōshao qián?",
+          "en": "Hello! How much is this cup?"
+        },
+        {
+          "who": "B",
+          "hz": "三十五块。",
+          "py": "Sānshíwǔ kuài.",
+          "en": "Thirty-five yuan."
+        },
+        {
+          "who": "A",
+          "hz": "那个呢？",
+          "py": "Nàge ne?",
+          "en": "And that one?"
+        },
+        {
+          "who": "B",
+          "hz": "那个杯子十二块钱。",
+          "py": "Nàge bēizi shí'èr kuài qián.",
+          "en": "That cup is twelve yuan."
+        },
+        {
+          "who": "A",
+          "hz": "我买那个。",
+          "py": "Wǒ mǎi nàge.",
+          "en": "I'll take that one."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How much is “this” cup?",
+          "options": [
+            "35 yuan",
+            "12 yuan",
+            "53 yuan",
+            "25 yuan"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which cup does A buy?",
+          "options": [
+            "That one, 12 yuan",
+            "This one, 35 yuan",
+            "Both",
+            "Neither"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "想 + verb",
+      "en": "想: want to, would like to",
+      "drills": [
+        {
+          "q": "我___喝茶。",
+          "options": [
+            "想",
+            "是",
+            "在",
+            "的"
+          ],
+          "answer": 0,
+          "en": "I'd like some tea."
+        },
+        {
+          "q": "下午你___做什么？",
+          "options": [
+            "想",
+            "是",
+            "在",
+            "有"
+          ],
+          "answer": 0,
+          "en": "What do you want to do this afternoon?"
+        }
+      ]
+    },
+    {
+      "point": "多少",
+      "en": "多少 asks numbers (often over 10) and prices",
+      "drills": [
+        {
+          "q": "这个杯子___钱？",
+          "options": [
+            "多少",
+            "几",
+            "什么",
+            "怎么"
+          ],
+          "answer": 0,
+          "en": "How much is this cup?"
+        }
+      ]
+    },
+    {
+      "point": "Measure word 个",
+      "en": "number + 个 + noun",
+      "drills": [
+        {
+          "q": "我想买一___杯子。",
+          "options": [
+            "个",
+            "口",
+            "本",
+            "块"
+          ],
+          "answer": 0,
+          "en": "I want to buy a cup."
+        },
+        {
+          "q": "那个杯子十八___钱。",
+          "options": [
+            "块",
+            "个",
+            "口",
+            "本"
+          ],
+          "answer": 0,
+          "en": "That cup is 18 yuan."
+        }
+      ]
+    }
+  ]
+}

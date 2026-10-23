@@ -82,5 +82,29 @@
   "竖折折钩": {
     "py": "shùzhézhégōu",
     "en": "vertical, turn, turn, hook"
+  },
+  "竖折": {
+    "py": "shùzhé",
+    "en": "vertical, turn right"
+  },
+  "竖提": {
+    "py": "shùtí",
+    "en": "vertical, then rise"
+  },
+  "竖弯": {
+    "py": "shùwān",
+    "en": "vertical, bend right"
+  },
+  "斜钩": {
+    "py": "xiégōu",
+    "en": "slanting hook"
+  },
+  "横撇弯钩": {
+    "py": "héngpiěwāngōu",
+    "en": "horizontal, fall left, curve, hook"
+  },
+  "横折斜钩": {
+    "py": "héngzhéxiégōu",
+    "en": "horizontal, turn, slant, hook"
   }
 }

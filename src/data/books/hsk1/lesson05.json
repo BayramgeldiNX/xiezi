@@ -1,0 +1,401 @@
+{
+  "n": 5,
+  "cn": "第五课",
+  "title": "她女儿今年二十岁",
+  "en": "Her daughter is 20 this year",
+  "words": [
+    {
+      "w": "家",
+      "py": "jiā",
+      "en": "family; home",
+      "ex": {
+        "hz": "你家有几个人？",
+        "py": "Nǐ jiā yǒu jǐ ge rén?",
+        "en": "How many people are in your family?"
+      }
+    },
+    {
+      "w": "有",
+      "py": "yǒu",
+      "en": "to have; there is",
+      "ex": {
+        "hz": "我有一个女儿。",
+        "py": "Wǒ yǒu yí ge nǚ'ér.",
+        "en": "I have a daughter."
+      }
+    },
+    {
+      "w": "口",
+      "py": "kǒu",
+      "en": "(measure word for family members)",
+      "ex": {
+        "hz": "我家有三口人。",
+        "py": "Wǒ jiā yǒu sān kǒu rén.",
+        "en": "There are three people in my family."
+      }
+    },
+    {
+      "w": "女儿",
+      "py": "nǚ'ér",
+      "en": "daughter",
+      "ex": {
+        "hz": "她女儿今年八岁。",
+        "py": "Tā nǚ'ér jīnnián bā suì.",
+        "en": "Her daughter is eight this year."
+      }
+    },
+    {
+      "w": "几",
+      "py": "jǐ",
+      "en": "how many (small numbers)",
+      "ex": {
+        "hz": "你女儿几岁了？",
+        "py": "Nǐ nǚ'ér jǐ suì le?",
+        "en": "How old is your daughter?"
+      }
+    },
+    {
+      "w": "岁",
+      "py": "suì",
+      "en": "years old",
+      "ex": {
+        "hz": "我今年二十岁。",
+        "py": "Wǒ jīnnián èrshí suì.",
+        "en": "I'm twenty this year."
+      }
+    },
+    {
+      "w": "了",
+      "py": "le",
+      "en": "(shows a change or something done)",
+      "ex": {
+        "hz": "她十岁了。",
+        "py": "Tā shí suì le.",
+        "en": "She is ten now."
+      }
+    },
+    {
+      "w": "今年",
+      "py": "jīnnián",
+      "en": "this year",
+      "ex": {
+        "hz": "你今年多大？",
+        "py": "Nǐ jīnnián duō dà?",
+        "en": "How old are you this year?"
+      }
+    },
+    {
+      "w": "多",
+      "py": "duō",
+      "en": "how (much); many",
+      "ex": {
+        "hz": "你多大了？",
+        "py": "Nǐ duō dà le?",
+        "en": "How old are you?"
+      }
+    },
+    {
+      "w": "大",
+      "py": "dà",
+      "en": "big; old (age)",
+      "ex": {
+        "hz": "你家大吗？",
+        "py": "Nǐ jiā dà ma?",
+        "en": "Is your home big?"
+      }
+    },
+    {
+      "w": "一",
+      "py": "yī",
+      "en": "one",
+      "ex": {
+        "hz": "我有一个朋友。",
+        "py": "Wǒ yǒu yí ge péngyou.",
+        "en": "I have one friend."
+      }
+    },
+    {
+      "w": "二",
+      "py": "èr",
+      "en": "two",
+      "ex": {
+        "hz": "二十",
+        "py": "èrshí",
+        "en": "twenty"
+      }
+    },
+    {
+      "w": "三",
+      "py": "sān",
+      "en": "three",
+      "ex": {
+        "hz": "我家有三口人。",
+        "py": "Wǒ jiā yǒu sān kǒu rén.",
+        "en": "There are three of us in my family."
+      }
+    },
+    {
+      "w": "四",
+      "py": "sì",
+      "en": "four",
+      "ex": {
+        "hz": "她女儿四岁了。",
+        "py": "Tā nǚ'ér sì suì le.",
+        "en": "Her daughter is four now."
+      }
+    },
+    {
+      "w": "五",
+      "py": "wǔ",
+      "en": "five",
+      "ex": {
+        "hz": "我有五个同学。",
+        "py": "Wǒ yǒu wǔ ge tóngxué.",
+        "en": "I have five classmates."
+      }
+    },
+    {
+      "w": "六",
+      "py": "liù",
+      "en": "six",
+      "ex": {
+        "hz": "李老师家有六口人。",
+        "py": "Lǐ lǎoshī jiā yǒu liù kǒu rén.",
+        "en": "Teacher Li's family has six people."
+      }
+    },
+    {
+      "w": "七",
+      "py": "qī",
+      "en": "seven",
+      "ex": {
+        "hz": "他七岁了。",
+        "py": "Tā qī suì le.",
+        "en": "He is seven now."
+      }
+    },
+    {
+      "w": "八",
+      "py": "bā",
+      "en": "eight",
+      "ex": {
+        "hz": "我女儿今年八岁。",
+        "py": "Wǒ nǚ'ér jīnnián bā suì.",
+        "en": "My daughter is eight this year."
+      }
+    },
+    {
+      "w": "九",
+      "py": "jiǔ",
+      "en": "nine",
+      "ex": {
+        "hz": "九十九",
+        "py": "jiǔshíjiǔ",
+        "en": "ninety-nine"
+      }
+    },
+    {
+      "w": "十",
+      "py": "shí",
+      "en": "ten",
+      "ex": {
+        "hz": "我有十个汉语老师。",
+        "py": "Wǒ yǒu shí ge Hànyǔ lǎoshī.",
+        "en": "I have ten Chinese teachers."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "你家有几口人",
+      "py": "Nǐ jiā yǒu jǐ kǒu rén",
+      "en": "How many in your family",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你家有几口人？",
+          "py": "Nǐ jiā yǒu jǐ kǒu rén?",
+          "en": "How many people are in your family?"
+        },
+        {
+          "who": "B",
+          "hz": "我家有三口人。我有一个女儿。",
+          "py": "Wǒ jiā yǒu sān kǒu rén. Wǒ yǒu yí ge nǚ'ér.",
+          "en": "Three. I have a daughter."
+        },
+        {
+          "who": "A",
+          "hz": "你女儿今年几岁了？",
+          "py": "Nǐ nǚ'ér jīnnián jǐ suì le?",
+          "en": "How old is your daughter this year?"
+        },
+        {
+          "who": "B",
+          "hz": "她今年五岁了。",
+          "py": "Tā jīnnián wǔ suì le.",
+          "en": "She's five this year."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How many people are in B's family?",
+          "options": [
+            "3",
+            "5",
+            "2",
+            "4"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How old is B's daughter?",
+          "options": [
+            "5",
+            "3",
+            "10",
+            "20"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "你多大了",
+      "py": "Nǐ duō dà le",
+      "en": "How old are you",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你今年多大了？",
+          "py": "Nǐ jīnnián duō dà le?",
+          "en": "How old are you this year?"
+        },
+        {
+          "who": "B",
+          "hz": "我今年二十岁。你呢？",
+          "py": "Wǒ jīnnián èrshí suì. Nǐ ne?",
+          "en": "I'm twenty. And you?"
+        },
+        {
+          "who": "A",
+          "hz": "我十九岁。",
+          "py": "Wǒ shíjiǔ suì.",
+          "en": "I'm nineteen."
+        },
+        {
+          "who": "B",
+          "hz": "你家有几口人？",
+          "py": "Nǐ jiā yǒu jǐ kǒu rén?",
+          "en": "How many people are in your family?"
+        },
+        {
+          "who": "A",
+          "hz": "我家有四口人。",
+          "py": "Wǒ jiā yǒu sì kǒu rén.",
+          "en": "Four."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How old is A?",
+          "options": [
+            "19",
+            "20",
+            "9",
+            "4"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How many people are in A's family?",
+          "options": [
+            "4",
+            "3",
+            "19",
+            "20"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "几 / 多大",
+      "en": "几 asks small numbers; 多大 asks age",
+      "drills": [
+        {
+          "q": "你家有___口人？",
+          "options": [
+            "几",
+            "多",
+            "什么",
+            "谁"
+          ],
+          "answer": 0,
+          "en": "How many people are in your family?"
+        },
+        {
+          "q": "你今年___大了？",
+          "options": [
+            "多",
+            "几",
+            "很",
+            "太"
+          ],
+          "answer": 0,
+          "en": "How old are you this year?"
+        }
+      ]
+    },
+    {
+      "point": "了 (change)",
+      "en": "…了 at the end: a new situation",
+      "drills": [
+        {
+          "q": "她女儿今年五岁___。",
+          "options": [
+            "了",
+            "吗",
+            "的",
+            "呢"
+          ],
+          "answer": 0,
+          "en": "Her daughter is five now."
+        }
+      ]
+    },
+    {
+      "point": "Numbers",
+      "en": "十 + number, number + 十",
+      "drills": [
+        {
+          "q": "20 = ___",
+          "options": [
+            "二十",
+            "十二",
+            "二二",
+            "十十"
+          ],
+          "answer": 0,
+          "en": "twenty"
+        },
+        {
+          "q": "13 = ___",
+          "options": [
+            "十三",
+            "三十",
+            "一三",
+            "三一"
+          ],
+          "answer": 0,
+          "en": "thirteen"
+        }
+      ]
+    }
+  ]
+}

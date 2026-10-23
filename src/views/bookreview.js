@@ -2,10 +2,10 @@
 // with spaced repetition. A word is due in a type when that type's schedule says so.
 import { $, $$, esc, shuffle } from "../lib/util.js";
 import { icon } from "../lib/icons.js";
-import { wordsOf, READINGS } from "../data/index.js";
+import { wordsOf, READINGS, grammarOf } from "../data/index.js";
 import * as progress from "../progress/store.js";
 import { latest, nextReview, isDue } from "../progress/model.js";
-import { setHost, listenQuiz, vocabQuiz, speak, lessonSentences, ui } from "./practice.js";
+import { setHost, listenQuiz, vocabQuiz, speak, lessonSentences, grammarQuiz, ui } from "./practice.js";
 import { dictIntro } from "./dictation.js";
 import { orderGame, buildable } from "./reading.js";
 
@@ -19,7 +19,7 @@ const TYPES = [
   { id: "write", seal: "写", name: "Writing", sub: "Write words from sound, pinyin or meaning", keys: ["d:"] },
   { id: "speak", seal: "说", name: "Speaking", sub: "Say words aloud", keys: ["s:"] },
   { id: "read", seal: "读", name: "Reading", sub: "Build sentences from the lessons", keys: ["o:"], sentences: true },
-  { id: "grammar", seal: "法", name: "Grammar", sub: "Comes with your book's grammar notes", soon: true },
+  { id: "grammar", seal: "法", name: "Grammar", sub: "Fill the blank in sentences", keys: ["g:"], grammar: true },
 ];
 
 let book = null;
@@ -30,6 +30,7 @@ function itemsOf(t) {
   const lessons = book.lessons;
   if (t.sentences) return buildable(lessonSentences(wordsOf(lessons), READINGS.filter((r) => r.book === book.id || lessons.some((l) => l.id === r.lesson))))
     .map((s) => ({ id: s.hz, s }));
+  if (t.grammar) return grammarOf(lessons).map((d) => ({ id: d.id, d }));
   return wordsOf(lessons).map((w) => ({ id: w.w, w }));
 }
 
@@ -145,6 +146,7 @@ function runStep({ t, items }, done) {
     case "write": return dictIntro({ host, words, prompt: "mixed", kind: "review-write", back: showReview, autostart: true, then });
     case "speak": return speak({ title: "Speaking review", items: shuffle(words).map((w) => ({ w, text: w.w, py: w.py, en: w.en })), then });
     case "read": return orderGame(ui, items.map((i) => i.s), { all: true, then });
+    case "grammar": return grammarQuiz({ items: shuffle(items.map((i) => i.d)), title: "法 · Grammar review", kind: "review-grammar", then });
   }
 }
 

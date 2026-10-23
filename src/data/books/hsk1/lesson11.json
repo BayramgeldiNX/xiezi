@@ -1,0 +1,288 @@
+{
+  "n": 11,
+  "cn": "第十一课",
+  "title": "现在几点",
+  "en": "What's the time now",
+  "words": [
+    {
+      "w": "现在",
+      "py": "xiànzài",
+      "en": "now",
+      "ex": {
+        "hz": "现在几点？",
+        "py": "Xiànzài jǐ diǎn?",
+        "en": "What time is it now?"
+      }
+    },
+    {
+      "w": "点",
+      "py": "diǎn",
+      "en": "o'clock",
+      "ex": {
+        "hz": "现在十点。",
+        "py": "Xiànzài shí diǎn.",
+        "en": "It's ten o'clock."
+      }
+    },
+    {
+      "w": "分",
+      "py": "fēn",
+      "en": "minute",
+      "ex": {
+        "hz": "现在八点十分。",
+        "py": "Xiànzài bā diǎn shí fēn.",
+        "en": "It's 8:10."
+      }
+    },
+    {
+      "w": "中午",
+      "py": "zhōngwǔ",
+      "en": "noon",
+      "ex": {
+        "hz": "我们中午吃饭。",
+        "py": "Wǒmen zhōngwǔ chī fàn.",
+        "en": "We eat at noon."
+      }
+    },
+    {
+      "w": "吃饭",
+      "py": "chī fàn",
+      "en": "to have a meal",
+      "ex": {
+        "hz": "什么时候吃饭？",
+        "py": "Shénme shíhou chī fàn?",
+        "en": "When do we eat?"
+      }
+    },
+    {
+      "w": "时候",
+      "py": "shíhou",
+      "en": "time; when",
+      "ex": {
+        "hz": "你什么时候回家？",
+        "py": "Nǐ shénme shíhou huí jiā?",
+        "en": "When are you going home?"
+      }
+    },
+    {
+      "w": "回",
+      "py": "huí",
+      "en": "to return",
+      "ex": {
+        "hz": "我五点回家。",
+        "py": "Wǒ wǔ diǎn huí jiā.",
+        "en": "I go home at five."
+      }
+    },
+    {
+      "w": "我们",
+      "py": "wǒmen",
+      "en": "we; us",
+      "ex": {
+        "hz": "我们去看电影。",
+        "py": "Wǒmen qù kàn diànyǐng.",
+        "en": "Let's go see a movie."
+      }
+    },
+    {
+      "w": "电影",
+      "py": "diànyǐng",
+      "en": "movie",
+      "ex": {
+        "hz": "我想看电影。",
+        "py": "Wǒ xiǎng kàn diànyǐng.",
+        "en": "I want to see a movie."
+      }
+    },
+    {
+      "w": "住",
+      "py": "zhù",
+      "en": "to live; to stay",
+      "ex": {
+        "hz": "你住哪儿？",
+        "py": "Nǐ zhù nǎr?",
+        "en": "Where do you live?"
+      }
+    },
+    {
+      "w": "前",
+      "py": "qián",
+      "en": "before; ago",
+      "ex": {
+        "hz": "我三天前去了北京。",
+        "py": "Wǒ sān tiān qián qù le Běijīng.",
+        "en": "I went to Beijing three days ago."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "现在几点",
+      "py": "Xiànzài jǐ diǎn",
+      "en": "What time is it",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "现在几点？",
+          "py": "Xiànzài jǐ diǎn?",
+          "en": "What time is it?"
+        },
+        {
+          "who": "B",
+          "hz": "现在十一点五十分。",
+          "py": "Xiànzài shíyī diǎn wǔshí fēn.",
+          "en": "It's 11:50."
+        },
+        {
+          "who": "A",
+          "hz": "我们什么时候吃饭？",
+          "py": "Wǒmen shénme shíhou chī fàn?",
+          "en": "When are we eating?"
+        },
+        {
+          "who": "B",
+          "hz": "中午十二点。",
+          "py": "Zhōngwǔ shí'èr diǎn.",
+          "en": "At twelve noon."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What time is it now?",
+          "options": [
+            "11:50",
+            "12:00",
+            "5:11",
+            "10:50"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "When do they eat?",
+          "options": [
+            "12 noon",
+            "11:50",
+            "1 pm",
+            "5 pm"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "我们去看电影",
+      "py": "Wǒmen qù kàn diànyǐng",
+      "en": "Let's see a movie",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "下午我们去看电影，好吗？",
+          "py": "Xiàwǔ wǒmen qù kàn diànyǐng, hǎo ma?",
+          "en": "Shall we see a movie this afternoon?"
+        },
+        {
+          "who": "B",
+          "hz": "好！几点？",
+          "py": "Hǎo! Jǐ diǎn?",
+          "en": "Sure! What time?"
+        },
+        {
+          "who": "A",
+          "hz": "三点。",
+          "py": "Sān diǎn.",
+          "en": "At three."
+        },
+        {
+          "who": "B",
+          "hz": "我五点回家。",
+          "py": "Wǒ wǔ diǎn huí jiā.",
+          "en": "I'm going home at five."
+        }
+      ],
+      "questions": [
+        {
+          "q": "When is the movie?",
+          "options": [
+            "3 o'clock",
+            "5 o'clock",
+            "Noon",
+            "12 o'clock"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "When does B go home?",
+          "options": [
+            "5 o'clock",
+            "3 o'clock",
+            "Noon",
+            "We don't know"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "Time words come early",
+      "en": "Time goes before the verb: 我五点回家",
+      "drills": [
+        {
+          "q": "现在八___十分。",
+          "options": [
+            "点",
+            "号",
+            "月",
+            "年"
+          ],
+          "answer": 0,
+          "en": "It's 8:10 now."
+        },
+        {
+          "q": "我们中午十二点___饭。",
+          "options": [
+            "吃",
+            "喝",
+            "看",
+            "买"
+          ],
+          "answer": 0,
+          "en": "We eat at twelve noon."
+        }
+      ]
+    },
+    {
+      "point": "什么时候",
+      "en": "什么时候 asks “when”",
+      "drills": [
+        {
+          "q": "你___回家？",
+          "options": [
+            "什么时候",
+            "哪儿",
+            "几个",
+            "怎么"
+          ],
+          "answer": 0,
+          "en": "When are you going home?"
+        },
+        {
+          "q": "我们三点去___电影。",
+          "options": [
+            "看",
+            "读",
+            "吃",
+            "买"
+          ],
+          "answer": 0,
+          "en": "We're going to see a movie at three."
+        }
+      ]
+    }
+  ]
+}
