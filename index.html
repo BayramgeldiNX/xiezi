@@ -81,6 +81,15 @@
     <div id="typingBody" class="inner"></div>
   </section>
 
+  <!-- PRINTABLE PRACTICE SHEET -->
+  <section id="printView" class="page" style="max-width:900px" hidden>
+    <div class="topbar no-print">
+      <button class="back" type="button" id="printBack" aria-label="Back to the lesson"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <div><span class="eyebrow">印 · 字帖</span><h2 id="printTitle"></h2></div>
+    </div>
+    <div id="printBody" class="inner"></div>
+  </section>
+
   <!-- BOOKS -->
   <section id="booksView" class="page" hidden>
     <div class="topbar">
@@ -148,6 +157,12 @@
   <div class="sheet-head"><h3 id="accountTitle">Settings &amp; sync</h3>
     <form method="dialog"><button class="sheet-close" aria-label="Close"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></form></div>
   <div id="accountBody"></div>
+</dialog>
+
+<dialog class="sheet char-sheet" id="charSheet" aria-label="Character details">
+  <div class="sheet-head"><h3>字 · Character</h3>
+    <form method="dialog"><button class="sheet-close" aria-label="Close"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button></form></div>
+  <div id="charBody"></div>
 </dialog>
 
 <div class="gloss" id="gloss" role="status" hidden></div>

@@ -5,6 +5,8 @@ import STROKE_NAMES from "./stroke-names.json";
 import STROKE_DATA from "./strokes.gen.json";
 import TONE_SETS from "./tone-sets.json";
 import GLOSSARY from "./glossary.json";
+import CHARINFO from "./charinfo.gen.json";
+import RADICALS from "./radicals.json";
 
 const bookFiles = import.meta.glob("./books/*/book.json", { eager: true, import: "default" });
 const lessonFiles = import.meta.glob("./books/*/lesson*.json", { eager: true, import: "default" });
@@ -23,7 +25,10 @@ export const LESSONS = BOOKS.flatMap((b) => b.lessons);
 export const bookOf = (lesson) => BOOKS.find((b) => b.id === lesson.book);
 export const lessonIndex = (id) => LESSONS.findIndex((l) => l.id === id);
 
-export { CHARS, STROKE_NAMES, STROKE_DATA, TONE_SETS, GLOSSARY };
+export { CHARS, STROKE_NAMES, STROKE_DATA, TONE_SETS, GLOSSARY, CHARINFO, RADICALS };
+
+// Every word (from all lessons) that contains a character.
+export const wordsWith = (c) => wordsOf(LESSONS).filter((w) => w.w.includes(c));
 
 // Reading texts of every lesson, each tagged with its lesson.
 export const READINGS = LESSONS.flatMap((l) => (l.readings || []).map((r) => ({ ...r, lesson: l.id, key: `${l.id}/${r.id}` })));

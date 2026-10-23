@@ -2,7 +2,7 @@
 // Each session reviews what's due first, then brings in new words, so learning and review happen together.
 import { $, $$, esc, store } from "../lib/util.js";
 import { tonePy } from "../lib/pinyin.js";
-import { say, stopSpeech } from "../lib/speech.js";
+import { say, autoSay, stopSpeech } from "../lib/speech.js";
 import { icon } from "../lib/icons.js";
 import { checkHanzi, checkPinyin, toneSyllables, TONE_HELP } from "../lib/typing-check.js";
 import { LESSONS, READINGS, wordsOf } from "../data/index.js";
@@ -133,7 +133,7 @@ function run(items) {
       $("#tyCheck").hidden = $("#tyHint").hidden = $("#tyShow").hidden = true;
       $("#tyNext").hidden = false;
       $("#tyNext").focus({ preventScroll: true });
-      say(it.hz);
+      autoSay(it.hz);
     };
     const answerLine = () => `<div class="answer"><span class="hz">${it.hz}</span><span class="py">${tonePy(it.py)}</span>
       ${hz ? "" : `<span class="muted">${toneSyllables(it.py).map((s) => s.p + (s.tone === 5 ? "" : s.tone)).join(" ")}</span>`}</div>`;

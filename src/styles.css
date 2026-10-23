@@ -39,7 +39,7 @@
 *, *::before, *::after { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; touch-action: manipulation; scroll-padding-top: var(--safe-t); }
 body {
-  margin: 0; color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.5; min-height: 100dvh;
+  margin: 0; color: var(--ink); font-family: var(--body); font-size: 1rem; line-height: 1.5; min-height: 100dvh;
   background:
     radial-gradient(900px 480px at 50% -160px, var(--glow), transparent 70%),
     radial-gradient(700px 500px at 100% 480px, var(--glow2), transparent 70%),
@@ -395,7 +395,7 @@ details summary { cursor: pointer; color: var(--muted); }
 .mini-seal { font-family: var(--display); font-size: 1.05rem; color: var(--gold); }
 /* Phones: the three writing exercises as one even row. */
 @media (max-width: 600px) {
-  .practice-strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+  .practice-strip { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
   .practice-strip .lbl { grid-column: 1 / -1; }
   .practice-strip .btn { flex-direction: column; gap: 0; padding: 8px 4px; font-size: .8rem; line-height: 1.2; text-align: center; }
   .practice-strip .mini-seal { font-size: 1.2rem; }
@@ -419,6 +419,77 @@ details summary { cursor: pointer; color: var(--muted); }
 .tone-legend b { font-size: 1.3rem; min-width: 1em; }
 details.panel summary { cursor: pointer; }
 details.panel p { margin: 0; font-size: .92rem; }
+
+/* ---------- Character card ---------- */
+.char-link { font: inherit; color: inherit; background: none; border: 0; padding: 0; margin: 0; cursor: pointer; border-bottom: 1px dotted var(--line2); line-height: inherit; }
+.char-link:hover { border-bottom-color: var(--gold); }
+.title-char { font-family: var(--display); font-size: 1.8rem; font-weight: 700; }
+.word-table .char-link, .g-hz .char-link, .answer .char-link { min-width: 34px; min-height: 34px; padding: 0 5px; }
+.char-sheet { width: min(100% - 24px, 560px); }
+#charBody { padding: 4px 20px 20px; display: grid; gap: 16px; max-height: calc(100dvh - 120px - var(--safe-t) - var(--safe-b)); overflow-y: auto; }
+#charBody section { display: grid; gap: 8px; }
+#charBody p { margin: 0; }
+.cs-head { display: grid; grid-template-columns: 104px 1fr; gap: 16px; align-items: center; }
+.cs-model { width: 104px; height: 104px; }
+.cs-title { display: grid; gap: 4px; min-width: 0; }
+.cs-big { font-family: var(--display); font-size: 2.2rem; }
+.cs-title .py { font-size: 1.2rem; }
+.cs-parts, .cs-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.cs-plus { color: var(--muted); font-size: 1.2rem; }
+.cs-chip { display: grid; justify-items: center; gap: 0; min-width: 76px; padding: 8px 10px; border-radius: 14px; border: 1px solid var(--line2); background: transparent; color: var(--ink); cursor: pointer; text-align: center; }
+.cs-chip b { font-family: var(--display); font-size: 1.6rem; line-height: 1.2; }
+.cs-chip .py { font-size: .85rem; }
+.cs-chip small { color: var(--muted); font-size: .72rem; max-width: 9em; }
+.cs-chip[data-char] { border-color: color-mix(in srgb, var(--gold) 45%, transparent); }
+.cs-rad { font-family: var(--display); font-size: 1.4rem; font-weight: 700; color: var(--gold); margin-right: 4px; }
+.cs-words { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.cs-words button { width: 100%; display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; padding: 8px 12px; border-radius: 12px; border: 1px solid var(--line); background: transparent; color: var(--ink); cursor: pointer; text-align: left; }
+.cs-words b { font-family: var(--display); font-size: 1.3rem; }
+.cs-words mark { background: none; color: var(--cinnabar); }
+.cs-words small { margin-left: auto; color: var(--muted); }
+.cs-credit { font-size: .72rem; }
+
+/* ---------- Practice sheet (字帖) ---------- */
+.ps-pick { display: flex; flex-wrap: wrap; gap: 6px; }
+.ps-pick button { font-family: var(--display); font-size: 1.3rem; width: 44px; height: 44px; border-radius: 10px; border: 1px solid var(--line2); background: transparent; color: var(--muted); cursor: pointer; opacity: .55; }
+.ps-pick button[aria-pressed="true"] { color: var(--ink); border-color: var(--ink); opacity: 1; }
+/* The sheet looks like paper on screen and prints as it is shown. */
+.ps-paper { background: #f6f2e9; color: #1d1b18; border-radius: 6px; padding: 18px; display: grid; gap: 18px; box-shadow: 0 10px 40px rgb(0 0 0 / .3); }
+.ps-title { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px 16px; font-size: .85rem; border-bottom: 1px solid #d8cfbd; padding-bottom: 8px; }
+.ps-title b { font-family: var(--display); font-size: 1.1rem; }
+.ps-char { display: grid; gap: 0; break-inside: avoid; page-break-inside: avoid; }
+.ps-head { display: flex; align-items: baseline; gap: 10px; margin-bottom: 4px; font-size: .85rem; }
+.ps-head b { font-family: var(--display); font-size: 1.4rem; }
+.ps-head .py { color: #1d1b18; }
+.ps-n { margin-left: auto; color: #6d6558; }
+.ps-row { display: grid; grid-template-columns: repeat(10, 1fr); }
+.ps-cell { width: 100%; aspect-ratio: 1; display: block; margin: 0 -1px -1px 0; }
+.ps-box { fill: none; stroke: #c98a80; stroke-width: 10; }
+.ps-guide { stroke: #e2b9b2; stroke-width: 5; stroke-dasharray: 26 22; fill: none; }
+.ps-ink { fill: #1d1b18; }
+.ps-new { fill: #c22f26; }
+.ps-trace { fill: #d5d0c7; }
+@media print {
+  @page { size: A4; margin: 10mm; }
+  html, body { background: #fff !important; }
+  body * { visibility: hidden; }
+  #printView, #printView * { visibility: visible; }
+  #printView { position: absolute; inset: 0 auto auto 0; width: 100%; max-width: none; margin: 0; }
+  .no-print, .fs-btn, .toast, .gloss { display: none !important; }
+  .ps-paper { background: #fff; box-shadow: none; padding: 0; border-radius: 0; gap: 10mm; }
+  .wrap { padding: 0 !important; }
+}
+
+/* ---------- Settings ---------- */
+:root[data-size="large"] { font-size: 112.5%; }
+:root[data-size="xl"] { font-size: 125%; }
+.set-row { display: grid; gap: 6px; }
+.set-row > span { font-weight: 700; font-size: .9rem; }
+.set-row .seg { flex-wrap: wrap; width: fit-content; max-width: 100%; }
+.set-row .seg button { padding: 6px 12px; }
+/* Pinyin hidden or blurred, except where it is the answer or the choice itself. */
+:root[data-py="hide"] .py:not(:is(.answer, .choice, .tone-opt, .ty-feedback, .result-list, #gloss, .rd, .ps-paper, .greet, #charBody, .chip, .legend) *, .hero-py) { visibility: hidden; }
+:root[data-py="tap"] .py:not(.shown):not(:is(.answer, .choice, .tone-opt, .ty-feedback, .result-list, #gloss, .rd, .ps-paper, .greet, #charBody, .chip, .legend) *, .hero-py) { filter: blur(6px); cursor: pointer; user-select: none; }
 
 /* ---------- Account sheet ---------- */
 dialog.sheet { width: min(100% - 32px, 460px); max-height: calc(100dvh - 32px - var(--safe-t) - var(--safe-b)); border: 1px solid var(--line2); border-radius: 20px; padding: 0; background: var(--card); color: var(--ink); }

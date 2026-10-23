@@ -7,6 +7,7 @@ import { icon } from "../lib/icons.js";
 import { makeSegmenter } from "../lib/segment.js";
 import { DICT } from "../data/index.js";
 import * as progress from "../progress/store.js";
+import { charLinks } from "./charsheet.js";
 
 const segment = makeSegmenter(DICT);
 
@@ -14,7 +15,7 @@ const segment = makeSegmenter(DICT);
 function showGloss(t) {
   const g = $("#gloss");
   const info = DICT[t];
-  g.innerHTML = `<span class="g-hz">${t}</span>
+  g.innerHTML = `<span class="g-hz">${charLinks(t)}</span>
     <span class="g-txt">${info ? `<span class="py">${tonePy(info.py)}</span><span class="muted">${esc(info.en)}</span>` : `<span class="muted">No meaning saved yet</span>`}</span>
     ${sayBtns(t, info?.py || t, true)}
     <button class="sheet-close" type="button" id="glossClose" aria-label="Close">${icon("x")}</button>`;

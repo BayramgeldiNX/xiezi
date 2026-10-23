@@ -3,6 +3,7 @@
 import { $, esc } from "./util.js";
 import { icon } from "./icons.js";
 import AUDIO from "../data/audio.gen.json";
+import { setting } from "./settings.js";
 
 const clean = (text) => text.replace(/[AB]: /g, "").trim();
 export const hasRecording = (text) => !!AUDIO[clean(text)];
@@ -57,7 +58,7 @@ export function say(text, slow) {
     return new Promise((resolve) => {
       player.muted = false; // the unlock trick may still be muting the player on the very first tap
       player.src = `${import.meta.env.BASE_URL}audio/${file}.mp3`;
-      player.playbackRate = slow ? 0.65 : 1;
+      player.playbackRate = slow ? setting("slowRate") : 1;
       player.preservesPitch = true;
       player.onended = () => resolve(true);
       player.onerror = () => { if (token === playToken) tts(t, slow).then(resolve); else resolve(false); };
@@ -85,6 +86,9 @@ function tts(text, slow) {
     }
   });
 }
+
+// Sound that plays by itself (not from a tap): respects the "auto-play" setting.
+export const autoSay = (text, slow) => (setting("autoplay") ? say(text, slow) : Promise.resolve(false));
 
 export function stopSpeech() {
   playToken++;

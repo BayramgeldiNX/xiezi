@@ -1,6 +1,13 @@
 // Account sheet: sign in for sync, sync status, backup file.
 import { $, esc } from "../lib/util.js";
 import { getTheme, setTheme } from "../lib/theme.js";
+import { setting, setSetting } from "../lib/settings.js";
+
+// One labelled row of choices for a setting.
+const settingRow = (key, label, choices, note = "") => `<div class="set-row"><span>${label}</span>
+  <div class="seg" role="group" aria-label="${label}">${choices.map(([v, t]) =>
+    `<button type="button" data-set="${key}" data-v="${v}" aria-pressed="${String(setting(key)) === String(v)}">${t}</button>`).join("")}</div>
+  ${note ? `<small class="muted">${note}</small>` : ""}</div>`;
 import * as progress from "../progress/store.js";
 import { syncAvailable, onSync, syncState, signIn, signUp, signOut, resetPassword } from "../sync/sync.js";
 
@@ -67,6 +74,14 @@ function renderSheet() {
       <button type="button" data-theme-set="ink" aria-pressed="${theme === "ink"}">墨 Ink</button>
       <button type="button" data-theme-set="paper" aria-pressed="${theme === "paper"}">宣纸 Paper</button>
     </div>
+    ${settingRow("textSize", "Text size", [["normal", "Normal"], ["large", "Large"], ["xl", "Extra large"]])}
+    <hr>
+    <span class="lbl">Learning</span>
+    ${settingRow("pinyin", "Pinyin", [["show", "Show"], ["tap", "Show on tap"], ["hide", "Hide"]], "Hide or blur pinyin to test yourself; it still appears in answers.")}
+    ${settingRow("strokeSpeed", "Stroke animation", [["slow", "Slow"], ["normal", "Normal"], ["fast", "Fast"]])}
+    ${settingRow("hintAfter", "Hint when tracing after", [[1, "1 mistake"], [2, "2 mistakes"], [3, "3 mistakes"], [0, "Never"]])}
+    ${settingRow("slowRate", "“Slow” sound speed", [[0.5, "Very slow"], [0.65, "Slow"], [0.8, "A bit slow"]])}
+    ${settingRow("autoplay", "Play sound automatically", [[true, "On"], [false, "Off"]], "Off: exercises stay silent until you tap Listen.")}
     <hr>
     <span class="lbl">Sync</span>
     ${top}
@@ -82,6 +97,11 @@ function renderSheet() {
     <p class="note">This device: <code>${progress.deviceId()}</code> · Version: <code>${__BUILD__}</code></p>`;
   body.querySelectorAll("[data-theme-set]").forEach((b) => b.addEventListener("click", () => {
     setTheme(b.dataset.themeSet);
+    renderSheet();
+  }));
+  body.querySelectorAll("[data-set]").forEach((b) => b.addEventListener("click", () => {
+    const v = b.dataset.v;
+    setSetting(b.dataset.set, v === "true" ? true : v === "false" ? false : isNaN(+v) ? v : +v);
     renderSheet();
   }));
 

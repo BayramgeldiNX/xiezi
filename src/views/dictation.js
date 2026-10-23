@@ -2,10 +2,12 @@
 // prompt: "audio" (听写: hear it), "pinyin" (see the pinyin) or "meaning" (see the English).
 import { $, $$, css, shuffle, esc } from "../lib/util.js";
 import { tonePy } from "../lib/pinyin.js";
-import { say, canSay } from "../lib/speech.js";
+import { say, autoSay, canSay } from "../lib/speech.js";
+import { setting } from "../lib/settings.js";
 import { icon } from "../lib/icons.js";
 import { gridSVG, makeWriter, trackWriter, clearWriters } from "../lib/draw.js";
 import { app } from "../app.js";
+import { charLinks } from "./charsheet.js";
 import * as progress from "../progress/store.js";
 
 const PROMPT = {
@@ -87,7 +89,7 @@ export function dictWord() {
     const size = Math.round(b.getBoundingClientRect().width) || 160;
     const w = trackWriter(makeWriter(b, chars[i], size, { showOutline: false, highlightColor: css("--jade") }));
     w.quiz({
-      showHintAfterMisses: 3, highlightOnComplete: true,
+      showHintAfterMisses: setting("hintAfter") ? setting("hintAfter") + 1 : false, highlightOnComplete: true,
       onMistake: () => { mistakes++; },
       onComplete: () => { doneCount++; if (doneCount === chars.length) finish(); },
     });
@@ -100,13 +102,13 @@ export function dictWord() {
     if (perfect) dict.perfect++; else dict.missed.push(word.w);
     progress.record("d:" + word.w, { ok: perfect, miss: mistakes + (gaveUp ? 3 : 0) + hintLevel });
     status.textContent = gaveUp ? "Here's the answer. You'll get it next time!" : perfect ? "太好了! Perfect!" : mistakes ? `很好! Done with ${mistakes} mistake${mistakes > 1 ? "s" : ""}.` : "很好! Done, with a hint.";
-    $("#dictAnswer").innerHTML = `<span class="hz">${word.w}</span><span class="py">${tonePy(word.py)}</span><span class="muted">${esc(word.en)}</span>`;
+    $("#dictAnswer").innerHTML = `<span class="hz">${charLinks(word.w)}</span><span class="py">${tonePy(word.py)}</span><span class="muted">${esc(word.en)}</span>`;
     $("#dictAnswer").hidden = false;
     $("#dictShow").hidden = true;
     $("#dictNext").hidden = false;
     $("#dictNext").textContent = dict.pos + 1 >= total ? (dict.then ? "Continue" : "See results") : "Next word";
     $("#dictNext").focus({ preventScroll: true });
-    if (!audio) say(word.w);
+    if (!audio) autoSay(word.w);
   }
   // Hints: audio prompt → meaning, then pinyin. Pinyin prompt → meaning, then sound. Meaning prompt → pinyin, then sound.
   function showHint(level) {
@@ -130,7 +132,7 @@ export function dictWord() {
   if (audio) {
     // Without any sound for this word, dictation still works from meaning + pinyin (and that doesn't count as a hint).
     if (!canSay(word.w)) { showHint(2); hintLevel = 0; }
-    setTimeout(() => say(word.w), 250);
+    setTimeout(() => autoSay(word.w), 250);
   }
 }
 

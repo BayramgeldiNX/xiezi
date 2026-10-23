@@ -4,7 +4,7 @@
 // book Review can chain several of them into one mixed session.
 import { $, $$, esc, shuffle } from "../lib/util.js";
 import { tonePy, stripTone } from "../lib/pinyin.js";
-import { say, sayBtns, stopSpeech } from "../lib/speech.js";
+import { say, autoSay, sayBtns, stopSpeech } from "../lib/speech.js";
 import { icon } from "../lib/icons.js";
 import { clearWriters } from "../lib/draw.js";
 import { overlap } from "../lib/compare.js";
@@ -13,6 +13,7 @@ import { textList, textQuiz, orderGame, pinyinQuiz, hideGloss } from "./reading.
 import * as progress from "../progress/store.js";
 import { wordStatus } from "../progress/model.js";
 import { dictIntro } from "./dictation.js";
+import { charLinks } from "./charsheet.js";
 import { cardsOpen } from "./cards.js";
 import { tonesIntro } from "./tones.js";
 
@@ -212,10 +213,10 @@ export function choiceQuiz(cfg) {
       $("#qAnswer").hidden = false;
       $("#qNext").hidden = false;
       $("#qNext").focus({ preventScroll: true });
-      if (!q.say && !cfg.silent) say(w.w);
+      if (!q.say && !cfg.silent) autoSay(w.w);
     }));
     $("#qNext").addEventListener("click", () => { pos++; ask(); });
-    if (q.say) setTimeout(() => say(q.say), 250);
+    if (q.say) setTimeout(() => autoSay(q.say), 250);
   }
   function end() {
     progress.addSession({ type: cfg.kind, lesson: P.ctx.lesson ?? 0, score: right, total: items.length, missed });
@@ -412,7 +413,7 @@ function wordList(words) {
   const render = (q = "") => {
     const t = stripTone(q.trim().toLowerCase());
     const list = words.filter((w) => !t || w.w.includes(q.trim()) || stripTone(w.py.toLowerCase()).replace(/\s/g, "").includes(t.replace(/\s/g, "")) || w.en.toLowerCase().includes(t));
-    rows.innerHTML = list.map((w) => `<tr><td class="hz">${w.w} ${dot(w)}</td><td><span class="py">${tonePy(w.py)}</span><br><span class="en">${esc(w.en)}</span></td><td style="text-align:right;white-space:nowrap">${sayBtns(w.w, w.py, true)}</td></tr>`).join("")
+    rows.innerHTML = list.map((w) => `<tr><td class="hz">${charLinks(w.w)} ${dot(w)}</td><td><span class="py">${tonePy(w.py)}</span><br><span class="en">${esc(w.en)}</span></td><td style="text-align:right;white-space:nowrap">${sayBtns(w.w, w.py, true)}</td></tr>`).join("")
       || `<tr><td class="muted">No words match.</td></tr>`;
   };
   $("#wlSearch").addEventListener("input", (e) => render(e.target.value));

@@ -3,6 +3,7 @@
 import path from "node:path";
 import { DATA_DIR, loadLessons, lessonChars, strokeData, writeJSON } from "./lib.mjs";
 import { checkData } from "./check-data.mjs";
+import { genCharInfo } from "./gen-charinfo.mjs";
 
 const lessons = loadLessons();
 const out = {};
@@ -17,4 +18,5 @@ if (missing.length) {
   console.error(`No stroke data for: ${missing.join(" ")}`);
   process.exit(1);
 }
+genCharInfo();
 if (!checkData()) process.exit(1);

@@ -3,6 +3,8 @@ import { $, $$ } from "../lib/util.js";
 import { tonePy } from "../lib/pinyin.js";
 import { sayBtns } from "../lib/speech.js";
 import { icon } from "../lib/icons.js";
+import { charLinks } from "./charsheet.js";
+import { setting, STROKE_SPEED } from "../lib/settings.js";
 import { gridSVG, stripSVG, makeWriter, trackWriter, clearWriters } from "../lib/draw.js";
 import { CHARS, STROKE_NAMES, STROKE_DATA, wordChars } from "../data/index.js";
 import { app } from "../app.js";
@@ -43,7 +45,7 @@ export function renderWord(idx) {
   app.savePlace();
   $$("#words button").forEach((b, i) => b.setAttribute("aria-pressed", i === idx));
   const word = app.L().words[idx];
-  $("#wordHead").innerHTML = `<span class="hz">${word.w}</span><span class="py">${tonePy(word.py)}</span><span class="en">${word.en}</span>${sayBtns(word.w, word.py)}`;
+  $("#wordHead").innerHTML = `<span class="hz">${charLinks(word.w)}</span><span class="py">${tonePy(word.py)}</span><span class="en">${word.en}</span>${sayBtns(word.w, word.py)}`;
   $("#example").innerHTML = `<span class="lbl">Example sentence</span>
     <span class="ex-hz">${word.ex.hz} ${sayBtns(word.ex.hz, "sentence", true)}</span>
     <span class="py">${tonePy(word.ex.py)}</span><span class="ex-en">${word.ex.en}</span>`;
@@ -74,7 +76,7 @@ export function buildCharCard(host, c) {
   el.innerHTML = `
     <div class="box">${gridSVG()}<div class="hw"></div><svg class="stepsvg" viewBox="0 0 1024 1024" hidden aria-hidden="true"></svg></div>
     <div class="info">
-      <div class="title"><b>${c}</b><span class="py">${tonePy(py)}</span><span style="color:var(--muted)">${en}</span>${sayBtns(c, py, true)}</div>
+      <div class="title"><button type="button" class="char-link title-char" data-char="${c}" aria-label="About ${c}">${c}</button><span class="py">${tonePy(py)}</span><span style="color:var(--muted)">${en}</span>${sayBtns(c, py, true)}</div>
       <div class="count">${n} strokes</div>
       <div class="badges">${badgeText(c)}</div>
       <p class="tip"><strong>Memory trick:</strong> ${tip}</p>
@@ -116,7 +118,7 @@ export function buildCharCard(host, c) {
     // requestAnimationFrame on the attribute: works the same on every phone browser.
     const cur = $(".cur", stepSvg);
     const len = cur.getTotalLength() + 150;
-    const dur = Math.min(1200, 400 + len * 0.4);
+    const dur = Math.min(1200, 400 + len * 0.4) * STROKE_SPEED[setting("strokeSpeed")].step;
     cur.setAttribute("stroke-dasharray", len + " " + len);
     cur.setAttribute("stroke-dashoffset", len);
     const token = ++anim, t0 = performance.now();
@@ -163,7 +165,7 @@ export function buildCharCard(host, c) {
     status.textContent = "Your turn! Draw stroke 1.";
     writer.hideCharacter();
     writer.quiz({
-      showHintAfterMisses: 2, highlightOnComplete: true,
+      showHintAfterMisses: setting("hintAfter") || false, highlightOnComplete: true,
       onCorrectStroke: (d) => { status.textContent = d.strokesRemaining ? `Good! Stroke ${d.strokeNum + 2} next.` : ""; },
       onMistake: () => { status.textContent = "Try again, check the stroke order."; },
       onComplete: (d) => {

@@ -1,7 +1,7 @@
 // Flashcards. Used by the lesson's Cards tab and the Vocabulary section.
 import { $, $$, shuffle, store } from "../lib/util.js";
 import { tonePy } from "../lib/pinyin.js";
-import { say, sayBtns } from "../lib/speech.js";
+import { autoSay, sayBtns } from "../lib/speech.js";
 import { icon } from "../lib/icons.js";
 import { app } from "../app.js";
 import * as progress from "../progress/store.js";
@@ -52,7 +52,7 @@ function cardsRender() {
     ${deck.opts.back ? `<button class="btn ghost" type="button" id="fcBack">Back</button>` : ""}
   </div>`;
   $$("[data-dir]", host).forEach((b) => b.addEventListener("click", () => cardsStart(b.dataset.dir, deck.opts)));
-  const flip = () => { if (!deck.flipped) { deck.flipped = true; cardsRender(); say(w.w); } };
+  const flip = () => { if (!deck.flipped) { deck.flipped = true; cardsRender(); autoSay(w.w); } };
   $("#fcCard").addEventListener("click", flip);
   $("#fcFlip")?.addEventListener("click", flip);
   $("#fcBack")?.addEventListener("click", deck.opts.back);

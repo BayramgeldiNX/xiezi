@@ -1,6 +1,7 @@
 import "@fontsource/atkinson-hyperlegible/400.css";
 import "@fontsource/atkinson-hyperlegible/700.css";
 import "./styles.css";
+import "./lib/settings.js";
 import { $, $$, NUM, esc } from "./lib/util.js";
 import { tonePy } from "./lib/pinyin.js";
 import { stopSpeech } from "./lib/speech.js";
@@ -17,6 +18,8 @@ import { tonesKey } from "./views/tones.js";
 import { openPractice, runMode, SKILLS } from "./views/practice.js";
 import { openReview, dueCount } from "./views/bookreview.js";
 import { openTyping, typingDue } from "./views/typing.js";
+import "./views/charsheet.js";
+import { openPrint } from "./views/printsheet.js";
 import { hideGloss } from "./views/reading.js";
 import { initAccountChip } from "./views/account.js";
 import { initSync } from "./sync/sync.js";
@@ -32,9 +35,11 @@ const OLD_TABS = { dict: "write", review: "write", cards: "words", tones: "liste
    #/books                      all books
    #/book/<book>[/review]       one book: its lessons, or its review
    #/lesson/<book>/<n>/<tab>    a lesson (tabs: write, listen, speak, read, words)
+   #/print/<book>/<n>           printable practice sheet for a lesson
    Each page has its own address, so the Android / browser back gesture steps back one page. */
-const PAGES = ["home", "typingView", "booksView", "bookView", "lessonView"];
+const PAGES = ["home", "typingView", "booksView", "bookView", "lessonView", "printView"];
 let current = "home";
+let printLesson = null;
 function showPage(id) {
   clearWriters();
   stopSpeech();
@@ -50,6 +55,10 @@ const pageOf = (url) => new URL(url).hash || "#/";
 function route() {
   const [, page, a, b, c] = location.hash.split("/");
   if (page === "books") return showBooks();
+  if (page === "print" && lessonIndex(`${a}/${b}`) >= 0) {
+    const L = LESSONS[lessonIndex(`${a}/${b}`)];
+    showPage("printView"); document.title = `${L.title} · 字帖`; printLesson = L.id; return openPrint(L);
+  }
   if (page === "typing") { showPage("typingView"); document.title = "Typing · 写字本"; return openTyping(); }
   if (page === "book" && BOOKS.some((x) => x.id === a)) return showBook(a, b === "review" ? "review" : "lessons");
   if (page === "lesson") {
@@ -74,7 +83,7 @@ function back(to) {
   else go(to);
 }
 const upFrom = () => ({
-  booksView: "#/", typingView: "#/", bookView: "#/books",
+  booksView: "#/", typingView: "#/", bookView: "#/books", printView: `#/lesson/${printLesson}/write`,
   lessonView: `#/book/${app.L()?.book}`,
 })[current];
 
@@ -242,7 +251,8 @@ function showWriteStudy() {
   $("#writeStudy").hidden = false;
   $("#writeStrip").hidden = false;
   $("#writeStrip").innerHTML = `<span class="lbl">Practice</span>${SKILLS.write.modes.map((m) =>
-    `<button class="btn" type="button" data-wmode="${m.id}"><span class="mini-seal">${m.seal}</span>${m.name}</button>`).join("")}`;
+    `<button class="btn" type="button" data-wmode="${m.id}"><span class="mini-seal">${m.seal}</span>${m.name}</button>`).join("")}
+    <a class="btn" href="#/print/${app.L().id}"><span class="mini-seal">印</span>Print sheet</a>`;
   $$("[data-wmode]").forEach((b) => b.addEventListener("click", () => {
     clearWriters();
     $("#writeStudy").hidden = true;
@@ -258,6 +268,7 @@ $("#backBtn").addEventListener("click", () => back(upFrom()));
 $$("[data-back-to]").forEach((b) => b.addEventListener("click", () => back(b.dataset.backTo)));
 $("#openBooks").addEventListener("click", () => go("#/books"));
 $("#openTyping").addEventListener("click", () => go("#/typing"));
+$("#printBack").addEventListener("click", () => back(upFrom()));
 $("#wordNav").addEventListener("click", (e) => {
   const g = e.target.closest("[data-go]");
   if (g) { renderWord(app.word + +g.dataset.go); scrollTo({ top: 0, behavior: "smooth" }); }

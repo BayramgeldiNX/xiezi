@@ -50,6 +50,11 @@ and one `lessonNN.json` per lesson. Lesson 1 of 汉语口语速成 · 入门篇 
    `python -m pip install --user edge-tts`).
 5. `npm test`, then commit and push. GitHub tests, builds and publishes automatically.
 
+Character details (parts, radical, origin) come from the open Make Me a Hanzi dictionary. `npm run gen:data`
+builds them when it's downloaded once:
+`curl -L -o data-src/makemeahanzi-dictionary.txt https://raw.githubusercontent.com/skishore/makemeahanzi/master/dictionary.txt`.
+Look-alike characters are hand-picked in `src/data/similar.json`; radical names in `src/data/radicals.json`.
+
 The font tool needs the full font once:
 `curl -L -o fonts-src/NotoSerifSC-VF.ttf "https://github.com/google/fonts/raw/main/ofl/notoserifsc/NotoSerifSC%5Bwght%5D.ttf"`
 and `python -m pip install --user fonttools brotli`.

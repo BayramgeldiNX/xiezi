@@ -111,6 +111,9 @@ for (const [tab, modes] of Object.entries(TAB_MODES)) {
 }
 STEPS.push(["review-seeded", "#/book/kouyu-rumen/review", SEED]);
 STEPS.push(["review-session", "#/book/kouyu-rumen/review", SEED + FINISH_REVIEW]);
+STEPS.push(["charcard", `${B}/write`, `document.querySelector('.title-char').click(); ${W}`]);
+STEPS.push(["charcard-lookalike", `${B}/write`, `document.querySelector('.title-char').click(); ${W} document.querySelector('#charBody .cs-chip[data-char]').click(); ${W}`]);
+STEPS.push(["print", `#/print/kouyu-rumen/1`]);
 STEPS.push(["typing", "#/typing"]);
 STEPS.push(["typing-hz", "#/typing", `document.querySelector('[data-opt=mode][data-v=hz]').click(); ${W} document.querySelector('#tyStart').click(); ${W} document.querySelector('#tyIn').value = '我'; document.querySelector('#tyCheck').click(); ${W}`]);
 STEPS.push(["typing-py", "#/typing", `document.querySelector('[data-opt=mode][data-v=py]').click(); ${W} document.querySelector('#tyStart').click(); ${W} document.querySelector('#tyIn').value = 'ni2 hao3'; document.querySelector('#tyCheck').click(); ${W}`]);
@@ -125,7 +128,7 @@ const LIVE_SEED = `
   for (const w of ['你好', '谢谢', '老师', '再见']) for (const pre of ['q:', 'l:', 'd:', 's:']) put(pre + w, true);
   put('o:老师，您好！', false);
   localStorage.setItem(k, JSON.stringify(p)); return 1;`;
-const SHOTS = ["typing", "typing-hz", "typing-py", "home", "book", "review-seeded", "review-session", "lesson-write", "tab-listen", "read-texts", "words-match", "settings"];
+const SHOTS = ["charcard", "print", "typing", "typing-hz", "typing-py", "home", "book", "review-seeded", "review-session", "lesson-write", "tab-listen", "read-texts", "words-match", "settings"];
 for (const s of SIZES) {
   await send("Emulation.setDeviceMetricsOverride", { width: s.w, height: s.h, deviceScaleFactor: s.dpr, mobile: s.mobile });
   await send("Emulation.setTouchEmulationEnabled", { enabled: s.mobile });

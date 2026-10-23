@@ -2,6 +2,7 @@
 import HanziWriter from "hanzi-writer";
 import { css } from "./util.js";
 import { STROKE_DATA } from "../data/index.js";
+import { setting, STROKE_SPEED } from "./settings.js";
 
 export function gridSVG() {
   return `<svg class="grid" viewBox="0 0 100 100" aria-hidden="true">
@@ -28,7 +29,8 @@ export function makeWriter(el, c, size, extra = {}) {
     charDataLoader: loader,
     strokeColor: css("--ink"), radicalColor: css("--jade"),
     highlightColor: css("--cinnabar"), outlineColor: css("--ghost"),
-    drawingColor: css("--ink"), strokeAnimationSpeed: 0.8, delayBetweenStrokes: 350,
+    drawingColor: css("--ink"),
+    strokeAnimationSpeed: STROKE_SPEED[setting("strokeSpeed")].anim, delayBetweenStrokes: STROKE_SPEED[setting("strokeSpeed")].delay,
     showCharacter: false, showOutline: true,
   }, extra));
 }
