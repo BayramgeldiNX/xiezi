@@ -149,7 +149,7 @@ function run(items) {
       } else {
         const r = checkPinyin(it.py, input.value);
         const chips = r.syllables.map((s) => `<span class="ty-syl ${s.spellOk && s.toneOk ? "ok" : "bad"}">
-            <b>${s.spellOk ? s.p : esc(s.got)}${s.gotTone && s.gotTone !== 5 ? s.gotTone : ""}</b>
+            <b>${s.spellOk ? s.p : esc(s.got || "…")}${s.gotTone && s.gotTone !== 5 ? s.gotTone : ""}</b>
             <small>${!s.spellOk ? "spelling" : s.toneOk ? "✓" : `tone ${s.gotTone ?? "missing"}`}</small></span>`).join("");
         if (r.ok) {
           fb.innerHTML = `<p class="status">${tries === 1 && !hints ? "太好了！Perfect tones!" : "对了！Correct."}</p><div class="ty-chars">${chips}</div>
@@ -157,7 +157,8 @@ function run(items) {
           return finish(true);
         }
         const toneOnly = r.spellingOk;
-        fb.innerHTML = `<p class="status" style="color:var(--cinnabar)">${toneOnly ? "Spelling is right, check the tones." : r.extra ? "There are extra letters at the end." : "Check the spelling."}</p><div class="ty-chars">${chips}</div>`;
+        const spellBad = r.syllables.some((s) => !s.spellOk);
+        fb.innerHTML = `<p class="status" style="color:var(--cinnabar)">${toneOnly ? "Spelling is right, check the tones." : spellBad ? "Check the spelling of the red syllable." : "There are extra letters at the end."}</p><div class="ty-chars">${chips}</div>`;
       }
       if (tries >= 3) fb.insertAdjacentHTML("beforeend", `<p class="note">Stuck? Tap <b>Hint</b> or <b>Show answer</b>.</p>`);
       input.select();

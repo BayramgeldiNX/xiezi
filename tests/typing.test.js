@@ -48,6 +48,11 @@ describe("typing pinyin with tone numbers", () => {
   it("a missing tone number on a toned syllable is wrong", () => {
     expect(checkPinyin("nǐ hǎo", "ni hao3").syllables[0].toneOk).toBe(false);
   });
+  it("shows a misspelled syllable exactly as typed", () => {
+    const r = checkPinyin("nín", "ni2 hao3");
+    expect(r.spellingOk).toBe(false);
+    expect(r.syllables[0]).toMatchObject({ got: "ni", gotTone: 2, spellOk: false });
+  });
   it("finds spelling mistakes and extra letters", () => {
     expect(checkPinyin("lǎoshī", "lao3si1").spellingOk).toBe(false);
     expect(checkPinyin("nǐ", "ni3hao3").spellingOk).toBe(false);

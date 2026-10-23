@@ -26,13 +26,13 @@ export function checkPinyin(expectedPy, typed) {
   const input = typed.toLowerCase().replace(/u:/g, "v").replace(/ü/g, "v").replace(/[^a-z0-9]/g, "");
   let i = 0;
   const out = exp.map((x) => {
-    const got = input.slice(i, i + x.p.length);
+    let got = input.slice(i, i + x.p.length);
     const spellOk = got === x.p;
     if (spellOk) i += x.p.length;
     else {
-      // Resync: skip this syllable's letters as typed (up to the next digit).
-      const m = input.slice(i).match(/^[a-z]*/);
-      i += m ? m[0].length : 0;
+      // Resync: this syllable as typed = its letters up to the next tone number.
+      got = input.slice(i).match(/^[a-z]*/)[0];
+      i += got.length;
     }
     let gotTone = null;
     if (/[0-5]/.test(input[i] || "")) { gotTone = +input[i] === 0 ? 5 : +input[i]; i++; }
