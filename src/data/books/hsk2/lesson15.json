@@ -1,0 +1,258 @@
+{
+  "n": 15,
+  "cn": "第十五课",
+  "title": "新年就要到了",
+  "en": "The New Year is coming",
+  "words": [
+    {
+      "w": "日",
+      "py": "rì",
+      "en": "day; date",
+      "ex": {
+        "hz": "今天是一月一日。",
+        "py": "Jīntiān shì yī yuè yī rì.",
+        "en": "Today is January 1st."
+      }
+    },
+    {
+      "w": "新年",
+      "py": "xīnnián",
+      "en": "New Year",
+      "ex": {
+        "hz": "新年快乐！",
+        "py": "Xīnnián kuàilè!",
+        "en": "Happy New Year!"
+      }
+    },
+    {
+      "w": "票",
+      "py": "piào",
+      "en": "ticket",
+      "ex": {
+        "hz": "你买票了吗？",
+        "py": "Nǐ mǎi piào le ma?",
+        "en": "Have you bought a ticket?"
+      }
+    },
+    {
+      "w": "火车站",
+      "py": "huǒchēzhàn",
+      "en": "railway station",
+      "ex": {
+        "hz": "火车站离这儿很远。",
+        "py": "Huǒchēzhàn lí zhèr hěn yuǎn.",
+        "en": "The station is far from here."
+      }
+    },
+    {
+      "w": "大家",
+      "py": "dàjiā",
+      "en": "everybody",
+      "ex": {
+        "hz": "大家好！",
+        "py": "Dàjiā hǎo!",
+        "en": "Hello, everyone!"
+      }
+    },
+    {
+      "w": "更",
+      "py": "gèng",
+      "en": "even more",
+      "ex": {
+        "hz": "明天会更好。",
+        "py": "Míngtiān huì gèng hǎo.",
+        "en": "Tomorrow will be even better."
+      }
+    },
+    {
+      "w": "妹妹",
+      "py": "mèimei",
+      "en": "younger sister",
+      "ex": {
+        "hz": "我妹妹在上学。",
+        "py": "Wǒ mèimei zài shàng xué.",
+        "en": "My younger sister is at school."
+      }
+    },
+    {
+      "w": "阴",
+      "py": "yīn",
+      "en": "cloudy; overcast",
+      "ex": {
+        "hz": "天阴了，要下雨了。",
+        "py": "Tiān yīn le, yào xià yǔ le.",
+        "en": "It's clouding over; it's going to rain."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "新年快乐",
+      "py": "Xīnnián kuàilè",
+      "en": "Happy New Year",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "新年就要到了，你准备做什么？",
+          "py": "Xīnnián jiù yào dào le, nǐ zhǔnbèi zuò shénme?",
+          "en": "New Year is coming; what will you do?"
+        },
+        {
+          "who": "B",
+          "hz": "我要回家看妈妈。",
+          "py": "Wǒ yào huí jiā kàn māma.",
+          "en": "I'm going home to see my mom."
+        },
+        {
+          "who": "A",
+          "hz": "票买了吗？",
+          "py": "Piào mǎi le ma?",
+          "en": "Bought the ticket?"
+        },
+        {
+          "who": "B",
+          "hz": "还没有，明天去火车站买。",
+          "py": "Hái méiyǒu, míngtiān qù huǒchēzhàn mǎi.",
+          "en": "Not yet; I'll buy it at the station tomorrow."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What will B do for New Year?",
+          "options": [
+            "Go home to see mom",
+            "Travel to Beijing",
+            "Work",
+            "Stay at school"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Where will B buy the ticket?",
+          "options": [
+            "Railway station",
+            "Airport",
+            "Online",
+            "A shop"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "等妹妹",
+      "py": "Děng mèimei",
+      "en": "Waiting for little sister",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你妹妹怎么还没来？都九点了！",
+          "py": "Nǐ mèimei zěnme hái méi lái? Dōu jiǔ diǎn le!",
+          "en": "Why isn't your sister here yet? It's already nine!"
+        },
+        {
+          "who": "B",
+          "hz": "再等她十分钟吧。",
+          "py": "Zài děng tā shí fēnzhōng ba.",
+          "en": "Let's wait ten more minutes."
+        },
+        {
+          "who": "A",
+          "hz": "天阴了，快要下雨了。",
+          "py": "Tiān yīn le, kuàiyào xià yǔ le.",
+          "en": "It's clouding over; it'll rain soon."
+        },
+        {
+          "who": "B",
+          "hz": "你看，她来了！",
+          "py": "Nǐ kàn, tā lái le!",
+          "en": "Look, here she comes!"
+        }
+      ],
+      "questions": [
+        {
+          "q": "What time is it?",
+          "options": [
+            "9:00",
+            "10:00",
+            "8:00",
+            "9:10"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What is the weather like?",
+          "options": [
+            "Cloudy, about to rain",
+            "Sunny",
+            "Snowing",
+            "Hot"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "快要 / 就要 …… 了",
+      "en": "about to happen",
+      "drills": [
+        {
+          "q": "新的一年快要到___！",
+          "options": [
+            "了",
+            "的",
+            "过",
+            "着"
+          ],
+          "answer": 0,
+          "en": "The New Year is almost here!"
+        },
+        {
+          "q": "下个月我们___回国了。",
+          "options": [
+            "就要",
+            "快",
+            "已经",
+            "正在"
+          ],
+          "answer": 0,
+          "en": "We're going back home next month."
+        }
+      ]
+    },
+    {
+      "point": "都……了",
+      "en": "already (impatient)",
+      "drills": [
+        {
+          "q": "___等她半个小时了！",
+          "options": [
+            "都",
+            "也",
+            "就",
+            "还"
+          ],
+          "answer": 0,
+          "en": "We've already waited half an hour for her!"
+        },
+        {
+          "q": "都八点四十___！",
+          "options": [
+            "了",
+            "的",
+            "呢",
+            "吗"
+          ],
+          "answer": 0,
+          "en": "It's already 8:40!"
+        }
+      ]
+    }
+  ]
+}

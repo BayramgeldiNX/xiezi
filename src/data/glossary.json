@@ -98,5 +98,109 @@
   "北京": {
     "py": "Běijīng",
     "en": "Beijing"
+  },
+  "半": {
+    "py": "bàn",
+    "en": "half"
+  },
+  "短": {
+    "py": "duǎn",
+    "en": "short"
+  },
+  "累": {
+    "py": "lèi",
+    "en": "tired"
+  },
+  "马上": {
+    "py": "mǎshàng",
+    "en": "right away"
+  },
+  "马": {
+    "py": "mǎ",
+    "en": "horse"
+  },
+  "卖": {
+    "py": "mài",
+    "en": "to sell"
+  },
+  "斤": {
+    "py": "jīn",
+    "en": "jin (half a kilo)"
+  },
+  "只": {
+    "py": "zhī",
+    "en": "(measure word for animals)"
+  },
+  "骑": {
+    "py": "qí",
+    "en": "to ride"
+  },
+  "难": {
+    "py": "nán",
+    "en": "difficult"
+  },
+  "用": {
+    "py": "yòng",
+    "en": "to use"
+  },
+  "公园": {
+    "py": "gōngyuán",
+    "en": "park"
+  },
+  "周末": {
+    "py": "zhōumò",
+    "en": "weekend"
+  },
+  "上学": {
+    "py": "shàng xué",
+    "en": "to go to school"
+  },
+  "晚饭": {
+    "py": "wǎnfàn",
+    "en": "dinner"
+  },
+  "午饭": {
+    "py": "wǔfàn",
+    "en": "lunch"
+  },
+  "男人": {
+    "py": "nánrén",
+    "en": "man"
+  },
+  "小白": {
+    "py": "Xiǎo Bái",
+    "en": "Xiao Bai (a pet name)"
+  },
+  "贵姓": {
+    "py": "guìxìng",
+    "en": "(polite) your surname"
+  },
+  "进来": {
+    "py": "jìnlai",
+    "en": "to come in"
+  },
+  "晴天": {
+    "py": "qíngtiān",
+    "en": "sunny day"
+  },
+  "男孩子": {
+    "py": "nán háizi",
+    "en": "boy"
+  },
+  "女孩儿": {
+    "py": "nǚháir",
+    "en": "girl"
+  },
+  "男朋友": {
+    "py": "nánpéngyou",
+    "en": "boyfriend"
+  },
+  "快要": {
+    "py": "kuàiyào",
+    "en": "about to"
+  },
+  "就要": {
+    "py": "jiù yào",
+    "en": "about to"
   }
 }

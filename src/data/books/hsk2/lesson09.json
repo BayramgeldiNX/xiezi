@@ -1,0 +1,305 @@
+{
+  "n": 9,
+  "cn": "第九课",
+  "title": "题太多，我没做完",
+  "en": "Too many questions, I didn't finish",
+  "words": [
+    {
+      "w": "错",
+      "py": "cuò",
+      "en": "wrong",
+      "ex": {
+        "hz": "你打错电话了。",
+        "py": "Nǐ dǎcuò diànhuà le.",
+        "en": "You've dialled the wrong number."
+      }
+    },
+    {
+      "w": "从",
+      "py": "cóng",
+      "en": "from",
+      "ex": {
+        "hz": "我从八点开始工作。",
+        "py": "Wǒ cóng bā diǎn kāishǐ gōngzuò.",
+        "en": "I start work at eight."
+      }
+    },
+    {
+      "w": "跳舞",
+      "py": "tiào wǔ",
+      "en": "to dance",
+      "ex": {
+        "hz": "她很喜欢跳舞。",
+        "py": "Tā hěn xǐhuan tiào wǔ.",
+        "en": "She loves dancing."
+      }
+    },
+    {
+      "w": "第一",
+      "py": "dì yī",
+      "en": "first",
+      "ex": {
+        "hz": "这是我第一次来中国。",
+        "py": "Zhè shì wǒ dì yī cì lái Zhōngguó.",
+        "en": "This is my first time in China."
+      }
+    },
+    {
+      "w": "希望",
+      "py": "xīwàng",
+      "en": "to hope",
+      "ex": {
+        "hz": "希望你明天能来。",
+        "py": "Xīwàng nǐ míngtiān néng lái.",
+        "en": "I hope you can come tomorrow."
+      }
+    },
+    {
+      "w": "问题",
+      "py": "wèntí",
+      "en": "question; problem",
+      "ex": {
+        "hz": "我有一个问题。",
+        "py": "Wǒ yǒu yí ge wèntí.",
+        "en": "I have a question."
+      }
+    },
+    {
+      "w": "欢迎",
+      "py": "huānyíng",
+      "en": "to welcome",
+      "ex": {
+        "hz": "欢迎你来我家！",
+        "py": "Huānyíng nǐ lái wǒ jiā!",
+        "en": "Welcome to my home!"
+      }
+    },
+    {
+      "w": "上班",
+      "py": "shàng bān",
+      "en": "to go to work",
+      "ex": {
+        "hz": "你每天几点上班？",
+        "py": "Nǐ měi tiān jǐ diǎn shàng bān?",
+        "en": "What time do you start work every day?"
+      }
+    },
+    {
+      "w": "懂",
+      "py": "dǒng",
+      "en": "to understand",
+      "ex": {
+        "hz": "你听懂了吗？",
+        "py": "Nǐ tīngdǒng le ma?",
+        "en": "Did you understand?"
+      }
+    },
+    {
+      "w": "完",
+      "py": "wán",
+      "en": "to finish",
+      "ex": {
+        "hz": "我做完了。",
+        "py": "Wǒ zuòwán le.",
+        "en": "I've finished."
+      }
+    },
+    {
+      "w": "题",
+      "py": "tí",
+      "en": "question (exercise)",
+      "ex": {
+        "hz": "这个题很难。",
+        "py": "Zhège tí hěn nán.",
+        "en": "This question is hard."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "考试",
+      "py": "Kǎoshì",
+      "en": "The exam",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "今天的考试怎么样？",
+          "py": "Jīntiān de kǎoshì zěnmeyàng?",
+          "en": "How was today's exam?"
+        },
+        {
+          "who": "B",
+          "hz": "我都听懂了，但是没做完。",
+          "py": "Wǒ dōu tīngdǒng le, dànshì méi zuòwán.",
+          "en": "I understood everything but didn't finish."
+        },
+        {
+          "who": "A",
+          "hz": "为什么？",
+          "py": "Wèi shénme?",
+          "en": "Why?"
+        },
+        {
+          "who": "B",
+          "hz": "题太多了！",
+          "py": "Tí tài duō le!",
+          "en": "Too many questions!"
+        }
+      ],
+      "questions": [
+        {
+          "q": "Did B understand the listening?",
+          "options": [
+            "Yes",
+            "No",
+            "Half",
+            "We don't know"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Why didn't B finish?",
+          "options": [
+            "Too many questions",
+            "B was late",
+            "B was sick",
+            "B was tired"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "第一天上班",
+      "py": "Dì yī tiān shàng bān",
+      "en": "First day at work",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你从什么时候开始上班？",
+          "py": "Nǐ cóng shénme shíhou kāishǐ shàng bān?",
+          "en": "When do you start work?"
+        },
+        {
+          "who": "B",
+          "hz": "从下个星期一开始。这是我的第一个工作。",
+          "py": "Cóng xià ge xīngqīyī kāishǐ. Zhè shì wǒ de dì yī ge gōngzuò.",
+          "en": "Next Monday. It's my first job."
+        },
+        {
+          "who": "A",
+          "hz": "希望你能喜欢。",
+          "py": "Xīwàng nǐ néng xǐhuan.",
+          "en": "I hope you like it."
+        },
+        {
+          "who": "B",
+          "hz": "谢谢！",
+          "py": "Xièxie!",
+          "en": "Thanks!"
+        }
+      ],
+      "questions": [
+        {
+          "q": "When does B start work?",
+          "options": [
+            "Next Monday",
+            "Tomorrow",
+            "Today",
+            "Next month"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Is this B's first job?",
+          "options": [
+            "Yes",
+            "No",
+            "The second",
+            "We don't know"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "Result complements",
+      "en": "看见 / 听懂 / 做完 / 找到",
+      "drills": [
+        {
+          "q": "题太多，我没做___。",
+          "options": [
+            "完",
+            "见",
+            "懂",
+            "到"
+          ],
+          "answer": 0,
+          "en": "Too many questions; I didn't finish."
+        },
+        {
+          "q": "你都听___了吗？",
+          "options": [
+            "懂",
+            "完",
+            "到",
+            "见"
+          ],
+          "answer": 0,
+          "en": "Did you understand everything?"
+        },
+        {
+          "q": "大卫找___工作了。",
+          "options": [
+            "到",
+            "完",
+            "懂",
+            "错"
+          ],
+          "answer": 0,
+          "en": "David found a job."
+        }
+      ]
+    },
+    {
+      "point": "从",
+      "en": "从 … (到 …): from … (to …)",
+      "drills": [
+        {
+          "q": "___下个星期一开始上班。",
+          "options": [
+            "从",
+            "离",
+            "往",
+            "对"
+          ],
+          "answer": 0,
+          "en": "Starting work from next Monday."
+        }
+      ]
+    },
+    {
+      "point": "第 + number",
+      "en": "第一 / 第二: ordinal",
+      "drills": [
+        {
+          "q": "这是他的___一个工作。",
+          "options": [
+            "第",
+            "每",
+            "几",
+            "多"
+          ],
+          "answer": 0,
+          "en": "This is his first job."
+        }
+      ]
+    }
+  ]
+}

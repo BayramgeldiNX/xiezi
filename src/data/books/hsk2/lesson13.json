@@ -1,0 +1,284 @@
+{
+  "n": 13,
+  "cn": "第十三课",
+  "title": "门开着呢",
+  "en": "The door is open",
+  "words": [
+    {
+      "w": "着",
+      "py": "zhe",
+      "en": "(an ongoing state)",
+      "ex": {
+        "hz": "门开着呢。",
+        "py": "Mén kāi zhe ne.",
+        "en": "The door is open."
+      }
+    },
+    {
+      "w": "手",
+      "py": "shǒu",
+      "en": "hand",
+      "ex": {
+        "hz": "你手里拿着什么？",
+        "py": "Nǐ shǒu li ná zhe shénme?",
+        "en": "What are you holding in your hand?"
+      }
+    },
+    {
+      "w": "拿",
+      "py": "ná",
+      "en": "to hold; to take",
+      "ex": {
+        "hz": "请拿一本书给我。",
+        "py": "Qǐng ná yì běn shū gěi wǒ.",
+        "en": "Please hand me a book."
+      }
+    },
+    {
+      "w": "铅笔",
+      "py": "qiānbǐ",
+      "en": "pencil",
+      "ex": {
+        "hz": "我可以用你的铅笔吗？",
+        "py": "Wǒ kěyǐ yòng nǐ de qiānbǐ ma?",
+        "en": "May I use your pencil?"
+      }
+    },
+    {
+      "w": "班",
+      "py": "bān",
+      "en": "class (group)",
+      "ex": {
+        "hz": "我们班有二十个学生。",
+        "py": "Wǒmen bān yǒu èrshí ge xuésheng.",
+        "en": "Our class has twenty students."
+      }
+    },
+    {
+      "w": "笑",
+      "py": "xiào",
+      "en": "to smile; to laugh",
+      "ex": {
+        "hz": "她很爱笑。",
+        "py": "Tā hěn ài xiào.",
+        "en": "She smiles a lot."
+      }
+    },
+    {
+      "w": "宾馆",
+      "py": "bīnguǎn",
+      "en": "hotel",
+      "ex": {
+        "hz": "这个宾馆离机场很近。",
+        "py": "Zhège bīnguǎn lí jīchǎng hěn jìn.",
+        "en": "This hotel is close to the airport."
+      }
+    },
+    {
+      "w": "一直",
+      "py": "yìzhí",
+      "en": "straight; all along",
+      "ex": {
+        "hz": "一直往前走。",
+        "py": "Yìzhí wǎng qián zǒu.",
+        "en": "Go straight ahead."
+      }
+    },
+    {
+      "w": "往",
+      "py": "wǎng",
+      "en": "towards",
+      "ex": {
+        "hz": "往左走就是医院。",
+        "py": "Wǎng zuǒ zǒu jiù shì yīyuàn.",
+        "en": "Turn left and it's the hospital."
+      }
+    },
+    {
+      "w": "路口",
+      "py": "lùkǒu",
+      "en": "intersection",
+      "ex": {
+        "hz": "到了路口往右走。",
+        "py": "Dào le lùkǒu wǎng yòu zǒu.",
+        "en": "At the intersection, turn right."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "怎么走",
+      "py": "Zěnme zǒu",
+      "en": "Which way",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "请问，去宾馆怎么走？",
+          "py": "Qǐngwèn, qù bīnguǎn zěnme zǒu?",
+          "en": "Excuse me, how do I get to the hotel?"
+        },
+        {
+          "who": "B",
+          "hz": "一直往前走，到了路口往左走。",
+          "py": "Yìzhí wǎng qián zǒu, dào le lùkǒu wǎng zuǒ zǒu.",
+          "en": "Go straight, then turn left at the intersection."
+        },
+        {
+          "who": "A",
+          "hz": "远吗？",
+          "py": "Yuǎn ma?",
+          "en": "Is it far?"
+        },
+        {
+          "who": "B",
+          "hz": "不远，走路五分钟就到。",
+          "py": "Bù yuǎn, zǒu lù wǔ fēnzhōng jiù dào.",
+          "en": "No, five minutes on foot."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Which way at the intersection?",
+          "options": [
+            "Left",
+            "Right",
+            "Straight",
+            "Back"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How far is it?",
+          "options": [
+            "5 minutes on foot",
+            "50 minutes",
+            "5 hours",
+            "By taxi"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "那个女孩儿是谁",
+      "py": "Nàge nǚháir shì shéi",
+      "en": "Who's that girl",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "那个手里拿着铅笔的女孩儿是谁？",
+          "py": "Nàge shǒu li ná zhe qiānbǐ de nǚháir shì shéi?",
+          "en": "Who's the girl holding a pencil?"
+        },
+        {
+          "who": "B",
+          "hz": "她是我们班的，很爱笑。",
+          "py": "Tā shì wǒmen bān de, hěn ài xiào.",
+          "en": "She's in our class; she smiles a lot."
+        },
+        {
+          "who": "A",
+          "hz": "你知道她的名字吗？",
+          "py": "Nǐ zhīdào tā de míngzi ma?",
+          "en": "Do you know her name?"
+        },
+        {
+          "who": "B",
+          "hz": "不知道，她不是有男朋友吗？",
+          "py": "Bù zhīdào, tā bú shì yǒu nánpéngyou ma?",
+          "en": "No — doesn't she have a boyfriend?"
+        }
+      ],
+      "questions": [
+        {
+          "q": "What is the girl holding?",
+          "options": [
+            "A pencil",
+            "A book",
+            "A phone",
+            "A cup"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Does B know her name?",
+          "options": [
+            "No",
+            "Yes",
+            "Her surname only",
+            "We don't know"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "Verb + 着",
+      "en": "an ongoing state",
+      "drills": [
+        {
+          "q": "门开___呢，请进。",
+          "options": [
+            "着",
+            "了",
+            "过",
+            "得"
+          ],
+          "answer": 0,
+          "en": "The door is open, come in."
+        },
+        {
+          "q": "那个手里拿___铅笔的呢？",
+          "options": [
+            "着",
+            "了",
+            "过",
+            "完"
+          ],
+          "answer": 0,
+          "en": "What about the one holding a pencil?"
+        }
+      ]
+    },
+    {
+      "point": "不是……吗？",
+      "en": "isn't it …? (reminding / surprised)",
+      "drills": [
+        {
+          "q": "她___有男朋友了吗？",
+          "options": [
+            "不是",
+            "是不是",
+            "没有",
+            "不要"
+          ],
+          "answer": 0,
+          "en": "Doesn't she already have a boyfriend?"
+        }
+      ]
+    },
+    {
+      "point": "往",
+      "en": "往 + direction: towards",
+      "drills": [
+        {
+          "q": "从这儿一直___前走。",
+          "options": [
+            "往",
+            "从",
+            "离",
+            "到"
+          ],
+          "answer": 0,
+          "en": "Go straight ahead from here."
+        }
+      ]
+    }
+  ]
+}

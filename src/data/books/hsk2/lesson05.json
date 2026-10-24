@@ -1,0 +1,324 @@
+{
+  "n": 5,
+  "cn": "第五课",
+  "title": "就买这件吧",
+  "en": "Take this one",
+  "words": [
+    {
+      "w": "外面",
+      "py": "wàimiàn",
+      "en": "outside",
+      "ex": {
+        "hz": "外面很冷。",
+        "py": "Wàimiàn hěn lěng.",
+        "en": "It's cold outside."
+      }
+    },
+    {
+      "w": "准备",
+      "py": "zhǔnbèi",
+      "en": "to prepare; to plan",
+      "ex": {
+        "hz": "你准备什么时候去？",
+        "py": "Nǐ zhǔnbèi shénme shíhou qù?",
+        "en": "When are you planning to go?"
+      }
+    },
+    {
+      "w": "就",
+      "py": "jiù",
+      "en": "then; just",
+      "ex": {
+        "hz": "你喜欢就买吧。",
+        "py": "Nǐ xǐhuan jiù mǎi ba.",
+        "en": "If you like it, just buy it."
+      }
+    },
+    {
+      "w": "鱼",
+      "py": "yú",
+      "en": "fish",
+      "ex": {
+        "hz": "我妈妈做的鱼很好吃。",
+        "py": "Wǒ māma zuò de yú hěn hǎochī.",
+        "en": "The fish my mom makes is delicious."
+      }
+    },
+    {
+      "w": "吧",
+      "py": "ba",
+      "en": "(suggestion)",
+      "ex": {
+        "hz": "我们走吧。",
+        "py": "Wǒmen zǒu ba.",
+        "en": "Let's go."
+      }
+    },
+    {
+      "w": "件",
+      "py": "jiàn",
+      "en": "(measure word for clothes, matters)",
+      "ex": {
+        "hz": "这件衣服多少钱？",
+        "py": "Zhè jiàn yīfu duōshao qián?",
+        "en": "How much is this garment?"
+      }
+    },
+    {
+      "w": "还",
+      "py": "hái",
+      "en": "fairly; still; also",
+      "ex": {
+        "hz": "这件衣服还可以。",
+        "py": "Zhè jiàn yīfu hái kěyǐ.",
+        "en": "This garment is OK."
+      }
+    },
+    {
+      "w": "可以",
+      "py": "kěyǐ",
+      "en": "not bad; can, may",
+      "ex": {
+        "hz": "我可以进来吗？",
+        "py": "Wǒ kěyǐ jìnlai ma?",
+        "en": "May I come in?"
+      }
+    },
+    {
+      "w": "不错",
+      "py": "búcuò",
+      "en": "pretty good",
+      "ex": {
+        "hz": "这个饭馆不错。",
+        "py": "Zhège fànguǎn búcuò.",
+        "en": "This restaurant is pretty good."
+      }
+    },
+    {
+      "w": "考试",
+      "py": "kǎoshì",
+      "en": "exam",
+      "ex": {
+        "hz": "明天有汉语考试。",
+        "py": "Míngtiān yǒu Hànyǔ kǎoshì.",
+        "en": "There's a Chinese exam tomorrow."
+      }
+    },
+    {
+      "w": "意思",
+      "py": "yìsi",
+      "en": "meaning",
+      "ex": {
+        "hz": "这个字是什么意思？",
+        "py": "Zhège zì shì shénme yìsi?",
+        "en": "What does this character mean?"
+      }
+    },
+    {
+      "w": "咖啡",
+      "py": "kāfēi",
+      "en": "coffee",
+      "ex": {
+        "hz": "你喝咖啡吗？",
+        "py": "Nǐ hē kāfēi ma?",
+        "en": "Do you drink coffee?"
+      }
+    },
+    {
+      "w": "对",
+      "py": "duì",
+      "en": "to; for (towards)",
+      "ex": {
+        "hz": "跑步对身体好。",
+        "py": "Pǎo bù duì shēntǐ hǎo.",
+        "en": "Running is good for the body."
+      }
+    },
+    {
+      "w": "以后",
+      "py": "yǐhòu",
+      "en": "after; later",
+      "ex": {
+        "hz": "以后我每天跑步。",
+        "py": "Yǐhòu wǒ měi tiān pǎo bù.",
+        "en": "From now on I'll run every day."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "买衣服",
+      "py": "Mǎi yīfu",
+      "en": "Buying clothes",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "帮我看看这件衣服怎么样。",
+          "py": "Bāng wǒ kànkan zhè jiàn yīfu zěnmeyàng.",
+          "en": "Help me look at this garment."
+        },
+        {
+          "who": "B",
+          "hz": "颜色不错，就是有点儿长。",
+          "py": "Yánsè búcuò, jiùshì yǒudiǎnr cháng.",
+          "en": "Nice colour, but a bit long."
+        },
+        {
+          "who": "A",
+          "hz": "那件短的呢？",
+          "py": "Nà jiàn duǎn de ne?",
+          "en": "What about that short one?"
+        },
+        {
+          "who": "B",
+          "hz": "那件还可以，就买那件吧。",
+          "py": "Nà jiàn hái kěyǐ, jiù mǎi nà jiàn ba.",
+          "en": "That one's OK; take that one."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What's wrong with the first garment?",
+          "options": [
+            "A bit long",
+            "Bad colour",
+            "Too expensive",
+            "Too small"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which one does B suggest?",
+          "options": [
+            "The short one",
+            "The first one",
+            "Neither",
+            "Both"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "少喝咖啡",
+      "py": "Shǎo hē kāfēi",
+      "en": "Less coffee",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你今天喝了几杯咖啡？",
+          "py": "Nǐ jīntiān hē le jǐ bēi kāfēi?",
+          "en": "How many cups of coffee today?"
+        },
+        {
+          "who": "B",
+          "hz": "三杯了。",
+          "py": "Sān bēi le.",
+          "en": "Three already."
+        },
+        {
+          "who": "A",
+          "hz": "咖啡喝多了对身体不好。",
+          "py": "Kāfēi hē duō le duì shēntǐ bù hǎo.",
+          "en": "Too much coffee is bad for your health."
+        },
+        {
+          "who": "B",
+          "hz": "好，以后我少喝一点儿。",
+          "py": "Hǎo, yǐhòu wǒ shǎo hē yìdiǎnr.",
+          "en": "OK, I'll drink less from now on."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How many cups has B had?",
+          "options": [
+            "3",
+            "2",
+            "1",
+            "4"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What will B do from now on?",
+          "options": [
+            "Drink less coffee",
+            "Drink more tea",
+            "Stop drinking water",
+            "Drink more coffee"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "就 (then)",
+      "en": "就 + verb: then (a decision)",
+      "drills": [
+        {
+          "q": "这件不错，___买这件吧。",
+          "options": [
+            "就",
+            "还",
+            "再",
+            "才"
+          ],
+          "answer": 0,
+          "en": "This one's good, so take this one."
+        }
+      ]
+    },
+    {
+      "point": "还 + adjective",
+      "en": "还可以 / 还好: OK, passable",
+      "drills": [
+        {
+          "q": "颜色___可以，就是有点儿大。",
+          "options": [
+            "还",
+            "就",
+            "再",
+            "最"
+          ],
+          "answer": 0,
+          "en": "The colour's OK, but it's a bit big."
+        }
+      ]
+    },
+    {
+      "point": "有点儿 + adjective",
+      "en": "有点儿: a bit (unwelcome)",
+      "drills": [
+        {
+          "q": "这件衣服___大。",
+          "options": [
+            "有点儿",
+            "一点儿",
+            "一下",
+            "一些"
+          ],
+          "answer": 0,
+          "en": "This garment is a bit big."
+        },
+        {
+          "q": "我这两天___累。",
+          "options": [
+            "有点儿",
+            "一点儿",
+            "一下",
+            "很多"
+          ],
+          "answer": 0,
+          "en": "I've been a bit tired lately."
+        }
+      ]
+    }
+  ]
+}

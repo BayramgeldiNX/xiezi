@@ -1,0 +1,331 @@
+{
+  "n": 7,
+  "cn": "第七课",
+  "title": "你家离公司远吗",
+  "en": "Is your home far from the company",
+  "words": [
+    {
+      "w": "教室",
+      "py": "jiàoshì",
+      "en": "classroom",
+      "ex": {
+        "hz": "他还在教室学习呢。",
+        "py": "Tā hái zài jiàoshì xuéxí ne.",
+        "en": "He's still studying in the classroom."
+      }
+    },
+    {
+      "w": "机场",
+      "py": "jīchǎng",
+      "en": "airport",
+      "ex": {
+        "hz": "我去机场接朋友。",
+        "py": "Wǒ qù jīchǎng jiē péngyou.",
+        "en": "I'm going to the airport to pick up a friend."
+      }
+    },
+    {
+      "w": "路",
+      "py": "lù",
+      "en": "road; way",
+      "ex": {
+        "hz": "路上车很多。",
+        "py": "Lùshang chē hěn duō.",
+        "en": "There are lots of cars on the road."
+      }
+    },
+    {
+      "w": "离",
+      "py": "lí",
+      "en": "(distance) from",
+      "ex": {
+        "hz": "我家离学校很近。",
+        "py": "Wǒ jiā lí xuéxiào hěn jìn.",
+        "en": "My home is close to school."
+      }
+    },
+    {
+      "w": "公司",
+      "py": "gōngsī",
+      "en": "company",
+      "ex": {
+        "hz": "你在哪个公司工作？",
+        "py": "Nǐ zài nǎge gōngsī gōngzuò?",
+        "en": "Which company do you work at?"
+      }
+    },
+    {
+      "w": "远",
+      "py": "yuǎn",
+      "en": "far",
+      "ex": {
+        "hz": "机场离这儿很远。",
+        "py": "Jīchǎng lí zhèr hěn yuǎn.",
+        "en": "The airport is far from here."
+      }
+    },
+    {
+      "w": "公共汽车",
+      "py": "gōnggòng qìchē",
+      "en": "bus",
+      "ex": {
+        "hz": "我坐公共汽车上班。",
+        "py": "Wǒ zuò gōnggòng qìchē shàng bān.",
+        "en": "I take the bus to work."
+      }
+    },
+    {
+      "w": "小时",
+      "py": "xiǎoshí",
+      "en": "hour",
+      "ex": {
+        "hz": "我每天学习两个小时。",
+        "py": "Wǒ měi tiān xuéxí liǎng ge xiǎoshí.",
+        "en": "I study two hours a day."
+      }
+    },
+    {
+      "w": "慢",
+      "py": "màn",
+      "en": "slow",
+      "ex": {
+        "hz": "请说慢一点儿。",
+        "py": "Qǐng shuō màn yìdiǎnr.",
+        "en": "Please speak a bit slower."
+      }
+    },
+    {
+      "w": "快",
+      "py": "kuài",
+      "en": "fast",
+      "ex": {
+        "hz": "他跑得很快。",
+        "py": "Tā pǎo de hěn kuài.",
+        "en": "He runs fast."
+      }
+    },
+    {
+      "w": "过",
+      "py": "guò",
+      "en": "to spend (time); to celebrate",
+      "ex": {
+        "hz": "我们一起过生日吧。",
+        "py": "Wǒmen yìqǐ guò shēngrì ba.",
+        "en": "Let's celebrate the birthday together."
+      }
+    },
+    {
+      "w": "走",
+      "py": "zǒu",
+      "en": "to walk; to leave",
+      "ex": {
+        "hz": "我们走路去吧。",
+        "py": "Wǒmen zǒu lù qù ba.",
+        "en": "Let's walk there."
+      }
+    },
+    {
+      "w": "到",
+      "py": "dào",
+      "en": "to arrive",
+      "ex": {
+        "hz": "我到家了。",
+        "py": "Wǒ dào jiā le.",
+        "en": "I'm home."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "你家离公司远吗",
+      "py": "Nǐ jiā lí gōngsī yuǎn ma",
+      "en": "Is your home far",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你家离公司远吗？",
+          "py": "Nǐ jiā lí gōngsī yuǎn ma?",
+          "en": "Is your home far from the company?"
+        },
+        {
+          "who": "B",
+          "hz": "不远，走路十分钟就到。",
+          "py": "Bù yuǎn, zǒu lù shí fēnzhōng jiù dào.",
+          "en": "No, ten minutes on foot."
+        },
+        {
+          "who": "A",
+          "hz": "我家很远，坐公共汽车要一个小时呢！",
+          "py": "Wǒ jiā hěn yuǎn, zuò gōnggòng qìchē yào yí ge xiǎoshí ne!",
+          "en": "Mine is far: an hour by bus!"
+        },
+        {
+          "who": "B",
+          "hz": "那太累了。",
+          "py": "Nà tài lèi le.",
+          "en": "That's so tiring."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How does B get to work?",
+          "options": [
+            "Walks, 10 minutes",
+            "Bus, 1 hour",
+            "Taxi",
+            "Bike"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How long is A's bus ride?",
+          "options": [
+            "1 hour",
+            "10 minutes",
+            "2 hours",
+            "30 minutes"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "在去机场的路上",
+      "py": "Zài qù jīchǎng de lùshang",
+      "en": "On the way to the airport",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你在哪儿呢？",
+          "py": "Nǐ zài nǎr ne?",
+          "en": "Where are you?"
+        },
+        {
+          "who": "B",
+          "hz": "在去机场的路上。你到了吗？",
+          "py": "Zài qù jīchǎng de lùshang. Nǐ dào le ma?",
+          "en": "On my way to the airport. Have you arrived?"
+        },
+        {
+          "who": "A",
+          "hz": "我已经下飞机了。",
+          "py": "Wǒ yǐjīng xià fēijī le.",
+          "en": "I've already got off the plane."
+        },
+        {
+          "who": "B",
+          "hz": "半个小时就到，你等等我。",
+          "py": "Bàn ge xiǎoshí jiù dào, nǐ děngdeng wǒ.",
+          "en": "I'll be there in half an hour; wait for me."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Where is B?",
+          "options": [
+            "On the way to the airport",
+            "At the airport",
+            "At home",
+            "On the plane"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "When will B arrive?",
+          "options": [
+            "In half an hour",
+            "In an hour",
+            "In 10 minutes",
+            "Tomorrow"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "还 (still)",
+      "en": "还在 … / 还没: still / not yet",
+      "drills": [
+        {
+          "q": "已经9点多了，他怎么___在学习？",
+          "options": [
+            "还",
+            "就",
+            "再",
+            "也"
+          ],
+          "answer": 0,
+          "en": "It's past nine; why is he still studying?"
+        }
+      ]
+    },
+    {
+      "point": "就 (soon)",
+      "en": "time + 就 + verb: as soon as that",
+      "drills": [
+        {
+          "q": "二十分钟___到。",
+          "options": [
+            "就",
+            "还",
+            "再",
+            "才"
+          ],
+          "answer": 0,
+          "en": "I'll be there in twenty minutes."
+        }
+      ]
+    },
+    {
+      "point": "离",
+      "en": "A 离 B 远 / 近: distance from",
+      "drills": [
+        {
+          "q": "你家___公司远吗？",
+          "options": [
+            "离",
+            "从",
+            "到",
+            "往"
+          ],
+          "answer": 0,
+          "en": "Is your home far from the company?"
+        },
+        {
+          "q": "___我的生日还有一个多星期呢！",
+          "options": [
+            "离",
+            "从",
+            "到",
+            "对"
+          ],
+          "answer": 0,
+          "en": "My birthday is still over a week away!"
+        }
+      ]
+    },
+    {
+      "point": "呢 (stressing)",
+      "en": "statement + 呢: you know!",
+      "drills": [
+        {
+          "q": "坐公共汽车要一个多小时___！",
+          "options": [
+            "呢",
+            "吗",
+            "吧",
+            "的"
+          ],
+          "answer": 0,
+          "en": "It takes over an hour by bus, you know!"
+        }
+      ]
+    }
+  ]
+}

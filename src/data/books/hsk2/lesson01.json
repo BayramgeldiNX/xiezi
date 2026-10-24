@@ -1,0 +1,326 @@
+{
+  "n": 1,
+  "cn": "第一课",
+  "title": "九月去北京旅游最好",
+  "en": "September is the best time to visit Beijing",
+  "words": [
+    {
+      "w": "旅游",
+      "py": "lǚyóu",
+      "en": "to travel",
+      "ex": {
+        "hz": "我想去中国旅游。",
+        "py": "Wǒ xiǎng qù Zhōngguó lǚyóu.",
+        "en": "I want to travel to China."
+      }
+    },
+    {
+      "w": "觉得",
+      "py": "juéde",
+      "en": "to think; to feel",
+      "ex": {
+        "hz": "我觉得汉语很有意思。",
+        "py": "Wǒ juéde Hànyǔ hěn yǒu yìsi.",
+        "en": "I think Chinese is interesting."
+      }
+    },
+    {
+      "w": "最",
+      "py": "zuì",
+      "en": "most",
+      "ex": {
+        "hz": "我最喜欢吃苹果。",
+        "py": "Wǒ zuì xǐhuan chī píngguǒ.",
+        "en": "I like apples best."
+      }
+    },
+    {
+      "w": "为什么",
+      "py": "wèi shénme",
+      "en": "why",
+      "ex": {
+        "hz": "你为什么不去？",
+        "py": "Nǐ wèi shénme bú qù?",
+        "en": "Why aren't you going?"
+      }
+    },
+    {
+      "w": "也",
+      "py": "yě",
+      "en": "also; too",
+      "ex": {
+        "hz": "我也想去。",
+        "py": "Wǒ yě xiǎng qù.",
+        "en": "I want to go too."
+      }
+    },
+    {
+      "w": "运动",
+      "py": "yùndòng",
+      "en": "sport; to exercise",
+      "ex": {
+        "hz": "你喜欢什么运动？",
+        "py": "Nǐ xǐhuan shénme yùndòng?",
+        "en": "What sport do you like?"
+      }
+    },
+    {
+      "w": "踢足球",
+      "py": "tī zúqiú",
+      "en": "to play football",
+      "ex": {
+        "hz": "下午我们去踢足球吧。",
+        "py": "Xiàwǔ wǒmen qù tī zúqiú ba.",
+        "en": "Let's play football this afternoon."
+      }
+    },
+    {
+      "w": "一起",
+      "py": "yìqǐ",
+      "en": "together",
+      "ex": {
+        "hz": "我们一起去吃饭吧。",
+        "py": "Wǒmen yìqǐ qù chī fàn ba.",
+        "en": "Let's go and eat together."
+      }
+    },
+    {
+      "w": "要",
+      "py": "yào",
+      "en": "to want to; will",
+      "ex": {
+        "hz": "我要去商店买东西。",
+        "py": "Wǒ yào qù shāngdiàn mǎi dōngxi.",
+        "en": "I'm going to the shop to buy things."
+      }
+    },
+    {
+      "w": "新",
+      "py": "xīn",
+      "en": "new",
+      "ex": {
+        "hz": "这是我的新手机。",
+        "py": "Zhè shì wǒ de xīn shǒujī.",
+        "en": "This is my new phone."
+      }
+    },
+    {
+      "w": "它",
+      "py": "tā",
+      "en": "it",
+      "ex": {
+        "hz": "我有一只猫，它很小。",
+        "py": "Wǒ yǒu yì zhī māo, tā hěn xiǎo.",
+        "en": "I have a cat; it's very small."
+      }
+    },
+    {
+      "w": "眼睛",
+      "py": "yǎnjing",
+      "en": "eye",
+      "ex": {
+        "hz": "她的眼睛很漂亮。",
+        "py": "Tā de yǎnjing hěn piàoliang.",
+        "en": "Her eyes are beautiful."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "去哪儿旅游",
+      "py": "Qù nǎr lǚyóu",
+      "en": "Where to travel",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "我想去北京旅游，你觉得几月去最好？",
+          "py": "Wǒ xiǎng qù Běijīng lǚyóu, nǐ juéde jǐ yuè qù zuì hǎo?",
+          "en": "I want to visit Beijing. Which month is best?"
+        },
+        {
+          "who": "B",
+          "hz": "十月最好，不冷也不热。",
+          "py": "Shí yuè zuì hǎo, bù lěng yě bú rè.",
+          "en": "October is best: not cold, not hot."
+        },
+        {
+          "who": "A",
+          "hz": "你和我一起去吗？",
+          "py": "Nǐ hé wǒ yìqǐ qù ma?",
+          "en": "Will you come with me?"
+        },
+        {
+          "who": "B",
+          "hz": "好啊！我也想去。",
+          "py": "Hǎo a! Wǒ yě xiǎng qù.",
+          "en": "Sure! I want to go too."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Which month does B think is best?",
+          "options": [
+            "October",
+            "September",
+            "July",
+            "December"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Will B go too?",
+          "options": [
+            "Yes",
+            "No",
+            "Maybe",
+            "We don't know"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "我的小狗",
+      "py": "Wǒ de xiǎo gǒu",
+      "en": "My puppy",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "这是你的新狗吗？",
+          "py": "Zhè shì nǐ de xīn gǒu ma?",
+          "en": "Is this your new dog?"
+        },
+        {
+          "who": "B",
+          "hz": "是，它叫小白，三个多月了。",
+          "py": "Shì, tā jiào Xiǎo Bái, sān ge duō yuè le.",
+          "en": "Yes, it's called Xiao Bai, a bit over three months old."
+        },
+        {
+          "who": "A",
+          "hz": "它的眼睛真漂亮！",
+          "py": "Tā de yǎnjing zhēn piàoliang!",
+          "en": "Its eyes are so pretty!"
+        },
+        {
+          "who": "B",
+          "hz": "是啊，它最喜欢运动。",
+          "py": "Shì a, tā zuì xǐhuan yùndòng.",
+          "en": "Yes, it loves exercise most."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How old is the puppy?",
+          "options": [
+            "A bit over 3 months",
+            "3 years",
+            "1 month",
+            "13 months"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What does the puppy like most?",
+          "options": [
+            "Exercise",
+            "Sleeping",
+            "Eating",
+            "Watching TV"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "要 + verb",
+      "en": "要: want to / going to",
+      "drills": [
+        {
+          "q": "我___去北京旅游。",
+          "options": [
+            "要",
+            "最",
+            "也",
+            "的"
+          ],
+          "answer": 0,
+          "en": "I'm going to travel to Beijing."
+        },
+        {
+          "q": "我们___不要买几个新的椅子？",
+          "options": [
+            "要",
+            "想",
+            "会",
+            "能"
+          ],
+          "answer": 0,
+          "en": "Should we buy some new chairs?"
+        }
+      ]
+    },
+    {
+      "point": "最",
+      "en": "最 + adjective / verb: the most",
+      "drills": [
+        {
+          "q": "我___喜欢踢足球。",
+          "options": [
+            "最",
+            "要",
+            "太",
+            "多"
+          ],
+          "answer": 0,
+          "en": "I like football most."
+        },
+        {
+          "q": "九月去北京旅游___好。",
+          "options": [
+            "最",
+            "太",
+            "要",
+            "都"
+          ],
+          "answer": 0,
+          "en": "September is the best time to visit Beijing."
+        }
+      ]
+    },
+    {
+      "point": "几 / 多 (about)",
+      "en": "几 = a few; number + measure + 多 = more than",
+      "drills": [
+        {
+          "q": "它六个___月了。",
+          "options": [
+            "多",
+            "几",
+            "最",
+            "少"
+          ],
+          "answer": 0,
+          "en": "It's over six months old."
+        },
+        {
+          "q": "我想买___本书。",
+          "options": [
+            "几",
+            "多",
+            "最",
+            "每"
+          ],
+          "answer": 0,
+          "en": "I want to buy a few books."
+        }
+      ]
+    }
+  ]
+}

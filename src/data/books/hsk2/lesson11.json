@@ -1,0 +1,305 @@
+{
+  "n": 11,
+  "cn": "第十一课",
+  "title": "他比我大三岁",
+  "en": "He is three years older than me",
+  "words": [
+    {
+      "w": "唱歌",
+      "py": "chàng gē",
+      "en": "to sing",
+      "ex": {
+        "hz": "她唱歌唱得很好。",
+        "py": "Tā chàng gē chàng de hěn hǎo.",
+        "en": "She sings well."
+      }
+    },
+    {
+      "w": "男",
+      "py": "nán",
+      "en": "male",
+      "ex": {
+        "hz": "那个男人是谁？",
+        "py": "Nàge nánrén shì shéi?",
+        "en": "Who is that man?"
+      }
+    },
+    {
+      "w": "女",
+      "py": "nǚ",
+      "en": "female",
+      "ex": {
+        "hz": "我们班有十个女学生。",
+        "py": "Wǒmen bān yǒu shí ge nǚ xuésheng.",
+        "en": "Our class has ten female students."
+      }
+    },
+    {
+      "w": "孩子",
+      "py": "háizi",
+      "en": "child",
+      "ex": {
+        "hz": "你有几个孩子？",
+        "py": "Nǐ yǒu jǐ ge háizi?",
+        "en": "How many children do you have?"
+      }
+    },
+    {
+      "w": "右边",
+      "py": "yòubian",
+      "en": "right side",
+      "ex": {
+        "hz": "右边那个是我哥哥。",
+        "py": "Yòubian nàge shì wǒ gēge.",
+        "en": "The one on the right is my brother."
+      }
+    },
+    {
+      "w": "比",
+      "py": "bǐ",
+      "en": "than (comparing)",
+      "ex": {
+        "hz": "今天比昨天冷。",
+        "py": "Jīntiān bǐ zuótiān lěng.",
+        "en": "Today is colder than yesterday."
+      }
+    },
+    {
+      "w": "便宜",
+      "py": "piányi",
+      "en": "cheap",
+      "ex": {
+        "hz": "这个比那个便宜。",
+        "py": "Zhège bǐ nàge piányi.",
+        "en": "This one is cheaper than that one."
+      }
+    },
+    {
+      "w": "说话",
+      "py": "shuō huà",
+      "en": "to speak; to talk",
+      "ex": {
+        "hz": "请别说话。",
+        "py": "Qǐng bié shuō huà.",
+        "en": "Please don't talk."
+      }
+    },
+    {
+      "w": "可能",
+      "py": "kěnéng",
+      "en": "maybe; probably",
+      "ex": {
+        "hz": "明天可能下雨。",
+        "py": "Míngtiān kěnéng xià yǔ.",
+        "en": "It may rain tomorrow."
+      }
+    },
+    {
+      "w": "去年",
+      "py": "qùnián",
+      "en": "last year",
+      "ex": {
+        "hz": "我去年去了北京。",
+        "py": "Wǒ qùnián qù le Běijīng.",
+        "en": "I went to Beijing last year."
+      }
+    },
+    {
+      "w": "姓",
+      "py": "xìng",
+      "en": "surname; to be surnamed",
+      "ex": {
+        "hz": "您贵姓？我姓王。",
+        "py": "Nín guìxìng? Wǒ xìng Wáng.",
+        "en": "What's your surname? It's Wang."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "比一比",
+      "py": "Bǐ yi bǐ",
+      "en": "Comparing",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "右边那个男孩子是你弟弟吗？",
+          "py": "Yòubian nàge nán háizi shì nǐ dìdi ma?",
+          "en": "Is the boy on the right your younger brother?"
+        },
+        {
+          "who": "B",
+          "hz": "不是，是我哥哥。他比我大两岁。",
+          "py": "Bú shì, shì wǒ gēge. Tā bǐ wǒ dà liǎng suì.",
+          "en": "No, my older brother. He's two years older."
+        },
+        {
+          "who": "A",
+          "hz": "他比你高很多！",
+          "py": "Tā bǐ nǐ gāo hěn duō!",
+          "en": "He's much taller than you!"
+        },
+        {
+          "who": "B",
+          "hz": "是啊，他一米九。",
+          "py": "Shì a, tā yì mǐ jiǔ.",
+          "en": "Yes, he's 1.9 m."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Who is the boy?",
+          "options": [
+            "B's older brother",
+            "B's younger brother",
+            "B's friend",
+            "B's son"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How much older is he?",
+          "options": [
+            "2 years",
+            "3 years",
+            "1 year",
+            "9 years"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "买西瓜",
+      "py": "Mǎi xīguā",
+      "en": "Buying watermelon",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "西瓜怎么卖？",
+          "py": "Xīguā zěnme mài?",
+          "en": "How much is the watermelon?"
+        },
+        {
+          "who": "B",
+          "hz": "两块五一斤，比昨天便宜。",
+          "py": "Liǎng kuài wǔ yì jīn, bǐ zuótiān piányi.",
+          "en": "2.5 yuan a jin, cheaper than yesterday."
+        },
+        {
+          "who": "A",
+          "hz": "苹果呢？",
+          "py": "Píngguǒ ne?",
+          "en": "And apples?"
+        },
+        {
+          "who": "B",
+          "hz": "苹果没有西瓜便宜，五块一斤。",
+          "py": "Píngguǒ méiyǒu xīguā piányi, wǔ kuài yì jīn.",
+          "en": "Apples aren't as cheap: 5 yuan a jin."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How much is watermelon?",
+          "options": [
+            "2.5 yuan",
+            "5 yuan",
+            "25 yuan",
+            "2 yuan"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which is cheaper?",
+          "options": [
+            "Watermelon",
+            "Apples",
+            "Same price",
+            "We don't know"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "Verb phrase + 的 + noun",
+      "en": "和你一起唱歌的人",
+      "drills": [
+        {
+          "q": "昨天和你一起唱歌___人是谁？",
+          "options": [
+            "的",
+            "地",
+            "得",
+            "了"
+          ],
+          "answer": 0,
+          "en": "Who sang with you yesterday?"
+        }
+      ]
+    },
+    {
+      "point": "比",
+      "en": "A 比 B + adjective (+ amount)",
+      "drills": [
+        {
+          "q": "他___我大三岁。",
+          "options": [
+            "比",
+            "和",
+            "对",
+            "跟"
+          ],
+          "answer": 0,
+          "en": "He's three years older than me."
+        },
+        {
+          "q": "今天的西瓜比昨天便宜___。",
+          "options": [
+            "一些",
+            "一下",
+            "有点儿",
+            "很"
+          ],
+          "answer": 0,
+          "en": "Today's watermelon is a bit cheaper than yesterday."
+        },
+        {
+          "q": "西瓜___苹果便宜。",
+          "options": [
+            "没有",
+            "不",
+            "没",
+            "不是"
+          ],
+          "answer": 0,
+          "en": "Watermelon isn't as cheap as apples."
+        }
+      ]
+    },
+    {
+      "point": "可能",
+      "en": "maybe",
+      "drills": [
+        {
+          "q": "你___不认识她。",
+          "options": [
+            "可能",
+            "能",
+            "会",
+            "可以"
+          ],
+          "answer": 0,
+          "en": "You probably don't know her."
+        }
+      ]
+    }
+  ]
+}

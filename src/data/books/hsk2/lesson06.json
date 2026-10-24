@@ -1,0 +1,325 @@
+{
+  "n": 6,
+  "cn": "第六课",
+  "title": "你怎么不吃了",
+  "en": "Why don't you eat any more",
+  "words": [
+    {
+      "w": "门",
+      "py": "mén",
+      "en": "door; gate",
+      "ex": {
+        "hz": "请开门。",
+        "py": "Qǐng kāi mén.",
+        "en": "Please open the door."
+      }
+    },
+    {
+      "w": "外",
+      "py": "wài",
+      "en": "outside",
+      "ex": {
+        "hz": "他在门外等你。",
+        "py": "Tā zài mén wài děng nǐ.",
+        "en": "He's waiting for you outside the door."
+      }
+    },
+    {
+      "w": "自行车",
+      "py": "zìxíngchē",
+      "en": "bicycle",
+      "ex": {
+        "hz": "我骑自行车去学校。",
+        "py": "Wǒ qí zìxíngchē qù xuéxiào.",
+        "en": "I ride a bike to school."
+      }
+    },
+    {
+      "w": "羊肉",
+      "py": "yángròu",
+      "en": "mutton; lamb",
+      "ex": {
+        "hz": "我很爱吃羊肉。",
+        "py": "Wǒ hěn ài chī yángròu.",
+        "en": "I love eating lamb."
+      }
+    },
+    {
+      "w": "好吃",
+      "py": "hǎochī",
+      "en": "tasty",
+      "ex": {
+        "hz": "这个菜真好吃！",
+        "py": "Zhège cài zhēn hǎochī!",
+        "en": "This dish is really tasty!"
+      }
+    },
+    {
+      "w": "面条",
+      "py": "miàntiáo",
+      "en": "noodles",
+      "ex": {
+        "hz": "我想吃面条。",
+        "py": "Wǒ xiǎng chī miàntiáo.",
+        "en": "I'd like some noodles."
+      }
+    },
+    {
+      "w": "打篮球",
+      "py": "dǎ lánqiú",
+      "en": "to play basketball",
+      "ex": {
+        "hz": "他们在打篮球。",
+        "py": "Tāmen zài dǎ lánqiú.",
+        "en": "They're playing basketball."
+      }
+    },
+    {
+      "w": "因为",
+      "py": "yīnwèi",
+      "en": "because",
+      "ex": {
+        "hz": "因为下雨，我没去。",
+        "py": "Yīnwèi xià yǔ, wǒ méi qù.",
+        "en": "Because it rained, I didn't go."
+      }
+    },
+    {
+      "w": "所以",
+      "py": "suǒyǐ",
+      "en": "so; therefore",
+      "ex": {
+        "hz": "我生病了，所以没去学校。",
+        "py": "Wǒ shēng bìng le, suǒyǐ méi qù xuéxiào.",
+        "en": "I was sick, so I didn't go to school."
+      }
+    },
+    {
+      "w": "游泳",
+      "py": "yóu yǒng",
+      "en": "to swim",
+      "ex": {
+        "hz": "你会游泳吗？",
+        "py": "Nǐ huì yóu yǒng ma?",
+        "en": "Can you swim?"
+      }
+    },
+    {
+      "w": "经常",
+      "py": "jīngcháng",
+      "en": "often",
+      "ex": {
+        "hz": "我经常去那个饭馆。",
+        "py": "Wǒ jīngcháng qù nàge fànguǎn.",
+        "en": "I often go to that restaurant."
+      }
+    },
+    {
+      "w": "公斤",
+      "py": "gōngjīn",
+      "en": "kilogram",
+      "ex": {
+        "hz": "我六十公斤。",
+        "py": "Wǒ liùshí gōngjīn.",
+        "en": "I weigh 60 kg."
+      }
+    },
+    {
+      "w": "姐姐",
+      "py": "jiějie",
+      "en": "older sister",
+      "ex": {
+        "hz": "我姐姐在北京工作。",
+        "py": "Wǒ jiějie zài Běijīng gōngzuò.",
+        "en": "My older sister works in Beijing."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "你怎么没来",
+      "py": "Nǐ zěnme méi lái",
+      "en": "Why didn't you come",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "昨天你怎么没来打篮球？",
+          "py": "Zuótiān nǐ zěnme méi lái dǎ lánqiú?",
+          "en": "Why didn't you come to play basketball yesterday?"
+        },
+        {
+          "who": "B",
+          "hz": "因为我姐姐来了，所以我在家。",
+          "py": "Yīnwèi wǒ jiějie lái le, suǒyǐ wǒ zài jiā.",
+          "en": "My older sister came, so I stayed home."
+        },
+        {
+          "who": "A",
+          "hz": "你姐姐经常来看你吗？",
+          "py": "Nǐ jiějie jīngcháng lái kàn nǐ ma?",
+          "en": "Does she visit you often?"
+        },
+        {
+          "who": "B",
+          "hz": "不经常，一年来一次。",
+          "py": "Bù jīngcháng, yì nián lái yí cì.",
+          "en": "Not often, once a year."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Why didn't B play basketball?",
+          "options": [
+            "B's sister visited",
+            "B was sick",
+            "It rained",
+            "B was swimming"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How often does the sister visit?",
+          "options": [
+            "Once a year",
+            "Every week",
+            "Every day",
+            "Never"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "在饭馆",
+      "py": "Zài fànguǎn",
+      "en": "At a restaurant",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "这儿的羊肉很好吃，你怎么不吃了？",
+          "py": "Zhèr de yángròu hěn hǎochī, nǐ zěnme bù chī le?",
+          "en": "The lamb here is great; why did you stop eating?"
+        },
+        {
+          "who": "B",
+          "hz": "我天天吃羊肉，不想吃了。",
+          "py": "Wǒ tiāntiān chī yángròu, bù xiǎng chī le.",
+          "en": "I eat lamb every day; I don't want any more."
+        },
+        {
+          "who": "A",
+          "hz": "那来一点儿面条吧。",
+          "py": "Nà lái yìdiǎnr miàntiáo ba.",
+          "en": "Then have some noodles."
+        },
+        {
+          "who": "B",
+          "hz": "好啊。",
+          "py": "Hǎo a.",
+          "en": "OK."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Why does B stop eating lamb?",
+          "options": [
+            "B eats it every day",
+            "It's not tasty",
+            "B is full",
+            "B is sick"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What will B have instead?",
+          "options": [
+            "Noodles",
+            "Rice",
+            "Fish",
+            "Fruit"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "怎么 (why)",
+      "en": "怎么 + verb: how come?",
+      "drills": [
+        {
+          "q": "你___不吃了？",
+          "options": [
+            "怎么",
+            "什么",
+            "多少",
+            "哪儿"
+          ],
+          "answer": 0,
+          "en": "Why did you stop eating?"
+        }
+      ]
+    },
+    {
+      "point": "Doubled measure words",
+      "en": "天天 / 个个 / 件件 … 都: every",
+      "drills": [
+        {
+          "q": "这个星期我___都吃羊肉。",
+          "options": [
+            "天天",
+            "天",
+            "每",
+            "都"
+          ],
+          "answer": 0,
+          "en": "This week I eat lamb every day."
+        },
+        {
+          "q": "这儿的衣服件件___很漂亮。",
+          "options": [
+            "都",
+            "也",
+            "就",
+            "还"
+          ],
+          "answer": 0,
+          "en": "Every garment here is pretty."
+        }
+      ]
+    },
+    {
+      "point": "因为……，所以……",
+      "en": "because … so …",
+      "drills": [
+        {
+          "q": "___昨天下雨，所以我们都没去。",
+          "options": [
+            "因为",
+            "所以",
+            "但是",
+            "虽然"
+          ],
+          "answer": 0,
+          "en": "Because it rained yesterday, none of us went."
+        },
+        {
+          "q": "因为他每天跑步，___身体很好。",
+          "options": [
+            "所以",
+            "因为",
+            "但是",
+            "虽然"
+          ],
+          "answer": 0,
+          "en": "He runs every day, so he's healthy."
+        }
+      ]
+    }
+  ]
+}

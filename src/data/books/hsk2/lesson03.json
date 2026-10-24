@@ -1,0 +1,324 @@
+{
+  "n": 3,
+  "cn": "第三课",
+  "title": "左边那个红色的是我的",
+  "en": "The red one on the left is mine",
+  "words": [
+    {
+      "w": "手表",
+      "py": "shǒubiǎo",
+      "en": "wristwatch",
+      "ex": {
+        "hz": "这块手表很贵。",
+        "py": "Zhè kuài shǒubiǎo hěn guì.",
+        "en": "This watch is expensive."
+      }
+    },
+    {
+      "w": "千",
+      "py": "qiān",
+      "en": "thousand",
+      "ex": {
+        "hz": "这个手机三千块。",
+        "py": "Zhège shǒujī sānqiān kuài.",
+        "en": "This phone is 3,000 yuan."
+      }
+    },
+    {
+      "w": "报纸",
+      "py": "bàozhǐ",
+      "en": "newspaper",
+      "ex": {
+        "hz": "爸爸在看报纸。",
+        "py": "Bàba zài kàn bàozhǐ.",
+        "en": "Dad is reading the newspaper."
+      }
+    },
+    {
+      "w": "送",
+      "py": "sòng",
+      "en": "to give (as a gift); to deliver",
+      "ex": {
+        "hz": "这是朋友送我的。",
+        "py": "Zhè shì péngyou sòng wǒ de.",
+        "en": "A friend gave me this."
+      }
+    },
+    {
+      "w": "一下",
+      "py": "yíxià",
+      "en": "(do) a bit; for a moment",
+      "ex": {
+        "hz": "你看一下这本书。",
+        "py": "Nǐ kàn yíxià zhè běn shū.",
+        "en": "Have a look at this book."
+      }
+    },
+    {
+      "w": "牛奶",
+      "py": "niúnǎi",
+      "en": "milk",
+      "ex": {
+        "hz": "我早上喝牛奶。",
+        "py": "Wǒ zǎoshang hē niúnǎi.",
+        "en": "I drink milk in the morning."
+      }
+    },
+    {
+      "w": "房间",
+      "py": "fángjiān",
+      "en": "room",
+      "ex": {
+        "hz": "这是我的房间。",
+        "py": "Zhè shì wǒ de fángjiān.",
+        "en": "This is my room."
+      }
+    },
+    {
+      "w": "丈夫",
+      "py": "zhàngfu",
+      "en": "husband",
+      "ex": {
+        "hz": "她丈夫是医生。",
+        "py": "Tā zhàngfu shì yīshēng.",
+        "en": "Her husband is a doctor."
+      }
+    },
+    {
+      "w": "旁边",
+      "py": "pángbiān",
+      "en": "beside; next to",
+      "ex": {
+        "hz": "商店在学校旁边。",
+        "py": "Shāngdiàn zài xuéxiào pángbiān.",
+        "en": "The shop is next to the school."
+      }
+    },
+    {
+      "w": "真",
+      "py": "zhēn",
+      "en": "really",
+      "ex": {
+        "hz": "今天真热！",
+        "py": "Jīntiān zhēn rè!",
+        "en": "It's really hot today!"
+      }
+    },
+    {
+      "w": "粉色",
+      "py": "fěnsè",
+      "en": "pink",
+      "ex": {
+        "hz": "她喜欢粉色。",
+        "py": "Tā xǐhuan fěnsè.",
+        "en": "She likes pink."
+      }
+    },
+    {
+      "w": "颜色",
+      "py": "yánsè",
+      "en": "colour",
+      "ex": {
+        "hz": "你喜欢什么颜色？",
+        "py": "Nǐ xǐhuan shénme yánsè?",
+        "en": "What colour do you like?"
+      }
+    },
+    {
+      "w": "左边",
+      "py": "zuǒbian",
+      "en": "left side",
+      "ex": {
+        "hz": "左边那个是我的杯子。",
+        "py": "Zuǒbian nàge shì wǒ de bēizi.",
+        "en": "The one on the left is my cup."
+      }
+    },
+    {
+      "w": "红色",
+      "py": "hóngsè",
+      "en": "red",
+      "ex": {
+        "hz": "红色的那件衣服很漂亮。",
+        "py": "Hóngsè de nà jiàn yīfu hěn piàoliang.",
+        "en": "That red garment is pretty."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "这是谁的",
+      "py": "Zhè shì shéi de",
+      "en": "Whose is this",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "桌子上的手表是你的吗？",
+          "py": "Zhuōzi shang de shǒubiǎo shì nǐ de ma?",
+          "en": "Is the watch on the table yours?"
+        },
+        {
+          "who": "B",
+          "hz": "不是我的，是我丈夫的。",
+          "py": "Bú shì wǒ de, shì wǒ zhàngfu de.",
+          "en": "It's not mine; it's my husband's."
+        },
+        {
+          "who": "A",
+          "hz": "旁边那个红色的杯子呢？",
+          "py": "Pángbiān nàge hóngsè de bēizi ne?",
+          "en": "And the red cup beside it?"
+        },
+        {
+          "who": "B",
+          "hz": "那个是我的。",
+          "py": "Nàge shì wǒ de.",
+          "en": "That one is mine."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Whose watch is it?",
+          "options": [
+            "B's husband's",
+            "B's",
+            "A's",
+            "B's daughter's"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Whose is the red cup?",
+          "options": [
+            "B's",
+            "A's",
+            "B's husband's",
+            "Nobody's"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "我的房间",
+      "py": "Wǒ de fángjiān",
+      "en": "My room",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你的房间真漂亮！",
+          "py": "Nǐ de fángjiān zhēn piàoliang!",
+          "en": "Your room is really pretty!"
+        },
+        {
+          "who": "B",
+          "hz": "谢谢！粉色是我最喜欢的颜色。",
+          "py": "Xièxie! Fěnsè shì wǒ zuì xǐhuan de yánsè.",
+          "en": "Thanks! Pink is my favourite colour."
+        },
+        {
+          "who": "A",
+          "hz": "这是今天的报纸吗？",
+          "py": "Zhè shì jīntiān de bàozhǐ ma?",
+          "en": "Is this today's paper?"
+        },
+        {
+          "who": "B",
+          "hz": "不是，是昨天的。",
+          "py": "Bú shì, shì zuótiān de.",
+          "en": "No, it's yesterday's."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What is B's favourite colour?",
+          "options": [
+            "Pink",
+            "Red",
+            "White",
+            "Black"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Whose newspaper is it from?",
+          "options": [
+            "Yesterday",
+            "Today",
+            "Tomorrow",
+            "Last week"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "的 phrases",
+      "en": "我的 / 昨天的 / 红色的: “the … one”",
+      "drills": [
+        {
+          "q": "这块手表是你___吗？",
+          "options": [
+            "的",
+            "了",
+            "呢",
+            "吧"
+          ],
+          "answer": 0,
+          "en": "Is this watch yours?"
+        },
+        {
+          "q": "左边那个红色___是我的。",
+          "options": [
+            "的",
+            "了",
+            "吗",
+            "着"
+          ],
+          "answer": 0,
+          "en": "The red one on the left is mine."
+        }
+      ]
+    },
+    {
+      "point": "Verb + 一下",
+      "en": "一下: (do) briefly",
+      "drills": [
+        {
+          "q": "我看___。",
+          "options": [
+            "一下",
+            "一点儿",
+            "一次",
+            "一些"
+          ],
+          "answer": 0,
+          "en": "Let me have a look."
+        }
+      ]
+    },
+    {
+      "point": "真 + adjective",
+      "en": "真: really, so!",
+      "drills": [
+        {
+          "q": "你女儿的房间___漂亮！",
+          "options": [
+            "真",
+            "最",
+            "每",
+            "多"
+          ],
+          "answer": 0,
+          "en": "Your daughter's room is so pretty!"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "n": 2,
+  "cn": "第二课",
+  "title": "我每天六点起床",
+  "en": "I get up at six every day",
+  "words": [
+    {
+      "w": "生病",
+      "py": "shēng bìng",
+      "en": "to get sick",
+      "ex": {
+        "hz": "我昨天生病了。",
+        "py": "Wǒ zuótiān shēng bìng le.",
+        "en": "I got sick yesterday."
+      }
+    },
+    {
+      "w": "每",
+      "py": "měi",
+      "en": "every",
+      "ex": {
+        "hz": "我每天都学汉语。",
+        "py": "Wǒ měi tiān dōu xué Hànyǔ.",
+        "en": "I study Chinese every day."
+      }
+    },
+    {
+      "w": "早上",
+      "py": "zǎoshang",
+      "en": "(early) morning",
+      "ex": {
+        "hz": "早上我喝一杯茶。",
+        "py": "Zǎoshang wǒ hē yì bēi chá.",
+        "en": "I drink a cup of tea in the morning."
+      }
+    },
+    {
+      "w": "跑步",
+      "py": "pǎo bù",
+      "en": "to run; to jog",
+      "ex": {
+        "hz": "他每天早上跑步。",
+        "py": "Tā měi tiān zǎoshang pǎo bù.",
+        "en": "He runs every morning."
+      }
+    },
+    {
+      "w": "起床",
+      "py": "qǐ chuáng",
+      "en": "to get up",
+      "ex": {
+        "hz": "你几点起床？",
+        "py": "Nǐ jǐ diǎn qǐ chuáng?",
+        "en": "What time do you get up?"
+      }
+    },
+    {
+      "w": "药",
+      "py": "yào",
+      "en": "medicine",
+      "ex": {
+        "hz": "你吃药了吗？",
+        "py": "Nǐ chī yào le ma?",
+        "en": "Did you take your medicine?"
+      }
+    },
+    {
+      "w": "出院",
+      "py": "chū yuàn",
+      "en": "to leave hospital",
+      "ex": {
+        "hz": "她明天出院。",
+        "py": "Tā míngtiān chū yuàn.",
+        "en": "She leaves hospital tomorrow."
+      }
+    },
+    {
+      "w": "高",
+      "py": "gāo",
+      "en": "tall; high",
+      "ex": {
+        "hz": "你哥哥多高？",
+        "py": "Nǐ gēge duō gāo?",
+        "en": "How tall is your brother?"
+      }
+    },
+    {
+      "w": "米",
+      "py": "mǐ",
+      "en": "metre",
+      "ex": {
+        "hz": "他一米八。",
+        "py": "Tā yì mǐ bā.",
+        "en": "He's 1.8 metres tall."
+      }
+    },
+    {
+      "w": "知道",
+      "py": "zhīdào",
+      "en": "to know",
+      "ex": {
+        "hz": "我不知道他叫什么。",
+        "py": "Wǒ bù zhīdào tā jiào shénme.",
+        "en": "I don't know his name."
+      }
+    },
+    {
+      "w": "休息",
+      "py": "xiūxi",
+      "en": "to rest",
+      "ex": {
+        "hz": "你累了，休息一下吧。",
+        "py": "Nǐ lèi le, xiūxi yíxià ba.",
+        "en": "You're tired; take a rest."
+      }
+    },
+    {
+      "w": "忙",
+      "py": "máng",
+      "en": "busy",
+      "ex": {
+        "hz": "我这几天很忙。",
+        "py": "Wǒ zhè jǐ tiān hěn máng.",
+        "en": "I've been busy these days."
+      }
+    },
+    {
+      "w": "时间",
+      "py": "shíjiān",
+      "en": "time",
+      "ex": {
+        "hz": "你明天有时间吗？",
+        "py": "Nǐ míngtiān yǒu shíjiān ma?",
+        "en": "Are you free tomorrow?"
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "每天早上",
+      "py": "Měi tiān zǎoshang",
+      "en": "Every morning",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你每天几点起床？",
+          "py": "Nǐ měi tiān jǐ diǎn qǐ chuáng?",
+          "en": "What time do you get up every day?"
+        },
+        {
+          "who": "B",
+          "hz": "六点半。起床后我去跑步。",
+          "py": "Liù diǎn bàn. Qǐ chuáng hòu wǒ qù pǎo bù.",
+          "en": "Six thirty. After getting up I go running."
+        },
+        {
+          "who": "A",
+          "hz": "你每天都跑步吗？",
+          "py": "Nǐ měi tiān dōu pǎo bù ma?",
+          "en": "Do you run every day?"
+        },
+        {
+          "who": "B",
+          "hz": "是，所以我很少生病。",
+          "py": "Shì, suǒyǐ wǒ hěn shǎo shēng bìng.",
+          "en": "Yes, so I rarely get sick."
+        }
+      ],
+      "questions": [
+        {
+          "q": "When does B get up?",
+          "options": [
+            "6:30",
+            "6:00",
+            "7:30",
+            "8:00"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Why does B rarely get sick?",
+          "options": [
+            "B runs every day",
+            "B takes medicine",
+            "B sleeps a lot",
+            "B eats fruit"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "你多高",
+      "py": "Nǐ duō gāo",
+      "en": "How tall are you",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你知道小王多高吗？",
+          "py": "Nǐ zhīdào Xiǎo Wáng duō gāo ma?",
+          "en": "Do you know how tall Xiao Wang is?"
+        },
+        {
+          "who": "B",
+          "hz": "一米八几。",
+          "py": "Yì mǐ bā jǐ.",
+          "en": "About 1.8-something metres."
+        },
+        {
+          "who": "A",
+          "hz": "他多大了？",
+          "py": "Tā duō dà le?",
+          "en": "How old is he?"
+        },
+        {
+          "who": "B",
+          "hz": "二十多岁。他很忙，没有时间休息。",
+          "py": "Èrshí duō suì. Tā hěn máng, méiyǒu shíjiān xiūxi.",
+          "en": "In his twenties. He's busy and has no time to rest."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How tall is Xiao Wang?",
+          "options": [
+            "A bit over 1.8 m",
+            "1.6 m",
+            "2 m",
+            "We don't know"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Why doesn't he rest?",
+          "options": [
+            "He's busy",
+            "He's sick",
+            "He's running",
+            "He's sleeping"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "是不是",
+      "en": "是不是: “isn't it?” — checking a guess",
+      "drills": [
+        {
+          "q": "你很少生病，___喜欢运动？",
+          "options": [
+            "是不是",
+            "为什么",
+            "怎么样",
+            "多少"
+          ],
+          "answer": 0,
+          "en": "You rarely get sick — do you like sport?"
+        }
+      ]
+    },
+    {
+      "point": "每 … 都",
+      "en": "每 + measure word … 都: every",
+      "drills": [
+        {
+          "q": "我___天六点起床。",
+          "options": [
+            "每",
+            "都",
+            "多",
+            "几"
+          ],
+          "answer": 0,
+          "en": "I get up at six every day."
+        },
+        {
+          "q": "他每天早上___去跑步。",
+          "options": [
+            "都",
+            "每",
+            "也",
+            "最"
+          ],
+          "answer": 0,
+          "en": "He goes running every morning."
+        }
+      ]
+    },
+    {
+      "point": "多 + adjective",
+      "en": "多大 / 多高: how old / how tall",
+      "drills": [
+        {
+          "q": "你哥哥___高？",
+          "options": [
+            "多",
+            "几",
+            "每",
+            "最"
+          ],
+          "answer": 0,
+          "en": "How tall is your brother?"
+        },
+        {
+          "q": "你今年___大了？",
+          "options": [
+            "多",
+            "几",
+            "太",
+            "很"
+          ],
+          "answer": 0,
+          "en": "How old are you this year?"
+        }
+      ]
+    }
+  ]
+}

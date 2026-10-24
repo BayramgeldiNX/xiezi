@@ -1,0 +1,265 @@
+{
+  "n": 14,
+  "cn": "第十四课",
+  "title": "你看过那个电影吗",
+  "en": "Have you seen that movie",
+  "words": [
+    {
+      "w": "有意思",
+      "py": "yǒu yìsi",
+      "en": "interesting",
+      "ex": {
+        "hz": "这本书很有意思。",
+        "py": "Zhè běn shū hěn yǒu yìsi.",
+        "en": "This book is interesting."
+      }
+    },
+    {
+      "w": "但是",
+      "py": "dànshì",
+      "en": "but",
+      "ex": {
+        "hz": "我想去，但是没有时间。",
+        "py": "Wǒ xiǎng qù, dànshì méiyǒu shíjiān.",
+        "en": "I want to go, but I have no time."
+      }
+    },
+    {
+      "w": "虽然",
+      "py": "suīrán",
+      "en": "although",
+      "ex": {
+        "hz": "虽然很累，但是很高兴。",
+        "py": "Suīrán hěn lèi, dànshì hěn gāoxìng.",
+        "en": "Tired, but happy."
+      }
+    },
+    {
+      "w": "次",
+      "py": "cì",
+      "en": "time (occurrence)",
+      "ex": {
+        "hz": "我去过两次北京。",
+        "py": "Wǒ qùguo liǎng cì Běijīng.",
+        "en": "I've been to Beijing twice."
+      }
+    },
+    {
+      "w": "玩儿",
+      "py": "wánr",
+      "en": "to play; to have fun",
+      "ex": {
+        "hz": "周末我们去公园玩儿吧。",
+        "py": "Zhōumò wǒmen qù gōngyuán wánr ba.",
+        "en": "Let's have fun at the park this weekend."
+      }
+    },
+    {
+      "w": "晴",
+      "py": "qíng",
+      "en": "sunny",
+      "ex": {
+        "hz": "今天是晴天。",
+        "py": "Jīntiān shì qíngtiān.",
+        "en": "It's a sunny day."
+      }
+    },
+    {
+      "w": "百",
+      "py": "bǎi",
+      "en": "hundred",
+      "ex": {
+        "hz": "这件衣服三百块。",
+        "py": "Zhè jiàn yīfu sānbǎi kuài.",
+        "en": "This garment is 300 yuan."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "你去过中国吗",
+      "py": "Nǐ qùguo Zhōngguó ma",
+      "en": "Have you been to China",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你去过中国吗？",
+          "py": "Nǐ qùguo Zhōngguó ma?",
+          "en": "Have you been to China?"
+        },
+        {
+          "who": "B",
+          "hz": "去过三次，但是没去过北京。",
+          "py": "Qùguo sān cì, dànshì méi qùguo Běijīng.",
+          "en": "Three times, but never to Beijing."
+        },
+        {
+          "who": "A",
+          "hz": "北京很有意思，我们一起去玩儿吧！",
+          "py": "Běijīng hěn yǒu yìsi, wǒmen yìqǐ qù wánr ba!",
+          "en": "Beijing is fun; let's go together!"
+        },
+        {
+          "who": "B",
+          "hz": "好啊！",
+          "py": "Hǎo a!",
+          "en": "Great!"
+        }
+      ],
+      "questions": [
+        {
+          "q": "How many times has B been to China?",
+          "options": [
+            "3",
+            "1",
+            "0",
+            "2"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Has B been to Beijing?",
+          "options": [
+            "No",
+            "Yes, once",
+            "Yes, three times",
+            "We don't know"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "虽然贵",
+      "py": "Suīrán guì",
+      "en": "Although it's expensive",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "这件衣服虽然有点儿贵，但是我很喜欢。",
+          "py": "Zhè jiàn yīfu suīrán yǒudiǎnr guì, dànshì wǒ hěn xǐhuan.",
+          "en": "This garment is a bit pricey, but I love it."
+        },
+        {
+          "who": "B",
+          "hz": "多少钱？",
+          "py": "Duōshao qián?",
+          "en": "How much?"
+        },
+        {
+          "who": "A",
+          "hz": "五百块。",
+          "py": "Wǔbǎi kuài.",
+          "en": "500 yuan."
+        },
+        {
+          "who": "B",
+          "hz": "喜欢就买吧。",
+          "py": "Xǐhuan jiù mǎi ba.",
+          "en": "If you like it, buy it."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How much is it?",
+          "options": [
+            "500 yuan",
+            "50 yuan",
+            "5,000 yuan",
+            "150 yuan"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What does B say?",
+          "options": [
+            "Buy it if you like it",
+            "It's too expensive",
+            "Don't buy it",
+            "Ask the price"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "Verb + 过",
+      "en": "have done (experience)",
+      "drills": [
+        {
+          "q": "你看___那个电影没有？",
+          "options": [
+            "过",
+            "着",
+            "了",
+            "完"
+          ],
+          "answer": 0,
+          "en": "Have you seen that movie?"
+        },
+        {
+          "q": "我没去___中国。",
+          "options": [
+            "过",
+            "了",
+            "着",
+            "的"
+          ],
+          "answer": 0,
+          "en": "I've never been to China."
+        }
+      ]
+    },
+    {
+      "point": "虽然……，但是……",
+      "en": "although …, (but) …",
+      "drills": [
+        {
+          "q": "___是晴天，但是很冷。",
+          "options": [
+            "虽然",
+            "因为",
+            "所以",
+            "但是"
+          ],
+          "answer": 0,
+          "en": "Although it's sunny, it's cold."
+        },
+        {
+          "q": "虽然有点儿贵，___我很喜欢。",
+          "options": [
+            "但是",
+            "所以",
+            "因为",
+            "虽然"
+          ],
+          "answer": 0,
+          "en": "Although a bit pricey, I love it."
+        }
+      ]
+    },
+    {
+      "point": "Verb + number + 次",
+      "en": "how many times",
+      "drills": [
+        {
+          "q": "我在这个商店买过一___东西。",
+          "options": [
+            "次",
+            "个",
+            "下",
+            "件"
+          ],
+          "answer": 0,
+          "en": "I've bought something in this shop once."
+        }
+      ]
+    }
+  ]
+}

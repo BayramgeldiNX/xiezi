@@ -1,0 +1,274 @@
+{
+  "n": 10,
+  "cn": "第十课",
+  "title": "别找了，手机在桌子上呢",
+  "en": "Stop looking — the phone's on the table",
+  "words": [
+    {
+      "w": "课",
+      "py": "kè",
+      "en": "class; lesson",
+      "ex": {
+        "hz": "明天上午有汉语课。",
+        "py": "Míngtiān shàngwǔ yǒu Hànyǔ kè.",
+        "en": "There's a Chinese class tomorrow morning."
+      }
+    },
+    {
+      "w": "帮助",
+      "py": "bāngzhù",
+      "en": "help; to help",
+      "ex": {
+        "hz": "谢谢你的帮助！",
+        "py": "Xièxie nǐ de bāngzhù!",
+        "en": "Thanks for your help!"
+      }
+    },
+    {
+      "w": "别",
+      "py": "bié",
+      "en": "don't",
+      "ex": {
+        "hz": "别看电视了！",
+        "py": "Bié kàn diànshì le!",
+        "en": "Stop watching TV!"
+      }
+    },
+    {
+      "w": "哥哥",
+      "py": "gēge",
+      "en": "older brother",
+      "ex": {
+        "hz": "我哥哥比我大三岁。",
+        "py": "Wǒ gēge bǐ wǒ dà sān suì.",
+        "en": "My older brother is three years older than me."
+      }
+    },
+    {
+      "w": "鸡蛋",
+      "py": "jīdàn",
+      "en": "(chicken) egg",
+      "ex": {
+        "hz": "我早上吃两个鸡蛋。",
+        "py": "Wǒ zǎoshang chī liǎng ge jīdàn.",
+        "en": "I eat two eggs in the morning."
+      }
+    },
+    {
+      "w": "西瓜",
+      "py": "xīguā",
+      "en": "watermelon",
+      "ex": {
+        "hz": "西瓜多少钱一斤？",
+        "py": "Xīguā duōshao qián yì jīn?",
+        "en": "How much is watermelon per jin?"
+      }
+    },
+    {
+      "w": "正在",
+      "py": "zhèngzài",
+      "en": "in the middle of (doing)",
+      "ex": {
+        "hz": "妈妈正在做饭。",
+        "py": "Māma zhèngzài zuò fàn.",
+        "en": "Mom is cooking right now."
+      }
+    },
+    {
+      "w": "手机",
+      "py": "shǒujī",
+      "en": "mobile phone",
+      "ex": {
+        "hz": "我的手机在哪儿？",
+        "py": "Wǒ de shǒujī zài nǎr?",
+        "en": "Where's my phone?"
+      }
+    },
+    {
+      "w": "洗",
+      "py": "xǐ",
+      "en": "to wash",
+      "ex": {
+        "hz": "我帮你洗衣服。",
+        "py": "Wǒ bāng nǐ xǐ yīfu.",
+        "en": "I'll wash your clothes for you."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "我的手机呢",
+      "py": "Wǒ de shǒujī ne",
+      "en": "Where's my phone",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你在找什么？",
+          "py": "Nǐ zài zhǎo shénme?",
+          "en": "What are you looking for?"
+        },
+        {
+          "who": "B",
+          "hz": "我的手机。你看见了吗？",
+          "py": "Wǒ de shǒujī. Nǐ kànjiàn le ma?",
+          "en": "My phone. Have you seen it?"
+        },
+        {
+          "who": "A",
+          "hz": "别找了，在电脑旁边呢。",
+          "py": "Bié zhǎo le, zài diànnǎo pángbiān ne.",
+          "en": "Stop looking, it's next to the computer."
+        },
+        {
+          "who": "B",
+          "hz": "太好了，谢谢！",
+          "py": "Tài hǎo le, xièxie!",
+          "en": "Great, thanks!"
+        }
+      ],
+      "questions": [
+        {
+          "q": "What is B looking for?",
+          "options": [
+            "Phone",
+            "Computer",
+            "Book",
+            "Clothes"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Where is it?",
+          "options": [
+            "Next to the computer",
+            "On the chair",
+            "In the bag",
+            "Outside"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "哥哥回来了",
+      "py": "Gēge huílai le",
+      "en": "Big brother is back",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你怎么买了这么多东西？",
+          "py": "Nǐ zěnme mǎi le zhème duō dōngxi?",
+          "en": "Why did you buy so much?"
+        },
+        {
+          "who": "B",
+          "hz": "哥哥今天回来，妈妈正在准备晚饭。",
+          "py": "Gēge jīntiān huílai, māma zhèngzài zhǔnbèi wǎnfàn.",
+          "en": "Big brother comes back today; Mom is making dinner."
+        },
+        {
+          "who": "A",
+          "hz": "买了什么？",
+          "py": "Mǎi le shénme?",
+          "en": "What did you buy?"
+        },
+        {
+          "who": "B",
+          "hz": "鸡蛋、羊肉，还有一个大西瓜。",
+          "py": "Jīdàn, yángròu, hái yǒu yí ge dà xīguā.",
+          "en": "Eggs, lamb, and a big watermelon."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Who is coming home?",
+          "options": [
+            "Big brother",
+            "Dad",
+            "Little sister",
+            "A friend"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What is Mom doing?",
+          "options": [
+            "Making dinner",
+            "Shopping",
+            "Washing clothes",
+            "Sleeping"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "不要 / 别 …… 了",
+      "en": "Stop …!",
+      "drills": [
+        {
+          "q": "___看电视了，明天还有课呢。",
+          "options": [
+            "不要",
+            "不是",
+            "没有",
+            "不会"
+          ],
+          "answer": 0,
+          "en": "Stop watching TV; there's class tomorrow."
+        },
+        {
+          "q": "___找了，手机在桌子上呢。",
+          "options": [
+            "别",
+            "不",
+            "没",
+            "再"
+          ],
+          "answer": 0,
+          "en": "Stop looking — the phone's on the table."
+        }
+      ]
+    },
+    {
+      "point": "对",
+      "en": "A 对 B 有帮助 / 很好: for, towards",
+      "drills": [
+        {
+          "q": "看电视___学汉语有帮助。",
+          "options": [
+            "对",
+            "给",
+            "离",
+            "从"
+          ],
+          "answer": 0,
+          "en": "Watching TV helps with learning Chinese."
+        }
+      ]
+    },
+    {
+      "point": "正在 …… 呢",
+      "en": "正在 + verb: in the middle of doing",
+      "drills": [
+        {
+          "q": "妈妈___准备午饭呢！",
+          "options": [
+            "正在",
+            "已经",
+            "还是",
+            "就要"
+          ],
+          "answer": 0,
+          "en": "Mom is making lunch right now!"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,268 @@
+{
+  "n": 12,
+  "cn": "第十二课",
+  "title": "你穿得太少了",
+  "en": "You're wearing too little",
+  "words": [
+    {
+      "w": "得",
+      "py": "de",
+      "en": "(links a verb to how it's done)",
+      "ex": {
+        "hz": "他跑得很快。",
+        "py": "Tā pǎo de hěn kuài.",
+        "en": "He runs fast."
+      }
+    },
+    {
+      "w": "妻子",
+      "py": "qīzi",
+      "en": "wife",
+      "ex": {
+        "hz": "他妻子是老师。",
+        "py": "Tā qīzi shì lǎoshī.",
+        "en": "His wife is a teacher."
+      }
+    },
+    {
+      "w": "雪",
+      "py": "xuě",
+      "en": "snow",
+      "ex": {
+        "hz": "外面下雪了。",
+        "py": "Wàimiàn xià xuě le.",
+        "en": "It's snowing outside."
+      }
+    },
+    {
+      "w": "零",
+      "py": "líng",
+      "en": "zero",
+      "ex": {
+        "hz": "今天零下五度。",
+        "py": "Jīntiān líng xià wǔ dù.",
+        "en": "It's minus five today."
+      }
+    },
+    {
+      "w": "度",
+      "py": "dù",
+      "en": "degree",
+      "ex": {
+        "hz": "今天三十度，很热。",
+        "py": "Jīntiān sānshí dù, hěn rè.",
+        "en": "It's 30 degrees today, very hot."
+      }
+    },
+    {
+      "w": "穿",
+      "py": "chuān",
+      "en": "to wear",
+      "ex": {
+        "hz": "今天很冷，多穿点儿衣服。",
+        "py": "Jīntiān hěn lěng, duō chuān diǎnr yīfu.",
+        "en": "It's cold today; wear more clothes."
+      }
+    },
+    {
+      "w": "进",
+      "py": "jìn",
+      "en": "to enter",
+      "ex": {
+        "hz": "请进！",
+        "py": "Qǐng jìn!",
+        "en": "Please come in!"
+      }
+    },
+    {
+      "w": "弟弟",
+      "py": "dìdi",
+      "en": "younger brother",
+      "ex": {
+        "hz": "我弟弟八岁。",
+        "py": "Wǒ dìdi bā suì.",
+        "en": "My younger brother is eight."
+      }
+    },
+    {
+      "w": "近",
+      "py": "jìn",
+      "en": "near",
+      "ex": {
+        "hz": "我家离公司很近。",
+        "py": "Wǒ jiā lí gōngsī hěn jìn.",
+        "en": "My home is close to the company."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "下雪了",
+      "py": "Xià xuě le",
+      "en": "It's snowing",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "外面下雪了，零下八度。",
+          "py": "Wàimiàn xià xuě le, líng xià bā dù.",
+          "en": "It's snowing outside, minus eight."
+        },
+        {
+          "who": "B",
+          "hz": "真冷啊！",
+          "py": "Zhēn lěng a!",
+          "en": "So cold!"
+        },
+        {
+          "who": "A",
+          "hz": "你穿得太少了，快进来吧。",
+          "py": "Nǐ chuān de tài shǎo le, kuài jìnlai ba.",
+          "en": "You're wearing too little; come in quickly."
+        },
+        {
+          "who": "B",
+          "hz": "好，谢谢。",
+          "py": "Hǎo, xièxie.",
+          "en": "OK, thanks."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What's the temperature?",
+          "options": [
+            "Minus 8",
+            "8 degrees",
+            "Minus 18",
+            "0"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What's the problem with B?",
+          "options": [
+            "Wearing too little",
+            "Too late",
+            "Sick",
+            "Hungry"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "他做饭做得很好",
+      "py": "Tā zuò fàn zuò de hěn hǎo",
+      "en": "He cooks well",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你做饭做得怎么样？",
+          "py": "Nǐ zuò fàn zuò de zěnmeyàng?",
+          "en": "How well do you cook?"
+        },
+        {
+          "who": "B",
+          "hz": "不太好，我妻子比我做得好。",
+          "py": "Bú tài hǎo, wǒ qīzi bǐ wǒ zuò de hǎo.",
+          "en": "Not great; my wife cooks better than me."
+        },
+        {
+          "who": "A",
+          "hz": "你弟弟呢？",
+          "py": "Nǐ dìdi ne?",
+          "en": "And your younger brother?"
+        },
+        {
+          "who": "B",
+          "hz": "他做得最好！",
+          "py": "Tā zuò de zuì hǎo!",
+          "en": "He's the best!"
+        }
+      ],
+      "questions": [
+        {
+          "q": "Who cooks better than B?",
+          "options": [
+            "B's wife",
+            "Nobody",
+            "B's sister",
+            "B's mom"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Who cooks best?",
+          "options": [
+            "B's younger brother",
+            "B",
+            "B's wife",
+            "A"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "Verb + 得 + adjective",
+      "en": "how an action is done",
+      "drills": [
+        {
+          "q": "你穿___太少了。",
+          "options": [
+            "得",
+            "的",
+            "地",
+            "了"
+          ],
+          "answer": 0,
+          "en": "You're wearing too little."
+        },
+        {
+          "q": "他说汉语说得___好。",
+          "options": [
+            "很",
+            "太",
+            "最",
+            "更"
+          ],
+          "answer": 0,
+          "en": "He speaks Chinese very well."
+        },
+        {
+          "q": "他也希望能住___近一点儿。",
+          "options": [
+            "得",
+            "的",
+            "了",
+            "着"
+          ],
+          "answer": 0,
+          "en": "He also hopes to live a bit closer."
+        }
+      ]
+    },
+    {
+      "point": "比 with 得",
+      "en": "A 比 B + verb + 得 + adjective",
+      "drills": [
+        {
+          "q": "我妻子___我做得好。",
+          "options": [
+            "比",
+            "跟",
+            "和",
+            "对"
+          ],
+          "answer": 0,
+          "en": "My wife cooks better than me."
+        }
+      ]
+    }
+  ]
+}

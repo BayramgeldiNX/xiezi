@@ -1,0 +1,301 @@
+{
+  "n": 8,
+  "cn": "第八课",
+  "title": "让我想想再告诉你",
+  "en": "Let me think about it and tell you later",
+  "words": [
+    {
+      "w": "再",
+      "py": "zài",
+      "en": "again; then",
+      "ex": {
+        "hz": "我明天再来。",
+        "py": "Wǒ míngtiān zài lái.",
+        "en": "I'll come again tomorrow."
+      }
+    },
+    {
+      "w": "让",
+      "py": "ràng",
+      "en": "to let; to ask (someone to)",
+      "ex": {
+        "hz": "妈妈让我早点儿睡觉。",
+        "py": "Māma ràng wǒ zǎo diǎnr shuì jiào.",
+        "en": "Mom tells me to sleep earlier."
+      }
+    },
+    {
+      "w": "告诉",
+      "py": "gàosu",
+      "en": "to tell",
+      "ex": {
+        "hz": "请告诉我你的名字。",
+        "py": "Qǐng gàosu wǒ nǐ de míngzi.",
+        "en": "Please tell me your name."
+      }
+    },
+    {
+      "w": "等",
+      "py": "děng",
+      "en": "to wait",
+      "ex": {
+        "hz": "你等我一下。",
+        "py": "Nǐ děng wǒ yíxià.",
+        "en": "Wait for me a moment."
+      }
+    },
+    {
+      "w": "找",
+      "py": "zhǎo",
+      "en": "to look for",
+      "ex": {
+        "hz": "你在找什么？",
+        "py": "Nǐ zài zhǎo shénme?",
+        "en": "What are you looking for?"
+      }
+    },
+    {
+      "w": "事情",
+      "py": "shìqing",
+      "en": "matter; thing",
+      "ex": {
+        "hz": "我有一件事情想问你。",
+        "py": "Wǒ yǒu yí jiàn shìqing xiǎng wèn nǐ.",
+        "en": "I have something to ask you."
+      }
+    },
+    {
+      "w": "服务员",
+      "py": "fúwùyuán",
+      "en": "waiter; attendant",
+      "ex": {
+        "hz": "服务员，我要一杯茶。",
+        "py": "Fúwùyuán, wǒ yào yì bēi chá.",
+        "en": "Waiter, a cup of tea please."
+      }
+    },
+    {
+      "w": "白",
+      "py": "bái",
+      "en": "white",
+      "ex": {
+        "hz": "我喜欢白色的衣服。",
+        "py": "Wǒ xǐhuan báisè de yīfu.",
+        "en": "I like white clothes."
+      }
+    },
+    {
+      "w": "黑",
+      "py": "hēi",
+      "en": "black",
+      "ex": {
+        "hz": "那只黑猫是谁的？",
+        "py": "Nà zhī hēi māo shì shéi de?",
+        "en": "Whose is that black cat?"
+      }
+    },
+    {
+      "w": "贵",
+      "py": "guì",
+      "en": "expensive",
+      "ex": {
+        "hz": "这件衣服太贵了。",
+        "py": "Zhè jiàn yīfu tài guì le.",
+        "en": "This garment is too expensive."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "看电影",
+      "py": "Kàn diànyǐng",
+      "en": "Seeing a movie",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "我们明天去看电影，好吗？",
+          "py": "Wǒmen míngtiān qù kàn diànyǐng, hǎo ma?",
+          "en": "Shall we see a movie tomorrow?"
+        },
+        {
+          "who": "B",
+          "hz": "明天我很忙，下个星期再去吧。",
+          "py": "Míngtiān wǒ hěn máng, xià ge xīngqī zài qù ba.",
+          "en": "I'm busy tomorrow; let's go next week."
+        },
+        {
+          "who": "A",
+          "hz": "你想看什么电影？",
+          "py": "Nǐ xiǎng kàn shénme diànyǐng?",
+          "en": "What movie do you want to see?"
+        },
+        {
+          "who": "B",
+          "hz": "让我想想再告诉你。",
+          "py": "Ràng wǒ xiǎngxiang zài gàosu nǐ.",
+          "en": "Let me think and tell you later."
+        }
+      ],
+      "questions": [
+        {
+          "q": "When will they go?",
+          "options": [
+            "Next week",
+            "Tomorrow",
+            "Today",
+            "Never"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What does B need to do first?",
+          "options": [
+            "Think about which movie",
+            "Work",
+            "Buy tickets",
+            "Call a friend"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "在饭馆",
+      "py": "Zài fànguǎn",
+      "en": "In a restaurant",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "服务员，我们的菜怎么还没来？",
+          "py": "Fúwùyuán, wǒmen de cài zěnme hái méi lái?",
+          "en": "Waiter, why hasn't our food come yet?"
+        },
+        {
+          "who": "B",
+          "hz": "对不起，请再等一下。",
+          "py": "Duìbuqǐ, qǐng zài děng yíxià.",
+          "en": "Sorry, please wait a little more."
+        },
+        {
+          "who": "A",
+          "hz": "我们已经等了半个小时了。",
+          "py": "Wǒmen yǐjīng děng le bàn ge xiǎoshí le.",
+          "en": "We've already waited half an hour."
+        },
+        {
+          "who": "B",
+          "hz": "我去看看，马上告诉您。",
+          "py": "Wǒ qù kànkan, mǎshàng gàosu nín.",
+          "en": "I'll go and check and tell you right away."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How long have they waited?",
+          "options": [
+            "Half an hour",
+            "An hour",
+            "10 minutes",
+            "2 hours"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Who does A talk to?",
+          "options": [
+            "A waiter",
+            "A doctor",
+            "A teacher",
+            "A friend"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "……，好吗？",
+      "en": "suggestion + 好吗？",
+      "drills": [
+        {
+          "q": "我们下午去看电影，___？",
+          "options": [
+            "好吗",
+            "是吗",
+            "什么",
+            "怎么"
+          ],
+          "answer": 0,
+          "en": "Shall we see a movie this afternoon?"
+        }
+      ]
+    },
+    {
+      "point": "再",
+      "en": "再: again / then later",
+      "drills": [
+        {
+          "q": "让我想想___告诉你。",
+          "options": [
+            "再",
+            "还",
+            "就",
+            "又"
+          ],
+          "answer": 0,
+          "en": "Let me think, then I'll tell you."
+        }
+      ]
+    },
+    {
+      "point": "让 / 叫 / 请 + person + verb",
+      "en": "ask / let someone do something",
+      "drills": [
+        {
+          "q": "王老师___我给大卫打个电话。",
+          "options": [
+            "让",
+            "给",
+            "对",
+            "离"
+          ],
+          "answer": 0,
+          "en": "Teacher Wang asked me to call David."
+        },
+        {
+          "q": "我___人去看看。",
+          "options": [
+            "叫",
+            "给",
+            "对",
+            "和"
+          ],
+          "answer": 0,
+          "en": "I'll send someone to have a look."
+        }
+      ]
+    },
+    {
+      "point": "Doubled verbs",
+      "en": "看看 / 想想 / 运动运动: briefly, casually",
+      "drills": [
+        {
+          "q": "外边天气很好，我们出去运动___吧！",
+          "options": [
+            "运动",
+            "一下",
+            "一点儿",
+            "了"
+          ],
+          "answer": 0,
+          "en": "Nice weather — let's get some exercise!"
+        }
+      ]
+    }
+  ]
+}

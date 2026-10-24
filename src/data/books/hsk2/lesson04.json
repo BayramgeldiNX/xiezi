@@ -1,0 +1,325 @@
+{
+  "n": 4,
+  "cn": "第四课",
+  "title": "这个工作是他帮我介绍的",
+  "en": "He recommended me for this job",
+  "words": [
+    {
+      "w": "生日",
+      "py": "shēngrì",
+      "en": "birthday",
+      "ex": {
+        "hz": "今天是我的生日。",
+        "py": "Jīntiān shì wǒ de shēngrì.",
+        "en": "Today is my birthday."
+      }
+    },
+    {
+      "w": "快乐",
+      "py": "kuàilè",
+      "en": "happy",
+      "ex": {
+        "hz": "生日快乐！",
+        "py": "Shēngrì kuàilè!",
+        "en": "Happy birthday!"
+      }
+    },
+    {
+      "w": "给",
+      "py": "gěi",
+      "en": "to; for; to give",
+      "ex": {
+        "hz": "这是给你的。",
+        "py": "Zhè shì gěi nǐ de.",
+        "en": "This is for you."
+      }
+    },
+    {
+      "w": "接",
+      "py": "jiē",
+      "en": "to answer; to pick up",
+      "ex": {
+        "hz": "电话是我接的。",
+        "py": "Diànhuà shì wǒ jiē de.",
+        "en": "I answered the phone."
+      }
+    },
+    {
+      "w": "晚上",
+      "py": "wǎnshang",
+      "en": "evening",
+      "ex": {
+        "hz": "晚上我在家看书。",
+        "py": "Wǎnshang wǒ zài jiā kàn shū.",
+        "en": "I read at home in the evening."
+      }
+    },
+    {
+      "w": "问",
+      "py": "wèn",
+      "en": "to ask",
+      "ex": {
+        "hz": "我问一下老师。",
+        "py": "Wǒ wèn yíxià lǎoshī.",
+        "en": "I'll ask the teacher."
+      }
+    },
+    {
+      "w": "非常",
+      "py": "fēicháng",
+      "en": "very; extremely",
+      "ex": {
+        "hz": "我非常喜欢跳舞。",
+        "py": "Wǒ fēicháng xǐhuan tiào wǔ.",
+        "en": "I really love dancing."
+      }
+    },
+    {
+      "w": "开始",
+      "py": "kāishǐ",
+      "en": "to begin",
+      "ex": {
+        "hz": "我们几点开始上课？",
+        "py": "Wǒmen jǐ diǎn kāishǐ shàng kè?",
+        "en": "What time does class begin?"
+      }
+    },
+    {
+      "w": "已经",
+      "py": "yǐjīng",
+      "en": "already",
+      "ex": {
+        "hz": "他已经回家了。",
+        "py": "Tā yǐjīng huí jiā le.",
+        "en": "He has already gone home."
+      }
+    },
+    {
+      "w": "长",
+      "py": "cháng",
+      "en": "long",
+      "ex": {
+        "hz": "你学汉语多长时间了？",
+        "py": "Nǐ xué Hànyǔ duō cháng shíjiān le?",
+        "en": "How long have you studied Chinese?"
+      }
+    },
+    {
+      "w": "两",
+      "py": "liǎng",
+      "en": "two (with measure words)",
+      "ex": {
+        "hz": "我有两个哥哥。",
+        "py": "Wǒ yǒu liǎng ge gēge.",
+        "en": "I have two older brothers."
+      }
+    },
+    {
+      "w": "帮",
+      "py": "bāng",
+      "en": "to help",
+      "ex": {
+        "hz": "你能帮我一下吗？",
+        "py": "Nǐ néng bāng wǒ yíxià ma?",
+        "en": "Can you help me?"
+      }
+    },
+    {
+      "w": "介绍",
+      "py": "jièshào",
+      "en": "to introduce",
+      "ex": {
+        "hz": "我给你介绍一下，这是小王。",
+        "py": "Wǒ gěi nǐ jièshào yíxià, zhè shì Xiǎo Wáng.",
+        "en": "Let me introduce you: this is Xiao Wang."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "生日快乐",
+      "py": "Shēngrì kuàilè",
+      "en": "Happy birthday",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "生日快乐！这是我送给你的。",
+          "py": "Shēngrì kuàilè! Zhè shì wǒ sòng gěi nǐ de.",
+          "en": "Happy birthday! This is for you."
+        },
+        {
+          "who": "B",
+          "hz": "谢谢！是你买的吗？",
+          "py": "Xièxie! Shì nǐ mǎi de ma?",
+          "en": "Thanks! Did you buy it?"
+        },
+        {
+          "who": "A",
+          "hz": "不是，是我妈妈做的。",
+          "py": "Bú shì, shì wǒ māma zuò de.",
+          "en": "No, my mom made it."
+        },
+        {
+          "who": "B",
+          "hz": "太漂亮了！",
+          "py": "Tài piàoliang le!",
+          "en": "It's so beautiful!"
+        }
+      ],
+      "questions": [
+        {
+          "q": "Who made the gift?",
+          "options": [
+            "A's mom",
+            "A",
+            "B",
+            "A's friend"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What is the occasion?",
+          "options": [
+            "B's birthday",
+            "New Year",
+            "A's birthday",
+            "A wedding"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "你学了多长时间",
+      "py": "Nǐ xué le duō cháng shíjiān",
+      "en": "How long have you studied",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你是什么时候开始学汉语的？",
+          "py": "Nǐ shì shénme shíhou kāishǐ xué Hànyǔ de?",
+          "en": "When did you start learning Chinese?"
+        },
+        {
+          "who": "B",
+          "hz": "我十八岁的时候开始学的，已经学了两年了。",
+          "py": "Wǒ shíbā suì de shíhou kāishǐ xué de, yǐjīng xué le liǎng nián le.",
+          "en": "I started at eighteen; it's been two years."
+        },
+        {
+          "who": "A",
+          "hz": "你的汉语老师是谁介绍的？",
+          "py": "Nǐ de Hànyǔ lǎoshī shì shéi jièshào de?",
+          "en": "Who introduced your Chinese teacher?"
+        },
+        {
+          "who": "B",
+          "hz": "是我朋友帮我介绍的。",
+          "py": "Shì wǒ péngyou bāng wǒ jièshào de.",
+          "en": "A friend introduced her to me."
+        }
+      ],
+      "questions": [
+        {
+          "q": "When did B start learning Chinese?",
+          "options": [
+            "At 18",
+            "At 20",
+            "At 2",
+            "At 8"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How long has B studied?",
+          "options": [
+            "Two years",
+            "Eighteen years",
+            "Two months",
+            "One year"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "是……的 (who)",
+      "en": "是 + who + verb + 的: stresses who did it",
+      "drills": [
+        {
+          "q": "这本书___我写的。",
+          "options": [
+            "是",
+            "在",
+            "有",
+            "要"
+          ],
+          "answer": 0,
+          "en": "This book was written by me."
+        },
+        {
+          "q": "电话是谁打___？",
+          "options": [
+            "的",
+            "了",
+            "吗",
+            "呢"
+          ],
+          "answer": 0,
+          "en": "Who made the call?"
+        }
+      ]
+    },
+    {
+      "point": "……的时候",
+      "en": "… 的时候: when …",
+      "drills": [
+        {
+          "q": "我十一岁___时候开始踢足球。",
+          "options": [
+            "的",
+            "了",
+            "得",
+            "着"
+          ],
+          "answer": 0,
+          "en": "I started football when I was eleven."
+        }
+      ]
+    },
+    {
+      "point": "已经……了",
+      "en": "已经 … 了: already",
+      "drills": [
+        {
+          "q": "我___学了两年汉语了。",
+          "options": [
+            "已经",
+            "正在",
+            "还",
+            "就"
+          ],
+          "answer": 0,
+          "en": "I've already studied Chinese for two years."
+        },
+        {
+          "q": "他已经回家___。",
+          "options": [
+            "了",
+            "的",
+            "着",
+            "过"
+          ],
+          "answer": 0,
+          "en": "He has already gone home."
+        }
+      ]
+    }
+  ]
+}
