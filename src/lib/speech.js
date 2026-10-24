@@ -61,6 +61,8 @@ export function say(text, slow) {
     return new Promise((resolve) => {
       player.muted = false; // the unlock trick may still be muting the player on the very first tap
       player.src = file ? `${import.meta.env.BASE_URL}audio/${file}.mp3` : EXTRA[t];
+      // Players ask for audio in pieces, which the offline cache can't keep; one whole download keeps it.
+      if (file) fetch(player.src).catch(() => {});
       player.playbackRate = slow ? setting("slowRate") : 1;
       player.preservesPitch = true;
       player.onended = () => resolve(true);

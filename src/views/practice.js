@@ -17,6 +17,7 @@ import { charLinks } from "./charsheet.js";
 import { cardsOpen } from "./cards.js";
 import { tonesIntro } from "./tones.js";
 import { lessonContent } from "../sync/content.js";
+import { workbookOf, workbookQuiz, fillQuiz, radicalQuiz } from "./workbook.js";
 
 export const SKILLS = {
   write: {
@@ -34,6 +35,7 @@ export const SKILLS = {
       { id: "pick-meaning", seal: "意", name: "Hear & pick the meaning", sub: "Listen, then choose the English" },
       { id: "sentence", seal: "句", name: "Sentences", sub: "Listen to a sentence, choose what it means" },
       { id: "tones", seal: "声", name: "Tones", sub: "Hear a syllable, pick its tone" },
+      { id: "wb-dialog", seal: "对", name: "Dialogues", sub: "Hear a short dialogue, answer the question" },
     ],
   },
   speak: {
@@ -51,6 +53,9 @@ export const SKILLS = {
       { id: "text-quiz", seal: "问", name: "Read & answer", sub: "Questions about the texts" },
       { id: "order", seal: "组", name: "Build the sentence", sub: "Put the words in the right order" },
       { id: "read-pinyin", seal: "音", name: "How do you read it?", sub: "See the word, pick the right pinyin" },
+      { id: "wb-judge", seal: "判", name: "True or false", sub: "Does the ★ sentence match the text?" },
+      { id: "wb-reply", seal: "答", name: "Pick the reply", sub: "Choose the right answer to each sentence" },
+      { id: "fill", seal: "填", name: "Fill in the word", sub: "Choose the word that completes the sentence" },
     ],
   },
   words: {
@@ -60,6 +65,7 @@ export const SKILLS = {
       { id: "match", seal: "配", name: "Match pairs", sub: "Match each word to its meaning" },
       { id: "quiz-meaning", seal: "意", name: "What does it mean?", sub: "See the word, pick the English" },
       { id: "quiz-word", seal: "选", name: "Which word?", sub: "See the English, pick the word" },
+      { id: "radical", seal: "部", name: "Which radical?", sub: "Find the radical (部首) in each character" },
       { id: "list", seal: "表", name: "Word list", sub: "All words with pinyin and sound" },
     ],
   },
@@ -84,7 +90,9 @@ export function showMenu() {
   stopSpeech();
   hideGloss();
   const s = SKILLS[P.skill];
-  body().innerHTML = `<div class="mode-grid">${s.modes.map((m) => `<button class="mode-card" type="button" data-mode="${m.id}">
+  // Workbook exercises only where the lesson has them.
+  const wbKinds = new Set(workbookOf(thisLesson() ? [thisLesson()] : []).map((d) => "wb-" + d.kind));
+  body().innerHTML = `<div class="mode-grid">${s.modes.filter((m) => !m.id.startsWith("wb-") || wbKinds.has(m.id)).map((m) => `<button class="mode-card" type="button" data-mode="${m.id}">
       <span class="seal">${m.seal}</span><b>${m.name}</b><small>${m.sub}</small></button>`).join("")}</div>`;
   $$("[data-mode]", body()).forEach((b) => b.addEventListener("click", () => startMode(b.dataset.mode)));
 }
@@ -133,6 +141,8 @@ const lessonSentences = (words, readings) => [
 ].filter((s, i, a) => a.findIndex((x) => x.hz === s.hz) === i);
 export { lessonSentences };
 
+const thisLesson = () => LESSONS.find((l) => l.book === P.ctx.book && l.n === P.ctx.lesson);
+
 function startMode(mode) {
   const { words, readings = [] } = P.ctx;
   const host = P.host, back = goBack, lesson = P.ctx.lesson;
@@ -165,6 +175,13 @@ function startMode(mode) {
     case "text-quiz": return textQuiz(ui, readings);
     case "order": return orderGame(ui, lessonSentences(words, readings));
     case "read-pinyin": return pinyinQuiz(ui, words);
+    case "wb-dialog": case "wb-judge": case "wb-reply": {
+      const kind = { "wb-dialog": "dialog", "wb-judge": "judge", "wb-reply": "reply" }[mode];
+      const items = workbookOf(thisLesson() ? [thisLesson()] : []).filter((d) => d.kind === kind);
+      return items.length ? workbookQuiz(ui, { items: shuffle(items), title: SKILLS[P.skill].modes.find((m) => m.id === mode).name, kind: mode }) : notEnough();
+    }
+    case "fill": return words.filter((w) => w.ex?.hz?.includes(w.w)).length < 2 ? notEnough() : fillQuiz(ui, words);
+    case "radical": return thisLesson() ? radicalQuiz(ui, thisLesson()) : notEnough();
   }
 }
 
@@ -262,7 +279,8 @@ export function choiceQuiz(cfg) {
       $("#qAnswer").hidden = false;
       $("#qNext").hidden = false;
       $("#qNext").focus({ preventScroll: true });
-      if (!q.say && !cfg.silent) autoSay(w.w);
+      const after = cfg.sayAfter ? cfg.sayAfter(w) : w.w;
+      if (!q.say && !cfg.silent && after) autoSay(after);
     }));
     $("#qNext").addEventListener("click", () => { pos++; ask(); });
     if (q.say) setTimeout(() => autoSay(q.say), 250);

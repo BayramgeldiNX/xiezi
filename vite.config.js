@@ -32,8 +32,14 @@ export default defineConfig({
         ],
       },
       workbox: {
-        globPatterns: ["**/*.{js,css,html,woff2,png,svg,json,mp3}"],
+        // Recordings are not downloaded at install (there are 1,700+); each one is kept once it has played.
+        globPatterns: ["**/*.{js,css,html,woff2,png,svg,json}"],
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
+        runtimeCaching: [{
+          urlPattern: ({ url }) => url.pathname.includes("/audio/") && url.pathname.endsWith(".mp3"),
+          handler: "CacheFirst",
+          options: { cacheName: "xz-audio", expiration: { maxEntries: 4000 }, rangeRequests: true },
+        }],
         navigateFallback: "index.html",
         cleanupOutdatedCaches: true,
       },

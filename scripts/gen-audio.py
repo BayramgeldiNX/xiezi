@@ -38,6 +38,14 @@ def collect():
         for g in data.get("grammar", []):
             for d in g["drills"]:
                 texts.add(clean(d["q"].replace("___", d["options"][d["answer"]])))
+        wb = data.get("workbook", {})
+        for d in wb.get("dialogs", []):
+            texts.add("".join(line[1] for line in d["lines"]))
+            texts.update(line[1] for line in d["lines"])
+        for d in wb.get("judge", []):
+            texts.add(d["text"])
+        for d in wb.get("replies", []):
+            texts.update([d["q"], d["a"]])
         for r in data.get("readings", []):
             for line in r["lines"]:
                 texts.add(line["hz"])

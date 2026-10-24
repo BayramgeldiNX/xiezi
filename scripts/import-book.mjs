@@ -45,6 +45,20 @@ for (const file of files) for (const [i, raw] of fs.readFileSync(file, "utf8").r
     const [q, opts, en] = split(line.slice(2));
     if (!en || !q.includes("___")) throw new Error(`${where}: drill needs sentence with ___ | right / wrong … | English`);
     G.drills.push({ q, options: opts.split(" / ").map((s) => s.trim()), answer: 0, en });
+  } else if (/^[DJR] /.test(line)) {
+    // Workbook items:  D line / line | question | right / wrong / wrong    J text | ★ claim | ✓ or x    R sentence | reply
+    const [a, b, c] = split(line.slice(2));
+    const wb = (L.workbook ||= { dialogs: [], judge: [], replies: [] });
+    if (line[0] === "D") {
+      if (!c) throw new Error(`${where}: dialog needs lines | question | options`);
+      wb.dialogs.push({ lines: a.split(" / ").map((t, i) => [i % 2 ? "女" : "男", t.trim()]), q: b, options: c.split(" / ").map((s) => s.trim()), answer: 0 });
+    } else if (line[0] === "J") {
+      if (!/^[✓x]$/.test(c || "")) throw new Error(`${where}: judge needs text | claim | ✓ or x`);
+      wb.judge.push({ text: a, claim: b, ok: c === "✓" });
+    } else {
+      if (!b) throw new Error(`${where}: reply needs sentence | reply`);
+      wb.replies.push({ q: a, a: b });
+    }
   } else if (line.startsWith("## ")) {
     const [head, py, en] = split(line.slice(3));
     const [, id, title] = head.match(/^(\S+)\s+(.+)$/) || [];

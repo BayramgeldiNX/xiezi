@@ -543,3 +543,10 @@ dialog.sheet::backdrop { background: rgb(0 0 0 / .5); }
 .gr-q { font-size: 1.6rem; margin: 6px 0; line-height: 1.5; }
 .gr-blank { display: inline-block; min-width: 2.2em; border-bottom: 2px solid var(--line2); color: var(--muted); text-align: center; }
 .gr-fill { text-decoration-color: var(--cinnabar, currentColor); text-underline-offset: 6px; }
+
+/* Workbook exercises */
+.wb-q { font-size: 1.4rem; margin: 6px 0; }
+.wb-text { margin: 4px 0; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.wb-claim { margin: 4px 0 8px; color: var(--ink); }
+.wb-line { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 2px 0; }
+.wb-line .who { color: var(--muted); font-size: .85rem; min-width: 1.5em; }

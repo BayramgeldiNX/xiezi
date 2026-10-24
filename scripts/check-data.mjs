@@ -55,6 +55,14 @@ export function checkData() {
     }
   }
 
+  for (const l of lessons) {
+    const wb = l.workbook || {};
+    for (const d of wb.dialogs || []) if (d.lines?.length < 2 || !d.q || !d.options?.[d.answer] || new Set(d.options).size !== d.options.length) problems.push(`${l.file}: workbook dialog "${d.q}" needs 2+ lines, a question and distinct options`);
+    for (const d of wb.judge || []) if (!d.text || !d.claim || typeof d.ok !== "boolean") problems.push(`${l.file}: workbook judge "${d.claim}" needs text, claim and ok`);
+    if ((wb.replies || []).length && wb.replies.length < 4) problems.push(`${l.file}: workbook needs at least 4 replies (the others are the wrong choices)`);
+    if (new Set((wb.replies || []).map((r) => r.a)).size !== (wb.replies || []).length) problems.push(`${l.file}: workbook replies must all differ`);
+  }
+
   for (const c of lessonChars(lessons)) {
     const info = chars[c];
     if (!info) { problems.push(`chars.json: no entry for ${c}`); continue; }
