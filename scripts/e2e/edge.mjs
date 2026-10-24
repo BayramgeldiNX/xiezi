@@ -133,14 +133,18 @@ try {
   let ready = false;
   for (let i = 0; i < 120 && !ready; i++) { await sleep(1000); ready = await js(`const r = await navigator.serviceWorker.getRegistration(); return !!r?.active;`) === true; }
   check("offline copy installed", ready);
+  // Recordings are kept as they play: play one while online (reload first so the service worker controls the page).
+  await go("", 2000);
+  const heard = await js(`const a = document.createElement('button'); a.dataset.say = '你好'; document.body.append(a); a.click(); await new Promise(r => setTimeout(r, 3000)); const c = await caches.open('xz-audio'); return (await c.keys()).length;`);
+  check("a recording is kept after playing it once", heard > 0, `${heard} kept`);
   await send("Network.emulateNetworkConditions", { offline: true, latency: 0, downloadThroughput: 0, uploadThroughput: 0 });
   await send("Network.setCacheDisabled", { cacheDisabled: true });
   await go("", 3000);
   check("offline: home opens", (await page()) === "home");
   await go("#/lesson/kouyu-rumen/1/write", 2000);
   check("offline: lesson opens with the writing grid", !!(await js(`return document.querySelector('#chars .hw svg')`)));
-  const anyAudio = await js(`const res = await caches.keys().then(k => caches.open(k[0])).then(c => c.keys()); const a = res.find(r => r.url.includes('/audio/')); if (!a) return 'none cached'; const r = await fetch(a.url.split('?')[0]); return r.ok ? 'ok' : 'status ' + r.status;`);
-  check("offline: recordings play from the saved copy", anyAudio === "ok", anyAudio);
+  const anyAudio = await js(`const res = await caches.open('xz-audio').then(c => c.keys()); const a = res.find(r => r.url.includes('/audio/')); if (!a) return 'none cached'; const r = await fetch(a.url.split('?')[0]); return r.ok ? 'ok' : 'status ' + r.status;`);
+  check("offline: a recording heard before plays from the saved copy", anyAudio === "ok", anyAudio);
   await go("#/typing", 1500);
   check("offline: typing works", (await page()) === "typingView");
   const chip = await js(`return document.querySelector('#accountChip').dataset.status`);
