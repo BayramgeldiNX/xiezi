@@ -1,0 +1,610 @@
+{
+  "n": 11,
+  "cn": "第十一课",
+  "title": "办公楼在教学楼北边",
+  "en": "The office building is north of the teaching building",
+  "words": [
+    {
+      "w": "里边",
+      "py": "lǐbian",
+      "en": "inside",
+      "ex": {
+        "hz": "教室里边有很多学生。",
+        "py": "Jiàoshì lǐbian yǒu hěn duō xuésheng.",
+        "en": "There are many students in the classroom."
+      }
+    },
+    {
+      "w": "教学楼",
+      "py": "jiàoxuélóu",
+      "en": "teaching building",
+      "ex": {
+        "hz": "教学楼在那儿。",
+        "py": "Jiàoxuélóu zài nàr.",
+        "en": "The teaching building is over there."
+      }
+    },
+    {
+      "w": "办公楼",
+      "py": "bàngōnglóu",
+      "en": "office building",
+      "ex": {
+        "hz": "老师在办公楼。",
+        "py": "Lǎoshī zài bàngōnglóu.",
+        "en": "The teacher is in the office building."
+      }
+    },
+    {
+      "w": "北边",
+      "py": "běibian",
+      "en": "north",
+      "ex": {
+        "hz": "银行在学校北边。",
+        "py": "Yínháng zài xuéxiào běibian.",
+        "en": "The bank is north of the school."
+      }
+    },
+    {
+      "w": "西边",
+      "py": "xībian",
+      "en": "west",
+      "ex": {
+        "hz": "食堂在宿舍西边。",
+        "py": "Shítáng zài sùshè xībian.",
+        "en": "The dining hall is west of the dorm."
+      }
+    },
+    {
+      "w": "南边",
+      "py": "nánbian",
+      "en": "south",
+      "ex": {
+        "hz": "书店在南边。",
+        "py": "Shūdiàn zài nánbian.",
+        "en": "The bookshop is to the south."
+      }
+    },
+    {
+      "w": "附近",
+      "py": "fùjìn",
+      "en": "nearby",
+      "ex": {
+        "hz": "学校附近有银行吗？",
+        "py": "Xuéxiào fùjìn yǒu yínháng ma?",
+        "en": "Is there a bank near the school?"
+      }
+    },
+    {
+      "w": "饭馆",
+      "py": "fànguǎn",
+      "en": "restaurant",
+      "ex": {
+        "hz": "附近有很多饭馆。",
+        "py": "Fùjìn yǒu hěn duō fànguǎn.",
+        "en": "There are many restaurants nearby."
+      }
+    },
+    {
+      "w": "东边",
+      "py": "dōngbian",
+      "en": "east",
+      "ex": {
+        "hz": "邮局在东边。",
+        "py": "Yóujú zài dōngbian.",
+        "en": "The post office is to the east."
+      }
+    },
+    {
+      "w": "还",
+      "py": "hái",
+      "en": "also; still",
+      "ex": {
+        "hz": "我买了笔，还买了本子。",
+        "py": "Wǒ mǎi le bǐ, hái mǎi le běnzi.",
+        "en": "I bought a pen and also a notebook."
+      }
+    },
+    {
+      "w": "电影院",
+      "py": "diànyǐngyuàn",
+      "en": "cinema",
+      "ex": {
+        "hz": "电影院在超市旁边。",
+        "py": "Diànyǐngyuàn zài chāoshì pángbiān.",
+        "en": "The cinema is next to the supermarket."
+      }
+    },
+    {
+      "w": "电影",
+      "py": "diànyǐng",
+      "en": "film",
+      "ex": {
+        "hz": "咱们去看电影吧。",
+        "py": "Zánmen qù kàn diànyǐng ba.",
+        "en": "Let's go to a film."
+      }
+    },
+    {
+      "w": "对面",
+      "py": "duìmiàn",
+      "en": "opposite",
+      "ex": {
+        "hz": "银行对面是书店。",
+        "py": "Yínháng duìmiàn shì shūdiàn.",
+        "en": "Opposite the bank is a bookshop."
+      }
+    },
+    {
+      "w": "药店",
+      "py": "yàodiàn",
+      "en": "drugstore",
+      "ex": {
+        "hz": "附近有药店吗？",
+        "py": "Fùjìn yǒu yàodiàn ma?",
+        "en": "Is there a drugstore nearby?"
+      }
+    },
+    {
+      "w": "药",
+      "py": "yào",
+      "en": "medicine",
+      "ex": {
+        "hz": "我去药店买药。",
+        "py": "Wǒ qù yàodiàn mǎi yào.",
+        "en": "I'm going to the drugstore for medicine."
+      }
+    },
+    {
+      "w": "旁边",
+      "py": "pángbiān",
+      "en": "beside",
+      "ex": {
+        "hz": "我坐你旁边。",
+        "py": "Wǒ zuò nǐ pángbiān.",
+        "en": "I'll sit beside you."
+      }
+    },
+    {
+      "w": "超市",
+      "py": "chāoshì",
+      "en": "supermarket",
+      "ex": {
+        "hz": "我去超市买牛奶。",
+        "py": "Wǒ qù chāoshì mǎi niúnǎi.",
+        "en": "I'm going to the supermarket for milk."
+      }
+    },
+    {
+      "w": "照片",
+      "py": "zhàopiàn",
+      "en": "photo",
+      "ex": {
+        "hz": "这是我家的照片。",
+        "py": "Zhè shì wǒ jiā de zhàopiàn.",
+        "en": "This is a photo of my family."
+      }
+    },
+    {
+      "w": "左边",
+      "py": "zuǒbian",
+      "en": "left",
+      "ex": {
+        "hz": "左边是我哥哥。",
+        "py": "Zuǒbian shì wǒ gēge.",
+        "en": "On the left is my brother."
+      }
+    },
+    {
+      "w": "右边",
+      "py": "yòubian",
+      "en": "right",
+      "ex": {
+        "hz": "右边是我姐姐。",
+        "py": "Yòubian shì wǒ jiějie.",
+        "en": "On the right is my sister."
+      }
+    },
+    {
+      "w": "中间",
+      "py": "zhōngjiān",
+      "en": "middle",
+      "ex": {
+        "hz": "中间是我。",
+        "py": "Zhōngjiān shì wǒ.",
+        "en": "In the middle is me."
+      }
+    },
+    {
+      "w": "后边",
+      "py": "hòubian",
+      "en": "behind",
+      "ex": {
+        "hz": "我在你后边。",
+        "py": "Wǒ zài nǐ hòubian.",
+        "en": "I'm behind you."
+      }
+    },
+    {
+      "w": "桌子",
+      "py": "zhuōzi",
+      "en": "desk; table",
+      "ex": {
+        "hz": "桌子上有一本书。",
+        "py": "Zhuōzi shang yǒu yì běn shū.",
+        "en": "There's a book on the desk."
+      }
+    },
+    {
+      "w": "上边",
+      "py": "shàngbian",
+      "en": "on; above",
+      "ex": {
+        "hz": "书在桌子上边。",
+        "py": "Shū zài zhuōzi shàngbian.",
+        "en": "The book is on the desk."
+      }
+    },
+    {
+      "w": "台灯",
+      "py": "táidēng",
+      "en": "desk lamp",
+      "ex": {
+        "hz": "我买一个台灯。",
+        "py": "Wǒ mǎi yí ge táidēng.",
+        "en": "I'm buying a desk lamp."
+      }
+    },
+    {
+      "w": "张",
+      "py": "zhāng",
+      "en": "(measure word for flat things)",
+      "ex": {
+        "hz": "一张照片。",
+        "py": "Yì zhāng zhàopiàn.",
+        "en": "One photo."
+      }
+    },
+    {
+      "w": "男朋友",
+      "py": "nánpéngyou",
+      "en": "boyfriend",
+      "ex": {
+        "hz": "她有男朋友吗？",
+        "py": "Tā yǒu nánpéngyou ma?",
+        "en": "Does she have a boyfriend?"
+      }
+    },
+    {
+      "w": "男",
+      "py": "nán",
+      "en": "male",
+      "ex": {
+        "hz": "我们班有十个男学生。",
+        "py": "Wǒmen bān yǒu shí ge nán xuésheng.",
+        "en": "Our class has ten male students."
+      }
+    },
+    {
+      "w": "下边",
+      "py": "xiàbian",
+      "en": "under; below",
+      "ex": {
+        "hz": "书包在桌子下边。",
+        "py": "Shūbāo zài zhuōzi xiàbian.",
+        "en": "The schoolbag is under the desk."
+      }
+    },
+    {
+      "w": "抽屉",
+      "py": "chōuti",
+      "en": "drawer",
+      "ex": {
+        "hz": "抽屉里有什么？",
+        "py": "Chōuti li yǒu shénme?",
+        "en": "What's in the drawer?"
+      }
+    },
+    {
+      "w": "块",
+      "py": "kuài",
+      "en": "piece; lump",
+      "ex": {
+        "hz": "一块巧克力。",
+        "py": "Yí kuài qiǎokèlì.",
+        "en": "A piece of chocolate."
+      }
+    },
+    {
+      "w": "巧克力",
+      "py": "qiǎokèlì",
+      "en": "chocolate",
+      "ex": {
+        "hz": "我很爱吃巧克力。",
+        "py": "Wǒ hěn ài chī qiǎokèlì.",
+        "en": "I love chocolate."
+      }
+    },
+    {
+      "w": "前边",
+      "py": "qiánbian",
+      "en": "in front",
+      "ex": {
+        "hz": "前边是图书馆。",
+        "py": "Qiánbian shì túshūguǎn.",
+        "en": "Ahead is the library."
+      }
+    },
+    {
+      "w": "鞋",
+      "py": "xié",
+      "en": "shoe",
+      "ex": {
+        "hz": "我的鞋在哪儿？",
+        "py": "Wǒ de xié zài nǎr?",
+        "en": "Where are my shoes?"
+      }
+    },
+    {
+      "w": "眼镜",
+      "py": "yǎnjìng",
+      "en": "glasses",
+      "ex": {
+        "hz": "你的眼镜在桌子上边。",
+        "py": "Nǐ de yǎnjìng zài zhuōzi shàngbian.",
+        "en": "Your glasses are on the desk."
+      }
+    },
+    {
+      "w": "闹钟",
+      "py": "nàozhōng",
+      "en": "alarm clock",
+      "ex": {
+        "hz": "闹钟在台灯旁边。",
+        "py": "Nàozhōng zài táidēng pángbiān.",
+        "en": "The alarm clock is next to the lamp."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "学校附近",
+      "py": "Xuéxiào fùjìn",
+      "en": "Near the school",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "学校附近有超市吗？",
+          "py": "Xuéxiào fùjìn yǒu chāoshì ma?",
+          "en": "Is there a supermarket near the school?"
+        },
+        {
+          "who": "B",
+          "hz": "有，在学校东边，银行旁边。",
+          "py": "Yǒu, zài xuéxiào dōngbian, yínháng pángbiān.",
+          "en": "Yes, east of the school, next to the bank."
+        },
+        {
+          "who": "A",
+          "hz": "药店呢？",
+          "py": "Yàodiàn ne?",
+          "en": "And a drugstore?"
+        },
+        {
+          "who": "B",
+          "hz": "药店在超市对面。",
+          "py": "Yàodiàn zài chāoshì duìmiàn.",
+          "en": "Opposite the supermarket."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Where is the supermarket?",
+          "options": [
+            "East of the school, next to the bank",
+            "West of the school",
+            "In the school",
+            "We don't know"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Where is the drugstore?",
+          "options": [
+            "Opposite the supermarket",
+            "Next to the bank",
+            "Behind the school",
+            "Inside the school"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "我的桌子",
+      "py": "Wǒ de zhuōzi",
+      "en": "My desk",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你的眼镜在哪儿？",
+          "py": "Nǐ de yǎnjìng zài nǎr?",
+          "en": "Where are your glasses?"
+        },
+        {
+          "who": "B",
+          "hz": "在桌子上边，台灯旁边。",
+          "py": "Zài zhuōzi shàngbian, táidēng pángbiān.",
+          "en": "On the desk, next to the lamp."
+        },
+        {
+          "who": "A",
+          "hz": "抽屉里有什么？",
+          "py": "Chōuti li yǒu shénme?",
+          "en": "What's in the drawer?"
+        },
+        {
+          "who": "B",
+          "hz": "有两块巧克力。",
+          "py": "Yǒu liǎng kuài qiǎokèlì.",
+          "en": "Two pieces of chocolate."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Where are the glasses?",
+          "options": [
+            "On the desk next to the lamp",
+            "In the drawer",
+            "Under the desk",
+            "In the bag"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What is in the drawer?",
+          "options": [
+            "Two pieces of chocolate",
+            "A photo",
+            "Glasses",
+            "An alarm clock"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "Position words",
+      "en": "上边 / 下边 / 里边 / 旁边 / 对面 / 中间",
+      "drills": [
+        {
+          "q": "书包在桌子___。",
+          "options": [
+            "下边",
+            "下午",
+            "下课",
+            "下次"
+          ],
+          "answer": 0,
+          "en": "The schoolbag is under the desk."
+        },
+        {
+          "q": "西蒙在小雨和英男___。",
+          "options": [
+            "中间",
+            "旁边",
+            "对面",
+            "里"
+          ],
+          "answer": 0,
+          "en": "Simon is between Xiaoyu and Yeongnam."
+        }
+      ]
+    },
+    {
+      "point": "在 / 有 / 是 for location",
+      "en": "place + 有 + thing; thing + 在 + place",
+      "drills": [
+        {
+          "q": "抽屉里___一块巧克力。",
+          "options": [
+            "有",
+            "在",
+            "是",
+            "去"
+          ],
+          "answer": 0,
+          "en": "There's a piece of chocolate in the drawer."
+        },
+        {
+          "q": "图书馆___办公楼西边。",
+          "options": [
+            "在",
+            "有",
+            "是",
+            "去"
+          ],
+          "answer": 0,
+          "en": "The library is west of the office building."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "图书馆在哪儿？"
+          ],
+          [
+            "女",
+            "在办公楼西边。"
+          ]
+        ],
+        "q": "图书馆在哪儿？",
+        "options": [
+          "办公楼西边",
+          "办公楼北边",
+          "宿舍南边"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "抽屉里有什么？"
+          ],
+          [
+            "女",
+            "有一块巧克力。"
+          ]
+        ],
+        "q": "抽屉里有什么？",
+        "options": [
+          "巧克力",
+          "照片",
+          "台灯"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "电影院对面是一个药店。",
+        "claim": "药店在电影院对面。",
+        "ok": true
+      },
+      {
+        "text": "桌子下边是莉莉的书包。",
+        "claim": "书包在桌子上边。",
+        "ok": false
+      }
+    ],
+    "replies": [
+      {
+        "q": "附近有超市吗？",
+        "a": "有，在药店旁边。"
+      },
+      {
+        "q": "保罗在哪儿？",
+        "a": "在西蒙后边。"
+      },
+      {
+        "q": "你的眼镜在哪儿？",
+        "a": "在桌子上边。"
+      },
+      {
+        "q": "学校里边有什么？",
+        "a": "有教学楼和图书馆。"
+      }
+    ]
+  }
+}

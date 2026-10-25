@@ -1,0 +1,445 @@
+{
+  "n": 3,
+  "cn": "第三课",
+  "title": "你吃什么",
+  "en": "What would you like to eat",
+  "words": [
+    {
+      "w": "吃",
+      "py": "chī",
+      "en": "to eat",
+      "ex": {
+        "hz": "你吃什么？",
+        "py": "Nǐ chī shénme?",
+        "en": "What will you eat?"
+      }
+    },
+    {
+      "w": "什么",
+      "py": "shénme",
+      "en": "what",
+      "ex": {
+        "hz": "你买什么？",
+        "py": "Nǐ mǎi shénme?",
+        "en": "What are you buying?"
+      }
+    },
+    {
+      "w": "饺子",
+      "py": "jiǎozi",
+      "en": "dumpling",
+      "ex": {
+        "hz": "我吃饺子。",
+        "py": "Wǒ chī jiǎozi.",
+        "en": "I'll have dumplings."
+      }
+    },
+    {
+      "w": "米饭",
+      "py": "mǐfàn",
+      "en": "cooked rice",
+      "ex": {
+        "hz": "我不吃米饭。",
+        "py": "Wǒ bù chī mǐfàn.",
+        "en": "I don't eat rice."
+      }
+    },
+    {
+      "w": "面条儿",
+      "py": "miàntiáor",
+      "en": "noodles",
+      "ex": {
+        "hz": "我爸爸吃面条儿。",
+        "py": "Wǒ bàba chī miàntiáor.",
+        "en": "My dad is having noodles."
+      }
+    },
+    {
+      "w": "面包",
+      "py": "miànbāo",
+      "en": "bread",
+      "ex": {
+        "hz": "你吃面包吗？",
+        "py": "Nǐ chī miànbāo ma?",
+        "en": "Will you have bread?"
+      }
+    },
+    {
+      "w": "包子",
+      "py": "bāozi",
+      "en": "steamed stuffed bun",
+      "ex": {
+        "hz": "我很饿，我吃包子。",
+        "py": "Wǒ hěn è, wǒ chī bāozi.",
+        "en": "I'm hungry; I'll eat buns."
+      }
+    },
+    {
+      "w": "喝",
+      "py": "hē",
+      "en": "to drink",
+      "ex": {
+        "hz": "你喝什么？",
+        "py": "Nǐ hē shénme?",
+        "en": "What will you drink?"
+      }
+    },
+    {
+      "w": "茶",
+      "py": "chá",
+      "en": "tea",
+      "ex": {
+        "hz": "我喝茶。",
+        "py": "Wǒ hē chá.",
+        "en": "I'll have tea."
+      }
+    },
+    {
+      "w": "可乐",
+      "py": "kělè",
+      "en": "cola",
+      "ex": {
+        "hz": "弟弟喝可乐。",
+        "py": "Dìdi hē kělè.",
+        "en": "My younger brother drinks cola."
+      }
+    },
+    {
+      "w": "啤酒",
+      "py": "píjiǔ",
+      "en": "beer",
+      "ex": {
+        "hz": "你喝啤酒吗？",
+        "py": "Nǐ hē píjiǔ ma?",
+        "en": "Do you drink beer?"
+      }
+    },
+    {
+      "w": "咖啡",
+      "py": "kāfēi",
+      "en": "coffee",
+      "ex": {
+        "hz": "我很累，我喝咖啡。",
+        "py": "Wǒ hěn lèi, wǒ hē kāfēi.",
+        "en": "I'm tired; I'll have coffee."
+      }
+    },
+    {
+      "w": "矿泉水",
+      "py": "kuàngquánshuǐ",
+      "en": "mineral water",
+      "ex": {
+        "hz": "我渴，我喝矿泉水。",
+        "py": "Wǒ kě, wǒ hē kuàngquánshuǐ.",
+        "en": "I'm thirsty; I'll drink mineral water."
+      }
+    },
+    {
+      "w": "牛奶",
+      "py": "niúnǎi",
+      "en": "milk",
+      "ex": {
+        "hz": "妹妹喝牛奶。",
+        "py": "Mèimei hē niúnǎi.",
+        "en": "My younger sister drinks milk."
+      }
+    },
+    {
+      "w": "买",
+      "py": "mǎi",
+      "en": "to buy",
+      "ex": {
+        "hz": "我买书。",
+        "py": "Wǒ mǎi shū.",
+        "en": "I'm buying a book."
+      }
+    },
+    {
+      "w": "词典",
+      "py": "cídiǎn",
+      "en": "dictionary",
+      "ex": {
+        "hz": "你买词典吗？",
+        "py": "Nǐ mǎi cídiǎn ma?",
+        "en": "Are you buying a dictionary?"
+      }
+    },
+    {
+      "w": "本子",
+      "py": "běnzi",
+      "en": "notebook",
+      "ex": {
+        "hz": "我买本子。",
+        "py": "Wǒ mǎi běnzi.",
+        "en": "I'm buying a notebook."
+      }
+    },
+    {
+      "w": "书",
+      "py": "shū",
+      "en": "book",
+      "ex": {
+        "hz": "我读书。",
+        "py": "Wǒ dú shū.",
+        "en": "I'm reading."
+      }
+    },
+    {
+      "w": "笔",
+      "py": "bǐ",
+      "en": "pen",
+      "ex": {
+        "hz": "你买笔吗？",
+        "py": "Nǐ mǎi bǐ ma?",
+        "en": "Are you buying a pen?"
+      }
+    },
+    {
+      "w": "书包",
+      "py": "shūbāo",
+      "en": "schoolbag",
+      "ex": {
+        "hz": "弟弟买书包。",
+        "py": "Dìdi mǎi shūbāo.",
+        "en": "My younger brother is buying a schoolbag."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "你喝什么",
+      "py": "Nǐ hē shénme",
+      "en": "What will you drink",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你吃什么？",
+          "py": "Nǐ chī shénme?",
+          "en": "What will you eat?"
+        },
+        {
+          "who": "B",
+          "hz": "我吃包子。你呢？",
+          "py": "Wǒ chī bāozi. Nǐ ne?",
+          "en": "Buns. And you?"
+        },
+        {
+          "who": "A",
+          "hz": "我吃面条儿。你喝什么？",
+          "py": "Wǒ chī miàntiáor. Nǐ hē shénme?",
+          "en": "Noodles. What will you drink?"
+        },
+        {
+          "who": "B",
+          "hz": "我喝茶。",
+          "py": "Wǒ hē chá.",
+          "en": "Tea."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What does B eat?",
+          "options": [
+            "Buns",
+            "Noodles",
+            "Dumplings",
+            "Bread"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What does B drink?",
+          "options": [
+            "Tea",
+            "Coffee",
+            "Milk",
+            "Cola"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "你买什么",
+      "py": "Nǐ mǎi shénme",
+      "en": "What are you buying",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你买什么？",
+          "py": "Nǐ mǎi shénme?",
+          "en": "What are you buying?"
+        },
+        {
+          "who": "B",
+          "hz": "我买本子和笔。你呢？",
+          "py": "Wǒ mǎi běnzi hé bǐ. Nǐ ne?",
+          "en": "A notebook and a pen. You?"
+        },
+        {
+          "who": "A",
+          "hz": "我买词典。",
+          "py": "Wǒ mǎi cídiǎn.",
+          "en": "A dictionary."
+        },
+        {
+          "who": "B",
+          "hz": "你也买书包吗？",
+          "py": "Nǐ yě mǎi shūbāo ma?",
+          "en": "Are you buying a schoolbag too?"
+        },
+        {
+          "who": "A",
+          "hz": "不买。",
+          "py": "Bù mǎi.",
+          "en": "No."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What does A buy?",
+          "options": [
+            "A dictionary",
+            "A pen",
+            "A schoolbag",
+            "A notebook"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Does A buy a schoolbag?",
+          "options": [
+            "No",
+            "Yes",
+            "Two",
+            "We don't know"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "什么",
+      "en": "什么 takes the place of the thing you ask about",
+      "drills": [
+        {
+          "q": "你吃___？",
+          "options": [
+            "什么",
+            "吗",
+            "呢",
+            "也"
+          ],
+          "answer": 0,
+          "en": "What will you eat?"
+        },
+        {
+          "q": "你买什么？ 我买___。",
+          "options": [
+            "词典",
+            "喝",
+            "吃",
+            "很"
+          ],
+          "answer": 0,
+          "en": "What are you buying? A dictionary."
+        }
+      ]
+    },
+    {
+      "point": "Verb + object",
+      "en": "eat / drink / buy + thing",
+      "drills": [
+        {
+          "q": "我___茶。",
+          "options": [
+            "喝",
+            "吃",
+            "买",
+            "很"
+          ],
+          "answer": 0,
+          "en": "I drink tea."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你吃什么？"
+          ],
+          [
+            "女",
+            "我吃饺子。"
+          ]
+        ],
+        "q": "女的吃什么？",
+        "options": [
+          "饺子",
+          "面条儿",
+          "米饭"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你喝什么？"
+          ],
+          [
+            "女",
+            "我喝咖啡。"
+          ]
+        ],
+        "q": "女的喝什么？",
+        "options": [
+          "咖啡",
+          "茶",
+          "牛奶"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "我买词典和笔。",
+        "claim": "他买书包。",
+        "ok": false
+      },
+      {
+        "text": "我渴，我喝矿泉水。",
+        "claim": "他喝矿泉水。",
+        "ok": true
+      }
+    ],
+    "replies": [
+      {
+        "q": "你吃什么？",
+        "a": "我吃面包。"
+      },
+      {
+        "q": "你喝什么？",
+        "a": "我喝茶。"
+      },
+      {
+        "q": "你买什么？",
+        "a": "我买本子。"
+      },
+      {
+        "q": "你喝啤酒吗？",
+        "a": "不喝，我喝可乐。"
+      }
+    ]
+  }
+}

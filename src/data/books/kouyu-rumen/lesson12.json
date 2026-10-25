@@ -1,0 +1,608 @@
+{
+  "n": 12,
+  "cn": "第十二课",
+  "title": "要冰的还是要热的",
+  "en": "Do you want the iced one or the hot one",
+  "words": [
+    {
+      "w": "服务员",
+      "py": "fúwùyuán",
+      "en": "waiter; waitress",
+      "ex": {
+        "hz": "服务员，我要一杯茶。",
+        "py": "Fúwùyuán, wǒ yào yì bēi chá.",
+        "en": "Waiter, a cup of tea please."
+      }
+    },
+    {
+      "w": "冰",
+      "py": "bīng",
+      "en": "ice; iced",
+      "ex": {
+        "hz": "我要冰咖啡。",
+        "py": "Wǒ yào bīng kāfēi.",
+        "en": "I'd like an iced coffee."
+      }
+    },
+    {
+      "w": "还是",
+      "py": "háishi",
+      "en": "or (in questions)",
+      "ex": {
+        "hz": "你喝茶还是喝咖啡？",
+        "py": "Nǐ hē chá háishi hē kāfēi?",
+        "en": "Tea or coffee?"
+      }
+    },
+    {
+      "w": "热",
+      "py": "rè",
+      "en": "hot",
+      "ex": {
+        "hz": "我要热的。",
+        "py": "Wǒ yào rè de.",
+        "en": "I'll have a hot one."
+      }
+    },
+    {
+      "w": "样",
+      "py": "yàng",
+      "en": "kind; type",
+      "ex": {
+        "hz": "一样一杯。",
+        "py": "Yí yàng yì bēi.",
+        "en": "One of each."
+      }
+    },
+    {
+      "w": "别的",
+      "py": "biéde",
+      "en": "other; else",
+      "ex": {
+        "hz": "还要别的吗？",
+        "py": "Hái yào biéde ma?",
+        "en": "Anything else?"
+      }
+    },
+    {
+      "w": "了",
+      "py": "le",
+      "en": "(shows a change)",
+      "ex": {
+        "hz": "不要了。",
+        "py": "Bú yào le.",
+        "en": "No, that's all."
+      }
+    },
+    {
+      "w": "再",
+      "py": "zài",
+      "en": "again; more",
+      "ex": {
+        "hz": "再要一瓶可乐。",
+        "py": "Zài yào yì píng kělè.",
+        "en": "One more bottle of cola."
+      }
+    },
+    {
+      "w": "听",
+      "py": "tīng",
+      "en": "can; tin",
+      "ex": {
+        "hz": "两听可乐。",
+        "py": "Liǎng tīng kělè.",
+        "en": "Two cans of cola."
+      }
+    },
+    {
+      "w": "一共",
+      "py": "yígòng",
+      "en": "altogether",
+      "ex": {
+        "hz": "一共多少钱？",
+        "py": "Yígòng duōshao qián?",
+        "en": "How much altogether?"
+      }
+    },
+    {
+      "w": "微信",
+      "py": "wēixìn",
+      "en": "WeChat",
+      "ex": {
+        "hz": "我用微信。",
+        "py": "Wǒ yòng Wēixìn.",
+        "en": "I'll use WeChat."
+      }
+    },
+    {
+      "w": "扫",
+      "py": "sǎo",
+      "en": "to scan",
+      "ex": {
+        "hz": "我扫您。",
+        "py": "Wǒ sǎo nín.",
+        "en": "I'll scan you."
+      }
+    },
+    {
+      "w": "给",
+      "py": "gěi",
+      "en": "to give",
+      "ex": {
+        "hz": "给您小票。",
+        "py": "Gěi nín xiǎopiào.",
+        "en": "Here's your receipt."
+      }
+    },
+    {
+      "w": "小票",
+      "py": "xiǎopiào",
+      "en": "receipt",
+      "ex": {
+        "hz": "请给我小票。",
+        "py": "Qǐng gěi wǒ xiǎopiào.",
+        "en": "The receipt, please."
+      }
+    },
+    {
+      "w": "橘子",
+      "py": "júzi",
+      "en": "orange",
+      "ex": {
+        "hz": "橘子多少钱一斤？",
+        "py": "Júzi duōshao qián yì jīn?",
+        "en": "How much are oranges per jin?"
+      }
+    },
+    {
+      "w": "斤",
+      "py": "jīn",
+      "en": "jin (half a kilo)",
+      "ex": {
+        "hz": "我要两斤。",
+        "py": "Wǒ yào liǎng jīn.",
+        "en": "I'll take two jin."
+      }
+    },
+    {
+      "w": "卖",
+      "py": "mài",
+      "en": "to sell",
+      "ex": {
+        "hz": "西红柿怎么卖？",
+        "py": "Xīhóngshì zěnme mài?",
+        "en": "How much are the tomatoes?"
+      }
+    },
+    {
+      "w": "东西",
+      "py": "dōngxi",
+      "en": "thing; stuff",
+      "ex": {
+        "hz": "你买什么东西？",
+        "py": "Nǐ mǎi shénme dōngxi?",
+        "en": "What are you buying?"
+      }
+    },
+    {
+      "w": "甜",
+      "py": "tián",
+      "en": "sweet",
+      "ex": {
+        "hz": "这个橘子很甜。",
+        "py": "Zhège júzi hěn tián.",
+        "en": "This orange is sweet."
+      }
+    },
+    {
+      "w": "尝",
+      "py": "cháng",
+      "en": "to taste",
+      "ex": {
+        "hz": "你尝一下儿。",
+        "py": "Nǐ cháng yíxiàr.",
+        "en": "Have a taste."
+      }
+    },
+    {
+      "w": "西红柿",
+      "py": "xīhóngshì",
+      "en": "tomato",
+      "ex": {
+        "hz": "我买三斤西红柿。",
+        "py": "Wǒ mǎi sān jīn xīhóngshì.",
+        "en": "I'll buy three jin of tomatoes."
+      }
+    },
+    {
+      "w": "怎么",
+      "py": "zěnme",
+      "en": "how",
+      "ex": {
+        "hz": "您怎么付？",
+        "py": "Nín zěnme fù?",
+        "en": "How will you pay?"
+      }
+    },
+    {
+      "w": "新鲜",
+      "py": "xīnxiān",
+      "en": "fresh",
+      "ex": {
+        "hz": "这些菜很新鲜。",
+        "py": "Zhèxiē cài hěn xīnxiān.",
+        "en": "These vegetables are fresh."
+      }
+    },
+    {
+      "w": "摘",
+      "py": "zhāi",
+      "en": "to pick",
+      "ex": {
+        "hz": "这是今天早上摘的。",
+        "py": "Zhè shì jīntiān zǎoshang zhāi de.",
+        "en": "These were picked this morning."
+      }
+    },
+    {
+      "w": "酸",
+      "py": "suān",
+      "en": "sour",
+      "ex": {
+        "hz": "这个橘子有点儿酸。",
+        "py": "Zhège júzi yǒudiǎnr suān.",
+        "en": "This orange is a bit sour."
+      }
+    },
+    {
+      "w": "辆",
+      "py": "liàng",
+      "en": "(measure word for vehicles)",
+      "ex": {
+        "hz": "一辆自行车。",
+        "py": "Yí liàng zìxíngchē.",
+        "en": "A bicycle."
+      }
+    },
+    {
+      "w": "自行车",
+      "py": "zìxíngchē",
+      "en": "bicycle",
+      "ex": {
+        "hz": "我想买一辆自行车。",
+        "py": "Wǒ xiǎng mǎi yí liàng zìxíngchē.",
+        "en": "I want to buy a bicycle."
+      }
+    },
+    {
+      "w": "红",
+      "py": "hóng",
+      "en": "red",
+      "ex": {
+        "hz": "我要红的。",
+        "py": "Wǒ yào hóng de.",
+        "en": "I want the red one."
+      }
+    },
+    {
+      "w": "蓝",
+      "py": "lán",
+      "en": "blue",
+      "ex": {
+        "hz": "蓝的很漂亮。",
+        "py": "Lán de hěn piàoliang.",
+        "en": "The blue one is pretty."
+      }
+    },
+    {
+      "w": "支付宝",
+      "py": "zhīfùbǎo",
+      "en": "Alipay",
+      "ex": {
+        "hz": "我用支付宝。",
+        "py": "Wǒ yòng Zhīfùbǎo.",
+        "en": "I'll use Alipay."
+      }
+    },
+    {
+      "w": "现金",
+      "py": "xiànjīn",
+      "en": "cash",
+      "ex": {
+        "hz": "你有现金吗？",
+        "py": "Nǐ yǒu xiànjīn ma?",
+        "en": "Do you have cash?"
+      }
+    },
+    {
+      "w": "苹果",
+      "py": "píngguǒ",
+      "en": "apple",
+      "ex": {
+        "hz": "苹果多少钱一斤？",
+        "py": "Píngguǒ duōshao qián yì jīn?",
+        "en": "How much are apples per jin?"
+      }
+    },
+    {
+      "w": "短",
+      "py": "duǎn",
+      "en": "short",
+      "ex": {
+        "hz": "她的头发很短。",
+        "py": "Tā de tóufa hěn duǎn.",
+        "en": "Her hair is short."
+      }
+    },
+    {
+      "w": "零",
+      "py": "líng",
+      "en": "zero",
+      "ex": {
+        "hz": "一百零五块。",
+        "py": "Yìbǎi líng wǔ kuài.",
+        "en": "105 yuan."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "在咖啡馆",
+      "py": "Zài kāfēiguǎn",
+      "en": "At the café",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "服务员，要两杯咖啡。",
+          "py": "Fúwùyuán, yào liǎng bēi kāfēi.",
+          "en": "Waiter, two coffees please."
+        },
+        {
+          "who": "B",
+          "hz": "要冰的还是要热的？",
+          "py": "Yào bīng de háishi yào rè de?",
+          "en": "Iced or hot?"
+        },
+        {
+          "who": "A",
+          "hz": "一样一杯。",
+          "py": "Yí yàng yì bēi.",
+          "en": "One of each."
+        },
+        {
+          "who": "B",
+          "hz": "还要别的吗？",
+          "py": "Hái yào biéde ma?",
+          "en": "Anything else?"
+        },
+        {
+          "who": "A",
+          "hz": "再要一块巧克力。",
+          "py": "Zài yào yí kuài qiǎokèlì.",
+          "en": "A piece of chocolate too."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What coffees does A order?",
+          "options": [
+            "One iced and one hot",
+            "Two iced",
+            "Two hot",
+            "One hot"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What else does A order?",
+          "options": [
+            "Chocolate",
+            "Cola",
+            "Bread",
+            "Nothing"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "在市场",
+      "py": "Zài shìchǎng",
+      "en": "At the market",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "苹果怎么卖？",
+          "py": "Píngguǒ zěnme mài?",
+          "en": "How much are the apples?"
+        },
+        {
+          "who": "B",
+          "hz": "五块钱一斤。很甜，您尝一下儿。",
+          "py": "Wǔ kuài qián yì jīn. Hěn tián, nín cháng yíxiàr.",
+          "en": "5 yuan a jin. They're sweet — have a taste."
+        },
+        {
+          "who": "A",
+          "hz": "真甜！我要两斤。一共多少钱？",
+          "py": "Zhēn tián! Wǒ yào liǎng jīn. Yígòng duōshao qián?",
+          "en": "So sweet! Two jin. How much altogether?"
+        },
+        {
+          "who": "B",
+          "hz": "十块。您用微信还是现金？",
+          "py": "Shí kuài. Nín yòng Wēixìn háishi xiànjīn?",
+          "en": "Ten yuan. WeChat or cash?"
+        }
+      ],
+      "questions": [
+        {
+          "q": "How much are apples per jin?",
+          "options": [
+            "5 yuan",
+            "10 yuan",
+            "2 yuan",
+            "15 yuan"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How much does A pay?",
+          "options": [
+            "10 yuan",
+            "5 yuan",
+            "2 yuan",
+            "20 yuan"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "还是 (questions)",
+      "en": "A 还是 B？: which one?",
+      "drills": [
+        {
+          "q": "要冰的___要热的？",
+          "options": [
+            "还是",
+            "或者",
+            "和",
+            "也"
+          ],
+          "answer": 0,
+          "en": "Iced or hot?"
+        }
+      ]
+    },
+    {
+      "point": "的 phrases",
+      "en": "大的 / 冰的 = the big one / the iced one",
+      "drills": [
+        {
+          "q": "大___三块钱一斤。",
+          "options": [
+            "的",
+            "了",
+            "吗",
+            "是"
+          ],
+          "answer": 0,
+          "en": "The big ones are 3 yuan a jin."
+        }
+      ]
+    },
+    {
+      "point": "再",
+      "en": "再 + verb: more / another",
+      "drills": [
+        {
+          "q": "___要两听可乐。",
+          "options": [
+            "再",
+            "也",
+            "还是",
+            "都"
+          ],
+          "answer": 0,
+          "en": "Two more cans of cola."
+        }
+      ]
+    },
+    {
+      "point": "给 + person + thing",
+      "en": "double objects",
+      "drills": [
+        {
+          "q": "___您小票。",
+          "options": [
+            "给",
+            "和",
+            "跟",
+            "在"
+          ],
+          "answer": 0,
+          "en": "Here's your receipt."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "要冰的还是要热的？"
+          ],
+          [
+            "女",
+            "一样一杯。"
+          ]
+        ],
+        "q": "男的要什么？",
+        "options": [
+          "一杯冰的、一杯热的",
+          "两杯冰的",
+          "两杯热的"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "一共多少钱？"
+          ],
+          [
+            "女",
+            "十九块四。"
+          ]
+        ],
+        "q": "一共多少钱？",
+        "options": [
+          "十九块四",
+          "九块四",
+          "十四块九"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "不甜不要钱。",
+        "claim": "卖东西的说橘子很甜。",
+        "ok": true
+      },
+      {
+        "text": "西红柿是今天早上摘的，新鲜极了。",
+        "claim": "西红柿不新鲜。",
+        "ok": false
+      }
+    ],
+    "replies": [
+      {
+        "q": "还要别的吗？",
+        "a": "不要了。"
+      },
+      {
+        "q": "您怎么付？",
+        "a": "微信。"
+      },
+      {
+        "q": "橘子多少钱一斤？",
+        "a": "三块钱一斤。"
+      },
+      {
+        "q": "有青岛啤酒吗？",
+        "a": "有，要几瓶？"
+      }
+    ]
+  }
+}

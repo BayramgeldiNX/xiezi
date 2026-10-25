@@ -1,0 +1,436 @@
+{
+  "n": 5,
+  "cn": "第五课",
+  "title": "图书馆在哪儿",
+  "en": "Where is the library",
+  "words": [
+    {
+      "w": "请问",
+      "py": "qǐngwèn",
+      "en": "excuse me (may I ask)",
+      "ex": {
+        "hz": "请问，银行在哪儿？",
+        "py": "Qǐngwèn, yínháng zài nǎr?",
+        "en": "Excuse me, where is the bank?"
+      }
+    },
+    {
+      "w": "图书馆",
+      "py": "túshūguǎn",
+      "en": "library",
+      "ex": {
+        "hz": "我去图书馆。",
+        "py": "Wǒ qù túshūguǎn.",
+        "en": "I'm going to the library."
+      }
+    },
+    {
+      "w": "在",
+      "py": "zài",
+      "en": "to be in / at",
+      "ex": {
+        "hz": "老师在办公室。",
+        "py": "Lǎoshī zài bàngōngshì.",
+        "en": "The teacher is in the office."
+      }
+    },
+    {
+      "w": "哪儿",
+      "py": "nǎr",
+      "en": "where",
+      "ex": {
+        "hz": "你去哪儿？",
+        "py": "Nǐ qù nǎr?",
+        "en": "Where are you going?"
+      }
+    },
+    {
+      "w": "那儿",
+      "py": "nàr",
+      "en": "there",
+      "ex": {
+        "hz": "书店在那儿。",
+        "py": "Shūdiàn zài nàr.",
+        "en": "The bookshop is over there."
+      }
+    },
+    {
+      "w": "食堂",
+      "py": "shítáng",
+      "en": "dining hall",
+      "ex": {
+        "hz": "食堂在哪儿？",
+        "py": "Shítáng zài nǎr?",
+        "en": "Where's the dining hall?"
+      }
+    },
+    {
+      "w": "办公室",
+      "py": "bàngōngshì",
+      "en": "office",
+      "ex": {
+        "hz": "我去老师的办公室。",
+        "py": "Wǒ qù lǎoshī de bàngōngshì.",
+        "en": "I'm going to the teacher's office."
+      }
+    },
+    {
+      "w": "留学生",
+      "py": "liúxuéshēng",
+      "en": "overseas student",
+      "ex": {
+        "hz": "我是留学生。",
+        "py": "Wǒ shì liúxuéshēng.",
+        "en": "I'm an overseas student."
+      }
+    },
+    {
+      "w": "宿舍",
+      "py": "sùshè",
+      "en": "dormitory",
+      "ex": {
+        "hz": "我在宿舍。",
+        "py": "Wǒ zài sùshè.",
+        "en": "I'm in the dorm."
+      }
+    },
+    {
+      "w": "号",
+      "py": "hào",
+      "en": "number",
+      "ex": {
+        "hz": "七号楼在那儿。",
+        "py": "Qī hào lóu zài nàr.",
+        "en": "Building 7 is over there."
+      }
+    },
+    {
+      "w": "楼",
+      "py": "lóu",
+      "en": "building",
+      "ex": {
+        "hz": "八号楼在哪儿？",
+        "py": "Bā hào lóu zài nǎr?",
+        "en": "Where is Building 8?"
+      }
+    },
+    {
+      "w": "银行",
+      "py": "yínháng",
+      "en": "bank",
+      "ex": {
+        "hz": "我去银行换钱。",
+        "py": "Wǒ qù yínháng huàn qián.",
+        "en": "I'm going to the bank to change money."
+      }
+    },
+    {
+      "w": "知道",
+      "py": "zhīdào",
+      "en": "to know",
+      "ex": {
+        "hz": "我不知道。",
+        "py": "Wǒ bù zhīdào.",
+        "en": "I don't know."
+      }
+    },
+    {
+      "w": "邮局",
+      "py": "yóujú",
+      "en": "post office",
+      "ex": {
+        "hz": "邮局在哪儿？",
+        "py": "Yóujú zài nǎr?",
+        "en": "Where is the post office?"
+      }
+    },
+    {
+      "w": "医院",
+      "py": "yīyuàn",
+      "en": "hospital",
+      "ex": {
+        "hz": "医院在那儿。",
+        "py": "Yīyuàn zài nàr.",
+        "en": "The hospital is over there."
+      }
+    },
+    {
+      "w": "商店",
+      "py": "shāngdiàn",
+      "en": "shop",
+      "ex": {
+        "hz": "我去商店买牛奶。",
+        "py": "Wǒ qù shāngdiàn mǎi niúnǎi.",
+        "en": "I'm going to the shop for milk."
+      }
+    },
+    {
+      "w": "书店",
+      "py": "shūdiàn",
+      "en": "bookshop",
+      "ex": {
+        "hz": "我去书店买书。",
+        "py": "Wǒ qù shūdiàn mǎi shū.",
+        "en": "I'm going to the bookshop to buy a book."
+      }
+    },
+    {
+      "w": "去",
+      "py": "qù",
+      "en": "to go",
+      "ex": {
+        "hz": "你去哪儿？",
+        "py": "Nǐ qù nǎr?",
+        "en": "Where are you going?"
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "食堂在哪儿",
+      "py": "Shítáng zài nǎr",
+      "en": "Where is the dining hall",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "请问，食堂在哪儿？",
+          "py": "Qǐngwèn, shítáng zài nǎr?",
+          "en": "Excuse me, where's the dining hall?"
+        },
+        {
+          "who": "B",
+          "hz": "在那儿。",
+          "py": "Zài nàr.",
+          "en": "Over there."
+        },
+        {
+          "who": "A",
+          "hz": "留学生宿舍呢？",
+          "py": "Liúxuéshēng sùshè ne?",
+          "en": "And the overseas students' dorm?"
+        },
+        {
+          "who": "B",
+          "hz": "对不起，我不知道。",
+          "py": "Duìbuqǐ, wǒ bù zhīdào.",
+          "en": "Sorry, I don't know."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Where is the dining hall?",
+          "options": [
+            "Over there",
+            "In Building 7",
+            "We don't know",
+            "At the bank"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Does B know where the dorm is?",
+          "options": [
+            "No",
+            "Yes",
+            "It's in Building 8",
+            "It's over there"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "你去哪儿",
+      "py": "Nǐ qù nǎr",
+      "en": "Where are you going",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你去哪儿？",
+          "py": "Nǐ qù nǎr?",
+          "en": "Where are you going?"
+        },
+        {
+          "who": "B",
+          "hz": "我去银行。你呢？",
+          "py": "Wǒ qù yínháng. Nǐ ne?",
+          "en": "To the bank. You?"
+        },
+        {
+          "who": "A",
+          "hz": "我去书店买词典。",
+          "py": "Wǒ qù shūdiàn mǎi cídiǎn.",
+          "en": "To the bookshop for a dictionary."
+        },
+        {
+          "who": "B",
+          "hz": "书店在邮局那儿。",
+          "py": "Shūdiàn zài yóujú nàr.",
+          "en": "The bookshop is by the post office."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Where is B going?",
+          "options": [
+            "The bank",
+            "The bookshop",
+            "The post office",
+            "The hospital"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What will A buy?",
+          "options": [
+            "A dictionary",
+            "A pen",
+            "Milk",
+            "A schoolbag"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "在 + place",
+      "en": "A 在 + place: A is at / in …",
+      "drills": [
+        {
+          "q": "图书馆___哪儿？",
+          "options": [
+            "在",
+            "是",
+            "去",
+            "有"
+          ],
+          "answer": 0,
+          "en": "Where is the library?"
+        }
+      ]
+    },
+    {
+      "point": "哪儿 / 那儿",
+      "en": "哪儿 = where; 那儿 = there",
+      "drills": [
+        {
+          "q": "银行在___。",
+          "options": [
+            "那儿",
+            "哪儿",
+            "什么",
+            "吗"
+          ],
+          "answer": 0,
+          "en": "The bank is over there."
+        }
+      ]
+    },
+    {
+      "point": "去 + place",
+      "en": "going somewhere",
+      "drills": [
+        {
+          "q": "你___哪儿？",
+          "options": [
+            "去",
+            "是",
+            "吃",
+            "喝"
+          ],
+          "answer": 0,
+          "en": "Where are you going?"
+        },
+        {
+          "q": "___，邮局在哪儿？",
+          "options": [
+            "请问",
+            "请进",
+            "再见",
+            "谢谢"
+          ],
+          "answer": 0,
+          "en": "Excuse me, where's the post office?"
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "请问，图书馆在哪儿？"
+          ],
+          [
+            "女",
+            "在那儿。"
+          ]
+        ],
+        "q": "男的问什么？",
+        "options": [
+          "图书馆在哪儿",
+          "银行在哪儿",
+          "食堂在哪儿"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你去哪儿？"
+          ],
+          [
+            "女",
+            "我去银行。"
+          ]
+        ],
+        "q": "女的去哪儿？",
+        "options": [
+          "银行",
+          "邮局",
+          "书店"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "对不起，我不知道。",
+        "claim": "她知道。",
+        "ok": false
+      },
+      {
+        "text": "我去书店买书。",
+        "claim": "他去书店。",
+        "ok": true
+      }
+    ],
+    "replies": [
+      {
+        "q": "请问，邮局在哪儿？",
+        "a": "对不起，我不知道。"
+      },
+      {
+        "q": "你去哪儿？",
+        "a": "我去食堂。"
+      },
+      {
+        "q": "医院在哪儿？",
+        "a": "在那儿。"
+      },
+      {
+        "q": "你在哪儿？",
+        "a": "我在宿舍。"
+      }
+    ]
+  }
+}

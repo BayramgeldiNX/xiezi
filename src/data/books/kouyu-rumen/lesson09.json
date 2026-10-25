@@ -1,0 +1,536 @@
+{
+  "n": 9,
+  "cn": "第九课",
+  "title": "你家有几口人",
+  "en": "How many people are there in your family",
+  "words": [
+    {
+      "w": "想",
+      "py": "xiǎng",
+      "en": "to miss; to think of",
+      "ex": {
+        "hz": "你想家吗？",
+        "py": "Nǐ xiǎng jiā ma?",
+        "en": "Do you miss home?"
+      }
+    },
+    {
+      "w": "家",
+      "py": "jiā",
+      "en": "home; family",
+      "ex": {
+        "hz": "我家在北京。",
+        "py": "Wǒ jiā zài Běijīng.",
+        "en": "My home is in Beijing."
+      }
+    },
+    {
+      "w": "当然",
+      "py": "dāngrán",
+      "en": "of course",
+      "ex": {
+        "hz": "当然想！",
+        "py": "Dāngrán xiǎng!",
+        "en": "Of course I do!"
+      }
+    },
+    {
+      "w": "口",
+      "py": "kǒu",
+      "en": "(measure word for family members)",
+      "ex": {
+        "hz": "我家有四口人。",
+        "py": "Wǒ jiā yǒu sì kǒu rén.",
+        "en": "There are four people in my family."
+      }
+    },
+    {
+      "w": "兄弟",
+      "py": "xiōngdì",
+      "en": "brothers",
+      "ex": {
+        "hz": "你有兄弟吗？",
+        "py": "Nǐ yǒu xiōngdì ma?",
+        "en": "Do you have brothers?"
+      }
+    },
+    {
+      "w": "姐妹",
+      "py": "jiěmèi",
+      "en": "sisters",
+      "ex": {
+        "hz": "我没有姐妹。",
+        "py": "Wǒ méiyǒu jiěmèi.",
+        "en": "I don't have sisters."
+      }
+    },
+    {
+      "w": "独生女",
+      "py": "dúshēngnǚ",
+      "en": "only daughter",
+      "ex": {
+        "hz": "她是独生女。",
+        "py": "Tā shì dúshēngnǚ.",
+        "en": "She's an only daughter."
+      }
+    },
+    {
+      "w": "父亲",
+      "py": "fùqīn",
+      "en": "father",
+      "ex": {
+        "hz": "我父亲是医生。",
+        "py": "Wǒ fùqīn shì yīshēng.",
+        "en": "My father is a doctor."
+      }
+    },
+    {
+      "w": "工作",
+      "py": "gōngzuò",
+      "en": "to work; job",
+      "ex": {
+        "hz": "你在哪儿工作？",
+        "py": "Nǐ zài nǎr gōngzuò?",
+        "en": "Where do you work?"
+      }
+    },
+    {
+      "w": "医生",
+      "py": "yīshēng",
+      "en": "doctor",
+      "ex": {
+        "hz": "她是医院的医生。",
+        "py": "Tā shì yīyuàn de yīshēng.",
+        "en": "She's a doctor at the hospital."
+      }
+    },
+    {
+      "w": "母亲",
+      "py": "mǔqīn",
+      "en": "mother",
+      "ex": {
+        "hz": "我母亲不工作。",
+        "py": "Wǒ mǔqīn bù gōngzuò.",
+        "en": "My mother doesn't work."
+      }
+    },
+    {
+      "w": "公司",
+      "py": "gōngsī",
+      "en": "company",
+      "ex": {
+        "hz": "他在公司工作。",
+        "py": "Tā zài gōngsī gōngzuò.",
+        "en": "He works at a company."
+      }
+    },
+    {
+      "w": "职员",
+      "py": "zhíyuán",
+      "en": "office worker; clerk",
+      "ex": {
+        "hz": "我哥哥是公司职员。",
+        "py": "Wǒ gēge shì gōngsī zhíyuán.",
+        "en": "My brother is an office worker."
+      }
+    },
+    {
+      "w": "记者",
+      "py": "jìzhě",
+      "en": "journalist",
+      "ex": {
+        "hz": "她是记者。",
+        "py": "Tā shì jìzhě.",
+        "en": "She's a journalist."
+      }
+    },
+    {
+      "w": "名片",
+      "py": "míngpiàn",
+      "en": "business card",
+      "ex": {
+        "hz": "这是我的名片。",
+        "py": "Zhè shì wǒ de míngpiàn.",
+        "en": "Here's my card."
+      }
+    },
+    {
+      "w": "父母",
+      "py": "fùmǔ",
+      "en": "parents",
+      "ex": {
+        "hz": "我父母都很好。",
+        "py": "Wǒ fùmǔ dōu hěn hǎo.",
+        "en": "My parents are both well."
+      }
+    },
+    {
+      "w": "今年",
+      "py": "jīnnián",
+      "en": "this year",
+      "ex": {
+        "hz": "我今年二十岁。",
+        "py": "Wǒ jīnnián èrshí suì.",
+        "en": "I'm twenty this year."
+      }
+    },
+    {
+      "w": "年纪",
+      "py": "niánjì",
+      "en": "age",
+      "ex": {
+        "hz": "你父亲多大年纪？",
+        "py": "Nǐ fùqīn duō dà niánjì?",
+        "en": "How old is your father?"
+      }
+    },
+    {
+      "w": "岁",
+      "py": "suì",
+      "en": "years old",
+      "ex": {
+        "hz": "我弟弟五岁。",
+        "py": "Wǒ dìdi wǔ suì.",
+        "en": "My little brother is five."
+      }
+    },
+    {
+      "w": "秘密",
+      "py": "mìmì",
+      "en": "secret",
+      "ex": {
+        "hz": "这是秘密！",
+        "py": "Zhè shì mìmì!",
+        "en": "That's a secret!"
+      }
+    },
+    {
+      "w": "孩子",
+      "py": "háizi",
+      "en": "child",
+      "ex": {
+        "hz": "这孩子真可爱。",
+        "py": "Zhè háizi zhēn kě'ài.",
+        "en": "What a lovely child."
+      }
+    },
+    {
+      "w": "儿子",
+      "py": "érzi",
+      "en": "son",
+      "ex": {
+        "hz": "这是我的儿子。",
+        "py": "Zhè shì wǒ de érzi.",
+        "en": "This is my son."
+      }
+    },
+    {
+      "w": "真",
+      "py": "zhēn",
+      "en": "really",
+      "ex": {
+        "hz": "你真聪明！",
+        "py": "Nǐ zhēn cōngming!",
+        "en": "You're really clever!"
+      }
+    },
+    {
+      "w": "售货员",
+      "py": "shòuhuòyuán",
+      "en": "shop assistant",
+      "ex": {
+        "hz": "她是商店的售货员。",
+        "py": "Tā shì shāngdiàn de shòuhuòyuán.",
+        "en": "She's a shop assistant."
+      }
+    },
+    {
+      "w": "经理",
+      "py": "jīnglǐ",
+      "en": "manager",
+      "ex": {
+        "hz": "我爸爸是经理。",
+        "py": "Wǒ bàba shì jīnglǐ.",
+        "en": "My dad is a manager."
+      }
+    },
+    {
+      "w": "司机",
+      "py": "sījī",
+      "en": "driver",
+      "ex": {
+        "hz": "他是司机。",
+        "py": "Tā shì sījī.",
+        "en": "He's a driver."
+      }
+    },
+    {
+      "w": "爷爷",
+      "py": "yéye",
+      "en": "grandfather (dad's father)",
+      "ex": {
+        "hz": "我爷爷八十岁。",
+        "py": "Wǒ yéye bāshí suì.",
+        "en": "My grandpa is eighty."
+      }
+    },
+    {
+      "w": "奶奶",
+      "py": "nǎinai",
+      "en": "grandmother (dad's mother)",
+      "ex": {
+        "hz": "我奶奶身体很好。",
+        "py": "Wǒ nǎinai shēntǐ hěn hǎo.",
+        "en": "My grandma is in good health."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "你家有几口人",
+      "py": "Nǐ jiā yǒu jǐ kǒu rén",
+      "en": "How many in your family",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你家有几口人？",
+          "py": "Nǐ jiā yǒu jǐ kǒu rén?",
+          "en": "How many people are in your family?"
+        },
+        {
+          "who": "B",
+          "hz": "四口人：爸爸、妈妈、弟弟和我。",
+          "py": "Sì kǒu rén: bàba, māma, dìdi hé wǒ.",
+          "en": "Four: Dad, Mom, my little brother and me."
+        },
+        {
+          "who": "A",
+          "hz": "你爸爸做什么工作？",
+          "py": "Nǐ bàba zuò shénme gōngzuò?",
+          "en": "What does your dad do?"
+        },
+        {
+          "who": "B",
+          "hz": "他是司机，我妈妈是医生。",
+          "py": "Tā shì sījī, wǒ māma shì yīshēng.",
+          "en": "He's a driver, and my mom is a doctor."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How many people are in B's family?",
+          "options": [
+            "4",
+            "3",
+            "5",
+            "2"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What does B's mom do?",
+          "options": [
+            "Doctor",
+            "Driver",
+            "Journalist",
+            "Manager"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "你多大",
+      "py": "Nǐ duō dà",
+      "en": "How old are you",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你弟弟今年几岁？",
+          "py": "Nǐ dìdi jīnnián jǐ suì?",
+          "en": "How old is your younger brother?"
+        },
+        {
+          "who": "B",
+          "hz": "八岁。他很聪明。",
+          "py": "Bā suì. Tā hěn cōngming.",
+          "en": "Eight. He's clever."
+        },
+        {
+          "who": "A",
+          "hz": "你呢？你今年多大？",
+          "py": "Nǐ ne? Nǐ jīnnián duō dà?",
+          "en": "And you? How old are you?"
+        },
+        {
+          "who": "B",
+          "hz": "这是秘密！",
+          "py": "Zhè shì mìmì!",
+          "en": "That's a secret!"
+        }
+      ],
+      "questions": [
+        {
+          "q": "How old is the younger brother?",
+          "options": [
+            "8",
+            "18",
+            "5",
+            "10"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How old is B?",
+          "options": [
+            "It's a secret",
+            "20",
+            "18",
+            "8"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "几口人",
+      "en": "几口人 for family size",
+      "drills": [
+        {
+          "q": "你家有几___人？",
+          "options": [
+            "口",
+            "个",
+            "位",
+            "本"
+          ],
+          "answer": 0,
+          "en": "How many people are in your family?"
+        }
+      ]
+    },
+    {
+      "point": "做什么工作",
+      "en": "asking about someone's job",
+      "drills": [
+        {
+          "q": "你哥哥做___工作？",
+          "options": [
+            "什么",
+            "哪",
+            "谁",
+            "几"
+          ],
+          "answer": 0,
+          "en": "What does your brother do?"
+        }
+      ]
+    },
+    {
+      "point": "多大 / 几岁 / 多大年纪",
+      "en": "asking age by person",
+      "drills": [
+        {
+          "q": "你弟弟今年___岁？",
+          "options": [
+            "几",
+            "多",
+            "什么",
+            "哪"
+          ],
+          "answer": 0,
+          "en": "How old is your younger brother?"
+        },
+        {
+          "q": "你父亲多大___？",
+          "options": [
+            "年纪",
+            "岁",
+            "几",
+            "口"
+          ],
+          "answer": 0,
+          "en": "How old is your father?"
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你家有几口人？"
+          ],
+          [
+            "女",
+            "我家有五口人。"
+          ]
+        ],
+        "q": "女的家有几口人？",
+        "options": [
+          "五口",
+          "四口",
+          "三口"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你父亲在哪儿工作？"
+          ],
+          [
+            "女",
+            "在医院，他是医生。"
+          ]
+        ],
+        "q": "女的父亲做什么工作？",
+        "options": [
+          "医生",
+          "司机",
+          "记者"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "我没有兄弟姐妹，我是独生女。",
+        "claim": "她有一个哥哥。",
+        "ok": false
+      },
+      {
+        "text": "这是我大哥的儿子，今年五岁。",
+        "claim": "孩子今年五岁。",
+        "ok": true
+      }
+    ],
+    "replies": [
+      {
+        "q": "你想家吗？",
+        "a": "当然想。"
+      },
+      {
+        "q": "你是做什么工作的？",
+        "a": "我是记者。"
+      },
+      {
+        "q": "你父母多大年纪？",
+        "a": "都六十多岁了。"
+      },
+      {
+        "q": "你今年多大？",
+        "a": "这是秘密。"
+      }
+    ]
+  }
+}

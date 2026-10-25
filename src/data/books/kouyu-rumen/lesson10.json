@@ -1,0 +1,636 @@
+{
+  "n": 10,
+  "cn": "第十课",
+  "title": "现在几点",
+  "en": "What time is it now",
+  "words": [
+    {
+      "w": "现在",
+      "py": "xiànzài",
+      "en": "now",
+      "ex": {
+        "hz": "现在几点？",
+        "py": "Xiànzài jǐ diǎn?",
+        "en": "What time is it now?"
+      }
+    },
+    {
+      "w": "点",
+      "py": "diǎn",
+      "en": "o'clock",
+      "ex": {
+        "hz": "现在八点。",
+        "py": "Xiànzài bā diǎn.",
+        "en": "It's eight o'clock."
+      }
+    },
+    {
+      "w": "刻",
+      "py": "kè",
+      "en": "quarter (hour)",
+      "ex": {
+        "hz": "七点一刻。",
+        "py": "Qī diǎn yí kè.",
+        "en": "Quarter past seven."
+      }
+    },
+    {
+      "w": "早饭",
+      "py": "zǎofàn",
+      "en": "breakfast",
+      "ex": {
+        "hz": "你几点吃早饭？",
+        "py": "Nǐ jǐ diǎn chī zǎofàn?",
+        "en": "What time do you have breakfast?"
+      }
+    },
+    {
+      "w": "半",
+      "py": "bàn",
+      "en": "half",
+      "ex": {
+        "hz": "八点半上课。",
+        "py": "Bā diǎn bàn shàngkè.",
+        "en": "Class starts at half past eight."
+      }
+    },
+    {
+      "w": "时候",
+      "py": "shíhou",
+      "en": "time; when",
+      "ex": {
+        "hz": "你什么时候上课？",
+        "py": "Nǐ shénme shíhou shàngkè?",
+        "en": "When do you have class?"
+      }
+    },
+    {
+      "w": "上课",
+      "py": "shàngkè",
+      "en": "to attend class",
+      "ex": {
+        "hz": "我们八点上课。",
+        "py": "Wǒmen bā diǎn shàngkè.",
+        "en": "We have class at eight."
+      }
+    },
+    {
+      "w": "从",
+      "py": "cóng",
+      "en": "from (从…到… from … to …)",
+      "ex": {
+        "hz": "我从八点到十二点上课。",
+        "py": "Wǒ cóng bā diǎn dào shí'èr diǎn shàngkè.",
+        "en": "I have class from 8 to 12."
+      }
+    },
+    {
+      "w": "上午",
+      "py": "shàngwǔ",
+      "en": "morning",
+      "ex": {
+        "hz": "上午我很忙。",
+        "py": "Shàngwǔ wǒ hěn máng.",
+        "en": "I'm busy in the morning."
+      }
+    },
+    {
+      "w": "今天",
+      "py": "jīntiān",
+      "en": "today",
+      "ex": {
+        "hz": "今天星期几？",
+        "py": "Jīntiān xīngqī jǐ?",
+        "en": "What day is it today?"
+      }
+    },
+    {
+      "w": "月",
+      "py": "yuè",
+      "en": "month",
+      "ex": {
+        "hz": "今天几月几号？",
+        "py": "Jīntiān jǐ yuè jǐ hào?",
+        "en": "What's the date today?"
+      }
+    },
+    {
+      "w": "号",
+      "py": "hào",
+      "en": "day of the month",
+      "ex": {
+        "hz": "今天十月八号。",
+        "py": "Jīntiān shí yuè bā hào.",
+        "en": "Today is October 8th."
+      }
+    },
+    {
+      "w": "星期",
+      "py": "xīngqī",
+      "en": "week",
+      "ex": {
+        "hz": "今天星期三。",
+        "py": "Jīntiān xīngqīsān.",
+        "en": "Today is Wednesday."
+      }
+    },
+    {
+      "w": "星期天",
+      "py": "xīngqītiān",
+      "en": "Sunday",
+      "ex": {
+        "hz": "星期天我休息。",
+        "py": "Xīngqītiān wǒ xiūxi.",
+        "en": "I rest on Sunday."
+      }
+    },
+    {
+      "w": "吧",
+      "py": "ba",
+      "en": "(checking a guess; suggesting)",
+      "ex": {
+        "hz": "你是留学生吧？",
+        "py": "Nǐ shì liúxuéshēng ba?",
+        "en": "You're an overseas student, right?"
+      }
+    },
+    {
+      "w": "咱们",
+      "py": "zánmen",
+      "en": "we (you and I)",
+      "ex": {
+        "hz": "咱们一起去吧。",
+        "py": "Zánmen yìqǐ qù ba.",
+        "en": "Let's go together."
+      }
+    },
+    {
+      "w": "啊",
+      "py": "a",
+      "en": "(adds feeling)",
+      "ex": {
+        "hz": "好啊！",
+        "py": "Hǎo a!",
+        "en": "Great!"
+      }
+    },
+    {
+      "w": "出发",
+      "py": "chūfā",
+      "en": "to set out",
+      "ex": {
+        "hz": "我们几点出发？",
+        "py": "Wǒmen jǐ diǎn chūfā?",
+        "en": "What time do we set off?"
+      }
+    },
+    {
+      "w": "行",
+      "py": "xíng",
+      "en": "OK; fine",
+      "ex": {
+        "hz": "九点，行吗？",
+        "py": "Jiǔ diǎn, xíng ma?",
+        "en": "Nine o'clock, OK?"
+      }
+    },
+    {
+      "w": "见面",
+      "py": "jiànmiàn",
+      "en": "to meet",
+      "ex": {
+        "hz": "咱们几点见面？",
+        "py": "Zánmen jǐ diǎn jiànmiàn?",
+        "en": "What time shall we meet?"
+      }
+    },
+    {
+      "w": "差",
+      "py": "chà",
+      "en": "to be short of; to (the hour)",
+      "ex": {
+        "hz": "差五分九点。",
+        "py": "Chà wǔ fēn jiǔ diǎn.",
+        "en": "Five to nine."
+      }
+    },
+    {
+      "w": "分",
+      "py": "fēn",
+      "en": "minute",
+      "ex": {
+        "hz": "现在八点十分。",
+        "py": "Xiànzài bā diǎn shí fēn.",
+        "en": "It's 8:10."
+      }
+    },
+    {
+      "w": "门口",
+      "py": "ménkǒu",
+      "en": "entrance; gate",
+      "ex": {
+        "hz": "我在门口等你。",
+        "py": "Wǒ zài ménkǒu děng nǐ.",
+        "en": "I'll wait for you at the gate."
+      }
+    },
+    {
+      "w": "等",
+      "py": "děng",
+      "en": "to wait",
+      "ex": {
+        "hz": "请等一下儿。",
+        "py": "Qǐng děng yíxiàr.",
+        "en": "Please wait a moment."
+      }
+    },
+    {
+      "w": "早上",
+      "py": "zǎoshang",
+      "en": "(early) morning",
+      "ex": {
+        "hz": "早上我喝咖啡。",
+        "py": "Zǎoshang wǒ hē kāfēi.",
+        "en": "I drink coffee in the morning."
+      }
+    },
+    {
+      "w": "起床",
+      "py": "qǐchuáng",
+      "en": "to get up",
+      "ex": {
+        "hz": "我六点半起床。",
+        "py": "Wǒ liù diǎn bàn qǐchuáng.",
+        "en": "I get up at 6:30."
+      }
+    },
+    {
+      "w": "下课",
+      "py": "xiàkè",
+      "en": "to finish class",
+      "ex": {
+        "hz": "我们十二点下课。",
+        "py": "Wǒmen shí'èr diǎn xiàkè.",
+        "en": "Class ends at twelve."
+      }
+    },
+    {
+      "w": "午饭",
+      "py": "wǔfàn",
+      "en": "lunch",
+      "ex": {
+        "hz": "我在食堂吃午饭。",
+        "py": "Wǒ zài shítáng chī wǔfàn.",
+        "en": "I have lunch in the dining hall."
+      }
+    },
+    {
+      "w": "晚饭",
+      "py": "wǎnfàn",
+      "en": "dinner",
+      "ex": {
+        "hz": "我们一起吃晚饭吧。",
+        "py": "Wǒmen yìqǐ chī wǎnfàn ba.",
+        "en": "Let's have dinner together."
+      }
+    },
+    {
+      "w": "年",
+      "py": "nián",
+      "en": "year",
+      "ex": {
+        "hz": "今年是二〇二六年。",
+        "py": "Jīnnián shì èr líng èr liù nián.",
+        "en": "This year is 2026."
+      }
+    },
+    {
+      "w": "大前天",
+      "py": "dàqiántiān",
+      "en": "three days ago",
+      "ex": {
+        "hz": "大前天我去银行了。",
+        "py": "Dàqiántiān wǒ qù yínháng le.",
+        "en": "I went to the bank three days ago."
+      }
+    },
+    {
+      "w": "前天",
+      "py": "qiántiān",
+      "en": "the day before yesterday",
+      "ex": {
+        "hz": "前天是星期一。",
+        "py": "Qiántiān shì xīngqīyī.",
+        "en": "The day before yesterday was Monday."
+      }
+    },
+    {
+      "w": "昨天",
+      "py": "zuótiān",
+      "en": "yesterday",
+      "ex": {
+        "hz": "昨天我很累。",
+        "py": "Zuótiān wǒ hěn lèi.",
+        "en": "I was tired yesterday."
+      }
+    },
+    {
+      "w": "明天",
+      "py": "míngtiān",
+      "en": "tomorrow",
+      "ex": {
+        "hz": "明天你有课吗？",
+        "py": "Míngtiān nǐ yǒu kè ma?",
+        "en": "Do you have class tomorrow?"
+      }
+    },
+    {
+      "w": "后天",
+      "py": "hòutiān",
+      "en": "the day after tomorrow",
+      "ex": {
+        "hz": "后天是星期六。",
+        "py": "Hòutiān shì xīngqīliù.",
+        "en": "The day after tomorrow is Saturday."
+      }
+    },
+    {
+      "w": "大后天",
+      "py": "dàhòutiān",
+      "en": "three days from now",
+      "ex": {
+        "hz": "大后天是我的生日。",
+        "py": "Dàhòutiān shì wǒ de shēngrì.",
+        "en": "My birthday is in three days."
+      }
+    },
+    {
+      "w": "生日",
+      "py": "shēngrì",
+      "en": "birthday",
+      "ex": {
+        "hz": "你的生日是几月几号？",
+        "py": "Nǐ de shēngrì shì jǐ yuè jǐ hào?",
+        "en": "When is your birthday?"
+      }
+    },
+    {
+      "w": "属",
+      "py": "shǔ",
+      "en": "to be born in the year of",
+      "ex": {
+        "hz": "你属什么？",
+        "py": "Nǐ shǔ shénme?",
+        "en": "What's your Chinese zodiac sign?"
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "你几点起床",
+      "py": "Nǐ jǐ diǎn qǐchuáng",
+      "en": "When do you get up",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你每天几点起床？",
+          "py": "Nǐ měi tiān jǐ diǎn qǐchuáng?",
+          "en": "What time do you get up every day?"
+        },
+        {
+          "who": "B",
+          "hz": "七点。七点半吃早饭。",
+          "py": "Qī diǎn. Qī diǎn bàn chī zǎofàn.",
+          "en": "At seven. Breakfast at half past seven."
+        },
+        {
+          "who": "A",
+          "hz": "你什么时候上课？",
+          "py": "Nǐ shénme shíhou shàngkè?",
+          "en": "When do you have class?"
+        },
+        {
+          "who": "B",
+          "hz": "从八点到十二点。",
+          "py": "Cóng bā diǎn dào shí'èr diǎn.",
+          "en": "From eight to twelve."
+        }
+      ],
+      "questions": [
+        {
+          "q": "When does B have breakfast?",
+          "options": [
+            "7:30",
+            "7:00",
+            "8:00",
+            "12:00"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "When does class end?",
+          "options": [
+            "12:00",
+            "8:00",
+            "7:30",
+            "10:00"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "咱们几点见面",
+      "py": "Zánmen jǐ diǎn jiànmiàn",
+      "en": "When shall we meet",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "星期六咱们去书店，怎么样？",
+          "py": "Xīngqīliù zánmen qù shūdiàn, zěnmeyàng?",
+          "en": "Shall we go to the bookshop on Saturday?"
+        },
+        {
+          "who": "B",
+          "hz": "好啊！几点出发？",
+          "py": "Hǎo a! Jǐ diǎn chūfā?",
+          "en": "Great! What time do we leave?"
+        },
+        {
+          "who": "A",
+          "hz": "上午十点，行吗？",
+          "py": "Shàngwǔ shí diǎn, xíng ma?",
+          "en": "Ten in the morning, OK?"
+        },
+        {
+          "who": "B",
+          "hz": "行。我在宿舍门口等你。",
+          "py": "Xíng. Wǒ zài sùshè ménkǒu děng nǐ.",
+          "en": "OK. I'll wait for you at the dorm entrance."
+        }
+      ],
+      "questions": [
+        {
+          "q": "When will they go?",
+          "options": [
+            "Saturday at 10 am",
+            "Sunday at 10 am",
+            "Saturday at 2 pm",
+            "Today"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Where will B wait?",
+          "options": [
+            "At the dorm entrance",
+            "At the bookshop",
+            "At school",
+            "At home"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "Time words",
+      "en": "点 / 分 / 刻 / 半 / 差",
+      "drills": [
+        {
+          "q": "现在七点一___。",
+          "options": [
+            "刻",
+            "半",
+            "分",
+            "号"
+          ],
+          "answer": 0,
+          "en": "It's quarter past seven."
+        },
+        {
+          "q": "___五分九点。",
+          "options": [
+            "差",
+            "半",
+            "刻",
+            "点"
+          ],
+          "answer": 0,
+          "en": "Five to nine."
+        }
+      ]
+    },
+    {
+      "point": "从……到……",
+      "en": "from … to …",
+      "drills": [
+        {
+          "q": "我___八点到十二点上课。",
+          "options": [
+            "从",
+            "离",
+            "在",
+            "跟"
+          ],
+          "answer": 0,
+          "en": "I have class from 8 to 12."
+        }
+      ]
+    },
+    {
+      "point": "吧 (guess)",
+      "en": "…吧？ when you're fairly sure",
+      "drills": [
+        {
+          "q": "二十六号是星期天___？",
+          "options": [
+            "吧",
+            "吗",
+            "呢",
+            "啊"
+          ],
+          "answer": 0,
+          "en": "The 26th is a Sunday, right?"
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "现在几点？"
+          ],
+          [
+            "女",
+            "七点一刻。"
+          ]
+        ],
+        "q": "现在几点？",
+        "options": [
+          "七点十五分",
+          "七点半",
+          "一点七分"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "咱们几点见面？"
+          ],
+          [
+            "女",
+            "差五分九点。"
+          ]
+        ],
+        "q": "他们几点见面？",
+        "options": [
+          "八点五十五",
+          "九点五分",
+          "五点九分"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "今天七月二十二号，星期二。",
+        "claim": "今天星期二。",
+        "ok": true
+      },
+      {
+        "text": "我从八点到十二点上课。",
+        "claim": "他下午上课。",
+        "ok": false
+      }
+    ],
+    "replies": [
+      {
+        "q": "今天几月几号？",
+        "a": "七月二十二号。"
+      },
+      {
+        "q": "你几点吃早饭？",
+        "a": "七点半。"
+      },
+      {
+        "q": "星期天咱们去颐和园，怎么样？",
+        "a": "好啊！"
+      },
+      {
+        "q": "上午九点，行吗？",
+        "a": "行。"
+      }
+    ]
+  }
+}

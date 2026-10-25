@@ -1,0 +1,526 @@
+{
+  "n": 7,
+  "cn": "第七课",
+  "title": "你身体好吗",
+  "en": "How are you feeling",
+  "words": [
+    {
+      "w": "最近",
+      "py": "zuìjìn",
+      "en": "recently",
+      "ex": {
+        "hz": "最近你忙吗？",
+        "py": "Zuìjìn nǐ máng ma?",
+        "en": "Have you been busy lately?"
+      }
+    },
+    {
+      "w": "身体",
+      "py": "shēntǐ",
+      "en": "body; health",
+      "ex": {
+        "hz": "你身体好吗？",
+        "py": "Nǐ shēntǐ hǎo ma?",
+        "en": "How's your health?"
+      }
+    },
+    {
+      "w": "比较",
+      "py": "bǐjiào",
+      "en": "fairly; quite",
+      "ex": {
+        "hz": "我最近比较忙。",
+        "py": "Wǒ zuìjìn bǐjiào máng.",
+        "en": "I've been fairly busy lately."
+      }
+    },
+    {
+      "w": "成绩",
+      "py": "chéngjì",
+      "en": "grades; results",
+      "ex": {
+        "hz": "他的成绩很好。",
+        "py": "Tā de chéngjì hěn hǎo.",
+        "en": "His grades are good."
+      }
+    },
+    {
+      "w": "马马虎虎",
+      "py": "mǎmǎhūhū",
+      "en": "so-so",
+      "ex": {
+        "hz": "我的成绩马马虎虎。",
+        "py": "Wǒ de chéngjì mǎmǎhūhū.",
+        "en": "My grades are so-so."
+      }
+    },
+    {
+      "w": "努力",
+      "py": "nǔlì",
+      "en": "hard-working",
+      "ex": {
+        "hz": "她学习很努力。",
+        "py": "Tā xuéxí hěn nǔlì.",
+        "en": "She studies hard."
+      }
+    },
+    {
+      "w": "非常",
+      "py": "fēicháng",
+      "en": "very",
+      "ex": {
+        "hz": "我非常高兴。",
+        "py": "Wǒ fēicháng gāoxìng.",
+        "en": "I'm very happy."
+      }
+    },
+    {
+      "w": "太",
+      "py": "tài",
+      "en": "too; very",
+      "ex": {
+        "hz": "不太忙。",
+        "py": "Bú tài máng.",
+        "en": "Not too busy."
+      }
+    },
+    {
+      "w": "里",
+      "py": "li",
+      "en": "in; inside",
+      "ex": {
+        "hz": "宿舍里有空调。",
+        "py": "Sùshè li yǒu kōngtiáo.",
+        "en": "There's air conditioning in the dorm."
+      }
+    },
+    {
+      "w": "有",
+      "py": "yǒu",
+      "en": "to have; there is",
+      "ex": {
+        "hz": "我有一个哥哥。",
+        "py": "Wǒ yǒu yí ge gēge.",
+        "en": "I have an older brother."
+      }
+    },
+    {
+      "w": "没有",
+      "py": "méiyǒu",
+      "en": "not have; there isn't",
+      "ex": {
+        "hz": "我没有同屋。",
+        "py": "Wǒ méiyǒu tóngwū.",
+        "en": "I don't have a roommate."
+      }
+    },
+    {
+      "w": "空调",
+      "py": "kōngtiáo",
+      "en": "air conditioner",
+      "ex": {
+        "hz": "教室里有空调吗？",
+        "py": "Jiàoshì li yǒu kōngtiáo ma?",
+        "en": "Is there air conditioning in the classroom?"
+      }
+    },
+    {
+      "w": "同屋",
+      "py": "tóngwū",
+      "en": "roommate",
+      "ex": {
+        "hz": "我的同屋是韩国人。",
+        "py": "Wǒ de tóngwū shì Hánguó rén.",
+        "en": "My roommate is Korean."
+      }
+    },
+    {
+      "w": "离",
+      "py": "lí",
+      "en": "(distance) from",
+      "ex": {
+        "hz": "宿舍离教室很近。",
+        "py": "Sùshè lí jiàoshì hěn jìn.",
+        "en": "The dorm is close to the classroom."
+      }
+    },
+    {
+      "w": "远",
+      "py": "yuǎn",
+      "en": "far",
+      "ex": {
+        "hz": "医院远不远？",
+        "py": "Yīyuàn yuǎn bu yuǎn?",
+        "en": "Is the hospital far?"
+      }
+    },
+    {
+      "w": "近",
+      "py": "jìn",
+      "en": "near",
+      "ex": {
+        "hz": "银行很近。",
+        "py": "Yínháng hěn jìn.",
+        "en": "The bank is very close."
+      }
+    },
+    {
+      "w": "学校",
+      "py": "xuéxiào",
+      "en": "school",
+      "ex": {
+        "hz": "我们学校很大。",
+        "py": "Wǒmen xuéxiào hěn dà.",
+        "en": "Our school is big."
+      }
+    },
+    {
+      "w": "多",
+      "py": "duō",
+      "en": "many; much",
+      "ex": {
+        "hz": "留学生很多。",
+        "py": "Liúxuéshēng hěn duō.",
+        "en": "There are many overseas students."
+      }
+    },
+    {
+      "w": "挺",
+      "py": "tǐng",
+      "en": "quite; pretty",
+      "ex": {
+        "hz": "挺好的。",
+        "py": "Tǐng hǎo de.",
+        "en": "Pretty good."
+      }
+    },
+    {
+      "w": "怎么样",
+      "py": "zěnmeyàng",
+      "en": "how is it",
+      "ex": {
+        "hz": "食堂怎么样？",
+        "py": "Shítáng zěnmeyàng?",
+        "en": "What's the dining hall like?"
+      }
+    },
+    {
+      "w": "不错",
+      "py": "búcuò",
+      "en": "not bad; good",
+      "ex": {
+        "hz": "食堂的菜不错。",
+        "py": "Shítáng de cài búcuò.",
+        "en": "The dining hall food is good."
+      }
+    },
+    {
+      "w": "头发",
+      "py": "tóufa",
+      "en": "hair",
+      "ex": {
+        "hz": "她的头发很长。",
+        "py": "Tā de tóufa hěn cháng.",
+        "en": "Her hair is long."
+      }
+    },
+    {
+      "w": "长",
+      "py": "cháng",
+      "en": "long",
+      "ex": {
+        "hz": "我的头发不长。",
+        "py": "Wǒ de tóufa bù cháng.",
+        "en": "My hair isn't long."
+      }
+    },
+    {
+      "w": "眼睛",
+      "py": "yǎnjing",
+      "en": "eye",
+      "ex": {
+        "hz": "她的眼睛很大。",
+        "py": "Tā de yǎnjing hěn dà.",
+        "en": "She has big eyes."
+      }
+    },
+    {
+      "w": "个子",
+      "py": "gèzi",
+      "en": "height; build",
+      "ex": {
+        "hz": "他个子很高。",
+        "py": "Tā gèzi hěn gāo.",
+        "en": "He's tall."
+      }
+    },
+    {
+      "w": "高",
+      "py": "gāo",
+      "en": "tall; high",
+      "ex": {
+        "hz": "哥哥很高。",
+        "py": "Gēge hěn gāo.",
+        "en": "My older brother is tall."
+      }
+    },
+    {
+      "w": "电视",
+      "py": "diànshì",
+      "en": "TV",
+      "ex": {
+        "hz": "宿舍里有电视吗？",
+        "py": "Sùshè li yǒu diànshì ma?",
+        "en": "Is there a TV in the dorm?"
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "最近怎么样",
+      "py": "Zuìjìn zěnmeyàng",
+      "en": "How have you been",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "最近你身体好吗？",
+          "py": "Zuìjìn nǐ shēntǐ hǎo ma?",
+          "en": "How have you been lately?"
+        },
+        {
+          "who": "B",
+          "hz": "挺好的。我学习比较忙。",
+          "py": "Tǐng hǎo de. Wǒ xuéxí bǐjiào máng.",
+          "en": "Pretty good. I'm fairly busy studying."
+        },
+        {
+          "who": "A",
+          "hz": "你成绩怎么样？",
+          "py": "Nǐ chéngjì zěnmeyàng?",
+          "en": "How are your grades?"
+        },
+        {
+          "who": "B",
+          "hz": "马马虎虎。",
+          "py": "Mǎmǎhūhū.",
+          "en": "So-so."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How is B's health?",
+          "options": [
+            "Pretty good",
+            "Not good",
+            "Tired",
+            "We don't know"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How are B's grades?",
+          "options": [
+            "So-so",
+            "Excellent",
+            "Bad",
+            "Not mentioned"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "你的宿舍",
+      "py": "Nǐ de sùshè",
+      "en": "Your dormitory",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你的宿舍大不大？",
+          "py": "Nǐ de sùshè dà bu dà?",
+          "en": "Is your dorm room big?"
+        },
+        {
+          "who": "B",
+          "hz": "不太大，里边有空调，没有电视。",
+          "py": "Bú tài dà, lǐbian yǒu kōngtiáo, méiyǒu diànshì.",
+          "en": "Not very; it has air conditioning but no TV."
+        },
+        {
+          "who": "A",
+          "hz": "宿舍离教室远吗？",
+          "py": "Sùshè lí jiàoshì yuǎn ma?",
+          "en": "Is it far from the classroom?"
+        },
+        {
+          "who": "B",
+          "hz": "不远，很近。",
+          "py": "Bù yuǎn, hěn jìn.",
+          "en": "No, very close."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What is in the room?",
+          "options": [
+            "Air conditioning",
+            "A TV",
+            "Both",
+            "Neither"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Is the dorm far from the classroom?",
+          "options": [
+            "No, very close",
+            "Yes, very far",
+            "A bit far",
+            "We don't know"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "正反疑问句",
+      "en": "Ask by saying yes and no: 大不大？ 有没有？",
+      "drills": [
+        {
+          "q": "你的宿舍大___大？",
+          "options": [
+            "不",
+            "没",
+            "很",
+            "吗"
+          ],
+          "answer": 0,
+          "en": "Is your dorm big?"
+        },
+        {
+          "q": "宿舍里有___有空调？",
+          "options": [
+            "没",
+            "不",
+            "很",
+            "吗"
+          ],
+          "answer": 0,
+          "en": "Is there air conditioning in the dorm?"
+        }
+      ]
+    },
+    {
+      "point": "没有",
+      "en": "有 → 没有 (never 不有)",
+      "drills": [
+        {
+          "q": "我___同屋。",
+          "options": [
+            "没有",
+            "不有",
+            "不是",
+            "不"
+          ],
+          "answer": 0,
+          "en": "I don't have a roommate."
+        }
+      ]
+    },
+    {
+      "point": "离",
+      "en": "A 离 B 远 / 近",
+      "drills": [
+        {
+          "q": "宿舍___教室很近。",
+          "options": [
+            "离",
+            "在",
+            "从",
+            "有"
+          ],
+          "answer": 0,
+          "en": "The dorm is close to the classroom."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "最近你身体好吗？"
+          ],
+          [
+            "女",
+            "很好。"
+          ]
+        ],
+        "q": "女的身体怎么样？",
+        "options": [
+          "很好",
+          "不太好",
+          "马马虎虎"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你的宿舍离教室远不远？"
+          ],
+          [
+            "女",
+            "不远，很近。"
+          ]
+        ],
+        "q": "宿舍离教室远吗？",
+        "options": [
+          "很近",
+          "很远",
+          "不知道"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "我的成绩马马虎虎。",
+        "claim": "他的成绩非常好。",
+        "ok": false
+      },
+      {
+        "text": "宿舍里有空调，没有电视。",
+        "claim": "宿舍里有空调。",
+        "ok": true
+      }
+    ],
+    "replies": [
+      {
+        "q": "你学习忙吗？",
+        "a": "比较忙。"
+      },
+      {
+        "q": "你有没有同屋？",
+        "a": "我没有同屋。"
+      },
+      {
+        "q": "你们学校食堂怎么样？",
+        "a": "挺不错的。"
+      },
+      {
+        "q": "美国学生多不多？",
+        "a": "不太多。"
+      }
+    ]
+  }
+}

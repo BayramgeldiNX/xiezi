@@ -1,0 +1,546 @@
+{
+  "n": 6,
+  "cn": "第六课",
+  "title": "我来介绍一下儿",
+  "en": "Let me introduce",
+  "words": [
+    {
+      "w": "认识",
+      "py": "rènshi",
+      "en": "to meet; to know",
+      "ex": {
+        "hz": "认识你很高兴。",
+        "py": "Rènshi nǐ hěn gāoxìng.",
+        "en": "Nice to meet you."
+      }
+    },
+    {
+      "w": "高兴",
+      "py": "gāoxìng",
+      "en": "glad; happy",
+      "ex": {
+        "hz": "我很高兴。",
+        "py": "Wǒ hěn gāoxìng.",
+        "en": "I'm very happy."
+      }
+    },
+    {
+      "w": "来",
+      "py": "lái",
+      "en": "(before a verb: I'll do it)",
+      "ex": {
+        "hz": "我来说。",
+        "py": "Wǒ lái shuō.",
+        "en": "Let me say it."
+      }
+    },
+    {
+      "w": "介绍",
+      "py": "jièshào",
+      "en": "to introduce",
+      "ex": {
+        "hz": "我来介绍一下儿。",
+        "py": "Wǒ lái jièshào yíxiàr.",
+        "en": "Let me introduce."
+      }
+    },
+    {
+      "w": "一下儿",
+      "py": "yíxiàr",
+      "en": "(do) briefly; a bit",
+      "ex": {
+        "hz": "你看一下儿。",
+        "py": "Nǐ kàn yíxiàr.",
+        "en": "Have a look."
+      }
+    },
+    {
+      "w": "是",
+      "py": "shì",
+      "en": "to be",
+      "ex": {
+        "hz": "我是学生。",
+        "py": "Wǒ shì xuésheng.",
+        "en": "I'm a student."
+      }
+    },
+    {
+      "w": "学习",
+      "py": "xuéxí",
+      "en": "to study",
+      "ex": {
+        "hz": "我学习中文。",
+        "py": "Wǒ xuéxí Zhōngwén.",
+        "en": "I study Chinese."
+      }
+    },
+    {
+      "w": "班",
+      "py": "bān",
+      "en": "class",
+      "ex": {
+        "hz": "我是一班的。",
+        "py": "Wǒ shì yī bān de.",
+        "en": "I'm in Class 1."
+      }
+    },
+    {
+      "w": "的",
+      "py": "de",
+      "en": "'s (belonging)",
+      "ex": {
+        "hz": "这是我的书。",
+        "py": "Zhè shì wǒ de shū.",
+        "en": "This is my book."
+      }
+    },
+    {
+      "w": "学生",
+      "py": "xuésheng",
+      "en": "student",
+      "ex": {
+        "hz": "他是我的学生。",
+        "py": "Tā shì wǒ de xuésheng.",
+        "en": "He is my student."
+      }
+    },
+    {
+      "w": "这",
+      "py": "zhè",
+      "en": "this",
+      "ex": {
+        "hz": "这是我妈妈。",
+        "py": "Zhè shì wǒ māma.",
+        "en": "This is my mom."
+      }
+    },
+    {
+      "w": "我们",
+      "py": "wǒmen",
+      "en": "we; us",
+      "ex": {
+        "hz": "我们是同学。",
+        "py": "Wǒmen shì tóngxué.",
+        "en": "We're classmates."
+      }
+    },
+    {
+      "w": "那",
+      "py": "nà",
+      "en": "that",
+      "ex": {
+        "hz": "那是我的书包。",
+        "py": "Nà shì wǒ de shūbāo.",
+        "en": "That's my schoolbag."
+      }
+    },
+    {
+      "w": "朋友",
+      "py": "péngyou",
+      "en": "friend",
+      "ex": {
+        "hz": "他是我朋友。",
+        "py": "Tā shì wǒ péngyou.",
+        "en": "He's my friend."
+      }
+    },
+    {
+      "w": "和",
+      "py": "hé",
+      "en": "and; with",
+      "ex": {
+        "hz": "我和我朋友去食堂。",
+        "py": "Wǒ hé wǒ péngyou qù shítáng.",
+        "en": "My friend and I are going to the dining hall."
+      }
+    },
+    {
+      "w": "人",
+      "py": "rén",
+      "en": "person",
+      "ex": {
+        "hz": "他是中国人。",
+        "py": "Tā shì Zhōngguó rén.",
+        "en": "He is Chinese."
+      }
+    },
+    {
+      "w": "教室",
+      "py": "jiàoshì",
+      "en": "classroom",
+      "ex": {
+        "hz": "我们的教室很大。",
+        "py": "Wǒmen de jiàoshì hěn dà.",
+        "en": "Our classroom is big."
+      }
+    },
+    {
+      "w": "大",
+      "py": "dà",
+      "en": "big",
+      "ex": {
+        "hz": "这个书包很大。",
+        "py": "Zhège shūbāo hěn dà.",
+        "en": "This schoolbag is big."
+      }
+    },
+    {
+      "w": "厚",
+      "py": "hòu",
+      "en": "thick",
+      "ex": {
+        "hz": "这本词典很厚。",
+        "py": "Zhè běn cídiǎn hěn hòu.",
+        "en": "This dictionary is thick."
+      }
+    },
+    {
+      "w": "同学",
+      "py": "tóngxué",
+      "en": "classmate",
+      "ex": {
+        "hz": "她是我的同学。",
+        "py": "Tā shì wǒ de tóngxué.",
+        "en": "She is my classmate."
+      }
+    },
+    {
+      "w": "新",
+      "py": "xīn",
+      "en": "new",
+      "ex": {
+        "hz": "我的本子很新。",
+        "py": "Wǒ de běnzi hěn xīn.",
+        "en": "My notebook is new."
+      }
+    },
+    {
+      "w": "漂亮",
+      "py": "piàoliang",
+      "en": "pretty; beautiful",
+      "ex": {
+        "hz": "你妹妹很漂亮。",
+        "py": "Nǐ mèimei hěn piàoliang.",
+        "en": "Your sister is pretty."
+      }
+    },
+    {
+      "w": "极了",
+      "py": "jí le",
+      "en": "extremely",
+      "ex": {
+        "hz": "好极了！",
+        "py": "Hǎo jí le!",
+        "en": "Excellent!"
+      }
+    },
+    {
+      "w": "女儿",
+      "py": "nǚ'ér",
+      "en": "daughter",
+      "ex": {
+        "hz": "这是我的女儿。",
+        "py": "Zhè shì wǒ de nǚ'ér.",
+        "en": "This is my daughter."
+      }
+    },
+    {
+      "w": "聪明",
+      "py": "cōngming",
+      "en": "clever",
+      "ex": {
+        "hz": "她很聪明。",
+        "py": "Tā hěn cōngming.",
+        "en": "She's clever."
+      }
+    },
+    {
+      "w": "可爱",
+      "py": "kě'ài",
+      "en": "lovely; cute",
+      "ex": {
+        "hz": "你女儿真可爱。",
+        "py": "Nǐ nǚ'ér zhēn kě'ài.",
+        "en": "Your daughter is so cute."
+      }
+    },
+    {
+      "w": "看",
+      "py": "kàn",
+      "en": "to look; to read",
+      "ex": {
+        "hz": "你们看，这是我。",
+        "py": "Nǐmen kàn, zhè shì wǒ.",
+        "en": "Look, this is me."
+      }
+    },
+    {
+      "w": "帅",
+      "py": "shuài",
+      "en": "handsome",
+      "ex": {
+        "hz": "你哥哥很帅。",
+        "py": "Nǐ gēge hěn shuài.",
+        "en": "Your brother is handsome."
+      }
+    },
+    {
+      "w": "小",
+      "py": "xiǎo",
+      "en": "small; little",
+      "ex": {
+        "hz": "我们的教室很小。",
+        "py": "Wǒmen de jiàoshì hěn xiǎo.",
+        "en": "Our classroom is small."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "认识你很高兴",
+      "py": "Rènshi nǐ hěn gāoxìng",
+      "en": "Nice to meet you",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你们好！我来介绍一下儿，我是留学生，我学习中文。",
+          "py": "Nǐmen hǎo! Wǒ lái jièshào yíxiàr, wǒ shì liúxuéshēng, wǒ xuéxí Zhōngwén.",
+          "en": "Hello everyone! Let me introduce myself: I'm an overseas student and I study Chinese."
+        },
+        {
+          "who": "B",
+          "hz": "认识你很高兴。你是哪个班的？",
+          "py": "Rènshi nǐ hěn gāoxìng. Nǐ shì nǎge bān de?",
+          "en": "Nice to meet you. Which class are you in?"
+        },
+        {
+          "who": "A",
+          "hz": "我是二班的。",
+          "py": "Wǒ shì èr bān de.",
+          "en": "Class 2."
+        },
+        {
+          "who": "B",
+          "hz": "我也是二班的！我们是同学。",
+          "py": "Wǒ yě shì èr bān de! Wǒmen shì tóngxué.",
+          "en": "Me too! We're classmates."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What does A study?",
+          "options": [
+            "Chinese",
+            "English",
+            "Medicine",
+            "Music"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which class are they in?",
+          "options": [
+            "Class 2",
+            "Class 1",
+            "Class 3",
+            "Different classes"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "这是我的家",
+      "py": "Zhè shì wǒ de jiā",
+      "en": "This is my family",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "这是我爸爸，这是我妈妈。",
+          "py": "Zhè shì wǒ bàba, zhè shì wǒ māma.",
+          "en": "This is my dad, this is my mom."
+        },
+        {
+          "who": "A",
+          "hz": "这是我妹妹，她很聪明，也很可爱。",
+          "py": "Zhè shì wǒ mèimei, tā hěn cōngming, yě hěn kě'ài.",
+          "en": "This is my younger sister — clever and cute."
+        },
+        {
+          "who": "B",
+          "hz": "你妹妹漂亮极了！这是谁？",
+          "py": "Nǐ mèimei piàoliang jí le! Zhè shì shéi?",
+          "en": "Your sister is so pretty! Who's this?"
+        },
+        {
+          "who": "A",
+          "hz": "这是我，很帅吧？",
+          "py": "Zhè shì wǒ, hěn shuài ba?",
+          "en": "That's me — handsome, right?"
+        }
+      ],
+      "questions": [
+        {
+          "q": "What is the younger sister like?",
+          "options": [
+            "Clever and cute",
+            "Tall",
+            "Busy",
+            "Tired"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Who is the last person in the photo?",
+          "options": [
+            "A himself",
+            "A's brother",
+            "A's dad",
+            "A's friend"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "是 sentences",
+      "en": "A 是 B; negative 不是",
+      "drills": [
+        {
+          "q": "我___留学生。",
+          "options": [
+            "是",
+            "很",
+            "在",
+            "有"
+          ],
+          "answer": 0,
+          "en": "I'm an overseas student."
+        },
+        {
+          "q": "他们都___德国人。",
+          "options": [
+            "不是",
+            "不",
+            "没",
+            "是不"
+          ],
+          "answer": 0,
+          "en": "None of them are German."
+        }
+      ]
+    },
+    {
+      "point": "Adjective predicates",
+      "en": "很 + adjective, no 是",
+      "drills": [
+        {
+          "q": "她___聪明。",
+          "options": [
+            "很",
+            "是",
+            "的",
+            "在"
+          ],
+          "answer": 0,
+          "en": "She's clever."
+        }
+      ]
+    },
+    {
+      "point": "的",
+      "en": "my / our / my classmate's + noun",
+      "drills": [
+        {
+          "q": "这是我___书包。",
+          "options": [
+            "的",
+            "是",
+            "很",
+            "吗"
+          ],
+          "answer": 0,
+          "en": "This is my schoolbag."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "认识你很高兴。"
+          ],
+          [
+            "女",
+            "认识你我也很高兴。"
+          ]
+        ],
+        "q": "他们在做什么？",
+        "options": [
+          "认识新朋友",
+          "买东西",
+          "吃饭"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "这是谁？"
+          ],
+          [
+            "女",
+            "这是我的女儿，她很可爱。"
+          ]
+        ],
+        "q": "女儿怎么样？",
+        "options": [
+          "很可爱",
+          "很帅",
+          "很累"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "我们的教室不大。",
+        "claim": "教室很大。",
+        "ok": false
+      },
+      {
+        "text": "那是我同学的书包，他的书包很新。",
+        "claim": "书包是同学的。",
+        "ok": true
+      }
+    ],
+    "replies": [
+      {
+        "q": "认识你很高兴。",
+        "a": "我也很高兴。"
+      },
+      {
+        "q": "这是谁？",
+        "a": "这是我的朋友。"
+      },
+      {
+        "q": "你是留学生吗？",
+        "a": "是，我学习中文。"
+      },
+      {
+        "q": "你的书厚吗？",
+        "a": "很厚。"
+      }
+    ]
+  }
+}

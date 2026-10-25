@@ -1,0 +1,692 @@
+{
+  "n": 13,
+  "cn": "第十三课",
+  "title": "您给我介绍介绍",
+  "en": "Can you give me a brief introduction",
+  "words": [
+    {
+      "w": "想",
+      "py": "xiǎng",
+      "en": "would like",
+      "ex": {
+        "hz": "我想买个手机。",
+        "py": "Wǒ xiǎng mǎi ge shǒujī.",
+        "en": "I'd like to buy a phone."
+      }
+    },
+    {
+      "w": "手机",
+      "py": "shǒujī",
+      "en": "mobile phone",
+      "ex": {
+        "hz": "你的手机是新的吗？",
+        "py": "Nǐ de shǒujī shì xīn de ma?",
+        "en": "Is your phone new?"
+      }
+    },
+    {
+      "w": "给",
+      "py": "gěi",
+      "en": "for; to",
+      "ex": {
+        "hz": "您给我介绍介绍。",
+        "py": "Nín gěi wǒ jièshào jièshào.",
+        "en": "Could you tell me about them?"
+      }
+    },
+    {
+      "w": "千",
+      "py": "qiān",
+      "en": "thousand",
+      "ex": {
+        "hz": "这个手机三千块。",
+        "py": "Zhège shǒujī sānqiān kuài.",
+        "en": "This phone is 3,000 yuan."
+      }
+    },
+    {
+      "w": "左右",
+      "py": "zuǒyòu",
+      "en": "about; or so",
+      "ex": {
+        "hz": "两千块左右。",
+        "py": "Liǎngqiān kuài zuǒyòu.",
+        "en": "About 2,000 yuan."
+      }
+    },
+    {
+      "w": "牌子",
+      "py": "páizi",
+      "en": "brand",
+      "ex": {
+        "hz": "这是什么牌子的？",
+        "py": "Zhè shì shénme páizi de?",
+        "en": "What brand is this?"
+      }
+    },
+    {
+      "w": "质量",
+      "py": "zhìliàng",
+      "en": "quality",
+      "ex": {
+        "hz": "这个牌子质量很好。",
+        "py": "Zhège páizi zhìliàng hěn hǎo.",
+        "en": "This brand has good quality."
+      }
+    },
+    {
+      "w": "又",
+      "py": "yòu",
+      "en": "(又…又… both … and …)",
+      "ex": {
+        "hz": "又好又便宜。",
+        "py": "Yòu hǎo yòu piányi.",
+        "en": "Both good and cheap."
+      }
+    },
+    {
+      "w": "价钱",
+      "py": "jiàqián",
+      "en": "price",
+      "ex": {
+        "hz": "价钱怎么样？",
+        "py": "Jiàqián zěnmeyàng?",
+        "en": "What's the price like?"
+      }
+    },
+    {
+      "w": "便宜",
+      "py": "piányi",
+      "en": "cheap",
+      "ex": {
+        "hz": "这个很便宜。",
+        "py": "Zhège hěn piányi.",
+        "en": "This one is cheap."
+      }
+    },
+    {
+      "w": "样子",
+      "py": "yàngzi",
+      "en": "appearance; style",
+      "ex": {
+        "hz": "样子挺好看。",
+        "py": "Yàngzi tǐng hǎokàn.",
+        "en": "It looks nice."
+      }
+    },
+    {
+      "w": "好看",
+      "py": "hǎokàn",
+      "en": "good-looking",
+      "ex": {
+        "hz": "这件衣服很好看。",
+        "py": "Zhè jiàn yīfu hěn hǎokàn.",
+        "en": "This garment looks nice."
+      }
+    },
+    {
+      "w": "双",
+      "py": "shuāng",
+      "en": "pair",
+      "ex": {
+        "hz": "一双鞋。",
+        "py": "Yì shuāng xié.",
+        "en": "A pair of shoes."
+      }
+    },
+    {
+      "w": "号",
+      "py": "hào",
+      "en": "size",
+      "ex": {
+        "hz": "您穿多大号的？",
+        "py": "Nín chuān duō dà hào de?",
+        "en": "What size do you wear?"
+      }
+    },
+    {
+      "w": "可以",
+      "py": "kěyǐ",
+      "en": "can; may",
+      "ex": {
+        "hz": "我可以试试吗？",
+        "py": "Wǒ kěyǐ shìshi ma?",
+        "en": "May I try it?"
+      }
+    },
+    {
+      "w": "试",
+      "py": "shì",
+      "en": "to try",
+      "ex": {
+        "hz": "您试试这双。",
+        "py": "Nín shìshi zhè shuāng.",
+        "en": "Try this pair."
+      }
+    },
+    {
+      "w": "有点儿",
+      "py": "yǒudiǎnr",
+      "en": "a bit (too)",
+      "ex": {
+        "hz": "这双有点儿小。",
+        "py": "Zhè shuāng yǒudiǎnr xiǎo.",
+        "en": "This pair is a bit small."
+      }
+    },
+    {
+      "w": "一点儿",
+      "py": "yìdiǎnr",
+      "en": "a little",
+      "ex": {
+        "hz": "有大一点儿的吗？",
+        "py": "Yǒu dà yìdiǎnr de ma?",
+        "en": "Do you have a slightly bigger one?"
+      }
+    },
+    {
+      "w": "合适",
+      "py": "héshì",
+      "en": "suitable; just right",
+      "ex": {
+        "hz": "这双很合适。",
+        "py": "Zhè shuāng hěn héshì.",
+        "en": "This pair fits well."
+      }
+    },
+    {
+      "w": "客服",
+      "py": "kèfú",
+      "en": "customer service",
+      "ex": {
+        "hz": "我问一下儿客服。",
+        "py": "Wǒ wèn yíxiàr kèfú.",
+        "en": "I'll ask customer service."
+      }
+    },
+    {
+      "w": "件",
+      "py": "jiàn",
+      "en": "(measure word for clothes)",
+      "ex": {
+        "hz": "这件衬衣多少钱？",
+        "py": "Zhè jiàn chènyī duōshao qián?",
+        "en": "How much is this shirt?"
+      }
+    },
+    {
+      "w": "白",
+      "py": "bái",
+      "en": "white",
+      "ex": {
+        "hz": "我要白的。",
+        "py": "Wǒ yào bái de.",
+        "en": "I want the white one."
+      }
+    },
+    {
+      "w": "衬衣",
+      "py": "chènyī",
+      "en": "shirt",
+      "ex": {
+        "hz": "这件衬衣很好看。",
+        "py": "Zhè jiàn chènyī hěn hǎokàn.",
+        "en": "This shirt looks nice."
+      }
+    },
+    {
+      "w": "真丝",
+      "py": "zhēnsī",
+      "en": "real silk",
+      "ex": {
+        "hz": "这是真丝的吗？",
+        "py": "Zhè shì zhēnsī de ma?",
+        "en": "Is this real silk?"
+      }
+    },
+    {
+      "w": "百分之",
+      "py": "bǎi fēn zhī",
+      "en": "percent",
+      "ex": {
+        "hz": "百分之百。",
+        "py": "Bǎi fēn zhī bǎi.",
+        "en": "100 percent."
+      }
+    },
+    {
+      "w": "凉快",
+      "py": "liángkuai",
+      "en": "cool",
+      "ex": {
+        "hz": "今天很凉快。",
+        "py": "Jīntiān hěn liángkuai.",
+        "en": "It's cool today."
+      }
+    },
+    {
+      "w": "舒服",
+      "py": "shūfu",
+      "en": "comfortable",
+      "ex": {
+        "hz": "这双鞋很舒服。",
+        "py": "Zhè shuāng xié hěn shūfu.",
+        "en": "These shoes are comfortable."
+      }
+    },
+    {
+      "w": "只",
+      "py": "zhǐ",
+      "en": "only",
+      "ex": {
+        "hz": "我只有一百块。",
+        "py": "Wǒ zhǐ yǒu yìbǎi kuài.",
+        "en": "I only have 100 yuan."
+      }
+    },
+    {
+      "w": "种",
+      "py": "zhǒng",
+      "en": "kind; type",
+      "ex": {
+        "hz": "只有这一种颜色吗？",
+        "py": "Zhǐ yǒu zhè yì zhǒng yánsè ma?",
+        "en": "Only this one colour?"
+      }
+    },
+    {
+      "w": "颜色",
+      "py": "yánsè",
+      "en": "colour",
+      "ex": {
+        "hz": "你喜欢什么颜色？",
+        "py": "Nǐ xǐhuan shénme yánsè?",
+        "en": "What colour do you like?"
+      }
+    },
+    {
+      "w": "黑",
+      "py": "hēi",
+      "en": "black",
+      "ex": {
+        "hz": "黑的也很好看。",
+        "py": "Hēi de yě hěn hǎokàn.",
+        "en": "The black one is nice too."
+      }
+    },
+    {
+      "w": "优惠券",
+      "py": "yōuhuìquàn",
+      "en": "coupon",
+      "ex": {
+        "hz": "我有一张优惠券。",
+        "py": "Wǒ yǒu yì zhāng yōuhuìquàn.",
+        "en": "I have a coupon."
+      }
+    },
+    {
+      "w": "就",
+      "py": "jiù",
+      "en": "just; right (away)",
+      "ex": {
+        "hz": "我现在就买。",
+        "py": "Wǒ xiànzài jiù mǎi.",
+        "en": "I'll buy it right now."
+      }
+    },
+    {
+      "w": "下单",
+      "py": "xiàdān",
+      "en": "to place an order",
+      "ex": {
+        "hz": "我在手机上下单。",
+        "py": "Wǒ zài shǒujī shang xiàdān.",
+        "en": "I'll order on my phone."
+      }
+    },
+    {
+      "w": "带",
+      "py": "dài",
+      "en": "to take; to bring",
+      "ex": {
+        "hz": "今天带雨伞吧。",
+        "py": "Jīntiān dài yǔsǎn ba.",
+        "en": "Take an umbrella today."
+      }
+    },
+    {
+      "w": "雨伞",
+      "py": "yǔsǎn",
+      "en": "umbrella",
+      "ex": {
+        "hz": "我的雨伞是蓝的。",
+        "py": "Wǒ de yǔsǎn shì lán de.",
+        "en": "My umbrella is blue."
+      }
+    },
+    {
+      "w": "天气",
+      "py": "tiānqì",
+      "en": "weather",
+      "ex": {
+        "hz": "今天天气怎么样？",
+        "py": "Jīntiān tiānqì zěnmeyàng?",
+        "en": "How's the weather today?"
+      }
+    },
+    {
+      "w": "用",
+      "py": "yòng",
+      "en": "to use",
+      "ex": {
+        "hz": "我可以用你的笔吗？",
+        "py": "Wǒ kěyǐ yòng nǐ de bǐ ma?",
+        "en": "May I use your pen?"
+      }
+    },
+    {
+      "w": "算",
+      "py": "suàn",
+      "en": "to calculate",
+      "ex": {
+        "hz": "请算一下儿。",
+        "py": "Qǐng suàn yíxiàr.",
+        "en": "Please add it up."
+      }
+    },
+    {
+      "w": "条",
+      "py": "tiáo",
+      "en": "(measure word for long things)",
+      "ex": {
+        "hz": "一条裤子。",
+        "py": "Yì tiáo kùzi.",
+        "en": "A pair of trousers."
+      }
+    },
+    {
+      "w": "裤子",
+      "py": "kùzi",
+      "en": "trousers",
+      "ex": {
+        "hz": "这条裤子有点儿长。",
+        "py": "Zhè tiáo kùzi yǒudiǎnr cháng.",
+        "en": "These trousers are a bit long."
+      }
+    },
+    {
+      "w": "难",
+      "py": "nán",
+      "en": "difficult",
+      "ex": {
+        "hz": "汉字不太难。",
+        "py": "Hànzì bú tài nán.",
+        "en": "Chinese characters aren't too hard."
+      }
+    },
+    {
+      "w": "乱",
+      "py": "luàn",
+      "en": "messy",
+      "ex": {
+        "hz": "我的房间有点儿乱。",
+        "py": "Wǒ de fángjiān yǒudiǎnr luàn.",
+        "en": "My room is a bit messy."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "买鞋",
+      "py": "Mǎi xié",
+      "en": "Buying shoes",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "这双鞋多少钱？",
+          "py": "Zhè shuāng xié duōshao qián?",
+          "en": "How much are these shoes?"
+        },
+        {
+          "who": "B",
+          "hz": "三百块，质量又好，样子又好看。",
+          "py": "Sānbǎi kuài, zhìliàng yòu hǎo, yàngzi yòu hǎokàn.",
+          "en": "300 yuan — good quality and good-looking."
+        },
+        {
+          "who": "A",
+          "hz": "我可以试试吗？有点儿小。",
+          "py": "Wǒ kěyǐ shìshi ma? Yǒudiǎnr xiǎo.",
+          "en": "May I try? They're a bit small."
+        },
+        {
+          "who": "B",
+          "hz": "您试试大一点儿的。",
+          "py": "Nín shìshi dà yìdiǎnr de.",
+          "en": "Try a slightly bigger pair."
+        },
+        {
+          "who": "A",
+          "hz": "这双挺合适。",
+          "py": "Zhè shuāng tǐng héshì.",
+          "en": "This pair fits well."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How much are the shoes?",
+          "options": [
+            "300 yuan",
+            "30 yuan",
+            "3,000 yuan",
+            "200 yuan"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What was wrong with the first pair?",
+          "options": [
+            "A bit small",
+            "A bit big",
+            "Too expensive",
+            "Ugly"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "网上买衬衣",
+      "py": "Wǎngshàng mǎi chènyī",
+      "en": "Buying a shirt online",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "这件白衬衣是真丝的吗？",
+          "py": "Zhè jiàn bái chènyī shì zhēnsī de ma?",
+          "en": "Is this white shirt real silk?"
+        },
+        {
+          "who": "B",
+          "hz": "是，又凉快又舒服。",
+          "py": "Shì, yòu liángkuai yòu shūfu.",
+          "en": "Yes — cool and comfortable."
+        },
+        {
+          "who": "A",
+          "hz": "有黑的吗？",
+          "py": "Yǒu hēi de ma?",
+          "en": "Do you have it in black?"
+        },
+        {
+          "who": "B",
+          "hz": "有。我给您一张优惠券。",
+          "py": "Yǒu. Wǒ gěi nín yì zhāng yōuhuìquàn.",
+          "en": "Yes. I'll give you a coupon."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What is the shirt made of?",
+          "options": [
+            "Real silk",
+            "Cotton",
+            "We don't know",
+            "Paper"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What colour does A ask about?",
+          "options": [
+            "Black",
+            "White",
+            "Red",
+            "Blue"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "有点儿 / 一点儿",
+      "en": "有点儿 + adj (too …); adj + 一点儿 (a bit more)",
+      "drills": [
+        {
+          "q": "这双___小。",
+          "options": [
+            "有点儿",
+            "一点儿",
+            "一下儿",
+            "很多"
+          ],
+          "answer": 0,
+          "en": "This pair is a bit small."
+        },
+        {
+          "q": "有大___的吗？",
+          "options": [
+            "一点儿",
+            "有点儿",
+            "一下儿",
+            "多"
+          ],
+          "answer": 0,
+          "en": "Do you have a slightly bigger one?"
+        }
+      ]
+    },
+    {
+      "point": "又……又……",
+      "en": "both … and …",
+      "drills": [
+        {
+          "q": "质量___好，价钱又便宜。",
+          "options": [
+            "又",
+            "也",
+            "还",
+            "都"
+          ],
+          "answer": 0,
+          "en": "Good quality and cheap too."
+        }
+      ]
+    },
+    {
+      "point": "可以",
+      "en": "可以: may; can",
+      "drills": [
+        {
+          "q": "我___试试吗？",
+          "options": [
+            "可以",
+            "会",
+            "想",
+            "要"
+          ],
+          "answer": 0,
+          "en": "May I try it?"
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "您想要多少钱的？"
+          ],
+          [
+            "女",
+            "两千块左右的。"
+          ]
+        ],
+        "q": "男的想买多少钱的手机？",
+        "options": [
+          "两千块左右",
+          "一千块",
+          "三千块"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "这双有点儿小。"
+          ],
+          [
+            "女",
+            "您再试试41号的。"
+          ]
+        ],
+        "q": "鞋怎么样？",
+        "options": [
+          "有点儿小",
+          "有点儿大",
+          "很合适"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "这件衬衣是百分之百的真丝。",
+        "claim": "衬衣是真丝的。",
+        "ok": true
+      },
+      {
+        "text": "只有白的这一种颜色。",
+        "claim": "还有红的、蓝的、黑的。",
+        "ok": false
+      }
+    ],
+    "replies": [
+      {
+        "q": "我可以试试吗？",
+        "a": "可以。"
+      },
+      {
+        "q": "这双鞋是多大号的？",
+        "a": "40号的。"
+      },
+      {
+        "q": "价钱有点儿贵，便宜一点儿吧。",
+        "a": "我给您个优惠券。"
+      },
+      {
+        "q": "你好！在吗？",
+        "a": "您好，在呢。"
+      }
+    ]
+  }
+}

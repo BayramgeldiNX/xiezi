@@ -5144,5 +5144,2750 @@
       "横",
       "横"
     ]
+  },
+  "久": {
+    "py": "jiǔ",
+    "en": "long (time)",
+    "tip": "A person dragging a long tail: a <b>long time</b>. 好久不见 = long time no see.",
+    "strokes": [
+      "撇",
+      "横撇",
+      "捺"
+    ]
+  },
+  "累": {
+    "py": "lèi",
+    "en": "tired",
+    "tip": "田 (field) over 糸 (thread). Working the fields all day: <b>tired</b>.",
+    "strokes": [
+      "竖",
+      "横折",
+      "横",
+      "竖",
+      "横",
+      "撇折",
+      "撇折",
+      "点",
+      "竖钩",
+      "撇",
+      "点"
+    ]
+  },
+  "饿": {
+    "py": "è",
+    "en": "hungry",
+    "tip": "饣 (food) + 我 (I). I need food: <b>hungry</b>.",
+    "strokes": [
+      "撇",
+      "横钩",
+      "竖提",
+      "撇",
+      "横",
+      "竖钩",
+      "提",
+      "斜钩",
+      "撇",
+      "点"
+    ]
+  },
+  "渴": {
+    "py": "kě",
+    "en": "thirsty",
+    "tip": "氵 (water) + 曷. Wanting water: <b>thirsty</b>.",
+    "strokes": [
+      "点",
+      "点",
+      "提",
+      "竖",
+      "横折",
+      "横",
+      "横",
+      "撇",
+      "横折钩",
+      "撇",
+      "点",
+      "竖折"
+    ]
+  },
+  "饺": {
+    "py": "jiǎo",
+    "en": "dumpling",
+    "tip": "饣 (food) + 交 (jiāo, gives the sound): <b>dumpling</b>.",
+    "strokes": [
+      "撇",
+      "横钩",
+      "竖提",
+      "点",
+      "横",
+      "撇",
+      "点",
+      "撇",
+      "捺"
+    ]
+  },
+  "包": {
+    "py": "bāo",
+    "en": "to wrap; bag",
+    "tip": "勹 (wrapping) around 巳 (a baby): to <b>wrap</b>. 面包 = bread.",
+    "strokes": [
+      "撇",
+      "横折钩",
+      "横折",
+      "横",
+      "竖弯钩"
+    ]
+  },
+  "啤": {
+    "py": "pí",
+    "en": "(in 啤酒 beer)",
+    "tip": "口 + 卑 (bēi): the sound “pí”.",
+    "strokes": [
+      "竖",
+      "横折",
+      "横",
+      "撇",
+      "竖",
+      "横折",
+      "横",
+      "横",
+      "撇",
+      "横",
+      "竖"
+    ]
+  },
+  "酒": {
+    "py": "jiǔ",
+    "en": "alcohol",
+    "tip": "氵 (liquid) + 酉 (wine jar): <b>alcohol</b>.",
+    "strokes": [
+      "点",
+      "点",
+      "提",
+      "横",
+      "竖",
+      "横折",
+      "撇",
+      "竖弯",
+      "横",
+      "横"
+    ]
+  },
+  "矿": {
+    "py": "kuàng",
+    "en": "mine; mineral",
+    "tip": "石 (stone) + 广. Stone from a <b>mine</b>. 矿泉水 = mineral water.",
+    "strokes": [
+      "横",
+      "撇",
+      "竖",
+      "横折",
+      "横",
+      "点",
+      "横",
+      "撇"
+    ]
+  },
+  "泉": {
+    "py": "quán",
+    "en": "spring (water)",
+    "tip": "白 (white) over 水 (water): clear water rising: a <b>spring</b>.",
+    "strokes": [
+      "撇",
+      "竖",
+      "横折",
+      "横",
+      "横",
+      "竖钩",
+      "横撇",
+      "撇",
+      "捺"
+    ]
+  },
+  "词": {
+    "py": "cí",
+    "en": "word",
+    "tip": "讠 (speech) + 司. A unit of speech: <b>word</b>. 词典 = dictionary.",
+    "strokes": [
+      "点",
+      "横折提",
+      "横折钩",
+      "横",
+      "竖",
+      "横折",
+      "横"
+    ]
+  },
+  "典": {
+    "py": "diǎn",
+    "en": "standard; classic",
+    "tip": "Books on a stand: a <b>classic</b>. 词典 = dictionary.",
+    "strokes": [
+      "竖",
+      "横折",
+      "横",
+      "竖",
+      "竖",
+      "横",
+      "撇",
+      "点"
+    ]
+  },
+  "换": {
+    "py": "huàn",
+    "en": "to exchange",
+    "tip": "扌 (hand) + 奂. Hands swapping: to <b>exchange</b>.",
+    "strokes": [
+      "横",
+      "竖钩",
+      "提",
+      "撇",
+      "横撇",
+      "竖",
+      "横折",
+      "横",
+      "撇",
+      "捺"
+    ]
+  },
+  "美": {
+    "py": "měi",
+    "en": "beautiful",
+    "tip": "羊 (sheep) + 大 (big). A big sheep: <b>beautiful</b>. 美元 = US dollar.",
+    "strokes": [
+      "点",
+      "撇",
+      "横",
+      "横",
+      "竖",
+      "横",
+      "横",
+      "撇",
+      "捺"
+    ]
+  },
+  "元": {
+    "py": "yuán",
+    "en": "yuan; first",
+    "tip": "二 over 儿: a person with a head: the <b>first</b>; also <b>yuan</b>.",
+    "strokes": [
+      "横",
+      "横",
+      "撇",
+      "竖弯钩"
+    ]
+  },
+  "毛": {
+    "py": "máo",
+    "en": "hair; mao (1/10 yuan)",
+    "tip": "A tuft of <b>hair</b>. Also a small coin, 毛.",
+    "strokes": [
+      "撇",
+      "横",
+      "横",
+      "竖弯钩"
+    ]
+  },
+  "瓶": {
+    "py": "píng",
+    "en": "bottle",
+    "tip": "并 + 瓦 (pottery): a pottery <b>bottle</b>.",
+    "strokes": [
+      "点",
+      "撇",
+      "横",
+      "横",
+      "撇",
+      "竖",
+      "横",
+      "竖提",
+      "横折弯钩",
+      "点"
+    ]
+  },
+  "图": {
+    "py": "tú",
+    "en": "picture; map",
+    "tip": "囗 (frame) + 冬. A <b>picture</b> in a frame. 图书馆 = library.",
+    "strokes": [
+      "竖",
+      "横折",
+      "撇",
+      "横撇",
+      "捺",
+      "点",
+      "点",
+      "横"
+    ]
+  },
+  "食": {
+    "py": "shí",
+    "en": "food",
+    "tip": "A lid over a bowl of food: <b>food</b>. 食堂 = dining hall.",
+    "strokes": [
+      "撇",
+      "捺",
+      "点",
+      "横折",
+      "横",
+      "横",
+      "竖提",
+      "撇",
+      "捺"
+    ]
+  },
+  "堂": {
+    "py": "táng",
+    "en": "hall",
+    "tip": "尚 + 土 (earth). A big room on solid ground: <b>hall</b>.",
+    "strokes": [
+      "竖",
+      "点",
+      "撇",
+      "点",
+      "横钩",
+      "点",
+      "横折",
+      "横",
+      "横",
+      "竖",
+      "横"
+    ]
+  },
+  "办": {
+    "py": "bàn",
+    "en": "to do; handle",
+    "tip": "力 (strength) with two drops of sweat: getting things <b>done</b>. 办公室 = office.",
+    "strokes": [
+      "横折钩",
+      "撇",
+      "点",
+      "点"
+    ]
+  },
+  "留": {
+    "py": "liú",
+    "en": "to stay",
+    "tip": "卯 + 田 (field). Staying on the field: to <b>stay</b>. 留学生 = overseas student.",
+    "strokes": [
+      "撇",
+      "竖提",
+      "点",
+      "横折钩",
+      "撇",
+      "竖",
+      "横折",
+      "横",
+      "点",
+      "横"
+    ]
+  },
+  "宿": {
+    "py": "sù",
+    "en": "to stay overnight",
+    "tip": "宀 (roof) + 亻 + 百. A hundred people under one roof for the <b>night</b>. 宿舍 = dorm.",
+    "strokes": [
+      "点",
+      "点",
+      "横钩",
+      "撇",
+      "竖",
+      "横",
+      "撇",
+      "竖",
+      "横折",
+      "横",
+      "横"
+    ]
+  },
+  "舍": {
+    "py": "shè",
+    "en": "house",
+    "tip": "A roof over a house on a base: <b>house</b>.",
+    "strokes": [
+      "撇",
+      "捺",
+      "横",
+      "横",
+      "竖",
+      "竖",
+      "横折",
+      "横"
+    ]
+  },
+  "楼": {
+    "py": "lóu",
+    "en": "building (multi-storey)",
+    "tip": "木 (wood) + 娄: a wooden tower: <b>building</b>.",
+    "strokes": [
+      "横",
+      "竖",
+      "撇",
+      "点",
+      "点",
+      "撇",
+      "横",
+      "竖",
+      "撇",
+      "点",
+      "撇点",
+      "撇",
+      "横"
+    ]
+  },
+  "银": {
+    "py": "yín",
+    "en": "silver",
+    "tip": "钅 (metal) + 艮: <b>silver</b>. 银行 = bank.",
+    "strokes": [
+      "撇",
+      "横",
+      "横",
+      "横",
+      "竖提",
+      "横折",
+      "横",
+      "横",
+      "竖提",
+      "撇",
+      "捺"
+    ]
+  },
+  "邮": {
+    "py": "yóu",
+    "en": "post; mail",
+    "tip": "由 + 阝 (town). What goes from town to town: <b>mail</b>.",
+    "strokes": [
+      "竖",
+      "横折",
+      "横",
+      "竖",
+      "横",
+      "横撇弯钩",
+      "竖"
+    ]
+  },
+  "局": {
+    "py": "jú",
+    "en": "office; bureau",
+    "tip": "尸 + 句. 邮局 = post office.",
+    "strokes": [
+      "横折",
+      "横",
+      "撇",
+      "横折钩",
+      "竖",
+      "横折",
+      "横"
+    ]
+  },
+  "厚": {
+    "py": "hòu",
+    "en": "thick",
+    "tip": "厂 (cliff) + 日 + 子. A thick cliff: <b>thick</b>.",
+    "strokes": [
+      "横",
+      "撇",
+      "竖",
+      "横折",
+      "横",
+      "横",
+      "横撇",
+      "弯钩",
+      "横"
+    ]
+  },
+  "极": {
+    "py": "jí",
+    "en": "extreme",
+    "tip": "木 (wood) + 及 (to reach). The top of the tree: <b>extreme</b>. 极了 = extremely.",
+    "strokes": [
+      "横",
+      "竖",
+      "撇",
+      "点",
+      "撇",
+      "横折折撇",
+      "捺"
+    ]
+  },
+  "聪": {
+    "py": "cōng",
+    "en": "clever",
+    "tip": "耳 (ear) + 总. Ears that catch everything: <b>clever</b>.",
+    "strokes": [
+      "横",
+      "竖",
+      "竖",
+      "横",
+      "横",
+      "提",
+      "点",
+      "撇",
+      "竖",
+      "横折",
+      "横",
+      "点",
+      "卧钩",
+      "点",
+      "点"
+    ]
+  },
+  "帅": {
+    "py": "shuài",
+    "en": "handsome",
+    "tip": "刂 + 巾 (cloth). Smart clothes: <b>handsome</b>.",
+    "strokes": [
+      "竖",
+      "撇",
+      "竖",
+      "横折钩",
+      "竖"
+    ]
+  },
+  "较": {
+    "py": "jiào",
+    "en": "relatively",
+    "tip": "车 (cart) + 交 (cross). Comparing carts: <b>relatively</b>. 比较 = fairly.",
+    "strokes": [
+      "横",
+      "撇折",
+      "竖",
+      "提",
+      "点",
+      "横",
+      "撇",
+      "点",
+      "撇",
+      "捺"
+    ]
+  },
+  "成": {
+    "py": "chéng",
+    "en": "to become; complete",
+    "tip": "A spear 戈 finishing a job: <b>complete</b>. 成绩 = results.",
+    "strokes": [
+      "横",
+      "撇",
+      "横折钩",
+      "斜钩",
+      "撇",
+      "点"
+    ]
+  },
+  "绩": {
+    "py": "jì",
+    "en": "achievement",
+    "tip": "纟 (thread) + 责 (duty). Work spun from duty: <b>achievement</b>.",
+    "strokes": [
+      "撇折",
+      "撇折",
+      "提",
+      "横",
+      "横",
+      "竖",
+      "横",
+      "竖",
+      "横折",
+      "撇",
+      "点"
+    ]
+  },
+  "马": {
+    "py": "mǎ",
+    "en": "horse",
+    "tip": "A <b>horse</b> with mane and legs. 马马虎虎 = so-so.",
+    "strokes": [
+      "横折",
+      "竖折折钩",
+      "提"
+    ]
+  },
+  "虎": {
+    "py": "hǔ",
+    "en": "tiger",
+    "tip": "A <b>tiger</b> with stripes. 马马虎虎 = so-so.",
+    "strokes": [
+      "竖",
+      "横",
+      "横钩",
+      "撇",
+      "横",
+      "横折钩",
+      "撇",
+      "竖弯钩"
+    ]
+  },
+  "努": {
+    "py": "nǔ",
+    "en": "to strive",
+    "tip": "奴 + 力 (strength). Putting all strength in: <b>strive</b>. 努力 = hard-working.",
+    "strokes": [
+      "撇点",
+      "撇",
+      "横",
+      "横撇",
+      "点",
+      "横折钩",
+      "撇"
+    ]
+  },
+  "力": {
+    "py": "lì",
+    "en": "strength",
+    "tip": "A strong arm: <b>strength</b>.",
+    "strokes": [
+      "横折钩",
+      "撇"
+    ]
+  },
+  "空": {
+    "py": "kōng",
+    "en": "empty; air",
+    "tip": "穴 (cave) + 工. An empty cave: <b>empty</b>, <b>air</b>. 空调 = air conditioner.",
+    "strokes": [
+      "点",
+      "点",
+      "横钩",
+      "撇",
+      "点",
+      "横",
+      "竖",
+      "横"
+    ]
+  },
+  "调": {
+    "py": "tiáo",
+    "en": "to adjust",
+    "tip": "讠 + 周 (all round). Words that set things right: to <b>adjust</b>.",
+    "strokes": [
+      "点",
+      "横折提",
+      "撇",
+      "横折钩",
+      "横",
+      "竖",
+      "横",
+      "竖",
+      "横折",
+      "横"
+    ]
+  },
+  "屋": {
+    "py": "wū",
+    "en": "room",
+    "tip": "尸 (roof) + 至 (arrive). Where you arrive: a <b>room</b>. 同屋 = roommate.",
+    "strokes": [
+      "横折",
+      "横",
+      "撇",
+      "横",
+      "撇折",
+      "点",
+      "横",
+      "竖",
+      "横"
+    ]
+  },
+  "挺": {
+    "py": "tǐng",
+    "en": "quite; upright",
+    "tip": "扌 + 廷. Standing up straight; <b>quite</b>.",
+    "strokes": [
+      "横",
+      "竖钩",
+      "提",
+      "撇",
+      "横",
+      "竖",
+      "横",
+      "横折折撇",
+      "捺"
+    ]
+  },
+  "头": {
+    "py": "tóu",
+    "en": "head",
+    "tip": "Two dots for eyes on a big head: <b>head</b>.",
+    "strokes": [
+      "点",
+      "点",
+      "横",
+      "撇",
+      "点"
+    ]
+  },
+  "发": {
+    "py": "fā",
+    "en": "hair; to send",
+    "tip": "Hair streaming: <b>hair</b> (头发). Also to send out (出发).",
+    "strokes": [
+      "撇折",
+      "撇",
+      "横撇",
+      "捺",
+      "点"
+    ]
+  },
+  "位": {
+    "py": "wèi",
+    "en": "(polite measure word); place",
+    "tip": "亻 (person) + 立 (stand). A person standing in their <b>place</b>.",
+    "strokes": [
+      "撇",
+      "竖",
+      "点",
+      "横",
+      "点",
+      "撇",
+      "横"
+    ]
+  },
+  "码": {
+    "py": "mǎ",
+    "en": "code; number",
+    "tip": "石 (stone) + 马 (mǎ): a stone tally: <b>number</b>. 号码 = number.",
+    "strokes": [
+      "横",
+      "撇",
+      "竖",
+      "横折",
+      "横",
+      "横折",
+      "竖折折钩",
+      "提"
+    ]
+  },
+  "跟": {
+    "py": "gēn",
+    "en": "with; to follow",
+    "tip": "足 (foot) + 艮. Feet following someone: <b>with</b>.",
+    "strokes": [
+      "竖",
+      "横折",
+      "横",
+      "竖",
+      "横",
+      "竖",
+      "提",
+      "横折",
+      "横",
+      "横",
+      "竖提",
+      "撇",
+      "捺"
+    ]
+  },
+  "当": {
+    "py": "dāng",
+    "en": "of course; to be",
+    "tip": "当然 = <b>of course</b>.",
+    "strokes": [
+      "竖",
+      "点",
+      "撇",
+      "横折",
+      "横",
+      "横"
+    ]
+  },
+  "兄": {
+    "py": "xiōng",
+    "en": "older brother",
+    "tip": "口 (mouth) over 儿 (legs): the one who speaks first: <b>older brother</b>.",
+    "strokes": [
+      "竖",
+      "横折",
+      "横",
+      "撇",
+      "竖弯钩"
+    ]
+  },
+  "独": {
+    "py": "dú",
+    "en": "alone",
+    "tip": "犭 (animal) + 虫. A lone animal: <b>alone</b>. 独生女 = only daughter.",
+    "strokes": [
+      "撇",
+      "弯钩",
+      "撇",
+      "竖",
+      "横折",
+      "横",
+      "竖",
+      "提",
+      "点"
+    ]
+  },
+  "父": {
+    "py": "fù",
+    "en": "father",
+    "tip": "Two hands holding a tool: <b>father</b>.",
+    "strokes": [
+      "撇",
+      "点",
+      "撇",
+      "捺"
+    ]
+  },
+  "亲": {
+    "py": "qīn",
+    "en": "parent; dear",
+    "tip": "立 + 木: close <b>family</b>. 父亲 / 母亲 = father / mother.",
+    "strokes": [
+      "点",
+      "横",
+      "点",
+      "撇",
+      "横",
+      "横",
+      "竖钩",
+      "撇",
+      "点"
+    ]
+  },
+  "母": {
+    "py": "mǔ",
+    "en": "mother",
+    "tip": "A woman with two dots (breasts): <b>mother</b>.",
+    "strokes": [
+      "竖折",
+      "横折钩",
+      "点",
+      "横",
+      "点"
+    ]
+  },
+  "职": {
+    "py": "zhí",
+    "en": "job; post",
+    "tip": "耳 (ear) + 只. Listening to orders at work: <b>job</b>. 职员 = clerk.",
+    "strokes": [
+      "横",
+      "竖",
+      "竖",
+      "横",
+      "横",
+      "提",
+      "竖",
+      "横折",
+      "横",
+      "撇",
+      "点"
+    ]
+  },
+  "记": {
+    "py": "jì",
+    "en": "to record",
+    "tip": "讠 (speech) + 己 (self). Words to remember: to <b>record</b>. 记者 = journalist.",
+    "strokes": [
+      "点",
+      "横折提",
+      "横折",
+      "横",
+      "竖弯钩"
+    ]
+  },
+  "者": {
+    "py": "zhě",
+    "en": "-er (a person who)",
+    "tip": "An old man with a stick: the <b>one who</b> does it.",
+    "strokes": [
+      "横",
+      "竖",
+      "横",
+      "撇",
+      "竖",
+      "横折",
+      "横",
+      "横"
+    ]
+  },
+  "片": {
+    "py": "piàn",
+    "en": "slice; card",
+    "tip": "Half of a log split: a <b>slice</b>, a <b>card</b>. 名片 = name card.",
+    "strokes": [
+      "撇",
+      "竖",
+      "横",
+      "横折"
+    ]
+  },
+  "纪": {
+    "py": "jì",
+    "en": "age; record",
+    "tip": "纟 (thread) + 己. 年纪 = age.",
+    "strokes": [
+      "撇折",
+      "撇折",
+      "提",
+      "横折",
+      "横",
+      "竖弯钩"
+    ]
+  },
+  "秘": {
+    "py": "mì",
+    "en": "secret",
+    "tip": "禾 + 必. 秘密 = <b>secret</b>.",
+    "strokes": [
+      "撇",
+      "横",
+      "竖",
+      "撇",
+      "点",
+      "点",
+      "卧钩",
+      "点",
+      "撇",
+      "点"
+    ]
+  },
+  "密": {
+    "py": "mì",
+    "en": "close; secret",
+    "tip": "宀 (roof) + 必 + 山. Hidden under a roof in the hills: <b>secret</b>.",
+    "strokes": [
+      "点",
+      "点",
+      "横钩",
+      "点",
+      "卧钩",
+      "点",
+      "撇",
+      "点",
+      "竖",
+      "竖折",
+      "竖"
+    ]
+  },
+  "售": {
+    "py": "shòu",
+    "en": "to sell",
+    "tip": "隹 (bird) + 口 (mouth). Calling out like a bird: to <b>sell</b>. 售货员 = shop assistant.",
+    "strokes": [
+      "撇",
+      "竖",
+      "点",
+      "横",
+      "横",
+      "横",
+      "竖",
+      "横",
+      "竖",
+      "横折",
+      "横"
+    ]
+  },
+  "货": {
+    "py": "huò",
+    "en": "goods",
+    "tip": "化 (change) + 贝 (money). Things that turn into money: <b>goods</b>.",
+    "strokes": [
+      "撇",
+      "点",
+      "撇",
+      "竖弯钩",
+      "竖",
+      "横折",
+      "撇",
+      "点"
+    ]
+  },
+  "理": {
+    "py": "lǐ",
+    "en": "reason; to manage",
+    "tip": "王 (jade) + 里. Jade polished along its grain: to <b>manage</b>. 经理 = manager.",
+    "strokes": [
+      "横",
+      "横",
+      "竖",
+      "提",
+      "竖",
+      "横折",
+      "横",
+      "横",
+      "竖",
+      "横",
+      "横"
+    ]
+  },
+  "爷": {
+    "py": "yé",
+    "en": "grandpa",
+    "tip": "父 (father) + 卩. Father's father: <b>grandpa</b>.",
+    "strokes": [
+      "撇",
+      "点",
+      "撇",
+      "捺",
+      "横折钩",
+      "竖"
+    ]
+  },
+  "刻": {
+    "py": "kè",
+    "en": "quarter (hour); to carve",
+    "tip": "亥 + 刂 (knife). A knife mark on a clock: a <b>quarter</b> hour.",
+    "strokes": [
+      "点",
+      "横",
+      "撇折",
+      "撇",
+      "撇",
+      "点",
+      "竖",
+      "竖钩"
+    ]
+  },
+  "半": {
+    "py": "bàn",
+    "en": "half",
+    "tip": "A cow cut down the middle: <b>half</b>.",
+    "strokes": [
+      "点",
+      "撇",
+      "横",
+      "横",
+      "竖"
+    ]
+  },
+  "咱": {
+    "py": "zán",
+    "en": "we (incl. you)",
+    "tip": "口 (mouth) + 自 (self). You and I: <b>we</b>. 咱们.",
+    "strokes": [
+      "竖",
+      "横折",
+      "横",
+      "撇",
+      "竖",
+      "横折",
+      "横",
+      "横",
+      "横"
+    ]
+  },
+  "差": {
+    "py": "chà",
+    "en": "to be short of",
+    "tip": "羊 + 工. 差五分九点 = five to nine.",
+    "strokes": [
+      "点",
+      "撇",
+      "横",
+      "横",
+      "横",
+      "撇",
+      "横",
+      "竖",
+      "横"
+    ]
+  },
+  "属": {
+    "py": "shǔ",
+    "en": "to belong to; zodiac",
+    "tip": "尸 + 禹. 属 + animal: your Chinese <b>zodiac</b> sign.",
+    "strokes": [
+      "横折",
+      "横",
+      "撇",
+      "撇",
+      "竖",
+      "横折",
+      "横",
+      "竖",
+      "横折钩",
+      "竖",
+      "横",
+      "点"
+    ]
+  },
+  "北": {
+    "py": "běi",
+    "en": "north",
+    "tip": "Two people back to back: facing away from the sun, <b>north</b>.",
+    "strokes": [
+      "竖",
+      "横",
+      "提",
+      "撇",
+      "竖弯钩"
+    ]
+  },
+  "南": {
+    "py": "nán",
+    "en": "south",
+    "tip": "A tent facing the sun: <b>south</b>.",
+    "strokes": [
+      "横",
+      "竖",
+      "竖",
+      "横折钩",
+      "点",
+      "撇",
+      "横",
+      "横",
+      "竖"
+    ]
+  },
+  "附": {
+    "py": "fù",
+    "en": "near; attached",
+    "tip": "阝 (hill) + 付. Next to the hill: <b>near</b>. 附近 = nearby.",
+    "strokes": [
+      "横撇弯钩",
+      "竖",
+      "撇",
+      "竖",
+      "横",
+      "竖钩",
+      "点"
+    ]
+  },
+  "超": {
+    "py": "chāo",
+    "en": "to exceed",
+    "tip": "走 (walk) + 召. Walking past: <b>super</b>. 超市 = supermarket.",
+    "strokes": [
+      "横",
+      "竖",
+      "横",
+      "竖",
+      "横",
+      "撇",
+      "捺",
+      "横折钩",
+      "撇",
+      "点",
+      "横折",
+      "横"
+    ]
+  },
+  "市": {
+    "py": "shì",
+    "en": "market; city",
+    "tip": "A cloth hanging at a stall: <b>market</b>.",
+    "strokes": [
+      "点",
+      "横",
+      "竖",
+      "横折钩",
+      "竖"
+    ]
+  },
+  "照": {
+    "py": "zhào",
+    "en": "to shine; photo",
+    "tip": "昭 (bright) + 灬 (fire). Bright light: <b>photo</b> (照片).",
+    "strokes": [
+      "竖",
+      "横折",
+      "横",
+      "横",
+      "横折钩",
+      "撇",
+      "竖",
+      "横折",
+      "横",
+      "点",
+      "点",
+      "点",
+      "点"
+    ]
+  },
+  "台": {
+    "py": "tái",
+    "en": "platform",
+    "tip": "厶 over 口: a raised <b>platform</b>. 台灯 = desk lamp.",
+    "strokes": [
+      "撇折",
+      "点",
+      "竖",
+      "横折",
+      "横"
+    ]
+  },
+  "灯": {
+    "py": "dēng",
+    "en": "lamp",
+    "tip": "火 (fire) + 丁 (dīng, gives the sound): <b>lamp</b>.",
+    "strokes": [
+      "点",
+      "撇",
+      "撇",
+      "点",
+      "横",
+      "竖钩"
+    ]
+  },
+  "张": {
+    "py": "zhāng",
+    "en": "(measure word for flat things)",
+    "tip": "弓 (bow) + 长 (long). Stretching a bow flat: sheet, <b>piece</b>.",
+    "strokes": [
+      "横折",
+      "横",
+      "竖折折钩",
+      "撇",
+      "横",
+      "竖提",
+      "捺"
+    ]
+  },
+  "抽": {
+    "py": "chōu",
+    "en": "to pull out",
+    "tip": "扌 (hand) + 由. A hand pulling: 抽屉 = drawer.",
+    "strokes": [
+      "横",
+      "竖钩",
+      "提",
+      "竖",
+      "横折",
+      "横",
+      "竖",
+      "横"
+    ]
+  },
+  "屉": {
+    "py": "tì",
+    "en": "drawer",
+    "tip": "尸 + 世. 抽屉 = <b>drawer</b>.",
+    "strokes": [
+      "横折",
+      "横",
+      "撇",
+      "横",
+      "竖",
+      "竖",
+      "横",
+      "竖折"
+    ]
+  },
+  "巧": {
+    "py": "qiǎo",
+    "en": "skilful",
+    "tip": "工 (work) + 丂. Clever work: <b>skilful</b>. 巧克力 = chocolate.",
+    "strokes": [
+      "横",
+      "竖",
+      "提",
+      "横",
+      "竖折折钩"
+    ]
+  },
+  "克": {
+    "py": "kè",
+    "en": "gram; to overcome",
+    "tip": "十 over 兄. 巧克力 = chocolate.",
+    "strokes": [
+      "横",
+      "竖",
+      "竖",
+      "横折",
+      "横",
+      "撇",
+      "竖弯钩"
+    ]
+  },
+  "鞋": {
+    "py": "xié",
+    "en": "shoe",
+    "tip": "革 (leather) + 圭. Made of leather: <b>shoe</b>.",
+    "strokes": [
+      "横",
+      "竖",
+      "竖",
+      "横",
+      "竖",
+      "横折",
+      "横",
+      "横",
+      "竖",
+      "横",
+      "竖",
+      "横",
+      "横",
+      "竖",
+      "横"
+    ]
+  },
+  "镜": {
+    "py": "jìng",
+    "en": "mirror; lens",
+    "tip": "钅 (metal) + 竟. Polished metal: <b>mirror</b>. 眼镜 = glasses.",
+    "strokes": [
+      "撇",
+      "横",
+      "横",
+      "横",
+      "竖提",
+      "点",
+      "横",
+      "点",
+      "撇",
+      "横",
+      "竖",
+      "横折",
+      "横",
+      "横",
+      "撇",
+      "竖弯钩"
+    ]
+  },
+  "闹": {
+    "py": "nào",
+    "en": "noisy",
+    "tip": "门 (door) + 市 (market). A market at your door: <b>noisy</b>. 闹钟 = alarm clock.",
+    "strokes": [
+      "点",
+      "竖",
+      "横折钩",
+      "点",
+      "横",
+      "点",
+      "横折钩",
+      "竖"
+    ]
+  },
+  "冰": {
+    "py": "bīng",
+    "en": "ice",
+    "tip": "冫 (ice) + 水 (water): <b>ice</b>.",
+    "strokes": [
+      "点",
+      "提",
+      "竖钩",
+      "横撇",
+      "撇",
+      "捺"
+    ]
+  },
+  "微": {
+    "py": "wēi",
+    "en": "tiny",
+    "tip": "彳 + 山 + 攵: tiny steps. 微信 = WeChat.",
+    "strokes": [
+      "撇",
+      "撇",
+      "竖",
+      "竖",
+      "竖折",
+      "竖",
+      "横",
+      "撇",
+      "竖提",
+      "撇",
+      "横",
+      "撇",
+      "捺"
+    ]
+  },
+  "信": {
+    "py": "xìn",
+    "en": "letter; to trust",
+    "tip": "亻 (person) + 言 (word). A person's word: <b>trust</b>, a <b>letter</b>.",
+    "strokes": [
+      "撇",
+      "竖",
+      "点",
+      "横",
+      "横",
+      "横",
+      "竖",
+      "横折",
+      "横"
+    ]
+  },
+  "扫": {
+    "py": "sǎo",
+    "en": "to sweep; to scan",
+    "tip": "扌 (hand) + 彐 (broom): to <b>sweep</b>; to scan a code.",
+    "strokes": [
+      "横",
+      "竖钩",
+      "提",
+      "横折",
+      "横",
+      "横"
+    ]
+  },
+  "橘": {
+    "py": "jú",
+    "en": "orange (tangerine)",
+    "tip": "木 (tree) + 矞. A citrus tree: <b>orange</b>.",
+    "strokes": [
+      "横",
+      "竖",
+      "撇",
+      "点",
+      "横撇",
+      "点",
+      "横钩",
+      "竖钩",
+      "撇",
+      "竖",
+      "横折钩",
+      "撇",
+      "点",
+      "竖",
+      "横折",
+      "横"
+    ]
+  },
+  "卖": {
+    "py": "mài",
+    "en": "to sell",
+    "tip": "十 on top of 买 (buy): the other side of buying: to <b>sell</b>.",
+    "strokes": [
+      "横",
+      "竖",
+      "横钩",
+      "点",
+      "点",
+      "横",
+      "撇",
+      "点"
+    ]
+  },
+  "甜": {
+    "py": "tián",
+    "en": "sweet",
+    "tip": "舌 (tongue) + 甘 (sweet): <b>sweet</b> on the tongue.",
+    "strokes": [
+      "撇",
+      "横",
+      "竖",
+      "竖",
+      "横折",
+      "横",
+      "横",
+      "竖",
+      "竖",
+      "横",
+      "横"
+    ]
+  },
+  "尝": {
+    "py": "cháng",
+    "en": "to taste",
+    "tip": "⺌ + 云. To <b>taste</b>. 尝尝 = have a try.",
+    "strokes": [
+      "竖",
+      "点",
+      "撇",
+      "点",
+      "横钩",
+      "横",
+      "横",
+      "撇折",
+      "点"
+    ]
+  },
+  "柿": {
+    "py": "shì",
+    "en": "persimmon",
+    "tip": "木 (tree) + 市. 西红柿 = tomato.",
+    "strokes": [
+      "横",
+      "竖",
+      "撇",
+      "点",
+      "点",
+      "横",
+      "竖",
+      "横折钩",
+      "竖"
+    ]
+  },
+  "鲜": {
+    "py": "xiān",
+    "en": "fresh",
+    "tip": "鱼 (fish) + 羊 (sheep). Fish and lamb at their best: <b>fresh</b>.",
+    "strokes": [
+      "撇",
+      "横撇",
+      "竖",
+      "横折",
+      "横",
+      "竖",
+      "横",
+      "提",
+      "点",
+      "撇",
+      "横",
+      "横",
+      "横",
+      "竖"
+    ]
+  },
+  "摘": {
+    "py": "zhāi",
+    "en": "to pick",
+    "tip": "扌 (hand) + 啇. A hand picking fruit: to <b>pick</b>.",
+    "strokes": [
+      "横",
+      "竖钩",
+      "提",
+      "点",
+      "横",
+      "点",
+      "撇",
+      "竖",
+      "横折钩",
+      "横",
+      "竖",
+      "竖",
+      "横折",
+      "横"
+    ]
+  },
+  "酸": {
+    "py": "suān",
+    "en": "sour",
+    "tip": "酉 (wine jar) + 夋. Wine turned to vinegar: <b>sour</b>.",
+    "strokes": [
+      "横",
+      "竖",
+      "横折",
+      "撇",
+      "竖弯",
+      "横",
+      "横",
+      "撇折",
+      "点",
+      "撇",
+      "点",
+      "撇",
+      "横撇",
+      "捺"
+    ]
+  },
+  "辆": {
+    "py": "liàng",
+    "en": "(measure word for vehicles)",
+    "tip": "车 (vehicle) + 两: counting <b>vehicles</b>.",
+    "strokes": [
+      "横",
+      "撇折",
+      "竖",
+      "提",
+      "横",
+      "竖",
+      "横折钩",
+      "撇",
+      "点",
+      "撇",
+      "点"
+    ]
+  },
+  "蓝": {
+    "py": "lán",
+    "en": "blue",
+    "tip": "艹 (plant) + 监. The plant used for <b>blue</b> dye.",
+    "strokes": [
+      "横",
+      "竖",
+      "竖",
+      "竖",
+      "竖",
+      "撇",
+      "横",
+      "点",
+      "竖",
+      "横折",
+      "竖",
+      "竖",
+      "横"
+    ]
+  },
+  "支": {
+    "py": "zhī",
+    "en": "to support; to pay",
+    "tip": "A hand holding a branch: to <b>support</b>. 支付宝 = Alipay.",
+    "strokes": [
+      "横",
+      "竖",
+      "横撇",
+      "捺"
+    ]
+  },
+  "付": {
+    "py": "fù",
+    "en": "to pay",
+    "tip": "亻 (person) + 寸 (hand). Handing over: to <b>pay</b>.",
+    "strokes": [
+      "撇",
+      "竖",
+      "横",
+      "竖钩",
+      "点"
+    ]
+  },
+  "宝": {
+    "py": "bǎo",
+    "en": "treasure",
+    "tip": "宀 (roof) + 玉 (jade). Jade in the house: <b>treasure</b>.",
+    "strokes": [
+      "点",
+      "点",
+      "横钩",
+      "横",
+      "横",
+      "竖",
+      "横",
+      "点"
+    ]
+  },
+  "金": {
+    "py": "jīn",
+    "en": "gold; money",
+    "tip": "Nuggets in the earth: <b>gold</b>. 现金 = cash.",
+    "strokes": [
+      "撇",
+      "捺",
+      "横",
+      "横",
+      "竖",
+      "点",
+      "撇",
+      "横"
+    ]
+  },
+  "短": {
+    "py": "duǎn",
+    "en": "short",
+    "tip": "矢 (arrow) + 豆. As short as an arrow: <b>short</b>.",
+    "strokes": [
+      "撇",
+      "横",
+      "横",
+      "撇",
+      "点",
+      "横",
+      "点",
+      "横折",
+      "横",
+      "点",
+      "撇",
+      "横"
+    ]
+  },
+  "牌": {
+    "py": "pái",
+    "en": "sign; brand",
+    "tip": "片 (board) + 卑. A wooden <b>sign</b>. 牌子 = brand.",
+    "strokes": [
+      "撇",
+      "竖",
+      "横",
+      "横折",
+      "撇",
+      "竖",
+      "横折",
+      "横",
+      "横",
+      "撇",
+      "横",
+      "竖"
+    ]
+  },
+  "质": {
+    "py": "zhì",
+    "en": "quality",
+    "tip": "斤 + 贝 (money). Worth its money: <b>quality</b>.",
+    "strokes": [
+      "撇",
+      "撇",
+      "横",
+      "竖",
+      "竖",
+      "横折",
+      "撇",
+      "点"
+    ]
+  },
+  "量": {
+    "py": "liàng",
+    "en": "amount",
+    "tip": "日 + 一 + 里. To measure an <b>amount</b>. 质量 = quality.",
+    "strokes": [
+      "竖",
+      "横折",
+      "横",
+      "横",
+      "横",
+      "竖",
+      "横折",
+      "横",
+      "横",
+      "竖",
+      "横",
+      "横"
+    ]
+  },
+  "又": {
+    "py": "yòu",
+    "en": "again; (又…又… both … and …)",
+    "tip": "A right hand, doing it <b>again</b>.",
+    "strokes": [
+      "横撇",
+      "捺"
+    ]
+  },
+  "价": {
+    "py": "jià",
+    "en": "price",
+    "tip": "亻 (person) + 介. What a person pays: <b>price</b>.",
+    "strokes": [
+      "撇",
+      "竖",
+      "撇",
+      "捺",
+      "撇",
+      "竖"
+    ]
+  },
+  "双": {
+    "py": "shuāng",
+    "en": "pair",
+    "tip": "Two 又 (hands): a <b>pair</b>.",
+    "strokes": [
+      "横撇",
+      "点",
+      "横撇",
+      "捺"
+    ]
+  },
+  "合": {
+    "py": "hé",
+    "en": "to fit; to close",
+    "tip": "A lid closing over a mouth: to <b>fit</b>. 合适 = suitable.",
+    "strokes": [
+      "撇",
+      "捺",
+      "横",
+      "竖",
+      "横折",
+      "横"
+    ]
+  },
+  "适": {
+    "py": "shì",
+    "en": "to fit",
+    "tip": "辶 + 舌. 合适 = <b>suitable</b>.",
+    "strokes": [
+      "撇",
+      "横",
+      "竖",
+      "点",
+      "横折",
+      "横",
+      "点",
+      "横折",
+      "横"
+    ]
+  },
+  "衬": {
+    "py": "chèn",
+    "en": "lining",
+    "tip": "衤 (clothes) + 寸. Clothes worn underneath. 衬衣 = shirt.",
+    "strokes": [
+      "点",
+      "横撇",
+      "竖",
+      "撇",
+      "点",
+      "横",
+      "竖钩",
+      "点"
+    ]
+  },
+  "丝": {
+    "py": "sī",
+    "en": "silk",
+    "tip": "Two twisted threads over a line: <b>silk</b>.",
+    "strokes": [
+      "撇折",
+      "撇折",
+      "撇折",
+      "撇折",
+      "横"
+    ]
+  },
+  "之": {
+    "py": "zhī",
+    "en": "(of)",
+    "tip": "A foot stepping forward. 百分之 = percent.",
+    "strokes": [
+      "点",
+      "横撇",
+      "捺"
+    ]
+  },
+  "凉": {
+    "py": "liáng",
+    "en": "cool",
+    "tip": "冫 (ice) + 京. <b>Cool</b>. 凉快 = cool (pleasant).",
+    "strokes": [
+      "点",
+      "提",
+      "点",
+      "横",
+      "竖",
+      "横折",
+      "横",
+      "竖钩",
+      "撇",
+      "点"
+    ]
+  },
+  "舒": {
+    "py": "shū",
+    "en": "to stretch; relaxed",
+    "tip": "舍 + 予 (to give). Giving yourself room: <b>relaxed</b>. 舒服 = comfortable.",
+    "strokes": [
+      "撇",
+      "捺",
+      "横",
+      "横",
+      "竖",
+      "竖",
+      "横折",
+      "横",
+      "横撇",
+      "点",
+      "横钩",
+      "竖钩"
+    ]
+  },
+  "只": {
+    "py": "zhǐ",
+    "en": "only",
+    "tip": "口 (mouth) + 八. <b>Only</b>.",
+    "strokes": [
+      "竖",
+      "横折",
+      "横",
+      "撇",
+      "点"
+    ]
+  },
+  "种": {
+    "py": "zhǒng",
+    "en": "kind; type",
+    "tip": "禾 (grain) + 中. A <b>kind</b> of grain.",
+    "strokes": [
+      "撇",
+      "横",
+      "竖",
+      "撇",
+      "点",
+      "竖",
+      "横折",
+      "横",
+      "竖"
+    ]
+  },
+  "优": {
+    "py": "yōu",
+    "en": "excellent",
+    "tip": "亻 + 尤. 优惠券 = coupon.",
+    "strokes": [
+      "撇",
+      "竖",
+      "横",
+      "撇",
+      "竖弯钩",
+      "点"
+    ]
+  },
+  "惠": {
+    "py": "huì",
+    "en": "favour; benefit",
+    "tip": "叀 + 心 (heart). A kind heart: <b>favour</b>.",
+    "strokes": [
+      "横",
+      "竖",
+      "横折",
+      "横",
+      "横",
+      "竖",
+      "横",
+      "点",
+      "点",
+      "卧钩",
+      "点",
+      "点"
+    ]
+  },
+  "券": {
+    "py": "quàn",
+    "en": "ticket; voucher",
+    "tip": "龹 + 刀 (knife). A ticket cut off: <b>voucher</b>.",
+    "strokes": [
+      "点",
+      "撇",
+      "横",
+      "横",
+      "撇",
+      "捺",
+      "横折钩",
+      "撇"
+    ]
+  },
+  "单": {
+    "py": "dān",
+    "en": "single; list",
+    "tip": "<b>Single</b>; a list, a bill. 菜单 = menu, 下单 = place an order.",
+    "strokes": [
+      "点",
+      "撇",
+      "竖",
+      "横折",
+      "横",
+      "横",
+      "横",
+      "竖"
+    ]
+  },
+  "带": {
+    "py": "dài",
+    "en": "to take; belt",
+    "tip": "A belt with things hanging: to <b>take</b> along.",
+    "strokes": [
+      "横",
+      "竖",
+      "竖",
+      "竖",
+      "点",
+      "横钩",
+      "竖",
+      "横折钩",
+      "竖"
+    ]
+  },
+  "伞": {
+    "py": "sǎn",
+    "en": "umbrella",
+    "tip": "An open <b>umbrella</b> with its handle.",
+    "strokes": [
+      "撇",
+      "捺",
+      "点",
+      "撇",
+      "横",
+      "竖"
+    ]
+  },
+  "用": {
+    "py": "yòng",
+    "en": "to use",
+    "tip": "A bucket you <b>use</b>.",
+    "strokes": [
+      "撇",
+      "横折钩",
+      "横",
+      "横",
+      "竖"
+    ]
+  },
+  "算": {
+    "py": "suàn",
+    "en": "to calculate",
+    "tip": "⺮ (bamboo) + 目 + 廾. Counting with bamboo sticks: to <b>calculate</b>.",
+    "strokes": [
+      "撇",
+      "横",
+      "点",
+      "撇",
+      "横",
+      "点",
+      "竖",
+      "横折",
+      "横",
+      "横",
+      "横",
+      "横",
+      "撇",
+      "竖"
+    ]
+  },
+  "裤": {
+    "py": "kù",
+    "en": "trousers",
+    "tip": "衤 (clothes) + 库. 裤子 = <b>trousers</b>.",
+    "strokes": [
+      "点",
+      "横撇",
+      "竖",
+      "撇",
+      "点",
+      "点",
+      "横",
+      "撇",
+      "横",
+      "撇折",
+      "横",
+      "竖"
+    ]
+  },
+  "难": {
+    "py": "nán",
+    "en": "difficult",
+    "tip": "又 + 隹 (bird). Catching a bird by hand: <b>difficult</b>.",
+    "strokes": [
+      "横撇",
+      "点",
+      "撇",
+      "竖",
+      "点",
+      "横",
+      "横",
+      "横",
+      "竖",
+      "横"
+    ]
+  },
+  "乱": {
+    "py": "luàn",
+    "en": "messy",
+    "tip": "舌 + 乚. A tangled tongue: <b>messy</b>.",
+    "strokes": [
+      "撇",
+      "横",
+      "竖",
+      "竖",
+      "横折",
+      "横",
+      "竖弯钩"
+    ]
+  },
+  "辣": {
+    "py": "là",
+    "en": "spicy",
+    "tip": "辛 (bitter) + 束. <b>Spicy</b>.",
+    "strokes": [
+      "点",
+      "横",
+      "点",
+      "撇",
+      "横",
+      "横",
+      "竖",
+      "横",
+      "竖",
+      "横折",
+      "横",
+      "竖",
+      "撇",
+      "点"
+    ]
+  },
+  "宫": {
+    "py": "gōng",
+    "en": "palace",
+    "tip": "宀 (roof) + 吕. Rooms under one roof: <b>palace</b>. 宫保鸡丁 = Kung Pao chicken.",
+    "strokes": [
+      "点",
+      "点",
+      "横钩",
+      "竖",
+      "横折",
+      "横",
+      "竖",
+      "横折",
+      "横"
+    ]
+  },
+  "保": {
+    "py": "bǎo",
+    "en": "to protect",
+    "tip": "亻 (person) + 呆. A person holding a child: to <b>protect</b>.",
+    "strokes": [
+      "撇",
+      "竖",
+      "竖",
+      "横折",
+      "横",
+      "横",
+      "竖",
+      "撇",
+      "点"
+    ]
+  },
+  "丁": {
+    "py": "dīng",
+    "en": "cube; nail",
+    "tip": "A <b>nail</b>. 鸡丁 = diced chicken.",
+    "strokes": [
+      "横",
+      "竖钩"
+    ]
+  },
+  "麻": {
+    "py": "má",
+    "en": "numbing; hemp",
+    "tip": "广 + 林. Hemp drying under a roof. 麻婆豆腐 = Mapo tofu.",
+    "strokes": [
+      "点",
+      "横",
+      "撇",
+      "横",
+      "竖",
+      "撇",
+      "点",
+      "横",
+      "竖",
+      "撇",
+      "点"
+    ]
+  },
+  "婆": {
+    "py": "pó",
+    "en": "old woman",
+    "tip": "波 + 女 (woman): an <b>old woman</b>.",
+    "strokes": [
+      "点",
+      "点",
+      "提",
+      "横钩",
+      "撇",
+      "竖",
+      "横撇",
+      "捺",
+      "撇点",
+      "撇",
+      "横"
+    ]
+  },
+  "豆": {
+    "py": "dòu",
+    "en": "bean",
+    "tip": "A dish on a stand: <b>bean</b>. 豆腐 = tofu.",
+    "strokes": [
+      "横",
+      "竖",
+      "横折",
+      "横",
+      "点",
+      "撇",
+      "横"
+    ]
+  },
+  "腐": {
+    "py": "fǔ",
+    "en": "rotten; tofu",
+    "tip": "府 + 肉 (meat). 豆腐 = tofu.",
+    "strokes": [
+      "点",
+      "横",
+      "撇",
+      "撇",
+      "竖",
+      "横",
+      "竖钩",
+      "点",
+      "竖",
+      "横折钩",
+      "撇",
+      "点",
+      "撇",
+      "点"
+    ]
+  },
+  "碗": {
+    "py": "wǎn",
+    "en": "bowl",
+    "tip": "石 (stone) + 宛. A stoneware <b>bowl</b>.",
+    "strokes": [
+      "横",
+      "撇",
+      "竖",
+      "横折",
+      "横",
+      "点",
+      "点",
+      "横钩",
+      "撇",
+      "横撇",
+      "点",
+      "横折钩",
+      "竖弯钩"
+    ]
+  },
+  "汤": {
+    "py": "tāng",
+    "en": "soup",
+    "tip": "氵 (water) + 汤's 𠃓: <b>soup</b>.",
+    "strokes": [
+      "点",
+      "点",
+      "提",
+      "横折折折钩",
+      "撇",
+      "撇"
+    ]
+  },
+  "饮": {
+    "py": "yǐn",
+    "en": "to drink",
+    "tip": "饣 (food) + 欠 (open mouth): to <b>drink</b>. 饮料 = beverage.",
+    "strokes": [
+      "撇",
+      "横钩",
+      "竖提",
+      "撇",
+      "横钩",
+      "撇",
+      "捺"
+    ]
+  },
+  "料": {
+    "py": "liào",
+    "en": "material",
+    "tip": "米 (rice) + 斗 (measure): measured <b>material</b>.",
+    "strokes": [
+      "点",
+      "撇",
+      "横",
+      "竖",
+      "撇",
+      "点",
+      "点",
+      "点",
+      "横",
+      "竖"
+    ]
+  },
+  "壶": {
+    "py": "hú",
+    "en": "pot",
+    "tip": "A <b>pot</b> with a lid.",
+    "strokes": [
+      "横",
+      "竖",
+      "横",
+      "点",
+      "横钩",
+      "竖",
+      "竖",
+      "点",
+      "撇",
+      "横"
+    ]
+  },
+  "菊": {
+    "py": "jú",
+    "en": "chrysanthemum",
+    "tip": "艹 (plant) + 匊: <b>chrysanthemum</b>.",
+    "strokes": [
+      "横",
+      "竖",
+      "竖",
+      "撇",
+      "横折钩",
+      "点",
+      "撇",
+      "横",
+      "竖",
+      "撇",
+      "点"
+    ]
+  },
+  "花": {
+    "py": "huā",
+    "en": "flower",
+    "tip": "艹 (plant) + 化 (change). A plant that changes: <b>flower</b>.",
+    "strokes": [
+      "横",
+      "竖",
+      "竖",
+      "撇",
+      "竖",
+      "撇",
+      "竖弯钩"
+    ]
+  },
+  "忌": {
+    "py": "jì",
+    "en": "to avoid",
+    "tip": "己 (self) + 心 (heart). What your heart keeps away from: to <b>avoid</b>. 忌口 = avoid foods.",
+    "strokes": [
+      "横折",
+      "横",
+      "竖弯钩",
+      "点",
+      "卧钩",
+      "点",
+      "点"
+    ]
+  },
+  "香": {
+    "py": "xiāng",
+    "en": "fragrant",
+    "tip": "禾 (grain) + 日 (sun). Grain in the sun: <b>fragrant</b>. 香菜 = cilantro.",
+    "strokes": [
+      "撇",
+      "横",
+      "竖",
+      "撇",
+      "点",
+      "竖",
+      "横折",
+      "横",
+      "横"
+    ]
+  },
+  "稍": {
+    "py": "shāo",
+    "en": "slightly",
+    "tip": "禾 + 肖. <b>Slightly</b>. 稍等 = wait a moment.",
+    "strokes": [
+      "撇",
+      "横",
+      "竖",
+      "撇",
+      "点",
+      "竖",
+      "点",
+      "撇",
+      "竖",
+      "横折钩",
+      "横",
+      "横"
+    ]
+  },
+  "味": {
+    "py": "wèi",
+    "en": "taste",
+    "tip": "口 (mouth) + 未: <b>taste</b>. 味道 = flavour.",
+    "strokes": [
+      "竖",
+      "横折",
+      "横",
+      "横",
+      "横",
+      "竖",
+      "撇",
+      "点"
+    ]
+  },
+  "咸": {
+    "py": "xián",
+    "en": "salty",
+    "tip": "戌 + 口: <b>salty</b>.",
+    "strokes": [
+      "横",
+      "撇",
+      "横",
+      "竖",
+      "横折",
+      "横",
+      "斜钩",
+      "撇",
+      "点"
+    ]
+  },
+  "油": {
+    "py": "yóu",
+    "en": "oil",
+    "tip": "氵 (liquid) + 由 (yóu, gives the sound): <b>oil</b>.",
+    "strokes": [
+      "点",
+      "点",
+      "提",
+      "竖",
+      "横折",
+      "横",
+      "竖",
+      "横"
+    ]
+  },
+  "腻": {
+    "py": "nì",
+    "en": "greasy",
+    "tip": "月 (meat) + 贰. Too much meat: <b>greasy</b>. 油腻 = greasy.",
+    "strokes": [
+      "撇",
+      "横折钩",
+      "横",
+      "横",
+      "横",
+      "横",
+      "竖",
+      "横折",
+      "撇",
+      "点",
+      "斜钩",
+      "撇",
+      "点"
+    ]
+  },
+  "清": {
+    "py": "qīng",
+    "en": "clear",
+    "tip": "氵 (water) + 青 (clear blue): <b>clear</b>. 清淡 = light.",
+    "strokes": [
+      "点",
+      "点",
+      "提",
+      "横",
+      "横",
+      "竖",
+      "横",
+      "竖",
+      "横折钩",
+      "横",
+      "横"
+    ]
+  },
+  "淡": {
+    "py": "dàn",
+    "en": "light; bland",
+    "tip": "氵 (water) + 炎. Fire put out with water: <b>light</b>, bland.",
+    "strokes": [
+      "点",
+      "点",
+      "提",
+      "点",
+      "撇",
+      "撇",
+      "点",
+      "点",
+      "撇",
+      "撇",
+      "捺"
+    ]
+  },
+  "结": {
+    "py": "jié",
+    "en": "to tie; settle",
+    "tip": "纟 (thread) + 吉. Tying a knot: to <b>settle</b>. 结账 = pay the bill.",
+    "strokes": [
+      "撇折",
+      "撇折",
+      "提",
+      "横",
+      "竖",
+      "横",
+      "竖",
+      "横折",
+      "横"
+    ]
+  },
+  "账": {
+    "py": "zhàng",
+    "en": "account; bill",
+    "tip": "贝 (money) + 长 (long). A long list of money: <b>bill</b>.",
+    "strokes": [
+      "竖",
+      "横折",
+      "撇",
+      "点",
+      "撇",
+      "横",
+      "竖提",
+      "捺"
+    ]
+  },
+  "盒": {
+    "py": "hé",
+    "en": "box",
+    "tip": "合 (to close) + 皿 (dish). A dish with a lid: <b>box</b>.",
+    "strokes": [
+      "撇",
+      "捺",
+      "横",
+      "竖",
+      "横折",
+      "横",
+      "竖",
+      "横折",
+      "竖",
+      "竖",
+      "横"
+    ]
+  },
+  "拐": {
+    "py": "guǎi",
+    "en": "to turn",
+    "tip": "扌 (hand) + 另. To <b>turn</b> (a corner).",
+    "strokes": [
+      "横",
+      "竖钩",
+      "提",
+      "竖",
+      "横折",
+      "横",
+      "横折钩",
+      "撇"
+    ]
+  },
+  "导": {
+    "py": "dǎo",
+    "en": "to guide",
+    "tip": "巳 + 寸 (hand). A hand leading: to <b>guide</b>. 导航 = navigation.",
+    "strokes": [
+      "横折",
+      "横",
+      "竖弯钩",
+      "横",
+      "竖钩",
+      "点"
+    ]
+  },
+  "航": {
+    "py": "háng",
+    "en": "to sail",
+    "tip": "舟 (boat) + 亢. A boat sailing. 导航 = navigation.",
+    "strokes": [
+      "撇",
+      "撇",
+      "横折钩",
+      "点",
+      "横",
+      "点",
+      "点",
+      "横",
+      "撇",
+      "横折弯钩"
+    ]
+  },
+  "地": {
+    "py": "dì",
+    "en": "ground; earth",
+    "tip": "土 (earth) + 也: the <b>ground</b>. 地铁 = subway.",
+    "strokes": [
+      "横",
+      "竖",
+      "提",
+      "横折钩",
+      "竖",
+      "竖弯钩"
+    ]
+  },
+  "铁": {
+    "py": "tiě",
+    "en": "iron",
+    "tip": "钅 (metal) + 失: <b>iron</b>. 地铁 = subway.",
+    "strokes": [
+      "撇",
+      "横",
+      "横",
+      "横",
+      "竖提",
+      "撇",
+      "横",
+      "横",
+      "撇",
+      "点"
+    ]
+  },
+  "博": {
+    "py": "bó",
+    "en": "broad",
+    "tip": "十 + 尃: <b>broad</b> learning. 博物馆 = museum.",
+    "strokes": [
+      "横",
+      "竖",
+      "横",
+      "竖",
+      "横折",
+      "横",
+      "横",
+      "竖",
+      "点",
+      "横",
+      "竖钩",
+      "点"
+    ]
+  },
+  "物": {
+    "py": "wù",
+    "en": "thing",
+    "tip": "牛 (cow) + 勿. A cow: a <b>thing</b> of value. 礼物 = gift.",
+    "strokes": [
+      "撇",
+      "横",
+      "竖",
+      "提",
+      "撇",
+      "横折钩",
+      "撇",
+      "撇"
+    ]
+  },
+  "应": {
+    "py": "yīng",
+    "en": "should",
+    "tip": "广 + three dots. 应该 = <b>should</b>.",
+    "strokes": [
+      "点",
+      "横",
+      "撇",
+      "点",
+      "点",
+      "撇",
+      "横"
+    ]
+  },
+  "该": {
+    "py": "gāi",
+    "en": "should",
+    "tip": "讠 + 亥. 应该 = <b>should</b>.",
+    "strokes": [
+      "点",
+      "横折提",
+      "点",
+      "横",
+      "撇折",
+      "撇",
+      "撇",
+      "点"
+    ]
+  },
+  "或": {
+    "py": "huò",
+    "en": "or",
+    "tip": "A spear 戈 guarding a mouth 口: <b>or</b>. 或者 = or.",
+    "strokes": [
+      "横",
+      "竖",
+      "横折",
+      "横",
+      "提",
+      "斜钩",
+      "撇",
+      "点"
+    ]
+  },
+  "骑": {
+    "py": "qí",
+    "en": "to ride",
+    "tip": "马 (horse) + 奇 (qí, gives the sound): to <b>ride</b>.",
+    "strokes": [
+      "横折",
+      "竖折折钩",
+      "提",
+      "横",
+      "撇",
+      "点",
+      "横",
+      "竖",
+      "横折",
+      "横",
+      "竖钩"
+    ]
+  },
+  "技": {
+    "py": "jì",
+    "en": "skill",
+    "tip": "扌 (hand) + 支. Handiwork: <b>skill</b>. 技术 = skill.",
+    "strokes": [
+      "横",
+      "竖钩",
+      "提",
+      "横",
+      "竖",
+      "横撇",
+      "捺"
+    ]
+  },
+  "术": {
+    "py": "shù",
+    "en": "art; skill",
+    "tip": "木 with a dot: a <b>skill</b>.",
+    "strokes": [
+      "横",
+      "竖",
+      "撇",
+      "捺",
+      "点"
+    ]
+  },
+  "周": {
+    "py": "zhōu",
+    "en": "week; around",
+    "tip": "A field with walls all <b>around</b>. 周末 = weekend.",
+    "strokes": [
+      "撇",
+      "横折钩",
+      "横",
+      "竖",
+      "横",
+      "竖",
+      "横折",
+      "横"
+    ]
+  },
+  "末": {
+    "py": "mò",
+    "en": "end",
+    "tip": "木 with a long top stroke: the tip, the <b>end</b>.",
+    "strokes": [
+      "横",
+      "横",
+      "竖",
+      "撇",
+      "捺"
+    ]
+  },
+  "方": {
+    "py": "fāng",
+    "en": "square; direction",
+    "tip": "A plough: <b>direction</b>. 方便 = convenient.",
+    "strokes": [
+      "点",
+      "横",
+      "横折钩",
+      "撇"
+    ]
+  },
+  "宽": {
+    "py": "kuān",
+    "en": "wide",
+    "tip": "宀 (roof) + 苋. A big house: <b>wide</b>.",
+    "strokes": [
+      "点",
+      "点",
+      "横钩",
+      "横",
+      "竖",
+      "竖",
+      "竖",
+      "横折",
+      "撇",
+      "竖弯钩"
+    ]
+  },
+  "重": {
+    "py": "zhòng",
+    "en": "heavy",
+    "tip": "A person carrying a heavy load: <b>heavy</b>.",
+    "strokes": [
+      "撇",
+      "横",
+      "竖",
+      "横折",
+      "横",
+      "横",
+      "竖",
+      "横",
+      "横"
+    ]
+  },
+  "礼": {
+    "py": "lǐ",
+    "en": "gift; manners",
+    "tip": "礻 (worship) + 乚. 礼物 = <b>gift</b>.",
+    "strokes": [
+      "点",
+      "横撇",
+      "竖",
+      "点",
+      "竖弯钩"
+    ]
   }
 }

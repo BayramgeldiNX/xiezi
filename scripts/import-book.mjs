@@ -35,7 +35,14 @@ for (const file of files) for (const [i, raw] of fs.readFileSync(file, "utf8").r
   if (/^# \d+$/.test(line)) {
     // A later file adding to a lesson (e.g. its grammar drills).
     L = lessons.find((l) => l.n === +line.slice(2));
-    if (!L) throw new Error(`${where}: no lesson ${line.slice(2)}`);
+    if (!L) {
+      // A lesson already in the book but not in the source (e.g. lesson 1 written by hand): add to its file.
+      const p = path.join(BOOKS_DIR, book.dir, `lesson${line.slice(2).padStart(2, "0")}.json`);
+      if (!fs.existsSync(p)) throw new Error(`${where}: no lesson ${line.slice(2)}`);
+      L = JSON.parse(fs.readFileSync(p, "utf8"));
+      delete L.grammar; delete L.workbook;
+      lessons.push(L);
+    }
     R = null;
   } else if (line.startsWith("= ")) {
     const [point, en] = split(line.slice(2));

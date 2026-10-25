@@ -1,0 +1,496 @@
+{
+  "n": 4,
+  "cn": "第四课",
+  "title": "多少钱",
+  "en": "How much is it",
+  "words": [
+    {
+      "w": "要",
+      "py": "yào",
+      "en": "to want; would like",
+      "ex": {
+        "hz": "我要一杯咖啡。",
+        "py": "Wǒ yào yì bēi kāfēi.",
+        "en": "I'd like a coffee."
+      }
+    },
+    {
+      "w": "换",
+      "py": "huàn",
+      "en": "to exchange; to change",
+      "ex": {
+        "hz": "我要换钱。",
+        "py": "Wǒ yào huàn qián.",
+        "en": "I'd like to change money."
+      }
+    },
+    {
+      "w": "钱",
+      "py": "qián",
+      "en": "money",
+      "ex": {
+        "hz": "多少钱？",
+        "py": "Duōshao qián?",
+        "en": "How much?"
+      }
+    },
+    {
+      "w": "多少",
+      "py": "duōshao",
+      "en": "how much; how many",
+      "ex": {
+        "hz": "你换多少？",
+        "py": "Nǐ huàn duōshao?",
+        "en": "How much will you change?"
+      }
+    },
+    {
+      "w": "一",
+      "py": "yī",
+      "en": "one",
+      "ex": {
+        "hz": "我要一个面包。",
+        "py": "Wǒ yào yí ge miànbāo.",
+        "en": "One bread roll, please."
+      }
+    },
+    {
+      "w": "百",
+      "py": "bǎi",
+      "en": "hundred",
+      "ex": {
+        "hz": "一百块。",
+        "py": "Yìbǎi kuài.",
+        "en": "One hundred yuan."
+      }
+    },
+    {
+      "w": "美元",
+      "py": "měiyuán",
+      "en": "US dollar",
+      "ex": {
+        "hz": "我换二百美元。",
+        "py": "Wǒ huàn èrbǎi měiyuán.",
+        "en": "I'll change 200 US dollars."
+      }
+    },
+    {
+      "w": "二",
+      "py": "èr",
+      "en": "two",
+      "ex": {
+        "hz": "二十块。",
+        "py": "Èrshí kuài.",
+        "en": "Twenty yuan."
+      }
+    },
+    {
+      "w": "三",
+      "py": "sān",
+      "en": "three",
+      "ex": {
+        "hz": "三杯茶。",
+        "py": "Sān bēi chá.",
+        "en": "Three cups of tea."
+      }
+    },
+    {
+      "w": "四",
+      "py": "sì",
+      "en": "four",
+      "ex": {
+        "hz": "四瓶啤酒。",
+        "py": "Sì píng píjiǔ.",
+        "en": "Four bottles of beer."
+      }
+    },
+    {
+      "w": "五",
+      "py": "wǔ",
+      "en": "five",
+      "ex": {
+        "hz": "五块钱。",
+        "py": "Wǔ kuài qián.",
+        "en": "Five yuan."
+      }
+    },
+    {
+      "w": "两",
+      "py": "liǎng",
+      "en": "two (with measure words)",
+      "ex": {
+        "hz": "两杯咖啡。",
+        "py": "Liǎng bēi kāfēi.",
+        "en": "Two coffees."
+      }
+    },
+    {
+      "w": "杯",
+      "py": "bēi",
+      "en": "cup; glass",
+      "ex": {
+        "hz": "我要一杯牛奶。",
+        "py": "Wǒ yào yì bēi niúnǎi.",
+        "en": "A glass of milk, please."
+      }
+    },
+    {
+      "w": "十",
+      "py": "shí",
+      "en": "ten",
+      "ex": {
+        "hz": "十块钱。",
+        "py": "Shí kuài qián.",
+        "en": "Ten yuan."
+      }
+    },
+    {
+      "w": "块",
+      "py": "kuài",
+      "en": "yuan (spoken)",
+      "ex": {
+        "hz": "一瓶可乐三块。",
+        "py": "Yì píng kělè sān kuài.",
+        "en": "A bottle of cola is three yuan."
+      }
+    },
+    {
+      "w": "个",
+      "py": "gè",
+      "en": "(general measure word)",
+      "ex": {
+        "hz": "我买两个包子。",
+        "py": "Wǒ mǎi liǎng ge bāozi.",
+        "en": "I'll buy two buns."
+      }
+    },
+    {
+      "w": "六",
+      "py": "liù",
+      "en": "six",
+      "ex": {
+        "hz": "六个饺子。",
+        "py": "Liù ge jiǎozi.",
+        "en": "Six dumplings."
+      }
+    },
+    {
+      "w": "毛",
+      "py": "máo",
+      "en": "mao (1/10 yuan)",
+      "ex": {
+        "hz": "两块五毛。",
+        "py": "Liǎng kuài wǔ máo.",
+        "en": "2.50 yuan."
+      }
+    },
+    {
+      "w": "分",
+      "py": "fēn",
+      "en": "fen (1/100 yuan)",
+      "ex": {
+        "hz": "六毛五分。",
+        "py": "Liù máo wǔ fēn.",
+        "en": "65 fen."
+      }
+    },
+    {
+      "w": "瓶",
+      "py": "píng",
+      "en": "bottle",
+      "ex": {
+        "hz": "一瓶矿泉水。",
+        "py": "Yì píng kuàngquánshuǐ.",
+        "en": "A bottle of mineral water."
+      }
+    },
+    {
+      "w": "七",
+      "py": "qī",
+      "en": "seven",
+      "ex": {
+        "hz": "七块二。",
+        "py": "Qī kuài èr.",
+        "en": "7.20 yuan."
+      }
+    },
+    {
+      "w": "八",
+      "py": "bā",
+      "en": "eight",
+      "ex": {
+        "hz": "八块钱。",
+        "py": "Bā kuài qián.",
+        "en": "Eight yuan."
+      }
+    },
+    {
+      "w": "本",
+      "py": "běn",
+      "en": "(measure word for books)",
+      "ex": {
+        "hz": "三本词典。",
+        "py": "Sān běn cídiǎn.",
+        "en": "Three dictionaries."
+      }
+    },
+    {
+      "w": "九",
+      "py": "jiǔ",
+      "en": "nine",
+      "ex": {
+        "hz": "九十块。",
+        "py": "Jiǔshí kuài.",
+        "en": "Ninety yuan."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "一杯咖啡",
+      "py": "Yì bēi kāfēi",
+      "en": "A coffee",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "我要两杯咖啡，多少钱？",
+          "py": "Wǒ yào liǎng bēi kāfēi, duōshao qián?",
+          "en": "Two coffees — how much?"
+        },
+        {
+          "who": "B",
+          "hz": "三十块。",
+          "py": "Sānshí kuài.",
+          "en": "Thirty yuan."
+        },
+        {
+          "who": "A",
+          "hz": "一瓶矿泉水多少钱？",
+          "py": "Yì píng kuàngquánshuǐ duōshao qián?",
+          "en": "How much is a bottle of mineral water?"
+        },
+        {
+          "who": "B",
+          "hz": "两块。",
+          "py": "Liǎng kuài.",
+          "en": "Two yuan."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How much are two coffees?",
+          "options": [
+            "30 yuan",
+            "3 yuan",
+            "13 yuan",
+            "20 yuan"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How much is the mineral water?",
+          "options": [
+            "2 yuan",
+            "20 yuan",
+            "12 yuan",
+            "3 yuan"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "换钱",
+      "py": "Huàn qián",
+      "en": "Changing money",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你好，我要换钱。",
+          "py": "Nǐ hǎo, wǒ yào huàn qián.",
+          "en": "Hello, I'd like to change money."
+        },
+        {
+          "who": "B",
+          "hz": "换多少？",
+          "py": "Huàn duōshao?",
+          "en": "How much?"
+        },
+        {
+          "who": "A",
+          "hz": "换三百美元。",
+          "py": "Huàn sānbǎi měiyuán.",
+          "en": "300 US dollars."
+        },
+        {
+          "who": "B",
+          "hz": "好。",
+          "py": "Hǎo.",
+          "en": "OK."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What does A want to do?",
+          "options": [
+            "Change money",
+            "Buy a book",
+            "Drink coffee",
+            "Eat"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How much does A change?",
+          "options": [
+            "300 US dollars",
+            "3 US dollars",
+            "100 US dollars",
+            "30 US dollars"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "二 / 两",
+      "en": "Before a measure word use 两, not 二",
+      "drills": [
+        {
+          "q": "___杯咖啡。",
+          "options": [
+            "两",
+            "二",
+            "十",
+            "百"
+          ],
+          "answer": 0,
+          "en": "Two cups of coffee."
+        }
+      ]
+    },
+    {
+      "point": "Measure words",
+      "en": "number + 杯 / 瓶 / 个 / 本 + noun",
+      "drills": [
+        {
+          "q": "三___词典。",
+          "options": [
+            "本",
+            "杯",
+            "瓶",
+            "个"
+          ],
+          "answer": 0,
+          "en": "Three dictionaries."
+        },
+        {
+          "q": "四___啤酒。",
+          "options": [
+            "瓶",
+            "本",
+            "个",
+            "张"
+          ],
+          "answer": 0,
+          "en": "Four bottles of beer."
+        }
+      ]
+    },
+    {
+      "point": "多少钱",
+      "en": "asking the price",
+      "drills": [
+        {
+          "q": "一瓶矿泉水___钱？",
+          "options": [
+            "多少",
+            "什么",
+            "几",
+            "哪儿"
+          ],
+          "answer": 0,
+          "en": "How much is a bottle of mineral water?"
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "我要换钱。"
+          ],
+          [
+            "女",
+            "换多少？"
+          ]
+        ],
+        "q": "男的要做什么？",
+        "options": [
+          "换钱",
+          "买书",
+          "喝咖啡"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "两杯咖啡，多少钱？"
+          ],
+          [
+            "女",
+            "三十块。"
+          ]
+        ],
+        "q": "两杯咖啡多少钱？",
+        "options": [
+          "三十块",
+          "十三块",
+          "三块"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "一瓶矿泉水两块。",
+        "claim": "矿泉水很贵。",
+        "ok": false
+      },
+      {
+        "text": "我买三本词典。",
+        "claim": "他买词典。",
+        "ok": true
+      }
+    ],
+    "replies": [
+      {
+        "q": "换多少？",
+        "a": "换一百美元。"
+      },
+      {
+        "q": "多少钱？",
+        "a": "八块五。"
+      },
+      {
+        "q": "你要几个面包？",
+        "a": "两个。"
+      },
+      {
+        "q": "你要什么？",
+        "a": "我要一杯牛奶。"
+      }
+    ]
+  }
+}

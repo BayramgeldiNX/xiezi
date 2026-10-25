@@ -1,0 +1,516 @@
+{
+  "n": 8,
+  "cn": "第八课",
+  "title": "你是哪国人",
+  "en": "Which country are you from",
+  "words": [
+    {
+      "w": "哪",
+      "py": "nǎ",
+      "en": "which",
+      "ex": {
+        "hz": "你是哪国人？",
+        "py": "Nǐ shì nǎ guó rén?",
+        "en": "Which country are you from?"
+      }
+    },
+    {
+      "w": "国",
+      "py": "guó",
+      "en": "country",
+      "ex": {
+        "hz": "我是中国人。",
+        "py": "Wǒ shì Zhōngguó rén.",
+        "en": "I'm Chinese."
+      }
+    },
+    {
+      "w": "叫",
+      "py": "jiào",
+      "en": "to be called",
+      "ex": {
+        "hz": "我叫保罗。",
+        "py": "Wǒ jiào Bǎoluó.",
+        "en": "My name is Paul."
+      }
+    },
+    {
+      "w": "名字",
+      "py": "míngzi",
+      "en": "name",
+      "ex": {
+        "hz": "你叫什么名字？",
+        "py": "Nǐ jiào shénme míngzi?",
+        "en": "What's your name?"
+      }
+    },
+    {
+      "w": "贵姓",
+      "py": "guìxìng",
+      "en": "(polite) your surname",
+      "ex": {
+        "hz": "请问，您贵姓？",
+        "py": "Qǐngwèn, nín guìxìng?",
+        "en": "May I ask your surname?"
+      }
+    },
+    {
+      "w": "姓",
+      "py": "xìng",
+      "en": "surname; to be surnamed",
+      "ex": {
+        "hz": "我姓王。",
+        "py": "Wǒ xìng Wáng.",
+        "en": "My surname is Wang."
+      }
+    },
+    {
+      "w": "几",
+      "py": "jǐ",
+      "en": "how many (small numbers)",
+      "ex": {
+        "hz": "你有几个本子？",
+        "py": "Nǐ yǒu jǐ ge běnzi?",
+        "en": "How many notebooks do you have?"
+      }
+    },
+    {
+      "w": "位",
+      "py": "wèi",
+      "en": "(polite measure word for people)",
+      "ex": {
+        "hz": "三位老师教我们。",
+        "py": "Sān wèi lǎoshī jiāo wǒmen.",
+        "en": "Three teachers teach us."
+      }
+    },
+    {
+      "w": "教",
+      "py": "jiāo",
+      "en": "to teach",
+      "ex": {
+        "hz": "王老师教我们中文。",
+        "py": "Wáng lǎoshī jiāo wǒmen Zhōngwén.",
+        "en": "Teacher Wang teaches us Chinese."
+      }
+    },
+    {
+      "w": "住",
+      "py": "zhù",
+      "en": "to live",
+      "ex": {
+        "hz": "你住哪儿？",
+        "py": "Nǐ zhù nǎr?",
+        "en": "Where do you live?"
+      }
+    },
+    {
+      "w": "房间",
+      "py": "fángjiān",
+      "en": "room",
+      "ex": {
+        "hz": "我的房间很小。",
+        "py": "Wǒ de fángjiān hěn xiǎo.",
+        "en": "My room is small."
+      }
+    },
+    {
+      "w": "电话",
+      "py": "diànhuà",
+      "en": "telephone",
+      "ex": {
+        "hz": "你的电话号码是多少？",
+        "py": "Nǐ de diànhuà hàomǎ shì duōshao?",
+        "en": "What's your phone number?"
+      }
+    },
+    {
+      "w": "号码",
+      "py": "hàomǎ",
+      "en": "number",
+      "ex": {
+        "hz": "房间号码是多少？",
+        "py": "Fángjiān hàomǎ shì duōshao?",
+        "en": "What's the room number?"
+      }
+    },
+    {
+      "w": "每",
+      "py": "měi",
+      "en": "every",
+      "ex": {
+        "hz": "我每天学习中文。",
+        "py": "Wǒ měi tiān xuéxí Zhōngwén.",
+        "en": "I study Chinese every day."
+      }
+    },
+    {
+      "w": "天",
+      "py": "tiān",
+      "en": "day",
+      "ex": {
+        "hz": "每天下午我去图书馆。",
+        "py": "Měi tiān xiàwǔ wǒ qù túshūguǎn.",
+        "en": "Every afternoon I go to the library."
+      }
+    },
+    {
+      "w": "下午",
+      "py": "xiàwǔ",
+      "en": "afternoon",
+      "ex": {
+        "hz": "下午你做什么？",
+        "py": "Xiàwǔ nǐ zuò shénme?",
+        "en": "What are you doing this afternoon?"
+      }
+    },
+    {
+      "w": "做",
+      "py": "zuò",
+      "en": "to do",
+      "ex": {
+        "hz": "你在做什么？",
+        "py": "Nǐ zài zuò shénme?",
+        "en": "What are you doing?"
+      }
+    },
+    {
+      "w": "有时候",
+      "py": "yǒu shíhou",
+      "en": "sometimes",
+      "ex": {
+        "hz": "我有时候喝咖啡。",
+        "py": "Wǒ yǒu shíhou hē kāfēi.",
+        "en": "Sometimes I drink coffee."
+      }
+    },
+    {
+      "w": "休息",
+      "py": "xiūxi",
+      "en": "to rest",
+      "ex": {
+        "hz": "我在宿舍休息。",
+        "py": "Wǒ zài sùshè xiūxi.",
+        "en": "I'm resting in the dorm."
+      }
+    },
+    {
+      "w": "常常",
+      "py": "chángcháng",
+      "en": "often",
+      "ex": {
+        "hz": "我常常去书店。",
+        "py": "Wǒ chángcháng qù shūdiàn.",
+        "en": "I often go to the bookshop."
+      }
+    },
+    {
+      "w": "跟",
+      "py": "gēn",
+      "en": "with; and",
+      "ex": {
+        "hz": "我跟朋友一起学习。",
+        "py": "Wǒ gēn péngyou yìqǐ xuéxí.",
+        "en": "I study with a friend."
+      }
+    },
+    {
+      "w": "谁",
+      "py": "shéi",
+      "en": "who",
+      "ex": {
+        "hz": "他是谁？",
+        "py": "Tā shì shéi?",
+        "en": "Who is he?"
+      }
+    },
+    {
+      "w": "一起",
+      "py": "yìqǐ",
+      "en": "together",
+      "ex": {
+        "hz": "我们一起去吧。",
+        "py": "Wǒmen yìqǐ qù ba.",
+        "en": "Let's go together."
+      }
+    },
+    {
+      "w": "睡觉",
+      "py": "shuì jiào",
+      "en": "to sleep",
+      "ex": {
+        "hz": "我很累，我想睡觉。",
+        "py": "Wǒ hěn lèi, wǒ xiǎng shuì jiào.",
+        "en": "I'm tired; I want to sleep."
+      }
+    },
+    {
+      "w": "这儿",
+      "py": "zhèr",
+      "en": "here",
+      "ex": {
+        "hz": "我住这儿。",
+        "py": "Wǒ zhù zhèr.",
+        "en": "I live here."
+      }
+    },
+    {
+      "w": "晚上",
+      "py": "wǎnshang",
+      "en": "evening",
+      "ex": {
+        "hz": "晚上我看电视。",
+        "py": "Wǎnshang wǒ kàn diànshì.",
+        "en": "I watch TV in the evening."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "你住哪儿",
+      "py": "Nǐ zhù nǎr",
+      "en": "Where do you live",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你住哪儿？",
+          "py": "Nǐ zhù nǎr?",
+          "en": "Where do you live?"
+        },
+        {
+          "who": "B",
+          "hz": "我住留学生宿舍，八号楼。",
+          "py": "Wǒ zhù liúxuéshēng sùshè, bā hào lóu.",
+          "en": "In the overseas students' dorm, Building 8."
+        },
+        {
+          "who": "A",
+          "hz": "你的房间是多少号？",
+          "py": "Nǐ de fángjiān shì duōshao hào?",
+          "en": "What's your room number?"
+        },
+        {
+          "who": "B",
+          "hz": "二一五号。",
+          "py": "Èr yāo wǔ hào.",
+          "en": "215."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Which building does B live in?",
+          "options": [
+            "Building 8",
+            "Building 2",
+            "Building 5",
+            "Building 15"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What is B's room number?",
+          "options": [
+            "215",
+            "205",
+            "512",
+            "8"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "每天下午",
+      "py": "Měi tiān xiàwǔ",
+      "en": "Every afternoon",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "每天下午你做什么？",
+          "py": "Měi tiān xiàwǔ nǐ zuò shénme?",
+          "en": "What do you do every afternoon?"
+        },
+        {
+          "who": "B",
+          "hz": "有时候休息，有时候去图书馆。",
+          "py": "Yǒu shíhou xiūxi, yǒu shíhou qù túshūguǎn.",
+          "en": "Sometimes I rest, sometimes I go to the library."
+        },
+        {
+          "who": "A",
+          "hz": "你常常跟谁一起学习？",
+          "py": "Nǐ chángcháng gēn shéi yìqǐ xuéxí?",
+          "en": "Who do you usually study with?"
+        },
+        {
+          "who": "B",
+          "hz": "跟我的同屋。",
+          "py": "Gēn wǒ de tóngwū.",
+          "en": "With my roommate."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What does B do in the afternoon?",
+          "options": [
+            "Rests or goes to the library",
+            "Works",
+            "Sleeps",
+            "Watches TV"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Who does B study with?",
+          "options": [
+            "Roommate",
+            "Teacher",
+            "Brother",
+            "Nobody"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "Question words",
+      "en": "谁 / 哪 / 几 / 多少 take the place of the answer",
+      "drills": [
+        {
+          "q": "你是___国人？",
+          "options": [
+            "哪",
+            "谁",
+            "什么",
+            "几"
+          ],
+          "answer": 0,
+          "en": "Which country are you from?"
+        },
+        {
+          "q": "他是___？",
+          "options": [
+            "谁",
+            "哪",
+            "几",
+            "多少"
+          ],
+          "answer": 0,
+          "en": "Who is he?"
+        }
+      ]
+    },
+    {
+      "point": "几 / 多少",
+      "en": "几 for small numbers, 多少 for any number",
+      "drills": [
+        {
+          "q": "___位老师教你们？",
+          "options": [
+            "几",
+            "多少",
+            "什么",
+            "哪"
+          ],
+          "answer": 0,
+          "en": "How many teachers teach you?"
+        }
+      ]
+    },
+    {
+      "point": "跟……一起",
+      "en": "doing something with someone",
+      "drills": [
+        {
+          "q": "我___朋友一起学习。",
+          "options": [
+            "跟",
+            "和",
+            "在",
+            "给"
+          ],
+          "answer": 0,
+          "en": "I study with a friend."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你叫什么名字？"
+          ],
+          [
+            "女",
+            "我叫保罗。"
+          ]
+        ],
+        "q": "男的叫什么名字？",
+        "options": [
+          "保罗",
+          "西蒙",
+          "小王"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你住哪儿？"
+          ],
+          [
+            "女",
+            "我住留学生宿舍。"
+          ]
+        ],
+        "q": "女的住哪儿？",
+        "options": [
+          "留学生宿舍",
+          "七号楼",
+          "学校外边"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "我们班有十五个学生。",
+        "claim": "他们班学生很少。",
+        "ok": false
+      },
+      {
+        "text": "我常常跟中国朋友一起学习。",
+        "claim": "他有中国朋友。",
+        "ok": true
+      }
+    ],
+    "replies": [
+      {
+        "q": "请问，您贵姓？",
+        "a": "我姓王。"
+      },
+      {
+        "q": "你是哪国人？",
+        "a": "我是德国人。"
+      },
+      {
+        "q": "你的电话号码是多少？",
+        "a": "82307531。"
+      },
+      {
+        "q": "每天下午你做什么？",
+        "a": "有时候去图书馆学习。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,616 @@
+{
+  "n": 15,
+  "cn": "第十五课",
+  "title": "去银行怎么走",
+  "en": "How do I get to the bank",
+  "words": [
+    {
+      "w": "走",
+      "py": "zǒu",
+      "en": "to walk; to go",
+      "ex": {
+        "hz": "去银行怎么走？",
+        "py": "Qù yínháng zěnme zǒu?",
+        "en": "How do I get to the bank?"
+      }
+    },
+    {
+      "w": "一直",
+      "py": "yìzhí",
+      "en": "straight",
+      "ex": {
+        "hz": "一直往前走。",
+        "py": "Yìzhí wǎng qián zǒu.",
+        "en": "Go straight ahead."
+      }
+    },
+    {
+      "w": "往",
+      "py": "wǎng",
+      "en": "toward",
+      "ex": {
+        "hz": "往右拐。",
+        "py": "Wǎng yòu guǎi.",
+        "en": "Turn right."
+      }
+    },
+    {
+      "w": "到",
+      "py": "dào",
+      "en": "to arrive; to",
+      "ex": {
+        "hz": "到十字路口往左拐。",
+        "py": "Dào shízì lùkǒu wǎng zuǒ guǎi.",
+        "en": "Turn left at the crossroads."
+      }
+    },
+    {
+      "w": "十字路口",
+      "py": "shízì lùkǒu",
+      "en": "crossroads",
+      "ex": {
+        "hz": "银行在十字路口。",
+        "py": "Yínháng zài shízì lùkǒu.",
+        "en": "The bank is at the crossroads."
+      }
+    },
+    {
+      "w": "拐",
+      "py": "guǎi",
+      "en": "to turn",
+      "ex": {
+        "hz": "前边往左拐。",
+        "py": "Qiánbian wǎng zuǒ guǎi.",
+        "en": "Turn left up ahead."
+      }
+    },
+    {
+      "w": "米",
+      "py": "mǐ",
+      "en": "metre",
+      "ex": {
+        "hz": "二百多米。",
+        "py": "Èrbǎi duō mǐ.",
+        "en": "A little over 200 metres."
+      }
+    },
+    {
+      "w": "导航",
+      "py": "dǎoháng",
+      "en": "navigation",
+      "ex": {
+        "hz": "我用手机导航。",
+        "py": "Wǒ yòng shǒujī dǎoháng.",
+        "en": "I navigate with my phone."
+      }
+    },
+    {
+      "w": "公里",
+      "py": "gōnglǐ",
+      "en": "kilometre",
+      "ex": {
+        "hz": "离这儿五公里。",
+        "py": "Lí zhèr wǔ gōnglǐ.",
+        "en": "It's 5 km from here."
+      }
+    },
+    {
+      "w": "车",
+      "py": "chē",
+      "en": "vehicle",
+      "ex": {
+        "hz": "怎么坐车？",
+        "py": "Zěnme zuò chē?",
+        "en": "Which bus or train should I take?"
+      }
+    },
+    {
+      "w": "过",
+      "py": "guò",
+      "en": "to cross",
+      "ex": {
+        "hz": "咱们过马路吧。",
+        "py": "Zánmen guò mǎlù ba.",
+        "en": "Let's cross the road."
+      }
+    },
+    {
+      "w": "马路",
+      "py": "mǎlù",
+      "en": "road; street",
+      "ex": {
+        "hz": "过马路要小心。",
+        "py": "Guò mǎlù yào xiǎoxīn.",
+        "en": "Be careful crossing the road."
+      }
+    },
+    {
+      "w": "先",
+      "py": "xiān",
+      "en": "first",
+      "ex": {
+        "hz": "我先去银行。",
+        "py": "Wǒ xiān qù yínháng.",
+        "en": "I'll go to the bank first."
+      }
+    },
+    {
+      "w": "站",
+      "py": "zhàn",
+      "en": "stop; station",
+      "ex": {
+        "hz": "坐两站公共汽车。",
+        "py": "Zuò liǎng zhàn gōnggòng qìchē.",
+        "en": "Take the bus two stops."
+      }
+    },
+    {
+      "w": "路",
+      "py": "lù",
+      "en": "road; (bus) route",
+      "ex": {
+        "hz": "坐八路公共汽车。",
+        "py": "Zuò bā lù gōnggòng qìchē.",
+        "en": "Take the No. 8 bus."
+      }
+    },
+    {
+      "w": "公共汽车",
+      "py": "gōnggòng qìchē",
+      "en": "bus",
+      "ex": {
+        "hz": "我坐公共汽车去学校。",
+        "py": "Wǒ zuò gōnggòng qìchē qù xuéxiào.",
+        "en": "I take the bus to school."
+      }
+    },
+    {
+      "w": "然后",
+      "py": "ránhòu",
+      "en": "then",
+      "ex": {
+        "hz": "先吃饭，然后去看电影。",
+        "py": "Xiān chī fàn, ránhòu qù kàn diànyǐng.",
+        "en": "First eat, then go to a film."
+      }
+    },
+    {
+      "w": "地铁",
+      "py": "dìtiě",
+      "en": "subway",
+      "ex": {
+        "hz": "坐地铁很方便。",
+        "py": "Zuò dìtiě hěn fāngbiàn.",
+        "en": "The subway is convenient."
+      }
+    },
+    {
+      "w": "博物馆",
+      "py": "bówùguǎn",
+      "en": "museum",
+      "ex": {
+        "hz": "星期天我去博物馆。",
+        "py": "Xīngqītiān wǒ qù bówùguǎn.",
+        "en": "I'm going to the museum on Sunday."
+      }
+    },
+    {
+      "w": "应该",
+      "py": "yīnggāi",
+      "en": "should",
+      "ex": {
+        "hz": "你应该多休息。",
+        "py": "Nǐ yīnggāi duō xiūxi.",
+        "en": "You should rest more."
+      }
+    },
+    {
+      "w": "或者",
+      "py": "huòzhě",
+      "en": "or",
+      "ex": {
+        "hz": "坐地铁或者坐公共汽车都行。",
+        "py": "Zuò dìtiě huòzhě zuò gōnggòng qìchē dōu xíng.",
+        "en": "Subway or bus — either is fine."
+      }
+    },
+    {
+      "w": "骑",
+      "py": "qí",
+      "en": "to ride",
+      "ex": {
+        "hz": "我骑自行车去。",
+        "py": "Wǒ qí zìxíngchē qù.",
+        "en": "I'll go by bike."
+      }
+    },
+    {
+      "w": "技术",
+      "py": "jìshù",
+      "en": "skill",
+      "ex": {
+        "hz": "他开车技术很高。",
+        "py": "Tā kāi chē jìshù hěn gāo.",
+        "en": "He's a skilled driver."
+      }
+    },
+    {
+      "w": "还是",
+      "py": "háishi",
+      "en": "had better",
+      "ex": {
+        "hz": "还是坐地铁吧。",
+        "py": "Háishi zuò dìtiě ba.",
+        "en": "We'd better take the subway."
+      }
+    },
+    {
+      "w": "周末",
+      "py": "zhōumò",
+      "en": "weekend",
+      "ex": {
+        "hz": "周末你做什么？",
+        "py": "Zhōumò nǐ zuò shénme?",
+        "en": "What are you doing at the weekend?"
+      }
+    },
+    {
+      "w": "高铁",
+      "py": "gāotiě",
+      "en": "high-speed rail",
+      "ex": {
+        "hz": "坐高铁去上海。",
+        "py": "Zuò gāotiě qù Shànghǎi.",
+        "en": "Take the high-speed train to Shanghai."
+      }
+    },
+    {
+      "w": "飞机",
+      "py": "fēijī",
+      "en": "plane",
+      "ex": {
+        "hz": "坐飞机很快。",
+        "py": "Zuò fēijī hěn kuài.",
+        "en": "Flying is fast."
+      }
+    },
+    {
+      "w": "快",
+      "py": "kuài",
+      "en": "fast",
+      "ex": {
+        "hz": "地铁很快。",
+        "py": "Dìtiě hěn kuài.",
+        "en": "The subway is fast."
+      }
+    },
+    {
+      "w": "可是",
+      "py": "kěshì",
+      "en": "but",
+      "ex": {
+        "hz": "飞机很快，可是太贵了。",
+        "py": "Fēijī hěn kuài, kěshì tài guì le.",
+        "en": "Planes are fast, but too expensive."
+      }
+    },
+    {
+      "w": "方便",
+      "py": "fāngbiàn",
+      "en": "convenient",
+      "ex": {
+        "hz": "这儿买东西很方便。",
+        "py": "Zhèr mǎi dōngxi hěn fāngbiàn.",
+        "en": "Shopping is convenient here."
+      }
+    },
+    {
+      "w": "宽",
+      "py": "kuān",
+      "en": "wide",
+      "ex": {
+        "hz": "这条马路很宽。",
+        "py": "Zhè tiáo mǎlù hěn kuān.",
+        "en": "This road is wide."
+      }
+    },
+    {
+      "w": "重",
+      "py": "zhòng",
+      "en": "heavy",
+      "ex": {
+        "hz": "我的书包很重。",
+        "py": "Wǒ de shūbāo hěn zhòng.",
+        "en": "My schoolbag is heavy."
+      }
+    },
+    {
+      "w": "出租车",
+      "py": "chūzūchē",
+      "en": "taxi",
+      "ex": {
+        "hz": "我们坐出租车吧。",
+        "py": "Wǒmen zuò chūzūchē ba.",
+        "en": "Let's take a taxi."
+      }
+    },
+    {
+      "w": "送",
+      "py": "sòng",
+      "en": "to give (as a gift)",
+      "ex": {
+        "hz": "我送你一本书。",
+        "py": "Wǒ sòng nǐ yì běn shū.",
+        "en": "I'll give you a book."
+      }
+    },
+    {
+      "w": "礼物",
+      "py": "lǐwù",
+      "en": "gift",
+      "ex": {
+        "hz": "这是我的生日礼物。",
+        "py": "Zhè shì wǒ de shēngrì lǐwù.",
+        "en": "This is my birthday present."
+      }
+    },
+    {
+      "w": "花",
+      "py": "huā",
+      "en": "flower",
+      "ex": {
+        "hz": "我送妈妈花。",
+        "py": "Wǒ sòng māma huā.",
+        "en": "I'm giving Mom flowers."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "去邮局怎么走",
+      "py": "Qù yóujú zěnme zǒu",
+      "en": "How to get to the post office",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "请问，去邮局怎么走？",
+          "py": "Qǐngwèn, qù yóujú zěnme zǒu?",
+          "en": "Excuse me, how do I get to the post office?"
+        },
+        {
+          "who": "B",
+          "hz": "一直往前走，到十字路口往左拐。",
+          "py": "Yìzhí wǎng qián zǒu, dào shízì lùkǒu wǎng zuǒ guǎi.",
+          "en": "Go straight, then turn left at the crossroads."
+        },
+        {
+          "who": "A",
+          "hz": "离这儿远吗？",
+          "py": "Lí zhèr yuǎn ma?",
+          "en": "Is it far from here?"
+        },
+        {
+          "who": "B",
+          "hz": "不远，三百多米。",
+          "py": "Bù yuǎn, sānbǎi duō mǐ.",
+          "en": "No, a little over 300 metres."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Which way at the crossroads?",
+          "options": [
+            "Left",
+            "Right",
+            "Straight",
+            "Back"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How far is the post office?",
+          "options": [
+            "A bit over 300 m",
+            "3 km",
+            "30 m",
+            "3,000 m"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "周末去哪儿",
+      "py": "Zhōumò qù nǎr",
+      "en": "Where to go at the weekend",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "周末咱们去博物馆，好吗？",
+          "py": "Zhōumò zánmen qù bówùguǎn, hǎo ma?",
+          "en": "Shall we go to the museum this weekend?"
+        },
+        {
+          "who": "B",
+          "hz": "好啊！坐地铁还是坐出租车？",
+          "py": "Hǎo a! Zuò dìtiě háishi zuò chūzūchē?",
+          "en": "Great! Subway or taxi?"
+        },
+        {
+          "who": "A",
+          "hz": "出租车太贵了，还是坐地铁吧。",
+          "py": "Chūzūchē tài guì le, háishi zuò dìtiě ba.",
+          "en": "Taxis are too expensive; let's take the subway."
+        },
+        {
+          "who": "B",
+          "hz": "行，地铁也很方便。",
+          "py": "Xíng, dìtiě yě hěn fāngbiàn.",
+          "en": "OK, the subway is convenient too."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Where will they go?",
+          "options": [
+            "The museum",
+            "The bank",
+            "Shanghai",
+            "The cinema"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How will they get there?",
+          "options": [
+            "Subway",
+            "Taxi",
+            "Bike",
+            "Bus"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "往 + direction",
+      "en": "往 + 左 / 右 / 前 + 走 / 拐",
+      "drills": [
+        {
+          "q": "一直___前走。",
+          "options": [
+            "往",
+            "从",
+            "离",
+            "到"
+          ],
+          "answer": 0,
+          "en": "Go straight ahead."
+        }
+      ]
+    },
+    {
+      "point": "先……，然后……",
+      "en": "first …, then …",
+      "drills": [
+        {
+          "q": "先坐公共汽车，___换地铁。",
+          "options": [
+            "然后",
+            "先",
+            "还是",
+            "或者"
+          ],
+          "answer": 0,
+          "en": "First take the bus, then change to the subway."
+        }
+      ]
+    },
+    {
+      "point": "或者 / 还是",
+      "en": "或者 in statements; 还是 in questions",
+      "drills": [
+        {
+          "q": "二环___三环都行。",
+          "options": [
+            "或者",
+            "还是",
+            "和",
+            "跟"
+          ],
+          "answer": 0,
+          "en": "The Second or Third Ring Road — either is fine."
+        },
+        {
+          "q": "坐高铁___坐飞机？",
+          "options": [
+            "还是",
+            "或者",
+            "和",
+            "也"
+          ],
+          "answer": 0,
+          "en": "High-speed rail or plane?"
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "请问，去银行怎么走？"
+          ],
+          [
+            "女",
+            "一直往前走，到十字路口往右拐。"
+          ]
+        ],
+        "q": "去银行怎么走？",
+        "options": [
+          "往前走，然后往右拐",
+          "往左拐",
+          "坐地铁"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "坐高铁还是坐飞机？"
+          ],
+          [
+            "女",
+            "坐高铁吧，飞机太贵了。"
+          ]
+        ],
+        "q": "他们怎么去？",
+        "options": [
+          "坐高铁",
+          "坐飞机",
+          "开车"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "二环近，不过车有点儿多。",
+        "claim": "三环车很多。",
+        "ok": false
+      },
+      {
+        "text": "先坐两站8路公共汽车，然后换10号地铁。",
+        "claim": "要换车。",
+        "ok": true
+      }
+    ],
+    "replies": [
+      {
+        "q": "离这儿多远？",
+        "a": "二百多米。"
+      },
+      {
+        "q": "去博物馆应该走哪条路？",
+        "a": "二环或者三环都行。"
+      },
+      {
+        "q": "周末咱们去上海，好吗？",
+        "a": "好啊！"
+      },
+      {
+        "q": "怎么坐车？",
+        "a": "先坐公共汽车，然后换地铁。"
+      }
+    ]
+  }
+}

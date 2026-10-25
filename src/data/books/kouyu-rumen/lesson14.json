@@ -1,0 +1,585 @@
+{
+  "n": 14,
+  "cn": "第十四课",
+  "title": "咱们去尝尝，好吗",
+  "en": "Shall we go and give it a try",
+  "words": [
+    {
+      "w": "喜欢",
+      "py": "xǐhuan",
+      "en": "to like",
+      "ex": {
+        "hz": "我喜欢吃饺子。",
+        "py": "Wǒ xǐhuan chī jiǎozi.",
+        "en": "I like dumplings."
+      }
+    },
+    {
+      "w": "辣",
+      "py": "là",
+      "en": "spicy",
+      "ex": {
+        "hz": "你吃辣的吗？",
+        "py": "Nǐ chī là de ma?",
+        "en": "Do you eat spicy food?"
+      }
+    },
+    {
+      "w": "菜",
+      "py": "cài",
+      "en": "dish",
+      "ex": {
+        "hz": "四川菜很辣。",
+        "py": "Sìchuān cài hěn là.",
+        "en": "Sichuan food is spicy."
+      }
+    },
+    {
+      "w": "事",
+      "py": "shì",
+      "en": "matter; thing (to do)",
+      "ex": {
+        "hz": "今天晚上我有事。",
+        "py": "Jīntiān wǎnshang wǒ yǒu shì.",
+        "en": "I'm busy tonight."
+      }
+    },
+    {
+      "w": "菜单",
+      "py": "càidān",
+      "en": "menu",
+      "ex": {
+        "hz": "请给我菜单。",
+        "py": "Qǐng gěi wǒ càidān.",
+        "en": "The menu, please."
+      }
+    },
+    {
+      "w": "点菜",
+      "py": "diǎn cài",
+      "en": "to order food",
+      "ex": {
+        "hz": "请点菜。",
+        "py": "Qǐng diǎn cài.",
+        "en": "Please order."
+      }
+    },
+    {
+      "w": "宫保鸡丁",
+      "py": "gōngbǎo jīdīng",
+      "en": "Kung Pao chicken",
+      "ex": {
+        "hz": "来一个宫保鸡丁。",
+        "py": "Lái yí ge gōngbǎo jīdīng.",
+        "en": "One Kung Pao chicken, please."
+      }
+    },
+    {
+      "w": "麻婆豆腐",
+      "py": "mápó dòufu",
+      "en": "Mapo tofu",
+      "ex": {
+        "hz": "麻婆豆腐很好吃。",
+        "py": "Mápó dòufu hěn hǎochī.",
+        "en": "Mapo tofu is delicious."
+      }
+    },
+    {
+      "w": "碗",
+      "py": "wǎn",
+      "en": "bowl",
+      "ex": {
+        "hz": "两碗米饭。",
+        "py": "Liǎng wǎn mǐfàn.",
+        "en": "Two bowls of rice."
+      }
+    },
+    {
+      "w": "酸辣汤",
+      "py": "suānlàtāng",
+      "en": "hot and sour soup",
+      "ex": {
+        "hz": "我要一个酸辣汤。",
+        "py": "Wǒ yào yí ge suānlàtāng.",
+        "en": "I'll have a hot and sour soup."
+      }
+    },
+    {
+      "w": "汤",
+      "py": "tāng",
+      "en": "soup",
+      "ex": {
+        "hz": "这个汤很热。",
+        "py": "Zhège tāng hěn rè.",
+        "en": "This soup is hot."
+      }
+    },
+    {
+      "w": "饮料",
+      "py": "yǐnliào",
+      "en": "drink; beverage",
+      "ex": {
+        "hz": "要什么饮料？",
+        "py": "Yào shénme yǐnliào?",
+        "en": "What would you like to drink?"
+      }
+    },
+    {
+      "w": "壶",
+      "py": "hú",
+      "en": "pot",
+      "ex": {
+        "hz": "来一壶茶。",
+        "py": "Lái yì hú chá.",
+        "en": "A pot of tea, please."
+      }
+    },
+    {
+      "w": "菊花",
+      "py": "júhuā",
+      "en": "chrysanthemum",
+      "ex": {
+        "hz": "我喜欢菊花茶。",
+        "py": "Wǒ xǐhuan júhuāchá.",
+        "en": "I like chrysanthemum tea."
+      }
+    },
+    {
+      "w": "忌口",
+      "py": "jìkǒu",
+      "en": "to avoid certain foods",
+      "ex": {
+        "hz": "您有忌口的吗？",
+        "py": "Nín yǒu jìkǒu de ma?",
+        "en": "Is there anything you don't eat?"
+      }
+    },
+    {
+      "w": "香菜",
+      "py": "xiāngcài",
+      "en": "cilantro",
+      "ex": {
+        "hz": "我不吃香菜。",
+        "py": "Wǒ bù chī xiāngcài.",
+        "en": "I don't eat cilantro."
+      }
+    },
+    {
+      "w": "稍",
+      "py": "shāo",
+      "en": "slightly; a moment",
+      "ex": {
+        "hz": "请稍等。",
+        "py": "Qǐng shāo děng.",
+        "en": "One moment, please."
+      }
+    },
+    {
+      "w": "味道",
+      "py": "wèidào",
+      "en": "taste; flavour",
+      "ex": {
+        "hz": "这个菜味道很好。",
+        "py": "Zhège cài wèidào hěn hǎo.",
+        "en": "This dish tastes good."
+      }
+    },
+    {
+      "w": "觉得",
+      "py": "juéde",
+      "en": "to think; to feel",
+      "ex": {
+        "hz": "我觉得很好吃。",
+        "py": "Wǒ juéde hěn hǎochī.",
+        "en": "I think it's delicious."
+      }
+    },
+    {
+      "w": "好吃",
+      "py": "hǎochī",
+      "en": "tasty",
+      "ex": {
+        "hz": "饺子真好吃！",
+        "py": "Jiǎozi zhēn hǎochī!",
+        "en": "The dumplings are so tasty!"
+      }
+    },
+    {
+      "w": "不过",
+      "py": "búguò",
+      "en": "but",
+      "ex": {
+        "hz": "好吃，不过有点儿辣。",
+        "py": "Hǎochī, búguò yǒudiǎnr là.",
+        "en": "Tasty, but a bit spicy."
+      }
+    },
+    {
+      "w": "咸",
+      "py": "xián",
+      "en": "salty",
+      "ex": {
+        "hz": "这个汤有点儿咸。",
+        "py": "Zhège tāng yǒudiǎnr xián.",
+        "en": "This soup is a bit salty."
+      }
+    },
+    {
+      "w": "油腻",
+      "py": "yóunì",
+      "en": "greasy",
+      "ex": {
+        "hz": "这个菜太油腻了。",
+        "py": "Zhège cài tài yóunì le.",
+        "en": "This dish is too greasy."
+      }
+    },
+    {
+      "w": "听说",
+      "py": "tīngshuō",
+      "en": "to hear (that)",
+      "ex": {
+        "hz": "听说那个饭馆不错。",
+        "py": "Tīngshuō nàge fànguǎn búcuò.",
+        "en": "I hear that restaurant is good."
+      }
+    },
+    {
+      "w": "清淡",
+      "py": "qīngdàn",
+      "en": "light (not greasy)",
+      "ex": {
+        "hz": "我喜欢清淡的菜。",
+        "py": "Wǒ xǐhuan qīngdàn de cài.",
+        "en": "I like light food."
+      }
+    },
+    {
+      "w": "结账",
+      "py": "jiézhàng",
+      "en": "to pay the bill",
+      "ex": {
+        "hz": "服务员，结账。",
+        "py": "Fúwùyuán, jiézhàng.",
+        "en": "Waiter, the bill please."
+      }
+    },
+    {
+      "w": "打包盒",
+      "py": "dǎbāohé",
+      "en": "takeout box",
+      "ex": {
+        "hz": "请给我一个打包盒。",
+        "py": "Qǐng gěi wǒ yí ge dǎbāohé.",
+        "en": "A takeout box, please."
+      }
+    },
+    {
+      "w": "请客",
+      "py": "qǐngkè",
+      "en": "to treat (someone)",
+      "ex": {
+        "hz": "今天我请客。",
+        "py": "Jīntiān wǒ qǐngkè.",
+        "en": "It's my treat today."
+      }
+    },
+    {
+      "w": "下次",
+      "py": "xià cì",
+      "en": "next time",
+      "ex": {
+        "hz": "下次我请你。",
+        "py": "Xià cì wǒ qǐng nǐ.",
+        "en": "Next time it's on me."
+      }
+    },
+    {
+      "w": "唱歌",
+      "py": "chàng gē",
+      "en": "to sing",
+      "ex": {
+        "hz": "她很喜欢唱歌。",
+        "py": "Tā hěn xǐhuan chàng gē.",
+        "en": "She loves singing."
+      }
+    },
+    {
+      "w": "有意思",
+      "py": "yǒu yìsi",
+      "en": "interesting",
+      "ex": {
+        "hz": "这个电影很有意思。",
+        "py": "Zhège diànyǐng hěn yǒu yìsi.",
+        "en": "This film is interesting."
+      }
+    },
+    {
+      "w": "告诉",
+      "py": "gàosu",
+      "en": "to tell",
+      "ex": {
+        "hz": "请告诉我你的电话号码。",
+        "py": "Qǐng gàosu wǒ nǐ de diànhuà hàomǎ.",
+        "en": "Please tell me your phone number."
+      }
+    },
+    {
+      "w": "问题",
+      "py": "wèntí",
+      "en": "question",
+      "ex": {
+        "hz": "我有一个问题。",
+        "py": "Wǒ yǒu yí ge wèntí.",
+        "en": "I have a question."
+      }
+    },
+    {
+      "w": "问",
+      "py": "wèn",
+      "en": "to ask",
+      "ex": {
+        "hz": "我问一下儿老师。",
+        "py": "Wǒ wèn yíxiàr lǎoshī.",
+        "en": "I'll ask the teacher."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "去吃饭",
+      "py": "Qù chī fàn",
+      "en": "Going out to eat",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你喜欢吃辣的吗？",
+          "py": "Nǐ xǐhuan chī là de ma?",
+          "en": "Do you like spicy food?"
+        },
+        {
+          "who": "B",
+          "hz": "喜欢。听说附近有个四川饭馆，咱们去尝尝吧。",
+          "py": "Xǐhuan. Tīngshuō fùjìn yǒu ge Sìchuān fànguǎn, zánmen qù chángchang ba.",
+          "en": "Yes. I hear there's a Sichuan restaurant nearby — let's try it."
+        },
+        {
+          "who": "A",
+          "hz": "好啊，今天晚上怎么样？",
+          "py": "Hǎo a, jīntiān wǎnshang zěnmeyàng?",
+          "en": "Great, how about tonight?"
+        },
+        {
+          "who": "B",
+          "hz": "今天晚上我有事，明天吧。",
+          "py": "Jīntiān wǎnshang wǒ yǒu shì, míngtiān ba.",
+          "en": "I'm busy tonight — tomorrow."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What restaurant will they try?",
+          "options": [
+            "Sichuan",
+            "Cantonese",
+            "Beijing",
+            "Korean"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "When will they go?",
+          "options": [
+            "Tomorrow",
+            "Tonight",
+            "Next week",
+            "Now"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "点菜",
+      "py": "Diǎn cài",
+      "en": "Ordering",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "这是菜单，请点菜。",
+          "py": "Zhè shì càidān, qǐng diǎn cài.",
+          "en": "Here's the menu, please order."
+        },
+        {
+          "who": "B",
+          "hz": "来一个麻婆豆腐、两碗米饭，再来一壶茶。",
+          "py": "Lái yí ge mápó dòufu, liǎng wǎn mǐfàn, zài lái yì hú chá.",
+          "en": "One Mapo tofu, two bowls of rice and a pot of tea."
+        },
+        {
+          "who": "A",
+          "hz": "有忌口的吗？",
+          "py": "Yǒu jìkǒu de ma?",
+          "en": "Anything you don't eat?"
+        },
+        {
+          "who": "B",
+          "hz": "我们不吃香菜。",
+          "py": "Wǒmen bú chī xiāngcài.",
+          "en": "We don't eat cilantro."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How many bowls of rice?",
+          "options": [
+            "2",
+            "1",
+            "3",
+            "None"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What don't they eat?",
+          "options": [
+            "Cilantro",
+            "Tofu",
+            "Rice",
+            "Spicy food"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "来 (ordering)",
+      "en": "来 + amount + dish: ordering food",
+      "drills": [
+        {
+          "q": "___一个宫保鸡丁。",
+          "options": [
+            "来",
+            "去",
+            "吃",
+            "买"
+          ],
+          "answer": 0,
+          "en": "One Kung Pao chicken, please."
+        }
+      ]
+    },
+    {
+      "point": "……是……，不过……",
+      "en": "admit, then add “but”",
+      "drills": [
+        {
+          "q": "好吃是好吃，___有点儿咸。",
+          "options": [
+            "不过",
+            "所以",
+            "因为",
+            "还是"
+          ],
+          "answer": 0,
+          "en": "It's tasty, but a bit salty."
+        }
+      ]
+    },
+    {
+      "point": "请 (treat)",
+      "en": "请 + person + verb: treat someone",
+      "drills": [
+        {
+          "q": "下次我___你吃广东菜。",
+          "options": [
+            "请",
+            "给",
+            "让",
+            "跟"
+          ],
+          "answer": 0,
+          "en": "Next time I'll treat you to Cantonese food."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你喜欢吃辣的吗？"
+          ],
+          [
+            "女",
+            "喜欢。"
+          ]
+        ],
+        "q": "女的喜欢吃什么？",
+        "options": [
+          "辣的",
+          "甜的",
+          "咸的"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "有忌口的吗？"
+          ],
+          [
+            "女",
+            "我不吃香菜。"
+          ]
+        ],
+        "q": "女的不吃什么？",
+        "options": [
+          "香菜",
+          "米饭",
+          "豆腐"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "今天晚上我有事，明天中午好吗？",
+        "claim": "她今天晚上很忙。",
+        "ok": true
+      },
+      {
+        "text": "听说广东菜很油腻。",
+        "claim": "广东菜很清淡。",
+        "ok": false
+      }
+    ],
+    "replies": [
+      {
+        "q": "要什么饮料？",
+        "a": "来一壶菊花茶。"
+      },
+      {
+        "q": "今天晚上怎么样？",
+        "a": "今天晚上我有事。"
+      },
+      {
+        "q": "今天我请客。",
+        "a": "谢谢！下次我请你。"
+      },
+      {
+        "q": "这是菜单，请点菜。",
+        "a": "来一个麻婆豆腐。"
+      }
+    ]
+  }
+}

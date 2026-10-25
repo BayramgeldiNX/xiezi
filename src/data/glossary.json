@@ -202,5 +202,85 @@
   "就要": {
     "py": "jiù yào",
     "en": "about to"
+  },
+  "中文": {
+    "py": "Zhōngwén",
+    "en": "Chinese (language)"
+  },
+  "文": {
+    "py": "wén",
+    "en": "writing; language"
+  },
+  "四川": {
+    "py": "Sìchuān",
+    "en": "Sichuan (province)"
+  },
+  "川": {
+    "py": "chuān",
+    "en": "river"
+  },
+  "韩国": {
+    "py": "Hánguó",
+    "en": "South Korea"
+  },
+  "韩": {
+    "py": "hán",
+    "en": "Korea"
+  },
+  "保罗": {
+    "py": "Bǎoluó",
+    "en": "Paul (a name)"
+  },
+  "罗": {
+    "py": "luó",
+    "en": "(in names)"
+  },
+  "德": {
+    "py": "dé",
+    "en": "virtue; Germany"
+  },
+  "德国": {
+    "py": "Déguó",
+    "en": "Germany"
+  },
+  "上海": {
+    "py": "Shànghǎi",
+    "en": "Shanghai"
+  },
+  "海": {
+    "py": "hǎi",
+    "en": "sea"
+  },
+  "小心": {
+    "py": "xiǎoxīn",
+    "en": "careful"
+  },
+  "心": {
+    "py": "xīn",
+    "en": "heart"
+  },
+  "市场": {
+    "py": "shìchǎng",
+    "en": "market"
+  },
+  "场": {
+    "py": "chǎng",
+    "en": "place; field"
+  },
+  "网上": {
+    "py": "wǎngshàng",
+    "en": "online"
+  },
+  "网": {
+    "py": "wǎng",
+    "en": "net"
+  },
+  "付": {
+    "py": "fù",
+    "en": "to pay"
+  },
+  "菊花茶": {
+    "py": "júhuāchá",
+    "en": "chrysanthemum tea"
   }
 }

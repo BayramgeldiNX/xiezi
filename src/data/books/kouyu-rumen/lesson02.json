@@ -1,0 +1,466 @@
+{
+  "n": 2,
+  "cn": "第二课",
+  "title": "你好吗",
+  "en": "How are you",
+  "words": [
+    {
+      "w": "好久不见",
+      "py": "hǎojiǔ bújiàn",
+      "en": "long time no see",
+      "ex": {
+        "hz": "好久不见！你好吗？",
+        "py": "Hǎojiǔ bújiàn! Nǐ hǎo ma?",
+        "en": "Long time no see! How are you?"
+      }
+    },
+    {
+      "w": "吗",
+      "py": "ma",
+      "en": "(makes a yes/no question)",
+      "ex": {
+        "hz": "你忙吗？",
+        "py": "Nǐ máng ma?",
+        "en": "Are you busy?"
+      }
+    },
+    {
+      "w": "我",
+      "py": "wǒ",
+      "en": "I; me",
+      "ex": {
+        "hz": "我很好。",
+        "py": "Wǒ hěn hǎo.",
+        "en": "I'm fine."
+      }
+    },
+    {
+      "w": "很",
+      "py": "hěn",
+      "en": "very",
+      "ex": {
+        "hz": "老师很忙。",
+        "py": "Lǎoshī hěn máng.",
+        "en": "The teacher is very busy."
+      }
+    },
+    {
+      "w": "呢",
+      "py": "ne",
+      "en": "(and …? what about …?)",
+      "ex": {
+        "hz": "我很好，你呢？",
+        "py": "Wǒ hěn hǎo, nǐ ne?",
+        "en": "I'm fine, and you?"
+      }
+    },
+    {
+      "w": "也",
+      "py": "yě",
+      "en": "also; too",
+      "ex": {
+        "hz": "我也很累。",
+        "py": "Wǒ yě hěn lèi.",
+        "en": "I'm tired too."
+      }
+    },
+    {
+      "w": "爸爸",
+      "py": "bàba",
+      "en": "dad; father",
+      "ex": {
+        "hz": "我爸爸很忙。",
+        "py": "Wǒ bàba hěn máng.",
+        "en": "My dad is very busy."
+      }
+    },
+    {
+      "w": "妈妈",
+      "py": "māma",
+      "en": "mom; mother",
+      "ex": {
+        "hz": "你妈妈好吗？",
+        "py": "Nǐ māma hǎo ma?",
+        "en": "How is your mom?"
+      }
+    },
+    {
+      "w": "都",
+      "py": "dōu",
+      "en": "both; all",
+      "ex": {
+        "hz": "我们都很好。",
+        "py": "Wǒmen dōu hěn hǎo.",
+        "en": "We're all fine."
+      }
+    },
+    {
+      "w": "他们",
+      "py": "tāmen",
+      "en": "they; them",
+      "ex": {
+        "hz": "他们都不忙。",
+        "py": "Tāmen dōu bù máng.",
+        "en": "None of them are busy."
+      }
+    },
+    {
+      "w": "哥哥",
+      "py": "gēge",
+      "en": "older brother",
+      "ex": {
+        "hz": "我哥哥很累。",
+        "py": "Wǒ gēge hěn lèi.",
+        "en": "My older brother is tired."
+      }
+    },
+    {
+      "w": "他",
+      "py": "tā",
+      "en": "he; him",
+      "ex": {
+        "hz": "他饿吗？",
+        "py": "Tā è ma?",
+        "en": "Is he hungry?"
+      }
+    },
+    {
+      "w": "姐姐",
+      "py": "jiějie",
+      "en": "older sister",
+      "ex": {
+        "hz": "你姐姐忙吗？",
+        "py": "Nǐ jiějie máng ma?",
+        "en": "Is your older sister busy?"
+      }
+    },
+    {
+      "w": "她",
+      "py": "tā",
+      "en": "she; her",
+      "ex": {
+        "hz": "她很渴。",
+        "py": "Tā hěn kě.",
+        "en": "She's very thirsty."
+      }
+    },
+    {
+      "w": "爱人",
+      "py": "àiren",
+      "en": "husband or wife",
+      "ex": {
+        "hz": "你爱人好吗？",
+        "py": "Nǐ àiren hǎo ma?",
+        "en": "How is your husband / wife?"
+      }
+    },
+    {
+      "w": "弟弟",
+      "py": "dìdi",
+      "en": "younger brother",
+      "ex": {
+        "hz": "我弟弟饿了。",
+        "py": "Wǒ dìdi è le.",
+        "en": "My younger brother is hungry."
+      }
+    },
+    {
+      "w": "妹妹",
+      "py": "mèimei",
+      "en": "younger sister",
+      "ex": {
+        "hz": "妹妹也很好。",
+        "py": "Mèimei yě hěn hǎo.",
+        "en": "My younger sister is fine too."
+      }
+    },
+    {
+      "w": "忙",
+      "py": "máng",
+      "en": "busy",
+      "ex": {
+        "hz": "我不忙。",
+        "py": "Wǒ bù máng.",
+        "en": "I'm not busy."
+      }
+    },
+    {
+      "w": "累",
+      "py": "lèi",
+      "en": "tired",
+      "ex": {
+        "hz": "你累吗？",
+        "py": "Nǐ lèi ma?",
+        "en": "Are you tired?"
+      }
+    },
+    {
+      "w": "饿",
+      "py": "è",
+      "en": "hungry",
+      "ex": {
+        "hz": "我很饿。",
+        "py": "Wǒ hěn è.",
+        "en": "I'm very hungry."
+      }
+    },
+    {
+      "w": "渴",
+      "py": "kě",
+      "en": "thirsty",
+      "ex": {
+        "hz": "你渴吗？",
+        "py": "Nǐ kě ma?",
+        "en": "Are you thirsty?"
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "你累吗",
+      "py": "Nǐ lèi ma",
+      "en": "Are you tired",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你好！你累吗？",
+          "py": "Nǐ hǎo! Nǐ lèi ma?",
+          "en": "Hi! Are you tired?"
+        },
+        {
+          "who": "B",
+          "hz": "我很累，也很饿。",
+          "py": "Wǒ hěn lèi, yě hěn è.",
+          "en": "I'm tired, and hungry too."
+        },
+        {
+          "who": "A",
+          "hz": "你渴吗？",
+          "py": "Nǐ kě ma?",
+          "en": "Are you thirsty?"
+        },
+        {
+          "who": "B",
+          "hz": "我不渴。",
+          "py": "Wǒ bù kě.",
+          "en": "I'm not thirsty."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How does B feel?",
+          "options": [
+            "Tired and hungry",
+            "Thirsty",
+            "Fine",
+            "Busy"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Is B thirsty?",
+          "options": [
+            "No",
+            "Yes",
+            "Very",
+            "We don't know"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "你哥哥好吗",
+      "py": "Nǐ gēge hǎo ma",
+      "en": "How's your brother",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "好久不见！你哥哥、姐姐好吗？",
+          "py": "Hǎojiǔ bújiàn! Nǐ gēge, jiějie hǎo ma?",
+          "en": "Long time no see! How are your brother and sister?"
+        },
+        {
+          "who": "B",
+          "hz": "他们都很好，也都很忙。",
+          "py": "Tāmen dōu hěn hǎo, yě dōu hěn máng.",
+          "en": "They're both well, and both busy."
+        },
+        {
+          "who": "A",
+          "hz": "你弟弟呢？",
+          "py": "Nǐ dìdi ne?",
+          "en": "And your younger brother?"
+        },
+        {
+          "who": "B",
+          "hz": "他不忙。",
+          "py": "Tā bù máng.",
+          "en": "He isn't busy."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Who is busy?",
+          "options": [
+            "The older brother and sister",
+            "The younger brother",
+            "Everyone",
+            "Nobody"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How is B's younger brother?",
+          "options": [
+            "Not busy",
+            "Very busy",
+            "Tired",
+            "Hungry"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "吗 questions",
+      "en": "statement + 吗 = yes/no question",
+      "drills": [
+        {
+          "q": "你忙___？",
+          "options": [
+            "吗",
+            "呢",
+            "很",
+            "也"
+          ],
+          "answer": 0,
+          "en": "Are you busy?"
+        }
+      ]
+    },
+    {
+      "point": "呢",
+      "en": "…呢？ = and you? what about …?",
+      "drills": [
+        {
+          "q": "我很好，你___？",
+          "options": [
+            "呢",
+            "吗",
+            "也",
+            "都"
+          ],
+          "answer": 0,
+          "en": "I'm fine, and you?"
+        }
+      ]
+    },
+    {
+      "point": "也 / 都",
+      "en": "也 and 都 go before the verb; 也 comes before 都",
+      "drills": [
+        {
+          "q": "我___很好。",
+          "options": [
+            "也",
+            "吗",
+            "呢",
+            "们"
+          ],
+          "answer": 0,
+          "en": "I'm fine too."
+        },
+        {
+          "q": "他们也___很好。",
+          "options": [
+            "都",
+            "吗",
+            "呢",
+            "不"
+          ],
+          "answer": 0,
+          "en": "They're both fine too."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你忙吗？"
+          ],
+          [
+            "女",
+            "我不忙。"
+          ]
+        ],
+        "q": "女的忙吗？",
+        "options": [
+          "不忙",
+          "很忙",
+          "比较忙"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你爸爸、妈妈好吗？"
+          ],
+          [
+            "女",
+            "他们都很好。"
+          ]
+        ],
+        "q": "女的爸爸妈妈怎么样？",
+        "options": [
+          "都很好",
+          "都很忙",
+          "都很累"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "我很累，也很饿。",
+        "claim": "他饿了。",
+        "ok": true
+      },
+      {
+        "text": "我哥哥很忙，我姐姐不忙。",
+        "claim": "他姐姐很忙。",
+        "ok": false
+      }
+    ],
+    "replies": [
+      {
+        "q": "你好吗？",
+        "a": "我很好，你呢？"
+      },
+      {
+        "q": "好久不见！",
+        "a": "好久不见！"
+      },
+      {
+        "q": "你渴吗？",
+        "a": "不渴，我饿。"
+      },
+      {
+        "q": "你爱人好吗？",
+        "a": "她很好，谢谢。"
+      }
+    ]
+  }
+}
