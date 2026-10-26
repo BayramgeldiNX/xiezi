@@ -18,6 +18,9 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC_FONT = ROOT / "fonts-src" / "NotoSerifSC-VF.ttf"
 OUT = ROOT / "src" / "fonts" / "NotoSerifSC-sub.woff2"
 SCAN = [ROOT / "index.html", *(p for p in (ROOT / "src").rglob("*") if p.suffix in {".js", ".json", ".css", ".html"})]
+# The book texts shown after sign-in (data-src/private, not in the repository) use the same font;
+# only their characters end up in the font file, never the texts.
+SCAN += sorted((ROOT / "data-src" / "private").glob("*.json"))
 
 if not SRC_FONT.exists():
     sys.exit(f"Missing {SRC_FONT}. Download it first (see README).")

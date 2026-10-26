@@ -130,7 +130,7 @@ function showHome() {
   const r = $("#resume");
   if (saved) {
     const les = LESSONS[saved.lesson], w = les.words[saved.word] || les.words[0];
-    r.innerHTML = `<span class="play" aria-hidden="true">${icon("play")}</span><span class="txt"><b>Continue</b><span>${les.cn} ${esc(les.title)} · ${saved.tab === "write" ? w.w + " · " : ""}${TAB_NAME[saved.tab]}</span></span><span class="chev">${icon("next")}</span>`;
+    r.innerHTML = `<span class="play" aria-hidden="true">${icon("play")}</span><span class="txt"><b>Continue</b><span>${esc(bookOf(les).title)} · ${les.cn} ${esc(les.title)} ·${saved.tab === "write" ? w.w + " · " : ""}${TAB_NAME[saved.tab]}</span></span><span class="chev">${icon("next")}</span>`;
     r.onclick = () => go(`#/lesson/${les.id}/${saved.tab}`);
     r.hidden = false;
   } else r.hidden = true;

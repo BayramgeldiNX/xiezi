@@ -1,9 +1,9 @@
 // 字 Character card: tap any element with data-char="你" to see how the character is built,
 // its radical, look-alikes, characters sharing its parts, and every word you know that uses it.
 import { $, $$, esc } from "../lib/util.js";
-import { tonePy } from "../lib/pinyin.js";
+import { tonePy, syllables, stripTone } from "../lib/pinyin.js";
 import { autoSay, sayBtns } from "../lib/speech.js";
-import { CHARS, CHARINFO, RADICALS, STROKE_DATA, LESSONS, DICT, wordsWith } from "../data/index.js";
+import { CHARS, CHARINFO, RADICALS, STROKE_DATA, LESSONS, DICT, wordsWith, bookOf } from "../data/index.js";
 import * as progress from "../progress/store.js";
 import { charStatus } from "../progress/model.js";
 
@@ -40,6 +40,25 @@ function sharesParts(c, info) {
     .map(([k, v]) => ({ c: k, py: CHARS[k]?.py || "", en: CHARS[k]?.en || "", via: v.parts.find((p) => mine.has(p.c)).c }));
 }
 
+// Readings of c in the lesson words that differ from its main reading (行 xíng, but háng in 银行).
+// Neutral-tone versions of the same syllable (学生 sheng) don't count.
+function otherReadings(c, main, words) {
+  const plain = (p) => stripTone(p || "").toLowerCase();
+  const found = new Map();
+  for (const w of words) {
+    const hz = [...w.w];
+    const erhua = hz.length > 1 && hz[hz.length - 1] === "儿" && /r$/.test(w.py) && !/'[eēéěè]r$/.test(w.py);
+    const sy = w.py.split(/[\s']+/).flatMap((x) => syllables(x)).map(([s]) => s.toLowerCase());
+    hz.forEach((x, i) => {
+      const s = sy[i];
+      if (x !== c || !s || (erhua && i === hz.length - 1)) return;
+      const r = erhua && i === hz.length - 2 ? s.replace(/r$/, "") : s;
+      if (plain(r) !== plain(main) && !found.has(r)) found.set(r, w.w);
+    });
+  }
+  return [...found];
+}
+
 export function openChar(c) {
   const info = CHARINFO[c], base = CHARS[c] || DICT[c] || {};
   const st = progress.get("w:" + c), status = charStatus(st);
@@ -52,13 +71,14 @@ export function openChar(c) {
       <div class="cs-title">
         <div><b class="cs-big">${c}</b> <span class="py">${tonePy(base.py || "")}</span></div>
         <div class="muted">${esc(base.en || "")}</div>
+        ${otherReadings(c, base.py, words).map(([py, w]) => `<div class="muted">Also read <span class="py">${tonePy(py)}</span> in ${esc(w)}</div>`).join("")}
         <div class="controls">${sayBtns(c, base.py || c, true)}
           ${strokes ? `<span class="count">${strokes} strokes</span>` : ""}
           <span class="badge ${status === "mastered" ? "ok" : status === "learning" ? "learning" : ""}">${status === "mastered" ? "✓ Mastered" : status === "learning" ? "Learning" : "New"}</span></div>
       </div>
     </div>
     ${howBuilt(c, info)}
-    ${info?.radical ? `<section><span class="lbl">Radical (character family)</span>
+    ${info?.radical && info.radical.c !== c ? `<section><span class="lbl">Radical (character family)</span>
       <p><span class="cs-rad">${info.radical.c}</span> ${esc(name(info.radical.c, info.radical.en))}: characters with ${info.radical.c} are often about ${esc(name(info.radical.c, info.radical.en))}.</p></section>` : ""}
     ${CHARS[c]?.tip ? `<section><span class="lbl">Memory trick</span><p>${CHARS[c].tip}</p></section>` : ""}
     ${info?.similar?.length ? `<section><span class="lbl">Don't mix up with</span><div class="cs-row">${info.similar.map((x) => chip(x, true)).join("")}</div></section>` : ""}
@@ -66,7 +86,7 @@ export function openChar(c) {
     ${words.length ? `<section><span class="lbl">Your words with ${c}</span><ul class="cs-words">${words.map((w) => {
       const L = LESSONS.find((l) => l.id === w.lesson);
       return `<li><button type="button" data-say="${esc(w.w)}"><b>${[...w.w].map((x) => (x === c ? `<mark>${x}</mark>` : x)).join("")}</b>
-        <span class="py">${tonePy(w.py)}</span><span class="muted">${esc(w.en)}</span><small>${L ? `${L.cn}` : ""}</small></button></li>`;
+        <span class="py">${tonePy(w.py)}</span><span class="muted">${esc(w.en)}</span><small>${L ? `${esc(bookOf(L).title)} · ${L.cn}` : ""}</small></button></li>`;
     }).join("")}</ul></section>` : ""}
     ${words.length && STROKE_DATA[c] ? `<button class="btn primary" type="button" id="csPractice">Practice writing ${c}</button>` : ""}
     <p class="note cs-credit">Character parts: Make Me a Hanzi (open data).</p>`;

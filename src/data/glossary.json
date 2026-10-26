@@ -282,5 +282,185 @@
   "菊花茶": {
     "py": "júhuāchá",
     "en": "chrysanthemum tea"
+  },
+  "天安门": {
+    "py": "Tiān'ān Mén",
+    "en": "Tian'anmen"
+  },
+  "安": {
+    "py": "ān",
+    "en": "peaceful"
+  },
+  "西蒙": {
+    "py": "Xīméng",
+    "en": "Simon (a name)"
+  },
+  "蒙": {
+    "py": "méng",
+    "en": "(in names)"
+  },
+  "李英男": {
+    "py": "Lǐ Yīngnán",
+    "en": "Lee Yeongnam (a name)"
+  },
+  "英男": {
+    "py": "Yīngnán",
+    "en": "Yeongnam (a name)"
+  },
+  "英": {
+    "py": "yīng",
+    "en": "hero; English"
+  },
+  "法国": {
+    "py": "Fǎguó",
+    "en": "France"
+  },
+  "法": {
+    "py": "fǎ",
+    "en": "law; method"
+  },
+  "北京语言大学": {
+    "py": "Běijīng Yǔyán Dàxué",
+    "en": "Beijing Language and Culture University"
+  },
+  "语言": {
+    "py": "yǔyán",
+    "en": "language"
+  },
+  "言": {
+    "py": "yán",
+    "en": "speech"
+  },
+  "京": {
+    "py": "jīng",
+    "en": "capital"
+  },
+  "颐和园": {
+    "py": "Yíhé Yuán",
+    "en": "the Summer Palace"
+  },
+  "颐": {
+    "py": "yí",
+    "en": "(in 颐和园)"
+  },
+  "园": {
+    "py": "yuán",
+    "en": "garden; park"
+  },
+  "莉莉": {
+    "py": "Lìli",
+    "en": "Lily (a name)"
+  },
+  "莉": {
+    "py": "lì",
+    "en": "(in names)"
+  },
+  "青岛": {
+    "py": "Qīngdǎo",
+    "en": "Qingdao (a city)"
+  },
+  "青": {
+    "py": "qīng",
+    "en": "blue-green"
+  },
+  "岛": {
+    "py": "dǎo",
+    "en": "island"
+  },
+  "广东": {
+    "py": "Guǎngdōng",
+    "en": "Guangdong (province)"
+  },
+  "广": {
+    "py": "guǎng",
+    "en": "wide"
+  },
+  "人民广场": {
+    "py": "Rénmín Guǎngchǎng",
+    "en": "People's Square"
+  },
+  "人民": {
+    "py": "rénmín",
+    "en": "the people"
+  },
+  "民": {
+    "py": "mín",
+    "en": "people"
+  },
+  "广场": {
+    "py": "guǎngchǎng",
+    "en": "square (place)"
+  },
+  "大学城": {
+    "py": "Dàxuéchéng",
+    "en": "University Town"
+  },
+  "城": {
+    "py": "chéng",
+    "en": "city; town"
+  },
+  "二环": {
+    "py": "èr huán",
+    "en": "Second Ring Road"
+  },
+  "三环": {
+    "py": "sān huán",
+    "en": "Third Ring Road"
+  },
+  "环": {
+    "py": "huán",
+    "en": "ring"
+  },
+  "大卫": {
+    "py": "Dàwèi",
+    "en": "David (a name)"
+  },
+  "卫": {
+    "py": "wèi",
+    "en": "to guard"
+  },
+  "杨": {
+    "py": "Yáng",
+    "en": "Yang (a surname)"
+  },
+  "杨笑笑": {
+    "py": "Yáng Xiàoxiao",
+    "en": "Yang Xiaoxiao (a name)"
+  },
+  "自己": {
+    "py": "zìjǐ",
+    "en": "oneself"
+  },
+  "己": {
+    "py": "jǐ",
+    "en": "self"
+  },
+  "蒂娜": {
+    "py": "Dìnà",
+    "en": "Tina (a name)"
+  },
+  "直美": {
+    "py": "Zhíměi",
+    "en": "Naomi (a name)"
+  },
+  "小叶": {
+    "py": "Xiǎoyè",
+    "en": "Xiaoye (a name)"
+  },
+  "小雨": {
+    "py": "Xiǎoyǔ",
+    "en": "Xiaoyu (a name)"
+  },
+  "王方": {
+    "py": "Wáng Fāng",
+    "en": "Wang Fang (a name)"
+  },
+  "张欢": {
+    "py": "Zhāng Huān",
+    "en": "Zhang Huan (a name)"
+  },
+  "花花": {
+    "py": "Huāhua",
+    "en": "Huahua (a cat's name)"
   }
 }

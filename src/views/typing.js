@@ -5,7 +5,7 @@ import { tonePy } from "../lib/pinyin.js";
 import { say, autoSay, stopSpeech } from "../lib/speech.js";
 import { icon } from "../lib/icons.js";
 import { checkHanzi, checkPinyin, toneSyllables, TONE_HELP } from "../lib/typing-check.js";
-import { LESSONS, READINGS, wordsOf } from "../data/index.js";
+import { BOOKS, LESSONS, READINGS, wordsOf } from "../data/index.js";
 import * as progress from "../progress/store.js";
 import { isDue, nextReview } from "../progress/model.js";
 
@@ -15,10 +15,15 @@ const opts = () => ({ mode: "hz", content: "words", showPy: true, scope: "all", 
 const setOpt = (k, v) => store.set("xz-typing", { ...opts(), [k]: v });
 const KEY = { hz: "tc:", py: "tp:" };
 
+// Scope: "all", a whole book ("book:<id>") or one lesson (its id, "<book>/<n>").
 const scopeLessons = () => {
   const s = opts().scope;
-  return s === "all" ? LESSONS : LESSONS.filter((l) => l.id === s);
+  if (s === "all") return LESSONS;
+  if (s.startsWith("book:")) return LESSONS.filter((l) => l.book === s.slice(5));
+  const one = LESSONS.filter((l) => l.id === s);
+  return one.length ? one : LESSONS;
 };
+const scopeBook = () => { const s = opts().scope; return s === "all" ? null : s.startsWith("book:") ? s.slice(5) : s.split("/")[0]; };
 
 // Words, or sentences (examples + reading lines), each { id, hz, py, en }.
 function allItems() {
@@ -43,6 +48,16 @@ function plan() {
   return { due, fresh, later, session: [...due, ...fresh, ...later].slice(0, SESSION) };
 }
 
+// Which words: all books, one book, or one lesson of the chosen book.
+function scopePicker(o) {
+  const btn = (v, label, on) => `<button type="button" data-opt="scope" data-v="${esc(v)}" aria-pressed="${on}">${esc(label)}</button>`;
+  const b = scopeBook();
+  const bookRow = [btn("all", "All books", o.scope === "all"), ...BOOKS.map((x) => btn(`book:${x.id}`, x.title, b === x.id))].join("");
+  const lessonRow = b ? [btn(`book:${b}`, "Whole book", o.scope === `book:${b}`),
+    ...BOOKS.find((x) => x.id === b).lessons.map((l) => btn(l.id, `${l.n} ${l.title}`, o.scope === l.id))].join("") : "";
+  return `<div class="scope">${bookRow}</div>${lessonRow ? `<div class="scope">${lessonRow}</div>` : ""}`;
+}
+
 /* ---------- Start screen ---------- */
 export function openTyping() {
   stopSpeech();
@@ -55,8 +70,7 @@ export function openTyping() {
       ${seg("mode", [["hz", "汉 Type Chinese"], ["py", "拼 Type pinyin"]])}
       ${seg("content", [["words", "Words"], ["sentences", "Sentences"]])}
       ${o.mode === "hz" ? seg("showPy", [[true, "Show pinyin"], [false, "Hide pinyin"]]) : ""}
-      ${LESSONS.length > 1 ? `<div class="scope">${[["all", "All lessons"], ...LESSONS.map((l) => [l.id, `${l.cn} ${l.title}`])].map(([v, label]) =>
-        `<button type="button" data-opt="scope" data-v="${v}" aria-pressed="${o.scope === v}">${esc(label)}</button>`).join("")}</div>` : ""}
+      ${LESSONS.length > 1 ? scopePicker(o) : ""}
       <p class="note">${o.mode === "hz"
         ? "You see the English meaning (and the pinyin, if shown) and type the Chinese with your Chinese keyboard."
         : "You see the Chinese and type its pinyin with a tone number after each syllable, like <b>ni3 hao3</b>."}</p>

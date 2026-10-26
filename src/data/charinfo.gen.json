@@ -963,7 +963,23 @@
     "type": "",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "欠",
+        "py": "qiàn",
+        "en": "to lack"
+      },
+      {
+        "c": "夕",
+        "py": "xī",
+        "en": "evening"
+      },
+      {
+        "c": "及",
+        "py": "jí",
+        "en": "to extend"
+      }
+    ]
   },
   "吗": {
     "dec": "⿰口马",
@@ -1652,7 +1668,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "素",
+        "py": "sù",
+        "en": "plain"
+      },
+      {
+        "c": "紧",
+        "py": "jǐn",
+        "en": "tense"
+      },
+      {
+        "c": "果",
+        "py": "guǒ",
+        "en": "fruit"
+      }
+    ]
   },
   "饿": {
     "dec": "⿰饣我",
@@ -1677,7 +1709,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "俄",
+        "py": "é",
+        "en": "sudden"
+      },
+      {
+        "c": "鹅",
+        "py": "é",
+        "en": "goose"
+      },
+      {
+        "c": "饭",
+        "py": "fàn",
+        "en": "meal"
+      }
+    ]
   },
   "渴": {
     "dec": "⿰氵曷",
@@ -1702,7 +1750,23 @@
     "type": "pictophonetic",
     "phonetic": "曷",
     "semantic": "氵",
-    "similar": []
+    "similar": [
+      {
+        "c": "喝",
+        "py": "hē",
+        "en": "to drink"
+      },
+      {
+        "c": "竭",
+        "py": "jié",
+        "en": "to exhaust"
+      },
+      {
+        "c": "歇",
+        "py": "xiē",
+        "en": "to stop"
+      }
+    ]
   },
   "吃": {
     "dec": "⿰口乞",
@@ -1850,7 +1914,23 @@
     "type": "pictophonetic",
     "phonetic": "交",
     "semantic": "饣",
-    "similar": []
+    "similar": [
+      {
+        "c": "较",
+        "py": "jiào",
+        "en": "to compare"
+      },
+      {
+        "c": "校",
+        "py": "xiào",
+        "en": "school"
+      },
+      {
+        "c": "狡",
+        "py": "jiǎo",
+        "en": "cunning"
+      }
+    ]
   },
   "子": {
     "dec": "⿻了一",
@@ -2110,7 +2190,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "抱",
+        "py": "bào",
+        "en": "to embrace"
+      },
+      {
+        "c": "饱",
+        "py": "bǎo",
+        "en": "satisfied"
+      },
+      {
+        "c": "跑",
+        "py": "pǎo",
+        "en": "to run"
+      }
+    ]
   },
   "喝": {
     "dec": "⿰口曷",
@@ -2288,7 +2384,23 @@
     "type": "pictophonetic",
     "phonetic": "卑",
     "semantic": "口",
-    "similar": []
+    "similar": [
+      {
+        "c": "碑",
+        "py": "bēi",
+        "en": "stone tablet"
+      },
+      {
+        "c": "牌",
+        "py": "pái",
+        "en": "card"
+      },
+      {
+        "c": "脾",
+        "py": "pí",
+        "en": "spleen"
+      }
+    ]
   },
   "酒": {
     "dec": "⿰氵酉",
@@ -2313,7 +2425,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "洒",
+        "py": "sǎ",
+        "en": "to pour"
+      },
+      {
+        "c": "西",
+        "py": "xī",
+        "en": "west"
+      },
+      {
+        "c": "配",
+        "py": "pèi",
+        "en": "to blend"
+      }
+    ]
   },
   "咖": {
     "dec": "⿰口加",
@@ -2420,7 +2548,23 @@
     "type": "pictophonetic",
     "phonetic": "广",
     "semantic": "石",
-    "similar": []
+    "similar": [
+      {
+        "c": "扩",
+        "py": "kuò",
+        "en": "to expand"
+      },
+      {
+        "c": "广",
+        "py": "guǎng",
+        "en": "broad"
+      },
+      {
+        "c": "石",
+        "py": "shí",
+        "en": "stone"
+      }
+    ]
   },
   "泉": {
     "dec": "⿱白水",
@@ -2445,7 +2589,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "原",
+        "py": "yuán",
+        "en": "source"
+      },
+      {
+        "c": "白",
+        "py": "bái",
+        "en": "white"
+      },
+      {
+        "c": "水",
+        "py": "shuǐ",
+        "en": "water"
+      }
+    ]
   },
   "水": {
     "dec": "⿻亅？",
@@ -2612,7 +2772,23 @@
     "type": "pictophonetic",
     "phonetic": "司",
     "semantic": "讠",
-    "similar": []
+    "similar": [
+      {
+        "c": "司",
+        "py": "sī",
+        "en": "to take charge of"
+      },
+      {
+        "c": "同",
+        "py": "tóng",
+        "en": "same"
+      },
+      {
+        "c": "讯",
+        "py": "xùn",
+        "en": "news"
+      }
+    ]
   },
   "典": {
     "dec": "⿱曲八",
@@ -2637,7 +2813,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "曲",
+        "py": "qū",
+        "en": "crooked"
+      },
+      {
+        "c": "共",
+        "py": "gòng",
+        "en": "all"
+      },
+      {
+        "c": "兴",
+        "py": "xìng",
+        "en": "to thrive"
+      }
+    ]
   },
   "本": {
     "dec": "⿻木一",
@@ -2815,7 +3007,23 @@
     "type": "pictophonetic",
     "phonetic": "奂",
     "semantic": "扌",
-    "similar": []
+    "similar": [
+      {
+        "c": "唤",
+        "py": "huàn",
+        "en": "to call"
+      },
+      {
+        "c": "焕",
+        "py": "huàn",
+        "en": "shining"
+      },
+      {
+        "c": "挽",
+        "py": "wǎn",
+        "en": "to pull"
+      }
+    ]
   },
   "钱": {
     "dec": "⿰钅戋",
@@ -3029,7 +3237,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "羊",
+        "py": "yáng",
+        "en": "sheep"
+      },
+      {
+        "c": "关",
+        "py": "guān",
+        "en": "frontier pass"
+      },
+      {
+        "c": "姜",
+        "py": "jiāng",
+        "en": "ginger"
+      }
+    ]
   },
   "元": {
     "dec": "⿱二儿",
@@ -3054,7 +3278,23 @@
     "type": "pictographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "无",
+        "py": "wú",
+        "en": "no"
+      },
+      {
+        "c": "远",
+        "py": "yuǎn",
+        "en": "distant"
+      },
+      {
+        "c": "园",
+        "py": "yuán",
+        "en": "garden"
+      }
+    ]
   },
   "二": {
     "dec": "⿱一一",
@@ -3478,7 +3718,23 @@
     "type": "",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "手",
+        "py": "shǒu",
+        "en": "hand"
+      },
+      {
+        "c": "尾",
+        "py": "wěi",
+        "en": "tail"
+      },
+      {
+        "c": "笔",
+        "py": "bǐ",
+        "en": "pen"
+      }
+    ]
   },
   "分": {
     "dec": "⿱八刀",
@@ -3544,7 +3800,23 @@
     "type": "pictophonetic",
     "phonetic": "并",
     "semantic": "瓦",
-    "similar": []
+    "similar": [
+      {
+        "c": "并",
+        "py": "bìng",
+        "en": "to combine"
+      },
+      {
+        "c": "拼",
+        "py": "pīn",
+        "en": "to link"
+      },
+      {
+        "c": "饼",
+        "py": "bǐng",
+        "en": "rice-cake"
+      }
+    ]
   },
   "七": {
     "dec": "⿻一乚",
@@ -3722,7 +3994,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "国",
+        "py": "guó",
+        "en": "country"
+      },
+      {
+        "c": "冬",
+        "py": "dōng",
+        "en": "winter"
+      },
+      {
+        "c": "团",
+        "py": "tuán",
+        "en": "sphere"
+      }
+    ]
   },
   "馆": {
     "dec": "⿰饣官",
@@ -3900,7 +4188,23 @@
     "type": "pictographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "良",
+        "py": "liáng",
+        "en": "good"
+      },
+      {
+        "c": "会",
+        "py": "huì",
+        "en": "to assemble"
+      },
+      {
+        "c": "合",
+        "py": "hé",
+        "en": "to combine"
+      }
+    ]
   },
   "堂": {
     "dec": "⿱尚土",
@@ -3925,7 +4229,23 @@
     "type": "pictophonetic",
     "phonetic": "尚",
     "semantic": "土",
-    "similar": []
+    "similar": [
+      {
+        "c": "常",
+        "py": "cháng",
+        "en": "common"
+      },
+      {
+        "c": "党",
+        "py": "dǎng",
+        "en": "political party"
+      },
+      {
+        "c": "赏",
+        "py": "shǎng",
+        "en": "reward"
+      }
+    ]
   },
   "办": {
     "dec": "⿻力八",
@@ -3950,7 +4270,23 @@
     "type": "pictophonetic",
     "phonetic": "八",
     "semantic": "力",
-    "similar": []
+    "similar": [
+      {
+        "c": "为",
+        "py": "wèi",
+        "en": "to do"
+      },
+      {
+        "c": "力",
+        "py": "lì",
+        "en": "strength"
+      },
+      {
+        "c": "协",
+        "py": "xié",
+        "en": "to assist"
+      }
+    ]
   },
   "公": {
     "dec": "⿱八厶",
@@ -4057,7 +4393,23 @@
     "type": "",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "溜",
+        "py": "liū",
+        "en": "to slip"
+      },
+      {
+        "c": "贸",
+        "py": "mào",
+        "en": "commerce"
+      },
+      {
+        "c": "榴",
+        "py": "liú",
+        "en": "pomegranate"
+      }
+    ]
   },
   "学": {
     "dec": "⿱⿱⺍冖子",
@@ -4169,7 +4521,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "缩",
+        "py": "suō",
+        "en": "to withdraw"
+      },
+      {
+        "c": "宁",
+        "py": "níng",
+        "en": "calm"
+      },
+      {
+        "c": "宵",
+        "py": "xiāo",
+        "en": "night"
+      }
+    ]
   },
   "舍": {
     "dec": "⿱人舌",
@@ -4194,7 +4562,23 @@
     "type": "pictophonetic",
     "phonetic": "舌",
     "semantic": "人",
-    "similar": []
+    "similar": [
+      {
+        "c": "合",
+        "py": "hé",
+        "en": "to combine"
+      },
+      {
+        "c": "余",
+        "py": "yú",
+        "en": "surplus"
+      },
+      {
+        "c": "会",
+        "py": "huì",
+        "en": "to assemble"
+      }
+    ]
   },
   "号": {
     "dec": "⿱口丂",
@@ -4260,7 +4644,23 @@
     "type": "pictophonetic",
     "phonetic": "娄",
     "semantic": "木",
-    "similar": []
+    "similar": [
+      {
+        "c": "搂",
+        "py": "lǒu",
+        "en": "to embrace"
+      },
+      {
+        "c": "娄",
+        "py": "lóu",
+        "en": "a constellation"
+      },
+      {
+        "c": "数",
+        "py": "shù",
+        "en": "count"
+      }
+    ]
   },
   "银": {
     "dec": "⿰钅艮",
@@ -4285,7 +4685,23 @@
     "type": "pictophonetic",
     "phonetic": "艮",
     "semantic": "钅",
-    "similar": []
+    "similar": [
+      {
+        "c": "很",
+        "py": "hěn",
+        "en": "very"
+      },
+      {
+        "c": "跟",
+        "py": "gēn",
+        "en": "heel"
+      },
+      {
+        "c": "钱",
+        "py": "qián",
+        "en": "money"
+      }
+    ]
   },
   "行": {
     "dec": "⿰彳亍",
@@ -4433,7 +4849,23 @@
     "type": "pictophonetic",
     "phonetic": "由",
     "semantic": "阝",
-    "similar": []
+    "similar": [
+      {
+        "c": "由",
+        "py": "yóu",
+        "en": "cause"
+      },
+      {
+        "c": "油",
+        "py": "yóu",
+        "en": "oil"
+      },
+      {
+        "c": "曲",
+        "py": "qū",
+        "en": "crooked"
+      }
+    ]
   },
   "局": {
     "dec": "⿵尺口",
@@ -4458,7 +4890,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "句",
+        "py": "jù",
+        "en": "sentence"
+      },
+      {
+        "c": "尸",
+        "py": "shī",
+        "en": "body"
+      },
+      {
+        "c": "届",
+        "py": "jiè",
+        "en": "deadline"
+      }
+    ]
   },
   "医": {
     "dec": "⿷匸矢",
@@ -5408,7 +5856,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "原",
+        "py": "yuán",
+        "en": "source"
+      },
+      {
+        "c": "早",
+        "py": "zǎo",
+        "en": "early"
+      },
+      {
+        "c": "序",
+        "py": "xù",
+        "en": "order"
+      }
+    ]
   },
   "同": {
     "dec": "⿵凡口",
@@ -5607,7 +6071,23 @@
     "type": "pictophonetic",
     "phonetic": "及",
     "semantic": "木",
-    "similar": []
+    "similar": [
+      {
+        "c": "及",
+        "py": "jí",
+        "en": "to extend"
+      },
+      {
+        "c": "级",
+        "py": "jí",
+        "en": "level"
+      },
+      {
+        "c": "吸",
+        "py": "xī",
+        "en": "to inhale"
+      }
+    ]
   },
   "了": {
     "dec": "⿱乛亅",
@@ -5703,7 +6183,23 @@
     "type": "pictophonetic",
     "phonetic": "总",
     "semantic": "耳",
-    "similar": []
+    "similar": [
+      {
+        "c": "总",
+        "py": "zǒng",
+        "en": "to gather"
+      },
+      {
+        "c": "耳",
+        "py": "ěr",
+        "en": "ear"
+      },
+      {
+        "c": "职",
+        "py": "zhí",
+        "en": "duty"
+      }
+    ]
   },
   "明": {
     "dec": "⿰日月",
@@ -5810,7 +6306,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "师",
+        "py": "shī",
+        "en": "teacher"
+      },
+      {
+        "c": "归",
+        "py": "guī",
+        "en": "to return"
+      },
+      {
+        "c": "币",
+        "py": "bì",
+        "en": "currency"
+      }
+    ]
   },
   "小": {
     "dec": "⿻亅八",
@@ -6065,7 +6577,23 @@
     "type": "pictophonetic",
     "phonetic": "交",
     "semantic": "车",
-    "similar": []
+    "similar": [
+      {
+        "c": "校",
+        "py": "xiào",
+        "en": "school"
+      },
+      {
+        "c": "饺",
+        "py": "jiǎo",
+        "en": "stuffed dumplings"
+      },
+      {
+        "c": "交",
+        "py": "jiāo",
+        "en": "to connect"
+      }
+    ]
   },
   "成": {
     "dec": "⿰丁戈",
@@ -6090,7 +6618,23 @@
     "type": "",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "城",
+        "py": "chéng",
+        "en": "castle"
+      },
+      {
+        "c": "诚",
+        "py": "chéng",
+        "en": "honest"
+      },
+      {
+        "c": "戒",
+        "py": "jiè",
+        "en": "to warn"
+      }
+    ]
   },
   "绩": {
     "dec": "⿰纟责",
@@ -6115,7 +6659,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "债",
+        "py": "zhài",
+        "en": "debt"
+      },
+      {
+        "c": "责",
+        "py": "zé",
+        "en": "one's responsibility"
+      },
+      {
+        "c": "续",
+        "py": "xù",
+        "en": "continuous"
+      }
+    ]
   },
   "马": {
     "dec": "⿹？一",
@@ -6129,7 +6689,23 @@
     "type": "pictographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "鸟",
+        "py": "niǎo",
+        "en": "bird"
+      },
+      {
+        "c": "妈",
+        "py": "mā",
+        "en": "mother"
+      },
+      {
+        "c": "吗",
+        "py": "ma",
+        "en": "final interrogative particle"
+      }
+    ]
   },
   "虎": {
     "dec": "⿸虍几",
@@ -6154,7 +6730,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "老",
+        "py": "lǎo",
+        "en": "old"
+      },
+      {
+        "c": "唐",
+        "py": "táng",
+        "en": "the Tang dynasty"
+      },
+      {
+        "c": "虑",
+        "py": "lǜ",
+        "en": "anxious"
+      }
+    ]
   },
   "努": {
     "dec": "⿱奴力",
@@ -6179,7 +6771,23 @@
     "type": "pictophonetic",
     "phonetic": "奴",
     "semantic": "力",
-    "similar": []
+    "similar": [
+      {
+        "c": "怒",
+        "py": "nù",
+        "en": "anger"
+      },
+      {
+        "c": "奴",
+        "py": "nú",
+        "en": "slave"
+      },
+      {
+        "c": "力",
+        "py": "lì",
+        "en": "strength"
+      }
+    ]
   },
   "力": {
     "dec": "⿻丿？",
@@ -6193,7 +6801,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "刀",
+        "py": "dāo",
+        "en": "knife"
+      },
+      {
+        "c": "办",
+        "py": "bàn",
+        "en": "to set up"
+      },
+      {
+        "c": "九",
+        "py": "jiǔ",
+        "en": "nine"
+      }
+    ]
   },
   "非": {
     "dec": "⿰？？",
@@ -6401,7 +7025,23 @@
     "type": "pictophonetic",
     "phonetic": "工",
     "semantic": "穴",
-    "similar": []
+    "similar": [
+      {
+        "c": "穴",
+        "py": "xué",
+        "en": "cave"
+      },
+      {
+        "c": "究",
+        "py": "jiū",
+        "en": "to dig into"
+      },
+      {
+        "c": "室",
+        "py": "shì",
+        "en": "house"
+      }
+    ]
   },
   "调": {
     "dec": "⿰讠周",
@@ -6426,7 +7066,23 @@
     "type": "pictophonetic",
     "phonetic": "周",
     "semantic": "讠",
-    "similar": []
+    "similar": [
+      {
+        "c": "周",
+        "py": "zhōu",
+        "en": "Zhou dynasty"
+      },
+      {
+        "c": "词",
+        "py": "cí",
+        "en": "phrase"
+      },
+      {
+        "c": "绸",
+        "py": "chóu",
+        "en": "silk cloth"
+      }
+    ]
   },
   "屋": {
     "dec": "⿸尸至",
@@ -6451,7 +7107,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "握",
+        "py": "wò",
+        "en": "to grasp"
+      },
+      {
+        "c": "至",
+        "py": "zhì",
+        "en": "reach"
+      },
+      {
+        "c": "室",
+        "py": "shì",
+        "en": "house"
+      }
+    ]
   },
   "离": {
     "dec": "⿱⿱亠凶禸",
@@ -6604,7 +7276,23 @@
     "type": "pictophonetic",
     "phonetic": "廷",
     "semantic": "扌",
-    "similar": []
+    "similar": [
+      {
+        "c": "庭",
+        "py": "tíng",
+        "en": "court"
+      },
+      {
+        "c": "艇",
+        "py": "tǐng",
+        "en": "dugout"
+      },
+      {
+        "c": "延",
+        "py": "yán",
+        "en": "to defer"
+      }
+    ]
   },
   "怎": {
     "dec": "⿱乍心",
@@ -6752,7 +7440,23 @@
     "type": "pictophonetic",
     "phonetic": "",
     "semantic": "大",
-    "similar": []
+    "similar": [
+      {
+        "c": "买",
+        "py": "mǎi",
+        "en": "to buy"
+      },
+      {
+        "c": "实",
+        "py": "shí",
+        "en": "real"
+      },
+      {
+        "c": "斗",
+        "py": "dòu",
+        "en": "to struggle"
+      }
+    ]
   },
   "发": {
     "dec": "⿸？又",
@@ -6766,7 +7470,23 @@
     "type": "",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "友",
+        "py": "yǒu",
+        "en": "friend"
+      },
+      {
+        "c": "废",
+        "py": "fèi",
+        "en": "to terminate"
+      },
+      {
+        "c": "拨",
+        "py": "bō",
+        "en": "to stir"
+      }
+    ]
   },
   "长": {
     "dec": "⿻？一",
@@ -7277,7 +7997,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "住",
+        "py": "zhù",
+        "en": "to reside"
+      },
+      {
+        "c": "立",
+        "py": "lì",
+        "en": "to stand"
+      },
+      {
+        "c": "往",
+        "py": "wǎng",
+        "en": "to go"
+      }
+    ]
   },
   "住": {
     "dec": "⿰亻主",
@@ -7466,7 +8202,23 @@
     "type": "pictophonetic",
     "phonetic": "马",
     "semantic": "石",
-    "similar": []
+    "similar": [
+      {
+        "c": "吗",
+        "py": "ma",
+        "en": "final interrogative particle"
+      },
+      {
+        "c": "妈",
+        "py": "mā",
+        "en": "mother"
+      },
+      {
+        "c": "玛",
+        "py": "mǎ",
+        "en": "agate"
+      }
+    ]
   },
   "每": {
     "dec": "⿱？母",
@@ -7808,7 +8560,23 @@
     "type": "pictophonetic",
     "phonetic": "艮",
     "semantic": "足",
-    "similar": []
+    "similar": [
+      {
+        "c": "根",
+        "py": "gēn",
+        "en": "root"
+      },
+      {
+        "c": "很",
+        "py": "hěn",
+        "en": "very"
+      },
+      {
+        "c": "眼",
+        "py": "yǎn",
+        "en": "eyelet"
+      }
+    ]
   },
   "谁": {
     "dec": "⿰讠隹",
@@ -8125,7 +8893,23 @@
     "type": "",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "雪",
+        "py": "xuě",
+        "en": "snow"
+      },
+      {
+        "c": "尝",
+        "py": "cháng",
+        "en": "to taste"
+      },
+      {
+        "c": "档",
+        "py": "dàng",
+        "en": "shelve"
+      }
+    ]
   },
   "然": {
     "dec": "⿱肰灬",
@@ -8232,7 +9016,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "况",
+        "py": "kuàng",
+        "en": "condition"
+      },
+      {
+        "c": "兑",
+        "py": "duì",
+        "en": "cash"
+      },
+      {
+        "c": "只",
+        "py": "zhī",
+        "en": "only"
+      }
+    ]
   },
   "独": {
     "dec": "⿰犭虫",
@@ -8257,7 +9057,23 @@
     "type": "pictophonetic",
     "phonetic": "虫",
     "semantic": "犭",
-    "similar": []
+    "similar": [
+      {
+        "c": "烛",
+        "py": "zhú",
+        "en": "candle"
+      },
+      {
+        "c": "狗",
+        "py": "gǒu",
+        "en": "dog"
+      },
+      {
+        "c": "蚀",
+        "py": "shí",
+        "en": "to nibble at"
+      }
+    ]
   },
   "父": {
     "dec": "⿱八乂",
@@ -8282,7 +9098,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "交",
+        "py": "jiāo",
+        "en": "to connect"
+      },
+      {
+        "c": "爷",
+        "py": "yé",
+        "en": "grandfather"
+      },
+      {
+        "c": "文",
+        "py": "wén",
+        "en": "culture"
+      }
+    ]
   },
   "亲": {
     "dec": "⿱立⿻一小",
@@ -8312,7 +9144,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "新",
+        "py": "xīn",
+        "en": "new"
+      },
+      {
+        "c": "辛",
+        "py": "xīn",
+        "en": "bitter"
+      },
+      {
+        "c": "立",
+        "py": "lì",
+        "en": "to stand"
+      }
+    ]
   },
   "工": {
     "dec": "⿱一丄",
@@ -8408,7 +9256,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "每",
+        "py": "měi",
+        "en": "each"
+      },
+      {
+        "c": "毋",
+        "py": "wú",
+        "en": "not"
+      },
+      {
+        "c": "海",
+        "py": "hǎi",
+        "en": "sea"
+      }
+    ]
   },
   "司": {
     "dec": "⿹？口",
@@ -8463,7 +9327,23 @@
     "type": "pictophonetic",
     "phonetic": "只",
     "semantic": "耳",
-    "similar": []
+    "similar": [
+      {
+        "c": "识",
+        "py": "shí",
+        "en": "knowledge"
+      },
+      {
+        "c": "积",
+        "py": "jī",
+        "en": "to store up"
+      },
+      {
+        "c": "耳",
+        "py": "ěr",
+        "en": "ear"
+      }
+    ]
   },
   "员": {
     "dec": "⿱口贝",
@@ -8529,7 +9409,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "纪",
+        "py": "jì",
+        "en": "discipline"
+      },
+      {
+        "c": "己",
+        "py": "jǐ",
+        "en": "self"
+      },
+      {
+        "c": "起",
+        "py": "qǐ",
+        "en": "to begin"
+      }
+    ]
   },
   "者": {
     "dec": "⿸耂日",
@@ -8554,7 +9450,23 @@
     "type": "",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "老",
+        "py": "lǎo",
+        "en": "old"
+      },
+      {
+        "c": "著",
+        "py": "zhe",
+        "en": "to show"
+      },
+      {
+        "c": "都",
+        "py": "dōu",
+        "en": "all"
+      }
+    ]
   },
   "片": {
     "dec": "⿸？？",
@@ -8568,7 +9480,23 @@
     "type": "pictographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "斤",
+        "py": "jīn",
+        "en": "a catty (about 500 grams)"
+      },
+      {
+        "c": "爿",
+        "py": "qiáng",
+        "en": "half of a tree trunk"
+      },
+      {
+        "c": "版",
+        "py": "bǎn",
+        "en": "printing block"
+      }
+    ]
   },
   "今": {
     "dec": "⿱人？",
@@ -8653,7 +9581,23 @@
     "type": "pictophonetic",
     "phonetic": "己",
     "semantic": "纟",
-    "similar": []
+    "similar": [
+      {
+        "c": "记",
+        "py": "jì",
+        "en": "mark"
+      },
+      {
+        "c": "级",
+        "py": "jí",
+        "en": "level"
+      },
+      {
+        "c": "己",
+        "py": "jǐ",
+        "en": "self"
+      }
+    ]
   },
   "岁": {
     "dec": "⿱山夕",
@@ -8719,7 +9663,23 @@
     "type": "pictophonetic",
     "phonetic": "必",
     "semantic": "禾",
-    "similar": []
+    "similar": [
+      {
+        "c": "必",
+        "py": "bì",
+        "en": "surely"
+      },
+      {
+        "c": "泌",
+        "py": "mì",
+        "en": "to seep out"
+      },
+      {
+        "c": "和",
+        "py": "hé",
+        "en": "harmony"
+      }
+    ]
   },
   "密": {
     "dec": "⿱宓山",
@@ -8744,7 +9704,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "蜜",
+        "py": "mì",
+        "en": "honey"
+      },
+      {
+        "c": "宓",
+        "py": "mì",
+        "en": "quiet"
+      },
+      {
+        "c": "必",
+        "py": "bì",
+        "en": "surely"
+      }
+    ]
   },
   "孩": {
     "dec": "⿰子亥",
@@ -8851,7 +9827,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "隹",
+        "py": "zhuī",
+        "en": "short-tailed bird"
+      },
+      {
+        "c": "集",
+        "py": "jí",
+        "en": "to gather"
+      },
+      {
+        "c": "焦",
+        "py": "jiāo",
+        "en": "burned"
+      }
+    ]
   },
   "货": {
     "dec": "⿱化贝",
@@ -8876,7 +9868,23 @@
     "type": "pictophonetic",
     "phonetic": "化",
     "semantic": "贝",
-    "similar": []
+    "similar": [
+      {
+        "c": "化",
+        "py": "huà",
+        "en": "to change"
+      },
+      {
+        "c": "贷",
+        "py": "dài",
+        "en": "to borrow"
+      },
+      {
+        "c": "贸",
+        "py": "mào",
+        "en": "commerce"
+      }
+    ]
   },
   "经": {
     "dec": "⿰纟⿱？工",
@@ -8931,7 +9939,23 @@
     "type": "pictophonetic",
     "phonetic": "里",
     "semantic": "王",
-    "similar": []
+    "similar": [
+      {
+        "c": "里",
+        "py": "lǐ",
+        "en": "unit of distance equal to 0.5km"
+      },
+      {
+        "c": "埋",
+        "py": "mái",
+        "en": "to bury"
+      },
+      {
+        "c": "哩",
+        "py": "lī",
+        "en": "mile"
+      }
+    ]
   },
   "机": {
     "dec": "⿰木几",
@@ -8997,7 +10021,23 @@
     "type": "pictophonetic",
     "phonetic": "耶",
     "semantic": "父",
-    "similar": []
+    "similar": [
+      {
+        "c": "爸",
+        "py": "bà",
+        "en": "father"
+      },
+      {
+        "c": "父",
+        "py": "fù",
+        "en": "father"
+      },
+      {
+        "c": "节",
+        "py": "jié",
+        "en": "festival"
+      }
+    ]
   },
   "现": {
     "dec": "⿰王见",
@@ -9104,7 +10144,23 @@
     "type": "pictophonetic",
     "phonetic": "亥",
     "semantic": "刂",
-    "similar": []
+    "similar": [
+      {
+        "c": "该",
+        "py": "gāi",
+        "en": "should"
+      },
+      {
+        "c": "孩",
+        "py": "hái",
+        "en": "baby"
+      },
+      {
+        "c": "亥",
+        "py": "hài",
+        "en": "12th terrestrial branch"
+      }
+    ]
   },
   "早": {
     "dec": "⿱日十",
@@ -9170,7 +10226,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "平",
+        "py": "píng",
+        "en": "flat"
+      },
+      {
+        "c": "羊",
+        "py": "yáng",
+        "en": "sheep"
+      },
+      {
+        "c": "伴",
+        "py": "bàn",
+        "en": "companion"
+      }
+    ]
   },
   "课": {
     "dec": "⿰讠果",
@@ -9436,7 +10508,23 @@
     "type": "pictophonetic",
     "phonetic": "自",
     "semantic": "口",
-    "similar": []
+    "similar": [
+      {
+        "c": "自",
+        "py": "zì",
+        "en": "self"
+      },
+      {
+        "c": "白",
+        "py": "bái",
+        "en": "white"
+      },
+      {
+        "c": "帕",
+        "py": "pà",
+        "en": "scarf"
+      }
+    ]
   },
   "啊": {
     "dec": "⿰口阿",
@@ -9543,7 +10631,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "着",
+        "py": "zhe",
+        "en": "to make a move"
+      },
+      {
+        "c": "羊",
+        "py": "yáng",
+        "en": "sheep"
+      },
+      {
+        "c": "美",
+        "py": "měi",
+        "en": "beautiful"
+      }
+    ]
   },
   "门": {
     "dec": "⿰⿱丶丨？",
@@ -9838,7 +10942,23 @@
     "type": "pictophonetic",
     "phonetic": "禹",
     "semantic": "尸",
-    "similar": []
+    "similar": [
+      {
+        "c": "嘱",
+        "py": "zhǔ",
+        "en": "to instruct"
+      },
+      {
+        "c": "局",
+        "py": "jú",
+        "en": "bureau"
+      },
+      {
+        "c": "尿",
+        "py": "niào",
+        "en": "urine"
+      }
+    ]
   },
   "边": {
     "dec": "⿺辶力",
@@ -9893,7 +11013,23 @@
     "type": "pictographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "比",
+        "py": "bǐ",
+        "en": "to compare"
+      },
+      {
+        "c": "背",
+        "py": "bèi",
+        "en": "back"
+      },
+      {
+        "c": "此",
+        "py": "cǐ",
+        "en": "this"
+      }
+    ]
   },
   "西": {
     "dec": "⿻兀囗",
@@ -9969,7 +11105,23 @@
     "type": "pictographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "商",
+        "py": "shāng",
+        "en": "commerce"
+      },
+      {
+        "c": "幸",
+        "py": "xìng",
+        "en": "favor"
+      },
+      {
+        "c": "率",
+        "py": "lǜ",
+        "en": "to command"
+      }
+    ]
   },
   "附": {
     "dec": "⿰阝付",
@@ -9994,7 +11146,23 @@
     "type": "pictophonetic",
     "phonetic": "付",
     "semantic": "阝",
-    "similar": []
+    "similar": [
+      {
+        "c": "付",
+        "py": "fù",
+        "en": "give"
+      },
+      {
+        "c": "府",
+        "py": "fǔ",
+        "en": "prefect"
+      },
+      {
+        "c": "符",
+        "py": "fú",
+        "en": "amulet"
+      }
+    ]
   },
   "东": {
     "dec": "⿻七小",
@@ -10224,7 +11392,23 @@
     "type": "pictophonetic",
     "phonetic": "召",
     "semantic": "走",
-    "similar": []
+    "similar": [
+      {
+        "c": "起",
+        "py": "qǐ",
+        "en": "to begin"
+      },
+      {
+        "c": "越",
+        "py": "yuè",
+        "en": "to exceed"
+      },
+      {
+        "c": "招",
+        "py": "zhāo",
+        "en": "to summon"
+      }
+    ]
   },
   "市": {
     "dec": "⿱亠巾",
@@ -10249,7 +11433,23 @@
     "type": "",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "币",
+        "py": "bì",
+        "en": "currency"
+      },
+      {
+        "c": "布",
+        "py": "bù",
+        "en": "cotton"
+      },
+      {
+        "c": "帝",
+        "py": "dì",
+        "en": "supreme ruler"
+      }
+    ]
   },
   "照": {
     "dec": "⿱昭灬",
@@ -10274,7 +11474,23 @@
     "type": "pictophonetic",
     "phonetic": "昭",
     "semantic": "灬",
-    "similar": []
+    "similar": [
+      {
+        "c": "熙",
+        "py": "xī",
+        "en": "bright"
+      },
+      {
+        "c": "昭",
+        "py": "zhāo",
+        "en": "bright"
+      },
+      {
+        "c": "煮",
+        "py": "zhǔ",
+        "en": "to boil"
+      }
+    ]
   },
   "左": {
     "dec": "⿸？工",
@@ -10441,7 +11657,23 @@
     "type": "",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "治",
+        "py": "zhì",
+        "en": "to administer"
+      },
+      {
+        "c": "抬",
+        "py": "tái",
+        "en": "to carry"
+      },
+      {
+        "c": "胎",
+        "py": "tāi",
+        "en": "embryo"
+      }
+    ]
   },
   "灯": {
     "dec": "⿰火丁",
@@ -10466,7 +11698,23 @@
     "type": "pictophonetic",
     "phonetic": "丁",
     "semantic": "火",
-    "similar": []
+    "similar": [
+      {
+        "c": "打",
+        "py": "dǎ",
+        "en": "to attack"
+      },
+      {
+        "c": "订",
+        "py": "dìng",
+        "en": "to make an order"
+      },
+      {
+        "c": "钉",
+        "py": "dīng",
+        "en": "nail"
+      }
+    ]
   },
   "张": {
     "dec": "⿰弓长",
@@ -10491,7 +11739,23 @@
     "type": "pictophonetic",
     "phonetic": "长",
     "semantic": "弓",
-    "similar": []
+    "similar": [
+      {
+        "c": "长",
+        "py": "zhǎng",
+        "en": "long"
+      },
+      {
+        "c": "弓",
+        "py": "gōng",
+        "en": "bow"
+      },
+      {
+        "c": "账",
+        "py": "zhàng",
+        "en": "accounts"
+      }
+    ]
   },
   "男": {
     "dec": "⿱田力",
@@ -10557,7 +11821,23 @@
     "type": "pictophonetic",
     "phonetic": "由",
     "semantic": "扌",
-    "similar": []
+    "similar": [
+      {
+        "c": "油",
+        "py": "yóu",
+        "en": "oil"
+      },
+      {
+        "c": "袖",
+        "py": "xiù",
+        "en": "sleeve"
+      },
+      {
+        "c": "由",
+        "py": "yóu",
+        "en": "cause"
+      }
+    ]
   },
   "屉": {
     "dec": "⿸尸世",
@@ -10582,7 +11862,23 @@
     "type": "",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "世",
+        "py": "shì",
+        "en": "generation"
+      },
+      {
+        "c": "尾",
+        "py": "wěi",
+        "en": "tail"
+      },
+      {
+        "c": "届",
+        "py": "jiè",
+        "en": "deadline"
+      }
+    ]
   },
   "巧": {
     "dec": "⿰工丂",
@@ -10607,7 +11903,23 @@
     "type": "pictophonetic",
     "phonetic": "丂",
     "semantic": "工",
-    "similar": []
+    "similar": [
+      {
+        "c": "工",
+        "py": "gōng",
+        "en": "labor"
+      },
+      {
+        "c": "功",
+        "py": "gōng",
+        "en": "achievement"
+      },
+      {
+        "c": "朽",
+        "py": "xiǔ",
+        "en": "decayed"
+      }
+    ]
   },
   "克": {
     "dec": "⿱十兄",
@@ -10632,7 +11944,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "兄",
+        "py": "xiōng",
+        "en": "elder brother"
+      },
+      {
+        "c": "古",
+        "py": "gǔ",
+        "en": "old"
+      },
+      {
+        "c": "竞",
+        "py": "jìng",
+        "en": "to compete"
+      }
+    ]
   },
   "鞋": {
     "dec": "⿰革圭",
@@ -10657,7 +11985,23 @@
     "type": "pictophonetic",
     "phonetic": "圭",
     "semantic": "革",
-    "similar": []
+    "similar": [
+      {
+        "c": "革",
+        "py": "gé",
+        "en": "leather"
+      },
+      {
+        "c": "鞍",
+        "py": "ān",
+        "en": "saddle"
+      },
+      {
+        "c": "鞭",
+        "py": "biān",
+        "en": "whip"
+      }
+    ]
   },
   "镜": {
     "dec": "⿰钅竟",
@@ -10682,7 +12026,23 @@
     "type": "pictophonetic",
     "phonetic": "竟",
     "semantic": "钅",
-    "similar": []
+    "similar": [
+      {
+        "c": "境",
+        "py": "jìng",
+        "en": "boundary"
+      },
+      {
+        "c": "竟",
+        "py": "jìng",
+        "en": "finally"
+      },
+      {
+        "c": "锐",
+        "py": "ruì",
+        "en": "sharp"
+      }
+    ]
   },
   "闹": {
     "dec": "⿵门市",
@@ -10707,7 +12067,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "市",
+        "py": "shì",
+        "en": "city"
+      },
+      {
+        "c": "闲",
+        "py": "xián",
+        "en": "fence"
+      },
+      {
+        "c": "间",
+        "py": "jiān",
+        "en": "between"
+      }
+    ]
   },
   "钟": {
     "dec": "⿰钅中",
@@ -10860,7 +12236,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "水",
+        "py": "shuǐ",
+        "en": "water"
+      },
+      {
+        "c": "永",
+        "py": "yǒng",
+        "en": "long"
+      },
+      {
+        "c": "冷",
+        "py": "lěng",
+        "en": "cold"
+      }
+    ]
   },
   "热": {
     "dec": "⿱执灬",
@@ -11023,7 +12415,23 @@
     "type": "",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "徽",
+        "py": "huī",
+        "en": "badge"
+      },
+      {
+        "c": "征",
+        "py": "zhēng",
+        "en": "to summon"
+      },
+      {
+        "c": "衡",
+        "py": "héng",
+        "en": "to measure"
+      }
+    ]
   },
   "信": {
     "dec": "⿰亻言",
@@ -11048,7 +12456,23 @@
     "type": "",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "言",
+        "py": "yán",
+        "en": "words"
+      },
+      {
+        "c": "住",
+        "py": "zhù",
+        "en": "to reside"
+      },
+      {
+        "c": "伯",
+        "py": "bó",
+        "en": "older brother"
+      }
+    ]
   },
   "扫": {
     "dec": "⿰扌彐",
@@ -11073,7 +12497,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "归",
+        "py": "guī",
+        "en": "to return"
+      },
+      {
+        "c": "妇",
+        "py": "fù",
+        "en": "married woman"
+      },
+      {
+        "c": "当",
+        "py": "dāng",
+        "en": "appropriate"
+      }
+    ]
   },
   "给": {
     "dec": "⿰纟合",
@@ -11180,7 +12620,23 @@
     "type": "pictophonetic",
     "phonetic": "矞",
     "semantic": "木",
-    "similar": []
+    "similar": [
+      {
+        "c": "桔",
+        "py": "jú",
+        "en": "orange"
+      },
+      {
+        "c": "矞",
+        "py": "yù",
+        "en": "to bore with an awl"
+      },
+      {
+        "c": "柚",
+        "py": "yòu",
+        "en": "grapefruit"
+      }
+    ]
   },
   "斤": {
     "dec": "⿸厂下",
@@ -11246,7 +12702,23 @@
     "type": "pictophonetic",
     "phonetic": "买",
     "semantic": "买",
-    "similar": []
+    "similar": [
+      {
+        "c": "买",
+        "py": "mǎi",
+        "en": "to buy"
+      },
+      {
+        "c": "实",
+        "py": "shí",
+        "en": "real"
+      },
+      {
+        "c": "读",
+        "py": "dú",
+        "en": "to study"
+      }
+    ]
   },
   "甜": {
     "dec": "⿰舌甘",
@@ -11271,7 +12743,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "舌",
+        "py": "shé",
+        "en": "tongue"
+      },
+      {
+        "c": "甘",
+        "py": "gān",
+        "en": "sweet"
+      },
+      {
+        "c": "话",
+        "py": "huà",
+        "en": "talk"
+      }
+    ]
   },
   "尝": {
     "dec": "⿱尚云",
@@ -11296,7 +12784,23 @@
     "type": "pictophonetic",
     "phonetic": "尚",
     "semantic": "云",
-    "similar": []
+    "similar": [
+      {
+        "c": "尚",
+        "py": "shàng",
+        "en": "still"
+      },
+      {
+        "c": "尖",
+        "py": "jiān",
+        "en": "sharp"
+      },
+      {
+        "c": "常",
+        "py": "cháng",
+        "en": "common"
+      }
+    ]
   },
   "红": {
     "dec": "⿰纟工",
@@ -11362,7 +12866,23 @@
     "type": "pictophonetic",
     "phonetic": "市",
     "semantic": "木",
-    "similar": []
+    "similar": [
+      {
+        "c": "市",
+        "py": "shì",
+        "en": "city"
+      },
+      {
+        "c": "沛",
+        "py": "pèi",
+        "en": "abundant"
+      },
+      {
+        "c": "杏",
+        "py": "xìng",
+        "en": "apricot"
+      }
+    ]
   },
   "鲜": {
     "dec": "⿰鱼羊",
@@ -11387,7 +12907,23 @@
     "type": "pictophonetic",
     "phonetic": "羊",
     "semantic": "鱼",
-    "similar": []
+    "similar": [
+      {
+        "c": "鱼",
+        "py": "yú",
+        "en": "fish"
+      },
+      {
+        "c": "羊",
+        "py": "yáng",
+        "en": "sheep"
+      },
+      {
+        "c": "渔",
+        "py": "yú",
+        "en": "fisherman"
+      }
+    ]
   },
   "摘": {
     "dec": "⿰扌啇",
@@ -11412,7 +12948,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "滴",
+        "py": "dī",
+        "en": "to drip"
+      },
+      {
+        "c": "敌",
+        "py": "dí",
+        "en": "enemy"
+      },
+      {
+        "c": "嫡",
+        "py": "dí",
+        "en": "wife"
+      }
+    ]
   },
   "酸": {
     "dec": "⿰酉夋",
@@ -11437,7 +12989,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "醋",
+        "py": "cù",
+        "en": "vinegar"
+      },
+      {
+        "c": "俊",
+        "py": "jùn",
+        "en": "talented"
+      },
+      {
+        "c": "骏",
+        "py": "jùn",
+        "en": "an excellent horse"
+      }
+    ]
   },
   "辆": {
     "dec": "⿰车两",
@@ -11462,7 +13030,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "两",
+        "py": "liǎng",
+        "en": "two"
+      },
+      {
+        "c": "俩",
+        "py": "liǎ",
+        "en": "two"
+      },
+      {
+        "c": "软",
+        "py": "ruǎn",
+        "en": "soft"
+      }
+    ]
   },
   "自": {
     "dec": "⿻目？",
@@ -11558,7 +13142,23 @@
     "type": "pictophonetic",
     "phonetic": "监",
     "semantic": "艹",
-    "similar": []
+    "similar": [
+      {
+        "c": "篮",
+        "py": "lán",
+        "en": "basket"
+      },
+      {
+        "c": "监",
+        "py": "jiān",
+        "en": "to supervise"
+      },
+      {
+        "c": "览",
+        "py": "lǎn",
+        "en": "to look over"
+      }
+    ]
   },
   "支": {
     "dec": "⿱十又",
@@ -11583,7 +13183,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "技",
+        "py": "jì",
+        "en": "ability"
+      },
+      {
+        "c": "枝",
+        "py": "zhī",
+        "en": "branches"
+      },
+      {
+        "c": "吱",
+        "py": "zhī",
+        "en": "to chirp"
+      }
+    ]
   },
   "付": {
     "dec": "⿰亻寸",
@@ -11608,7 +13224,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "附",
+        "py": "fù",
+        "en": "nearby"
+      },
+      {
+        "c": "府",
+        "py": "fǔ",
+        "en": "prefect"
+      },
+      {
+        "c": "讨",
+        "py": "tǎo",
+        "en": "to haggle"
+      }
+    ]
   },
   "宝": {
     "dec": "⿱宀玉",
@@ -11633,7 +13265,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "玉",
+        "py": "yù",
+        "en": "jade"
+      },
+      {
+        "c": "宫",
+        "py": "gōng",
+        "en": "palace"
+      },
+      {
+        "c": "室",
+        "py": "shì",
+        "en": "house"
+      }
+    ]
   },
   "金": {
     "dec": "⿱人⿻王丷",
@@ -11663,7 +13311,23 @@
     "type": "pictographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "全",
+        "py": "quán",
+        "en": "whole"
+      },
+      {
+        "c": "会",
+        "py": "huì",
+        "en": "to assemble"
+      },
+      {
+        "c": "余",
+        "py": "yú",
+        "en": "surplus"
+      }
+    ]
   },
   "苹": {
     "dec": "⿱艹平",
@@ -11770,7 +13434,23 @@
     "type": "pictophonetic",
     "phonetic": "豆",
     "semantic": "矢",
-    "similar": []
+    "similar": [
+      {
+        "c": "豆",
+        "py": "dòu",
+        "en": "beans"
+      },
+      {
+        "c": "矮",
+        "py": "ǎi",
+        "en": "short"
+      },
+      {
+        "c": "知",
+        "py": "zhī",
+        "en": "to know"
+      }
+    ]
   },
   "零": {
     "dec": "⿱雨令",
@@ -11907,7 +13587,23 @@
     "type": "pictophonetic",
     "phonetic": "卑",
     "semantic": "片",
-    "similar": []
+    "similar": [
+      {
+        "c": "碑",
+        "py": "bēi",
+        "en": "stone tablet"
+      },
+      {
+        "c": "啤",
+        "py": "pí",
+        "en": "beer"
+      },
+      {
+        "c": "脾",
+        "py": "pí",
+        "en": "spleen"
+      }
+    ]
   },
   "质": {
     "dec": "⿸厂⿱十贝",
@@ -11937,7 +13633,23 @@
     "type": "pictophonetic",
     "phonetic": "十",
     "semantic": "贝",
-    "similar": []
+    "similar": [
+      {
+        "c": "斤",
+        "py": "jīn",
+        "en": "a catty (about 500 grams)"
+      },
+      {
+        "c": "所",
+        "py": "suǒ",
+        "en": "place"
+      },
+      {
+        "c": "货",
+        "py": "huò",
+        "en": "products"
+      }
+    ]
   },
   "量": {
     "dec": "⿱旦里",
@@ -11962,7 +13674,23 @@
     "type": "pictophonetic",
     "phonetic": "旦",
     "semantic": "里",
-    "similar": []
+    "similar": [
+      {
+        "c": "里",
+        "py": "lǐ",
+        "en": "unit of distance equal to 0.5km"
+      },
+      {
+        "c": "重",
+        "py": "zhòng",
+        "en": "heavy"
+      },
+      {
+        "c": "童",
+        "py": "tóng",
+        "en": "child"
+      }
+    ]
   },
   "又": {
     "dec": "？",
@@ -11976,7 +13704,23 @@
     "type": "pictographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "叉",
+        "py": "chā",
+        "en": "fork"
+      },
+      {
+        "c": "双",
+        "py": "shuāng",
+        "en": "pair"
+      },
+      {
+        "c": "友",
+        "py": "yǒu",
+        "en": "friend"
+      }
+    ]
   },
   "价": {
     "dec": "⿰亻介",
@@ -12001,7 +13745,23 @@
     "type": "pictophonetic",
     "phonetic": "介",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "介",
+        "py": "jiè",
+        "en": "agent"
+      },
+      {
+        "c": "份",
+        "py": "fèn",
+        "en": "job"
+      },
+      {
+        "c": "们",
+        "py": "men",
+        "en": "plural marker for pronouns and some nouns"
+      }
+    ]
   },
   "便": {
     "dec": "⿰亻更",
@@ -12103,7 +13863,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "又",
+        "py": "yòu",
+        "en": "and"
+      },
+      {
+        "c": "对",
+        "py": "duì",
+        "en": "correct"
+      },
+      {
+        "c": "欢",
+        "py": "huān",
+        "en": "happy"
+      }
+    ]
   },
   "以": {
     "dec": "⿰？人",
@@ -12199,7 +13975,23 @@
     "type": "",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "会",
+        "py": "huì",
+        "en": "to assemble"
+      },
+      {
+        "c": "今",
+        "py": "jīn",
+        "en": "modern"
+      },
+      {
+        "c": "拿",
+        "py": "ná",
+        "en": "to bring"
+      }
+    ]
   },
   "适": {
     "dec": "⿺辶舌",
@@ -12224,7 +14016,23 @@
     "type": "pictophonetic",
     "phonetic": "舌",
     "semantic": "辶",
-    "similar": []
+    "similar": [
+      {
+        "c": "话",
+        "py": "huà",
+        "en": "talk"
+      },
+      {
+        "c": "活",
+        "py": "huó",
+        "en": "to exist"
+      },
+      {
+        "c": "舌",
+        "py": "shé",
+        "en": "tongue"
+      }
+    ]
   },
   "件": {
     "dec": "⿰亻牛",
@@ -12320,7 +14128,23 @@
     "type": "pictophonetic",
     "phonetic": "寸",
     "semantic": "衤",
-    "similar": []
+    "similar": [
+      {
+        "c": "补",
+        "py": "bǔ",
+        "en": "to fix"
+      },
+      {
+        "c": "村",
+        "py": "cūn",
+        "en": "village"
+      },
+      {
+        "c": "讨",
+        "py": "tǎo",
+        "en": "to haggle"
+      }
+    ]
   },
   "衣": {
     "dec": "⿱亠？",
@@ -12364,7 +14188,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "纟",
+        "py": "sī",
+        "en": "silk"
+      },
+      {
+        "c": "经",
+        "py": "jīng",
+        "en": "the classics"
+      },
+      {
+        "c": "坐",
+        "py": "zuò",
+        "en": "seat"
+      }
+    ]
   },
   "之": {
     "dec": "⿱丶？",
@@ -12378,7 +14218,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "乏",
+        "py": "fá",
+        "en": "poor"
+      },
+      {
+        "c": "芝",
+        "py": "zhī",
+        "en": "sesame"
+      },
+      {
+        "c": "乙",
+        "py": "yǐ",
+        "en": "second"
+      }
+    ]
   },
   "凉": {
     "dec": "⿰冫京",
@@ -12403,7 +14259,23 @@
     "type": "pictophonetic",
     "phonetic": "京",
     "semantic": "冫",
-    "similar": []
+    "similar": [
+      {
+        "c": "京",
+        "py": "jīng",
+        "en": "capital city"
+      },
+      {
+        "c": "惊",
+        "py": "jīng",
+        "en": "to frighten"
+      },
+      {
+        "c": "晾",
+        "py": "liàng",
+        "en": "to air-dry"
+      }
+    ]
   },
   "快": {
     "dec": "⿰忄夬",
@@ -12469,7 +14341,23 @@
     "type": "pictophonetic",
     "phonetic": "予",
     "semantic": "舍",
-    "similar": []
+    "similar": [
+      {
+        "c": "予",
+        "py": "yǔ",
+        "en": "to give"
+      },
+      {
+        "c": "野",
+        "py": "yě",
+        "en": "field"
+      },
+      {
+        "c": "舍",
+        "py": "shě",
+        "en": "house"
+      }
+    ]
   },
   "只": {
     "dec": "⿱口八",
@@ -12494,7 +14382,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "贝",
+        "py": "bèi",
+        "en": "sea shell"
+      },
+      {
+        "c": "兄",
+        "py": "xiōng",
+        "en": "elder brother"
+      },
+      {
+        "c": "叭",
+        "py": "bā",
+        "en": "trumpet"
+      }
+    ]
   },
   "种": {
     "dec": "⿰禾中",
@@ -12519,7 +14423,23 @@
     "type": "pictophonetic",
     "phonetic": "中",
     "semantic": "禾",
-    "similar": []
+    "similar": [
+      {
+        "c": "和",
+        "py": "hé",
+        "en": "harmony"
+      },
+      {
+        "c": "秒",
+        "py": "miǎo",
+        "en": "a second"
+      },
+      {
+        "c": "钟",
+        "py": "zhōng",
+        "en": "clock"
+      }
+    ]
   },
   "颜": {
     "dec": "⿰彦页",
@@ -12656,7 +14576,23 @@
     "type": "pictophonetic",
     "phonetic": "尤",
     "semantic": "亻",
-    "similar": []
+    "similar": [
+      {
+        "c": "忧",
+        "py": "yōu",
+        "en": "sad"
+      },
+      {
+        "c": "尤",
+        "py": "yóu",
+        "en": "especially"
+      },
+      {
+        "c": "扰",
+        "py": "rǎo",
+        "en": "to poke"
+      }
+    ]
   },
   "惠": {
     "dec": "⿱？心",
@@ -12670,7 +14606,23 @@
     "type": "pictophonetic",
     "phonetic": "叀",
     "semantic": "心",
-    "similar": []
+    "similar": [
+      {
+        "c": "惑",
+        "py": "huò",
+        "en": "to confuse"
+      },
+      {
+        "c": "意",
+        "py": "yì",
+        "en": "thought"
+      },
+      {
+        "c": "患",
+        "py": "huàn",
+        "en": "suffering"
+      }
+    ]
   },
   "券": {
     "dec": "⿱龹刀",
@@ -12695,7 +14647,18 @@
     "type": "pictophonetic",
     "phonetic": "龹",
     "semantic": "刀",
-    "similar": []
+    "similar": [
+      {
+        "c": "卷",
+        "py": "juǎn",
+        "en": "book"
+      },
+      {
+        "c": "拳",
+        "py": "quán",
+        "en": "fist"
+      }
+    ]
   },
   "就": {
     "dec": "⿰京尤",
@@ -12750,7 +14713,23 @@
     "type": "",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "早",
+        "py": "zǎo",
+        "en": "early"
+      },
+      {
+        "c": "草",
+        "py": "cǎo",
+        "en": "grass"
+      },
+      {
+        "c": "首",
+        "py": "shǒu",
+        "en": "chief"
+      }
+    ]
   },
   "带": {
     "dec": "⿱卅⿱冖巾",
@@ -12780,7 +14759,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "常",
+        "py": "cháng",
+        "en": "common"
+      },
+      {
+        "c": "布",
+        "py": "bù",
+        "en": "cotton"
+      },
+      {
+        "c": "席",
+        "py": "xí",
+        "en": "seat"
+      }
+    ]
   },
   "雨": {
     "dec": "⿻帀？",
@@ -12824,7 +14819,18 @@
     "type": "pictographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "全",
+        "py": "quán",
+        "en": "whole"
+      },
+      {
+        "c": "半",
+        "py": "bàn",
+        "en": "half"
+      }
+    ]
   },
   "用": {
     "dec": "⿵冂？",
@@ -12838,7 +14844,23 @@
     "type": "",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "甩",
+        "py": "shuǎi",
+        "en": "to throw away"
+      },
+      {
+        "c": "角",
+        "py": "jiǎo",
+        "en": "angle"
+      },
+      {
+        "c": "册",
+        "py": "cè",
+        "en": "book"
+      }
+    ]
   },
   "算": {
     "dec": "⿱⺮具",
@@ -12863,7 +14885,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "笔",
+        "py": "bǐ",
+        "en": "pen"
+      },
+      {
+        "c": "简",
+        "py": "jiǎn",
+        "en": "simple"
+      },
+      {
+        "c": "筷",
+        "py": "kuài",
+        "en": "chopsticks"
+      }
+    ]
   },
   "裤": {
     "dec": "⿰衤库",
@@ -12888,7 +14926,23 @@
     "type": "pictophonetic",
     "phonetic": "库",
     "semantic": "衤",
-    "similar": []
+    "similar": [
+      {
+        "c": "库",
+        "py": "kù",
+        "en": "armory"
+      },
+      {
+        "c": "车",
+        "py": "chē",
+        "en": "cart"
+      },
+      {
+        "c": "被",
+        "py": "bèi",
+        "en": "bedding"
+      }
+    ]
   },
   "难": {
     "dec": "⿰又隹",
@@ -12913,7 +14967,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "准",
+        "py": "zhǔn",
+        "en": "standard"
+      },
+      {
+        "c": "谁",
+        "py": "shuí",
+        "en": "who? whom? whose? anyone?"
+      },
+      {
+        "c": "推",
+        "py": "tuī",
+        "en": "to push"
+      }
+    ]
   },
   "乱": {
     "dec": "⿰舌乚",
@@ -12938,7 +15008,23 @@
     "type": "",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "乖",
+        "py": "guāi",
+        "en": "obedient"
+      },
+      {
+        "c": "辞",
+        "py": "cí",
+        "en": "words"
+      },
+      {
+        "c": "舌",
+        "py": "shé",
+        "en": "tongue"
+      }
+    ]
   },
   "喜": {
     "dec": "⿱壴口",
@@ -13045,7 +15131,23 @@
     "type": "pictophonetic",
     "phonetic": "束",
     "semantic": "辛",
-    "similar": []
+    "similar": [
+      {
+        "c": "棘",
+        "py": "jí",
+        "en": "jujube tree"
+      },
+      {
+        "c": "束",
+        "py": "shù",
+        "en": "to bind"
+      },
+      {
+        "c": "赖",
+        "py": "lài",
+        "en": "to depend on"
+      }
+    ]
   },
   "菜": {
     "dec": "⿱艹采",
@@ -13162,7 +15264,23 @@
     "type": "pictophonetic",
     "phonetic": "吕",
     "semantic": "宀",
-    "similar": []
+    "similar": [
+      {
+        "c": "官",
+        "py": "guān",
+        "en": "official"
+      },
+      {
+        "c": "管",
+        "py": "guǎn",
+        "en": "tube"
+      },
+      {
+        "c": "吕",
+        "py": "lǚ",
+        "en": "a musical note"
+      }
+    ]
   },
   "保": {
     "dec": "⿰亻呆",
@@ -13187,7 +15305,23 @@
     "type": "pictophonetic",
     "phonetic": "呆",
     "semantic": "亻",
-    "similar": []
+    "similar": [
+      {
+        "c": "宝",
+        "py": "bǎo",
+        "en": "treasure"
+      },
+      {
+        "c": "呆",
+        "py": "dāi",
+        "en": "dull"
+      },
+      {
+        "c": "堡",
+        "py": "bǎo",
+        "en": "fort"
+      }
+    ]
   },
   "鸡": {
     "dec": "⿰又鸟",
@@ -13248,7 +15382,23 @@
     "type": "pictographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "了",
+        "py": "le",
+        "en": "clear"
+      },
+      {
+        "c": "子",
+        "py": "zi",
+        "en": "son"
+      },
+      {
+        "c": "于",
+        "py": "yú",
+        "en": "at"
+      }
+    ]
   },
   "麻": {
     "dec": "⿸广林",
@@ -13273,7 +15423,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "摩",
+        "py": "mó",
+        "en": "to scour"
+      },
+      {
+        "c": "磨",
+        "py": "mó",
+        "en": "millstone"
+      },
+      {
+        "c": "林",
+        "py": "lín",
+        "en": "forest"
+      }
+    ]
   },
   "婆": {
     "dec": "⿱波女",
@@ -13298,7 +15464,23 @@
     "type": "pictophonetic",
     "phonetic": "波",
     "semantic": "女",
-    "similar": []
+    "similar": [
+      {
+        "c": "波",
+        "py": "bō",
+        "en": "waves"
+      },
+      {
+        "c": "皮",
+        "py": "pí",
+        "en": "skin"
+      },
+      {
+        "c": "被",
+        "py": "bèi",
+        "en": "bedding"
+      }
+    ]
   },
   "豆": {
     "dec": "⿳一口⿱丷一",
@@ -13328,7 +15510,23 @@
     "type": "pictographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "登",
+        "py": "dēng",
+        "en": "to rise"
+      },
+      {
+        "c": "短",
+        "py": "duǎn",
+        "en": "brief"
+      },
+      {
+        "c": "头",
+        "py": "tóu",
+        "en": "head"
+      }
+    ]
   },
   "腐": {
     "dec": "⿸广⿱付肉",
@@ -13358,7 +15556,23 @@
     "type": "pictophonetic",
     "phonetic": "付",
     "semantic": "肉",
-    "similar": []
+    "similar": [
+      {
+        "c": "府",
+        "py": "fǔ",
+        "en": "prefect"
+      },
+      {
+        "c": "付",
+        "py": "fù",
+        "en": "give"
+      },
+      {
+        "c": "肉",
+        "py": "ròu",
+        "en": "meat"
+      }
+    ]
   },
   "碗": {
     "dec": "⿰石宛",
@@ -13383,7 +15597,23 @@
     "type": "pictophonetic",
     "phonetic": "宛",
     "semantic": "石",
-    "similar": []
+    "similar": [
+      {
+        "c": "宛",
+        "py": "wǎn",
+        "en": "to seem"
+      },
+      {
+        "c": "腕",
+        "py": "wàn",
+        "en": "wrist"
+      },
+      {
+        "c": "石",
+        "py": "shí",
+        "en": "stone"
+      }
+    ]
   },
   "汤": {
     "dec": "⿰氵昜",
@@ -13408,7 +15638,23 @@
     "type": "pictophonetic",
     "phonetic": "昜",
     "semantic": "氵",
-    "similar": []
+    "similar": [
+      {
+        "c": "场",
+        "py": "chǎng",
+        "en": "field"
+      },
+      {
+        "c": "扬",
+        "py": "yáng",
+        "en": "to flutter"
+      },
+      {
+        "c": "杨",
+        "py": "yáng",
+        "en": "willow"
+      }
+    ]
   },
   "饮": {
     "dec": "⿰饣欠",
@@ -13433,7 +15679,23 @@
     "type": "pictophonetic",
     "phonetic": "欠",
     "semantic": "饣",
-    "similar": []
+    "similar": [
+      {
+        "c": "欢",
+        "py": "huān",
+        "en": "happy"
+      },
+      {
+        "c": "次",
+        "py": "cì",
+        "en": "order"
+      },
+      {
+        "c": "饭",
+        "py": "fàn",
+        "en": "meal"
+      }
+    ]
   },
   "料": {
     "dec": "⿰米斗",
@@ -13458,7 +15720,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "科",
+        "py": "kē",
+        "en": "section"
+      },
+      {
+        "c": "斗",
+        "py": "dòu",
+        "en": "to struggle"
+      },
+      {
+        "c": "米",
+        "py": "mǐ",
+        "en": "rice"
+      }
+    ]
   },
   "壶": {
     "dec": "⿱士⿱冖业",
@@ -13488,7 +15766,23 @@
     "type": "pictographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "壳",
+        "py": "ké",
+        "en": "casing"
+      },
+      {
+        "c": "卖",
+        "py": "mài",
+        "en": "to sell"
+      },
+      {
+        "c": "亚",
+        "py": "yà",
+        "en": "Asia"
+      }
+    ]
   },
   "菊": {
     "dec": "⿱艹匊",
@@ -13513,7 +15807,23 @@
     "type": "pictophonetic",
     "phonetic": "匊",
     "semantic": "艹",
-    "similar": []
+    "similar": [
+      {
+        "c": "匊",
+        "py": "jū",
+        "en": "handful"
+      },
+      {
+        "c": "菜",
+        "py": "cài",
+        "en": "vegetables"
+      },
+      {
+        "c": "鞠",
+        "py": "jū",
+        "en": "to bow"
+      }
+    ]
   },
   "花": {
     "dec": "⿱艹化",
@@ -13538,7 +15848,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "化",
+        "py": "huà",
+        "en": "to change"
+      },
+      {
+        "c": "华",
+        "py": "huá",
+        "en": "flowery"
+      },
+      {
+        "c": "草",
+        "py": "cǎo",
+        "en": "grass"
+      }
+    ]
   },
   "忌": {
     "dec": "⿱己心",
@@ -13563,7 +15889,23 @@
     "type": "pictophonetic",
     "phonetic": "己",
     "semantic": "心",
-    "similar": []
+    "similar": [
+      {
+        "c": "记",
+        "py": "jì",
+        "en": "mark"
+      },
+      {
+        "c": "志",
+        "py": "zhì",
+        "en": "determination"
+      },
+      {
+        "c": "己",
+        "py": "jǐ",
+        "en": "self"
+      }
+    ]
   },
   "香": {
     "dec": "⿱禾日",
@@ -13588,7 +15930,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "秀",
+        "py": "xiù",
+        "en": "elegant"
+      },
+      {
+        "c": "季",
+        "py": "jì",
+        "en": "a quarter-year"
+      },
+      {
+        "c": "春",
+        "py": "chūn",
+        "en": "springtime"
+      }
+    ]
   },
   "稍": {
     "dec": "⿰禾肖",
@@ -13613,7 +15971,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "消",
+        "py": "xiāo",
+        "en": "news"
+      },
+      {
+        "c": "肖",
+        "py": "xiào",
+        "en": "to resemble"
+      },
+      {
+        "c": "梢",
+        "py": "shāo",
+        "en": "the tip of a branch"
+      }
+    ]
   },
   "味": {
     "dec": "⿰口未",
@@ -13638,7 +16012,23 @@
     "type": "pictophonetic",
     "phonetic": "未",
     "semantic": "口",
-    "similar": []
+    "similar": [
+      {
+        "c": "未",
+        "py": "wèi",
+        "en": "not yet"
+      },
+      {
+        "c": "妹",
+        "py": "mèi",
+        "en": "younger sister"
+      },
+      {
+        "c": "末",
+        "py": "mò",
+        "en": "end"
+      }
+    ]
   },
   "得": {
     "dec": "⿰彳⿱旦寸",
@@ -13755,7 +16145,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "减",
+        "py": "jiǎn",
+        "en": "to decrease"
+      },
+      {
+        "c": "感",
+        "py": "gǎn",
+        "en": "to affect"
+      },
+      {
+        "c": "成",
+        "py": "chéng",
+        "en": "to accomplish"
+      }
+    ]
   },
   "油": {
     "dec": "⿰氵由",
@@ -13780,7 +16186,23 @@
     "type": "pictophonetic",
     "phonetic": "由",
     "semantic": "氵",
-    "similar": []
+    "similar": [
+      {
+        "c": "由",
+        "py": "yóu",
+        "en": "cause"
+      },
+      {
+        "c": "抽",
+        "py": "chōu",
+        "en": "to draw out"
+      },
+      {
+        "c": "邮",
+        "py": "yóu",
+        "en": "mail"
+      }
+    ]
   },
   "腻": {
     "dec": "⿰⺼贰",
@@ -13805,7 +16227,23 @@
     "type": "pictophonetic",
     "phonetic": "贰",
     "semantic": "⺼",
-    "similar": []
+    "similar": [
+      {
+        "c": "贰",
+        "py": "èr",
+        "en": "two (bankers' anti-fraud numeral)"
+      },
+      {
+        "c": "赋",
+        "py": "fù",
+        "en": "tax"
+      },
+      {
+        "c": "肤",
+        "py": "fū",
+        "en": "skin"
+      }
+    ]
   },
   "清": {
     "dec": "⿰氵青",
@@ -13830,7 +16268,23 @@
     "type": "pictophonetic",
     "phonetic": "青",
     "semantic": "氵",
-    "similar": []
+    "similar": [
+      {
+        "c": "情",
+        "py": "qíng",
+        "en": "emotion"
+      },
+      {
+        "c": "请",
+        "py": "qǐng",
+        "en": "to ask"
+      },
+      {
+        "c": "晴",
+        "py": "qíng",
+        "en": "clear weather"
+      }
+    ]
   },
   "淡": {
     "dec": "⿰氵炎",
@@ -13855,7 +16309,23 @@
     "type": "pictophonetic",
     "phonetic": "炎",
     "semantic": "氵",
-    "similar": []
+    "similar": [
+      {
+        "c": "炎",
+        "py": "yán",
+        "en": "flame"
+      },
+      {
+        "c": "谈",
+        "py": "tán",
+        "en": "to talk"
+      },
+      {
+        "c": "痰",
+        "py": "tán",
+        "en": "mucus"
+      }
+    ]
   },
   "结": {
     "dec": "⿰纟吉",
@@ -13880,7 +16350,23 @@
     "type": "pictophonetic",
     "phonetic": "吉",
     "semantic": "纟",
-    "similar": []
+    "similar": [
+      {
+        "c": "吉",
+        "py": "jí",
+        "en": "lucky"
+      },
+      {
+        "c": "洁",
+        "py": "jié",
+        "en": "clean"
+      },
+      {
+        "c": "给",
+        "py": "gěi",
+        "en": "to give"
+      }
+    ]
   },
   "账": {
     "dec": "⿰贝长",
@@ -13905,7 +16391,23 @@
     "type": "pictophonetic",
     "phonetic": "长",
     "semantic": "贝",
-    "similar": []
+    "similar": [
+      {
+        "c": "张",
+        "py": "zhāng",
+        "en": "to display"
+      },
+      {
+        "c": "贴",
+        "py": "tiē",
+        "en": "to stick"
+      },
+      {
+        "c": "长",
+        "py": "zhǎng",
+        "en": "long"
+      }
+    ]
   },
   "打": {
     "dec": "⿰扌丁",
@@ -13971,7 +16473,23 @@
     "type": "pictophonetic",
     "phonetic": "合",
     "semantic": "皿",
-    "similar": []
+    "similar": [
+      {
+        "c": "合",
+        "py": "hé",
+        "en": "to combine"
+      },
+      {
+        "c": "盆",
+        "py": "pén",
+        "en": "basin"
+      },
+      {
+        "c": "盖",
+        "py": "gài",
+        "en": "to cover"
+      }
+    ]
   },
   "次": {
     "dec": "⿰冫欠",
@@ -14523,7 +17041,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "另",
+        "py": "lìng",
+        "en": "another"
+      },
+      {
+        "c": "别",
+        "py": "bié",
+        "en": "to separate"
+      },
+      {
+        "c": "扔",
+        "py": "rēng",
+        "en": "to throw"
+      }
+    ]
   },
   "导": {
     "dec": "⿱巳寸",
@@ -14548,7 +17082,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "寺",
+        "py": "sì",
+        "en": "court"
+      },
+      {
+        "c": "异",
+        "py": "yì",
+        "en": "different"
+      },
+      {
+        "c": "巳",
+        "py": "sì",
+        "en": "the hours from 9 to 11"
+      }
+    ]
   },
   "航": {
     "dec": "⿰舟亢",
@@ -14573,7 +17123,23 @@
     "type": "pictophonetic",
     "phonetic": "亢",
     "semantic": "舟",
-    "similar": []
+    "similar": [
+      {
+        "c": "舟",
+        "py": "zhōu",
+        "en": "boat"
+      },
+      {
+        "c": "船",
+        "py": "chuán",
+        "en": "ship"
+      },
+      {
+        "c": "般",
+        "py": "bān",
+        "en": "sort"
+      }
+    ]
   },
   "先": {
     "dec": "⿱⿰？土儿",
@@ -14710,7 +17276,23 @@
     "type": "pictophonetic",
     "phonetic": "也",
     "semantic": "土",
-    "similar": []
+    "similar": [
+      {
+        "c": "他",
+        "py": "tā",
+        "en": "other"
+      },
+      {
+        "c": "也",
+        "py": "yě",
+        "en": "also"
+      },
+      {
+        "c": "池",
+        "py": "chí",
+        "en": "pool"
+      }
+    ]
   },
   "铁": {
     "dec": "⿰钅失",
@@ -14735,7 +17317,23 @@
     "type": "pictophonetic",
     "phonetic": "失",
     "semantic": "钅",
-    "similar": []
+    "similar": [
+      {
+        "c": "失",
+        "py": "shī",
+        "en": "to lose"
+      },
+      {
+        "c": "钱",
+        "py": "qián",
+        "en": "money"
+      },
+      {
+        "c": "秩",
+        "py": "zhì",
+        "en": "order"
+      }
+    ]
   },
   "博": {
     "dec": "⿰十尃",
@@ -14760,7 +17358,23 @@
     "type": "pictophonetic",
     "phonetic": "尃",
     "semantic": "十",
-    "similar": []
+    "similar": [
+      {
+        "c": "搏",
+        "py": "bó",
+        "en": "combat"
+      },
+      {
+        "c": "傅",
+        "py": "fù",
+        "en": "tutor"
+      },
+      {
+        "c": "薄",
+        "py": "báo",
+        "en": "thin"
+      }
+    ]
   },
   "物": {
     "dec": "⿰牛勿",
@@ -14785,7 +17399,23 @@
     "type": "pictophonetic",
     "phonetic": "勿",
     "semantic": "牛",
-    "similar": []
+    "similar": [
+      {
+        "c": "牛",
+        "py": "niú",
+        "en": "ox"
+      },
+      {
+        "c": "勿",
+        "py": "wù",
+        "en": "must not"
+      },
+      {
+        "c": "特",
+        "py": "tè",
+        "en": "special"
+      }
+    ]
   },
   "应": {
     "dec": "⿸广⿱⺍一",
@@ -14815,7 +17445,23 @@
     "type": "",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "广",
+        "py": "guǎng",
+        "en": "broad"
+      },
+      {
+        "c": "座",
+        "py": "zuò",
+        "en": "seat"
+      },
+      {
+        "c": "床",
+        "py": "chuáng",
+        "en": "bed"
+      }
+    ]
   },
   "该": {
     "dec": "⿰讠亥",
@@ -14840,7 +17486,23 @@
     "type": "pictophonetic",
     "phonetic": "亥",
     "semantic": "讠",
-    "similar": []
+    "similar": [
+      {
+        "c": "刻",
+        "py": "kè",
+        "en": "to carve"
+      },
+      {
+        "c": "孩",
+        "py": "hái",
+        "en": "baby"
+      },
+      {
+        "c": "亥",
+        "py": "hài",
+        "en": "12th terrestrial branch"
+      }
+    ]
   },
   "或": {
     "dec": "⿹戈⿱口一",
@@ -14870,7 +17532,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "成",
+        "py": "chéng",
+        "en": "to accomplish"
+      },
+      {
+        "c": "戒",
+        "py": "jiè",
+        "en": "to warn"
+      },
+      {
+        "c": "域",
+        "py": "yù",
+        "en": "area"
+      }
+    ]
   },
   "骑": {
     "dec": "⿰马奇",
@@ -14895,7 +17573,23 @@
     "type": "pictophonetic",
     "phonetic": "奇",
     "semantic": "马",
-    "similar": []
+    "similar": [
+      {
+        "c": "奇",
+        "py": "qí",
+        "en": "strange"
+      },
+      {
+        "c": "寄",
+        "py": "jì",
+        "en": "to mail"
+      },
+      {
+        "c": "椅",
+        "py": "yǐ",
+        "en": "chair"
+      }
+    ]
   },
   "技": {
     "dec": "⿰扌支",
@@ -14920,7 +17614,23 @@
     "type": "pictophonetic",
     "phonetic": "支",
     "semantic": "扌",
-    "similar": []
+    "similar": [
+      {
+        "c": "支",
+        "py": "zhī",
+        "en": "to support"
+      },
+      {
+        "c": "枝",
+        "py": "zhī",
+        "en": "branches"
+      },
+      {
+        "c": "投",
+        "py": "tóu",
+        "en": "to pitch"
+      }
+    ]
   },
   "术": {
     "dec": "⿺木丶",
@@ -14945,7 +17655,23 @@
     "type": "",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "木",
+        "py": "mù",
+        "en": "tree"
+      },
+      {
+        "c": "本",
+        "py": "běn",
+        "en": "root"
+      },
+      {
+        "c": "朮",
+        "py": "shù",
+        "en": "skill"
+      }
+    ]
   },
   "周": {
     "dec": "⿵冂⿱土口",
@@ -14975,7 +17701,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "同",
+        "py": "tóng",
+        "en": "same"
+      },
+      {
+        "c": "用",
+        "py": "yòng",
+        "en": "to use"
+      },
+      {
+        "c": "调",
+        "py": "diào",
+        "en": "tune"
+      }
+    ]
   },
   "末": {
     "dec": "⿻木一",
@@ -15000,7 +17742,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "未",
+        "py": "wèi",
+        "en": "not yet"
+      },
+      {
+        "c": "本",
+        "py": "běn",
+        "en": "root"
+      },
+      {
+        "c": "木",
+        "py": "mù",
+        "en": "tree"
+      }
+    ]
   },
   "飞": {
     "dec": "⿻？？",
@@ -15044,7 +17802,23 @@
     "type": "",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "万",
+        "py": "wàn",
+        "en": "ten thousand"
+      },
+      {
+        "c": "放",
+        "py": "fàng",
+        "en": "to release"
+      },
+      {
+        "c": "访",
+        "py": "fǎng",
+        "en": "to visit"
+      }
+    ]
   },
   "宽": {
     "dec": "⿱宀苋",
@@ -15069,7 +17843,23 @@
     "type": "pictophonetic",
     "phonetic": "苋",
     "semantic": "宀",
-    "similar": []
+    "similar": [
+      {
+        "c": "苋",
+        "py": "xiàn",
+        "en": "amaranth"
+      },
+      {
+        "c": "见",
+        "py": "jiàn",
+        "en": "to see"
+      },
+      {
+        "c": "宁",
+        "py": "níng",
+        "en": "calm"
+      }
+    ]
   },
   "重": {
     "dec": "⿻千里",
@@ -15094,7 +17884,23 @@
     "type": "ideographic",
     "phonetic": "",
     "semantic": "",
-    "similar": []
+    "similar": [
+      {
+        "c": "里",
+        "py": "lǐ",
+        "en": "unit of distance equal to 0.5km"
+      },
+      {
+        "c": "量",
+        "py": "liàng",
+        "en": "measure"
+      },
+      {
+        "c": "童",
+        "py": "tóng",
+        "en": "child"
+      }
+    ]
   },
   "租": {
     "dec": "⿰禾且",
@@ -15201,7 +18007,23 @@
     "type": "pictophonetic",
     "phonetic": "乚",
     "semantic": "礻",
-    "similar": []
+    "similar": [
+      {
+        "c": "扎",
+        "py": "zhā",
+        "en": "to bind"
+      },
+      {
+        "c": "札",
+        "py": "zhá",
+        "en": "letter"
+      },
+      {
+        "c": "认",
+        "py": "rèn",
+        "en": "to know"
+      }
+    ]
   },
   "汉": {
     "dec": "⿰氵又",
