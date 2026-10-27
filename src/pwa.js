@@ -1,5 +1,5 @@
 // Offline support + updates. A new version installs by itself while you're on a calm page
-// (home, books, a book's lesson list); during practice it waits and offers "Update now" instead.
+// (home, books, a book's lesson list) or on your next page change; inside an exercise it offers "Update now".
 import { registerSW } from "virtual:pwa-register";
 import { $ } from "./lib/util.js";
 
@@ -30,8 +30,9 @@ export function initPWA() {
       });
     },
   });
-  // A waiting update installs as soon as you leave practice for a calm page.
-  addEventListener("hashchange", () => { if (waiting && calm()) update(true); });
+  // A waiting update installs on the next page change (opening a lesson, a tab, going back):
+  // moving between pages never interrupts an exercise, and the reload keeps the new page.
+  addEventListener("hashchange", () => { if (waiting) update(true); });
   $("#updateBtn").addEventListener("click", () => update(true));
   $("#updateLater").addEventListener("click", () => (toast.hidden = true));
 }
