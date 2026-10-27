@@ -85,7 +85,7 @@ export function buildCharCard(host, c) {
         <button class="mode" role="tab" data-m="step">Stroke by stroke</button>
         <button class="mode" role="tab" data-m="quiz">Write it</button>
       </div>
-      <div class="controls" data-for="flow"><button class="btn primary" data-a="play">${icon("play")} Play</button></div>
+      <div class="controls" data-for="flow"><button class="btn primary" data-a="play">${icon("play")} Play</button><button class="btn" data-a="stop" hidden>${icon("stop")} Stop</button></div>
       <div class="controls" data-for="step" hidden>
         <button class="btn" data-a="back">${icon("back")} Back</button>
         <button class="btn primary" data-a="next">Next stroke ${icon("next")}</button>
@@ -145,6 +145,7 @@ export function buildCharCard(host, c) {
     $('[data-a="next"]', el).disabled = i === n - 1;
   }
   function setMode(mo) {
+    if (running) stopLoop(false);
     mode = mo;
     writer.cancelQuiz();
     $$(".mode", el).forEach((b) => b.setAttribute("aria-selected", b.dataset.m === mo));
@@ -156,10 +157,31 @@ export function buildCharCard(host, c) {
     else if (mo === "step") drawStep(0);
     else quiz();
   }
+  // Non-stop: Play repeats the whole character until Stop (or another mode) is chosen.
+  let looping = 0, rounds = 0, running = false;
+  const loopBtns = (on) => { running = on; $('[data-a="play"]', el).hidden = on; $('[data-a="stop"]', el).hidden = !on; };
   function play() {
-    status.textContent = "Watch carefully…";
-    writer.hideCharacter();
-    writer.animateCharacter({ onComplete: () => { if (mode === "flow") status.textContent = `Done! ${n} strokes. Now try Stroke by stroke.`; } });
+    const token = ++looping;
+    rounds = 0;
+    loopBtns(true);
+    const once = () => {
+      if (token !== looping || !document.body.contains(el)) return;
+      status.textContent = rounds ? `Again… (${rounds + 1}) · tap Stop to end` : "Watch carefully… it repeats until you tap Stop.";
+      writer.hideCharacter();
+      writer.animateCharacter({ onComplete: () => {
+        if (token !== looping) return;
+        rounds++;
+        setTimeout(once, 900);
+      } });
+    };
+    once();
+  }
+  function stopLoop(msg = true) {
+    looping++;
+    loopBtns(false);
+    try { writer.pauseAnimation?.(); } catch {}
+    writer.showCharacter();
+    if (msg && mode === "flow") status.textContent = `${n} strokes. Tap Play to watch again, or try Stroke by stroke.`;
   }
   function quiz() {
     status.textContent = "Your turn! Draw stroke 1.";
@@ -181,7 +203,7 @@ export function buildCharCard(host, c) {
     key(k) {
       if (k === "ArrowRight") { if (mode !== "step") setMode("step"); else if (step < n - 1) drawStep(step + 1); }
       else if (k === "ArrowLeft") { if (mode === "step" && step > 0) drawStep(step - 1); }
-      else if (k === " ") { if (mode === "step") drawStep(step); else if (mode === "flow") play(); else quiz(); }
+      else if (k === " ") { if (mode === "step") drawStep(step); else if (mode === "flow") (running ? stopLoop() : play()); else quiz(); }
       else if (k === "w") setMode("quiz");
       else if (k === "p") setMode("flow");
     },
@@ -196,6 +218,7 @@ export function buildCharCard(host, c) {
     if (fig) { if (mode !== "step") setMode("step"); return drawStep(+fig.dataset.i); }
     const a = e.target.closest("[data-a]")?.dataset.a;
     if (a === "play") play();
+    else if (a === "stop") stopLoop();
     else if (a === "next" && step < n - 1) drawStep(step + 1);
     else if (a === "back" && step > 0) drawStep(step - 1);
     else if (a === "replay") drawStep(step);

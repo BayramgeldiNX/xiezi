@@ -261,12 +261,13 @@ code { font-size: .85em; }
 /* ---------- Flashcards ---------- */
 .fc-wrap { display: grid; gap: 14px; justify-items: center; }
 .fc { width: min(100%, 460px); aspect-ratio: 4 / 3; border-radius: 22px; border: 1px solid var(--line); background: var(--card); color: var(--ink); display: grid; place-items: center; align-content: center; text-align: center; padding: 20px; cursor: pointer; box-shadow: var(--shadow); }
-.fc .front { font-family: var(--display); font-size: clamp(3rem, 12vw, 5.5rem); font-weight: 700; line-height: 1.1; }
-.fc .front.en { font-family: var(--body); font-size: clamp(1.5rem, 6vw, 2.2rem); }
-.fc .back { display: grid; gap: 6px; }
-.fc .back .hz { font-family: var(--display); font-size: clamp(2.4rem, 9vw, 4rem); font-weight: 700; }
-.fc .back .py { font-size: 1.5rem; }
-.fc .back .en { color: var(--muted); font-size: 1.1rem; }
+.fc { overflow: hidden; }
+.fc .fc-front { font-family: var(--display); font-size: clamp(3rem, 12vw, 5.5rem); font-weight: 700; line-height: 1.1; overflow-wrap: anywhere; }
+.fc .fc-front.en { font-family: var(--body); font-size: clamp(1.5rem, 6vw, 2.2rem); }
+.fc .fc-back { display: grid; gap: 6px; justify-items: center; max-width: 100%; }
+.fc .fc-back .hz { font-family: var(--display); font-size: clamp(2.4rem, 9vw, 4rem); font-weight: 700; line-height: 1.15; overflow-wrap: anywhere; }
+.fc .fc-back .py { font-size: 1.5rem; }
+.fc .fc-back .en { color: var(--muted); font-size: 1.1rem; }
 .fc .tap { font-size: .8rem; color: var(--muted); margin-top: 10px; }
 .fc-controls { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; align-items: center; }
 

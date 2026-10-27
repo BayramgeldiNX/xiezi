@@ -35,8 +35,8 @@ function cardsRender() {
     return;
   }
   const w = words[deck.queue[0]];
-  const front = deck.dir === "hz" ? `<div class="front">${w.w}</div>` : `<div class="front en">${w.en}</div>`;
-  const back = `<div class="back"><div class="hz">${w.w}</div><div class="py">${tonePy(w.py)}</div><div class="en">${w.en}</div></div>`;
+  const front = deck.dir === "hz" ? `<div class="fc-front">${w.w}</div>` : `<div class="fc-front en">${w.en}</div>`;
+  const back = `<div class="fc-back"><div class="hz">${w.w}</div><div class="py">${tonePy(w.py)}</div><div class="en">${w.en}</div></div>`;
   host.innerHTML = `<div class="fc-wrap">
     <div class="modes" role="tablist" aria-label="Card front">
       <button class="mode" role="tab" data-dir="hz" aria-selected="${deck.dir === "hz"}">汉字 → meaning</button>
