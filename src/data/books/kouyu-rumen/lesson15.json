@@ -539,6 +539,57 @@
           "en": "High-speed rail or plane?"
         }
       ]
+    },
+    {
+      "point": "多 + adjective",
+      "en": "多远 / 多大 / 多高",
+      "drills": [
+        {
+          "q": "离这儿___远？",
+          "options": [
+            "多",
+            "几",
+            "很",
+            "太"
+          ],
+          "answer": 0,
+          "en": "How far is it from here?"
+        }
+      ]
+    },
+    {
+      "point": "概数",
+      "en": "approximate numbers",
+      "drills": [
+        {
+          "q": "导航说十三___公里。",
+          "options": [
+            "四",
+            "多",
+            "几",
+            "两"
+          ],
+          "answer": 0,
+          "en": "The navigation says 13 or 14 km."
+        }
+      ]
+    },
+    {
+      "point": "应该",
+      "en": "should",
+      "drills": [
+        {
+          "q": "你___多休息。",
+          "options": [
+            "应该",
+            "可以",
+            "想",
+            "会"
+          ],
+          "answer": 0,
+          "en": "You should rest more."
+        }
+      ]
     }
   ],
   "workbook": {

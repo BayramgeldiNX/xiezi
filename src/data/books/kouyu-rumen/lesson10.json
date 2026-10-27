@@ -383,6 +383,26 @@
         "py": "Nǐ shǔ shénme?",
         "en": "What's your Chinese zodiac sign?"
       }
+    },
+    {
+      "w": "问",
+      "py": "wèn",
+      "en": "to ask",
+      "ex": {
+        "hz": "我问一下儿老师。",
+        "py": "Wǒ wèn yíxiàr lǎoshī.",
+        "en": "I'll ask the teacher."
+      }
+    },
+    {
+      "w": "回答",
+      "py": "huídá",
+      "en": "to answer",
+      "ex": {
+        "hz": "请回答我的问题。",
+        "py": "Qǐng huídá wǒ de wèntí.",
+        "en": "Please answer my question."
+      }
     }
   ],
   "readings": [

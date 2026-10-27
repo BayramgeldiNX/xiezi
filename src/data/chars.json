@@ -7889,5 +7889,41 @@
       "点",
       "竖弯钩"
     ]
+  },
+  "答": {
+    "py": "dá",
+    "en": "to answer",
+    "tip": "⺮ (bamboo) + 合 (to fit). Words that fit the question: to <b>answer</b>. 回答 = to answer.",
+    "strokes": [
+      "撇",
+      "横",
+      "点",
+      "撇",
+      "横",
+      "点",
+      "撇",
+      "捺",
+      "横",
+      "竖",
+      "横折",
+      "横"
+    ]
+  },
+  "特": {
+    "py": "tè",
+    "en": "special",
+    "tip": "牛 (cow) + 寺. A prize bull: <b>special</b>. 特点 = feature.",
+    "strokes": [
+      "撇",
+      "横",
+      "竖",
+      "提",
+      "横",
+      "竖",
+      "横",
+      "横",
+      "竖钩",
+      "点"
+    ]
   }
 }

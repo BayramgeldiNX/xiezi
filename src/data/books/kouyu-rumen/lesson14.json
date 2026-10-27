@@ -343,6 +343,36 @@
         "py": "Wǒ wèn yíxiàr lǎoshī.",
         "en": "I'll ask the teacher."
       }
+    },
+    {
+      "w": "特点",
+      "py": "tèdiǎn",
+      "en": "feature; characteristic",
+      "ex": {
+        "hz": "四川菜的特点是辣。",
+        "py": "Sìchuān cài de tèdiǎn shì là.",
+        "en": "Sichuan food is known for being spicy."
+      }
+    },
+    {
+      "w": "南方",
+      "py": "nánfāng",
+      "en": "the South",
+      "ex": {
+        "hz": "南方人喜欢吃米饭。",
+        "py": "Nánfāng rén xǐhuan chī mǐfàn.",
+        "en": "Southerners like rice."
+      }
+    },
+    {
+      "w": "北方",
+      "py": "běifāng",
+      "en": "the North",
+      "ex": {
+        "hz": "北方人喜欢吃饺子。",
+        "py": "Běifāng rén xǐhuan chī jiǎozi.",
+        "en": "Northerners like dumplings."
+      }
     }
   ],
   "readings": [
@@ -506,6 +536,40 @@
           ],
           "answer": 0,
           "en": "Next time I'll treat you to Cantonese food."
+        }
+      ]
+    },
+    {
+      "point": "……，好吗？",
+      "en": "suggestion + 好吗？",
+      "drills": [
+        {
+          "q": "咱们去尝尝四川菜，___？",
+          "options": [
+            "好吗",
+            "吗好",
+            "怎么",
+            "什么"
+          ],
+          "answer": 0,
+          "en": "Shall we try Sichuan food?"
+        }
+      ]
+    },
+    {
+      "point": "双宾语",
+      "en": "verb + person + thing",
+      "drills": [
+        {
+          "q": "王老师___我们汉字。",
+          "options": [
+            "教",
+            "学",
+            "写",
+            "说"
+          ],
+          "answer": 0,
+          "en": "Teacher Wang teaches us characters."
         }
       ]
     }

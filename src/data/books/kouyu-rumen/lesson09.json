@@ -283,6 +283,16 @@
         "py": "Wǒ nǎinai shēntǐ hěn hǎo.",
         "en": "My grandma is in good health."
       }
+    },
+    {
+      "w": "多",
+      "py": "duō",
+      "en": "how (in questions: 多大 how old)",
+      "ex": {
+        "hz": "你哥哥今年多大？",
+        "py": "Nǐ gēge jīnnián duō dà?",
+        "en": "How old is your brother this year?"
+      }
     }
   ],
   "readings": [

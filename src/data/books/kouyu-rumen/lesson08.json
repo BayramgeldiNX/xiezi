@@ -439,6 +439,34 @@
           "en": "I study with a friend."
         }
       ]
+    },
+    {
+      "point": "介词结构：在 / 跟",
+      "en": "在 + place / 跟 + person go before the verb",
+      "drills": [
+        {
+          "q": "我___北京学习。",
+          "options": [
+            "在",
+            "跟",
+            "去",
+            "是"
+          ],
+          "answer": 0,
+          "en": "I study in Beijing."
+        },
+        {
+          "q": "他___我一起去教室。",
+          "options": [
+            "跟",
+            "在",
+            "是",
+            "有"
+          ],
+          "answer": 0,
+          "en": "He goes to the classroom with me."
+        }
+      ]
     }
   ],
   "workbook": {

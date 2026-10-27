@@ -10960,6 +10960,88 @@
       }
     ]
   },
+  "回": {
+    "dec": "⿴囗口",
+    "parts": [
+      {
+        "c": "囗",
+        "py": "wéi",
+        "en": "enclosure"
+      },
+      {
+        "c": "口",
+        "py": "kǒu",
+        "en": "mouth"
+      }
+    ],
+    "radical": {
+      "c": "囗",
+      "py": "wéi",
+      "en": "enclosure"
+    },
+    "hint": "Originally, a spiral signifying return",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": [
+      {
+        "c": "四",
+        "py": "sì",
+        "en": "four"
+      },
+      {
+        "c": "因",
+        "py": "yīn",
+        "en": "cause"
+      },
+      {
+        "c": "口",
+        "py": "kǒu",
+        "en": "mouth"
+      }
+    ]
+  },
+  "答": {
+    "dec": "⿱⺮合",
+    "parts": [
+      {
+        "c": "⺮",
+        "py": "zhú",
+        "en": "bamboo"
+      },
+      {
+        "c": "合",
+        "py": "hé",
+        "en": "to combine"
+      }
+    ],
+    "radical": {
+      "c": "⺮",
+      "py": "zhú",
+      "en": "bamboo"
+    },
+    "hint": "",
+    "type": "",
+    "phonetic": "",
+    "semantic": "",
+    "similar": [
+      {
+        "c": "笑",
+        "py": "xiào",
+        "en": "to smile"
+      },
+      {
+        "c": "合",
+        "py": "hé",
+        "en": "to combine"
+      },
+      {
+        "c": "等",
+        "py": "děng",
+        "en": "rank"
+      }
+    ]
+  },
   "边": {
     "dec": "⿺辶力",
     "parts": [
@@ -16819,6 +16901,77 @@
       }
     ]
   },
+  "特": {
+    "dec": "⿰牛寺",
+    "parts": [
+      {
+        "c": "牛",
+        "py": "niú",
+        "en": "ox"
+      },
+      {
+        "c": "寺",
+        "py": "sì",
+        "en": "court"
+      }
+    ],
+    "radical": {
+      "c": "牛",
+      "py": "niú",
+      "en": "ox"
+    },
+    "hint": "ox",
+    "type": "pictophonetic",
+    "phonetic": "寺",
+    "semantic": "牛",
+    "similar": [
+      {
+        "c": "持",
+        "py": "chí",
+        "en": "to hold"
+      },
+      {
+        "c": "待",
+        "py": "dài",
+        "en": "to entertain"
+      },
+      {
+        "c": "牛",
+        "py": "niú",
+        "en": "ox"
+      }
+    ]
+  },
+  "方": {
+    "dec": "⿱亠？",
+    "parts": [],
+    "radical": {
+      "c": "方",
+      "py": "fāng",
+      "en": "square"
+    },
+    "hint": "",
+    "type": "",
+    "phonetic": "",
+    "semantic": "",
+    "similar": [
+      {
+        "c": "万",
+        "py": "wàn",
+        "en": "ten thousand"
+      },
+      {
+        "c": "放",
+        "py": "fàng",
+        "en": "to release"
+      },
+      {
+        "c": "访",
+        "py": "fǎng",
+        "en": "to visit"
+      }
+    ]
+  },
   "走": {
     "dec": "⿱土止",
     "parts": [
@@ -17790,36 +17943,6 @@
       }
     ]
   },
-  "方": {
-    "dec": "⿱亠？",
-    "parts": [],
-    "radical": {
-      "c": "方",
-      "py": "fāng",
-      "en": "square"
-    },
-    "hint": "",
-    "type": "",
-    "phonetic": "",
-    "semantic": "",
-    "similar": [
-      {
-        "c": "万",
-        "py": "wàn",
-        "en": "ten thousand"
-      },
-      {
-        "c": "放",
-        "py": "fàng",
-        "en": "to release"
-      },
-      {
-        "c": "访",
-        "py": "fǎng",
-        "en": "to visit"
-      }
-    ]
-  },
   "宽": {
     "dec": "⿱宀苋",
     "parts": [
@@ -18360,47 +18483,6 @@
         "c": "态",
         "py": "tài",
         "en": "manner"
-      }
-    ]
-  },
-  "回": {
-    "dec": "⿴囗口",
-    "parts": [
-      {
-        "c": "囗",
-        "py": "wéi",
-        "en": "enclosure"
-      },
-      {
-        "c": "口",
-        "py": "kǒu",
-        "en": "mouth"
-      }
-    ],
-    "radical": {
-      "c": "囗",
-      "py": "wéi",
-      "en": "enclosure"
-    },
-    "hint": "Originally, a spiral signifying return",
-    "type": "ideographic",
-    "phonetic": "",
-    "semantic": "",
-    "similar": [
-      {
-        "c": "四",
-        "py": "sì",
-        "en": "four"
-      },
-      {
-        "c": "因",
-        "py": "yīn",
-        "en": "cause"
-      },
-      {
-        "c": "口",
-        "py": "kǒu",
-        "en": "mouth"
       }
     ]
   },

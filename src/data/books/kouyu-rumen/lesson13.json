@@ -615,6 +615,34 @@
           "en": "May I try it?"
         }
       ]
+    },
+    {
+      "point": "想 / 要 / 可以",
+      "en": "wish / want or need / permission",
+      "drills": [
+        {
+          "q": "我___试试吗？",
+          "options": [
+            "可以",
+            "想",
+            "要",
+            "会"
+          ],
+          "answer": 0,
+          "en": "May I try it?"
+        },
+        {
+          "q": "A：你要喝咖啡吗？ B：我不___，我喝茶。",
+          "options": [
+            "想",
+            "可以",
+            "会",
+            "有"
+          ],
+          "answer": 0,
+          "en": "I don't want any; I'll have tea."
+        }
+      ]
     }
   ],
   "workbook": {

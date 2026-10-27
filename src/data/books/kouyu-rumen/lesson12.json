@@ -343,6 +343,36 @@
         "py": "Yìbǎi líng wǔ kuài.",
         "en": "105 yuan."
       }
+    },
+    {
+      "w": "女人",
+      "py": "nǚrén",
+      "en": "woman",
+      "ex": {
+        "hz": "那个女人是谁？",
+        "py": "Nàge nǚrén shì shéi?",
+        "en": "Who is that woman?"
+      }
+    },
+    {
+      "w": "男人",
+      "py": "nánrén",
+      "en": "man",
+      "ex": {
+        "hz": "那个男人是我爸爸。",
+        "py": "Nàge nánrén shì wǒ bàba.",
+        "en": "That man is my dad."
+      }
+    },
+    {
+      "w": "老人",
+      "py": "lǎorén",
+      "en": "old person",
+      "ex": {
+        "hz": "那个老人八十岁了。",
+        "py": "Nàge lǎorén bāshí suì le.",
+        "en": "That old person is eighty."
+      }
     }
   ],
   "readings": [
@@ -529,6 +559,34 @@
           ],
           "answer": 0,
           "en": "Here's your receipt."
+        }
+      ]
+    },
+    {
+      "point": "钱数",
+      "en": "块 / 毛 / 分; 两 for the number 2",
+      "drills": [
+        {
+          "q": "2.00元 = ___块",
+          "options": [
+            "两",
+            "二",
+            "两毛",
+            "二十"
+          ],
+          "answer": 0,
+          "en": "2 yuan"
+        },
+        {
+          "q": "十块五___",
+          "options": [
+            "毛",
+            "分",
+            "块",
+            "角钱"
+          ],
+          "answer": 0,
+          "en": "10.50 yuan"
         }
       ]
     }

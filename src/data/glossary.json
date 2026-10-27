@@ -462,5 +462,17 @@
   "花花": {
     "py": "Huāhua",
     "en": "Huahua (a cat's name)"
+  },
+  "小明": {
+    "py": "Xiǎomíng",
+    "en": "Xiaoming (a name)"
+  },
+  "故宫": {
+    "py": "Gùgōng",
+    "en": "the Imperial Palace"
+  },
+  "长城": {
+    "py": "Chángchéng",
+    "en": "the Great Wall"
   }
 }
