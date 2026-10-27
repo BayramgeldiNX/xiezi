@@ -404,5 +404,68 @@
         "a": "是我的。"
       }
     ]
-  }
+  },
+  "hanzi": {
+    "strokes": [
+      [
+        "竖弯钩",
+        "七儿"
+      ],
+      [
+        "横折弯钩",
+        "九几"
+      ]
+    ],
+    "rules": [
+      [
+        "Top before bottom",
+        "二三"
+      ],
+      [
+        "Left before right",
+        "儿八"
+      ]
+    ],
+    "chars": [
+      [
+        "七",
+        "A cross with a curled tail."
+      ],
+      [
+        "儿",
+        "Two little legs of a child."
+      ],
+      [
+        "几",
+        "A small low table."
+      ],
+      [
+        "九",
+        "An arm with a bent elbow."
+      ]
+    ]
+  },
+  "pron": [
+    {
+      "t": "Tone change of 一",
+      "en": "一 is yì before 1st, 2nd and 3rd tones, yí before a 4th tone, and yī when counting or alone.",
+      "ex": [
+        "一起",
+        "一点儿",
+        "一个",
+        "一下",
+        "第一"
+      ]
+    },
+    {
+      "t": "y and w",
+      "en": "Syllables that start with i, u, ü are written with y or w: ya, you, wo, wei, yu, yue.",
+      "ex": [
+        "有",
+        "我",
+        "月",
+        "语"
+      ]
+    }
+  ]
 }

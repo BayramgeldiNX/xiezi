@@ -28,7 +28,9 @@ if (!book || !files.length) {
 const split = (l) => l.split("|").map((s) => s.trim());
 const lessons = [];
 let L = null, R = null, G = null;
-for (const file of files) for (const [i, raw] of fs.readFileSync(file, "utf8").replace(/^﻿/, "").split(/\r?\n/).entries()) {
+// .json files add whole fields to lessons by number, e.g. { "3": { "hanzi": {...}, "pron": [...] } }.
+const extras = files.filter((f) => f.endsWith(".json")).map((f) => JSON.parse(fs.readFileSync(f, "utf8").replace(/^﻿/, "")));
+for (const file of files.filter((f) => !f.endsWith(".json"))) for (const [i, raw] of fs.readFileSync(file, "utf8").replace(/^﻿/, "").split(/\r?\n/).entries()) {
   const line = raw.trim();
   if (!line) continue;
   const where = `${file} line ${i + 1}`;
@@ -89,6 +91,12 @@ for (const file of files) for (const [i, raw] of fs.readFileSync(file, "utf8").r
     if (!exEn) throw new Error(`${where}: word line needs 6 fields`);
     L.words.push({ w, py, en, ex: { hz: exHz, py: exPy, en: exEn } });
   }
+}
+
+for (const x of extras) for (const [n, fields] of Object.entries(x)) {
+  const L = lessons.find((l) => l.n === +n);
+  if (!L) throw new Error(`extra data for lesson ${n}, which isn't in the book`);
+  Object.assign(L, fields);
 }
 
 const dir = path.join(BOOKS_DIR, book.dir);

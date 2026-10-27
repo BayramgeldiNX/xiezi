@@ -376,5 +376,44 @@
         "a": "我在学呢。"
       }
     ]
-  }
+  },
+  "hanzi": {
+    "chars": [
+      [
+        "日",
+        "The sun with a dot in its middle."
+      ],
+      [
+        "目",
+        "An eye turned upright."
+      ],
+      [
+        "习",
+        "A wing flapping: practising again and again."
+      ]
+    ],
+    "radicals": [
+      [
+        "日",
+        "sun, time",
+        "明时"
+      ],
+      [
+        "目",
+        "eye",
+        "睡看"
+      ]
+    ]
+  },
+  "pron": [
+    {
+      "t": "Three syllables starting with a 2nd tone",
+      "en": "Say each syllable with its tone; the last carries the stress.",
+      "ex": [
+        "服务员",
+        "博物馆",
+        "图书馆"
+      ]
+    }
+  ]
 }

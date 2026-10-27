@@ -203,6 +203,66 @@
         "py": "Wǒ yǒu shí ge Hànyǔ lǎoshī.",
         "en": "I have ten Chinese teachers."
       }
+    },
+    {
+      "w": "爷爷",
+      "py": "yéye",
+      "en": "grandpa (dad's father)",
+      "ex": {
+        "hz": "我爷爷今年八十岁。",
+        "py": "Wǒ yéye jīnnián bāshí suì.",
+        "en": "My grandpa is eighty this year."
+      }
+    },
+    {
+      "w": "奶奶",
+      "py": "nǎinai",
+      "en": "grandma (dad's mother)",
+      "ex": {
+        "hz": "我奶奶身体很好。",
+        "py": "Wǒ nǎinai shēntǐ hěn hǎo.",
+        "en": "My grandma is in good health."
+      }
+    },
+    {
+      "w": "哥哥",
+      "py": "gēge",
+      "en": "older brother",
+      "ex": {
+        "hz": "我有一个哥哥。",
+        "py": "Wǒ yǒu yí ge gēge.",
+        "en": "I have an older brother."
+      }
+    },
+    {
+      "w": "姐姐",
+      "py": "jiějie",
+      "en": "older sister",
+      "ex": {
+        "hz": "我姐姐是老师。",
+        "py": "Wǒ jiějie shì lǎoshī.",
+        "en": "My older sister is a teacher."
+      }
+    },
+    {
+      "w": "弟弟",
+      "py": "dìdi",
+      "en": "younger brother",
+      "ex": {
+        "hz": "我弟弟八岁。",
+        "py": "Wǒ dìdi bā suì.",
+        "en": "My younger brother is eight."
+      }
+    },
+    {
+      "w": "妹妹",
+      "py": "mèimei",
+      "en": "younger sister",
+      "ex": {
+        "hz": "我妹妹很可爱。",
+        "py": "Wǒ mèimei hěn kě'ài.",
+        "en": "My younger sister is cute."
+      }
     }
   ],
   "readings": [
@@ -493,5 +553,64 @@
         "a": "有，我有一个女儿。"
       }
     ]
-  }
+  },
+  "hanzi": {
+    "strokes": [
+      [
+        "横撇",
+        "水又"
+      ],
+      [
+        "撇点",
+        "女好"
+      ]
+    ],
+    "rules": [
+      [
+        "Outside before inside",
+        "四国"
+      ],
+      [
+        "Middle before the two sides",
+        "小水"
+      ]
+    ],
+    "chars": [
+      [
+        "水",
+        "A stream with splashes on both sides."
+      ],
+      [
+        "女",
+        "A woman kneeling with crossed arms."
+      ],
+      [
+        "了",
+        "A baby wrapped up, arms hidden."
+      ],
+      [
+        "大",
+        "A person stretching arms and legs wide: big."
+      ]
+    ]
+  },
+  "pron": [
+    {
+      "t": "Erhua (-r)",
+      "en": "儿 after a syllable merges into it as a curled r: 哪儿 nǎr, 一点儿 yìdiǎnr.",
+      "ex": [
+        "哪儿",
+        "这儿",
+        "那儿",
+        "一点儿"
+      ]
+    },
+    {
+      "t": "Syllable mark '",
+      "en": "When a syllable starting with a, o, e follows another, an apostrophe separates them: nǚ'ér.",
+      "ex": [
+        "女儿"
+      ]
+    }
+  ]
 }

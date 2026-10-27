@@ -7925,5 +7925,35 @@
       "竖钩",
       "点"
     ]
+  },
+  "英": {
+    "py": "yīng",
+    "en": "hero; England",
+    "tip": "艹 (plant) + 央 (middle). The finest flower: <b>hero</b>; 英语 = English.",
+    "strokes": [
+      "横",
+      "竖",
+      "竖",
+      "竖",
+      "横折",
+      "横",
+      "撇",
+      "捺"
+    ]
+  },
+  "法": {
+    "py": "fǎ",
+    "en": "law; method",
+    "tip": "氵 (water) + 去 (go). Water flowing its level way: <b>law</b>, <b>method</b>; 法语 = French.",
+    "strokes": [
+      "点",
+      "点",
+      "提",
+      "横",
+      "竖",
+      "横",
+      "撇折",
+      "点"
+    ]
   }
 }

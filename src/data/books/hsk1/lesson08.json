@@ -443,5 +443,34 @@
         "a": "我去商店。"
       }
     ]
+  },
+  "hanzi": {
+    "chars": [
+      [
+        "少",
+        "小 (small) with one more stroke cut away: few."
+      ],
+      [
+        "个",
+        "A single person under a roof: one item."
+      ]
+    ],
+    "structure": [
+      "Top–bottom, top–middle–bottom",
+      "One part over another (是 爸), or three stacked (茶 高).",
+      "是爸茶高"
+    ],
+    "radicals": [
+      [
+        "钅",
+        "metal",
+        "钟钱"
+      ],
+      [
+        "口",
+        "mouth",
+        "吃喝"
+      ]
+    ]
   }
 }

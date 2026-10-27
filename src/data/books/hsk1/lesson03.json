@@ -388,5 +388,67 @@
         "a": "是，我是学生。"
       }
     ]
-  }
+  },
+  "hanzi": {
+    "strokes": [
+      [
+        "横折钩",
+        "月门"
+      ],
+      [
+        "卧钩",
+        "心您"
+      ]
+    ],
+    "rules": [
+      [
+        "Horizontal before vertical",
+        "十工"
+      ],
+      [
+        "Left-falling before right-falling",
+        "人八"
+      ]
+    ],
+    "chars": [
+      [
+        "月",
+        "A crescent moon."
+      ],
+      [
+        "心",
+        "A heart, drawn with its chambers."
+      ],
+      [
+        "中",
+        "A flag pole through the middle of a square."
+      ],
+      [
+        "人",
+        "A person standing, seen from the side."
+      ]
+    ]
+  },
+  "pron": [
+    {
+      "t": "Tone change of 不",
+      "en": "不 is bù, but before a 4th tone it becomes bú.",
+      "ex": [
+        "不是",
+        "不对",
+        "不客气",
+        "不好",
+        "不忙"
+      ]
+    },
+    {
+      "t": "ü after j, q, x",
+      "en": "After j, q, x the two dots of ü are dropped (ju, qu, xue); after l and n they stay (lǜ, nǚ).",
+      "ex": [
+        "去",
+        "学生",
+        "女儿"
+      ]
+    }
+  ]
 }

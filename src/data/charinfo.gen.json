@@ -18271,6 +18271,88 @@
       }
     ]
   },
+  "英": {
+    "dec": "⿱艹央",
+    "parts": [
+      {
+        "c": "艹",
+        "py": "cǎo",
+        "en": "grass"
+      },
+      {
+        "c": "央",
+        "py": "yāng",
+        "en": "central"
+      }
+    ],
+    "radical": {
+      "c": "艹",
+      "py": "cǎo",
+      "en": "grass"
+    },
+    "hint": "flower",
+    "type": "pictophonetic",
+    "phonetic": "央",
+    "semantic": "艹",
+    "similar": [
+      {
+        "c": "央",
+        "py": "yāng",
+        "en": "central"
+      },
+      {
+        "c": "共",
+        "py": "gòng",
+        "en": "all"
+      },
+      {
+        "c": "茶",
+        "py": "chá",
+        "en": "tea"
+      }
+    ]
+  },
+  "法": {
+    "dec": "⿰氵去",
+    "parts": [
+      {
+        "c": "氵",
+        "py": "shuǐ",
+        "en": "water"
+      },
+      {
+        "c": "去",
+        "py": "qù",
+        "en": "to go away"
+      }
+    ],
+    "radical": {
+      "c": "氵",
+      "py": "shuǐ",
+      "en": "water"
+    },
+    "hint": "The course 去 followed by a stream 氵",
+    "type": "ideographic",
+    "phonetic": "",
+    "semantic": "",
+    "similar": [
+      {
+        "c": "去",
+        "py": "qù",
+        "en": "to go away"
+      },
+      {
+        "c": "没",
+        "py": "méi",
+        "en": "not"
+      },
+      {
+        "c": "汉",
+        "py": "hàn",
+        "en": "Chinese people"
+      }
+    ]
+  },
   "猫": {
     "dec": "⿰犭苗",
     "parts": [

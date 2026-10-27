@@ -425,5 +425,29 @@
         "a": "我姓王。"
       }
     ]
-  }
+  },
+  "hanzi": {
+    "radicals": [
+      [
+        "疒",
+        "illness",
+        "病疼"
+      ],
+      [
+        "冫",
+        "ice, cold",
+        "冷冰"
+      ]
+    ]
+  },
+  "pron": [
+    {
+      "t": "Choice questions with 还是",
+      "en": "The voice rises on the first choice and falls on the second.",
+      "ex": [
+        "你喜欢吃米饭还是吃面条？",
+        "你去学校是开车还是坐车？"
+      ]
+    }
+  ]
 }

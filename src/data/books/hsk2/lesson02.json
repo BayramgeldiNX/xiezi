@@ -445,5 +445,29 @@
         "a": "是，我有点儿累。"
       }
     ]
+  },
+  "hanzi": {
+    "chars": [
+      [
+        "生",
+        "A sprout coming out of the ground."
+      ],
+      [
+        "高",
+        "A tall tower with a roof."
+      ]
+    ],
+    "radicals": [
+      [
+        "⺮",
+        "bamboo",
+        "篮笔"
+      ],
+      [
+        "欠",
+        "open mouth",
+        "歌欢"
+      ]
+    ]
   }
 }

@@ -550,3 +550,5 @@ dialog.sheet::backdrop { background: rgb(0 0 0 / .5); }
 .wb-claim { margin: 4px 0 8px; color: var(--ink); }
 .wb-line { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 2px 0; }
 .wb-line .who { color: var(--muted); font-size: .85rem; min-width: 1.5em; }
+.hzl-ex { font-size: 1.3rem; letter-spacing: .15em; }
+.hzl-big { font-size: 1.7rem; min-width: 1.4em; display: inline-block; text-align: center; }

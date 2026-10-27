@@ -123,6 +123,36 @@
         "py": "Qǐng nǐ dú yi dú.",
         "en": "Please read it."
       }
+    },
+    {
+      "w": "英语",
+      "py": "Yīngyǔ",
+      "en": "English (language)",
+      "ex": {
+        "hz": "你会说英语吗？",
+        "py": "Nǐ huì shuō Yīngyǔ ma?",
+        "en": "Can you speak English?"
+      }
+    },
+    {
+      "w": "法语",
+      "py": "Fǎyǔ",
+      "en": "French (language)",
+      "ex": {
+        "hz": "我不会说法语。",
+        "py": "Wǒ bú huì shuō Fǎyǔ.",
+        "en": "I can't speak French."
+      }
+    },
+    {
+      "w": "日语",
+      "py": "Rìyǔ",
+      "en": "Japanese (language)",
+      "ex": {
+        "hz": "她会写日语。",
+        "py": "Tā huì xiě Rìyǔ.",
+        "en": "She can write Japanese."
+      }
     }
   ],
   "readings": [
@@ -406,6 +436,27 @@
         "q": "中国菜好吃吗？",
         "a": "很好吃。"
       }
+    ]
+  },
+  "hanzi": {
+    "chars": [
+      [
+        "东",
+        "The sun seen through a tree: where it rises, east."
+      ],
+      [
+        "我",
+        "A weapon with a jagged blade; borrowed for “I”."
+      ],
+      [
+        "西",
+        "A bird on its nest at sunset: west."
+      ]
+    ],
+    "structure": [
+      "Single vs. compound",
+      "Some characters are one piece (人 我 中); most are built from parts (你 做).",
+      "人中你做"
     ]
   }
 }

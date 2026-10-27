@@ -123,6 +123,26 @@
         "py": "Qǐng zuò zhèr.",
         "en": "Please sit here."
       }
+    },
+    {
+      "w": "左边",
+      "py": "zuǒbian",
+      "en": "left side",
+      "ex": {
+        "hz": "大卫在我左边。",
+        "py": "Dàwèi zài wǒ zuǒbian.",
+        "en": "David is on my left."
+      }
+    },
+    {
+      "w": "右边",
+      "py": "yòubian",
+      "en": "right side",
+      "ex": {
+        "hz": "我的书在电脑右边。",
+        "py": "Wǒ de shū zài diànnǎo yòubian.",
+        "en": "My book is to the right of the computer."
+      }
     }
   ],
   "readings": [
@@ -395,6 +415,43 @@
         "q": "我能坐这儿吗？",
         "a": "可以，请坐。"
       }
+    ]
+  },
+  "hanzi": {
+    "chars": [
+      [
+        "上",
+        "A short line above a long one: above."
+      ],
+      [
+        "下",
+        "A short line below: below."
+      ],
+      [
+        "本",
+        "A tree with a mark at its root."
+      ],
+      [
+        "末",
+        "A tree with a mark at its tip: the end."
+      ]
+    ],
+    "structure": [
+      "Full enclosure",
+      "One part closed on all four sides (四 国).",
+      "四国"
+    ],
+    "radicals": [
+      [
+        "囗",
+        "enclosure",
+        "国四"
+      ],
+      [
+        "礻",
+        "worship, spirit",
+        "视礼"
+      ]
     ]
   }
 }

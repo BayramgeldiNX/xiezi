@@ -102,9 +102,15 @@ function showReview() {
         <b>${t.name} ${due.length ? `<span class="due">${due.length} due</span>` : ""}</b>
         <small>${t.soon ? t.sub : `${t.sub} · ${practiced}/${n} practiced`}</small>
       </button>`).join("")}</div>
+    ${workbookOf(book.lessons).length ? `<div class="panel">
+      <span class="lbl">模拟考试 · Practice test</span>
+      <p class="note">A test in the HSK style from the whole book: 10 listening questions (dialogues), then 10 reading questions (true or false, replies, grammar). Results count for your review too.</p>
+      <button class="btn big" type="button" id="rvTest">${icon("play")} Start the practice test</button>
+    </div>` : ""}
     <p class="note">How it works: each word has its own schedule for each type. Right answers come back later each time (1 day, 3 days, 1 week, 2 weeks, 1 month…); wrong answers come back the next day.</p>`;
   $("#rvMixed")?.addEventListener("click", () => startMixed(scans, false));
   $("#rvAhead")?.addEventListener("click", () => startMixed(scans, true));
+  $("#rvTest")?.addEventListener("click", startTest);
   $$("[data-type]", body()).forEach((b) => b.addEventListener("click", () => {
     const s = scans.find((x) => x.t.id === b.dataset.type);
     const items = (s.due.length ? s.due : s.upcoming).slice(0, MAX);
@@ -124,6 +130,20 @@ function startMixed(scans, ahead) {
     if (!took) break;
   }
   runChain(picked.filter((p) => p.items.length));
+}
+
+// Practice test: part 1 listening (dialogues), part 2 reading (true/false, replies, grammar).
+function startTest() {
+  const wb = workbookOf(book.lessons);
+  const pick = (list, n) => shuffle(list).slice(0, n);
+  const listening = pick(wb.filter((d) => d.kind === "dialog"), 10);
+  const reading = [...pick(wb.filter((d) => d.kind === "judge"), 4), ...pick(wb.filter((d) => d.kind === "reply"), 3)];
+  const grammar = pick(grammarOf(book.lessons), 3);
+  runChain([
+    { t: { id: "test-listen", seal: "听", name: "Part 1 · Listening" }, items: listening.map((d) => ({ d })) },
+    { t: { id: "test-read", seal: "读", name: "Part 2 · Reading" }, items: reading.map((d) => ({ d })) },
+    ...(grammar.length ? [{ t: { id: "grammar", seal: "法", name: "Part 2 · Grammar" }, items: grammar.map((d) => ({ d })) }] : []),
+  ].filter((s) => s.items.length));
 }
 
 function runChain(steps) {
@@ -149,6 +169,7 @@ function runStep({ t, items }, done) {
     case "write": return dictIntro({ host, words, prompt: "mixed", kind: "review-write", back: showReview, autostart: true, then });
     case "speak": return speak({ title: "Speaking review", items: shuffle(words).map((w) => ({ w, text: w.w, py: w.py, en: w.en })), then });
     case "read": return orderGame(ui, items.map((i) => i.s), { all: true, then });
+    case "test-listen": case "test-read": return workbookQuiz(ui, { items: items.map((i) => i.d), title: `模拟考试 · ${t.name}`, kind: "practice-test", then });
     case "workbook": return workbookQuiz(ui, { items: shuffle(items.map((i) => i.d)), title: "练 · Workbook review", kind: "review-workbook", then });
     case "grammar": return grammarQuiz({ items: shuffle(items.map((i) => i.d)), title: "法 · Grammar review", kind: "review-grammar", then });
   }

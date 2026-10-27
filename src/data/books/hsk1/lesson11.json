@@ -380,5 +380,29 @@
         "a": "好啊！"
       }
     ]
+  },
+  "hanzi": {
+    "chars": [
+      [
+        "午",
+        "A pestle standing straight up, like the noon sun."
+      ],
+      [
+        "电",
+        "A lightning flash across the sky."
+      ]
+    ],
+    "radicals": [
+      [
+        "阝",
+        "hill, town",
+        "院那"
+      ],
+      [
+        "亻",
+        "person",
+        "你他"
+      ]
+    ]
   }
 }

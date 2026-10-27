@@ -308,5 +308,68 @@
         "a": "老师好！"
       }
     ]
-  }
+  },
+  "hanzi": {
+    "strokes": [
+      [
+        "横",
+        "一二"
+      ],
+      [
+        "竖",
+        "十工"
+      ],
+      [
+        "撇",
+        "人八"
+      ],
+      [
+        "点",
+        "不六"
+      ],
+      [
+        "捺",
+        "大天"
+      ]
+    ],
+    "chars": [
+      [
+        "一",
+        "One line for one."
+      ],
+      [
+        "二",
+        "Two lines for two."
+      ],
+      [
+        "三",
+        "Three lines for three."
+      ],
+      [
+        "十",
+        "A cross: one line each way, a complete ten."
+      ],
+      [
+        "八",
+        "Two strokes leaning apart, like something splitting in two."
+      ],
+      [
+        "六",
+        "Once a drawing of a little hut; borrowed for the number six."
+      ]
+    ]
+  },
+  "pron": [
+    {
+      "t": "3rd + 3rd tone",
+      "en": "When two 3rd tones meet, the first is said as a 2nd tone. The written tone marks stay the same.",
+      "ex": [
+        "你好",
+        "可以",
+        "很好",
+        "水果",
+        "老虎"
+      ]
+    }
+  ]
 }

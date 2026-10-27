@@ -446,5 +446,44 @@
         "a": "都很漂亮。"
       }
     ]
-  }
+  },
+  "hanzi": {
+    "chars": [
+      [
+        "开",
+        "Two hands lifting the bar of a gate."
+      ],
+      [
+        "车",
+        "A cart with its axle, seen from above."
+      ],
+      [
+        "回",
+        "Water swirling round: to go back."
+      ]
+    ],
+    "radicals": [
+      [
+        "月",
+        "body, flesh",
+        "服脑"
+      ],
+      [
+        "扌",
+        "hand",
+        "打找"
+      ]
+    ]
+  },
+  "pron": [
+    {
+      "t": "Three syllables starting with a 3rd tone",
+      "en": "A 3rd tone before another tone is said low and short (a half 3rd tone).",
+      "ex": [
+        "打电话",
+        "我们",
+        "很好吃"
+      ]
+    }
+  ]
 }

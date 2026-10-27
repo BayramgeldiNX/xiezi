@@ -143,6 +143,36 @@
         "py": "Hóngsè de nà jiàn yīfu hěn piàoliang.",
         "en": "That red garment is pretty."
       }
+    },
+    {
+      "w": "白色",
+      "py": "báisè",
+      "en": "white",
+      "ex": {
+        "hz": "我喜欢白色的杯子。",
+        "py": "Wǒ xǐhuan báisè de bēizi.",
+        "en": "I like white cups."
+      }
+    },
+    {
+      "w": "黑色",
+      "py": "hēisè",
+      "en": "black",
+      "ex": {
+        "hz": "黑色的手表是我爸爸的。",
+        "py": "Hēisè de shǒubiǎo shì wǒ bàba de.",
+        "en": "The black watch is my dad's."
+      }
+    },
+    {
+      "w": "蓝色",
+      "py": "lánsè",
+      "en": "blue",
+      "ex": {
+        "hz": "那个蓝色的书包是谁的？",
+        "py": "Nàge lánsè de shūbāo shì shéi de?",
+        "en": "Whose is that blue schoolbag?"
+      }
     }
   ],
   "readings": [
@@ -443,6 +473,26 @@
         "q": "你看见我的杯子了吗？",
         "a": "这儿有几个，哪个是你的？"
       }
+    ]
+  },
+  "hanzi": {
+    "chars": [
+      [
+        "夫",
+        "A grown man with a hairpin."
+      ]
+    ],
+    "radicals": [
+      [
+        "木",
+        "tree, wood",
+        "杯椅"
+      ],
+      [
+        "刂",
+        "knife",
+        "别到"
+      ]
     ]
   }
 }

@@ -15,7 +15,7 @@ import { renderWords, renderWord, markWords, writeKey } from "./views/write.js";
 import { dictRedraw } from "./views/dictation.js";
 import { cardsKey } from "./views/cards.js";
 import { tonesKey } from "./views/tones.js";
-import { openPractice, runMode, SKILLS } from "./views/practice.js";
+import { openPractice, runMode, SKILLS, modeAvailable } from "./views/practice.js";
 import { openReview, dueCount } from "./views/bookreview.js";
 import { openTyping, typingDue } from "./views/typing.js";
 import "./views/charsheet.js";
@@ -250,7 +250,7 @@ function showWriteStudy() {
   $("#writePractice").hidden = true;
   $("#writeStudy").hidden = false;
   $("#writeStrip").hidden = false;
-  $("#writeStrip").innerHTML = `<span class="lbl">Practice</span>${SKILLS.write.modes.map((m) =>
+  $("#writeStrip").innerHTML = `<span class="lbl">Practice</span>${SKILLS.write.modes.filter((m) => modeAvailable(m.id, app.L())).map((m) =>
     `<button class="btn" type="button" data-wmode="${m.id}"><span class="mini-seal">${m.seal}</span>${m.name}</button>`).join("")}
     <a class="btn" href="#/print/${app.L().id}"><span class="mini-seal">印</span>Print sheet</a>`;
   $$("[data-wmode]").forEach((b) => b.addEventListener("click", () => {

@@ -446,5 +446,52 @@
         "a": "它叫花花。"
       }
     ]
-  }
+  },
+  "hanzi": {
+    "strokes": [
+      [
+        "横折提",
+        "话说"
+      ],
+      [
+        "横折折折钩",
+        "奶场"
+      ]
+    ],
+    "chars": [
+      [
+        "为",
+        "A hand leading an elephant to work."
+      ],
+      [
+        "也",
+        "A snake-like curl; now an adverb, “also”."
+      ]
+    ],
+    "radicals": [
+      [
+        "王",
+        "jade",
+        "现球"
+      ],
+      [
+        "⻊",
+        "foot",
+        "跑踢"
+      ]
+    ]
+  },
+  "pron": [
+    {
+      "t": "Stress in two-syllable words",
+      "en": "Most two-syllable words stress the second syllable (旅游); some have a light second syllable (东西, 朋友).",
+      "ex": [
+        "旅游",
+        "可能",
+        "东西",
+        "朋友",
+        "眼睛"
+      ]
+    }
+  ]
 }

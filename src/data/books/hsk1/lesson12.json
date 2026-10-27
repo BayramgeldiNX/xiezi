@@ -395,5 +395,29 @@
         "a": "太热了！"
       }
     ]
+  },
+  "hanzi": {
+    "chars": [
+      [
+        "气",
+        "Wisps of air drifting."
+      ],
+      [
+        "雨",
+        "Drops falling from a cloud."
+      ]
+    ],
+    "radicals": [
+      [
+        "女",
+        "woman",
+        "姐妈"
+      ],
+      [
+        "饣",
+        "food",
+        "饭饿"
+      ]
+    ]
   }
 }

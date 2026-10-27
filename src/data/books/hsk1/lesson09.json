@@ -389,5 +389,34 @@
         "a": "有，它在那儿。"
       }
     ]
+  },
+  "hanzi": {
+    "chars": [
+      [
+        "子",
+        "A baby with arms out."
+      ],
+      [
+        "工",
+        "A carpenter's square."
+      ]
+    ],
+    "structure": [
+      "Half enclosure",
+      "One part wraps another on two or three sides (店 这 同 医).",
+      "店这同医"
+    ],
+    "radicals": [
+      [
+        "辶",
+        "walking",
+        "这送"
+      ],
+      [
+        "门",
+        "door",
+        "问间"
+      ]
+    ]
   }
 }

@@ -349,5 +349,44 @@
         "a": "好啊！"
       }
     ]
-  }
+  },
+  "hanzi": {
+    "chars": [
+      [
+        "年",
+        "A person carrying ripe grain: one harvest a year."
+      ],
+      [
+        "出",
+        "A foot stepping out of a pit."
+      ],
+      [
+        "飞",
+        "Wings beating: to fly."
+      ]
+    ],
+    "radicals": [
+      [
+        "艹",
+        "grass, plant",
+        "茶菜"
+      ],
+      [
+        "宀",
+        "roof",
+        "家字"
+      ]
+    ]
+  },
+  "pron": [
+    {
+      "t": "Three syllables starting with a 4th tone",
+      "en": "Start high and fall quickly, then keep the other tones clear.",
+      "ex": [
+        "电视机",
+        "出租车",
+        "去学校"
+      ]
+    }
+  ]
 }

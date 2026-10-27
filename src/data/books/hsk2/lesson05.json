@@ -444,5 +444,25 @@
         "a": "我也不知道。"
       }
     ]
+  },
+  "hanzi": {
+    "chars": [
+      [
+        "鱼",
+        "A fish with head, scales and tail."
+      ]
+    ],
+    "radicals": [
+      [
+        "衤",
+        "clothes",
+        "衬裤"
+      ],
+      [
+        "鱼",
+        "fish",
+        "鲜鱼"
+      ]
+    ]
   }
 }

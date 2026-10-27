@@ -18,6 +18,12 @@ import { cardsOpen } from "./cards.js";
 import { tonesIntro } from "./tones.js";
 import { lessonContent } from "../sync/content.js";
 import { workbookOf, workbookQuiz, fillQuiz, radicalQuiz } from "./workbook.js";
+import { hanziLesson, pronTips } from "./hanzi.js";
+
+// Modes that only exist when the lesson has that content.
+export const modeAvailable = (id, L) =>
+  id.startsWith("wb-") ? workbookOf(L ? [L] : []).some((d) => "wb-" + d.kind === id)
+  : id === "hanzi" ? !!L?.hanzi : id === "pron" ? !!L?.pron?.length : true;
 
 export const SKILLS = {
   write: {
@@ -26,6 +32,7 @@ export const SKILLS = {
       { id: "dict", seal: "听", name: "Dictation", sub: "Hear a word, write it from memory" },
       { id: "pinyin", seal: "拼", name: "From pinyin", sub: "See the pinyin, write the characters" },
       { id: "meaning", seal: "意", name: "From meaning", sub: "See the English, write the Chinese" },
+      { id: "hanzi", seal: "汉", name: "Character lesson", sub: "Strokes, radicals and where characters come from" },
     ],
   },
   listen: {
@@ -35,6 +42,7 @@ export const SKILLS = {
       { id: "pick-meaning", seal: "意", name: "Hear & pick the meaning", sub: "Listen, then choose the English" },
       { id: "sentence", seal: "句", name: "Sentences", sub: "Listen to a sentence, choose what it means" },
       { id: "tones", seal: "声", name: "Tones", sub: "Hear a syllable, pick its tone" },
+      { id: "pron", seal: "音", name: "Pronunciation tips", sub: "Tone changes and sound rules, with examples" },
       { id: "wb-dialog", seal: "对", name: "Dialogues", sub: "Hear a short dialogue, answer the question" },
     ],
   },
@@ -91,8 +99,7 @@ export function showMenu() {
   hideGloss();
   const s = SKILLS[P.skill];
   // Workbook exercises only where the lesson has them.
-  const wbKinds = new Set(workbookOf(thisLesson() ? [thisLesson()] : []).map((d) => "wb-" + d.kind));
-  body().innerHTML = `<div class="mode-grid">${s.modes.filter((m) => !m.id.startsWith("wb-") || wbKinds.has(m.id)).map((m) => `<button class="mode-card" type="button" data-mode="${m.id}">
+  body().innerHTML = `<div class="mode-grid">${s.modes.filter((m) => modeAvailable(m.id, thisLesson())).map((m) => `<button class="mode-card" type="button" data-mode="${m.id}">
       <span class="seal">${m.seal}</span><b>${m.name}</b><small>${m.sub}</small></button>`).join("")}</div>`;
   $$("[data-mode]", body()).forEach((b) => b.addEventListener("click", () => startMode(b.dataset.mode)));
 }
@@ -182,6 +189,8 @@ function startMode(mode) {
     }
     case "fill": return words.filter((w) => w.ex?.hz?.includes(w.w)).length < 2 ? notEnough() : fillQuiz(ui, words);
     case "radical": return thisLesson() ? radicalQuiz(ui, thisLesson()) : notEnough();
+    case "hanzi": return thisLesson()?.hanzi ? hanziLesson(ui, thisLesson(), { onRadicals: () => radicalQuiz(ui, thisLesson()) }) : notEnough();
+    case "pron": return thisLesson()?.pron ? pronTips(ui, thisLesson()) : notEnough();
   }
 }
 

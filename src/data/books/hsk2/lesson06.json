@@ -445,5 +445,35 @@
         "a": "他去北京了。"
       }
     ]
-  }
+  },
+  "hanzi": {
+    "chars": [
+      [
+        "羊",
+        "A sheep's head with two horns."
+      ]
+    ],
+    "radicals": [
+      [
+        "犭",
+        "animal",
+        "猫狗"
+      ],
+      [
+        "心",
+        "heart, mind",
+        "想您"
+      ]
+    ]
+  },
+  "pron": [
+    {
+      "t": "Questions with 怎么",
+      "en": "A why-question with 怎么 rises in surprise on the key word.",
+      "ex": [
+        "你怎么不吃了？",
+        "你怎么知道？"
+      ]
+    }
+  ]
 }

@@ -445,5 +445,33 @@
         "a": "不知道，是儿子接的。"
       }
     ]
+  },
+  "hanzi": {
+    "chars": [
+      [
+        "两",
+        "A yoke for a pair of horses."
+      ],
+      [
+        "乐",
+        "Once a musical instrument; music makes people happy."
+      ],
+      [
+        "长",
+        "An old man with long hair and a stick."
+      ]
+    ],
+    "radicals": [
+      [
+        "纟",
+        "silk, thread",
+        "给绍"
+      ],
+      [
+        "忄",
+        "heart, feeling",
+        "忙快"
+      ]
+    ]
   }
 }

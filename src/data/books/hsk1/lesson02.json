@@ -288,5 +288,64 @@
         "a": "你好！"
       }
     ]
-  }
+  },
+  "hanzi": {
+    "strokes": [
+      [
+        "横折",
+        "口日"
+      ],
+      [
+        "竖折",
+        "山出"
+      ],
+      [
+        "竖钩",
+        "小丁"
+      ]
+    ],
+    "chars": [
+      [
+        "口",
+        "An open mouth drawn as a square."
+      ],
+      [
+        "见",
+        "An eye on top of a person: someone looking."
+      ],
+      [
+        "山",
+        "Three peaks of a mountain range."
+      ],
+      [
+        "小",
+        "Small grains or dots: little."
+      ],
+      [
+        "不",
+        "Once a picture of a tool; now only means “not”."
+      ]
+    ]
+  },
+  "pron": [
+    {
+      "t": "Where the tone mark goes",
+      "en": "The mark goes on a, then o or e, then the last of i / u (as in 对 duì, 六 liù). Neutral tones have no mark.",
+      "ex": [
+        "谢谢",
+        "对不起",
+        "六",
+        "回"
+      ]
+    },
+    {
+      "t": "iu, ui, un",
+      "en": "After an initial, iou, uei and uen are written iu, ui, un (liù, duì, lùn).",
+      "ex": [
+        "九",
+        "对",
+        "水"
+      ]
+    }
+  ]
 }

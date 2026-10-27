@@ -123,6 +123,16 @@
         "py": "Zhè shì shéi de shū?",
         "en": "Whose book is this?"
       }
+    },
+    {
+      "w": "生日",
+      "py": "shēngrì",
+      "en": "birthday",
+      "ex": {
+        "hz": "你的生日是几月几号？",
+        "py": "Nǐ de shēngrì shì jǐ yuè jǐ hào?",
+        "en": "When is your birthday?"
+      }
     }
   ],
   "readings": [
@@ -389,6 +399,39 @@
         "q": "昨天是几月几号？",
         "a": "十月七号。"
       }
+    ]
+  },
+  "hanzi": {
+    "chars": [
+      [
+        "四",
+        "Once four lines; now a window with legs inside."
+      ],
+      [
+        "五",
+        "Two lines with a cross in between."
+      ],
+      [
+        "书",
+        "A hand holding a brush to write: book."
+      ]
+    ],
+    "structure": [
+      "Left–right, left–middle–right",
+      "Two parts side by side (你 好), or three (谢 树).",
+      "你好谢树"
+    ],
+    "radicals": [
+      [
+        "氵",
+        "water",
+        "汉没"
+      ],
+      [
+        "讠",
+        "speech",
+        "语谁"
+      ]
     ]
   }
 }

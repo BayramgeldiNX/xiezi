@@ -385,5 +385,30 @@
         "a": "可以，但是很冷。"
       }
     ]
-  }
+  },
+  "hanzi": {
+    "radicals": [
+      [
+        "雨",
+        "rain, weather",
+        "雪零"
+      ],
+      [
+        "贝",
+        "money (shell)",
+        "贵员"
+      ]
+    ]
+  },
+  "pron": [
+    {
+      "t": "Exclamations",
+      "en": "Exclamations with 真 / 太 … 了 fall at the end.",
+      "ex": [
+        "今天天气真好啊！",
+        "这个汉字真难写啊！",
+        "这件衣服太漂亮了！"
+      ]
+    }
+  ]
 }
