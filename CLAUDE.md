@@ -63,10 +63,35 @@ Sources live in `data-src/`:
 Pipeline:
 1. `node scripts/import-book.mjs <book> <public.txt> <grammar.txt> <workbook.txt> [extra.json]` writes the lesson JSON.
 2. New characters: stroke names are pre-filled by `scripts/stroke-types.mjs` (about 95% right), so check them by hand.
-   Then add look-alikes and radicals.
+   Then add look-alikes and radicals, and apply `<book>-chars.txt` with `scripts/tools/apply-chars.mjs`.
 3. `npm run gen:data` must report all stroke counts OK. Then run `npm run check`.
 4. `npm run gen:font` (subset font) and `npm run gen:audio` (edge-tts, needs the proxy).
 5. Private content: `npm run gen:private-audio`, then `npm run upload:private`.
+
+## Tools for common jobs
+- **New PDFs (scanned books):** scans have no text layer, so render the pages to images and read them.
+  - Command: `python scripts/tools/pdf-pages.py <scratch-dir> 1100 "<pdf>"...` (needs PyMuPDF).
+  - Read a few pages at a time; images are the most expensive input.
+  - First page: find the lesson number and title. Then write the public, grammar and workbook sources and the private JSON (see Books).
+- **Sounds (recordings):**
+  - `npm run gen:audio` records every word, sentence and reading with edge-tts (voice `zh-CN-XiaoxiaoNeural`) into `public/audio/<hash>.mp3`. Only missing files are recorded.
+  - Run it with `HTTPS_PROXY=http://127.0.0.1:7897`. Private book lines use `npm run gen:private-audio`.
+  - In the app, `src/lib/speech.js` plays the recording and falls back to the device's TTS (`speechSynthesis`).
+  - `npm test` checks that audio covers all the data.
+- **Microphone (speaking practice):** `speak()` in `src/views/practice.js`.
+  - It uses the Web Speech `SpeechRecognition` when available (Chrome, Edge, Android).
+  - Otherwise (iPhone PWA) it records with the mic so you can listen back and compare.
+  - The mic needs HTTPS or localhost.
+- **Writing (stroke order):**
+  - `src/lib/draw.js` wraps `hanzi-writer`; stroke data comes from the `hanzi-writer-data` package.
+  - Stroke names: `scripts/stroke-types.mjs` guesses them, and `node scripts/tools/stroke-eval.mjs` measures its accuracy against the hand-checked names (currently 88%).
+  - Character meanings, tips and stroke-name fixes: `node scripts/tools/apply-chars.mjs data-src/<book>-chars.txt`.
+- **Debugging:** all checks run in headless Edge over CDP, with no installs needed.
+  - `node scripts/tools/sweep.mjs <url> <book> <lessons>`: opens every lesson tab and every mode, and reports JS errors and empty screens.
+  - `node scripts/tools/debug.mjs <url> <outdir>`: checks every page at iPhone 16, Mi Pad (portrait and landscape) and Windows sizes for errors, sideways overflow and tap targets under 44px.
+  - `node --use-env-proxy scripts/tools/livecheck.mjs "<text>"`: checks whether the live site already has a change.
+  - URL is `http://localhost:5173/xiezi/` for dev, or the live URL.
+  - "Bug still there on my phone" is usually the old PWA cache: check with livecheck, then reopen the app twice.
 
 ## Build, test, ship
 - `npm run dev` (or preview_start `xiezi-dev`), `npm test` (vitest), `npm run build`.
