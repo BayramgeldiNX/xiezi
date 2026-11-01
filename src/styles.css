@@ -226,7 +226,7 @@ code { font-size: .85em; }
 .tone-opt.right, .choice.right { border-color: var(--jade); box-shadow: 0 0 0 1px var(--jade) inset; animation: glow 250ms var(--ease); }
 .tone-opt.wrong, .choice.wrong { border-color: var(--cinnabar); opacity: .7; animation: shake 200ms var(--ease); }
 @keyframes glow { from { box-shadow: 0 0 0 1px var(--jade) inset, 0 0 0 0 color-mix(in srgb, var(--jade) 55%, transparent); } 40% { box-shadow: 0 0 0 1px var(--jade) inset, 0 0 12px 3px color-mix(in srgb, var(--jade) 40%, transparent); } to { box-shadow: 0 0 0 1px var(--jade) inset, 0 0 0 0 transparent; } }
-.answer, .ty-feedback { animation: fade-in 150ms var(--ease); }
+.revealing { overflow: clip; }
 @keyframes fade-in { from { opacity: 0; } }
 .tone-opt:disabled, .choice:disabled { cursor: default; }
 .tone-shape { width: 44px; height: 26px; }
@@ -445,10 +445,21 @@ dialog.sheet::backdrop { background: rgb(0 0 0 / .5); }
   .dict-boxes .box { max-width: 340px; }
 }
 
+/* Lesson loading placeholder: quiet blocks, no shimmer */
+#pageLoading { align-content: start; }
+#pageLoading i { display: block; background: var(--card); border-radius: var(--r); }
+#pageLoading .pl-title { height: 28px; width: 55%; }
+#pageLoading .pl-tabs { height: 48px; }
+#pageLoading .pl-chips { display: flex; gap: 8px; }
+#pageLoading .pl-chips i { height: 40px; width: 56px; }
+#pageLoading .pl-box { aspect-ratio: 1; width: min(100%, 320px); border-radius: var(--r2); }
+
 /* Small overlays: fade in and rise. The gloss and toast keep their translateX(-50%). */
 dialog.sheet[open] { animation: rise var(--med) var(--ease); }
 dialog.sheet[open]::backdrop { animation: fade-in var(--med) var(--ease); }
 .gloss, .toast { animation: rise-c var(--med) var(--ease); }
+dialog.sheet.closing::backdrop { animation: fade-out 150ms var(--ease) forwards; }
+@keyframes fade-out { to { opacity: 0; } }
 @keyframes rise { from { opacity: 0; transform: translateY(8px); } }
 @keyframes rise-c { from { opacity: 0; transform: translate(-50%, 8px); } }
 

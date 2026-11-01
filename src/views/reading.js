@@ -8,20 +8,29 @@ import { makeSegmenter } from "../lib/segment.js";
 import { DICT } from "../data/index.js";
 import * as progress from "../progress/store.js";
 import { charLinks } from "./charsheet.js";
+import { animate } from "../lib/motion.js";
 
 const segment = makeSegmenter(DICT);
 
 /* ---------- Tap a word: meaning bar ---------- */
 function showGloss(t) {
   const g = $("#gloss");
+  g.getAnimations().forEach((a) => a.cancel()); // a fade-out in progress must not close the bar
   const info = DICT[t];
   g.innerHTML = `<span class="g-hz">${charLinks(t)}</span>
     <span class="g-txt">${info ? `<span class="py">${tonePy(info.py)}</span><span class="muted">${esc(info.en)}</span>` : `<span class="muted">No meaning saved yet</span>`}</span>
     ${sayBtns(t, info?.py || t, true)}
     <button class="sheet-close" type="button" id="glossClose" aria-label="Close">${icon("x")}</button>`;
   g.hidden = false;
-  $("#glossClose").addEventListener("click", hideGloss);
+  $("#glossClose").addEventListener("click", fadeGloss);
   say(t);
+}
+// The close button fades the bar out, then hides it. hideGloss stays instant for page and tab changes.
+function fadeGloss() {
+  const g = $("#gloss");
+  const a = animate(g, [{ opacity: 1, transform: "translateX(-50%)" }, { opacity: 0, transform: "translate(-50%, 8px)" }], { duration: 150 });
+  if (!a) return hideGloss();
+  a.onfinish = hideGloss; // a cancelled animation never gets here
 }
 export const hideGloss = () => { const g = $("#gloss"); if (g) g.hidden = true; };
 

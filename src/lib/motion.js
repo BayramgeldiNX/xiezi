@@ -5,11 +5,30 @@ export const EASE = "cubic-bezier(.2, .8, .2, 1)";
 export const MED = 200;
 
 const reduced = () => typeof matchMedia === "function" && matchMedia("(prefers-reduced-motion: reduce)").matches;
+export const motionOK = () => !reduced();
 
-// Web Animations with no fill mode, so nothing is left on the element afterwards. Does nothing under reduced motion.
+// Web Animations with no fill mode, so nothing is left on the element afterwards.
+// Returns the Animation, or undefined under reduced motion (callers needing an end step then do it at once).
 export function animate(el, keyframes, options = {}) {
-  if (!el || typeof el.animate !== "function" || reduced()) return;
-  el.animate(keyframes, { duration: MED, easing: EASE, ...options, fill: "none" });
+  if (!el || typeof el.animate !== "function" || reduced()) return undefined;
+  return el.animate(keyframes, { duration: MED, easing: EASE, ...options, fill: "none" });
+}
+
+/* ---------- Soft close for dialogs ---------- */
+export function softClose(dialog) {
+  if (!dialog?.open || dialog.classList.contains("closing")) return;
+  const done = () => { dialog.close(); dialog.classList.remove("closing"); };
+  dialog.classList.add("closing");
+  const a = animate(dialog, [{ opacity: 1, transform: "none" }, { opacity: 0, transform: "translateY(8px)" }], { duration: 150 });
+  if (!a) return done();
+  a.onfinish = done;
+}
+// Wire the close button and Esc of a dialog; the code's own .close() calls stay instant.
+export function wireSoftClose(dialog) {
+  if (!dialog) return;
+  dialog.addEventListener("close", () => dialog.classList.remove("closing"));
+  dialog.querySelector('form[method="dialog"]')?.addEventListener("submit", (e) => { e.preventDefault(); softClose(dialog); });
+  dialog.addEventListener("cancel", (e) => { e.preventDefault(); softClose(dialog); });
 }
 
 /* ---------- Page slides ---------- */
@@ -53,29 +72,68 @@ export function moveTabPill(tabsEl, instant) {
   pill.classList.add("ready");
 }
 
-/* ---------- Progress bars ---------- */
-// Exercises rebuild `.bar i` with innerHTML on every question, so a CSS transition never runs.
-// Grow the new bar from the width the last one had.
+/* ---------- One observer: progress bars, next question, answer reveal, end of exercise ---------- */
+// Exercises rebuild their `.panel` with innerHTML on every question, so a CSS transition never runs.
 let lastBar = 0;
-export function watchBars(root) {
+let lastQuestion = null; // `.progress` text of the last question shown
+export const forgetQuestion = () => { lastQuestion = null; };
+
+function reveal(el) {
+  const h = el.offsetHeight; // read before paint
+  if (!h) return;
+  const a = animate(el, [{ height: "0px", opacity: 0 }, { height: h + "px", opacity: 1 }]);
+  if (!a) return;
+  el.classList.add("revealing");
+  const end = () => el.classList.remove("revealing");
+  a.onfinish = end; a.oncancel = end;
+}
+
+export function watchMotion(root) {
   if (!root || typeof MutationObserver === "undefined") return;
-  const hasBar = (n) => n.nodeType === 1 && (n.matches(".bar") || n.querySelector(".bar"));
   new MutationObserver((muts) => {
-    let bars = null;
-    for (const m of muts) for (const n of m.addedNodes) {
-      if (!hasBar(n)) continue;
-      bars ||= [];
-      if (n.matches(".bar i")) bars.push(n);
-      bars.push(...n.querySelectorAll(".bar i"));
+    let bars = null, panels = null, scores = null, reveals = null, removedProgress = false;
+    for (const m of muts) {
+      if (m.type === "attributes") {
+        const t = m.target;
+        if (!t.hidden && t.matches?.(".answer")) (reveals ||= []).push(t);
+        continue;
+      }
+      const t = m.target;
+      if (m.addedNodes.length && !m.removedNodes.length && t.matches?.(".ty-feedback")) (reveals ||= []).push(t);
+      for (const n of m.removedNodes) if (n.nodeType === 1 && (n.matches(".progress") || n.querySelector(".progress"))) removedProgress = true;
+      for (const n of m.addedNodes) {
+        if (n.nodeType !== 1) continue;
+        if (n.matches(".bar") || n.querySelector(".bar")) {
+          bars ||= [];
+          if (n.matches(".bar i")) bars.push(n);
+          bars.push(...n.querySelectorAll(".bar i"));
+        }
+        if (n.matches(".panel")) (panels ||= []).push(n);
+        else if (n.firstElementChild) for (const p of n.querySelectorAll(".panel")) (panels ||= []).push(p);
+        if (n.matches(".score")) (scores ||= []).push(n);
+        else if (n.firstElementChild) for (const s of n.querySelectorAll(".score")) (scores ||= []).push(s);
+      }
     }
-    if (!bars) return;
-    for (const i of bars) {
+    if (bars) for (const i of bars) {
       const to = parseFloat(i.style.width) || 0;
       if (to < lastBar) lastBar = 0;
       if (to !== lastBar) animate(i, [{ width: lastBar + "%" }, { width: to + "%" }]);
       lastBar = to;
     }
-  }).observe(root, { childList: true, subtree: true });
+    if (panels) for (const p of panels) {
+      const prog = p.querySelector(":scope > .progress");
+      if (!prog || !p.querySelector(":scope > .bar")) continue;
+      const text = prog.textContent;
+      if (text === lastQuestion) continue;
+      lastQuestion = text;
+      for (const c of p.children) {
+        if (c.matches(".lbl, .progress, .bar")) continue;
+        animate(c, [{ transform: "translateX(16px)", opacity: 0 }, { transform: "none", opacity: 1 }]);
+      }
+    } else if (removedProgress && !root.querySelector(".panel > .progress")) lastQuestion = null;
+    if (scores) for (const s of scores) if (!s.closest(".review-hero")) animate(s, [{ transform: "translateY(8px)", opacity: 0 }, { transform: "none", opacity: 1 }], { duration: 250 });
+    if (reveals) for (const el of reveals) reveal(el);
+  }).observe(root, { childList: true, subtree: true, attributes: true, attributeFilter: ["hidden"] });
 }
 
 // iOS Safari only applies :active when the page has a touch listener.

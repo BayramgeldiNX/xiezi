@@ -8,6 +8,7 @@ import { setting, STROKE_SPEED } from "../lib/settings.js";
 import { gridSVG, stripSVG, makeWriter, trackWriter, clearWriters } from "../lib/draw.js";
 import { CHARS, STROKE_NAMES, STROKE_DATA, wordChars } from "../data/index.js";
 import { app } from "../app.js";
+import { animate, motionOK } from "../lib/motion.js";
 import * as progress from "../progress/store.js";
 import { charStatus, wordStatus } from "../progress/model.js";
 
@@ -15,6 +16,7 @@ import { charStatus, wordStatus } from "../progress/model.js";
 let activeCard = null;
 
 export function renderWords() {
+  lastWord = null; // a lesson was just opened: its first word does not animate
   const nav = $("#words");
   nav.innerHTML = "";
   app.L().words.forEach((w, i) => {
@@ -39,7 +41,11 @@ export function markWords() {
   });
 }
 
+// Which word was drawn last: only a change of word inside the same lesson animates (not redraws, not opening a lesson).
+let lastWord = null;
 export function renderWord(idx) {
+  const changed = !!lastWord && lastWord.lesson === app.L().id && lastWord.idx !== idx;
+  lastWord = { lesson: app.L().id, idx };
   clearWriters();
   app.word = idx;
   app.savePlace();
@@ -54,7 +60,11 @@ export function renderWord(idx) {
   const cs = wordChars(word);
   cs.forEach((c) => buildCharCard(host, c, cs.length === 1));
   const sel = $("#words button[aria-pressed=\"true\"]"), chips = $("#words");
-  if (sel && chips.scrollWidth > chips.clientWidth) chips.scrollTo({ left: sel.offsetLeft - (chips.clientWidth - sel.offsetWidth) / 2 });
+  if (sel && chips.scrollWidth > chips.clientWidth) chips.scrollTo({ left: sel.offsetLeft - (chips.clientWidth - sel.offsetWidth) / 2, behavior: changed && motionOK() ? "smooth" : "auto" });
+  if (changed) {
+    const fade = [{ opacity: 0 }, { opacity: 1 }];
+    for (const el of [$("#wordHead"), $("#example"), ...$$(".info", host), ...$$(".box .hw, .box .stepsvg", host)]) animate(el, fade, { duration: 150 });
+  }
   const nav = $("#wordNav");
   nav.innerHTML = `<button class="btn ghost" type="button" data-go="-1" ${idx === 0 ? "disabled" : ""}>${icon("back")} ${idx > 0 ? app.L().words[idx - 1].w : ""}</button>
     <button class="btn ghost" type="button" data-go="1" ${idx === app.L().words.length - 1 ? "disabled" : ""}>${idx < app.L().words.length - 1 ? app.L().words[idx + 1].w : ""} ${icon("next")}</button>`;

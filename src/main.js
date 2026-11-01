@@ -26,7 +26,7 @@ import { hideGloss } from "./views/reading.js";
 import { initAccountChip } from "./views/account.js";
 import { initSync } from "./sync/sync.js";
 import { initPWA } from "./pwa.js";
-import { animate, slideDirection, slidePage, moveTabPill, watchBars } from "./lib/motion.js";
+import { animate, slideDirection, slidePage, moveTabPill, watchMotion, forgetQuestion, wireSoftClose } from "./lib/motion.js";
 
 const TABS = ["write", "listen", "speak", "read", "words"];
 // Tabs of older versions (saved places, old links) → their new home.
@@ -46,10 +46,19 @@ let current = "home";
 let printLesson = null;
 let lastHash = null;       // the page hash of the last slide, null before the first page
 let browserAnimated = false; // the browser already animated this navigation (swipe back)
+// Quiet placeholder for a lesson that takes a moment to load. Always hidden again by showPage.
+let loadTimer = 0;
+function hideLoading() {
+  clearTimeout(loadTimer);
+  const el = $("#pageLoading");
+  if (el) el.hidden = true;
+}
 function showPage(id) {
   clearWriters();
   stopSpeech();
   hideGloss();
+  forgetQuestion();
+  if (id !== "loading") hideLoading();
   current = id;
   for (const p of PAGES) $("#" + p).hidden = p !== id;
   scrollTo(0, 0);
@@ -72,8 +81,16 @@ async function route() {
   if ((page === "lesson" || page === "print") && lessonIndex(`${a}/${b}`) >= 0) {
     // Nothing on screen while the shapes load: no empty Home on a reload, and no lesson to redraw without them.
     showPage("loading");
-    try { await loadStrokes(); } catch (e) { console.error(e); return showHome(); }
+    clearTimeout(loadTimer);
+    loadTimer = setTimeout(() => {
+      const el = $("#pageLoading");
+      if (token !== routeToken || !el || !el.hidden) return;
+      el.hidden = false;
+      animate(el, [{ opacity: 0 }, { opacity: 1 }], { duration: 150 });
+    }, 150);
+    try { await loadStrokes(); } catch (e) { console.error(e); hideLoading(); return showHome(); }
     if (token !== routeToken) return;
+    hideLoading();
   }
   if (page === "books") return showBooks();
   if (page === "print" && lessonIndex(`${a}/${b}`) >= 0) {
@@ -252,7 +269,7 @@ function showTab(tab, tapped = false) {
   stopSpeech();
   hideGloss();
   app.tab = tab;
-  $$(".tab").forEach((b) => b.setAttribute("aria-selected", b.dataset.tab === tab));
+  $$("[data-tab]").forEach((b) => b.setAttribute("aria-selected", b.dataset.tab === tab));
   for (const t of TABS) $("#tab-" + t).hidden = t !== tab;
   if (tab === "write") showWriteStudy();
   else openPractice(`#tab-${tab}`, tab, lessonCtx());
@@ -281,7 +298,7 @@ function showWriteStudy() {
   renderWord(app.word);
 }
 
-$$(".tab").forEach((b) => b.addEventListener("click", () => showTab(b.dataset.tab, true)));
+$$("[data-tab]").forEach((b) => b.addEventListener("click", () => showTab(b.dataset.tab, true)));
 $("#backBtn").addEventListener("click", () => back(upFrom()));
 $$("[data-back-to]").forEach((b) => b.addEventListener("click", () => back(b.dataset.backTo)));
 $("#openBooks").addEventListener("click", () => go("#/books"));
@@ -366,7 +383,9 @@ addEventListener("orientationchange", () => setTimeout(widthChanged, 300));
 
 /* ---------- Boot: the app icon opens Home; a reload stays on the same page ---------- */
 initAccountChip();
-watchBars($(".wrap"));
+watchMotion($(".wrap"));
+wireSoftClose($("#accountSheet"));
+wireSoftClose($("#charSheet"));
 route();
 document.fonts?.ready.then(() => $$(".tabs").forEach((t) => moveTabPill(t, true)));
 initSync();
