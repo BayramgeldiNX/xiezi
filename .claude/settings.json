@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "HTTPS_PROXY=http://127.0.0.1:7897 node --use-env-proxy scripts/notebook.mjs hook",
+            "timeout": 20
+          }
+        ]
+      }
+    ]
+  }
+}

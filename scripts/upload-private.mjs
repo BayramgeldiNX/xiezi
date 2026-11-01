@@ -5,33 +5,17 @@
 //   books/{book}/audio/{n}            { a: { <recording name>: mp3 bytes } }
 // Uses the Firebase CLI login on this computer. Prints no secrets.
 //   npm run upload:private [-- --email you@example.com]   (the email is only needed with several accounts)
-import { execSync } from "node:child_process";
 import crypto from "node:crypto";
 import fs from "node:fs";
-import os from "node:os";
-import path from "node:path";
-import { createRequire } from "node:module";
+import { ownerUid, accessToken, API } from "./lib-firebase.mjs";
 
-const PROJECT = JSON.parse(fs.readFileSync(new URL("../.firebaserc", import.meta.url))).projects.default;
 const PRIVATE = new URL("../data-src/private/", import.meta.url);
-const npmRoot = execSync("npm root -g", { encoding: "utf8" }).trim();
-const require = createRequire(path.join(npmRoot, "firebase-tools", "package.json"));
-const { configstore } = require("./lib/configstore.js");
-const auth = require("./lib/auth.js");
 
 // The owner: the only account, or the one named with --email.
-const tmp = path.join(os.tmpdir(), "xz-users.json");
-try { execSync(`firebase auth:export "${tmp}" --format=json --project ${PROJECT}`, { stdio: "ignore" }); } catch {}
-if (!fs.existsSync(tmp)) throw new Error("Couldn't export accounts. Run `firebase login` and check the VPN.");
-const users = JSON.parse(fs.readFileSync(tmp, "utf8")).users || [];
-fs.unlinkSync(tmp);
 const want = process.argv[process.argv.indexOf("--email") + 1];
-const owners = process.argv.includes("--email") ? users.filter((u) => u.email === want) : users;
-if (owners.length !== 1) throw new Error(`Found ${users.length} accounts; name the owner with --email.`);
-const owner = owners[0].localId;
-
-const { access_token: token } = await auth.getAccessToken(configstore.get("tokens").refresh_token, []);
-const api = `https://firestore.googleapis.com/v1/projects/${PROJECT}/databases/(default)/documents`;
+const owner = ownerUid({ email: process.argv.includes("--email") ? want : undefined, refresh: true });
+const token = await accessToken();
+const api = API;
 async function put(doc, fields) {
   const r = await fetch(`${api}/${doc}`, {
     method: "PATCH",
