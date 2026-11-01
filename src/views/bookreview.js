@@ -106,7 +106,7 @@ function showReview() {
       </button>`).join("")}</div>
     ${workbookOf(book.lessons).length ? `<div class="panel">
       <span class="lbl">模拟考试 · Practice test</span>
-      <p class="note">A test in the HSK style from the whole book: 10 listening questions (dialogues), then 10 reading questions (true or false, replies, grammar). Results count for your review too.</p>
+      <p class="note">A test in the HSK style from ${book.id === "all" ? "all your books" : "the whole book"}: 10 listening questions (dialogues), then 10 reading questions (true or false, replies, grammar). Results count for your review too.</p>
       <button class="btn big" type="button" id="rvTest">${icon("play")} Start the practice test</button>
     </div>` : ""}
     <p class="note">How it works: each word has its own schedule for each type. Right answers come back later each time (1 day, 3 days, 1 week, 2 weeks, 1 month…); wrong answers come back the next day.</p>`;

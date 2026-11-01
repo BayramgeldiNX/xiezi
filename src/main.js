@@ -37,7 +37,7 @@ const OLD_TABS = { dict: "write", review: "write", cards: "words", tones: "liste
    #/lesson/<book>/<n>/<tab>    a lesson (tabs: write, listen, speak, read, words)
    #/print/<book>/<n>           printable practice sheet for a lesson
    Each page has its own address, so the Android / browser back gesture steps back one page. */
-const PAGES = ["home", "typingView", "booksView", "bookView", "lessonView", "printView"];
+const PAGES = ["home", "reviewView", "typingView", "booksView", "bookView", "lessonView", "printView"];
 let current = "home";
 let printLesson = null;
 function showPage(id) {
@@ -59,6 +59,7 @@ function route() {
     const L = LESSONS[lessonIndex(`${a}/${b}`)];
     showPage("printView"); document.title = `${L.title} · 字帖`; printLesson = L.id; return openPrint(L);
   }
+  if (page === "review") { showPage("reviewView"); document.title = "Review · 写字本"; return openReview(ALL_BOOKS, "#allReview"); }
   if (page === "typing") { showPage("typingView"); document.title = "Typing · 写字本"; return openTyping(); }
   if (page === "book" && BOOKS.some((x) => x.id === a)) return showBook(a, b === "review" ? "review" : "lessons");
   if (page === "lesson") {
@@ -83,7 +84,7 @@ function back(to) {
   else go(to);
 }
 const upFrom = () => ({
-  booksView: "#/", typingView: "#/", bookView: "#/books", printView: `#/lesson/${printLesson}/write`,
+  booksView: "#/", reviewView: "#/", typingView: "#/", bookView: "#/books", printView: `#/lesson/${printLesson}/write`,
   lessonView: `#/book/${app.L()?.book}`,
 })[current];
 
@@ -143,7 +144,8 @@ function renderHub() {
   $("#hubBooksSub").textContent = BOOKS.map((b) => `${b.title} · ${b.part}`).join(" / ");
   const tdue = typingDue();
   $("#typingMeta").textContent = tdue ? `${tdue} to review` : "";
-  $("#hubMeta").textContent = `${LESSONS.length} lesson${LESSONS.length > 1 ? "s" : ""} · ${p.mastered}/${p.chars} characters mastered${due ? ` · ${due} to review` : ""}`;
+  $("#hubMeta").textContent = `${LESSONS.length} lesson${LESSONS.length > 1 ? "s" : ""} · ${p.mastered}/${p.chars} characters mastered`;
+  $("#reviewMeta").textContent = due ? `${due} to review` : "Nothing to review right now";
 }
 
 /* ---------- Books ---------- */
@@ -262,6 +264,7 @@ $$(".tab").forEach((b) => b.addEventListener("click", () => showTab(b.dataset.ta
 $("#backBtn").addEventListener("click", () => back(upFrom()));
 $$("[data-back-to]").forEach((b) => b.addEventListener("click", () => back(b.dataset.backTo)));
 $("#openBooks").addEventListener("click", () => go("#/books"));
+$("#openReview").addEventListener("click", () => go("#/review"));
 $("#openTyping").addEventListener("click", () => go("#/typing"));
 $("#printBack").addEventListener("click", () => back(upFrom()));
 $("#wordNav").addEventListener("click", (e) => {

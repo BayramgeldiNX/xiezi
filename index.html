@@ -51,6 +51,14 @@
     <button class="continue" type="button" id="resume" hidden></button>
 
     <nav class="hub" aria-label="Sections">
+      <button class="hub-card wide" type="button" id="openReview">
+        <span class="seal red" aria-hidden="true">复</span>
+        <span class="hub-txt">
+          <b>Review<span class="hub-cn">复习</span></b>
+          <span class="hub-sub" id="reviewMeta"></span>
+        </span>
+        <span class="chev" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></span>
+      </button>
       <button class="hub-card wide" type="button" id="openBooks">
         <span class="seal red" aria-hidden="true">书</span>
         <span class="hub-txt">
@@ -70,6 +78,15 @@
         <span class="chev" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></span>
       </button>
     </nav>
+  </section>
+
+  <!-- REVIEW (all books) -->
+  <section id="reviewView" class="page" hidden>
+    <div class="topbar">
+      <button class="back" type="button" data-back-to="#/" aria-label="Home"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <div><span class="eyebrow">复 · 复习</span><h2>Review</h2></div>
+    </div>
+    <div id="allReview" class="inner"></div>
   </section>
 
   <!-- TYPING -->
