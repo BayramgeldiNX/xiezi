@@ -109,15 +109,16 @@ function place() {
 }
 
 /* ---------- Progress summaries ---------- */
+const countMastered = (chars) => chars.filter((c) => charStatus(progress.get("w:" + c)) === "mastered").length;
 function lessonProgress(l) {
   const chars = lessonChars(l);
-  const mastered = chars.filter((c) => charStatus(progress.get("w:" + c)) === "mastered").length;
   const known = l.words.filter((w) => wordStatus({ word: w.w, list: wordChars(w) }, progress.get) === "known").length;
-  return { chars: chars.length, mastered, known };
+  return { chars: chars.length, mastered: countMastered(chars), known };
 }
+// A character shared by several lessons or books counts once.
 function sumProgress(lessons) {
-  const all = lessons.map(lessonProgress);
-  return { chars: all.reduce((t, p) => t + p.chars, 0), mastered: all.reduce((t, p) => t + p.mastered, 0) };
+  const chars = [...new Set(lessons.flatMap((l) => lessonChars(l)))];
+  return { chars: chars.length, mastered: countMastered(chars) };
 }
 const pct = (a, b) => (b ? Math.round((a / b) * 100) : 0);
 
