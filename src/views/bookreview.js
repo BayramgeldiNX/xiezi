@@ -2,7 +2,7 @@
 // with spaced repetition. A word is due in a type when that type's schedule says so.
 import { $, $$, esc, shuffle } from "../lib/util.js";
 import { icon } from "../lib/icons.js";
-import { wordsOf, READINGS, grammarOf } from "../data/index.js";
+import { wordsOf, LESSONS, READINGS, grammarOf } from "../data/index.js";
 import * as progress from "../progress/store.js";
 import { latest, nextReview, isDue } from "../progress/model.js";
 import { setHost, listenQuiz, vocabQuiz, speak, lessonSentences, grammarQuiz, ui } from "./practice.js";
@@ -50,6 +50,9 @@ function scan(t) {
   const upcoming = practiced.filter((r) => !r.due).sort((a, b) => a.at - b.at);
   return { due, upcoming, practiced: practiced.length, total: rows.length, next: upcoming[0]?.at ?? null };
 }
+
+// Every lesson of every book as one "book", for the Home review (shared words count once).
+export const ALL_BOOKS = { id: "all", title: "All books", lessons: LESSONS };
 
 export function dueCount(b) {
   const prev = book;

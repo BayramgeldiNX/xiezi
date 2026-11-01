@@ -2,6 +2,16 @@ export const $ = (s, el = document) => el.querySelector(s);
 export const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 export const css = (n) => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
 
+// mode, or for "mixed" a random pick that stays the same for a word during this round.
+export function directionPicker(mode, a, b) {
+  const picked = new Map();
+  return (x) => {
+    if (mode !== "mixed") return mode;
+    if (!picked.has(x.w)) picked.set(x.w, Math.random() < 0.5 ? a : b);
+    return picked.get(x.w);
+  };
+}
+
 // localStorage that never throws (private mode, blocked storage, full disk).
 export const store = {
   get(k, d) {

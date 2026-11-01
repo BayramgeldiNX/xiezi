@@ -28,9 +28,11 @@ export function dictIntro(opts = {}) {
   const words = opts.words || app.L().words;
   const prompt = opts.prompt || "audio";
   const p = PROMPT[prompt];
+  const hintAfter = setting("hintAfter");
+  const hintNote = hintAfter ? ` After ${hintAfter + 1} mistakes on one stroke, it shows you a hint.` : "";
   $(hostSel).innerHTML = `<div class="panel">
     <span class="lbl">${opts.title || p.title}</span>
-    <p>${p.how} After 3 mistakes on one stroke, it shows you a hint.</p>
+    <p>${p.how}${hintNote}</p>
     <p class="note">${prompt === "audio" ? "Turn your sound on. " : ""}${words.length} word${words.length > 1 ? "s" : ""}, in random order.</p>
     <div class="controls">
       <button class="btn primary big" type="button" id="dictStart">${icon("play")} Start</button>

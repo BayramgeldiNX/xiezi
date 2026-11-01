@@ -2,7 +2,7 @@
 // openPractice(host, skill, ctx) shows a skill's exercises for ctx.words inside `host`.
 // Every exercise can also run on its own with fixed items and a `then` callback, so the
 // book Review can chain several of them into one mixed session.
-import { $, $$, esc, shuffle } from "../lib/util.js";
+import { $, $$, esc, shuffle, directionPicker } from "../lib/util.js";
 import { tonePy, stripTone } from "../lib/pinyin.js";
 import { say, autoSay, sayBtns, stopSpeech } from "../lib/speech.js";
 import { icon } from "../lib/icons.js";
@@ -125,7 +125,7 @@ const enLabel = (x) => `<span class="en">${esc(x.en)}</span>`;
 
 // Listening: hear a word, pick the word or its meaning. mode: "word" | "meaning" | "mixed"
 export function listenQuiz({ items, pool, mode = "mixed", title = "Listening", kind = "listen", then }) {
-  const pick = (x) => (mode === "mixed" ? (x.w.charCodeAt(0) + x.w.length) % 2 ? "word" : "meaning" : mode);
+  const pick = directionPicker(mode, "word", "meaning");
   choiceQuiz({ kind, title, items, key: "l:", then,
     ask: (w) => ({ html: `<p class="hint">${pick(w) === "word" ? "Which word do you hear?" : "What does it mean?"}</p>`, say: w.w }),
     makeOptions: (w) => wordChoices(w, pool || items, pick(w) === "word" ? hzLabel : enLabel),
@@ -134,7 +134,7 @@ export function listenQuiz({ items, pool, mode = "mixed", title = "Listening", k
 
 // Vocabulary: see the word → pick the meaning, or see the meaning → pick the word.
 export function vocabQuiz({ items, pool, mode = "mixed", title = "Vocabulary", kind = "vocab", then }) {
-  const pick = (x) => (mode === "mixed" ? (x.w.charCodeAt(0) + x.w.length) % 2 ? "meaning" : "word" : mode);
+  const pick = directionPicker(mode, "word", "meaning");
   choiceQuiz({ kind, title, items, key: "q:", then,
     ask: (w) => ({ html: pick(w) === "meaning" ? `<div class="big-hz">${w.w}</div>` : `<div class="prompt-big">${esc(w.en)}</div>` }),
     makeOptions: (w) => wordChoices(w, pool || items, pick(w) === "meaning" ? enLabel : hzLabel),

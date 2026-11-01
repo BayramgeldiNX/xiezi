@@ -16,7 +16,7 @@ import { dictRedraw } from "./views/dictation.js";
 import { cardsKey } from "./views/cards.js";
 import { tonesKey } from "./views/tones.js";
 import { openPractice, runMode, SKILLS, modeAvailable } from "./views/practice.js";
-import { openReview, dueCount } from "./views/bookreview.js";
+import { openReview, dueCount, ALL_BOOKS } from "./views/bookreview.js";
 import { openTyping, typingDue } from "./views/typing.js";
 import "./views/charsheet.js";
 import { openPrint } from "./views/printsheet.js";
@@ -138,7 +138,7 @@ function showHome() {
 
 function renderHub() {
   const p = sumProgress(LESSONS);
-  const due = BOOKS.reduce((n, b) => n + dueCount(b), 0);
+  const due = dueCount(ALL_BOOKS);
   $("#hubBar").style.width = `${pct(p.mastered, p.chars)}%`;
   $("#hubBooksSub").textContent = BOOKS.map((b) => `${b.title} · ${b.part}`).join(" / ");
   const tdue = typingDue();
