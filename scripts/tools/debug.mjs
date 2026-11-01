@@ -71,10 +71,10 @@ const STEPS = [
 ];
 const SKILL_MODES = {
   writing: ["dict", "pinyin", "meaning", "chars"],
-  listening: ["pick-word", "pick-meaning", "sentence", "tones"],
+  listening: ["hear", "sentence", "tones"],
   speaking: ["say-word", "say-sentence"],
   reading: ["texts", "text-quiz", "order", "read-pinyin"],
-  vocab: ["cards", "match", "quiz-meaning", "quiz-word", "list"],
+  vocab: ["cards", "match", "word-quiz", "list"],
 };
 const MODE_STEP = `
   const b = document.querySelector('#skillBody');

@@ -100,10 +100,10 @@ const STEPS = [
 ];
 for (const m of ["dict", "pinyin", "meaning"]) STEPS.push([`write-${m}`, `${B}/write`, `document.querySelector('[data-wmode="${m}"]').click(); ${W} ${MODE_STEP("#writePractice")}`]);
 const TAB_MODES = {
-  listen: ["pick-word", "pick-meaning", "sentence", "tones"],
+  listen: ["hear", "sentence", "tones"],
   speak: ["say-word", "say-sentence"],
   read: ["texts", "text-quiz", "order", "read-pinyin"],
-  words: ["cards", "match", "quiz-meaning", "quiz-word", "list"],
+  words: ["cards", "match", "word-quiz", "list"],
 };
 for (const [tab, modes] of Object.entries(TAB_MODES)) {
   STEPS.push([`tab-${tab}`, `${B}/${tab}`]);

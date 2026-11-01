@@ -38,8 +38,7 @@ export const SKILLS = {
   listen: {
     seal: "听", name: "Listen",
     modes: [
-      { id: "pick-word", seal: "字", name: "Hear & pick the word", sub: "Listen, then choose the characters" },
-      { id: "pick-meaning", seal: "意", name: "Hear & pick the meaning", sub: "Listen, then choose the English" },
+      { id: "hear", seal: "听", name: "Hear the word", sub: "Listen, then pick the word or its meaning" },
       { id: "sentence", seal: "句", name: "Sentences", sub: "Listen to a sentence, choose what it means" },
       { id: "tones", seal: "声", name: "Tones", sub: "Hear a syllable, pick its tone" },
       { id: "pron", seal: "音", name: "Pronunciation tips", sub: "Tone changes and sound rules, with examples" },
@@ -71,8 +70,7 @@ export const SKILLS = {
     modes: [
       { id: "cards", seal: "卡", name: "Flashcards", sub: "Flip, then say if you knew it" },
       { id: "match", seal: "配", name: "Match pairs", sub: "Match each word to its meaning" },
-      { id: "quiz-meaning", seal: "意", name: "What does it mean?", sub: "See the word, pick the English" },
-      { id: "quiz-word", seal: "选", name: "Which word?", sub: "See the English, pick the word" },
+      { id: "word-quiz", seal: "选", name: "Word quiz", sub: "See a word or its meaning, pick the match" },
       { id: "radical", seal: "部", name: "Which radical?", sub: "Find the radical (部首) in each character" },
       { id: "list", seal: "表", name: "Word list", sub: "All words with pinyin and sound" },
     ],
@@ -159,8 +157,7 @@ function startMode(mode) {
     case "dict": return dictIntro({ host, words, prompt: "audio", kind: "dict", back, lesson });
     case "pinyin": return dictIntro({ host, words, prompt: "pinyin", kind: "dict-pinyin", back, lesson });
     case "meaning": return dictIntro({ host, words, prompt: "meaning", kind: "dict-meaning", back, lesson });
-    case "pick-word": return words.length < 2 ? notEnough() : listenQuiz({ items: ten(words), pool: words, mode: "word", title: "Hear & pick the word" });
-    case "pick-meaning": return words.length < 2 ? notEnough() : listenQuiz({ items: ten(words), pool: words, mode: "meaning", title: "Hear & pick the meaning" });
+    case "hear": return words.length < 2 ? notEnough() : listenQuiz({ items: ten(words), pool: words, mode: "mixed", title: "Hear the word" });
     case "sentence": {
       const sw = sentenceItems(words);
       if (sw.length < 2) return notEnough();
@@ -174,8 +171,7 @@ function startMode(mode) {
     case "say-sentence": return speak({ title: "Say the sentence", items: ten(sentenceItems(words)).map((w) => ({ w, text: w.ex.hz.replace(/[AB]: /g, ""), py: w.ex.py.replace(/[AB]: /g, ""), en: w.ex.en, sentence: true })) });
     case "cards": return cardsOpen({ host, words, lesson, back });
     case "match": return matchGame(words);
-    case "quiz-meaning": return words.length < 2 ? notEnough() : vocabQuiz({ items: ten(words), pool: words, mode: "meaning", title: "What does it mean?" });
-    case "quiz-word": return words.length < 2 ? notEnough() : vocabQuiz({ items: ten(words), pool: words, mode: "word", title: "Which word?" });
+    case "word-quiz": return words.length < 2 ? notEnough() : vocabQuiz({ items: ten(words), pool: words, mode: "mixed", title: "Word quiz" });
     case "list": return wordList(words);
     case "texts": return withBook((b) => textList(ui, [...b.texts, ...readings], bookNote(b)));
     case "grammar": return withBook((b) => grammarNotes(b));
