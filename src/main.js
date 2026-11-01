@@ -159,7 +159,7 @@ function showBooks() {
         <span class="lp"><span class="lp-bar" aria-hidden="true"><i style="width:${pct(p.mastered, p.chars)}%"></i></span><span class="lp-txt">${p.mastered}/${p.chars} characters mastered</span></span></span>
       <span class="chev" aria-hidden="true">${icon("next")}</span>
     </button>`;
-  }).join("") + `<div class="book-soon">More books coming: send a PDF or photos of the lesson pages.</div>`;
+  }).join("");
   $$("[data-book]", $("#bookList")).forEach((el) => el.addEventListener("click", () => go(`#/book/${el.dataset.book}`)));
 }
 
@@ -205,11 +205,6 @@ function renderLessonList(book) {
     });
     list.appendChild(b);
   });
-  const n = book.lessons.length + 1;
-  const soon = document.createElement("div");
-  soon.className = "lesson-row soon";
-  soon.innerHTML = `<span class="num">${NUM[n] || n}</span><span class="txt"><b>Lesson ${n} · coming soon</b></span>`;
-  list.appendChild(soon);
 }
 
 /* ---------- Lesson: 写 听 说 读 词 ---------- */

@@ -32,10 +32,10 @@ function toneQuestions(source) {
 let tq = null;
 let tOpts = {};
 
-// opts: { host, words, label, lesson, back }; {} = the open lesson's Tones tab; no argument = same set again.
+// opts: { host, words, label, lesson, back }; no argument = same set again.
 export function tonesIntro(opts) {
   tq = null;
-  if (opts) tOpts = { host: "#tab-tones", words: app.L().words, label: `${app.L().cn} characters`, lesson: app.L().n, ...opts };
+  if (opts) tOpts = { ...opts };
   $(tOpts.host).innerHTML = `<div class="panel">
     <span class="lbl">声调 shēngdiào · Tone quiz</span>
     <p>Listen to one syllable, then tap its tone. 10 questions.</p>

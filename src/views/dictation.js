@@ -1,4 +1,4 @@
-// Write a word from memory. Used by the lesson's Dictation tab, Review, and the Writing section.
+// Write a word from memory. Used by the lesson practice menu, Review, and the Writing section.
 // prompt: "audio" (听写: hear it), "pinyin" (see the pinyin) or "meaning" (see the English).
 import { $, $$, css, shuffle, esc } from "../lib/util.js";
 import { tonePy } from "../lib/pinyin.js";
@@ -18,13 +18,13 @@ const PROMPT = {
 };
 
 let dict = null;
-let hostSel = "#tab-dict";
+let hostSel = null;
 
 // opts: { host, words, title, prompt, kind, back, lesson, autostart, then }
 // autostart: skip the start screen (Review). then(result): continue a review chain instead of showing results.
 export function dictIntro(opts = {}) {
   dict = null;
-  hostSel = opts.host || "#tab-dict";
+  hostSel = opts.host;
   const words = opts.words || app.L().words;
   const prompt = opts.prompt || "audio";
   const p = PROMPT[prompt];
@@ -50,8 +50,9 @@ export function dictIntro(opts = {}) {
 
 // A dictation is on screen (not just left unfinished on another page).
 export const dictActive = () => {
+  if (!dict) return false;
   const host = $(hostSel);
-  return !!dict && dict.pos < dict.order.length && !!host?.querySelector(".dict-boxes") && !host.closest("[hidden]");
+  return dict.pos < dict.order.length && !!host?.querySelector(".dict-boxes") && !host.closest("[hidden]");
 };
 
 export function dictWord() {

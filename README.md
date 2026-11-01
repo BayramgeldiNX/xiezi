@@ -39,10 +39,10 @@ Then open 写字本 from the icon. It runs full screen and works without interne
 Each book is a folder `src/data/books/<book-id>/` with `book.json` (title, part, English name, cover color)
 and one `lessonNN.json` per lesson. Lesson 1 of 汉语口语速成 · 入门篇 is in `src/data/books/kouyu-rumen/`.
 
-1. Write `lessons-in/lessonNN.tsv`: first line is the Chinese title, then one word per line, tab-separated:
-   `word  pinyin  English  example汉字  example pinyin  example English`
-2. `npm run add-lesson -- <book-id> lessons-in/lessonNN.tsv` creates the lesson and lists what to fill in
-   (meanings, memory tricks and stroke names for new characters, in `src/data/chars.json`).
+1. Write the lesson sources in `data-src/` (word lists, grammar, workbook; see `CLAUDE.md`, "Adding or changing book content").
+2. `node scripts/import-book.mjs <book> <public.txt> <grammar.txt> <workbook.txt> [extra.json]` creates the lesson files
+   and adds new characters to `src/data/chars.json`. Check the guessed stroke names and fill in meanings and
+   memory tricks (`scripts/tools/apply-chars.mjs data-src/<book>-chars.txt`).
 3. Optional: reading texts in the lesson file's `"readings"` (lines with `who`, `hz`, `py`, `en`, plus
    multiple-choice `questions`). Words used in texts that aren't lesson words go in `src/data/glossary.json`.
 4. `npm run gen:data` (stroke shapes + checks), `npm run gen:font` (font; needs `fonts-src/NotoSerifSC-VF.ttf`,

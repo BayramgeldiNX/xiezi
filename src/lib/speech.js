@@ -42,7 +42,6 @@ function pickVoice() {
 }
 try { pickVoice(); speechSynthesis.addEventListener("voiceschanged", pickVoice); } catch {}
 
-export const hasVoice = () => !!zhVoice;
 // Can this text be heard on this device?
 export const canSay = (text) => hasRecording(text) || !!zhVoice;
 

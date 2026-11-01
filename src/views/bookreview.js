@@ -39,7 +39,6 @@ function itemsOf(t) {
 
 // For every item of a type: its schedule state.
 function scan(t) {
-  if (t.soon) return { due: [], practiced: 0, total: 0, next: null };
   const now = Date.now();
   const rows = itemsOf(t).map((it) => {
     const stat = latest(t.keys.map((k) => progress.get(k + it.id)));
@@ -100,10 +99,10 @@ function showReview() {
       : `<p>Nothing to review yet. Practice this book's lessons first; every word you practice comes back here at the right time.</p>`}
     </div>
     <div class="mode-grid review-types">${scans.map(({ t, due, practiced, total: n }) => `
-      <button class="mode-card" type="button" data-type="${t.id}" ${t.soon || (!due.length && !practiced) ? "disabled" : ""}>
+      <button class="mode-card" type="button" data-type="${t.id}" ${!due.length && !practiced ? "disabled" : ""}>
         <span class="seal ${due.length ? "red" : ""}">${t.seal}</span>
         <b>${t.name} ${due.length ? `<span class="due">${due.length} due</span>` : ""}</b>
-        <small>${t.soon ? t.sub : `${t.sub} · ${practiced}/${n} practiced`}</small>
+        <small>${t.sub} · ${practiced}/${n} practiced</small>
       </button>`).join("")}</div>
     ${workbookOf(book.lessons).length ? `<div class="panel">
       <span class="lbl">模拟考试 · Practice test</span>
@@ -124,7 +123,7 @@ function showReview() {
 /* ---------- Sessions ---------- */
 // Mixed: a few due items of each type (or the soonest ones when practicing ahead), one type after another.
 function startMixed(scans, ahead) {
-  const pools = scans.filter((s) => !s.t.soon).map((s) => ({ t: s.t, list: [...(ahead ? s.upcoming : s.due)] }));
+  const pools = scans.map((s) => ({ t: s.t, list: [...(ahead ? s.upcoming : s.due)] }));
   const picked = pools.map((p) => ({ t: p.t, items: [] }));
   // Take items round-robin across types so every type is represented.
   for (let n = 0; n < MIXED; ) {

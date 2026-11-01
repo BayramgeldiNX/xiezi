@@ -1,4 +1,4 @@
-// Flashcards. Used by the lesson's Cards tab and the Vocabulary section.
+// Flashcards. Used by the lesson practice menu and the Vocabulary section.
 import { $, $$, shuffle, store } from "../lib/util.js";
 import { tonePy } from "../lib/pinyin.js";
 import { autoSay, sayBtns } from "../lib/speech.js";
@@ -13,7 +13,7 @@ export function cardsStart(dir, opts = deck?.opts || {}) {
   dir = dir || store.get("hz-cards-dir", "hz");
   store.set("hz-cards-dir", dir);
   const words = opts.words || app.L().words;
-  deck = { dir, opts, words, host: opts.host || "#tab-cards", queue: shuffle(words.map((_, i) => i)), known: 0, again: new Set(), flipped: false };
+  deck = { dir, opts, words, host: opts.host, queue: shuffle(words.map((_, i) => i)), known: 0, again: new Set(), flipped: false };
   cardsRender();
 }
 export const cardsOpen = (opts) => { deck = null; cardsStart(null, opts); };
