@@ -95,7 +95,7 @@ function renderSheet() {
       <label class="btn" for="importFile">Load backup</label>
       <input type="file" id="importFile" accept="application/json,.json" hidden>
     </div>
-    <p class="note">Notebook dictionary: <a href="https://cc-cedict.org/" target="_blank" rel="noopener">CC-CEDICT</a>, CC BY-SA 4.0.</p>
+    <p class="note">Notebook dictionary: <a class="tap-link" href="https://cc-cedict.org/" target="_blank" rel="noopener">CC-CEDICT</a>, CC BY-SA 4.0.</p>
     <p class="note">This device: <code>${progress.deviceId()}</code> · Version: <code>${__BUILD__}</code></p>`;
   body.querySelectorAll("[data-theme-set]").forEach((b) => b.addEventListener("click", () => {
     setTheme(b.dataset.themeSet);

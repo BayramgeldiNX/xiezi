@@ -1,7 +1,7 @@
 // End-to-end sync test against the LOCAL Firebase emulators (demo project, nothing real).
 // Two separate headless Edge browsers = two devices with separate storage.
 // Usage (3 terminals): npm run emulators · npm run dev:emulator · npm run test:sync
-import { spawn } from "node:child_process";
+import { spawn, execFileSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
@@ -170,6 +170,57 @@ try {
   const placeTime = await A.js(`return JSON.parse(localStorage.getItem('hz-state')).at`);
   await B.js(`const s = await import('/xiezi/src/progress/store.js'); return s.applyRemotePlace({ lid: 'hsk1/1', word: 0, tab: 'write', at: ${placeTime} - 1000 });`);
   check("An older place never replaces a newer one", (await B.js(`return JSON.parse(localStorage.getItem('hz-state')).lid`)) === "hsk2/3");
+
+  // 13. Notebook: words sync field by field; Claude's fill (scripts/notebook.mjs) never overwrites an edit.
+  const nbWord = (d, w) => d.js(`const n = await import('/xiezi/src/notebook/store.js'); return n.getWord(${JSON.stringify(w)});`);
+  const nbDo = (d, code) => d.js(`const n = await import('/xiezi/src/notebook/store.js'); ${code}; return true;`);
+  const waitFor = async (fn, ms = 15000) => { const t0 = Date.now(); while (Date.now() - t0 < ms) { const v = await fn(); if (v) return v; await sleep(400); } return null; };
+  const homeStats = (d) => d.js(`return document.querySelector('#reviewMeta').textContent + ' | ' + document.querySelector('#hubMeta').textContent`);
+  const homeA = await homeStats(A), homeB = await homeStats(B);
+
+  await nbDo(A, `n.addWord('外卖')`);
+  const bGot = await waitFor(async () => (await nbWord(B, "外卖"))?.w === "外卖");
+  check("Notebook: A saves a word, B gets it", !!bGot);
+
+  // B edits the meaning before Claude fills the word in.
+  await nbDo(B, `n.update('外卖', { en: 'takeout (B)' })`);
+  await waitFor(async () => (await nbWord(A, "外卖"))?.en === "takeout (B)");
+  const file = path.join(os.tmpdir(), `xz-nb-${crypto.randomBytes(4).toString("hex")}.json`);
+  fs.writeFileSync(file, JSON.stringify([{
+    w: "外卖", py: "wài mài", en: "takeout (Claude)", wordTrick: "Outside + sell.",
+    sentence: { cn: "今天我点了外卖。", py: "Jīntiān wǒ diǎn le wàimài.", en: "I ordered takeout today." }, charTricks: { 卖: "sell" },
+  }]));
+  const out = execFileSync(process.execPath, ["scripts/notebook.mjs", "save", file, "--emulator", "--uid", login.localId], { encoding: "utf8" });
+  check("Notebook: save --emulator fills the word", /Saved 1 word/.test(out), out.trim());
+  const filled = (d) => waitFor(async () => { const e = await nbWord(d, "外卖"); return e?.status === "filled" ? e : null; });
+  const ea = await filled(A), eb = await filled(B);
+  check("Notebook: A shows the fill", ea?.py === "wài mài" && ea?.sentence?.cn === "今天我点了外卖。" && ea?.charTricks?.卖 === "sell", JSON.stringify(ea));
+  check("Notebook: B shows the fill", eb?.py === "wài mài" && eb?.sentence?.cn === "今天我点了外卖。" && eb?.wordTrick === "Outside + sell.", JSON.stringify(eb));
+  check("Notebook: an edit made before the fill is not overwritten (A and B)", ea?.en === "takeout (B)" && eb?.en === "takeout (B)", `${ea?.en} / ${eb?.en}`);
+
+  // A deleted word stays deleted on both devices, and save skips it.
+  await nbDo(A, `n.addWord('奶茶')`);
+  await waitFor(async () => (await nbWord(B, "奶茶"))?.w === "奶茶");
+  await nbDo(B, `n.remove('奶茶')`);
+  const gone = await waitFor(async () => (await nbWord(A, "奶茶"))?.deleted === true);
+  check("Notebook: a word deleted on B is deleted on A", !!gone);
+  fs.writeFileSync(file, JSON.stringify([{ w: "奶茶", py: "nǎi chá", en: "milk tea", wordTrick: "x" }]));
+  const out2 = execFileSync(process.execPath, ["scripts/notebook.mjs", "save", file, "--emulator", "--uid", login.localId], { encoding: "utf8" });
+  await sleep(1500);
+  const ta = await nbWord(A, "奶茶"), tb = await nbWord(B, "奶茶");
+  check("Notebook: save skips a deleted word", /Saved 0 words/.test(out2) && /1 deleted/.test(out2), out2.trim());
+  check("Notebook: the deleted word stays deleted and empty on both", ta?.deleted === true && tb?.deleted === true && !ta.py && !tb.py, JSON.stringify([ta?.py, tb?.py]));
+  const countOut = execFileSync(process.execPath, ["scripts/notebook.mjs", "count", "--emulator", "--uid", login.localId], { encoding: "utf8" }).trim();
+  check("Notebook: count ignores filled and deleted words", countOut === "0", countOut);
+  fs.unlinkSync(file);
+
+  // Review results (nb:) sync like any other, and book counts on Home don't move.
+  await A.record("nb:外卖", true);
+  const nbStat = await waitFor(async () => { const r = await B.get("nb:外卖"); return r?.n === 1 ? r : null; });
+  check("Notebook: nb: results reach B", !!nbStat);
+  await sleep(1000);
+  check("Notebook: Home's book counts do not change (A)", (await homeStats(A)) === homeA, `${homeA} -> ${await homeStats(A)}`);
+  check("Notebook: Home's book counts do not change (B)", (await homeStats(B)) === homeB, `${homeB} -> ${await homeStats(B)}`);
 
   check("No JS errors on either device", A.errors.length === 0 && B.errors.length === 0, [...A.errors, ...B.errors].join(" | "));
 } finally {

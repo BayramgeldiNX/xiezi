@@ -104,9 +104,11 @@ async function saveOne(c, item) {
     try { doc = fromDoc(await call(c, url)); } catch (e) { if (e.status === 404) return "missing"; throw e; }
     if (doc.deleted) return "deleted";
     const { fields, paths } = plan(doc, item);
-    const q = paths.map((p) => "updateMask.fieldPaths=" + encodeURIComponent(p)).join("&") + "&currentDocument.updateTime=" + encodeURIComponent(doc._time);
     try {
-      await call(c, `${url}?${q}`, { method: "PATCH", body: JSON.stringify({ fields }) });
+      // One conditional write: it fails if the word changed since it was read (an edit from a device).
+      await call(c, `${c.base}:commit`, { method: "POST", body: JSON.stringify({ writes: [{
+        update: { name: doc._name, fields }, updateMask: { fieldPaths: paths }, currentDocument: { updateTime: doc._time },
+      }] }) });
       return "saved";
     } catch (e) {
       if (!/precondition|aborted/i.test(e.message) && e.status !== 409 && e.status !== 412) throw e; // changed meanwhile: read it again

@@ -68,6 +68,14 @@ const STEPS = [
   ["lesson-cards", "#/lesson/kouyu-rumen/1/cards", `document.querySelector('#fcFlip').click(); ${W} document.querySelector('#fcAgainOne').click(); ${W}`],
   ["lesson-tones", "#/lesson/kouyu-rumen/1/tones", `document.querySelector('[data-src=classic]').click(); ${W} document.querySelector('.tone-opt').click(); ${W}`],
   ["lesson-review", "#/lesson/kouyu-rumen/1/review"],
+  // Notebook: the first step saves two words (they stay in this browser profile for the next steps).
+  ["notebook", "#/notebook", `for (const w of ['饺子', '麻辣烫']) { const i = document.querySelector('#nbInput'); if (!i) break; i.value = w; document.querySelector('#nbAdd').requestSubmit(); ${W} ${W} }`],
+  ["notebook-word", "#/notebook/%E9%A5%BA%E5%AD%90", `document.querySelector('[data-stroke]').click(); ${W} ${W}`],
+  ["notebook-review", "#/notebook", `document.querySelector('#nbReview').click(); ${W} ${W} document.querySelector('#fcFlip')?.click(); ${W}`],
+  ["notebook-flash", "#/notebook", `document.querySelector('[data-nbp=flash]').click(); ${W} document.querySelector('[data-dir=mixed]').click(); ${W} document.querySelector('#fcFlip').click(); ${W}`],
+  ["notebook-listen", "#/notebook", `document.querySelector('[data-nbp=listen]').click(); ${W} document.querySelector('.choice').click(); ${W}`],
+  ["notebook-write", "#/notebook", `document.querySelector('[data-nbp=write]').click(); ${W} ${W} ${W} document.querySelector('#wShow').click(); ${W}`],
+  ["notebook-gap", "#/notebook", `document.querySelector('[data-nbp=gap]').click(); ${W}`],
 ];
 const SKILL_MODES = {
   writing: ["dict", "pinyin", "meaning", "chars"],
@@ -105,7 +113,7 @@ for (const s of SIZES) {
     if (act) await run(act);
     const found = await run(CHECK);
     for (const f of found || []) problems.push(`[${where}] ${f}`);
-    if (["home", "lesson-write", "reading-texts", "vocab-match", "settings", "speaking-say-word"].includes(name)) {
+    if (["home", "notebook-word", "notebook-write", "lesson-write", "reading-texts", "vocab-match", "settings", "speaking-say-word"].includes(name)) {
       const shot = await send("Page.captureScreenshot", { format: "png" });
       if (shot?.data) fs.writeFileSync(path.join(outDir, `${s.name}-${name}.png`), Buffer.from(shot.data, "base64"));
     }

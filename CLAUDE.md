@@ -28,6 +28,7 @@ The owner uses it on iPhone 16 (home-screen PWA), Mi Pad 7 Pro and Windows. Prog
   - `bookreview.js`: review and the HSK-style practice test.
   - `workbook.js`: workbook quizzes. `hanzi.js`: character lessons and pronunciation tips.
   - `search.js`: search all words (matcher in `lib/search.js`).
+  - `notebook.js`, `notebook-review.js`: Notebook (生词本) at `#/notebook[/<word>]`: words saved from daily life, with a word page and four review types (flashcards, listening, writing, sentence gap).
   - `charsheet.js`, `printsheet.js`, `account.js`.
 - `src/lib/`:
   - `pinyin.js`: syllable splitter, handles üe and erhua.
@@ -37,6 +38,9 @@ The owner uses it on iPhone 16 (home-screen PWA), Mi Pad 7 Pro and Windows. Prog
 - `src/sync/`:
   - `sync.js`: Firebase sync; `bookContent()` reads private book content.
   - `content.js`: turns private texts into readings.
+- `src/notebook/store.js`: Notebook words (localStorage `xz-notebook-v1`), synced to `users/{uid}/notebook/{word}` as field-level patches. Its schedule is the progress key `nb:<word>`; Notebook never records book keys.
+- `src/lib/dict.js`: `lookup(word)` from the book words, then CC-CEDICT shards in `public/dict/` (made by `scripts/gen-dict.mjs`, CC BY-SA 4.0). Stroke data for any character: `public/strokes/` (generated at build by `scripts/gen-public-strokes.mjs`, gitignored) and `ensureChars()` in `data/strokes.js`.
+- `scripts/notebook.mjs` (`count`, `list`, `save <file>`, `hook`; `--emulator --uid`), `.claude/skills/fill-notebook/` and the SessionStart hook in `.claude/settings.json`: Claude fills new Notebook words with a sentence and memory tricks. `scripts/lib-firebase.mjs` holds the shared login and owner lookup (uid cached in `.cache/owner-uid`).
 - `src/progress/`: progress model and store. The store tracks what is not yet uploaded (`unsent`, `sentFor`), so sync sends only changes.
 - `src/data/`:
   - `books/<id>/book.json` plus `lessonNN.json`.

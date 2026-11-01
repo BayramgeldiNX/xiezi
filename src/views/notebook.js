@@ -152,7 +152,7 @@ function wordPage(w) {
       }).join("")}
     </div>
     <div class="panel">
-      ${L ? `<p class="note">Also in <a href="#/lesson/${esc(L.id)}/write">${esc(bookOf(L).title)} · ${esc(L.cn)}</a></p>` : ""}
+      ${L ? `<p class="note">Also in <a class="tap-link" href="#/lesson/${esc(L.id)}/write">${esc(bookOf(L).title)} · ${esc(L.cn)}</a></p>` : ""}
       <div class="controls" id="nbDel"><button class="btn ghost" type="button" id="nbDelBtn">Delete this word</button></div>
     </div>`;
   $("#nbBack").addEventListener("click", () => { location.hash = "#/notebook"; });
