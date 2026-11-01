@@ -36,7 +36,7 @@ function changed() {
   persist();
   subs.forEach((fn) => { try { fn(); } catch (e) { console.error(e); } });
 }
-globalThis.addEventListener?.("pagehide", () => { clearTimeout(saveTimer); store.set(KEY, P); });
+globalThis.addEventListener?.("pagehide", () => { clearTimeout(saveTimer); store.set(KEY, P); flushPlace(); });
 
 export const deviceId = () => P.device;
 
@@ -143,8 +143,21 @@ export function importBackup(b) {
   if (syncer) for (const k of Object.keys(P.unsent.items)) if (P.mine[k]) syncer.pushItem(k, P.mine[k]);
 }
 
-/* ---------- last place (per device, not synced) ---------- */
+/* ---------- last place (newest wins across devices) ---------- */
+let placeTimer = 0, placeWaiting = null;
+const flushPlace = () => { clearTimeout(placeTimer); if (placeWaiting) syncer?.pushPlace?.(placeWaiting); placeWaiting = null; };
 export const place = {
   get: () => store.get("hz-state", null),
-  set: (v) => store.set("hz-state", v),
+  set: (v) => {
+    placeWaiting = { ...v, at: Date.now() };
+    store.set("hz-state", placeWaiting);
+    clearTimeout(placeTimer);
+    placeTimer = setTimeout(flushPlace, 2000); // moving between words shouldn't write each time
+  },
 };
+// True when the cloud's place was newer and is now ours.
+export function applyRemotePlace(p) {
+  if (!p?.lid || (p.at || 0) <= (place.get()?.at || 0)) return false;
+  store.set("hz-state", p);
+  return true;
+}

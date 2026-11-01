@@ -3,6 +3,7 @@
 // Firestore layout (only the signed-in user can read/write their own tree, see firestore.rules):
 //   users/{uid}/items/{key}     { k: key, d: { [deviceId]: stat }, t: serverTime }
 //   users/{uid}/sessions/{id}   one finished practice session
+//   users/{uid}/meta/place      { lid, word, tab, at }: where you were last (newest wins)
 // Each device writes only its own d.{deviceId} entry, so devices never overwrite each other.
 import realConfig from "./firebase-config.js";
 import * as progress from "../progress/store.js";
@@ -88,10 +89,12 @@ async function start(user) {
   // A sync problem must never interrupt practice: the result is already saved on the device.
   const safely = (fn) => { try { fn().catch(fail); } catch (e) { fail(e); } };
 
+  const placeRef = F.doc(db, "users", uid, "meta", "place");
   progress.setSyncer({
     pushItem: (key, stat) =>
       safely(() => F.setDoc(itemRef(key), { k: key, d: { [dev]: stat }, t: F.serverTimestamp() }, { merge: true })
         .then(() => progress.markItemSent(key, stat.n))),
+    pushPlace: (p) => safely(() => F.setDoc(placeRef, p)),
     pushSession: (s) => safely(() => F.setDoc(sessionRef(s.id), s).then(() => progress.markSessionSent(s.id))),
   });
   emit({ status: "syncing", email: user.email, error: null });
@@ -131,7 +134,14 @@ async function start(user) {
     if (any) progress.remoteDone();
   }, fail);
 
-  stopFns.push(items, sess);
+  // Where you were last (newest across devices wins), for the Continue card on Home.
+  const placeSub = F.onSnapshot(placeRef, (snap) => {
+    const remote = snap.data();
+    if (progress.applyRemotePlace(remote)) progress.remoteDone();
+    else if ((progress.place.get()?.at || 0) > (remote?.at || 0)) safely(() => F.setDoc(placeRef, progress.place.get()));
+  }, fail);
+
+  stopFns.push(items, sess, placeSub);
 }
 
 /* ---------- private book content ---------- */

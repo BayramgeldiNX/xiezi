@@ -117,4 +117,34 @@ describe("progress store", () => {
       expect(keys(S.pendingUpload("u1"))).toEqual(["w:你", "w:好"]);
     });
   });
+
+  describe("last place", () => {
+    it("ignores an older remote place and applies a newer one", () => {
+      S.place.set({ lid: "a/1", word: 2, tab: "write" });
+      const mine = S.place.get();
+      expect(S.applyRemotePlace({ lid: "b/2", word: 0, tab: "listen", at: mine.at - 1000 })).toBe(false);
+      expect(S.place.get().lid).toBe("a/1");
+      expect(S.applyRemotePlace({ lid: "b/2", word: 0, tab: "listen", at: mine.at + 1000 })).toBe(true);
+      expect(S.place.get().lid).toBe("b/2");
+      expect(S.applyRemotePlace(null)).toBe(false);
+    });
+    it("pushes once, 2 seconds after the last of several quick changes", () => {
+      vi.useFakeTimers();
+      try {
+        const pushPlace = vi.fn();
+        S.setSyncer({ pushPlace, pushItem() {}, pushSession() {} });
+        S.place.set({ lid: "a/1", word: 0, tab: "write" });
+        vi.advanceTimersByTime(1000);
+        S.place.set({ lid: "a/1", word: 1, tab: "write" });
+        S.place.set({ lid: "a/1", word: 2, tab: "write" });
+        vi.advanceTimersByTime(1900);
+        expect(pushPlace).not.toHaveBeenCalled();
+        vi.advanceTimersByTime(200);
+        expect(pushPlace).toHaveBeenCalledTimes(1);
+        expect(pushPlace.mock.calls[0][0]).toMatchObject({ lid: "a/1", word: 2 });
+        vi.advanceTimersByTime(5000);
+        expect(pushPlace).toHaveBeenCalledTimes(1);
+      } finally { vi.useRealTimers(); }
+    });
+  });
 });

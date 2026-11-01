@@ -129,6 +129,11 @@ function showHome() {
   $("#greetDate").textContent = g.date;
   $("#heroPy").innerHTML = tonePy("Bái Huáichéng de xiězìběn");
   renderHub();
+  renderResume();
+}
+
+// The Continue card; also redrawn when another device moves the place.
+function renderResume() {
   const saved = place();
   const r = $("#resume");
   if (saved) {
@@ -277,7 +282,7 @@ $("#wordNav").addEventListener("click", (e) => {
 
 // Synced results from another device: refresh what's on screen without interrupting practice.
 progress.onProgress(() => {
-  if (current === "home") renderHub();
+  if (current === "home") { renderHub(); renderResume(); }
   else if (current === "bookView" && !$("#lessonCards").hidden) renderLessonList(BOOKS.find((b) => b.id === openBookId) || BOOKS[0]);
   else if (current === "lessonView" && app.tab === "write") markWords();
 });
