@@ -81,3 +81,6 @@ npm run preview    # serve the build (to test offline mode)
 How progress syncs: every practice result updates one record per item (`w:你` writing, `d:你好` dictation,
 `f:` flashcards, `t:` tones). Each device writes only its own part of each record, so devices never overwrite
 each other, even when practicing offline at the same time. Totals are added up when shown.
+
+## Credits
+The Notebook dictionary (`public/dict/`) comes from [CC-CEDICT](https://cc-cedict.org/), licensed CC BY-SA 4.0. Stroke data is from `hanzi-writer-data`.
