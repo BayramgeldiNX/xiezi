@@ -3,7 +3,8 @@
 // Every exercise can also run on its own with fixed items and a `then` callback, so the
 // book Review can chain several of them into one mixed session.
 import { $, $$, esc, shuffle, directionPicker } from "../lib/util.js";
-import { tonePy, stripTone } from "../lib/pinyin.js";
+import { tonePy } from "../lib/pinyin.js";
+import { matchesWord } from "../lib/search.js";
 import { say, autoSay, sayBtns, stopSpeech } from "../lib/speech.js";
 import { icon } from "../lib/icons.js";
 import { clearWriters } from "../lib/draw.js";
@@ -483,8 +484,7 @@ function wordList(words) {
     return st === "new" ? "" : `<span style="color:var(--${st === "known" ? "jade" : "amber"})">●</span>`;
   };
   const render = (q = "") => {
-    const t = stripTone(q.trim().toLowerCase());
-    const list = words.filter((w) => !t || w.w.includes(q.trim()) || stripTone(w.py.toLowerCase()).replace(/\s/g, "").includes(t.replace(/\s/g, "")) || w.en.toLowerCase().includes(t));
+    const list = words.filter((w) => matchesWord(w, q));
     rows.innerHTML = list.map((w) => `<tr><td class="hz">${charLinks(w.w)} ${dot(w)}</td><td><span class="py">${tonePy(w.py)}</span><br><span class="en">${esc(w.en)}</span></td><td style="text-align:right;white-space:nowrap">${sayBtns(w.w, w.py, true)}</td></tr>`).join("")
       || `<tr><td class="muted">No words match.</td></tr>`;
   };

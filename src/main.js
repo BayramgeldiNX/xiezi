@@ -19,6 +19,7 @@ import { openPractice, runMode, SKILLS, modeAvailable } from "./views/practice.j
 import { openReview, dueCount, ALL_BOOKS } from "./views/bookreview.js";
 import { openTyping, typingDue } from "./views/typing.js";
 import "./views/charsheet.js";
+import { openSearch } from "./views/search.js";
 import { openPrint } from "./views/printsheet.js";
 import { hideGloss } from "./views/reading.js";
 import { initAccountChip } from "./views/account.js";
@@ -37,7 +38,7 @@ const OLD_TABS = { dict: "write", review: "write", cards: "words", tones: "liste
    #/lesson/<book>/<n>/<tab>    a lesson (tabs: write, listen, speak, read, words)
    #/print/<book>/<n>           printable practice sheet for a lesson
    Each page has its own address, so the Android / browser back gesture steps back one page. */
-const PAGES = ["home", "reviewView", "typingView", "booksView", "bookView", "lessonView", "printView"];
+const PAGES = ["home", "reviewView", "typingView", "searchView", "booksView", "bookView", "lessonView", "printView"];
 let current = "home";
 let printLesson = null;
 function showPage(id) {
@@ -60,6 +61,7 @@ function route() {
     showPage("printView"); document.title = `${L.title} · 字帖`; printLesson = L.id; return openPrint(L);
   }
   if (page === "review") { showPage("reviewView"); document.title = "Review · 写字本"; return openReview(ALL_BOOKS, "#allReview"); }
+  if (page === "search") { showPage("searchView"); document.title = "Search · 写字本"; return openSearch(); }
   if (page === "typing") { showPage("typingView"); document.title = "Typing · 写字本"; return openTyping(); }
   if (page === "book" && BOOKS.some((x) => x.id === a)) return showBook(a, b === "review" ? "review" : "lessons");
   if (page === "lesson") {
@@ -84,7 +86,7 @@ function back(to) {
   else go(to);
 }
 const upFrom = () => ({
-  booksView: "#/", reviewView: "#/", typingView: "#/", bookView: "#/books", printView: `#/lesson/${printLesson}/write`,
+  booksView: "#/", reviewView: "#/", typingView: "#/", searchView: "#/", bookView: "#/books", printView: `#/lesson/${printLesson}/write`,
   lessonView: `#/book/${app.L()?.book}`,
 })[current];
 
@@ -266,6 +268,7 @@ $$("[data-back-to]").forEach((b) => b.addEventListener("click", () => back(b.dat
 $("#openBooks").addEventListener("click", () => go("#/books"));
 $("#openReview").addEventListener("click", () => go("#/review"));
 $("#openTyping").addEventListener("click", () => go("#/typing"));
+$("#openSearch").addEventListener("click", () => go("#/search"));
 $("#printBack").addEventListener("click", () => back(upFrom()));
 $("#wordNav").addEventListener("click", (e) => {
   const g = e.target.closest("[data-go]");
