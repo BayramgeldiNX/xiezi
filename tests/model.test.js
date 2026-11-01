@@ -9,7 +9,7 @@ describe("addResult", () => {
     s = addResult(s, { ok: false, miss: 2 }, at(2));
     s = addResult(s, { ok: true }, at(3));
     s = addResult(s, { ok: true }, at(4));
-    expect(s).toEqual({ n: 4, ok: 3, miss: 2, last: at(4), lastOk: true, streak: 2 });
+    expect(s).toEqual({ n: 4, ok: 3, miss: 2, last: at(4), lastOk: true, streak: 1 }); // the second right answer came before it was due
   });
   it("never counts negative mistakes", () => {
     expect(addResult(null, { ok: false, miss: -5 }).miss).toBe(0);

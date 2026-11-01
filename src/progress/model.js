@@ -13,14 +13,18 @@
 
 export const emptyStat = () => ({ n: 0, ok: 0, miss: 0, last: 0, lastOk: false, streak: 0 });
 
-export function addResult(stat, { ok, miss = 0 }, now = Date.now()) {
+// A right answer only moves a word further out when it was actually due; extra practice in between keeps its place.
+const grows = (s, now) => !s?.n || !s.lastOk || !s.streak || isDue(s, now);
+
+// shared: this item's combined stat across devices (the schedule belongs to the word, not to the device).
+export function addResult(stat, { ok, miss = 0 }, now = Date.now(), shared = stat) {
   const s = stat ? { ...stat } : emptyStat();
   s.n += 1;
   s.ok += ok ? 1 : 0;
   s.miss += Math.max(0, miss | 0);
   s.last = now;
   s.lastOk = !!ok;
-  s.streak = ok ? (s.streak || 0) + 1 : 0;
+  s.streak = !ok ? 0 : grows(shared, now) ? (shared?.streak || 0) + 1 : shared.streak;
   return s;
 }
 

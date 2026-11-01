@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { nextReview, isDue, latest, INTERVALS } from "../src/progress/model.js";
+import { nextReview, isDue, latest, addResult, INTERVALS } from "../src/progress/model.js";
 
 const DAY = 864e5, T = 1_800_000_000_000;
 const stat = (o) => ({ n: 1, ok: 1, miss: 0, last: T, lastOk: true, streak: 1, ...o });
@@ -27,5 +27,34 @@ describe("review schedule", () => {
     const cards = stat({ last: T + DAY, lastOk: false, streak: 0 });
     expect(latest([quiz, cards, null])).toBe(cards);
     expect(latest([null, undefined])).toBeNull();
+  });
+
+  describe("addResult streak", () => {
+    it("five right answers at the same time stay at streak 1", () => {
+      let s = null;
+      for (let i = 0; i < 5; i++) s = addResult(s, { ok: true }, T);
+      expect(s.streak).toBe(1);
+      expect((nextReview(s) - T) / DAY).toBe(1);
+    });
+    it("right when due grows the streak", () => {
+      const s = addResult(addResult(null, { ok: true }, T), { ok: true }, T + DAY);
+      expect(s.streak).toBe(2);
+      expect((nextReview(s) - (T + DAY)) / DAY).toBe(3);
+    });
+    it("right before due keeps the streak and moves last", () => {
+      const s = addResult(addResult(null, { ok: true }, T), { ok: true }, T + 0.5 * DAY);
+      expect(s.streak).toBe(1);
+      expect(s.last).toBe(T + 0.5 * DAY);
+    });
+    it("wrong resets to 0, the next right gives 1", () => {
+      let s = addResult(addResult(null, { ok: true }, T), { ok: false, miss: 1 }, T + DAY);
+      expect(s.streak).toBe(0);
+      s = addResult(s, { ok: true }, T + 2 * DAY);
+      expect(s.streak).toBe(1);
+    });
+    it("starts from the shared stat of all devices", () => {
+      const shared = { n: 5, ok: 5, miss: 0, last: T, lastOk: true, streak: 5 };
+      expect(addResult(null, { ok: true }, T + 30 * DAY, shared).streak).toBe(6);
+    });
   });
 });

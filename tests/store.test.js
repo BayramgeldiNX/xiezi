@@ -70,4 +70,10 @@ describe("progress store", () => {
     expect(T.get("w:你").n).toBe(2);
     expect(() => T.importBackup({ hello: 1 })).toThrow(/backup/);
   });
+
+  it("continues the schedule from another device's streak", () => {
+    S.applyRemoteItem("w:你", { "dev-x": { n: 3, ok: 3, miss: 0, last: 1000, lastOk: true, streak: 3 } });
+    S.record("w:你", { ok: true });
+    expect(S.get("w:你").streak).toBe(4);
+  });
 });

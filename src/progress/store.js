@@ -49,7 +49,7 @@ export function get(key) {
 }
 
 export function record(key, result) {
-  P.mine[key] = addResult(P.mine[key], result);
+  P.mine[key] = addResult(P.mine[key], result, Date.now(), get(key));
   changed();
   syncer?.pushItem(key, P.mine[key]);
 }
