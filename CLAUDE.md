@@ -18,27 +18,33 @@ The owner uses it on iPhone 16 (home-screen PWA), Mi Pad 7 Pro and Windows. Prog
 
 ## Stack and layout
 - Vite + vite-plugin-pwa (generateSW, `registerType: prompt`), base `/xiezi/`. Plain JS modules, no framework.
-- `src/main.js` and `src/app.js`: hash router and home. `src/pwa.js`: updates install on a calm page or the next page change.
+- `src/main.js` and `src/app.js`: hash router and home. Pages: `#/` home, `#/books`, `#/book/<id>`, `#/lesson/<id>/<tab>`, `#/review` (all books), `#/search`, `#/typing`, `#/print/<id>`.
+  The route waits for `loadStrokes()` before lesson and print pages.
+- `src/pwa.js`: updates install on a calm page or the next page change.
 - `src/views/`: one file per screen.
   - `practice.js`: lesson modes; `modeAvailable()` hides modes that have no content.
   - `write.js`: stroke animation, with a Non-stop loop that runs until Stop.
   - `cards.js`, `typing.js`, `dictation.js`, `tones.js`, `reading.js`.
   - `bookreview.js`: review and the HSK-style practice test.
   - `workbook.js`: workbook quizzes. `hanzi.js`: character lessons and pronunciation tips.
+  - `search.js`: search all words (matcher in `lib/search.js`).
   - `charsheet.js`, `printsheet.js`, `account.js`.
 - `src/lib/`:
   - `pinyin.js`: syllable splitter, handles üe and erhua.
+  - `search.js`: `matchesWord` (汉字, pinyin with or without tones, English).
   - `speech.js`: recordings first, then TTS; `addRecordings` adds private audio.
   - `typing-check.js`, `draw.js`, `compare.js`, `settings.js`, `theme.js`.
 - `src/sync/`:
   - `sync.js`: Firebase sync; `bookContent()` reads private book content.
   - `content.js`: turns private texts into readings.
-- `src/progress/`: progress model and store.
+- `src/progress/`: progress model and store. The store tracks what is not yet uploaded (`unsent`, `sentFor`), so sync sends only changes.
 - `src/data/`:
   - `books/<id>/book.json` plus `lessonNN.json`.
+  - `strokes.js`: `loadStrokes()` loads the big `strokes.gen.json` on demand; `stroke-chars.gen.json` is the small list of characters that have strokes.
   - `chars.json`, `similar.json`, `radicals.json`, `glossary.json`, `stroke-names.json`.
   - Generated `*.gen.json` files.
 - `firestore.rules`:
+  - Per-user sync doc `users/{uid}/meta/place`: last place, newest wins across devices.
   - Owner-only: `owners/{uid}` and `books/{book}/**`, readable only if an `owners/{uid}` doc exists.
   - The rest is per-user progress.
 
