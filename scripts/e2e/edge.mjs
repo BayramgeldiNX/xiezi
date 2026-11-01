@@ -62,7 +62,7 @@ try {
   await go("#/");
   await go("", 1500);
   const cont = await js(`return document.querySelector('#resume')?.innerText.replace(/\\s+/g,' ')`);
-  check("Continue works with old saved data (cards → Words)", /第一课/.test(cont || "") && /Words/.test(cont || ""), cont);
+  check("Continue works with old saved data (cards → Words)", /你好/.test(cont || "") && /Words/.test(cont || ""), cont);
   await js(`document.querySelector('#resume').click(); ${W} return 1;`);
   check("Continue opens the Words tab", (await js(`return document.querySelector('.tab[aria-selected=true]')?.dataset.tab`)) === "words");
 

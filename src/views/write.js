@@ -46,29 +46,30 @@ export function renderWord(idx) {
   $$("#words button").forEach((b, i) => b.setAttribute("aria-pressed", i === idx));
   const word = app.L().words[idx];
   $("#wordHead").innerHTML = `<span class="hz">${charLinks(word.w)}</span><span class="py">${tonePy(word.py)}</span><span class="en">${word.en}</span>${sayBtns(word.w, word.py)}`;
-  $("#example").innerHTML = `<span class="lbl">Example sentence</span>
-    <span class="ex-hz">${word.ex.hz} ${sayBtns(word.ex.hz, "sentence", true)}</span>
+  $("#example").innerHTML = `<span class="ex-hz">${word.ex.hz} ${sayBtns(word.ex.hz, "sentence", true)}</span>
     <span class="py">${tonePy(word.ex.py)}</span><span class="ex-en">${word.ex.en}</span>`;
   const host = $("#chars");
   host.innerHTML = "";
   activeCard = null;
-  wordChars(word).forEach((c) => buildCharCard(host, c));
+  const cs = wordChars(word);
+  cs.forEach((c) => buildCharCard(host, c, cs.length === 1));
+  const sel = $("#words button[aria-pressed=\"true\"]"), chips = $("#words");
+  if (sel && chips.scrollWidth > chips.clientWidth) chips.scrollTo({ left: sel.offsetLeft - (chips.clientWidth - sel.offsetWidth) / 2 });
   const nav = $("#wordNav");
-  nav.innerHTML = `<button class="btn" type="button" data-go="-1" ${idx === 0 ? "disabled" : ""}>${icon("back")} ${idx > 0 ? app.L().words[idx - 1].w : ""}</button>
-    <button class="btn" type="button" data-go="1" ${idx === app.L().words.length - 1 ? "disabled" : ""}>${idx < app.L().words.length - 1 ? app.L().words[idx + 1].w : ""} ${icon("next")}</button>`;
+  nav.innerHTML = `<button class="btn ghost" type="button" data-go="-1" ${idx === 0 ? "disabled" : ""}>${icon("back")} ${idx > 0 ? app.L().words[idx - 1].w : ""}</button>
+    <button class="btn ghost" type="button" data-go="1" ${idx === app.L().words.length - 1 ? "disabled" : ""}>${idx < app.L().words.length - 1 ? app.L().words[idx + 1].w : ""} ${icon("next")}</button>`;
 }
 
-function badgeText(c) {
+// One quiet line: strokes, status, tries.
+function metaText(c, n) {
   const s = progress.get("w:" + c);
   const st = charStatus(s);
-  if (st === "new") return `<span class="badge new">New</span>`;
-  const tries = `written ${s.n}×`;
-  return st === "mastered"
-    ? `<span class="badge ok">✓ Mastered</span><span class="count">${tries}</span>`
-    : `<span class="badge learning">Learning</span><span class="count">${tries} · ${s.ok} perfect</span>`;
+  const tries = st === "new" ? "" : ` · written ${s.n}×`;
+  const label = st === "mastered" ? "Mastered" : st === "learning" ? "Learning" : "New";
+  return `${n} strokes · <span class="st-${st}">${label}</span>${tries}`;
 }
 
-export function buildCharCard(host, c) {
+export function buildCharCard(host, c, single = false) {
   const { py, en, tip, strokes: names } = CHARS[c];
   const n = STROKE_DATA[c].strokes.length;
   const el = document.createElement("article");
@@ -76,24 +77,23 @@ export function buildCharCard(host, c) {
   el.innerHTML = `
     <div class="box">${gridSVG()}<div class="hw"></div><svg class="stepsvg" viewBox="0 0 1024 1024" hidden aria-hidden="true"></svg></div>
     <div class="info">
-      <div class="title"><button type="button" class="char-link title-char" data-char="${c}" aria-label="About ${c}">${c}</button><span class="py">${tonePy(py)}</span><span style="color:var(--muted)">${en}</span>${sayBtns(c, py, true)}</div>
-      <div class="count">${n} strokes</div>
-      <div class="badges">${badgeText(c)}</div>
-      <p class="tip"><strong>Memory trick:</strong> ${tip}</p>
+      <div class="title"${single ? " hidden" : ""}><button type="button" class="char-link title-char" data-char="${c}" aria-label="About ${c}">${c}</button><span class="py">${tonePy(py)}</span><span style="color:var(--muted)">${en}</span>${sayBtns(c, py, true)}</div>
+      <div class="count">${metaText(c, n)}</div>
       <div class="modes" role="tablist" aria-label="Mode">
         <button class="mode" role="tab" data-m="flow">Non-stop</button>
         <button class="mode" role="tab" data-m="step">Stroke by stroke</button>
         <button class="mode" role="tab" data-m="quiz">Write it</button>
       </div>
-      <div class="controls" data-for="flow"><button class="btn primary" data-a="play">${icon("play")} Play</button><button class="btn" data-a="stop" hidden>${icon("stop")} Stop</button></div>
+      <div class="controls" data-for="flow"><button class="btn primary" data-a="play">${icon("play")} Play</button><button class="btn ghost" data-a="stop" hidden>${icon("stop")} Stop</button></div>
       <div class="controls" data-for="step" hidden>
-        <button class="btn" data-a="back">${icon("back")} Back</button>
+        <button class="btn ghost" data-a="back">${icon("back")} Back</button>
         <button class="btn primary" data-a="next">Next stroke ${icon("next")}</button>
-        <button class="btn" data-a="replay">${icon("replay")} Replay</button>
+        <button class="btn ghost" data-a="replay">${icon("replay")} Replay</button>
       </div>
       <div class="strokename" data-for="step" hidden></div>
-      <div class="controls" data-for="quiz" hidden><button class="btn primary" data-a="quiz">${icon("replay")} Start again</button></div>
+      <div class="controls" data-for="quiz" hidden><button class="btn ghost" data-a="quiz">${icon("replay")} Start again</button></div>
       <div class="status" aria-live="polite"></div>
+      <p class="tip">${tip}</p>
     </div>
     <div class="strip">${STROKE_DATA[c].strokes.map((_, i) => `<figure data-i="${i}">${stripSVG(c, i)}<figcaption>${i + 1}${names[i] ? " " + names[i] : ""}</figcaption></figure>`).join("")}</div>`;
   host.appendChild(el);
@@ -192,7 +192,7 @@ export function buildCharCard(host, c) {
       onMistake: () => { status.textContent = "Try again, check the stroke order."; },
       onComplete: (d) => {
         progress.record("w:" + c, { ok: d.totalMistakes === 0, miss: d.totalMistakes });
-        $(".badges", el).innerHTML = badgeText(c);
+        $(".count", el).innerHTML = metaText(c, n);
         markWords();
         status.textContent = d.totalMistakes === 0 ? "太好了! Tài hǎo le! Perfect!" : `很好! Hěn hǎo! Done with ${d.totalMistakes} mistake${d.totalMistakes > 1 ? "s" : ""}.`;
       },

@@ -166,7 +166,7 @@ try {
   await A.js(`const s = await import('/xiezi/src/progress/store.js'); s.place.set({ lid: 'hsk2/3', word: 1, tab: 'listen' }); return true;`);
   await sleep(4000);
   check("B receives A's place", (await B.js(`return JSON.parse(localStorage.getItem('hz-state') || '{}').lid`)) === "hsk2/3");
-  check("B's Continue card shows it without a reload", /HSK 2/.test((await B.js(`return document.querySelector('#resume').textContent`)) || ""));
+  check("B's Continue card shows it without a reload", /左边那个红色的是我的/.test((await B.js(`return document.querySelector('#resume').textContent`)) || "") && /Listen/.test((await B.js(`return document.querySelector('#resume').textContent`)) || ""));
   const placeTime = await A.js(`return JSON.parse(localStorage.getItem('hz-state')).at`);
   await B.js(`const s = await import('/xiezi/src/progress/store.js'); return s.applyRemotePlace({ lid: 'hsk1/1', word: 0, tab: 'write', at: ${placeTime} - 1000 });`);
   check("An older place never replaces a newer one", (await B.js(`return JSON.parse(localStorage.getItem('hz-state')).lid`)) === "hsk2/3");

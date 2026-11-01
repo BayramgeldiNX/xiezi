@@ -33,66 +33,18 @@
   <!-- HOME -->
   <section id="home" class="home">
     <div class="hub-top">
-      <div class="greet"><b id="greetCn"></b><span id="greetPy" class="py"></span><span id="greetDate" class="muted"></span></div>
+      <h1>白怀诚的写字本</h1>
       <button class="account-chip" id="accountChip" type="button">○ Sync</button>
     </div>
-
-    <header class="hero">
-      <svg class="emblem" viewBox="0 0 100 100" aria-hidden="true">
-        <rect x="2" y="2" width="96" height="96" rx="10" fill="none" stroke="var(--grid)" stroke-width="2"/>
-        <g stroke="var(--grid)" stroke-width="1" stroke-dasharray="4 4" opacity=".6"><line x1="50" y1="2" x2="50" y2="98"/><line x1="2" y1="50" x2="98" y2="50"/></g>
-        <text x="50" y="52" text-anchor="middle" dominant-baseline="central" font-family="Xiezi Serif, Noto Serif SC, Songti SC, serif" font-size="62" font-weight="700" fill="var(--ink)">写</text>
-      </svg>
-      <h1>白怀诚的写字本</h1>
-      <p class="hero-py py" id="heroPy"></p>
-      <p class="hero-en">My Chinese writing book</p>
-    </header>
 
     <button class="continue" type="button" id="resume" hidden></button>
 
     <nav class="hub" aria-label="Sections">
-      <button class="hub-card wide" type="button" id="openReview">
-        <span class="seal red" aria-hidden="true">复</span>
-        <span class="hub-txt">
-          <b>Review<span class="hub-cn">复习</span></b>
-          <span class="hub-sub" id="reviewMeta"></span>
-        </span>
-        <span class="chev" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></span>
-      </button>
-      <button class="hub-card wide" type="button" id="openNotebook">
-        <span class="seal" aria-hidden="true">记</span>
-        <span class="hub-txt">
-          <b>Notebook<span class="hub-cn">生词本</span></b>
-          <span class="hub-sub" id="notebookMeta">Save words from daily life</span>
-        </span>
-        <span class="chev" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></span>
-      </button>
-      <button class="hub-card wide" type="button" id="openBooks">
-        <span class="seal red" aria-hidden="true">书</span>
-        <span class="hub-txt">
-          <b>Books<span class="hub-cn">课本</span></b>
-          <span class="hub-sub" id="hubBooksSub"></span>
-          <span class="lp"><span class="lp-bar" aria-hidden="true"><i id="hubBar"></i></span><span class="lp-txt" id="hubMeta"></span></span>
-        </span>
-        <span class="chev" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></span>
-      </button>
-      <button class="hub-card wide" type="button" id="openTyping">
-        <span class="seal" aria-hidden="true">键</span>
-        <span class="hub-txt">
-          <b>Typing<span class="hub-cn">打字</span></b>
-          <span class="hub-sub">Type the Chinese, or the pinyin with tone numbers</span>
-          <span class="lp-txt" id="typingMeta"></span>
-        </span>
-        <span class="chev" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></span>
-      </button>
-      <button class="hub-card wide" type="button" id="openSearch">
-        <span class="seal" aria-hidden="true">查</span>
-        <span class="hub-txt">
-          <b>Search<span class="hub-cn">查词</span></b>
-          <span class="hub-sub">Find any word in your books</span>
-        </span>
-        <span class="chev" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></span>
-      </button>
+      <button class="row" type="button" id="openReview"><span class="seal" aria-hidden="true">复</span><span class="row-t"><b>Review<span class="cn">复习</span></b><span class="row-n" id="reviewMeta"></span></span><span class="chev" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></span></button>
+      <button class="row" type="button" id="openNotebook"><span class="seal" aria-hidden="true">记</span><span class="row-t"><b>Notebook<span class="cn">生词本</span></b><span class="row-n" id="notebookMeta"></span></span><span class="chev" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></span></button>
+      <button class="row" type="button" id="openBooks"><span class="seal" aria-hidden="true">书</span><span class="row-t"><b>Books<span class="cn">课本</span></b><span class="row-n" id="hubMeta"></span></span><span class="chev" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></span></button>
+      <button class="row" type="button" id="openTyping"><span class="seal" aria-hidden="true">键</span><span class="row-t"><b>Typing<span class="cn">打字</span></b><span class="row-n" id="typingMeta"></span></span><span class="chev" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></span></button>
+      <button class="row" type="button" id="openSearch"><span class="seal" aria-hidden="true">查</span><span class="row-t"><b>Search<span class="cn">查词</span></b><span class="row-n">Find any word</span></span><span class="chev" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></span></button>
     </nav>
   </section>
 
@@ -100,7 +52,7 @@
   <section id="reviewView" class="page" hidden>
     <div class="topbar">
       <button class="back" type="button" data-back-to="#/" aria-label="Home"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button>
-      <div><span class="eyebrow">复 · 复习</span><h2>Review</h2></div>
+      <h2>Review</h2>
     </div>
     <div id="allReview" class="inner"></div>
   </section>
@@ -109,7 +61,7 @@
   <section id="typingView" class="page" hidden>
     <div class="topbar">
       <button class="back" type="button" data-back-to="#/" aria-label="Home"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button>
-      <div><span class="eyebrow">键 · 打字</span><h2>Typing</h2></div>
+      <h2>Typing</h2>
     </div>
     <div id="typingBody" class="inner"></div>
   </section>
@@ -118,7 +70,7 @@
   <section id="searchView" class="page" hidden>
     <div class="topbar">
       <button class="back" type="button" data-back-to="#/" aria-label="Home"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button>
-      <div><span class="eyebrow">查 · 查词</span><h2>Search</h2></div>
+      <h2>Search</h2>
     </div>
     <div id="searchBody" class="inner"></div>
   </section>
@@ -127,7 +79,7 @@
   <section id="notebookView" class="page" hidden>
     <div class="topbar">
       <button class="back" type="button" id="notebookBack" aria-label="Back"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button>
-      <div><span class="eyebrow">记 · 生词本</span><h2>Notebook</h2></div>
+      <h2>Notebook</h2>
     </div>
     <div id="notebookBody" class="inner"></div>
   </section>
@@ -136,7 +88,7 @@
   <section id="printView" class="page" style="max-width:900px" hidden>
     <div class="topbar no-print">
       <button class="back" type="button" id="printBack" aria-label="Back to the lesson"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button>
-      <div><span class="eyebrow">印 · 字帖</span><h2 id="printTitle"></h2></div>
+      <h2 id="printTitle"></h2>
     </div>
     <div id="printBody" class="inner"></div>
   </section>
@@ -145,7 +97,7 @@
   <section id="booksView" class="page" hidden>
     <div class="topbar">
       <button class="back" type="button" data-back-to="#/" aria-label="Home"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button>
-      <div><span class="eyebrow">书 · 课本</span><h2>Books</h2></div>
+      <h2>Books</h2>
     </div>
     <div class="book-list" id="bookList"></div>
   </section>
@@ -154,11 +106,11 @@
   <section id="bookView" class="page" hidden>
     <div class="topbar">
       <button class="back" type="button" data-back-to="#/books" aria-label="Books"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button>
-      <div><span class="eyebrow" id="bookEyebrow"></span><h2 id="bookTitle"></h2></div>
+      <div><h2 id="bookTitle"></h2><span class="eyebrow" id="bookEyebrow"></span></div>
     </div>
-    <div class="seg book-tabs" role="tablist" aria-label="Book sections">
-      <button type="button" role="tab" data-btab="lessons" aria-pressed="true">课 Lessons</button>
-      <button type="button" role="tab" data-btab="review" aria-pressed="false">复习 Review <span class="due" id="reviewDue" hidden></span></button>
+    <div class="tabs book-tabs" role="tablist" aria-label="Book sections">
+      <button type="button" class="tab" role="tab" data-btab="lessons" aria-pressed="true">Lessons</button>
+      <button type="button" class="tab" role="tab" data-btab="review" aria-pressed="false">Review <span class="due" id="reviewDue" hidden></span></button>
     </div>
     <div class="lesson-list" id="lessonCards"></div>
     <div id="bookReview" class="inner" hidden></div>
@@ -168,7 +120,7 @@
   <section id="lessonView" class="inner" hidden>
     <div class="topbar">
       <button class="back" type="button" id="backBtn" aria-label="Lessons"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button>
-      <div><span class="eyebrow" id="lessonEyebrow"></span><h2 id="lessonTitle"></h2></div>
+      <div><h2 id="lessonTitle"></h2><span class="eyebrow" id="lessonEyebrow"></span></div>
     </div>
     <div class="tabs" role="tablist" aria-label="Practice type">
       <button class="tab" role="tab" data-tab="write"><span class="tz">写</span><span class="tl">Write</span></button>
@@ -180,19 +132,18 @@
     <p class="note" id="voiceNote" hidden>This device has no Chinese voice installed, so sound can't play. On Android: Settings → Text-to-speech → install Chinese. On iPhone: Settings → Accessibility → Spoken Content → Voices → Chinese.</p>
 
     <div id="tab-write" class="inner">
-    <div class="practice-strip" id="writeStrip"></div>
     <div id="writePractice" class="inner" hidden></div>
     <div id="writeStudy" class="write-layout">
       <aside class="write-side">
         <nav class="words" id="words" aria-label="Words in this lesson"></nav>
         <div class="word-head" id="wordHead"></div>
         <div class="example" id="example"></div>
-        <p class="note"><b>Non-stop</b> writes the whole character. <b>Stroke by stroke</b> draws one stroke, names it, and stops. <b>Write it</b> lets you trace it; after 2 mistakes it shows a hint. Dots on words: <span style="color:var(--amber)">●</span> learning, <span style="color:var(--jade)">●</span> known.</p>
-        <p class="note kbd-note">Keys: ← → strokes · space replay · W write it · P play · [ ] previous / next word · Esc back</p>
+        <details class="kbd-note"><summary>Keys</summary>← → strokes · space replay · W write it · P play · [ ] previous / next word · Esc back</details>
       </aside>
       <section style="display:grid;gap:16px;min-width:0">
         <div id="chars" style="display:grid;gap:16px"></div>
         <div class="word-nav" id="wordNav"></div>
+        <div class="practice-strip" id="writeStrip"></div>
       </section>
     </div>
     </div>

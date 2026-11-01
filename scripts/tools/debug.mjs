@@ -64,10 +64,11 @@ const STEPS = [
   ["books", "#/books"],
   ["book", "#/book/kouyu-rumen"],
   ["lesson-write", "#/lesson/kouyu-rumen/1/write", `document.querySelector('[data-m=step]').click(); ${W} document.querySelector('[data-a=next]').click(); ${W} document.querySelector('[data-m=quiz]').click(); ${W}`],
-  ["lesson-dict", "#/lesson/kouyu-rumen/1/dict", `document.querySelector('#dictStart').click(); ${W} document.querySelector('#dictHint').click(); document.querySelector('#dictShow').click(); ${W}`],
-  ["lesson-cards", "#/lesson/kouyu-rumen/1/cards", `document.querySelector('#fcFlip').click(); ${W} document.querySelector('#fcAgainOne').click(); ${W}`],
-  ["lesson-tones", "#/lesson/kouyu-rumen/1/tones", `document.querySelector('[data-src=classic]').click(); ${W} document.querySelector('.tone-opt').click(); ${W}`],
-  ["lesson-review", "#/lesson/kouyu-rumen/1/review"],
+  ["book-review", "#/book/kouyu-rumen/review"],
+  ["review", "#/review"],
+  ["typing", "#/typing"],
+  ["search", "#/search"],
+  ["print", "#/print/kouyu-rumen/1"],
   // Notebook: the first step saves two words (they stay in this browser profile for the next steps).
   ["notebook", "#/notebook", `for (const w of ['饺子', '麻辣烫']) { const i = document.querySelector('#nbInput'); if (!i) break; i.value = w; document.querySelector('#nbAdd').requestSubmit(); ${W} ${W} }`],
   ["notebook-word", "#/notebook/%E9%A5%BA%E5%AD%90", `document.querySelector('[data-stroke]').click(); ${W} ${W}`],
@@ -78,14 +79,13 @@ const STEPS = [
   ["notebook-gap", "#/notebook", `document.querySelector('[data-nbp=gap]').click(); ${W}`],
 ];
 const SKILL_MODES = {
-  writing: ["dict", "pinyin", "meaning", "chars"],
-  listening: ["hear", "sentence", "tones"],
-  speaking: ["say-word", "say-sentence"],
-  reading: ["texts", "text-quiz", "order", "read-pinyin"],
-  vocab: ["cards", "match", "word-quiz", "list"],
+  listen: ["hear", "sentence", "tones", "pron", "wb-dialog"],
+  speak: ["say-word", "say-sentence"],
+  read: ["texts", "grammar", "text-quiz", "order", "read-pinyin", "wb-judge", "wb-reply", "fill"],
+  words: ["cards", "match", "word-quiz", "radical", "list"],
 };
-const MODE_STEP = `
-  const b = document.querySelector('#skillBody');
+const MODE_STEP = (SEL) => `
+  const b = document.querySelector('${SEL}');
   b.querySelector('#dictStart, [data-src=lesson]')?.click(); ${W}
   b.querySelector('.choice')?.click(); ${W}
   b.querySelector('#qNext')?.click(); ${W}
@@ -95,9 +95,11 @@ const MODE_STEP = `
   b.querySelector('#oPool .chip')?.click(); ${W}
   b.querySelector('[data-c]')?.click(); ${W}
   b.querySelector('#fcFlip')?.click(); ${W}`;
+STEPS.push(["lesson-write-menu", "#/lesson/kouyu-rumen/1/write", `document.querySelector('[data-wmode]')?.click(); ${W}`]);
+for (const m of ["dict", "pinyin", "meaning", "hanzi"]) STEPS.push([`write-${m}`, "#/lesson/kouyu-rumen/1/write", `document.querySelector('[data-wmode="${m}"]')?.click(); ${W} ${MODE_STEP("#writePractice")}`]);
 for (const [sk, modes] of Object.entries(SKILL_MODES)) {
-  STEPS.push([`skill-${sk}`, `#/skill/${sk}`]);
-  for (const m of modes) STEPS.push([`${sk}-${m}`, `#/skill/${sk}`, `document.querySelector('[data-mode="${m}"]').click(); ${W} ${MODE_STEP}`]);
+  STEPS.push([`skill-${sk}`, `#/lesson/kouyu-rumen/1/${sk}`]);
+  for (const m of modes) STEPS.push([`${sk}-${m}`, `#/lesson/kouyu-rumen/1/${sk}`, `document.querySelector('[data-mode="${m}"]')?.click(); ${W} ${MODE_STEP("#tab-" + sk)}`]);
 }
 STEPS.push(["settings", "", `document.querySelector('#accountChip').click(); ${W}`]);
 
@@ -113,7 +115,7 @@ for (const s of SIZES) {
     if (act) await run(act);
     const found = await run(CHECK);
     for (const f of found || []) problems.push(`[${where}] ${f}`);
-    if (["home", "notebook-word", "notebook-write", "lesson-write", "reading-texts", "vocab-match", "settings", "speaking-say-word"].includes(name)) {
+    if (["home", "notebook-word", "notebook-write", "lesson-write", "read-texts", "words-match", "settings", "speak-say-word"].includes(name)) {
       const shot = await send("Page.captureScreenshot", { format: "png" });
       if (shot?.data) fs.writeFileSync(path.join(outDir, `${s.name}-${name}.png`), Buffer.from(shot.data, "base64"));
     }

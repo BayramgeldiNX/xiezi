@@ -100,7 +100,7 @@ function showReview() {
     </div>
     <div class="mode-grid review-types">${scans.map(({ t, due, practiced, total: n }) => `
       <button class="mode-card" type="button" data-type="${t.id}" ${!due.length && !practiced ? "disabled" : ""}>
-        <span class="seal ${due.length ? "red" : ""}">${t.seal}</span>
+        <span class="seal" aria-hidden="true">${t.seal}</span>
         <b>${t.name} ${due.length ? `<span class="due">${due.length} due</span>` : ""}</b>
         <small>${t.sub} · ${practiced}/${n} practiced</small>
       </button>`).join("")}</div>

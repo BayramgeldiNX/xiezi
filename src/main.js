@@ -2,8 +2,7 @@ import "@fontsource/atkinson-hyperlegible/400.css";
 import "@fontsource/atkinson-hyperlegible/700.css";
 import "./styles.css";
 import "./lib/settings.js";
-import { $, $$, NUM, esc } from "./lib/util.js";
-import { tonePy } from "./lib/pinyin.js";
+import { $, $$, esc } from "./lib/util.js";
 import { stopSpeech } from "./lib/speech.js";
 import { clearWriters } from "./lib/draw.js";
 import { icon } from "./lib/icons.js";
@@ -132,21 +131,9 @@ function sumProgress(lessons) {
 const pct = (a, b) => (b ? Math.round((a / b) * 100) : 0);
 
 /* ---------- Home ---------- */
-function greeting(d = new Date()) {
-  const h = d.getHours();
-  const [cn, py] = h < 5 ? ["晚上好", "Wǎnshang hǎo"] : h < 11 ? ["早上好", "Zǎoshang hǎo"] : h < 13 ? ["中午好", "Zhōngwǔ hǎo"] : h < 18 ? ["下午好", "Xiàwǔ hǎo"] : ["晚上好", "Wǎnshang hǎo"];
-  const week = "日一二三四五六"[d.getDay()];
-  return { cn, py, date: `${d.getMonth() + 1}月${d.getDate()}日 · 星期${week}` };
-}
-
 function showHome() {
   showPage("home");
   document.title = "写字本";
-  const g = greeting();
-  $("#greetCn").textContent = g.cn;
-  $("#greetPy").innerHTML = tonePy(g.py);
-  $("#greetDate").textContent = g.date;
-  $("#heroPy").innerHTML = tonePy("Bái Huáichéng de xiězìběn");
   renderHub();
   renderResume();
 }
@@ -157,7 +144,7 @@ function renderResume() {
   const r = $("#resume");
   if (saved) {
     const les = LESSONS[saved.lesson], w = les.words[saved.word] || les.words[0];
-    r.innerHTML = `<span class="play" aria-hidden="true">${icon("play")}</span><span class="txt"><b>Continue</b><span>${esc(bookOf(les).title)} · ${les.cn} ${esc(les.title)} ·${saved.tab === "write" ? w.w + " · " : ""}${TAB_NAME[saved.tab]}</span></span><span class="chev">${icon("next")}</span>`;
+    r.innerHTML = `<span class="play" aria-hidden="true">${icon("play")}</span><span class="txt"><b>Continue</b><span>${esc(les.title)} · ${saved.tab === "write" ? w.w + " · " : ""}${TAB_NAME[saved.tab]}</span></span><span aria-hidden="true">${icon("next")}</span>`;
     r.onclick = () => go(`#/lesson/${les.id}/${saved.tab}`);
     r.hidden = false;
   } else r.hidden = true;
@@ -166,11 +153,8 @@ function renderResume() {
 function renderHub() {
   const p = sumProgress(LESSONS);
   const due = dueCount(ALL_BOOKS);
-  $("#hubBar").style.width = `${pct(p.mastered, p.chars)}%`;
-  $("#hubBooksSub").textContent = BOOKS.map((b) => `${b.title} · ${b.part}`).join(" / ");
-  const tdue = typingDue();
-  $("#typingMeta").textContent = tdue ? `${tdue} to review` : "";
-  $("#hubMeta").textContent = `${LESSONS.length} lesson${LESSONS.length > 1 ? "s" : ""} · ${p.mastered}/${p.chars} characters mastered`;
+  $("#typingMeta").textContent = typingDue() ? `${typingDue()} to review` : "Type Chinese or pinyin";
+  $("#hubMeta").textContent = `${p.mastered}/${p.chars} characters`;
   const nbDue = notebook.dueWords().length;
   $("#notebookMeta").textContent = nbDue ? `${nbDue} to review` : "Save words from daily life";
   $("#reviewMeta").textContent = due ? `${due} to review` : "Nothing to review right now";
@@ -183,11 +167,9 @@ function showBooks() {
   $("#bookList").innerHTML = BOOKS.map((b) => {
     const p = sumProgress(b.lessons), due = dueCount(b);
     return `<button class="book-card" type="button" data-book="${b.id}">
-      <span class="cover" style="--book:${b.color || "var(--cta)"}" aria-hidden="true">${b.title}</span>
-      <span class="book-txt"><b>${b.title}</b><span>${b.part} · ${esc(b.en || "")}</span>
-        <span>${b.lessons.length} lesson${b.lessons.length > 1 ? "s" : ""}${due ? ` · <span class="due">${due} to review</span>` : ""}</span>
-        <span class="lp"><span class="lp-bar" aria-hidden="true"><i style="width:${pct(p.mastered, p.chars)}%"></i></span><span class="lp-txt">${p.mastered}/${p.chars} characters mastered</span></span></span>
-      <span class="chev" aria-hidden="true">${icon("next")}</span>
+      <span class="book-top"><b>${b.title}</b><span class="muted">${b.part}</span><span class="row-n">${p.mastered}/${p.chars} 字</span><span class="chev" aria-hidden="true">${icon("next")}</span></span>
+      ${due ? `<span class="muted">${due} to review</span>` : ""}
+      ${p.mastered ? `<span class="lp-bar" aria-hidden="true"><i style="width:${pct(p.mastered, p.chars)}%"></i></span>` : ""}
     </button>`;
   }).join("");
   $$("[data-book]", $("#bookList")).forEach((el) => el.addEventListener("click", () => go(`#/book/${el.dataset.book}`)));
@@ -200,7 +182,7 @@ function showBook(id, section = "lessons") {
   openBookId = id;
   const book = BOOKS.find((b) => b.id === id);
   document.title = `${book.title} · 写字本`;
-  $("#bookEyebrow").textContent = `书 · ${book.part}`;
+  $("#bookEyebrow").textContent = book.part;
   $("#bookTitle").textContent = book.title;
   const due = dueCount(book);
   $("#reviewDue").textContent = due;
@@ -224,10 +206,7 @@ function renderLessonList(book) {
     const b = document.createElement("button");
     b.type = "button";
     b.className = "lesson-row";
-    b.innerHTML = `<span class="num">${NUM[les.n] || les.n}</span>
-      <span class="txt"><b>${les.title}</b><span>Lesson ${les.n} · ${les.words.length} words · ${p.chars} characters</span>
-        <span class="lp"><span class="lp-bar" aria-hidden="true"><i style="width:${pct(p.mastered, p.chars)}%"></i></span><span class="lp-txt">${p.mastered}/${p.chars} characters mastered · ${p.known} words known</span></span></span>
-      <span class="chev" aria-hidden="true">${icon("next")}</span>`;
+    b.innerHTML = `<span class="num">${les.n}</span><b>${les.title}</b>${p.mastered ? `<span class="row-n">${p.mastered}/${p.chars}</span>` : ""}<span class="chev" aria-hidden="true">${icon("next")}</span>`;
     b.addEventListener("click", () => {
       const li = lessonIndex(les.id);
       if (place()?.lesson !== li) progress.place.set({ lid: les.id, word: 0, tab: "write" });
@@ -243,7 +222,7 @@ function openLesson(li, wi = 0, tab = "write") {
   app.lesson = li;
   app.word = Math.min(wi, LESSONS[li].words.length - 1);
   const L = app.L(), book = bookOf(L);
-  $("#lessonEyebrow").textContent = `${book.title} · ${L.cn}`;
+  $("#lessonEyebrow").textContent = book.title;
   $("#lessonTitle").textContent = L.title;
   document.title = `${L.title} · 写字本`;
   renderWords();
@@ -276,8 +255,8 @@ function showWriteStudy() {
   $("#writeStudy").hidden = false;
   $("#writeStrip").hidden = false;
   $("#writeStrip").innerHTML = `<span class="lbl">Practice</span>${SKILLS.write.modes.filter((m) => modeAvailable(m.id, app.L())).map((m) =>
-    `<button class="btn" type="button" data-wmode="${m.id}"><span class="mini-seal">${m.seal}</span>${m.name}</button>`).join("")}
-    <a class="btn" href="#/print/${app.L().id}"><span class="mini-seal">印</span>Print sheet</a>`;
+    `<button class="btn ghost" type="button" data-wmode="${m.id}">${m.name}</button>`).join("")}
+    <a class="btn ghost" href="#/print/${app.L().id}">Print sheet</a>`;
   $$("[data-wmode]").forEach((b) => b.addEventListener("click", () => {
     clearWriters();
     $("#writeStudy").hidden = true;

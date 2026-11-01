@@ -6,7 +6,7 @@ import { setting, STROKE_SPEED } from "./settings.js";
 
 export function gridSVG() {
   return `<svg class="grid" viewBox="0 0 100 100" aria-hidden="true">
-    <rect x="1" y="1" width="98" height="98" fill="var(--card)" stroke="var(--grid)" stroke-width="1.5"/>
+    <rect x="1" y="1" width="98" height="98" fill="var(--card)" stroke="var(--grid)" stroke-width=".6"/>
     <g stroke="var(--grid)" stroke-width=".6" stroke-dasharray="3 3" fill="none">
       <line x1="50" y1="1" x2="50" y2="99"/><line x1="1" y1="50" x2="99" y2="50"/>
       <line x1="1" y1="1" x2="99" y2="99"/><line x1="99" y1="1" x2="1" y2="99"/>
