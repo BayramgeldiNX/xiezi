@@ -9,6 +9,7 @@ const settingRow = (key, label, choices, note = "") => `<div class="set-row"><sp
     `<button type="button" data-set="${key}" data-v="${v}" aria-pressed="${String(setting(key)) === String(v)}">${t}</button>`).join("")}</div>
   ${note ? `<small class="muted">${note}</small>` : ""}</div>`;
 import * as progress from "../progress/store.js";
+import * as notebook from "../notebook/store.js";
 import { syncAvailable, onSync, syncState, signIn, signUp, signOut, resetPassword } from "../sync/sync.js";
 
 const STATUS = {
@@ -131,7 +132,7 @@ function renderSheet() {
 }
 
 async function exportFile() {
-  const data = JSON.stringify(progress.exportBackup(), null, 1);
+  const data = JSON.stringify({ ...progress.exportBackup(), notebook: notebook.exportEntries() }, null, 1);
   const name = `xiezi-backup-${new Date().toISOString().slice(0, 10)}.json`;
   const file = new File([data], name, { type: "application/json" });
   // Phones: share sheet (Save to Files). Computers: normal download.
@@ -150,7 +151,9 @@ async function importFile(e) {
   const f = e.target.files?.[0];
   if (!f) return;
   try {
-    progress.importBackup(JSON.parse(await f.text()));
+    const backup = JSON.parse(await f.text());
+    progress.importBackup(backup);
+    notebook.importEntries(backup.notebook); // older backups have none
     msg = "Backup loaded and merged with this device's progress.";
   } catch (err) {
     msg = err.message || "Couldn't read that file.";

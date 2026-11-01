@@ -4,9 +4,11 @@
 //   users/{uid}/items/{key}     { k: key, d: { [deviceId]: stat }, t: serverTime }
 //   users/{uid}/sessions/{id}   one finished practice session
 //   users/{uid}/meta/place      { lid, word, tab, at }: where you were last (newest wins)
+//   users/{uid}/notebook/{word} a Notebook word; devices and Claude write single fields (merge)
 // Each device writes only its own d.{deviceId} entry, so devices never overwrite each other.
 import realConfig from "./firebase-config.js";
 import * as progress from "../progress/store.js";
+import * as notebook from "../notebook/store.js";
 import { docId } from "./ids.js";
 
 // Test mode (only when started with VITE_FIREBASE_EMULATOR=1): talk to the local Firebase emulators
@@ -75,7 +77,8 @@ function stop() {
   stopFns.forEach((f) => f());
   stopFns = [];
   progress.setSyncer(null);
-  if (state.email) progress.clearRemote();
+  notebook.setSyncer(null);
+  if (state.email) { progress.clearRemote(); notebook.clearRemote(); }
   emit({ status: "signed-out", email: null });
 }
 
@@ -97,6 +100,11 @@ async function start(user) {
     pushPlace: (p) => safely(() => F.setDoc(placeRef, p)),
     pushSession: (s) => safely(() => F.setDoc(sessionRef(s.id), s).then(() => progress.markSessionSent(s.id))),
   });
+  // Notebook words: send field-level patches; the cloud copy comes back through the listener below.
+  const nbRef = (w) => F.doc(db, "users", uid, "notebook", docId(w));
+  const nbPush = (w, patch) => safely(() => F.setDoc(nbRef(w), { w, ...patch }, { merge: true }).then(() => notebook.confirm(w, patch)));
+  notebook.setSyncer({ push: nbPush });
+  notebook.pendingAll().forEach(([w, patch]) => nbPush(w, patch));
   emit({ status: "syncing", email: user.email, error: null });
 
   // Upload what has not reached this account yet: everything the first time, then only changes.
@@ -141,7 +149,15 @@ async function start(user) {
     else if ((progress.place.get()?.at || 0) > (remote?.at || 0)) safely(() => F.setDoc(placeRef, progress.place.get()));
   }, fail);
 
-  stopFns.push(items, sess, placeSub);
+  const nb = F.onSnapshot(F.collection(db, "users", uid, "notebook"), (snap) => {
+    snap.docChanges().forEach((ch) => {
+      if (ch.type === "removed") notebook.applyRemoved(ch.doc.data().w);
+      else notebook.applyRemote(ch.doc.data().w, ch.doc.data());
+    });
+    if (snap.docChanges().length) notebook.remoteDone();
+  }, fail);
+
+  stopFns.push(items, sess, placeSub, nb);
 }
 
 /* ---------- private book content ---------- */
