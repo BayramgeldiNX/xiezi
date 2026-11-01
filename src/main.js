@@ -28,7 +28,7 @@ import { initSync } from "./sync/sync.js";
 import { initPWA } from "./pwa.js";
 import { animate, slideDirection, slidePage, moveTabPill, watchMotion, forgetQuestion, wireSoftClose } from "./lib/motion.js";
 
-const TABS = ["write", "listen", "speak", "read", "words"];
+const TABS = ["write", "listen", "speak", "read", "words", "exercises"];
 // Tabs of older versions (saved places, old links) → their new home.
 const OLD_TABS = { dict: "write", review: "write", cards: "words", tones: "listen" };
 
@@ -38,7 +38,7 @@ const OLD_TABS = { dict: "write", review: "write", cards: "words", tones: "liste
    #/notebook[/<word>]          Notebook: the word list, or one word
    #/books                      all books
    #/book/<book>[/review]       one book: its lessons, or its review
-   #/lesson/<book>/<n>/<tab>    a lesson (tabs: write, listen, speak, read, words)
+   #/lesson/<book>/<n>/<tab>    a lesson (tabs: write, listen, speak, read, words, exercises)
    #/print/<book>/<n>           printable practice sheet for a lesson
    Each page has its own address, so the Android / browser back gesture steps back one page. */
 const PAGES = ["home", "reviewView", "typingView", "searchView", "notebookView", "booksView", "bookView", "lessonView", "printView"];
@@ -247,7 +247,7 @@ function renderLessonList(book) {
   });
 }
 
-/* ---------- Lesson: 写 听 说 读 词 ---------- */
+/* ---------- Lesson: 写 听 说 读 词 练 ---------- */
 function openLesson(li, wi = 0, tab = "write") {
   showPage("lessonView");
   app.lesson = li;

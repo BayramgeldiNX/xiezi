@@ -1,4 +1,4 @@
-// Practice engine: the exercises behind each lesson's 写 听 说 读 词 tabs and the book Review.
+// Practice engine: the exercises behind each lesson's 写 听 说 读 词 练 tabs and the book Review.
 // openPractice(host, skill, ctx) shows a skill's exercises for ctx.words inside `host`.
 // Every exercise can also run on its own with fixed items and a `then` callback, so the
 // book Review can chain several of them into one mixed session.
@@ -24,6 +24,7 @@ import { hanziLesson, pronTips } from "./hanzi.js";
 // Modes that only exist when the lesson has that content.
 export const modeAvailable = (id, L) =>
   id.startsWith("wb-") ? workbookOf(L ? [L] : []).some((d) => "wb-" + d.kind === id)
+  : id === "gr-fill" ? grammarOf(L ? [L] : []).length > 0
   : id === "hanzi" ? !!L?.hanzi : id === "pron" ? !!L?.pron?.length : true;
 
 export const SKILLS = {
@@ -43,7 +44,6 @@ export const SKILLS = {
       { id: "sentence", seal: "句", name: "Sentences", sub: "Listen to a sentence, choose what it means" },
       { id: "tones", seal: "声", name: "Tones", sub: "Hear a syllable, pick its tone" },
       { id: "pron", seal: "音", name: "Pronunciation tips", sub: "Tone changes and sound rules, with examples" },
-      { id: "wb-dialog", seal: "对", name: "Dialogues", sub: "Hear a short dialogue, answer the question" },
     ],
   },
   speak: {
@@ -61,9 +61,6 @@ export const SKILLS = {
       { id: "text-quiz", seal: "问", name: "Read & answer", sub: "Questions about the texts" },
       { id: "order", seal: "组", name: "Build the sentence", sub: "Put the words in the right order" },
       { id: "read-pinyin", seal: "音", name: "How do you read it?", sub: "See the word, pick the right pinyin" },
-      { id: "wb-judge", seal: "判", name: "True or false", sub: "Does the ★ sentence match the text?" },
-      { id: "wb-reply", seal: "答", name: "Pick the reply", sub: "Choose the right answer to each sentence" },
-      { id: "fill", seal: "填", name: "Fill in the word", sub: "Choose the word that completes the sentence" },
     ],
   },
   words: {
@@ -74,6 +71,16 @@ export const SKILLS = {
       { id: "word-quiz", seal: "选", name: "Word quiz", sub: "See a word or its meaning, pick the match" },
       { id: "radical", seal: "部", name: "Which radical?", sub: "Find the radical (部首) in each character" },
       { id: "list", seal: "表", name: "Word list", sub: "All words with pinyin and sound" },
+    ],
+  },
+  exercises: {
+    seal: "练", name: "Exercises",
+    modes: [
+      { id: "gr-fill", seal: "法", name: "Grammar", sub: "Fill the blank in this lesson's grammar points" },
+      { id: "wb-dialog", seal: "对", name: "Dialogues", sub: "Hear a short dialogue, answer the question" },
+      { id: "wb-judge", seal: "判", name: "True or false", sub: "Does the ★ sentence match the text?" },
+      { id: "wb-reply", seal: "答", name: "Pick the reply", sub: "Choose the right answer to each sentence" },
+      { id: "fill", seal: "填", name: "Fill in the word", sub: "Choose the word that completes the sentence" },
     ],
   },
 };
@@ -175,7 +182,8 @@ function startMode(mode) {
     case "word-quiz": return words.length < 2 ? notEnough() : vocabQuiz({ items: ten(words), pool: words, mode: "mixed", title: "Word quiz" });
     case "list": return wordList(words);
     case "texts": return withBook((b) => textList(ui, [...b.texts, ...readings], bookNote(b)));
-    case "grammar": return withBook((b) => grammarNotes(b));
+    case "grammar": return grammarNotes();
+    case "gr-fill": return grammarQuiz({ items: shuffle(grammarOf(thisLesson() ? [thisLesson()] : [])), title: "Grammar · fill the blank" });
     case "text-quiz": return textQuiz(ui, readings);
     case "order": return orderGame(ui, lessonSentences(words, readings));
     case "read-pinyin": return pinyinQuiz(ui, words);
@@ -204,9 +212,9 @@ const bookNote = (b) =>
   b.status === "signed-out" ? `<p class="note">Sign in (Sync, on the home screen) to see this lesson's texts and grammar from the book.</p>`
   : b.status === "error" ? `<p class="note">Couldn't load the book's texts. Check your internet or VPN.</p>` : "";
 
-function grammarNotes(b) {
-  const notes = b.notes || [];
-  const L = LESSONS.find((l) => l.book === P.ctx.book && l.n === P.ctx.lesson);
+// The practice questions show at once; the book's notes fill in below them when they arrive.
+function grammarNotes() {
+  const L = thisLesson();
   const drills = L ? grammarOf([L]) : [];
   const points = L?.grammar || [];
   body().innerHTML = `<div class="panel gr">
@@ -216,15 +224,22 @@ function grammarNotes(b) {
       <ul>${points.map((g) => `<li><b>${esc(g.point)}</b> <span class="muted">${esc(g.en)}</span></li>`).join("")}</ul>
       <div class="controls"><button class="btn primary" type="button" id="grGo">${icon("play")} Fill the blanks · ${drills.length} questions</button></div>
     </section>` : ""}
-    ${notes.length ? notes.map((x, i) => `<section class="gr-note">
-      <h3><span class="gr-n">${i + 1}</span> ${esc(x.cn)}</h3>
-      <p>${esc(x.en)}</p>
-      <ul>${(x.examples || []).map((e) => `<li><span class="hz">${charLinks(e)}</span> ${sayBtns(e, "example", true)}</li>`).join("")}</ul>
-    </section>`).join("") : bookNote(b) || (points.length ? "" : `<p>No grammar notes for this lesson yet.</p>`)}
+    <div id="grBook"><p class="muted">Loading the book's notes…</p></div>
     ${backBtn()}
   </div>`;
   wireBack(body());
   $("#grGo")?.addEventListener("click", () => grammarQuiz({ items: shuffle(drills), title: "Grammar · fill the blank" }));
+  const slot = $("#grBook");
+  const fill = (b) => {
+    if (!slot.isConnected) return; // already moved on, for example into the questions
+    const notes = b.notes || [];
+    slot.innerHTML = notes.length ? notes.map((x, i) => `<section class="gr-note">
+      <h3><span class="gr-n">${i + 1}</span> ${esc(x.cn)}</h3>
+      <p>${esc(x.en)}</p>
+      <ul>${(x.examples || []).map((e) => `<li><span class="hz">${charLinks(e)}</span> ${sayBtns(e, "example", true)}</li>`).join("")}</ul>
+    </section>`).join("") : bookNote(b) || (points.length ? "" : `<p>No grammar notes for this lesson yet.</p>`);
+  };
+  lessonContent(P.ctx.book, P.ctx.lesson).then(fill, () => fill({ status: "error" }));
 }
 
 // Fill the blank: choose the word that completes the sentence. Results are saved as g:<drill id>.

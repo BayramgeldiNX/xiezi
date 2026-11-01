@@ -13,5 +13,5 @@ export const app = {
 };
 
 export const TAB_NAME = {
-  write: "写 Write", listen: "听 Listen", speak: "说 Speak", read: "读 Read", words: "词 Words",
+  write: "写 Write", listen: "听 Listen", speak: "说 Speak", read: "读 Read", words: "词 Words", exercises: "练 Exercises",
 };

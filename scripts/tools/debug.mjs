@@ -79,10 +79,11 @@ const STEPS = [
   ["notebook-gap", "#/notebook", `document.querySelector('[data-nbp=gap]').click(); ${W}`],
 ];
 const SKILL_MODES = {
-  listen: ["hear", "sentence", "tones", "pron", "wb-dialog"],
+  listen: ["hear", "sentence", "tones", "pron"],
   speak: ["say-word", "say-sentence"],
-  read: ["texts", "grammar", "text-quiz", "order", "read-pinyin", "wb-judge", "wb-reply", "fill"],
+  read: ["texts", "grammar", "text-quiz", "order", "read-pinyin"],
   words: ["cards", "match", "word-quiz", "radical", "list"],
+  exercises: ["gr-fill", "wb-dialog", "wb-judge", "wb-reply", "fill"],
 };
 const MODE_STEP = (SEL) => `
   const b = document.querySelector('${SEL}');

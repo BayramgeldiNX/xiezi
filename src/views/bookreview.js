@@ -14,14 +14,15 @@ const MAX = 10;     // items per type in one session
 const MIXED = 12;   // items in a mixed session
 
 // Each type: which results count for its schedule (keys), what its items are, and how it is practiced.
+// open: can start here with questions not practiced yet, not only ones that came back.
 const TYPES = [
   { id: "vocab", seal: "词", name: "Vocabulary", sub: "Meanings and words", keys: ["q:", "f:", "rp:"] },
   { id: "listen", seal: "听", name: "Listening", sub: "Hear a word, pick it or its meaning", keys: ["l:"] },
   { id: "write", seal: "写", name: "Writing", sub: "Write words from sound, pinyin or meaning", keys: ["d:"] },
   { id: "speak", seal: "说", name: "Speaking", sub: "Say words aloud", keys: ["s:"] },
   { id: "read", seal: "读", name: "Reading", sub: "Build sentences from the lessons", keys: ["o:"], sentences: true },
-  { id: "grammar", seal: "法", name: "Grammar", sub: "Fill the blank in sentences", keys: ["g:"], grammar: true },
-  { id: "workbook", seal: "练", name: "Workbook", sub: "Dialogues, true or false, replies", keys: ["wb:"], workbook: true },
+  { id: "grammar", seal: "法", name: "Grammar", sub: "Fill the blank in sentences", keys: ["g:"], grammar: true, open: true },
+  { id: "workbook", seal: "练", name: "Workbook", sub: "Dialogues, true or false, replies", keys: ["wb:"], workbook: true, open: true },
 ];
 
 let book = null;
@@ -47,7 +48,7 @@ function scan(t) {
   const practiced = rows.filter((r) => r.stat);
   const due = practiced.filter((r) => r.due).sort((a, b) => a.at - b.at);
   const upcoming = practiced.filter((r) => !r.due).sort((a, b) => a.at - b.at);
-  return { due, upcoming, practiced: practiced.length, total: rows.length, next: upcoming[0]?.at ?? null };
+  return { due, upcoming, fresh: rows.filter((r) => !r.stat), practiced: practiced.length, total: rows.length, next: upcoming[0]?.at ?? null };
 }
 
 // Every lesson of every book as one "book", for the Home review (shared words count once).
@@ -99,7 +100,7 @@ function showReview() {
       : `<p>Nothing to review yet. Practice this book's lessons first; every word you practice comes back here at the right time.</p>`}
     </div>
     <div class="mode-grid review-types">${scans.map(({ t, due, practiced, total: n }) => `
-      <button class="mode-card" type="button" data-type="${t.id}" ${!due.length && !practiced ? "disabled" : ""}>
+      <button class="mode-card" type="button" data-type="${t.id}" ${!due.length && !practiced && !(t.open && n) ? "disabled" : ""}>
         <span class="seal" aria-hidden="true">${t.seal}</span>
         <b>${t.name} ${due.length ? `<span class="due">${due.length} due</span>` : ""}</b>
         <small>${t.sub} · ${practiced}/${n} practiced</small>
@@ -115,7 +116,7 @@ function showReview() {
   $("#rvTest")?.addEventListener("click", startTest);
   $$("[data-type]", body()).forEach((b) => b.addEventListener("click", () => {
     const s = scans.find((x) => x.t.id === b.dataset.type);
-    const items = (s.due.length ? s.due : s.upcoming).slice(0, MAX);
+    const items = (s.t.open ? [...s.due, ...s.fresh, ...s.upcoming] : s.due.length ? s.due : s.upcoming).slice(0, MAX);
     runChain([{ t: s.t, items }]);
   }));
 }

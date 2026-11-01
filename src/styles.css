@@ -134,7 +134,7 @@ code { font-size: .85em; }
 .mode[aria-selected="true"], .seg button[aria-pressed="true"] { color: var(--ink); background: var(--card2); box-shadow: 0 0 0 1px var(--line2) inset; }
 .scope button .zh { font-family: var(--display); }
 @media (max-width: 600px) {
-  .tabs:not(.book-tabs) { width: 100%; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .tabs:not(.book-tabs) { width: 100%; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); }
   .tabs:not(.book-tabs) .tab { flex-direction: column; gap: 0; padding: 4px 0; line-height: 1.2; }
 }
 

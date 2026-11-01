@@ -35,7 +35,7 @@ await send("Emulation.setDeviceMetricsOverride", { width: 393, height: 852, devi
 let modes = 0;
 for (let n = 1; n <= N; n++) {
   console.log(`${BOOK} lesson ${n}… (${problems.length} problems so far)`);
-  for (const tab of ["write", "listen", "speak", "read", "words"]) {
+  for (const tab of ["write", "listen", "speak", "read", "words", "exercises"]) {
     where = `${BOOK} L${n} ${tab}`;
     await send("Page.navigate", { url: `${BASE}#/lesson/${BOOK}/${n}/${tab}` });
     await sleep(tab === "write" ? 1800 : 900);
