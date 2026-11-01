@@ -20,6 +20,8 @@ import { openReview, dueCount, ALL_BOOKS } from "./views/bookreview.js";
 import { openTyping, typingDue } from "./views/typing.js";
 import "./views/charsheet.js";
 import { openSearch } from "./views/search.js";
+import { openNotebook, notebookChanged } from "./views/notebook.js";
+import * as notebook from "./notebook/store.js";
 import { openPrint } from "./views/printsheet.js";
 import { hideGloss } from "./views/reading.js";
 import { initAccountChip } from "./views/account.js";
@@ -33,12 +35,13 @@ const OLD_TABS = { dict: "write", review: "write", cards: "words", tones: "liste
 /* ---------- Pages ----------
    #/                           home
    #/typing                     typing practice
+   #/notebook[/<word>]          Notebook: the word list, or one word
    #/books                      all books
    #/book/<book>[/review]       one book: its lessons, or its review
    #/lesson/<book>/<n>/<tab>    a lesson (tabs: write, listen, speak, read, words)
    #/print/<book>/<n>           printable practice sheet for a lesson
    Each page has its own address, so the Android / browser back gesture steps back one page. */
-const PAGES = ["home", "reviewView", "typingView", "searchView", "booksView", "bookView", "lessonView", "printView"];
+const PAGES = ["home", "reviewView", "typingView", "searchView", "notebookView", "booksView", "bookView", "lessonView", "printView"];
 let current = "home";
 let printLesson = null;
 function showPage(id) {
@@ -71,6 +74,12 @@ async function route() {
   }
   if (page === "review") { showPage("reviewView"); document.title = "Review · 写字本"; return openReview(ALL_BOOKS, "#allReview"); }
   if (page === "search") { showPage("searchView"); document.title = "Search · 写字本"; return openSearch(); }
+  if (page === "notebook") {
+    showPage("notebookView"); document.title = "Notebook · 写字本";
+    let word = null;
+    try { word = a ? decodeURIComponent(a) : null; } catch {}
+    return openNotebook(word);
+  }
   if (page === "typing") { showPage("typingView"); document.title = "Typing · 写字本"; return openTyping(); }
   if (page === "book" && BOOKS.some((x) => x.id === a)) return showBook(a, b === "review" ? "review" : "lessons");
   if (page === "lesson") {
@@ -95,7 +104,7 @@ function back(to) {
   else go(to);
 }
 const upFrom = () => ({
-  booksView: "#/", reviewView: "#/", typingView: "#/", searchView: "#/", bookView: "#/books", printView: `#/lesson/${printLesson}/write`,
+  booksView: "#/", reviewView: "#/", typingView: "#/", searchView: "#/", notebookView: location.hash.startsWith("#/notebook/") ? "#/notebook" : "#/", bookView: "#/books", printView: `#/lesson/${printLesson}/write`,
   lessonView: `#/book/${app.L()?.book}`,
 })[current];
 
@@ -162,6 +171,8 @@ function renderHub() {
   const tdue = typingDue();
   $("#typingMeta").textContent = tdue ? `${tdue} to review` : "";
   $("#hubMeta").textContent = `${LESSONS.length} lesson${LESSONS.length > 1 ? "s" : ""} · ${p.mastered}/${p.chars} characters mastered`;
+  const nbDue = notebook.dueWords().length;
+  $("#notebookMeta").textContent = nbDue ? `${nbDue} to review` : "Save words from daily life";
   $("#reviewMeta").textContent = due ? `${due} to review` : "Nothing to review right now";
 }
 
@@ -284,6 +295,8 @@ $("#openBooks").addEventListener("click", () => go("#/books"));
 $("#openReview").addEventListener("click", () => go("#/review"));
 $("#openTyping").addEventListener("click", () => go("#/typing"));
 $("#openSearch").addEventListener("click", () => go("#/search"));
+$("#openNotebook").addEventListener("click", () => go("#/notebook"));
+$("#notebookBack").addEventListener("click", () => back(upFrom()));
 $("#printBack").addEventListener("click", () => back(upFrom()));
 $("#wordNav").addEventListener("click", (e) => {
   const g = e.target.closest("[data-go]");
@@ -291,6 +304,10 @@ $("#wordNav").addEventListener("click", (e) => {
 });
 
 // Synced results from another device: refresh what's on screen without interrupting practice.
+notebook.onNotebook(() => {
+  if (current === "home") renderHub();
+  else if (current === "notebookView") notebookChanged();
+});
 progress.onProgress(() => {
   if (current === "home") { renderHub(); renderResume(); }
   else if (current === "bookView" && !$("#lessonCards").hidden) renderLessonList(BOOKS.find((b) => b.id === openBookId) || BOOKS[0]);

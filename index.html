@@ -59,6 +59,14 @@
         </span>
         <span class="chev" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></span>
       </button>
+      <button class="hub-card wide" type="button" id="openNotebook">
+        <span class="seal" aria-hidden="true">记</span>
+        <span class="hub-txt">
+          <b>Notebook<span class="hub-cn">生词本</span></b>
+          <span class="hub-sub" id="notebookMeta">Save words from daily life</span>
+        </span>
+        <span class="chev" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></span>
+      </button>
       <button class="hub-card wide" type="button" id="openBooks">
         <span class="seal red" aria-hidden="true">书</span>
         <span class="hub-txt">
@@ -113,6 +121,15 @@
       <div><span class="eyebrow">查 · 查词</span><h2>Search</h2></div>
     </div>
     <div id="searchBody" class="inner"></div>
+  </section>
+
+  <!-- NOTEBOOK -->
+  <section id="notebookView" class="page" hidden>
+    <div class="topbar">
+      <button class="back" type="button" id="notebookBack" aria-label="Back"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <div><span class="eyebrow">记 · 生词本</span><h2>Notebook</h2></div>
+    </div>
+    <div id="notebookBody" class="inner"></div>
   </section>
 
   <!-- PRINTABLE PRACTICE SHEET -->

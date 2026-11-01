@@ -548,3 +548,23 @@ dialog.sheet::backdrop { background: rgb(0 0 0 / .5); }
 .wb-line .who { color: var(--muted); font-size: .85rem; min-width: 1.5em; }
 .hzl-ex { font-size: 1.3rem; letter-spacing: .15em; }
 .hzl-big { font-size: 1.7rem; min-width: 1.4em; display: inline-block; text-align: center; }
+
+/* Notebook */
+.nb-add { display: flex; gap: 10px; align-items: center; }
+.nb-add .search { flex: 1; min-width: 0; }
+.nb-row { cursor: pointer; }
+.nb-row:hover td, .nb-row:focus-visible td { background: color-mix(in srgb, var(--gold) 8%, transparent); }
+.nb-row .chev { width: 28px; text-align: right; color: var(--muted); }
+.nb-wait { display: block; }
+.nb-empty { margin: 0; line-height: 1.6; }
+.nb-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.nb-hz { font-family: var(--display); font-size: clamp(2.6rem, 11vw, 4rem); font-weight: 700; line-height: 1.1; overflow-wrap: anywhere; }
+.nb-field { display: grid; gap: 4px; font-size: .85rem; color: var(--muted); }
+.nb-field input { font: inherit; font-size: 16px; padding: 10px 14px; border-radius: 12px; border: 1px solid var(--line2); background: transparent; color: var(--ink); }
+.nb-alts { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.nb-sent { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0; font-size: 1.3rem; }
+.nb-char { display: grid; grid-template-columns: auto 1fr; gap: 6px 14px; align-items: center; padding: 10px 0; border-top: 1px solid var(--line); }
+.nb-char:first-of-type { border-top: 0; }
+.nb-tip { min-width: 0; }
+.nb-stroke { grid-column: 1 / -1; display: grid; justify-items: center; gap: 8px; }
+.nb-stroke .box { width: min(220px, 70vw); }
