@@ -58,7 +58,9 @@ let routeToken = 0;
 async function route() {
   const token = ++routeToken;
   const [, page, a, b, c] = location.hash.split("/");
-  if (page === "lesson" || page === "print") {
+  if ((page === "lesson" || page === "print") && lessonIndex(`${a}/${b}`) >= 0) {
+    // Nothing on screen while the shapes load: no empty Home on a reload, and no lesson to redraw without them.
+    showPage("loading");
     try { await loadStrokes(); } catch (e) { console.error(e); return showHome(); }
     if (token !== routeToken) return;
   }

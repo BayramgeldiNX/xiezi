@@ -4,7 +4,6 @@ import { syllables, tonePy, stripTone, addTone } from "../lib/pinyin.js";
 import { say, autoSay, sayBtns } from "../lib/speech.js";
 import { icon } from "../lib/icons.js";
 import { CHARS, TONE_SETS } from "../data/index.js";
-import { app } from "../app.js";
 import * as progress from "../progress/store.js";
 
 const TONE_NAMES = ["", "1st · high, flat", "2nd · rising", "3rd · dip", "4th · falling"];

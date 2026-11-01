@@ -146,6 +146,31 @@ try {
   const anonBook = await fetch(`${FS}/books/hsk1/private/8`);
   check("Not signed in: book texts refused", anonBook.status === 403, `HTTP ${anonBook.status}`);
 
+  // 11. Starting the app uploads only what changed, so reopening rewrites nothing.
+  const itemTime = async (key) => (await (await fetch(`${FS}/users/${login.localId}/items/${encodeURIComponent(key)}`, { headers: admin })).json()).updateTime;
+  const before = await itemTime("w:你");
+  await A.open();
+  await A.waitStatus("synced");
+  await sleep(1500);
+  check("Reopening A rewrites nothing in the cloud", !!before && (await itemTime("w:你")) === before, before);
+  await A.record("w:好", true);
+  await sleep(1500);
+  check("A's new result still reaches the cloud", !!(await itemTime("w:好")));
+  check("A's older result stays untouched by it", (await itemTime("w:你")) === before);
+
+  // 12. Continue: the newest place reaches the other device, and its Home card updates live.
+  await B.open();
+  const signedBack = await B.signIn(false);
+  check("B signs in again", signedBack === "ok", signedBack);
+  await B.waitStatus("synced");
+  await A.js(`const s = await import('/xiezi/src/progress/store.js'); s.place.set({ lid: 'hsk2/3', word: 1, tab: 'listen' }); return true;`);
+  await sleep(4000);
+  check("B receives A's place", (await B.js(`return JSON.parse(localStorage.getItem('hz-state') || '{}').lid`)) === "hsk2/3");
+  check("B's Continue card shows it without a reload", /HSK 2/.test((await B.js(`return document.querySelector('#resume').textContent`)) || ""));
+  const placeTime = await A.js(`return JSON.parse(localStorage.getItem('hz-state')).at`);
+  await B.js(`const s = await import('/xiezi/src/progress/store.js'); return s.applyRemotePlace({ lid: 'hsk1/1', word: 0, tab: 'write', at: ${placeTime} - 1000 });`);
+  check("An older place never replaces a newer one", (await B.js(`return JSON.parse(localStorage.getItem('hz-state')).lid`)) === "hsk2/3");
+
   check("No JS errors on either device", A.errors.length === 0 && B.errors.length === 0, [...A.errors, ...B.errors].join(" | "));
 } finally {
   A.close(); B.close();
