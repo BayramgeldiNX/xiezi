@@ -1,7 +1,7 @@
 // 田字格 grid, stroke thumbnails and Hanzi Writer setup.
 import HanziWriter from "hanzi-writer";
 import { css } from "./util.js";
-import { STROKE_DATA } from "../data/index.js";
+import { STROKE_DATA, loadStrokes } from "../data/index.js";
 import { setting, STROKE_SPEED } from "./settings.js";
 
 export function gridSVG() {
@@ -21,7 +21,7 @@ export function stripSVG(c, upto) {
   return `<svg viewBox="0 0 1024 1024" role="img" aria-label="${c} stroke ${upto + 1}"><g transform="translate(0,900) scale(1,-1)">${paths}</g></svg>`;
 }
 
-const loader = (c, onLoad, onError) => (STROKE_DATA[c] ? onLoad(STROKE_DATA[c]) : onError?.(new Error("no data for " + c)));
+const loader = (c, onLoad, onError) => { loadStrokes().then(() => (STROKE_DATA[c] ? onLoad(STROKE_DATA[c]) : onError?.(new Error("no data for " + c))), onError); };
 
 export function makeWriter(el, c, size, extra = {}) {
   return HanziWriter.create(el, c, Object.assign({

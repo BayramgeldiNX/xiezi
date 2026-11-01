@@ -7,7 +7,7 @@ import { tonePy } from "./lib/pinyin.js";
 import { stopSpeech } from "./lib/speech.js";
 import { clearWriters } from "./lib/draw.js";
 import { icon } from "./lib/icons.js";
-import { BOOKS, LESSONS, READINGS, bookOf, lessonIndex, lessonChars, wordChars } from "./data/index.js";
+import { BOOKS, LESSONS, READINGS, bookOf, lessonIndex, lessonChars, wordChars, loadStrokes } from "./data/index.js";
 import { app, TAB_NAME } from "./app.js";
 import * as progress from "./progress/store.js";
 import { charStatus, wordStatus } from "./progress/model.js";
@@ -53,8 +53,15 @@ const go = (hash) => { if (location.hash !== hash) location.hash = hash; else ro
 const setHash = (hash) => history.replaceState(history.state, "", hash);
 const pageOf = (url) => new URL(url).hash || "#/";
 
-function route() {
+// A newer route replaces an older one that is still waiting for the stroke shapes.
+let routeToken = 0;
+async function route() {
+  const token = ++routeToken;
   const [, page, a, b, c] = location.hash.split("/");
+  if (page === "lesson" || page === "print") {
+    try { await loadStrokes(); } catch (e) { console.error(e); return showHome(); }
+    if (token !== routeToken) return;
+  }
   if (page === "books") return showBooks();
   if (page === "print" && lessonIndex(`${a}/${b}`) >= 0) {
     const L = LESSONS[lessonIndex(`${a}/${b}`)];
@@ -348,3 +355,5 @@ initAccountChip();
 route();
 initSync();
 initPWA();
+// Load the stroke shapes in the background so the first lesson opens at once.
+setTimeout(() => loadStrokes().catch(() => {}), 1500);

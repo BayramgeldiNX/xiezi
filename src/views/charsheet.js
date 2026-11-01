@@ -3,7 +3,7 @@
 import { $, $$, esc } from "../lib/util.js";
 import { tonePy, syllables, stripTone } from "../lib/pinyin.js";
 import { autoSay, sayBtns } from "../lib/speech.js";
-import { CHARS, CHARINFO, RADICALS, STROKE_DATA, LESSONS, DICT, wordsWith, bookOf } from "../data/index.js";
+import { CHARS, CHARINFO, RADICALS, STROKE_DATA, loadStrokes, LESSONS, DICT, wordsWith, bookOf } from "../data/index.js";
 import * as progress from "../progress/store.js";
 import { charStatus } from "../progress/model.js";
 
@@ -107,7 +107,7 @@ document.addEventListener("click", (e) => {
   if (!el) return;
   e.preventDefault();
   e.stopPropagation();
-  openChar(el.dataset.char);
+  loadStrokes().catch(() => {}).then(() => openChar(el.dataset.char));
 }, true);
 
 // A word with each known character tappable.

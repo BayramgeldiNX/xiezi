@@ -2,7 +2,8 @@
 // (see README). LESSONS is every lesson of every book, in book order.
 import CHARS from "./chars.json";
 import STROKE_NAMES from "./stroke-names.json";
-import STROKE_DATA from "./strokes.gen.json";
+import strokeChars from "./stroke-chars.gen.json";
+import { STROKE_DATA, loadStrokes } from "./strokes.js";
 import TONE_SETS from "./tone-sets.json";
 import GLOSSARY from "./glossary.json";
 import CHARINFO from "./charinfo.gen.json";
@@ -25,7 +26,7 @@ export const LESSONS = BOOKS.flatMap((b) => b.lessons);
 export const bookOf = (lesson) => BOOKS.find((b) => b.id === lesson.book);
 export const lessonIndex = (id) => LESSONS.findIndex((l) => l.id === id);
 
-export { CHARS, STROKE_NAMES, STROKE_DATA, TONE_SETS, GLOSSARY, CHARINFO, RADICALS };
+export { CHARS, STROKE_NAMES, STROKE_DATA, loadStrokes, TONE_SETS, GLOSSARY, CHARINFO, RADICALS };
 
 // Every word (from all lessons) that contains a character.
 export const wordsWith = (c) => wordsOf(LESSONS).filter((w) => w.w.includes(c));
@@ -46,7 +47,9 @@ export const DICT = (() => {
 export const grammarOf = (lessons) => lessons.flatMap((l) => (l.grammar || []).flatMap((g, gi) =>
   g.drills.map((d, di) => ({ ...d, id: `${l.id}/${gi + 1}.${di + 1}`, point: g.point, rule: g.en, lesson: l.id }))));
 
-export const wordChars =(w) => [...new Set(w.w)].filter((c) => STROKE_DATA[c]);
+// Which characters have stroke data (the shapes themselves load later, see strokes.js).
+const HAS_STROKES = new Set(strokeChars);
+export const wordChars = (w) => [...new Set(w.w)].filter((c) => HAS_STROKES.has(c));
 export const lessonChars = (lesson) => [...new Set(lesson.words.flatMap(wordChars))];
 
 // Every word of the given lessons, each tagged with its lesson (a word can appear in several lessons;
