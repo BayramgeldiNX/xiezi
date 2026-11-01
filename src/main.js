@@ -26,6 +26,7 @@ import { hideGloss } from "./views/reading.js";
 import { initAccountChip } from "./views/account.js";
 import { initSync } from "./sync/sync.js";
 import { initPWA } from "./pwa.js";
+import { animate, slideDirection, slidePage, moveTabPill, watchBars } from "./lib/motion.js";
 
 const TABS = ["write", "listen", "speak", "read", "words"];
 // Tabs of older versions (saved places, old links) → their new home.
@@ -43,6 +44,8 @@ const OLD_TABS = { dict: "write", review: "write", cards: "words", tones: "liste
 const PAGES = ["home", "reviewView", "typingView", "searchView", "notebookView", "booksView", "bookView", "lessonView", "printView"];
 let current = "home";
 let printLesson = null;
+let lastHash = null;       // the page hash of the last slide, null before the first page
+let browserAnimated = false; // the browser already animated this navigation (swipe back)
 function showPage(id) {
   clearWriters();
   stopSpeech();
@@ -50,6 +53,12 @@ function showPage(id) {
   current = id;
   for (const p of PAGES) $("#" + p).hidden = p !== id;
   scrollTo(0, 0);
+  if (id === "loading") return;
+  // The new page slides in; the old one is gone at once. Not on the first page, nor when the hash is unchanged.
+  const hash = location.hash || "#/";
+  if (lastHash !== null && hash !== lastHash && !browserAnimated) slidePage($("#" + id), slideDirection(lastHash, hash));
+  lastHash = hash;
+  browserAnimated = false;
 }
 const go = (hash) => { if (location.hash !== hash) location.hash = hash; else route(); };
 const setHash = (hash) => history.replaceState(history.state, "", hash);
@@ -92,6 +101,7 @@ async function route() {
 }
 addEventListener("hashchange", (e) => {
   // Remember which page this one was opened from, so the back button can step back in history.
+  browserAnimated = !!e.hasUAVisualTransition;
   if (!history.state) history.replaceState({ from: pageOf(e.oldURL) }, "");
   route();
 });
@@ -172,11 +182,12 @@ function showBooks() {
       ${p.mastered ? `<span class="lp-bar" aria-hidden="true"><i style="width:${pct(p.mastered, p.chars)}%"></i></span>` : ""}
     </button>`;
   }).join("");
+  $$(".lp-bar i", $("#bookList")).forEach((i) => animate(i, [{ width: "0%" }, { width: i.style.width }], { duration: 250 }));
   $$("[data-book]", $("#bookList")).forEach((el) => el.addEventListener("click", () => go(`#/book/${el.dataset.book}`)));
 }
 
 let openBookId = null;
-function showBook(id, section = "lessons") {
+function showBook(id, section = "lessons", tapped = false) {
   if (current !== "bookView" || openBookId !== id) showPage("bookView");
   else { clearWriters(); stopSpeech(); hideGloss(); }
   openBookId = id;
@@ -192,10 +203,11 @@ function showBook(id, section = "lessons") {
   $("#bookReview").hidden = section !== "review";
   if (section === "review") openReview(book, "#bookReview");
   else renderLessonList(book);
+  moveTabPill($(".book-tabs"), !tapped);
 }
 $$("[data-btab]").forEach((b) => b.addEventListener("click", () => {
   setHash(`#/book/${openBookId}${b.dataset.btab === "review" ? "/review" : ""}`);
-  showBook(openBookId, b.dataset.btab);
+  showBook(openBookId, b.dataset.btab, true);
 }));
 
 function renderLessonList(book) {
@@ -226,7 +238,7 @@ function openLesson(li, wi = 0, tab = "write") {
   $("#lessonTitle").textContent = L.title;
   document.title = `${L.title} · 写字本`;
   renderWords();
-  showTab(TABS.includes(tab) ? tab : OLD_TABS[tab] || "write");
+  showTab(TABS.includes(tab) ? tab : OLD_TABS[tab] || "write", false);
 }
 
 // The words and texts every exercise of this lesson uses.
@@ -235,7 +247,7 @@ const lessonCtx = () => {
   return { words: L.words.map((w) => ({ ...w, lesson: L.id })), readings: READINGS.filter((r) => r.lesson === L.id), lesson: L.n, book: L.book };
 };
 
-function showTab(tab) {
+function showTab(tab, tapped = false) {
   clearWriters();
   stopSpeech();
   hideGloss();
@@ -244,6 +256,8 @@ function showTab(tab) {
   for (const t of TABS) $("#tab-" + t).hidden = t !== tab;
   if (tab === "write") showWriteStudy();
   else openPractice(`#tab-${tab}`, tab, lessonCtx());
+  animate($("#tab-" + tab), [{ opacity: 0 }, { opacity: 1 }], { duration: 150 });
+  moveTabPill($(".tabs:not(.book-tabs)"), !tapped);
   app.savePlace();
   setHash(`#/lesson/${app.L().id}/${tab}`);
 }
@@ -267,7 +281,7 @@ function showWriteStudy() {
   renderWord(app.word);
 }
 
-$$(".tab").forEach((b) => b.addEventListener("click", () => showTab(b.dataset.tab)));
+$$(".tab").forEach((b) => b.addEventListener("click", () => showTab(b.dataset.tab, true)));
 $("#backBtn").addEventListener("click", () => back(upFrom()));
 $$("[data-back-to]").forEach((b) => b.addEventListener("click", () => back(b.dataset.backTo)));
 $("#openBooks").addEventListener("click", () => go("#/books"));
@@ -324,6 +338,7 @@ fsBtn.addEventListener("click", async () => {
 
 /* ---------- Resize / rotation: writers have a fixed pixel size, so redraw ---------- */
 function redraw() {
+  $$(".tabs").forEach((t) => moveTabPill(t, true));
   // Write tab shows either stroke-order study or a writing exercise; redraw the one on screen.
   if (current === "lessonView" && app.tab === "write" && !$("#writeStudy").hidden) renderWord(app.word);
   else dictRedraw();
@@ -351,7 +366,9 @@ addEventListener("orientationchange", () => setTimeout(widthChanged, 300));
 
 /* ---------- Boot: the app icon opens Home; a reload stays on the same page ---------- */
 initAccountChip();
+watchBars($(".wrap"));
 route();
+document.fonts?.ready.then(() => $$(".tabs").forEach((t) => moveTabPill(t, true)));
 initSync();
 initPWA();
 // Load the stroke shapes in the background so the first lesson opens at once.
