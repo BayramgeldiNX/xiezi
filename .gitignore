@@ -7,3 +7,5 @@ fonts-src/
 .env*.local
 data-src/
 screenshots-*/
+public/strokes/
+.cache/

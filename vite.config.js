@@ -34,11 +34,21 @@ export default defineConfig({
       workbox: {
         // Recordings are not downloaded at install (there are 1,700+); each one is kept once it has played.
         globPatterns: ["**/*.{js,css,html,woff2,png,svg,json}"],
+        // Per-character strokes (~9,500 files) and dictionary shards load on demand and are kept once used.
+        globIgnores: ["strokes/**", "dict/**"],
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
         runtimeCaching: [{
           urlPattern: ({ url }) => url.pathname.includes("/audio/") && url.pathname.endsWith(".mp3"),
           handler: "CacheFirst",
           options: { cacheName: "xz-audio", expiration: { maxEntries: 4000 }, rangeRequests: true },
+        }, {
+          urlPattern: ({ url }) => url.pathname.includes("/strokes/") && url.pathname.endsWith(".json"),
+          handler: "CacheFirst",
+          options: { cacheName: "xz-strokes", expiration: { maxEntries: 3000 } },
+        }, {
+          urlPattern: ({ url }) => url.pathname.includes("/dict/") && url.pathname.endsWith(".json"),
+          handler: "CacheFirst",
+          options: { cacheName: "xz-dict", expiration: { maxEntries: 80 } },
         }],
         navigateFallback: "index.html",
         cleanupOutdatedCaches: true,
