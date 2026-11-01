@@ -46,6 +46,7 @@ let current = "home";
 let printLesson = null;
 let lastHash = null;       // the page hash of the last slide, null before the first page
 let browserAnimated = false; // the browser already animated this navigation (swipe back)
+let slideHint = null;      // a direction for pages of the same depth (next / previous lesson)
 function showPage(id) {
   clearWriters();
   stopSpeech();
@@ -56,9 +57,10 @@ function showPage(id) {
   if (id === "loading") return;
   // The new page slides in; the old one is gone at once. Not on the first page, nor when the hash is unchanged.
   const hash = location.hash || "#/";
-  if (lastHash !== null && hash !== lastHash && !browserAnimated) slidePage($("#" + id), slideDirection(lastHash, hash));
+  if (lastHash !== null && hash !== lastHash && !browserAnimated) slidePage($("#" + id), slideHint || slideDirection(lastHash, hash));
   lastHash = hash;
   browserAnimated = false;
+  slideHint = null;
 }
 const go = (hash) => { if (location.hash !== hash) location.hash = hash; else route(); };
 const setHash = (hash) => history.replaceState(history.state, "", hash);
@@ -238,8 +240,28 @@ function openLesson(li, wi = 0, tab = "write") {
   $("#lessonTitle").textContent = L.title;
   document.title = `${L.title} · 写字本`;
   renderWords();
+  renderLessonNav();
   showTab(TABS.includes(tab) ? tab : OLD_TABS[tab] || "write", false);
 }
+
+// Previous / next lesson of the same book, under every tab. The same tab opens there.
+function renderLessonNav() {
+  const L = app.L(), list = bookOf(L).lessons, i = list.findIndex((l) => l.id === L.id);
+  const side = (l, dir) => l
+    ? `<button class="btn ghost ${dir}" type="button" data-lesson="${l.id}" data-dir="${dir}" aria-label="${dir === "prev" ? "Previous" : "Next"} lesson: ${esc(l.title)}">
+        ${dir === "prev" ? icon("back") : ""}<span class="txt"><small>${dir === "prev" ? "Previous" : "Next"} · ${esc(l.cn)}</small><b>${esc(l.title)}</b></span>${dir === "next" ? icon("next") : ""}
+      </button>`
+    : "";
+  $("#lessonNav").innerHTML = side(list[i - 1], "prev") + side(list[i + 1], "next");
+}
+// Moving along the book replaces this page in history, so Back still goes up to the book.
+$("#lessonNav").addEventListener("click", (e) => {
+  const b = e.target.closest("[data-lesson]");
+  if (!b) return;
+  slideHint = b.dataset.dir === "next" ? "forward" : "back";
+  setHash(`#/lesson/${b.dataset.lesson}/${app.tab}`);
+  route();
+});
 
 // The words and texts every exercise of this lesson uses.
 const lessonCtx = () => {
