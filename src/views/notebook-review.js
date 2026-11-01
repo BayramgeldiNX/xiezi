@@ -82,7 +82,7 @@ function flashChoice(words, back) {
 
 /* ---------- the run ---------- */
 function run(S) {
-  S.pos = 0; S.right = 0; S.missed = [];
+  S.pos = 0; S.right = 0; S.answered = 0; S.missed = [];
   S.dir = new Map();
   next(S);
 }
@@ -103,6 +103,7 @@ const stopBtn = `<button class="btn ghost" type="button" id="nbrStop">Stop</butt
 // Save one answer and go on.
 function answer(S, it, ok, miss = ok ? 0 : 1) {
   progress.record(nb.nbKey(it.e.w), { ok, miss });
+  S.answered++;
   if (ok) S.right++; else S.missed.push(it);
 }
 const advance = (S) => { S.pos++; next(S); };
@@ -235,7 +236,7 @@ function write(S, it) {
 /* ---------- results ---------- */
 function results(S, stopped = false) {
   clearWriters();
-  const asked = stopped ? S.pos : S.items.length;
+  const asked = stopped ? S.answered : S.items.length;
   const retry = S.missed.length ? () => run({ ...S, items: S.missed.slice() }) : null;
   body().innerHTML = `<div class="panel">
     <span class="lbl">Results · ${esc(S.title)}</span>

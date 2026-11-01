@@ -19,6 +19,7 @@ const MAX_LEN = 12;
 
 let view = { kind: "list", word: null }; // what is on screen; "review" while a review runs
 let query = "";
+let ownEdit = false; // saving a field must not redraw the page under the button being tapped
 
 export function openNotebook(word) {
   const e = word && nb.getWord(word);
@@ -28,7 +29,10 @@ export function openNotebook(word) {
 
 // Redraw after a change from another device or from Claude, without disturbing typing or a running review.
 export function notebookChanged() {
-  if (view.kind === "review" || body().contains(document.activeElement) && document.activeElement.matches("input, textarea")) return;
+  if (view.kind === "review" || ownEdit) return;
+  const typing = document.activeElement;
+  // The list redraw leaves the add box alone, so a saved word appears while the keyboard stays open.
+  if (body().contains(typing) && typing.matches("input, textarea") && typing.id !== "nbInput") return;
   if (view.kind === "word") { const e = nb.getWord(view.word); return e && !e.deleted ? wordPage(view.word) : listPage(); }
   renderList();
 }
@@ -127,7 +131,6 @@ function wordPage(w) {
   const inBook = wordsOf(LESSONS).find((x) => x.w === w);
   const L = inBook && LESSONS.find((l) => l.id === inBook.lesson);
   body().innerHTML = `<div class="panel nb-word">
-      <button class="btn ghost" type="button" id="nbBack">${icon("back")} Notebook</button>
       <div class="nb-head"><span class="nb-hz">${esc(w)}</span>${sayBtns(w, e.py || w)}</div>
       <label class="nb-field">Pinyin<input data-f="py" value="${esc(e.py)}" autocomplete="off" autocapitalize="none" spellcheck="false"></label>
       <label class="nb-field">Meaning<input data-f="en" value="${esc(e.en)}" autocomplete="off"></label>
@@ -155,10 +158,12 @@ function wordPage(w) {
       ${L ? `<p class="note">Also in <a class="tap-link" href="#/lesson/${esc(L.id)}/write">${esc(bookOf(L).title)} · ${esc(L.cn)}</a></p>` : ""}
       <div class="controls" id="nbDel"><button class="btn ghost" type="button" id="nbDelBtn">Delete this word</button></div>
     </div>`;
-  $("#nbBack").addEventListener("click", () => { location.hash = "#/notebook"; });
   $$("input[data-f]", body()).forEach((inp) => inp.addEventListener("change", () => {
     const v = inp.value.trim();
-    if (v !== nb.getWord(w)?.[inp.dataset.f]) nb.update(w, { [inp.dataset.f]: v });
+    if (v === nb.getWord(w)?.[inp.dataset.f]) return;
+    ownEdit = true;
+    nb.update(w, { [inp.dataset.f]: v });
+    ownEdit = false;
   }));
   $$("[data-stroke]", body()).forEach((b) => b.addEventListener("click", () => toggleStroke(b)));
   $("#nbDelBtn").addEventListener("click", () => {
