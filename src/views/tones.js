@@ -100,10 +100,11 @@ function toneEnd() {
     <div class="score">${tq.right} / ${total} right</div>
     ${tq.missed.length ? `<p>Listen to these again:</p><div class="result-list">${tq.missed.map((q) => `<span>${q.hz} <span class="py">${tonePy(addTone(q.plain, q.tone))}</span> ${sayBtns(q.say, q.plain, true)}</span>`).join("")}</div>`
       : `<p>全对！Quán duì! Perfect ears!</p>`}
-    <div class="controls"><button class="btn primary big" type="button" id="toneAgain">${icon("replay")} Play again</button><button class="btn big" type="button" id="toneMenu">Choose a set</button></div>
+    <div class="controls"><button class="btn primary big" type="button" id="toneAgain">${icon("replay")} Play again</button>${tq.missed.length ? `<button class="btn big" type="button" id="toneRetry">Retry missed</button>` : ""}<button class="btn big" type="button" id="toneMenu">Choose a set</button></div>
   </div>`;
-  const src = tq.src;
+  const src = tq.src, missed = tq.missed;
   $("#toneAgain").addEventListener("click", () => { tq = { qs: toneQuestions(src), pos: 0, right: 0, missed: [], src }; toneAsk(); });
+  $("#toneRetry")?.addEventListener("click", () => { tq = { qs: missed, pos: 0, right: 0, missed: [], src }; toneAsk(); });
   $("#toneMenu").addEventListener("click", () => tonesIntro());
 }
 

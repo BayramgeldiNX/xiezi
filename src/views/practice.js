@@ -250,7 +250,7 @@ export function choiceQuiz(cfg) {
   const wire = (el) => $$("[data-back]", el).forEach((b) => b.addEventListener("click", leave));
   if (!items.length) return notEnough();
   let pos = 0, right = 0;
-  const missed = [];
+  const missed = [], missedItems = [];
   function ask() {
     if (pos >= items.length) return end();
     const w = items[pos];
@@ -277,7 +277,7 @@ export function choiceQuiz(cfg) {
         else if (c === b) c.classList.add("wrong");
       });
       progress.record(cfg.key + (cfg.id ? cfg.id(w) : w.w), { ok, miss: ok ? 0 : 1 });
-      if (ok) right++; else missed.push(cfg.label ? cfg.label(w) : w.w);
+      if (ok) right++; else { missed.push(cfg.label ? cfg.label(w) : w.w); missedItems.push(w); }
       const st = $("#qStatus");
       st.style.color = ok ? "" : "var(--cinnabar)";
       st.textContent = ok ? "对了！Correct!" : "Not quite.";
@@ -294,22 +294,25 @@ export function choiceQuiz(cfg) {
   function end() {
     progress.addSession({ type: cfg.kind, lesson: P.ctx.lesson ?? 0, score: right, total: items.length, missed });
     cfg.onDone?.(right, items.length);
-    if (cfg.then) return cfg.then({ title: cfg.title, right, total: items.length, missed });
-    showResults(cfg.title, right, items.length, missed, () => choiceQuiz(cfg), "全对！Quán duì! Everything correct!");
+    if (cfg.then) return cfg.then({ title: cfg.title, right, total: items.length, missed, missedItems });
+    showResults(cfg.title, right, items.length, missed, () => choiceQuiz(cfg), "全对！Quán duì! Everything correct!",
+      missedItems.length && (() => choiceQuiz({ ...cfg, items: missedItems, onDone: undefined })));
   }
   ask();
 }
 
 // Shared results screen.
-export function showResults(title, right, total, missed, again, perfect = "全对！Quán duì!") {
+// retry: given when something was missed; runs the same exercise on just those items.
+export function showResults(title, right, total, missed, again, perfect = "全对！Quán duì!", retry) {
   body().innerHTML = `<div class="panel">
     <span class="lbl">Results · ${esc(title)}</span>
     <div class="score">${right} / ${total}</div>
     ${missed.length ? `<p>Practice these again:</p><div class="result-list">${missed.map((w) => `<span>${esc(w)}</span>`).join("")}</div>` : `<p>${perfect}</p>`}
-    <div class="controls">${again ? `<button class="btn primary big" type="button" id="resAgain">${icon("replay")} Again</button>` : ""}${backBtn()}</div>
+    <div class="controls">${again ? `<button class="btn primary big" type="button" id="resAgain">${icon("replay")} Again</button>` : ""}${retry ? `<button class="btn big" type="button" id="resRetry">Retry missed</button>` : ""}${backBtn()}</div>
   </div>`;
   wireBack(body());
   $("#resAgain")?.addEventListener("click", again);
+  $("#resRetry")?.addEventListener("click", retry);
 }
 
 /* ---------- Match pairs ---------- */
@@ -342,9 +345,11 @@ function matchGame(words) {
         const secs = Math.round((Date.now() - t0) / 1000);
         progress.addSession({ type: "match", lesson: P.ctx.lesson ?? 0, score: firstTry.size, total: set.length, missed: set.filter((w) => !firstTry.has(w.w)).map((w) => w.w) });
         $("#mStatus").textContent = `全部配对！All matched in ${secs} s${errors ? ` with ${errors} mistake${errors > 1 ? "s" : ""}` : ", no mistakes"}.`;
-        $("#mEnd").innerHTML = `<button class="btn primary big" type="button" id="mAgain">${icon("replay")} New round</button>${backBtn()}`;
+        const notFirst = set.filter((w) => !firstTry.has(w.w));
+        $("#mEnd").innerHTML = `<button class="btn primary big" type="button" id="mAgain">${icon("replay")} New round</button>${notFirst.length >= 2 ? `<button class="btn big" type="button" id="mRetry">Retry missed</button>` : ""}${backBtn()}`;
         wireBack(body());
         $("#mAgain").addEventListener("click", () => matchGame(words));
+        $("#mRetry")?.addEventListener("click", () => matchGame(notFirst));
       }
     } else {
       errors++;
@@ -361,7 +366,7 @@ const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 export function speak({ title, items, then }) {
   if (!items.length) return notEnough();
   let pos = 0, right = 0, useRecorder = !Recognition;
-  const missed = [];
+  const missed = [], missedItems = [];
   function show() {
     if (pos >= items.length) return end();
     const it = items[pos];
@@ -389,7 +394,7 @@ export function speak({ title, items, then }) {
   }
   function result(it, ok, msg) {
     progress.record("s:" + it.w.w + (it.sentence ? "#ex" : ""), { ok, miss: ok ? 0 : 1 });
-    if (ok) right++; else missed.push(it.text);
+    if (ok) right++; else { missed.push(it.text); missedItems.push(it); }
     $("#heard").innerHTML = msg;
     $("#judge").innerHTML = "";
     $("#sNext").hidden = false;
@@ -463,8 +468,9 @@ export function speak({ title, items, then }) {
   }
   function end() {
     progress.addSession({ type: "speak", lesson: P.ctx.lesson ?? 0, score: right, total: items.length, missed });
-    if (then) return then({ title, right, total: items.length, missed });
-    showResults(title, right, items.length, missed, () => speak({ title, items }), "说得很好！Shuō de hěn hǎo!");
+    if (then) return then({ title, right, total: items.length, missed, missedItems });
+    showResults(title, right, items.length, missed, () => speak({ title, items }), "说得很好！Shuō de hěn hǎo!",
+      missedItems.length && (() => speak({ title, items: missedItems })));
   }
   show();
 }

@@ -156,7 +156,7 @@ export function orderGame(ui, sentences, opts = {}) {
     return ui.wireBack(ui.body());
   }
   let pos = 0, right = 0;
-  const missed = [];
+  const missed = [], missedItems = [];
   function show() {
     if (pos >= items.length) return end();
     const s = items[pos];
@@ -192,7 +192,7 @@ export function orderGame(ui, sentences, opts = {}) {
       const ok = picked.map((p) => p.t).join("") === s.parts.join("");
       tries++;
       if (ok) {
-        if (tries === 1) right++; else missed.push(s.hz);
+        if (tries === 1) right++; else { missed.push(s.hz); missedItems.push(s); }
         progress.record("o:" + s.hz, { ok: tries === 1, miss: tries - 1 });
         $("#oStatus").style.color = "";
         $("#oStatus").textContent = tries === 1 ? "对了！Correct!" : "对了！Got it.";
@@ -212,15 +212,16 @@ export function orderGame(ui, sentences, opts = {}) {
   }
   function end() {
     progress.addSession({ type: "order", lesson: 0, score: right, total: items.length, missed });
-    if (opts.then) return opts.then({ title: "Build the sentence", right, total: items.length, missed });
+    if (opts.then) return opts.then({ title: "Build the sentence", right, total: items.length, missed, missedItems });
     ui.body().innerHTML = `<div class="panel">
       <span class="lbl">Results · Build the sentence</span>
       <div class="score">${right} / ${items.length} first try</div>
       ${missed.length ? `<p>Practice these again:</p><div class="result-list">${missed.map((t) => `<span>${t}</span>`).join("")}</div>` : `<p>全对！Quán duì!</p>`}
-      <div class="controls"><button class="btn primary big" type="button" id="oAgain">${icon("replay")} Again</button>${ui.backBtn()}</div>
+      <div class="controls"><button class="btn primary big" type="button" id="oAgain">${icon("replay")} Again</button>${missedItems.length ? `<button class="btn big" type="button" id="oRetry">Retry missed</button>` : ""}${ui.backBtn()}</div>
     </div>`;
     ui.wireBack(ui.body());
     $("#oAgain").addEventListener("click", () => orderGame(ui, sentences));
+    $("#oRetry")?.addEventListener("click", () => orderGame(ui, missedItems, { all: true }));
   }
   show();
 }

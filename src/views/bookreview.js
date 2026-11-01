@@ -162,7 +162,9 @@ function runChain(steps) {
 function runStep({ t, items }, done) {
   scrollTo(0, 0);
   // One name per type in the summary, whatever the exercise calls itself.
-  const then = (res) => done({ ...res, title: `${t.seal} · ${t.name}` });
+  // Missed items go back into chain items, so "Retry missed" can run just those.
+  const wrap = (it) => (["vocab", "listen", "write"].includes(t.id) ? { w: it } : t.id === "speak" ? { w: it.w } : t.id === "read" ? { s: it } : { d: it });
+  const then = (res) => done({ ...res, title: `${t.seal} · ${t.name}`, retry: res.missedItems?.length ? { t, items: res.missedItems.map(wrap) } : null });
   const pool = wordsOf(book.lessons);
   const words = items.map((i) => i.w);
   switch (t.id) {
@@ -180,6 +182,7 @@ function runStep({ t, items }, done) {
 function summary(results) {
   const right = results.reduce((n, r) => n + r.right, 0), total = results.reduce((n, r) => n + r.total, 0);
   const missed = [...new Set(results.flatMap((r) => r.missed))];
+  const retries = results.map((r) => r.retry).filter(Boolean);
   updateBadge(TYPES.reduce((n, t) => n + scan(t).due.length, 0));
   body().innerHTML = `<div class="panel">
     <span class="lbl">复习完了 · Review done</span>
@@ -187,7 +190,8 @@ function summary(results) {
     <ul class="recent">${results.map((r) => `<li><span>${esc(r.title)}</span><b>${r.right} / ${r.total}</b></li>`).join("")}</ul>
     ${missed.length ? `<p>These come back tomorrow:</p><div class="result-list">${missed.map((w) => `<span>${esc(w)}</span>`).join("")}</div>`
       : `<p>全对！Everything right. These come back later, when they need a refresh.</p>`}
-    <div class="controls"><button class="btn primary big" type="button" id="rvDone">Back to review</button></div>
+    <div class="controls"><button class="btn primary big" type="button" id="rvDone">Back to review</button>${retries.length ? `<button class="btn big" type="button" id="rvRetry">Retry missed</button>` : ""}</div>
   </div>`;
   $("#rvDone").addEventListener("click", showReview);
+  $("#rvRetry")?.addEventListener("click", () => runChain(retries.map((r) => ({ t: r.t, items: [...r.items] }))));
 }

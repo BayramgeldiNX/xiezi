@@ -144,7 +144,7 @@ function dictEnd() {
   const total = dict.order.length;
   progress.addSession({ type: dict.kind, lesson: dict.lesson ?? app.L()?.n ?? 0, score: dict.perfect, total, missed: dict.missed });
   const { words, missed } = dict, opts = { ...dict };
-  if (opts.then) { dict = null; return opts.then({ title: "Writing", right: opts.perfect, total, missed }); }
+  if (opts.then) { dict = null; return opts.then({ title: "Writing", right: opts.perfect, total, missed, missedItems: words.filter((w) => missed.includes(w.w)) }); }
   $(hostSel).innerHTML = `<div class="panel">
     <span class="lbl">Results</span>
     <div class="score">${dict.perfect} / ${total} perfect</div>
@@ -152,7 +152,7 @@ function dictEnd() {
       : `<p>全对！Quán duì! Everything correct!</p>`}
     <div class="controls">
       <button class="btn primary big" type="button" id="dictAgain">${icon("replay")} Again</button>
-      ${missed.length ? `<button class="btn big" type="button" id="dictMissed">Only the missed ones</button>` : ""}
+      ${missed.length ? `<button class="btn big" type="button" id="dictMissed">Retry missed</button>` : ""}
       ${opts.back ? `<button class="btn big" type="button" id="dictBack2">Back</button>` : ""}
     </div>
   </div>`;

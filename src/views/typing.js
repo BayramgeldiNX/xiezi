@@ -108,7 +108,7 @@ const keyboardHelp = () => `<details class="panel">
 function run(items) {
   const o = opts();
   let pos = 0, right = 0;
-  const missed = [];
+  const missed = [], missedItems = [];
   const next = () => { pos++; pos >= items.length ? end() : ask(); };
 
   function ask() {
@@ -142,7 +142,7 @@ function run(items) {
       done = true;
       const clean = ok && tries === 1 && hints === 0;
       progress.record(KEY[o.mode] + it.id, { ok: clean, miss: (tries - (ok ? 1 : 0)) + hints + (ok ? 0 : 1) });
-      if (clean) right++; else missed.push(it.hz);
+      if (clean) right++; else { missed.push(it.hz); missedItems.push(it); }
       input.readOnly = true;
       $("#tyCheck").hidden = $("#tyHint").hidden = $("#tyShow").hidden = true;
       $("#tyNext").hidden = false;
@@ -215,9 +215,10 @@ function run(items) {
       <div class="score">${right} / ${items.length}</div>
       ${missed.length ? `<p>These come back tomorrow:</p><div class="result-list">${missed.map((t) => `<span>${esc(t)}</span>`).join("")}</div>`
         : `<p>全对！Everything right first time. These come back later for review.</p>`}
-      <div class="controls"><button class="btn primary big" type="button" id="tyMore">${icon("play")} Next 10</button><button class="btn big" type="button" id="tyHome">Done</button></div>
+      <div class="controls"><button class="btn primary big" type="button" id="tyMore">${icon("play")} Next 10</button>${missedItems.length ? `<button class="btn big" type="button" id="tyRetry">Retry missed</button>` : ""}<button class="btn big" type="button" id="tyHome">Done</button></div>
     </div>`;
     $("#tyMore").addEventListener("click", () => { const p = plan(); p.session.length ? run(p.session) : openTyping(); });
+    $("#tyRetry")?.addEventListener("click", () => run(missedItems));
     $("#tyHome").addEventListener("click", openTyping);
   }
   ask();

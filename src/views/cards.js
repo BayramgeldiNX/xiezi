@@ -29,8 +29,10 @@ function cardsRender() {
       <div class="py">${tonePy("Quánbù wánchéng!")}</div>
       <p>All ${total} cards done. ${deck.again.size ? `${total - deck.again.size} right the first time.` : "Every card right the first time!"}</p>
       <div class="controls"><button class="btn primary big" type="button" id="fcAgain">${icon("replay")} Shuffle again</button>
+      ${deck.again.size ? `<button class="btn big" type="button" id="fcRetry">Retry missed</button>` : ""}
       ${deck.opts.back ? `<button class="btn big" type="button" id="fcBack">Back</button>` : ""}</div></div>`;
     $("#fcAgain").addEventListener("click", () => cardsStart(deck.dir, deck.opts));
+    $("#fcRetry")?.addEventListener("click", () => cardsStart(deck.dir, { ...deck.opts, words: words.filter((w) => deck.again.has(w.w)) }));
     $("#fcBack")?.addEventListener("click", deck.opts.back);
     return;
   }
