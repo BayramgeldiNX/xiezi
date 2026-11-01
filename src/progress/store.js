@@ -18,6 +18,8 @@ function load() {
     mine: p.mine || {},        // { key: stat } recorded on this device
     others: p.others || {},    // { key: { deviceId: stat } } from other devices
     sessions: p.sessions || [],// newest last
+    unsent: p.unsent || { items: {}, sessions: {} }, // not yet in the cloud: { key: n at change }, { id: 1 }
+    sentFor: p.sentFor || null, // the uid whose cloud copy is complete
   };
 }
 
@@ -50,6 +52,7 @@ export function get(key) {
 
 export function record(key, result) {
   P.mine[key] = addResult(P.mine[key], result, Date.now(), get(key));
+  P.unsent.items[key] = P.mine[key].n;
   changed();
   syncer?.pushItem(key, P.mine[key]);
 }
@@ -57,6 +60,7 @@ export function record(key, result) {
 export function addSession(s) {
   const session = { id: `${P.device}-${Date.now().toString(36)}`, dev: P.device, at: Date.now(), ...s };
   P.sessions.push(session);
+  P.unsent.sessions[session.id] = 1;
   if (P.sessions.length > MAX_SESSIONS) P.sessions.splice(0, P.sessions.length - MAX_SESSIONS);
   changed();
   syncer?.pushSession(session);
@@ -67,6 +71,25 @@ export const sessions = () => P.sessions;
 /* ---------- sync hooks (used by src/sync) ---------- */
 export function setSyncer(s) { syncer = s; }
 export const allMine = () => P.mine;
+
+// What still has to reach this account's cloud copy: everything the first time, then only what changed.
+export function pendingUpload(uid) {
+  const own = P.sessions.filter((s) => s.dev === P.device);
+  if (P.sentFor !== uid) return { items: Object.entries(P.mine), sessions: own };
+  return {
+    items: Object.keys(P.unsent.items).filter((k) => P.mine[k]).map((k) => [k, P.mine[k]]),
+    sessions: own.filter((s) => P.unsent.sessions[s.id]),
+  };
+}
+// Called once the server has confirmed. A newer result recorded meanwhile stays unsent (its n has changed).
+export function markItemSent(key, n) { if (P.unsent.items[key] === n) { delete P.unsent.items[key]; persist(); } }
+export function markSessionSent(id) { if (P.unsent.sessions[id]) { delete P.unsent.sessions[id]; persist(); } }
+export function markUploaded(uid, items, sessions) {
+  items.forEach(([k, s]) => { if (P.unsent.items[k] === s.n) delete P.unsent.items[k]; });
+  sessions.forEach((s) => delete P.unsent.sessions[s.id]);
+  P.sentFor = uid;
+  persist();
+}
 
 // A cloud item: { deviceId: stat }. Our own device's copy is ignored (we are the source of truth for it).
 export function applyRemoteItem(key, byDevice) {
@@ -91,7 +114,8 @@ export function clearRemote() {
 
 /* ---------- backup ---------- */
 export function exportBackup() {
-  return { app: "xiezi", version: 1, exportedAt: new Date().toISOString(), ...P };
+  const { unsent, sentFor, ...rest } = P; // upload bookkeeping belongs to this device only
+  return { app: "xiezi", version: 1, exportedAt: new Date().toISOString(), ...rest };
 }
 
 // Merge a backup file: its own-device results become "another device" here,
@@ -101,7 +125,7 @@ export function importBackup(b) {
   const put = (dev, key, stat) => {
     if (!stat?.n) return;
     if (dev === P.device) {
-      if (!P.mine[key] || stat.n > P.mine[key].n) P.mine[key] = stat;
+      if (!P.mine[key] || stat.n > P.mine[key].n) { P.mine[key] = stat; P.unsent.items[key] = stat.n; }
       return;
     }
     const cur = P.others[key]?.[dev];
@@ -109,10 +133,14 @@ export function importBackup(b) {
   };
   for (const [k, s] of Object.entries(b.mine)) put(b.device, k, s);
   for (const [k, byDev] of Object.entries(b.others || {})) for (const [dev, s] of Object.entries(byDev)) put(dev, k, s);
-  for (const s of b.sessions || []) applyRemoteSession(s);
+  for (const s of b.sessions || []) {
+    const isNew = s?.id && !P.sessions.some((x) => x.id === s.id);
+    applyRemoteSession(s);
+    if (isNew && s.dev === P.device) P.unsent.sessions[s.id] = 1;
+  }
   changed();
   // Results that now belong to this device must reach the cloud too.
-  if (syncer) for (const [k, s] of Object.entries(P.mine)) syncer.pushItem(k, s);
+  if (syncer) for (const k of Object.keys(P.unsent.items)) if (P.mine[k]) syncer.pushItem(k, P.mine[k]);
 }
 
 /* ---------- last place (per device, not synced) ---------- */

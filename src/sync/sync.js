@@ -90,24 +90,26 @@ async function start(user) {
 
   progress.setSyncer({
     pushItem: (key, stat) =>
-      safely(() => F.setDoc(itemRef(key), { k: key, d: { [dev]: stat }, t: F.serverTimestamp() }, { merge: true })),
-    pushSession: (s) => safely(() => F.setDoc(sessionRef(s.id), s)),
+      safely(() => F.setDoc(itemRef(key), { k: key, d: { [dev]: stat }, t: F.serverTimestamp() }, { merge: true })
+        .then(() => progress.markItemSent(key, stat.n))),
+    pushSession: (s) => safely(() => F.setDoc(sessionRef(s.id), s).then(() => progress.markSessionSent(s.id))),
   });
   emit({ status: "syncing", email: user.email, error: null });
 
-  // Upload everything this device has (safe to repeat: it only rewrites our own entries).
+  // Upload what has not reached this account yet: everything the first time, then only changes.
   try {
-    const mine = Object.entries(progress.allMine());
-    const own = progress.sessions().filter((s) => s.dev === dev);
+    const { items: upItems, sessions: upSessions } = progress.pendingUpload(uid);
     const writes = [
-      ...mine.map(([k, s]) => (b) => b.set(itemRef(k), { k, d: { [dev]: s }, t: F.serverTimestamp() }, { merge: true })),
-      ...own.map((s) => (b) => b.set(sessionRef(s.id), s)),
+      ...upItems.map(([k, s]) => (b) => b.set(itemRef(k), { k, d: { [dev]: s }, t: F.serverTimestamp() }, { merge: true })),
+      ...upSessions.map((s) => (b) => b.set(sessionRef(s.id), s)),
     ];
+    const commits = [];
     for (let i = 0; i < writes.length; i += 400) {
       const b = F.writeBatch(db);
       writes.slice(i, i + 400).forEach((w) => w(b));
-      b.commit().catch(fail); // resolves when the server confirms; offline it waits in the cache
+      commits.push(b.commit()); // resolves when the server confirms; offline it waits in the cache
     }
+    Promise.all(commits).then(() => progress.markUploaded(uid, upItems, upSessions)).catch(fail);
   } catch (e) { fail(e); }
 
   const items = F.onSnapshot(F.collection(db, "users", uid, "items"), { includeMetadataChanges: true }, (snap) => {

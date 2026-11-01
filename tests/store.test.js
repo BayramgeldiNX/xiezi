@@ -76,4 +76,45 @@ describe("progress store", () => {
     S.record("w:你", { ok: true });
     expect(S.get("w:你").streak).toBe(4);
   });
+
+  describe("upload bookkeeping", () => {
+    const keys = (r) => r.items.map(([k]) => k).sort();
+    it("sends everything first, then only what changed", () => {
+      S.record("w:你", { ok: true });
+      S.record("w:好", { ok: true });
+      const first = S.pendingUpload("u1");
+      expect(keys(first)).toEqual(["w:你", "w:好"]);
+      S.markUploaded("u1", first.items, first.sessions);
+      expect(S.pendingUpload("u1").items).toEqual([]);
+      S.record("w:你", { ok: true });
+      expect(keys(S.pendingUpload("u1"))).toEqual(["w:你"]);
+      expect(keys(S.pendingUpload("u2"))).toEqual(["w:你", "w:好"]);
+    });
+    it("a result recorded before confirmation stays unsent", () => {
+      S.record("w:你", { ok: true });
+      const oldN = S.allMine()["w:你"].n;
+      S.record("w:你", { ok: true });
+      S.markItemSent("w:你", oldN);
+      expect(S.pendingUpload("u1").items).toHaveLength(1);
+      S.markUploaded("u1", [], []);
+      expect(keys(S.pendingUpload("u1"))).toEqual(["w:你"]);
+      S.markItemSent("w:你", S.allMine()["w:你"].n);
+      expect(S.pendingUpload("u1").items).toEqual([]);
+    });
+    it("backup export leaves the bookkeeping out", () => {
+      S.record("w:你", { ok: true });
+      const b = S.exportBackup();
+      expect(b).not.toHaveProperty("unsent");
+      expect(b).not.toHaveProperty("sentFor");
+    });
+    it("a signed-out import stays pending", async () => {
+      S.record("w:你", { ok: true });
+      const backup = JSON.parse(JSON.stringify(S.exportBackup()));
+      backup.mine["w:好"] = { n: 1, ok: 1, miss: 0, last: 5, lastOk: true, streak: 1 };
+      S.markUploaded("u1", S.pendingUpload("u1").items, []);
+      backup.mine["w:你"].n = 9;
+      S.importBackup(backup);
+      expect(keys(S.pendingUpload("u1"))).toEqual(["w:你", "w:好"]);
+    });
+  });
 });
