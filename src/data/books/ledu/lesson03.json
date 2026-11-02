@@ -1,0 +1,879 @@
+{
+  "n": 3,
+  "cn": "第三课",
+  "title": "大象，大象，你的鼻子怎么那么长？",
+  "en": "Elephant, elephant, why is your nose so long?",
+  "words": [
+    {
+      "w": "生日",
+      "py": "shēngrì",
+      "en": "birthday",
+      "ex": {
+        "hz": "今天是我朋友的生日。",
+        "py": "Jīntiān shì wǒ péngyou de shēngrì.",
+        "en": "Today is my friend's birthday."
+      }
+    },
+    {
+      "w": "星期日",
+      "py": "xīngqīrì",
+      "en": "Sunday",
+      "ex": {
+        "hz": "星期日我在家休息。",
+        "py": "Xīngqīrì wǒ zài jiā xiūxi.",
+        "en": "On Sunday I rest at home."
+      }
+    },
+    {
+      "w": "月",
+      "py": "yuè",
+      "en": "moon; month",
+      "ex": {
+        "hz": "这个月我很忙。",
+        "py": "Zhège yuè wǒ hěn máng.",
+        "en": "I am very busy this month."
+      }
+    },
+    {
+      "w": "人",
+      "py": "rén",
+      "en": "person",
+      "ex": {
+        "hz": "公园里有很多人。",
+        "py": "Gōngyuán li yǒu hěn duō rén.",
+        "en": "There are many people in the park."
+      }
+    },
+    {
+      "w": "家人",
+      "py": "jiārén",
+      "en": "family members",
+      "ex": {
+        "hz": "我很想我的家人。",
+        "py": "Wǒ hěn xiǎng wǒ de jiārén.",
+        "en": "I miss my family very much."
+      }
+    },
+    {
+      "w": "孩子",
+      "py": "háizi",
+      "en": "child",
+      "ex": {
+        "hz": "那个孩子在笑。",
+        "py": "Nàge háizi zài xiào.",
+        "en": "That child is laughing."
+      }
+    },
+    {
+      "w": "儿子",
+      "py": "érzi",
+      "en": "son",
+      "ex": {
+        "hz": "他的儿子七岁了。",
+        "py": "Tā de érzi qī suì le.",
+        "en": "His son is seven now."
+      }
+    },
+    {
+      "w": "火车",
+      "py": "huǒchē",
+      "en": "train",
+      "ex": {
+        "hz": "火车八点开。",
+        "py": "Huǒchē bā diǎn kāi.",
+        "en": "The train leaves at eight."
+      }
+    },
+    {
+      "w": "火腿",
+      "py": "huǒtuǐ",
+      "en": "ham",
+      "ex": {
+        "hz": "我早饭吃火腿面包。",
+        "py": "Wǒ zǎofàn chī huǒtuǐ miànbāo.",
+        "en": "I eat a ham sandwich for breakfast."
+      }
+    },
+    {
+      "w": "热水",
+      "py": "rèshuǐ",
+      "en": "hot water",
+      "ex": {
+        "hz": "请给我一杯热水。",
+        "py": "Qǐng gěi wǒ yì bēi rèshuǐ.",
+        "en": "Please give me a cup of hot water."
+      }
+    },
+    {
+      "w": "冰水",
+      "py": "bīngshuǐ",
+      "en": "iced water",
+      "ex": {
+        "hz": "夏天我喜欢喝冰水。",
+        "py": "Xiàtiān wǒ xǐhuan hē bīngshuǐ.",
+        "en": "In summer I like to drink iced water."
+      }
+    },
+    {
+      "w": "牛奶",
+      "py": "niúnǎi",
+      "en": "milk",
+      "ex": {
+        "hz": "这杯牛奶是热的。",
+        "py": "Zhè bēi niúnǎi shì rè de.",
+        "en": "This glass of milk is hot."
+      }
+    },
+    {
+      "w": "牛肉",
+      "py": "niúròu",
+      "en": "beef",
+      "ex": {
+        "hz": "今天晚饭吃牛肉面。",
+        "py": "Jīntiān wǎnfàn chī niúròu miàn.",
+        "en": "We are having beef noodles for dinner today."
+      }
+    },
+    {
+      "w": "下雨",
+      "py": "xià yǔ",
+      "en": "to rain",
+      "ex": {
+        "hz": "明天可能会下雨。",
+        "py": "Míngtiān kěnéng huì xià yǔ.",
+        "en": "It might rain tomorrow."
+      }
+    },
+    {
+      "w": "雨伞",
+      "py": "yǔsǎn",
+      "en": "umbrella",
+      "ex": {
+        "hz": "我的雨伞是红色的。",
+        "py": "Wǒ de yǔsǎn shì hóngsè de.",
+        "en": "My umbrella is red."
+      }
+    },
+    {
+      "w": "女朋友",
+      "py": "nǚpéngyou",
+      "en": "girlfriend",
+      "ex": {
+        "hz": "他的女朋友是老师。",
+        "py": "Tā de nǚpéngyou shì lǎoshī.",
+        "en": "His girlfriend is a teacher."
+      }
+    },
+    {
+      "w": "女儿",
+      "py": "nǚ'ér",
+      "en": "daughter",
+      "ex": {
+        "hz": "她的女儿很喜欢唱歌。",
+        "py": "Tā de nǚ'ér hěn xǐhuan chàng gē.",
+        "en": "Her daughter loves singing."
+      }
+    },
+    {
+      "w": "开心",
+      "py": "kāixīn",
+      "en": "happy",
+      "ex": {
+        "hz": "见到你我很开心。",
+        "py": "Jiàndào nǐ wǒ hěn kāixīn.",
+        "en": "I'm happy to see you."
+      }
+    },
+    {
+      "w": "开心果",
+      "py": "kāixīnguǒ",
+      "en": "pistachio",
+      "ex": {
+        "hz": "我买了一包开心果。",
+        "py": "Wǒ mǎi le yì bāo kāixīnguǒ.",
+        "en": "I bought a bag of pistachios."
+      }
+    },
+    {
+      "w": "西瓜",
+      "py": "xīguā",
+      "en": "watermelon",
+      "ex": {
+        "hz": "夏天的西瓜最甜。",
+        "py": "Xiàtiān de xīguā zuì tián.",
+        "en": "Watermelon is the sweetest in summer."
+      }
+    },
+    {
+      "w": "南瓜",
+      "py": "nánguā",
+      "en": "pumpkin",
+      "ex": {
+        "hz": "妈妈做了南瓜汤。",
+        "py": "Māma zuò le nánguā tāng.",
+        "en": "Mum made pumpkin soup."
+      }
+    },
+    {
+      "w": "水果",
+      "py": "shuǐguǒ",
+      "en": "fruit",
+      "ex": {
+        "hz": "我每天吃一点儿水果。",
+        "py": "Wǒ měi tiān chī yìdiǎnr shuǐguǒ.",
+        "en": "I eat a little fruit every day."
+      }
+    },
+    {
+      "w": "苹果",
+      "py": "píngguǒ",
+      "en": "apple",
+      "ex": {
+        "hz": "这个苹果又大又红。",
+        "py": "Zhège píngguǒ yòu dà yòu hóng.",
+        "en": "This apple is big and red."
+      }
+    },
+    {
+      "w": "芒果",
+      "py": "mángguǒ",
+      "en": "mango",
+      "ex": {
+        "hz": "芒果很甜。",
+        "py": "Mángguǒ hěn tián.",
+        "en": "Mangoes are very sweet."
+      }
+    },
+    {
+      "w": "国王",
+      "py": "guówáng",
+      "en": "king",
+      "ex": {
+        "hz": "故事里有一个国王。",
+        "py": "Gùshi li yǒu yí ge guówáng.",
+        "en": "There is a king in the story."
+      }
+    },
+    {
+      "w": "王后",
+      "py": "wánghòu",
+      "en": "queen",
+      "ex": {
+        "hz": "王后住在大房子里。",
+        "py": "Wánghòu zhù zài dà fángzi li.",
+        "en": "The queen lives in a big house."
+      }
+    },
+    {
+      "w": "王子",
+      "py": "wángzǐ",
+      "en": "prince",
+      "ex": {
+        "hz": "这个王子很年轻。",
+        "py": "Zhège wángzǐ hěn niánqīng.",
+        "en": "This prince is very young."
+      }
+    },
+    {
+      "w": "自行车",
+      "py": "zìxíngchē",
+      "en": "bicycle",
+      "ex": {
+        "hz": "我的自行车是新的。",
+        "py": "Wǒ de zìxíngchē shì xīn de.",
+        "en": "My bicycle is new."
+      }
+    },
+    {
+      "w": "公共汽车",
+      "py": "gōnggòng qìchē",
+      "en": "bus",
+      "ex": {
+        "hz": "公共汽车站在前面。",
+        "py": "Gōnggòng qìchē zhàn zài qiánmiàn.",
+        "en": "The bus stop is up ahead."
+      }
+    },
+    {
+      "w": "开车",
+      "py": "kāi chē",
+      "en": "to drive",
+      "ex": {
+        "hz": "爸爸每天开车上班。",
+        "py": "Bàba měi tiān kāi chē shàng bān.",
+        "en": "Dad drives to work every day."
+      }
+    },
+    {
+      "w": "鱼",
+      "py": "yú",
+      "en": "fish",
+      "ex": {
+        "hz": "桌子上有一条鱼。",
+        "py": "Zhuōzi shang yǒu yì tiáo yú.",
+        "en": "There is a fish on the table."
+      }
+    },
+    {
+      "w": "三文鱼",
+      "py": "sānwényú",
+      "en": "salmon",
+      "ex": {
+        "hz": "这条三文鱼很新鲜。",
+        "py": "Zhè tiáo sānwényú hěn xīnxiān.",
+        "en": "This salmon is very fresh."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "水果店",
+      "py": "Shuǐguǒ diàn",
+      "en": "At the fruit shop",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你好，我想买水果。",
+          "py": "Nǐ hǎo, wǒ xiǎng mǎi shuǐguǒ.",
+          "en": "Hello, I'd like to buy some fruit."
+        },
+        {
+          "who": "B",
+          "hz": "我们有苹果、芒果和西瓜。",
+          "py": "Wǒmen yǒu píngguǒ, mángguǒ hé xīguā.",
+          "en": "We have apples, mangoes and watermelon."
+        },
+        {
+          "who": "A",
+          "hz": "西瓜多少钱？",
+          "py": "Xīguā duōshao qián?",
+          "en": "How much is the watermelon?"
+        },
+        {
+          "who": "B",
+          "hz": "一个二十块。",
+          "py": "Yí ge èrshí kuài.",
+          "en": "Twenty yuan each."
+        },
+        {
+          "who": "A",
+          "hz": "好，我要一个西瓜和两个苹果。",
+          "py": "Hǎo, wǒ yào yí ge xīguā hé liǎng ge píngguǒ.",
+          "en": "OK, I'll take one watermelon and two apples."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What does A buy?",
+          "options": [
+            "A watermelon and two apples",
+            "A mango and two apples",
+            "Two watermelons",
+            "Only apples"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How much is one watermelon?",
+          "options": [
+            "20 yuan",
+            "12 yuan",
+            "2 yuan",
+            "200 yuan"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "下雨天",
+      "py": "Xià yǔ tiān",
+      "en": "A rainy day",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你看，下雨了！",
+          "py": "Nǐ kàn, xià yǔ le!",
+          "en": "Look, it's raining!"
+        },
+        {
+          "who": "B",
+          "hz": "我有雨伞，我们一起走吧。",
+          "py": "Wǒ yǒu yǔsǎn, wǒmen yìqǐ zǒu ba.",
+          "en": "I have an umbrella. Let's walk together."
+        },
+        {
+          "who": "A",
+          "hz": "太好了。你平时怎么去学校？",
+          "py": "Tài hǎo le. Nǐ píngshí zěnme qù xuéxiào?",
+          "en": "Great. How do you usually go to school?"
+        },
+        {
+          "who": "B",
+          "hz": "我平时骑自行车，下雨天坐公共汽车。",
+          "py": "Wǒ píngshí qí zìxíngchē, xià yǔ tiān zuò gōnggòng qìchē.",
+          "en": "I usually ride a bike, and take the bus on rainy days."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What does B have?",
+          "options": [
+            "An umbrella",
+            "A bicycle",
+            "A car",
+            "A train ticket"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How does B go to school when it rains?",
+          "options": [
+            "By bus",
+            "By bike",
+            "By car",
+            "On foot"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "象形字",
+      "en": "Pictographs began as simple drawings of the thing itself; over time the lines became strokes",
+      "drills": [
+        {
+          "q": "看上去像太阳的字是“___”。",
+          "options": [
+            "日",
+            "月",
+            "火",
+            "水"
+          ],
+          "answer": 0,
+          "en": "The character that looks like the sun is 日."
+        },
+        {
+          "q": "看上去像弯弯的月亮的字是“___”。",
+          "options": [
+            "月",
+            "日",
+            "人",
+            "火"
+          ],
+          "answer": 0,
+          "en": "The character that looks like a crescent moon is 月."
+        },
+        {
+          "q": "像一个侧面站着的人的字是“___”。",
+          "options": [
+            "人",
+            "木",
+            "山",
+            "水"
+          ],
+          "answer": 0,
+          "en": "The character that looks like a person standing in profile is 人."
+        },
+        {
+          "q": "像一条鱼的字是“___”。",
+          "options": [
+            "鱼",
+            "牛",
+            "车",
+            "女"
+          ],
+          "answer": 0,
+          "en": "The character that looks like a fish is 鱼."
+        },
+        {
+          "q": "天上掉下来的水，写成“___”。",
+          "options": [
+            "雨",
+            "水",
+            "火",
+            "冰"
+          ],
+          "answer": 0,
+          "en": "Water falling from the sky is written 雨."
+        }
+      ]
+    },
+    {
+      "point": "词语",
+      "en": "Words made from the lesson's characters",
+      "drills": [
+        {
+          "q": "他坐___去北京。",
+          "options": [
+            "火车",
+            "火腿",
+            "雨伞",
+            "牛奶"
+          ],
+          "answer": 0,
+          "en": "He takes the train to Beijing."
+        },
+        {
+          "q": "下雨了，我要带___。",
+          "options": [
+            "雨伞",
+            "火车",
+            "牛肉",
+            "水果"
+          ],
+          "answer": 0,
+          "en": "It's raining; I need to take an umbrella."
+        },
+        {
+          "q": "我早饭喝___。",
+          "options": [
+            "牛奶",
+            "火腿",
+            "苹果",
+            "国王"
+          ],
+          "answer": 0,
+          "en": "I drink milk for breakfast."
+        },
+        {
+          "q": "苹果和芒果都是___。",
+          "options": [
+            "水果",
+            "王子",
+            "家人",
+            "雨伞"
+          ],
+          "answer": 0,
+          "en": "Apples and mangoes are both fruit."
+        },
+        {
+          "q": "我的儿子和女儿都是我的___。",
+          "options": [
+            "孩子",
+            "国王",
+            "西瓜",
+            "女朋友"
+          ],
+          "answer": 0,
+          "en": "My son and my daughter are both my children."
+        }
+      ]
+    },
+    {
+      "point": "家人和王室",
+      "en": "Family, royal and 开 words",
+      "drills": [
+        {
+          "q": "国王和王后的儿子是___。",
+          "options": [
+            "王子",
+            "王后",
+            "国王",
+            "女朋友"
+          ],
+          "answer": 0,
+          "en": "The son of the king and queen is the prince."
+        },
+        {
+          "q": "爸爸每天___上班。",
+          "options": [
+            "开车",
+            "开心",
+            "火车",
+            "下雨"
+          ],
+          "answer": 0,
+          "en": "Dad drives to work every day."
+        },
+        {
+          "q": "今天是我的生日，我很___。",
+          "options": [
+            "开心",
+            "开车",
+            "下雨",
+            "热水"
+          ],
+          "answer": 0,
+          "en": "It's my birthday today and I am very happy."
+        },
+        {
+          "q": "我最喜欢吃___，它是一种鱼。",
+          "options": [
+            "三文鱼",
+            "南瓜",
+            "牛肉",
+            "开心果"
+          ],
+          "answer": 0,
+          "en": "I like salmon best; it's a kind of fish."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你想喝什么？"
+          ],
+          [
+            "女",
+            "我想喝热水，不想喝冰水。"
+          ]
+        ],
+        "q": "他想喝什么？",
+        "options": [
+          "热水",
+          "冰水",
+          "牛奶"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你怎么去公司？"
+          ],
+          [
+            "女",
+            "我开车去。"
+          ]
+        ],
+        "q": "他怎么去公司？",
+        "options": [
+          "开车",
+          "坐公共汽车",
+          "坐火车"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "今天你想买什么？"
+          ],
+          [
+            "女",
+            "我想买一个西瓜和三个苹果。"
+          ]
+        ],
+        "q": "他想买什么？",
+        "options": [
+          "西瓜和苹果",
+          "芒果和苹果",
+          "西瓜和南瓜"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "明天下雨吗？"
+          ],
+          [
+            "女",
+            "下，你带雨伞吧。"
+          ]
+        ],
+        "q": "女的让他带什么？",
+        "options": [
+          "雨伞",
+          "自行车",
+          "牛奶"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "他有一个儿子和一个女儿，一共两个孩子。",
+        "claim": "他有两个孩子。",
+        "ok": true
+      },
+      {
+        "text": "国王住在大房子里，王子也住在大房子里。",
+        "claim": "王子不住在大房子里。",
+        "ok": false
+      },
+      {
+        "text": "我不喝牛奶，可是牛肉我每天都吃。",
+        "claim": "他每天喝牛奶。",
+        "ok": false
+      },
+      {
+        "text": "下雨了，所以他没有开车，坐公共汽车去。",
+        "claim": "他坐公共汽车去。",
+        "ok": true
+      }
+    ],
+    "replies": [
+      {
+        "q": "你今天开心吗？",
+        "a": "我很开心，今天是我的生日。"
+      },
+      {
+        "q": "你喜欢吃什么水果？",
+        "a": "我最喜欢芒果。"
+      },
+      {
+        "q": "下雨了，怎么办？",
+        "a": "我有雨伞，我们一起走。"
+      },
+      {
+        "q": "你家有几个孩子？",
+        "a": "两个，他们都很可爱。"
+      }
+    ]
+  },
+  "hanzi": {
+    "chars": [
+      [
+        "日",
+        "A round sun with a dot in the middle; the circle became a box."
+      ],
+      [
+        "月",
+        "A crescent moon with a mark inside; it is narrower than 日."
+      ],
+      [
+        "人",
+        "A person seen from the side, leaning forward with legs apart."
+      ],
+      [
+        "子",
+        "A baby wrapped up in cloth, with a head and arms."
+      ],
+      [
+        "火",
+        "Flames leaping up, with a high tongue in the middle."
+      ],
+      [
+        "水",
+        "A stream with ripples on both sides of a centre line."
+      ],
+      [
+        "牛",
+        "An ox head seen from the front, with two horns pointing up."
+      ],
+      [
+        "雨",
+        "A cloud above with drops of rain falling under it."
+      ],
+      [
+        "女",
+        "A woman kneeling with her arms folded in front."
+      ],
+      [
+        "心",
+        "A heart with its curve at the bottom and dots above."
+      ],
+      [
+        "瓜",
+        "A melon hanging from a vine."
+      ],
+      [
+        "果",
+        "A round fruit (田) growing on a tree (木)."
+      ],
+      [
+        "王",
+        "Once the blade of a big axe, a symbol of a ruler's power."
+      ],
+      [
+        "车",
+        "Seen from above, a cart with two wheels and an axle."
+      ],
+      [
+        "鱼",
+        "A fish with its head, scales and a tail."
+      ],
+      [
+        "木",
+        "A tree with branches on top and roots below."
+      ],
+      [
+        "目",
+        "An eye turned on its side; now it stands upright."
+      ],
+      [
+        "耳",
+        "An ear with its outer curve and a small hole."
+      ],
+      [
+        "羊",
+        "A sheep's head with two curved horns."
+      ],
+      [
+        "竹",
+        "Two bamboo stems with leaves drooping."
+      ],
+      [
+        "门",
+        "A gate with two doors; the full form 門 shows both leaves."
+      ],
+      [
+        "马",
+        "A horse with a mane and four legs, simplified from 馬."
+      ]
+    ],
+    "structure": [
+      "象形字 Pictographs",
+      "Characters that began as simple drawings of the object itself. The lines were straightened over the centuries until they became the strokes you write today.",
+      "日月人子火水牛雨女心瓜果王车鱼"
+    ],
+    "radicals": [
+      [
+        "日",
+        "sun, day",
+        "明时"
+      ],
+      [
+        "月",
+        "moon, flesh",
+        "朋服"
+      ],
+      [
+        "亻",
+        "person",
+        "你们"
+      ],
+      [
+        "氵",
+        "water",
+        "河海"
+      ],
+      [
+        "女",
+        "woman",
+        "妈好"
+      ],
+      [
+        "鱼",
+        "fish",
+        "鲜鲤"
+      ],
+      [
+        "车",
+        "vehicle",
+        "轮转"
+      ],
+      [
+        "木",
+        "tree, wood",
+        "林桌"
+      ]
+    ]
+  }
+}

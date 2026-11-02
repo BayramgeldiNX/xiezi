@@ -1,0 +1,881 @@
+{
+  "n": 8,
+  "cn": "第八课",
+  "title": "“中国很行”",
+  "en": "\"China is great\"",
+  "words": [
+    {
+      "w": "名字",
+      "py": "míngzi",
+      "en": "name",
+      "ex": {
+        "hz": "你的名字很好听。",
+        "py": "Nǐ de míngzi hěn hǎotīng.",
+        "en": "Your name sounds nice."
+      }
+    },
+    {
+      "w": "学习",
+      "py": "xuéxí",
+      "en": "to study",
+      "ex": {
+        "hz": "我每天学习汉语。",
+        "py": "Wǒ měi tiān xuéxí Hànyǔ.",
+        "en": "I study Chinese every day."
+      }
+    },
+    {
+      "w": "同学",
+      "py": "tóngxué",
+      "en": "classmate",
+      "ex": {
+        "hz": "他是我的同学。",
+        "py": "Tā shì wǒ de tóngxué.",
+        "en": "He is my classmate."
+      }
+    },
+    {
+      "w": "高兴",
+      "py": "gāoxìng",
+      "en": "happy",
+      "ex": {
+        "hz": "见到你我很高兴。",
+        "py": "Jiàndào nǐ wǒ hěn gāoxìng.",
+        "en": "I am happy to meet you."
+      }
+    },
+    {
+      "w": "商店",
+      "py": "shāngdiàn",
+      "en": "shop",
+      "ex": {
+        "hz": "商店在学校旁边。",
+        "py": "Shāngdiàn zài xuéxiào pángbiān.",
+        "en": "The shop is next to the school."
+      }
+    },
+    {
+      "w": "住",
+      "py": "zhù",
+      "en": "to live",
+      "ex": {
+        "hz": "我住在北京。",
+        "py": "Wǒ zhù zài Běijīng.",
+        "en": "I live in Beijing."
+      }
+    },
+    {
+      "w": "往",
+      "py": "wǎng",
+      "en": "towards",
+      "ex": {
+        "hz": "往前走，就是商店。",
+        "py": "Wǎng qián zǒu, jiù shì shāngdiàn.",
+        "en": "Go straight ahead and there's the shop."
+      }
+    },
+    {
+      "w": "休息",
+      "py": "xiūxi",
+      "en": "to rest",
+      "ex": {
+        "hz": "你累了，休息一下吧。",
+        "py": "Nǐ lèi le, xiūxi yíxià ba.",
+        "en": "You're tired; have a rest."
+      }
+    },
+    {
+      "w": "身体",
+      "py": "shēntǐ",
+      "en": "body; health",
+      "ex": {
+        "hz": "他的身体很好。",
+        "py": "Tā de shēntǐ hěn hǎo.",
+        "en": "He is in good health."
+      }
+    },
+    {
+      "w": "非常",
+      "py": "fēicháng",
+      "en": "very",
+      "ex": {
+        "hz": "今天非常冷。",
+        "py": "Jīntiān fēicháng lěng.",
+        "en": "It is very cold today."
+      }
+    },
+    {
+      "w": "食堂",
+      "py": "shítáng",
+      "en": "canteen",
+      "ex": {
+        "hz": "我们在食堂吃午饭。",
+        "py": "Wǒmen zài shítáng chī wǔfàn.",
+        "en": "We eat lunch in the canteen."
+      }
+    },
+    {
+      "w": "谁",
+      "py": "shéi",
+      "en": "who",
+      "ex": {
+        "hz": "谁是你的老师？",
+        "py": "Shéi shì nǐ de lǎoshī?",
+        "en": "Who is your teacher?"
+      }
+    },
+    {
+      "w": "准备",
+      "py": "zhǔnbèi",
+      "en": "to prepare",
+      "ex": {
+        "hz": "妈妈在准备晚饭。",
+        "py": "Māma zài zhǔnbèi wǎnfàn.",
+        "en": "Mum is preparing dinner."
+      }
+    },
+    {
+      "w": "工作",
+      "py": "gōngzuò",
+      "en": "to work; job",
+      "ex": {
+        "hz": "我哥哥在银行工作。",
+        "py": "Wǒ gēge zài yínháng gōngzuò.",
+        "en": "My elder brother works at a bank."
+      }
+    },
+    {
+      "w": "公司",
+      "py": "gōngsī",
+      "en": "company",
+      "ex": {
+        "hz": "他的公司很大。",
+        "py": "Tā de gōngsī hěn dà.",
+        "en": "His company is big."
+      }
+    },
+    {
+      "w": "医生",
+      "py": "yīshēng",
+      "en": "doctor",
+      "ex": {
+        "hz": "她是一位医生。",
+        "py": "Tā shì yí wèi yīshēng.",
+        "en": "She is a doctor."
+      }
+    },
+    {
+      "w": "衣服",
+      "py": "yīfu",
+      "en": "clothes",
+      "ex": {
+        "hz": "这件衣服很漂亮。",
+        "py": "Zhè jiàn yīfu hěn piàoliang.",
+        "en": "This piece of clothing is pretty."
+      }
+    },
+    {
+      "w": "飞机",
+      "py": "fēijī",
+      "en": "aeroplane",
+      "ex": {
+        "hz": "飞机下午三点到。",
+        "py": "Fēijī xiàwǔ sān diǎn dào.",
+        "en": "The plane arrives at three in the afternoon."
+      }
+    },
+    {
+      "w": "咖啡",
+      "py": "kāfēi",
+      "en": "coffee",
+      "ex": {
+        "hz": "我早上喝一杯咖啡。",
+        "py": "Wǒ zǎoshang hē yì bēi kāfēi.",
+        "en": "I drink a cup of coffee in the morning."
+      }
+    },
+    {
+      "w": "蓝色",
+      "py": "lánsè",
+      "en": "blue",
+      "ex": {
+        "hz": "天空是蓝色的。",
+        "py": "Tiānkōng shì lánsè de.",
+        "en": "The sky is blue."
+      }
+    },
+    {
+      "w": "篮球",
+      "py": "lánqiú",
+      "en": "basketball",
+      "ex": {
+        "hz": "他每天打篮球。",
+        "py": "Tā měi tiān dǎ lánqiú.",
+        "en": "He plays basketball every day."
+      }
+    },
+    {
+      "w": "长城",
+      "py": "Chángchéng",
+      "en": "the Great Wall",
+      "ex": {
+        "hz": "我想去看长城。",
+        "py": "Wǒ xiǎng qù kàn Chángchéng.",
+        "en": "I want to see the Great Wall."
+      }
+    },
+    {
+      "w": "常常",
+      "py": "chángcháng",
+      "en": "often",
+      "ex": {
+        "hz": "我常常喝茶。",
+        "py": "Wǒ chángcháng hē chá.",
+        "en": "I often drink tea."
+      }
+    },
+    {
+      "w": "长",
+      "py": "cháng",
+      "en": "long",
+      "ex": {
+        "hz": "这条路很长。",
+        "py": "Zhè tiáo lù hěn cháng.",
+        "en": "This road is long."
+      }
+    },
+    {
+      "w": "长大",
+      "py": "zhǎngdà",
+      "en": "to grow up",
+      "ex": {
+        "hz": "小狗长大了。",
+        "py": "Xiǎo gǒu zhǎngdà le.",
+        "en": "The puppy has grown up."
+      }
+    },
+    {
+      "w": "好",
+      "py": "hǎo",
+      "en": "good",
+      "ex": {
+        "hz": "今天天气很好。",
+        "py": "Jīntiān tiānqì hěn hǎo.",
+        "en": "The weather is good today."
+      }
+    },
+    {
+      "w": "爱好",
+      "py": "àihào",
+      "en": "hobby",
+      "ex": {
+        "hz": "我的爱好是看书。",
+        "py": "Wǒ de àihào shì kàn shū.",
+        "en": "My hobby is reading."
+      }
+    },
+    {
+      "w": "觉得",
+      "py": "juéde",
+      "en": "to think; to feel",
+      "ex": {
+        "hz": "我觉得今天很热。",
+        "py": "Wǒ juéde jīntiān hěn rè.",
+        "en": "I feel it's hot today."
+      }
+    },
+    {
+      "w": "睡懒觉",
+      "py": "shuì lǎnjiào",
+      "en": "to sleep in",
+      "ex": {
+        "hz": "周末我喜欢睡懒觉。",
+        "py": "Zhōumò wǒ xǐhuan shuì lǎnjiào.",
+        "en": "At weekends I like to sleep in."
+      }
+    },
+    {
+      "w": "方便",
+      "py": "fāngbiàn",
+      "en": "convenient",
+      "ex": {
+        "hz": "学校旁边有商店，很方便。",
+        "py": "Xuéxiào pángbiān yǒu shāngdiàn, hěn fāngbiàn.",
+        "en": "There is a shop next to the school, which is convenient."
+      }
+    },
+    {
+      "w": "方便面",
+      "py": "fāngbiànmiàn",
+      "en": "instant noodles",
+      "ex": {
+        "hz": "我晚上吃方便面。",
+        "py": "Wǒ wǎnshang chī fāngbiànmiàn.",
+        "en": "I eat instant noodles in the evening."
+      }
+    },
+    {
+      "w": "便宜",
+      "py": "piányi",
+      "en": "cheap",
+      "ex": {
+        "hz": "这个杯子很便宜。",
+        "py": "Zhège bēizi hěn piányi.",
+        "en": "This cup is cheap."
+      }
+    },
+    {
+      "w": "快乐",
+      "py": "kuàilè",
+      "en": "happy",
+      "ex": {
+        "hz": "祝你生日快乐！",
+        "py": "Zhù nǐ shēngrì kuàilè!",
+        "en": "Happy birthday!"
+      }
+    },
+    {
+      "w": "音乐",
+      "py": "yīnyuè",
+      "en": "music",
+      "ex": {
+        "hz": "我喜欢听音乐。",
+        "py": "Wǒ xǐhuan tīng yīnyuè.",
+        "en": "I like listening to music."
+      }
+    },
+    {
+      "w": "教",
+      "py": "jiāo",
+      "en": "to teach",
+      "ex": {
+        "hz": "王老师教我们汉语。",
+        "py": "Wáng lǎoshī jiāo wǒmen Hànyǔ.",
+        "en": "Teacher Wang teaches us Chinese."
+      }
+    },
+    {
+      "w": "教室",
+      "py": "jiàoshì",
+      "en": "classroom",
+      "ex": {
+        "hz": "教室里有很多学生。",
+        "py": "Jiàoshì lǐ yǒu hěn duō xuésheng.",
+        "en": "There are many students in the classroom."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "周末做什么",
+      "py": "Zhōumò zuò shénme",
+      "en": "What to do at the weekend",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "周末你常常做什么？",
+          "py": "Zhōumò nǐ chángcháng zuò shénme?",
+          "en": "What do you often do at weekends?"
+        },
+        {
+          "who": "B",
+          "hz": "我常常和同学打篮球。",
+          "py": "Wǒ chángcháng hé tóngxué dǎ lánqiú.",
+          "en": "I often play basketball with classmates."
+        },
+        {
+          "who": "A",
+          "hz": "打完篮球去哪儿吃饭？",
+          "py": "Dǎ wán lánqiú qù nǎr chī fàn?",
+          "en": "Where do you eat after basketball?"
+        },
+        {
+          "who": "B",
+          "hz": "去食堂。食堂的东西很便宜，也很方便。",
+          "py": "Qù shítáng. Shítáng de dōngxi hěn piányi, yě hěn fāngbiàn.",
+          "en": "The canteen. The food there is cheap and convenient."
+        },
+        {
+          "who": "A",
+          "hz": "我周末喜欢睡懒觉。",
+          "py": "Wǒ zhōumò xǐhuan shuì lǎnjiào.",
+          "en": "I like to sleep in at weekends."
+        },
+        {
+          "who": "B",
+          "hz": "睡太多对身体不好。",
+          "py": "Shuì tài duō duì shēntǐ bù hǎo.",
+          "en": "Too much sleep is bad for your health."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What does B often do at weekends?",
+          "options": [
+            "Play basketball",
+            "Sleep in",
+            "Go to work",
+            "Study Chinese"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Why does B like the canteen?",
+          "options": [
+            "It is cheap and convenient",
+            "The coffee is good",
+            "It is near the park",
+            "The food is free"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "哥哥的公司",
+      "py": "Gēge de gōngsī",
+      "en": "My brother's company",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你哥哥在哪个公司工作？",
+          "py": "Nǐ gēge zài nǎge gōngsī gōngzuò?",
+          "en": "Which company does your brother work for?"
+        },
+        {
+          "who": "B",
+          "hz": "他在一个很大的公司工作，非常忙。",
+          "py": "Tā zài yí ge hěn dà de gōngsī gōngzuò, fēicháng máng.",
+          "en": "He works at a big company and is very busy."
+        },
+        {
+          "who": "A",
+          "hz": "他住在哪儿？",
+          "py": "Tā zhù zài nǎr?",
+          "en": "Where does he live?"
+        },
+        {
+          "who": "B",
+          "hz": "他住在公司旁边，很方便。",
+          "py": "Tā zhù zài gōngsī pángbiān, hěn fāngbiàn.",
+          "en": "He lives next to the company, which is convenient."
+        },
+        {
+          "who": "A",
+          "hz": "他喜欢喝咖啡吗？",
+          "py": "Tā xǐhuan hē kāfēi ma?",
+          "en": "Does he like coffee?"
+        },
+        {
+          "who": "B",
+          "hz": "喜欢，他的爱好是听音乐。",
+          "py": "Xǐhuan, tā de àihào shì tīng yīnyuè.",
+          "en": "Yes. His hobby is listening to music."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Where does his brother work?",
+          "options": [
+            "At a big company",
+            "At a school",
+            "At a shop",
+            "At a hospital"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What is his hobby?",
+          "options": [
+            "Listening to music",
+            "Playing basketball",
+            "Reading books",
+            "Swimming"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "形近字",
+      "en": "Look-alike characters: similar shapes, different meanings",
+      "drills": [
+        {
+          "q": "你累了，在家___息一下吧。",
+          "options": [
+            "休",
+            "体",
+            "住",
+            "往"
+          ],
+          "answer": 0,
+          "en": "You're tired; rest at home for a while."
+        },
+        {
+          "q": "我的___体很好。",
+          "options": [
+            "身",
+            "住",
+            "往",
+            "休"
+          ],
+          "answer": 0,
+          "en": "I am in good health."
+        },
+        {
+          "q": "我___在学校旁边。",
+          "options": [
+            "住",
+            "往",
+            "体",
+            "休"
+          ],
+          "answer": 0,
+          "en": "I live next to the school."
+        },
+        {
+          "q": "请___前走，商店就在那儿。",
+          "options": [
+            "往",
+            "住",
+            "体",
+            "休"
+          ],
+          "answer": 0,
+          "en": "Please go straight ahead; the shop is there."
+        },
+        {
+          "q": "这是我的同___，他叫小王。",
+          "options": [
+            "学",
+            "字",
+            "高",
+            "商"
+          ],
+          "answer": 0,
+          "en": "This is my classmate, called Xiao Wang."
+        }
+      ]
+    },
+    {
+      "point": "同音字",
+      "en": "Homophones: different characters, the same sound",
+      "drills": [
+        {
+          "q": "我爸爸在公司___作。",
+          "options": [
+            "工",
+            "公",
+            "医",
+            "衣"
+          ],
+          "answer": 0,
+          "en": "My dad works at a company."
+        },
+        {
+          "q": "她是___生，在医院工作。",
+          "options": [
+            "医",
+            "衣",
+            "工",
+            "公"
+          ],
+          "answer": 0,
+          "en": "She is a doctor and works at a hospital."
+        },
+        {
+          "q": "这件___服是蓝色的。",
+          "options": [
+            "衣",
+            "医",
+            "飞",
+            "公"
+          ],
+          "answer": 0,
+          "en": "This piece of clothing is blue."
+        },
+        {
+          "q": "他打___球打得很好。",
+          "options": [
+            "篮",
+            "蓝",
+            "常",
+            "堂"
+          ],
+          "answer": 0,
+          "en": "He plays basketball very well."
+        },
+        {
+          "q": "天空是___色的。",
+          "options": [
+            "蓝",
+            "篮",
+            "常",
+            "堂"
+          ],
+          "answer": 0,
+          "en": "The sky is blue."
+        }
+      ]
+    },
+    {
+      "point": "多音字",
+      "en": "Polyphonic characters: one character, more than one reading",
+      "drills": [
+        {
+          "q": "这条路很___，走了半个小时。",
+          "options": [
+            "长",
+            "常",
+            "堂",
+            "场"
+          ],
+          "answer": 0,
+          "en": "This road is long; the walk took half an hour."
+        },
+        {
+          "q": "小猫___大了。",
+          "options": [
+            "长",
+            "常",
+            "堂",
+            "场"
+          ],
+          "answer": 0,
+          "en": "The kitten has grown up. (read zhǎng)"
+        },
+        {
+          "q": "我爱听音___。",
+          "options": [
+            "乐",
+            "药",
+            "作",
+            "休"
+          ],
+          "answer": 0,
+          "en": "I love listening to music. (read yuè)"
+        },
+        {
+          "q": "我的爱___是游泳。",
+          "options": [
+            "好",
+            "号",
+            "如",
+            "她"
+          ],
+          "answer": 0,
+          "en": "My hobby is swimming. (read hào)"
+        },
+        {
+          "q": "这个杯子很___宜。",
+          "options": [
+            "便",
+            "使",
+            "更",
+            "但"
+          ],
+          "answer": 0,
+          "en": "This cup is cheap. (read pián)"
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你住在哪儿？"
+          ],
+          [
+            "女",
+            "我住在学校旁边。"
+          ]
+        ],
+        "q": "他住在哪儿？",
+        "options": [
+          "学校旁边",
+          "公司旁边",
+          "商店旁边"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你中午在哪儿吃饭？"
+          ],
+          [
+            "女",
+            "在食堂，那儿很便宜。"
+          ]
+        ],
+        "q": "食堂怎么样？",
+        "options": [
+          "很便宜",
+          "很贵",
+          "很远"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你的爱好是什么？"
+          ],
+          [
+            "女",
+            "我喜欢打篮球。"
+          ]
+        ],
+        "q": "他的爱好是什么？",
+        "options": [
+          "打篮球",
+          "听音乐",
+          "睡懒觉"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你喝咖啡吗？"
+          ],
+          [
+            "女",
+            "不喝，我喝茶。"
+          ]
+        ],
+        "q": "他喝什么？",
+        "options": [
+          "茶",
+          "咖啡",
+          "水"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "王医生在医院工作，她每天都穿白色的衣服。",
+        "claim": "王医生是老师。",
+        "ok": false
+      },
+      {
+        "text": "我的爱好是打篮球，周末常常和同学一起打。",
+        "claim": "他周末常常打篮球。",
+        "ok": true
+      },
+      {
+        "text": "这家店的方便面三块钱一个，很便宜。",
+        "claim": "方便面很贵。",
+        "ok": false
+      },
+      {
+        "text": "他住在公司旁边，走路五分钟就到了。",
+        "claim": "他的家离公司很近。",
+        "ok": true
+      }
+    ],
+    "replies": [
+      {
+        "q": "你的名字怎么写？",
+        "a": "我姓王，王是大王的王。"
+      },
+      {
+        "q": "你常常做什么？",
+        "a": "我常常看书和听音乐。"
+      },
+      {
+        "q": "你觉得方便面怎么样？",
+        "a": "又便宜又方便，可是不太好。"
+      },
+      {
+        "q": "谁教你们汉语？",
+        "a": "王老师教我们。"
+      }
+    ]
+  },
+  "hanzi": {
+    "structure": [
+      "形近字、同音字、多音字 Look-alikes, homophones, polyphones",
+      "Look-alikes have similar shapes but different meanings (人 and 入, 休 and 体). Homophones sound the same but are different characters (是 and 试, 一 and 医). Polyphones are one character with several readings (长 cháng and zhǎng, 干 gān and gàn); sometimes the meanings are linked, sometimes not.",
+      "人入休体字学高商住往常堂谁准"
+    ],
+    "radicals": [
+      [
+        "亻",
+        "person",
+        "住体休便"
+      ],
+      [
+        "彳",
+        "walking, steps",
+        "往行"
+      ],
+      [
+        "讠",
+        "speech",
+        "谁说"
+      ],
+      [
+        "艹",
+        "grass, plants",
+        "蓝花茶"
+      ],
+      [
+        "⺮",
+        "bamboo",
+        "篮笔"
+      ],
+      [
+        "宀",
+        "roof",
+        "宜室"
+      ]
+    ]
+  },
+  "pron": [
+    {
+      "t": "Homophones 同音字",
+      "en": "Many different characters share one sound: gōng in 工 and 公, yī in 医 and 衣, fēi in 飞 and 啡, lán in 蓝 and 篮. Context and the meaning part tell them apart.",
+      "ex": [
+        "工",
+        "公",
+        "医",
+        "衣",
+        "飞",
+        "啡",
+        "蓝",
+        "篮"
+      ]
+    },
+    {
+      "t": "Polyphones 多音字",
+      "en": "Some characters have two readings: 长 cháng (long) and zhǎng (to grow); 好 hǎo (good) and hào (to like); 觉 jué (to feel) and jiào (sleep); 乐 lè (happy) and yuè (music); 教 jiāo (to teach) and jiào (teaching); 便 biàn (convenient) and pián (in 便宜).",
+      "ex": [
+        "长",
+        "长大",
+        "爱好",
+        "觉得",
+        "睡觉",
+        "快乐",
+        "音乐",
+        "教",
+        "教室",
+        "方便",
+        "便宜"
+      ]
+    }
+  ]
+}

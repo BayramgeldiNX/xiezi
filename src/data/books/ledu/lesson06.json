@@ -1,0 +1,994 @@
+{
+  "n": 6,
+  "cn": "第六课",
+  "title": "江河湖海都是水，吃喝哈哈全用嘴",
+  "en": "Rivers, lakes and seas are all water; eating and drinking use the mouth",
+  "words": [
+    {
+      "w": "大夫",
+      "py": "dàifu",
+      "en": "doctor",
+      "ex": {
+        "hz": "我的大夫很好。",
+        "py": "Wǒ de dàifu hěn hǎo.",
+        "en": "My doctor is very good."
+      }
+    },
+    {
+      "w": "丈夫",
+      "py": "zhàngfu",
+      "en": "husband",
+      "ex": {
+        "hz": "她的丈夫是老师。",
+        "py": "Tā de zhàngfu shì lǎoshī.",
+        "en": "Her husband is a teacher."
+      }
+    },
+    {
+      "w": "作业",
+      "py": "zuòyè",
+      "en": "homework",
+      "ex": {
+        "hz": "今天的作业不多。",
+        "py": "Jīntiān de zuòyè bù duō.",
+        "en": "There is not much homework today."
+      }
+    },
+    {
+      "w": "工作",
+      "py": "gōngzuò",
+      "en": "to work; job",
+      "ex": {
+        "hz": "我哥哥在医院工作。",
+        "py": "Wǒ gēge zài yīyuàn gōngzuò.",
+        "en": "My brother works at a hospital."
+      }
+    },
+    {
+      "w": "作文",
+      "py": "zuòwén",
+      "en": "essay, composition",
+      "ex": {
+        "hz": "我写了一篇作文。",
+        "py": "Wǒ xiě le yì piān zuòwén.",
+        "en": "I wrote an essay."
+      }
+    },
+    {
+      "w": "文化",
+      "py": "wénhuà",
+      "en": "culture",
+      "ex": {
+        "hz": "我喜欢中国文化。",
+        "py": "Wǒ xǐhuan Zhōngguó wénhuà.",
+        "en": "I like Chinese culture."
+      }
+    },
+    {
+      "w": "化学",
+      "py": "huàxué",
+      "en": "chemistry",
+      "ex": {
+        "hz": "他的化学课在上午。",
+        "py": "Tā de huàxué kè zài shàngwǔ.",
+        "en": "His chemistry class is in the morning."
+      }
+    },
+    {
+      "w": "短信",
+      "py": "duǎnxìn",
+      "en": "text message",
+      "ex": {
+        "hz": "他发短信给我。",
+        "py": "Tā fā duǎnxìn gěi wǒ.",
+        "en": "He sent me a text message."
+      }
+    },
+    {
+      "w": "微信",
+      "py": "wēixìn",
+      "en": "WeChat",
+      "ex": {
+        "hz": "我们在微信上说话。",
+        "py": "Wǒmen zài wēixìn shàng shuō huà.",
+        "en": "We chat on WeChat."
+      }
+    },
+    {
+      "w": "请问",
+      "py": "qǐngwèn",
+      "en": "excuse me; may I ask",
+      "ex": {
+        "hz": "请问，洗手间在哪儿？",
+        "py": "Qǐngwèn, xǐshǒujiān zài nǎr?",
+        "en": "Excuse me, where is the restroom?"
+      }
+    },
+    {
+      "w": "问题",
+      "py": "wèntí",
+      "en": "question; problem",
+      "ex": {
+        "hz": "老师，我有一个问题。",
+        "py": "Lǎoshī, wǒ yǒu yí ge wèntí.",
+        "en": "Teacher, I have a question."
+      }
+    },
+    {
+      "w": "喜欢",
+      "py": "xǐhuan",
+      "en": "to like",
+      "ex": {
+        "hz": "我喜欢喝茶。",
+        "py": "Wǒ xǐhuan hē chá.",
+        "en": "I like drinking tea."
+      }
+    },
+    {
+      "w": "惊喜",
+      "py": "jīngxǐ",
+      "en": "pleasant surprise",
+      "ex": {
+        "hz": "这个礼物是一个惊喜。",
+        "py": "Zhè ge lǐwù shì yí ge jīngxǐ.",
+        "en": "This present is a pleasant surprise."
+      }
+    },
+    {
+      "w": "知道",
+      "py": "zhīdao",
+      "en": "to know",
+      "ex": {
+        "hz": "我不知道他在哪儿。",
+        "py": "Wǒ bù zhīdao tā zài nǎr.",
+        "en": "I don't know where he is."
+      }
+    },
+    {
+      "w": "知识",
+      "py": "zhīshi",
+      "en": "knowledge",
+      "ex": {
+        "hz": "书里有很多知识。",
+        "py": "Shū lǐ yǒu hěn duō zhīshi.",
+        "en": "Books hold a lot of knowledge."
+      }
+    },
+    {
+      "w": "喝茶",
+      "py": "hē chá",
+      "en": "to drink tea",
+      "ex": {
+        "hz": "爷爷喜欢喝茶。",
+        "py": "Yéye xǐhuan hē chá.",
+        "en": "Grandpa likes to drink tea."
+      }
+    },
+    {
+      "w": "喝酒",
+      "py": "hē jiǔ",
+      "en": "to drink alcohol",
+      "ex": {
+        "hz": "开车不能喝酒。",
+        "py": "Kāi chē bù néng hē jiǔ.",
+        "en": "You must not drink and drive."
+      }
+    },
+    {
+      "w": "唱歌",
+      "py": "chàng gē",
+      "en": "to sing",
+      "ex": {
+        "hz": "她喜欢唱歌。",
+        "py": "Tā xǐhuan chàng gē.",
+        "en": "She likes singing."
+      }
+    },
+    {
+      "w": "演唱会",
+      "py": "yǎnchànghuì",
+      "en": "concert",
+      "ex": {
+        "hz": "我们去看他的演唱会。",
+        "py": "Wǒmen qù kàn tā de yǎnchànghuì.",
+        "en": "We are going to his concert."
+      }
+    },
+    {
+      "w": "告诉",
+      "py": "gàosu",
+      "en": "to tell",
+      "ex": {
+        "hz": "请告诉我你的名字。",
+        "py": "Qǐng gàosu wǒ nǐ de míngzi.",
+        "en": "Please tell me your name."
+      }
+    },
+    {
+      "w": "报告",
+      "py": "bàogào",
+      "en": "report",
+      "ex": {
+        "hz": "我要写一个报告。",
+        "py": "Wǒ yào xiě yí ge bàogào.",
+        "en": "I have to write a report."
+      }
+    },
+    {
+      "w": "广告",
+      "py": "guǎnggào",
+      "en": "advertisement",
+      "ex": {
+        "hz": "电视上有很多广告。",
+        "py": "Diànshì shàng yǒu hěn duō guǎnggào.",
+        "en": "There are many adverts on TV."
+      }
+    },
+    {
+      "w": "奶奶",
+      "py": "nǎinai",
+      "en": "grandma",
+      "ex": {
+        "hz": "奶奶今年七十岁。",
+        "py": "Nǎinai jīnnián qīshí suì.",
+        "en": "Grandma is seventy this year."
+      }
+    },
+    {
+      "w": "牛奶",
+      "py": "niúnǎi",
+      "en": "milk",
+      "ex": {
+        "hz": "我每天喝一杯牛奶。",
+        "py": "Wǒ měitiān hē yì bēi niúnǎi.",
+        "en": "I drink a glass of milk every day."
+      }
+    },
+    {
+      "w": "酸奶",
+      "py": "suānnǎi",
+      "en": "yogurt",
+      "ex": {
+        "hz": "这个酸奶很好喝。",
+        "py": "Zhè ge suānnǎi hěn hǎohē.",
+        "en": "This yogurt is delicious."
+      }
+    },
+    {
+      "w": "结婚",
+      "py": "jié hūn",
+      "en": "to get married",
+      "ex": {
+        "hz": "他们明年结婚。",
+        "py": "Tāmen míngnián jié hūn.",
+        "en": "They are getting married next year."
+      }
+    },
+    {
+      "w": "离婚",
+      "py": "lí hūn",
+      "en": "to divorce",
+      "ex": {
+        "hz": "他们去年离婚了。",
+        "py": "Tāmen qùnián lí hūn le.",
+        "en": "They divorced last year."
+      }
+    },
+    {
+      "w": "婚礼",
+      "py": "hūnlǐ",
+      "en": "wedding ceremony",
+      "ex": {
+        "hz": "婚礼在酒店。",
+        "py": "Hūnlǐ zài jiǔdiàn.",
+        "en": "The wedding is at the hotel."
+      }
+    },
+    {
+      "w": "洗澡",
+      "py": "xǐ zǎo",
+      "en": "to take a bath or shower",
+      "ex": {
+        "hz": "我晚上洗澡。",
+        "py": "Wǒ wǎnshang xǐ zǎo.",
+        "en": "I take a shower in the evening."
+      }
+    },
+    {
+      "w": "洗手",
+      "py": "xǐ shǒu",
+      "en": "to wash hands",
+      "ex": {
+        "hz": "吃饭以前要洗手。",
+        "py": "Chī fàn yǐqián yào xǐ shǒu.",
+        "en": "Wash your hands before eating."
+      }
+    },
+    {
+      "w": "洗手间",
+      "py": "xǐshǒujiān",
+      "en": "restroom",
+      "ex": {
+        "hz": "洗手间在那儿。",
+        "py": "Xǐshǒujiān zài nàr.",
+        "en": "The restroom is over there."
+      }
+    },
+    {
+      "w": "果汁",
+      "py": "guǒzhī",
+      "en": "juice",
+      "ex": {
+        "hz": "我想喝果汁。",
+        "py": "Wǒ xiǎng hē guǒzhī.",
+        "en": "I would like some juice."
+      }
+    },
+    {
+      "w": "苹果汁",
+      "py": "píngguǒzhī",
+      "en": "apple juice",
+      "ex": {
+        "hz": "我最喜欢苹果汁。",
+        "py": "Wǒ zuì xǐhuan píngguǒzhī.",
+        "en": "I like apple juice best."
+      }
+    },
+    {
+      "w": "橙汁",
+      "py": "chéngzhī",
+      "en": "orange juice",
+      "ex": {
+        "hz": "请给我一杯橙汁。",
+        "py": "Qǐng gěi wǒ yì bēi chéngzhī.",
+        "en": "Please give me a glass of orange juice."
+      }
+    },
+    {
+      "w": "海滩",
+      "py": "hǎitān",
+      "en": "beach",
+      "ex": {
+        "hz": "我们在海滩上玩儿。",
+        "py": "Wǒmen zài hǎitān shàng wánr.",
+        "en": "We play on the beach."
+      }
+    },
+    {
+      "w": "海鲜",
+      "py": "hǎixiān",
+      "en": "seafood",
+      "ex": {
+        "hz": "这家饭馆的海鲜很好吃。",
+        "py": "Zhè jiā fànguǎn de hǎixiān hěn hǎochī.",
+        "en": "The seafood in this restaurant is delicious."
+      }
+    },
+    {
+      "w": "人山人海",
+      "py": "rénshān rénhǎi",
+      "en": "a sea of people",
+      "ex": {
+        "hz": "周末公园里人山人海。",
+        "py": "Zhōumò gōngyuán lǐ rénshān rénhǎi.",
+        "en": "The park is packed with people at the weekend."
+      }
+    },
+    {
+      "w": "游泳",
+      "py": "yóu yǒng",
+      "en": "to swim",
+      "ex": {
+        "hz": "他每天去游泳。",
+        "py": "Tā měitiān qù yóu yǒng.",
+        "en": "He goes swimming every day."
+      }
+    },
+    {
+      "w": "旅游",
+      "py": "lǚyóu",
+      "en": "to travel",
+      "ex": {
+        "hz": "明年我想去中国旅游。",
+        "py": "Míngnián wǒ xiǎng qù Zhōngguó lǚyóu.",
+        "en": "Next year I want to travel in China."
+      }
+    },
+    {
+      "w": "游戏",
+      "py": "yóuxì",
+      "en": "game",
+      "ex": {
+        "hz": "孩子们喜欢玩儿游戏。",
+        "py": "Háizimen xǐhuan wánr yóuxì.",
+        "en": "Children like playing games."
+      }
+    },
+    {
+      "w": "晚上",
+      "py": "wǎnshang",
+      "en": "evening",
+      "ex": {
+        "hz": "晚上我在家看书。",
+        "py": "Wǎnshang wǒ zài jiā kàn shū.",
+        "en": "In the evening I read at home."
+      }
+    },
+    {
+      "w": "晚饭",
+      "py": "wǎnfàn",
+      "en": "supper, dinner",
+      "ex": {
+        "hz": "我们六点吃晚饭。",
+        "py": "Wǒmen liù diǎn chī wǎnfàn.",
+        "en": "We eat dinner at six."
+      }
+    },
+    {
+      "w": "一天到晚",
+      "py": "yìtiān dàowǎn",
+      "en": "all day long",
+      "ex": {
+        "hz": "他一天到晚都在工作。",
+        "py": "Tā yìtiān dàowǎn dōu zài gōngzuò.",
+        "en": "He works all day long."
+      }
+    },
+    {
+      "w": "时间",
+      "py": "shíjiān",
+      "en": "time",
+      "ex": {
+        "hz": "我现在没有时间。",
+        "py": "Wǒ xiànzài méiyǒu shíjiān.",
+        "en": "I have no time now."
+      }
+    },
+    {
+      "w": "有时候",
+      "py": "yǒushíhou",
+      "en": "sometimes",
+      "ex": {
+        "hz": "我有时候坐地铁上班。",
+        "py": "Wǒ yǒushíhou zuò dìtiě shàng bān.",
+        "en": "Sometimes I take the subway to work."
+      }
+    },
+    {
+      "w": "小时",
+      "py": "xiǎoshí",
+      "en": "hour",
+      "ex": {
+        "hz": "我每天学习两个小时。",
+        "py": "Wǒ měitiān xuéxí liǎng ge xiǎoshí.",
+        "en": "I study for two hours every day."
+      }
+    },
+    {
+      "w": "中间",
+      "py": "zhōngjiān",
+      "en": "middle",
+      "ex": {
+        "hz": "他坐在中间。",
+        "py": "Tā zuò zài zhōngjiān.",
+        "en": "He is sitting in the middle."
+      }
+    },
+    {
+      "w": "房间",
+      "py": "fángjiān",
+      "en": "room",
+      "ex": {
+        "hz": "我的房间很小。",
+        "py": "Wǒ de fángjiān hěn xiǎo.",
+        "en": "My room is small."
+      }
+    },
+    {
+      "w": "星期",
+      "py": "xīngqī",
+      "en": "week",
+      "ex": {
+        "hz": "一个星期有七天。",
+        "py": "Yí ge xīngqī yǒu qī tiān.",
+        "en": "A week has seven days."
+      }
+    },
+    {
+      "w": "星星",
+      "py": "xīngxing",
+      "en": "star",
+      "ex": {
+        "hz": "晚上天上有很多星星。",
+        "py": "Wǎnshang tiān shàng yǒu hěn duō xīngxing.",
+        "en": "There are many stars in the sky at night."
+      }
+    },
+    {
+      "w": "歌星",
+      "py": "gēxīng",
+      "en": "singing star",
+      "ex": {
+        "hz": "他是一个有名的歌星。",
+        "py": "Tā shì yí ge yǒumíng de gēxīng.",
+        "en": "He is a famous singer."
+      }
+    },
+    {
+      "w": "风景",
+      "py": "fēngjǐng",
+      "en": "scenery",
+      "ex": {
+        "hz": "这里的风景很美。",
+        "py": "Zhèlǐ de fēngjǐng hěn měi.",
+        "en": "The scenery here is beautiful."
+      }
+    },
+    {
+      "w": "夜景",
+      "py": "yèjǐng",
+      "en": "night scene",
+      "ex": {
+        "hz": "北京的夜景很漂亮。",
+        "py": "Běijīng de yèjǐng hěn piàoliang.",
+        "en": "Beijing's night view is beautiful."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "周末去海滩",
+      "py": "Zhōumò qù hǎitān",
+      "en": "A weekend at the beach",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "周末你想做什么？",
+          "py": "Zhōumò nǐ xiǎng zuò shénme?",
+          "en": "What do you want to do this weekend?"
+        },
+        {
+          "who": "B",
+          "hz": "我想去海滩游泳，那儿的风景很美。",
+          "py": "Wǒ xiǎng qù hǎitān yóu yǒng, nàr de fēngjǐng hěn měi.",
+          "en": "I want to swim at the beach; the scenery there is lovely."
+        },
+        {
+          "who": "A",
+          "hz": "晚上我们吃海鲜，喝果汁。",
+          "py": "Wǎnshang wǒmen chī hǎixiān, hē guǒzhī.",
+          "en": "In the evening we'll eat seafood and drink juice."
+        },
+        {
+          "who": "B",
+          "hz": "好，可是周末人山人海，我们早点儿去吧。",
+          "py": "Hǎo, kěshì zhōumò rénshān-rénhǎi, wǒmen zǎo diǎnr qù ba.",
+          "en": "OK, but it is packed at the weekend, so let's go early."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What will they do at the beach?",
+          "options": [
+            "Swim",
+            "Sing",
+            "Work",
+            "Study"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What will they have in the evening?",
+          "options": [
+            "Seafood and juice",
+            "Tea and milk",
+            "Beer and noodles",
+            "Yogurt and cake"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "我的奶奶",
+      "py": "Wǒ de nǎinai",
+      "en": "My grandma",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "我奶奶每天都喝茶，不喝果汁。",
+          "py": "Wǒ nǎinai měitiān dōu hē chá, bù hē guǒzhī.",
+          "en": "My grandma drinks tea every day, not juice."
+        },
+        {
+          "who": "B",
+          "hz": "她喜欢唱歌吗？",
+          "py": "Tā xǐhuan chàng gē ma?",
+          "en": "Does she like singing?"
+        },
+        {
+          "who": "A",
+          "hz": "喜欢，她一天到晚都唱歌。",
+          "py": "Xǐhuan, tā yìtiān-dàowǎn dōu chàng gē.",
+          "en": "Yes, she sings all day long."
+        },
+        {
+          "who": "B",
+          "hz": "她一定很高兴。",
+          "py": "Tā yídìng hěn gāoxìng.",
+          "en": "She must be very happy."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What does Grandma drink every day?",
+          "options": [
+            "Tea",
+            "Milk",
+            "Juice",
+            "Yogurt"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What does she do all day?",
+          "options": [
+            "Sings",
+            "Works",
+            "Swims",
+            "Writes"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "形声字",
+      "en": "Pictophonetic characters: one part shows the meaning, one part hints at the sound",
+      "drills": [
+        {
+          "q": "“妈”的意符是“女”，声符是“___”。",
+          "options": [
+            "马",
+            "母",
+            "吗",
+            "好"
+          ],
+          "answer": 0,
+          "en": "In 妈, 女 shows the meaning and 马 hints at the sound."
+        },
+        {
+          "q": "“海”的意符是“氵”，声符是“___”。",
+          "options": [
+            "每",
+            "母",
+            "毒",
+            "木"
+          ],
+          "answer": 0,
+          "en": "In 海, 氵 shows the meaning and 每 hints at the sound."
+        },
+        {
+          "q": "“汁”的意符是“氵”，声符是“___”。",
+          "options": [
+            "十",
+            "千",
+            "干",
+            "土"
+          ],
+          "answer": 0,
+          "en": "In 汁, 氵 shows the meaning and 十 hints at the sound."
+        },
+        {
+          "q": "“问”的意符是“口”，声符是“___”。",
+          "options": [
+            "门",
+            "日",
+            "马",
+            "女"
+          ],
+          "answer": 0,
+          "en": "In 问, 口 shows the meaning and 门 hints at the sound."
+        }
+      ]
+    },
+    {
+      "point": "意符",
+      "en": "Common meaning parts: 亻 person, 口 mouth, 女 woman, 氵 water, 日 sun or time",
+      "drills": [
+        {
+          "q": "有“氵”的字多和___有关。",
+          "options": [
+            "水",
+            "人",
+            "嘴",
+            "太阳"
+          ],
+          "answer": 0,
+          "en": "Characters with 氵 are mostly related to water."
+        },
+        {
+          "q": "有“口”的字多和___有关。",
+          "options": [
+            "嘴",
+            "水",
+            "女人",
+            "太阳"
+          ],
+          "answer": 0,
+          "en": "Characters with 口 are mostly related to the mouth."
+        },
+        {
+          "q": "有“日”的字多和太阳、___有关。",
+          "options": [
+            "时间",
+            "水",
+            "女人",
+            "嘴"
+          ],
+          "answer": 0,
+          "en": "Characters with 日 are mostly related to the sun and time."
+        },
+        {
+          "q": "“喝”“唱”“问”都有“___”。",
+          "options": [
+            "口",
+            "日",
+            "氵",
+            "女"
+          ],
+          "answer": 0,
+          "en": "喝, 唱 and 问 all contain 口."
+        }
+      ]
+    },
+    {
+      "point": "哪个意符？",
+      "en": "Which meaning part? Group the characters you know",
+      "drills": [
+        {
+          "q": "“奶”“婚”“妈”的意符是“___”。",
+          "options": [
+            "女",
+            "子",
+            "口",
+            "日"
+          ],
+          "answer": 0,
+          "en": "奶, 婚 and 妈 all have 女 as their meaning part."
+        },
+        {
+          "q": "“洗”“游”“汁”的意符是“___”。",
+          "options": [
+            "氵",
+            "亻",
+            "口",
+            "日"
+          ],
+          "answer": 0,
+          "en": "洗, 游 and 汁 all have 氵 as their meaning part."
+        },
+        {
+          "q": "“晚”“时”“星”的意符是“___”。",
+          "options": [
+            "日",
+            "月",
+            "目",
+            "田"
+          ],
+          "answer": 0,
+          "en": "晚, 时 and 星 all have 日 as their meaning part."
+        },
+        {
+          "q": "“作”“信”“休”的意符是“___”。",
+          "options": [
+            "亻",
+            "氵",
+            "口",
+            "女"
+          ],
+          "answer": 0,
+          "en": "作, 信 and 休 all have 亻 as their meaning part."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "请问，洗手间在哪儿？"
+          ],
+          [
+            "女",
+            "在那边。"
+          ]
+        ],
+        "q": "女的问什么？",
+        "options": [
+          "洗手间在哪儿",
+          "现在几点",
+          "饭馆在哪儿"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你喝什么？"
+          ],
+          [
+            "女",
+            "我喝橙汁，不喝酒。"
+          ]
+        ],
+        "q": "他喝什么？",
+        "options": [
+          "橙汁",
+          "啤酒",
+          "牛奶"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你一天学习几个小时？"
+          ],
+          [
+            "女",
+            "两个小时，晚饭以后学习。"
+          ]
+        ],
+        "q": "他什么时候学习？",
+        "options": [
+          "晚饭以后",
+          "上午",
+          "中午"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你奶奶做什么工作？"
+          ],
+          [
+            "女",
+            "她不工作了，在家唱歌。"
+          ]
+        ],
+        "q": "奶奶现在做什么？",
+        "options": [
+          "唱歌",
+          "工作",
+          "游泳"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "他们上个月结婚，现在在海滩旅游。",
+        "claim": "他们已经结婚了。",
+        "ok": true
+      },
+      {
+        "text": "我一天到晚都在公司工作，没有时间看电视。",
+        "claim": "他今天休息。",
+        "ok": false
+      },
+      {
+        "text": "周末的海滩人山人海，很不安静。",
+        "claim": "周末的海滩很安静。",
+        "ok": false
+      },
+      {
+        "text": "我的作文写了一个小时，写完以后去喝茶。",
+        "claim": "他写完作文以后喝茶。",
+        "ok": true
+      }
+    ],
+    "replies": [
+      {
+        "q": "请问，你叫什么名字？",
+        "a": "我叫王明。"
+      },
+      {
+        "q": "你喜欢喝什么？",
+        "a": "我喜欢喝果汁。"
+      },
+      {
+        "q": "你今天有什么作业？",
+        "a": "我要写作文。"
+      },
+      {
+        "q": "周末你想去哪儿？",
+        "a": "我想去海滩。"
+      }
+    ]
+  },
+  "hanzi": {
+    "chars": [
+      [
+        "人",
+        "A person seen from the side, standing."
+      ],
+      [
+        "口",
+        "An open mouth."
+      ],
+      [
+        "女",
+        "A woman kneeling with her hands crossed."
+      ],
+      [
+        "水",
+        "A stream of flowing water."
+      ],
+      [
+        "日",
+        "The sun, with a dot in the middle."
+      ]
+    ],
+    "structure": [
+      "形声字 Pictophonetic characters",
+      "One part (the meaning part) shows what the character is about, and the other part (the sound part) hints at how it is said. 妈 has 女 for meaning and 马 for sound. More than eight in ten characters are built this way.",
+      "妈海汁问洗游晚作信"
+    ],
+    "radicals": [
+      [
+        "亻",
+        "person",
+        "作信休"
+      ],
+      [
+        "口",
+        "mouth",
+        "喝唱问告喜"
+      ],
+      [
+        "女",
+        "woman",
+        "奶婚妈"
+      ],
+      [
+        "氵",
+        "water",
+        "洗海游汁"
+      ],
+      [
+        "日",
+        "sun, time",
+        "晚时星景"
+      ]
+    ]
+  },
+  "pron": [
+    {
+      "t": "Sound parts",
+      "en": "In a pictophonetic character the sound part gives a hint, often close to the real sound. Compare each character with its sound part.",
+      "ex": [
+        "妈",
+        "马",
+        "海",
+        "每",
+        "问",
+        "门",
+        "汁",
+        "十"
+      ]
+    }
+  ]
+}

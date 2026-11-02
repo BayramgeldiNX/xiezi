@@ -58,6 +58,7 @@ The owner uses it on iPhone 16 (home-screen PWA), Mi Pad 7 Pro and Windows. Prog
 | `kouyu-rumen` | 汉语口语速成 · 入门篇 (Short-term Spoken Chinese · Threshold, vol. 1) | 15 |
 | `hsk1` | HSK 标准教程 1 (textbook + workbook) | 15 |
 | `hsk2` | HSK 标准教程 2 (textbook + workbook) | 15 |
+| `ledu` | 乐读 1 (LEDU Writing: strokes, radicals and how characters are built) | 10 |
 
 Progress keys (`w:你` and others) depend on the words. **Don't change existing lessons' words, examples or readings.**
 

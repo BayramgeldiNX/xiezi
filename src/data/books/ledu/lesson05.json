@@ -1,0 +1,922 @@
+{
+  "n": 5,
+  "cn": "第五课",
+  "title": "二人土上坐，一月日边明",
+  "en": "Two people sit on the earth; sun and moon side by side make \"bright\"",
+  "words": [
+    {
+      "w": "跑步",
+      "py": "pǎo bù",
+      "en": "to run, to jog",
+      "ex": {
+        "hz": "我早上去公园跑步。",
+        "py": "Wǒ zǎoshang qù gōngyuán pǎo bù.",
+        "en": "I go jogging in the park in the morning."
+      }
+    },
+    {
+      "w": "进步",
+      "py": "jìnbù",
+      "en": "to make progress",
+      "ex": {
+        "hz": "你的汉语进步很快。",
+        "py": "Nǐ de Hànyǔ jìnbù hěn kuài.",
+        "en": "Your Chinese is improving fast."
+      }
+    },
+    {
+      "w": "好吃",
+      "py": "hǎochī",
+      "en": "delicious",
+      "ex": {
+        "hz": "这个菜真好吃。",
+        "py": "Zhè ge cài zhēn hǎochī.",
+        "en": "This dish is really delicious."
+      }
+    },
+    {
+      "w": "好看",
+      "py": "hǎokàn",
+      "en": "good-looking",
+      "ex": {
+        "hz": "她的新衣服很好看。",
+        "py": "Tā de xīn yīfu hěn hǎokàn.",
+        "en": "Her new clothes look nice."
+      }
+    },
+    {
+      "w": "好玩儿",
+      "py": "hǎowánr",
+      "en": "fun, interesting",
+      "ex": {
+        "hz": "那个公园很好玩儿。",
+        "py": "Nà ge gōngyuán hěn hǎowánr.",
+        "en": "That park is fun."
+      }
+    },
+    {
+      "w": "看书",
+      "py": "kàn shū",
+      "en": "to read a book",
+      "ex": {
+        "hz": "我晚上喜欢看书。",
+        "py": "Wǒ wǎnshang xǐhuan kàn shū.",
+        "en": "I like reading in the evening."
+      }
+    },
+    {
+      "w": "看电视",
+      "py": "kàn diànshì",
+      "en": "to watch TV",
+      "ex": {
+        "hz": "爸爸在家看电视。",
+        "py": "Bàba zài jiā kàn diànshì.",
+        "en": "Dad is watching TV at home."
+      }
+    },
+    {
+      "w": "看电影",
+      "py": "kàn diànyǐng",
+      "en": "to watch a movie",
+      "ex": {
+        "hz": "周末我们去看电影。",
+        "py": "Zhōumò wǒmen qù kàn diànyǐng.",
+        "en": "At the weekend we are going to a film."
+      }
+    },
+    {
+      "w": "铅笔",
+      "py": "qiānbǐ",
+      "en": "pencil",
+      "ex": {
+        "hz": "请给我一支铅笔。",
+        "py": "Qǐng gěi wǒ yì zhī qiānbǐ.",
+        "en": "Please give me a pencil."
+      }
+    },
+    {
+      "w": "钢笔",
+      "py": "gāngbǐ",
+      "en": "pen",
+      "ex": {
+        "hz": "这支钢笔是爸爸的。",
+        "py": "Zhè zhī gāngbǐ shì bàba de.",
+        "en": "This pen is Dad's."
+      }
+    },
+    {
+      "w": "圆珠笔",
+      "py": "yuánzhūbǐ",
+      "en": "ballpoint pen",
+      "ex": {
+        "hz": "我有一支红色的圆珠笔。",
+        "py": "Wǒ yǒu yì zhī hóngsè de yuánzhūbǐ.",
+        "en": "I have a red ballpoint pen."
+      }
+    },
+    {
+      "w": "有名",
+      "py": "yǒu míng",
+      "en": "famous",
+      "ex": {
+        "hz": "这家饭馆很有名。",
+        "py": "Zhè jiā fànguǎn hěn yǒu míng.",
+        "en": "This restaurant is famous."
+      }
+    },
+    {
+      "w": "有意思",
+      "py": "yǒu yìsi",
+      "en": "interesting",
+      "ex": {
+        "hz": "这本书很有意思。",
+        "py": "Zhè běn shū hěn yǒu yìsi.",
+        "en": "This book is interesting."
+      }
+    },
+    {
+      "w": "有时间",
+      "py": "yǒu shíjiān",
+      "en": "to have time",
+      "ex": {
+        "hz": "明天你有时间吗？",
+        "py": "Míngtiān nǐ yǒu shíjiān ma?",
+        "en": "Do you have time tomorrow?"
+      }
+    },
+    {
+      "w": "回家",
+      "py": "huí jiā",
+      "en": "to go home",
+      "ex": {
+        "hz": "下课以后我回家。",
+        "py": "Xià kè yǐhòu wǒ huí jiā.",
+        "en": "After class I go home."
+      }
+    },
+    {
+      "w": "国家",
+      "py": "guójiā",
+      "en": "country, nation",
+      "ex": {
+        "hz": "中国是一个大国家。",
+        "py": "Zhōngguó shì yí ge dà guójiā.",
+        "en": "China is a big country."
+      }
+    },
+    {
+      "w": "大家",
+      "py": "dàjiā",
+      "en": "everybody",
+      "ex": {
+        "hz": "大家好！",
+        "py": "Dàjiā hǎo!",
+        "en": "Hello, everyone!"
+      }
+    },
+    {
+      "w": "明白",
+      "py": "míngbai",
+      "en": "to understand",
+      "ex": {
+        "hz": "这个字我不明白。",
+        "py": "Zhè ge zì wǒ bù míngbai.",
+        "en": "I don't understand this character."
+      }
+    },
+    {
+      "w": "聪明",
+      "py": "cōngming",
+      "en": "smart",
+      "ex": {
+        "hz": "他的小狗很聪明。",
+        "py": "Tā de xiǎo gǒu hěn cōngming.",
+        "en": "His puppy is very smart."
+      }
+    },
+    {
+      "w": "休息",
+      "py": "xiūxi",
+      "en": "to have a rest",
+      "ex": {
+        "hz": "我累了，想休息一下。",
+        "py": "Wǒ lèi le, xiǎng xiūxi yíxià.",
+        "en": "I am tired and want a rest."
+      }
+    },
+    {
+      "w": "退休",
+      "py": "tuì xiū",
+      "en": "to retire",
+      "ex": {
+        "hz": "爷爷去年退休了。",
+        "py": "Yéye qùnián tuì xiū le.",
+        "en": "Grandpa retired last year."
+      }
+    },
+    {
+      "w": "美国",
+      "py": "Měiguó",
+      "en": "the United States",
+      "ex": {
+        "hz": "他是美国人。",
+        "py": "Tā shì Měiguó rén.",
+        "en": "He is American."
+      }
+    },
+    {
+      "w": "美女",
+      "py": "měinǚ",
+      "en": "beauty (pretty woman)",
+      "ex": {
+        "hz": "她是一位美女。",
+        "py": "Tā shì yí wèi měinǚ.",
+        "en": "She is a beauty."
+      }
+    },
+    {
+      "w": "美食",
+      "py": "měishí",
+      "en": "gourmet food",
+      "ex": {
+        "hz": "北京有很多美食。",
+        "py": "Běijīng yǒu hěn duō měishí.",
+        "en": "Beijing has lots of good food."
+      }
+    },
+    {
+      "w": "安静",
+      "py": "ānjìng",
+      "en": "quiet",
+      "ex": {
+        "hz": "图书馆里很安静。",
+        "py": "Túshūguǎn lǐ hěn ānjìng.",
+        "en": "It is quiet in the library."
+      }
+    },
+    {
+      "w": "安全",
+      "py": "ānquán",
+      "en": "safe",
+      "ex": {
+        "hz": "这儿很安全。",
+        "py": "Zhèr hěn ānquán.",
+        "en": "It is safe here."
+      }
+    },
+    {
+      "w": "比赛",
+      "py": "bǐsài",
+      "en": "competition",
+      "ex": {
+        "hz": "明天有足球比赛。",
+        "py": "Míngtiān yǒu zúqiú bǐsài.",
+        "en": "There is a football match tomorrow."
+      }
+    },
+    {
+      "w": "比较",
+      "py": "bǐjiào",
+      "en": "comparatively",
+      "ex": {
+        "hz": "今天比较冷。",
+        "py": "Jīntiān bǐjiào lěng.",
+        "en": "It is rather cold today."
+      }
+    },
+    {
+      "w": "朋友",
+      "py": "péngyou",
+      "en": "friend",
+      "ex": {
+        "hz": "他是我的好朋友。",
+        "py": "Tā shì wǒ de hǎo péngyou.",
+        "en": "He is my good friend."
+      }
+    },
+    {
+      "w": "友谊",
+      "py": "yǒuyì",
+      "en": "friendship",
+      "ex": {
+        "hz": "我和他有很好的友谊。",
+        "py": "Wǒ hé tā yǒu hěn hǎo de yǒuyì.",
+        "en": "He and I share a good friendship."
+      }
+    },
+    {
+      "w": "坐公共汽车",
+      "py": "zuò gōnggòng qìchē",
+      "en": "to travel by bus",
+      "ex": {
+        "hz": "我们坐公共汽车去公园吧。",
+        "py": "Wǒmen zuò gōnggòng qìchē qù gōngyuán ba.",
+        "en": "Let's take the bus to the park."
+      }
+    },
+    {
+      "w": "坐飞机",
+      "py": "zuò fēijī",
+      "en": "to travel by plane",
+      "ex": {
+        "hz": "我们明天坐飞机去北京。",
+        "py": "Wǒmen míngtiān zuò fēijī qù Běijīng.",
+        "en": "Tomorrow we fly to Beijing."
+      }
+    },
+    {
+      "w": "坐地铁",
+      "py": "zuò dìtiě",
+      "en": "to travel by subway",
+      "ex": {
+        "hz": "坐地铁很快。",
+        "py": "Zuò dìtiě hěn kuài.",
+        "en": "The subway is fast."
+      }
+    },
+    {
+      "w": "啤酒",
+      "py": "píjiǔ",
+      "en": "beer",
+      "ex": {
+        "hz": "他喜欢喝啤酒。",
+        "py": "Tā xǐhuan hē píjiǔ.",
+        "en": "He likes drinking beer."
+      }
+    },
+    {
+      "w": "酒店",
+      "py": "jiǔdiàn",
+      "en": "hotel",
+      "ex": {
+        "hz": "这个酒店很大。",
+        "py": "Zhè ge jiǔdiàn hěn dà.",
+        "en": "This hotel is big."
+      }
+    },
+    {
+      "w": "酒吧",
+      "py": "jiǔbā",
+      "en": "bar",
+      "ex": {
+        "hz": "晚上他去酒吧听歌。",
+        "py": "Wǎnshang tā qù jiǔbā tīng gē.",
+        "en": "In the evening he goes to a bar to hear music."
+      }
+    },
+    {
+      "w": "祝你生日快乐",
+      "py": "zhù nǐ shēngrì kuàilè",
+      "en": "Happy birthday",
+      "ex": {
+        "hz": "朋友说：“祝你生日快乐！”",
+        "py": "Péngyou shuō: “Zhù nǐ shēngrì kuàilè!”",
+        "en": "My friend says: \"Happy birthday!\""
+      }
+    },
+    {
+      "w": "祝你一路平安",
+      "py": "zhù nǐ yílù píng'ān",
+      "en": "Have a safe trip",
+      "ex": {
+        "hz": "再见，祝你一路平安！",
+        "py": "Zàijiàn, zhù nǐ yílù píng'ān!",
+        "en": "Goodbye, have a safe trip!"
+      }
+    },
+    {
+      "w": "祝你好运",
+      "py": "zhù nǐ hǎoyùn",
+      "en": "Good luck",
+      "ex": {
+        "hz": "明天考试，祝你好运！",
+        "py": "Míngtiān kǎoshì, zhù nǐ hǎoyùn!",
+        "en": "You have an exam tomorrow, good luck!"
+      }
+    },
+    {
+      "w": "祝你学习进步",
+      "py": "zhù nǐ xuéxí jìnbù",
+      "en": "Wishing you progress in your studies",
+      "ex": {
+        "hz": "老师说：“祝你学习进步！”",
+        "py": "Lǎoshī shuō: “Zhù nǐ xuéxí jìnbù!”",
+        "en": "The teacher says: \"I wish you progress in your studies!\""
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "我的好朋友",
+      "py": "Wǒ de hǎo péngyou",
+      "en": "My good friend",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你的朋友是中国人吗？",
+          "py": "Nǐ de péngyou shì Zhōngguó rén ma?",
+          "en": "Is your friend Chinese?"
+        },
+        {
+          "who": "B",
+          "hz": "不是，他是美国人，他很聪明。",
+          "py": "Bú shì, tā shì Měiguó rén, tā hěn cōngming.",
+          "en": "No, he is American, and he is very smart."
+        },
+        {
+          "who": "A",
+          "hz": "你们下课以后做什么？",
+          "py": "Nǐmen xià kè yǐhòu zuò shénme?",
+          "en": "What do you do after class?"
+        },
+        {
+          "who": "B",
+          "hz": "我们一起去跑步，然后回家休息。",
+          "py": "Wǒmen yìqǐ qù pǎo bù, ránhòu huí jiā xiūxi.",
+          "en": "We go jogging together, then go home to rest."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Where is B's friend from?",
+          "options": [
+            "The USA",
+            "China",
+            "Beijing",
+            "Japan"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What do they do after class?",
+          "options": [
+            "Jog, then go home",
+            "Watch a movie",
+            "Go to a bar",
+            "Study at school"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "周末去哪儿",
+      "py": "Zhōumò qù nǎr",
+      "en": "Where to at the weekend",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "周末你有时间吗？我们去看电影吧。",
+          "py": "Zhōumò nǐ yǒu shíjiān ma? Wǒmen qù kàn diànyǐng ba.",
+          "en": "Do you have time this weekend? Let's see a film."
+        },
+        {
+          "who": "B",
+          "hz": "好啊！我们坐地铁去。",
+          "py": "Hǎo a! Wǒmen zuò dìtiě qù.",
+          "en": "Great! Let's go by subway."
+        },
+        {
+          "who": "A",
+          "hz": "那个电影很有名，也很好看。",
+          "py": "Nà ge diànyǐng hěn yǒu míng, yě hěn hǎokàn.",
+          "en": "That film is famous, and good too."
+        },
+        {
+          "who": "B",
+          "hz": "看完电影，我们去吃好吃的。",
+          "py": "Kàn wán diànyǐng, wǒmen qù chī hǎochī de.",
+          "en": "After the film, let's go and eat something tasty."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How will they go?",
+          "options": [
+            "By subway",
+            "By bus",
+            "By plane",
+            "On foot"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What will they do after the film?",
+          "options": [
+            "Eat something tasty",
+            "Go jogging",
+            "Go home to rest",
+            "Study"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "会意字",
+      "en": "Associative characters: the meanings of the parts together give the meaning of the whole",
+      "drills": [
+        {
+          "q": "一个人靠着一棵树，就是“___”。",
+          "options": [
+            "休",
+            "明",
+            "好",
+            "看"
+          ],
+          "answer": 0,
+          "en": "A person leaning on a tree makes 休, to rest."
+        },
+        {
+          "q": "日和月在一起，就是“___”，意思是很亮。",
+          "options": [
+            "明",
+            "休",
+            "安",
+            "比"
+          ],
+          "answer": 0,
+          "en": "Sun and moon together make 明, bright."
+        },
+        {
+          "q": "女和子在一起，就是“___”，意思是不错。",
+          "options": [
+            "好",
+            "美",
+            "家",
+            "坐"
+          ],
+          "answer": 0,
+          "en": "Woman and child together make 好, good."
+        },
+        {
+          "q": "手放在眼睛上面，就是“___”。",
+          "options": [
+            "看",
+            "有",
+            "友",
+            "笔"
+          ],
+          "answer": 0,
+          "en": "A hand above the eye makes 看, to look."
+        },
+        {
+          "q": "两只脚一前一后，就是“___”，意思是走路。",
+          "options": [
+            "步",
+            "明",
+            "美",
+            "酒"
+          ],
+          "answer": 0,
+          "en": "Two feet, one after the other, make 步, a step."
+        }
+      ]
+    },
+    {
+      "point": "笔顺",
+      "en": "Stroke order: top before bottom, left before right, a roof comes first",
+      "drills": [
+        {
+          "q": "写“安”的时候，先写上面的“宀”，再写下面的“___”。",
+          "options": [
+            "女",
+            "子",
+            "口",
+            "木"
+          ],
+          "answer": 0,
+          "en": "When writing 安, write the roof 宀 first, then the 女 below it."
+        },
+        {
+          "q": "写“明”的时候，先写左边的“___”，再写右边的“月”。",
+          "options": [
+            "日",
+            "月",
+            "目",
+            "田"
+          ],
+          "answer": 0,
+          "en": "When writing 明, write the left part 日 first, then 月."
+        },
+        {
+          "q": "写“美”的时候，先写上面的“羊”，再写下面的“___”。",
+          "options": [
+            "大",
+            "天",
+            "小",
+            "火"
+          ],
+          "answer": 0,
+          "en": "When writing 美, write 羊 above first, then 大 below."
+        },
+        {
+          "q": "写“笔”的时候，先写上面的“竹”，再写下面的“___”。",
+          "options": [
+            "毛",
+            "手",
+            "木",
+            "水"
+          ],
+          "answer": 0,
+          "en": "When writing 笔, write the bamboo top first, then 毛 below."
+        }
+      ]
+    },
+    {
+      "point": "好 + verb",
+      "en": "好 + verb means nice to do it: 好吃 (tasty), 好看 (good to look at), 好玩儿 (fun)",
+      "drills": [
+        {
+          "q": "这个菜很___，我还想再吃一碗。",
+          "options": [
+            "好吃",
+            "好看",
+            "好玩儿",
+            "好运"
+          ],
+          "answer": 0,
+          "en": "This dish is tasty, I want another bowl."
+        },
+        {
+          "q": "她的新衣服很___。",
+          "options": [
+            "好看",
+            "好吃",
+            "好玩儿",
+            "好运"
+          ],
+          "answer": 0,
+          "en": "Her new clothes look nice."
+        },
+        {
+          "q": "这个游戏很___，我们玩儿了一天。",
+          "options": [
+            "好玩儿",
+            "好吃",
+            "好看",
+            "好运"
+          ],
+          "answer": 0,
+          "en": "This game is fun; we played it all day."
+        },
+        {
+          "q": "明天考试，祝你___！",
+          "options": [
+            "好运",
+            "好吃",
+            "好玩儿",
+            "好看"
+          ],
+          "answer": 0,
+          "en": "You have an exam tomorrow, good luck!"
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你下课以后做什么？"
+          ],
+          [
+            "女",
+            "我去跑步，然后回家看电视。"
+          ]
+        ],
+        "q": "他下课以后先做什么？",
+        "options": [
+          "跑步",
+          "看电视",
+          "休息"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你怎么去北京？"
+          ],
+          [
+            "女",
+            "我们坐飞机去。"
+          ]
+        ],
+        "q": "他们怎么去北京？",
+        "options": [
+          "坐飞机",
+          "坐地铁",
+          "坐公共汽车"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "这个酒店怎么样？"
+          ],
+          [
+            "女",
+            "很安静，也很安全。"
+          ]
+        ],
+        "q": "这个酒店怎么样？",
+        "options": [
+          "安静",
+          "很大",
+          "很便宜"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你的朋友是哪国人？"
+          ],
+          [
+            "女",
+            "他是美国人。"
+          ]
+        ],
+        "q": "朋友是哪国人？",
+        "options": [
+          "美国人",
+          "中国人",
+          "北京人"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "我有铅笔，没有钢笔，也没有圆珠笔。",
+        "claim": "他有三种笔。",
+        "ok": false
+      },
+      {
+        "text": "这个电影很有名，也很好看。",
+        "claim": "这个电影很有意思。",
+        "ok": true
+      },
+      {
+        "text": "爷爷明年退休，所以现在很忙。",
+        "claim": "爷爷现在已经退休了。",
+        "ok": false
+      },
+      {
+        "text": "周末我们去酒店看朋友，一起吃好吃的。",
+        "claim": "他们周末吃饭。",
+        "ok": true
+      }
+    ],
+    "replies": [
+      {
+        "q": "你喜欢看电影吗？",
+        "a": "喜欢，我常常看电影。"
+      },
+      {
+        "q": "明天我要考试。",
+        "a": "祝你好运！"
+      },
+      {
+        "q": "你周末有时间吗？",
+        "a": "有，我们一起去跑步吧。"
+      },
+      {
+        "q": "这个字你明白吗？",
+        "a": "我不太明白。"
+      }
+    ]
+  },
+  "hanzi": {
+    "rules": [
+      [
+        "Top before bottom: the roof comes first, then what sits under it",
+        "安家美笔"
+      ],
+      [
+        "Left before right",
+        "好休明比"
+      ],
+      [
+        "A dot or small stroke on top comes first",
+        "家安美"
+      ],
+      [
+        "Parts stacked in a column are written from the top part down: 坐 has two people above the earth",
+        "坐"
+      ]
+    ],
+    "chars": [
+      [
+        "好",
+        "A woman and a child side by side: something good."
+      ],
+      [
+        "看",
+        "A hand over the eye, shading it to look into the distance."
+      ],
+      [
+        "休",
+        "A person leaning on a tree to rest."
+      ],
+      [
+        "明",
+        "Sun and moon side by side: bright."
+      ],
+      [
+        "有",
+        "A hand holding a piece of meat: to have."
+      ],
+      [
+        "家",
+        "A pig under a roof: a home."
+      ],
+      [
+        "安",
+        "A woman under a roof: peace and safety."
+      ],
+      [
+        "美",
+        "A person with a headdress of sheep horns: beautiful."
+      ],
+      [
+        "比",
+        "Two people side by side, comparing themselves."
+      ],
+      [
+        "友",
+        "Two hands joined: friends."
+      ],
+      [
+        "坐",
+        "Two people sitting on the earth."
+      ],
+      [
+        "步",
+        "Two footprints, one after the other: a step."
+      ],
+      [
+        "笔",
+        "A bamboo brush with hair on the tip."
+      ],
+      [
+        "酒",
+        "A jar of liquor, with the water radical beside it."
+      ],
+      [
+        "祝",
+        "A person kneeling at an altar and making a wish."
+      ]
+    ],
+    "structure": [
+      "会意字 Associative characters",
+      "Two or more parts are joined, and their meanings together make the new meaning. 木 + 木 = 林 (grove), 木 + 木 + 木 = 森 (forest).",
+      "休明好看比友坐步"
+    ],
+    "radicals": [
+      [
+        "宀",
+        "roof, house",
+        "安家"
+      ],
+      [
+        "⺮",
+        "bamboo",
+        "笔"
+      ],
+      [
+        "亻",
+        "person",
+        "休"
+      ],
+      [
+        "氵",
+        "water",
+        "酒"
+      ],
+      [
+        "礻",
+        "altar, spirit",
+        "祝"
+      ],
+      [
+        "日",
+        "sun, day",
+        "明"
+      ]
+    ]
+  }
+}

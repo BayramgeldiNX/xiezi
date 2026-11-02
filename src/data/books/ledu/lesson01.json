@@ -1,0 +1,685 @@
+{
+  "n": 1,
+  "cn": "第一课",
+  "title": "横、竖、撇、捺、点、提",
+  "en": "Horizontal, vertical, falling strokes, dot and rising stroke",
+  "words": [
+    {
+      "w": "一",
+      "py": "yī",
+      "en": "one",
+      "ex": {
+        "hz": "我有一个苹果。",
+        "py": "Wǒ yǒu yí ge píngguǒ.",
+        "en": "I have one apple."
+      }
+    },
+    {
+      "w": "二",
+      "py": "èr",
+      "en": "two",
+      "ex": {
+        "hz": "现在是二月。",
+        "py": "Xiànzài shì èr yuè.",
+        "en": "It is February now."
+      }
+    },
+    {
+      "w": "三",
+      "py": "sān",
+      "en": "three",
+      "ex": {
+        "hz": "这里有三只猫。",
+        "py": "Zhèlǐ yǒu sān zhī māo.",
+        "en": "There are three cats here."
+      }
+    },
+    {
+      "w": "四",
+      "py": "sì",
+      "en": "four",
+      "ex": {
+        "hz": "我今年四岁。",
+        "py": "Wǒ jīnnián sì suì.",
+        "en": "I am four years old this year."
+      }
+    },
+    {
+      "w": "五",
+      "py": "wǔ",
+      "en": "five",
+      "ex": {
+        "hz": "他每天五点起床。",
+        "py": "Tā měi tiān wǔ diǎn qǐchuáng.",
+        "en": "He gets up at five every day."
+      }
+    },
+    {
+      "w": "六",
+      "py": "liù",
+      "en": "six",
+      "ex": {
+        "hz": "我们六点吃晚饭。",
+        "py": "Wǒmen liù diǎn chī wǎnfàn.",
+        "en": "We have dinner at six."
+      }
+    },
+    {
+      "w": "七",
+      "py": "qī",
+      "en": "seven",
+      "ex": {
+        "hz": "一个星期有七天。",
+        "py": "Yí ge xīngqī yǒu qī tiān.",
+        "en": "A week has seven days."
+      }
+    },
+    {
+      "w": "八",
+      "py": "bā",
+      "en": "eight",
+      "ex": {
+        "hz": "他的女儿八岁了。",
+        "py": "Tā de nǚ'ér bā suì le.",
+        "en": "His daughter is eight now."
+      }
+    },
+    {
+      "w": "九",
+      "py": "jiǔ",
+      "en": "nine",
+      "ex": {
+        "hz": "现在九点了。",
+        "py": "Xiànzài jiǔ diǎn le.",
+        "en": "It is nine o'clock now."
+      }
+    },
+    {
+      "w": "十",
+      "py": "shí",
+      "en": "ten",
+      "ex": {
+        "hz": "我有十块钱。",
+        "py": "Wǒ yǒu shí kuài qián.",
+        "en": "I have ten yuan."
+      }
+    },
+    {
+      "w": "百",
+      "py": "bǎi",
+      "en": "hundred",
+      "ex": {
+        "hz": "这本书一百块。",
+        "py": "Zhè běn shū yìbǎi kuài.",
+        "en": "This book costs one hundred yuan."
+      }
+    },
+    {
+      "w": "千",
+      "py": "qiān",
+      "en": "thousand",
+      "ex": {
+        "hz": "这台电脑三千块。",
+        "py": "Zhè tái diànnǎo sānqiān kuài.",
+        "en": "This computer costs three thousand yuan."
+      }
+    },
+    {
+      "w": "万",
+      "py": "wàn",
+      "en": "ten thousand",
+      "ex": {
+        "hz": "这个小城有三万人。",
+        "py": "Zhège xiǎo chéng yǒu sān wàn rén.",
+        "en": "This small town has thirty thousand people."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "买杯子",
+      "py": "Mǎi bēizi",
+      "en": "Buying a cup",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "这个杯子多少钱？",
+          "py": "Zhège bēizi duōshao qián?",
+          "en": "How much is this cup?"
+        },
+        {
+          "who": "B",
+          "hz": "十八块。",
+          "py": "Shíbā kuài.",
+          "en": "Eighteen yuan."
+        },
+        {
+          "who": "A",
+          "hz": "那个呢？",
+          "py": "Nàge ne?",
+          "en": "And that one?"
+        },
+        {
+          "who": "B",
+          "hz": "那个二十五块。",
+          "py": "Nàge èrshíwǔ kuài.",
+          "en": "That one is twenty-five yuan."
+        },
+        {
+          "who": "A",
+          "hz": "我要这个。",
+          "py": "Wǒ yào zhège.",
+          "en": "I'll take this one."
+        },
+        {
+          "who": "B",
+          "hz": "好的，十八块。",
+          "py": "Hǎo de, shíbā kuài.",
+          "en": "OK, eighteen yuan."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How much is the first cup?",
+          "options": [
+            "18 yuan",
+            "25 yuan",
+            "8 yuan",
+            "80 yuan"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which cup does A buy?",
+          "options": [
+            "The first one",
+            "The second one",
+            "Both of them",
+            "Neither"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "数一数",
+      "py": "Shǔ yi shǔ",
+      "en": "Counting",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你几岁了？",
+          "py": "Nǐ jǐ suì le?",
+          "en": "How old are you?"
+        },
+        {
+          "who": "B",
+          "hz": "我七岁了。你呢？",
+          "py": "Wǒ qī suì le. Nǐ ne?",
+          "en": "I'm seven. And you?"
+        },
+        {
+          "who": "A",
+          "hz": "我八岁。我有九本书。",
+          "py": "Wǒ bā suì. Wǒ yǒu jiǔ běn shū.",
+          "en": "I'm eight. I have nine books."
+        },
+        {
+          "who": "B",
+          "hz": "我有十本书。",
+          "py": "Wǒ yǒu shí běn shū.",
+          "en": "I have ten books."
+        },
+        {
+          "who": "A",
+          "hz": "你的书比我多一本。",
+          "py": "Nǐ de shū bǐ wǒ duō yì běn.",
+          "en": "You have one more book than me."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How old is B?",
+          "options": [
+            "Seven",
+            "Eight",
+            "Nine",
+            "Ten"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Who has more books?",
+          "options": [
+            "B, by one book",
+            "A, by one book",
+            "They have the same number",
+            "B, by two books"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "笔画",
+      "en": "The six basic strokes: 横 horizontal, 竖 vertical, 撇 left-falling, 捺 right-falling, 点 dot, 提 rising",
+      "drills": [
+        {
+          "q": "“人”的第一笔是___。",
+          "options": [
+            "撇",
+            "捺",
+            "横",
+            "点"
+          ],
+          "answer": 0,
+          "en": "The first stroke of 人 is the left-falling stroke."
+        },
+        {
+          "q": "“十”的第一笔是___。",
+          "options": [
+            "横",
+            "竖",
+            "撇",
+            "提"
+          ],
+          "answer": 0,
+          "en": "The first stroke of 十 is the horizontal stroke."
+        },
+        {
+          "q": "“六”的第一笔是___。",
+          "options": [
+            "点",
+            "横",
+            "撇",
+            "竖"
+          ],
+          "answer": 0,
+          "en": "The first stroke of 六 is the dot."
+        },
+        {
+          "q": "“汉”的第三笔是___。",
+          "options": [
+            "提",
+            "点",
+            "横",
+            "竖"
+          ],
+          "answer": 0,
+          "en": "The third stroke of 汉 is the rising stroke."
+        },
+        {
+          "q": "“大”的最后一笔是___。",
+          "options": [
+            "捺",
+            "撇",
+            "横",
+            "竖"
+          ],
+          "answer": 0,
+          "en": "The last stroke of 大 is the right-falling stroke."
+        }
+      ]
+    },
+    {
+      "point": "笔顺",
+      "en": "Stroke order: horizontal before vertical, left-falling before right-falling, top to bottom, left to right, middle before sides, outside before inside",
+      "drills": [
+        {
+          "q": "写“十”要先写横，后写___。",
+          "options": [
+            "竖",
+            "撇",
+            "点",
+            "提"
+          ],
+          "answer": 0,
+          "en": "When writing 十, write the horizontal first, then the vertical."
+        },
+        {
+          "q": "写“人”要先写撇，后写___。",
+          "options": [
+            "捺",
+            "横",
+            "点",
+            "竖"
+          ],
+          "answer": 0,
+          "en": "When writing 人, write the left-falling stroke first, then the right-falling one."
+        },
+        {
+          "q": "写“三”要从上到___写。",
+          "options": [
+            "下",
+            "左",
+            "外",
+            "右"
+          ],
+          "answer": 0,
+          "en": "Write 三 from top to bottom."
+        },
+        {
+          "q": "写“小”要先写中间，后写___。",
+          "options": [
+            "两边",
+            "外面",
+            "上面",
+            "下面"
+          ],
+          "answer": 0,
+          "en": "When writing 小, write the middle first, then the two sides."
+        },
+        {
+          "q": "写“月”要先写外面，后写___。",
+          "options": [
+            "里面",
+            "左边",
+            "上面",
+            "右边"
+          ],
+          "answer": 0,
+          "en": "When writing 月, write the outside first, then the inside."
+        }
+      ]
+    },
+    {
+      "point": "数字",
+      "en": "Reading numbers: 十 ten, 百 hundred, 千 thousand, 万 ten thousand",
+      "drills": [
+        {
+          "q": "“11”读作十___。",
+          "options": [
+            "一",
+            "二",
+            "百",
+            "千"
+          ],
+          "answer": 0,
+          "en": "11 is read as 十一."
+        },
+        {
+          "q": "“100”读作一___。",
+          "options": [
+            "百",
+            "千",
+            "万",
+            "十"
+          ],
+          "answer": 0,
+          "en": "100 is read as 一百."
+        },
+        {
+          "q": "“3000”读作三___。",
+          "options": [
+            "千",
+            "百",
+            "万",
+            "十"
+          ],
+          "answer": 0,
+          "en": "3000 is read as 三千."
+        },
+        {
+          "q": "“30000”读作三___。",
+          "options": [
+            "万",
+            "千",
+            "百",
+            "十"
+          ],
+          "answer": 0,
+          "en": "30000 is read as 三万."
+        },
+        {
+          "q": "“36”读作三十___。",
+          "options": [
+            "六",
+            "三",
+            "十",
+            "九"
+          ],
+          "answer": 0,
+          "en": "36 is read as 三十六."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "这个杯子多少钱？"
+          ],
+          [
+            "女",
+            "十八块。"
+          ]
+        ],
+        "q": "杯子多少钱？",
+        "options": [
+          "十八块",
+          "八块",
+          "八十块"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你有几本书？"
+          ],
+          [
+            "女",
+            "我有七本。"
+          ]
+        ],
+        "q": "他有几本书？",
+        "options": [
+          "七本",
+          "十本",
+          "四本"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你们学校有多少人？"
+          ],
+          [
+            "女",
+            "有三百人。"
+          ]
+        ],
+        "q": "学校有多少人？",
+        "options": [
+          "三百人",
+          "三千人",
+          "三十人"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "这台电脑多少钱？"
+          ],
+          [
+            "女",
+            "四千五百块。"
+          ]
+        ],
+        "q": "电脑多少钱？",
+        "options": [
+          "四千五百块",
+          "四百五十块",
+          "五千四百块"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "一个星期有七天。",
+        "claim": "一个星期有八天。",
+        "ok": false
+      },
+      {
+        "text": "这件衣服一百块，那件衣服两百块。",
+        "claim": "那件衣服两百块。",
+        "ok": true
+      },
+      {
+        "text": "我今年八岁，我的姐姐十二岁。",
+        "claim": "姐姐比我大。",
+        "ok": true
+      },
+      {
+        "text": "他有九块钱，买了一个五块的面包。",
+        "claim": "他还有五块钱。",
+        "ok": false
+      }
+    ],
+    "replies": [
+      {
+        "q": "你几岁了？",
+        "a": "我七岁了。"
+      },
+      {
+        "q": "这个多少钱？",
+        "a": "一百二十块。"
+      },
+      {
+        "q": "你有几个孩子？",
+        "a": "我有三个孩子。"
+      },
+      {
+        "q": "你住在几号房间？",
+        "a": "我住在五零九。"
+      }
+    ]
+  },
+  "hanzi": {
+    "strokes": [
+      [
+        "横",
+        "二三王"
+      ],
+      [
+        "竖",
+        "十工中"
+      ],
+      [
+        "撇",
+        "人八大"
+      ],
+      [
+        "捺",
+        "人八大"
+      ],
+      [
+        "点",
+        "六小之"
+      ],
+      [
+        "提",
+        "汉冰地"
+      ]
+    ],
+    "rules": [
+      [
+        "先横后竖: write the horizontal before the vertical that crosses it",
+        "十土干"
+      ],
+      [
+        "先撇后捺: write the left-falling stroke before the right-falling one",
+        "人八大"
+      ],
+      [
+        "从上到下: write from the top down",
+        "三二工"
+      ],
+      [
+        "从左到右: write from the left to the right",
+        "川们休"
+      ],
+      [
+        "先中间后两边: write the middle before the two sides",
+        "小水山"
+      ],
+      [
+        "先外后内: write the outer frame before what is inside",
+        "月用同"
+      ],
+      [
+        "先外后内再封口: frame first, then the inside, and close the bottom last",
+        "四日国"
+      ]
+    ],
+    "chars": [
+      [
+        "一",
+        "A single line stands for the number one."
+      ],
+      [
+        "二",
+        "Two lines for two, the upper one a little shorter."
+      ],
+      [
+        "三",
+        "Three lines for three, written from top to bottom."
+      ],
+      [
+        "四",
+        "A box with strokes inside; in the oldest writing it was four short lines."
+      ],
+      [
+        "五",
+        "In very old writing it was a cross drawn between two lines."
+      ],
+      [
+        "六",
+        "A little roof with legs under it, borrowed for the number six."
+      ],
+      [
+        "七",
+        "Very old writing shows a cross, like something being cut; borrowed for seven."
+      ],
+      [
+        "八",
+        "Two strokes pulling apart: something divided."
+      ],
+      [
+        "九",
+        "A bent arm that was borrowed for the number nine."
+      ],
+      [
+        "十",
+        "A cross: one line each way makes a full ten."
+      ],
+      [
+        "百",
+        "一 plus 白 (white). 白 hints at the sound, bǎi."
+      ],
+      [
+        "千",
+        "人 with a line across it; 人 hints at the sound, qiān."
+      ],
+      [
+        "万",
+        "Once a drawing of a scorpion, later used for the number ten thousand."
+      ]
+    ]
+  }
+}

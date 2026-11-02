@@ -1,0 +1,807 @@
+{
+  "n": 9,
+  "cn": "第九课",
+  "title": "见树木，也要见森林",
+  "en": "See the trees, and the forest too",
+  "words": [
+    {
+      "w": "学生",
+      "py": "xuésheng",
+      "en": "student",
+      "ex": {
+        "hz": "我弟弟是学生。",
+        "py": "Wǒ dìdi shì xuésheng.",
+        "en": "My younger brother is a student."
+      }
+    },
+    {
+      "w": "数学",
+      "py": "shùxué",
+      "en": "mathematics",
+      "ex": {
+        "hz": "我很喜欢数学。",
+        "py": "Wǒ hěn xǐhuan shùxué.",
+        "en": "I like maths a lot."
+      }
+    },
+    {
+      "w": "自学",
+      "py": "zìxué",
+      "en": "to teach oneself",
+      "ex": {
+        "hz": "他在家自学汉语。",
+        "py": "Tā zài jiā zìxué Hànyǔ.",
+        "en": "He teaches himself Chinese at home."
+      }
+    },
+    {
+      "w": "手表",
+      "py": "shǒubiǎo",
+      "en": "watch",
+      "ex": {
+        "hz": "他的手表很贵。",
+        "py": "Tā de shǒubiǎo hěn guì.",
+        "en": "His watch is expensive."
+      }
+    },
+    {
+      "w": "手套",
+      "py": "shǒutào",
+      "en": "gloves",
+      "ex": {
+        "hz": "外面很冷，你戴手套吧。",
+        "py": "Wàimiàn hěn lěng, nǐ dài shǒutào ba.",
+        "en": "It's cold outside; wear gloves."
+      }
+    },
+    {
+      "w": "菜",
+      "py": "cài",
+      "en": "vegetable; dish",
+      "ex": {
+        "hz": "这个菜很好吃。",
+        "py": "Zhège cài hěn hǎochī.",
+        "en": "This dish is delicious."
+      }
+    },
+    {
+      "w": "生菜",
+      "py": "shēngcài",
+      "en": "lettuce",
+      "ex": {
+        "hz": "我喜欢吃生菜。",
+        "py": "Wǒ xǐhuan chī shēngcài.",
+        "en": "I like eating lettuce."
+      }
+    },
+    {
+      "w": "菜单",
+      "py": "càidān",
+      "en": "menu",
+      "ex": {
+        "hz": "请给我菜单。",
+        "py": "Qǐng gěi wǒ càidān.",
+        "en": "Please give me the menu."
+      }
+    },
+    {
+      "w": "电话",
+      "py": "diànhuà",
+      "en": "telephone",
+      "ex": {
+        "hz": "我给你打电话。",
+        "py": "Wǒ gěi nǐ dǎ diànhuà.",
+        "en": "I'll call you."
+      }
+    },
+    {
+      "w": "电脑",
+      "py": "diànnǎo",
+      "en": "computer",
+      "ex": {
+        "hz": "我有一台电脑。",
+        "py": "Wǒ yǒu yì tái diànnǎo.",
+        "en": "I have a computer."
+      }
+    },
+    {
+      "w": "电子邮件",
+      "py": "diànzǐ yóujiàn",
+      "en": "email",
+      "ex": {
+        "hz": "我给老师发电子邮件。",
+        "py": "Wǒ gěi lǎoshī fā diànzǐ yóujiàn.",
+        "en": "I'm sending the teacher an email."
+      }
+    },
+    {
+      "w": "颜色",
+      "py": "yánsè",
+      "en": "colour",
+      "ex": {
+        "hz": "你喜欢什么颜色？",
+        "py": "Nǐ xǐhuan shénme yánsè?",
+        "en": "What colour do you like?"
+      }
+    },
+    {
+      "w": "白色",
+      "py": "báisè",
+      "en": "white",
+      "ex": {
+        "hz": "我的杯子是白色的。",
+        "py": "Wǒ de bēizi shì báisè de.",
+        "en": "My cup is white."
+      }
+    },
+    {
+      "w": "红色",
+      "py": "hóngsè",
+      "en": "red",
+      "ex": {
+        "hz": "她穿红色的衣服。",
+        "py": "Tā chuān hóngsè de yīfu.",
+        "en": "She is wearing red clothes."
+      }
+    },
+    {
+      "w": "运动鞋",
+      "py": "yùndòngxié",
+      "en": "sports shoes",
+      "ex": {
+        "hz": "我要买一双运动鞋。",
+        "py": "Wǒ yào mǎi yì shuāng yùndòngxié.",
+        "en": "I want to buy a pair of sports shoes."
+      }
+    },
+    {
+      "w": "拖鞋",
+      "py": "tuōxié",
+      "en": "slippers",
+      "ex": {
+        "hz": "在家我穿拖鞋。",
+        "py": "Zài jiā wǒ chuān tuōxié.",
+        "en": "At home I wear slippers."
+      }
+    },
+    {
+      "w": "高跟鞋",
+      "py": "gāogēnxié",
+      "en": "high-heeled shoes",
+      "ex": {
+        "hz": "她不喜欢穿高跟鞋。",
+        "py": "Tā bù xǐhuan chuān gāogēnxié.",
+        "en": "She doesn't like wearing high heels."
+      }
+    },
+    {
+      "w": "足球",
+      "py": "zúqiú",
+      "en": "football",
+      "ex": {
+        "hz": "他们在踢足球。",
+        "py": "Tāmen zài tī zúqiú.",
+        "en": "They are playing football."
+      }
+    },
+    {
+      "w": "网球",
+      "py": "wǎngqiú",
+      "en": "tennis",
+      "ex": {
+        "hz": "我哥哥会打网球。",
+        "py": "Wǒ gēge huì dǎ wǎngqiú.",
+        "en": "My older brother can play tennis."
+      }
+    },
+    {
+      "w": "羽毛球",
+      "py": "yǔmáoqiú",
+      "en": "badminton",
+      "ex": {
+        "hz": "我们去打羽毛球吧。",
+        "py": "Wǒmen qù dǎ yǔmáoqiú ba.",
+        "en": "Let's go and play badminton."
+      }
+    },
+    {
+      "w": "肉",
+      "py": "ròu",
+      "en": "meat",
+      "ex": {
+        "hz": "我不吃肉。",
+        "py": "Wǒ bù chī ròu.",
+        "en": "I don't eat meat."
+      }
+    },
+    {
+      "w": "鸡肉",
+      "py": "jīròu",
+      "en": "chicken (meat)",
+      "ex": {
+        "hz": "我喜欢吃鸡肉。",
+        "py": "Wǒ xǐhuan chī jīròu.",
+        "en": "I like eating chicken."
+      }
+    },
+    {
+      "w": "猪肉",
+      "py": "zhūròu",
+      "en": "pork",
+      "ex": {
+        "hz": "他不吃猪肉。",
+        "py": "Tā bù chī zhūròu.",
+        "en": "He doesn't eat pork."
+      }
+    },
+    {
+      "w": "面粉",
+      "py": "miànfěn",
+      "en": "flour",
+      "ex": {
+        "hz": "做面包要用面粉。",
+        "py": "Zuò miànbāo yào yòng miànfěn.",
+        "en": "You need flour to make bread."
+      }
+    },
+    {
+      "w": "面包",
+      "py": "miànbāo",
+      "en": "bread",
+      "ex": {
+        "hz": "早上我吃面包。",
+        "py": "Zǎoshang wǒ chī miànbāo.",
+        "en": "In the morning I eat bread."
+      }
+    },
+    {
+      "w": "面条儿",
+      "py": "miàntiáor",
+      "en": "noodles",
+      "ex": {
+        "hz": "我想吃面条儿。",
+        "py": "Wǒ xiǎng chī miàntiáor.",
+        "en": "I'd like to eat noodles."
+      }
+    },
+    {
+      "w": "语言",
+      "py": "yǔyán",
+      "en": "language",
+      "ex": {
+        "hz": "汉语是一种语言。",
+        "py": "Hànyǔ shì yì zhǒng yǔyán.",
+        "en": "Chinese is a language."
+      }
+    },
+    {
+      "w": "英语",
+      "py": "Yīngyǔ",
+      "en": "English (language)",
+      "ex": {
+        "hz": "你会说英语吗？",
+        "py": "Nǐ huì shuō Yīngyǔ ma?",
+        "en": "Can you speak English?"
+      }
+    },
+    {
+      "w": "成语",
+      "py": "chéngyǔ",
+      "en": "idiom (set phrase)",
+      "ex": {
+        "hz": "这个成语很有意思。",
+        "py": "Zhège chéngyǔ hěn yǒu yìsi.",
+        "en": "This idiom is interesting."
+      }
+    },
+    {
+      "w": "现在",
+      "py": "xiànzài",
+      "en": "now",
+      "ex": {
+        "hz": "现在几点？",
+        "py": "Xiànzài jǐ diǎn?",
+        "en": "What time is it now?"
+      }
+    },
+    {
+      "w": "现金",
+      "py": "xiànjīn",
+      "en": "cash",
+      "ex": {
+        "hz": "我没有现金。",
+        "py": "Wǒ méiyǒu xiànjīn.",
+        "en": "I don't have any cash."
+      }
+    },
+    {
+      "w": "服务员",
+      "py": "fúwùyuán",
+      "en": "waiter; waitress",
+      "ex": {
+        "hz": "服务员，请给我一杯水。",
+        "py": "Fúwùyuán, qǐng gěi wǒ yì bēi shuǐ.",
+        "en": "Waiter, please bring me a glass of water."
+      }
+    },
+    {
+      "w": "售货员",
+      "py": "shòuhuòyuán",
+      "en": "shop assistant",
+      "ex": {
+        "hz": "她是商店的售货员。",
+        "py": "Tā shì shāngdiàn de shòuhuòyuán.",
+        "en": "She is a shop assistant."
+      }
+    },
+    {
+      "w": "演员",
+      "py": "yǎnyuán",
+      "en": "actor; actress",
+      "ex": {
+        "hz": "这个演员很有名。",
+        "py": "Zhège yǎnyuán hěn yǒumíng.",
+        "en": "This actor is very famous."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "在饭馆儿",
+      "py": "Zài fànguǎnr",
+      "en": "At the restaurant",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "服务员，请给我菜单。",
+          "py": "Fúwùyuán, qǐng gěi wǒ càidān.",
+          "en": "Waiter, please give me the menu."
+        },
+        {
+          "who": "B",
+          "hz": "好的。你想吃什么？",
+          "py": "Hǎo de. Nǐ xiǎng chī shénme?",
+          "en": "Sure. What would you like to eat?"
+        },
+        {
+          "who": "A",
+          "hz": "我想吃鸡肉和面条儿。",
+          "py": "Wǒ xiǎng chī jīròu hé miàntiáor.",
+          "en": "I'd like chicken and noodles."
+        },
+        {
+          "who": "B",
+          "hz": "你要不要生菜？",
+          "py": "Nǐ yào bu yào shēngcài?",
+          "en": "Would you like some lettuce?"
+        },
+        {
+          "who": "A",
+          "hz": "要，谢谢。",
+          "py": "Yào, xièxie.",
+          "en": "Yes, thank you."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What does A ask for first?",
+          "options": [
+            "The menu",
+            "The bill",
+            "A cup of tea",
+            "A phone"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What meat does A order?",
+          "options": [
+            "Chicken",
+            "Pork",
+            "Beef",
+            "Fish"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "买运动鞋",
+      "py": "Mǎi yùndòngxié",
+      "en": "Buying sports shoes",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你好，我想买一双运动鞋。",
+          "py": "Nǐ hǎo, wǒ xiǎng mǎi yì shuāng yùndòngxié.",
+          "en": "Hello, I'd like to buy a pair of sports shoes."
+        },
+        {
+          "who": "B",
+          "hz": "你喜欢什么颜色？",
+          "py": "Nǐ xǐhuan shénme yánsè?",
+          "en": "What colour do you like?"
+        },
+        {
+          "who": "A",
+          "hz": "我喜欢白色的。",
+          "py": "Wǒ xǐhuan báisè de.",
+          "en": "I like white ones."
+        },
+        {
+          "who": "B",
+          "hz": "这双很好，你现在可以穿一下。",
+          "py": "Zhè shuāng hěn hǎo, nǐ xiànzài kěyǐ chuān yíxià.",
+          "en": "This pair is nice; you can try it on now."
+        },
+        {
+          "who": "A",
+          "hz": "好。我没有现金，可以用手机吗？",
+          "py": "Hǎo. Wǒ méiyǒu xiànjīn, kěyǐ yòng shǒujī ma?",
+          "en": "OK. I have no cash; can I use my phone?"
+        },
+        {
+          "who": "B",
+          "hz": "可以。",
+          "py": "Kěyǐ.",
+          "en": "Yes, you can."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What does A want to buy?",
+          "options": [
+            "Sports shoes",
+            "Slippers",
+            "High heels",
+            "A watch"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What colour does A like?",
+          "options": [
+            "White",
+            "Red",
+            "Black",
+            "Blue"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "汉字和词",
+      "en": "Most characters can stand alone as a word (火, 牛, 好), but some must join another character to make a word (苹 + 果).",
+      "drills": [
+        {
+          "q": "“苹”不能单用，要和“果”一起组成词“___”。",
+          "options": [
+            "苹果",
+            "果苹",
+            "苹子",
+            "苹菜"
+          ],
+          "answer": 0,
+          "en": "苹 cannot be used alone; together with 果 it makes the word 苹果 (apple)."
+        },
+        {
+          "q": "“好”是一个字，也可以单独当一个___用。",
+          "options": [
+            "词",
+            "笔画",
+            "声调",
+            "部首"
+          ],
+          "answer": 0,
+          "en": "好 is one character and can also be used alone as a word."
+        },
+        {
+          "q": "“花儿”是两个汉字，但是只有一个___。",
+          "options": [
+            "音节",
+            "笔画",
+            "偏旁",
+            "颜色"
+          ],
+          "answer": 0,
+          "en": "花儿 is two characters but only one syllable (huār)."
+        }
+      ]
+    },
+    {
+      "point": "双音化",
+      "en": "Many one-syllable words became two-syllable words. “子” in 杯子, 桌子 is a suffix with no real meaning.",
+      "drills": [
+        {
+          "q": "以前用“目”，现在说“___”。",
+          "options": [
+            "眼睛",
+            "耳朵",
+            "嘴巴",
+            "鼻子"
+          ],
+          "answer": 0,
+          "en": "Long ago people used 目 for the eye; now we say 眼睛."
+        },
+        {
+          "q": "“杯子”里的“子”没有实际意思，是___。",
+          "options": [
+            "词缀",
+            "动词",
+            "名字",
+            "数字"
+          ],
+          "answer": 0,
+          "en": "The 子 in 杯子 has no real meaning; it is a suffix."
+        },
+        {
+          "q": "我家有一张大桌___。",
+          "options": [
+            "子",
+            "员",
+            "语",
+            "现"
+          ],
+          "answer": 0,
+          "en": "There is a big table in my home."
+        }
+      ]
+    },
+    {
+      "point": "构词",
+      "en": "One character can build many words: the shared character gives the shared meaning.",
+      "drills": [
+        {
+          "q": "电话、电脑、电子邮件都有“___”。",
+          "options": [
+            "电",
+            "菜",
+            "手",
+            "球"
+          ],
+          "answer": 0,
+          "en": "电话, 电脑 and 电子邮件 all contain 电 (electricity)."
+        },
+        {
+          "q": "生菜、菜单、白菜都和“___”有关。",
+          "options": [
+            "菜",
+            "色",
+            "面",
+            "语"
+          ],
+          "answer": 0,
+          "en": "生菜, 菜单 and 白菜 are all related to 菜 (vegetables, dishes)."
+        },
+        {
+          "q": "足球、网球、羽毛球都是“___”。",
+          "options": [
+            "球",
+            "鞋",
+            "肉",
+            "员"
+          ],
+          "answer": 0,
+          "en": "足球, 网球 and 羽毛球 are all kinds of ball (球)."
+        },
+        {
+          "q": "服务员、售货员、演员都有“___”。",
+          "options": [
+            "员",
+            "现",
+            "语",
+            "肉"
+          ],
+          "answer": 0,
+          "en": "服务员, 售货员 and 演员 all contain 员, a person doing a job."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你喜欢什么颜色？"
+          ],
+          [
+            "女",
+            "我喜欢红色。"
+          ]
+        ],
+        "q": "她喜欢什么颜色？",
+        "options": [
+          "红色",
+          "白色",
+          "蓝色"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "请给我菜单。"
+          ],
+          [
+            "女",
+            "好的，您先坐。"
+          ]
+        ],
+        "q": "说话的人想要什么？",
+        "options": [
+          "菜单",
+          "面包",
+          "电话"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你现在有现金吗？"
+          ],
+          [
+            "女",
+            "没有，我用手机付钱。"
+          ]
+        ],
+        "q": "他怎么付钱？",
+        "options": [
+          "用手机",
+          "用现金",
+          "不付钱"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你会说几种语言？"
+          ],
+          [
+            "女",
+            "我会说汉语和英语。"
+          ]
+        ],
+        "q": "他会说什么语言？",
+        "options": [
+          "汉语和英语",
+          "只会汉语",
+          "汉语和法语"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "我哥哥在商店工作，他是售货员。",
+        "claim": "哥哥在商店工作。",
+        "ok": true
+      },
+      {
+        "text": "她今天穿了一双白色的运动鞋。",
+        "claim": "她穿的是拖鞋。",
+        "ok": false
+      },
+      {
+        "text": "我在家自学数学，不去学校。",
+        "claim": "他每天去学校上数学课。",
+        "ok": false
+      },
+      {
+        "text": "弟弟喜欢打羽毛球，也喜欢踢足球。",
+        "claim": "弟弟喜欢打球。",
+        "ok": true
+      }
+    ],
+    "replies": [
+      {
+        "q": "你想吃什么菜？",
+        "a": "我想吃鸡肉。"
+      },
+      {
+        "q": "你会说英语吗？",
+        "a": "会，我会说一点儿。"
+      },
+      {
+        "q": "你现在有时间吗？",
+        "a": "有，什么事？"
+      },
+      {
+        "q": "你的手表真漂亮！",
+        "a": "谢谢，是爸爸送给我的。"
+      }
+    ]
+  },
+  "hanzi": {
+    "rules": [
+      [
+        "Left part first, then the right part",
+        "脑服现球鞋数"
+      ],
+      [
+        "Top part first, then the bottom part",
+        "菜英条色员"
+      ],
+      [
+        "Outside first, then what is inside",
+        "肉面包"
+      ]
+    ],
+    "chars": [
+      [
+        "手",
+        "A hand with five fingers."
+      ],
+      [
+        "肉",
+        "A cut of meat with its fibres showing."
+      ],
+      [
+        "电",
+        "Lightning flashing in the rain: electricity."
+      ]
+    ],
+    "structure": [
+      "词和字 Words and characters",
+      "Most characters can be words alone (火, 牛, 好); some must join another (苹 + 果). One character usually matches one syllable, and many words are now two syllables (眼睛, 杯子). A shared character gives a family of words: 电话, 电脑, 电子邮件.",
+      "火牛好苹果杯子眼睛电话电脑"
+    ],
+    "radicals": [
+      [
+        "艹",
+        "plants",
+        "菜英"
+      ],
+      [
+        "讠",
+        "speech",
+        "语"
+      ],
+      [
+        "王",
+        "jade",
+        "现球"
+      ],
+      [
+        "革",
+        "leather",
+        "鞋"
+      ],
+      [
+        "月",
+        "flesh, body",
+        "脑肉服"
+      ],
+      [
+        "攵",
+        "action, tap",
+        "数"
+      ]
+    ]
+  },
+  "pron": [
+    {
+      "t": "Two characters, one syllable",
+      "en": "When 儿 comes at the end of a word it joins the syllable before it (erhua): 花儿 huār, 面条儿 miàntiáor.",
+      "ex": [
+        "面条儿",
+        "花儿",
+        "玩儿",
+        "哪儿"
+      ]
+    }
+  ]
+}

@@ -110,5 +110,21 @@
   "横折折折钩": {
     "py": "héngzhézhézhégōu",
     "en": "horizontal, three turns, hook"
+  },
+  "横折折": {
+    "py": "héngzhézhé",
+    "en": "horizontal, turn, turn"
+  },
+  "横折折折": {
+    "py": "héngzhézhézhé",
+    "en": "horizontal, three turns"
+  },
+  "竖折折": {
+    "py": "shùzhézhé",
+    "en": "vertical, turn, turn"
+  },
+  "竖折撇": {
+    "py": "shùzhépiě",
+    "en": "vertical, turn, fall left"
   }
 }

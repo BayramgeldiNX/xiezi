@@ -1,0 +1,1108 @@
+{
+  "n": 7,
+  "cn": "第七课",
+  "title": "秀才认字读半边",
+  "en": "The scholar reads half the character",
+  "words": [
+    {
+      "w": "认识",
+      "py": "rènshi",
+      "en": "to know (a person); to recognise",
+      "ex": {
+        "hz": "我认识他的妹妹。",
+        "py": "Wǒ rènshi tā de mèimei.",
+        "en": "I know his younger sister."
+      }
+    },
+    {
+      "w": "知识",
+      "py": "zhīshi",
+      "en": "knowledge",
+      "ex": {
+        "hz": "书里有很多知识。",
+        "py": "Shū lǐ yǒu hěn duō zhīshi.",
+        "en": "There is a lot of knowledge in books."
+      }
+    },
+    {
+      "w": "外语",
+      "py": "wàiyǔ",
+      "en": "foreign language",
+      "ex": {
+        "hz": "他会三门外语。",
+        "py": "Tā huì sān mén wàiyǔ.",
+        "en": "He speaks three foreign languages."
+      }
+    },
+    {
+      "w": "汉语",
+      "py": "Hànyǔ",
+      "en": "Chinese (language)",
+      "ex": {
+        "hz": "我每天学汉语。",
+        "py": "Wǒ měi tiān xué Hànyǔ.",
+        "en": "I study Chinese every day."
+      }
+    },
+    {
+      "w": "口语",
+      "py": "kǒuyǔ",
+      "en": "spoken language",
+      "ex": {
+        "hz": "他的口语很好。",
+        "py": "Tā de kǒuyǔ hěn hǎo.",
+        "en": "His spoken language is very good."
+      }
+    },
+    {
+      "w": "语法",
+      "py": "yǔfǎ",
+      "en": "grammar",
+      "ex": {
+        "hz": "这个语法不难。",
+        "py": "Zhège yǔfǎ bù nán.",
+        "en": "This grammar point is not hard."
+      }
+    },
+    {
+      "w": "说话",
+      "py": "shuō huà",
+      "en": "to talk",
+      "ex": {
+        "hz": "请不要在这里说话。",
+        "py": "Qǐng búyào zài zhèlǐ shuō huà.",
+        "en": "Please don't talk here."
+      }
+    },
+    {
+      "w": "听说",
+      "py": "tīngshuō",
+      "en": "to hear (that)",
+      "ex": {
+        "hz": "听说他明天不来。",
+        "py": "Tīngshuō tā míngtiān bù lái.",
+        "en": "I hear he isn't coming tomorrow."
+      }
+    },
+    {
+      "w": "再说吧",
+      "py": "zài shuō ba",
+      "en": "let's talk about it later",
+      "ex": {
+        "hz": "现在太晚了，明天再说吧。",
+        "py": "Xiànzài tài wǎn le, míngtiān zài shuō ba.",
+        "en": "It's too late now; let's talk tomorrow."
+      }
+    },
+    {
+      "w": "生词",
+      "py": "shēngcí",
+      "en": "new word",
+      "ex": {
+        "hz": "今天有十个生词。",
+        "py": "Jīntiān yǒu shí ge shēngcí.",
+        "en": "There are ten new words today."
+      }
+    },
+    {
+      "w": "名词",
+      "py": "míngcí",
+      "en": "noun",
+      "ex": {
+        "hz": "“书”是名词。",
+        "py": "“Shū” shì míngcí.",
+        "en": "\"Shū\" is a noun."
+      }
+    },
+    {
+      "w": "动词",
+      "py": "dòngcí",
+      "en": "verb",
+      "ex": {
+        "hz": "“吃”是动词。",
+        "py": "“Chī” shì dòngcí.",
+        "en": "\"Chī\" is a verb."
+      }
+    },
+    {
+      "w": "形容词",
+      "py": "xíngróngcí",
+      "en": "adjective",
+      "ex": {
+        "hz": "“大”是形容词。",
+        "py": "“Dà” shì xíngróngcí.",
+        "en": "\"Dà\" is an adjective."
+      }
+    },
+    {
+      "w": "讨论",
+      "py": "tǎolùn",
+      "en": "to discuss",
+      "ex": {
+        "hz": "我们在讨论这个问题。",
+        "py": "Wǒmen zài tǎolùn zhège wèntí.",
+        "en": "We are discussing this question."
+      }
+    },
+    {
+      "w": "讨价还价",
+      "py": "tǎojià huánjià",
+      "en": "to bargain",
+      "ex": {
+        "hz": "她买东西的时候喜欢讨价还价。",
+        "py": "Tā mǎi dōngxi de shíhou xǐhuan tǎojià huánjià.",
+        "en": "She likes to bargain when she shops."
+      }
+    },
+    {
+      "w": "考试",
+      "py": "kǎoshì",
+      "en": "to take an exam; exam",
+      "ex": {
+        "hz": "明天有汉语考试。",
+        "py": "Míngtiān yǒu Hànyǔ kǎoshì.",
+        "en": "There is a Chinese exam tomorrow."
+      }
+    },
+    {
+      "w": "面试",
+      "py": "miànshì",
+      "en": "interview",
+      "ex": {
+        "hz": "他明天去公司面试。",
+        "py": "Tā míngtiān qù gōngsī miànshì.",
+        "en": "He has an interview at a company tomorrow."
+      }
+    },
+    {
+      "w": "试试",
+      "py": "shìshi",
+      "en": "to try",
+      "ex": {
+        "hz": "你试试这件衣服吧。",
+        "py": "Nǐ shìshi zhè jiàn yīfu ba.",
+        "en": "Try on this piece of clothing."
+      }
+    },
+    {
+      "w": "笔记",
+      "py": "bǐjì",
+      "en": "notes",
+      "ex": {
+        "hz": "我的笔记在桌子上。",
+        "py": "Wǒ de bǐjì zài zhuōzi shàng.",
+        "en": "My notes are on the desk."
+      }
+    },
+    {
+      "w": "记住",
+      "py": "jìzhu",
+      "en": "to remember",
+      "ex": {
+        "hz": "我记住了他的名字。",
+        "py": "Wǒ jìzhù le tā de míngzi.",
+        "en": "I remembered his name."
+      }
+    },
+    {
+      "w": "记性",
+      "py": "jìxing",
+      "en": "memory",
+      "ex": {
+        "hz": "她的记性很好。",
+        "py": "Tā de jìxing hěn hǎo.",
+        "en": "She has a good memory."
+      }
+    },
+    {
+      "w": "学期",
+      "py": "xuéqī",
+      "en": "semester",
+      "ex": {
+        "hz": "这个学期我学汉语。",
+        "py": "Zhège xuéqī wǒ xué Hànyǔ.",
+        "en": "This semester I am studying Chinese."
+      }
+    },
+    {
+      "w": "期末",
+      "py": "qīmò",
+      "en": "end of term",
+      "ex": {
+        "hz": "期末有三个考试。",
+        "py": "Qīmò yǒu sān ge kǎoshì.",
+        "en": "There are three exams at the end of term."
+      }
+    },
+    {
+      "w": "假期",
+      "py": "jiàqī",
+      "en": "holiday",
+      "ex": {
+        "hz": "假期我想去旅游。",
+        "py": "Jiàqī wǒ xiǎng qù lǚyóu.",
+        "en": "I want to travel in the holidays."
+      }
+    },
+    {
+      "w": "希望",
+      "py": "xīwàng",
+      "en": "to hope",
+      "ex": {
+        "hz": "我希望明天不下雨。",
+        "py": "Wǒ xīwàng míngtiān bú xià yǔ.",
+        "en": "I hope it doesn't rain tomorrow."
+      }
+    },
+    {
+      "w": "失望",
+      "py": "shīwàng",
+      "en": "disappointed",
+      "ex": {
+        "hz": "今天不能去玩，我很失望。",
+        "py": "Jīntiān bù néng qù wán, wǒ hěn shīwàng.",
+        "en": "I can't go out to play today; I'm disappointed."
+      }
+    },
+    {
+      "w": "看病",
+      "py": "kàn bìng",
+      "en": "to see a doctor",
+      "ex": {
+        "hz": "我今天要去医院看病。",
+        "py": "Wǒ jīntiān yào qù yīyuàn kàn bìng.",
+        "en": "I'm going to the hospital to see a doctor today."
+      }
+    },
+    {
+      "w": "看上",
+      "py": "kànshàng",
+      "en": "to take a fancy to",
+      "ex": {
+        "hz": "她看上了那件红衣服。",
+        "py": "Tā kànshàng le nà jiàn hóng yīfu.",
+        "en": "She took a fancy to that red dress."
+      }
+    },
+    {
+      "w": "眼睛",
+      "py": "yǎnjing",
+      "en": "eye",
+      "ex": {
+        "hz": "他的眼睛很大。",
+        "py": "Tā de yǎnjing hěn dà.",
+        "en": "His eyes are big."
+      }
+    },
+    {
+      "w": "眼镜",
+      "py": "yǎnjìng",
+      "en": "glasses",
+      "ex": {
+        "hz": "我的眼镜不见了。",
+        "py": "Wǒ de yǎnjìng bú jiàn le.",
+        "en": "My glasses are missing."
+      }
+    },
+    {
+      "w": "睡觉",
+      "py": "shuìjiào",
+      "en": "to sleep",
+      "ex": {
+        "hz": "我晚上十点睡觉。",
+        "py": "Wǒ wǎnshang shí diǎn shuìjiào.",
+        "en": "I go to sleep at ten in the evening."
+      }
+    },
+    {
+      "w": "睡懒觉",
+      "py": "shuì lǎnjiào",
+      "en": "to sleep in",
+      "ex": {
+        "hz": "星期天我喜欢睡懒觉。",
+        "py": "Xīngqītiān wǒ xǐhuan shuì lǎnjiào.",
+        "en": "On Sundays I like to sleep in."
+      }
+    },
+    {
+      "w": "睡着",
+      "py": "shuìzháo",
+      "en": "to fall asleep",
+      "ex": {
+        "hz": "我昨天很晚才睡着。",
+        "py": "Wǒ zuótiān hěn wǎn cái shuìzháo.",
+        "en": "I only fell asleep very late last night."
+      }
+    },
+    {
+      "w": "学校",
+      "py": "xuéxiào",
+      "en": "school",
+      "ex": {
+        "hz": "我的学校很大。",
+        "py": "Wǒ de xuéxiào hěn dà.",
+        "en": "My school is big."
+      }
+    },
+    {
+      "w": "校长",
+      "py": "xiàozhǎng",
+      "en": "principal",
+      "ex": {
+        "hz": "校长在教室里。",
+        "py": "Xiàozhǎng zài jiàoshì lǐ.",
+        "en": "The principal is in the classroom."
+      }
+    },
+    {
+      "w": "校园",
+      "py": "xiàoyuán",
+      "en": "campus",
+      "ex": {
+        "hz": "校园里有很多花。",
+        "py": "Xiàoyuán lǐ yǒu hěn duō huā.",
+        "en": "There are many flowers on campus."
+      }
+    },
+    {
+      "w": "手机",
+      "py": "shǒujī",
+      "en": "mobile phone",
+      "ex": {
+        "hz": "我的手机在桌子上。",
+        "py": "Wǒ de shǒujī zài zhuōzi shàng.",
+        "en": "My phone is on the desk."
+      }
+    },
+    {
+      "w": "照相机",
+      "py": "zhàoxiàngjī",
+      "en": "camera",
+      "ex": {
+        "hz": "他有一个新照相机。",
+        "py": "Tā yǒu yí ge xīn zhàoxiàngjī.",
+        "en": "He has a new camera."
+      }
+    },
+    {
+      "w": "自动取款机",
+      "py": "zìdòng qǔkuǎnjī",
+      "en": "ATM",
+      "ex": {
+        "hz": "商店旁边有一个自动取款机。",
+        "py": "Shāngdiàn pángbiān yǒu yí ge zìdòng qǔkuǎnjī.",
+        "en": "There is an ATM next to the shop."
+      }
+    },
+    {
+      "w": "树",
+      "py": "shù",
+      "en": "tree",
+      "ex": {
+        "hz": "门口有一棵大树。",
+        "py": "Ménkǒu yǒu yì kē dà shù.",
+        "en": "There is a big tree at the door."
+      }
+    },
+    {
+      "w": "树叶",
+      "py": "shùyè",
+      "en": "leaf",
+      "ex": {
+        "hz": "秋天的树叶是黄色的。",
+        "py": "Qiūtiān de shùyè shì huángsè de.",
+        "en": "In autumn the leaves are yellow."
+      }
+    },
+    {
+      "w": "橙子",
+      "py": "chéngzi",
+      "en": "orange",
+      "ex": {
+        "hz": "这个橙子很甜。",
+        "py": "Zhège chéngzi hěn tián.",
+        "en": "This orange is very sweet."
+      }
+    },
+    {
+      "w": "橘子",
+      "py": "júzi",
+      "en": "tangerine",
+      "ex": {
+        "hz": "我喜欢吃橘子。",
+        "py": "Wǒ xǐhuan chī júzi.",
+        "en": "I like eating tangerines."
+      }
+    },
+    {
+      "w": "桃子",
+      "py": "táozi",
+      "en": "peach",
+      "ex": {
+        "hz": "桃子又大又甜。",
+        "py": "Táozi yòu dà yòu tián.",
+        "en": "The peach is big and sweet."
+      }
+    },
+    {
+      "w": "猕猴桃",
+      "py": "míhóutáo",
+      "en": "kiwi fruit",
+      "ex": {
+        "hz": "猕猴桃很好吃。",
+        "py": "Míhóutáo hěn hǎochī.",
+        "en": "Kiwi fruit is delicious."
+      }
+    },
+    {
+      "w": "樱桃",
+      "py": "yīngtao",
+      "en": "cherry",
+      "ex": {
+        "hz": "樱桃很小，也很好吃。",
+        "py": "Yīngtao hěn xiǎo, yě hěn hǎochī.",
+        "en": "Cherries are small and tasty too."
+      }
+    },
+    {
+      "w": "楼梯",
+      "py": "lóutī",
+      "en": "stairs",
+      "ex": {
+        "hz": "我家没有电梯，要走楼梯。",
+        "py": "Wǒ jiā méiyǒu diàntī, yào zǒu lóutī.",
+        "en": "My building has no lift, so I take the stairs."
+      }
+    },
+    {
+      "w": "电梯",
+      "py": "diàntī",
+      "en": "lift; elevator",
+      "ex": {
+        "hz": "我们坐电梯上去吧。",
+        "py": "Wǒmen zuò diàntī shàngqu ba.",
+        "en": "Let's go up by lift."
+      }
+    },
+    {
+      "w": "下雪",
+      "py": "xià xuě",
+      "en": "to snow",
+      "ex": {
+        "hz": "北京的冬天常常下雪。",
+        "py": "Běijīng de dōngtiān chángcháng xià xuě.",
+        "en": "It often snows in Beijing in winter."
+      }
+    },
+    {
+      "w": "滑雪",
+      "py": "huá xuě",
+      "en": "to ski",
+      "ex": {
+        "hz": "我想学滑雪。",
+        "py": "Wǒ xiǎng xué huá xuě.",
+        "en": "I want to learn to ski."
+      }
+    },
+    {
+      "w": "雪人",
+      "py": "xuěrén",
+      "en": "snowman",
+      "ex": {
+        "hz": "孩子们在做雪人。",
+        "py": "Háizimen zài zuò xuěrén.",
+        "en": "The children are making a snowman."
+      }
+    },
+    {
+      "w": "零食",
+      "py": "língshí",
+      "en": "snacks",
+      "ex": {
+        "hz": "小朋友都爱吃零食。",
+        "py": "Xiǎopéngyou dōu ài chī língshí.",
+        "en": "Little kids all love snacks."
+      }
+    },
+    {
+      "w": "零花钱",
+      "py": "línghuāqián",
+      "en": "pocket money",
+      "ex": {
+        "hz": "爸爸每个星期给我零花钱。",
+        "py": "Bàba měi ge xīngqī gěi wǒ línghuāqián.",
+        "en": "Dad gives me pocket money every week."
+      }
+    },
+    {
+      "w": "零分",
+      "py": "líng fēn",
+      "en": "zero (points)",
+      "ex": {
+        "hz": "他考了零分。",
+        "py": "Tā kǎo le líng fēn.",
+        "en": "He got zero in the test."
+      }
+    },
+    {
+      "w": "倒霉",
+      "py": "dǎoméi",
+      "en": "unlucky",
+      "ex": {
+        "hz": "今天真倒霉！",
+        "py": "Jīntiān zhēn dǎoméi!",
+        "en": "What bad luck today!"
+      }
+    },
+    {
+      "w": "雾",
+      "py": "wù",
+      "en": "fog",
+      "ex": {
+        "hz": "今天早上有大雾。",
+        "py": "Jīntiān zǎoshang yǒu dà wù.",
+        "en": "There is thick fog this morning."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "校园里的一天",
+      "py": "Xiàoyuán lǐ de yì tiān",
+      "en": "A day on campus",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你认识我们的校长吗？",
+          "py": "Nǐ rènshi wǒmen de xiàozhǎng ma?",
+          "en": "Do you know our principal?"
+        },
+        {
+          "who": "B",
+          "hz": "认识。他每天都在校园里跑步。",
+          "py": "Rènshi. Tā měi tiān dōu zài xiàoyuán lǐ pǎobù.",
+          "en": "Yes. He jogs on campus every day."
+        },
+        {
+          "who": "A",
+          "hz": "明天有汉语考试，你记住生词了吗？",
+          "py": "Míngtiān yǒu Hànyǔ kǎoshì, nǐ jìzhù shēngcí le ma?",
+          "en": "There's a Chinese exam tomorrow. Have you learned the new words?"
+        },
+        {
+          "who": "B",
+          "hz": "还没有。我要看看笔记。",
+          "py": "Hái méiyǒu. Wǒ yào kànkan bǐjì.",
+          "en": "Not yet. I need to look at my notes."
+        },
+        {
+          "who": "A",
+          "hz": "我们一起讨论吧。",
+          "py": "Wǒmen yìqǐ tǎolùn ba.",
+          "en": "Let's discuss them together."
+        },
+        {
+          "who": "B",
+          "hz": "好啊，我也希望考得好。",
+          "py": "Hǎo a, wǒ yě xīwàng kǎo de hǎo.",
+          "en": "Sure, I hope to do well too."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Where does the principal jog?",
+          "options": [
+            "On campus",
+            "In the canteen",
+            "At home",
+            "In the classroom"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What exam is there tomorrow?",
+          "options": [
+            "Chinese",
+            "English",
+            "Maths",
+            "History"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "下雪了",
+      "py": "Xià xuě le",
+      "en": "It's snowing",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "看，下雪了！",
+          "py": "Kàn, xià xuě le!",
+          "en": "Look, it's snowing!"
+        },
+        {
+          "who": "B",
+          "hz": "太好了！我们去做雪人吧。",
+          "py": "Tài hǎo le! Wǒmen qù zuò xuěrén ba.",
+          "en": "Great! Let's go and make a snowman."
+        },
+        {
+          "who": "A",
+          "hz": "先吃点零食，再出去。",
+          "py": "Xiān chī diǎn língshí, zài chūqu.",
+          "en": "Let's have some snacks first, then go out."
+        },
+        {
+          "who": "B",
+          "hz": "好啊。我的橘子在桌子上。",
+          "py": "Hǎo a. Wǒ de júzi zài zhuōzi shàng.",
+          "en": "OK. My tangerine is on the table."
+        },
+        {
+          "who": "A",
+          "hz": "你的手机呢？我想用它照相。",
+          "py": "Nǐ de shǒujī ne? Wǒ xiǎng yòng tā zhàoxiàng.",
+          "en": "Where is your phone? I want to take photos with it."
+        },
+        {
+          "who": "B",
+          "hz": "在我的包里。",
+          "py": "Zài wǒ de bāo lǐ.",
+          "en": "It's in my bag."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What will they make?",
+          "options": [
+            "A snowman",
+            "A cake",
+            "A kite",
+            "A boat"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What do they do first?",
+          "options": [
+            "Eat snacks",
+            "Take photos",
+            "Go skiing",
+            "Sleep"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "形声字: 声符",
+      "en": "A pictophonetic character has a sound part (声符) that hints at how it is read",
+      "drills": [
+        {
+          "q": "清、请、情、晴的声符都是___。",
+          "options": [
+            "青",
+            "氵",
+            "讠",
+            "日"
+          ],
+          "answer": 0,
+          "en": "青 is the sound part in 清, 请, 情 and 晴."
+        },
+        {
+          "q": "饱、抱、跑、泡都有声符___。",
+          "options": [
+            "包",
+            "饣",
+            "扌",
+            "足"
+          ],
+          "answer": 0,
+          "en": "包 is the sound part in 饱, 抱, 跑 and 泡."
+        },
+        {
+          "q": "妈、吗、码、骂的声符是___。",
+          "options": [
+            "马",
+            "女",
+            "口",
+            "石"
+          ],
+          "answer": 0,
+          "en": "马 is the sound part in 妈, 吗, 码 and 骂."
+        },
+        {
+          "q": "“排”的声符是“___”，读音差不多。",
+          "options": [
+            "非",
+            "手",
+            "白",
+            "牛"
+          ],
+          "answer": 0,
+          "en": "The sound part of 排 is 非, and the sounds are close."
+        }
+      ]
+    },
+    {
+      "point": "意符: 常用意符",
+      "en": "A meaning part (意符) hints at the meaning",
+      "drills": [
+        {
+          "q": "说、讨、记、试都有意符___，和说话有关。",
+          "options": [
+            "讠",
+            "木",
+            "目",
+            "月"
+          ],
+          "answer": 0,
+          "en": "说, 讨, 记 and 试 all have 讠, which is about speaking."
+        },
+        {
+          "q": "树、桃、梯、校都有意符___，和树木有关。",
+          "options": [
+            "木",
+            "目",
+            "雨",
+            "言"
+          ],
+          "answer": 0,
+          "en": "树, 桃, 梯 and 校 all have 木, which is about trees."
+        },
+        {
+          "q": "眼、睛、睡、看都有意符___，和眼睛有关。",
+          "options": [
+            "目",
+            "月",
+            "木",
+            "雨"
+          ],
+          "answer": 0,
+          "en": "眼, 睛, 睡 and 看 all have 目, which is about the eyes."
+        },
+        {
+          "q": "雪、雾、零、霉都有意符___，和天气有关。",
+          "options": [
+            "雨",
+            "目",
+            "木",
+            "讠"
+          ],
+          "answer": 0,
+          "en": "雪, 雾, 零 and 霉 all have 雨, which is about weather."
+        },
+        {
+          "q": "“期”的右边是___，和月亮、时间有关。",
+          "options": [
+            "月",
+            "目",
+            "木",
+            "讠"
+          ],
+          "answer": 0,
+          "en": "The right side of 期 is 月, linked to the moon and time."
+        }
+      ]
+    },
+    {
+      "point": "声符也表意",
+      "en": "Sometimes the sound part also gives the meaning",
+      "drills": [
+        {
+          "q": "“忘”的意符是心，声符是___，也有“逃走”的意思。",
+          "options": [
+            "亡",
+            "女",
+            "取",
+            "青"
+          ],
+          "answer": 0,
+          "en": "In 忘 the meaning part is 心 and the sound part is 亡, which also means \"to escape\"."
+        },
+        {
+          "q": "“娶”的意符是女，声符是___，也有“取得”的意思。",
+          "options": [
+            "取",
+            "亡",
+            "心",
+            "包"
+          ],
+          "answer": 0,
+          "en": "In 娶 the meaning part is 女 and the sound part is 取, which also means \"to get\"."
+        },
+        {
+          "q": "形声字的声符不一定和整个字读音___一样。",
+          "options": [
+            "完全",
+            "一定",
+            "总是",
+            "都"
+          ],
+          "answer": 0,
+          "en": "The sound part of a pictophonetic character is not always exactly the same in reading as the whole character."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你认识那位老师吗？"
+          ],
+          [
+            "女",
+            "认识，他是我们的校长。"
+          ]
+        ],
+        "q": "那位老师是谁？",
+        "options": [
+          "校长",
+          "同学",
+          "医生"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "明天有考试，你准备好了吗？"
+          ],
+          [
+            "女",
+            "还没有，我要先看笔记。"
+          ]
+        ],
+        "q": "他明天有什么？",
+        "options": [
+          "考试",
+          "面试",
+          "旅游"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你的手机在哪儿？"
+          ],
+          [
+            "女",
+            "在桌子上。"
+          ]
+        ],
+        "q": "手机在哪儿？",
+        "options": [
+          "桌子上",
+          "包里",
+          "学校"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "外面下雪了。"
+          ],
+          [
+            "女",
+            "太好了，我们去滑雪吧。"
+          ]
+        ],
+        "q": "他们想做什么？",
+        "options": [
+          "滑雪",
+          "睡觉",
+          "看病"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "我的眼睛很大，眼镜也很大。",
+        "claim": "他有眼镜。",
+        "ok": true
+      },
+      {
+        "text": "星期天他不想起床，睡懒觉了。",
+        "claim": "他星期天起得很早。",
+        "ok": false
+      },
+      {
+        "text": "秋天的树叶有黄色的，也有红色的。",
+        "claim": "秋天的树叶有黄色的。",
+        "ok": true
+      },
+      {
+        "text": "他考了零分，非常失望。",
+        "claim": "他考得很好，很高兴。",
+        "ok": false
+      }
+    ],
+    "replies": [
+      {
+        "q": "你认识那个人吗？",
+        "a": "认识，他是我们的校长。"
+      },
+      {
+        "q": "你明天有什么事？",
+        "a": "我要去公司面试。"
+      },
+      {
+        "q": "你喜欢吃什么水果？",
+        "a": "我喜欢吃橘子和桃子。"
+      },
+      {
+        "q": "外面下雪了！",
+        "a": "太好了，我们去滑雪吧！"
+      }
+    ]
+  },
+  "hanzi": {
+    "chars": [
+      [
+        "言",
+        "A mouth with a tongue sticking out: “speech”. Written 讠 on the left of a character."
+      ],
+      [
+        "月",
+        "A thin crescent moon; also the sign for months and time. On the right of a character it can also mean flesh."
+      ],
+      [
+        "目",
+        "An eye turned on its side and drawn upright: the “eye”."
+      ],
+      [
+        "木",
+        "A tree with a trunk, branches and roots: “tree” or wood."
+      ],
+      [
+        "雨",
+        "A roof of cloud with drops falling: “rain”. On top of a character it is written ⻗ and means weather."
+      ]
+    ],
+    "structure": [
+      "形声字 Pictophonetic characters (2)",
+      "One part hints at the sound (声符) and another at the meaning (意符). The sound part is only a guide: the reading can be close but not identical, and sometimes the sound part also carries meaning (忘 = 心 + 亡, 娶 = 女 + 取).",
+      "清请情晴睛饱抱泡跑袍炮胞忘娶"
+    ],
+    "radicals": [
+      [
+        "讠",
+        "speech (言)",
+        "说讨记试认识语词谁"
+      ],
+      [
+        "月",
+        "moon, time; flesh",
+        "期朋有胜胖"
+      ],
+      [
+        "目",
+        "eye",
+        "眼睛睡看睛"
+      ],
+      [
+        "木",
+        "tree, wood",
+        "树桃梯校机橙橘樱"
+      ],
+      [
+        "⻗",
+        "weather (雨)",
+        "雪雾零霉"
+      ],
+      [
+        "氵",
+        "water",
+        "清泡滑"
+      ],
+      [
+        "日",
+        "sun, daytime",
+        "晴时明"
+      ],
+      [
+        "虫",
+        "insect",
+        "蜻蛙"
+      ],
+      [
+        "忄",
+        "heart",
+        "情懒性"
+      ],
+      [
+        "饣",
+        "food",
+        "饱"
+      ],
+      [
+        "⻊",
+        "foot",
+        "跑踢"
+      ],
+      [
+        "扌",
+        "hand",
+        "抱打"
+      ],
+      [
+        "衤",
+        "clothes",
+        "袍衣"
+      ],
+      [
+        "火",
+        "fire",
+        "炮灯"
+      ]
+    ]
+  },
+  "pron": [
+    {
+      "t": "Sound families 青 and 包",
+      "en": "Characters built on 青 are read qīng or close to it (清 请 情 晴), and those built on 包 are read bāo or close (饱 抱 跑 泡). Look at the sound part to guess the reading.",
+      "ex": [
+        "清",
+        "请",
+        "情",
+        "晴",
+        "睛",
+        "包",
+        "饱",
+        "抱",
+        "跑",
+        "泡"
+      ]
+    },
+    {
+      "t": "Sound families 马 and 非",
+      "en": "马 gives mā, mǎ, mà in 妈 码 骂; 非 gives fēi, bēi, pái in 非 悲 排. The sound part is close, but the tone or the first sound can change.",
+      "ex": [
+        "马",
+        "妈",
+        "码",
+        "骂",
+        "非",
+        "悲",
+        "排"
+      ]
+    }
+  ]
+}

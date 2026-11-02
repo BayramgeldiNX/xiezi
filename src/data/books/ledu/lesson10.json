@@ -1,0 +1,701 @@
+{
+  "n": 10,
+  "cn": "第十课",
+  "title": "总结测试",
+  "en": "Summary test",
+  "words": [
+    {
+      "w": "自行车",
+      "py": "zìxíngchē",
+      "en": "bicycle",
+      "ex": {
+        "hz": "这辆自行车是我哥哥的。",
+        "py": "Zhè liàng zìxíngchē shì wǒ gēge de.",
+        "en": "This bicycle is my older brother's."
+      }
+    },
+    {
+      "w": "西瓜",
+      "py": "xīguā",
+      "en": "watermelon",
+      "ex": {
+        "hz": "夏天我爱吃西瓜。",
+        "py": "Xiàtiān wǒ ài chī xīguā.",
+        "en": "In summer I love eating watermelon."
+      }
+    },
+    {
+      "w": "开心",
+      "py": "kāixīn",
+      "en": "happy",
+      "ex": {
+        "hz": "今天我很开心。",
+        "py": "Jīntiān wǒ hěn kāixīn.",
+        "en": "I'm very happy today."
+      }
+    },
+    {
+      "w": "电视",
+      "py": "diànshì",
+      "en": "television",
+      "ex": {
+        "hz": "他在看电视。",
+        "py": "Tā zài kàn diànshì.",
+        "en": "He is watching TV."
+      }
+    },
+    {
+      "w": "篮球",
+      "py": "lánqiú",
+      "en": "basketball",
+      "ex": {
+        "hz": "他喜欢打篮球。",
+        "py": "Tā xǐhuan dǎ lánqiú.",
+        "en": "He likes playing basketball."
+      }
+    },
+    {
+      "w": "飞机",
+      "py": "fēijī",
+      "en": "aeroplane",
+      "ex": {
+        "hz": "我坐飞机去北京。",
+        "py": "Wǒ zuò fēijī qù Běijīng.",
+        "en": "I'm flying to Beijing."
+      }
+    },
+    {
+      "w": "唱歌",
+      "py": "chàng gē",
+      "en": "to sing",
+      "ex": {
+        "hz": "她会唱歌。",
+        "py": "Tā huì chàng gē.",
+        "en": "She can sing."
+      }
+    },
+    {
+      "w": "下雨",
+      "py": "xià yǔ",
+      "en": "to rain",
+      "ex": {
+        "hz": "今天下雨了。",
+        "py": "Jīntiān xià yǔ le.",
+        "en": "It's raining today."
+      }
+    },
+    {
+      "w": "牛奶",
+      "py": "niúnǎi",
+      "en": "milk",
+      "ex": {
+        "hz": "我每天喝牛奶。",
+        "py": "Wǒ měi tiān hē niúnǎi.",
+        "en": "I drink milk every day."
+      }
+    },
+    {
+      "w": "作业",
+      "py": "zuòyè",
+      "en": "homework",
+      "ex": {
+        "hz": "我今天没有作业。",
+        "py": "Wǒ jīntiān méiyǒu zuòyè.",
+        "en": "I have no homework today."
+      }
+    },
+    {
+      "w": "昨天",
+      "py": "zuótiān",
+      "en": "yesterday",
+      "ex": {
+        "hz": "昨天我在家休息。",
+        "py": "Zuótiān wǒ zài jiā xiūxi.",
+        "en": "Yesterday I rested at home."
+      }
+    },
+    {
+      "w": "考试",
+      "py": "kǎoshì",
+      "en": "exam; to take an exam",
+      "ex": {
+        "hz": "明天有汉语考试。",
+        "py": "Míngtiān yǒu Hànyǔ kǎoshì.",
+        "en": "There is a Chinese exam tomorrow."
+      }
+    },
+    {
+      "w": "水果",
+      "py": "shuǐguǒ",
+      "en": "fruit",
+      "ex": {
+        "hz": "苹果是水果。",
+        "py": "Píngguǒ shì shuǐguǒ.",
+        "en": "An apple is a fruit."
+      }
+    },
+    {
+      "w": "上课",
+      "py": "shàng kè",
+      "en": "to have class",
+      "ex": {
+        "hz": "我们八点上课。",
+        "py": "Wǒmen bā diǎn shàng kè.",
+        "en": "We have class at eight."
+      }
+    },
+    {
+      "w": "休息",
+      "py": "xiūxi",
+      "en": "to rest",
+      "ex": {
+        "hz": "你累了，休息吧。",
+        "py": "Nǐ lèi le, xiūxi ba.",
+        "en": "You're tired; have a rest."
+      }
+    },
+    {
+      "w": "有意思",
+      "py": "yǒu yìsi",
+      "en": "interesting",
+      "ex": {
+        "hz": "这本书很有意思。",
+        "py": "Zhè běn shū hěn yǒu yìsi.",
+        "en": "This book is interesting."
+      }
+    },
+    {
+      "w": "爱好",
+      "py": "àihào",
+      "en": "hobby",
+      "ex": {
+        "hz": "我的爱好是看书。",
+        "py": "Wǒ de àihào shì kàn shū.",
+        "en": "My hobby is reading."
+      }
+    },
+    {
+      "w": "比赛",
+      "py": "bǐsài",
+      "en": "match; competition",
+      "ex": {
+        "hz": "我们明天有比赛。",
+        "py": "Wǒmen míngtiān yǒu bǐsài.",
+        "en": "We have a match tomorrow."
+      }
+    },
+    {
+      "w": "便宜",
+      "py": "piányi",
+      "en": "cheap",
+      "ex": {
+        "hz": "这个很便宜。",
+        "py": "Zhège hěn piányi.",
+        "en": "This one is cheap."
+      }
+    },
+    {
+      "w": "照相机",
+      "py": "zhàoxiàngjī",
+      "en": "camera",
+      "ex": {
+        "hz": "他有一个新照相机。",
+        "py": "Tā yǒu yí ge xīn zhàoxiàngjī.",
+        "en": "He has a new camera."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "学校的比赛",
+      "py": "Xuéxiào de bǐsài",
+      "en": "A school match",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "昨天你做作业了吗？",
+          "py": "Zuótiān nǐ zuò zuòyè le ma?",
+          "en": "Did you do your homework yesterday?"
+        },
+        {
+          "who": "B",
+          "hz": "做了。今天没有作业，我想去打篮球。",
+          "py": "Zuò le. Jīntiān méiyǒu zuòyè, wǒ xiǎng qù dǎ lánqiú.",
+          "en": "I did. There's none today; I want to go and play basketball."
+        },
+        {
+          "who": "A",
+          "hz": "今天学校有篮球比赛，你知道吗？",
+          "py": "Jīntiān xuéxiào yǒu lánqiú bǐsài, nǐ zhīdào ma?",
+          "en": "There's a basketball match at school today. Did you know?"
+        },
+        {
+          "who": "B",
+          "hz": "知道，我们一起去看吧。",
+          "py": "Zhīdào, wǒmen yìqǐ qù kàn ba.",
+          "en": "I know. Let's go and watch together."
+        },
+        {
+          "who": "A",
+          "hz": "好，我们骑自行车去。",
+          "py": "Hǎo, wǒmen qí zìxíngchē qù.",
+          "en": "OK, let's go by bicycle."
+        },
+        {
+          "who": "B",
+          "hz": "太好了，我很开心！",
+          "py": "Tài hǎo le, wǒ hěn kāixīn!",
+          "en": "Great, I'm so happy!"
+        }
+      ],
+      "questions": [
+        {
+          "q": "What is on at school today?",
+          "options": [
+            "A basketball match",
+            "An exam",
+            "A film",
+            "A trip"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How will they go?",
+          "options": [
+            "By bicycle",
+            "By plane",
+            "By bus",
+            "On foot"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "我的爱好",
+      "py": "Wǒ de àihào",
+      "en": "My hobby",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你有什么爱好？",
+          "py": "Nǐ yǒu shénme àihào?",
+          "en": "What are your hobbies?"
+        },
+        {
+          "who": "B",
+          "hz": "我喜欢唱歌，也喜欢看电视。",
+          "py": "Wǒ xǐhuan chàng gē, yě xǐhuan kàn diànshì.",
+          "en": "I like singing, and I like watching TV too."
+        },
+        {
+          "who": "A",
+          "hz": "我的爱好是照相，我有一个新照相机。",
+          "py": "Wǒ de àihào shì zhàoxiàng, wǒ yǒu yí ge xīn zhàoxiàngjī.",
+          "en": "My hobby is taking photos. I have a new camera."
+        },
+        {
+          "who": "B",
+          "hz": "贵不贵？",
+          "py": "Guì bu guì?",
+          "en": "Is it expensive?"
+        },
+        {
+          "who": "A",
+          "hz": "不贵，很便宜。",
+          "py": "Bú guì, hěn piányi.",
+          "en": "No, it's cheap."
+        },
+        {
+          "who": "B",
+          "hz": "那我也想买一个。",
+          "py": "Nà wǒ yě xiǎng mǎi yí ge.",
+          "en": "Then I want to buy one too."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What is A's hobby?",
+          "options": [
+            "Taking photos",
+            "Singing",
+            "Basketball",
+            "Eating fruit"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Is the camera expensive?",
+          "options": [
+            "No, it is cheap",
+            "Yes, very",
+            "It is free",
+            "We don't know"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "笔画数",
+      "en": "Counting strokes: write each stroke in order, then add them up.",
+      "drills": [
+        {
+          "q": "“电”一共有___画。",
+          "options": [
+            "5",
+            "4",
+            "6",
+            "7"
+          ],
+          "answer": 0,
+          "en": "电 has 5 strokes in total."
+        },
+        {
+          "q": "“肉”一共有___画。",
+          "options": [
+            "6",
+            "5",
+            "7",
+            "8"
+          ],
+          "answer": 0,
+          "en": "肉 has 6 strokes in total."
+        },
+        {
+          "q": "“现”一共有___画。",
+          "options": [
+            "8",
+            "7",
+            "9",
+            "10"
+          ],
+          "answer": 0,
+          "en": "现 has 8 strokes in total."
+        }
+      ]
+    },
+    {
+      "point": "部件组合",
+      "en": "Join one component from each side to make a new character.",
+      "drills": [
+        {
+          "q": "亻 + 门 = ___",
+          "options": [
+            "们",
+            "间",
+            "问",
+            "同"
+          ],
+          "answer": 0,
+          "en": "亻 + 门 makes 们 (plural marker)."
+        },
+        {
+          "q": "女 + 也 = ___",
+          "options": [
+            "她",
+            "他",
+            "地",
+            "池"
+          ],
+          "answer": 0,
+          "en": "女 + 也 makes 她 (she)."
+        },
+        {
+          "q": "氵 + 每 = ___",
+          "options": [
+            "海",
+            "梅",
+            "悔",
+            "每"
+          ],
+          "answer": 0,
+          "en": "氵 + 每 makes 海 (sea)."
+        },
+        {
+          "q": "日 + 乍 = ___",
+          "options": [
+            "昨",
+            "作",
+            "怎",
+            "炸"
+          ],
+          "answer": 0,
+          "en": "日 + 乍 makes 昨 (as in yesterday)."
+        }
+      ]
+    },
+    {
+      "point": "形旁和声旁",
+      "en": "In many characters one part shows the meaning and the other part shows the sound.",
+      "drills": [
+        {
+          "q": "“吗”左边是口，右边的“马”表示___。",
+          "options": [
+            "读音",
+            "意思",
+            "笔画",
+            "颜色"
+          ],
+          "answer": 0,
+          "en": "In 吗 the 马 on the right shows the sound."
+        },
+        {
+          "q": "说、语、话的左边都是“___”，和说话有关。",
+          "options": [
+            "讠",
+            "氵",
+            "亻",
+            "木"
+          ],
+          "answer": 0,
+          "en": "说, 语 and 话 all have 讠 on the left, related to speech."
+        },
+        {
+          "q": "海、泳、池的左边都是“___”，和水有关。",
+          "options": [
+            "氵",
+            "讠",
+            "亻",
+            "日"
+          ],
+          "answer": 0,
+          "en": "海, 泳 and 池 all have 氵 on the left, related to water."
+        }
+      ]
+    },
+    {
+      "point": "选词",
+      "en": "Pick the word that fits the sentence.",
+      "drills": [
+        {
+          "q": "老师___我们，明天不上课。",
+          "options": [
+            "告诉",
+            "看见",
+            "明白",
+            "比赛"
+          ],
+          "answer": 0,
+          "en": "The teacher told us there is no class tomorrow."
+        },
+        {
+          "q": "今天晚上有一场足球___。",
+          "options": [
+            "比赛",
+            "爱好",
+            "作业",
+            "电视"
+          ],
+          "answer": 0,
+          "en": "There is a football match tonight."
+        },
+        {
+          "q": "这件衣服很___，只要二十块。",
+          "options": [
+            "便宜",
+            "开心",
+            "有名",
+            "昨天"
+          ],
+          "answer": 0,
+          "en": "This piece of clothing is very cheap, only twenty yuan."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "昨天你做作业了吗？"
+          ],
+          [
+            "女",
+            "做了，现在要看电视。"
+          ]
+        ],
+        "q": "他现在要做什么？",
+        "options": [
+          "看电视",
+          "做作业",
+          "上课"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "明天有篮球比赛，你去吗？"
+          ],
+          [
+            "女",
+            "我去，我们一起去吧。"
+          ]
+        ],
+        "q": "明天有什么比赛？",
+        "options": [
+          "篮球比赛",
+          "足球比赛",
+          "数学比赛"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你喝牛奶还是喝水？"
+          ],
+          [
+            "女",
+            "我喝牛奶。"
+          ]
+        ],
+        "q": "他喝什么？",
+        "options": [
+          "牛奶",
+          "水",
+          "茶"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "外面下雨了。"
+          ],
+          [
+            "女",
+            "那我们不去公园了。"
+          ]
+        ],
+        "q": "他们为什么不去公园？",
+        "options": [
+          "下雨了",
+          "太累了",
+          "没有时间"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "他昨天去上课了，今天休息。",
+        "claim": "他今天不上课。",
+        "ok": true
+      },
+      {
+        "text": "我爸爸有一个照相机，他常常照相。",
+        "claim": "爸爸没有照相机。",
+        "ok": false
+      },
+      {
+        "text": "弟弟的爱好是唱歌，他很开心。",
+        "claim": "弟弟喜欢唱歌。",
+        "ok": true
+      },
+      {
+        "text": "这个西瓜很便宜，可是我不想买。",
+        "claim": "西瓜很贵。",
+        "ok": false
+      }
+    ],
+    "replies": [
+      {
+        "q": "你坐飞机去还是坐火车去？",
+        "a": "我坐飞机去。"
+      },
+      {
+        "q": "你的爱好是什么？",
+        "a": "我喜欢唱歌。"
+      },
+      {
+        "q": "考试怎么样？",
+        "a": "不太难，我考得不错。"
+      },
+      {
+        "q": "祝你生日快乐！",
+        "a": "谢谢！"
+      }
+    ]
+  },
+  "hanzi": {
+    "rules": [
+      [
+        "Count every stroke once: 电 5, 肉 6, 现 8, 球 11",
+        "电肉现球"
+      ]
+    ],
+    "chars": [
+      [
+        "门",
+        "Two door leaves."
+      ],
+      [
+        "雨",
+        "Raindrops falling from the sky."
+      ],
+      [
+        "目",
+        "An eye turned on its side."
+      ],
+      [
+        "马",
+        "A horse with a mane and legs."
+      ]
+    ],
+    "structure": [
+      "部件组合 Building characters from parts",
+      "Join a part from the left box with a part from the right box: 亻+门 = 们, 女+也 = 她, 日+乍 = 昨, 氵+永 = 泳. One part usually gives the meaning and the other the sound.",
+      "们他作吗吃语说好她妈明星昨晚字安相林海泳活池"
+    ],
+    "radicals": [
+      [
+        "亻",
+        "person",
+        "们他作"
+      ],
+      [
+        "讠",
+        "speech",
+        "语说"
+      ],
+      [
+        "氵",
+        "water",
+        "海泳池活"
+      ],
+      [
+        "女",
+        "woman",
+        "她妈好"
+      ],
+      [
+        "日",
+        "sun, day",
+        "明昨晚星"
+      ],
+      [
+        "宀",
+        "roof",
+        "字安"
+      ],
+      [
+        "口",
+        "mouth",
+        "吗吃"
+      ]
+    ]
+  }
+}

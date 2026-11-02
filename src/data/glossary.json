@@ -474,5 +474,65 @@
   "长城": {
     "py": "Chángchéng",
     "en": "the Great Wall"
+  },
+  "木": {
+    "py": "mù",
+    "en": "tree; wood"
+  },
+  "目": {
+    "py": "mù",
+    "en": "eye"
+  },
+  "耳": {
+    "py": "ěr",
+    "en": "ear"
+  },
+  "竹": {
+    "py": "zhú",
+    "en": "bamboo"
+  },
+  "饱": {
+    "py": "bǎo",
+    "en": "full (of food)"
+  },
+  "抱": {
+    "py": "bào",
+    "en": "to hug; to hold"
+  },
+  "泡": {
+    "py": "pào",
+    "en": "to soak; bubble"
+  },
+  "骂": {
+    "py": "mà",
+    "en": "to scold"
+  },
+  "悲": {
+    "py": "bēi",
+    "en": "sad"
+  },
+  "排": {
+    "py": "pái",
+    "en": "to arrange; a row"
+  },
+  "花儿": {
+    "py": "huār",
+    "en": "flower"
+  },
+  "玩儿": {
+    "py": "wánr",
+    "en": "to play"
+  },
+  "哪儿": {
+    "py": "nǎr",
+    "en": "where"
+  },
+  "不要": {
+    "py": "búyào",
+    "en": "do not; do not want"
+  },
+  "不是": {
+    "py": "búshì",
+    "en": "is not; to not be"
   }
 }

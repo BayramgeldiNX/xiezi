@@ -1,0 +1,950 @@
+{
+  "n": 2,
+  "cn": "第二课",
+  "title": "一二三，三二一，一二三四五六七",
+  "en": "Counting up and counting down",
+  "words": [
+    {
+      "w": "一点儿",
+      "py": "yìdiǎnr",
+      "en": "a little",
+      "ex": {
+        "hz": "我只会说一点儿汉语。",
+        "py": "Wǒ zhǐ huì shuō yìdiǎnr Hànyǔ.",
+        "en": "I can only speak a little Chinese."
+      }
+    },
+    {
+      "w": "一起",
+      "py": "yìqǐ",
+      "en": "together",
+      "ex": {
+        "hz": "明天我们一起去公园。",
+        "py": "Míngtiān wǒmen yìqǐ qù gōngyuán.",
+        "en": "We are going to the park together tomorrow."
+      }
+    },
+    {
+      "w": "一共",
+      "py": "yígòng",
+      "en": "in total",
+      "ex": {
+        "hz": "这些苹果一共十块钱。",
+        "py": "Zhèxiē píngguǒ yígòng shí kuài qián.",
+        "en": "These apples cost ten yuan in total."
+      }
+    },
+    {
+      "w": "一样",
+      "py": "yíyàng",
+      "en": "same",
+      "ex": {
+        "hz": "我的杯子和你的一样。",
+        "py": "Wǒ de bēizi hé nǐ de yíyàng.",
+        "en": "My cup is the same as yours."
+      }
+    },
+    {
+      "w": "一半",
+      "py": "yíbàn",
+      "en": "half",
+      "ex": {
+        "hz": "这个面包我吃一半，你吃一半。",
+        "py": "Zhège miànbāo wǒ chī yíbàn, nǐ chī yíbàn.",
+        "en": "I'll eat half of this bread and you eat the other half."
+      }
+    },
+    {
+      "w": "一些",
+      "py": "yìxiē",
+      "en": "some",
+      "ex": {
+        "hz": "桌子上有一些书。",
+        "py": "Zhuōzi shang yǒu yìxiē shū.",
+        "en": "There are some books on the table."
+      }
+    },
+    {
+      "w": "一定",
+      "py": "yídìng",
+      "en": "certainly",
+      "ex": {
+        "hz": "明天我一定来。",
+        "py": "Míngtiān wǒ yídìng lái.",
+        "en": "I will definitely come tomorrow."
+      }
+    },
+    {
+      "w": "一心一意",
+      "py": "yìxīn yíyì",
+      "en": "wholeheartedly",
+      "ex": {
+        "hz": "他一心一意地学汉语。",
+        "py": "Tā yìxīn yíyì de xué Hànyǔ.",
+        "en": "He studies Chinese with his whole heart."
+      }
+    },
+    {
+      "w": "独一无二",
+      "py": "dúyī wú'èr",
+      "en": "one of a kind",
+      "ex": {
+        "hz": "这只杯子是独一无二的。",
+        "py": "Zhè zhī bēizi shì dúyī wú'èr de.",
+        "en": "This cup is one of a kind."
+      }
+    },
+    {
+      "w": "三心二意",
+      "py": "sānxīn èryì",
+      "en": "half-hearted",
+      "ex": {
+        "hz": "做作业不要三心二意。",
+        "py": "Zuò zuòyè bú yào sānxīn èryì.",
+        "en": "Don't be half-hearted when you do your homework."
+      }
+    },
+    {
+      "w": "不三不四",
+      "py": "bùsān búsì",
+      "en": "disreputable (of a person)",
+      "ex": {
+        "hz": "别和不三不四的人玩。",
+        "py": "Bié hé bùsān búsì de rén wán.",
+        "en": "Don't hang around with dubious people."
+      }
+    },
+    {
+      "w": "五颜六色",
+      "py": "wǔyán liùsè",
+      "en": "colourful",
+      "ex": {
+        "hz": "花园里的花五颜六色。",
+        "py": "Huāyuán li de huā wǔyán liùsè.",
+        "en": "The flowers in the garden are colourful."
+      }
+    },
+    {
+      "w": "乱七八糟",
+      "py": "luànqībāzāo",
+      "en": "in a mess",
+      "ex": {
+        "hz": "他的房间乱七八糟。",
+        "py": "Tā de fángjiān luànqībāzāo.",
+        "en": "His room is a complete mess."
+      }
+    },
+    {
+      "w": "十全十美",
+      "py": "shíquán shíměi",
+      "en": "perfect in every way",
+      "ex": {
+        "hz": "没有人十全十美。",
+        "py": "Méiyǒu rén shíquán shíměi.",
+        "en": "Nobody is perfect in every way."
+      }
+    },
+    {
+      "w": "八九不离十",
+      "py": "bā jiǔ bù lí shí",
+      "en": "pretty close",
+      "ex": {
+        "hz": "你猜得八九不离十。",
+        "py": "Nǐ cāi de bā jiǔ bù lí shí.",
+        "en": "Your guess is pretty close."
+      }
+    },
+    {
+      "w": "成百上千",
+      "py": "chéngbǎi shàngqiān",
+      "en": "hundreds and thousands",
+      "ex": {
+        "hz": "成百上千的人在看比赛。",
+        "py": "Chéngbǎi shàngqiān de rén zài kàn bǐsài.",
+        "en": "Hundreds and thousands of people are watching the match."
+      }
+    },
+    {
+      "w": "老虎",
+      "py": "lǎohǔ",
+      "en": "tiger",
+      "ex": {
+        "hz": "动物园里有一只老虎。",
+        "py": "Dòngwùyuán li yǒu yì zhī lǎohǔ.",
+        "en": "There is a tiger in the zoo."
+      }
+    },
+    {
+      "w": "在家",
+      "py": "zàijiā",
+      "en": "to be at home",
+      "ex": {
+        "hz": "今天我在家看书。",
+        "py": "Jīntiān wǒ zàijiā kàn shū.",
+        "en": "I'm at home reading today."
+      }
+    },
+    {
+      "w": "看见",
+      "py": "kànjiàn",
+      "en": "to see",
+      "ex": {
+        "hz": "我看见一只小鸟。",
+        "py": "Wǒ kànjiàn yì zhī xiǎo niǎo.",
+        "en": "I see a little bird."
+      }
+    },
+    {
+      "w": "松鼠",
+      "py": "sōngshǔ",
+      "en": "squirrel",
+      "ex": {
+        "hz": "树上有一只松鼠。",
+        "py": "Shù shang yǒu yì zhī sōngshǔ.",
+        "en": "There is a squirrel in the tree."
+      }
+    },
+    {
+      "w": "有",
+      "py": "yǒu",
+      "en": "to have",
+      "ex": {
+        "hz": "我有两个妹妹。",
+        "py": "Wǒ yǒu liǎng ge mèimei.",
+        "en": "I have two younger sisters."
+      }
+    },
+    {
+      "w": "几",
+      "py": "jǐ",
+      "en": "how many",
+      "ex": {
+        "hz": "你要几个杯子？",
+        "py": "Nǐ yào jǐ ge bēizi?",
+        "en": "How many cups do you want?"
+      }
+    },
+    {
+      "w": "只",
+      "py": "zhī",
+      "en": "(measure word for animals)",
+      "ex": {
+        "hz": "我家有三只猫。",
+        "py": "Wǒ jiā yǒu sān zhī māo.",
+        "en": "We have three cats at home."
+      }
+    },
+    {
+      "w": "手",
+      "py": "shǒu",
+      "en": "hand",
+      "ex": {
+        "hz": "请洗洗你的手。",
+        "py": "Qǐng xǐxi nǐ de shǒu.",
+        "en": "Please wash your hands."
+      }
+    },
+    {
+      "w": "冰",
+      "py": "bīng",
+      "en": "ice",
+      "ex": {
+        "hz": "杯子里有冰。",
+        "py": "Bēizi li yǒu bīng.",
+        "en": "There is ice in the cup."
+      }
+    },
+    {
+      "w": "走",
+      "py": "zǒu",
+      "en": "to walk",
+      "ex": {
+        "hz": "我们走路去学校。",
+        "py": "Wǒmen zǒulù qù xuéxiào.",
+        "en": "We walk to school."
+      }
+    },
+    {
+      "w": "和",
+      "py": "hé",
+      "en": "and",
+      "ex": {
+        "hz": "我喜欢苹果和香蕉。",
+        "py": "Wǒ xǐhuan píngguǒ hé xiāngjiāo.",
+        "en": "I like apples and bananas."
+      }
+    },
+    {
+      "w": "河",
+      "py": "hé",
+      "en": "river",
+      "ex": {
+        "hz": "河里有很多鱼。",
+        "py": "Hé li yǒu hěn duō yú.",
+        "en": "There are many fish in the river."
+      }
+    },
+    {
+      "w": "看",
+      "py": "kàn",
+      "en": "to look; to watch",
+      "ex": {
+        "hz": "我想看电影。",
+        "py": "Wǒ xiǎng kàn diànyǐng.",
+        "en": "I want to watch a film."
+      }
+    },
+    {
+      "w": "燕子",
+      "py": "yànzi",
+      "en": "swallow",
+      "ex": {
+        "hz": "春天燕子飞回来了。",
+        "py": "Chūntiān yànzi fēi huílai le.",
+        "en": "In spring the swallows fly back."
+      }
+    },
+    {
+      "w": "来",
+      "py": "lái",
+      "en": "to come",
+      "ex": {
+        "hz": "朋友明天来我家。",
+        "py": "Péngyou míngtiān lái wǒ jiā.",
+        "en": "My friend is coming to my home tomorrow."
+      }
+    },
+    {
+      "w": "牛",
+      "py": "niú",
+      "en": "cow; ox",
+      "ex": {
+        "hz": "田里有一头牛。",
+        "py": "Tián li yǒu yì tóu niú.",
+        "en": "There is a cow in the field."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "数一数",
+      "py": "Shǔ yi shǔ",
+      "en": "Counting pets",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你家有几只猫？",
+          "py": "Nǐ jiā yǒu jǐ zhī māo?",
+          "en": "How many cats do you have?"
+        },
+        {
+          "who": "B",
+          "hz": "我家有两只猫，一只狗。",
+          "py": "Wǒ jiā yǒu liǎng zhī māo, yì zhī gǒu.",
+          "en": "We have two cats and a dog."
+        },
+        {
+          "who": "A",
+          "hz": "两只猫一样大吗？",
+          "py": "Liǎng zhī māo yíyàng dà ma?",
+          "en": "Are the two cats the same size?"
+        },
+        {
+          "who": "B",
+          "hz": "不一样，小猫只有一半大。",
+          "py": "Bù yíyàng, xiǎo māo zhǐyǒu yíbàn dà.",
+          "en": "No, the kitten is only half as big."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How many cats does B have?",
+          "options": [
+            "Two",
+            "One",
+            "Three",
+            "Five"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How big is the kitten compared with the other cat?",
+          "options": [
+            "Half the size",
+            "The same size",
+            "Twice the size",
+            "Much bigger"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "去河边",
+      "py": "Qù hé biān",
+      "en": "Going to the river",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "明天我们一起去河边吧。",
+          "py": "Míngtiān wǒmen yìqǐ qù hé biān ba.",
+          "en": "Let's go to the river together tomorrow."
+        },
+        {
+          "who": "B",
+          "hz": "好啊！我们怎么去？",
+          "py": "Hǎo a! Wǒmen zěnme qù?",
+          "en": "Great! How shall we go?"
+        },
+        {
+          "who": "A",
+          "hz": "走路去，河边有一些燕子。",
+          "py": "Zǒulù qù, hé biān yǒu yìxiē yànzi.",
+          "en": "On foot. There are some swallows by the river."
+        },
+        {
+          "who": "B",
+          "hz": "太好了，我一定来！",
+          "py": "Tài hǎo le, wǒ yídìng lái!",
+          "en": "Wonderful, I'll definitely come!"
+        }
+      ],
+      "questions": [
+        {
+          "q": "How will they get to the river?",
+          "options": [
+            "On foot",
+            "By bike",
+            "By bus",
+            "By car"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What can they see by the river?",
+          "options": [
+            "Swallows",
+            "Tigers",
+            "Squirrels",
+            "Cows"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "一 changes tone",
+      "en": "一 is yī alone; before a 4th tone it is yí; before a 1st, 2nd or 3rd tone it is yì",
+      "drills": [
+        {
+          "q": "“一共”读作___gòng。",
+          "options": [
+            "yí",
+            "yì",
+            "yī",
+            "yǐ"
+          ],
+          "answer": 0,
+          "en": "一共 is read yígòng."
+        },
+        {
+          "q": "“一起”读作___qǐ。",
+          "options": [
+            "yì",
+            "yí",
+            "yī",
+            "yǐ"
+          ],
+          "answer": 0,
+          "en": "一起 is read yìqǐ."
+        },
+        {
+          "q": "“一半”读作___bàn。",
+          "options": [
+            "yí",
+            "yì",
+            "yī",
+            "yǐ"
+          ],
+          "answer": 0,
+          "en": "一半 is read yíbàn."
+        },
+        {
+          "q": "“一点儿”读作___diǎnr。",
+          "options": [
+            "yì",
+            "yí",
+            "yī",
+            "yǐ"
+          ],
+          "answer": 0,
+          "en": "一点儿 is read yìdiǎnr."
+        }
+      ]
+    },
+    {
+      "point": "派生笔画",
+      "en": "Derivative strokes are named by the basic strokes they pass through, in writing order",
+      "drills": [
+        {
+          "q": "“山”的第二笔是___。",
+          "options": [
+            "竖折",
+            "竖",
+            "横折",
+            "撇折"
+          ],
+          "answer": 0,
+          "en": "The second stroke of 山 is shù-zhé (vertical, turn right)."
+        },
+        {
+          "q": "“心”的第二笔是___。",
+          "options": [
+            "卧钩",
+            "弯钩",
+            "竖钩",
+            "点"
+          ],
+          "answer": 0,
+          "en": "The second stroke of 心 is the lying hook."
+        },
+        {
+          "q": "“水”的第一笔是___。",
+          "options": [
+            "竖钩",
+            "竖",
+            "弯钩",
+            "竖提"
+          ],
+          "answer": 0,
+          "en": "The first stroke of 水 is the vertical hook."
+        },
+        {
+          "q": "“九”的第二笔是___。",
+          "options": [
+            "横折弯钩",
+            "横折钩",
+            "竖弯钩",
+            "撇折"
+          ],
+          "answer": 0,
+          "en": "The second stroke of 九 is héng-zhé-wān-gōu."
+        },
+        {
+          "q": "“子”的第二笔是___。",
+          "options": [
+            "弯钩",
+            "竖钩",
+            "横折钩",
+            "卧钩"
+          ],
+          "answer": 0,
+          "en": "The second stroke of 子 is the curved hook."
+        },
+        {
+          "q": "“儿”的第二笔是___。",
+          "options": [
+            "竖弯钩",
+            "弯钩",
+            "竖钩",
+            "竖折"
+          ],
+          "answer": 0,
+          "en": "The second stroke of 儿 is the vertical-bend-hook."
+        },
+        {
+          "q": "“我”的第五笔是___。",
+          "options": [
+            "斜钩",
+            "竖钩",
+            "横折钩",
+            "弯钩"
+          ],
+          "answer": 0,
+          "en": "The fifth stroke of 我 is the slanting hook."
+        }
+      ]
+    },
+    {
+      "point": "数字成语",
+      "en": "Idioms with numbers",
+      "drills": [
+        {
+          "q": "他的房间___七八糟。",
+          "options": [
+            "乱",
+            "一",
+            "三",
+            "十"
+          ],
+          "answer": 0,
+          "en": "His room is a complete mess."
+        },
+        {
+          "q": "花园里的花五___六色。",
+          "options": [
+            "颜",
+            "样",
+            "半",
+            "些"
+          ],
+          "answer": 0,
+          "en": "The flowers in the garden are colourful."
+        },
+        {
+          "q": "学习要一心___意。",
+          "options": [
+            "一",
+            "二",
+            "三",
+            "七"
+          ],
+          "answer": 0,
+          "en": "Studying needs your whole heart."
+        },
+        {
+          "q": "做作业要专心，不要三心___意。",
+          "options": [
+            "二",
+            "一",
+            "四",
+            "五"
+          ],
+          "answer": 0,
+          "en": "Concentrate on your homework; don't be half-hearted."
+        },
+        {
+          "q": "你猜得八九不离___。",
+          "options": [
+            "十",
+            "百",
+            "千",
+            "万"
+          ],
+          "answer": 0,
+          "en": "Your guess is pretty close."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你家有几只猫？"
+          ],
+          [
+            "女",
+            "我家有两只猫。"
+          ]
+        ],
+        "q": "他家有几只猫？",
+        "options": [
+          "两只",
+          "三只",
+          "一只"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "我们一起去河边吧。"
+          ],
+          [
+            "女",
+            "好啊，明天去。"
+          ]
+        ],
+        "q": "他们什么时候去河边？",
+        "options": [
+          "明天",
+          "今天",
+          "昨天"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "这个杯子和那个一样吗？"
+          ],
+          [
+            "女",
+            "不一样，这个大。"
+          ]
+        ],
+        "q": "哪个杯子大？",
+        "options": [
+          "这个",
+          "那个",
+          "一样大"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "这些苹果一共多少钱？"
+          ],
+          [
+            "女",
+            "一共十二块。"
+          ]
+        ],
+        "q": "苹果一共多少钱？",
+        "options": [
+          "十二块",
+          "十块",
+          "二十块"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "河里有一些鱼，河边有一只燕子。",
+        "claim": "河里没有鱼。",
+        "ok": false
+      },
+      {
+        "text": "动物园里有三只老虎，一只松鼠。",
+        "claim": "动物园里有松鼠。",
+        "ok": true
+      },
+      {
+        "text": "他一半时间在家，一半时间在学校。",
+        "claim": "他每天都在学校。",
+        "ok": false
+      },
+      {
+        "text": "今天我走路去学校，朋友也走路去。",
+        "claim": "朋友今天走路去学校。",
+        "ok": true
+      }
+    ],
+    "replies": [
+      {
+        "q": "你看见老虎了吗？",
+        "a": "看见了，它很大。"
+      },
+      {
+        "q": "明天一起去吧？",
+        "a": "好啊，我一定去。"
+      },
+      {
+        "q": "你的手冷吗？",
+        "a": "有一点儿冷。"
+      },
+      {
+        "q": "河边有什么？",
+        "a": "河边有燕子。"
+      }
+    ]
+  },
+  "hanzi": {
+    "strokes": [
+      [
+        "横钩",
+        "买字"
+      ],
+      [
+        "横撇",
+        "又友"
+      ],
+      [
+        "横折",
+        "口日"
+      ],
+      [
+        "横折钩",
+        "习月"
+      ],
+      [
+        "横折提",
+        "课说"
+      ],
+      [
+        "横折弯",
+        "朵"
+      ],
+      [
+        "横折弯钩",
+        "九几"
+      ],
+      [
+        "斜钩",
+        "我戈"
+      ],
+      [
+        "横折斜钩",
+        "飞风"
+      ],
+      [
+        "横折折",
+        "凹"
+      ],
+      [
+        "横折折折",
+        "凸"
+      ],
+      [
+        "横折折撇",
+        "及"
+      ],
+      [
+        "横折折折钩",
+        "奶"
+      ],
+      [
+        "弯钩",
+        "子"
+      ],
+      [
+        "横撇弯钩",
+        "那"
+      ],
+      [
+        "竖钩",
+        "水小"
+      ],
+      [
+        "竖提",
+        "很"
+      ],
+      [
+        "竖弯",
+        "四"
+      ],
+      [
+        "竖弯钩",
+        "儿电"
+      ],
+      [
+        "竖折",
+        "山"
+      ],
+      [
+        "竖折折",
+        "鼎"
+      ],
+      [
+        "竖折撇",
+        "专"
+      ],
+      [
+        "竖折折钩",
+        "马"
+      ],
+      [
+        "撇折",
+        "么"
+      ],
+      [
+        "撇点",
+        "妈"
+      ],
+      [
+        "卧钩",
+        "心"
+      ]
+    ],
+    "rules": [
+      [
+        "Each derivative stroke is named by the basic strokes it passes through, in writing order: 横折钩 = 横 + 折 + 钩",
+        "习月门"
+      ],
+      [
+        "折 (zhé) means a sharp turn; the stroke keeps going in a new direction without lifting the pen",
+        "口日山"
+      ],
+      [
+        "钩 (gōu) is a small hook flicked out at the end of a stroke",
+        "水子心"
+      ],
+      [
+        "提 (tí) at the end of a stroke flicks up to the right",
+        "课很"
+      ]
+    ],
+    "chars": [
+      [
+        "手",
+        "A hand with fingers spread; it is also a radical on the left of many verbs."
+      ],
+      [
+        "牛",
+        "An ox head with two horns, simplified into a few strokes."
+      ],
+      [
+        "来",
+        "In old writing it was a wheat plant; the meaning \"to come\" was borrowed later."
+      ],
+      [
+        "走",
+        "A person swinging their arms with a foot below: walking."
+      ],
+      [
+        "几",
+        "A small low table; today mostly asks \"how many\"."
+      ]
+    ],
+    "radicals": [
+      [
+        "冫",
+        "ice, cold",
+        "冰冷"
+      ],
+      [
+        "禾",
+        "grain",
+        "和秋"
+      ],
+      [
+        "宀",
+        "roof",
+        "家字"
+      ],
+      [
+        "虍",
+        "tiger",
+        "虎虚"
+      ]
+    ]
+  },
+  "pron": [
+    {
+      "t": "一 changes its tone",
+      "en": "一 is yī on its own. Before a 4th tone it is said yí (一共, 一样, 一半, 一定). Before a 1st, 2nd or 3rd tone it is said yì (一起, 一点儿, 一些).",
+      "ex": [
+        "一共",
+        "一样",
+        "一半",
+        "一定",
+        "一起",
+        "一点儿",
+        "一些"
+      ]
+    },
+    {
+      "t": "不 before a 4th tone",
+      "en": "不 is bù, but before another 4th tone it is said bú, as in 不三不四 (bùsān-búsì): the second 不 comes before 四, a 4th tone.",
+      "ex": [
+        "不三不四",
+        "不要",
+        "不是"
+      ]
+    }
+  ]
+}

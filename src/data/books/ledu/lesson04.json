@@ -1,0 +1,616 @@
+{
+  "n": 4,
+  "cn": "第四课",
+  "title": "木上末，木下本",
+  "en": "Treetop above, tree root below",
+  "words": [
+    {
+      "w": "昨天",
+      "py": "zuótiān",
+      "en": "yesterday",
+      "ex": {
+        "hz": "昨天我在家看书。",
+        "py": "Zuótiān wǒ zài jiā kàn shū.",
+        "en": "Yesterday I read at home."
+      }
+    },
+    {
+      "w": "今天",
+      "py": "jīntiān",
+      "en": "today",
+      "ex": {
+        "hz": "今天我们去商店。",
+        "py": "Jīntiān wǒmen qù shāngdiàn.",
+        "en": "Today we are going to the shop."
+      }
+    },
+    {
+      "w": "明天",
+      "py": "míngtiān",
+      "en": "tomorrow",
+      "ex": {
+        "hz": "明天你有时间吗？",
+        "py": "Míngtiān nǐ yǒu shíjiān ma?",
+        "en": "Do you have time tomorrow?"
+      }
+    },
+    {
+      "w": "每天",
+      "py": "měitiān",
+      "en": "every day",
+      "ex": {
+        "hz": "我每天喝一杯茶。",
+        "py": "Wǒ měitiān hē yì bēi chá.",
+        "en": "I drink a cup of tea every day."
+      }
+    },
+    {
+      "w": "天气",
+      "py": "tiānqì",
+      "en": "weather",
+      "ex": {
+        "hz": "今天天气很好。",
+        "py": "Jīntiān tiānqì hěn hǎo.",
+        "en": "The weather is nice today."
+      }
+    },
+    {
+      "w": "上午",
+      "py": "shàngwǔ",
+      "en": "morning",
+      "ex": {
+        "hz": "我上午在学校。",
+        "py": "Wǒ shàngwǔ zài xuéxiào.",
+        "en": "I am at school in the morning."
+      }
+    },
+    {
+      "w": "上课",
+      "py": "shàng kè",
+      "en": "to go to class",
+      "ex": {
+        "hz": "我们八点上课。",
+        "py": "Wǒmen bā diǎn shàng kè.",
+        "en": "We have class at eight."
+      }
+    },
+    {
+      "w": "上班",
+      "py": "shàng bān",
+      "en": "to go to work",
+      "ex": {
+        "hz": "爸爸九点上班。",
+        "py": "Bàba jiǔ diǎn shàng bān.",
+        "en": "Dad starts work at nine."
+      }
+    },
+    {
+      "w": "上网",
+      "py": "shàng wǎng",
+      "en": "to go online",
+      "ex": {
+        "hz": "我在家上网。",
+        "py": "Wǒ zài jiā shàng wǎng.",
+        "en": "I go online at home."
+      }
+    },
+    {
+      "w": "下午",
+      "py": "xiàwǔ",
+      "en": "afternoon",
+      "ex": {
+        "hz": "下午我想睡觉。",
+        "py": "Xiàwǔ wǒ xiǎng shuìjiào.",
+        "en": "I want to sleep in the afternoon."
+      }
+    },
+    {
+      "w": "下课",
+      "py": "xià kè",
+      "en": "to finish class",
+      "ex": {
+        "hz": "十点下课。",
+        "py": "Shí diǎn xià kè.",
+        "en": "Class ends at ten."
+      }
+    },
+    {
+      "w": "下班",
+      "py": "xià bān",
+      "en": "to finish work",
+      "ex": {
+        "hz": "妈妈五点下班。",
+        "py": "Māma wǔ diǎn xià bān.",
+        "en": "Mum finishes work at five."
+      }
+    },
+    {
+      "w": "中午",
+      "py": "zhōngwǔ",
+      "en": "noon",
+      "ex": {
+        "hz": "中午我们一起吃饭。",
+        "py": "Zhōngwǔ wǒmen yìqǐ chī fàn.",
+        "en": "At noon we eat together."
+      }
+    },
+    {
+      "w": "中国",
+      "py": "Zhōngguó",
+      "en": "China",
+      "ex": {
+        "hz": "他是中国人。",
+        "py": "Tā shì Zhōngguó rén.",
+        "en": "He is Chinese."
+      }
+    },
+    {
+      "w": "中文",
+      "py": "Zhōngwén",
+      "en": "Chinese language",
+      "ex": {
+        "hz": "我在学中文。",
+        "py": "Wǒ zài xué Zhōngwén.",
+        "en": "I am learning Chinese."
+      }
+    },
+    {
+      "w": "周末",
+      "py": "zhōumò",
+      "en": "weekend",
+      "ex": {
+        "hz": "周末你想做什么？",
+        "py": "Zhōumò nǐ xiǎng zuò shénme?",
+        "en": "What do you want to do at the weekend?"
+      }
+    },
+    {
+      "w": "期末",
+      "py": "qīmò",
+      "en": "end of semester",
+      "ex": {
+        "hz": "期末我们要考试。",
+        "py": "Qīmò wǒmen yào kǎoshì.",
+        "en": "At the end of the semester we have exams."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "我的一天",
+      "py": "Wǒ de yì tiān",
+      "en": "My day",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你每天几点上班？",
+          "py": "Nǐ měitiān jǐ diǎn shàng bān?",
+          "en": "What time do you start work every day?"
+        },
+        {
+          "who": "B",
+          "hz": "我九点上班，五点下班。",
+          "py": "Wǒ jiǔ diǎn shàng bān, wǔ diǎn xià bān.",
+          "en": "I start at nine and finish at five."
+        },
+        {
+          "who": "A",
+          "hz": "中午你在哪儿吃饭？",
+          "py": "Zhōngwǔ nǐ zài nǎr chī fàn?",
+          "en": "Where do you eat at noon?"
+        },
+        {
+          "who": "B",
+          "hz": "我在公司吃饭。",
+          "py": "Wǒ zài gōngsī chī fàn.",
+          "en": "I eat at the office."
+        }
+      ],
+      "questions": [
+        {
+          "q": "When does B finish work?",
+          "options": [
+            "At five",
+            "At nine",
+            "At noon",
+            "At three"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Where does B eat at noon?",
+          "options": [
+            "At the office",
+            "At home",
+            "At school",
+            "In a shop"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "周末",
+      "py": "Zhōumò",
+      "en": "The weekend",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "明天是周末，天气很好。",
+          "py": "Míngtiān shì zhōumò, tiānqì hěn hǎo.",
+          "en": "Tomorrow is the weekend and the weather is good."
+        },
+        {
+          "who": "B",
+          "hz": "你想做什么？",
+          "py": "Nǐ xiǎng zuò shénme?",
+          "en": "What do you want to do?"
+        },
+        {
+          "who": "A",
+          "hz": "上午我上网，下午去朋友家。",
+          "py": "Shàngwǔ wǒ shàng wǎng, xiàwǔ qù péngyou jiā.",
+          "en": "In the morning I go online; in the afternoon I visit a friend."
+        },
+        {
+          "who": "B",
+          "hz": "好，我上午也在家。",
+          "py": "Hǎo, wǒ shàngwǔ yě zài jiā.",
+          "en": "Good, I will be at home in the morning too."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What is the weather like tomorrow?",
+          "options": [
+            "Good",
+            "Bad",
+            "Cold",
+            "Rainy"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What does A do in the afternoon?",
+          "options": [
+            "Visits a friend",
+            "Goes online",
+            "Goes to class",
+            "Goes to work"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "指事字",
+      "en": "Indicative characters: a mark added to a picture shows an idea that is hard to draw",
+      "drills": [
+        {
+          "q": "在“木”的下边加一横，就是“___”。",
+          "options": [
+            "本",
+            "末",
+            "天",
+            "太"
+          ],
+          "answer": 0,
+          "en": "Adding a stroke below 木 gives 本, the root of a tree."
+        },
+        {
+          "q": "在“木”的上边加一长横，就是“___”。",
+          "options": [
+            "末",
+            "本",
+            "中",
+            "片"
+          ],
+          "answer": 0,
+          "en": "Adding a long stroke above 木 gives 末, the treetop."
+        },
+        {
+          "q": "在“大”的下边加一点，就是“___”。",
+          "options": [
+            "太",
+            "天",
+            "本",
+            "末"
+          ],
+          "answer": 0,
+          "en": "Adding a dot under 大 gives 太."
+        },
+        {
+          "q": "在“大”的上边加一横，就是“___”。",
+          "options": [
+            "天",
+            "太",
+            "中",
+            "片"
+          ],
+          "answer": 0,
+          "en": "Adding a stroke above 大 gives 天, the sky above a person's head."
+        }
+      ]
+    },
+    {
+      "point": "天 words",
+      "en": "昨天 yesterday, 今天 today, 明天 tomorrow, 每天 every day",
+      "drills": [
+        {
+          "q": "我___去了商店，今天不去了。",
+          "options": [
+            "昨天",
+            "明天",
+            "每天",
+            "天气"
+          ],
+          "answer": 0,
+          "en": "I went to the shop yesterday; I am not going today."
+        },
+        {
+          "q": "我___喝一杯牛奶，一天一杯。",
+          "options": [
+            "每天",
+            "昨天",
+            "明天",
+            "天气"
+          ],
+          "answer": 0,
+          "en": "I drink a glass of milk every day, one a day."
+        },
+        {
+          "q": "___我们要去北京旅游。",
+          "options": [
+            "明天",
+            "昨天",
+            "下班",
+            "上课"
+          ],
+          "answer": 0,
+          "en": "Tomorrow we are going to Beijing."
+        },
+        {
+          "q": "今天的___很好，不冷也不热。",
+          "options": [
+            "天气",
+            "昨天",
+            "周末",
+            "中文"
+          ],
+          "answer": 0,
+          "en": "Today's weather is nice, neither cold nor hot."
+        }
+      ]
+    },
+    {
+      "point": "上 and 下",
+      "en": "上课 starts class, 下课 ends it; 上班 starts work, 下班 ends it",
+      "drills": [
+        {
+          "q": "八点___，我们开始学习。",
+          "options": [
+            "上课",
+            "下课",
+            "下班",
+            "下午"
+          ],
+          "answer": 0,
+          "en": "Class starts at eight and we begin to study."
+        },
+        {
+          "q": "十二点___，我们去吃饭。",
+          "options": [
+            "下课",
+            "上课",
+            "上班",
+            "上网"
+          ],
+          "answer": 0,
+          "en": "Class ends at twelve and we go to eat."
+        },
+        {
+          "q": "爸爸五点___，然后回家。",
+          "options": [
+            "下班",
+            "上班",
+            "上午",
+            "中午"
+          ],
+          "answer": 0,
+          "en": "Dad finishes work at five, then goes home."
+        },
+        {
+          "q": "我___在家看电影，下午去商店。",
+          "options": [
+            "上午",
+            "下午",
+            "周末",
+            "期末"
+          ],
+          "answer": 0,
+          "en": "In the morning I watch a film at home; in the afternoon I go to the shop."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "今天天气怎么样？"
+          ],
+          [
+            "女",
+            "很好，不冷也不热。"
+          ]
+        ],
+        "q": "今天天气怎么样？",
+        "options": [
+          "很好",
+          "很冷",
+          "很热"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你几点下课？"
+          ],
+          [
+            "女",
+            "十二点，然后我去吃饭。"
+          ]
+        ],
+        "q": "他十二点做什么？",
+        "options": [
+          "去吃饭",
+          "去上课",
+          "去上班"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "周末你做什么？"
+          ],
+          [
+            "女",
+            "上午上网，下午看电影。"
+          ]
+        ],
+        "q": "他下午做什么？",
+        "options": [
+          "看电影",
+          "上网",
+          "上班"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你明天上班吗？"
+          ],
+          [
+            "女",
+            "不上班，明天是周末。"
+          ]
+        ],
+        "q": "明天是什么日子？",
+        "options": [
+          "周末",
+          "期末",
+          "昨天"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "我八点上课，十二点下课。",
+        "claim": "他中午下课。",
+        "ok": true
+      },
+      {
+        "text": "今天是星期六，我不上班，在家上网。",
+        "claim": "他今天去公司。",
+        "ok": false
+      },
+      {
+        "text": "昨天是周末，今天是星期一。",
+        "claim": "明天是星期二。",
+        "ok": true
+      },
+      {
+        "text": "期末我们有很多考试，我很忙。",
+        "claim": "他期末不忙。",
+        "ok": false
+      }
+    ],
+    "replies": [
+      {
+        "q": "你每天几点上班？",
+        "a": "我九点上班。"
+      },
+      {
+        "q": "今天天气怎么样？",
+        "a": "天气很好。"
+      },
+      {
+        "q": "你周末做什么？",
+        "a": "我在家休息。"
+      },
+      {
+        "q": "你中午吃什么？",
+        "a": "我吃面条。"
+      }
+    ]
+  },
+  "hanzi": {
+    "rules": [
+      [
+        "When a horizontal and a vertical cross, the horizontal goes first: 木 begins with 一",
+        "本末木"
+      ],
+      [
+        "Dots under or beside a character come last: the dot of 太 and 下",
+        "太下"
+      ],
+      [
+        "Top before bottom: 上 begins at the top, and the short stroke in 本 is added at the bottom",
+        "上本末"
+      ],
+      [
+        "The box 口 is written before the line that runs through it",
+        "中"
+      ]
+    ],
+    "chars": [
+      [
+        "天",
+        "A person stretching out arms and legs; the line above the head is the sky."
+      ],
+      [
+        "中",
+        "A flag pole in the middle of a field: the centre."
+      ],
+      [
+        "上",
+        "A mark above a line shows something higher up."
+      ],
+      [
+        "下",
+        "A mark below a line shows something lower down."
+      ],
+      [
+        "片",
+        "Half of a tree trunk split lengthwise: a slice."
+      ]
+    ],
+    "structure": [
+      "指事字 Indicative characters",
+      "A mark is added to a picture, or a plain symbol is used, to show an idea that is too abstract to draw. Only a few characters are formed this way.",
+      "本末太天上下"
+    ],
+    "radicals": [
+      [
+        "木",
+        "tree, wood",
+        "本末"
+      ]
+    ]
+  }
+}
