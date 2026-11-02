@@ -30,6 +30,7 @@ await put(`owners/${owner}`, { owner: { booleanValue: true } });
 
 const clean = (t) => t.replace(/[AB]: /g, "").trim();
 const name = (t) => crypto.createHash("sha1").update(t, "utf8").digest("hex").slice(0, 12);
+const MAX_AUDIO_BYTES = 1_030_000;
 let docs = 0, kb = 0, missing = 0;
 for (const f of fs.readdirSync(PRIVATE).filter((f) => f.endsWith(".json"))) {
   const book = JSON.parse(fs.readFileSync(new URL(f, PRIVATE), "utf8"));
@@ -40,10 +41,14 @@ for (const f of fs.readdirSync(PRIVATE).filter((f) => f.endsWith(".json"))) {
     });
     const said = [...(lesson.texts || []).flatMap((t) => t.lines.map((l) => l[1])), ...(lesson.notes || []).flatMap((x) => x.examples || [])].map(clean);
     const a = {};
+    let size = 0;
     for (const t of new Set(said)) {
       const file = new URL(`audio/${name(t)}.mp3`, PRIVATE);
       if (!fs.existsSync(file)) { missing++; continue; }
       const bytes = fs.readFileSync(file);
+      // A Firestore document holds 1 MiB. Lines past that have no recording, so the app uses the device's voice.
+      if (size + bytes.length > MAX_AUDIO_BYTES) { console.warn(`${book.book} ${n}: no room for the recording of "${t}"`); continue; }
+      size += bytes.length;
       kb += bytes.length / 1024;
       a[name(t)] = { bytesValue: bytes.toString("base64") };
     }
