@@ -51,44 +51,58 @@ function showVoiceNote() {
 }
 
 // Resolves when the sound has finished (or failed), so callers can play lines one after another.
+// It always settles: a stalled file or a speech engine that never reports the end (iOS) gives up
+// after a safety time, and stopping or starting another sound settles it with false.
+let settleCurrent = null;
+function playing(run, text, slow) {
+  settleCurrent?.(false);
+  return new Promise((resolve) => {
+    let timer;
+    const settle = (v) => { if (settleCurrent !== settle) return; settleCurrent = null; clearTimeout(timer); resolve(v); };
+    settleCurrent = settle;
+    const secs = 2.5 + text.length * 0.35;
+    timer = setTimeout(() => settle(false), secs * (slow ? 2 : 1) * 1000);
+    run(settle);
+  });
+}
+
 export function say(text, slow) {
   const t = clean(text);
   stopSpeech();
   const token = ++playToken;
   const file = AUDIO[t];
   if (file || EXTRA[t]) {
-    return new Promise((resolve) => {
+    return playing((settle) => {
+      const fallback = () => { if (token === playToken) tts(t, slow, settle); else settle(false); };
       player.muted = false; // the unlock trick may still be muting the player on the very first tap
       player.src = file ? `${import.meta.env.BASE_URL}audio/${file}.mp3` : EXTRA[t];
       // Players ask for audio in pieces, which the offline cache can't keep; one whole download keeps it.
       if (file) fetch(player.src).catch(() => {});
       player.playbackRate = slow ? setting("slowRate") : 1;
       player.preservesPitch = true;
-      player.onended = () => resolve(true);
-      player.onerror = () => { if (token === playToken) tts(t, slow).then(resolve); else resolve(false); };
-      player.play().catch(() => { if (token === playToken) tts(t, slow).then(resolve); else resolve(false); });
-    });
+      player.onended = () => settle(true);
+      player.onerror = fallback;
+      player.play().catch(fallback);
+    }, t, slow);
   }
-  return tts(t, slow);
+  return playing((settle) => tts(t, slow, settle), t, slow);
 }
 
-function tts(text, slow) {
-  return new Promise((resolve) => {
-    try {
-      speechSynthesis.cancel();
-      const u = new SpeechSynthesisUtterance(text);
-      u.lang = "zh-CN";
-      u.rate = slow ? 0.5 : 0.85;
-      if (zhVoice) u.voice = zhVoice;
-      u.onend = () => resolve(true);
-      u.onerror = () => resolve(false);
-      speechSynthesis.speak(u);
-      if (!zhVoice) setTimeout(() => { pickVoice(); if (!zhVoice) { showVoiceNote(); resolve(false); } }, 800);
-    } catch {
-      showVoiceNote();
-      resolve(false);
-    }
-  });
+function tts(text, slow, settle) {
+  try {
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = "zh-CN";
+    u.rate = slow ? 0.5 : 0.85;
+    if (zhVoice) u.voice = zhVoice;
+    u.onend = () => settle(true);
+    u.onerror = () => settle(false);
+    speechSynthesis.speak(u);
+    if (!zhVoice) setTimeout(() => { pickVoice(); if (!zhVoice) { showVoiceNote(); settle(false); } }, 800);
+  } catch {
+    showVoiceNote();
+    settle(false);
+  }
 }
 
 // Sound that plays by itself (not from a tap): respects the "auto-play" setting.
@@ -96,6 +110,7 @@ export const autoSay = (text, slow) => (setting("autoplay") ? say(text, slow) : 
 
 export function stopSpeech() {
   playToken++;
+  settleCurrent?.(false);
   try { player.pause(); } catch {}
   try { speechSynthesis.cancel(); } catch {}
 }
