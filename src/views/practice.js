@@ -181,7 +181,7 @@ function startMode(mode) {
     case "match": return matchGame(words);
     case "word-quiz": return words.length < 2 ? notEnough() : vocabQuiz({ items: ten(words), pool: words, mode: "mixed", title: "Word quiz" });
     case "list": return wordList(words);
-    case "texts": return withBook((b) => textList(ui, [...b.texts, ...readings], bookNote(b)));
+    case "texts": return bookTexts(readings);
     case "grammar": return grammarNotes();
     case "gr-fill": return grammarQuiz({ items: shuffle(grammarOf(thisLesson() ? [thisLesson()] : [])), title: "Grammar · fill the blank" });
     case "text-quiz": return textQuiz(ui, readings);
@@ -207,6 +207,22 @@ function withBook(show) {
   const host = body();
   host.innerHTML = `<div class="panel"><p class="muted">Loading the book…</p></div>`;
   lessonContent(book, lesson).then((b) => { if (body() === host) show(b); }, () => show(empty));
+}
+// The app's own practice texts show at once; the book's texts join the list when they arrive.
+function bookTexts(readings) {
+  const { book, lesson } = P.ctx;
+  const slot = (inner) => `<div data-texts-note>${inner}</div>`;
+  if (!book || !lesson) return textList(ui, readings);
+  const show = (note, list) => {
+    textList(ui, list, slot(note));
+    $("#txRetry")?.addEventListener("click", () => bookTexts(readings));
+  };
+  show(`<p class="muted">Loading the book's texts…</p>`, readings);
+  lessonContent(book, lesson).then((b) => {
+    if (!$("[data-texts-note]", body())) return; // already left this screen
+    const retry = b.status === "error" ? `<p class="note">Couldn't load the book's texts. Check your internet or VPN. <button class="btn ghost" type="button" id="txRetry">Try again</button></p>` : bookNote(b);
+    show(retry, [...b.texts, ...readings]);
+  });
 }
 const bookNote = (b) =>
   b.status === "signed-out" ? `<p class="note">Sign in (Sync, on the home screen) to see this lesson's texts and grammar from the book.</p>`
