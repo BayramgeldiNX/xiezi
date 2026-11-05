@@ -4,6 +4,7 @@
 // book Review can chain several of them into one mixed session.
 import { $, $$, esc, shuffle, directionPicker, revealNext } from "../lib/util.js";
 import { tonePy } from "../lib/pinyin.js";
+import { pyToggleHtml, wirePinyin } from "../lib/qpinyin.js";
 import { matchesWord } from "../lib/search.js";
 import { say, autoSay, sayBtns, stopSpeech } from "../lib/speech.js";
 import { icon } from "../lib/icons.js";
@@ -288,7 +289,7 @@ export function choiceQuiz(cfg) {
     const q = cfg.ask(w);
     const opts = shuffle(cfg.makeOptions(w));
     body().innerHTML = `<div class="panel">
-      <span class="lbl">${cfg.title}</span>
+      <div class="head-row"><span class="lbl">${cfg.title}</span>${cfg.noPinyin ? "" : pyToggleHtml()}</div>
       <div class="progress">Question ${pos + 1} of ${items.length} · ${right} right</div>
       <div class="bar"><i style="width:${(pos / items.length) * 100}%"></i></div>
       ${q.html}
@@ -301,6 +302,7 @@ export function choiceQuiz(cfg) {
       <div class="controls"><button class="btn primary" type="button" id="qNext" hidden>${pos + 1 >= items.length ? (cfg.then ? "Continue" : "See results") : "Next"}</button><button class="btn ghost" type="button" id="qSkip">不知道 · Don't know</button>${backBtn(cfg.then ? "Stop" : "Back")}</div>
     </div>`;
     wire(body());
+    if (!cfg.noPinyin) wirePinyin(body().firstElementChild);
     const answer = (b) => {
       const ok = b ? opts[+b.dataset.i].correct : false;
       $("#qSkip").hidden = true;
@@ -405,12 +407,12 @@ export function speak({ title, items, then }) {
     if (pos >= items.length) return end();
     const it = items[pos];
     body().innerHTML = `<div class="panel">
-      <span class="lbl">说 · ${title}</span>
+      <div class="head-row"><span class="lbl">说 · ${title}</span>${pyToggleHtml()}</div>
       <div class="progress">${pos + 1} of ${items.length} · ${right} correct</div>
       <div class="bar"><i style="width:${(pos / items.length) * 100}%"></i></div>
       <div class="speak-card">
         <div class="${it.sentence ? "prompt-big" : "big-hz"}" style="font-family:var(--display)">${it.text}</div>
-        <div class="py">${tonePy(it.py)}</div>
+        <div class="py q-py">${tonePy(it.py)}</div>
         <div class="muted">${esc(it.en)}</div>
         <div class="controls" style="justify-content:center">${sayBtns(it.text, it.py)}</div>
         <button class="mic" type="button" id="micBtn" aria-label="Speak">${icon("mic")}</button>
@@ -422,6 +424,7 @@ export function speak({ title, items, then }) {
         <button class="btn ghost" type="button" id="sSkip">Skip</button>${backBtn(then ? "Stop" : "Back")}</div>
     </div>`;
     wireBack(body());
+    wirePinyin(body().firstElementChild, { annotateText: false });
     $("#micBtn").addEventListener("click", () => (useRecorder ? recordToggle(it) : listen(it)));
     $("#sNext").addEventListener("click", () => { pos++; show(); });
     $("#sSkip").addEventListener("click", () => { pos++; show(); });

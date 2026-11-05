@@ -4,6 +4,7 @@ import { $, $$, esc, shuffle, store, revealNext } from "../lib/util.js";
 import { tonePy, toneVariants } from "../lib/pinyin.js";
 import { say, sayBtns, stopSpeech } from "../lib/speech.js";
 import { icon } from "../lib/icons.js";
+import { pyToggleHtml, wirePinyin, pyOf } from "../lib/qpinyin.js";
 import { makeSegmenter } from "../lib/segment.js";
 import { DICT } from "../data/index.js";
 import * as progress from "../progress/store.js";
@@ -175,7 +176,7 @@ export function orderGame(ui, sentences, opts = {}) {
     const picked = [];
     let tries = 0;
     ui.body().innerHTML = `<div class="panel">
-      <span class="lbl">组句 · Build the sentence</span>
+      <div class="head-row"><span class="lbl">组句 · Build the sentence</span>${pyToggleHtml()}</div>
       <div class="progress">${pos + 1} of ${items.length} · ${right} right</div>
       <div class="bar"><i style="width:${(pos / items.length) * 100}%"></i></div>
       <p class="prompt-big" style="font-size:1.2rem">${esc(s.en)}</p>
@@ -187,9 +188,10 @@ export function orderGame(ui, sentences, opts = {}) {
       <div class="controls"><button class="btn primary" type="button" id="oNext" hidden>${pos + 1 >= items.length ? (opts.then ? "Continue" : "See results") : "Next"}</button>${ui.backBtn(opts.then ? "Stop" : "Back")}</div>
     </div>`;
     ui.wireBack(ui.body());
+    wirePinyin(ui.body().firstElementChild, { annotateText: false });
     const draw = () => {
-      $("#oAnswer").innerHTML = picked.map((p, k) => `<button type="button" class="chip on" data-k="${k}">${p.t}</button>`).join("") || `<span class="muted">Tap the words below in the right order</span>`;
-      $("#oPool").innerHTML = pool.map((p, k) => `<button type="button" class="chip" data-p="${k}">${p.t}</button>`).join("");
+      $("#oAnswer").innerHTML = picked.map((p, k) => `<button type="button" class="chip on" data-k="${k}">${p.t}<span class="c-py">${pyOf(p.t)}</span></button>`).join("") || `<span class="muted">Tap the words below in the right order</span>`;
+      $("#oPool").innerHTML = pool.map((p, k) => `<button type="button" class="chip" data-p="${k}">${p.t}<span class="c-py">${pyOf(p.t)}</span></button>`).join("");
       $$("[data-k]", ui.body()).forEach((b) => b.addEventListener("click", () => { pool.push(picked.splice(+b.dataset.k, 1)[0]); draw(); }));
       $$("[data-p]", ui.body()).forEach((b) => b.addEventListener("click", () => {
         picked.push(pool.splice(+b.dataset.p, 1)[0]);
@@ -239,7 +241,7 @@ export function orderGame(ui, sentences, opts = {}) {
 // Wrong choices: the same syllables with a different tone, plus another word's pinyin.
 export function pinyinQuiz(ui, words) {
   ui.choiceQuiz({
-    kind: "read-pinyin", title: "How do you read it?", words, key: "rp:",
+    kind: "read-pinyin", title: "How do you read it?", words, key: "rp:", noPinyin: true,
     ask: (w) => ({ html: `<div class="big-hz">${w.w}</div><p class="hint">Which pinyin is right?</p>` }),
     makeOptions: (w) => {
       const correct = w.py.replace(/\s/g, "");
