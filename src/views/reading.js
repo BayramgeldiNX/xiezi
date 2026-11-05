@@ -228,9 +228,10 @@ export function orderGame(ui, sentences, opts = {}) {
       <span class="lbl">Results · Build the sentence</span>
       <div class="score">${right} / ${items.length} first try</div>
       ${missed.length ? `<p>Practice these again:</p><div class="result-list">${missed.map((t) => `<span>${t}</span>`).join("")}</div>` : `<p>全对！Quán duì!</p>`}
-      <div class="controls"><button class="btn primary big" type="button" id="oAgain">${icon("replay")} Again</button>${missedItems.length ? `<button class="btn big" type="button" id="oRetry">Retry missed</button>` : ""}${ui.backBtn()}</div>
+      <div class="controls">${ui.nextHtml()}<button class="btn big" type="button" id="oAgain">${icon("replay")} Again</button>${missedItems.length ? `<button class="btn big" type="button" id="oRetry">Retry missed</button>` : ""}${ui.backBtn()}</div>
     </div>`;
     ui.wireBack(ui.body());
+    ui.wireNext(ui.body());
     $("#oAgain").addEventListener("click", () => orderGame(ui, sentences));
     $("#oRetry")?.addEventListener("click", () => orderGame(ui, missedItems, { all: true }));
   }

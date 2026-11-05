@@ -157,7 +157,23 @@ export { lessonSentences };
 
 const thisLesson = () => LESSONS.find((l) => l.book === P.ctx.book && l.n === P.ctx.lesson);
 
+// "What's next": the next exercise of this tab, or the next tab, so a finished exercise leads somewhere.
+// Only inside a lesson (not in the book Review, which chains its own exercises).
+export function nextStep() {
+  if (!P.ctx.book || !P.ctx.lesson || !P.mode || !String(P.host).startsWith("#tab-")) return null;
+  const modes = SKILLS[P.skill].modes.filter((m) => modeAvailable(m.id, thisLesson()));
+  const next = modes[modes.findIndex((m) => m.id === P.mode) + 1];
+  if (next) return { label: next.name, go: () => startMode(next.id) };
+  const tabs = $$("[data-tab]").map((b) => b.dataset.tab);
+  const nt = tabs[tabs.indexOf(P.skill) + 1];
+  const btn = nt && $('[data-tab="' + nt + '"]');
+  return btn ? { label: btn.textContent.trim().replace(/\s+/g, " "), go: () => btn.click() } : null;
+}
+export const nextHtml = (id = "resNext") => { const n = nextStep(); return n ? '<button class="btn primary big" type="button" id="' + id + '">Next: ' + esc(n.label) + "</button>" : ""; };
+export const wireNext = (root, id = "resNext") => { const n = nextStep(); $("#" + id, root)?.addEventListener("click", () => n?.go()); };
+
 function startMode(mode) {
+  P.mode = mode;
   const { words, readings = [] } = P.ctx;
   const host = P.host, back = goBack, lesson = P.ctx.lesson;
   const ten = (list) => shuffle(list).slice(0, 10);
@@ -178,7 +194,7 @@ function startMode(mode) {
     case "tones": return tonesIntro({ host, words, label: "Characters from this lesson", lesson, back });
     case "say-word": return speak({ title: "Say the word", items: ten(words).map((w) => ({ w, text: w.w, py: w.py, en: w.en })) });
     case "say-sentence": return speak({ title: "Say the sentence", items: ten(sentenceItems(words)).map((w) => ({ w, text: w.ex.hz.replace(/[AB]: /g, ""), py: w.ex.py.replace(/[AB]: /g, ""), en: w.ex.en, sentence: true })) });
-    case "cards": return cardsOpen({ host, words, lesson, back });
+    case "cards": return cardsOpen({ host, words, lesson, back, next: nextStep });
     case "match": return matchGame(words);
     case "word-quiz": return words.length < 2 ? notEnough() : vocabQuiz({ items: ten(words), pool: words, mode: "mixed", title: "Word quiz" });
     case "list": return wordList(words);
@@ -270,7 +286,7 @@ export function grammarQuiz(cfg) {
 }
 
 // What the reading screens need from this module.
-export const ui = { body: () => body(), backBtn: (l) => backBtn(l), wireBack: (el) => wireBack(el), choiceQuiz: (cfg) => choiceQuiz(cfg) };
+export const ui = { nextHtml, wireNext, body: () => body(), backBtn: (l) => backBtn(l), wireBack: (el) => wireBack(el), choiceQuiz: (cfg) => choiceQuiz(cfg) };
 export const setHost = (host, ctx) => { P = { ...P, host, ctx: { ...P.ctx, ...ctx } }; };
 
 /* ---------- Multiple choice ---------- */
@@ -344,9 +360,10 @@ export function showResults(title, right, total, missed, again, perfect = "全�
     <span class="lbl">Results · ${esc(title)}</span>
     <div class="score">${right} / ${total}</div>
     ${missed.length ? `<p>Practice these again:</p><div class="result-list">${missed.map((w) => `<span>${esc(w)}</span>`).join("")}</div>` : `<p>${perfect}</p>`}
-    <div class="controls">${again ? `<button class="btn primary big" type="button" id="resAgain">${icon("replay")} Again</button>` : ""}${retry ? `<button class="btn big" type="button" id="resRetry">Retry missed</button>` : ""}${backBtn()}</div>
+    <div class="controls">${nextHtml()}${again ? `<button class="btn big" type="button" id="resAgain">${icon("replay")} Again</button>` : ""}${retry ? `<button class="btn big" type="button" id="resRetry">Retry missed</button>` : ""}${backBtn()}</div>
   </div>`;
   wireBack(body());
+  wireNext(body());
   $("#resAgain")?.addEventListener("click", again);
   $("#resRetry")?.addEventListener("click", retry);
 }

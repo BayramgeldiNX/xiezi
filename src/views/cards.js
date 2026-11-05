@@ -28,14 +28,16 @@ function cardsRender() {
   if (!deck.queue.length && deck.waiting.length) { deck.queue = deck.waiting.splice(0, ROUND); deck.round++; }
   const total = deck.seen.size || words.length;
   if (!deck.queue.length) {
+    const nxt = deck.opts.next?.();
     progress.addSession({ type: "cards", lesson: deck.opts.lesson ?? app.L().n, score: total - deck.again.size, total, missed: [...deck.again] });
     host.innerHTML = `<div class="panel" style="justify-items:center;text-align:center">
       <div class="score">全部完成！</div>
       <div class="py">${tonePy("Quánbù wánchéng!")}</div>
       <p>${total < words.length ? `${total} of ${words.length} cards done.` : `All ${total} cards done.`} ${deck.again.size ? `${total - deck.again.size} right the first time.` : "Every card right the first time!"}</p>
-      <div class="controls"><button class="btn primary big" type="button" id="fcAgain">${icon("replay")} Shuffle again</button>
+      <div class="controls">${nxt ? `<button class="btn primary big" type="button" id="fcNext">Next: ${nxt.label}</button>` : ""}<button class="btn big" type="button" id="fcAgain">${icon("replay")} Shuffle again</button>
       ${deck.again.size ? `<button class="btn big" type="button" id="fcRetry">Retry missed</button>` : ""}
       ${deck.opts.back ? `<button class="btn big" type="button" id="fcBack">Back</button>` : ""}</div></div>`;
+    $("#fcNext")?.addEventListener("click", () => nxt.go());
     $("#fcAgain").addEventListener("click", () => cardsStart(deck.dir, deck.opts));
     $("#fcRetry")?.addEventListener("click", () => cardsStart(deck.dir, { ...deck.opts, words: words.filter((w) => deck.again.has(w.w)) }));
     $("#fcBack")?.addEventListener("click", deck.opts.back);
