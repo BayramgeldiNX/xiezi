@@ -2,7 +2,7 @@
 // openPractice(host, skill, ctx) shows a skill's exercises for ctx.words inside `host`.
 // Every exercise can also run on its own with fixed items and a `then` callback, so the
 // book Review can chain several of them into one mixed session.
-import { $, $$, esc, shuffle, directionPicker } from "../lib/util.js";
+import { $, $$, esc, shuffle, directionPicker, revealNext } from "../lib/util.js";
 import { tonePy } from "../lib/pinyin.js";
 import { matchesWord } from "../lib/search.js";
 import { say, autoSay, sayBtns, stopSpeech } from "../lib/speech.js";
@@ -278,14 +278,16 @@ export function choiceQuiz(cfg) {
       ${q.html}
       ${q.say ? `<div class="controls"><button class="btn primary big" type="button" data-say="${esc(q.say)}" id="qListen">${icon("speaker")} Listen</button>
         <button class="btn big" type="button" data-say="${esc(q.say)}" data-slow>${icon("slow")} Slow</button></div>` : ""}
+      ${q.peek ? `<details class="peek"><summary>Show the text</summary>${q.peek}</details>` : ""}
       <div class="choices">${opts.map((o, i) => `<button class="choice" type="button" data-i="${i}">${o.html}</button>`).join("")}</div>
       <div class="status" id="qStatus" aria-live="polite"></div>
       <div class="answer" id="qAnswer" hidden></div>
-      <div class="controls"><button class="btn primary" type="button" id="qNext" hidden>${pos + 1 >= items.length ? (cfg.then ? "Continue" : "See results") : "Next"}</button>${backBtn(cfg.then ? "Stop" : "Back")}</div>
+      <div class="controls"><button class="btn primary" type="button" id="qNext" hidden>${pos + 1 >= items.length ? (cfg.then ? "Continue" : "See results") : "Next"}</button><button class="btn ghost" type="button" id="qSkip">不知道 · Don't know</button>${backBtn(cfg.then ? "Stop" : "Back")}</div>
     </div>`;
     wire(body());
-    $$(".choice", body()).forEach((b) => b.addEventListener("click", () => {
-      const ok = opts[+b.dataset.i].correct;
+    const answer = (b) => {
+      const ok = b ? opts[+b.dataset.i].correct : false;
+      $("#qSkip").hidden = true;
       $$(".choice", body()).forEach((c) => {
         c.disabled = true;
         if (opts[+c.dataset.i].correct) c.classList.add("right");
@@ -295,14 +297,15 @@ export function choiceQuiz(cfg) {
       if (ok) right++; else { missed.push(cfg.label ? cfg.label(w) : w.w); missedItems.push(w); }
       const st = $("#qStatus");
       st.style.color = ok ? "" : "var(--cinnabar)";
-      st.textContent = ok ? "对了！Correct!" : "Not quite.";
+      st.textContent = ok ? "对了！Correct!" : b ? "Not quite." : "No problem. Here is the answer.";
       $("#qAnswer").innerHTML = cfg.reveal(w);
       $("#qAnswer").hidden = false;
-      $("#qNext").hidden = false;
-      $("#qNext").focus({ preventScroll: true });
+      revealNext($("#qNext"));
       const after = cfg.sayAfter ? cfg.sayAfter(w) : w.w;
       if (!q.say && !cfg.silent && after) autoSay(after);
-    }));
+    };
+    $$(".choice", body()).forEach((b) => b.addEventListener("click", () => answer(b)));
+    $("#qSkip").addEventListener("click", () => answer(null));
     $("#qNext").addEventListener("click", () => { pos++; ask(); });
     if (q.say) setTimeout(() => autoSay(q.say), 250);
   }
@@ -412,7 +415,7 @@ export function speak({ title, items, then }) {
     if (ok) right++; else { missed.push(it.text); missedItems.push(it); }
     $("#heard").innerHTML = msg;
     $("#judge").innerHTML = "";
-    $("#sNext").hidden = false;
+    revealNext($("#sNext"));
     $("#sSkip").hidden = true;
   }
   function listen(it) {

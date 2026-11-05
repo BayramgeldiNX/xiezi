@@ -39,3 +39,11 @@ export const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ESC[c]);
 
 export const NUM = ["", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十",
   "十一", "十二", "十三", "十四", "十五", "十六", "十七", "十八", "十九", "二十"];
+
+// Show a hidden Next button and bring it into view (on phones it is often below the fold).
+export function revealNext(btn) {
+  if (!btn) return;
+  btn.hidden = false;
+  btn.focus({ preventScroll: true });
+  btn.scrollIntoView?.({ block: "nearest", behavior: "smooth" });
+}

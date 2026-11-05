@@ -1,6 +1,6 @@
 // 读 Reading: read texts (tap any word for its meaning), answer questions, build sentences,
 // and say how a word is read. `ui` comes from practice.js: { body, backBtn, wireBack, choiceQuiz }.
-import { $, $$, esc, shuffle, store } from "../lib/util.js";
+import { $, $$, esc, shuffle, store, revealNext } from "../lib/util.js";
 import { tonePy, toneVariants } from "../lib/pinyin.js";
 import { say, sayBtns, stopSpeech } from "../lib/speech.js";
 import { icon } from "../lib/icons.js";
@@ -209,7 +209,7 @@ export function orderGame(ui, sentences, opts = {}) {
         $("#oReveal").hidden = false;
         $("#oPool").innerHTML = "";
         $$("#oAnswer .chip").forEach((c) => (c.disabled = true));
-        $("#oNext").hidden = false;
+        revealNext($("#oNext"));
         say(s.hz);
       } else {
         $("#oStatus").style.color = "var(--cinnabar)";

@@ -34,7 +34,8 @@ export function workbookQuiz(ui, { items, title = "练习册 · Workbook", kind 
     label: (d) => (d.kind === "dialog" ? d.q : d.kind === "judge" ? d.claim : d.q),
     sayAfter: (d) => (d.kind === "judge" ? d.text : d.kind === "reply" ? d.a : ""),
     ask: (d) => {
-      if (d.kind === "dialog") return { html: `<p class="hint">${LABEL.dialog}: listen, then answer.</p><p class="hz wb-q">问：${esc(d.q)}</p>`, say: dialogText(d) };
+      if (d.kind === "dialog") return { html: `<p class="hint">${LABEL.dialog}: listen, then answer.</p><p class="hz wb-q">问：${esc(d.q)}</p>`, say: dialogText(d),
+        peek: d.lines.map(([who, t]) => `<div class="wb-line"><span class="who">${esc(who)}</span> ${plain(t)}</div>`).join("") };
       if (d.kind === "judge") return { html: `<p class="hint">${LABEL.judge}: does the ★ sentence match?</p>
         <p class="wb-text">${hz(d.text)} ${sayBtns(d.text, "text", true)}</p><p class="wb-claim">★ ${hz(d.claim, 1.2)}</p>` };
       return { html: `<p class="hint">${LABEL.reply}: which answer fits?</p><p class="wb-text">${hz(d.q, 1.5)} ${sayBtns(d.q, "sentence", true)}</p>` };
