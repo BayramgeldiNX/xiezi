@@ -353,7 +353,14 @@ export function showResults(title, right, total, missed, again, perfect = "å…¨å¯
 
 /* ---------- Match pairs ---------- */
 function matchGame(words) {
-  const set = shuffle(words).slice(0, 6);
+  // Two words can share one meaning (for example two "happy"); keep only one so every pair is clear.
+  const seenEn = new Set(), set = [];
+  for (const w of shuffle(words)) {
+    const k = (w.en || "").trim().toLowerCase();
+    if (seenEn.has(k)) continue;
+    seenEn.add(k); set.push(w);
+    if (set.length === 6) break;
+  }
   if (set.length < 2) return notEnough();
   const tiles = shuffle([...set.map((w) => ({ w, side: "hz" })), ...set.map((w) => ({ w, side: "en" }))]);
   let sel = null, done = 0, errors = 0;
