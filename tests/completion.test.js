@@ -1,0 +1,40 @@
+import { describe, it, expect } from "vitest";
+import { completion, FINISHED_AT } from "../src/progress/completion.js";
+
+const stats = (m) => (k) => m[k];
+
+describe("completion", () => {
+  it("is 0% with nothing done", () => {
+    const r = completion({ write: ["w:你", "w:好"], listen: ["l:你"] }, stats({}));
+    expect(r.pct).toBe(0);
+    expect(r.finished).toBe(false);
+  });
+  it("skips skills with no items", () => {
+    const r = completion({ write: ["w:你"], exercises: [] }, stats({ "w:你": { ok: 1 } }));
+    expect(r.pct).toBe(100);
+    expect(r.skills.exercises).toEqual({ done: 0, total: 0 });
+  });
+  it("counts ok > 0 and keeps it after a wrong answer", () => {
+    const r = completion({ write: ["w:你"] }, stats({ "w:你": { ok: 1, miss: 5 } }));
+    expect(r.pct).toBe(100);
+  });
+  it("averages skills, not items", () => {
+    const r = completion({ a: ["x", "y", "z", "w"], b: ["v"] }, stats({ x: { ok: 1 }, v: { ok: 1 } }));
+    expect(r.pct).toBe(63); // (0.25 + 1) / 2
+  });
+  it("is finished at exactly 60%", () => {
+    expect(FINISHED_AT).toBe(0.6);
+    const items = { a: ["1", "2", "3", "4", "5"] };
+    const done = (n) => stats(Object.fromEntries(items.a.slice(0, n).map((k) => [k, { ok: 1 }])));
+    expect(completion(items, done(3)).finished).toBe(true);
+    expect(completion(items, done(2)).finished).toBe(false);
+  });
+  it("counts f: or q: either one", () => {
+    const items = { words: [["f:你", "q:你"], ["f:好", "q:好"]] };
+    expect(completion(items, stats({ "f:你": { ok: 1 }, "q:好": { ok: 2 } })).pct).toBe(100);
+    expect(completion(items, stats({ "q:你": { ok: 1 } })).pct).toBe(50);
+  });
+  it("is 0% for a lesson with no items", () => {
+    expect(completion({}, stats({})).pct).toBe(0);
+  });
+});

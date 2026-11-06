@@ -33,14 +33,28 @@ describe("parseCedict", () => {
     "長 长 [chang2] /long/length/strong point/forte/",
     "長 长 [zhang3] /chief/",
   ].join("\n");
-  it("keys by simplified, merges senses and caps them at 3", () => {
+  it("keys by simplified, merges senses and adds measure words", () => {
     const d = parseCedict(text);
-    expect(d["外卖"]).toEqual([["wài mài", "takeout; to deliver food"]]);
-    expect(d["长"][0]).toEqual(["cháng", "long; length; strong point"]);
+    expect(d["外卖"]).toEqual([["wài mài", "takeout; to deliver food; measure word: 个"]]);
+    expect(d["长"][0]).toEqual(["cháng", "long; length; strong point; forte"]);
     expect(d["长"][1]).toEqual(["zhǎng", "chief"]);
     expect(d["绿"][0][0]).toBe("lǜ");
   });
+  it("points traditional forms to the simplified entry", () => {
+    const d = parseCedict(text);
+    expect(d["外賣"]).toBe("外卖");
+    expect(d["長"]).toBe("长");
+  });
   it("shards by first character", () => {
     expect(shardOf("外卖")).toBe("外".codePointAt(0) % 64);
+  });
+});
+
+describe("parseHanzi", () => {
+  it("keeps the radical, parts and sound part of each character", async () => {
+    const { parseHanzi } = await import("../scripts/gen-dict.mjs");
+    const d = parseHanzi(JSON.stringify({ character: "语", definition: "words, language", pinyin: ["yǔ"], decomposition: "⿰讠吾",
+      etymology: { type: "pictophonetic", phonetic: "吾", semantic: "讠", hint: "words" }, radical: "讠" }));
+    expect(d["语"]).toEqual(["yǔ", "words", "讠", "⿰讠吾", "pictophonetic", "吾", "words"]);
   });
 });
