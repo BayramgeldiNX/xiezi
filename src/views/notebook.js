@@ -6,7 +6,7 @@ import { tonePy } from "../lib/pinyin.js";
 import { sayBtns } from "../lib/speech.js";
 import { icon } from "../lib/icons.js";
 import { matchesWord } from "../lib/search.js";
-import { lookup } from "../lib/dict.js";
+import { lookup, saveForOffline, charParts } from "../lib/dict.js";
 import { gridSVG, makeWriter, trackWriter } from "../lib/draw.js";
 import { CHARS, LESSONS, bookOf, wordsOf, ensureChars, STROKE_DATA } from "../data/index.js";
 import * as nb from "../notebook/store.js";
@@ -22,6 +22,8 @@ let query = "";
 let ownEdit = false; // saving a field must not redraw the page under the button being tapped
 
 export function openNotebook(word) {
+  // Quietly keep the whole dictionary on the device for offline lookups.
+  setTimeout(() => (window.requestIdleCallback || ((f) => f()))(() => saveForOffline()), 3000);
   const e = word && nb.getWord(word);
   if (e && !e.deleted) return wordPage(word);
   return listPage();
@@ -150,7 +152,7 @@ function wordPage(w) {
         const py = CHARS[c]?.py || "";
         return `<div class="nb-char"><button class="cs-chip" type="button" data-stroke="${c}" aria-expanded="false" aria-label="Stroke order of ${c}">
             <b>${c}</b><span class="py">${tonePy(esc(py))}</span><small>Stroke order</small></button>
-          <div class="nb-tip">${tip || `<span class="muted">${CHARS[c]?.en ? esc(CHARS[c].en) : ""}</span>`}</div>
+          <div class="nb-tip">${tip || `<span class="muted">${CHARS[c]?.en ? esc(CHARS[c].en) : ""}</span>`}<div class="nb-parts" data-parts="${c}"></div></div>
           <div class="nb-stroke" hidden></div></div>`;
       }).join("")}
     </div>
@@ -173,6 +175,22 @@ function wordPage(w) {
     $("#nbDelNo").addEventListener("click", () => wordPage(w));
   });
   readingOptions(w);
+  partsOf(w);
+}
+
+// Radical and parts of each character, from the offline dictionary.
+async function partsOf(w) {
+  for (const host of $$("[data-parts]", body())) {
+    const p = await charParts(host.dataset.parts);
+    if (view.word !== w || !p) continue;
+    const bit = (x) => `<b class="hz">${esc(x.c)}</b>${x.en ? ` ${esc(x.en)}` : ""}`;
+    const lines = [];
+    if (p.radical) lines.push(`Radical ${bit(p.radical)}`);
+    if (p.parts.length) lines.push(p.parts.map((x) => bit(x) + (x.c === p.sound ? " (sound)" : "")).join(" + "));
+    if (!CHARS[p.c]?.tip && p.hint && p.type !== "pictophonetic") lines.push(esc(p.hint));
+    if (!CHARS[p.c]?.en && !nb.getWord(w)?.charTricks?.[p.c] && p.en) lines.unshift(esc(p.en));
+    host.innerHTML = lines.map((l) => `<small>${l}</small>`).join("");
+  }
 }
 
 // Other readings of the word (行 xíng / háng): tap one to use it.
