@@ -12,7 +12,15 @@ async function sha12(text) {
   return [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, "0")).join("").slice(0, 12);
 }
 
+// Give up waiting after a while (slow VPN, Firebase unreachable); the load itself keeps going,
+// so a retry picks up the same request.
+const WAIT_MS = 8000;
 export function lessonContent(book, n) {
+  const slow = new Promise((resolve) => setTimeout(() => resolve({ status: "error", texts: [], notes: [] }), WAIT_MS));
+  return Promise.race([loadCached(book, n), slow]);
+}
+
+function loadCached(book, n) {
   const id = `${book}/${n}`;
   if (!cache.has(id)) {
     cache.set(id, load(book, n).then((r) => {

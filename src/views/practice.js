@@ -2,8 +2,9 @@
 // openPractice(host, skill, ctx) shows a skill's exercises for ctx.words inside `host`.
 // Every exercise can also run on its own with fixed items and a `then` callback, so the
 // book Review can chain several of them into one mixed session.
-import { $, $$, esc, shuffle, directionPicker } from "../lib/util.js";
+import { $, $$, esc, shuffle, directionPicker, revealNext } from "../lib/util.js";
 import { tonePy } from "../lib/pinyin.js";
+import { pyToggleHtml, wirePinyin } from "../lib/qpinyin.js";
 import { matchesWord } from "../lib/search.js";
 import { say, autoSay, sayBtns, stopSpeech } from "../lib/speech.js";
 import { icon } from "../lib/icons.js";
@@ -156,7 +157,23 @@ export { lessonSentences };
 
 const thisLesson = () => LESSONS.find((l) => l.book === P.ctx.book && l.n === P.ctx.lesson);
 
+// "What's next": the next exercise of this tab, or the next tab, so a finished exercise leads somewhere.
+// Only inside a lesson (not in the book Review, which chains its own exercises).
+export function nextStep() {
+  if (!P.ctx.book || !P.ctx.lesson || !P.mode || !String(P.host).startsWith("#tab-")) return null;
+  const modes = SKILLS[P.skill].modes.filter((m) => modeAvailable(m.id, thisLesson()));
+  const next = modes[modes.findIndex((m) => m.id === P.mode) + 1];
+  if (next) return { label: next.name, go: () => startMode(next.id) };
+  const tabs = $$("[data-tab]").map((b) => b.dataset.tab);
+  const nt = tabs[tabs.indexOf(P.skill) + 1];
+  const btn = nt && $('[data-tab="' + nt + '"]');
+  return btn ? { label: btn.textContent.trim().replace(/\s+/g, " "), go: () => btn.click() } : null;
+}
+export const nextHtml = (id = "resNext") => { const n = nextStep(); return n ? '<button class="btn primary big" type="button" id="' + id + '">Next: ' + esc(n.label) + "</button>" : ""; };
+export const wireNext = (root, id = "resNext") => { const n = nextStep(); $("#" + id, root)?.addEventListener("click", () => n?.go()); };
+
 function startMode(mode) {
+  P.mode = mode;
   const { words, readings = [] } = P.ctx;
   const host = P.host, back = goBack, lesson = P.ctx.lesson;
   const ten = (list) => shuffle(list).slice(0, 10);
@@ -177,11 +194,11 @@ function startMode(mode) {
     case "tones": return tonesIntro({ host, words, label: "Characters from this lesson", lesson, back });
     case "say-word": return speak({ title: "Say the word", items: ten(words).map((w) => ({ w, text: w.w, py: w.py, en: w.en })) });
     case "say-sentence": return speak({ title: "Say the sentence", items: ten(sentenceItems(words)).map((w) => ({ w, text: w.ex.hz.replace(/[AB]: /g, ""), py: w.ex.py.replace(/[AB]: /g, ""), en: w.ex.en, sentence: true })) });
-    case "cards": return cardsOpen({ host, words, lesson, back });
+    case "cards": return cardsOpen({ host, words, lesson, back, next: nextStep });
     case "match": return matchGame(words);
     case "word-quiz": return words.length < 2 ? notEnough() : vocabQuiz({ items: ten(words), pool: words, mode: "mixed", title: "Word quiz" });
     case "list": return wordList(words);
-    case "texts": return withBook((b) => textList(ui, [...b.texts, ...readings], bookNote(b)));
+    case "texts": return bookTexts(readings);
     case "grammar": return grammarNotes();
     case "gr-fill": return grammarQuiz({ items: shuffle(grammarOf(thisLesson() ? [thisLesson()] : [])), title: "Grammar · fill the blank" });
     case "text-quiz": return textQuiz(ui, readings);
@@ -207,6 +224,22 @@ function withBook(show) {
   const host = body();
   host.innerHTML = `<div class="panel"><p class="muted">Loading the book…</p></div>`;
   lessonContent(book, lesson).then((b) => { if (body() === host) show(b); }, () => show(empty));
+}
+// The app's own practice texts show at once; the book's texts join the list when they arrive.
+function bookTexts(readings) {
+  const { book, lesson } = P.ctx;
+  const slot = (inner) => `<div data-texts-note>${inner}</div>`;
+  if (!book || !lesson) return textList(ui, readings);
+  const show = (note, list) => {
+    textList(ui, list, slot(note));
+    $("#txRetry")?.addEventListener("click", () => bookTexts(readings));
+  };
+  show(`<p class="muted">Loading the book's texts…</p>`, readings);
+  lessonContent(book, lesson).then((b) => {
+    if (!$("[data-texts-note]", body())) return; // already left this screen
+    const retry = b.status === "error" ? `<p class="note">Couldn't load the book's texts. Check your internet or VPN. <button class="btn ghost" type="button" id="txRetry">Try again</button></p>` : bookNote(b);
+    show(retry, [...b.texts, ...readings]);
+  });
 }
 const bookNote = (b) =>
   b.status === "signed-out" ? `<p class="note">Sign in (Sync, on the home screen) to see this lesson's texts and grammar from the book.</p>`
@@ -253,7 +286,7 @@ export function grammarQuiz(cfg) {
 }
 
 // What the reading screens need from this module.
-export const ui = { body: () => body(), backBtn: (l) => backBtn(l), wireBack: (el) => wireBack(el), choiceQuiz: (cfg) => choiceQuiz(cfg) };
+export const ui = { nextHtml, wireNext, body: () => body(), backBtn: (l) => backBtn(l), wireBack: (el) => wireBack(el), choiceQuiz: (cfg) => choiceQuiz(cfg) };
 export const setHost = (host, ctx) => { P = { ...P, host, ctx: { ...P.ctx, ...ctx } }; };
 
 /* ---------- Multiple choice ---------- */
@@ -272,20 +305,23 @@ export function choiceQuiz(cfg) {
     const q = cfg.ask(w);
     const opts = shuffle(cfg.makeOptions(w));
     body().innerHTML = `<div class="panel">
-      <span class="lbl">${cfg.title}</span>
+      <div class="head-row"><span class="lbl">${cfg.title}</span>${cfg.noPinyin ? "" : pyToggleHtml()}</div>
       <div class="progress">Question ${pos + 1} of ${items.length} · ${right} right</div>
       <div class="bar"><i style="width:${(pos / items.length) * 100}%"></i></div>
       ${q.html}
       ${q.say ? `<div class="controls"><button class="btn primary big" type="button" data-say="${esc(q.say)}" id="qListen">${icon("speaker")} Listen</button>
         <button class="btn big" type="button" data-say="${esc(q.say)}" data-slow>${icon("slow")} Slow</button></div>` : ""}
+      ${q.peek ? `<details class="peek"><summary>Show the text</summary>${q.peek}</details>` : ""}
       <div class="choices">${opts.map((o, i) => `<button class="choice" type="button" data-i="${i}">${o.html}</button>`).join("")}</div>
       <div class="status" id="qStatus" aria-live="polite"></div>
       <div class="answer" id="qAnswer" hidden></div>
-      <div class="controls"><button class="btn primary" type="button" id="qNext" hidden>${pos + 1 >= items.length ? (cfg.then ? "Continue" : "See results") : "Next"}</button>${backBtn(cfg.then ? "Stop" : "Back")}</div>
+      <div class="controls"><button class="btn primary" type="button" id="qNext" hidden>${pos + 1 >= items.length ? (cfg.then ? "Continue" : "See results") : "Next"}</button><button class="btn ghost" type="button" id="qSkip">不知道 · Don't know</button>${backBtn(cfg.then ? "Stop" : "Back")}</div>
     </div>`;
     wire(body());
-    $$(".choice", body()).forEach((b) => b.addEventListener("click", () => {
-      const ok = opts[+b.dataset.i].correct;
+    if (!cfg.noPinyin) wirePinyin(body().firstElementChild);
+    const answer = (b) => {
+      const ok = b ? opts[+b.dataset.i].correct : false;
+      $("#qSkip").hidden = true;
       $$(".choice", body()).forEach((c) => {
         c.disabled = true;
         if (opts[+c.dataset.i].correct) c.classList.add("right");
@@ -295,14 +331,15 @@ export function choiceQuiz(cfg) {
       if (ok) right++; else { missed.push(cfg.label ? cfg.label(w) : w.w); missedItems.push(w); }
       const st = $("#qStatus");
       st.style.color = ok ? "" : "var(--cinnabar)";
-      st.textContent = ok ? "对了！Correct!" : "Not quite.";
+      st.textContent = ok ? "对了！Correct!" : b ? "Not quite." : "No problem. Here is the answer.";
       $("#qAnswer").innerHTML = cfg.reveal(w);
       $("#qAnswer").hidden = false;
-      $("#qNext").hidden = false;
-      $("#qNext").focus({ preventScroll: true });
+      revealNext($("#qNext"));
       const after = cfg.sayAfter ? cfg.sayAfter(w) : w.w;
       if (!q.say && !cfg.silent && after) autoSay(after);
-    }));
+    };
+    $$(".choice", body()).forEach((b) => b.addEventListener("click", () => answer(b)));
+    $("#qSkip").addEventListener("click", () => answer(null));
     $("#qNext").addEventListener("click", () => { pos++; ask(); });
     if (q.say) setTimeout(() => autoSay(q.say), 250);
   }
@@ -323,16 +360,24 @@ export function showResults(title, right, total, missed, again, perfect = "全�
     <span class="lbl">Results · ${esc(title)}</span>
     <div class="score">${right} / ${total}</div>
     ${missed.length ? `<p>Practice these again:</p><div class="result-list">${missed.map((w) => `<span>${esc(w)}</span>`).join("")}</div>` : `<p>${perfect}</p>`}
-    <div class="controls">${again ? `<button class="btn primary big" type="button" id="resAgain">${icon("replay")} Again</button>` : ""}${retry ? `<button class="btn big" type="button" id="resRetry">Retry missed</button>` : ""}${backBtn()}</div>
+    <div class="controls">${nextHtml()}${again ? `<button class="btn big" type="button" id="resAgain">${icon("replay")} Again</button>` : ""}${retry ? `<button class="btn big" type="button" id="resRetry">Retry missed</button>` : ""}${backBtn()}</div>
   </div>`;
   wireBack(body());
+  wireNext(body());
   $("#resAgain")?.addEventListener("click", again);
   $("#resRetry")?.addEventListener("click", retry);
 }
 
 /* ---------- Match pairs ---------- */
 function matchGame(words) {
-  const set = shuffle(words).slice(0, 6);
+  // Two words can share one meaning (for example two "happy"); keep only one so every pair is clear.
+  const seenEn = new Set(), set = [];
+  for (const w of shuffle(words)) {
+    const k = (w.en || "").trim().toLowerCase();
+    if (seenEn.has(k)) continue;
+    seenEn.add(k); set.push(w);
+    if (set.length === 6) break;
+  }
   if (set.length < 2) return notEnough();
   const tiles = shuffle([...set.map((w) => ({ w, side: "hz" })), ...set.map((w) => ({ w, side: "en" }))]);
   let sel = null, done = 0, errors = 0;
@@ -386,12 +431,12 @@ export function speak({ title, items, then }) {
     if (pos >= items.length) return end();
     const it = items[pos];
     body().innerHTML = `<div class="panel">
-      <span class="lbl">说 · ${title}</span>
+      <div class="head-row"><span class="lbl">说 · ${title}</span>${pyToggleHtml()}</div>
       <div class="progress">${pos + 1} of ${items.length} · ${right} correct</div>
       <div class="bar"><i style="width:${(pos / items.length) * 100}%"></i></div>
       <div class="speak-card">
         <div class="${it.sentence ? "prompt-big" : "big-hz"}" style="font-family:var(--display)">${it.text}</div>
-        <div class="py">${tonePy(it.py)}</div>
+        <div class="py q-py">${tonePy(it.py)}</div>
         <div class="muted">${esc(it.en)}</div>
         <div class="controls" style="justify-content:center">${sayBtns(it.text, it.py)}</div>
         <button class="mic" type="button" id="micBtn" aria-label="Speak">${icon("mic")}</button>
@@ -403,6 +448,7 @@ export function speak({ title, items, then }) {
         <button class="btn ghost" type="button" id="sSkip">Skip</button>${backBtn(then ? "Stop" : "Back")}</div>
     </div>`;
     wireBack(body());
+    wirePinyin(body().firstElementChild, { annotateText: false });
     $("#micBtn").addEventListener("click", () => (useRecorder ? recordToggle(it) : listen(it)));
     $("#sNext").addEventListener("click", () => { pos++; show(); });
     $("#sSkip").addEventListener("click", () => { pos++; show(); });
@@ -412,7 +458,7 @@ export function speak({ title, items, then }) {
     if (ok) right++; else { missed.push(it.text); missedItems.push(it); }
     $("#heard").innerHTML = msg;
     $("#judge").innerHTML = "";
-    $("#sNext").hidden = false;
+    revealNext($("#sNext"));
     $("#sSkip").hidden = true;
   }
   function listen(it) {
