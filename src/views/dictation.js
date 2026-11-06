@@ -29,7 +29,7 @@ export function dictIntro(opts = {}) {
   const prompt = opts.prompt || "audio";
   const p = PROMPT[prompt];
   const hintAfter = setting("hintAfter");
-  const hintNote = hintAfter ? ` After ${hintAfter + 1} mistakes on one stroke, it shows you a hint.` : "";
+  const hintNote = hintAfter ? ` After ${hintAfter} mistake${hintAfter > 1 ? "s" : ""} on one stroke, it shows you a hint.` : "";
   $(hostSel).innerHTML = `<div class="panel">
     <span class="lbl">${opts.title || p.title}</span>
     <p>${p.how}${hintNote}</p>
@@ -92,7 +92,7 @@ export function dictWord() {
     const size = Math.round(b.getBoundingClientRect().width) || 160;
     const w = trackWriter(makeWriter(b, chars[i], size, { showOutline: false, highlightColor: css("--jade") }));
     w.quiz({
-      showHintAfterMisses: setting("hintAfter") ? setting("hintAfter") + 1 : false, highlightOnComplete: true,
+      showHintAfterMisses: setting("hintAfter") || false, highlightOnComplete: true,
       onMistake: () => { mistakes++; },
       onComplete: () => { doneCount++; if (doneCount === chars.length) finish(); },
     });

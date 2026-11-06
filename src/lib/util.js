@@ -45,5 +45,14 @@ export function revealNext(btn) {
   if (!btn) return;
   btn.hidden = false;
   btn.focus({ preventScroll: true });
-  btn.scrollIntoView?.({ block: "nearest", behavior: "smooth" });
+  // Keep it at least 24px (plus the iPhone home-indicator inset) above the bottom edge.
+  const probe = document.createElement("div");
+  probe.style.cssText = "position:fixed;visibility:hidden;height:0;padding-bottom:env(safe-area-inset-bottom,0px)";
+  document.body.appendChild(probe);
+  const inset = parseFloat(getComputedStyle(probe).paddingBottom) || 0;
+  probe.remove();
+  const r = btn.getBoundingClientRect(), gap = 24 + inset;
+  const over = r.bottom - (innerHeight - gap);
+  if (over > 0) scrollBy({ top: over, behavior: "smooth" });
+  else if (r.top < 0) btn.scrollIntoView?.({ block: "nearest", behavior: "smooth" });
 }

@@ -6,6 +6,7 @@ import { say, autoSay, canSay, sayBtns } from "../lib/speech.js";
 import { icon } from "../lib/icons.js";
 import { gridSVG, makeWriter, trackWriter, clearWriters } from "../lib/draw.js";
 import { setting } from "../lib/settings.js";
+import { pyToggleHtml, wirePinyin } from "../lib/qpinyin.js";
 import { LESSONS, wordsOf, ensureChars, STROKE_DATA } from "../data/index.js";
 import * as progress from "../progress/store.js";
 import * as nb from "../notebook/store.js";
@@ -149,17 +150,18 @@ function distractors(e, n = 3) {
   return out;
 }
 
-function choice(S, it, { prompt, say: toSay, revealHtml }) {
+function choice(S, it, { prompt, say: toSay, revealHtml, noPy = false }) {
   const e = it.e;
   const opts = shuffle([{ w: e.w, py: e.py || "", correct: true }, ...distractors(e).map((d) => ({ ...d, correct: false }))]);
-  body().innerHTML = `<div class="panel">${head(S, it)}${prompt}
+  body().innerHTML = `<div class="panel">${noPy ? "" : `<div class="head-row">${pyToggleHtml()}</div>`}${head(S, it)}${prompt}
     ${toSay ? `<div class="controls"><button class="btn primary big" type="button" data-say="${esc(toSay)}">${icon("speaker")} Listen</button>
       <button class="btn big" type="button" data-say="${esc(toSay)}" data-slow>${icon("slow")} Slow</button></div>` : ""}
-    <div class="choices">${opts.map((o, i) => `<button class="choice" type="button" data-i="${i}"><span class="hz" style="font-size:1.3rem">${esc(o.w)}</span>${o.py ? ` <span class="py">${tonePy(esc(o.py))}</span>` : ""}</button>`).join("")}</div>
+    <div class="choices">${opts.map((o, i) => `<button class="choice" type="button" data-i="${i}"><span class="hz" style="font-size:1.3rem">${esc(o.w)}</span>${o.py && !noPy ? ` <span class="py">${tonePy(esc(o.py))}</span>` : ""}</button>`).join("")}</div>
     <div class="status" id="qStatus" aria-live="polite"></div>
     <div class="answer" id="qAnswer" hidden></div>
     <div class="controls"><button class="btn primary" type="button" id="qNext" hidden>${S.pos + 1 >= S.items.length ? "See results" : "Next"}</button>${stopBtn}</div></div>`;
   $("#nbrStop").addEventListener("click", () => results(S, true));
+  if (!noPy) wirePinyin(body().firstElementChild, { annotateText: false });
   $$(".choice", body()).forEach((b) => b.addEventListener("click", () => {
     const ok = opts[+b.dataset.i].correct;
     $$(".choice", body()).forEach((c) => {
@@ -180,7 +182,7 @@ function choice(S, it, { prompt, say: toSay, revealHtml }) {
 }
 
 function listen(S, it) {
-  choice(S, it, { prompt: `<p>Which word do you hear?</p>`, say: it.e.w, revealHtml: reveal(it.e) });
+  choice(S, it, { prompt: `<p>Which word do you hear?</p>`, say: it.e.w, revealHtml: reveal(it.e), noPy: true });
 }
 
 function gap(S, it) {

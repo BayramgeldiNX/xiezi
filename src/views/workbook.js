@@ -18,7 +18,7 @@ export function workbookOf(lessons) {
     return [
       ...(wb.dialogs || []).map((d, i) => ({ ...d, kind: "dialog", id: `${l.id}/d${i + 1}`, lesson: l.id })),
       ...(wb.judge || []).map((d, i) => ({ ...d, kind: "judge", id: `${l.id}/j${i + 1}`, lesson: l.id })),
-      ...(wb.replies || []).map((d, i, all) => ({ ...d, kind: "reply", id: `${l.id}/r${i + 1}`, lesson: l.id, others: all.filter((x) => x !== d).map((x) => x.a) })),
+      ...(wb.replies || []).map((d, i, all) => ({ ...d, kind: "reply", id: `${l.id}/r${i + 1}`, lesson: l.id, others: all.filter((x) => x !== d && x.q !== x.a).map((x) => x.a) })),
     ];
   });
 }
@@ -43,7 +43,8 @@ export function workbookQuiz(ui, { items, title = "练习册 · Workbook", kind 
     makeOptions: (d) => {
       if (d.kind === "dialog") return d.options.map((o, i) => ({ html: plain(o), correct: i === d.answer }));
       if (d.kind === "judge") return [{ html: `<span class="en">✓ 对 · True</span>`, correct: d.ok }, { html: `<span class="en">✗ 错 · False</span>`, correct: !d.ok }];
-      return [d.a, ...shuffle(d.others).slice(0, 3)].map((o, i) => ({ html: plain(o), correct: i === 0 }));
+      const bad = (o) => o === d.q || o === d.a; // never the prompt or the answer; self-answering greetings are left out of `others`
+      return [d.a, ...shuffle([...new Set(d.others)].filter((o) => !bad(o))).slice(0, 3)].map((o, i) => ({ html: plain(o), correct: i === 0 }));
     },
     reveal: (d) => d.kind === "dialog"
       ? d.lines.map(([who, t]) => `<div class="wb-line"><span class="who">${esc(who)}</span> ${hz(t, 1.15)} ${sayBtns(t, "line", true)}</div>`).join("") + `<div class="muted">Answer: ${esc(d.options[d.answer])}</div>`
@@ -60,10 +61,19 @@ export function fillQuiz(ui, words, { title = "选词填空 · Fill in the word"
     ask: (w) => ({ html: `<p class="hint">Which word fills the gap?</p>
       <p class="hz wb-q">${esc(w.ex.hz.replace(/[AB]: /g, "").replace(w.w, "（　　）"))}</p><p class="muted">${esc(w.ex.en)}</p>` }),
     makeOptions: (w) => {
-      const others = [...shuffle(words), ...shuffle(wordsOf(LESSONS))].filter((x) => x.w !== w.w && !w.ex.hz.includes(x.w));
-      const same = others.filter((x) => [...x.w].length === [...w.w].length);
-      return [w, ...[...same, ...others].filter((x, i, a) => a.findIndex((y) => y.w === x.w) === i).slice(0, 3)]
-        .map((o) => ({ html: `<span class="hz" style="font-size:1.3rem">${o.w}</span>`, correct: o === w }));
+      const norm = (x) => (x.en || "").toLowerCase().replace(/\s+/g, "");
+      const book = LESSONS.find((l) => l.words?.some((x) => x.w === w.w))?.book;
+      const bookWords = LESSONS.filter((l) => l.book === book).flatMap((l) => l.words || []);
+      const ok = (x) => x.w !== w.w && norm(x) !== norm(w) && !w.ex.hz.includes(x.w) && !x.w.includes(w.w) && !w.w.includes(x.w);
+      const seen = new Set();
+      const uniq = (list) => list.filter((x) => ok(x) && !seen.has(x.w) && seen.add(x.w));
+      const tiers = [uniq(shuffle(words)), uniq(shuffle(bookWords)), uniq(shuffle(wordsOf(LESSONS)))];
+      const len = [...w.w].length, picks = [];
+      for (const t of tiers) { // same lesson first, then same book, then everything; same length first inside a tier
+        for (const x of [...t.filter((y) => [...y.w].length === len), ...t.filter((y) => [...y.w].length !== len)]) if (picks.length < 3) picks.push(x);
+        if (picks.length >= 3) break;
+      }
+      return [w, ...picks].map((o) => ({ html: `<span class="hz" style="font-size:1.3rem">${o.w}</span>`, correct: o === w }));
     },
     reveal: (w) => `${hz(w.ex.hz.replace(/[AB]: /g, ""), 1.2)} ${sayBtns(w.ex.hz, "sentence", true)}<br><span class="py">${tonePy(w.ex.py)}</span>`,
   });

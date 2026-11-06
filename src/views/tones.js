@@ -5,6 +5,7 @@ import { say, autoSay, sayBtns } from "../lib/speech.js";
 import { icon } from "../lib/icons.js";
 import { CHARS, TONE_SETS } from "../data/index.js";
 import * as progress from "../progress/store.js";
+import { nextHtml, wireNext } from "./practice.js";
 
 const TONE_NAMES = ["", "1st · high, flat", "2nd · rising", "3rd · dip", "4th · falling"];
 const TONE_PATHS = ["", "M4 6 L40 6", "M4 20 L40 4", "M4 10 L18 22 L40 4", "M4 4 L40 22"];
@@ -69,8 +70,9 @@ function toneAsk() {
       <small>${TONE_NAMES[t].split(" · ")[0]}</small></button>`).join("")}</div>
     <div class="status" id="toneStatus" aria-live="polite">Which tone do you hear?</div>
     <div class="answer" id="toneAnswer" hidden></div>
-    <button class="btn primary" type="button" id="toneNext" hidden>${tq.pos + 1 >= total ? "See results" : "Next"}</button>
+    <div class="controls"><button class="btn primary" type="button" id="toneNext" hidden>${tq.pos + 1 >= total ? "See results" : "Next"}</button><button class="btn ghost" type="button" id="toneQBack">Back</button></div>
   </div>`;
+  $("#toneQBack").addEventListener("click", () => tonesIntro());
   $$(".tone-opt", host).forEach((b) => b.addEventListener("click", () => {
     const t = +b.dataset.t, ok = t === q.tone;
     $$(".tone-opt", host).forEach((o) => {
@@ -99,8 +101,10 @@ function toneEnd() {
     <div class="score">${tq.right} / ${total} right</div>
     ${tq.missed.length ? `<p>Listen to these again:</p><div class="result-list">${tq.missed.map((q) => `<span>${q.hz} <span class="py">${tonePy(addTone(q.plain, q.tone))}</span> ${sayBtns(q.say, q.plain, true)}</span>`).join("")}</div>`
       : `<p>全对！Quán duì! Perfect ears!</p>`}
-    <div class="controls"><button class="btn primary big" type="button" id="toneAgain">${icon("replay")} Play again</button>${tq.missed.length ? `<button class="btn big" type="button" id="toneRetry">Retry missed</button>` : ""}<button class="btn big" type="button" id="toneMenu">Choose a set</button></div>
+    <div class="controls">${nextHtml()}<button class="btn big" type="button" id="toneAgain">${icon("replay")} Play again</button>${tq.missed.length ? `<button class="btn big" type="button" id="toneRetry">Retry missed</button>` : ""}<button class="btn big" type="button" id="toneMenu">Choose a set</button><button class="btn ghost" type="button" id="toneResBack">Back</button></div>
   </div>`;
+  wireNext($(tOpts.host));
+  $("#toneResBack").addEventListener("click", () => (tOpts.back ? tOpts.back() : tonesIntro()));
   const src = tq.src, missed = tq.missed;
   $("#toneAgain").addEventListener("click", () => { tq = { qs: toneQuestions(src), pos: 0, right: 0, missed: [], src }; toneAsk(); });
   $("#toneRetry")?.addEventListener("click", () => { tq = { qs: missed, pos: 0, right: 0, missed: [], src }; toneAsk(); });

@@ -118,12 +118,14 @@ export function runMode(host, mode, ctx) {
 }
 
 /* ---------- Exercise builders (also used by the book Review) ---------- */
-const reveal = (w) => `<span class="hz">${w.w}</span> <span class="py">${tonePy(w.py)}</span> <span class="muted">${esc(w.en)}</span> ${sayBtns(w.w, w.py, true)}`;
+const reveal = (w) => `<span class="hz">${w.w}</span> <span class="py c-py">${tonePy(w.py)}</span> <span class="muted">${esc(w.en)}</span> ${sayBtns(w.w, w.py, true)}`;
 
 // Four choices for a word: the word and 3 others with a different label.
 function wordChoices(w, pool, label) {
-  const others = pool.filter((x) => x.w !== w.w && label(x) !== label(w));
-  const extra = wordsOf(LESSONS).filter((x) => x.w !== w.w && label(x) !== label(w) && !others.some((o) => o.w === x.w));
+  const en = (x) => (x.en || "").replace(/\s+/g, " ").trim().toLowerCase();
+  const ok = (x) => x.w !== w.w && label(x) !== label(w) && en(x) !== en(w);
+  const others = pool.filter(ok);
+  const extra = wordsOf(LESSONS).filter((x) => ok(x) && !others.some((o) => o.w === x.w));
   const picks = shuffle(others).concat(shuffle(extra)).slice(0, 3);
   return [w, ...picks].map((o) => ({ html: label(o), correct: o.w === w.w }));
 }
@@ -167,7 +169,7 @@ export function nextStep() {
   const tabs = $$("[data-tab]").map((b) => b.dataset.tab);
   const nt = tabs[tabs.indexOf(P.skill) + 1];
   const btn = nt && $('[data-tab="' + nt + '"]');
-  return btn ? { label: btn.textContent.trim().replace(/\s+/g, " "), go: () => btn.click() } : null;
+  return btn ? { label: SKILLS[nt] ? `${SKILLS[nt].seal} ${SKILLS[nt].name}` : btn.textContent.trim(), go: () => btn.click() } : null;
 }
 export const nextHtml = (id = "resNext") => { const n = nextStep(); return n ? '<button class="btn primary big" type="button" id="' + id + '">Next: ' + esc(n.label) + "</button>" : ""; };
 export const wireNext = (root, id = "resNext") => { const n = nextStep(); $("#" + id, root)?.addEventListener("click", () => n?.go()); };
@@ -189,7 +191,7 @@ function startMode(mode) {
       return choiceQuiz({ kind: "listen-sentence", title: "Sentences", items: shuffle(sw).slice(0, 8), key: "ls:",
         ask: (w) => ({ html: `<p class="hint">What does this sentence mean?</p>`, say: w.ex.hz }),
         makeOptions: (w) => [w, ...shuffle(sw.filter((x) => x.ex.en !== w.ex.en)).slice(0, 3)].map((o) => ({ html: `<span class="en">${esc(o.ex.en)}</span>`, correct: o === w })),
-        reveal: (w) => `<span class="hz" style="font-size:1.3rem">${w.ex.hz}</span> ${sayBtns(w.ex.hz, "sentence", true)}<br><span class="py">${tonePy(w.ex.py)}</span>` });
+        reveal: (w) => `<span class="hz" style="font-size:1.3rem">${w.ex.hz}</span> ${sayBtns(w.ex.hz, "sentence", true)}<span class="py c-py">${tonePy(w.ex.py)}</span>` });
     }
     case "tones": return tonesIntro({ host, words, label: "Characters from this lesson", lesson, back });
     case "say-word": return speak({ title: "Say the word", items: ten(words).map((w) => ({ w, text: w.w, py: w.py, en: w.en })) });
@@ -347,8 +349,9 @@ export function choiceQuiz(cfg) {
     progress.addSession({ type: cfg.kind, lesson: P.ctx.lesson ?? 0, score: right, total: items.length, missed });
     cfg.onDone?.(right, items.length);
     if (cfg.then) return cfg.then({ title: cfg.title, right, total: items.length, missed, missedItems });
-    showResults(cfg.title, right, items.length, missed, () => choiceQuiz(cfg), "全对！Quán duì! Everything correct!",
-      missedItems.length && (() => choiceQuiz({ ...cfg, items: missedItems, onDone: undefined })));
+    const full = cfg.fullCfg || cfg; // "Again" always replays the original round, even after "Retry missed"
+    showResults(cfg.title, right, items.length, missed, () => choiceQuiz(full), "全对！Quán duì! Everything correct!",
+      missedItems.length && (() => choiceQuiz({ ...cfg, items: missedItems, onDone: undefined, fullCfg: full })));
   }
   ask();
 }
@@ -395,6 +398,7 @@ function matchGame(words) {
     const t = tiles[+b.dataset.i];
     if (!sel) { sel = { t, b }; b.classList.add("sel"); if (t.side === "hz") say(t.w.w); return; }
     if (sel.b === b) { b.classList.remove("sel"); sel = null; return; }
+    if (sel.t.side === t.side) { sel.b.classList.remove("sel"); sel = { t, b }; b.classList.add("sel"); if (t.side === "hz") say(t.w.w); return; }
     const a = sel; sel = null;
     a.b.classList.remove("sel");
     if (a.t.w === t.w && a.t.side !== t.side) {
@@ -406,8 +410,9 @@ function matchGame(words) {
         progress.addSession({ type: "match", lesson: P.ctx.lesson ?? 0, score: firstTry.size, total: set.length, missed: set.filter((w) => !firstTry.has(w.w)).map((w) => w.w) });
         $("#mStatus").textContent = `全部配对！All matched in ${secs} s${errors ? ` with ${errors} mistake${errors > 1 ? "s" : ""}` : ", no mistakes"}.`;
         const notFirst = set.filter((w) => !firstTry.has(w.w));
-        $("#mEnd").innerHTML = `<button class="btn primary big" type="button" id="mAgain">${icon("replay")} New round</button>${notFirst.length >= 2 ? `<button class="btn big" type="button" id="mRetry">Retry missed</button>` : ""}${backBtn()}`;
+        $("#mEnd").innerHTML = `${nextHtml()}<button class="btn big" type="button" id="mAgain">${icon("replay")} New round</button>${notFirst.length >= 2 ? `<button class="btn big" type="button" id="mRetry">Retry missed</button>` : ""}${backBtn()}`;
         wireBack(body());
+        wireNext(body());
         $("#mAgain").addEventListener("click", () => matchGame(words));
         $("#mRetry")?.addEventListener("click", () => matchGame(notFirst));
       }
@@ -425,10 +430,18 @@ const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 // items: [{ w, text, py, en, sentence? }]
 export function speak({ title, items, then }) {
   if (!items.length) return notEnough();
-  let pos = 0, right = 0, useRecorder = !Recognition;
+  let pos = 0, right = 0, useRecorder = !Recognition, answered = false, recTimer = null, recog = null, media = null, starting = false;
   const missed = [], missedItems = [];
+  // Stop anything still listening or recording (next item, skip, leaving the screen).
+  const abortAll = () => {
+    clearTimeout(recTimer); recTimer = null;
+    if (media) { const m = media; media = null; m.onstop = null; try { if (m.state === "recording") m.stop(); } catch {} m.stream?.getTracks().forEach((t) => t.stop()); }
+    if (recog) { const r = recog; recog = null; r.onresult = r.onend = r.onerror = null; try { r.abort(); } catch {} }
+  };
   function show() {
+    abortAll();
     if (pos >= items.length) return end();
+    answered = false;
     const it = items[pos];
     body().innerHTML = `<div class="panel">
       <div class="head-row"><span class="lbl">说 · ${title}</span>${pyToggleHtml()}</div>
@@ -451,9 +464,18 @@ export function speak({ title, items, then }) {
     wirePinyin(body().firstElementChild, { annotateText: false });
     $("#micBtn").addEventListener("click", () => (useRecorder ? recordToggle(it) : listen(it)));
     $("#sNext").addEventListener("click", () => { pos++; show(); });
-    $("#sSkip").addEventListener("click", () => { pos++; show(); });
+    $("#sSkip").addEventListener("click", () => {
+      if (!answered) { answered = true; progress.record("s:" + it.w.w + (it.sentence ? "#ex" : ""), { ok: false, miss: 1 }); missed.push(it.text); missedItems.push(it); }
+      pos++; show();
+    });
+    $$("[data-back]", body()).forEach((b) => b.addEventListener("click", abortAll));
   }
   function result(it, ok, msg) {
+    if (answered) return;
+    answered = true;
+    abortAll();
+    const mic = $("#micBtn");
+    if (mic) { mic.disabled = true; mic.classList.remove("on"); }
     progress.record("s:" + it.w.w + (it.sentence ? "#ex" : ""), { ok, miss: ok ? 0 : 1 });
     if (ok) right++; else { missed.push(it.text); missedItems.push(it); }
     $("#heard").innerHTML = msg;
@@ -463,7 +485,9 @@ export function speak({ title, items, then }) {
   }
   function listen(it) {
     const mic = $("#micBtn");
-    const rec = new Recognition();
+    if (answered) return;
+    abortAll();
+    const rec = recog = new Recognition();
     rec.lang = "zh-CN";
     rec.interimResults = false;
     rec.maxAlternatives = 5;
@@ -496,34 +520,43 @@ export function speak({ title, items, then }) {
       } else if (e.error === "no-speech") $("#micNote").textContent = "I didn't hear anything. Tap and try again.";
       else $("#micNote").textContent = `Couldn't listen (${e.error}). Tap to try again.`;
     };
-    rec.onend = () => { mic.classList.remove("on"); if (got) $("#micNote").textContent = "Tap the microphone to try again."; };
+    let failed = false;
+    const onerr = rec.onerror;
+    rec.onerror = (e) => { failed = true; onerr(e); };
+    rec.onend = () => { mic.classList.remove("on"); if ((got || !failed) && !answered) $("#micNote").textContent = "Tap the microphone to try again."; };
     try { stopSpeech(); rec.start(); } catch { mic.classList.remove("on"); }
   }
   // Fallback without speech recognition: record, play it back next to the model, judge yourself.
-  let media = null;
   async function recordToggle(it) {
     const mic = $("#micBtn");
+    if (answered || starting) return;
     if (media?.state === "recording") { media.stop(); return; }
+    starting = true;
     try {
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      starting = false;
+      if (answered || $("#micBtn") !== mic) { stream.getTracks().forEach((t) => t.stop()); return; }
       const chunks = [];
-      media = new MediaRecorder(stream);
-      media.ondataavailable = (e) => chunks.push(e.data);
-      media.onstop = () => {
+      const m = media = new MediaRecorder(stream);
+      m.ondataavailable = (e) => chunks.push(e.data);
+      m.onstop = () => {
+        clearTimeout(recTimer); recTimer = null;
         stream.getTracks().forEach((t) => t.stop());
         mic.classList.remove("on");
-        const url = URL.createObjectURL(new Blob(chunks, { type: media.mimeType }));
+        const url = URL.createObjectURL(new Blob(chunks, { type: m.mimeType }));
         $("#micNote").textContent = "Compare your voice with the model, then judge:";
         $("#heard").innerHTML = `<audio controls src="${url}" style="width:min(100%,320px)"></audio>`;
         $("#judge").innerHTML = `<button class="btn" type="button" id="jNo">Not yet</button><button class="btn primary" type="button" id="jYes">${icon("check")} Sounded right</button>`;
         $("#jYes").addEventListener("click", () => result(it, true, `<span class="ok-c">很好！</span>`));
         $("#jNo").addEventListener("click", () => result(it, false, `Keep practicing <span class="hz">${it.text}</span>.`));
       };
-      media.start();
+      m.start();
       mic.classList.add("on");
       $("#micNote").textContent = "Recording… tap again to stop.";
-      setTimeout(() => { if (media?.state === "recording") media.stop(); }, it.sentence ? 8000 : 4000);
+      clearTimeout(recTimer);
+      recTimer = setTimeout(() => { if (media === m && m.state === "recording") m.stop(); }, it.sentence ? 8000 : 4000);
     } catch {
+      starting = false;
       $("#micNote").textContent = "Microphone not available. Allow microphone access for this app in Settings.";
     }
   }

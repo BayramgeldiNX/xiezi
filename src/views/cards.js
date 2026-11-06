@@ -17,7 +17,7 @@ export function cardsStart(dir, opts = deck?.opts || {}) {
   const words = opts.words || app.L().words;
   const all = shuffle(words.map((_, i) => i));
   deck = { dir, opts, words, host: opts.host, queue: all.slice(0, ROUND), waiting: all.slice(ROUND), round: 1, rounds: Math.ceil(all.length / ROUND),
-    seen: new Set(), known: 0, again: new Set(), flipped: false };
+    seen: new Set(), rated: new Set(), known: 0, again: new Set(), flipped: false };
   cardsRender();
 }
 export const cardsOpen = (opts) => { deck = null; cardsStart(null, opts); };
@@ -26,7 +26,12 @@ function cardsRender() {
   const host = $(deck.host);
   const words = deck.words;
   if (!deck.queue.length && deck.waiting.length) { deck.queue = deck.waiting.splice(0, ROUND); deck.round++; }
-  const total = deck.seen.size || words.length;
+  const total = deck.rated.size;
+  if (!deck.queue.length && !deck.rated.size && deck.finished) { // Finish before rating anything: nothing to save
+    deck.finished = false;
+    if (deck.opts.back) return deck.opts.back();
+    return cardsStart(deck.dir, deck.opts);
+  }
   if (!deck.queue.length) {
     const nxt = deck.opts.next?.();
     progress.addSession({ type: "cards", lesson: deck.opts.lesson ?? app.L().n, score: total - deck.again.size, total, missed: [...deck.again] });
@@ -44,7 +49,6 @@ function cardsRender() {
     return;
   }
   const w = words[deck.queue[0]];
-  deck.seen.add(w.w);
   const front = deck.dir === "hz" ? `<div class="fc-front">${w.w}</div>` : `<div class="fc-front en">${w.en}</div>`;
   const back = `<div class="fc-back"><div class="hz">${w.w}</div><div class="py">${tonePy(w.py)}</div><div class="en">${w.en}</div></div>`;
   host.innerHTML = `<div class="fc-wrap">
@@ -70,13 +74,15 @@ function cardsRender() {
   $("#fcCard").addEventListener("click", flip);
   $("#fcFlip")?.addEventListener("click", flip);
   $("#fcBack")?.addEventListener("click", deck.opts.back);
-  $("#fcFinish").addEventListener("click", () => { deck.queue = []; deck.waiting = []; deck.flipped = false; cardsRender(); }); // saves the session so far
+  $("#fcFinish").addEventListener("click", () => { deck.queue = []; deck.waiting = []; deck.flipped = false; deck.finished = true; cardsRender(); }); // saves the session so far
   $("#fcGot")?.addEventListener("click", () => {
     progress.record("f:" + w.w, { ok: true });
+    deck.rated.add(w.w);
     deck.queue.shift(); deck.known++; deck.flipped = false; deck.anim = "next"; cardsRender();
   });
   $("#fcAgainOne")?.addEventListener("click", () => {
     progress.record("f:" + w.w, { ok: false, miss: 1 });
+    deck.rated.add(w.w);
     deck.again.add(w.w);
     deck.queue.push(deck.queue.shift()); deck.flipped = false; deck.anim = "next"; cardsRender();
   });

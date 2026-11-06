@@ -54,6 +54,16 @@ function hideLoading() {
   const el = $("#pageLoading");
   if (el) el.hidden = true;
 }
+// Exercises find their buttons by id (#qNext, #qStatus…), and document.querySelector returns the first match.
+// An old exercise left in a hidden tab or page would catch those lookups, so the visible one never showed
+// its answer or Next. Empty every exercise host that is not on screen; it is drawn again when shown.
+const EXERCISE_HOSTS = ["tab-listen", "tab-speak", "tab-read", "tab-words", "tab-exercises", "writePractice", "bookReview", "allReview", "typingBody", "notebookBody"];
+function clearHiddenHosts() {
+  for (const id of EXERCISE_HOSTS) {
+    const el = $("#" + id);
+    if (el && el.firstChild && (el.hidden || el.closest("[hidden]"))) el.replaceChildren();
+  }
+}
 function showPage(id) {
   clearWriters();
   stopSpeech();
@@ -62,6 +72,7 @@ function showPage(id) {
   if (id !== "loading") hideLoading();
   current = id;
   for (const p of PAGES) $("#" + p).hidden = p !== id;
+  clearHiddenHosts();
   scrollTo(0, 0);
   if (id === "loading") return;
   // The new page slides in; the old one is gone at once. Not on the first page, nor when the hash is unchanged.
@@ -89,7 +100,7 @@ async function route() {
       if (token !== routeToken || !el || !el.hidden) return;
       el.hidden = false;
       animate(el, [{ opacity: 0 }, { opacity: 1 }], { duration: 150 });
-    }, 150);
+    }, 60);
     try { await loadStrokes(); } catch (e) { console.error(e); hideLoading(); return showHome(); }
     if (token !== routeToken) return;
     hideLoading();
@@ -293,6 +304,8 @@ function showTab(tab, tapped = false) {
   app.tab = tab;
   $$("[data-tab]").forEach((b) => b.setAttribute("aria-selected", b.dataset.tab === tab));
   for (const t of TABS) $("#tab-" + t).hidden = t !== tab;
+  if (tab === "write") $("#writePractice").hidden = true; // showWriteStudy hides it too; hide first so it is emptied
+  clearHiddenHosts();
   if (tab === "write") showWriteStudy();
   else openPractice(`#tab-${tab}`, tab, lessonCtx());
   animate($("#tab-" + tab), [{ opacity: 0 }, { opacity: 1 }], { duration: 150 });
