@@ -9,7 +9,9 @@ import { icon } from "./lib/icons.js";
 import { BOOKS, LESSONS, READINGS, bookOf, lessonIndex, lessonChars, wordChars, loadStrokes } from "./data/index.js";
 import { app, TAB_NAME } from "./app.js";
 import * as progress from "./progress/store.js";
-import { charStatus, wordStatus } from "./progress/model.js";
+import { charStatus } from "./progress/model.js";
+import { completion } from "./progress/completion.js";
+import { lessonItems } from "./lib/lesson-items.js";
 import { renderWords, renderWord, markWords, writeKey } from "./views/write.js";
 import { dictRedraw } from "./views/dictation.js";
 import { cardsKey } from "./views/cards.js";
@@ -147,16 +149,12 @@ function place() {
 
 /* ---------- Progress summaries ---------- */
 const countMastered = (chars) => chars.filter((c) => charStatus(progress.get("w:" + c)) === "mastered").length;
-function lessonProgress(l) {
-  const chars = lessonChars(l);
-  const known = l.words.filter((w) => wordStatus({ word: w.w, list: wordChars(w) }, progress.get) === "known").length;
-  return { chars: chars.length, mastered: countMastered(chars), known };
-}
 // A character shared by several lessons or books counts once.
 function sumProgress(lessons) {
   const chars = [...new Set(lessons.flatMap((l) => lessonChars(l)))];
   return { chars: chars.length, mastered: countMastered(chars) };
 }
+const lessonDone = (l) => completion(lessonItems(l), progress.get);
 const pct = (a, b) => (b ? Math.round((a / b) * 100) : 0);
 
 /* ---------- Home ---------- */
@@ -195,8 +193,9 @@ function showBooks() {
   document.title = "Books · 写字本";
   $("#bookList").innerHTML = BOOKS.map((b) => {
     const p = sumProgress(b.lessons), due = dueCount(b);
+    const fin = b.lessons.filter((l) => lessonDone(l).finished).length;
     return `<button class="book-card" type="button" data-book="${b.id}">
-      <span class="book-top"><b>${b.title}</b><span class="muted">${b.part}</span><span class="row-n">${p.mastered}/${p.chars} 字</span><span class="chev" aria-hidden="true">${icon("next")}</span></span>
+      <span class="book-top"><b>${b.title}</b><span class="muted">${b.part}</span><span class="row-n">${fin ? `${fin}/${b.lessons.length} 完 · ` : ""}${p.mastered}/${p.chars} 字</span><span class="chev" aria-hidden="true">${icon("next")}</span></span>
       ${due ? `<span class="muted">${due} to review</span>` : ""}
       ${p.mastered ? `<span class="lp-bar" aria-hidden="true"><i style="width:${pct(p.mastered, p.chars)}%"></i></span>` : ""}
     </button>`;
@@ -233,11 +232,11 @@ function renderLessonList(book) {
   const list = $("#lessonCards");
   list.innerHTML = "";
   book.lessons.forEach((les) => {
-    const p = lessonProgress(les);
+    const c = lessonDone(les);
     const b = document.createElement("button");
     b.type = "button";
     b.className = "lesson-row";
-    b.innerHTML = `<span class="num">${les.n}</span><b>${les.title}</b>${p.mastered ? `<span class="row-n">${p.mastered}/${p.chars}</span>` : ""}<span class="chev" aria-hidden="true">${icon("next")}</span>`;
+    b.innerHTML = `<span class="num">${les.n}</span><span class="lr-main"><b>${les.title}</b>${c.pct ? `<span class="lp-bar" aria-hidden="true"><i style="width:${c.pct}%"></i></span>` : ""}</span><span class="done-seal"${c.finished ? ` title="Finished" aria-label="Finished">完` : ` aria-hidden="true">`}</span><span class="row-n">${c.pct ? c.pct + "%" : ""}</span><span class="chev" aria-hidden="true">${icon("next")}</span>`;
     b.addEventListener("click", () => {
       const li = lessonIndex(les.id);
       if (place()?.lesson !== li) progress.place.set({ lid: les.id, word: 0, tab: "write" });

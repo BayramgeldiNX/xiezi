@@ -117,6 +117,11 @@ code { font-size: .85em; }
 .lesson-row + .lesson-row { border-top: 1px solid var(--line); }
 .lesson-row:hover { background: var(--card2); }
 .lesson-row .num { width: 36px; height: 36px; flex: 0 0 auto; display: grid; place-items: center; border-radius: 50%; border: 1px solid var(--line2); color: var(--muted); font-size: .8125rem; font-variant-numeric: tabular-nums; }
+.lesson-row .lr-main { flex: 1; min-width: 0; }
+.lesson-row .lr-main b { display: block; }
+.lesson-row .row-n { min-width: 2.4rem; text-align: right; }
+.lesson-row .done-seal { box-sizing: border-box; min-width: 28px; text-align: center; color: var(--cinnabar); font-family: var(--display); font-size: 1rem; border: 1px solid currentColor; border-radius: 4px; padding: 0 4px; line-height: 1.4; opacity: .85; }
+.lesson-row .done-seal:empty { border-color: transparent; }
 .lesson-row b { flex: 1; font-family: var(--display); font-size: 1.25rem; }
 
 /* ---------- Tabs: lesson tabs, book tabs, write modes, scope, segmented ---------- */
