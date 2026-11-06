@@ -6,3 +6,7 @@ Attribution-ShareAlike 4.0 International license
 Changes: converted to JSON, split into 64 files by the first character of each word,
 pinyin converted from tone numbers to tone marks, and at most 3 senses kept per reading.
 These files remain under CC BY-SA 4.0.
+
+chars.json (radicals and parts of characters) is derived from Make Me a Hanzi
+(https://github.com/skishore/makemeahanzi), whose dictionary data is licensed under
+the GNU Lesser General Public License (see that project's COPYING file).

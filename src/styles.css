@@ -513,5 +513,7 @@ dialog.sheet.closing::backdrop { animation: fade-out 150ms var(--ease) forwards;
 .nb-char { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; align-items: center; padding: 8px 0; border-top: 1px solid var(--line); }
 .nb-char:first-of-type { border-top: 0; }
 .nb-tip { min-width: 0; }
+.nb-parts small { display: block; color: var(--muted); margin-top: 2px; }
+.nb-parts .hz { font-weight: 400; color: var(--ink); }
 .nb-stroke { grid-column: 1 / -1; display: grid; justify-items: center; gap: 8px; }
 .nb-stroke .box { width: min(220px, 70vw); }
