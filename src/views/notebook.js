@@ -21,7 +21,17 @@ let view = { kind: "list", word: null }; // what is on screen; "review" while a 
 let query = "";
 let ownEdit = false; // saving a field must not redraw the page under the button being tapped
 
+// Back-to-top button: shows after scrolling down on the Notebook page.
+const topBtn = $("#nbTop");
+const syncTop = () => { topBtn.hidden = $("#notebookView").hidden || scrollY < 600; };
+addEventListener("scroll", syncTop, { passive: true });
+topBtn.addEventListener("click", () => {
+  scrollTo({ top: 0, behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+  topBtn.blur();
+});
+
 export function openNotebook(word) {
+  setTimeout(syncTop);
   // Quietly keep the whole dictionary on the device for offline lookups.
   setTimeout(() => (window.requestIdleCallback || ((f) => f()))(() => saveForOffline()), 3000);
   const e = word && nb.getWord(word);
