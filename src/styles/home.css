@@ -48,7 +48,7 @@
 .tap-link { display: inline-block; padding: 8px 4px; }
 .nb-add { display: flex; gap: 8px; align-items: center; }
 .nb-add .search { flex: 1; min-width: 0; }
-.nb-add input:focus-visible, .nb-field input:focus-visible { outline: 2px solid var(--jade); outline-offset: 2px; }
+.nb-add input:focus-visible, .nb-field input:focus-visible, .nb-field textarea:focus-visible { outline: 2px solid var(--jade); outline-offset: 2px; }
 .nb-row { cursor: pointer; }
 .nb-row:hover td, .nb-row:focus-visible td { background: var(--card2); }
 .nb-row .chev { width: 28px; text-align: right; color: var(--muted); }
@@ -57,7 +57,10 @@
 .nb-head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
 .nb-hz { font-family: var(--display); font-size: clamp(3rem, 14vw, 4.5rem); font-weight: 700; line-height: 1.1; overflow-wrap: anywhere; }
 .nb-field { display: grid; gap: 4px; font-size: .8125rem; color: var(--muted); }
-.nb-field input { font: inherit; font-size: 16px; padding: 12px 16px; min-height: 48px; border-radius: var(--r); border: 0; background: var(--card); color: var(--ink); }
+.nb-field input, .nb-field textarea { font: inherit; font-size: 16px; padding: 12px 16px; min-height: 48px; border-radius: var(--r); border: 0; background: var(--card); color: var(--ink); }
+.nb-field textarea { resize: vertical; line-height: 1.5; }
+.nb-py { margin: 0; font-size: 1.25rem; }
+.nb-en { margin: 4px 0 0; font-size: 1.0625rem; line-height: 1.5; overflow-wrap: anywhere; }
 .nb-alts { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
 .nb-sent { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 0; font-size: 1.25rem; }
 .nb-char { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; align-items: center; padding: 8px 0; border-top: 1px solid var(--line); }
