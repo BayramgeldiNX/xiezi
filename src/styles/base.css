@@ -1,0 +1,169 @@
+/* 写字本 design: "Seal & Stroke". Energetic, minimal.
+   - Surfaces are told apart by fill, not outlines. Hairlines only divide lists.
+   - Three shapes: surfaces round (--r2), controls are pills, seals/stamps are near-square (--r-seal).
+   - Big Chinese glyphs are the hero of every screen. Selection is a solid ink fill.
+   - One vermilion seal per screen (--cta). Jade means progress. Tone colours (--t1..t5) mean tones only.
+   Ink (墨) theme by default, Paper (宣纸) as an option. */
+@font-face {
+  font-family: "Xiezi Serif";
+  src: url("../fonts/NotoSerifSC-sub.woff2") format("woff2");
+  font-weight: 500 700;
+  font-display: swap;
+}
+
+/* ---------- Themes ---------- */
+:root {
+  --fast: 120ms; --med: 220ms; --ease: cubic-bezier(.2, .8, .2, 1);
+  --spring: cubic-bezier(.34, 1.56, .64, 1); /* small overshoot: taps, pops */
+  /* 墨 Ink (default). Spacing only from 4 8 12 16 24 32 48. UI text: .8125 / 1 / 1.25 / 1.5 / 2rem. */
+  --paper: #0c1016; --card: #141a23; --card2: #1d2532; --ink: #f3ecdc; --muted: #8b95a6;
+  --line: rgb(243 236 220 / .08); --line2: rgb(243 236 220 / .15); --ghost: #2a3445; --grid: #8f4b42;
+  --cinnabar: #ff7866; --cta: #d9402f; --cta-ink: #fff; --jade: #5fd0ac; --amber: #f0bd55;
+  --t1: #ff7a6b; --t2: #6fd38a; --t3: #86a9ff; --t4: #c99af0; --t5: #8e98a8;
+  --press: rgb(243 236 220 / .06);
+  color-scheme: dark;
+
+  --display: "Xiezi Serif", "Noto Serif SC", "Songti SC", "SimSun", serif;
+  --body: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --r: 12px; --r2: 20px; --r-seal: 6px; --pill: 999px;
+  --safe-t: env(safe-area-inset-top, 0px);
+  --safe-b: env(safe-area-inset-bottom, 0px);
+  --safe-l: env(safe-area-inset-left, 0px);
+  --safe-r: env(safe-area-inset-right, 0px);
+}
+:root[data-theme="paper"] {
+  /* 宣纸 Paper: warm rice paper, never stark white */
+  --paper: #ece5d7; --card: #f6f1e7; --card2: #fbf8f1; --ink: #221e18; --muted: #6a6255;
+  --line: rgb(34 30 24 / .09); --line2: rgb(34 30 24 / .17); --ghost: #d6ccb9; --grid: #c58474;
+  --cinnabar: #b3312a; --cta: #c2352a; --jade: #23735b; --amber: #9a6516;
+  --t1: #c22f26; --t2: #2a7a3a; --t3: #2c58b5; --t4: #7d38a8; --t5: #8a8274;
+  --press: rgb(34 30 24 / .05);
+  color-scheme: light;
+}
+
+/* ---------- Base ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; touch-action: manipulation; scroll-padding-top: var(--safe-t); }
+body { margin: 0; color: var(--ink); background: var(--paper); font-family: var(--body); font-size: 1rem; line-height: 1.5; min-height: 100dvh; -webkit-tap-highlight-color: transparent; overscroll-behavior-y: contain; -webkit-font-smoothing: antialiased; }
+[hidden] { display: none !important; }
+.wrap { overflow-x: clip; max-width: 1100px; margin: 0 auto; display: grid; gap: 24px; position: relative; padding: calc(16px + var(--safe-t)) calc(16px + var(--safe-r)) calc(48px + var(--safe-b)) calc(16px + var(--safe-l)); }
+@media (min-width: 700px) { .wrap { padding-top: calc(32px + var(--safe-t)); gap: 32px; } }
+.inner { display: grid; gap: 16px; min-width: 0; }
+button { font: inherit; color: inherit; -webkit-user-select: none; user-select: none; }
+button:focus-visible, .btn:focus-visible, a:focus-visible { outline: 2px solid var(--jade); outline-offset: 2px; }
+code { font-size: .85em; }
+.muted { color: var(--muted); }
+.ic { width: 1.15em; height: 1.15em; flex: 0 0 auto; vertical-align: -.2em; }
+.eyebrow, .lbl { font-size: .8125rem; color: var(--muted); }
+.note { margin: 0; font-size: .8125rem; color: var(--muted); }
+.py { font-weight: 700; }
+.t1 { color: var(--t1); } .t2 { color: var(--t2); } .t3 { color: var(--t3); } .t4 { color: var(--t4); } .t5 { color: var(--t5); }
+
+/* ---------- Buttons: pills. Fill, no outline. ---------- */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-weight: 700; font-size: 1rem; padding: 8px 20px; min-height: 44px; border-radius: var(--pill); border: 1px solid transparent; background: var(--card2); color: var(--ink); cursor: pointer; text-decoration: none; }
+.btn:hover { background: color-mix(in srgb, var(--card2) 85%, var(--ink)); }
+.btn.primary { background: var(--cta); color: var(--cta-ink); }
+.btn.primary:hover { background: color-mix(in srgb, var(--cta) 88%, #fff); }
+.btn.big { padding: 12px 28px; min-height: 52px; font-size: 1.0625rem; }
+.btn.link { background: none; color: var(--muted); text-decoration: underline; text-underline-offset: 3px; font-weight: 400; padding-inline: 4px; }
+.btn.link:hover { color: var(--ink); background: none; }
+.btn.ghost { background: none; border-color: var(--line2); }
+.btn.ghost:hover { border-color: var(--muted); background: none; }
+.btn:disabled { opacity: .35; cursor: default; }
+/* The pill is drawn smaller than the 44px tap area. */
+.say { position: relative; display: inline-flex; align-items: center; justify-content: center; gap: 4px; font-size: .8125rem; font-weight: 700; padding: 0 12px; min-height: 44px; min-width: 44px; border: 0; background: none; color: var(--ink); cursor: pointer; }
+.say::before { content: ""; position: absolute; inset: 6px 0; border-radius: var(--pill); background: var(--card2); z-index: -1; transition: background-color var(--fast) var(--ease); }
+.say { isolation: isolate; }
+.say:hover::before { background: color-mix(in srgb, var(--card2) 80%, var(--ink)); }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+
+/* full screen button (browser tab only) */
+.fs-btn { position: absolute; top: calc(16px + var(--safe-t)); right: calc(16px + var(--safe-r)); width: 44px; height: 44px; padding: 0; font-size: 1.25rem; line-height: 1; border-radius: 50%; border: 0; background: var(--card); color: var(--muted); cursor: pointer; display: grid; place-items: center; z-index: 2; }
+@media (min-width: 700px) { .fs-btn { top: calc(32px + var(--safe-t)); } }
+.fsnote { margin: 0; padding-right: 48px; font-size: .8125rem; color: var(--muted); }
+
+/* ---------- Page header (inner pages) ---------- */
+.topbar { display: flex; align-items: center; gap: 12px; min-height: 44px; }
+.has-fs .topbar, .has-fs .hub-top { padding-right: 56px; }
+.back { width: 44px; height: 44px; flex: 0 0 auto; display: grid; place-items: center; border-radius: 50%; border: 0; background: var(--card); cursor: pointer; color: var(--ink); transition: background-color var(--fast) var(--ease), transform var(--fast) var(--spring); }
+.back:hover { background: var(--card2); }
+.back:active { transform: scale(.92); }
+.topbar h2 { font-family: var(--display); font-size: clamp(1.5rem, 4.5vw, 2rem); margin: 0; line-height: 1.15; font-weight: 700; letter-spacing: -.01em; }
+.topbar .eyebrow { display: block; }
+/* ---------- Tabs: lesson tabs, book tabs, write modes, scope, segmented ----------
+   The chosen one is a solid ink pill (ink on paper flips): the most energetic state in the app. */
+.tabs { position: relative; }
+.tab-pill { position: absolute; left: 0; top: 0; width: 0; height: 0; border-radius: var(--pill); background: var(--ink); pointer-events: none; opacity: 0; transition: transform var(--med) var(--spring), width var(--med) var(--ease), height var(--med) var(--ease); }
+.tab-pill.ready { opacity: 1; }
+.tabs, .modes, .seg { display: flex; gap: 2px; padding: 4px; border: 0; border-radius: var(--pill); background: var(--card); width: fit-content; max-width: 100%; }
+.tab, .mode, .seg button { display: inline-flex; align-items: center; justify-content: center; gap: 4px; min-height: 44px; padding: 0 14px; border: 0; border-radius: var(--pill); background: none; color: var(--muted); font-weight: 700; font-size: .8125rem; cursor: pointer; transition: color var(--fast) var(--ease), background-color var(--fast) var(--ease); }
+.tab:hover, .mode:hover, .seg button:hover { color: var(--ink); }
+.tab { position: relative; z-index: 1; padding: 0 16px; }
+.tab .tz { font-family: var(--display); font-size: 1.25rem; }
+.tab[aria-selected="true"], .book-tabs .tab[aria-pressed="true"] { color: var(--paper); }
+.mode[aria-selected="true"], .seg button[aria-pressed="true"] { color: var(--paper); background: var(--ink); }
+.scope button { display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: var(--pill); border: 0; background: var(--card); color: var(--muted); font-weight: 700; font-size: .8125rem; cursor: pointer; transition: color var(--fast) var(--ease), background-color var(--fast) var(--ease); }
+.scope button:hover { color: var(--ink); }
+.scope button[aria-pressed="true"] { color: var(--paper); background: var(--ink); }
+.scope button .zh { font-family: var(--display); }
+@media (max-width: 600px) {
+  .tabs:not(.book-tabs) { width: 100%; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); border-radius: var(--r2); }
+  .tabs:not(.book-tabs) .tab-pill { border-radius: 16px; }
+  .tabs:not(.book-tabs) .tab { flex-direction: column; gap: 0; padding: 4px 0; line-height: 1.2; border-radius: 16px; }
+}
+
+/* ---------- Settings ---------- */
+:root[data-size="large"] { font-size: 112.5%; }
+:root[data-size="xl"] { font-size: 125%; }
+.set-row { display: grid; gap: 4px; }
+.set-row > span { font-weight: 700; }
+.set-row .seg { flex-wrap: wrap; width: fit-content; max-width: 100%; }
+/* Pinyin hidden or blurred, except where it is the answer or the choice itself. */
+:root[data-py="hide"] .py:not(:is(.answer, .choice, .tone-opt, .ty-feedback, .result-list, #gloss, .rd, .ps-paper, #charBody, .chip, .legend) *) { visibility: hidden; }
+:root[data-py="tap"] .py:not(.shown):not(:is(.answer, .choice, .tone-opt, .ty-feedback, .result-list, #gloss, .rd, .ps-paper, #charBody, .chip, .legend) *) { filter: blur(6px); cursor: pointer; user-select: none; }
+
+/* ---------- Dialogs (raised) ---------- */
+dialog.sheet { width: min(100% - 32px, 460px); max-height: calc(100dvh - 32px - var(--safe-t) - var(--safe-b)); border: 0; border-radius: var(--r2); padding: 0; background: var(--card2); color: var(--ink); }
+dialog.sheet { box-shadow: 0 24px 64px rgb(0 0 0 / .45); }
+dialog.sheet::backdrop { background: rgb(0 0 0 / .55); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); }
+.sheet-head { display: flex; justify-content: space-between; align-items: center; padding: 8px 8px 0 24px; }
+.sheet-head h3 { margin: 0; font-size: 1.25rem; font-family: var(--display); }
+.sheet-close { width: 44px; height: 44px; border-radius: 50%; border: 0; background: var(--card); color: var(--ink); cursor: pointer; display: grid; place-items: center; }
+#accountBody { padding: 8px 24px 24px; display: grid; gap: 12px; }
+#accountBody p { margin: 0; }
+#accountBody hr { border: 0; border-top: 1px solid var(--line); width: 100%; margin: 4px 0; }
+.auth { display: grid; gap: 12px; }
+.auth label { display: grid; gap: 4px; font-weight: 700; font-size: .8125rem; }
+.auth input:focus { outline: 2px solid var(--jade); outline-offset: 1px; }
+.auth input { font: inherit; font-size: 16px; padding: 12px 16px; min-height: 48px; border-radius: var(--r); border: 1px solid transparent; background: var(--paper); color: var(--ink); }
+.err { color: var(--cinnabar); font-weight: 700; }
+.sync-line { display: flex; gap: 12px; align-items: center; }
+.sync-line > div { display: grid; }
+.sync-line small { color: var(--muted); }
+.sync-ic { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; background: var(--card); font-weight: 700; }
+.sync-line[data-status="synced"] .sync-ic { color: var(--jade); }
+.sync-line[data-status="error"] .sync-ic { color: var(--cinnabar); }
+
+/* ---------- Toasts ---------- */
+.toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(16px + var(--safe-b)); z-index: 10; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; justify-content: center; width: max-content; max-width: calc(100% - 32px); padding: 8px 8px 8px 20px; border-radius: var(--r2); background: var(--ink); color: var(--paper); border: 0; box-shadow: 0 12px 40px rgb(0 0 0 / .35); font-weight: 700; }
+.toast .btn { background: none; color: var(--paper); }
+.toast .btn.primary { background: var(--cta); color: var(--cta-ink); }
+/* Lesson loading placeholder: quiet blocks, no shimmer */
+#pageLoading { align-content: start; }
+#pageLoading i { display: block; background: var(--card); border-radius: var(--r); }
+#pageLoading .pl-title { height: 28px; width: 55%; }
+#pageLoading .pl-tabs { height: 48px; }
+#pageLoading .pl-chips { display: flex; gap: 8px; }
+#pageLoading .pl-chips i { height: 40px; width: 56px; }
+#pageLoading .pl-box { aspect-ratio: 1; width: min(100%, 320px); border-radius: var(--r2); }
+
+/* Small overlays: fade in and rise. The gloss and toast keep their translateX(-50%). */
+dialog.sheet[open] { animation: rise var(--med) var(--ease); }
+dialog.sheet[open]::backdrop { animation: fade-in var(--med) var(--ease); }
+.gloss, .toast { animation: rise-c var(--med) var(--spring); }
+dialog.sheet.closing::backdrop { animation: fade-out 150ms var(--ease) forwards; }
+@keyframes fade-out { to { opacity: 0; } }
+@keyframes rise { from { opacity: 0; transform: translateY(8px); } }
+@keyframes rise-c { from { opacity: 0; transform: translate(-50%, 8px); } }
+
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; animation: none !important; } }

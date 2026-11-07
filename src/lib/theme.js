@@ -1,7 +1,7 @@
 // Theme: "ink" (墨, default) or "paper" (宣纸). The first paint is handled by the inline script in index.html.
 import { store } from "./util.js";
 
-const COLORS = { ink: "#0f141b", paper: "#ebe4d6" };
+const COLORS = { ink: "#0c1016", paper: "#ece5d7" };
 
 export const getTheme = () => (store.get("xz-theme", "ink") === "paper" ? "paper" : "ink");
 
