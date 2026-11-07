@@ -45,7 +45,7 @@ export function notebookChanged() {
   const typing = document.activeElement;
   // The list redraw leaves the add box alone, so a saved word appears while the keyboard stays open.
   if (body().contains(typing) && typing.matches("input, textarea") && typing.id !== "nbInput") return;
-  if (view.kind === "word") { const e = nb.getWord(view.word); return e && !e.deleted ? wordPage(view.word) : listPage(); }
+  if (view.kind === "word") { const e = nb.getWord(view.word); return e && !e.deleted ? wordPage(view.word, view.editing) : listPage(); }
   renderList();
 }
 
@@ -136,8 +136,8 @@ async function fillFromDictionary(w) {
 }
 
 /* ---------- word page ---------- */
-function wordPage(w) {
-  view = { kind: "word", word: w };
+function wordPage(w, editing = false) {
+  view = { kind: "word", word: w, editing };
   const e = nb.getWord(w);
   const chars = hanChars(w);
   // Each character's pinyin as it is read in this word (split the word's pinyin by syllable).
@@ -148,9 +148,13 @@ function wordPage(w) {
   const L = inBook && LESSONS.find((l) => l.id === inBook.lesson);
   body().innerHTML = `<div class="panel nb-word">
       <div class="nb-head"><span class="nb-hz">${esc(w)}</span>${sayBtns(w, e.py || w)}</div>
-      <label class="nb-field">Pinyin<input data-f="py" value="${esc(e.py)}" autocomplete="off" autocapitalize="none" spellcheck="false"></label>
-      <label class="nb-field">Meaning<input data-f="en" value="${esc(e.en)}" autocomplete="off"></label>
+      ${editing ? `<label class="nb-field">Pinyin<input data-f="py" value="${esc(e.py)}" autocomplete="off" autocapitalize="none" spellcheck="false"></label>
+      <label class="nb-field">Meaning<textarea data-f="en" rows="3" autocomplete="off">${esc(e.en)}</textarea></label>
       <div class="nb-alts" id="nbAlts"></div>
+      <div class="controls"><button class="btn primary" type="button" id="nbDone">Done</button></div>`
+      : `<p class="py nb-py">${e.py ? tonePy(esc(e.py)) : `<span class="muted">No pinyin yet</span>`}</p>
+      <p class="nb-en">${e.en ? esc(e.en) : `<span class="muted">No meaning yet</span>`}</p>
+      <div class="controls"><button class="btn ghost" type="button" id="nbEdit">Edit</button></div>`}
     </div>
     <div class="panel">
       <span class="lbl">Sentence</span>
@@ -174,13 +178,18 @@ function wordPage(w) {
       ${L ? `<p class="note">Also in <a class="tap-link" href="#/lesson/${esc(L.id)}/write">${esc(bookOf(L).title)} · ${esc(L.cn)}</a></p>` : ""}
       <div class="controls" id="nbDel"><button class="btn ghost" type="button" id="nbDelBtn">Delete this word</button></div>
     </div>`;
-  $$("input[data-f]", body()).forEach((inp) => inp.addEventListener("change", () => {
+  $$("[data-f]", body()).forEach((inp) => inp.addEventListener("change", () => {
     const v = inp.value.trim();
     if (v === nb.getWord(w)?.[inp.dataset.f]) return;
     ownEdit = true;
     nb.update(w, { [inp.dataset.f]: v });
     ownEdit = false;
   }));
+  $("#nbEdit")?.addEventListener("click", () => { wordPage(w, true); $("input[data-f]", body())?.focus(); });
+  $("#nbDone")?.addEventListener("click", () => {
+    $$("[data-f]", body()).forEach((inp) => inp.dispatchEvent(new Event("change"))); // save what is still being typed
+    wordPage(w);
+  });
   $$("[data-stroke]", body()).forEach((b) => b.addEventListener("click", () => toggleStroke(b)));
   $("#nbDelBtn").addEventListener("click", () => {
     $("#nbDel").innerHTML = `<span>Delete ${esc(w)}?</span>
