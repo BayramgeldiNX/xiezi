@@ -7,12 +7,14 @@ import os from "node:os";
 
 // Usage: npm run dev (in another terminal), then npm run test:screens [-- <url> <screenshot folder>]
 const [, , base = "http://localhost:5173/xiezi/", outDir = fs.mkdtempSync(path.join(os.tmpdir(), "xz-shots-"))] = process.argv;
-const SIZES = [
+const ALL_SIZES = [
   { name: "iphone16", w: 393, h: 852, dpr: 3, mobile: true },
   { name: "mipad-landscape", w: 1280, h: 800, dpr: 1.5, mobile: false },
   { name: "mipad-portrait", w: 800, h: 1280, dpr: 1.5, mobile: false },
   { name: "windows", w: 1440, h: 900, dpr: 1, mobile: false },
 ];
+// XZ_SIZES=iphone16,windows limits the run to those sizes.
+const SIZES = process.env.XZ_SIZES ? ALL_SIZES.filter((s) => process.env.XZ_SIZES.split(",").includes(s.name)) : ALL_SIZES;
 const edge = ["C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe", "C:/Program Files/Microsoft/Edge/Application/msedge.exe"].find((p) => fs.existsSync(p));
 const profile = fs.mkdtempSync(path.join(os.tmpdir(), "xz-dbg-"));
 const proc = spawn(edge, ["--headless=new", "--disable-gpu", "--hide-scrollbars", "--remote-debugging-port=9334", `--user-data-dir=${profile}`, "--autoplay-policy=no-user-gesture-required", "about:blank"], { stdio: "ignore" });
@@ -44,6 +46,8 @@ const run = async (js) => {
   return r?.result?.value;
 };
 await send("Runtime.enable"); await send("Log.enable"); await send("Page.enable");
+// XZ_SCHEME=dark|light emulates the device colour scheme (the Auto theme follows it).
+if (process.env.XZ_SCHEME) await send("Emulation.setEmulatedMedia", { features: [{ name: "prefers-color-scheme", value: process.env.XZ_SCHEME }] });
 
 // Layout checks run on every screen.
 const CHECK = `

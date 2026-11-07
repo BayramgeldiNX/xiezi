@@ -13,7 +13,7 @@ The owner uses it on iPhone 16 (home-screen PWA), Mi Pad 7 Pro and Windows. Prog
 - Commits use the noreply author `327002913+BayramgeldiNX@users.noreply.github.com` and end with
   `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`.
 - The owner is in China on a VPN: proxy `http://127.0.0.1:7897`. Network scripts need `HTTPS_PROXY` set, and Node needs `--use-env-proxy`.
-- Design: minimalist and elegant, with the dark "Ink" theme as default. No streaks, goals or reminders.
+- Design: minimalist and elegant, with theme Auto as default: 春 Spring by day, 漆 Lacquer at night (follows the device); 墨 Ink and 宣纸 Paper are optional (setting key `xz-theme2`, `data-theme` on `<html>`). No streaks, goals or reminders.
 - Token budget is tight: read only the files a task touches, avoid rendering many images, and don't re-run full sweeps unless asked.
 
 ## Stack and layout

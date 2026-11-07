@@ -116,15 +116,15 @@ try {
   /* 6. Paper theme: every main page readable, nothing white */
   where = "paper";
   await size(393, 852, true);
-  await js(`localStorage.setItem('xz-theme', JSON.stringify('paper')); return 1;`);
+  await js(`localStorage.setItem('xz-theme2', JSON.stringify('paper')); return 1;`);
   for (const [name, hash] of [["home", ""], ["book", "#/book/kouyu-rumen"], ["review", "#/book/kouyu-rumen/review"], ["write", "#/lesson/kouyu-rumen/1/write"], ["read", "#/lesson/kouyu-rumen/1/read"], ["typing", "#/typing"]]) {
     await go("#/"); await go(hash, 1500);
     const bg = await js(`return getComputedStyle(document.body).backgroundColor`);
     const white = await js(`return [...document.querySelectorAll('body *')].filter(e => e.offsetParent && getComputedStyle(e).backgroundColor === 'rgb(255, 255, 255)').length`);
-    check(`paper theme ${name}: warm background, no pure white`, bg === "rgb(235, 228, 214)" && white === 0, `${bg}, white elements: ${white}`);
+    check(`paper theme ${name}: warm background, no pure white`, bg === "rgb(236, 229, 215)" && white === 0, `${bg}, white elements: ${white}`);
     await shot(`paper-${name}`);
   }
-  await js(`localStorage.removeItem('xz-theme'); return 1;`);
+  await js(`localStorage.removeItem('xz-theme2'); return 1;`);
 
   /* 7. Offline: works with no internet after the first visit */
   where = "offline";

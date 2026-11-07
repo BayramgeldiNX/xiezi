@@ -6,7 +6,7 @@
 .account-chip[data-status="synced"] { color: var(--jade); background: color-mix(in srgb, var(--jade) 14%, var(--card)); }
 .account-chip[data-status="error"] { color: var(--cinnabar); background: color-mix(in srgb, var(--cinnabar) 14%, var(--card)); }
 .continue { display: flex; align-items: center; gap: 16px; width: 100%; min-height: 88px; padding: 20px; border: 0; border-radius: var(--r2); background: var(--cta); color: var(--cta-ink); cursor: pointer; text-align: left; }
-.continue .play { width: 52px; height: 52px; flex: 0 0 auto; display: grid; place-items: center; border-radius: var(--r-seal); background: rgb(255 255 255 / .18); }
+.continue .play { width: 52px; height: 52px; flex: 0 0 auto; display: grid; place-items: center; border-radius: var(--r-seal); background: color-mix(in srgb, var(--cta-ink) 18%, transparent); }
 .continue .txt { display: grid; min-width: 0; line-height: 1.25; flex: 1; }
 .continue .txt b { font-family: var(--display); font-size: 1.5rem; line-height: 1.15; }
 .continue .txt span { font-size: .8125rem; opacity: .85; }

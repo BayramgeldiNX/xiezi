@@ -3,7 +3,8 @@
    - Three shapes: surfaces round (--r2), controls are pills, seals/stamps are near-square (--r-seal).
    - Big Chinese glyphs are the hero of every screen. Selection is a solid ink fill.
    - One vermilion seal per screen (--cta). Jade means progress. Tone colours (--t1..t5) mean tones only.
-   Ink (墨) theme by default, Paper (宣纸) as an option. */
+   Themes: Auto (default) = Spring 春 (warm sun) when the device is light, Red lacquer 漆 (warm dark) when it is dark.
+   Ink 墨 (cold dark) and Paper 宣纸 are optional. :root holds Ink as the fallback; data-theme overrides. */
 @font-face {
   font-family: "Xiezi Serif";
   src: url("../fonts/NotoSerifSC-sub.woff2") format("woff2");
@@ -18,9 +19,10 @@
   /* 墨 Ink (default). Spacing only from 4 8 12 16 24 32 48. UI text: .8125 / 1 / 1.25 / 1.5 / 2rem. */
   --paper: #0c1016; --card: #141a23; --card2: #1d2532; --ink: #f3ecdc; --muted: #8b95a6;
   --line: rgb(243 236 220 / .08); --line2: rgb(243 236 220 / .15); --ghost: #2a3445; --grid: #8f4b42;
-  --cinnabar: #ff7866; --cta: #d9402f; --cta-ink: #fff; --jade: #5fd0ac; --amber: #f0bd55;
+  --cinnabar: #ff7866; --cta: #d63f2b; --cta-ink: #fff; --jade: #5fd0ac; --amber: #f0bd55;
   --t1: #ff7a6b; --t2: #6fd38a; --t3: #86a9ff; --t4: #c99af0; --t5: #8e98a8;
   --press: rgb(243 236 220 / .06);
+  --shadow: rgb(0 0 0 / .45); --scrim: rgb(0 0 0 / .55);
   color-scheme: dark;
 
   --display: "Xiezi Serif", "Noto Serif SC", "Songti SC", "SimSun", serif;
@@ -38,7 +40,28 @@
   --cinnabar: #b3312a; --cta: #c2352a; --jade: #23735b; --amber: #9a6516;
   --t1: #c22f26; --t2: #2a7a3a; --t3: #2c58b5; --t4: #7d38a8; --t5: #8a8274;
   --press: rgb(34 30 24 / .05);
+  --shadow: rgb(70 50 25 / .15); --scrim: rgb(40 30 15 / .35);
   color-scheme: light;
+}
+:root[data-theme="spring"] {
+  /* 春 Spring sun: warm, bright */
+  --paper: #fbf1d9; --card: #fffaf0; --card2: #f6e6bf; --ink: #2b2416; --muted: #6f6450;
+  --line: rgb(43 36 22 / .10); --line2: rgb(43 36 22 / .18); --ghost: #ecd9ae; --grid: #d08a6a;
+  --cinnabar: #c23a1c; --cta: #cf4620; --cta-ink: #fff; --jade: #2e8f5a; --amber: #a86f0a;
+  --t1: #c22f26; --t2: #2a7a3a; --t3: #2c58b5; --t4: #7d38a8; --t5: #8a8274;
+  --press: rgb(43 36 22 / .05);
+  --shadow: rgb(90 55 20 / .15); --scrim: rgb(60 40 15 / .35);
+  color-scheme: light;
+}
+:root[data-theme="lacquer"] {
+  /* 漆 Red lacquer: warm dark. Gold (--jade) marks progress. */
+  --paper: #2a1512; --card: #3a1f1a; --card2: #4a2a23; --ink: #f6e7cf; --muted: #c4a991;
+  --line: rgb(246 231 207 / .09); --line2: rgb(246 231 207 / .17); --ghost: #5a372e; --grid: #b0563f;
+  --cinnabar: #ff8a6e; --cta: #c94430; --cta-ink: #fff; --jade: #f2c76b; --amber: #f0a95a;
+  --t1: #ff7a6b; --t2: #6fd38a; --t3: #86a9ff; --t4: #c99af0; --t5: #a89a8c;
+  --press: rgb(246 231 207 / .06);
+  --shadow: rgb(10 0 0 / .5); --scrim: rgb(15 3 2 / .6);
+  color-scheme: dark;
 }
 
 /* ---------- Base ---------- */
@@ -124,8 +147,8 @@ code { font-size: .85em; }
 
 /* ---------- Dialogs (raised) ---------- */
 dialog.sheet { width: min(100% - 32px, 460px); max-height: calc(100dvh - 32px - var(--safe-t) - var(--safe-b)); border: 0; border-radius: var(--r2); padding: 0; background: var(--card2); color: var(--ink); }
-dialog.sheet { box-shadow: 0 24px 64px rgb(0 0 0 / .45); }
-dialog.sheet::backdrop { background: rgb(0 0 0 / .55); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); }
+dialog.sheet { box-shadow: 0 24px 64px var(--shadow); }
+dialog.sheet::backdrop { background: var(--scrim); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); }
 .sheet-head { display: flex; justify-content: space-between; align-items: center; padding: 8px 8px 0 24px; }
 .sheet-head h3 { margin: 0; font-size: 1.25rem; font-family: var(--display); }
 .sheet-close { width: 44px; height: 44px; border-radius: 50%; border: 0; background: var(--card); color: var(--ink); cursor: pointer; display: grid; place-items: center; }
@@ -145,7 +168,7 @@ dialog.sheet::backdrop { background: rgb(0 0 0 / .55); -webkit-backdrop-filter: 
 .sync-line[data-status="error"] .sync-ic { color: var(--cinnabar); }
 
 /* ---------- Toasts ---------- */
-.toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(16px + var(--safe-b)); z-index: 10; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; justify-content: center; width: max-content; max-width: calc(100% - 32px); padding: 8px 8px 8px 20px; border-radius: var(--r2); background: var(--ink); color: var(--paper); border: 0; box-shadow: 0 12px 40px rgb(0 0 0 / .35); font-weight: 700; }
+.toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(16px + var(--safe-b)); z-index: 10; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; justify-content: center; width: max-content; max-width: calc(100% - 32px); padding: 8px 8px 8px 20px; border-radius: var(--r2); background: var(--ink); color: var(--paper); border: 0; box-shadow: 0 12px 40px var(--shadow); font-weight: 700; }
 .toast .btn { background: none; color: var(--paper); }
 .toast .btn.primary { background: var(--cta); color: var(--cta-ink); }
 /* Lesson loading placeholder: quiet blocks, no shimmer */

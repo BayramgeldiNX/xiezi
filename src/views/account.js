@@ -72,8 +72,8 @@ function renderSheet() {
   const theme = getTheme();
   body.innerHTML = `<span class="lbl">Appearance</span>
     <div class="seg" role="group" aria-label="Theme">
-      <button type="button" data-theme-set="ink" aria-pressed="${theme === "ink"}">墨 Ink</button>
-      <button type="button" data-theme-set="paper" aria-pressed="${theme === "paper"}">宣纸 Paper</button>
+      ${[["auto", "Auto"], ["spring", "春 Spring"], ["lacquer", "漆 Lacquer"], ["ink", "墨 Ink"], ["paper", "宣纸 Paper"]]
+        .map(([k, l]) => `<button type="button" data-theme-set="${k}" aria-pressed="${theme === k}">${l}</button>`).join("")}
     </div>
     ${settingRow("textSize", "Text size", [["normal", "Normal"], ["large", "Large"], ["xl", "Extra large"]])}
     <hr>

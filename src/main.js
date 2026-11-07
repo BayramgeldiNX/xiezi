@@ -2,6 +2,7 @@ import "@fontsource/atkinson-hyperlegible/400.css";
 import "@fontsource/atkinson-hyperlegible/700.css";
 import "./styles.css";
 import "./lib/settings.js";
+import "./lib/theme.js";
 import { $, $$, esc } from "./lib/util.js";
 import { stopSpeech } from "./lib/speech.js";
 import { clearWriters } from "./lib/draw.js";

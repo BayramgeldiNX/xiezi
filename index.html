@@ -5,23 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>写字本</title>
   <meta name="description" content="白怀诚的写字本: Chinese writing, listening, speaking and vocabulary practice.">
-  <meta name="theme-color" content="#0c1016">
+  <meta name="theme-color" content="#fbf1d9">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="写字本">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="format-detection" content="telephone=no">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
   <script>
-    // Apply the saved theme before anything draws (no white flash). Ink is the default.
+    // Apply the saved theme before anything draws (no flash). Auto = Spring by day, Lacquer at night.
     try {
-      var t = JSON.parse(localStorage.getItem("xz-theme"));
-      if (t === "paper") {
-        document.documentElement.dataset.theme = "paper";
-        document.querySelector('meta[name="theme-color"]').content = "#ece5d7";
-        document.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]').content = "default";
-      }
+      var t = JSON.parse(localStorage.getItem("xz-theme2"));
+      if (["spring", "lacquer", "ink", "paper"].indexOf(t) < 0)
+        t = matchMedia("(prefers-color-scheme: dark)").matches ? "lacquer" : "spring";
+      var c = { spring: "#fbf1d9", lacquer: "#2a1512", ink: "#0c1016", paper: "#ece5d7" };
+      document.documentElement.dataset.theme = t;
+      document.querySelector('meta[name="theme-color"]').content = c[t];
+      document.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]').content = t === "spring" || t === "paper" ? "default" : "black-translucent";
     } catch (e) {}
   </script>
 </head>
