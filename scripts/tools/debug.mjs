@@ -69,6 +69,11 @@ const STEPS = [
   ["typing", "#/typing"],
   ["search", "#/search"],
   ["print", "#/print/kouyu-rumen/1"],
+  ["radicals", "#/radicals"],
+  ["radical", "#/radical/%E6%B0%B5"],
+  ["radicals-cards", "#/radicals", `document.querySelector('[data-rp=cards]').click(); ${W} document.querySelector('#fcFlip')?.click(); ${W}`],
+  ["radicals-find", "#/radicals", `document.querySelector('[data-rp=find]').click(); ${W} document.querySelector('.choice')?.click(); ${W}`],
+  ["radicals-guess", "#/radicals", `document.querySelector('[data-rp=guess]').click(); ${W} document.querySelector('.choice')?.click(); ${W}`],
   // Notebook: the first step saves two words (they stay in this browser profile for the next steps).
   ["notebook", "#/notebook", `for (const w of ['饺子', '麻辣烫']) { const i = document.querySelector('#nbInput'); if (!i) break; i.value = w; document.querySelector('#nbAdd').requestSubmit(); ${W} ${W} }`],
   ["notebook-word", "#/notebook/%E9%A5%BA%E5%AD%90", `document.querySelector('[data-stroke]').click(); ${W} ${W}`],

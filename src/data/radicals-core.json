@@ -1,0 +1,3023 @@
+{
+  "stages": [
+    {
+      "id": "body",
+      "title": "People & body",
+      "cn": "人与身体",
+      "radicals": [
+        {
+          "r": "亻",
+          "full": "人",
+          "variants": [
+            "人"
+          ],
+          "py": "rén",
+          "name": "单人旁",
+          "en": "person",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "A side view of a person standing, squeezed into two strokes on the left.",
+          "tip": "Picture one person leaning in beside the rest of the character.",
+          "meaningNote": "Characters with 亻 are usually about people and what they do: 体 body, 信 letter, 借 borrow, 位 seat.",
+          "examples": [
+            "你",
+            "他",
+            "们",
+            "住",
+            "休",
+            "做",
+            "件",
+            "但"
+          ],
+          "guess": [
+            {
+              "c": "位",
+              "en": "seat"
+            },
+            {
+              "c": "体",
+              "en": "body"
+            },
+            {
+              "c": "信",
+              "en": "letter"
+            },
+            {
+              "c": "借",
+              "en": "borrow"
+            }
+          ]
+        },
+        {
+          "r": "女",
+          "full": "女",
+          "variants": [],
+          "py": "nǚ",
+          "name": "女字旁",
+          "en": "woman",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "A kneeling figure with folded arms, the old picture of a woman.",
+          "tip": "Imagine someone kneeling politely with hands folded.",
+          "meaningNote": "Characters with 女 are usually about women and family roles: 妈 mum, 姐 elder sister, 妹 younger sister.",
+          "examples": [
+            "妈",
+            "好",
+            "姐",
+            "妹",
+            "她",
+            "奶",
+            "姓",
+            "姑"
+          ],
+          "guess": [
+            {
+              "c": "娘",
+              "en": "mother"
+            },
+            {
+              "c": "婚",
+              "en": "marry"
+            },
+            {
+              "c": "妻",
+              "en": "wife"
+            },
+            {
+              "c": "姨",
+              "en": "aunt"
+            },
+            {
+              "c": "嫂",
+              "en": "sister-in-law"
+            }
+          ]
+        },
+        {
+          "r": "子",
+          "full": "子",
+          "variants": [],
+          "py": "zǐ",
+          "name": "子字旁",
+          "en": "child",
+          "pos": "any",
+          "kind": "shape",
+          "origin": "A baby with a big head and little arms wrapped below.",
+          "tip": "A big round head on a small body: a child.",
+          "meaningNote": "Mainly a sorting radical. It means child in 孩 child and 孙 grandchild, but in 学 and 字 it is only part of the shape.",
+          "examples": [
+            "孩",
+            "学",
+            "字",
+            "孙",
+            "存",
+            "孔",
+            "季"
+          ],
+          "guess": []
+        },
+        {
+          "r": "口",
+          "full": "口",
+          "variants": [],
+          "py": "kǒu",
+          "name": "口字旁",
+          "en": "mouth",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "An open mouth drawn as a square.",
+          "tip": "Just a box for the mouth: whatever happens in it happens around the box.",
+          "meaningNote": "Characters with 口 are usually about the mouth, eating and sounds: 吃 eat, 喝 drink, 叫 call, 唱 sing.",
+          "examples": [
+            "吃",
+            "吗",
+            "呢",
+            "叫",
+            "喝",
+            "哪",
+            "吧",
+            "唱"
+          ],
+          "guess": [
+            {
+              "c": "吵",
+              "en": "noisy"
+            },
+            {
+              "c": "嘴",
+              "en": "mouth"
+            },
+            {
+              "c": "味",
+              "en": "taste"
+            },
+            {
+              "c": "喊",
+              "en": "shout"
+            },
+            {
+              "c": "咳",
+              "en": "cough"
+            }
+          ]
+        },
+        {
+          "r": "目",
+          "full": "目",
+          "variants": [],
+          "py": "mù",
+          "name": "目字旁",
+          "en": "eye",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "An eye turned on its side, with the pupil in the middle.",
+          "tip": "Tip 目 on its side and you see an eye with a pupil.",
+          "meaningNote": "Characters with 目 are usually about eyes and seeing: 看 look, 睡 sleep, 眼 eye.",
+          "examples": [
+            "看",
+            "眼",
+            "睡",
+            "睛",
+            "眉",
+            "盯",
+            "睁"
+          ],
+          "guess": [
+            {
+              "c": "眨",
+              "en": "blink"
+            },
+            {
+              "c": "瞎",
+              "en": "blind"
+            },
+            {
+              "c": "盼",
+              "en": "hope"
+            },
+            {
+              "c": "瞧",
+              "en": "look"
+            },
+            {
+              "c": "睁",
+              "en": "open eyes"
+            }
+          ]
+        },
+        {
+          "r": "耳",
+          "full": "耳",
+          "variants": [],
+          "py": "ěr",
+          "name": "耳字旁",
+          "en": "ear",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "An outline of an ear with its curl.",
+          "tip": "The strokes trace the rim of an ear.",
+          "meaningNote": "Characters with 耳 are usually about ears and hearing: 聋 deaf, 聆 listen.",
+          "examples": [
+            "耳",
+            "联",
+            "职",
+            "聪",
+            "聊"
+          ],
+          "guess": [
+            {
+              "c": "聋",
+              "en": "deaf"
+            },
+            {
+              "c": "聆",
+              "en": "listen"
+            },
+            {
+              "c": "耻",
+              "en": "shame"
+            },
+            {
+              "c": "聘",
+              "en": "hire"
+            }
+          ]
+        },
+        {
+          "r": "扌",
+          "full": "手",
+          "variants": [
+            "手"
+          ],
+          "py": "shǒu",
+          "name": "提手旁",
+          "en": "hand",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "A hand with spread fingers, shrunk to three strokes on the left.",
+          "tip": "扌 is a hand reaching out from the left.",
+          "meaningNote": "Characters with 扌 are usually about hand actions: 打 hit, 拿 take, 提 lift, 接 receive.",
+          "examples": [
+            "打",
+            "找",
+            "把",
+            "拿",
+            "提",
+            "接",
+            "摇",
+            "报"
+          ],
+          "guess": [
+            {
+              "c": "拉",
+              "en": "pull"
+            },
+            {
+              "c": "推",
+              "en": "push"
+            },
+            {
+              "c": "抱",
+              "en": "hug"
+            },
+            {
+              "c": "扔",
+              "en": "throw"
+            },
+            {
+              "c": "拍",
+              "en": "clap"
+            },
+            {
+              "c": "抬",
+              "en": "lift"
+            }
+          ]
+        },
+        {
+          "r": "忄",
+          "full": "心",
+          "variants": [
+            "心"
+          ],
+          "py": "xīn",
+          "name": "竖心旁",
+          "en": "heart",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "A heart with its chambers; on the left it turns into three upright strokes.",
+          "tip": "Three upright strokes: a heart beating on its side.",
+          "meaningNote": "Characters with 忄 are usually about feelings and thinking: 情 feeling, 怕 fear, 懂 understand, 想 think.",
+          "examples": [
+            "情",
+            "快",
+            "忙",
+            "怕",
+            "懂",
+            "慢",
+            "想",
+            "您"
+          ],
+          "guess": [
+            {
+              "c": "怪",
+              "en": "strange"
+            },
+            {
+              "c": "惯",
+              "en": "habit"
+            },
+            {
+              "c": "慌",
+              "en": "panic"
+            },
+            {
+              "c": "悔",
+              "en": "regret"
+            },
+            {
+              "c": "恨",
+              "en": "hate"
+            }
+          ]
+        },
+        {
+          "r": "足",
+          "full": "足",
+          "variants": [
+            "⻊"
+          ],
+          "py": "zú",
+          "name": "足字旁",
+          "en": "foot",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "A foot drawn with a square for the ankle and toes below.",
+          "tip": "On the left it becomes a small foot standing on the ground.",
+          "meaningNote": "Characters with 足 are usually about feet and foot movement: 跑 run, 跳 jump, 踢 kick.",
+          "examples": [
+            "跑",
+            "跳",
+            "路",
+            "跟",
+            "踢"
+          ],
+          "guess": [
+            {
+              "c": "蹲",
+              "en": "squat"
+            },
+            {
+              "c": "踩",
+              "en": "step on"
+            },
+            {
+              "c": "跌",
+              "en": "fall"
+            },
+            {
+              "c": "跪",
+              "en": "kneel"
+            },
+            {
+              "c": "跃",
+              "en": "leap"
+            }
+          ]
+        },
+        {
+          "r": "页",
+          "full": "页",
+          "variants": [],
+          "py": "yè",
+          "name": "页字旁",
+          "en": "head / page",
+          "pos": "right",
+          "kind": "meaning",
+          "origin": "Once a person with a big head, now standing for the head and for a page.",
+          "tip": "Think of 页 as a head: face and topic live here.",
+          "meaningNote": "Characters with 页 are usually about the head and face: 题 title, 颜 face and colour, 顶 top of head, 领 neck and collar.",
+          "examples": [
+            "题",
+            "颜",
+            "顺",
+            "顶",
+            "领",
+            "预"
+          ],
+          "guess": [
+            {
+              "c": "额",
+              "en": "forehead"
+            },
+            {
+              "c": "颈",
+              "en": "neck"
+            },
+            {
+              "c": "顶",
+              "en": "top of head"
+            },
+            {
+              "c": "领",
+              "en": "collar"
+            }
+          ]
+        },
+        {
+          "r": "月",
+          "full": "肉",
+          "variants": [
+            "肉",
+            "⺼"
+          ],
+          "py": "ròu",
+          "name": "月字旁",
+          "en": "flesh",
+          "pos": "left",
+          "kind": "shape",
+          "origin": "Meat on the ribs, squeezed into a moon-like shape when it sits on the left.",
+          "tip": "A moon on the left of a body word is flesh, not the moon.",
+          "meaningNote": "On the left, 月 is usually flesh and the body: 脸 face, 腿 leg, 脑 brain. In 朋 and 期 it is the moon instead, so watch the position.",
+          "examples": [
+            "脑",
+            "脸",
+            "腿",
+            "脚",
+            "胖",
+            "脏",
+            "肚",
+            "背"
+          ],
+          "guess": []
+        },
+        {
+          "r": "舌",
+          "full": "舌",
+          "variants": [],
+          "py": "shé",
+          "name": "舌字旁",
+          "en": "tongue",
+          "pos": "any",
+          "kind": "shape",
+          "origin": "A tongue sticking out of a mouth.",
+          "tip": "A tongue poking out of a mouth.",
+          "meaningNote": "Mostly a sorting radical. It means tongue in 舌 and 舔 lick, but in 舍 and 舒 the link has faded.",
+          "examples": [
+            "舌",
+            "舍",
+            "舒",
+            "辞",
+            "舔"
+          ],
+          "guess": []
+        },
+        {
+          "r": "身",
+          "full": "身",
+          "variants": [],
+          "py": "shēn",
+          "name": "身字旁",
+          "en": "body",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "A side view of a person with a round belly, as if expecting.",
+          "tip": "A big belly and short legs: the whole body.",
+          "meaningNote": "Characters with 身 are usually about the body: 身 body, 躺 lie down, 躲 hide.",
+          "examples": [
+            "身",
+            "躲",
+            "躺",
+            "躬",
+            "躯"
+          ],
+          "guess": [
+            {
+              "c": "躺",
+              "en": "lie down"
+            },
+            {
+              "c": "躲",
+              "en": "hide"
+            },
+            {
+              "c": "躯",
+              "en": "body"
+            },
+            {
+              "c": "躬",
+              "en": "bow"
+            }
+          ]
+        },
+        {
+          "r": "力",
+          "full": "力",
+          "variants": [],
+          "py": "lì",
+          "name": "力字旁",
+          "en": "strength",
+          "pos": "right",
+          "kind": "meaning",
+          "origin": "A flexed arm, or an old plough: power.",
+          "tip": "A flexed arm: 力 means strength.",
+          "meaningNote": "Characters with 力 are usually about strength and effort: 动 move, 努 try hard, 助 help.",
+          "examples": [
+            "力",
+            "动",
+            "办",
+            "努",
+            "加",
+            "助",
+            "功",
+            "劳"
+          ],
+          "guess": [
+            {
+              "c": "勤",
+              "en": "diligent"
+            },
+            {
+              "c": "劲",
+              "en": "strength"
+            },
+            {
+              "c": "勇",
+              "en": "brave"
+            },
+            {
+              "c": "勉",
+              "en": "push oneself"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nature",
+      "title": "Nature",
+      "cn": "自然",
+      "radicals": [
+        {
+          "r": "氵",
+          "full": "水",
+          "variants": [
+            "水"
+          ],
+          "py": "shuǐ",
+          "name": "三点水",
+          "en": "water",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "Three drops of flowing water; the full form 水 shows a stream with splashes.",
+          "tip": "Three drops splashing from the left.",
+          "meaningNote": "Characters with 氵 are usually about water and liquids: 湖 lake, 洗 wash, 游 swim, 海 sea.",
+          "examples": [
+            "河",
+            "湖",
+            "洗",
+            "海",
+            "没",
+            "汉",
+            "游",
+            "洋"
+          ],
+          "guess": [
+            {
+              "c": "湖",
+              "en": "lake"
+            },
+            {
+              "c": "江",
+              "en": "river"
+            },
+            {
+              "c": "洗",
+              "en": "wash"
+            },
+            {
+              "c": "游",
+              "en": "swim"
+            },
+            {
+              "c": "渴",
+              "en": "thirsty"
+            },
+            {
+              "c": "泪",
+              "en": "tears"
+            }
+          ]
+        },
+        {
+          "r": "火",
+          "full": "火",
+          "variants": [
+            "灬"
+          ],
+          "py": "huǒ",
+          "name": "火字旁",
+          "en": "fire",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "Flames licking up from a fire; at the bottom they flatten into four dots 灬.",
+          "tip": "Four dots under a character mean heat, like a stove flame.",
+          "meaningNote": "Characters with 火 are usually about fire and heat: 烧 burn, 炒 stir-fry, 灯 lamp, 热 hot.",
+          "examples": [
+            "灯",
+            "烧",
+            "烟",
+            "炒",
+            "热",
+            "点",
+            "然",
+            "照"
+          ],
+          "guess": [
+            {
+              "c": "烤",
+              "en": "roast"
+            },
+            {
+              "c": "炸",
+              "en": "fry"
+            },
+            {
+              "c": "灶",
+              "en": "stove"
+            },
+            {
+              "c": "烫",
+              "en": "scald"
+            },
+            {
+              "c": "燃",
+              "en": "burn"
+            }
+          ]
+        },
+        {
+          "r": "木",
+          "full": "木",
+          "variants": [],
+          "py": "mù",
+          "name": "木字旁",
+          "en": "tree",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "A tree with branches above and roots below.",
+          "tip": "Roots, trunk and branches: three strokes make a tree.",
+          "meaningNote": "Characters with 木 are usually about trees and wood: 树 tree, 林 woods, 桌 table, 椅 chair.",
+          "examples": [
+            "树",
+            "林",
+            "桌",
+            "椅",
+            "本",
+            "村",
+            "校",
+            "样"
+          ],
+          "guess": [
+            {
+              "c": "板",
+              "en": "board"
+            },
+            {
+              "c": "桥",
+              "en": "bridge"
+            },
+            {
+              "c": "梨",
+              "en": "pear"
+            },
+            {
+              "c": "桃",
+              "en": "peach"
+            },
+            {
+              "c": "柴",
+              "en": "firewood"
+            },
+            {
+              "c": "根",
+              "en": "root"
+            }
+          ]
+        },
+        {
+          "r": "土",
+          "full": "土",
+          "variants": [],
+          "py": "tǔ",
+          "name": "提土旁",
+          "en": "earth",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "A lump of earth rising from the ground line.",
+          "tip": "A mound sitting on the floor line.",
+          "meaningNote": "Characters with 土 are usually about earth and ground: 地 ground, 城 city, 墙 wall, 块 lump.",
+          "examples": [
+            "地",
+            "场",
+            "块",
+            "城",
+            "墙",
+            "坏",
+            "坐"
+          ],
+          "guess": [
+            {
+              "c": "坡",
+              "en": "slope"
+            },
+            {
+              "c": "堆",
+              "en": "pile"
+            },
+            {
+              "c": "埋",
+              "en": "bury"
+            },
+            {
+              "c": "坑",
+              "en": "pit"
+            },
+            {
+              "c": "塔",
+              "en": "tower"
+            }
+          ]
+        },
+        {
+          "r": "日",
+          "full": "日",
+          "variants": [],
+          "py": "rì",
+          "name": "日字旁",
+          "en": "sun",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "A round sun, squared off by the brush, with a spot of light inside.",
+          "tip": "A window of sunlight: it also means a day.",
+          "meaningNote": "Characters with 日 are usually about the sun, light and time: 明 bright, 晴 clear sky, 早 early, 晚 evening.",
+          "examples": [
+            "明",
+            "时",
+            "晴",
+            "早",
+            "星",
+            "晚",
+            "昨",
+            "景"
+          ],
+          "guess": [
+            {
+              "c": "晒",
+              "en": "sunbathe"
+            },
+            {
+              "c": "暖",
+              "en": "warm"
+            },
+            {
+              "c": "暗",
+              "en": "dark"
+            },
+            {
+              "c": "昏",
+              "en": "dusk"
+            }
+          ]
+        },
+        {
+          "r": "雨",
+          "full": "雨",
+          "variants": [],
+          "py": "yǔ",
+          "name": "雨字头",
+          "en": "rain",
+          "pos": "top",
+          "kind": "meaning",
+          "origin": "A cloud on top with drops falling beneath it.",
+          "tip": "A roof of cloud and four drops: rain.",
+          "meaningNote": "Characters with 雨 are usually about weather: 雪 snow, 雷 thunder, 雾 fog, 露 dew.",
+          "examples": [
+            "雪",
+            "雷",
+            "零",
+            "需",
+            "雾",
+            "露",
+            "霜"
+          ],
+          "guess": [
+            {
+              "c": "雹",
+              "en": "hail"
+            },
+            {
+              "c": "霞",
+              "en": "sunset glow"
+            },
+            {
+              "c": "震",
+              "en": "quake"
+            },
+            {
+              "c": "霜",
+              "en": "frost"
+            },
+            {
+              "c": "雷",
+              "en": "thunder"
+            }
+          ]
+        },
+        {
+          "r": "石",
+          "full": "石",
+          "variants": [],
+          "py": "shí",
+          "name": "石字旁",
+          "en": "stone",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "A rock 口 lying beneath a cliff edge 厂.",
+          "tip": "A rock fallen below the cliff.",
+          "meaningNote": "Characters with 石 are usually about stone and hard things: 破 broken, 碗 bowl, 砖 brick, 码 number.",
+          "examples": [
+            "石",
+            "破",
+            "碗",
+            "研",
+            "码",
+            "砖",
+            "磁",
+            "确"
+          ],
+          "guess": [
+            {
+              "c": "砍",
+              "en": "chop"
+            },
+            {
+              "c": "硬",
+              "en": "hard"
+            },
+            {
+              "c": "矿",
+              "en": "mine"
+            },
+            {
+              "c": "砸",
+              "en": "smash"
+            },
+            {
+              "c": "碎",
+              "en": "shatter"
+            },
+            {
+              "c": "碑",
+              "en": "monument"
+            }
+          ]
+        },
+        {
+          "r": "山",
+          "full": "山",
+          "variants": [],
+          "py": "shān",
+          "name": "山字旁",
+          "en": "mountain",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "Three peaks, the tallest in the middle.",
+          "tip": "Count the peaks: three, with the biggest in the centre.",
+          "meaningNote": "Characters with 山 are usually about mountains and heights: 山 mountain, 岛 island, 岸 shore, 峰 peak.",
+          "examples": [
+            "山",
+            "岁",
+            "岛",
+            "岸",
+            "峰",
+            "岩"
+          ],
+          "guess": [
+            {
+              "c": "岗",
+              "en": "post"
+            },
+            {
+              "c": "岭",
+              "en": "ridge"
+            },
+            {
+              "c": "崖",
+              "en": "cliff"
+            },
+            {
+              "c": "峡",
+              "en": "gorge"
+            },
+            {
+              "c": "崇",
+              "en": "lofty"
+            }
+          ]
+        },
+        {
+          "r": "田",
+          "full": "田",
+          "variants": [],
+          "py": "tián",
+          "name": "田字旁",
+          "en": "field",
+          "pos": "left",
+          "kind": "shape",
+          "origin": "A farm field divided into plots by paths.",
+          "tip": "It looks like a grid of small plots.",
+          "meaningNote": "Mainly a sorting radical. It means fields in 田 and 畔 field edge, but in 男 and 界 the field is only a part.",
+          "examples": [
+            "田",
+            "男",
+            "界",
+            "留",
+            "画"
+          ],
+          "guess": []
+        },
+        {
+          "r": "钅",
+          "full": "金",
+          "variants": [
+            "金"
+          ],
+          "py": "jīn",
+          "name": "金字旁",
+          "en": "metal",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "Nuggets of ore buried under a roof: gold, then metal in general.",
+          "tip": "钅 is the squeezed form of 金 on the left.",
+          "meaningNote": "Characters with 钅 are usually about metal and things made of it: 钱 money, 铁 iron, 钟 clock, 针 needle.",
+          "examples": [
+            "钱",
+            "铁",
+            "钟",
+            "银",
+            "错",
+            "针",
+            "锁",
+            "钢"
+          ],
+          "guess": [
+            {
+              "c": "锅",
+              "en": "pot"
+            },
+            {
+              "c": "钥",
+              "en": "key"
+            },
+            {
+              "c": "铃",
+              "en": "bell"
+            },
+            {
+              "c": "铅",
+              "en": "lead"
+            },
+            {
+              "c": "锄",
+              "en": "hoe"
+            }
+          ]
+        },
+        {
+          "r": "米",
+          "full": "米",
+          "variants": [],
+          "py": "mǐ",
+          "name": "米字旁",
+          "en": "rice",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "Grains of rice scattered around a stalk.",
+          "tip": "A cross with grains in each corner.",
+          "meaningNote": "Characters with 米 are usually about rice and grain foods: 粉 powder, 糖 sugar, 粥 congee.",
+          "examples": [
+            "米",
+            "粉",
+            "糖",
+            "精",
+            "粗",
+            "糊",
+            "粥"
+          ],
+          "guess": [
+            {
+              "c": "粮",
+              "en": "grain"
+            },
+            {
+              "c": "糕",
+              "en": "cake"
+            },
+            {
+              "c": "粒",
+              "en": "grain"
+            },
+            {
+              "c": "粘",
+              "en": "sticky"
+            }
+          ]
+        },
+        {
+          "r": "禾",
+          "full": "禾",
+          "variants": [],
+          "py": "hé",
+          "name": "禾木旁",
+          "en": "grain",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "A grain stalk with a heavy, drooping head.",
+          "tip": "A tree 木 with a bent head of grain on top.",
+          "meaningNote": "Characters with 禾 are usually about crops and harvest: 秋 autumn, 种 seed, 科 branch of study, 租 rent.",
+          "examples": [
+            "秋",
+            "种",
+            "科",
+            "秒",
+            "程",
+            "租",
+            "稳"
+          ],
+          "guess": [
+            {
+              "c": "稻",
+              "en": "rice plant"
+            },
+            {
+              "c": "税",
+              "en": "tax"
+            },
+            {
+              "c": "秧",
+              "en": "seedling"
+            },
+            {
+              "c": "秤",
+              "en": "scale"
+            },
+            {
+              "c": "积",
+              "en": "pile up"
+            }
+          ]
+        },
+        {
+          "r": "冫",
+          "full": "冰",
+          "variants": [
+            "冰"
+          ],
+          "py": "bīng",
+          "name": "两点水",
+          "en": "ice",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "Two cracks of frozen water, a short version of 冰.",
+          "tip": "Two drops, but frozen: just a bit colder than three.",
+          "meaningNote": "Characters with 冫 are usually about cold and ice: 冷 cold, 冰 ice, 凉 cool.",
+          "examples": [
+            "冷",
+            "冰",
+            "准",
+            "决",
+            "况",
+            "净",
+            "凉"
+          ],
+          "guess": [
+            {
+              "c": "冻",
+              "en": "freeze"
+            },
+            {
+              "c": "凝",
+              "en": "freeze solid"
+            },
+            {
+              "c": "凛",
+              "en": "bitter cold"
+            },
+            {
+              "c": "冷",
+              "en": "cold"
+            }
+          ]
+        },
+        {
+          "r": "夕",
+          "full": "夕",
+          "variants": [],
+          "py": "xī",
+          "name": "夕字旁",
+          "en": "evening",
+          "pos": "any",
+          "kind": "shape",
+          "origin": "A crescent moon rising in the evening sky.",
+          "tip": "Half a moon: it is already evening.",
+          "meaningNote": "Mainly a sorting radical. It means evening in 夕 and 夜 night, but in 多 and 外 the shape no longer hints at meaning.",
+          "examples": [
+            "夜",
+            "多",
+            "外",
+            "夕"
+          ],
+          "guess": []
+        }
+      ]
+    },
+    {
+      "id": "action",
+      "title": "Actions & movement",
+      "cn": "动作",
+      "radicals": [
+        {
+          "r": "辶",
+          "full": "辵",
+          "variants": [
+            "辵"
+          ],
+          "py": "chuò",
+          "name": "走之底",
+          "en": "road / move",
+          "pos": "bottom",
+          "kind": "meaning",
+          "origin": "A foot on a road, showing movement along a way.",
+          "tip": "The long tail underneath is a road that carries you along.",
+          "meaningNote": "Characters with 辶 are usually about moving along a road: 过 pass, 进 enter, 道 road, 送 send.",
+          "examples": [
+            "这",
+            "过",
+            "进",
+            "道",
+            "还",
+            "送",
+            "远",
+            "迎"
+          ],
+          "guess": [
+            {
+              "c": "迟",
+              "en": "late"
+            },
+            {
+              "c": "迷",
+              "en": "lost"
+            },
+            {
+              "c": "追",
+              "en": "chase"
+            },
+            {
+              "c": "逃",
+              "en": "escape"
+            },
+            {
+              "c": "递",
+              "en": "pass on"
+            },
+            {
+              "c": "退",
+              "en": "retreat"
+            },
+            {
+              "c": "近",
+              "en": "near"
+            }
+          ]
+        },
+        {
+          "r": "讠",
+          "full": "言",
+          "variants": [
+            "言"
+          ],
+          "py": "yán",
+          "name": "言字旁",
+          "en": "speech",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "A mouth with words coming out; the left form is just a dot and a flick.",
+          "tip": "Speech leaves the mouth from the left.",
+          "meaningNote": "Characters with 讠 are usually about speech and language: 说 say, 请 please, 谢 thank, 读 read aloud.",
+          "examples": [
+            "说",
+            "请",
+            "谢",
+            "话",
+            "读",
+            "课",
+            "认",
+            "语"
+          ],
+          "guess": [
+            {
+              "c": "论",
+              "en": "discuss"
+            },
+            {
+              "c": "诉",
+              "en": "tell"
+            },
+            {
+              "c": "试",
+              "en": "try"
+            },
+            {
+              "c": "讲",
+              "en": "speak"
+            },
+            {
+              "c": "记",
+              "en": "record"
+            },
+            {
+              "c": "许",
+              "en": "permit"
+            }
+          ]
+        },
+        {
+          "r": "刂",
+          "full": "刀",
+          "variants": [
+            "刀"
+          ],
+          "py": "dāo",
+          "name": "立刀旁",
+          "en": "knife",
+          "pos": "right",
+          "kind": "meaning",
+          "origin": "A blade with a cutting edge, standing tall on the right.",
+          "tip": "Two upright strokes: a knife ready to cut.",
+          "meaningNote": "Characters with 刂 are usually about cutting: 别 separate, 刻 carve, 剪 cut, 刷 brush.",
+          "examples": [
+            "到",
+            "别",
+            "刚",
+            "刻",
+            "前",
+            "剪",
+            "刷"
+          ],
+          "guess": [
+            {
+              "c": "刮",
+              "en": "scrape"
+            },
+            {
+              "c": "割",
+              "en": "cut"
+            },
+            {
+              "c": "刺",
+              "en": "stab"
+            },
+            {
+              "c": "划",
+              "en": "slash"
+            }
+          ]
+        },
+        {
+          "r": "又",
+          "full": "又",
+          "variants": [],
+          "py": "yòu",
+          "name": "又字旁",
+          "en": "hand / again",
+          "pos": "right",
+          "kind": "shape",
+          "origin": "A right hand drawn in three strokes; it later also meant \"again\".",
+          "tip": "The hand on the right does the job twice: again.",
+          "meaningNote": "Mainly a sorting radical. It shows a hand in 友 friend and 取 take, but in 对 and 难 it is only a part.",
+          "examples": [
+            "友",
+            "取",
+            "双",
+            "叔",
+            "反"
+          ],
+          "guess": []
+        },
+        {
+          "r": "寸",
+          "full": "寸",
+          "variants": [],
+          "py": "cùn",
+          "name": "寸字旁",
+          "en": "inch",
+          "pos": "right",
+          "kind": "shape",
+          "origin": "A hand with a dot marking the pulse about an inch from the wrist.",
+          "tip": "A hand and a small mark: a tiny measure.",
+          "meaningNote": "Mainly a sorting radical. It shows a hand in 寸 inch and 导 guide, but in 寺 and 射 the meaning is faded.",
+          "examples": [
+            "寸",
+            "寺",
+            "导",
+            "封",
+            "射"
+          ],
+          "guess": []
+        },
+        {
+          "r": "攵",
+          "full": "攴",
+          "variants": [
+            "攴"
+          ],
+          "py": "pū",
+          "name": "反文旁",
+          "en": "tap / strike",
+          "pos": "right",
+          "kind": "meaning",
+          "origin": "A hand holding a stick to tap or strike something.",
+          "tip": "A hand with a stick on the right: teaching, doing.",
+          "meaningNote": "Characters with 攵 are usually about tapping, striking and doing: 教 teach, 数 count, 放 put, 收 collect.",
+          "examples": [
+            "教",
+            "数",
+            "放",
+            "故",
+            "收",
+            "改",
+            "敢",
+            "整"
+          ],
+          "guess": [
+            {
+              "c": "救",
+              "en": "rescue"
+            },
+            {
+              "c": "敲",
+              "en": "knock"
+            },
+            {
+              "c": "散",
+              "en": "scatter"
+            },
+            {
+              "c": "攻",
+              "en": "attack"
+            }
+          ]
+        },
+        {
+          "r": "走",
+          "full": "走",
+          "variants": [],
+          "py": "zǒu",
+          "name": "走字旁",
+          "en": "walk / run",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "A person swinging their arms above a foot: walking fast.",
+          "tip": "Start moving: 走 holds the person on top and the foot beneath.",
+          "meaningNote": "Characters with 走 are usually about walking and moving fast: 起 get up, 超 surpass, 越 cross, 赶 hurry.",
+          "examples": [
+            "起",
+            "超",
+            "越",
+            "赶",
+            "趣",
+            "赵"
+          ],
+          "guess": [
+            {
+              "c": "趟",
+              "en": "trip"
+            },
+            {
+              "c": "赴",
+              "en": "go to"
+            },
+            {
+              "c": "赶",
+              "en": "hurry"
+            },
+            {
+              "c": "超",
+              "en": "overtake"
+            }
+          ]
+        },
+        {
+          "r": "彳",
+          "full": "彳",
+          "variants": [],
+          "py": "chì",
+          "name": "双人旁",
+          "en": "step",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "The left half of 行, a crossroads: a step.",
+          "tip": "Two little steps stacked on the left.",
+          "meaningNote": "Characters with 彳 are usually about steps and going: 往 go toward, 径 path, 徒 on foot. In 很 and 得 the link has faded.",
+          "examples": [
+            "很",
+            "往",
+            "得",
+            "德",
+            "律",
+            "待",
+            "徒"
+          ],
+          "guess": [
+            {
+              "c": "径",
+              "en": "path"
+            },
+            {
+              "c": "循",
+              "en": "follow"
+            },
+            {
+              "c": "役",
+              "en": "service"
+            },
+            {
+              "c": "徒",
+              "en": "on foot"
+            }
+          ]
+        },
+        {
+          "r": "见",
+          "full": "见",
+          "variants": [],
+          "py": "jiàn",
+          "name": "见字旁",
+          "en": "see",
+          "pos": "right",
+          "kind": "meaning",
+          "origin": "Once an eye on legs: a person looking.",
+          "tip": "An eye 目 with legs: someone seeing things.",
+          "meaningNote": "Characters with 见 are usually about seeing: 见 see, 视 look, 观 watch.",
+          "examples": [
+            "见",
+            "视",
+            "观",
+            "规",
+            "览",
+            "觉"
+          ],
+          "guess": [
+            {
+              "c": "览",
+              "en": "view"
+            },
+            {
+              "c": "观",
+              "en": "look"
+            },
+            {
+              "c": "视",
+              "en": "watch"
+            },
+            {
+              "c": "觉",
+              "en": "feel"
+            },
+            {
+              "c": "规",
+              "en": "rule"
+            }
+          ]
+        },
+        {
+          "r": "欠",
+          "full": "欠",
+          "variants": [],
+          "py": "qiàn",
+          "name": "欠字旁",
+          "en": "yawn / lack",
+          "pos": "right",
+          "kind": "meaning",
+          "origin": "A person opening their mouth wide to yawn.",
+          "tip": "Mouth wide open on a person: yawning or breathing.",
+          "meaningNote": "Characters with 欠 are usually about mouth actions like yawning or breathing: 欢 joyful, 歌 song, 吹 blow.",
+          "examples": [
+            "欢",
+            "歌",
+            "次",
+            "欣",
+            "欧",
+            "欲",
+            "款"
+          ],
+          "guess": [
+            {
+              "c": "歇",
+              "en": "rest"
+            },
+            {
+              "c": "欺",
+              "en": "cheat"
+            },
+            {
+              "c": "歉",
+              "en": "apology"
+            },
+            {
+              "c": "欲",
+              "en": "desire"
+            }
+          ]
+        },
+        {
+          "r": "止",
+          "full": "止",
+          "variants": [],
+          "py": "zhǐ",
+          "name": "止字旁",
+          "en": "stop / foot",
+          "pos": "any",
+          "kind": "shape",
+          "origin": "A footprint pointing up, meaning foot and then stop.",
+          "tip": "A foot that has planted itself: stop.",
+          "meaningNote": "Mainly a sorting radical. It shows a foot in 步 step, but in 正 and 此 the meaning has faded.",
+          "examples": [
+            "步",
+            "正",
+            "此",
+            "歪",
+            "武"
+          ],
+          "guess": []
+        },
+        {
+          "r": "戈",
+          "full": "戈",
+          "variants": [],
+          "py": "gē",
+          "name": "戈字旁",
+          "en": "spear",
+          "pos": "right",
+          "kind": "shape",
+          "origin": "A long-handled weapon with a curved blade.",
+          "tip": "A pole with a hook on the right side: a weapon.",
+          "meaningNote": "Mainly a sorting radical. It shows weapons in 战 war and 戒 guard against, but in 我 and 成 it is just a component.",
+          "examples": [
+            "我",
+            "成",
+            "战",
+            "或",
+            "戏",
+            "戒"
+          ],
+          "guess": []
+        },
+        {
+          "r": "弓",
+          "full": "弓",
+          "variants": [],
+          "py": "gōng",
+          "name": "弓字旁",
+          "en": "bow",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "An archery bow with its string.",
+          "tip": "The curved outline of a bow, string drawn.",
+          "meaningNote": "Characters with 弓 are usually about bows and bending: 弯 bent, 弹 shoot, 张 stretch.",
+          "examples": [
+            "张",
+            "引",
+            "弯",
+            "弹",
+            "弱",
+            "强",
+            "弟"
+          ],
+          "guess": [
+            {
+              "c": "弯",
+              "en": "bent"
+            },
+            {
+              "c": "弹",
+              "en": "shoot"
+            },
+            {
+              "c": "张",
+              "en": "stretch"
+            },
+            {
+              "c": "引",
+              "en": "pull"
+            },
+            {
+              "c": "弧",
+              "en": "arc"
+            }
+          ]
+        },
+        {
+          "r": "立",
+          "full": "立",
+          "variants": [],
+          "py": "lì",
+          "name": "立字旁",
+          "en": "stand",
+          "pos": "any",
+          "kind": "shape",
+          "origin": "A person standing firmly on a line of ground.",
+          "tip": "A person with feet apart on the ground: standing.",
+          "meaningNote": "Mainly a sorting radical. It means stand in 立 and 站 stand, but in 竟 and 章 it is only part of the shape.",
+          "examples": [
+            "立",
+            "站",
+            "竟",
+            "童",
+            "端",
+            "竞",
+            "章"
+          ],
+          "guess": []
+        }
+      ]
+    },
+    {
+      "id": "things",
+      "title": "Things & places",
+      "cn": "物与地方",
+      "radicals": [
+        {
+          "r": "宀",
+          "full": "宀",
+          "variants": [],
+          "py": "mián",
+          "name": "宝盖头",
+          "en": "roof",
+          "pos": "top",
+          "kind": "meaning",
+          "origin": "The roof of a simple house.",
+          "tip": "Like a hat over a little house.",
+          "meaningNote": "Characters with 宀 are usually about houses and shelter: 家 home, 客 guest, 室 room, 安 safe.",
+          "examples": [
+            "家",
+            "客",
+            "室",
+            "安",
+            "完",
+            "定",
+            "宿",
+            "宫"
+          ],
+          "guess": [
+            {
+              "c": "富",
+              "en": "rich"
+            },
+            {
+              "c": "寒",
+              "en": "cold"
+            },
+            {
+              "c": "宽",
+              "en": "wide"
+            },
+            {
+              "c": "寄",
+              "en": "send"
+            }
+          ]
+        },
+        {
+          "r": "广",
+          "full": "广",
+          "variants": [],
+          "py": "guǎng",
+          "name": "广字旁",
+          "en": "building",
+          "pos": "enclose",
+          "kind": "meaning",
+          "origin": "A house with a sloping roof and one wall.",
+          "tip": "A roof leaning on a wall: a large hall.",
+          "meaningNote": "Characters with 广 are usually about buildings and large spaces: 店 shop, 床 bed, 库 storehouse, 座 seat.",
+          "examples": [
+            "店",
+            "床",
+            "度",
+            "座",
+            "应",
+            "库",
+            "底",
+            "广"
+          ],
+          "guess": [
+            {
+              "c": "府",
+              "en": "office"
+            },
+            {
+              "c": "庙",
+              "en": "temple"
+            },
+            {
+              "c": "庄",
+              "en": "village"
+            },
+            {
+              "c": "廊",
+              "en": "corridor"
+            }
+          ]
+        },
+        {
+          "r": "门",
+          "full": "门",
+          "variants": [
+            "門"
+          ],
+          "py": "mén",
+          "name": "门字框",
+          "en": "door",
+          "pos": "enclose",
+          "kind": "meaning",
+          "origin": "Two door leaves swinging on their hinges.",
+          "tip": "Look at the frame: two doors with a gap between.",
+          "meaningNote": "Characters with 门 are usually about doors and openings: 问 ask (at the door), 间 room, 闭 close, 闯 rush in.",
+          "examples": [
+            "问",
+            "间",
+            "闻",
+            "阅",
+            "闪",
+            "闭"
+          ],
+          "guess": [
+            {
+              "c": "闹",
+              "en": "noisy"
+            },
+            {
+              "c": "闲",
+              "en": "idle"
+            },
+            {
+              "c": "闯",
+              "en": "rush in"
+            },
+            {
+              "c": "闷",
+              "en": "stuffy"
+            },
+            {
+              "c": "闸",
+              "en": "gate"
+            }
+          ]
+        },
+        {
+          "r": "纟",
+          "full": "糸",
+          "variants": [
+            "糸"
+          ],
+          "py": "sī",
+          "name": "绞丝旁",
+          "en": "silk",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "A twist of silk thread tied in loops.",
+          "tip": "Twisted threads on the left: silk, cloth, rope.",
+          "meaningNote": "Characters with 纟 are usually about thread, silk and ties: 线 thread, 纸 paper, 绳 rope, 织 weave. In 给 and 红 the link has faded.",
+          "examples": [
+            "红",
+            "绿",
+            "给",
+            "结",
+            "细",
+            "经",
+            "练",
+            "级"
+          ],
+          "guess": [
+            {
+              "c": "绳",
+              "en": "rope"
+            },
+            {
+              "c": "织",
+              "en": "weave"
+            },
+            {
+              "c": "绕",
+              "en": "wind around"
+            },
+            {
+              "c": "绣",
+              "en": "embroider"
+            },
+            {
+              "c": "纺",
+              "en": "spin thread"
+            }
+          ]
+        },
+        {
+          "r": "贝",
+          "full": "贝",
+          "variants": [],
+          "py": "bèi",
+          "name": "贝字旁",
+          "en": "shell",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "A cowrie shell, which once served as money.",
+          "tip": "Shells were the old coins, so money words wear them.",
+          "meaningNote": "Characters with 贝 are usually about money and trade: 财 wealth, 货 goods, 贵 expensive, 费 cost.",
+          "examples": [
+            "财",
+            "货",
+            "贵",
+            "费",
+            "赚",
+            "赢",
+            "赛",
+            "贸"
+          ],
+          "guess": [
+            {
+              "c": "贪",
+              "en": "greedy"
+            },
+            {
+              "c": "购",
+              "en": "buy"
+            },
+            {
+              "c": "赔",
+              "en": "compensate"
+            },
+            {
+              "c": "赠",
+              "en": "give"
+            },
+            {
+              "c": "贫",
+              "en": "poor"
+            }
+          ]
+        },
+        {
+          "r": "衤",
+          "full": "衣",
+          "variants": [
+            "衣"
+          ],
+          "py": "yī",
+          "name": "衣字旁",
+          "en": "clothes",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "The collar and sleeves of a robe.",
+          "tip": "衤 is a tunic with a dot for the buttons.",
+          "meaningNote": "Characters with 衤 are usually about clothes and cloth: 衫 shirt, 裤 trousers, 裙 skirt, 被 quilt.",
+          "examples": [
+            "衬",
+            "衫",
+            "裤",
+            "裙",
+            "被",
+            "补",
+            "袜"
+          ],
+          "guess": [
+            {
+              "c": "袖",
+              "en": "sleeve"
+            },
+            {
+              "c": "袋",
+              "en": "bag"
+            },
+            {
+              "c": "裹",
+              "en": "wrap"
+            },
+            {
+              "c": "袄",
+              "en": "padded coat"
+            }
+          ]
+        },
+        {
+          "r": "礻",
+          "full": "示",
+          "variants": [
+            "示"
+          ],
+          "py": "shì",
+          "name": "示字旁",
+          "en": "spirit / altar",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "An altar table for offerings to the spirits.",
+          "tip": "礻 is an altar: things to do with worship and luck.",
+          "meaningNote": "Characters with 礻 are usually about worship and luck: 神 god, 祝 wish, 福 blessing, 礼 ritual.",
+          "examples": [
+            "神",
+            "礼",
+            "祝",
+            "福",
+            "社",
+            "祖",
+            "祥"
+          ],
+          "guess": [
+            {
+              "c": "祈",
+              "en": "pray"
+            },
+            {
+              "c": "祸",
+              "en": "disaster"
+            },
+            {
+              "c": "祭",
+              "en": "sacrifice"
+            },
+            {
+              "c": "禁",
+              "en": "forbid"
+            }
+          ]
+        },
+        {
+          "r": "饣",
+          "full": "食",
+          "variants": [
+            "食"
+          ],
+          "py": "shí",
+          "name": "食字旁",
+          "en": "food",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "A bowl of food with a lid.",
+          "tip": "饣 is a bowl of food on the left.",
+          "meaningNote": "Characters with 饣 are usually about food and eating: 饭 meal, 饿 hungry, 饮 drink, 饱 full.",
+          "examples": [
+            "饭",
+            "饿",
+            "饺",
+            "饮",
+            "馆",
+            "饱",
+            "馒"
+          ],
+          "guess": [
+            {
+              "c": "饼",
+              "en": "pancake"
+            },
+            {
+              "c": "饲",
+              "en": "feed"
+            },
+            {
+              "c": "馅",
+              "en": "filling"
+            },
+            {
+              "c": "馋",
+              "en": "greedy"
+            },
+            {
+              "c": "饥",
+              "en": "starving"
+            }
+          ]
+        },
+        {
+          "r": "⺮",
+          "full": "竹",
+          "variants": [
+            "竹"
+          ],
+          "py": "zhú",
+          "name": "竹字头",
+          "en": "bamboo",
+          "pos": "top",
+          "kind": "meaning",
+          "origin": "Two bamboo stalks with leaves hanging down.",
+          "tip": "Two leafy tops: bamboo.",
+          "meaningNote": "Characters with ⺮ are usually about bamboo and things made of it: 笔 pen, 筷 chopsticks, 篮 basket, 算 calculate.",
+          "examples": [
+            "笔",
+            "第",
+            "笑",
+            "筷",
+            "等",
+            "简",
+            "篮",
+            "答"
+          ],
+          "guess": [
+            {
+              "c": "管",
+              "en": "pipe"
+            },
+            {
+              "c": "箱",
+              "en": "box"
+            },
+            {
+              "c": "筒",
+              "en": "tube"
+            },
+            {
+              "c": "签",
+              "en": "sign"
+            },
+            {
+              "c": "笨",
+              "en": "clumsy"
+            }
+          ]
+        },
+        {
+          "r": "艹",
+          "full": "草",
+          "variants": [
+            "草"
+          ],
+          "py": "cǎo",
+          "name": "草字头",
+          "en": "grass",
+          "pos": "top",
+          "kind": "meaning",
+          "origin": "Young sprouts breaking out of the ground.",
+          "tip": "Sprouts on a flat line: plants on top.",
+          "meaningNote": "Characters with 艹 are usually about plants: 花 flower, 草 grass, 茶 tea, 菜 vegetable.",
+          "examples": [
+            "花",
+            "草",
+            "茶",
+            "药",
+            "英",
+            "菜",
+            "苹",
+            "节"
+          ],
+          "guess": [
+            {
+              "c": "苦",
+              "en": "bitter"
+            },
+            {
+              "c": "荷",
+              "en": "lotus"
+            },
+            {
+              "c": "芽",
+              "en": "sprout"
+            },
+            {
+              "c": "蔬",
+              "en": "vegetable"
+            },
+            {
+              "c": "蓝",
+              "en": "blue"
+            }
+          ]
+        },
+        {
+          "r": "车",
+          "full": "车",
+          "variants": [],
+          "py": "chē",
+          "name": "车字旁",
+          "en": "vehicle",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "A cart seen from above, with wheels at both ends.",
+          "tip": "Wheels on an axle, with the body in the middle.",
+          "meaningNote": "Characters with 车 are usually about vehicles and wheels: 轮 wheel, 轻 light, 转 turn, 辆 vehicle.",
+          "examples": [
+            "轮",
+            "轻",
+            "转",
+            "较",
+            "辆",
+            "输"
+          ],
+          "guess": [
+            {
+              "c": "轨",
+              "en": "track"
+            },
+            {
+              "c": "轿",
+              "en": "sedan"
+            },
+            {
+              "c": "轴",
+              "en": "axle"
+            },
+            {
+              "c": "轮",
+              "en": "wheel"
+            }
+          ]
+        },
+        {
+          "r": "巾",
+          "full": "巾",
+          "variants": [],
+          "py": "jīn",
+          "name": "巾字旁",
+          "en": "cloth",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "A cloth hanging from a belt.",
+          "tip": "A towel hanging from a line.",
+          "meaningNote": "Characters with 巾 are usually about cloth and fabric: 帽 hat, 布 cloth, 带 belt, 席 mat.",
+          "examples": [
+            "帽",
+            "帮",
+            "师",
+            "市",
+            "带",
+            "常",
+            "布",
+            "希"
+          ],
+          "guess": [
+            {
+              "c": "币",
+              "en": "currency"
+            },
+            {
+              "c": "帘",
+              "en": "curtain"
+            },
+            {
+              "c": "帐",
+              "en": "tent"
+            },
+            {
+              "c": "帜",
+              "en": "flag"
+            }
+          ]
+        },
+        {
+          "r": "尸",
+          "full": "尸",
+          "variants": [],
+          "py": "shī",
+          "name": "尸字头",
+          "en": "body / roof",
+          "pos": "top",
+          "kind": "shape",
+          "origin": "A body lying down; later it also looks like a roof over a space.",
+          "tip": "Imagine a person sitting under a low roof.",
+          "meaningNote": "Mainly a sorting radical. It shows a body or building in 尺 and 屋 room, but in 局 and 层 the link is faded.",
+          "examples": [
+            "屋",
+            "局",
+            "层",
+            "尾",
+            "展",
+            "尺",
+            "届"
+          ],
+          "guess": []
+        },
+        {
+          "r": "阝",
+          "full": "阜",
+          "variants": [
+            "阜",
+            "邑"
+          ],
+          "py": "fù",
+          "name": "耳刀旁",
+          "en": "mound / city",
+          "pos": "left",
+          "kind": "shape",
+          "origin": "On the left it is a hill with steps; on the right it is a walled town.",
+          "tip": "Left means hills, right means towns.",
+          "meaningNote": "Mainly a sorting radical. On the left it hints at hills (阳 sunny side, 陪 accompany), on the right at towns (都 capital, 邮 post), but many characters have no such link.",
+          "examples": [
+            "都",
+            "部",
+            "那",
+            "邮",
+            "院",
+            "阳",
+            "阿",
+            "陪"
+          ],
+          "guess": []
+        },
+        {
+          "r": "王",
+          "full": "玉",
+          "variants": [
+            "玉"
+          ],
+          "py": "yù",
+          "name": "王字旁",
+          "en": "jade",
+          "pos": "left",
+          "kind": "shape",
+          "origin": "Three pieces of jade strung on a cord.",
+          "tip": "Same as 王 the king, but it is a string of jade beads.",
+          "meaningNote": "Mainly a sorting radical. It means jade in 玉 and 琴 zither, but in 现 球 理 the jade meaning has faded.",
+          "examples": [
+            "现",
+            "球",
+            "玩",
+            "理",
+            "班",
+            "玻",
+            "琴"
+          ],
+          "guess": []
+        },
+        {
+          "r": "皿",
+          "full": "皿",
+          "variants": [],
+          "py": "mǐn",
+          "name": "皿字底",
+          "en": "dish",
+          "pos": "bottom",
+          "kind": "meaning",
+          "origin": "A shallow dish with a foot.",
+          "tip": "A bowl on a stand: the base of the character.",
+          "meaningNote": "Characters with 皿 are usually about dishes and containers: 盘 plate, 盒 box, 盆 basin.",
+          "examples": [
+            "盘",
+            "盒",
+            "益",
+            "盆",
+            "盖",
+            "盛",
+            "监"
+          ],
+          "guess": [
+            {
+              "c": "盐",
+              "en": "salt"
+            },
+            {
+              "c": "盏",
+              "en": "lamp cup"
+            },
+            {
+              "c": "盘",
+              "en": "plate"
+            },
+            {
+              "c": "盆",
+              "en": "basin"
+            }
+          ]
+        },
+        {
+          "r": "囗",
+          "full": "囗",
+          "variants": [],
+          "py": "wéi",
+          "name": "国字框",
+          "en": "enclosure",
+          "pos": "enclose",
+          "kind": "shape",
+          "origin": "A walled boundary around something.",
+          "tip": "A fence that holds another character in.",
+          "meaningNote": "Mainly a sorting radical. It is an enclosure in 国 country, 园 garden and 圆 round, but in 因 and 回 it is only the box shape.",
+          "examples": [
+            "国",
+            "回",
+            "因",
+            "园",
+            "图",
+            "团",
+            "圆",
+            "困"
+          ],
+          "guess": []
+        },
+        {
+          "r": "厂",
+          "full": "厂",
+          "variants": [],
+          "py": "chǎng",
+          "name": "厂字头",
+          "en": "cliff",
+          "pos": "enclose",
+          "kind": "shape",
+          "origin": "A cliff overhang that makes a sheltered spot.",
+          "tip": "A cliff that covers the character beneath it.",
+          "meaningNote": "Mainly a sorting radical. It is a cliff in 厂 and 厦 building, but in 原 and 历 the link is faded.",
+          "examples": [
+            "厅",
+            "历",
+            "厕",
+            "原",
+            "厨",
+            "厦",
+            "压"
+          ],
+          "guess": []
+        },
+        {
+          "r": "酉",
+          "full": "酉",
+          "variants": [],
+          "py": "yǒu",
+          "name": "酉字旁",
+          "en": "wine jar",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "A jar for brewing wine.",
+          "tip": "A jar with a belly full of wine.",
+          "meaningNote": "Characters with 酉 are usually about wine and fermenting: 酒 liquor, 醉 drunk, 酸 sour.",
+          "examples": [
+            "酒",
+            "醉",
+            "配",
+            "酸",
+            "醒",
+            "醋"
+          ],
+          "guess": [
+            {
+              "c": "酱",
+              "en": "sauce"
+            },
+            {
+              "c": "酿",
+              "en": "brew"
+            },
+            {
+              "c": "醋",
+              "en": "vinegar"
+            },
+            {
+              "c": "醒",
+              "en": "sober up"
+            }
+          ]
+        },
+        {
+          "r": "舟",
+          "full": "舟",
+          "variants": [],
+          "py": "zhōu",
+          "name": "舟字旁",
+          "en": "boat",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "A little boat with its ribs and hull.",
+          "tip": "Lines for the planks: a small boat.",
+          "meaningNote": "Characters with 舟 are usually about boats: 船 boat, 航 sail, 舰 warship.",
+          "examples": [
+            "船",
+            "般",
+            "航",
+            "舰",
+            "舱"
+          ],
+          "guess": [
+            {
+              "c": "艇",
+              "en": "boat"
+            },
+            {
+              "c": "舰",
+              "en": "warship"
+            },
+            {
+              "c": "舱",
+              "en": "cabin"
+            },
+            {
+              "c": "船",
+              "en": "boat"
+            }
+          ]
+        },
+        {
+          "r": "户",
+          "full": "户",
+          "variants": [],
+          "py": "hù",
+          "name": "户字头",
+          "en": "household",
+          "pos": "top",
+          "kind": "shape",
+          "origin": "A single-leaf door, half of a pair of gates.",
+          "tip": "Half a door: one family.",
+          "meaningNote": "Mainly a sorting radical. It means door in 户 and 扇 fan-leaf, but in 房 and 所 the link has faded.",
+          "examples": [
+            "房",
+            "所",
+            "扇",
+            "户"
+          ],
+          "guess": []
+        },
+        {
+          "r": "穴",
+          "full": "穴",
+          "variants": [],
+          "py": "xué",
+          "name": "穴宝盖",
+          "en": "cave",
+          "pos": "top",
+          "kind": "meaning",
+          "origin": "A cave with a rough roof over its mouth.",
+          "tip": "A cave with a lid on top.",
+          "meaningNote": "Characters with 穴 are usually about caves and hollows: 空 empty, 窗 window, 穷 poor.",
+          "examples": [
+            "空",
+            "窗",
+            "穷",
+            "究",
+            "突",
+            "穿"
+          ],
+          "guess": [
+            {
+              "c": "窝",
+              "en": "nest"
+            },
+            {
+              "c": "窄",
+              "en": "narrow"
+            },
+            {
+              "c": "窃",
+              "en": "steal"
+            },
+            {
+              "c": "窑",
+              "en": "kiln"
+            },
+            {
+              "c": "空",
+              "en": "empty"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "animals",
+      "title": "Animals & more",
+      "cn": "动物和其他",
+      "radicals": [
+        {
+          "r": "犭",
+          "full": "犬",
+          "variants": [
+            "犬"
+          ],
+          "py": "quǎn",
+          "name": "反犬旁",
+          "en": "dog / animal",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "A dog seen from the side, tail up, shrunk on the left.",
+          "tip": "The curl on the left is an animal ready to pounce.",
+          "meaningNote": "Characters with 犭 are usually about animals: 狗 dog, 猫 cat, 猪 pig, 狼 wolf.",
+          "examples": [
+            "狗",
+            "猫",
+            "猪",
+            "狼",
+            "狐",
+            "狮",
+            "猴"
+          ],
+          "guess": [
+            {
+              "c": "狡",
+              "en": "cunning"
+            },
+            {
+              "c": "猛",
+              "en": "fierce"
+            },
+            {
+              "c": "狂",
+              "en": "mad"
+            },
+            {
+              "c": "狠",
+              "en": "ruthless"
+            }
+          ]
+        },
+        {
+          "r": "马",
+          "full": "马",
+          "variants": [],
+          "py": "mǎ",
+          "name": "马字旁",
+          "en": "horse",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "A horse with a mane and four legs.",
+          "tip": "Still has a mane at the top and tail curling away.",
+          "meaningNote": "Characters with 马 are usually about horses: 骑 ride, 驾 drive, 驶 steer.",
+          "examples": [
+            "骑",
+            "骗",
+            "驾",
+            "驶",
+            "驴"
+          ],
+          "guess": [
+            {
+              "c": "驰",
+              "en": "gallop"
+            },
+            {
+              "c": "驼",
+              "en": "camel"
+            },
+            {
+              "c": "驯",
+              "en": "tame"
+            },
+            {
+              "c": "骄",
+              "en": "proud"
+            }
+          ]
+        },
+        {
+          "r": "鸟",
+          "full": "鸟",
+          "variants": [],
+          "py": "niǎo",
+          "name": "鸟字旁",
+          "en": "bird",
+          "pos": "right",
+          "kind": "meaning",
+          "origin": "A bird with a beak, a body and a tail.",
+          "tip": "The dot is the eye of the bird.",
+          "meaningNote": "Characters with 鸟 are usually about birds: 鸡 chicken, 鸭 duck, 鹅 goose.",
+          "examples": [
+            "鸡",
+            "鸭",
+            "鹅",
+            "鸽",
+            "鸟"
+          ],
+          "guess": [
+            {
+              "c": "鸦",
+              "en": "crow"
+            },
+            {
+              "c": "鹰",
+              "en": "eagle"
+            },
+            {
+              "c": "鹤",
+              "en": "crane"
+            },
+            {
+              "c": "鹦",
+              "en": "parrot"
+            },
+            {
+              "c": "鹊",
+              "en": "magpie"
+            }
+          ]
+        },
+        {
+          "r": "鱼",
+          "full": "鱼",
+          "variants": [],
+          "py": "yú",
+          "name": "鱼字旁",
+          "en": "fish",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "A fish with head, body and tail.",
+          "tip": "The bottom line is the tail fin.",
+          "meaningNote": "Characters with 鱼 are usually about fish: 鲜 fresh, 鲸 whale, 鲨 shark.",
+          "examples": [
+            "鲜",
+            "鲤",
+            "鲨",
+            "鲸",
+            "鱼"
+          ],
+          "guess": [
+            {
+              "c": "鲸",
+              "en": "whale"
+            },
+            {
+              "c": "鲤",
+              "en": "carp"
+            },
+            {
+              "c": "鲨",
+              "en": "shark"
+            },
+            {
+              "c": "鳄",
+              "en": "crocodile"
+            },
+            {
+              "c": "鲫",
+              "en": "crucian carp"
+            }
+          ]
+        },
+        {
+          "r": "虫",
+          "full": "虫",
+          "variants": [],
+          "py": "chóng",
+          "name": "虫字旁",
+          "en": "insect",
+          "pos": "left",
+          "kind": "meaning",
+          "origin": "A crawling worm or snake.",
+          "tip": "A worm with a head and curl: bugs and critters.",
+          "meaningNote": "Characters with 虫 are usually about insects and small creatures: 蚊 mosquito, 蜜 honey, 蜂 bee, 蛇 snake.",
+          "examples": [
+            "蚊",
+            "蝴",
+            "蜜",
+            "蛋",
+            "蜂",
+            "虾",
+            "蛇"
+          ],
+          "guess": [
+            {
+              "c": "蝶",
+              "en": "butterfly"
+            },
+            {
+              "c": "蚁",
+              "en": "ant"
+            },
+            {
+              "c": "蜘",
+              "en": "spider"
+            },
+            {
+              "c": "蛙",
+              "en": "frog"
+            },
+            {
+              "c": "蜗",
+              "en": "snail"
+            },
+            {
+              "c": "蜻",
+              "en": "dragonfly"
+            }
+          ]
+        },
+        {
+          "r": "羊",
+          "full": "羊",
+          "variants": [],
+          "py": "yáng",
+          "name": "羊字旁",
+          "en": "sheep",
+          "pos": "top",
+          "kind": "shape",
+          "origin": "A sheep seen from the front with its curved horns.",
+          "tip": "Horns on top and a body: a sheep.",
+          "meaningNote": "Mainly a sorting radical. It means sheep in 羊 and 羔 lamb, but in 美 and 群 it is only a component.",
+          "examples": [
+            "美",
+            "群",
+            "羊",
+            "羡",
+            "羔"
+          ],
+          "guess": []
+        },
+        {
+          "r": "牛",
+          "full": "牛",
+          "variants": [],
+          "py": "niú",
+          "name": "牛字旁",
+          "en": "ox",
+          "pos": "left",
+          "kind": "shape",
+          "origin": "The head of an ox with horns.",
+          "tip": "A horned head with a line down the middle.",
+          "meaningNote": "Mainly a sorting radical. It means cattle in 牛 and 牧 herd, but in 物 and 特 the link has faded.",
+          "examples": [
+            "牧",
+            "物",
+            "特",
+            "牺"
+          ],
+          "guess": []
+        },
+        {
+          "r": "疒",
+          "full": "疒",
+          "variants": [],
+          "py": "nè",
+          "name": "病字旁",
+          "en": "sickness",
+          "pos": "enclose",
+          "kind": "meaning",
+          "origin": "A person lying on a bed.",
+          "tip": "A sick person leaning on a bed.",
+          "meaningNote": "Characters with 疒 are usually about sickness and pain: 病 ill, 疼 ache, 痛 pain, 瘦 thin.",
+          "examples": [
+            "病",
+            "疼",
+            "痛",
+            "瘦",
+            "痒",
+            "疗"
+          ],
+          "guess": [
+            {
+              "c": "疯",
+              "en": "crazy"
+            },
+            {
+              "c": "症",
+              "en": "symptom"
+            },
+            {
+              "c": "疲",
+              "en": "tired"
+            },
+            {
+              "c": "痕",
+              "en": "scar"
+            },
+            {
+              "c": "疤",
+              "en": "scar"
+            }
+          ]
+        },
+        {
+          "r": "白",
+          "full": "白",
+          "variants": [],
+          "py": "bái",
+          "name": "白字旁",
+          "en": "white",
+          "pos": "left",
+          "kind": "shape",
+          "origin": "A ray of white light or a thumb tip.",
+          "tip": "A sun with a ray on top: white.",
+          "meaningNote": "Mainly a sorting radical. It means white in 白, but in 的 and 百 it is only a component.",
+          "examples": [
+            "白",
+            "的",
+            "百",
+            "皇"
+          ],
+          "guess": []
+        },
+        {
+          "r": "大",
+          "full": "大",
+          "variants": [],
+          "py": "dà",
+          "name": "大字头",
+          "en": "big",
+          "pos": "top",
+          "kind": "shape",
+          "origin": "A person stretching their arms and legs wide.",
+          "tip": "A person with arms wide: big!",
+          "meaningNote": "Mainly a sorting radical. It means big or a person in 大 and 天 sky, but in 夫 and 夹 it is only a component.",
+          "examples": [
+            "太",
+            "天",
+            "夫",
+            "奇",
+            "奋"
+          ],
+          "guess": []
+        },
+        {
+          "r": "隹",
+          "full": "隹",
+          "variants": [],
+          "py": "zhuī",
+          "name": "隹字旁",
+          "en": "short-tailed bird",
+          "pos": "right",
+          "kind": "meaning",
+          "origin": "A small bird with a short tail, seen from the side.",
+          "tip": "A bird perched on a line, with feathers drawn as strokes.",
+          "meaningNote": "Characters with 隹 are usually about birds: 集 gather, 雄 male, 雀 sparrow.",
+          "examples": [
+            "集",
+            "雄",
+            "雅",
+            "雇",
+            "雀",
+            "雁"
+          ],
+          "guess": [
+            {
+              "c": "雀",
+              "en": "sparrow"
+            },
+            {
+              "c": "雁",
+              "en": "wild goose"
+            },
+            {
+              "c": "雏",
+              "en": "chick"
+            },
+            {
+              "c": "雕",
+              "en": "eagle"
+            },
+            {
+              "c": "雌",
+              "en": "female"
+            }
+          ]
+        },
+        {
+          "r": "羽",
+          "full": "羽",
+          "variants": [],
+          "py": "yǔ",
+          "name": "羽字旁",
+          "en": "feather",
+          "pos": "right",
+          "kind": "meaning",
+          "origin": "Two wings with feathers.",
+          "tip": "Two feathers side by side.",
+          "meaningNote": "Characters with 羽 are usually about feathers and flight: 翅 wing, 翻 flip, 翼 wing.",
+          "examples": [
+            "羽",
+            "翅",
+            "翻",
+            "翼",
+            "翔",
+            "翠",
+            "翁"
+          ],
+          "guess": [
+            {
+              "c": "翔",
+              "en": "soar"
+            },
+            {
+              "c": "翅",
+              "en": "wing"
+            },
+            {
+              "c": "翼",
+              "en": "wing"
+            },
+            {
+              "c": "翠",
+              "en": "emerald"
+            }
+          ]
+        },
+        {
+          "r": "小",
+          "full": "小",
+          "variants": [],
+          "py": "xiǎo",
+          "name": "小字头",
+          "en": "small",
+          "pos": "top",
+          "kind": "shape",
+          "origin": "Three tiny dots for small bits.",
+          "tip": "Three little specks: small.",
+          "meaningNote": "Mainly a sorting radical. It means small in 小 and 尖 pointed, but in 少 it is only a component.",
+          "examples": [
+            "少",
+            "尘",
+            "尖",
+            "小"
+          ],
+          "guess": []
+        },
+        {
+          "r": "十",
+          "full": "十",
+          "variants": [],
+          "py": "shí",
+          "name": "十字旁",
+          "en": "ten",
+          "pos": "any",
+          "kind": "shape",
+          "origin": "A cross: counting all ten on both hands.",
+          "tip": "A cross: ten.",
+          "meaningNote": "Mainly a sorting radical. It means ten in 十 and 千 thousand, but in 午 noon and 南 south it only gives the shape.",
+          "examples": [
+            "千",
+            "午",
+            "半",
+            "南",
+            "华",
+            "协"
+          ],
+          "guess": []
+        },
+        {
+          "r": "一",
+          "full": "一",
+          "variants": [],
+          "py": "yī",
+          "name": "横",
+          "en": "one",
+          "pos": "any",
+          "kind": "shape",
+          "origin": "One horizontal line.",
+          "tip": "One stroke: one.",
+          "meaningNote": "Mainly a sorting radical. It means one in 一 and 三 three, but in 不 and 世 it is only a stroke.",
+          "examples": [
+            "三",
+            "不",
+            "世",
+            "丈",
+            "与"
+          ],
+          "guess": []
+        },
+        {
+          "r": "儿",
+          "full": "儿",
+          "variants": [],
+          "py": "ér",
+          "name": "儿字底",
+          "en": "legs / child",
+          "pos": "bottom",
+          "kind": "shape",
+          "origin": "A person with two legs, often at the foot of a character.",
+          "tip": "Two legs at the bottom: a person walking.",
+          "meaningNote": "Mainly a sorting radical. It shows a person with legs in 儿 child and 兄 elder brother, but in 先 and 光 it is only the bottom shape.",
+          "examples": [
+            "先",
+            "光",
+            "元",
+            "兄",
+            "克",
+            "党"
+          ],
+          "guess": []
+        },
+        {
+          "r": "八",
+          "full": "八",
+          "variants": [],
+          "py": "bā",
+          "name": "八字头",
+          "en": "eight / divide",
+          "pos": "top",
+          "kind": "shape",
+          "origin": "Two lines pulling apart, to divide.",
+          "tip": "Two strokes parting like a door opening.",
+          "meaningNote": "Mainly a sorting radical. It means eight in 八, but in 公 and 六 it is only a component.",
+          "examples": [
+            "公",
+            "六",
+            "兵",
+            "共",
+            "其"
+          ],
+          "guess": []
+        }
+      ]
+    }
+  ]
+}

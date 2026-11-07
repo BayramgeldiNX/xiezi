@@ -4,6 +4,7 @@ import path from "node:path";
 import { DATA_DIR, loadLessons, lessonChars, strokeData, writeJSON } from "./lib.mjs";
 import { checkData } from "./check-data.mjs";
 import { genCharInfo } from "./gen-charinfo.mjs";
+import { genRadicals } from "./gen-radicals.mjs";
 
 const lessons = loadLessons();
 const out = {};
@@ -21,4 +22,5 @@ if (missing.length) {
   process.exit(1);
 }
 genCharInfo();
+genRadicals();
 if (!checkData()) process.exit(1);

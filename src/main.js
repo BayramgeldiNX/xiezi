@@ -24,6 +24,7 @@ import "./views/charsheet.js";
 import { openSearch } from "./views/search.js";
 import { openNotebook, notebookChanged } from "./views/notebook.js";
 import * as notebook from "./notebook/store.js";
+import { openRadicals, learnedCount, radicalTotal } from "./views/radicals.js";
 import { openPrint } from "./views/printsheet.js";
 import { hideGloss } from "./views/reading.js";
 import { initAccountChip } from "./views/account.js";
@@ -39,13 +40,14 @@ const OLD_TABS = { dict: "write", review: "write", cards: "words", tones: "liste
 /* ---------- Pages ----------
    #/                           home
    #/typing                     typing practice
+   #/radicals, #/radical/<r>    Radicals: the list, or one radical
    #/notebook[/<word>]          Notebook: the word list, or one word
    #/books                      all books
    #/book/<book>[/review]       one book: its lessons, or its review
    #/lesson/<book>/<n>/<tab>    a lesson (tabs: write, listen, speak, read, words, exercises)
    #/print/<book>/<n>           printable practice sheet for a lesson
    Each page has its own address, so the Android / browser back gesture steps back one page. */
-const PAGES = ["home", "reviewView", "typingView", "searchView", "notebookView", "booksView", "bookView", "lessonView", "printView"];
+const PAGES = ["home", "reviewView", "typingView", "searchView", "notebookView", "radicalsView", "booksView", "bookView", "lessonView", "printView"];
 let current = "home";
 let printLesson = null;
 let lastHash = null;       // the page hash of the last slide, null before the first page
@@ -61,7 +63,7 @@ function hideLoading() {
 // Exercises find their buttons by id (#qNext, #qStatus…), and document.querySelector returns the first match.
 // An old exercise left in a hidden tab or page would catch those lookups, so the visible one never showed
 // its answer or Next. Empty every exercise host that is not on screen; it is drawn again when shown.
-const EXERCISE_HOSTS = ["tab-listen", "tab-speak", "tab-read", "tab-words", "tab-exercises", "writePractice", "bookReview", "allReview", "typingBody", "notebookBody"];
+const EXERCISE_HOSTS = ["tab-listen", "tab-speak", "tab-read", "tab-words", "tab-exercises", "writePractice", "bookReview", "allReview", "typingBody", "notebookBody", "radicalsBody"];
 function clearHiddenHosts() {
   for (const id of EXERCISE_HOSTS) {
     const el = $("#" + id);
@@ -122,6 +124,12 @@ async function route() {
     try { word = a ? decodeURIComponent(a) : null; } catch {}
     return openNotebook(word);
   }
+  if (page === "radicals" || page === "radical") {
+    showPage("radicalsView"); document.title = "Radicals · 写字本";
+    let r = null;
+    try { r = page === "radical" && a ? decodeURIComponent(a) : null; } catch {}
+    return openRadicals(r);
+  }
   if (page === "typing") { showPage("typingView"); document.title = "Typing · 写字本"; return openTyping(); }
   if (page === "book" && BOOKS.some((x) => x.id === a)) return showBook(a, b === "review" ? "review" : "lessons");
   if (page === "lesson") {
@@ -147,7 +155,7 @@ function back(to) {
   else go(to);
 }
 const upFrom = () => ({
-  booksView: "#/", reviewView: "#/", typingView: "#/", searchView: "#/", notebookView: location.hash.startsWith("#/notebook/") ? "#/notebook" : "#/", bookView: "#/books", printView: `#/lesson/${printLesson}/write`,
+  booksView: "#/", reviewView: "#/", typingView: "#/", searchView: "#/", notebookView: location.hash.startsWith("#/notebook/") ? "#/notebook" : "#/", radicalsView: location.hash.startsWith("#/radical/") ? "#/radicals" : "#/", bookView: "#/books", printView: `#/lesson/${printLesson}/write`,
   lessonView: `#/book/${app.L()?.book}`,
 })[current];
 
@@ -197,6 +205,8 @@ function renderHub() {
   $("#hubMeta").textContent = `${p.mastered}/${p.chars} characters`;
   const nbDue = notebook.dueWords().length;
   $("#notebookMeta").textContent = nbDue ? `${nbDue} to review` : "Save words from daily life";
+  const rl = learnedCount();
+  $("#radicalsMeta").textContent = rl ? `${rl} of ${radicalTotal()} learned` : `${radicalTotal()} radicals`;
   $("#reviewMeta").textContent = due ? `${due} to review` : "Nothing to review right now";
 }
 
@@ -343,6 +353,8 @@ $("#openReview").addEventListener("click", () => go("#/review"));
 $("#openTyping").addEventListener("click", () => go("#/typing"));
 $("#openSearch").addEventListener("click", () => go("#/search"));
 $("#openNotebook").addEventListener("click", () => go("#/notebook"));
+$("#openRadicals").addEventListener("click", () => go("#/radicals"));
+$("#radicalsBack").addEventListener("click", () => back(upFrom()));
 $("#notebookBack").addEventListener("click", () => back(upFrom()));
 $("#printBack").addEventListener("click", () => back(upFrom()));
 $("#wordNav").addEventListener("click", (e) => {

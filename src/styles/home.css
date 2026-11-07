@@ -80,3 +80,26 @@
 .chip .c-py { font-size: .7rem; }
 .to-top { position: fixed; right: calc(16px + var(--safe-r)); bottom: calc(16px + var(--safe-b)); z-index: 8; width: 48px; height: 48px; display: grid; place-items: center; border: 0; border-radius: 50%; background: var(--card2); color: var(--ink); box-shadow: 0 8px 24px var(--shadow); cursor: pointer; }
 .to-top:focus-visible { outline: 2px solid var(--jade); outline-offset: 2px; }
+
+/* Radicals (部首) */
+.rad-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.rad-stage { display: grid; gap: 8px; }
+.rad-stage h3 { margin: 0; font-size: 1rem; }
+.rad-stage h3 .cn { font-family: var(--display); color: var(--muted); font-weight: 500; margin-left: 8px; }
+.rad-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(76px, 1fr)); gap: 8px; }
+.rad-tile { position: relative; display: grid; justify-items: center; align-content: center; gap: 2px; min-height: 76px; padding: 8px 4px; border-radius: var(--r); background: var(--card); color: var(--ink); text-decoration: none; min-width: 0; }
+.rad-tile:hover { background: var(--card2); }
+.rad-hz { font-family: var(--display); font-size: 1.75rem; line-height: 1.1; font-weight: 700; }
+.rad-en { font-size: .75rem; color: var(--muted); max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rad-dot { position: absolute; top: 8px; right: 8px; width: 6px; height: 6px; border-radius: 50%; background: var(--jade); }
+.rad-head { justify-items: center; text-align: center; width: 100%; }
+.rad-big { font-family: var(--display); font-size: clamp(4rem, 22vw, 6rem); font-weight: 700; line-height: 1.1; }
+.rad-ok { font-size: .75rem; color: var(--jade); margin-left: 6px; }
+.rad-write { width: 100%; display: grid; gap: 8px; justify-items: center; }
+.rad-write .box { width: min(200px, 60vw); }
+.rad-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.rad-eq { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.rad-eq li { overflow-wrap: anywhere; }
+.rad-say { font-family: var(--display); font-size: 1.25rem; min-width: 44px; min-height: 44px; border: 0; border-radius: var(--r); background: var(--card2); color: var(--ink); cursor: pointer; }
+#radicalsBody section { display: grid; gap: 4px; }
+#radicalsBody section p { margin: 0; line-height: 1.55; }

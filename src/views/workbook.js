@@ -79,18 +79,28 @@ export function fillQuiz(ui, words, { title = "选词填空 · Fill in the word"
   });
 }
 
-// 部首: which radical does this character have?
+// 部首: shared core of "which radical does this character have?".
+// cfg: { items, charOf(item), radOf(item), distractors(item, r) → [radical…], nameOf(r), key, id(item), title, kind, then }
+export function radicalChoice(ui, cfg) {
+  const { charOf, radOf, nameOf } = cfg;
+  return ui.choiceQuiz({ kind: cfg.kind, title: cfg.title, items: cfg.items, key: cfg.key, id: cfg.id, label: charOf, sayAfter: charOf, then: cfg.then, back: cfg.back,
+    ask: (it) => ({ html: `<p class="hint">Which radical (部首) is in this character?</p><div class="big-hz">${charOf(it)}</div>` }),
+    makeOptions: (it) => {
+      const r = radOf(it);
+      return [r, ...cfg.distractors(it, r)]
+        .map((x) => ({ html: `<span class="hz" style="font-size:1.6rem">${x}</span> <span class="muted">${esc(nameOf(x))}</span>`, correct: x === r }));
+    },
+    reveal: (it) => `${charLinks(charOf(it))} · <span class="hz">${radOf(it)}</span> <span class="muted">${esc(nameOf(radOf(it)))}</span>`,
+  });
+}
+
+// 部首: which radical does this character have? (lesson version, saved as rad:<char>)
 export function radicalQuiz(ui, lesson, { title = "部首 · Which radical?", then } = {}) {
   const chars = lessonChars(lesson).filter((c) => CHARINFO[c]?.radical?.c && CHARINFO[c].radical.c !== c);
   const allRads = [...new Set(Object.values(CHARINFO).map((x) => x.radical?.c).filter(Boolean))];
   const name = (r) => RADICALS[r] || Object.values(CHARINFO).find((x) => x.radical?.c === r)?.radical?.en || "";
-  return ui.choiceQuiz({ kind: "radical", title, items: shuffle(chars).slice(0, 10), key: "rad:", id: (c) => c, label: (c) => c, sayAfter: (c) => c, then,
-    ask: (c) => ({ html: `<p class="hint">Which radical (部首) is in this character?</p><div class="big-hz">${c}</div>` }),
-    makeOptions: (c) => {
-      const r = CHARINFO[c].radical.c;
-      return [r, ...shuffle(allRads.filter((x) => x !== r && !c.includes(x))).slice(0, 3)]
-        .map((x) => ({ html: `<span class="hz" style="font-size:1.6rem">${x}</span> <span class="muted">${esc(name(x))}</span>`, correct: x === r }));
-    },
-    reveal: (c) => `${charLinks(c)} · <span class="hz">${CHARINFO[c].radical.c}</span> <span class="muted">${esc(name(CHARINFO[c].radical.c))}</span>`,
+  return radicalChoice(ui, { kind: "radical", title, items: shuffle(chars).slice(0, 10), key: "rad:", id: (c) => c, then,
+    charOf: (c) => c, radOf: (c) => CHARINFO[c].radical.c, nameOf: name,
+    distractors: (c, r) => shuffle(allRads.filter((x) => x !== r && !c.includes(x))).slice(0, 3),
   });
 }
