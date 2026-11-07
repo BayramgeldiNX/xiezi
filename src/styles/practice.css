@@ -138,3 +138,23 @@ details.panel p { margin: 0; }
 .hzl-ex { font-size: 1.25rem; letter-spacing: .15em; }
 .hzl-big { font-size: 1.75rem; min-width: 1.4em; display: inline-block; text-align: center; }
 
+
+/* ---------- Lesson completion (header ring, tab fills, 完 seal) ---------- */
+.lmeter { margin-left: auto; display: flex; align-items: center; gap: 8px; flex: none; --meter: var(--jade); }
+.lmeter svg { width: 34px; height: 34px; transform: rotate(-90deg); fill: none; stroke-width: 3.5; }
+.lmeter .ring-bg { stroke: var(--line2); }
+.lmeter .ring-fill { stroke: var(--meter); stroke-linecap: round; stroke-dasharray: 94.25; stroke-dashoffset: 94.25; transition: stroke-dashoffset .4s var(--ease), stroke .4s var(--ease); }
+.lmeter .pct { font-variant-numeric: tabular-nums; font-weight: 700; font-size: .8125rem; color: var(--muted); }
+.lmeter .seal { box-sizing: border-box; background: var(--cta); color: var(--cta-ink); font-family: var(--display); font-size: 1rem; line-height: 1.5; padding: 0 4px; border-radius: var(--r-seal); }
+.still .lmeter *, .still .tab-fill i { transition: none !important; }
+.lmeter.gold { --meter: var(--amber); }
+.lmeter.gold .pct { color: var(--amber); }
+.lmeter.glow svg { animation: lm-glow 1.2s var(--ease); }
+.lmeter .seal.stamp { animation: lm-stamp .6s var(--ease); }
+.lfin { margin: -6px 0 0; font-size: .75rem; color: var(--muted); }
+.tab-fill { position: absolute; left: 22%; right: 22%; bottom: 3px; height: 2px; border-radius: var(--pill); background: currentColor; background: color-mix(in srgb, currentColor 18%, transparent); overflow: hidden; pointer-events: none; }
+.tab-fill[hidden] { display: none; }
+.tab-fill i { display: block; height: 100%; background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform .4s var(--ease); }
+@keyframes lm-stamp { from { opacity: 0; transform: scale(1.8) rotate(-8deg); } to { opacity: 1; transform: none; } }
+@keyframes lm-glow { 0%, 100% { filter: none; } 40% { filter: drop-shadow(0 0 6px var(--amber)); } }
+@media (prefers-reduced-motion: reduce) { .lmeter *, .tab-fill i { transition: none !important; animation: none !important; } }

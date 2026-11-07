@@ -28,6 +28,7 @@ import { openPrint } from "./views/printsheet.js";
 import { hideGloss } from "./views/reading.js";
 import { initAccountChip } from "./views/account.js";
 import { initSync } from "./sync/sync.js";
+import { showLessonMeter } from "./views/lessonmeter.js";
 import { initPWA } from "./pwa.js";
 import { animate, slideDirection, slidePage, moveTabPill, watchMotion, forgetQuestion, wireSoftClose } from "./lib/motion.js";
 
@@ -267,6 +268,7 @@ function openLesson(li, wi = 0, tab = "write") {
   $("#lessonEyebrow").textContent = book.title;
   $("#lessonTitle").textContent = L.title;
   document.title = `${L.title} · 写字本`;
+  showLessonMeter(L.id, lessonDone(L), true);
   renderWords();
   renderLessonNav();
   showTab(TABS.includes(tab) ? tab : OLD_TABS[tab] || "write", false);
@@ -356,7 +358,10 @@ notebook.onNotebook(() => {
 progress.onProgress(() => {
   if (current === "home") { renderHub(); renderResume(); }
   else if (current === "bookView" && !$("#lessonCards").hidden) renderLessonList(BOOKS.find((b) => b.id === openBookId) || BOOKS[0]);
-  else if (current === "lessonView" && app.tab === "write") markWords();
+  else if (current === "lessonView") {
+    showLessonMeter(app.L().id, lessonDone(app.L()), false);
+    if (app.tab === "write") markWords();
+  }
 });
 
 /* ---------- Keyboard (Windows) ---------- */

@@ -34,6 +34,14 @@ describe("completion", () => {
     expect(completion(items, stats({ "f:你": { ok: 1 }, "q:好": { ok: 2 } })).pct).toBe(100);
     expect(completion(items, stats({ "q:你": { ok: 1 } })).pct).toBe(50);
   });
+  it("counts a text by r: or by all its rq: question keys", () => {
+    const item = (k, n) => ["r:" + k, Array.from({ length: n }, (_, i) => "rq:" + k + "#" + i)];
+    const items = { read: [item("a/1", 2), item("a/2", 2), item("a/3", 2)] };
+    const get = stats({ "r:a/1": { ok: 1 }, "rq:a/2#0": { ok: 1 }, "rq:a/2#1": { ok: 1 }, "rq:a/3#0": { ok: 1 } });
+    const r = completion(items, get);
+    expect(r.skills.read).toEqual({ done: 2, total: 3 }); // a/3 has only one of two questions right
+    expect(completion(items, stats({ "rq:a/3#0": { ok: 1 }, "rq:a/3#1": { ok: 1 } })).skills.read.done).toBe(1);
+  });
   it("is 0% for a lesson with no items", () => {
     expect(completion({}, stats({})).pct).toBe(0);
   });

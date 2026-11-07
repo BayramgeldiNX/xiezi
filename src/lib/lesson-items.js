@@ -30,7 +30,12 @@ export function lessonItems(L) {
     listen: [...words.map((w) => "l:" + w.w), ...withEx.map((w) => "ls:" + w.w), ...toneChars(words).map((c) => "t:" + c)],
     speak: [...words.map((w) => "s:" + w.w), ...withEx.map((w) => "s:" + w.w + "#ex")],
     read: [
-      ...readings.filter((r) => r.questions?.length).map((r) => "r:" + L.id + "/" + r.id),
+      // A text counts when its own quiz was passed (r:), or when every question of it has been
+      // answered right in the general "Read & answer" (rq:, one key per question, see textQuiz).
+      ...readings.filter((r) => r.questions?.length).map((r) => {
+        const key = L.id + "/" + r.id;
+        return ["r:" + key, r.questions.map((_, i) => "rq:" + key + "#" + i)];
+      }),
       ...sentences.map((s) => "o:" + s.hz),
       ...words.map((w) => "rp:" + w.w),
     ],
