@@ -2,7 +2,7 @@
 // List page: add box, Review, search, the words. Word page: edit, sentence, tricks, stroke order.
 // All user and Claude text is plain text and goes through esc(); only CHARS[c].tip (repo HTML) is inserted as HTML.
 import { $, $$, esc } from "../lib/util.js";
-import { tonePy } from "../lib/pinyin.js";
+import { tonePy, syllables } from "../lib/pinyin.js";
 import { sayBtns } from "../lib/speech.js";
 import { icon } from "../lib/icons.js";
 import { matchesWord } from "../lib/search.js";
@@ -140,6 +140,10 @@ function wordPage(w) {
   view = { kind: "word", word: w };
   const e = nb.getWord(w);
   const chars = hanChars(w);
+  // Each character's pinyin as it is read in this word (split the word's pinyin by syllable).
+  const charPy = new Map();
+  const all = [...w].filter(isHan), sy = (e.py || "").split(/\s+/).filter(Boolean).flatMap((s) => syllables(s).map((x) => x[0]));
+  if (sy.length === all.length) all.forEach((c, i) => { if (!charPy.has(c)) charPy.set(c, sy[i]); });
   const inBook = wordsOf(LESSONS).find((x) => x.w === w);
   const L = inBook && LESSONS.find((l) => l.id === inBook.lesson);
   body().innerHTML = `<div class="panel nb-word">
@@ -159,7 +163,7 @@ function wordPage(w) {
       <span class="lbl">Characters</span>
       ${chars.map((c) => {
         const tip = CHARS[c]?.tip ? CHARS[c].tip : e.charTricks?.[c] ? esc(e.charTricks[c]) : "";
-        const py = CHARS[c]?.py || "";
+        const py = charPy.get(c) || CHARS[c]?.py || "";
         return `<div class="nb-char"><button class="cs-chip" type="button" data-stroke="${c}" aria-expanded="false" aria-label="Stroke order of ${c}">
             <b>${c}</b><span class="py">${tonePy(esc(py))}</span><small>Stroke order</small></button>
           <div class="nb-tip">${tip || `<span class="muted">${CHARS[c]?.en ? esc(CHARS[c].en) : ""}</span>`}<div class="nb-parts" data-parts="${c}"></div></div>
