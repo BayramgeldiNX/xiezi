@@ -157,4 +157,18 @@ details.panel p { margin: 0; }
 .tab-fill i { display: block; height: 100%; background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform .4s var(--ease); }
 @keyframes lm-stamp { from { opacity: 0; transform: scale(1.8) rotate(-8deg); } to { opacity: 1; transform: none; } }
 @keyframes lm-glow { 0%, 100% { filter: none; } 40% { filter: drop-shadow(0 0 6px var(--amber)); } }
-@media (prefers-reduced-motion: reduce) { .lmeter *, .tab-fill i { transition: none !important; animation: none !important; } }
+/* Desktop and tablets: a larger ring with the % set inside it, on a soft card. */
+@media (min-width: 700px) {
+  .lmeter { position: relative; gap: 12px; padding: 6px; border-radius: var(--pill); border: 1px solid var(--line2);
+    background: color-mix(in srgb, var(--meter) 6%, var(--card, transparent)); transition: background .4s var(--ease), border-color .4s var(--ease); }
+  .lmeter .seal { margin-left: 8px; font-size: 1.375rem; padding: 2px 8px; }
+  .lmeter .pct { position: absolute; right: 6px; top: 6px; width: 64px; height: 64px; display: grid; place-items: center; font-size: 1.0625rem; letter-spacing: -.01em; color: var(--ink); }
+  .lmeter svg { width: 64px; height: 64px; stroke-width: 2.6; }
+  .lmeter .ring-bg { stroke: color-mix(in srgb, var(--meter) 14%, var(--line2)); }
+  .lmeter .ring-fill { filter: drop-shadow(0 0 3px color-mix(in srgb, var(--meter) 45%, transparent)); }
+  .lmeter.gold { border-color: color-mix(in srgb, var(--amber) 50%, var(--line2)); background: color-mix(in srgb, var(--amber) 10%, var(--card, transparent)); }
+  .lmeter.gold .pct { color: var(--amber); }
+  .lfin { margin: 0; font-size: .8125rem; text-align: right; }
+  .tab-fill { height: 3px; bottom: 4px; }
+}
+@media (prefers-reduced-motion: reduce) { .lmeter *,.tab-fill i { transition: none !important; animation: none !important; } }
