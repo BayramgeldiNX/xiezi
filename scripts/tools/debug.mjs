@@ -71,6 +71,7 @@ const STEPS = [
   ["print", "#/print/kouyu-rumen/1"],
   ["radicals", "#/radicals"],
   ["radical", "#/radical/%E6%B0%B5"],
+  ...[1, 2, 3, 4, 5, 6].map((n) => [`radical-learn-${n}`, `#/radical/%E6%B0%B5/learn/${n}`]),
   ["radicals-cards", "#/radicals", `document.querySelector('[data-rp=cards]').click(); ${W} document.querySelector('#fcFlip')?.click(); ${W}`],
   ["radicals-find", "#/radicals", `document.querySelector('[data-rp=find]').click(); ${W} document.querySelector('.choice')?.click(); ${W}`],
   ["radicals-guess", "#/radicals", `document.querySelector('[data-rp=guess]').click(); ${W} document.querySelector('.choice')?.click(); ${W}`],

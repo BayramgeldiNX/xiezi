@@ -129,7 +129,7 @@ async function route() {
     showPage("radicalsView"); document.title = "Radicals · 写字本";
     let r = null;
     try { r = page === "radical" && a ? decodeURIComponent(a) : null; } catch {}
-    return openRadicals(r, page === "radical" ? b : a);
+    return openRadicals(r, page === "radical" ? b : a, c);
   }
   if (page === "typing") { showPage("typingView"); document.title = "Typing · 写字本"; return openTyping(); }
   if (page === "book" && BOOKS.some((x) => x.id === a)) return showBook(a, b === "review" ? "review" : "lessons");

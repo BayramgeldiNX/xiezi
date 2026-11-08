@@ -35,7 +35,7 @@ export default defineConfig({
         // Recordings are not downloaded at install (there are 1,700+); each one is kept once it has played.
         globPatterns: ["**/*.{js,css,html,woff2,png,svg,json}"],
         // Per-character strokes (~9,500 files) and dictionary shards load on demand and are kept once used.
-        globIgnores: ["strokes/**", "dict/**"],
+        globIgnores: ["strokes/**", "dict/**", "radicals/**"],
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
         runtimeCaching: [{
           urlPattern: ({ url }) => url.pathname.includes("/audio/") && url.pathname.endsWith(".mp3"),
@@ -49,6 +49,10 @@ export default defineConfig({
           urlPattern: ({ url }) => url.pathname.includes("/dict/") && url.pathname.endsWith(".json"),
           handler: "CacheFirst",
           options: { cacheName: "xz-dict", expiration: { maxEntries: 80 } },
+        }, {
+          urlPattern: ({ url }) => url.pathname.includes("/radicals/") && url.pathname.endsWith(".svg"),
+          handler: "CacheFirst",
+          options: { cacheName: "xz-radicals", expiration: { maxEntries: 600 } },
         }],
         navigateFallback: "index.html",
         cleanupOutdatedCaches: true,

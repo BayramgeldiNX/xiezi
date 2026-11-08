@@ -30,7 +30,8 @@ The owner uses it on iPhone 16 (home-screen PWA), Mi Pad 7 Pro and Windows. Prog
   - `search.js`: search all words (matcher in `lib/search.js`).
   - `notebook.js`, `notebook-review.js`: Notebook (生词本) at `#/notebook[/<word>]`: words saved from daily life, with a word page and four review types (flashcards, listening, writing, sentence gap).
   - `radicals.js`, `radicals-practice.js`: Radicals (部首) at `#/radicals` and `#/radical/<r>`: 81 core radicals in 5 stages, with cards, find-the-radical and guess-the-meaning practice (progress key `bs:<r>`; helpers in `lib/radical-quiz.js`).
-    Data: hand-written `data/radicals-core.json` (`kind` meaning/shape, `guess`), and `radical-families.gen.json` from `scripts/gen-radicals.mjs` (run by `gen:data`).
+    Data: hand-written `data/radicals-core.json` (`kind` meaning/shape, `guess`, `lesson`), and `radical-families.gen.json` from `scripts/gen-radicals.mjs` (run by `gen:data`).
+    Lessons: `radical-lesson.js` at `#/radical/<r>/learn/<step>` (6 steps; done key `bsl:<r>`). Pictures in `public/radicals/`: `pic/<hex>.svg` (own drawings) and `ancient/` (public-domain forms from Wikimedia Commons via `scripts/fetch-ancient.mjs`, credits in `ancient.gen.json`), shown with CSS mask, cached at runtime.
   - `charsheet.js`, `printsheet.js`, `account.js`.
 - `src/lib/`:
   - `pinyin.js`: syllable splitter, handles üe and erhua.

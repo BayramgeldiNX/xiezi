@@ -103,3 +103,50 @@
 .rad-say { font-family: var(--display); font-size: 1.25rem; min-width: 44px; min-height: 44px; border: 0; border-radius: var(--r); background: var(--card2); color: var(--ink); cursor: pointer; }
 #radicalsBody section { display: grid; gap: 4px; }
 #radicalsBody section p { margin: 0; line-height: 1.55; }
+
+/* Radical lesson */
+.rad-lesson { display: grid; gap: 20px; }
+.rad-lhead { display: grid; gap: 12px; justify-items: center; }
+.rad-dots { display: flex; gap: 8px; }
+.rad-dots i { width: 8px; height: 8px; border-radius: 50%; background: var(--line2); }
+.rad-dots i.done { background: var(--jade); opacity: .55; }
+.rad-dots i.now { background: var(--jade); }
+.rad-ltitle { margin: 0; font-size: 1rem; font-weight: 500; color: var(--muted); }
+.rad-ltitle .hz { color: var(--ink); }
+.rad-lstep { display: grid; gap: 14px; justify-items: center; text-align: center; }
+.rad-lh { margin: 0; font-size: 1.05rem; }
+.rad-ltext { margin: 0; max-width: 34em; line-height: 1.6; overflow-wrap: anywhere; }
+.rad-lbig { font-family: var(--display); font-size: clamp(3.5rem, 20vw, 5rem); font-weight: 700; line-height: 1.1; }
+.rad-pic { display: block; width: 100%; aspect-ratio: 1; background: var(--ink); -webkit-mask: var(--src) center/contain no-repeat; mask: var(--src) center/contain no-repeat; }
+.rad-pic.lg { width: min(180px, 52vw); }
+.rad-pic.sm { width: 56px; }
+.rad-flow { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 10px 6px; }
+.rad-fcell { display: grid; justify-items: center; gap: 6px; min-width: 64px; }
+.rad-fcell small { color: var(--muted); font-size: .75rem; }
+.rad-farrow { color: var(--muted); }
+.rad-ftoday { font-size: 2.6rem; line-height: 56px; font-family: var(--display); font-weight: 700; display: block; }
+.rad-ftoday em { font-style: normal; font-size: 1rem; color: var(--muted); margin-left: 4px; }
+.rad-credit { margin: 0; }
+.rad-rad { color: var(--jade); }
+.rad-snd { color: var(--cinnabar); }
+.rad-plus { color: var(--muted); margin: 0 4px; }
+.rad-parts { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+.rad-part { display: grid; justify-items: center; gap: 4px; min-width: 96px; min-height: 44px; padding: 12px; border: 0; border-radius: var(--r); background: var(--card); color: var(--ink); cursor: pointer; }
+.rad-pc { font-size: 3rem; line-height: 1.1; }
+.rad-pl { color: var(--muted); }
+.rad-cards { display: grid; gap: 10px; width: 100%; text-align: left; }
+.rad-card { display: flex; align-items: center; gap: 14px; min-height: 44px; padding: 12px 14px; border: 0; border-radius: var(--r); background: var(--card); color: var(--ink); cursor: pointer; text-align: left; font: inherit; }
+.rad-cc { font-size: 2.4rem; line-height: 1.1; flex: none; }
+.rad-cb { display: grid; gap: 2px; min-width: 0; overflow-wrap: anywhere; }
+.rad-cb small { color: var(--muted); }
+.rad-eqrow { display: flex; align-items: center; gap: 14px; width: 100%; text-align: left; }
+.rad-eqt { margin: 0; min-width: 0; overflow-wrap: anywhere; line-height: 1.7; }
+.rad-sayc { flex: none; min-width: 64px; min-height: 64px; border: 0; border-radius: var(--r); background: var(--card2); color: var(--ink); font-size: 2.2rem; cursor: pointer; }
+.rad-l6 { justify-items: stretch; text-align: left; }
+.rad-fin { justify-items: center; text-align: center; }
+.rad-lfoot { display: flex; justify-content: space-between; gap: 12px; }
+.rad-lfoot .btn { min-height: 44px; min-width: 96px; }
+.rad-tile.ld { box-shadow: inset 0 0 0 1.5px var(--jade); }
+.rad-ftoday { display: flex; align-items: center; justify-content: center; height: 56px; line-height: 1; }
+.rad-farrow { align-self: flex-start; line-height: 56px; }
+.rad-credit a { color: var(--jade); display: inline-flex; align-items: center; min-height: 44px; min-width: 44px; justify-content: center; }

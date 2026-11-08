@@ -8,6 +8,8 @@ import { CHARS, CHARINFO, RADICALS_CORE, RADICAL_FAMILIES, STROKE_DATA, ensureCh
 import * as progress from "../progress/store.js";
 import { charMastered, isDue } from "../progress/model.js";
 import { radicalKey } from "../lib/radicals.js";
+import { openRadicalLesson, lessonDone, firstUndone } from "./radical-lesson.js";
+import { learnHash } from "../lib/radical-lesson.js";
 
 const STAGES = RADICALS_CORE?.stages || [];
 const ALL = STAGES.flatMap((s) => s.radicals);
@@ -37,7 +39,7 @@ const MODES = ["cards", "find", "guess", "due"];
 export function radicalsUp(hash) {
   const p = hash.split("/");
   if (p[1] === "radicals") return p[2] ? "#/radicals" : "#/";
-  return p[3] ? `#/radical/${p[2]}` : "#/radicals";
+  return p[3] ? `#/radical/${p[2]}` : "#/radicals"; // also from /learn/<n>: straight to the radical page
 }
 function leave() {
   const up = radicalsUp(location.hash);
@@ -59,22 +61,25 @@ async function practice(mode, radicals) {
 }
 
 let current = null;
-export function openRadicals(r, mode) {
+export function openRadicals(r, mode, step) {
   current = r || null;
   const x = r && find(r);
+  if (x && mode === "learn") return openRadicalLesson(x, step);
   if (MODES.includes(mode)) return practice(mode, x ? [x.r] : mode === "due" ? dueRadicals() : scope());
   return x ? radicalPage(x) : listPage();
 }
 
 function tile(x) {
-  const on = learned(x.r);
-  return `<a class="rad-tile${on ? " on" : ""}" href="#/radical/${encodeURIComponent(x.r)}" aria-label="${esc(x.r)} ${esc(x.en)}${on ? ", learned" : ""}">
+  const on = learned(x.r), ld = lessonDone(x.r);
+  return `<a class="rad-tile${on ? " on" : ""}${ld ? " ld" : ""}" href="#/radical/${encodeURIComponent(x.r)}" aria-label="${esc(x.r)} ${esc(x.en)}${on ? ", learned" : ""}${ld ? ", lesson done" : ""}">
     <b class="rad-hz">${esc(x.r)}</b><span class="rad-en">${esc(x.en)}</span>${on ? `<i class="rad-dot" aria-hidden="true"></i>` : ""}</a>`;
 }
 
 function listPage() {
   const due = dueRadicals().length;
+  const nextL = firstUndone(ALL);
   body().innerHTML = `<p class="note">Radicals are the building blocks that hint at a character's meaning.</p>
+    ${nextL ? `<a class="btn primary big" href="${learnHash(nextL.r, 1)}" id="radContinue">Continue: lesson <span class="hz">${esc(nextL.r)}</span> ${esc(nextL.en)}</a>` : ""}
     <div class="rad-actions">
       <button class="btn primary" type="button" data-rp="cards">Cards</button>
       <button class="btn" type="button" data-rp="find">Find the radical</button>
@@ -96,7 +101,8 @@ function radicalPage(x) {
   const phon = (f.common || []).filter((c) => c.sound).slice(0, 6);
   const book = (f.book || []).filter((c) => CHARS[c] || CHARINFO[c]);
   const more = (f.common || []).slice(0, 24);
-  body().innerHTML = `<div class="panel rad-head">
+  body().innerHTML = `<a class="btn primary big" href="${learnHash(x.r, 1)}" id="radStart">${lessonDone(x.r) ? "Lesson again" : "Start lesson"}</a>${lessonDone(x.r) ? `<p class="note"><span class="rad-ok">Lesson done ✓</span></p>` : ""}
+    <div class="panel rad-head">
       <div class="rad-big" aria-label="${esc(x.r)}">${esc(x.r)}</div>
       <p class="nb-py">${tonePy(x.py || "")} · ${esc(x.name || "")}</p>
       <p class="nb-en">${esc(x.en)}${learned(x.r) ? ` <span class="rad-ok">learned</span>` : ""}</p>

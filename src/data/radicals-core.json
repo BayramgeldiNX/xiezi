@@ -46,7 +46,57 @@
               "c": "借",
               "en": "borrow"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "Long ago the picture showed a person standing side-on, with a head, a back and legs. Beside other parts it is squeezed into two strokes. Wherever you see it, someone is being, doing or owning something.",
+            "picture": "a person standing side-on, seen from the side",
+            "part": [
+              "你",
+              "住"
+            ],
+            "why": [
+              {
+                "c": "休",
+                "py": "xiū",
+                "en": "rest",
+                "why": "a person leaning on a tree"
+              },
+              {
+                "c": "体",
+                "py": "tǐ",
+                "en": "body",
+                "why": "a person and their own body"
+              },
+              {
+                "c": "信",
+                "py": "xìn",
+                "en": "letter",
+                "why": "a person standing by their word"
+              },
+              {
+                "c": "位",
+                "py": "wèi",
+                "en": "seat",
+                "why": "the spot where a person stands"
+              }
+            ],
+            "sound": [
+              {
+                "c": "但",
+                "sound": "旦",
+                "soundPy": "dàn",
+                "py": "dàn",
+                "en": "but"
+              },
+              {
+                "c": "们",
+                "sound": "门",
+                "soundPy": "mén",
+                "py": "men",
+                "en": "plural for people"
+              }
+            ]
+          }
         },
         {
           "r": "女",
@@ -91,7 +141,57 @@
               "c": "嫂",
               "en": "sister-in-law"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The old picture showed a person kneeling with hands folded in front, which is how the character for woman began. Today it sits inside words for women and family members.",
+            "picture": "a kneeling woman with her arms crossed in front",
+            "part": [
+              "好",
+              "妈"
+            ],
+            "why": [
+              {
+                "c": "妈",
+                "py": "mā",
+                "en": "mum",
+                "why": "a woman who is a parent"
+              },
+              {
+                "c": "姐",
+                "py": "jiě",
+                "en": "elder sister",
+                "why": "a woman in the family"
+              },
+              {
+                "c": "她",
+                "py": "tā",
+                "en": "she",
+                "why": "a woman, as a pronoun"
+              },
+              {
+                "c": "好",
+                "py": "hǎo",
+                "en": "good",
+                "why": "a woman with her child: a happy picture"
+              }
+            ],
+            "sound": [
+              {
+                "c": "妈",
+                "sound": "马",
+                "soundPy": "mǎ",
+                "py": "mā",
+                "en": "mum"
+              },
+              {
+                "c": "奶",
+                "sound": "乃",
+                "soundPy": "nǎi",
+                "py": "nǎi",
+                "en": "milk; grandma"
+              }
+            ]
+          }
         },
         {
           "r": "子",
@@ -114,7 +214,51 @@
             "孔",
             "季"
           ],
-          "guess": []
+          "guess": [],
+          "lesson": {
+            "story": "This was a baby with a big round head and arms stretched out, wrapped up below. It means child, and later it became a handy shape in characters about learning and young things.",
+            "picture": "a baby with a big round head and wrapped body",
+            "part": [
+              "孩",
+              "学"
+            ],
+            "why": [
+              {
+                "c": "孩",
+                "py": "hái",
+                "en": "child",
+                "why": "the child itself"
+              },
+              {
+                "c": "孙",
+                "py": "sūn",
+                "en": "grandchild",
+                "why": "a child of your child"
+              },
+              {
+                "c": "字",
+                "py": "zì",
+                "en": "character",
+                "why": "a child under a roof: characters are born from simpler ones"
+              },
+              {
+                "c": "学",
+                "py": "xué",
+                "en": "study",
+                "why": "a child under a roof, learning"
+              }
+            ],
+            "sound": [
+              {
+                "c": "孩",
+                "sound": "亥",
+                "soundPy": "hài",
+                "py": "hái",
+                "en": "child"
+              }
+            ],
+            "shape": "It really means child in 孩 and 孙. In 字 and 学 it is mostly just a part of the shape, so do not hunt for a child there."
+          }
         },
         {
           "r": "口",
@@ -159,7 +303,57 @@
               "c": "咳",
               "en": "cough"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "This is simply an open mouth, drawn as a square. Because mouths speak, eat and call out, many characters with 口 are about voices, tasting and eating.",
+            "picture": "an open mouth drawn as a small square",
+            "part": [
+              "叫",
+              "吃"
+            ],
+            "why": [
+              {
+                "c": "吃",
+                "py": "chī",
+                "en": "eat",
+                "why": "the mouth at work"
+              },
+              {
+                "c": "喝",
+                "py": "hē",
+                "en": "drink",
+                "why": "the mouth drinking"
+              },
+              {
+                "c": "叫",
+                "py": "jiào",
+                "en": "call",
+                "why": "a sound from the mouth"
+              },
+              {
+                "c": "唱",
+                "py": "chàng",
+                "en": "sing",
+                "why": "a mouth making music"
+              }
+            ],
+            "sound": [
+              {
+                "c": "吧",
+                "sound": "巴",
+                "soundPy": "bā",
+                "py": "bā",
+                "en": "suggestion word"
+              },
+              {
+                "c": "味",
+                "sound": "未",
+                "soundPy": "wèi",
+                "py": "wèi",
+                "en": "taste"
+              }
+            ]
+          }
         },
         {
           "r": "目",
@@ -203,7 +397,57 @@
               "c": "睁",
               "en": "open eyes"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The old drawing was an eye turned on its side, with the round eyeball in the middle. Later it was stood upright and squared off, but you can still see the eye. It marks looking, seeing and eyes.",
+            "picture": "a side view of an eye with a round pupil",
+            "part": [
+              "看",
+              "眼"
+            ],
+            "why": [
+              {
+                "c": "看",
+                "py": "kàn",
+                "en": "look",
+                "why": "a hand above the eye, shading it"
+              },
+              {
+                "c": "眼",
+                "py": "yǎn",
+                "en": "eye",
+                "why": "the eye itself"
+              },
+              {
+                "c": "睛",
+                "py": "jīng",
+                "en": "eyeball",
+                "why": "the shiny part of the eye"
+              },
+              {
+                "c": "睡",
+                "py": "shuì",
+                "en": "sleep",
+                "why": "eyes that close for the night"
+              }
+            ],
+            "sound": [
+              {
+                "c": "睛",
+                "sound": "青",
+                "soundPy": "qīng",
+                "py": "jīng",
+                "en": "eyeball"
+              },
+              {
+                "c": "瞄",
+                "sound": "苗",
+                "soundPy": "miáo",
+                "py": "miáo",
+                "en": "take aim"
+              }
+            ]
+          }
         },
         {
           "r": "耳",
@@ -241,7 +485,57 @@
               "c": "聘",
               "en": "hire"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The picture showed an outer ear with its curving rim. Characters with 耳 are about hearing and the ear, though a few words of work and duty use it too.",
+            "picture": "a human ear with its curved outer rim",
+            "part": [
+              "聪",
+              "聋"
+            ],
+            "why": [
+              {
+                "c": "耳",
+                "py": "ěr",
+                "en": "ear",
+                "why": "the ear itself"
+              },
+              {
+                "c": "聪",
+                "py": "cōng",
+                "en": "clever",
+                "why": "sharp ears hear well"
+              },
+              {
+                "c": "聋",
+                "py": "lóng",
+                "en": "deaf",
+                "why": "an ear that cannot hear"
+              },
+              {
+                "c": "职",
+                "py": "zhí",
+                "en": "duty",
+                "why": "just a shape here, no ear in the meaning"
+              }
+            ],
+            "sound": [
+              {
+                "c": "职",
+                "sound": "只",
+                "soundPy": "zhī",
+                "py": "zhí",
+                "en": "duty"
+              },
+              {
+                "c": "聋",
+                "sound": "龙",
+                "soundPy": "lóng",
+                "py": "lóng",
+                "en": "deaf"
+              }
+            ]
+          }
         },
         {
           "r": "扌",
@@ -292,7 +586,57 @@
               "c": "抬",
               "en": "lift"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The full character 手 was a hand with five fingers spread. On the left it is shortened to 扌, with a hook for the arm. It stands for hands doing things: hitting, holding, carrying.",
+            "picture": "a hand with five fingers spread out",
+            "part": [
+              "打",
+              "找"
+            ],
+            "why": [
+              {
+                "c": "打",
+                "py": "dǎ",
+                "en": "hit",
+                "why": "done with the hand"
+              },
+              {
+                "c": "找",
+                "py": "zhǎo",
+                "en": "look for",
+                "why": "hands searching around"
+              },
+              {
+                "c": "拿",
+                "py": "ná",
+                "en": "take",
+                "why": "a hand gripping something"
+              },
+              {
+                "c": "接",
+                "py": "jiē",
+                "en": "receive",
+                "why": "hands that catch"
+              }
+            ],
+            "sound": [
+              {
+                "c": "抬",
+                "sound": "台",
+                "soundPy": "tái",
+                "py": "tái",
+                "en": "lift"
+              },
+              {
+                "c": "把",
+                "sound": "巴",
+                "soundPy": "bā",
+                "py": "bǎ",
+                "en": "hold"
+              }
+            ]
+          }
         },
         {
           "r": "忄",
@@ -339,7 +683,57 @@
               "c": "恨",
               "en": "hate"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The full character 心 was the heart with its chambers. On the left it is squeezed into three short strokes. Characters with it are about feelings and thoughts, which people long felt came from the heart.",
+            "picture": "a heart with its chambers and blood vessels",
+            "part": [
+              "快",
+              "忙"
+            ],
+            "why": [
+              {
+                "c": "快",
+                "py": "kuài",
+                "en": "glad",
+                "why": "a happy heart feels light and quick"
+              },
+              {
+                "c": "忙",
+                "py": "máng",
+                "en": "busy",
+                "why": "a heart with no room to rest"
+              },
+              {
+                "c": "情",
+                "py": "qíng",
+                "en": "feeling",
+                "why": "what the heart feels"
+              },
+              {
+                "c": "懂",
+                "py": "dǒng",
+                "en": "understand",
+                "why": "the heart grasps it"
+              }
+            ],
+            "sound": [
+              {
+                "c": "忘",
+                "sound": "亡",
+                "soundPy": "wáng",
+                "py": "wàng",
+                "en": "forget"
+              },
+              {
+                "c": "情",
+                "sound": "青",
+                "soundPy": "qīng",
+                "py": "qíng",
+                "en": "feeling"
+              }
+            ]
+          }
         },
         {
           "r": "足",
@@ -383,7 +777,57 @@
               "c": "跃",
               "en": "leap"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The top is a round knee or leg and the bottom is a foot. On the left of a character it is pressed into 𧾷. It belongs to walking, running and kicking.",
+            "picture": "a lower leg ending in a foot",
+            "part": [
+              "跑",
+              "跳"
+            ],
+            "why": [
+              {
+                "c": "跑",
+                "py": "pǎo",
+                "en": "run",
+                "why": "done with the feet"
+              },
+              {
+                "c": "跳",
+                "py": "tiào",
+                "en": "jump",
+                "why": "legs pushing off the ground"
+              },
+              {
+                "c": "踢",
+                "py": "tī",
+                "en": "kick",
+                "why": "a foot strikes"
+              },
+              {
+                "c": "路",
+                "py": "lù",
+                "en": "road",
+                "why": "where the feet go"
+              }
+            ],
+            "sound": [
+              {
+                "c": "跟",
+                "sound": "艮",
+                "soundPy": "gěn",
+                "py": "gēn",
+                "en": "follow"
+              },
+              {
+                "c": "跑",
+                "sound": "包",
+                "soundPy": "bāo",
+                "py": "pǎo",
+                "en": "run"
+              }
+            ]
+          }
         },
         {
           "r": "页",
@@ -422,7 +866,57 @@
               "c": "领",
               "en": "collar"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The old picture showed a head with a face and a body below it. In writing it moved to mean a page, since a page is like a face turned toward you. Most characters with it are about the head and face.",
+            "picture": "a person with a large head and a clear face",
+            "part": [
+              "顺",
+              "颜"
+            ],
+            "why": [
+              {
+                "c": "页",
+                "py": "yè",
+                "en": "page",
+                "why": "a face of the book"
+              },
+              {
+                "c": "颜",
+                "py": "yán",
+                "en": "colour",
+                "why": "the look of a face"
+              },
+              {
+                "c": "题",
+                "py": "tí",
+                "en": "topic",
+                "why": "the head of a piece of writing"
+              },
+              {
+                "c": "顺",
+                "py": "shùn",
+                "en": "smooth",
+                "why": "a head nodding along"
+              }
+            ],
+            "sound": [
+              {
+                "c": "顶",
+                "sound": "丁",
+                "soundPy": "dīng",
+                "py": "dǐng",
+                "en": "top of the head"
+              },
+              {
+                "c": "领",
+                "sound": "令",
+                "soundPy": "lìng",
+                "py": "lǐng",
+                "en": "lead"
+              }
+            ]
+          }
         },
         {
           "r": "月",
@@ -449,7 +943,58 @@
             "肚",
             "背"
           ],
-          "guess": []
+          "guess": [],
+          "lesson": {
+            "story": "This one is tricky. The ancient picture was a piece of flesh or meat, and in words about the body it looks just like the moon 月. So 月 in 脑, 腿 and 脚 is really flesh, not the moon.",
+            "picture": "a slice of meat with a crescent shape",
+            "part": [
+              "脑",
+              "腿"
+            ],
+            "why": [
+              {
+                "c": "脑",
+                "py": "nǎo",
+                "en": "brain",
+                "why": "a part of the body"
+              },
+              {
+                "c": "腿",
+                "py": "tuǐ",
+                "en": "leg",
+                "why": "a part of the body"
+              },
+              {
+                "c": "脚",
+                "py": "jiǎo",
+                "en": "foot",
+                "why": "a part of the body"
+              },
+              {
+                "c": "胖",
+                "py": "pàng",
+                "en": "fat",
+                "why": "body flesh"
+              }
+            ],
+            "sound": [
+              {
+                "c": "胖",
+                "sound": "半",
+                "soundPy": "bàn",
+                "py": "pàng",
+                "en": "fat"
+              },
+              {
+                "c": "胆",
+                "sound": "旦",
+                "soundPy": "dàn",
+                "py": "dǎn",
+                "en": "bold; gallbladder"
+              }
+            ],
+            "shape": "In 有, 朋 and 期 the 月 is the moon or just a shape. Only in body words does it mean flesh."
+          }
         },
         {
           "r": "舌",
@@ -470,7 +1015,58 @@
             "辞",
             "舔"
           ],
-          "guess": []
+          "guess": [],
+          "lesson": {
+            "story": "The picture showed a tongue sticking out of a mouth, with a drop of spit flicking off. It is a small shape you meet in words about tasting and speaking.",
+            "picture": "a tongue sticking out of an open mouth",
+            "part": [
+              "舔",
+              "舒"
+            ],
+            "why": [
+              {
+                "c": "舌",
+                "py": "shé",
+                "en": "tongue",
+                "why": "the tongue itself"
+              },
+              {
+                "c": "舔",
+                "py": "tiǎn",
+                "en": "lick",
+                "why": "done with the tongue"
+              },
+              {
+                "c": "舍",
+                "py": "shě",
+                "en": "home",
+                "why": "just the shape here, no tongue in the meaning"
+              },
+              {
+                "c": "舒",
+                "py": "shū",
+                "en": "relaxed",
+                "why": "just the shape here, no tongue in the meaning"
+              }
+            ],
+            "sound": [
+              {
+                "c": "舔",
+                "sound": "忝",
+                "soundPy": "tiǎn",
+                "py": "tiǎn",
+                "en": "lick"
+              },
+              {
+                "c": "舍",
+                "sound": "舌",
+                "soundPy": "shé",
+                "py": "shě",
+                "en": "home; give up"
+              }
+            ],
+            "shape": "Only in the tongue itself and in 舔 lick does it truly mean tongue. In 舍 and 舒 it is just a shape, so treat it as a handy label."
+          }
         },
         {
           "r": "身",
@@ -508,7 +1104,57 @@
               "c": "躬",
               "en": "bow"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "This was a side view of a person with a round belly, as if pregnant. It came to mean the whole body. Characters with 身 are about the body and its shape.",
+            "picture": "a side-view person with a round belly",
+            "part": [
+              "躲",
+              "躺"
+            ],
+            "why": [
+              {
+                "c": "身",
+                "py": "shēn",
+                "en": "body",
+                "why": "the body itself"
+              },
+              {
+                "c": "躲",
+                "py": "duǒ",
+                "en": "hide",
+                "why": "tuck your body away"
+              },
+              {
+                "c": "躺",
+                "py": "tǎng",
+                "en": "lie down",
+                "why": "lay your body flat"
+              },
+              {
+                "c": "躯",
+                "py": "qū",
+                "en": "body",
+                "why": "the whole frame of a body"
+              }
+            ],
+            "sound": [
+              {
+                "c": "躲",
+                "sound": "朵",
+                "soundPy": "duǒ",
+                "py": "duǒ",
+                "en": "hide"
+              },
+              {
+                "c": "躺",
+                "sound": "尚",
+                "soundPy": "shàng",
+                "py": "tǎng",
+                "en": "lie down"
+              }
+            ]
+          }
         },
         {
           "r": "力",
@@ -549,7 +1195,57 @@
               "c": "勉",
               "en": "push oneself"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The old drawing was a strong arm with a muscle, or a plough in the earth. It stands for strength, and many words with it are about effort and work.",
+            "picture": "an arm flexed to show a muscle",
+            "part": [
+              "动",
+              "努"
+            ],
+            "why": [
+              {
+                "c": "力",
+                "py": "lì",
+                "en": "strength",
+                "why": "the shape of strength"
+              },
+              {
+                "c": "动",
+                "py": "dòng",
+                "en": "move",
+                "why": "using strength to move"
+              },
+              {
+                "c": "努",
+                "py": "nǔ",
+                "en": "try hard",
+                "why": "putting strength in"
+              },
+              {
+                "c": "办",
+                "py": "bàn",
+                "en": "do",
+                "why": "strength put to a task"
+              }
+            ],
+            "sound": [
+              {
+                "c": "努",
+                "sound": "奴",
+                "soundPy": "nú",
+                "py": "nǔ",
+                "en": "try hard"
+              },
+              {
+                "c": "勇",
+                "sound": "甬",
+                "soundPy": "yǒng",
+                "py": "yǒng",
+                "en": "brave"
+              }
+            ]
+          }
         }
       ]
     },
@@ -607,7 +1303,57 @@
               "c": "泪",
               "en": "tears"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The full character 水 showed a stream with drops splashing off a flowing line. On the left it shrinks to three drops. If a character has 氵, it is usually about water, liquids, rivers or washing.",
+            "picture": "three drops of water splashing from a stream",
+            "part": [
+              "河",
+              "洗"
+            ],
+            "why": [
+              {
+                "c": "河",
+                "py": "hé",
+                "en": "river",
+                "why": "a long ribbon of water"
+              },
+              {
+                "c": "湖",
+                "py": "hú",
+                "en": "lake",
+                "why": "water you can walk around"
+              },
+              {
+                "c": "洗",
+                "py": "xǐ",
+                "en": "wash",
+                "why": "done with water"
+              },
+              {
+                "c": "海",
+                "py": "hǎi",
+                "en": "sea",
+                "why": "a huge body of water"
+              }
+            ],
+            "sound": [
+              {
+                "c": "湖",
+                "sound": "胡",
+                "soundPy": "hú",
+                "py": "hú",
+                "en": "lake"
+              },
+              {
+                "c": "油",
+                "sound": "由",
+                "soundPy": "yóu",
+                "py": "yóu",
+                "en": "oil"
+              }
+            ]
+          }
         },
         {
           "r": "火",
@@ -654,7 +1400,57 @@
               "c": "燃",
               "en": "burn"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The picture showed flames leaping up from a fire. At the bottom of a character it often turns into four dots, 灬, like small flames. It is about fire, heat and cooking.",
+            "picture": "a fire with three tongues of flame rising",
+            "part": [
+              "灯",
+              "热"
+            ],
+            "why": [
+              {
+                "c": "灯",
+                "py": "dēng",
+                "en": "lamp",
+                "why": "a small fire that lights"
+              },
+              {
+                "c": "热",
+                "py": "rè",
+                "en": "hot",
+                "why": "heat from a fire"
+              },
+              {
+                "c": "烤",
+                "py": "kǎo",
+                "en": "roast",
+                "why": "cooked over flames"
+              },
+              {
+                "c": "烧",
+                "py": "shāo",
+                "en": "burn",
+                "why": "set on fire"
+              }
+            ],
+            "sound": [
+              {
+                "c": "烤",
+                "sound": "考",
+                "soundPy": "kǎo",
+                "py": "kǎo",
+                "en": "roast"
+              },
+              {
+                "c": "烫",
+                "sound": "汤",
+                "soundPy": "tāng",
+                "py": "tàng",
+                "en": "scalding hot"
+              }
+            ]
+          }
         },
         {
           "r": "木",
@@ -703,7 +1499,57 @@
               "c": "根",
               "en": "root"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "This is a tree with a trunk, branches above and roots below. Characters with 木 are usually trees, wood or things made of wood. Two of them together make 林 woods, three make 森 forest.",
+            "picture": "a tree with branches above and roots below",
+            "part": [
+              "树",
+              "桌"
+            ],
+            "why": [
+              {
+                "c": "树",
+                "py": "shù",
+                "en": "tree",
+                "why": "a tree, with a sound part"
+              },
+              {
+                "c": "桌",
+                "py": "zhuō",
+                "en": "table",
+                "why": "a wooden table"
+              },
+              {
+                "c": "椅",
+                "py": "yǐ",
+                "en": "chair",
+                "why": "made of wood"
+              },
+              {
+                "c": "林",
+                "py": "lín",
+                "en": "woods",
+                "why": "two trees side by side"
+              }
+            ],
+            "sound": [
+              {
+                "c": "材",
+                "sound": "才",
+                "soundPy": "cái",
+                "py": "cái",
+                "en": "material"
+              },
+              {
+                "c": "样",
+                "sound": "羊",
+                "soundPy": "yáng",
+                "py": "yàng",
+                "en": "kind"
+              }
+            ]
+          }
         },
         {
           "r": "土",
@@ -747,7 +1593,57 @@
               "c": "塔",
               "en": "tower"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The old picture was a lump of earth rising from the ground. It stands for soil, land and building ground, so it appears in words about places and walls.",
+            "picture": "a mound of earth sitting on the ground",
+            "part": [
+              "城",
+              "地"
+            ],
+            "why": [
+              {
+                "c": "土",
+                "py": "tǔ",
+                "en": "soil",
+                "why": "the earth itself"
+              },
+              {
+                "c": "城",
+                "py": "chéng",
+                "en": "city",
+                "why": "walls built from earth"
+              },
+              {
+                "c": "墙",
+                "py": "qiáng",
+                "en": "wall",
+                "why": "built of earth"
+              },
+              {
+                "c": "坐",
+                "py": "zuò",
+                "en": "sit",
+                "why": "two people on the ground"
+              }
+            ],
+            "sound": [
+              {
+                "c": "城",
+                "sound": "成",
+                "soundPy": "chéng",
+                "py": "chéng",
+                "en": "city"
+              },
+              {
+                "c": "塘",
+                "sound": "唐",
+                "soundPy": "táng",
+                "py": "táng",
+                "en": "pond"
+              }
+            ]
+          }
         },
         {
           "r": "日",
@@ -788,7 +1684,57 @@
               "c": "昏",
               "en": "dusk"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The picture was the sun, a round disc with a dot in the middle, later squared off. It stands for the sun and for time and light, so you meet it in days, mornings and bright things.",
+            "picture": "the round sun with a dot in the middle",
+            "part": [
+              "明",
+              "早"
+            ],
+            "why": [
+              {
+                "c": "日",
+                "py": "rì",
+                "en": "sun / day",
+                "why": "the sun itself"
+              },
+              {
+                "c": "早",
+                "py": "zǎo",
+                "en": "early",
+                "why": "the sun just above the horizon"
+              },
+              {
+                "c": "明",
+                "py": "míng",
+                "en": "bright",
+                "why": "sun and moon together"
+              },
+              {
+                "c": "晚",
+                "py": "wǎn",
+                "en": "evening",
+                "why": "the sun going down"
+              }
+            ],
+            "sound": [
+              {
+                "c": "晴",
+                "sound": "青",
+                "soundPy": "qīng",
+                "py": "qíng",
+                "en": "clear sky"
+              },
+              {
+                "c": "晨",
+                "sound": "辰",
+                "soundPy": "chén",
+                "py": "chén",
+                "en": "morning"
+              }
+            ]
+          }
         },
         {
           "r": "雨",
@@ -832,7 +1778,57 @@
               "c": "雷",
               "en": "thunder"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The picture was a sky line with drops falling from it. The top bar is the clouds and the dots are the rain. It appears in weather words such as snow, fog and thunder.",
+            "picture": "a line of clouds with raindrops falling from it",
+            "part": [
+              "雪",
+              "雾"
+            ],
+            "why": [
+              {
+                "c": "雨",
+                "py": "yǔ",
+                "en": "rain",
+                "why": "falling drops"
+              },
+              {
+                "c": "雪",
+                "py": "xuě",
+                "en": "snow",
+                "why": "frozen rain"
+              },
+              {
+                "c": "雾",
+                "py": "wù",
+                "en": "fog",
+                "why": "water hanging in the air"
+              },
+              {
+                "c": "雷",
+                "py": "léi",
+                "en": "thunder",
+                "why": "a sound from the rain clouds"
+              }
+            ],
+            "sound": [
+              {
+                "c": "零",
+                "sound": "令",
+                "soundPy": "lìng",
+                "py": "líng",
+                "en": "zero"
+              },
+              {
+                "c": "雾",
+                "sound": "务",
+                "soundPy": "wù",
+                "py": "wù",
+                "en": "fog"
+              }
+            ]
+          }
         },
         {
           "r": "石",
@@ -881,7 +1877,57 @@
               "c": "碑",
               "en": "monument"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The old picture was a cliff with a stone lying below it. The top stroke is the cliff edge and the box underneath is the rock. It marks stone, rock and things hard like minerals.",
+            "picture": "a rock lying beneath a cliff edge",
+            "part": [
+              "码",
+              "碗"
+            ],
+            "why": [
+              {
+                "c": "石",
+                "py": "shí",
+                "en": "stone",
+                "why": "the stone itself"
+              },
+              {
+                "c": "矿",
+                "py": "kuàng",
+                "en": "mine",
+                "why": "stone dug out of the ground"
+              },
+              {
+                "c": "碗",
+                "py": "wǎn",
+                "en": "bowl",
+                "why": "a hard fired bowl"
+              },
+              {
+                "c": "砖",
+                "py": "zhuān",
+                "en": "brick",
+                "why": "a block like stone"
+              }
+            ],
+            "sound": [
+              {
+                "c": "码",
+                "sound": "马",
+                "soundPy": "mǎ",
+                "py": "mǎ",
+                "en": "number"
+              },
+              {
+                "c": "碗",
+                "sound": "宛",
+                "soundPy": "wǎn",
+                "py": "wǎn",
+                "en": "bowl"
+              }
+            ]
+          }
         },
         {
           "r": "山",
@@ -924,7 +1970,57 @@
               "c": "崇",
               "en": "lofty"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "This is a mountain with three peaks, the tallest in the middle. It is almost exactly the shape of a real range. Characters with 山 are about mountains, hills and islands.",
+            "picture": "a mountain range with three peaks",
+            "part": [
+              "岛",
+              "岭"
+            ],
+            "why": [
+              {
+                "c": "山",
+                "py": "shān",
+                "en": "mountain",
+                "why": "the mountain itself"
+              },
+              {
+                "c": "岛",
+                "py": "dǎo",
+                "en": "island",
+                "why": "a hill standing in water"
+              },
+              {
+                "c": "岭",
+                "py": "lǐng",
+                "en": "ridge",
+                "why": "a long line of mountains"
+              },
+              {
+                "c": "峰",
+                "py": "fēng",
+                "en": "peak",
+                "why": "the top of a mountain"
+              }
+            ],
+            "sound": [
+              {
+                "c": "岭",
+                "sound": "令",
+                "soundPy": "lìng",
+                "py": "lǐng",
+                "en": "ridge"
+              },
+              {
+                "c": "岗",
+                "sound": "冈",
+                "soundPy": "gāng",
+                "py": "gǎng",
+                "en": "hill"
+              }
+            ]
+          }
         },
         {
           "r": "田",
@@ -945,7 +2041,51 @@
             "留",
             "画"
           ],
-          "guess": []
+          "guess": [],
+          "lesson": {
+            "story": "The picture was a square field cut into plots by paths and ditches. It is still a field today. As a shape it mostly appears in words about land and farming.",
+            "picture": "a square field divided by paths into plots",
+            "part": [
+              "男",
+              "画"
+            ],
+            "why": [
+              {
+                "c": "田",
+                "py": "tián",
+                "en": "field",
+                "why": "the field itself"
+              },
+              {
+                "c": "男",
+                "py": "nán",
+                "en": "man",
+                "why": "a man works the field with strength"
+              },
+              {
+                "c": "界",
+                "py": "jiè",
+                "en": "border",
+                "why": "the line between fields"
+              },
+              {
+                "c": "留",
+                "py": "liú",
+                "en": "stay",
+                "why": "the 田 here is only a shape"
+              }
+            ],
+            "sound": [
+              {
+                "c": "界",
+                "sound": "介",
+                "soundPy": "jiè",
+                "py": "jiè",
+                "en": "border"
+              }
+            ],
+            "shape": "It means field in 田 and 界, and 男 man is a man working in the fields. In 画 and 留 it is just a shape, so do not look for a field there."
+          }
         },
         {
           "r": "钅",
@@ -992,7 +2132,57 @@
               "c": "锄",
               "en": "hoe"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The full character 金 means gold or metal and shows lumps in the ground. On the left it shrinks to 钅, with a bar that looks like a tool. It is about metals and things made of metal.",
+            "picture": "lumps of metal lying in the ground",
+            "part": [
+              "钱",
+              "银"
+            ],
+            "why": [
+              {
+                "c": "钱",
+                "py": "qián",
+                "en": "money",
+                "why": "coins made of metal"
+              },
+              {
+                "c": "银",
+                "py": "yín",
+                "en": "silver",
+                "why": "a shiny metal"
+              },
+              {
+                "c": "铁",
+                "py": "tiě",
+                "en": "iron",
+                "why": "a hard metal"
+              },
+              {
+                "c": "钟",
+                "py": "zhōng",
+                "en": "clock",
+                "why": "a bell made of metal"
+              }
+            ],
+            "sound": [
+              {
+                "c": "钟",
+                "sound": "中",
+                "soundPy": "zhōng",
+                "py": "zhōng",
+                "en": "clock"
+              },
+              {
+                "c": "钢",
+                "sound": "冈",
+                "soundPy": "gāng",
+                "py": "gāng",
+                "en": "steel"
+              }
+            ]
+          }
         },
         {
           "r": "米",
@@ -1032,7 +2222,57 @@
               "c": "粘",
               "en": "sticky"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The picture showed grains of rice scattered on both sides of a line. It means rice and small grains, and so it turns up in words about food made of grain.",
+            "picture": "grains of rice scattered around a line",
+            "part": [
+              "粉",
+              "糖"
+            ],
+            "why": [
+              {
+                "c": "米",
+                "py": "mǐ",
+                "en": "rice",
+                "why": "the grains themselves"
+              },
+              {
+                "c": "粉",
+                "py": "fěn",
+                "en": "powder",
+                "why": "rice ground to powder"
+              },
+              {
+                "c": "糖",
+                "py": "táng",
+                "en": "sugar",
+                "why": "a sweet grain-like crystal"
+              },
+              {
+                "c": "粮",
+                "py": "liáng",
+                "en": "grain",
+                "why": "what we get from crops"
+              }
+            ],
+            "sound": [
+              {
+                "c": "糖",
+                "sound": "唐",
+                "soundPy": "táng",
+                "py": "táng",
+                "en": "sugar"
+              },
+              {
+                "c": "粮",
+                "sound": "良",
+                "soundPy": "liáng",
+                "py": "liáng",
+                "en": "grain"
+              }
+            ]
+          }
         },
         {
           "r": "禾",
@@ -1076,7 +2316,57 @@
               "c": "积",
               "en": "pile up"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The picture was a stalk of grain with heavy ears bending the top over. It means crops and grain, and it also shows up in words about seasons and harvest.",
+            "picture": "a plant with a heavy ear of grain bending down",
+            "part": [
+              "秋",
+              "科"
+            ],
+            "why": [
+              {
+                "c": "禾",
+                "py": "hé",
+                "en": "grain",
+                "why": "the plant itself"
+              },
+              {
+                "c": "秋",
+                "py": "qiū",
+                "en": "autumn",
+                "why": "the season of harvest"
+              },
+              {
+                "c": "科",
+                "py": "kē",
+                "en": "crop type",
+                "why": "grain weighed and sorted into kinds"
+              },
+              {
+                "c": "稻",
+                "py": "dào",
+                "en": "rice plant",
+                "why": "a grain plant grown in water"
+              }
+            ],
+            "sound": [
+              {
+                "c": "程",
+                "sound": "呈",
+                "soundPy": "chéng",
+                "py": "chéng",
+                "en": "journey"
+              },
+              {
+                "c": "稿",
+                "sound": "高",
+                "soundPy": "gāo",
+                "py": "gǎo",
+                "en": "draft"
+              }
+            ]
+          }
         },
         {
           "r": "冫",
@@ -1118,7 +2408,57 @@
               "c": "冷",
               "en": "cold"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The full character 冰 means ice and shows lines of cracks in frozen water. The two-dot form is a small piece of it. It marks cold, ice and freezing.",
+            "picture": "two small ice splinters beside a stream",
+            "part": [
+              "冷",
+              "冰"
+            ],
+            "why": [
+              {
+                "c": "冷",
+                "py": "lěng",
+                "en": "cold",
+                "why": "cold as ice"
+              },
+              {
+                "c": "冰",
+                "py": "bīng",
+                "en": "ice",
+                "why": "frozen water"
+              },
+              {
+                "c": "冻",
+                "py": "dòng",
+                "en": "freeze",
+                "why": "turned to ice"
+              },
+              {
+                "c": "凉",
+                "py": "liáng",
+                "en": "cool",
+                "why": "a chill in the air"
+              }
+            ],
+            "sound": [
+              {
+                "c": "冻",
+                "sound": "东",
+                "soundPy": "dōng",
+                "py": "dòng",
+                "en": "freeze"
+              },
+              {
+                "c": "冷",
+                "sound": "令",
+                "soundPy": "lìng",
+                "py": "lěng",
+                "en": "cold"
+              }
+            ]
+          }
         },
         {
           "r": "夕",
@@ -1138,7 +2478,43 @@
             "外",
             "夕"
           ],
-          "guess": []
+          "guess": [],
+          "lesson": {
+            "story": "The picture was a half moon shining in the evening sky. A crescent moon rises at dusk, so it means evening and night. It is usually a shape in a few common words.",
+            "picture": "a crescent moon in the evening sky",
+            "part": [
+              "外",
+              "多"
+            ],
+            "why": [
+              {
+                "c": "夕",
+                "py": "xī",
+                "en": "evening",
+                "why": "a crescent moon at dusk"
+              },
+              {
+                "c": "夜",
+                "py": "yè",
+                "en": "night",
+                "why": "the moon is out"
+              },
+              {
+                "c": "多",
+                "py": "duō",
+                "en": "many",
+                "why": "many nights piled up"
+              },
+              {
+                "c": "外",
+                "py": "wài",
+                "en": "outside",
+                "why": "only the shape, no evening here"
+              }
+            ],
+            "sound": [],
+            "shape": "It means evening in 夕 and 夜. In 多 and 外 it is just a part of the shape, so treat it as a handy label."
+          }
         }
       ]
     },
@@ -1200,7 +2576,57 @@
               "c": "近",
               "en": "near"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The old picture combined a foot and a stretch of road, so it means to walk and travel. It sits low and wraps around the bottom-left of a character like a path. Words with it are about moving, arriving and going far.",
+            "picture": "a foot stepping along a stretch of road",
+            "part": [
+              "这",
+              "过"
+            ],
+            "why": [
+              {
+                "c": "过",
+                "py": "guò",
+                "en": "pass",
+                "why": "moving past a place"
+              },
+              {
+                "c": "远",
+                "py": "yuǎn",
+                "en": "far",
+                "why": "a long way to walk"
+              },
+              {
+                "c": "近",
+                "py": "jìn",
+                "en": "near",
+                "why": "a short walk away"
+              },
+              {
+                "c": "送",
+                "py": "sòng",
+                "en": "send off",
+                "why": "walking someone along the way"
+              }
+            ],
+            "sound": [
+              {
+                "c": "远",
+                "sound": "元",
+                "soundPy": "yuán",
+                "py": "yuǎn",
+                "en": "far"
+              },
+              {
+                "c": "运",
+                "sound": "云",
+                "soundPy": "yún",
+                "py": "yùn",
+                "en": "move"
+              }
+            ]
+          }
         },
         {
           "r": "讠",
@@ -1251,7 +2677,57 @@
               "c": "许",
               "en": "permit"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The full character 言 showed a mouth with words coming out. On the left it is cut down to 讠, a dot and a hook. It marks speech: talking, asking, saying thanks.",
+            "picture": "a mouth with words flowing out of it",
+            "part": [
+              "说",
+              "话"
+            ],
+            "why": [
+              {
+                "c": "说",
+                "py": "shuō",
+                "en": "say",
+                "why": "words from the mouth"
+              },
+              {
+                "c": "话",
+                "py": "huà",
+                "en": "talk",
+                "why": "words spoken"
+              },
+              {
+                "c": "请",
+                "py": "qǐng",
+                "en": "please",
+                "why": "a polite request in words"
+              },
+              {
+                "c": "谢",
+                "py": "xiè",
+                "en": "thank",
+                "why": "words of thanks"
+              }
+            ],
+            "sound": [
+              {
+                "c": "请",
+                "sound": "青",
+                "soundPy": "qīng",
+                "py": "qǐng",
+                "en": "please"
+              },
+              {
+                "c": "试",
+                "sound": "式",
+                "soundPy": "shì",
+                "py": "shì",
+                "en": "try"
+              }
+            ]
+          }
         },
         {
           "r": "刂",
@@ -1293,7 +2769,57 @@
               "c": "划",
               "en": "slash"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The full character 刀 was a knife with a handle and a sharp blade. On the right it is pulled into a tall line, 刂. It is about cutting, splitting and sharp things.",
+            "picture": "a knife with a handle and a curved blade",
+            "part": [
+              "刚",
+              "别"
+            ],
+            "why": [
+              {
+                "c": "刻",
+                "py": "kè",
+                "en": "carve",
+                "why": "cut with a knife"
+              },
+              {
+                "c": "别",
+                "py": "bié",
+                "en": "part",
+                "why": "cut apart"
+              },
+              {
+                "c": "刚",
+                "py": "gāng",
+                "en": "just",
+                "why": "sharp and firm, like a blade"
+              },
+              {
+                "c": "割",
+                "py": "gē",
+                "en": "cut",
+                "why": "done with a knife"
+              }
+            ],
+            "sound": [
+              {
+                "c": "刚",
+                "sound": "冈",
+                "soundPy": "gāng",
+                "py": "gāng",
+                "en": "just"
+              },
+              {
+                "c": "副",
+                "sound": "畐",
+                "soundPy": "fú",
+                "py": "fù",
+                "en": "deputy"
+              }
+            ]
+          }
         },
         {
           "r": "又",
@@ -1314,7 +2840,43 @@
             "叔",
             "反"
           ],
-          "guess": []
+          "guess": [],
+          "lesson": {
+            "story": "The picture was a right hand with three fingers. Because a hand can do something over and over, it also came to mean again. It is a hand-shape in many characters.",
+            "picture": "a right hand with three fingers extended",
+            "part": [
+              "友",
+              "双"
+            ],
+            "why": [
+              {
+                "c": "又",
+                "py": "yòu",
+                "en": "again",
+                "why": "a hand doing it once more"
+              },
+              {
+                "c": "友",
+                "py": "yǒu",
+                "en": "friend",
+                "why": "two hands reaching toward each other"
+              },
+              {
+                "c": "双",
+                "py": "shuāng",
+                "en": "pair",
+                "why": "two hands side by side"
+              },
+              {
+                "c": "取",
+                "py": "qǔ",
+                "en": "take",
+                "why": "a hand taking something"
+              }
+            ],
+            "sound": [],
+            "shape": "Only in 友 and 双 is it clearly the hand. In many other characters it is just a small shape, so treat it as a label for sorting."
+          }
         },
         {
           "r": "寸",
@@ -1335,7 +2897,43 @@
             "封",
             "射"
           ],
-          "guess": []
+          "guess": [],
+          "lesson": {
+            "story": "The picture was a hand with a small dot marking the pulse spot near the wrist. That distance became an inch, a thumb's width. It is mostly a shape in characters about measuring and hands.",
+            "picture": "a hand with a dot marking the wrist",
+            "part": [
+              "寸",
+              "对"
+            ],
+            "why": [
+              {
+                "c": "寸",
+                "py": "cùn",
+                "en": "inch",
+                "why": "a hand with a measuring mark"
+              },
+              {
+                "c": "导",
+                "py": "dǎo",
+                "en": "lead",
+                "why": "a hand guiding someone"
+              },
+              {
+                "c": "封",
+                "py": "fēng",
+                "en": "seal",
+                "why": "hands closing something"
+              },
+              {
+                "c": "射",
+                "py": "shè",
+                "en": "shoot",
+                "why": "a hand letting go of an arrow"
+              }
+            ],
+            "sound": [],
+            "shape": "Only in 寸 and a few characters does it mean hand or measure. In 对 and many others it is just a shape, so treat it as a label."
+          }
         },
         {
           "r": "攵",
@@ -1378,7 +2976,57 @@
               "c": "攻",
               "en": "attack"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The old picture was a hand holding a stick, ready to tap or strike. It is a shape that stands for doing something with force or purpose. It sits on the right of a character.",
+            "picture": "a hand holding a stick about to tap",
+            "part": [
+              "放",
+              "教"
+            ],
+            "why": [
+              {
+                "c": "放",
+                "py": "fàng",
+                "en": "release",
+                "why": "let go with a push"
+              },
+              {
+                "c": "教",
+                "py": "jiào",
+                "en": "teach",
+                "why": "guiding with a stick, in the old days"
+              },
+              {
+                "c": "数",
+                "py": "shù",
+                "en": "count",
+                "why": "pointing out each one"
+              },
+              {
+                "c": "改",
+                "py": "gǎi",
+                "en": "change",
+                "why": "a tap that fixes something"
+              }
+            ],
+            "sound": [
+              {
+                "c": "政",
+                "sound": "正",
+                "soundPy": "zhèng",
+                "py": "zhèng",
+                "en": "government"
+              },
+              {
+                "c": "放",
+                "sound": "方",
+                "soundPy": "fāng",
+                "py": "fàng",
+                "en": "release"
+              }
+            ]
+          }
         },
         {
           "r": "走",
@@ -1417,7 +3065,57 @@
               "c": "超",
               "en": "overtake"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The picture shows a person swinging their arms with a foot below. The top is the swinging body and the bottom is a foot. It means to walk, run and set off.",
+            "picture": "a person striding with arms swinging and a foot below",
+            "part": [
+              "起",
+              "超"
+            ],
+            "why": [
+              {
+                "c": "走",
+                "py": "zǒu",
+                "en": "walk",
+                "why": "the person striding"
+              },
+              {
+                "c": "起",
+                "py": "qǐ",
+                "en": "rise",
+                "why": "getting up to go"
+              },
+              {
+                "c": "超",
+                "py": "chāo",
+                "en": "pass",
+                "why": "racing ahead of others"
+              },
+              {
+                "c": "越",
+                "py": "yuè",
+                "en": "cross",
+                "why": "stepping over something"
+              }
+            ],
+            "sound": [
+              {
+                "c": "越",
+                "sound": "戉",
+                "soundPy": "yuè",
+                "py": "yuè",
+                "en": "cross"
+              },
+              {
+                "c": "趣",
+                "sound": "取",
+                "soundPy": "qǔ",
+                "py": "qù",
+                "en": "interest"
+              }
+            ]
+          }
         },
         {
           "r": "彳",
@@ -1457,7 +3155,57 @@
               "c": "徒",
               "en": "on foot"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "This is the left half of a road crossing, a short step. It means a small step on the road. It is found in words about walking, roads and going.",
+            "picture": "a small step on the left side of a road",
+            "part": [
+              "往",
+              "很"
+            ],
+            "why": [
+              {
+                "c": "往",
+                "py": "wǎng",
+                "en": "go toward",
+                "why": "heading along the road"
+              },
+              {
+                "c": "得",
+                "py": "dé",
+                "en": "get",
+                "why": "a step to get what you want"
+              },
+              {
+                "c": "德",
+                "py": "dé",
+                "en": "virtue",
+                "why": "steps guided by the heart"
+              },
+              {
+                "c": "徒",
+                "py": "tú",
+                "en": "on foot",
+                "why": "walking with your own feet"
+              }
+            ],
+            "sound": [
+              {
+                "c": "往",
+                "sound": "王",
+                "soundPy": "wáng",
+                "py": "wǎng",
+                "en": "go toward"
+              },
+              {
+                "c": "很",
+                "sound": "艮",
+                "soundPy": "gěn",
+                "py": "hěn",
+                "en": "very"
+              }
+            ]
+          }
         },
         {
           "r": "见",
@@ -1500,7 +3248,57 @@
               "c": "规",
               "en": "rule"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The picture is an eye on top of a walking person: the person is looking. It means to see and to meet. It appears in words about looking and noticing.",
+            "picture": "a person with a large eye on top",
+            "part": [
+              "视",
+              "觉"
+            ],
+            "why": [
+              {
+                "c": "见",
+                "py": "jiàn",
+                "en": "see",
+                "why": "an eye on a person"
+              },
+              {
+                "c": "视",
+                "py": "shì",
+                "en": "look at",
+                "why": "an eye gazing at something"
+              },
+              {
+                "c": "觉",
+                "py": "jué",
+                "en": "feel",
+                "why": "an eye that notices"
+              },
+              {
+                "c": "观",
+                "py": "guān",
+                "en": "watch",
+                "why": "looking carefully"
+              }
+            ],
+            "sound": [
+              {
+                "c": "视",
+                "sound": "礻",
+                "soundPy": "shì",
+                "py": "shì",
+                "en": "look at"
+              },
+              {
+                "c": "觐",
+                "sound": "堇",
+                "soundPy": "jǐn",
+                "py": "jìn",
+                "en": "see a ruler"
+              }
+            ]
+          }
         },
         {
           "r": "欠",
@@ -1540,7 +3338,57 @@
               "c": "欲",
               "en": "desire"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The picture is a person with an open mouth leaning forward, like a yawn. It first meant to yawn or lack something. Most words with it are about the mouth, breathing and feelings that come out.",
+            "picture": "a kneeling person with a wide open mouth",
+            "part": [
+              "歌",
+              "欢"
+            ],
+            "why": [
+              {
+                "c": "欠",
+                "py": "qiàn",
+                "en": "lack",
+                "why": "a yawn, a person running short"
+              },
+              {
+                "c": "歌",
+                "py": "gē",
+                "en": "song",
+                "why": "a mouth opened to sing"
+              },
+              {
+                "c": "欢",
+                "py": "huān",
+                "en": "happy",
+                "why": "a mouth open with joy"
+              },
+              {
+                "c": "欲",
+                "py": "yù",
+                "en": "want",
+                "why": "a mouth that wants more"
+              }
+            ],
+            "sound": [
+              {
+                "c": "歌",
+                "sound": "哥",
+                "soundPy": "gē",
+                "py": "gē",
+                "en": "song"
+              },
+              {
+                "c": "欺",
+                "sound": "其",
+                "soundPy": "qí",
+                "py": "qī",
+                "en": "cheat"
+              }
+            ]
+          }
         },
         {
           "r": "止",
@@ -1561,7 +3409,43 @@
             "歪",
             "武"
           ],
-          "guess": []
+          "guess": [],
+          "lesson": {
+            "story": "The picture was a footprint, and it first meant a foot or toe. Later it meant to stop, as when your foot stops. In many characters it is a foot shape, not a stop sign.",
+            "picture": "a footprint with toes pointing up",
+            "part": [
+              "正",
+              "步"
+            ],
+            "why": [
+              {
+                "c": "止",
+                "py": "zhǐ",
+                "en": "stop",
+                "why": "a foot that has stopped"
+              },
+              {
+                "c": "正",
+                "py": "zhèng",
+                "en": "correct",
+                "why": "a foot walking straight to a mark"
+              },
+              {
+                "c": "步",
+                "py": "bù",
+                "en": "step",
+                "why": "two feet, one after another"
+              },
+              {
+                "c": "武",
+                "py": "wǔ",
+                "en": "martial",
+                "why": "a foot marching with a spear"
+              }
+            ],
+            "sound": [],
+            "shape": "It means a foot in 步 and 正. In many other places it is just a shape, so treat it as a label."
+          }
         },
         {
           "r": "戈",
@@ -1583,7 +3467,58 @@
             "戏",
             "戒"
           ],
-          "guess": []
+          "guess": [],
+          "lesson": {
+            "story": "The picture was a spear or halberd with a long handle and a blade at the side. It is a weapon shape. It often sits in words about fighting, ruling and contest.",
+            "picture": "a spear with a blade on the side",
+            "part": [
+              "战",
+              "我"
+            ],
+            "why": [
+              {
+                "c": "戈",
+                "py": "gē",
+                "en": "spear",
+                "why": "the weapon itself"
+              },
+              {
+                "c": "战",
+                "py": "zhàn",
+                "en": "war",
+                "why": "fighting with spears"
+              },
+              {
+                "c": "成",
+                "py": "chéng",
+                "en": "succeed",
+                "why": "only the shape here"
+              },
+              {
+                "c": "我",
+                "py": "wǒ",
+                "en": "I",
+                "why": "only the shape here"
+              }
+            ],
+            "sound": [
+              {
+                "c": "战",
+                "sound": "占",
+                "soundPy": "zhàn",
+                "py": "zhàn",
+                "en": "war"
+              },
+              {
+                "c": "载",
+                "sound": "哉",
+                "soundPy": "zāi",
+                "py": "zài",
+                "en": "carry"
+              }
+            ],
+            "shape": "It is truly a weapon in 戈 and 战. In 我, 成 and 或 it is just a shape, so do not look for a spear there."
+          }
         },
         {
           "r": "弓",
@@ -1627,7 +3562,57 @@
               "c": "弧",
               "en": "arc"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The picture was a bow with a string pulled across it. Characters with 弓 are about bows, bending and pulling.",
+            "picture": "a curved bow with its string drawn across",
+            "part": [
+              "弯",
+              "引"
+            ],
+            "why": [
+              {
+                "c": "弓",
+                "py": "gōng",
+                "en": "bow",
+                "why": "the bow itself"
+              },
+              {
+                "c": "引",
+                "py": "yǐn",
+                "en": "pull",
+                "why": "drawing back a bowstring"
+              },
+              {
+                "c": "张",
+                "py": "zhāng",
+                "en": "stretch",
+                "why": "a bow drawn wide"
+              },
+              {
+                "c": "弯",
+                "py": "wān",
+                "en": "bend",
+                "why": "curved like a bow"
+              }
+            ],
+            "sound": [
+              {
+                "c": "张",
+                "sound": "长",
+                "soundPy": "zhǎng",
+                "py": "zhāng",
+                "en": "stretch"
+              },
+              {
+                "c": "弹",
+                "sound": "单",
+                "soundPy": "dān",
+                "py": "dàn",
+                "en": "bullet"
+              }
+            ]
+          }
         },
         {
           "r": "立",
@@ -1650,7 +3635,58 @@
             "竞",
             "章"
           ],
-          "guess": []
+          "guess": [],
+          "lesson": {
+            "story": "The picture was a person standing on the ground with arms spread, firm on two feet. It means to stand and to set up. It is a shape in words about standing, stopping and building.",
+            "picture": "a person standing with arms spread on the ground",
+            "part": [
+              "站",
+              "亲"
+            ],
+            "why": [
+              {
+                "c": "立",
+                "py": "lì",
+                "en": "stand",
+                "why": "a person standing firm"
+              },
+              {
+                "c": "站",
+                "py": "zhàn",
+                "en": "stand",
+                "why": "standing on your feet"
+              },
+              {
+                "c": "端",
+                "py": "duān",
+                "en": "straight",
+                "why": "upright at the edge"
+              },
+              {
+                "c": "亲",
+                "py": "qīn",
+                "en": "dear",
+                "why": "only the shape here"
+              }
+            ],
+            "sound": [
+              {
+                "c": "站",
+                "sound": "占",
+                "soundPy": "zhàn",
+                "py": "zhàn",
+                "en": "stand"
+              },
+              {
+                "c": "端",
+                "sound": "耑",
+                "soundPy": "duān",
+                "py": "duān",
+                "en": "straight"
+              }
+            ],
+            "shape": "It means stand in 立 and 站. In 亲 and 竖 it is just a shape, so treat it as a label."
+          }
         }
       ]
     },
@@ -1698,7 +3734,57 @@
               "c": "寄",
               "en": "send"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The picture was the roof of a house with two sloping sides. Whatever sits under it is indoors. Characters with 宀 are about houses, rooms and being safe inside.",
+            "picture": "a house roof with two sloping sides",
+            "part": [
+              "家",
+              "安"
+            ],
+            "why": [
+              {
+                "c": "家",
+                "py": "jiā",
+                "en": "home",
+                "why": "a roof over the family"
+              },
+              {
+                "c": "安",
+                "py": "ān",
+                "en": "safe",
+                "why": "a woman under a roof is safe"
+              },
+              {
+                "c": "室",
+                "py": "shì",
+                "en": "room",
+                "why": "a space under a roof"
+              },
+              {
+                "c": "客",
+                "py": "kè",
+                "en": "guest",
+                "why": "someone staying under your roof"
+              }
+            ],
+            "sound": [
+              {
+                "c": "宇",
+                "sound": "于",
+                "soundPy": "yú",
+                "py": "yǔ",
+                "en": "universe"
+              },
+              {
+                "c": "审",
+                "sound": "申",
+                "soundPy": "shēn",
+                "py": "shěn",
+                "en": "examine"
+              }
+            ]
+          }
         },
         {
           "r": "广",
@@ -1739,7 +3825,57 @@
               "c": "廊",
               "en": "corridor"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The picture showed a building with a single sloping roof and an open front. It means a large building, a shed or a shop. It sits at the top left of a character and wraps around.",
+            "picture": "a large building with one sloping roof",
+            "part": [
+              "店",
+              "床"
+            ],
+            "why": [
+              {
+                "c": "店",
+                "py": "diàn",
+                "en": "shop",
+                "why": "a building where you buy"
+              },
+              {
+                "c": "床",
+                "py": "chuáng",
+                "en": "bed",
+                "why": "a piece of furniture in a house"
+              },
+              {
+                "c": "库",
+                "py": "kù",
+                "en": "store",
+                "why": "a large building to keep things"
+              },
+              {
+                "c": "度",
+                "py": "dù",
+                "en": "degree",
+                "why": "only the shape here, no building"
+              }
+            ],
+            "sound": [
+              {
+                "c": "府",
+                "sound": "付",
+                "soundPy": "fù",
+                "py": "fǔ",
+                "en": "government office"
+              },
+              {
+                "c": "底",
+                "sound": "氐",
+                "soundPy": "dī",
+                "py": "dǐ",
+                "en": "bottom"
+              }
+            ]
+          }
         },
         {
           "r": "门",
@@ -1784,7 +3920,57 @@
               "c": "闸",
               "en": "gate"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The picture shows a gateway with two doors swinging open. The two vertical lines are the door posts and the strokes inside are the leaves. It appears in words about doors, gates and openings.",
+            "picture": "a gate with two swinging doors",
+            "part": [
+              "间",
+              "问"
+            ],
+            "why": [
+              {
+                "c": "门",
+                "py": "mén",
+                "en": "door",
+                "why": "two door leaves"
+              },
+              {
+                "c": "问",
+                "py": "wèn",
+                "en": "ask",
+                "why": "a mouth at the door"
+              },
+              {
+                "c": "间",
+                "py": "jiān",
+                "en": "between",
+                "why": "sun between two doors"
+              },
+              {
+                "c": "闹",
+                "py": "nào",
+                "en": "noisy",
+                "why": "a crowd at the door"
+              }
+            ],
+            "sound": [
+              {
+                "c": "阁",
+                "sound": "各",
+                "soundPy": "gè",
+                "py": "gé",
+                "en": "pavilion"
+              },
+              {
+                "c": "闺",
+                "sound": "圭",
+                "soundPy": "guī",
+                "py": "guī",
+                "en": "inner room"
+              }
+            ]
+          }
         },
         {
           "r": "纟",
@@ -1831,7 +4017,57 @@
               "c": "纺",
               "en": "spin thread"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The full character 糸 showed twisted threads of silk. On the left it is cut down to 纟. It is about thread, silk and cloth, and also things that join or tie.",
+            "picture": "a bundle of twisted silk threads",
+            "part": [
+              "给",
+              "红"
+            ],
+            "why": [
+              {
+                "c": "红",
+                "py": "hóng",
+                "en": "red",
+                "why": "silk dyed in a bright colour"
+              },
+              {
+                "c": "线",
+                "py": "xiàn",
+                "en": "thread",
+                "why": "a single strand of silk"
+              },
+              {
+                "c": "结",
+                "py": "jié",
+                "en": "knot",
+                "why": "tying threads together"
+              },
+              {
+                "c": "纸",
+                "py": "zhǐ",
+                "en": "paper",
+                "why": "made from threads of fibre"
+              }
+            ],
+            "sound": [
+              {
+                "c": "纷",
+                "sound": "分",
+                "soundPy": "fēn",
+                "py": "fēn",
+                "en": "busy and mixed"
+              },
+              {
+                "c": "绿",
+                "sound": "录",
+                "soundPy": "lù",
+                "py": "lǜ",
+                "en": "green"
+              }
+            ]
+          }
         },
         {
           "r": "贝",
@@ -1876,7 +4112,57 @@
               "c": "贫",
               "en": "poor"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The picture was an open shell. In ancient times shells were used as money, so characters with 贝 are about money, buying, selling and value.",
+            "picture": "an open seashell with a ridged shape",
+            "part": [
+              "货",
+              "贵"
+            ],
+            "why": [
+              {
+                "c": "贝",
+                "py": "bèi",
+                "en": "shell",
+                "why": "a shell once used as money"
+              },
+              {
+                "c": "财",
+                "py": "cái",
+                "en": "wealth",
+                "why": "shells as riches"
+              },
+              {
+                "c": "货",
+                "py": "huò",
+                "en": "goods",
+                "why": "things you buy and sell"
+              },
+              {
+                "c": "贵",
+                "py": "guì",
+                "en": "expensive",
+                "why": "costs many shells"
+              }
+            ],
+            "sound": [
+              {
+                "c": "财",
+                "sound": "才",
+                "soundPy": "cái",
+                "py": "cái",
+                "en": "wealth"
+              },
+              {
+                "c": "购",
+                "sound": "勾",
+                "soundPy": "gōu",
+                "py": "gòu",
+                "en": "buy"
+              }
+            ]
+          }
         },
         {
           "r": "衤",
@@ -1918,7 +4204,57 @@
               "c": "袄",
               "en": "padded coat"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The full character 衣 shows a collar and two sleeves of a jacket. On the left it is shortened with a small hook. It marks clothes and wearing.",
+            "picture": "a jacket with a collar and sleeves",
+            "part": [
+              "裤",
+              "衬"
+            ],
+            "why": [
+              {
+                "c": "衣",
+                "py": "yī",
+                "en": "clothes",
+                "why": "the jacket itself"
+              },
+              {
+                "c": "裤",
+                "py": "kù",
+                "en": "trousers",
+                "why": "clothing for the legs"
+              },
+              {
+                "c": "衬",
+                "py": "chèn",
+                "en": "lining",
+                "why": "clothing under another layer"
+              },
+              {
+                "c": "袋",
+                "py": "dài",
+                "en": "pocket",
+                "why": "a bag sewn into clothes"
+              }
+            ],
+            "sound": [
+              {
+                "c": "裤",
+                "sound": "库",
+                "soundPy": "kù",
+                "py": "kù",
+                "en": "trousers"
+              },
+              {
+                "c": "袋",
+                "sound": "代",
+                "soundPy": "dài",
+                "py": "dài",
+                "en": "pocket"
+              }
+            ]
+          }
         },
         {
           "r": "礻",
@@ -1960,7 +4296,57 @@
               "c": "禁",
               "en": "forbid"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The full character 示 showed an altar table with offerings. On the left it is shortened to 礻. It marks spirits, worship and good fortune, so it is found in words about blessings and rites.",
+            "picture": "a stone altar table with offerings",
+            "part": [
+              "神",
+              "福"
+            ],
+            "why": [
+              {
+                "c": "礼",
+                "py": "lǐ",
+                "en": "ritual",
+                "why": "the way to respect the spirits"
+              },
+              {
+                "c": "祝",
+                "py": "zhù",
+                "en": "wish",
+                "why": "a prayer at the altar"
+              },
+              {
+                "c": "神",
+                "py": "shén",
+                "en": "spirit",
+                "why": "a god, honoured at the altar"
+              },
+              {
+                "c": "福",
+                "py": "fú",
+                "en": "fortune",
+                "why": "blessings from the spirits"
+              }
+            ],
+            "sound": [
+              {
+                "c": "神",
+                "sound": "申",
+                "soundPy": "shēn",
+                "py": "shén",
+                "en": "spirit"
+              },
+              {
+                "c": "福",
+                "sound": "畐",
+                "soundPy": "fú",
+                "py": "fú",
+                "en": "fortune"
+              }
+            ]
+          }
         },
         {
           "r": "饣",
@@ -2006,7 +4392,57 @@
               "c": "饥",
               "en": "starving"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The full character 食 showed a bowl with a lid on top and food inside. On the left it is cut to 饣. It is about food and eating.",
+            "picture": "a covered bowl with food inside",
+            "part": [
+              "饭",
+              "饱"
+            ],
+            "why": [
+              {
+                "c": "饭",
+                "py": "fàn",
+                "en": "meal",
+                "why": "cooked food"
+              },
+              {
+                "c": "饱",
+                "py": "bǎo",
+                "en": "full",
+                "why": "a stomach full of food"
+              },
+              {
+                "c": "饿",
+                "py": "è",
+                "en": "hungry",
+                "why": "a stomach that wants food"
+              },
+              {
+                "c": "饮",
+                "py": "yǐn",
+                "en": "drink",
+                "why": "taking in a liquid"
+              }
+            ],
+            "sound": [
+              {
+                "c": "饭",
+                "sound": "反",
+                "soundPy": "fǎn",
+                "py": "fàn",
+                "en": "meal"
+              },
+              {
+                "c": "饺",
+                "sound": "交",
+                "soundPy": "jiāo",
+                "py": "jiǎo",
+                "en": "dumpling"
+              }
+            ]
+          }
         },
         {
           "r": "⺮",
@@ -2053,7 +4489,57 @@
               "c": "笨",
               "en": "clumsy"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The full character 竹 shows two bamboo stalks with leaves. On top of a character it is shortened to ⺮, called 竹字头. Things made of bamboo, such as pens, boxes and baskets, carry it.",
+            "picture": "two bamboo stalks with leaves",
+            "part": [
+              "笔",
+              "笑"
+            ],
+            "why": [
+              {
+                "c": "笔",
+                "py": "bǐ",
+                "en": "pen",
+                "why": "brushes had bamboo handles"
+              },
+              {
+                "c": "筷",
+                "py": "kuài",
+                "en": "chopsticks",
+                "why": "sticks cut from bamboo"
+              },
+              {
+                "c": "篮",
+                "py": "lán",
+                "en": "basket",
+                "why": "woven from bamboo"
+              },
+              {
+                "c": "简",
+                "py": "jiǎn",
+                "en": "simple",
+                "why": "old bamboo strips used for writing"
+              }
+            ],
+            "sound": [
+              {
+                "c": "筷",
+                "sound": "快",
+                "soundPy": "kuài",
+                "py": "kuài",
+                "en": "chopsticks"
+              },
+              {
+                "c": "简",
+                "sound": "间",
+                "soundPy": "jiān",
+                "py": "jiǎn",
+                "en": "simple"
+              }
+            ]
+          }
         },
         {
           "r": "艹",
@@ -2100,7 +4586,57 @@
               "c": "蓝",
               "en": "blue"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The picture was a few blades of grass growing from the ground. On top of a character it becomes two short crossing strokes. It marks plants, flowers, herbs and vegetables.",
+            "picture": "blades of grass sprouting from the ground",
+            "part": [
+              "花",
+              "茶"
+            ],
+            "why": [
+              {
+                "c": "花",
+                "py": "huā",
+                "en": "flower",
+                "why": "a blooming plant"
+              },
+              {
+                "c": "茶",
+                "py": "chá",
+                "en": "tea",
+                "why": "a leaf plant"
+              },
+              {
+                "c": "菜",
+                "py": "cài",
+                "en": "vegetable",
+                "why": "a plant to eat"
+              },
+              {
+                "c": "药",
+                "py": "yào",
+                "en": "medicine",
+                "why": "herbs used as medicine"
+              }
+            ],
+            "sound": [
+              {
+                "c": "苹",
+                "sound": "平",
+                "soundPy": "píng",
+                "py": "píng",
+                "en": "apple"
+              },
+              {
+                "c": "芳",
+                "sound": "方",
+                "soundPy": "fāng",
+                "py": "fāng",
+                "en": "fragrant"
+              }
+            ]
+          }
         },
         {
           "r": "车",
@@ -2139,7 +4675,57 @@
               "c": "轮",
               "en": "wheel"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The picture was a cart seen from above: two wheels, an axle and a body. It was simplified over time but it still means vehicle. It is found in words about carts, cars and wheels.",
+            "picture": "a cart seen from above with two wheels",
+            "part": [
+              "轮",
+              "转"
+            ],
+            "why": [
+              {
+                "c": "车",
+                "py": "chē",
+                "en": "vehicle",
+                "why": "a cart on wheels"
+              },
+              {
+                "c": "轮",
+                "py": "lún",
+                "en": "wheel",
+                "why": "part of a cart"
+              },
+              {
+                "c": "转",
+                "py": "zhuǎn",
+                "en": "turn",
+                "why": "a wheel turning"
+              },
+              {
+                "c": "轻",
+                "py": "qīng",
+                "en": "light",
+                "why": "a vehicle with little to carry"
+              }
+            ],
+            "sound": [
+              {
+                "c": "轮",
+                "sound": "仑",
+                "soundPy": "lún",
+                "py": "lún",
+                "en": "wheel"
+              },
+              {
+                "c": "较",
+                "sound": "交",
+                "soundPy": "jiāo",
+                "py": "jiào",
+                "en": "compare"
+              }
+            ]
+          }
         },
         {
           "r": "巾",
@@ -2180,7 +4766,57 @@
               "c": "帜",
               "en": "flag"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The picture was a piece of cloth hanging from a belt or a pole. It means cloth, scarf or towel. It is found in words about cloth, hats and flags.",
+            "picture": "a square cloth hanging down",
+            "part": [
+              "帽",
+              "带"
+            ],
+            "why": [
+              {
+                "c": "巾",
+                "py": "jīn",
+                "en": "cloth",
+                "why": "the cloth itself"
+              },
+              {
+                "c": "帽",
+                "py": "mào",
+                "en": "hat",
+                "why": "cloth for the head"
+              },
+              {
+                "c": "带",
+                "py": "dài",
+                "en": "belt",
+                "why": "a strip of cloth"
+              },
+              {
+                "c": "帮",
+                "py": "bāng",
+                "en": "help",
+                "why": "only the shape here"
+              }
+            ],
+            "sound": [
+              {
+                "c": "帽",
+                "sound": "冒",
+                "soundPy": "mào",
+                "py": "mào",
+                "en": "hat"
+              },
+              {
+                "c": "帐",
+                "sound": "长",
+                "soundPy": "zhǎng",
+                "py": "zhàng",
+                "en": "curtain"
+              }
+            ]
+          }
         },
         {
           "r": "尸",
@@ -2203,7 +4839,43 @@
             "尺",
             "届"
           ],
-          "guess": []
+          "guess": [],
+          "lesson": {
+            "story": "The old picture was a person lying down or sitting with bent legs, and it came to mean a body. In characters today it is mostly a roof-like shape. It is a sorting label, not something you read as a body.",
+            "picture": "a person seen sitting or lying, side-on",
+            "part": [
+              "局",
+              "屋"
+            ],
+            "why": [
+              {
+                "c": "尸",
+                "py": "shī",
+                "en": "body",
+                "why": "a body lying down"
+              },
+              {
+                "c": "屋",
+                "py": "wū",
+                "en": "house",
+                "why": "a roof over the body"
+              },
+              {
+                "c": "局",
+                "py": "jú",
+                "en": "office",
+                "why": "a shape over a space"
+              },
+              {
+                "c": "层",
+                "py": "céng",
+                "en": "layer",
+                "why": "a shape stacked above another"
+              }
+            ],
+            "sound": [],
+            "shape": "In 屋, 局 and 层 it works like a roof, not a body. Treat it as a sorting label."
+          }
         },
         {
           "r": "阝",
@@ -2230,7 +4902,58 @@
             "阿",
             "陪"
           ],
-          "guess": []
+          "guess": [],
+          "lesson": {
+            "story": "This one has two lives. On the left it is a mound of earth, like stairs or a hill. On the right it is a city, a settlement. On the left it is about slopes and heights, on the right about places.",
+            "picture": "a hill with steps on the left, a town on the right",
+            "part": [
+              "都",
+              "那"
+            ],
+            "why": [
+              {
+                "c": "阳",
+                "py": "yáng",
+                "en": "sun side",
+                "why": "a sunny hillside"
+              },
+              {
+                "c": "院",
+                "py": "yuàn",
+                "en": "courtyard",
+                "why": "a walled space, like a hill"
+              },
+              {
+                "c": "都",
+                "py": "dōu",
+                "en": "capital",
+                "why": "a city on the right"
+              },
+              {
+                "c": "邮",
+                "py": "yóu",
+                "en": "mail",
+                "why": "a post town"
+              }
+            ],
+            "sound": [
+              {
+                "c": "附",
+                "sound": "付",
+                "soundPy": "fù",
+                "py": "fù",
+                "en": "near"
+              },
+              {
+                "c": "邮",
+                "sound": "由",
+                "soundPy": "yóu",
+                "py": "yóu",
+                "en": "post"
+              }
+            ],
+            "shape": "On the left it is a hill, on the right it is a city. Check the side to know which one is meant."
+          }
         },
         {
           "r": "王",
@@ -2255,7 +4978,58 @@
             "玻",
             "琴"
           ],
-          "guess": []
+          "guess": [],
+          "lesson": {
+            "story": "The full character 玉 was a string of jade beads. 王 here is the jade shape with the dot dropped. It stands for jade and jewels and is found in names of gems and round things.",
+            "picture": "jade beads on a string",
+            "part": [
+              "球",
+              "珠"
+            ],
+            "why": [
+              {
+                "c": "玩",
+                "py": "wán",
+                "en": "play",
+                "why": "toys once made of jade"
+              },
+              {
+                "c": "球",
+                "py": "qiú",
+                "en": "ball",
+                "why": "a round bead"
+              },
+              {
+                "c": "珠",
+                "py": "zhū",
+                "en": "pearl",
+                "why": "a gem"
+              },
+              {
+                "c": "现",
+                "py": "xiàn",
+                "en": "now",
+                "why": "the gleam of polished jade appears"
+              }
+            ],
+            "sound": [
+              {
+                "c": "球",
+                "sound": "求",
+                "soundPy": "qiú",
+                "py": "qiú",
+                "en": "ball"
+              },
+              {
+                "c": "珠",
+                "sound": "朱",
+                "soundPy": "zhū",
+                "py": "zhū",
+                "en": "pearl"
+              }
+            ],
+            "shape": "It is about jade in 球 and 珠. In 王 king and 班 it is just a shape, so treat it as a label."
+          }
         },
         {
           "r": "皿",
@@ -2295,7 +5069,57 @@
               "c": "盆",
               "en": "basin"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The picture was a dish or bowl on a base. It means a container for food. Characters with it are about bowls, plates and things you serve.",
+            "picture": "a bowl on a short stand",
+            "part": [
+              "盒",
+              "盘"
+            ],
+            "why": [
+              {
+                "c": "皿",
+                "py": "mǐn",
+                "en": "dish",
+                "why": "the dish itself"
+              },
+              {
+                "c": "盒",
+                "py": "hé",
+                "en": "box",
+                "why": "a container with a lid"
+              },
+              {
+                "c": "盘",
+                "py": "pán",
+                "en": "plate",
+                "why": "a flat dish"
+              },
+              {
+                "c": "盆",
+                "py": "pén",
+                "en": "basin",
+                "why": "a wide bowl"
+              }
+            ],
+            "sound": [
+              {
+                "c": "盒",
+                "sound": "合",
+                "soundPy": "hé",
+                "py": "hé",
+                "en": "box"
+              },
+              {
+                "c": "盘",
+                "sound": "般",
+                "soundPy": "bān",
+                "py": "pán",
+                "en": "plate"
+              }
+            ]
+          }
         },
         {
           "r": "囗",
@@ -2319,7 +5143,58 @@
             "圆",
             "困"
           ],
-          "guess": []
+          "guess": [],
+          "lesson": {
+            "story": "This is a square wall around something. Whatever is inside is enclosed. It marks places and limits: countries, gardens, circles.",
+            "picture": "a square wall around an open space",
+            "part": [
+              "国",
+              "园"
+            ],
+            "why": [
+              {
+                "c": "国",
+                "py": "guó",
+                "en": "country",
+                "why": "land inside borders"
+              },
+              {
+                "c": "园",
+                "py": "yuán",
+                "en": "garden",
+                "why": "a space with a wall around it"
+              },
+              {
+                "c": "圆",
+                "py": "yuán",
+                "en": "round",
+                "why": "a closed circle"
+              },
+              {
+                "c": "图",
+                "py": "tú",
+                "en": "picture",
+                "why": "a drawing within a frame"
+              }
+            ],
+            "sound": [
+              {
+                "c": "圆",
+                "sound": "员",
+                "soundPy": "yuán",
+                "py": "yuán",
+                "en": "round"
+              },
+              {
+                "c": "园",
+                "sound": "元",
+                "soundPy": "yuán",
+                "py": "yuán",
+                "en": "garden"
+              }
+            ],
+            "shape": "It is a boundary in 国, 园 and 圈. In 四 and 因 it is just a box, so treat it as a label."
+          }
         },
         {
           "r": "厂",
@@ -2342,7 +5217,58 @@
             "厦",
             "压"
           ],
-          "guess": []
+          "guess": [],
+          "lesson": {
+            "story": "The picture was a cliff with a hollow beneath it, like a shed against a hill. It is a shape in words about slopes, sheds and factories.",
+            "picture": "a cliff with a shelter underneath",
+            "part": [
+              "厚",
+              "原"
+            ],
+            "why": [
+              {
+                "c": "厂",
+                "py": "chǎng",
+                "en": "factory",
+                "why": "a shed at the foot of a hill"
+              },
+              {
+                "c": "厚",
+                "py": "hòu",
+                "en": "thick",
+                "why": "heavy walls under a hill"
+              },
+              {
+                "c": "历",
+                "py": "lì",
+                "en": "history",
+                "why": "only the shape here"
+              },
+              {
+                "c": "厘",
+                "py": "lí",
+                "en": "hundredth",
+                "why": "only the shape here"
+              }
+            ],
+            "sound": [
+              {
+                "c": "历",
+                "sound": "力",
+                "soundPy": "lì",
+                "py": "lì",
+                "en": "history"
+              },
+              {
+                "c": "厘",
+                "sound": "里",
+                "soundPy": "lǐ",
+                "py": "lí",
+                "en": "hundredth"
+              }
+            ],
+            "shape": "It is a cliff shelter in 厂 and 厚. In 历 and 压 it is just a shape, so treat it as a label."
+          }
         },
         {
           "r": "酉",
@@ -2381,7 +5307,57 @@
               "c": "醒",
               "en": "sober up"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The picture was a tall jar for wine with a neck and a belly. It means wine and drink. In ancient times it also marked making and storing alcohol.",
+            "picture": "a tall wine jar with a narrow neck",
+            "part": [
+              "酒",
+              "酸"
+            ],
+            "why": [
+              {
+                "c": "酒",
+                "py": "jiǔ",
+                "en": "wine",
+                "why": "drink kept in a jar"
+              },
+              {
+                "c": "酸",
+                "py": "suān",
+                "en": "sour",
+                "why": "a sour taste from a jar"
+              },
+              {
+                "c": "醉",
+                "py": "zuì",
+                "en": "drunk",
+                "why": "too much from the jar"
+              },
+              {
+                "c": "醒",
+                "py": "xǐng",
+                "en": "wake",
+                "why": "coming out of drunkenness"
+              }
+            ],
+            "sound": [
+              {
+                "c": "醒",
+                "sound": "星",
+                "soundPy": "xīng",
+                "py": "xǐng",
+                "en": "wake"
+              },
+              {
+                "c": "酷",
+                "sound": "告",
+                "soundPy": "gào",
+                "py": "kù",
+                "en": "cool"
+              }
+            ]
+          }
         },
         {
           "r": "舟",
@@ -2419,7 +5395,57 @@
               "c": "船",
               "en": "boat"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The picture was a small boat with a deck and planks. It means boat and ship. You will find it in words about boats and sailing.",
+            "picture": "a small boat with planks and a deck",
+            "part": [
+              "船",
+              "航"
+            ],
+            "why": [
+              {
+                "c": "舟",
+                "py": "zhōu",
+                "en": "boat",
+                "why": "the boat itself"
+              },
+              {
+                "c": "船",
+                "py": "chuán",
+                "en": "ship",
+                "why": "a boat that carries people"
+              },
+              {
+                "c": "航",
+                "py": "háng",
+                "en": "sail",
+                "why": "travel by boat"
+              },
+              {
+                "c": "舰",
+                "py": "jiàn",
+                "en": "warship",
+                "why": "a large ship"
+              }
+            ],
+            "sound": [
+              {
+                "c": "舰",
+                "sound": "见",
+                "soundPy": "jiàn",
+                "py": "jiàn",
+                "en": "warship"
+              },
+              {
+                "c": "艇",
+                "sound": "廷",
+                "soundPy": "tíng",
+                "py": "tǐng",
+                "en": "boat"
+              }
+            ]
+          }
         },
         {
           "r": "户",
@@ -2439,7 +5465,58 @@
             "扇",
             "户"
           ],
-          "guess": []
+          "guess": [],
+          "lesson": {
+            "story": "The picture was a single door leaf, one half of a double door. It means door and household. It sits over words about rooms, houses and openings.",
+            "picture": "a single door leaf swinging on its hinge",
+            "part": [
+              "房",
+              "所"
+            ],
+            "why": [
+              {
+                "c": "户",
+                "py": "hù",
+                "en": "door",
+                "why": "one leaf of a door"
+              },
+              {
+                "c": "房",
+                "py": "fáng",
+                "en": "room",
+                "why": "a space with a door"
+              },
+              {
+                "c": "扇",
+                "py": "shàn",
+                "en": "fan",
+                "why": "a flap like a door leaf"
+              },
+              {
+                "c": "所",
+                "py": "suǒ",
+                "en": "place",
+                "why": "only the shape here"
+              }
+            ],
+            "sound": [
+              {
+                "c": "房",
+                "sound": "方",
+                "soundPy": "fāng",
+                "py": "fáng",
+                "en": "room"
+              },
+              {
+                "c": "扉",
+                "sound": "非",
+                "soundPy": "fēi",
+                "py": "fēi",
+                "en": "door leaf"
+              }
+            ],
+            "shape": "It means door in 户, 房 and 扇. In 所 it is just a shape, so treat it as a label."
+          }
         },
         {
           "r": "穴",
@@ -2482,7 +5559,57 @@
               "c": "空",
               "en": "empty"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The picture was a cave in a hillside: a roof with two dots for the opening. It means cave and hole. Characters with it are about openings, hollows and digging.",
+            "picture": "a cave opening in the side of a hill",
+            "part": [
+              "空",
+              "穿"
+            ],
+            "why": [
+              {
+                "c": "空",
+                "py": "kōng",
+                "en": "empty",
+                "why": "a cave with nothing inside"
+              },
+              {
+                "c": "穿",
+                "py": "chuān",
+                "en": "pierce",
+                "why": "boring a hole through"
+              },
+              {
+                "c": "窗",
+                "py": "chuāng",
+                "en": "window",
+                "why": "an opening in the wall"
+              },
+              {
+                "c": "突",
+                "py": "tū",
+                "en": "sudden",
+                "why": "a dog jumping out of a hole"
+              }
+            ],
+            "sound": [
+              {
+                "c": "究",
+                "sound": "九",
+                "soundPy": "jiǔ",
+                "py": "jiū",
+                "en": "research"
+              },
+              {
+                "c": "窍",
+                "sound": "巧",
+                "soundPy": "qiǎo",
+                "py": "qiào",
+                "en": "hole"
+              }
+            ]
+          }
         }
       ]
     },
@@ -2531,7 +5658,57 @@
               "c": "狠",
               "en": "ruthless"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The full character 犬 was a dog with a curled tail, seen from the side. On the left it is squeezed into 犭. It appears in words for dogs and wild animals, and for some animal-like behaviour.",
+            "picture": "a dog standing with a curled tail",
+            "part": [
+              "狗",
+              "猫"
+            ],
+            "why": [
+              {
+                "c": "狗",
+                "py": "gǒu",
+                "en": "dog",
+                "why": "a dog, with a sound part"
+              },
+              {
+                "c": "猫",
+                "py": "māo",
+                "en": "cat",
+                "why": "a small animal at home"
+              },
+              {
+                "c": "猪",
+                "py": "zhū",
+                "en": "pig",
+                "why": "an animal on the farm"
+              },
+              {
+                "c": "猴",
+                "py": "hóu",
+                "en": "monkey",
+                "why": "an animal in the trees"
+              }
+            ],
+            "sound": [
+              {
+                "c": "猴",
+                "sound": "侯",
+                "soundPy": "hóu",
+                "py": "hóu",
+                "en": "monkey"
+              },
+              {
+                "c": "狮",
+                "sound": "师",
+                "soundPy": "shī",
+                "py": "shī",
+                "en": "lion"
+              }
+            ]
+          }
         },
         {
           "r": "马",
@@ -2569,7 +5746,57 @@
               "c": "骄",
               "en": "proud"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The picture was a horse with a mane, four legs and a tail, turned on its side. Over time it became a few strokes, but you can still see the head, mane and body. It marks horses and riding.",
+            "picture": "a horse with a flowing mane and four legs",
+            "part": [
+              "骑",
+              "驾"
+            ],
+            "why": [
+              {
+                "c": "马",
+                "py": "mǎ",
+                "en": "horse",
+                "why": "the horse itself"
+              },
+              {
+                "c": "骑",
+                "py": "qí",
+                "en": "ride",
+                "why": "sitting on a horse"
+              },
+              {
+                "c": "驾",
+                "py": "jià",
+                "en": "drive",
+                "why": "guiding a horse"
+              },
+              {
+                "c": "驴",
+                "py": "lǘ",
+                "en": "donkey",
+                "why": "an animal like a horse"
+              }
+            ],
+            "sound": [
+              {
+                "c": "骑",
+                "sound": "奇",
+                "soundPy": "qí",
+                "py": "qí",
+                "en": "ride"
+              },
+              {
+                "c": "驶",
+                "sound": "史",
+                "soundPy": "shǐ",
+                "py": "shǐ",
+                "en": "drive"
+              }
+            ]
+          }
         },
         {
           "r": "鸟",
@@ -2611,7 +5838,57 @@
               "c": "鹊",
               "en": "magpie"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The picture was a bird with a beak, an eye, wings and feet, seen from the side. It marks birds and bird-like creatures. Over time the feet became four dots in the full form.",
+            "picture": "a bird with a beak, an eye and a tail",
+            "part": [
+              "鸡",
+              "鸭"
+            ],
+            "why": [
+              {
+                "c": "鸟",
+                "py": "niǎo",
+                "en": "bird",
+                "why": "the bird itself"
+              },
+              {
+                "c": "鸡",
+                "py": "jī",
+                "en": "chicken",
+                "why": "a farm bird"
+              },
+              {
+                "c": "鸭",
+                "py": "yā",
+                "en": "duck",
+                "why": "a bird that swims"
+              },
+              {
+                "c": "鹅",
+                "py": "é",
+                "en": "goose",
+                "why": "a large water bird"
+              }
+            ],
+            "sound": [
+              {
+                "c": "鸦",
+                "sound": "牙",
+                "soundPy": "yá",
+                "py": "yā",
+                "en": "crow"
+              },
+              {
+                "c": "鹏",
+                "sound": "朋",
+                "soundPy": "péng",
+                "py": "péng",
+                "en": "roc"
+              }
+            ]
+          }
         },
         {
           "r": "鱼",
@@ -2653,7 +5930,57 @@
               "c": "鲫",
               "en": "crucian carp"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The picture was a fish with a head, a scaly body and a tail. In the modern form the tail became four dots. It is found in words for fish and things from the water.",
+            "picture": "a fish with a head, scales and a tail",
+            "part": [
+              "鱼",
+              "鲜"
+            ],
+            "why": [
+              {
+                "c": "鱼",
+                "py": "yú",
+                "en": "fish",
+                "why": "the fish itself"
+              },
+              {
+                "c": "鲜",
+                "py": "xiān",
+                "en": "fresh",
+                "why": "a fresh fish, a sweet taste"
+              },
+              {
+                "c": "鲤",
+                "py": "lǐ",
+                "en": "carp",
+                "why": "a river fish"
+              },
+              {
+                "c": "鲸",
+                "py": "jīng",
+                "en": "whale",
+                "why": "a giant sea animal"
+              }
+            ],
+            "sound": [
+              {
+                "c": "鲤",
+                "sound": "里",
+                "soundPy": "lǐ",
+                "py": "lǐ",
+                "en": "carp"
+              },
+              {
+                "c": "鲸",
+                "sound": "京",
+                "soundPy": "jīng",
+                "py": "jīng",
+                "en": "whale"
+              }
+            ]
+          }
         },
         {
           "r": "虫",
@@ -2701,7 +6028,57 @@
               "c": "蜻",
               "en": "dragonfly"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The picture was a snake or a worm coiled up, with a head at the top. In Chinese it covers insects, worms and small crawling things, not only bugs.",
+            "picture": "a coiled worm or small snake",
+            "part": [
+              "虾",
+              "蚊"
+            ],
+            "why": [
+              {
+                "c": "虫",
+                "py": "chóng",
+                "en": "insect",
+                "why": "the creature itself"
+              },
+              {
+                "c": "蚊",
+                "py": "wén",
+                "en": "mosquito",
+                "why": "a biting insect"
+              },
+              {
+                "c": "蛙",
+                "py": "wā",
+                "en": "frog",
+                "why": "a small hopping creature"
+              },
+              {
+                "c": "虾",
+                "py": "xiā",
+                "en": "shrimp",
+                "why": "a small water creature"
+              }
+            ],
+            "sound": [
+              {
+                "c": "蜻",
+                "sound": "青",
+                "soundPy": "qīng",
+                "py": "qīng",
+                "en": "dragonfly"
+              },
+              {
+                "c": "蚊",
+                "sound": "文",
+                "soundPy": "wén",
+                "py": "wén",
+                "en": "mosquito"
+              }
+            ]
+          }
         },
         {
           "r": "羊",
@@ -2722,7 +6099,43 @@
             "羡",
             "羔"
           ],
-          "guess": []
+          "guess": [],
+          "lesson": {
+            "story": "The picture was a sheep seen from the front: two curved horns, a face and a body. It stands for sheep and goats, and also for something gentle and good.",
+            "picture": "a sheep seen from the front with curved horns",
+            "part": [
+              "美",
+              "群"
+            ],
+            "why": [
+              {
+                "c": "羊",
+                "py": "yáng",
+                "en": "sheep",
+                "why": "the animal itself"
+              },
+              {
+                "c": "美",
+                "py": "měi",
+                "en": "beautiful",
+                "why": "a big, plump sheep to eat"
+              },
+              {
+                "c": "群",
+                "py": "qún",
+                "en": "group",
+                "why": "sheep in a flock"
+              },
+              {
+                "c": "羞",
+                "py": "xiū",
+                "en": "shy",
+                "why": "only the shape here"
+              }
+            ],
+            "sound": [],
+            "shape": "It really means sheep in 羊 and 群. In 美, 鲜 and 养 it is a hint of something good, not an animal, so treat it as a label."
+          }
         },
         {
           "r": "牛",
@@ -2742,7 +6155,58 @@
             "特",
             "牺"
           ],
-          "guess": []
+          "guess": [],
+          "lesson": {
+            "story": "The picture was an ox seen from the front: a head with two horns pointing up. It means ox and cow. As a sorting shape it appears in a few common words.",
+            "picture": "an ox head with two horns pointing up",
+            "part": [
+              "物",
+              "牲"
+            ],
+            "why": [
+              {
+                "c": "牛",
+                "py": "niú",
+                "en": "ox",
+                "why": "the animal itself"
+              },
+              {
+                "c": "物",
+                "py": "wù",
+                "en": "thing",
+                "why": "cattle were a main item of wealth"
+              },
+              {
+                "c": "特",
+                "py": "tè",
+                "en": "special",
+                "why": "a special bull"
+              },
+              {
+                "c": "牲",
+                "py": "shēng",
+                "en": "livestock",
+                "why": "farm animals"
+              }
+            ],
+            "sound": [
+              {
+                "c": "物",
+                "sound": "勿",
+                "soundPy": "wù",
+                "py": "wù",
+                "en": "thing"
+              },
+              {
+                "c": "牲",
+                "sound": "生",
+                "soundPy": "shēng",
+                "py": "shēng",
+                "en": "livestock"
+              }
+            ],
+            "shape": "It really means cattle in 牛, 牲 and 牧. In 物 and 特 it is only a sorting label for the meaning, so do not look for an ox."
+          }
         },
         {
           "r": "疒",
@@ -2785,7 +6249,57 @@
               "c": "疤",
               "en": "scar"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The picture was a person lying on a bed, with a sign of being unwell. It means illness. Words with it are about sickness, pain and the body feeling wrong.",
+            "picture": "a person lying on a sickbed",
+            "part": [
+              "病",
+              "疼"
+            ],
+            "why": [
+              {
+                "c": "病",
+                "py": "bìng",
+                "en": "illness",
+                "why": "someone lying down, sick"
+              },
+              {
+                "c": "疼",
+                "py": "téng",
+                "en": "ache",
+                "why": "a body that hurts"
+              },
+              {
+                "c": "痛",
+                "py": "tòng",
+                "en": "pain",
+                "why": "sharp hurting"
+              },
+              {
+                "c": "瘦",
+                "py": "shòu",
+                "en": "thin",
+                "why": "a body lacking strength"
+              }
+            ],
+            "sound": [
+              {
+                "c": "疯",
+                "sound": "风",
+                "soundPy": "fēng",
+                "py": "fēng",
+                "en": "crazy"
+              },
+              {
+                "c": "痘",
+                "sound": "豆",
+                "soundPy": "dòu",
+                "py": "dòu",
+                "en": "pimple"
+              }
+            ]
+          }
         },
         {
           "r": "白",
@@ -2805,7 +6319,43 @@
             "百",
             "皇"
           ],
-          "guess": []
+          "guess": [],
+          "lesson": {
+            "story": "The picture was a thumb or a sun ray, and it came to mean white and clear. Today it is mostly a shape, though it still means white in the character itself.",
+            "picture": "a white thumb or a ray of light",
+            "part": [
+              "的",
+              "百"
+            ],
+            "why": [
+              {
+                "c": "白",
+                "py": "bái",
+                "en": "white",
+                "why": "the colour itself"
+              },
+              {
+                "c": "百",
+                "py": "bǎi",
+                "en": "hundred",
+                "why": "just a shape here"
+              },
+              {
+                "c": "的",
+                "py": "de",
+                "en": "of",
+                "why": "just a shape here"
+              },
+              {
+                "c": "皇",
+                "py": "huáng",
+                "en": "emperor",
+                "why": "just a shape here"
+              }
+            ],
+            "sound": [],
+            "shape": "Only 白 itself means white. In 百, 的 and 皇 it is just a shape, so treat it as a sorting label."
+          }
         },
         {
           "r": "大",
@@ -2826,7 +6376,43 @@
             "奇",
             "奋"
           ],
-          "guess": []
+          "guess": [],
+          "lesson": {
+            "story": "The picture was a person with arms and legs spread wide, to show how big he is. It means big. As a shape it appears in many characters where something is large or a person stands out.",
+            "picture": "a person standing with arms and legs wide apart",
+            "part": [
+              "天",
+              "太"
+            ],
+            "why": [
+              {
+                "c": "大",
+                "py": "dà",
+                "en": "big",
+                "why": "a person with arms stretched wide"
+              },
+              {
+                "c": "天",
+                "py": "tiān",
+                "en": "sky",
+                "why": "the big thing above a person"
+              },
+              {
+                "c": "太",
+                "py": "tài",
+                "en": "too much",
+                "why": "bigger than needed"
+              },
+              {
+                "c": "夫",
+                "py": "fū",
+                "en": "man",
+                "why": "a grown man with a hairpin"
+              }
+            ],
+            "sound": [],
+            "shape": "It really means big in 大 and 太. In 头 and 奇 it is just a shape, so treat it as a label."
+          }
         },
         {
           "r": "隹",
@@ -2869,7 +6455,57 @@
               "c": "雌",
               "en": "female"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The picture was a short-tailed bird, small and round. It is a shape in words for birds, especially small birds, and for gathering, as birds gather in a tree.",
+            "picture": "a small bird with a short tail",
+            "part": [
+              "集",
+              "雀"
+            ],
+            "why": [
+              {
+                "c": "雀",
+                "py": "què",
+                "en": "sparrow",
+                "why": "a small bird"
+              },
+              {
+                "c": "集",
+                "py": "jí",
+                "en": "gather",
+                "why": "birds on a tree"
+              },
+              {
+                "c": "雄",
+                "py": "xióng",
+                "en": "male",
+                "why": "a male bird, strong"
+              },
+              {
+                "c": "雌",
+                "py": "cí",
+                "en": "female",
+                "why": "a female bird"
+              }
+            ],
+            "sound": [
+              {
+                "c": "雅",
+                "sound": "牙",
+                "soundPy": "yá",
+                "py": "yǎ",
+                "en": "elegant"
+              },
+              {
+                "c": "雌",
+                "sound": "此",
+                "soundPy": "cǐ",
+                "py": "cí",
+                "en": "female"
+              }
+            ]
+          }
         },
         {
           "r": "羽",
@@ -2909,7 +6545,57 @@
               "c": "翠",
               "en": "emerald"
             }
-          ]
+          ],
+          "lesson": {
+            "story": "The picture was two feathers side by side. It means feather and wing. Characters with it are about flying, wings and soft things.",
+            "picture": "two feathers side by side",
+            "part": [
+              "翅",
+              "翻"
+            ],
+            "why": [
+              {
+                "c": "羽",
+                "py": "yǔ",
+                "en": "feather",
+                "why": "the feather itself"
+              },
+              {
+                "c": "翅",
+                "py": "chì",
+                "en": "wing",
+                "why": "a bird's wing"
+              },
+              {
+                "c": "翔",
+                "py": "xiáng",
+                "en": "soar",
+                "why": "gliding on wings"
+              },
+              {
+                "c": "翻",
+                "py": "fān",
+                "en": "flip",
+                "why": "wings turning over"
+              }
+            ],
+            "sound": [
+              {
+                "c": "翻",
+                "sound": "番",
+                "soundPy": "fān",
+                "py": "fān",
+                "en": "flip"
+              },
+              {
+                "c": "翼",
+                "sound": "異",
+                "soundPy": "yì",
+                "py": "yì",
+                "en": "wing"
+              }
+            ]
+          }
         },
         {
           "r": "小",
@@ -2929,7 +6615,43 @@
             "尖",
             "小"
           ],
-          "guess": []
+          "guess": [],
+          "lesson": {
+            "story": "The picture was three small dots or specks, to show something tiny. It means small. In many characters it is a shape that stands for fine or little.",
+            "picture": "three tiny specks, one in the middle",
+            "part": [
+              "少",
+              "尖"
+            ],
+            "why": [
+              {
+                "c": "小",
+                "py": "xiǎo",
+                "en": "small",
+                "why": "three little specks"
+              },
+              {
+                "c": "少",
+                "py": "shǎo",
+                "en": "few",
+                "why": "a little bit less"
+              },
+              {
+                "c": "尖",
+                "py": "jiān",
+                "en": "sharp",
+                "why": "small at the top, big below"
+              },
+              {
+                "c": "尘",
+                "py": "chén",
+                "en": "dust",
+                "why": "tiny specks of earth"
+              }
+            ],
+            "sound": [],
+            "shape": "It really means small in 小, 少 and 尖. In 当 and 常 it is only a shape on top, so treat it as a label."
+          }
         },
         {
           "r": "十",
@@ -2951,7 +6673,58 @@
             "华",
             "协"
           ],
-          "guess": []
+          "guess": [],
+          "lesson": {
+            "story": "The old drawing was a simple cross, a way to count all ten fingers of both hands. It means ten. As a shape it appears in numbers and in a few other words.",
+            "picture": "a plain cross made of two crossing strokes",
+            "part": [
+              "千",
+              "半"
+            ],
+            "why": [
+              {
+                "c": "十",
+                "py": "shí",
+                "en": "ten",
+                "why": "a cross for counting ten"
+              },
+              {
+                "c": "千",
+                "py": "qiān",
+                "en": "thousand",
+                "why": "ten hundreds"
+              },
+              {
+                "c": "半",
+                "py": "bàn",
+                "en": "half",
+                "why": "a thing cut in two"
+              },
+              {
+                "c": "午",
+                "py": "wǔ",
+                "en": "noon",
+                "why": "only the shape here"
+              }
+            ],
+            "sound": [
+              {
+                "c": "华",
+                "sound": "化",
+                "soundPy": "huà",
+                "py": "huá",
+                "en": "splendid"
+              },
+              {
+                "c": "卖",
+                "sound": "买",
+                "soundPy": "mǎi",
+                "py": "mài",
+                "en": "sell"
+              }
+            ],
+            "shape": "It is a number in 十 and 千. In 午 and 南 it is just a shape, so treat it as a label."
+          }
         },
         {
           "r": "一",
@@ -2972,7 +6745,43 @@
             "丈",
             "与"
           ],
-          "guess": []
+          "guess": [],
+          "lesson": {
+            "story": "The picture was one line lying flat. It means one and also stands for a flat surface. In many characters it is only a stroke, not a number.",
+            "picture": "one flat horizontal line",
+            "part": [
+              "三",
+              "上"
+            ],
+            "why": [
+              {
+                "c": "一",
+                "py": "yī",
+                "en": "one",
+                "why": "a single line"
+              },
+              {
+                "c": "三",
+                "py": "sān",
+                "en": "three",
+                "why": "three lines"
+              },
+              {
+                "c": "上",
+                "py": "shàng",
+                "en": "above",
+                "why": "a mark above the line"
+              },
+              {
+                "c": "下",
+                "py": "xià",
+                "en": "below",
+                "why": "a mark below the line"
+              }
+            ],
+            "sound": [],
+            "shape": "It is a number in 一 and 三. In 不, 世 and 万 it is just a stroke, so do not look for a number there."
+          }
         },
         {
           "r": "儿",
@@ -2994,7 +6803,43 @@
             "克",
             "党"
           ],
-          "guess": []
+          "guess": [],
+          "lesson": {
+            "story": "The picture was a person with two legs, and these days it often sits at the foot of a character. On its own it also means child or son. Most of the time it is just the legs of a character.",
+            "picture": "a person standing on two legs",
+            "part": [
+              "兄",
+              "先"
+            ],
+            "why": [
+              {
+                "c": "儿",
+                "py": "ér",
+                "en": "child",
+                "why": "a small person"
+              },
+              {
+                "c": "兄",
+                "py": "xiōng",
+                "en": "elder brother",
+                "why": "a mouth above a person"
+              },
+              {
+                "c": "先",
+                "py": "xiān",
+                "en": "first",
+                "why": "a foot ahead of a person"
+              },
+              {
+                "c": "光",
+                "py": "guāng",
+                "en": "light",
+                "why": "a person under a fire"
+              }
+            ],
+            "sound": [],
+            "shape": "It means child in 儿 and 兄. In 先 and 光 it is just the legs at the bottom, so treat it as a label."
+          }
         },
         {
           "r": "八",
@@ -3015,7 +6860,43 @@
             "共",
             "其"
           ],
-          "guess": []
+          "guess": [],
+          "lesson": {
+            "story": "The picture was two lines parting, as if something were being split in two. It means eight, and also divide. In characters it often marks something splitting or spreading.",
+            "picture": "two strokes bending apart",
+            "part": [
+              "公",
+              "共"
+            ],
+            "why": [
+              {
+                "c": "八",
+                "py": "bā",
+                "en": "eight",
+                "why": "two lines apart"
+              },
+              {
+                "c": "公",
+                "py": "gōng",
+                "en": "public",
+                "why": "dividing among everyone"
+              },
+              {
+                "c": "共",
+                "py": "gòng",
+                "en": "together",
+                "why": "two hands holding something"
+              },
+              {
+                "c": "六",
+                "py": "liù",
+                "en": "six",
+                "why": "just a number"
+              }
+            ],
+            "sound": [],
+            "shape": "It means eight in 八 and 六. In 公 and 共 it is just a shape, so treat it as a label."
+          }
         }
       ]
     }
