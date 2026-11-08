@@ -31,11 +31,26 @@ function scope() {
   return [...out];
 }
 
+// Practice has its own address (#/radicals/<mode>, #/radical/<r>/<mode>), so the back arrow and the
+// back gesture return to the page it was started from.
+const MODES = ["cards", "find", "guess", "due"];
+export function radicalsUp(hash) {
+  const p = hash.split("/");
+  if (p[1] === "radicals") return p[2] ? "#/radicals" : "#/";
+  return p[3] ? `#/radical/${p[2]}` : "#/radicals";
+}
+function leave() {
+  const up = radicalsUp(location.hash);
+  if (history.state?.from === up) history.back();
+  else location.hash = up;
+}
+const startPractice = (m) => { location.hash = `${location.hash.replace(/\/$/, "")}/${m}`; };
+
 async function practice(mode, radicals) {
   try {
     const m = await import("./radicals-practice.js");
     window.scrollTo(0, 0);
-    m.startRadicalPractice($("#radicalsBody"), { mode, radicals, then: () => openRadicals(current) });
+    m.startRadicalPractice($("#radicalsBody"), { mode, radicals, then: leave, back: leave });
   } catch (e) {
     console.warn(e);
     const n = $("#radMsg");
@@ -44,9 +59,10 @@ async function practice(mode, radicals) {
 }
 
 let current = null;
-export function openRadicals(r) {
+export function openRadicals(r, mode) {
   current = r || null;
   const x = r && find(r);
+  if (MODES.includes(mode)) return practice(mode, x ? [x.r] : mode === "due" ? dueRadicals() : scope());
   return x ? radicalPage(x) : listPage();
 }
 
@@ -68,10 +84,7 @@ function listPage() {
     <p class="note" id="radMsg" aria-live="polite"></p>
     ${STAGES.map((s) => `<section class="rad-stage"><h3>${esc(s.title)}<span class="cn">${esc(s.cn || "")}</span></h3>
       <div class="rad-grid">${s.radicals.map(tile).join("")}</div></section>`).join("")}`;
-  body().querySelectorAll("[data-rp]").forEach((b) => b.addEventListener("click", () => {
-    const m = b.dataset.rp;
-    practice(m, m === "due" ? dueRadicals() : scope());
-  }));
+  body().querySelectorAll("[data-rp]").forEach((b) => b.addEventListener("click", () => startPractice(b.dataset.rp)));
 }
 
 const famChip = (c, py, en) => `<button type="button" class="cs-chip" data-say="${esc(c)}"><b>${esc(c)}</b><span class="py">${tonePy(py || "")}</span><small>${esc(en || "")}</small></button>`;
@@ -107,7 +120,7 @@ function radicalPage(x) {
       <button class="btn" type="button" data-rp="guess">Guess</button>
     </div>
     <p class="note" id="radMsg" aria-live="polite"></p>`;
-  body().querySelectorAll("[data-rp]").forEach((b) => b.addEventListener("click", () => practice(b.dataset.rp, [x.r])));
+  body().querySelectorAll("[data-rp]").forEach((b) => b.addEventListener("click", () => startPractice(b.dataset.rp)));
   strokes(x.r);
 }
 

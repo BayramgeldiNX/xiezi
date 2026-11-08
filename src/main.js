@@ -24,7 +24,7 @@ import "./views/charsheet.js";
 import { openSearch } from "./views/search.js";
 import { openNotebook, notebookChanged } from "./views/notebook.js";
 import * as notebook from "./notebook/store.js";
-import { openRadicals, learnedCount, radicalTotal } from "./views/radicals.js";
+import { openRadicals, radicalsUp, learnedCount, radicalTotal } from "./views/radicals.js";
 import { openPrint } from "./views/printsheet.js";
 import { hideGloss } from "./views/reading.js";
 import { initAccountChip } from "./views/account.js";
@@ -40,7 +40,8 @@ const OLD_TABS = { dict: "write", review: "write", cards: "words", tones: "liste
 /* ---------- Pages ----------
    #/                           home
    #/typing                     typing practice
-   #/radicals, #/radical/<r>    Radicals: the list, or one radical
+   #/radicals[/<mode>]          Radicals: the list, or practice (cards, find, guess, due)
+   #/radical/<r>[/<mode>]       one radical, or practice of just that radical
    #/notebook[/<word>]          Notebook: the word list, or one word
    #/books                      all books
    #/book/<book>[/review]       one book: its lessons, or its review
@@ -128,7 +129,7 @@ async function route() {
     showPage("radicalsView"); document.title = "Radicals · 写字本";
     let r = null;
     try { r = page === "radical" && a ? decodeURIComponent(a) : null; } catch {}
-    return openRadicals(r);
+    return openRadicals(r, page === "radical" ? b : a);
   }
   if (page === "typing") { showPage("typingView"); document.title = "Typing · 写字本"; return openTyping(); }
   if (page === "book" && BOOKS.some((x) => x.id === a)) return showBook(a, b === "review" ? "review" : "lessons");
@@ -155,7 +156,7 @@ function back(to) {
   else go(to);
 }
 const upFrom = () => ({
-  booksView: "#/", reviewView: "#/", typingView: "#/", searchView: "#/", notebookView: location.hash.startsWith("#/notebook/") ? "#/notebook" : "#/", radicalsView: location.hash.startsWith("#/radical/") ? "#/radicals" : "#/", bookView: "#/books", printView: `#/lesson/${printLesson}/write`,
+  booksView: "#/", reviewView: "#/", typingView: "#/", searchView: "#/", notebookView: location.hash.startsWith("#/notebook/") ? "#/notebook" : "#/", radicalsView: radicalsUp(location.hash), bookView: "#/books", printView: `#/lesson/${printLesson}/write`,
   lessonView: `#/book/${app.L()?.book}`,
 })[current];
 
