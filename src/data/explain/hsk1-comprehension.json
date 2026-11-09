@@ -2019,10 +2019,10 @@
     "not": {}
   },
   {
-    "key": "jf1rvg2",
+    "key": "jwoit1n",
     "type": "judge",
     "lesson": 9,
-    "q": "他儿子在学校。",
+    "q": "他儿子不工作。",
     "options": [
       "对",
       "错"
@@ -2031,9 +2031,8 @@
     "context": {
       "text": "我儿子是学生，他不工作。"
     },
-    "why": "The text says 我儿子是学生, so we can only guess he is at school. It never says where he is.",
-    "not": {},
-    "flag": "The text never says where the son is; true only by inference from 学生."
+    "why": "The text says 他不工作 (he doesn't work), so the claim is true.",
+    "not": {}
   },
   {
     "key": "rr1bafa",

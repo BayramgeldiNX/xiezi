@@ -247,9 +247,9 @@
           "q": "你都听___了吗？",
           "options": [
             "懂",
-            "完",
-            "到",
-            "见"
+            "着",
+            "在",
+            "的"
           ],
           "answer": 0,
           "en": "Did you understand everything?"

@@ -510,10 +510,10 @@
     "not": {}
   },
   {
-    "key": "j4bk4j5",
+    "key": "jk6qiv4",
     "type": "judge",
     "lesson": 2,
-    "q": "他每天都在学校。",
+    "q": "他不在家。",
     "options": [
       "对",
       "错"
@@ -522,9 +522,8 @@
     "context": {
       "text": "他一半时间在家，一半时间在学校。"
     },
-    "why": "The text says only half his time (一半时间) is at school; the other half is at home. So the claim 每天都在学校 is marked false.",
-    "not": {},
-    "flag": "Ambiguous: 一半时间在学校 could mean half of every day, so 每天都在学校 is not clearly false."
+    "why": "He is at home 一半时间, half the time, so 他不在家 is false.",
+    "not": {}
   },
   {
     "key": "j9uo1pe",
@@ -1461,10 +1460,10 @@
     }
   },
   {
-    "key": "digv908",
+    "key": "d2qbql8",
     "type": "dialog",
     "lesson": 6,
-    "q": "女的问什么？",
+    "q": "男的问什么？",
     "options": [
       "洗手间在哪儿",
       "现在几点",
@@ -1477,12 +1476,11 @@
         "女：在那边。"
       ]
     },
-    "why": "The man (男) asks 洗手间在哪儿: where is the toilet. 在哪儿 asks about a place.",
+    "why": "男 asks 请问，洗手间在哪儿? He wants the restroom.",
     "not": {
-      "现在几点": "几点 asks the time; nobody asks that.",
-      "饭馆在哪儿": "He asks about 洗手间, not a restaurant."
-    },
-    "flag": "The question says 女的问, but the man (男) asks the question; it should be 男的问什么."
+      "现在几点": "Nobody asks the time.",
+      "饭馆在哪儿": "He asks about the 洗手间, not a 饭馆."
+    }
   },
   {
     "key": "dcaeil8",

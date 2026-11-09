@@ -1,13 +1,13 @@
 [
   {
-    "key": "g18470de",
+    "key": "gx1bi8b",
     "type": "grammar",
     "lesson": 1,
     "q": "我___去北京旅游。",
     "options": [
       "要",
       "最",
-      "也",
+      "很",
       "的"
     ],
     "answer": "要",
@@ -16,13 +16,12 @@
       "rule": "要: want to / going to",
       "en": "I'm going to travel to Beijing."
     },
-    "why": "要 + verb says what you plan to do: 我要去 means I am going to go.",
+    "why": "要 + verb says what you are going to do: 我要去北京旅游.",
     "not": {
-      "最": "最 means 'most'; it needs an adjective or a liking verb.",
-      "也": "我也去 is grammatical, but means 'I also go', not 'going to'.",
-      "的": "的 cannot come before a verb here."
-    },
-    "flag": "也 is grammatical here too (I also go to Beijing), though the English says 'going to'."
+      "最": "最 means 'most' and goes before an adjective, not 去.",
+      "很": "很 goes before adjectives; 很去 is not Chinese.",
+      "的": "的 cannot come between 我 and the verb 去."
+    }
   },
   {
     "key": "gfkat3q",
@@ -193,14 +192,14 @@
     }
   },
   {
-    "key": "g1aier49",
+    "key": "g103l4hg",
     "type": "grammar",
     "lesson": 2,
     "q": "他每天早上___去跑步。",
     "options": [
       "都",
       "每",
-      "也",
+      "很",
       "最"
     ],
     "answer": "都",
@@ -209,13 +208,12 @@
       "rule": "每 + measure word … 都: every",
       "en": "He goes running every morning."
     },
-    "why": "每天早上 already means 'every morning'; 都 adds 'always' before the verb 去.",
+    "why": "每天 pairs with 都 before the verb: 每天早上都去 means every morning.",
     "not": {
-      "每": "每 is already used in 每天; 每去 is wrong.",
-      "也": "也去 is grammatical, but means 'also goes'; 每 pairs with 都.",
-      "最": "最 means 'most' and does not fit here."
-    },
-    "flag": "也 is grammatical too (he also goes running every morning); the English and the 每……都 pattern point to 都."
+      "每": "每 is already in 每天; it cannot go before a verb.",
+      "很": "很 goes before adjectives; 很去 is not Chinese.",
+      "最": "最 goes before adjectives; 最去 is not Chinese."
+    }
   },
   {
     "key": "g1q9lxqy",
@@ -338,15 +336,15 @@
     }
   },
   {
-    "key": "g1n9ysww",
+    "key": "gopmiob",
     "type": "grammar",
     "lesson": 3,
     "q": "你女儿的房间___漂亮！",
     "options": [
       "真",
-      "最",
+      "的",
       "每",
-      "多"
+      "吗"
     ],
     "answer": "真",
     "context": {
@@ -354,13 +352,12 @@
       "rule": "真: really, so!",
       "en": "Your daughter's room is so pretty!"
     },
-    "why": "真 + adjective shows feeling: 真漂亮 is 'so pretty!'.",
+    "why": "真 + adjective says 'really, so': 真漂亮！ means so pretty!",
     "not": {
-      "最": "最漂亮 is grammatical, but means 'the prettiest'.",
-      "每": "每 means 'every'.",
-      "多": "多漂亮 can say 'how pretty!', but usually with 啊; 真 is the pattern."
-    },
-    "flag": "最 and 多 can also fit grammatically (the prettiest / how pretty!); 真 is the best match."
+      "的": "的 cannot link a noun and an adjective like this.",
+      "每": "每 needs a measure word and noun, like 每天.",
+      "吗": "吗 goes at the end of a question, not before 漂亮."
+    }
   },
   {
     "key": "g1xqj4eo",
@@ -723,7 +720,7 @@
     }
   },
   {
-    "key": "g3wrped",
+    "key": "gkce2pi",
     "type": "grammar",
     "lesson": 7,
     "q": "二十分钟___到。",
@@ -731,7 +728,7 @@
       "就",
       "还",
       "再",
-      "才"
+      "很"
     ],
     "answer": "就",
     "context": {
@@ -739,13 +736,12 @@
       "rule": "time + 就 + verb: as soon as that",
       "en": "I'll be there in twenty minutes."
     },
-    "why": "Time + 就 + verb shows it will happen soon: 二十分钟就到 is 'there in only twenty minutes'.",
+    "why": "Time + 就 + verb means 'soon, only that long': 二十分钟就到.",
     "not": {
-      "还": "还 means 'still'.",
-      "再": "再 means 'again'.",
-      "才": "才到 is grammatical, but means 'not until then', so it sounds late."
-    },
-    "flag": "才 is grammatical too (only after twenty minutes, so it seems long); the English says 'soon', so 就 fits."
+      "还": "还 means 'still'; 二十分钟还到 makes no sense.",
+      "再": "再 means 'again, then'; it does not mean 'soon'.",
+      "很": "很 goes before adjectives, not before the verb 到."
+    }
   },
   {
     "key": "g7c97gz",
@@ -916,13 +912,13 @@
     }
   },
   {
-    "key": "g1rgu2hy",
+    "key": "g13ffld9",
     "type": "grammar",
     "lesson": 8,
     "q": "外边天气很好，我们出去运动___吧！",
     "options": [
       "运动",
-      "一下",
+      "着",
       "一点儿",
       "了"
     ],
@@ -932,13 +928,12 @@
       "rule": "看看 / 想想 / 运动运动: briefly, casually",
       "en": "Nice weather — let's get some exercise!"
     },
-    "why": "Repeating a verb softens it: 运动运动 means 'do some exercise'. The 吧 then suggests it.",
+    "why": "Doubling a verb makes it light and casual: 运动运动吧, let's get some exercise.",
     "not": {
-      "一下": "运动一下吧 is also fine; here the doubled verb is the pattern.",
-      "一点儿": "一点儿 means 'a little' of something.",
-      "了": "了 does not suit a suggestion with 吧."
-    },
-    "flag": "一下 also works (运动一下吧); the question tests the doubled verb."
+      "着": "着 shows an ongoing state; it does not go with 吧 here.",
+      "一点儿": "一点儿 follows adjectives or nouns, not a verb like 运动.",
+      "了": "运动了吧 means 'exercised, right?', not a suggestion."
+    }
   },
   {
     "key": "g1x5dy89",
@@ -965,15 +960,15 @@
     }
   },
   {
-    "key": "g31rnqe",
+    "key": "ggbm0bd",
     "type": "grammar",
     "lesson": 9,
     "q": "你都听___了吗？",
     "options": [
       "懂",
-      "完",
-      "到",
-      "见"
+      "着",
+      "在",
+      "的"
     ],
     "answer": "懂",
     "context": {
@@ -981,13 +976,12 @@
       "rule": "看见 / 听懂 / 做完 / 找到",
       "en": "Did you understand everything?"
     },
-    "why": "听懂 means 'hear and understand'. The question asks if you understood everything.",
+    "why": "听懂 means hear and understand. 你都听懂了吗? asks if you understood everything.",
     "not": {
-      "完": "听完 is grammatical, but means 'finished listening', not 'understood'.",
-      "到": "听到 is grammatical, but means 'heard', not 'understood'.",
-      "见": "听见 is grammatical, but means 'heard', not 'understood'."
-    },
-    "flag": "听完, 听到 and 听见 all give grammatical questions (finished / heard everything); only the English 'understand' points to 懂."
+      "着": "着 shows an ongoing state; 听着了 is not right.",
+      "在": "在 needs a place after it; 听在了 is not Chinese.",
+      "的": "的 cannot come between 听 and 了."
+    }
   },
   {
     "key": "g14pwcxe",
@@ -1086,13 +1080,13 @@
     }
   },
   {
-    "key": "g4gif6l",
+    "key": "g1q9fn8u",
     "type": "grammar",
     "lesson": 10,
     "q": "___找了，手机在桌子上呢。",
     "options": [
       "别",
-      "不",
+      "很",
       "没",
       "再"
     ],
@@ -1102,13 +1096,12 @@
       "rule": "Stop …!",
       "en": "Stop looking — the phone's on the table."
     },
-    "why": "别 + verb + 了 means 'stop doing it': 别找了 tells someone to stop looking.",
+    "why": "别……了 tells someone to stop: 别找了, stop looking.",
     "not": {
-      "不": "不找了 says 'I will not look', not a command.",
-      "没": "没找了 is not correct.",
-      "再": "再找了 is wrong; it would be 别再找了."
-    },
-    "flag": "不找了 is grammatical too (I'm not going to look any more); 别 fits the 'Stop' meaning."
+      "很": "很 goes before adjectives, not before the verb 找.",
+      "没": "没找了 is not Chinese; 没 does not go with 了 like this.",
+      "再": "再找了 is not Chinese; 再 means 'again' for the future."
+    }
   },
   {
     "key": "g1skl2gf",
@@ -1303,15 +1296,15 @@
     }
   },
   {
-    "key": "g1qy5f4m",
+    "key": "g12t1usd",
     "type": "grammar",
     "lesson": 12,
     "q": "他说汉语说得___好。",
     "options": [
       "很",
       "太",
-      "最",
-      "更"
+      "吗",
+      "了"
     ],
     "answer": "很",
     "context": {
@@ -1319,13 +1312,12 @@
       "rule": "how an action is done",
       "en": "He speaks Chinese very well."
     },
-    "why": "说得很好: after 得, 很 + adjective says how well. 'Speaks very well.'",
+    "why": "After verb + 得, the adjective usually takes 很: 说得很好, speaks very well.",
     "not": {
-      "太": "太好 needs 了 (太好了).",
-      "最": "说得最好 is grammatical, but means 'speaks the best'.",
-      "更": "说得更好 is grammatical, but means 'speaks even better'."
-    },
-    "flag": "最 (speaks the best) and 更 (speaks even better) are also grammatical; only the English 'very well' points to 很."
+      "太": "太好 needs 了 at the end: 说得太好了.",
+      "吗": "吗 goes at the end of a question, not before 好.",
+      "了": "了 cannot go between 得 and 好."
+    }
   },
   {
     "key": "g6p10ro",
@@ -1472,15 +1464,15 @@
     }
   },
   {
-    "key": "g6u1m5g",
+    "key": "g1g6g2qy",
     "type": "grammar",
     "lesson": 14,
     "q": "你看___那个电影没有？",
     "options": [
       "过",
       "着",
-      "了",
-      "完"
+      "在",
+      "的"
     ],
     "answer": "过",
     "context": {
@@ -1488,13 +1480,12 @@
       "rule": "have done (experience)",
       "en": "Have you seen that movie?"
     },
-    "why": "Verb + 过 shows experience: 看过 means 'have seen before'. 没有 in the question asks yes/no.",
+    "why": "Verb + 过 asks about experience: 你看过那个电影没有? Have you ever seen it?",
     "not": {
-      "着": "着 shows an ongoing state.",
-      "了": "看了……没有 is grammatical, but asks 'did you watch', not experience.",
-      "完": "看完 is grammatical, but asks 'did you finish watching'."
-    },
-    "flag": "看了 and 看完 also make natural questions (did you watch / finish watching it?); only the English 'Have you seen' points to 过."
+      "着": "看着 means 'watching'; it does not go with 没有 here.",
+      "在": "在 goes before the verb (在看), not after it.",
+      "的": "看的那个电影 means 'the film you watch', not a question."
+    }
   },
   {
     "key": "g10qjpaa",
@@ -1569,15 +1560,15 @@
     }
   },
   {
-    "key": "g1c9kkpx",
+    "key": "g10f3he2",
     "type": "grammar",
     "lesson": 14,
     "q": "我在这个商店买过一___东西。",
     "options": [
       "次",
-      "个",
+      "本",
       "下",
-      "件"
+      "岁"
     ],
     "answer": "次",
     "context": {
@@ -1585,13 +1576,12 @@
       "rule": "how many times",
       "en": "I've bought something in this shop once."
     },
-    "why": "买过一次东西 means 'bought things there once'. 次 counts how many times.",
+    "why": "Verb + 过 + number + 次 says how many times: 买过一次, bought once.",
     "not": {
-      "个": "一个东西 is also grammatical (one thing) but not 'once'.",
-      "下": "一下东西 is wrong; 下 follows verbs.",
-      "件": "一件东西 is also grammatical (one item) but not 'once'."
-    },
-    "flag": "个 and 件 also give grammatical sentences (one thing/item); 次 matches 'once' in the English."
+      "本": "本 is for books; 一本东西 is wrong.",
+      "下": "一下 means 'briefly', not 'once' with 过 and 东西.",
+      "岁": "岁 is for age, not for things or times."
+    }
   },
   {
     "key": "g194tj4m",

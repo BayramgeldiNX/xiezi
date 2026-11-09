@@ -620,10 +620,10 @@
     }
   },
   {
-    "key": "rxgsk5",
+    "key": "r1yyexbg",
     "type": "reading",
     "lesson": 3,
-    "q": "Whose newspaper is it from?",
+    "q": "Which day's newspaper is it?",
     "options": [
       "Yesterday",
       "Today",
@@ -640,13 +640,12 @@
         "B：不是，是昨天的。  (No, it's yesterday's.)"
       ]
     },
-    "why": "B says 不是今天的，是昨天的: it is yesterday's.",
+    "why": "A asks 这是今天的报纸吗? B says 不是，是昨天的, so it is yesterday's paper.",
     "not": {
-      "Today": "B says 不是, so it is not today's.",
-      "Tomorrow": "明天 (tomorrow) is not said.",
-      "Last week": "Last week is not mentioned."
-    },
-    "flag": "Question wording is odd: 'Whose newspaper is it from?' should ask which day the newspaper is from."
+      "Today": "B says 不是 to 今天的报纸.",
+      "Tomorrow": "B says 昨天的, yesterday's, not tomorrow's.",
+      "Last week": "B says 昨天的, not last week's."
+    }
   },
   {
     "key": "d1m1rlqr",
@@ -3084,28 +3083,27 @@
     }
   },
   {
-    "key": "dossraq",
+    "key": "d3ryx3j",
     "type": "dialog",
     "lesson": 12,
     "q": "谁做饭做得好？",
     "options": [
-      "他妻子",
-      "他",
-      "他弟弟"
+      "她丈夫",
+      "她",
+      "她弟弟"
     ],
-    "answer": "他妻子",
+    "answer": "她丈夫",
     "context": {
       "lines": [
         "男：你做饭做得怎么样？",
-        "女：不怎么样，我妻子比我做得好。"
+        "女：不怎么样，我丈夫比我做得好。"
       ]
     },
-    "why": "The answer says 我妻子比我做得好: the wife cooks better than the speaker.",
+    "why": "女 says 我丈夫比我做得好: her husband cooks better than she does.",
     "not": {
-      "他": "The speaker says his own cooking is 不怎么样.",
-      "他弟弟": "The brother is not in this dialog."
-    },
-    "flag": "Speakers look swapped: 女 says 我妻子, but the question asks about 他妻子. The answer line should be 男's."
+      "她": "She says her own cooking is 不怎么样, not good.",
+      "她弟弟": "Her brother is not mentioned."
+    }
   },
   {
     "key": "d1qen75u",
@@ -3399,10 +3397,10 @@
     }
   },
   {
-    "key": "dtzluh",
+    "key": "dzrew2k",
     "type": "dialog",
     "lesson": 13,
-    "q": "他的女朋友怎么样？",
+    "q": "她的男朋友怎么样？",
     "options": [
       "很爱笑",
       "很高",
@@ -3411,16 +3409,15 @@
     "answer": "很爱笑",
     "context": {
       "lines": [
-        "男：你女朋友是谁？",
-        "女：就是我们班那个爱笑的女孩儿。"
+        "男：你男朋友是谁？",
+        "女：就是我们班那个爱笑的男孩儿。"
       ]
     },
-    "why": "The answer says 我们班那个爱笑的女孩儿: the girlfriend loves to smile.",
+    "why": "女 says her boyfriend is 那个爱笑的男孩儿, the boy who likes to laugh.",
     "not": {
-      "很高": "很高 is not mentioned.",
-      "很忙": "很忙 is not mentioned."
-    },
-    "flag": "Speakers look swapped: 女 answers about her own 女朋友, but the question asks 他的女朋友."
+      "很高": "Nothing is said about his height.",
+      "很忙": "Nothing is said about him being busy."
+    }
   },
   {
     "key": "jxo9opj",

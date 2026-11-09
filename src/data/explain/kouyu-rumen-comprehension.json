@@ -122,17 +122,17 @@
     }
   },
   {
-    "key": "rmgrf7p",
+    "key": "r7eu576",
     "type": "reading",
     "lesson": 1,
-    "q": "The teacher says “很好！请再说一遍。” What does the student do next?",
+    "q": "What does the student say they can do?",
     "options": [
-      "Says it again",
-      "Sits down",
-      "Says goodbye",
-      "Says sorry"
+      "Write “你好”",
+      "Sing a song",
+      "Speak English",
+      "Read a book"
     ],
-    "answer": "Says it again",
+    "answer": "Write “你好”",
     "context": {
       "title": "请听，请读",
       "lines": [
@@ -146,13 +146,12 @@
         "老师：好，请写。  (Good, please write it.)"
       ]
     },
-    "why": "请再说一遍 means 'please say it again', so the student is asked to repeat the words.",
+    "why": "The student says 我会写“你好”: I can write 你好.",
     "not": {
-      "Sits down": "Sitting down is 请坐, which the teacher does not say here.",
-      "Says goodbye": "Nobody says 再见 in this text.",
-      "Says sorry": "Nobody says 对不起 in this text."
-    },
-    "flag": "The text never shows the student repeating; the student's next line is 我会写“你好”."
+      "Sing a song": "Nobody talks about singing.",
+      "Speak English": "English is not mentioned.",
+      "Read a book": "The student reads 你好 aloud, but no book is mentioned."
+    }
   },
   {
     "key": "r7rw8bc",
@@ -1609,28 +1608,27 @@
     }
   },
   {
-    "key": "d1o0m7fk",
+    "key": "dnrrwr6",
     "type": "dialog",
     "lesson": 8,
-    "q": "男的叫什么名字？",
+    "q": "女的叫什么名字？",
     "options": [
-      "保罗",
+      "小王",
       "西蒙",
-      "小王"
+      "保罗"
     ],
-    "answer": "保罗",
+    "answer": "小王",
     "context": {
       "lines": [
         "男：你叫什么名字？",
-        "女：我叫保罗。"
+        "女：我叫小王。"
       ]
     },
-    "why": "The only name in the lines is in 我叫保罗, so the answer is 保罗.",
+    "why": "女 says 我叫小王, so her name is 小王.",
     "not": {
-      "西蒙": "She says 保罗, not 西蒙.",
-      "小王": "She says 保罗, not 小王."
-    },
-    "flag": "Asks for 男的's name, but 我叫保罗 is said by 女; the speaker labels look swapped."
+      "西蒙": "西蒙 is not said in this talk.",
+      "保罗": "保罗 is not said in this talk."
+    }
   },
   {
     "key": "dnff7nk",
@@ -1656,10 +1654,10 @@
     }
   },
   {
-    "key": "j1aozw82",
+    "key": "j1740bax",
     "type": "judge",
     "lesson": 8,
-    "q": "他们班学生很少。",
+    "q": "他们班有五十个学生。",
     "options": [
       "对",
       "错"
@@ -1668,9 +1666,8 @@
     "context": {
       "text": "我们班有十五个学生。"
     },
-    "why": "The text only says 我们班有十五个学生, fifteen students. It never says 很少, so the claim is marked false.",
-    "not": {},
-    "flag": "Whether 15 students is 很少 is a matter of opinion; the text gives no judgement."
+    "why": "The text says 十五个学生 (15), not 五十 (50), so the claim is false.",
+    "not": {}
   },
   {
     "key": "j1whw4f6",
@@ -2373,10 +2370,10 @@
     }
   },
   {
-    "key": "d167n3ui",
+    "key": "dvzwhim",
     "type": "dialog",
     "lesson": 12,
-    "q": "男的要什么？",
+    "q": "女的要什么？",
     "options": [
       "一杯冰的、一杯热的",
       "两杯冰的",
@@ -2389,12 +2386,11 @@
         "女：一样一杯。"
       ]
     },
-    "why": "The man asks iced or hot, and the answer is 一样一杯: one cup of each.",
+    "why": "男 asks iced or hot; 女 says 一样一杯: one of each.",
     "not": {
       "两杯冰的": "一样一杯 means one of each, not two iced.",
       "两杯热的": "一样一杯 means one of each, not two hot."
-    },
-    "flag": "Asks what 男的 wants, but the man asks and 女 orders 一样一杯; labels look swapped."
+    }
   },
   {
     "key": "dqz4k6m",
@@ -2420,10 +2416,10 @@
     }
   },
   {
-    "key": "jk31919",
+    "key": "j3q1at5",
     "type": "judge",
     "lesson": 12,
-    "q": "卖东西的说橘子很甜。",
+    "q": "不甜的话，不要钱。",
     "options": [
       "对",
       "错"
@@ -2432,9 +2428,8 @@
     "context": {
       "text": "不甜不要钱。"
     },
-    "why": "The text says 不甜不要钱: 'if it is not sweet, you do not pay'. The seller is saying the fruit is sweet, so true.",
-    "not": {},
-    "flag": "The text never names 橘子 or says 很甜; the key relies on inference from 不甜不要钱."
+    "why": "不甜不要钱 means 'if it is not sweet, you don't pay', so the claim is true.",
+    "not": {}
   },
   {
     "key": "j9g29qt",
@@ -2567,10 +2562,10 @@
     }
   },
   {
-    "key": "depyadp",
+    "key": "dqjdbcr",
     "type": "dialog",
     "lesson": 13,
-    "q": "男的想买多少钱的手机？",
+    "q": "女的想要多少钱的？",
     "options": [
       "两千块左右",
       "一千块",
@@ -2583,12 +2578,11 @@
         "女：两千块左右的。"
       ]
     },
-    "why": "The answer line is 两千块左右的; 左右 means 'about', so around 2,000 yuan.",
+    "why": "男 asks how much; 女 says 两千块左右的, about 2,000.",
     "not": {
       "一千块": "She says 两千, not 一千.",
       "三千块": "She says 两千, not 三千."
-    },
-    "flag": "The man asks 您想要多少钱的 and 女 answers, so the buyer is 女; no 手机 is mentioned."
+    }
   },
   {
     "key": "drpx60o",
@@ -2994,10 +2988,10 @@
     }
   },
   {
-    "key": "jzf6wi7",
+    "key": "j1736m4h",
     "type": "judge",
     "lesson": 15,
-    "q": "三环车很多。",
+    "q": "二环车不多。",
     "options": [
       "对",
       "错"
@@ -3006,9 +3000,8 @@
     "context": {
       "text": "二环近，不过车有点儿多。"
     },
-    "why": "The text only says 二环近，不过车有点儿多. It says nothing about 三环, so the claim is marked false.",
-    "not": {},
-    "flag": "The text never mentions 三环, so the claim cannot be checked; false only because unmentioned."
+    "why": "The text says 车有点儿多 (a bit too many cars) on 二环, so 不多 is false.",
+    "not": {}
   },
   {
     "key": "j1372m1i",
