@@ -47,6 +47,14 @@ body:has(#gloss:not([hidden])) { padding-bottom: calc(96px + var(--safe-b, 0px))
 @keyframes fade-in { from { opacity: 0; } }
 .tone-opt:disabled, .choice:disabled { cursor: default; }
 .tone-shape { width: 44px; height: 26px; }
+.tone-compare { display: grid; gap: 8px; width: 100%; max-width: 560px; }
+.tone-cmp { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+.tone-c { display: grid; gap: 2px; justify-items: center; padding: 10px 4px; min-height: 44px; border: 0; border-radius: var(--r); background: var(--card2); color: var(--ink); font: inherit; cursor: pointer; }
+.tone-c b { font-size: 1.25rem; }
+.tone-c .hz { font-family: var(--display); font-size: 1.25rem; }
+.tone-c.right { box-shadow: 0 0 0 2px var(--jade) inset; }
+.tone-c.picked { box-shadow: 0 0 0 2px var(--cinnabar) inset; }
+.tone-c.none { opacity: .45; cursor: default; }
 .sets { display: flex; flex-wrap: wrap; gap: 8px; }
 .legend { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: .8125rem; color: var(--muted); align-items: center; }
 .choices { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; width: 100%; max-width: 560px; }

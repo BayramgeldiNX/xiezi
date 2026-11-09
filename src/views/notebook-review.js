@@ -190,7 +190,7 @@ function gap(S, it) {
   const blanked = esc(s.cn).replace(esc(e.w), `<span class="gr-blank">？</span>`);
   const filled = esc(s.cn).replace(esc(e.w), `<u class="gr-fill">${esc(e.w)}</u>`);
   choice(S, it, {
-    prompt: `<p class="hz gr-q">${blanked}</p><p class="muted">${esc(s.en || "")}</p>`,
+    prompt: `<p class="hz gr-q" data-en-done="1">${blanked}</p>${s.en ? `<p class="muted q-en" lang="en">${esc(s.en)}</p>` : ""}`,
     revealHtml: `<span class="hz">${filled}</span> ${sayBtns(s.cn, "sentence", true)}<br>${reveal(e)}`,
   });
 }

@@ -1,11 +1,17 @@
 // Lesson completion: pure logic, no DOM, no views.
 // An item is a progress key, or a list of options where any one counts. An option is a key, or a
 // nested list of keys that all must be right (e.g. every question of a text). A key is done once it has
-// been answered right at least once, or put right after a mistake: ok > 0 or fix > 0. Those counts never
-// go down, so neither does the %.
+// been answered right at least once, or put right after a mistake: ok > 0 or fix > 0. Writing keys
+// (w: characters, d: dictation words) also count after WRITE_TRIES tries, mistakes or not. None of these
+// counts goes down, so neither does the %.
 export const FINISHED_AT = 0.6;
+export const WRITE_TRIES = 5;
 
-const okKey = (k, get) => { const s = get(k); return (s?.ok || 0) + (s?.fix || 0) > 0; };
+const isWriteKey = (k) => k.startsWith("w:") || k.startsWith("d:");
+const okKey = (k, get) => {
+  const s = get(k);
+  return (s?.ok || 0) + (s?.fix || 0) > 0 || (isWriteKey(k) && (s?.n || 0) >= WRITE_TRIES);
+};
 const okOption = (o, get) => (Array.isArray(o) ? o.length > 0 && o.every((k) => okKey(k, get)) : okKey(o, get));
 const isDone = (item, get) => (Array.isArray(item) ? item : [item]).some((o) => okOption(o, get));
 

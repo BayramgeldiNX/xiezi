@@ -281,7 +281,7 @@ function grammarNotes() {
 export function grammarQuiz(cfg) {
   const blank = (q, fill) => esc(q).replace("___", fill ? `<u class="gr-fill">${esc(fill)}</u>` : `<span class="gr-blank">？</span>`);
   return choiceQuiz({ kind: "grammar", key: "g:", id: (d) => d.id, label: (d) => d.q.replace("___", d.options[d.answer]), ...cfg,
-    ask: (d) => ({ html: `<p class="hint">${esc(d.point)}</p><p class="hz gr-q">${blank(d.q)}</p><p class="muted">${esc(d.en)}</p>` }),
+    ask: (d) => ({ html: `<p class="hint">${esc(d.point)}</p><p class="hz gr-q" data-en-done="1">${blank(d.q)}</p><p class="muted q-en">${esc(d.en)}</p>` }),
     makeOptions: (d) => d.options.map((o, i) => ({ html: `<span class="hz" style="font-size:1.3rem">${esc(o)}</span>`, correct: i === d.answer })),
     reveal: (d) => { const s = d.q.replace("___", d.options[d.answer]); return `<span class="hz" style="font-size:1.3rem">${blank(d.q, d.options[d.answer])}</span> ${sayBtns(s, "sentence", true)}<br><span class="muted">${esc(d.rule)}</span>`; },
   });
@@ -451,7 +451,7 @@ export function speak({ title, items, then }) {
       <div class="speak-card">
         <div class="${it.sentence ? "prompt-big" : "big-hz"}" data-en-done="1" style="font-family:var(--display)">${it.text}</div>
         <div class="py q-py">${tonePy(it.py)}</div>
-        <div class="muted">${esc(it.en)}</div>
+        <div class="muted q-en">${esc(it.en)}</div>
         <div class="controls" style="justify-content:center">${sayBtns(it.text, it.py)}</div>
         <button class="mic" type="button" id="micBtn" aria-label="Speak">${icon("mic")}</button>
         <div class="note" id="micNote">${useRecorder ? "Tap to record yourself, tap again to stop." : "Tap the microphone and say it."}</div>
