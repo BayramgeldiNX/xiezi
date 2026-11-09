@@ -18,6 +18,11 @@ describe("completion", () => {
     const r = completion({ write: ["w:你"] }, stats({ "w:你": { ok: 1, miss: 5 } }));
     expect(r.pct).toBe(100);
   });
+  it("counts writing keys after 5 tries even with mistakes", () => {
+    const items = { write: ["w:你", "d:你好", "l:你"] };
+    expect(completion(items, stats({ "w:你": { n: 4, ok: 0 }, "d:你好": { n: 4, ok: 0 } })).skills.write.done).toBe(0);
+    expect(completion(items, stats({ "w:你": { n: 5, ok: 0 }, "d:你好": { n: 5, ok: 0 }, "l:你": { n: 9, ok: 0 } })).skills.write.done).toBe(2);
+  });
   it("averages skills, not items", () => {
     const r = completion({ a: ["x", "y", "z", "w"], b: ["v"] }, stats({ x: { ok: 1 }, v: { ok: 1 } }));
     expect(r.pct).toBe(63); // (0.25 + 1) / 2
