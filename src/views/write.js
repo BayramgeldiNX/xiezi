@@ -76,7 +76,9 @@ function metaText(c, n) {
   const st = charStatus(s);
   const tries = st === "new" ? "" : ` · written ${s.n}×`;
   const label = st === "mastered" ? "Mastered" : st === "learning" ? "Learning" : "New";
-  return `${n} strokes · <span class="st-${st}">${label}</span>${tries}`;
+  const m = progress.get("m:" + c);
+  const mem = m && m.ok > 0 ? ` · <span class="muted">from memory ✓${m.ok}×</span>` : "";
+  return `${n} strokes · <span class="st-${st}">${label}</span>${tries}${mem}`;
 }
 
 export function buildCharCard(host, c, single = false) {
@@ -93,6 +95,7 @@ export function buildCharCard(host, c, single = false) {
         <button class="mode" role="tab" data-m="flow">Non-stop</button>
         <button class="mode" role="tab" data-m="step">Stroke by stroke</button>
         <button class="mode" role="tab" data-m="quiz">Write it</button>
+        <button class="mode" role="tab" data-m="blind">From memory</button>
       </div>
       <div class="controls" data-for="flow"><button class="btn primary" data-a="play">${icon("play")} Play</button><button class="btn ghost" data-a="stop" hidden>${icon("stop")} Stop</button></div>
       <div class="controls" data-for="step" hidden>
@@ -102,6 +105,11 @@ export function buildCharCard(host, c, single = false) {
       </div>
       <div class="strokename" data-for="step" hidden></div>
       <div class="controls" data-for="quiz" hidden><button class="btn ghost" data-a="quiz">${icon("replay")} Start again</button></div>
+      <div class="controls" data-for="blind" hidden>
+        <button class="btn ghost" data-a="bhint">${icon("hint")} Hint</button>
+        <button class="btn ghost" data-a="banswer">Show answer</button>
+        <button class="btn ghost" data-a="blind">${icon("replay")} Start again</button>
+      </div>
       <div class="status" aria-live="polite"></div>
       <p class="tip">${tip}</p>
     </div>
@@ -158,6 +166,9 @@ export function buildCharCard(host, c, single = false) {
     if (running) stopLoop(false);
     mode = mo;
     writer.cancelQuiz();
+    ++peek;
+    writer.showOutline();
+    $(".strip", el).toggleAttribute("hidden", mo === "blind");
     $$(".mode", el).forEach((b) => b.setAttribute("aria-selected", b.dataset.m === mo));
     $$("[data-for]", el).forEach((g) => g.toggleAttribute("hidden", g.dataset.for !== mo));
     stepSvg.toggleAttribute("hidden", mo !== "step");
@@ -165,6 +176,7 @@ export function buildCharCard(host, c, single = false) {
     figs.forEach((f) => f.classList.remove("on"));
     if (mo === "flow") play();
     else if (mo === "step") drawStep(0);
+    else if (mo === "blind") blind();
     else quiz();
   }
   // Non-stop: Play repeats the whole character until Stop (or another mode) is chosen.
@@ -208,13 +220,66 @@ export function buildCharCard(host, c, single = false) {
       },
     });
   }
+  // From memory: no outline, no stroke order; help only on request (Hint ladder: peek, then next stroke).
+  let hintLevel = 0, mistakes = 0, nextStroke = 0, gaveUp = false, peek = 0, finished = false;
+  function finishBlind() {
+    if (finished) return;
+    finished = true;
+    const perfect = !gaveUp && mistakes === 0 && hintLevel === 0;
+    progress.record("m:" + c, { ok: perfect, miss: mistakes + hintLevel + (gaveUp ? 3 : 0) });
+    $(".count", el).innerHTML = metaText(c, n);
+    markWords();
+  }
+  function blind() {
+    hintLevel = 0; mistakes = 0; nextStroke = 0; gaveUp = false; finished = false; ++peek;
+    $('[data-a="bhint"]', el).disabled = false;
+    writer.cancelQuiz(); writer.hideCharacter(); writer.hideOutline();
+    status.textContent = `Write ${c} from memory.`;
+    writer.quiz({
+      showHintAfterMisses: setting("hintAfter") || false, markStrokeCorrectAfterMisses: 4, highlightOnComplete: true,
+      onCorrectStroke: (d) => {
+        nextStroke = d.strokeNum + 1;
+        status.textContent = `✓ ${nextStroke} / ${n}`;
+      },
+      onMistake: () => { mistakes++; status.textContent = "Not that one, try again."; },
+      onComplete: () => {
+        finishBlind();
+        status.textContent = !gaveUp && mistakes === 0 && hintLevel === 0 ? "太好了! Tài hǎo le! Perfect, from memory!" : `很好! Hěn hǎo! Done${mistakes || hintLevel ? " with some help" : ""}.`;
+      },
+    });
+  }
+  function blindHint() {
+    if (hintLevel >= 2 || finished) return;
+    hintLevel++;
+    const token = ++peek;
+    if (hintLevel === 1) {
+      writer.showOutline();
+      status.textContent = "A quick peek…";
+      setTimeout(() => { if (token === peek && mode === "blind") writer.hideOutline(); }, 1200);
+    } else {
+      writer.highlightStroke?.(nextStroke);
+      status.textContent = `Stroke ${nextStroke + 1} is highlighted.`;
+      $('[data-a="bhint"]', el).disabled = true;
+    }
+  }
+  function blindAnswer() {
+    if (finished) return;
+    gaveUp = true; ++peek;
+    writer.cancelQuiz();
+    writer.showOutline();
+    writer.showCharacter();
+    finishBlind();
+    status.textContent = "Here's the answer. You'll get it next time!";
+  }
   const api = {
     el,
     key(k) {
       if (k === "ArrowRight") { if (mode !== "step") setMode("step"); else if (step < n - 1) drawStep(step + 1); }
       else if (k === "ArrowLeft") { if (mode === "step" && step > 0) drawStep(step - 1); }
-      else if (k === " ") { if (mode === "step") drawStep(step); else if (mode === "flow") (running ? stopLoop() : play()); else quiz(); }
+      else if (k === " ") { if (mode === "step") drawStep(step); else if (mode === "flow") (running ? stopLoop() : play()); else if (mode === "blind") blind(); else quiz(); }
       else if (k === "w") setMode("quiz");
+      else if (k === "m") setMode("blind");
+      else if (k === "h") { if (mode === "blind") blindHint(); }
       else if (k === "p") setMode("flow");
     },
   };
@@ -233,6 +298,9 @@ export function buildCharCard(host, c, single = false) {
     else if (a === "back" && step > 0) drawStep(step - 1);
     else if (a === "replay") drawStep(step);
     else if (a === "quiz") quiz();
+    else if (a === "blind") blind();
+    else if (a === "bhint") blindHint();
+    else if (a === "banswer") blindAnswer();
   });
   $$(".mode", el).forEach((b) => b.setAttribute("aria-selected", b.dataset.m === "flow"));
 }
@@ -242,6 +310,6 @@ export function writeKey(e) {
   if (e.key === "[" && app.word > 0) return renderWord(app.word - 1), true;
   if (e.key === "]" && app.word < app.L().words.length - 1) return renderWord(app.word + 1), true;
   if (!activeCard || !document.body.contains(activeCard.el)) return false;
-  if (["ArrowRight", "ArrowLeft", " ", "w", "p"].includes(e.key)) { activeCard.key(e.key); return true; }
+  if (["ArrowRight", "ArrowLeft", " ", "w", "p", "m", "h"].includes(e.key)) { activeCard.key(e.key); return true; }
   return false;
 }
