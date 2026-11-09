@@ -5,6 +5,7 @@ export const DEFAULTS = {
   textSize: "normal",   // normal | large | xl
   pinyin: "show",       // show | tap (blurred until tapped) | hide (only in answers)
   quizPinyin: "show",   // show | hide: the Pinyin switch inside quizzes and tests
+  quizEnglish: "hide",  // show | hide (blurred, tap one line to see it): the English switch
   strokeSpeed: "normal",// slow | normal | fast
   hintAfter: 2,         // mistakes before a hint when tracing; 0 = never
   slowRate: 0.65,       // speed of the "Slow" sound button

@@ -142,7 +142,7 @@ export function textQuiz(ui, readings, back, single) {
     words: single ? qs : shuffle(qs).slice(0, 10), count: single ? qs.length : 10,
     id: (x) => `${x.r.key}#${x.i}`, label: (x) => x.r.title,
     ask: (x) => ({ html: `<details class="rd-peek" ${single ? "" : "open"}><summary>${x.r.title} · show text</summary>
-        <div class="rd-mini">${x.r.lines.map((l) => `<p><span class="who">${l.who}</span> ${l.hz}</p>`).join("")}</div></details>
+        <div class="rd-mini">${x.r.lines.map((l) => `<p><span class="who">${l.who}</span> <span data-en-src>${l.hz}</span></p>`).join("")}</div></details>
         <p class="hint">${esc(x.q.q)}</p>` }),
     makeOptions: (x) => x.q.options.map((o, i) => ({ html: /\p{Script=Han}/u.test(o) ? `<span class="hz" style="font-size:1.25rem">${esc(o)}</span>` : `<span class="en">${esc(o)}</span>`, correct: i === x.q.answer })),
     reveal: (x) => `<span class="muted">Answer:</span> <b>${esc(x.q.options[x.q.answer])}</b>`,

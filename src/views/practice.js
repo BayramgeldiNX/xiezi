@@ -448,7 +448,7 @@ export function speak({ title, items, then }) {
       <div class="progress">${pos + 1} of ${items.length} · ${right} correct</div>
       <div class="bar"><i style="width:${(pos / items.length) * 100}%"></i></div>
       <div class="speak-card">
-        <div class="${it.sentence ? "prompt-big" : "big-hz"}" style="font-family:var(--display)">${it.text}</div>
+        <div class="${it.sentence ? "prompt-big" : "big-hz"}" data-en-done="1" style="font-family:var(--display)">${it.text}</div>
         <div class="py q-py">${tonePy(it.py)}</div>
         <div class="muted">${esc(it.en)}</div>
         <div class="controls" style="justify-content:center">${sayBtns(it.text, it.py)}</div>
