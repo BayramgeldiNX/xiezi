@@ -19,6 +19,8 @@ import { charLinks } from "./charsheet.js";
 import { cardsOpen } from "./cards.js";
 import { tonesIntro } from "./tones.js";
 import { lessonContent } from "../sync/content.js";
+import { showWhy } from "../lib/explain.js";
+import { keyOf } from "../lib/explain-key.js";
 import { workbookOf, workbookQuiz, fillQuiz, radicalQuiz } from "./workbook.js";
 import { hanziLesson, pronTips } from "./hanzi.js";
 
@@ -282,7 +284,8 @@ export function grammarQuiz(cfg) {
   const blank = (q, fill) => esc(q).replace("___", fill ? `<u class="gr-fill">${esc(fill)}</u>` : `<span class="gr-blank">？</span>`);
   return choiceQuiz({ kind: "grammar", key: "g:", id: (d) => d.id, label: (d) => d.q.replace("___", d.options[d.answer]), ...cfg,
     ask: (d) => ({ html: `<p class="hint">${esc(d.point)}</p><p class="hz gr-q" data-en-done="1">${blank(d.q)}</p><p class="muted q-en">${esc(d.en)}</p>` }),
-    makeOptions: (d) => d.options.map((o, i) => ({ html: `<span class="hz" style="font-size:1.3rem">${esc(o)}</span>`, correct: i === d.answer })),
+    explain: keyOf.grammar,
+    makeOptions: (d) => d.options.map((o, i) => ({ t: o, html: `<span class="hz" style="font-size:1.3rem">${esc(o)}</span>`, correct: i === d.answer })),
     reveal: (d) => { const s = d.q.replace("___", d.options[d.answer]); return `<span class="hz" style="font-size:1.3rem">${blank(d.q, d.options[d.answer])}</span> ${sayBtns(s, "sentence", true)}<br><span class="muted">${esc(d.rule)}</span>`; },
   });
 }
@@ -293,7 +296,8 @@ export const setHost = (host, ctx) => { P = { ...P, host, ctx: { ...P.ctx, ...ct
 
 /* ---------- Multiple choice ---------- */
 // cfg: { items (or words + count), makeOptions(w) → [{html, correct}], ask(w) → {html, say?},
-//        reveal(w), key, id?(w), label?(w), title, kind, silent?, back?, onDone?, then? }
+//        reveal(w), key, id?(w), label?(w), title, kind, silent?, back?, onDone?, then?,
+//        explain?(w) → key in explain.gen.json (options then carry `t`, their text, to explain a wrong choice) }
 export function choiceQuiz(cfg) {
   const items = cfg.items || shuffle(cfg.words).slice(0, cfg.count || 10);
   const leave = cfg.back || goBack;
@@ -335,6 +339,7 @@ export function choiceQuiz(cfg) {
       st.style.color = ok ? "" : "var(--cinnabar)";
       st.textContent = ok ? "对了！Correct!" : b ? "Not quite." : "No problem. Here is the answer.";
       $("#qAnswer").innerHTML = cfg.reveal(w);
+      if (cfg.explain) showWhy($("#qAnswer"), cfg.explain(w), b && !ok ? opts[+b.dataset.i].t : null);
       $("#qAnswer").hidden = false;
       revealNext($("#qNext"));
       const after = cfg.sayAfter ? cfg.sayAfter(w) : w.w;

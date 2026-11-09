@@ -10,6 +10,7 @@ import { tonePy } from "../lib/pinyin.js";
 import { sayBtns } from "../lib/speech.js";
 import { CHARINFO, RADICALS, LESSONS, wordsOf, lessonChars } from "../data/index.js";
 import { charLinks } from "./charsheet.js";
+import { keyOf } from "../lib/explain-key.js";
 
 // Every workbook item of the given lessons, each with a stable id and its kind.
 export function workbookOf(lessons) {
@@ -32,6 +33,7 @@ const LABEL ={ dialog: "听对话 · Dialogue", judge: "判断 · True or false"
 export function workbookQuiz(ui, { items, title = "练习册 · Workbook", kind = "workbook", then }) {
   return ui.choiceQuiz({ kind, title, items, key: "wb:", id: (d) => d.id, then,
     label: (d) => (d.kind === "dialog" ? d.q : d.kind === "judge" ? d.claim : d.q),
+    explain: (d) => (d.kind === "dialog" ? keyOf.dialog(d) : d.kind === "judge" ? keyOf.judge(d) : null),
     sayAfter: (d) => (d.kind === "judge" ? d.text : d.kind === "reply" ? d.a : ""),
     ask: (d) => {
       if (d.kind === "dialog") return { html: `<p class="hint">${LABEL.dialog}: listen, then answer.</p><p class="hz wb-q">问：${esc(d.q)}</p>`, say: dialogText(d),
@@ -41,7 +43,7 @@ export function workbookQuiz(ui, { items, title = "练习册 · Workbook", kind 
       return { html: `<p class="hint">${LABEL.reply}: which answer fits?</p><p class="wb-text">${hz(d.q, 1.5)} ${sayBtns(d.q, "sentence", true)}</p>` };
     },
     makeOptions: (d) => {
-      if (d.kind === "dialog") return d.options.map((o, i) => ({ html: plain(o), correct: i === d.answer }));
+      if (d.kind === "dialog") return d.options.map((o, i) => ({ t: o, html: plain(o), correct: i === d.answer }));
       if (d.kind === "judge") return [{ html: `<span class="en">✓ 对 · True</span>`, correct: d.ok }, { html: `<span class="en">✗ 错 · False</span>`, correct: !d.ok }];
       const bad = (o) => o === d.q || o === d.a; // never the prompt or the answer; self-answering greetings are left out of `others`
       return [d.a, ...shuffle([...new Set(d.others)].filter((o) => !bad(o))).slice(0, 3)].map((o, i) => ({ html: plain(o), correct: i === 0 }));
