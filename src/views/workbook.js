@@ -35,7 +35,7 @@ export function workbookQuiz(ui, { items, title = "练习册 · Workbook", kind 
     sayAfter: (d) => (d.kind === "judge" ? d.text : d.kind === "reply" ? d.a : ""),
     ask: (d) => {
       if (d.kind === "dialog") return { html: `<p class="hint">${LABEL.dialog}: listen, then answer.</p><p class="hz wb-q">问：${esc(d.q)}</p>`, say: dialogText(d),
-        peek: d.lines.map(([who, t]) => `<div class="wb-line"><span class="who">${esc(who)}</span> ${plain(t)}</div>`).join("") };
+        peek: d.lines.map(([who, t]) => `<div class="wb-line"><span class="who">${esc(who)}</span> <span data-en-src>${plain(t)}</span></div>`).join("") };
       if (d.kind === "judge") return { html: `<p class="hint">${LABEL.judge}: does the ★ sentence match?</p>
         <p class="wb-text">${hz(d.text)} ${sayBtns(d.text, "text", true)}</p><p class="wb-claim">★ ${hz(d.claim, 1.2)}</p>` };
       return { html: `<p class="hint">${LABEL.reply}: which answer fits?</p><p class="wb-text">${hz(d.q, 1.5)} ${sayBtns(d.q, "sentence", true)}</p>` };
@@ -84,7 +84,7 @@ export function fillQuiz(ui, words, { title = "选词填空 · Fill in the word"
 export function radicalChoice(ui, cfg) {
   const { charOf, radOf, nameOf } = cfg;
   return ui.choiceQuiz({ kind: cfg.kind, title: cfg.title, items: cfg.items, key: cfg.key, id: cfg.id, label: charOf, sayAfter: charOf, then: cfg.then, back: cfg.back,
-    ask: (it) => ({ html: `<p class="hint">Which radical (部首) is in this character?</p><div class="big-hz">${charOf(it)}</div>` }),
+    ask: (it) => ({ html: `<p class="hint">Which radical (部首) is in this character?</p><div class="big-hz" data-en-done="1">${charOf(it)}</div>` }),
     makeOptions: (it) => {
       const r = radOf(it);
       return [r, ...cfg.distractors(it, r)]
