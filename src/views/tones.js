@@ -3,7 +3,7 @@ import { $, $$, shuffle, esc } from "../lib/util.js";
 import { syllables, tonePy, stripTone, addTone } from "../lib/pinyin.js";
 import { say, autoSay, sayBtns } from "../lib/speech.js";
 import { icon } from "../lib/icons.js";
-import { CHARS, TONE_SETS } from "../data/index.js";
+import { CHARS, TONE_SETS, TONE_SAMPLES } from "../data/index.js";
 import * as progress from "../progress/store.js";
 import { nextHtml, wireNext } from "./practice.js";
 
@@ -27,6 +27,19 @@ function toneQuestions(source) {
   const qs = [];
   TONE_SETS.forEach(([plain, ...hz]) => hz.forEach((c, i) => c && qs.push({ say: c, plain, tone: i + 1, hz: c })));
   return shuffle(qs).slice(0, 10);
+}
+
+// A character for each tone of a syllable (scripts/gen-tone-samples.mjs), so a mistake can be heard next to the right answer.
+const toneSample = (plain, t) => TONE_SAMPLES[plain]?.[t - 1] || null;
+
+function compareHtml(q, picked) {
+  return `<div class="tone-compare"><span class="lbl">Hear the difference</span><div class="tone-cmp">${[1, 2, 3, 4].map((t) => {
+    const hz = t === q.tone ? q.say : toneSample(q.plain, t);
+    const tag = t === q.tone ? "right" : t === picked ? "picked" : "";
+    const inner = `<b class="t${t}">${addTone(q.plain, t)}</b>${shape(t, "t" + t)}<span class="hz">${hz || "—"}</span>`;
+    return hz ? `<button class="tone-c ${tag}" type="button" data-say="${esc(hz)}" aria-label="Play ${esc(addTone(q.plain, t))}">${inner}</button>`
+      : `<span class="tone-c none ${tag}">${inner}</span>`;
+  }).join("")}</div><small class="note">Green is the right tone, red is your pick. Tap any to hear it.</small></div>`;
 }
 
 let tq = null;
@@ -85,9 +98,15 @@ function toneAsk() {
     $("#toneStatus").style.color = ok ? "" : "var(--cinnabar)";
     $("#toneStatus").textContent = ok ? "对了！Duì le! Correct!" : `Not quite. It's the ${TONE_NAMES[q.tone].split(" · ")[0]} tone.`;
     $("#toneAnswer").innerHTML = `<span class="hz">${q.hz}</span><span class="py">${tonePy(addTone(q.plain, q.tone))}</span>${sayBtns(q.say, q.plain, true)}`;
+    if (!ok) $("#toneAnswer").insertAdjacentHTML("afterend", compareHtml(q, t));
     $("#toneAnswer").hidden = false;
     $("#toneNext").hidden = false;
     $("#toneNext").focus({ preventScroll: true });
+    if (!ok) {
+      // Your pick, then the right one, so the two can be compared straight away.
+      const mine = toneSample(q.plain, t), at = tq.pos;
+      if (mine) autoSay(mine).then((done) => { if (done && tq?.pos === at) setTimeout(() => tq?.pos === at && say(q.say), 350); });
+    }
   }));
   $("#toneNext").addEventListener("click", () => { tq.pos++; toneAsk(); });
   setTimeout(() => autoSay(q.say), 250);

@@ -55,6 +55,8 @@ def collect():
     texts.update(json.loads((DATA / "glossary.json").read_text(encoding="utf-8")).keys())
     for plain, *chars in json.loads((DATA / "tone-sets.json").read_text(encoding="utf-8")):
         texts.update(c for c in chars if c)
+    for chars in json.loads((DATA / "tone-samples.gen.json").read_text(encoding="utf-8")).values():
+        texts.update(c for c in chars if c)
     return sorted(t for t in texts if t)
 
 

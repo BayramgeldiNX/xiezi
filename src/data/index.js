@@ -5,6 +5,7 @@ import STROKE_NAMES from "./stroke-names.json";
 import strokeChars from "./stroke-chars.gen.json";
 import { STROKE_DATA, loadStrokes, ensureChars } from "./strokes.js";
 import TONE_SETS from "./tone-sets.json";
+import TONE_SAMPLES from "./tone-samples.gen.json";
 import GLOSSARY from "./glossary.json";
 import CHARINFO from "./charinfo.gen.json";
 import RADICALS from "./radicals.json";
@@ -28,7 +29,7 @@ export const LESSONS = BOOKS.flatMap((b) => b.lessons);
 export const bookOf = (lesson) => BOOKS.find((b) => b.id === lesson.book);
 export const lessonIndex = (id) => LESSONS.findIndex((l) => l.id === id);
 
-export { CHARS, STROKE_NAMES, STROKE_DATA, loadStrokes, ensureChars, TONE_SETS, GLOSSARY, CHARINFO, RADICALS, RADICAL_FAMILIES, RADICALS_CORE };
+export { CHARS, STROKE_NAMES, STROKE_DATA, loadStrokes, ensureChars, TONE_SETS, TONE_SAMPLES, GLOSSARY, CHARINFO, RADICALS, RADICAL_FAMILIES, RADICALS_CORE };
 
 // Every word (from all lessons) that contains a character.
 export const wordsWith = (c) => wordsOf(LESSONS).filter((w) => w.w.includes(c));
