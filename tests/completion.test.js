@@ -18,6 +18,10 @@ describe("completion", () => {
     const r = completion({ write: ["w:你"] }, stats({ "w:你": { ok: 1, miss: 5 } }));
     expect(r.pct).toBe(100);
   });
+  it("counts an answer put right after a mistake (fix > 0)", () => {
+    const r = completion({ read: ["o:你好", "o:再见"] }, stats({ "o:你好": { ok: 0, miss: 2, fix: 1 }, "o:再见": { ok: 0, miss: 1 } }));
+    expect(r.pct).toBe(50);
+  });
   it("averages skills, not items", () => {
     const r = completion({ a: ["x", "y", "z", "w"], b: ["v"] }, stats({ x: { ok: 1 }, v: { ok: 1 } }));
     expect(r.pct).toBe(63); // (0.25 + 1) / 2

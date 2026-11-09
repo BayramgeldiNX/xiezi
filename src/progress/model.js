@@ -8,6 +8,7 @@
 //   l:<word>  listening: heard the word, picked it / its meaning   (ls:<word> = its example sentence)
 //   q:<word>  vocabulary quizzes and match pairs
 //   s:<word>  speaking the word                                     (s:<word>#ex = its example sentence)
+// fix counts answers that were wrong first and then put right (a miss for review, but done for the lesson %).
 // Each device keeps its own stat per item and only ever writes its own, so devices
 // can sync without overwriting each other; the totals are combined when read.
 
@@ -17,11 +18,12 @@ export const emptyStat = () => ({ n: 0, ok: 0, miss: 0, last: 0, lastOk: false, 
 const grows = (s, now) => !s?.n || !s.lastOk || !s.streak || isDue(s, now);
 
 // shared: this item's combined stat across devices (the schedule belongs to the word, not to the device).
-export function addResult(stat, { ok, miss = 0 }, now = Date.now(), shared = stat) {
+export function addResult(stat, { ok, miss = 0, fix = false }, now = Date.now(), shared = stat) {
   const s = stat ? { ...stat } : emptyStat();
   s.n += 1;
   s.ok += ok ? 1 : 0;
   s.miss += Math.max(0, miss | 0);
+  if (fix && !ok) s.fix = (s.fix || 0) + 1;
   s.last = now;
   s.lastOk = !!ok;
   s.streak = !ok ? 0 : grows(shared, now) ? (shared?.streak || 0) + 1 : shared.streak;
@@ -34,7 +36,9 @@ export function combine(stats) {
   const list = stats.filter(Boolean);
   if (!list.length) return null;
   const latest = list.reduce((a, b) => (b.last > a.last ? b : a));
+  const fix = list.reduce((t, s) => t + (s.fix || 0), 0);
   return {
+    ...(fix ? { fix } : {}),
     n: list.reduce((t, s) => t + (s.n || 0), 0),
     ok: list.reduce((t, s) => t + (s.ok || 0), 0),
     miss: list.reduce((t, s) => t + (s.miss || 0), 0),
