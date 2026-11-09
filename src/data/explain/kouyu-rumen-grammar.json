@@ -216,14 +216,14 @@
     }
   },
   {
-    "key": "g1aafndd",
+    "key": "geerir8",
     "type": "grammar",
     "lesson": 3,
     "q": "我___茶。",
     "options": [
       "喝",
       "吃",
-      "买",
+      "是",
       "很"
     ],
     "answer": "喝",
@@ -232,13 +232,12 @@
       "rule": "eat / drink / buy + thing",
       "en": "I drink tea."
     },
-    "why": "The English says 'I drink tea', and the verb for drinks is 喝: 我喝茶.",
+    "why": "You drink tea, so the verb is 喝: 我喝茶.",
     "not": {
-      "吃": "You eat food, but tea is a drink.",
-      "买": "我买茶 is correct too, but it means 'I buy tea'.",
-      "很": "很 is not a verb; it means very."
-    },
-    "flag": "买茶 (buy tea) is also grammatical; only the English hint decides."
+      "吃": "吃 is for food; you 喝 drinks like tea.",
+      "是": "我是茶 means 'I am tea'.",
+      "很": "很 goes before adjectives; 茶 is a noun."
+    }
   },
   {
     "key": "g1fnhjdz",
@@ -697,13 +696,13 @@
     }
   },
   {
-    "key": "g1evdz5e",
+    "key": "gft5833",
     "type": "grammar",
     "lesson": 8,
     "q": "我___朋友一起学习。",
     "options": [
       "跟",
-      "和",
+      "是",
       "在",
       "给"
     ],
@@ -713,23 +712,22 @@
       "rule": "doing something with someone",
       "en": "I study with a friend."
     },
-    "why": "跟 + person + 一起 means 'together with someone': 我跟朋友一起学习.",
+    "why": "跟 + person + 一起 means doing something with someone: 我跟朋友一起学习.",
     "not": {
-      "和": "我和朋友一起学习 is also correct; this drill practises 跟.",
-      "在": "在 goes with places, not people.",
-      "给": "给 means give or for someone, not together with."
-    },
-    "flag": "和 (我和朋友一起学习) is also correct, so two options fit."
+      "是": "我是朋友一起学习 is not Chinese; 是 means 'am'.",
+      "在": "在 needs a place; 在朋友一起 is wrong.",
+      "给": "给 means 'for, to'; it does not go with 一起."
+    }
   },
   {
-    "key": "g4zl21l",
+    "key": "gs8uzrs",
     "type": "grammar",
     "lesson": 8,
     "q": "我___北京学习。",
     "options": [
       "在",
       "跟",
-      "去",
+      "很",
       "是"
     ],
     "answer": "在",
@@ -738,13 +736,12 @@
       "rule": "在 + place / 跟 + person go before the verb",
       "en": "I study in Beijing."
     },
-    "why": "在 + place goes before the verb and says where: 我在北京学习.",
+    "why": "在 + place goes before the verb: 我在北京学习, I study in Beijing.",
     "not": {
-      "跟": "跟 goes with a person, but Beijing is a place.",
-      "去": "我去北京学习 is correct, but means 'go to Beijing to study'.",
-      "是": "是 does not mark where an action happens."
-    },
-    "flag": "去 (我去北京学习, 'I go to Beijing to study') is also grammatical; only the English picks 在."
+      "跟": "跟 needs a person, not a place like 北京.",
+      "很": "很 goes before adjectives; 北京 is a place.",
+      "是": "我是北京学习 is not Chinese."
+    }
   },
   {
     "key": "g1v8i7br",
@@ -1299,10 +1296,10 @@
     }
   },
   {
-    "key": "gz4bhgj",
+    "key": "g1jrvlsm",
     "type": "grammar",
     "lesson": 13,
-    "q": "我___试试吗？",
+    "q": "这件衣服我___试试吗？",
     "options": [
       "可以",
       "想",
@@ -1313,15 +1310,14 @@
     "context": {
       "point": "想 / 要 / 可以",
       "rule": "wish / want or need / permission",
-      "en": "May I try it?"
+      "en": "May I try this one on?"
     },
-    "why": "可以 means 'may', asking permission to try.",
+    "why": "可以 asks for permission: 我可以试试吗? May I try it?",
     "not": {
-      "想": "想 means want to; 我想试试吗 is an odd question.",
-      "要": "要 means want or need; it does not ask permission.",
-      "会": "会 means can (by skill) or will; it does not ask permission."
-    },
-    "flag": "Same question as ghui69z (same sentence, options and answer)."
+      "想": "我想试试吗 would ask if you yourself want to; odd.",
+      "要": "我要试试吗 would ask if you yourself will; odd.",
+      "会": "会 means 'know how to', not 'may'."
+    }
   },
   {
     "key": "gktrngu",

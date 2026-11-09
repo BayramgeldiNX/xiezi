@@ -275,7 +275,7 @@
           "answer": 0
         },
         {
-          "q": "Whose newspaper is it from?",
+          "q": "Which day's newspaper is it?",
           "options": [
             "Yesterday",
             "Today",
@@ -341,9 +341,9 @@
           "q": "你女儿的房间___漂亮！",
           "options": [
             "真",
-            "最",
+            "的",
             "每",
-            "多"
+            "吗"
           ],
           "answer": 0,
           "en": "Your daughter's room is so pretty!"

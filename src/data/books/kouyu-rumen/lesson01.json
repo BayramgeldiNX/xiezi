@@ -310,12 +310,12 @@
           "answer": 0
         },
         {
-          "q": "The teacher says “很好！请再说一遍。” What does the student do next?",
+          "q": "What does the student say they can do?",
           "options": [
-            "Says it again",
-            "Sits down",
-            "Says goodbye",
-            "Says sorry"
+            "Write “你好”",
+            "Sing a song",
+            "Speak English",
+            "Read a book"
           ],
           "answer": 0
         },
