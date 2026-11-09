@@ -59,7 +59,7 @@ export function fillQuiz(ui, words, { title = "选词填空 · Fill in the word"
   const items = shuffle(pool).slice(0, 10);
   return ui.choiceQuiz({ kind: "fill", title, items, key: "wf:", then,
     ask: (w) => ({ html: `<p class="hint">Which word fills the gap?</p>
-      <p class="hz wb-q">${esc(w.ex.hz.replace(/[AB]: /g, "").replace(w.w, "（　　）"))}</p><p class="muted">${esc(w.ex.en)}</p>` }),
+      <p class="hz wb-q" data-en-done="1">${esc(w.ex.hz.replace(/[AB]: /g, "").replace(w.w, "（　　）"))}</p><p class="muted q-en" lang="en">${esc(w.ex.en)}</p>` }),
     makeOptions: (w) => {
       const norm = (x) => (x.en || "").toLowerCase().replace(/\s+/g, "");
       const book = LESSONS.find((l) => l.words?.some((x) => x.w === w.w))?.book;
