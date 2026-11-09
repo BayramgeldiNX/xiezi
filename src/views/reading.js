@@ -10,6 +10,7 @@ import { DICT } from "../data/index.js";
 import * as progress from "../progress/store.js";
 import { charLinks } from "./charsheet.js";
 import { animate } from "../lib/motion.js";
+import { keyOf } from "../lib/explain-key.js";
 
 const segment = makeSegmenter(DICT);
 
@@ -144,7 +145,8 @@ export function textQuiz(ui, readings, back, single) {
     ask: (x) => ({ html: `<details class="rd-peek" ${single ? "" : "open"}><summary>${x.r.title} · show text</summary>
         <div class="rd-mini">${x.r.lines.map((l) => `<p><span class="who">${l.who}</span> <span data-en-src>${l.hz}</span></p>`).join("")}</div></details>
         <p class="hint">${esc(x.q.q)}</p>` }),
-    makeOptions: (x) => x.q.options.map((o, i) => ({ html: /\p{Script=Han}/u.test(o) ? `<span class="hz" style="font-size:1.25rem">${esc(o)}</span>` : `<span class="en">${esc(o)}</span>`, correct: i === x.q.answer })),
+    explain: (x) => keyOf.reading(x.q),
+    makeOptions: (x) => x.q.options.map((o, i) => ({ t: o, html: /\p{Script=Han}/u.test(o) ? `<span class="hz" style="font-size:1.25rem">${esc(o)}</span>` : `<span class="en">${esc(o)}</span>`, correct: i === x.q.answer })),
     reveal: (x) => `<span class="muted">Answer:</span> <b>${esc(x.q.options[x.q.answer])}</b>`,
     onDone: (right, total) => {
       if (single) progress.record("r:" + single.key, { ok: right === total, miss: total - right });

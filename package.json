@@ -18,7 +18,7 @@
     "test:screens": "node scripts/e2e/screens.mjs",
     "test:edge": "node scripts/e2e/edge.mjs",
     "sync:report": "node --use-env-proxy scripts/sync-report.mjs",
-    "gen:data": "node scripts/gen-data.mjs && node scripts/gen-sentence-en.mjs && node scripts/gen-tone-samples.mjs",
+    "gen:data": "node scripts/gen-data.mjs && node scripts/explain.mjs build && node scripts/gen-sentence-en.mjs && node scripts/gen-tone-samples.mjs",
     "gen:font": "python scripts/subset-font.py",
     "gen:audio": "python scripts/gen-audio.py",
     "gen:icons": "node scripts/gen-icons.mjs",

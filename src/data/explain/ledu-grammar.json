@@ -1,0 +1,3170 @@
+[
+  {
+    "key": "g1qp7h7i",
+    "type": "grammar",
+    "lesson": 1,
+    "q": "“人”的第一笔是___。",
+    "options": [
+      "撇",
+      "捺",
+      "横",
+      "点"
+    ],
+    "answer": "撇",
+    "context": {
+      "point": "笔画",
+      "rule": "The six basic strokes: 横 horizontal, 竖 vertical, 撇 left-falling, 捺 right-falling, 点 dot, 提 rising",
+      "en": "The first stroke of 人 is the left-falling stroke."
+    },
+    "why": "人 starts with the left-falling stroke 撇, then the right-falling stroke 捺.",
+    "not": {
+      "捺": "捺 is the second stroke of 人, not the first.",
+      "横": "人 has no horizontal stroke.",
+      "点": "人 has no dot."
+    }
+  },
+  {
+    "key": "gu2pdus",
+    "type": "grammar",
+    "lesson": 1,
+    "q": "“十”的第一笔是___。",
+    "options": [
+      "横",
+      "竖",
+      "撇",
+      "提"
+    ],
+    "answer": "横",
+    "context": {
+      "point": "笔画",
+      "rule": "The six basic strokes: 横 horizontal, 竖 vertical, 撇 left-falling, 捺 right-falling, 点 dot, 提 rising",
+      "en": "The first stroke of 十 is the horizontal stroke."
+    },
+    "why": "十 is written with the horizontal stroke 横 first, then the vertical stroke 竖.",
+    "not": {
+      "竖": "竖 comes second in 十.",
+      "撇": "十 has no left-falling stroke.",
+      "提": "十 has no rising stroke."
+    }
+  },
+  {
+    "key": "g1ruo06b",
+    "type": "grammar",
+    "lesson": 1,
+    "q": "“六”的第一笔是___。",
+    "options": [
+      "点",
+      "横",
+      "撇",
+      "竖"
+    ],
+    "answer": "点",
+    "context": {
+      "point": "笔画",
+      "rule": "The six basic strokes: 横 horizontal, 竖 vertical, 撇 left-falling, 捺 right-falling, 点 dot, 提 rising",
+      "en": "The first stroke of 六 is the dot."
+    },
+    "why": "六 begins with a dot 点 at the top, then 横 below it.",
+    "not": {
+      "横": "横 is the second stroke of 六.",
+      "撇": "撇 is the third stroke of 六.",
+      "竖": "六 has no vertical stroke."
+    }
+  },
+  {
+    "key": "g15j2y49",
+    "type": "grammar",
+    "lesson": 1,
+    "q": "“汉”的第三笔是___。",
+    "options": [
+      "提",
+      "点",
+      "横",
+      "竖"
+    ],
+    "answer": "提",
+    "context": {
+      "point": "笔画",
+      "rule": "The six basic strokes: 横 horizontal, 竖 vertical, 撇 left-falling, 捺 right-falling, 点 dot, 提 rising",
+      "en": "The third stroke of 汉 is the rising stroke."
+    },
+    "why": "汉 has 氵 on the left: dot, dot, then the rising stroke 提 as the third stroke.",
+    "not": {
+      "点": "点 is the first and second stroke of 汉.",
+      "横": "氵 has no horizontal stroke.",
+      "竖": "氵 has no vertical stroke."
+    }
+  },
+  {
+    "key": "guobl3k",
+    "type": "grammar",
+    "lesson": 1,
+    "q": "“大”的最后一笔是___。",
+    "options": [
+      "捺",
+      "撇",
+      "横",
+      "竖"
+    ],
+    "answer": "捺",
+    "context": {
+      "point": "笔画",
+      "rule": "The six basic strokes: 横 horizontal, 竖 vertical, 撇 left-falling, 捺 right-falling, 点 dot, 提 rising",
+      "en": "The last stroke of 大 is the right-falling stroke."
+    },
+    "why": "大 ends with the right-falling stroke 捺: horizontal, left-falling, then 捺 last.",
+    "not": {
+      "撇": "撇 is the second stroke of 大.",
+      "横": "横 is the first stroke of 大.",
+      "竖": "大 has no vertical stroke."
+    }
+  },
+  {
+    "key": "grs2yyu",
+    "type": "grammar",
+    "lesson": 1,
+    "q": "写“十”要先写横，后写___。",
+    "options": [
+      "竖",
+      "撇",
+      "点",
+      "提"
+    ],
+    "answer": "竖",
+    "context": {
+      "point": "笔顺",
+      "rule": "Stroke order: horizontal before vertical, left-falling before right-falling, top to bottom, left to right, middle before sides, outside before inside",
+      "en": "When writing 十, write the horizontal first, then the vertical."
+    },
+    "why": "The rule is horizontal before vertical, so after the 横 in 十 comes the vertical stroke 竖.",
+    "not": {
+      "撇": "十 has no left-falling stroke.",
+      "点": "十 has no dot.",
+      "提": "十 has no rising stroke."
+    }
+  },
+  {
+    "key": "gwfau8n",
+    "type": "grammar",
+    "lesson": 1,
+    "q": "写“人”要先写撇，后写___。",
+    "options": [
+      "捺",
+      "横",
+      "点",
+      "竖"
+    ],
+    "answer": "捺",
+    "context": {
+      "point": "笔顺",
+      "rule": "Stroke order: horizontal before vertical, left-falling before right-falling, top to bottom, left to right, middle before sides, outside before inside",
+      "en": "When writing 人, write the left-falling stroke first, then the right-falling one."
+    },
+    "why": "In 人 the left-falling stroke 撇 comes first, then the right-falling stroke 捺.",
+    "not": {
+      "横": "人 has no horizontal stroke.",
+      "点": "人 has no dot.",
+      "竖": "人 has no vertical stroke."
+    }
+  },
+  {
+    "key": "g3646mh",
+    "type": "grammar",
+    "lesson": 1,
+    "q": "写“三”要从上到___写。",
+    "options": [
+      "下",
+      "左",
+      "外",
+      "右"
+    ],
+    "answer": "下",
+    "context": {
+      "point": "笔顺",
+      "rule": "Stroke order: horizontal before vertical, left-falling before right-falling, top to bottom, left to right, middle before sides, outside before inside",
+      "en": "Write 三 from top to bottom."
+    },
+    "why": "Strokes go from top to bottom, and 三 is three horizontal lines stacked, so write it from top to 下.",
+    "not": {
+      "左": "三 is stacked up and down, so left-to-right does not fit.",
+      "外": "外 is for characters with a frame, like 月.",
+      "右": "三 is not written from right to left."
+    }
+  },
+  {
+    "key": "g1fqc589",
+    "type": "grammar",
+    "lesson": 1,
+    "q": "写“小”要先写中间，后写___。",
+    "options": [
+      "两边",
+      "外面",
+      "上面",
+      "下面"
+    ],
+    "answer": "两边",
+    "context": {
+      "point": "笔顺",
+      "rule": "Stroke order: horizontal before vertical, left-falling before right-falling, top to bottom, left to right, middle before sides, outside before inside",
+      "en": "When writing 小, write the middle first, then the two sides."
+    },
+    "why": "小 follows the rule middle before sides: the middle stroke first, then 两边, the left and right dots.",
+    "not": {
+      "外面": "小 has no outside frame.",
+      "上面": "小 has no top part; the middle stroke comes first.",
+      "下面": "小 is not written top then bottom."
+    }
+  },
+  {
+    "key": "gsrct5q",
+    "type": "grammar",
+    "lesson": 1,
+    "q": "写“月”要先写外面，后写___。",
+    "options": [
+      "里面",
+      "左边",
+      "上面",
+      "右边"
+    ],
+    "answer": "里面",
+    "context": {
+      "point": "笔顺",
+      "rule": "Stroke order: horizontal before vertical, left-falling before right-falling, top to bottom, left to right, middle before sides, outside before inside",
+      "en": "When writing 月, write the outside first, then the inside."
+    },
+    "why": "月 follows outside before inside: the frame first, then 里面, the two strokes inside.",
+    "not": {
+      "左边": "月 starts with the frame, not a side part.",
+      "上面": "月 is not written top before bottom.",
+      "右边": "The right side belongs to the frame, written first."
+    }
+  },
+  {
+    "key": "g8m5b8m",
+    "type": "grammar",
+    "lesson": 1,
+    "q": "“11”读作十___。",
+    "options": [
+      "一",
+      "二",
+      "百",
+      "千"
+    ],
+    "answer": "一",
+    "context": {
+      "point": "数字",
+      "rule": "Reading numbers: 十 ten, 百 hundred, 千 thousand, 万 ten thousand",
+      "en": "11 is read as 十一."
+    },
+    "why": "11 is 十 (ten) plus 一 (one), so it is read 十一.",
+    "not": {
+      "二": "十二 is 12.",
+      "百": "十百 is not a number.",
+      "千": "十千 is not a number."
+    }
+  },
+  {
+    "key": "gcbq95c",
+    "type": "grammar",
+    "lesson": 1,
+    "q": "“100”读作一___。",
+    "options": [
+      "百",
+      "千",
+      "万",
+      "十"
+    ],
+    "answer": "百",
+    "context": {
+      "point": "数字",
+      "rule": "Reading numbers: 十 ten, 百 hundred, 千 thousand, 万 ten thousand",
+      "en": "100 is read as 一百."
+    },
+    "why": "100 is one hundred, 一百.",
+    "not": {
+      "千": "一千 is 1000.",
+      "万": "一万 is 10000.",
+      "十": "一十 is 10, not 100."
+    }
+  },
+  {
+    "key": "g1iuflp5",
+    "type": "grammar",
+    "lesson": 1,
+    "q": "“3000”读作三___。",
+    "options": [
+      "千",
+      "百",
+      "万",
+      "十"
+    ],
+    "answer": "千",
+    "context": {
+      "point": "数字",
+      "rule": "Reading numbers: 十 ten, 百 hundred, 千 thousand, 万 ten thousand",
+      "en": "3000 is read as 三千."
+    },
+    "why": "3000 is three thousand, 三千.",
+    "not": {
+      "百": "三百 is 300.",
+      "万": "三万 is 30000.",
+      "十": "三十 is 30."
+    }
+  },
+  {
+    "key": "gczkmf9",
+    "type": "grammar",
+    "lesson": 1,
+    "q": "“30000”读作三___。",
+    "options": [
+      "万",
+      "千",
+      "百",
+      "十"
+    ],
+    "answer": "万",
+    "context": {
+      "point": "数字",
+      "rule": "Reading numbers: 十 ten, 百 hundred, 千 thousand, 万 ten thousand",
+      "en": "30000 is read as 三万."
+    },
+    "why": "30000 is three ten-thousands, 三万.",
+    "not": {
+      "千": "三千 is 3000.",
+      "百": "三百 is 300.",
+      "十": "三十 is 30."
+    }
+  },
+  {
+    "key": "g1kq8my3",
+    "type": "grammar",
+    "lesson": 1,
+    "q": "“36”读作三十___。",
+    "options": [
+      "六",
+      "三",
+      "十",
+      "九"
+    ],
+    "answer": "六",
+    "context": {
+      "point": "数字",
+      "rule": "Reading numbers: 十 ten, 百 hundred, 千 thousand, 万 ten thousand",
+      "en": "36 is read as 三十六."
+    },
+    "why": "36 is thirty and six: 三十 then 六, so 三十六.",
+    "not": {
+      "三": "三十三 would be 33.",
+      "十": "三十十 is not a number.",
+      "九": "三十九 would be 39."
+    }
+  },
+  {
+    "key": "g1wdz35b",
+    "type": "grammar",
+    "lesson": 2,
+    "q": "“一共”读作___gòng。",
+    "options": [
+      "yí",
+      "yì",
+      "yī",
+      "yǐ"
+    ],
+    "answer": "yí",
+    "context": {
+      "point": "一 changes tone",
+      "rule": "一 is yī alone; before a 4th tone it is yí; before a 1st, 2nd or 3rd tone it is yì",
+      "en": "一共 is read yígòng."
+    },
+    "why": "一 changes to yí before a 4th tone, and 共 is gòng, 4th tone, so 一共 is yígòng.",
+    "not": {
+      "yì": "yì is used before 1st, 2nd or 3rd tone, but 共 is 4th tone.",
+      "yī": "yī is the tone when 一 stands alone.",
+      "yǐ": "yǐ is not a reading of 一."
+    }
+  },
+  {
+    "key": "gz8s3s6",
+    "type": "grammar",
+    "lesson": 2,
+    "q": "“一起”读作___qǐ。",
+    "options": [
+      "yì",
+      "yí",
+      "yī",
+      "yǐ"
+    ],
+    "answer": "yì",
+    "context": {
+      "point": "一 changes tone",
+      "rule": "一 is yī alone; before a 4th tone it is yí; before a 1st, 2nd or 3rd tone it is yì",
+      "en": "一起 is read yìqǐ."
+    },
+    "why": "起 is 3rd tone (qǐ), and 一 before a 3rd tone is read yì.",
+    "not": {
+      "yí": "yí is used before a 4th tone; 起 is 3rd tone.",
+      "yī": "yī is the tone when 一 stands alone.",
+      "yǐ": "yǐ is not a reading of 一."
+    }
+  },
+  {
+    "key": "g1upr2z2",
+    "type": "grammar",
+    "lesson": 2,
+    "q": "“一半”读作___bàn。",
+    "options": [
+      "yí",
+      "yì",
+      "yī",
+      "yǐ"
+    ],
+    "answer": "yí",
+    "context": {
+      "point": "一 changes tone",
+      "rule": "一 is yī alone; before a 4th tone it is yí; before a 1st, 2nd or 3rd tone it is yì",
+      "en": "一半 is read yíbàn."
+    },
+    "why": "半 is bàn, 4th tone, and 一 before a 4th tone becomes yí.",
+    "not": {
+      "yì": "yì is for 1st, 2nd or 3rd tone; 半 is 4th tone.",
+      "yī": "yī is the tone when 一 stands alone.",
+      "yǐ": "yǐ is not a reading of 一."
+    }
+  },
+  {
+    "key": "gqlb68h",
+    "type": "grammar",
+    "lesson": 2,
+    "q": "“一点儿”读作___diǎnr。",
+    "options": [
+      "yì",
+      "yí",
+      "yī",
+      "yǐ"
+    ],
+    "answer": "yì",
+    "context": {
+      "point": "一 changes tone",
+      "rule": "一 is yī alone; before a 4th tone it is yí; before a 1st, 2nd or 3rd tone it is yì",
+      "en": "一点儿 is read yìdiǎnr."
+    },
+    "why": "点 is diǎn, 3rd tone, and 一 before a 3rd tone is yì.",
+    "not": {
+      "yí": "yí is used before a 4th tone; 点 is 3rd tone.",
+      "yī": "yī is the tone when 一 stands alone.",
+      "yǐ": "yǐ is not a reading of 一."
+    }
+  },
+  {
+    "key": "g10m0bv6",
+    "type": "grammar",
+    "lesson": 2,
+    "q": "“山”的第二笔是___。",
+    "options": [
+      "竖折",
+      "竖",
+      "横折",
+      "撇折"
+    ],
+    "answer": "竖折",
+    "context": {
+      "point": "派生笔画",
+      "rule": "Derivative strokes are named by the basic strokes they pass through, in writing order",
+      "en": "The second stroke of 山 is shù-zhé (vertical, turn right)."
+    },
+    "why": "The second stroke of 山 goes down then turns right: 竖折.",
+    "not": {
+      "竖": "竖 alone does not turn right.",
+      "横折": "横折 goes right first, then down.",
+      "撇折": "撇折 starts with a left-falling stroke."
+    }
+  },
+  {
+    "key": "gy79c1z",
+    "type": "grammar",
+    "lesson": 2,
+    "q": "“心”的第二笔是___。",
+    "options": [
+      "卧钩",
+      "弯钩",
+      "竖钩",
+      "点"
+    ],
+    "answer": "卧钩",
+    "context": {
+      "point": "派生笔画",
+      "rule": "Derivative strokes are named by the basic strokes they pass through, in writing order",
+      "en": "The second stroke of 心 is the lying hook."
+    },
+    "why": "The second stroke of 心 is the long curve with a hook, the lying hook 卧钩.",
+    "not": {
+      "弯钩": "弯钩 is more upright than the long curve in 心.",
+      "竖钩": "竖钩 goes straight down.",
+      "点": "点 is the first, third and fourth stroke."
+    }
+  },
+  {
+    "key": "g12fwf87",
+    "type": "grammar",
+    "lesson": 2,
+    "q": "“水”的第一笔是___。",
+    "options": [
+      "竖钩",
+      "竖",
+      "弯钩",
+      "竖提"
+    ],
+    "answer": "竖钩",
+    "context": {
+      "point": "派生笔画",
+      "rule": "Derivative strokes are named by the basic strokes they pass through, in writing order",
+      "en": "The first stroke of 水 is the vertical hook."
+    },
+    "why": "水 starts with a vertical line ending in a hook, 竖钩.",
+    "not": {
+      "竖": "竖 has no hook, but this stroke does.",
+      "弯钩": "弯钩 is curved; this stroke is straight.",
+      "竖提": "竖提 turns up at the bottom without a hook."
+    }
+  },
+  {
+    "key": "goit0en",
+    "type": "grammar",
+    "lesson": 2,
+    "q": "“九”的第二笔是___。",
+    "options": [
+      "横折弯钩",
+      "横折钩",
+      "竖弯钩",
+      "撇折"
+    ],
+    "answer": "横折弯钩",
+    "context": {
+      "point": "派生笔画",
+      "rule": "Derivative strokes are named by the basic strokes they pass through, in writing order",
+      "en": "The second stroke of 九 is héng-zhé-wān-gōu."
+    },
+    "why": "九 has 撇 first, then 横折弯钩, which goes across, down, curves and hooks.",
+    "not": {
+      "横折钩": "横折钩 has no curve at the bottom.",
+      "竖弯钩": "竖弯钩 starts going down, not across.",
+      "撇折": "撇折 starts with a left-falling stroke."
+    }
+  },
+  {
+    "key": "gozqfpc",
+    "type": "grammar",
+    "lesson": 2,
+    "q": "“子”的第二笔是___。",
+    "options": [
+      "弯钩",
+      "竖钩",
+      "横折钩",
+      "卧钩"
+    ],
+    "answer": "弯钩",
+    "context": {
+      "point": "派生笔画",
+      "rule": "Derivative strokes are named by the basic strokes they pass through, in writing order",
+      "en": "The second stroke of 子 is the curved hook."
+    },
+    "why": "子 is written 横撇, then 弯钩, then 横. The middle stroke curves a little as it goes down, then hooks: 弯钩.",
+    "not": {
+      "竖钩": "竖钩 is straight, as in 小; the stroke in 子 curves.",
+      "横折钩": "横折钩 turns at a corner; 子 has no such stroke.",
+      "卧钩": "卧钩 is the lying hook in 心."
+    }
+  },
+  {
+    "key": "g8g5yj0",
+    "type": "grammar",
+    "lesson": 2,
+    "q": "“儿”的第二笔是___。",
+    "options": [
+      "竖弯钩",
+      "弯钩",
+      "竖钩",
+      "竖折"
+    ],
+    "answer": "竖弯钩",
+    "context": {
+      "point": "派生笔画",
+      "rule": "Derivative strokes are named by the basic strokes they pass through, in writing order",
+      "en": "The second stroke of 儿 is the vertical-bend-hook."
+    },
+    "why": "儿 has 撇 first, then 竖弯钩: down, curve right and hook up.",
+    "not": {
+      "弯钩": "弯钩 is a curve without the straight part down first.",
+      "竖钩": "竖钩 has no bend to the right.",
+      "竖折": "竖折 ends in a corner, not a hook."
+    }
+  },
+  {
+    "key": "g1gb7s7e",
+    "type": "grammar",
+    "lesson": 2,
+    "q": "“我”的第五笔是___。",
+    "options": [
+      "斜钩",
+      "竖钩",
+      "横折钩",
+      "弯钩"
+    ],
+    "answer": "斜钩",
+    "context": {
+      "point": "派生笔画",
+      "rule": "Derivative strokes are named by the basic strokes they pass through, in writing order",
+      "en": "The fifth stroke of 我 is the slanting hook."
+    },
+    "why": "我 has a long slanting stroke with a hook as its fifth stroke: 斜钩.",
+    "not": {
+      "竖钩": "竖钩 is the third stroke of 我, a straight hook.",
+      "横折钩": "横折钩 turns at a corner.",
+      "弯钩": "弯钩 is a gentle curve; 我 has a slanting one."
+    }
+  },
+  {
+    "key": "g9rj9sv",
+    "type": "grammar",
+    "lesson": 2,
+    "q": "他的房间___七八糟。",
+    "options": [
+      "乱",
+      "一",
+      "三",
+      "十"
+    ],
+    "answer": "乱",
+    "context": {
+      "point": "数字成语",
+      "rule": "Idioms with numbers",
+      "en": "His room is a complete mess."
+    },
+    "why": "乱七八糟 means very messy; the idiom uses 七八 (seven, eight) with 乱 and 糟.",
+    "not": {
+      "一": "一 is used in other idioms, such as 一心一意.",
+      "三": "三 does not fit this idiom.",
+      "十": "十 does not fit this idiom."
+    }
+  },
+  {
+    "key": "g1luh8fm",
+    "type": "grammar",
+    "lesson": 2,
+    "q": "花园里的花五___六色。",
+    "options": [
+      "颜",
+      "样",
+      "半",
+      "些"
+    ],
+    "answer": "颜",
+    "context": {
+      "point": "数字成语",
+      "rule": "Idioms with numbers",
+      "en": "The flowers in the garden are colourful."
+    },
+    "why": "五颜六色 is a set phrase meaning colourful: 五 + 颜 + 六 + 色.",
+    "not": {
+      "样": "样 is not in this idiom.",
+      "半": "半 is not in this idiom.",
+      "些": "些 is not in this idiom."
+    }
+  },
+  {
+    "key": "g1gdkrwd",
+    "type": "grammar",
+    "lesson": 2,
+    "q": "学习要一心___意。",
+    "options": [
+      "一",
+      "二",
+      "三",
+      "七"
+    ],
+    "answer": "一",
+    "context": {
+      "point": "数字成语",
+      "rule": "Idioms with numbers",
+      "en": "Studying needs your whole heart."
+    },
+    "why": "一心一意 is the idiom for doing something with full attention.",
+    "not": {
+      "二": "二 gives 三心二意, a different idiom.",
+      "三": "三 does not fit this idiom.",
+      "七": "七 does not fit this idiom."
+    }
+  },
+  {
+    "key": "gk21nq1",
+    "type": "grammar",
+    "lesson": 2,
+    "q": "做作业要专心，不要三心___意。",
+    "options": [
+      "二",
+      "一",
+      "四",
+      "五"
+    ],
+    "answer": "二",
+    "context": {
+      "point": "数字成语",
+      "rule": "Idioms with numbers",
+      "en": "Concentrate on your homework; don't be half-hearted."
+    },
+    "why": "三心二意 means being half-hearted, which fits the warning about not being focused.",
+    "not": {
+      "一": "一心一意 means focused, the opposite.",
+      "四": "四 does not form this idiom.",
+      "五": "五 does not form this idiom."
+    }
+  },
+  {
+    "key": "g10f0g0o",
+    "type": "grammar",
+    "lesson": 2,
+    "q": "你猜得八九不离___。",
+    "options": [
+      "十",
+      "百",
+      "千",
+      "万"
+    ],
+    "answer": "十",
+    "context": {
+      "point": "数字成语",
+      "rule": "Idioms with numbers",
+      "en": "Your guess is pretty close."
+    },
+    "why": "八九不离十 is a fixed phrase meaning very close to right.",
+    "not": {
+      "百": "百 does not form this phrase.",
+      "千": "千 does not form this phrase.",
+      "万": "万 does not form this phrase."
+    }
+  },
+  {
+    "key": "g18ibngb",
+    "type": "grammar",
+    "lesson": 3,
+    "q": "看上去像太阳的字是“___”。",
+    "options": [
+      "日",
+      "月",
+      "火",
+      "水"
+    ],
+    "answer": "日",
+    "context": {
+      "point": "象形字",
+      "rule": "Pictographs began as simple drawings of the thing itself; over time the lines became strokes",
+      "en": "The character that looks like the sun is 日."
+    },
+    "why": "日 comes from a picture of the sun, so it means sun.",
+    "not": {
+      "月": "月 is the moon.",
+      "火": "火 is fire, drawn with flames.",
+      "水": "水 is water, drawn with flowing lines."
+    }
+  },
+  {
+    "key": "g1r7963c",
+    "type": "grammar",
+    "lesson": 3,
+    "q": "看上去像弯弯的月亮的字是“___”。",
+    "options": [
+      "月",
+      "日",
+      "人",
+      "火"
+    ],
+    "answer": "月",
+    "context": {
+      "point": "象形字",
+      "rule": "Pictographs began as simple drawings of the thing itself; over time the lines became strokes",
+      "en": "The character that looks like a crescent moon is 月."
+    },
+    "why": "月 comes from a crescent moon.",
+    "not": {
+      "日": "日 is the sun.",
+      "人": "人 is a person.",
+      "火": "火 is fire."
+    }
+  },
+  {
+    "key": "g1sj1lrx",
+    "type": "grammar",
+    "lesson": 3,
+    "q": "像一个侧面站着的人的字是“___”。",
+    "options": [
+      "人",
+      "木",
+      "山",
+      "水"
+    ],
+    "answer": "人",
+    "context": {
+      "point": "象形字",
+      "rule": "Pictographs began as simple drawings of the thing itself; over time the lines became strokes",
+      "en": "The character that looks like a person standing in profile is 人."
+    },
+    "why": "人 is a person seen from the side, with two legs.",
+    "not": {
+      "木": "木 is a tree.",
+      "山": "山 is a mountain.",
+      "水": "水 is water."
+    }
+  },
+  {
+    "key": "g114lmgh",
+    "type": "grammar",
+    "lesson": 3,
+    "q": "像一条鱼的字是“___”。",
+    "options": [
+      "鱼",
+      "牛",
+      "车",
+      "女"
+    ],
+    "answer": "鱼",
+    "context": {
+      "point": "象形字",
+      "rule": "Pictographs began as simple drawings of the thing itself; over time the lines became strokes",
+      "en": "The character that looks like a fish is 鱼."
+    },
+    "why": "鱼 means fish, and its shape comes from a fish.",
+    "not": {
+      "牛": "牛 is a cow.",
+      "车": "车 is a car.",
+      "女": "女 is a woman."
+    }
+  },
+  {
+    "key": "gkhtiaj",
+    "type": "grammar",
+    "lesson": 3,
+    "q": "天上掉下来的水，写成“___”。",
+    "options": [
+      "雨",
+      "水",
+      "火",
+      "冰"
+    ],
+    "answer": "雨",
+    "context": {
+      "point": "象形字",
+      "rule": "Pictographs began as simple drawings of the thing itself; over time the lines became strokes",
+      "en": "Water falling from the sky is written 雨."
+    },
+    "why": "雨 means rain; the dots inside it are raindrops falling from the sky.",
+    "not": {
+      "水": "水 is water in general, not falling from the sky.",
+      "火": "火 is fire.",
+      "冰": "冰 is ice."
+    }
+  },
+  {
+    "key": "g1irpil4",
+    "type": "grammar",
+    "lesson": 3,
+    "q": "他坐___去北京。",
+    "options": [
+      "火车",
+      "火腿",
+      "雨伞",
+      "牛奶"
+    ],
+    "answer": "火车",
+    "context": {
+      "point": "词语",
+      "rule": "Words made from the lesson's characters",
+      "en": "He takes the train to Beijing."
+    },
+    "why": "坐火车 means to take the train, and 坐 goes with vehicles.",
+    "not": {
+      "火腿": "火腿 is ham, not a vehicle.",
+      "雨伞": "雨伞 is an umbrella.",
+      "牛奶": "牛奶 is milk."
+    }
+  },
+  {
+    "key": "gpsmdxw",
+    "type": "grammar",
+    "lesson": 3,
+    "q": "下雨了，我要带___。",
+    "options": [
+      "雨伞",
+      "火车",
+      "牛肉",
+      "水果"
+    ],
+    "answer": "雨伞",
+    "context": {
+      "point": "词语",
+      "rule": "Words made from the lesson's characters",
+      "en": "It's raining; I need to take an umbrella."
+    },
+    "why": "下雨了 means it is raining, so you bring an umbrella 雨伞.",
+    "not": {
+      "火车": "火车 is a train.",
+      "牛肉": "牛肉 is beef.",
+      "水果": "水果 is fruit."
+    }
+  },
+  {
+    "key": "gme0vk8",
+    "type": "grammar",
+    "lesson": 3,
+    "q": "我早饭喝___。",
+    "options": [
+      "牛奶",
+      "火腿",
+      "苹果",
+      "国王"
+    ],
+    "answer": "牛奶",
+    "context": {
+      "point": "词语",
+      "rule": "Words made from the lesson's characters",
+      "en": "I drink milk for breakfast."
+    },
+    "why": "喝 means to drink, and 牛奶 is a drink.",
+    "not": {
+      "火腿": "火腿 is ham; you eat it, not drink it.",
+      "苹果": "苹果 is an apple; you eat it.",
+      "国王": "国王 is a king."
+    }
+  },
+  {
+    "key": "g8ip1x4",
+    "type": "grammar",
+    "lesson": 3,
+    "q": "苹果和芒果都是___。",
+    "options": [
+      "水果",
+      "王子",
+      "家人",
+      "雨伞"
+    ],
+    "answer": "水果",
+    "context": {
+      "point": "词语",
+      "rule": "Words made from the lesson's characters",
+      "en": "Apples and mangoes are both fruit."
+    },
+    "why": "苹果 and 芒果 are both kinds of 水果, fruit.",
+    "not": {
+      "王子": "王子 is a prince.",
+      "家人": "家人 is family.",
+      "雨伞": "雨伞 is an umbrella."
+    }
+  },
+  {
+    "key": "gft867a",
+    "type": "grammar",
+    "lesson": 3,
+    "q": "我的儿子和女儿都是我的___。",
+    "options": [
+      "孩子",
+      "国王",
+      "西瓜",
+      "女朋友"
+    ],
+    "answer": "孩子",
+    "context": {
+      "point": "词语",
+      "rule": "Words made from the lesson's characters",
+      "en": "My son and my daughter are both my children."
+    },
+    "why": "Sons and daughters are your 孩子, children.",
+    "not": {
+      "国王": "国王 is a king.",
+      "西瓜": "西瓜 is a watermelon.",
+      "女朋友": "女朋友 is a girlfriend."
+    }
+  },
+  {
+    "key": "gfc4o64",
+    "type": "grammar",
+    "lesson": 3,
+    "q": "国王和王后的儿子是___。",
+    "options": [
+      "王子",
+      "王后",
+      "国王",
+      "女朋友"
+    ],
+    "answer": "王子",
+    "context": {
+      "point": "家人和王室",
+      "rule": "Family, royal and 开 words",
+      "en": "The son of the king and queen is the prince."
+    },
+    "why": "The son of a king and queen is a prince, 王子.",
+    "not": {
+      "王后": "王后 is the queen.",
+      "国王": "国王 is the king.",
+      "女朋友": "女朋友 is a girlfriend."
+    }
+  },
+  {
+    "key": "g1p1jtni",
+    "type": "grammar",
+    "lesson": 3,
+    "q": "爸爸每天___上班。",
+    "options": [
+      "开车",
+      "开心",
+      "火车",
+      "下雨"
+    ],
+    "answer": "开车",
+    "context": {
+      "point": "家人和王室",
+      "rule": "Family, royal and 开 words",
+      "en": "Dad drives to work every day."
+    },
+    "why": "开车 means to drive a car, and it fits going to work every day.",
+    "not": {
+      "开心": "开心 means happy.",
+      "火车": "火车 is a train, not an action.",
+      "下雨": "下雨 means to rain."
+    }
+  },
+  {
+    "key": "g1t9pa7j",
+    "type": "grammar",
+    "lesson": 3,
+    "q": "今天是我的生日，我很___。",
+    "options": [
+      "开心",
+      "开车",
+      "下雨",
+      "热水"
+    ],
+    "answer": "开心",
+    "context": {
+      "point": "家人和王室",
+      "rule": "Family, royal and 开 words",
+      "en": "It's my birthday today and I am very happy."
+    },
+    "why": "It is the speaker's birthday, so they feel 开心, happy.",
+    "not": {
+      "开车": "开车 means to drive.",
+      "下雨": "下雨 means it rains.",
+      "热水": "热水 is hot water."
+    }
+  },
+  {
+    "key": "g5ovlpx",
+    "type": "grammar",
+    "lesson": 3,
+    "q": "我最喜欢吃___，它是一种鱼。",
+    "options": [
+      "三文鱼",
+      "南瓜",
+      "牛肉",
+      "开心果"
+    ],
+    "answer": "三文鱼",
+    "context": {
+      "point": "家人和王室",
+      "rule": "Family, royal and 开 words",
+      "en": "I like salmon best; it's a kind of fish."
+    },
+    "why": "三文鱼 is salmon, and the sentence says it is a fish.",
+    "not": {
+      "南瓜": "南瓜 is pumpkin.",
+      "牛肉": "牛肉 is beef.",
+      "开心果": "开心果 is pistachio, a nut."
+    }
+  },
+  {
+    "key": "g6ag6ds",
+    "type": "grammar",
+    "lesson": 4,
+    "q": "在“木”的下边加一横，就是“___”。",
+    "options": [
+      "本",
+      "末",
+      "天",
+      "太"
+    ],
+    "answer": "本",
+    "context": {
+      "point": "指事字",
+      "rule": "Indicative characters: a mark added to a picture shows an idea that is hard to draw",
+      "en": "Adding a stroke below 木 gives 本, the root of a tree."
+    },
+    "why": "Adding a stroke at the bottom of 木 marks the root: 本.",
+    "not": {
+      "末": "末 has the long stroke on top.",
+      "天": "天 is built from 大, not 木.",
+      "太": "太 is built from 大, not 木."
+    }
+  },
+  {
+    "key": "g8a70e1",
+    "type": "grammar",
+    "lesson": 4,
+    "q": "在“木”的上边加一长横，就是“___”。",
+    "options": [
+      "末",
+      "本",
+      "中",
+      "片"
+    ],
+    "answer": "末",
+    "context": {
+      "point": "指事字",
+      "rule": "Indicative characters: a mark added to a picture shows an idea that is hard to draw",
+      "en": "Adding a long stroke above 木 gives 末, the treetop."
+    },
+    "why": "A long stroke on top of 木 marks the treetop: 末.",
+    "not": {
+      "本": "本 has the stroke at the bottom.",
+      "中": "中 is not made from 木.",
+      "片": "片 is not made from 木."
+    }
+  },
+  {
+    "key": "g1hosxbm",
+    "type": "grammar",
+    "lesson": 4,
+    "q": "在“大”的下边加一点，就是“___”。",
+    "options": [
+      "太",
+      "天",
+      "本",
+      "末"
+    ],
+    "answer": "太",
+    "context": {
+      "point": "指事字",
+      "rule": "Indicative characters: a mark added to a picture shows an idea that is hard to draw",
+      "en": "Adding a dot under 大 gives 太."
+    },
+    "why": "Adding a dot under 大 makes 太.",
+    "not": {
+      "天": "天 has a stroke on top of 大.",
+      "本": "本 is made from 木.",
+      "末": "末 is made from 木."
+    }
+  },
+  {
+    "key": "giqjy37",
+    "type": "grammar",
+    "lesson": 4,
+    "q": "在“大”的上边加一横，就是“___”。",
+    "options": [
+      "天",
+      "太",
+      "中",
+      "片"
+    ],
+    "answer": "天",
+    "context": {
+      "point": "指事字",
+      "rule": "Indicative characters: a mark added to a picture shows an idea that is hard to draw",
+      "en": "Adding a stroke above 大 gives 天, the sky above a person's head."
+    },
+    "why": "A long stroke on top of 大 makes 天.",
+    "not": {
+      "太": "太 has a dot under 大.",
+      "中": "中 is not made from 大.",
+      "片": "片 is not made from 大."
+    }
+  },
+  {
+    "key": "g185xmgj",
+    "type": "grammar",
+    "lesson": 4,
+    "q": "我___去了商店，今天不去了。",
+    "options": [
+      "昨天",
+      "明天",
+      "每天",
+      "天气"
+    ],
+    "answer": "昨天",
+    "context": {
+      "point": "天 words",
+      "rule": "昨天 yesterday, 今天 today, 明天 tomorrow, 每天 every day",
+      "en": "I went to the shop yesterday; I am not going today."
+    },
+    "why": "昨天 means yesterday; the sentence says I went (去了) and am not going today.",
+    "not": {
+      "明天": "明天 is tomorrow; 去了 is past.",
+      "每天": "每天 is every day.",
+      "天气": "天气 is weather."
+    }
+  },
+  {
+    "key": "g1quthf",
+    "type": "grammar",
+    "lesson": 4,
+    "q": "我___喝一杯牛奶，一天一杯。",
+    "options": [
+      "每天",
+      "昨天",
+      "明天",
+      "天气"
+    ],
+    "answer": "每天",
+    "context": {
+      "point": "天 words",
+      "rule": "昨天 yesterday, 今天 today, 明天 tomorrow, 每天 every day",
+      "en": "I drink a glass of milk every day, one a day."
+    },
+    "why": "每天 means every day, which matches 一天一杯.",
+    "not": {
+      "昨天": "昨天 is yesterday.",
+      "明天": "明天 is tomorrow.",
+      "天气": "天气 is weather."
+    }
+  },
+  {
+    "key": "g10u0i9z",
+    "type": "grammar",
+    "lesson": 4,
+    "q": "___我们要去北京旅游。",
+    "options": [
+      "明天",
+      "昨天",
+      "下班",
+      "上课"
+    ],
+    "answer": "明天",
+    "context": {
+      "point": "天 words",
+      "rule": "昨天 yesterday, 今天 today, 明天 tomorrow, 每天 every day",
+      "en": "Tomorrow we are going to Beijing."
+    },
+    "why": "要去北京 is a plan, so it goes with 明天, tomorrow.",
+    "not": {
+      "昨天": "昨天 is yesterday; 要去 is future.",
+      "下班": "下班 is when work ends; a trip fits a day like 明天.",
+      "上课": "上课 means class starts; a trip fits a day like 明天."
+    }
+  },
+  {
+    "key": "gy7idkc",
+    "type": "grammar",
+    "lesson": 4,
+    "q": "今天的___很好，不冷也不热。",
+    "options": [
+      "天气",
+      "昨天",
+      "周末",
+      "中文"
+    ],
+    "answer": "天气",
+    "context": {
+      "point": "天 words",
+      "rule": "昨天 yesterday, 今天 today, 明天 tomorrow, 每天 every day",
+      "en": "Today's weather is nice, neither cold nor hot."
+    },
+    "why": "不冷也不热 describes the weather, so 天气.",
+    "not": {
+      "昨天": "昨天 is yesterday, not a thing that is nice.",
+      "周末": "周末 is the weekend.",
+      "中文": "中文 is the Chinese language."
+    }
+  },
+  {
+    "key": "gai6pb2",
+    "type": "grammar",
+    "lesson": 4,
+    "q": "八点___，我们开始学习。",
+    "options": [
+      "上课",
+      "下课",
+      "下班",
+      "下午"
+    ],
+    "answer": "上课",
+    "context": {
+      "point": "上 and 下",
+      "rule": "上课 starts class, 下课 ends it; 上班 starts work, 下班 ends it",
+      "en": "Class starts at eight and we begin to study."
+    },
+    "why": "上课 means class starts, which matches 开始学习.",
+    "not": {
+      "下课": "下课 means class ends.",
+      "下班": "下班 means to leave work.",
+      "下午": "下午 means afternoon."
+    }
+  },
+  {
+    "key": "g1eic6in",
+    "type": "grammar",
+    "lesson": 4,
+    "q": "十二点___，我们去吃饭。",
+    "options": [
+      "下课",
+      "上课",
+      "上班",
+      "上网"
+    ],
+    "answer": "下课",
+    "context": {
+      "point": "上 and 下",
+      "rule": "上课 starts class, 下课 ends it; 上班 starts work, 下班 ends it",
+      "en": "Class ends at twelve and we go to eat."
+    },
+    "why": "下课 means class ends, then we go to eat.",
+    "not": {
+      "上课": "上课 means class starts.",
+      "上班": "上班 means to start work.",
+      "上网": "上网 means to go online."
+    }
+  },
+  {
+    "key": "g1xsjahd",
+    "type": "grammar",
+    "lesson": 4,
+    "q": "爸爸五点___，然后回家。",
+    "options": [
+      "下班",
+      "上班",
+      "上午",
+      "中午"
+    ],
+    "answer": "下班",
+    "context": {
+      "point": "上 and 下",
+      "rule": "上课 starts class, 下课 ends it; 上班 starts work, 下班 ends it",
+      "en": "Dad finishes work at five, then goes home."
+    },
+    "why": "Dad finishes work at five and goes home: 下班.",
+    "not": {
+      "上班": "上班 means to start work.",
+      "上午": "上午 means morning.",
+      "中午": "中午 means noon."
+    }
+  },
+  {
+    "key": "gwt5l8r",
+    "type": "grammar",
+    "lesson": 4,
+    "q": "我___在家看电影，下午去商店。",
+    "options": [
+      "上午",
+      "下午",
+      "周末",
+      "期末"
+    ],
+    "answer": "上午",
+    "context": {
+      "point": "上 and 下",
+      "rule": "上课 starts class, 下课 ends it; 上班 starts work, 下班 ends it",
+      "en": "In the morning I watch a film at home; in the afternoon I go to the shop."
+    },
+    "why": "The sentence contrasts with 下午 (afternoon), so the first part is 上午, morning.",
+    "not": {
+      "下午": "下午 is used in the second part.",
+      "周末": "周末 is the weekend.",
+      "期末": "期末 is the end of term."
+    }
+  },
+  {
+    "key": "gz5xtby",
+    "type": "grammar",
+    "lesson": 5,
+    "q": "一个人靠着一棵树，就是“___”。",
+    "options": [
+      "休",
+      "明",
+      "好",
+      "看"
+    ],
+    "answer": "休",
+    "context": {
+      "point": "会意字",
+      "rule": "Associative characters: the meanings of the parts together give the meaning of the whole",
+      "en": "A person leaning on a tree makes 休, to rest."
+    },
+    "why": "A person 亻 leaning on a tree 木 makes 休, to rest.",
+    "not": {
+      "明": "明 is sun and moon.",
+      "好": "好 is woman and child.",
+      "看": "看 is a hand above an eye."
+    }
+  },
+  {
+    "key": "g19vky5w",
+    "type": "grammar",
+    "lesson": 5,
+    "q": "日和月在一起，就是“___”，意思是很亮。",
+    "options": [
+      "明",
+      "休",
+      "安",
+      "比"
+    ],
+    "answer": "明",
+    "context": {
+      "point": "会意字",
+      "rule": "Associative characters: the meanings of the parts together give the meaning of the whole",
+      "en": "Sun and moon together make 明, bright."
+    },
+    "why": "日 (sun) and 月 (moon) together make 明, bright.",
+    "not": {
+      "休": "休 is person and tree.",
+      "安": "安 is roof and woman.",
+      "比": "比 is two people side by side."
+    }
+  },
+  {
+    "key": "g25rs1z",
+    "type": "grammar",
+    "lesson": 5,
+    "q": "女和子在一起，就是“___”，意思是不错。",
+    "options": [
+      "好",
+      "美",
+      "家",
+      "坐"
+    ],
+    "answer": "好",
+    "context": {
+      "point": "会意字",
+      "rule": "Associative characters: the meanings of the parts together give the meaning of the whole",
+      "en": "Woman and child together make 好, good."
+    },
+    "why": "女 (woman) and 子 (child) together make 好.",
+    "not": {
+      "美": "美 is not made of 女 and 子.",
+      "家": "家 is a roof over a pig.",
+      "坐": "坐 is two people on the ground."
+    }
+  },
+  {
+    "key": "g1uts7g0",
+    "type": "grammar",
+    "lesson": 5,
+    "q": "手放在眼睛上面，就是“___”。",
+    "options": [
+      "看",
+      "有",
+      "友",
+      "笔"
+    ],
+    "answer": "看",
+    "context": {
+      "point": "会意字",
+      "rule": "Associative characters: the meanings of the parts together give the meaning of the whole",
+      "en": "A hand above the eye makes 看, to look."
+    },
+    "why": "A hand over the eye makes 看, to look.",
+    "not": {
+      "有": "有 is not about the eye.",
+      "友": "友 is not about the eye.",
+      "笔": "笔 is a pen."
+    }
+  },
+  {
+    "key": "gam3fuf",
+    "type": "grammar",
+    "lesson": 5,
+    "q": "两只脚一前一后，就是“___”，意思是走路。",
+    "options": [
+      "步",
+      "明",
+      "美",
+      "酒"
+    ],
+    "answer": "步",
+    "context": {
+      "point": "会意字",
+      "rule": "Associative characters: the meanings of the parts together give the meaning of the whole",
+      "en": "Two feet, one after the other, make 步, a step."
+    },
+    "why": "Two feet one after the other show walking, 步.",
+    "not": {
+      "明": "明 is sun and moon.",
+      "美": "美 is not about feet.",
+      "酒": "酒 is not about feet."
+    }
+  },
+  {
+    "key": "geq3po0",
+    "type": "grammar",
+    "lesson": 5,
+    "q": "写“安”的时候，先写上面的“宀”，再写下面的“___”。",
+    "options": [
+      "女",
+      "子",
+      "口",
+      "木"
+    ],
+    "answer": "女",
+    "context": {
+      "point": "笔顺",
+      "rule": "Stroke order: top before bottom, left before right, a roof comes first",
+      "en": "When writing 安, write the roof 宀 first, then the 女 below it."
+    },
+    "why": "安 has the roof 宀 on top and 女 below.",
+    "not": {
+      "子": "子 is not under the roof in 安.",
+      "口": "口 is not in 安.",
+      "木": "木 is not in 安."
+    }
+  },
+  {
+    "key": "g1h40vpi",
+    "type": "grammar",
+    "lesson": 5,
+    "q": "写“明”的时候，先写左边的“___”，再写右边的“月”。",
+    "options": [
+      "日",
+      "月",
+      "目",
+      "田"
+    ],
+    "answer": "日",
+    "context": {
+      "point": "笔顺",
+      "rule": "Stroke order: top before bottom, left before right, a roof comes first",
+      "en": "When writing 明, write the left part 日 first, then 月."
+    },
+    "why": "明 is written left to right: 日 on the left first, then 月.",
+    "not": {
+      "月": "月 is the right part, written second.",
+      "目": "目 has one more line; the left of 明 is 日.",
+      "田": "田 is not in 明."
+    }
+  },
+  {
+    "key": "g15bkh9n",
+    "type": "grammar",
+    "lesson": 5,
+    "q": "写“美”的时候，先写上面的“羊”，再写下面的“___”。",
+    "options": [
+      "大",
+      "天",
+      "小",
+      "火"
+    ],
+    "answer": "大",
+    "context": {
+      "point": "笔顺",
+      "rule": "Stroke order: top before bottom, left before right, a roof comes first",
+      "en": "When writing 美, write 羊 above first, then 大 below."
+    },
+    "why": "美 is 羊 on top and 大 below, written top to bottom.",
+    "not": {
+      "天": "The bottom of 美 is 大, not 天.",
+      "小": "小 is not in 美.",
+      "火": "火 is not in 美."
+    }
+  },
+  {
+    "key": "g1syudy8",
+    "type": "grammar",
+    "lesson": 5,
+    "q": "写“笔”的时候，先写上面的“竹”，再写下面的“___”。",
+    "options": [
+      "毛",
+      "手",
+      "木",
+      "水"
+    ],
+    "answer": "毛",
+    "context": {
+      "point": "笔顺",
+      "rule": "Stroke order: top before bottom, left before right, a roof comes first",
+      "en": "When writing 笔, write the bamboo top first, then 毛 below."
+    },
+    "why": "笔 has 竹 on top and 毛 below.",
+    "not": {
+      "手": "手 is not in 笔.",
+      "木": "木 is not in 笔.",
+      "水": "水 is not in 笔."
+    }
+  },
+  {
+    "key": "g1lm2b0m",
+    "type": "grammar",
+    "lesson": 5,
+    "q": "这个菜很___，我还想再吃一碗。",
+    "options": [
+      "好吃",
+      "好看",
+      "好玩儿",
+      "好运"
+    ],
+    "answer": "好吃",
+    "context": {
+      "point": "好 + verb",
+      "rule": "好 + verb means nice to do it: 好吃 (tasty), 好看 (good to look at), 好玩儿 (fun)",
+      "en": "This dish is tasty, I want another bowl."
+    },
+    "why": "The speaker wants another bowl, so the dish tastes good: 好吃.",
+    "not": {
+      "好看": "好看 is about looks; wanting more means it tastes good.",
+      "好玩儿": "好玩儿 is about fun activities.",
+      "好运": "好运 means good luck."
+    }
+  },
+  {
+    "key": "g197skr",
+    "type": "grammar",
+    "lesson": 5,
+    "q": "她的新衣服很___。",
+    "options": [
+      "好看",
+      "好吃",
+      "好玩儿",
+      "好运"
+    ],
+    "answer": "好看",
+    "context": {
+      "point": "好 + verb",
+      "rule": "好 + verb means nice to do it: 好吃 (tasty), 好看 (good to look at), 好玩儿 (fun)",
+      "en": "Her new clothes look nice."
+    },
+    "why": "Clothes are nice to look at, so 好看.",
+    "not": {
+      "好吃": "好吃 is for food.",
+      "好玩儿": "好玩儿 is for fun activities.",
+      "好运": "好运 means good luck."
+    }
+  },
+  {
+    "key": "g18wyxf6",
+    "type": "grammar",
+    "lesson": 5,
+    "q": "这个游戏很___，我们玩儿了一天。",
+    "options": [
+      "好玩儿",
+      "好吃",
+      "好看",
+      "好运"
+    ],
+    "answer": "好玩儿",
+    "context": {
+      "point": "好 + verb",
+      "rule": "好 + verb means nice to do it: 好吃 (tasty), 好看 (good to look at), 好玩儿 (fun)",
+      "en": "This game is fun; we played it all day."
+    },
+    "why": "A game you play all day is 好玩儿, fun.",
+    "not": {
+      "好吃": "好吃 is for food.",
+      "好看": "好看 is for looks.",
+      "好运": "好运 means good luck."
+    }
+  },
+  {
+    "key": "geem2z",
+    "type": "grammar",
+    "lesson": 5,
+    "q": "明天考试，祝你___！",
+    "options": [
+      "好运",
+      "好吃",
+      "好玩儿",
+      "好看"
+    ],
+    "answer": "好运",
+    "context": {
+      "point": "好 + verb",
+      "rule": "好 + verb means nice to do it: 好吃 (tasty), 好看 (good to look at), 好玩儿 (fun)",
+      "en": "You have an exam tomorrow, good luck!"
+    },
+    "why": "Before an exam we wish good luck: 祝你好运.",
+    "not": {
+      "好吃": "好吃 is for food.",
+      "好玩儿": "好玩儿 is for fun.",
+      "好看": "好看 is for looks."
+    }
+  },
+  {
+    "key": "gsb3v0c",
+    "type": "grammar",
+    "lesson": 6,
+    "q": "“妈”的意符是“女”，声符是“___”。",
+    "options": [
+      "马",
+      "母",
+      "吗",
+      "好"
+    ],
+    "answer": "马",
+    "context": {
+      "point": "形声字",
+      "rule": "Pictophonetic characters: one part shows the meaning, one part hints at the sound",
+      "en": "In 妈, 女 shows the meaning and 马 hints at the sound."
+    },
+    "why": "妈 has 女 for meaning and 马 for sound (mǎ and mā are close).",
+    "not": {
+      "母": "母 means mother but is not a part of 妈.",
+      "吗": "吗 is a different character, not a part of 妈.",
+      "好": "好 is not a part of 妈."
+    }
+  },
+  {
+    "key": "gv9sl3i",
+    "type": "grammar",
+    "lesson": 6,
+    "q": "“海”的意符是“氵”，声符是“___”。",
+    "options": [
+      "每",
+      "母",
+      "毒",
+      "木"
+    ],
+    "answer": "每",
+    "context": {
+      "point": "形声字",
+      "rule": "Pictophonetic characters: one part shows the meaning, one part hints at the sound",
+      "en": "In 海, 氵 shows the meaning and 每 hints at the sound."
+    },
+    "why": "海 is 氵 plus 每. 每 is the sound part, though today měi and hǎi sound less alike.",
+    "not": {
+      "母": "母 is not in 海.",
+      "毒": "毒 is not in 海.",
+      "木": "木 is not in 海."
+    }
+  },
+  {
+    "key": "g3e8739",
+    "type": "grammar",
+    "lesson": 6,
+    "q": "“汁”的意符是“氵”，声符是“___”。",
+    "options": [
+      "十",
+      "千",
+      "干",
+      "土"
+    ],
+    "answer": "十",
+    "context": {
+      "point": "形声字",
+      "rule": "Pictophonetic characters: one part shows the meaning, one part hints at the sound",
+      "en": "In 汁, 氵 shows the meaning and 十 hints at the sound."
+    },
+    "why": "汁 is 氵 plus 十; 十 (shí) sounds close to 汁 (zhī).",
+    "not": {
+      "千": "千 is not in 汁.",
+      "干": "干 is not in 汁.",
+      "土": "土 is not in 汁."
+    }
+  },
+  {
+    "key": "g1vqfi6p",
+    "type": "grammar",
+    "lesson": 6,
+    "q": "“问”的意符是“口”，声符是“___”。",
+    "options": [
+      "门",
+      "日",
+      "马",
+      "女"
+    ],
+    "answer": "门",
+    "context": {
+      "point": "形声字",
+      "rule": "Pictophonetic characters: one part shows the meaning, one part hints at the sound",
+      "en": "In 问, 口 shows the meaning and 门 hints at the sound."
+    },
+    "why": "问 is 口 inside 门; 门 (mén) gives the sound, close to wèn.",
+    "not": {
+      "日": "日 is not in 问.",
+      "马": "马 is not in 问.",
+      "女": "女 is not in 问."
+    }
+  },
+  {
+    "key": "gujq5kj",
+    "type": "grammar",
+    "lesson": 6,
+    "q": "有“氵”的字多和___有关。",
+    "options": [
+      "水",
+      "人",
+      "嘴",
+      "太阳"
+    ],
+    "answer": "水",
+    "context": {
+      "point": "意符",
+      "rule": "Common meaning parts: 亻 person, 口 mouth, 女 woman, 氵 water, 日 sun or time",
+      "en": "Characters with 氵 are mostly related to water."
+    },
+    "why": "氵 is the water radical, so these characters are about 水.",
+    "not": {
+      "人": "Characters about people use 亻, not 氵.",
+      "嘴": "嘴 relates to 口.",
+      "太阳": "太阳 relates to 日."
+    }
+  },
+  {
+    "key": "gr88aae",
+    "type": "grammar",
+    "lesson": 6,
+    "q": "有“口”的字多和___有关。",
+    "options": [
+      "嘴",
+      "水",
+      "女人",
+      "太阳"
+    ],
+    "answer": "嘴",
+    "context": {
+      "point": "意符",
+      "rule": "Common meaning parts: 亻 person, 口 mouth, 女 woman, 氵 water, 日 sun or time",
+      "en": "Characters with 口 are mostly related to the mouth."
+    },
+    "why": "口 is a mouth, so these characters are about the mouth 嘴.",
+    "not": {
+      "水": "水 relates to 氵.",
+      "女人": "女人 relates to 女.",
+      "太阳": "太阳 relates to 日."
+    }
+  },
+  {
+    "key": "g1qg8kbl",
+    "type": "grammar",
+    "lesson": 6,
+    "q": "有“日”的字多和太阳、___有关。",
+    "options": [
+      "时间",
+      "水",
+      "女人",
+      "嘴"
+    ],
+    "answer": "时间",
+    "context": {
+      "point": "意符",
+      "rule": "Common meaning parts: 亻 person, 口 mouth, 女 woman, 氵 water, 日 sun or time",
+      "en": "Characters with 日 are mostly related to the sun and time."
+    },
+    "why": "日 is the sun and also days, so it relates to time 时间.",
+    "not": {
+      "水": "水 relates to 氵.",
+      "女人": "女人 relates to 女.",
+      "嘴": "嘴 relates to 口."
+    }
+  },
+  {
+    "key": "g1n93mzw",
+    "type": "grammar",
+    "lesson": 6,
+    "q": "“喝”“唱”“问”都有“___”。",
+    "options": [
+      "口",
+      "日",
+      "氵",
+      "女"
+    ],
+    "answer": "口",
+    "context": {
+      "point": "意符",
+      "rule": "Common meaning parts: 亻 person, 口 mouth, 女 woman, 氵 water, 日 sun or time",
+      "en": "喝, 唱 and 问 all contain 口."
+    },
+    "why": "喝, 唱 and 问 all contain 口 (mouth).",
+    "not": {
+      "日": "日 is not in these characters.",
+      "氵": "氵 is not in these characters.",
+      "女": "女 is not in these characters."
+    }
+  },
+  {
+    "key": "g1eti4bv",
+    "type": "grammar",
+    "lesson": 6,
+    "q": "“奶”“婚”“妈”的意符是“___”。",
+    "options": [
+      "女",
+      "子",
+      "口",
+      "日"
+    ],
+    "answer": "女",
+    "context": {
+      "point": "哪个意符？",
+      "rule": "Which meaning part? Group the characters you know",
+      "en": "奶, 婚 and 妈 all have 女 as their meaning part."
+    },
+    "why": "奶, 婚 and 妈 are all connected to women, with 女.",
+    "not": {
+      "子": "子 is not in 奶.",
+      "口": "口 is not in 奶.",
+      "日": "日 is not in 奶."
+    }
+  },
+  {
+    "key": "g1veb1w6",
+    "type": "grammar",
+    "lesson": 6,
+    "q": "“洗”“游”“汁”的意符是“___”。",
+    "options": [
+      "氵",
+      "亻",
+      "口",
+      "日"
+    ],
+    "answer": "氵",
+    "context": {
+      "point": "哪个意符？",
+      "rule": "Which meaning part? Group the characters you know",
+      "en": "洗, 游 and 汁 all have 氵 as their meaning part."
+    },
+    "why": "洗, 游 and 汁 all have the water radical 氵.",
+    "not": {
+      "亻": "亻 is the person radical.",
+      "口": "口 is not in 洗.",
+      "日": "日 is not in 洗."
+    }
+  },
+  {
+    "key": "gswkpui",
+    "type": "grammar",
+    "lesson": 6,
+    "q": "“晚”“时”“星”的意符是“___”。",
+    "options": [
+      "日",
+      "月",
+      "目",
+      "田"
+    ],
+    "answer": "日",
+    "context": {
+      "point": "哪个意符？",
+      "rule": "Which meaning part? Group the characters you know",
+      "en": "晚, 时 and 星 all have 日 as their meaning part."
+    },
+    "why": "晚, 时 and 星 all have 日 on the left or top.",
+    "not": {
+      "月": "月 is not in 晚.",
+      "目": "目 is not in 晚.",
+      "田": "田 is not in 晚."
+    }
+  },
+  {
+    "key": "g16b8uw0",
+    "type": "grammar",
+    "lesson": 6,
+    "q": "“作”“信”“休”的意符是“___”。",
+    "options": [
+      "亻",
+      "氵",
+      "口",
+      "女"
+    ],
+    "answer": "亻",
+    "context": {
+      "point": "哪个意符？",
+      "rule": "Which meaning part? Group the characters you know",
+      "en": "作, 信 and 休 all have 亻 as their meaning part."
+    },
+    "why": "作, 信 and 休 all have the person radical 亻 on the left.",
+    "not": {
+      "氵": "氵 is the water radical.",
+      "口": "口 is not in 作.",
+      "女": "女 is not in 作."
+    }
+  },
+  {
+    "key": "go75ikm",
+    "type": "grammar",
+    "lesson": 7,
+    "q": "清、请、情、晴的声符都是___。",
+    "options": [
+      "青",
+      "氵",
+      "讠",
+      "日"
+    ],
+    "answer": "青",
+    "context": {
+      "point": "形声字: 声符",
+      "rule": "A pictophonetic character has a sound part (声符) that hints at how it is read",
+      "en": "青 is the sound part in 清, 请, 情 and 晴."
+    },
+    "why": "清, 请, 情 and 晴 all contain 青 (qīng), so they all sound like qing.",
+    "not": {
+      "氵": "氵 is the meaning part of 清 only.",
+      "讠": "讠 is the meaning part of 请 only.",
+      "日": "日 is the meaning part of 晴 only."
+    }
+  },
+  {
+    "key": "gdgp36m",
+    "type": "grammar",
+    "lesson": 7,
+    "q": "饱、抱、跑、泡都有声符___。",
+    "options": [
+      "包",
+      "饣",
+      "扌",
+      "足"
+    ],
+    "answer": "包",
+    "context": {
+      "point": "形声字: 声符",
+      "rule": "A pictophonetic character has a sound part (声符) that hints at how it is read",
+      "en": "包 is the sound part in 饱, 抱, 跑 and 泡."
+    },
+    "why": "饱, 抱, 跑 and 泡 all contain 包 (bāo), giving a similar sound.",
+    "not": {
+      "饣": "饣 is the meaning part of 饱.",
+      "扌": "扌 is the meaning part of 抱.",
+      "足": "足 is the meaning part of 跑."
+    }
+  },
+  {
+    "key": "g1nwfv3z",
+    "type": "grammar",
+    "lesson": 7,
+    "q": "妈、吗、码、骂的声符是___。",
+    "options": [
+      "马",
+      "女",
+      "口",
+      "石"
+    ],
+    "answer": "马",
+    "context": {
+      "point": "形声字: 声符",
+      "rule": "A pictophonetic character has a sound part (声符) that hints at how it is read",
+      "en": "马 is the sound part in 妈, 吗, 码 and 骂."
+    },
+    "why": "妈, 吗, 码 and 骂 all contain 马 (mǎ) for the sound.",
+    "not": {
+      "女": "女 is the meaning part of 妈 only.",
+      "口": "口 is the meaning part of 吗 only.",
+      "石": "石 is the meaning part of 码 only."
+    }
+  },
+  {
+    "key": "g2wxoxp",
+    "type": "grammar",
+    "lesson": 7,
+    "q": "“排”的声符是“___”，读音差不多。",
+    "options": [
+      "非",
+      "手",
+      "白",
+      "牛"
+    ],
+    "answer": "非",
+    "context": {
+      "point": "形声字: 声符",
+      "rule": "A pictophonetic character has a sound part (声符) that hints at how it is read",
+      "en": "The sound part of 排 is 非, and the sounds are close."
+    },
+    "why": "排 is 扌 (hand) plus 非. 非 is the sound part, though fēi and pái sound less alike today.",
+    "not": {
+      "手": "手 is the full form of 扌, the meaning part.",
+      "白": "白 is not in 排.",
+      "牛": "牛 is not in 排."
+    }
+  },
+  {
+    "key": "g1cu58he",
+    "type": "grammar",
+    "lesson": 7,
+    "q": "说、讨、记、试都有意符___，和说话有关。",
+    "options": [
+      "讠",
+      "木",
+      "目",
+      "月"
+    ],
+    "answer": "讠",
+    "context": {
+      "point": "意符: 常用意符",
+      "rule": "A meaning part (意符) hints at the meaning",
+      "en": "说, 讨, 记 and 试 all have 讠, which is about speaking."
+    },
+    "why": "说, 讨, 记 and 试 all have 讠, the speech radical.",
+    "not": {
+      "木": "木 is the tree radical.",
+      "目": "目 is the eye radical.",
+      "月": "月 is the moon or flesh radical."
+    }
+  },
+  {
+    "key": "gax9l1j",
+    "type": "grammar",
+    "lesson": 7,
+    "q": "树、桃、梯、校都有意符___，和树木有关。",
+    "options": [
+      "木",
+      "目",
+      "雨",
+      "言"
+    ],
+    "answer": "木",
+    "context": {
+      "point": "意符: 常用意符",
+      "rule": "A meaning part (意符) hints at the meaning",
+      "en": "树, 桃, 梯 and 校 all have 木, which is about trees."
+    },
+    "why": "树, 桃, 梯 and 校 all have 木, which is about trees and wood.",
+    "not": {
+      "目": "目 is the eye radical.",
+      "雨": "雨 is the rain radical.",
+      "言": "言 is the speech character."
+    }
+  },
+  {
+    "key": "g186hjmg",
+    "type": "grammar",
+    "lesson": 7,
+    "q": "眼、睛、睡、看都有意符___，和眼睛有关。",
+    "options": [
+      "目",
+      "月",
+      "木",
+      "雨"
+    ],
+    "answer": "目",
+    "context": {
+      "point": "意符: 常用意符",
+      "rule": "A meaning part (意符) hints at the meaning",
+      "en": "眼, 睛, 睡 and 看 all have 目, which is about the eyes."
+    },
+    "why": "眼, 睛, 睡 and 看 all have 目, which is the eye.",
+    "not": {
+      "月": "月 is the moon.",
+      "木": "木 is a tree.",
+      "雨": "雨 is rain."
+    }
+  },
+  {
+    "key": "gw43upi",
+    "type": "grammar",
+    "lesson": 7,
+    "q": "雪、雾、零、霉都有意符___，和天气有关。",
+    "options": [
+      "雨",
+      "目",
+      "木",
+      "讠"
+    ],
+    "answer": "雨",
+    "context": {
+      "point": "意符: 常用意符",
+      "rule": "A meaning part (意符) hints at the meaning",
+      "en": "雪, 雾, 零 and 霉 all have 雨, which is about weather."
+    },
+    "why": "雪, 雾, 零 and 霉 all have 雨 on top; they relate to weather.",
+    "not": {
+      "目": "目 is the eye.",
+      "木": "木 is a tree.",
+      "讠": "讠 is the speech radical."
+    }
+  },
+  {
+    "key": "g12rc53k",
+    "type": "grammar",
+    "lesson": 7,
+    "q": "“期”的右边是___，和月亮、时间有关。",
+    "options": [
+      "月",
+      "目",
+      "木",
+      "讠"
+    ],
+    "answer": "月",
+    "context": {
+      "point": "意符: 常用意符",
+      "rule": "A meaning part (意符) hints at the meaning",
+      "en": "The right side of 期 is 月, linked to the moon and time."
+    },
+    "why": "期 has 其 on the left and 月 on the right; 月 links to time.",
+    "not": {
+      "目": "目 is the eye.",
+      "木": "木 is a tree.",
+      "讠": "讠 is speech."
+    }
+  },
+  {
+    "key": "gnucarr",
+    "type": "grammar",
+    "lesson": 7,
+    "q": "“忘”的意符是心，声符是___，也有“逃走”的意思。",
+    "options": [
+      "亡",
+      "女",
+      "取",
+      "青"
+    ],
+    "answer": "亡",
+    "context": {
+      "point": "声符也表意",
+      "rule": "Sometimes the sound part also gives the meaning",
+      "en": "In 忘 the meaning part is 心 and the sound part is 亡, which also means \"to escape\"."
+    },
+    "why": "忘 is 亡 above 心; 亡 means to flee and gives the sound wáng.",
+    "not": {
+      "女": "女 is not in 忘.",
+      "取": "取 is not in 忘.",
+      "青": "青 is not in 忘."
+    }
+  },
+  {
+    "key": "g1il0fdk",
+    "type": "grammar",
+    "lesson": 7,
+    "q": "“娶”的意符是女，声符是___，也有“取得”的意思。",
+    "options": [
+      "取",
+      "亡",
+      "心",
+      "包"
+    ],
+    "answer": "取",
+    "context": {
+      "point": "声符也表意",
+      "rule": "Sometimes the sound part also gives the meaning",
+      "en": "In 娶 the meaning part is 女 and the sound part is 取, which also means \"to get\"."
+    },
+    "why": "娶 is 取 above 女; 取 means to take, and gives the sound qǔ.",
+    "not": {
+      "亡": "亡 is the sound part of 忘.",
+      "心": "心 is the meaning part of 忘.",
+      "包": "包 is the sound part of 饱."
+    }
+  },
+  {
+    "key": "g1upw30l",
+    "type": "grammar",
+    "lesson": 7,
+    "q": "形声字的声符不一定和整个字读音___一样。",
+    "options": [
+      "完全",
+      "一定",
+      "总是",
+      "都"
+    ],
+    "answer": "完全",
+    "context": {
+      "point": "声符也表意",
+      "rule": "Sometimes the sound part also gives the meaning",
+      "en": "The sound part of a pictophonetic character is not always exactly the same in reading as the whole character."
+    },
+    "why": "完全一样 means exactly the same. The sound part often only sounds close, like 每 měi in 海 hǎi.",
+    "not": {
+      "一定": "一定 clashes with 不一定 earlier in the sentence.",
+      "总是": "总是 means always; the English says exactly, which is 完全.",
+      "都": "都 needs several things; here one part is compared with one character."
+    }
+  },
+  {
+    "key": "g1t5x3fj",
+    "type": "grammar",
+    "lesson": 8,
+    "q": "你累了，在家___息一下吧。",
+    "options": [
+      "休",
+      "体",
+      "住",
+      "往"
+    ],
+    "answer": "休",
+    "context": {
+      "point": "形近字",
+      "rule": "Look-alike characters: similar shapes, different meanings",
+      "en": "You're tired; rest at home for a while."
+    },
+    "why": "休息 means to rest; 休 is a person leaning on a tree.",
+    "not": {
+      "体": "体 is in 身体.",
+      "住": "住 means to live.",
+      "往": "往 means toward."
+    }
+  },
+  {
+    "key": "g1netjcw",
+    "type": "grammar",
+    "lesson": 8,
+    "q": "我的___体很好。",
+    "options": [
+      "身",
+      "住",
+      "往",
+      "休"
+    ],
+    "answer": "身",
+    "context": {
+      "point": "形近字",
+      "rule": "Look-alike characters: similar shapes, different meanings",
+      "en": "I am in good health."
+    },
+    "why": "身体 means body or health; 身 goes before 体.",
+    "not": {
+      "住": "住 means to live.",
+      "往": "往 means toward.",
+      "休": "休 is for 休息, not 体."
+    }
+  },
+  {
+    "key": "g1lyhfsb",
+    "type": "grammar",
+    "lesson": 8,
+    "q": "我___在学校旁边。",
+    "options": [
+      "住",
+      "往",
+      "体",
+      "休"
+    ],
+    "answer": "住",
+    "context": {
+      "point": "形近字",
+      "rule": "Look-alike characters: similar shapes, different meanings",
+      "en": "I live next to the school."
+    },
+    "why": "住在 means to live at; 住 has 亻 and 主.",
+    "not": {
+      "往": "往 means toward.",
+      "体": "体 is in 身体.",
+      "休": "休 means to rest."
+    }
+  },
+  {
+    "key": "g1psb71",
+    "type": "grammar",
+    "lesson": 8,
+    "q": "请___前走，商店就在那儿。",
+    "options": [
+      "往",
+      "住",
+      "体",
+      "休"
+    ],
+    "answer": "往",
+    "context": {
+      "point": "形近字",
+      "rule": "Look-alike characters: similar shapes, different meanings",
+      "en": "Please go straight ahead; the shop is there."
+    },
+    "why": "往前走 means to go forward; 往 is a direction word.",
+    "not": {
+      "住": "住 means to live.",
+      "体": "体 is in 身体.",
+      "休": "休 is in 休息."
+    }
+  },
+  {
+    "key": "gney9ir",
+    "type": "grammar",
+    "lesson": 8,
+    "q": "这是我的同___，他叫小王。",
+    "options": [
+      "学",
+      "字",
+      "高",
+      "商"
+    ],
+    "answer": "学",
+    "context": {
+      "point": "形近字",
+      "rule": "Look-alike characters: similar shapes, different meanings",
+      "en": "This is my classmate, called Xiao Wang."
+    },
+    "why": "同学 means classmate.",
+    "not": {
+      "字": "同字 is not a word.",
+      "高": "同高 is not a word.",
+      "商": "同商 is not a word."
+    }
+  },
+  {
+    "key": "ghc1ehi",
+    "type": "grammar",
+    "lesson": 8,
+    "q": "我爸爸在公司___作。",
+    "options": [
+      "工",
+      "公",
+      "医",
+      "衣"
+    ],
+    "answer": "工",
+    "context": {
+      "point": "同音字",
+      "rule": "Homophones: different characters, the same sound",
+      "en": "My dad works at a company."
+    },
+    "why": "工作 means to work. 工 and 公 both sound gōng, but only 工 makes 工作.",
+    "not": {
+      "公": "公 makes 公司 (company), not 公作.",
+      "医": "医 makes 医生.",
+      "衣": "衣 makes 衣服."
+    }
+  },
+  {
+    "key": "g1iyhc5q",
+    "type": "grammar",
+    "lesson": 8,
+    "q": "她是___生，在医院工作。",
+    "options": [
+      "医",
+      "衣",
+      "工",
+      "公"
+    ],
+    "answer": "医",
+    "context": {
+      "point": "同音字",
+      "rule": "Homophones: different characters, the same sound",
+      "en": "She is a doctor and works at a hospital."
+    },
+    "why": "医生 means doctor, and she works in a hospital 医院.",
+    "not": {
+      "衣": "衣 sounds like 医 but means clothes.",
+      "工": "工 makes 工作, not 工生.",
+      "公": "公 makes 公司, not 公生."
+    }
+  },
+  {
+    "key": "g15uduoy",
+    "type": "grammar",
+    "lesson": 8,
+    "q": "这件___服是蓝色的。",
+    "options": [
+      "衣",
+      "医",
+      "飞",
+      "公"
+    ],
+    "answer": "衣",
+    "context": {
+      "point": "同音字",
+      "rule": "Homophones: different characters, the same sound",
+      "en": "This piece of clothing is blue."
+    },
+    "why": "衣服 means clothes, and the sentence mentions its colour.",
+    "not": {
+      "医": "医 means doctor.",
+      "飞": "飞 means to fly.",
+      "公": "公 makes 公司 (company)."
+    }
+  },
+  {
+    "key": "g174g9m8",
+    "type": "grammar",
+    "lesson": 8,
+    "q": "他打___球打得很好。",
+    "options": [
+      "篮",
+      "蓝",
+      "常",
+      "堂"
+    ],
+    "answer": "篮",
+    "context": {
+      "point": "同音字",
+      "rule": "Homophones: different characters, the same sound",
+      "en": "He plays basketball very well."
+    },
+    "why": "篮球 means basketball; 篮 has the bamboo top for baskets.",
+    "not": {
+      "蓝": "蓝 means blue.",
+      "常": "常 means often.",
+      "堂": "堂 is in 教堂 and 食堂."
+    }
+  },
+  {
+    "key": "g1bbihjp",
+    "type": "grammar",
+    "lesson": 8,
+    "q": "天空是___色的。",
+    "options": [
+      "蓝",
+      "篮",
+      "常",
+      "堂"
+    ],
+    "answer": "蓝",
+    "context": {
+      "point": "同音字",
+      "rule": "Homophones: different characters, the same sound",
+      "en": "The sky is blue."
+    },
+    "why": "蓝色 means the colour blue, and 蓝 has the grass top.",
+    "not": {
+      "篮": "篮 is in 篮球.",
+      "常": "常 means often.",
+      "堂": "堂 is in 食堂."
+    }
+  },
+  {
+    "key": "god3prx",
+    "type": "grammar",
+    "lesson": 8,
+    "q": "这条路很___，走了半个小时。",
+    "options": [
+      "长",
+      "常",
+      "堂",
+      "场"
+    ],
+    "answer": "长",
+    "context": {
+      "point": "多音字",
+      "rule": "Polyphonic characters: one character, more than one reading",
+      "en": "This road is long; the walk took half an hour."
+    },
+    "why": "很长 describes a long road; here 长 is cháng and means long.",
+    "not": {
+      "常": "常 means often; it cannot describe a road.",
+      "堂": "堂 is not an adjective.",
+      "场": "场 is a measure word for games and shows, not an adjective."
+    }
+  },
+  {
+    "key": "gayz182",
+    "type": "grammar",
+    "lesson": 8,
+    "q": "小猫___大了。",
+    "options": [
+      "长",
+      "常",
+      "堂",
+      "场"
+    ],
+    "answer": "长",
+    "context": {
+      "point": "多音字",
+      "rule": "Polyphonic characters: one character, more than one reading",
+      "en": "The kitten has grown up. (read zhǎng)"
+    },
+    "why": "长大 means grow up; 长 is read zhǎng here.",
+    "not": {
+      "常": "常大 is not a word.",
+      "堂": "堂大 is not a word.",
+      "场": "场大 is not a word."
+    }
+  },
+  {
+    "key": "g1r3nqdf",
+    "type": "grammar",
+    "lesson": 8,
+    "q": "我爱听音___。",
+    "options": [
+      "乐",
+      "药",
+      "作",
+      "休"
+    ],
+    "answer": "乐",
+    "context": {
+      "point": "多音字",
+      "rule": "Polyphonic characters: one character, more than one reading",
+      "en": "I love listening to music. (read yuè)"
+    },
+    "why": "音乐 means music; here 乐 is read yuè.",
+    "not": {
+      "药": "药 is medicine (yào).",
+      "作": "作 is in 作业.",
+      "休": "休 is in 休息."
+    }
+  },
+  {
+    "key": "gssdiwr",
+    "type": "grammar",
+    "lesson": 8,
+    "q": "我的爱___是游泳。",
+    "options": [
+      "好",
+      "号",
+      "如",
+      "她"
+    ],
+    "answer": "好",
+    "context": {
+      "point": "多音字",
+      "rule": "Polyphonic characters: one character, more than one reading",
+      "en": "My hobby is swimming. (read hào)"
+    },
+    "why": "爱好 means hobby; here 好 is read hào.",
+    "not": {
+      "号": "号 is read hào but 爱号 is not a word.",
+      "如": "如 does not fit after 爱.",
+      "她": "她 does not fit after 爱."
+    }
+  },
+  {
+    "key": "g1u4quze",
+    "type": "grammar",
+    "lesson": 8,
+    "q": "这个杯子很___宜。",
+    "options": [
+      "便",
+      "使",
+      "更",
+      "但"
+    ],
+    "answer": "便",
+    "context": {
+      "point": "多音字",
+      "rule": "Polyphonic characters: one character, more than one reading",
+      "en": "This cup is cheap. (read pián)"
+    },
+    "why": "便宜 means cheap, read piányi; 便 is read pián here.",
+    "not": {
+      "使": "使 does not form 使宜.",
+      "更": "更 does not form 更宜.",
+      "但": "但 does not form 但宜."
+    }
+  },
+  {
+    "key": "g1ti49rw",
+    "type": "grammar",
+    "lesson": 9,
+    "q": "“苹”不能单用，要和“果”一起组成词“___”。",
+    "options": [
+      "苹果",
+      "果苹",
+      "苹子",
+      "苹菜"
+    ],
+    "answer": "苹果",
+    "context": {
+      "point": "汉字和词",
+      "rule": "Most characters can stand alone as a word (火, 牛, 好), but some must join another character to make a word (苹 + 果).",
+      "en": "苹 cannot be used alone; together with 果 it makes the word 苹果 (apple)."
+    },
+    "why": "苹 is not used alone; it mainly appears in 苹果, apple.",
+    "not": {
+      "果苹": "果苹 is the wrong order.",
+      "苹子": "苹子 is not a word.",
+      "苹菜": "苹菜 is not a word."
+    }
+  },
+  {
+    "key": "g1iok9fc",
+    "type": "grammar",
+    "lesson": 9,
+    "q": "“好”是一个字，也可以单独当一个___用。",
+    "options": [
+      "词",
+      "笔画",
+      "声调",
+      "部首"
+    ],
+    "answer": "词",
+    "context": {
+      "point": "汉字和词",
+      "rule": "Most characters can stand alone as a word (火, 牛, 好), but some must join another character to make a word (苹 + 果).",
+      "en": "好 is one character and can also be used alone as a word."
+    },
+    "why": "好 can stand alone as a word, for example 很好.",
+    "not": {
+      "笔画": "笔画 are strokes, not a word type.",
+      "声调": "声调 are tones.",
+      "部首": "部首 are radicals."
+    }
+  },
+  {
+    "key": "g7d6y78",
+    "type": "grammar",
+    "lesson": 9,
+    "q": "“花儿”是两个汉字，但是只有一个___。",
+    "options": [
+      "音节",
+      "笔画",
+      "偏旁",
+      "颜色"
+    ],
+    "answer": "音节",
+    "context": {
+      "point": "汉字和词",
+      "rule": "Most characters can stand alone as a word (火, 牛, 好), but some must join another character to make a word (苹 + 果).",
+      "en": "花儿 is two characters but only one syllable (huār)."
+    },
+    "why": "花儿 has two characters but one syllable, huār.",
+    "not": {
+      "笔画": "笔画 are strokes; 花儿 has many.",
+      "偏旁": "偏旁 are components.",
+      "颜色": "颜色 are colours."
+    }
+  },
+  {
+    "key": "gnf3ufq",
+    "type": "grammar",
+    "lesson": 9,
+    "q": "以前用“目”，现在说“___”。",
+    "options": [
+      "眼睛",
+      "耳朵",
+      "嘴巴",
+      "鼻子"
+    ],
+    "answer": "眼睛",
+    "context": {
+      "point": "双音化",
+      "rule": "Many one-syllable words became two-syllable words. “子” in 杯子, 桌子 is a suffix with no real meaning.",
+      "en": "Long ago people used 目 for the eye; now we say 眼睛."
+    },
+    "why": "Long ago 目 meant eye; today people say 眼睛.",
+    "not": {
+      "耳朵": "耳朵 means ear.",
+      "嘴巴": "嘴巴 means mouth.",
+      "鼻子": "鼻子 means nose."
+    }
+  },
+  {
+    "key": "ggkgxay",
+    "type": "grammar",
+    "lesson": 9,
+    "q": "“杯子”里的“子”没有实际意思，是___。",
+    "options": [
+      "词缀",
+      "动词",
+      "名字",
+      "数字"
+    ],
+    "answer": "词缀",
+    "context": {
+      "point": "双音化",
+      "rule": "Many one-syllable words became two-syllable words. “子” in 杯子, 桌子 is a suffix with no real meaning.",
+      "en": "The 子 in 杯子 has no real meaning; it is a suffix."
+    },
+    "why": "子 in 杯子 has no meaning of its own; it is a noun suffix 词缀.",
+    "not": {
+      "动词": "子 is not a verb here.",
+      "名字": "子 is not a name here.",
+      "数字": "子 is not a number."
+    }
+  },
+  {
+    "key": "gjn6rqm",
+    "type": "grammar",
+    "lesson": 9,
+    "q": "我家有一张大桌___。",
+    "options": [
+      "子",
+      "员",
+      "语",
+      "现"
+    ],
+    "answer": "子",
+    "context": {
+      "point": "双音化",
+      "rule": "Many one-syllable words became two-syllable words. “子” in 杯子, 桌子 is a suffix with no real meaning.",
+      "en": "There is a big table in my home."
+    },
+    "why": "桌子 means table; 子 is the suffix after 桌.",
+    "not": {
+      "员": "桌员 is not a word.",
+      "语": "桌语 is not a word.",
+      "现": "桌现 is not a word."
+    }
+  },
+  {
+    "key": "gvr9fnf",
+    "type": "grammar",
+    "lesson": 9,
+    "q": "电话、电脑、电子邮件都有“___”。",
+    "options": [
+      "电",
+      "菜",
+      "手",
+      "球"
+    ],
+    "answer": "电",
+    "context": {
+      "point": "构词",
+      "rule": "One character can build many words: the shared character gives the shared meaning.",
+      "en": "电话, 电脑 and 电子邮件 all contain 电 (electricity)."
+    },
+    "why": "电话, 电脑 and 电子邮件 all contain 电.",
+    "not": {
+      "菜": "菜 is not in these words.",
+      "手": "手 is not in 电话.",
+      "球": "球 is not in 电话."
+    }
+  },
+  {
+    "key": "gr9bgiy",
+    "type": "grammar",
+    "lesson": 9,
+    "q": "生菜、菜单、白菜都和“___”有关。",
+    "options": [
+      "菜",
+      "色",
+      "面",
+      "语"
+    ],
+    "answer": "菜",
+    "context": {
+      "point": "构词",
+      "rule": "One character can build many words: the shared character gives the shared meaning.",
+      "en": "生菜, 菜单 and 白菜 are all related to 菜 (vegetables, dishes)."
+    },
+    "why": "生菜, 菜单 and 白菜 all have 菜.",
+    "not": {
+      "色": "色 is not in these words.",
+      "面": "面 is not in these words.",
+      "语": "语 is not in these words."
+    }
+  },
+  {
+    "key": "g887opl",
+    "type": "grammar",
+    "lesson": 9,
+    "q": "足球、网球、羽毛球都是“___”。",
+    "options": [
+      "球",
+      "鞋",
+      "肉",
+      "员"
+    ],
+    "answer": "球",
+    "context": {
+      "point": "构词",
+      "rule": "One character can build many words: the shared character gives the shared meaning.",
+      "en": "足球, 网球 and 羽毛球 are all kinds of ball (球)."
+    },
+    "why": "足球, 网球 and 羽毛球 all have 球.",
+    "not": {
+      "鞋": "鞋 is not in these words.",
+      "肉": "肉 is not in these words.",
+      "员": "员 is not in these words."
+    }
+  },
+  {
+    "key": "g1kz02li",
+    "type": "grammar",
+    "lesson": 9,
+    "q": "服务员、售货员、演员都有“___”。",
+    "options": [
+      "员",
+      "现",
+      "语",
+      "肉"
+    ],
+    "answer": "员",
+    "context": {
+      "point": "构词",
+      "rule": "One character can build many words: the shared character gives the shared meaning.",
+      "en": "服务员, 售货员 and 演员 all contain 员, a person doing a job."
+    },
+    "why": "服务员, 售货员 and 演员 all end with 员, a worker or member.",
+    "not": {
+      "现": "现 is not in these words.",
+      "语": "语 is not in these words.",
+      "肉": "肉 is not in these words."
+    }
+  },
+  {
+    "key": "g15z5x2h",
+    "type": "grammar",
+    "lesson": 10,
+    "q": "“电”一共有___画。",
+    "options": [
+      "5",
+      "4",
+      "6",
+      "7"
+    ],
+    "answer": "5",
+    "context": {
+      "point": "笔画数",
+      "rule": "Counting strokes: write each stroke in order, then add them up.",
+      "en": "电 has 5 strokes in total."
+    },
+    "why": "电 has 5 strokes: 竖, 横折, 横, 横, 竖弯钩.",
+    "not": {
+      "4": "4 is too few.",
+      "6": "6 is too many.",
+      "7": "7 is too many."
+    }
+  },
+  {
+    "key": "g91197x",
+    "type": "grammar",
+    "lesson": 10,
+    "q": "“肉”一共有___画。",
+    "options": [
+      "6",
+      "5",
+      "7",
+      "8"
+    ],
+    "answer": "6",
+    "context": {
+      "point": "笔画数",
+      "rule": "Counting strokes: write each stroke in order, then add them up.",
+      "en": "肉 has 6 strokes in total."
+    },
+    "why": "肉 has 6 strokes.",
+    "not": {
+      "5": "5 is too few.",
+      "7": "7 is too many.",
+      "8": "8 is too many."
+    }
+  },
+  {
+    "key": "gdym7ij",
+    "type": "grammar",
+    "lesson": 10,
+    "q": "“现”一共有___画。",
+    "options": [
+      "8",
+      "7",
+      "9",
+      "10"
+    ],
+    "answer": "8",
+    "context": {
+      "point": "笔画数",
+      "rule": "Counting strokes: write each stroke in order, then add them up.",
+      "en": "现 has 8 strokes in total."
+    },
+    "why": "现 is 王 (4 strokes) plus 见 (4 strokes), so 8.",
+    "not": {
+      "7": "7 is too few.",
+      "9": "9 is too many.",
+      "10": "10 is too many."
+    }
+  },
+  {
+    "key": "glxwh9",
+    "type": "grammar",
+    "lesson": 10,
+    "q": "亻 + 门 = ___",
+    "options": [
+      "们",
+      "间",
+      "问",
+      "同"
+    ],
+    "answer": "们",
+    "context": {
+      "point": "部件组合",
+      "rule": "Join one component from each side to make a new character.",
+      "en": "亻 + 门 makes 们 (plural marker)."
+    },
+    "why": "亻 (person) plus 门 makes 们, the plural marker.",
+    "not": {
+      "间": "间 is 门 plus 日.",
+      "问": "问 is 门 plus 口.",
+      "同": "同 is not 亻 plus 门."
+    }
+  },
+  {
+    "key": "g1l48tcb",
+    "type": "grammar",
+    "lesson": 10,
+    "q": "女 + 也 = ___",
+    "options": [
+      "她",
+      "他",
+      "地",
+      "池"
+    ],
+    "answer": "她",
+    "context": {
+      "point": "部件组合",
+      "rule": "Join one component from each side to make a new character.",
+      "en": "女 + 也 makes 她 (she)."
+    },
+    "why": "女 (woman) plus 也 makes 她, she.",
+    "not": {
+      "他": "他 is 亻 plus 也.",
+      "地": "地 is 土 plus 也.",
+      "池": "池 is 氵 plus 也."
+    }
+  },
+  {
+    "key": "g185goor",
+    "type": "grammar",
+    "lesson": 10,
+    "q": "氵 + 每 = ___",
+    "options": [
+      "海",
+      "梅",
+      "悔",
+      "每"
+    ],
+    "answer": "海",
+    "context": {
+      "point": "部件组合",
+      "rule": "Join one component from each side to make a new character.",
+      "en": "氵 + 每 makes 海 (sea)."
+    },
+    "why": "氵 (water) plus 每 makes 海, sea.",
+    "not": {
+      "梅": "梅 is 木 plus 每.",
+      "悔": "悔 is 忄 plus 每.",
+      "每": "每 is only one part; the answer adds 氵 to it."
+    }
+  },
+  {
+    "key": "g13o5h88",
+    "type": "grammar",
+    "lesson": 10,
+    "q": "日 + 乍 = ___",
+    "options": [
+      "昨",
+      "作",
+      "怎",
+      "炸"
+    ],
+    "answer": "昨",
+    "context": {
+      "point": "部件组合",
+      "rule": "Join one component from each side to make a new character.",
+      "en": "日 + 乍 makes 昨 (as in yesterday)."
+    },
+    "why": "日 (sun) plus 乍 makes 昨, as in 昨天.",
+    "not": {
+      "作": "作 is 亻 plus 乍.",
+      "怎": "怎 is 乍 plus 心.",
+      "炸": "炸 is 火 plus 乍."
+    }
+  },
+  {
+    "key": "goukg75",
+    "type": "grammar",
+    "lesson": 10,
+    "q": "“吗”左边是口，右边的“马”表示___。",
+    "options": [
+      "读音",
+      "意思",
+      "笔画",
+      "颜色"
+    ],
+    "answer": "读音",
+    "context": {
+      "point": "形旁和声旁",
+      "rule": "In many characters one part shows the meaning and the other part shows the sound.",
+      "en": "In 吗 the 马 on the right shows the sound."
+    },
+    "why": "In 吗 the 口 is the meaning part and 马 gives the sound, mǎ.",
+    "not": {
+      "意思": "The meaning part is 口, not 马.",
+      "笔画": "A part does not show stroke count.",
+      "颜色": "Nothing in 吗 shows a colour."
+    }
+  },
+  {
+    "key": "g1cpzwzv",
+    "type": "grammar",
+    "lesson": 10,
+    "q": "说、语、话的左边都是“___”，和说话有关。",
+    "options": [
+      "讠",
+      "氵",
+      "亻",
+      "木"
+    ],
+    "answer": "讠",
+    "context": {
+      "point": "形旁和声旁",
+      "rule": "In many characters one part shows the meaning and the other part shows the sound.",
+      "en": "说, 语 and 话 all have 讠 on the left, related to speech."
+    },
+    "why": "说, 语 and 话 all have 讠 on the left, the speech radical.",
+    "not": {
+      "氵": "氵 is the water radical.",
+      "亻": "亻 is the person radical.",
+      "木": "木 is the tree radical."
+    }
+  },
+  {
+    "key": "gklmot9",
+    "type": "grammar",
+    "lesson": 10,
+    "q": "海、泳、池的左边都是“___”，和水有关。",
+    "options": [
+      "氵",
+      "讠",
+      "亻",
+      "日"
+    ],
+    "answer": "氵",
+    "context": {
+      "point": "形旁和声旁",
+      "rule": "In many characters one part shows the meaning and the other part shows the sound.",
+      "en": "海, 泳 and 池 all have 氵 on the left, related to water."
+    },
+    "why": "海, 泳 and 池 all have 氵, the water radical.",
+    "not": {
+      "讠": "讠 is the speech radical.",
+      "亻": "亻 is the person radical.",
+      "日": "日 is the sun radical."
+    }
+  },
+  {
+    "key": "ggs4udh",
+    "type": "grammar",
+    "lesson": 10,
+    "q": "老师___我们，明天不上课。",
+    "options": [
+      "告诉",
+      "看见",
+      "明白",
+      "比赛"
+    ],
+    "answer": "告诉",
+    "context": {
+      "point": "选词",
+      "rule": "Pick the word that fits the sentence.",
+      "en": "The teacher told us there is no class tomorrow."
+    },
+    "why": "告诉 means to tell, and the teacher tells us something.",
+    "not": {
+      "看见": "看见 means to see.",
+      "明白": "明白 means to understand.",
+      "比赛": "比赛 means a match."
+    }
+  },
+  {
+    "key": "gex3s9s",
+    "type": "grammar",
+    "lesson": 10,
+    "q": "今天晚上有一场足球___。",
+    "options": [
+      "比赛",
+      "爱好",
+      "作业",
+      "电视"
+    ],
+    "answer": "比赛",
+    "context": {
+      "point": "选词",
+      "rule": "Pick the word that fits the sentence.",
+      "en": "There is a football match tonight."
+    },
+    "why": "足球比赛 means a football match; 一场 goes with 比赛.",
+    "not": {
+      "爱好": "爱好 means hobby.",
+      "作业": "作业 means homework.",
+      "电视": "电视 means TV."
+    }
+  },
+  {
+    "key": "g13x3yot",
+    "type": "grammar",
+    "lesson": 10,
+    "q": "这件衣服很___，只要二十块。",
+    "options": [
+      "便宜",
+      "开心",
+      "有名",
+      "昨天"
+    ],
+    "answer": "便宜",
+    "context": {
+      "point": "选词",
+      "rule": "Pick the word that fits the sentence.",
+      "en": "This piece of clothing is very cheap, only twenty yuan."
+    },
+    "why": "便宜 means cheap, which fits the price 二十块.",
+    "not": {
+      "开心": "开心 means happy.",
+      "有名": "有名 means famous.",
+      "昨天": "昨天 means yesterday."
+    }
+  }
+]
