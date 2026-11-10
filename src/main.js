@@ -42,7 +42,7 @@ const OLD_TABS = { dict: "write", review: "write", cards: "words", tones: "liste
    #/typing                     typing practice
    #/radicals[/<mode>]          Radicals: the list, or practice (cards, find, guess, due)
    #/radical/<r>[/<mode>]       one radical, or practice of just that radical
-   #/notebook[/<word>]          Notebook: the word list, or one word
+   #/notebook[/<word>]          Notebook: the word list, or one word (#/notebook/-/<kind> is a practice)
    #/books                      all books
    #/book/<book>[/review]       one book: its lessons, or its review
    #/lesson/<book>/<n>/<tab>    a lesson (tabs: write, listen, speak, read, words, exercises)
@@ -123,7 +123,7 @@ async function route() {
     showPage("notebookView"); document.title = "Notebook · 写字本";
     let word = null;
     try { word = a ? decodeURIComponent(a) : null; } catch {}
-    return openNotebook(word);
+    return openNotebook(word, b);
   }
   if (page === "radicals" || page === "radical") {
     showPage("radicalsView"); document.title = "Radicals · 写字本";

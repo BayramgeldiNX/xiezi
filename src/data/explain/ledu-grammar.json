@@ -2035,7 +2035,7 @@
     "why": "妈, 吗, 码 and 骂 all contain 马 (mǎ) for the sound.",
     "not": {
       "女": "女 is the meaning part of 妈 only.",
-      "口": "口 is the meaning part of 吗 only.",
+      "口": "口 is the meaning part of 吗, and 骂 has two 口 on top. But 口 is not in 妈 or 码, so it is not the shared part. All four share 马.",
       "石": "石 is the meaning part of 码 only."
     }
   },

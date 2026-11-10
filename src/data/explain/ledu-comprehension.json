@@ -622,7 +622,7 @@
     },
     "why": "B says 我有雨伞, so B has an umbrella.",
     "not": {
-      "A bicycle": "B rides a bike (骑自行车), but B says 我有雨伞 here.",
+      "A bicycle": "The question asks what B has now. B says 我有雨伞. 骑自行车 is how B usually goes to school, and B never says 我有自行车.",
       "A car": "No car is mentioned.",
       "A train ticket": "No ticket is mentioned."
     }
@@ -652,7 +652,7 @@
     "not": {
       "By bike": "B usually rides a bike (平时), but not on rainy days.",
       "By car": "No car is mentioned.",
-      "On foot": "No walking is mentioned for B going to school."
+      "On foot": "B does say 我们一起走吧 (let's walk together) right now, but for going to school on rainy days B says 下雨天坐公共汽车, so by bus."
     }
   },
   {
@@ -1312,7 +1312,7 @@
     "context": {
       "text": "这个电影很有名，也很好看。"
     },
-    "why": "The text says the film is 很好看, good to watch. A film like that is 有意思 (interesting), so the claim is true.",
+    "why": "The text says 这个电影很有名，也很好看. A film that is 好看 (good to watch) is one people find 有意思 (interesting), so the claim fits the text.",
     "not": {}
   },
   {

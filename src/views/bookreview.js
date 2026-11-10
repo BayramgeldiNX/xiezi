@@ -64,6 +64,8 @@ export function dueCount(b) {
 
 const when = (t) => {
   const d = Math.ceil((t - Date.now()) / 864e5);
+  // Less than a day away can still be this evening.
+  if (d <= 1 && new Date(t).toDateString() === new Date().toDateString()) return "later today";
   return d <= 1 ? "tomorrow" : d < 7 ? `in ${d} days` : d < 30 ? `in ${Math.round(d / 7)} week${d >= 14 ? "s" : ""}` : `in ${Math.round(d / 30)} month${d >= 60 ? "s" : ""}`;
 };
 

@@ -11,6 +11,7 @@ import * as progress from "../progress/store.js";
 import { charLinks } from "./charsheet.js";
 import { animate } from "../lib/motion.js";
 import { keyOf } from "../lib/explain-key.js";
+import { toneSyllables } from "../lib/typing-check.js";
 
 const segment = makeSegmenter(DICT);
 
@@ -234,13 +235,24 @@ export function orderGame(ui, sentences, opts = {}) {
     </div>`;
     ui.wireBack(ui.body());
     ui.wireNext(ui.body());
-    $("#oAgain").addEventListener("click", () => orderGame(ui, sentences));
-    $("#oRetry")?.addEventListener("click", () => orderGame(ui, missedItems, { all: true }));
+    $("#oAgain").addEventListener("click", () => orderGame(ui, opts.full || sentences)); // the whole round, even after "Retry missed"
+    $("#oRetry")?.addEventListener("click", () => orderGame(ui, missedItems, { all: true, full: opts.full || sentences }));
   }
   show();
 }
 
 /* ---------- How do you read it? (pick the pinyin) ---------- */
+// What a wrong pinyin choice is: another word's reading, or the same sounds with other tones.
+const TONE = ["", "1st (flat)", "2nd (rising)", "3rd (dip)", "4th (falling)", "neutral"];
+function pinyinNote(x, w, words) {
+  const flat = (s) => s.replace(/\s/g, "");
+  const other = words.find((o) => o.w !== w.w && flat(o.py) === x);
+  if (other) return `<span class="py">${tonePy(x)}</span>: that is how you read <span class="hz">${esc(other.w)}</span> ${esc(other.en)}.`;
+  const a = toneSyllables(x), b = toneSyllables(w.py);
+  if (a.length !== b.length || a.some((s, i) => s.p !== b[i].p)) return "";
+  const diff = b.map((s, i) => (s.tone !== a[i].tone ? `<span class="py">${tonePy(s.s)}</span> is ${TONE[s.tone]} tone, not ${TONE[a[i].tone]}` : "")).filter(Boolean);
+  return diff.length ? `<span class="py">${tonePy(x)}</span>: same sounds, wrong tone. ${diff.join("; ")}.` : "";
+}
 // Wrong choices: the same syllables with a different tone, plus another word's pinyin.
 export function pinyinQuiz(ui, words) {
   ui.choiceQuiz({
@@ -252,7 +264,7 @@ export function pinyinQuiz(ui, words) {
       const others = shuffle(words.filter((x) => x.w !== w.w && x.w.length === w.w.length)).map((x) => x.py.replace(/\s/g, ""));
       for (const o of others) if (wrong.length < 3 && o !== correct && !wrong.includes(o)) wrong.push(o);
       return [{ html: `<span class="py" style="font-size:1.25rem">${tonePy(correct)}</span>`, correct: true },
-        ...wrong.slice(0, 3).map((x) => ({ html: `<span class="py" style="font-size:1.25rem">${tonePy(x)}</span>`, correct: false }))];
+        ...wrong.slice(0, 3).map((x) => ({ html: `<span class="py" style="font-size:1.25rem">${tonePy(x)}</span>`, correct: false, note: pinyinNote(x, w, words) }))];
     },
     reveal: (w) => `<span class="hz">${w.w}</span> <span class="py">${tonePy(w.py)}</span> <span class="muted">${esc(w.en)}</span> ${sayBtns(w.w, w.py, true)}`,
   });

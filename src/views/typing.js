@@ -4,7 +4,7 @@ import { $, $$, esc, store } from "../lib/util.js";
 import { tonePy } from "../lib/pinyin.js";
 import { say, autoSay, stopSpeech } from "../lib/speech.js";
 import { icon } from "../lib/icons.js";
-import { checkHanzi, checkPinyin, toneSyllables, TONE_HELP } from "../lib/typing-check.js";
+import { checkHanzi, checkPinyin, cleanHanzi, toneSyllables, TONE_HELP } from "../lib/typing-check.js";
 import { BOOKS, LESSONS, READINGS, wordsOf } from "../data/index.js";
 import * as progress from "../progress/store.js";
 import { isDue, nextReview } from "../progress/model.js";
@@ -115,6 +115,9 @@ function run(items) {
     const it = items[pos];
     let tries = 0, hints = 0, done = false;
     const hz = o.mode === "hz";
+    // Other words with the same English (医生 and 大夫 are both "doctor"): typing one of them is not a mistake.
+    const sameEn = (x) => (x.en || "").trim().toLowerCase() === it.en.trim().toLowerCase();
+    const twins = hz && o.content === "words" ? wordsOf(LESSONS).filter((x) => x.w !== it.hz && sameEn(x)).map((x) => x.w) : [];
     body().innerHTML = `<div class="panel">
       <span class="lbl">${hz ? "汉 Type the Chinese" : "拼 Type the pinyin with tone numbers"}</span>
       <div class="progress">${pos + 1} of ${items.length} · ${right} right</div>
@@ -154,6 +157,11 @@ function run(items) {
 
     function check() {
       if (done || !input.value.trim()) return;
+      if (twins.includes(cleanHanzi(input.value))) {
+        fb.innerHTML = `<p class="status">${esc(cleanHanzi(input.value))} means that too. Here it is another word: <span class="py">${tonePy(it.py)}</span></p>`;
+        input.select();
+        return;
+      }
       tries++;
       if (hz) {
         const r = checkHanzi(it.hz, input.value);

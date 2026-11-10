@@ -760,7 +760,7 @@
       "rule": "Going somewhere to do something",
       "en": "Tomorrow I'm going to the shop to buy a cup."
     },
-    "why": "买 means 'buy'. The sentence says he goes to the shop to buy a cup.",
+    "why": "买 means 'buy'. The sentence says I go to the shop to buy a cup: 去商店买杯子.",
     "not": {
       "吃": "吃 means 'eat'; you do not eat a cup.",
       "喝": "喝 means 'drink'; you drink from a cup, not the cup itself.",
