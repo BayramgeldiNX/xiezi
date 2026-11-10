@@ -2,7 +2,7 @@
 // prompt: "audio" (听写: hear it), "pinyin" (see the pinyin) or "meaning" (see the English).
 import { $, $$, css, shuffle, esc } from "../lib/util.js";
 import { tonePy } from "../lib/pinyin.js";
-import { say, autoSay, canSay } from "../lib/speech.js";
+import { say, autoSay, sayLater, canSay } from "../lib/speech.js";
 import { setting } from "../lib/settings.js";
 import { icon } from "../lib/icons.js";
 import { gridSVG, makeWriter, trackWriter, clearWriters } from "../lib/draw.js";
@@ -135,7 +135,7 @@ export function dictWord() {
   if (audio) {
     // Without any sound for this word, dictation still works from meaning + pinyin (and that doesn't count as a hint).
     if (!canSay(word.w)) { showHint(2); hintLevel = 0; }
-    setTimeout(() => autoSay(word.w), 250);
+    sayLater(word.w);
   }
 }
 

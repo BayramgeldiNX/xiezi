@@ -6,7 +6,7 @@ import { $, $$, esc, shuffle, directionPicker, revealNext } from "../lib/util.js
 import { tonePy } from "../lib/pinyin.js";
 import { pyToggleHtml, wirePinyin } from "../lib/qpinyin.js";
 import { matchesWord } from "../lib/search.js";
-import { say, autoSay, sayBtns, stopSpeech } from "../lib/speech.js";
+import { say, autoSay, sayLater, sayBtns, stopSpeech } from "../lib/speech.js";
 import { icon } from "../lib/icons.js";
 import { clearWriters } from "../lib/draw.js";
 import { overlap } from "../lib/compare.js";
@@ -350,7 +350,7 @@ export function choiceQuiz(cfg) {
     $$(".choice", body()).forEach((b) => b.addEventListener("click", () => answer(b)));
     $("#qSkip").addEventListener("click", () => answer(null));
     $("#qNext").addEventListener("click", () => { pos++; ask(); });
-    if (q.say) setTimeout(() => autoSay(q.say), 250);
+    if (q.say) sayLater(q.say);
   }
   function end() {
     progress.addSession({ type: cfg.kind, lesson: P.ctx.lesson ?? 0, score: right, total: items.length, missed });
