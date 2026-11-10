@@ -23,6 +23,7 @@ import { showWhy } from "../lib/explain.js";
 import { keyOf } from "../lib/explain-key.js";
 import { workbookOf, workbookQuiz, fillQuiz, radicalQuiz } from "./workbook.js";
 import { hanziLesson, pronTips } from "./hanzi.js";
+import { noteHtml } from "./lessonmeter.js";
 
 // Modes that only exist when the lesson has that content.
 export const modeAvailable = (id, L) =>
@@ -108,8 +109,9 @@ export function showMenu() {
   hideGloss();
   const s = SKILLS[P.skill];
   // Workbook exercises only where the lesson has them.
+  const inLesson = String(P.host).startsWith("#tab-") && !!thisLesson(); // only there: how much of each exercise is left
   body().innerHTML = `<div class="mode-grid">${s.modes.filter((m) => modeAvailable(m.id, thisLesson())).map((m) => `<button class="mode-card" type="button" data-mode="${m.id}">
-      <span class="seal" aria-hidden="true">${m.seal}</span><b>${m.name}</b><small>${m.sub}</small></button>`).join("")}</div>`;
+      <span class="seal" aria-hidden="true">${m.seal}</span><b>${m.name}</b><small>${m.sub}</small>${inLesson ? noteHtml(P.skill, m.id) : ""}</button>`).join("")}</div>`;
   $$("[data-mode]", body()).forEach((b) => b.addEventListener("click", () => startMode(b.dataset.mode)));
 }
 

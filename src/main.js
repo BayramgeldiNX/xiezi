@@ -12,7 +12,7 @@ import { app, TAB_NAME } from "./app.js";
 import * as progress from "./progress/store.js";
 import { charStatus } from "./progress/model.js";
 import { completion } from "./progress/completion.js";
-import { lessonItems } from "./lib/lesson-items.js";
+import { lessonItems, lessonLeft } from "./lib/lesson-items.js";
 import { renderWords, renderWord, markWords, writeKey } from "./views/write.js";
 import { dictRedraw } from "./views/dictation.js";
 import { cardsKey } from "./views/cards.js";
@@ -29,7 +29,7 @@ import { openPrint } from "./views/printsheet.js";
 import { hideGloss } from "./views/reading.js";
 import { initAccountChip } from "./views/account.js";
 import { initSync } from "./sync/sync.js";
-import { showLessonMeter } from "./views/lessonmeter.js";
+import { showLessonMeter, toggleLeft, noteHtml } from "./views/lessonmeter.js";
 import { initPWA } from "./pwa.js";
 import { animate, slideDirection, slidePage, moveTabPill, watchMotion, forgetQuestion, wireSoftClose } from "./lib/motion.js";
 
@@ -279,7 +279,7 @@ function openLesson(li, wi = 0, tab = "write") {
   $("#lessonEyebrow").textContent = book.title;
   $("#lessonTitle").textContent = L.title;
   document.title = `${L.title} · 写字本`;
-  showLessonMeter(L.id, lessonDone(L), true);
+  showLessonMeter(L.id, lessonDone(L), true, lessonLeft(L, progress.get));
   renderWords();
   renderLessonNav();
   showTab(TABS.includes(tab) ? tab : OLD_TABS[tab] || "write", false);
@@ -334,7 +334,7 @@ function showWriteStudy() {
   $("#writeStudy").hidden = false;
   $("#writeStrip").hidden = false;
   $("#writeStrip").innerHTML = `<span class="lbl">Practice</span>${SKILLS.write.modes.filter((m) => modeAvailable(m.id, app.L())).map((m) =>
-    `<button class="btn ghost" type="button" data-wmode="${m.id}">${m.name}</button>`).join("")}
+    `<button class="btn ghost" type="button" data-wmode="${m.id}">${m.name}${m.id === "dict" ? noteHtml("write", m.id) : ""}</button>`).join("")}
     <a class="btn ghost" href="#/print/${app.L().id}">Print sheet</a>`;
   $$("[data-wmode]").forEach((b) => b.addEventListener("click", () => {
     clearWriters();
@@ -347,6 +347,16 @@ function showWriteStudy() {
 }
 
 $$("[data-tab]").forEach((b) => b.addEventListener("click", () => showTab(b.dataset.tab, true)));
+// The ring opens the list of what is left; a row there opens that exercise.
+$("#lessonMeter").addEventListener("click", () => toggleLeft());
+$("#lessonLeft").addEventListener("click", (e) => {
+  const r = e.target.closest("[data-skill]");
+  if (!r) return;
+  const { skill, mode } = r.dataset;
+  toggleLeft(false);
+  showTab(skill, true);
+  if (mode) $(`#tab-${skill} [data-mode="${mode}"], #tab-${skill} [data-wmode="${mode}"]`)?.click();
+});
 $("#backBtn").addEventListener("click", () => back(upFrom()));
 $$("[data-back-to]").forEach((b) => b.addEventListener("click", () => back(b.dataset.backTo)));
 $("#openBooks").addEventListener("click", () => go("#/books"));
@@ -372,7 +382,7 @@ progress.onProgress(() => {
   if (current === "home") { renderHub(); renderResume(); }
   else if (current === "bookView" && !$("#lessonCards").hidden) renderLessonList(BOOKS.find((b) => b.id === openBookId) || BOOKS[0]);
   else if (current === "lessonView") {
-    showLessonMeter(app.L().id, lessonDone(app.L()), false);
+    showLessonMeter(app.L().id, lessonDone(app.L()), false, lessonLeft(app.L(), progress.get));
     if (app.tab === "write") markWords();
   }
 });
