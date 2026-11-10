@@ -128,7 +128,14 @@ function wordChoices(w, pool, label) {
   const ok = (x) => x.w !== w.w && label(x) !== label(w) && en(x) !== en(w);
   const others = pool.filter(ok);
   const extra = wordsOf(LESSONS).filter((x) => ok(x) && !others.some((o) => o.w === x.w));
-  const picks = shuffle(others).concat(shuffle(extra)).slice(0, 3);
+  // Two wrong choices must not look the same (杯子 and 杯 are both "cup; glass").
+  const seen = new Set(), picks = [];
+  for (const o of shuffle(others).concat(shuffle(extra))) {
+    const k = label === enLabel ? en(o) : o.w;
+    if (seen.has(k)) continue;
+    seen.add(k); picks.push(o);
+    if (picks.length === 3) break;
+  }
   return [w, ...picks].map((o) => ({ html: label(o), correct: o.w === w.w }));
 }
 const hzLabel = (x) => `<span class="hz">${x.w}</span>`;
@@ -188,7 +195,8 @@ function startMode(mode) {
     case "meaning": return dictIntro({ host, words, prompt: "meaning", kind: "dict-meaning", back, lesson });
     case "hear": return words.length < 2 ? notEnough() : listenQuiz({ items: ten(words), pool: words, mode: "mixed", title: "Hear the word" });
     case "sentence": {
-      const sw = sentenceItems(words);
+      // Two words can share one example sentence; ask it once.
+      const sw = sentenceItems(words).filter((w, i, a) => a.findIndex((x) => x.ex.hz === w.ex.hz) === i);
       if (sw.length < 2) return notEnough();
       return choiceQuiz({ kind: "listen-sentence", title: "Sentences", items: shuffle(sw).slice(0, 8), key: "ls:",
         ask: (w) => ({ html: `<p class="hint">What does this sentence mean?</p>`, say: w.ex.hz }),
@@ -433,7 +441,7 @@ function matchGame(words) {
 const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 // items: [{ w, text, py, en, sentence? }]
-export function speak({ title, items, then }) {
+export function speak({ title, items, then, fullItems = items }) {
   if (!items.length) return notEnough();
   let pos = 0, right = 0, useRecorder = !Recognition, answered = false, recTimer = null, recog = null, media = null, starting = false;
   const missed = [], missedItems = [];
@@ -568,8 +576,8 @@ export function speak({ title, items, then }) {
   function end() {
     progress.addSession({ type: "speak", lesson: P.ctx.lesson ?? 0, score: right, total: items.length, missed });
     if (then) return then({ title, right, total: items.length, missed, missedItems });
-    showResults(title, right, items.length, missed, () => speak({ title, items }), "说得很好！Shuō de hěn hǎo!",
-      missedItems.length && (() => speak({ title, items: missedItems })));
+    showResults(title, right, items.length, missed, () => speak({ title, items: fullItems }), "说得很好！Shuō de hěn hǎo!", // "Again" replays the whole round, even after "Retry missed"
+      missedItems.length && (() => speak({ title, items: missedItems, fullItems })));
   }
   show();
 }

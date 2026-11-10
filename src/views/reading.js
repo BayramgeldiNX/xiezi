@@ -234,8 +234,8 @@ export function orderGame(ui, sentences, opts = {}) {
     </div>`;
     ui.wireBack(ui.body());
     ui.wireNext(ui.body());
-    $("#oAgain").addEventListener("click", () => orderGame(ui, sentences));
-    $("#oRetry")?.addEventListener("click", () => orderGame(ui, missedItems, { all: true }));
+    $("#oAgain").addEventListener("click", () => orderGame(ui, opts.full || sentences)); // the whole round, even after "Retry missed"
+    $("#oRetry")?.addEventListener("click", () => orderGame(ui, missedItems, { all: true, full: opts.full || sentences }));
   }
   show();
 }
