@@ -2,7 +2,7 @@
 // Results go to the schedule key "nb:<word>" only; nothing here touches the book keys (w:, f:, d: ...).
 import { $, $$, esc, shuffle, css } from "../lib/util.js";
 import { tonePy } from "../lib/pinyin.js";
-import { say, autoSay, canSay, sayBtns } from "../lib/speech.js";
+import { autoSay, sayLater, canSay, sayBtns } from "../lib/speech.js";
 import { icon } from "../lib/icons.js";
 import { gridSVG, makeWriter, trackWriter, clearWriters } from "../lib/draw.js";
 import { setting } from "../lib/settings.js";
@@ -178,7 +178,7 @@ function choice(S, it, { prompt, say: toSay, revealHtml, noPy = false }) {
     if (!toSay) autoSay(e.w);
   }));
   $("#qNext").addEventListener("click", () => advance(S));
-  if (toSay) setTimeout(() => say(toSay), 250); // the question is the sound, so always play it
+  if (toSay) sayLater(toSay, { auto: false }); // the question is the sound, so always play it
 }
 
 function listen(S, it) {
