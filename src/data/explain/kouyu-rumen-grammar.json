@@ -1196,7 +1196,7 @@
     "not": {
       "分": "分 is 0.01 yuan; 五分 would be 0.05.",
       "块": "块 is the yuan unit and already used before 五.",
-      "角钱": "角 is written style; spoken 十块五 ends with 毛."
+      "角钱": "角 is the formal, written word for 0.10 yuan. In speech, and after 块, people say 毛: 十块五毛, or just 十块五."
     }
   },
   {
@@ -1291,7 +1291,7 @@
     "why": "可以 asks permission: 我可以试试吗？",
     "not": {
       "会": "会 means can (by skill) or will; it does not ask permission.",
-      "想": "想 means want to; 我想试试吗 is odd as a question.",
+      "想": "想 means want to. You don't ask others whether you want something, so 我想试试吗 does not ask permission. Use 可以.",
       "要": "要 means want or need; it does not ask permission."
     }
   },
@@ -1314,8 +1314,8 @@
     },
     "why": "可以 asks for permission: 我可以试试吗? May I try it?",
     "not": {
-      "想": "我想试试吗 would ask if you yourself want to; odd.",
-      "要": "我要试试吗 would ask if you yourself will; odd.",
+      "想": "想 means want to. 我想试试吗 asks whether you want to, which only you know. To ask permission, use 可以.",
+      "要": "要 means want or will, so 我要试试吗 does not ask permission. Use 可以 to ask 'may I'.",
       "会": "会 means 'know how to', not 'may'."
     }
   },

@@ -10,6 +10,7 @@ import { pyToggleHtml, wirePinyin } from "../lib/qpinyin.js";
 import { LESSONS, wordsOf, ensureChars, STROKE_DATA } from "../data/index.js";
 import * as progress from "../progress/store.js";
 import * as nb from "../notebook/store.js";
+import { animate, flipOut, flipIn } from "../lib/motion.js";
 
 const isHan = (c) => /\p{Script=Han}/u.test(c);
 const TYPES = ["flash", "listen", "write", "gap"];
@@ -118,7 +119,7 @@ function flash(S, it) {
   if (!S.dir.has(e.w)) S.dir.set(e.w, S.flashDir === "mixed" ? (Math.random() < 0.5 ? "hz" : "en") : S.flashDir);
   // A card with no meaning can only be shown from the word side.
   const dir = e.en ? S.dir.get(e.w) : "hz";
-  let flipped = false;
+  let flipped = false, anim = "next", turning = false;
   const draw = () => {
     const front = dir === "hz" ? `<div class="fc-front">${esc(e.w)}</div>` : `<div class="fc-front en">${esc(e.en)}</div>`;
     const back = `<div class="fc-back"><div class="hz">${esc(e.w)}</div><div class="py">${tonePy(esc(e.py || ""))}</div><div class="en">${esc(e.en || "")}</div></div>`;
@@ -128,7 +129,17 @@ function flash(S, it) {
         ? `<button class="btn big" type="button" id="fcNo">Again</button>${sayBtns(e.w, e.py || e.w)}<button class="btn primary big" type="button" id="fcYes">${icon("check")} Got it</button>`
         : `<button class="btn primary big" type="button" id="fcFlip">Flip</button>`}</div>
       ${stopBtn}</div>`;
-    const flip = () => { if (!flipped) { flipped = true; draw(); autoSay(e.w); } };
+    const flip = () => {
+      if (flipped || turning) return;
+      turning = true;
+      autoSay(e.w);
+      const card = $("#fcCard");
+      flipOut(card, () => { turning = false; if (flipped || !card.isConnected) return; flipped = true; anim = "flip"; draw(); });
+    };
+    // The same motion as the lesson flashcards: the card turns over, the next one slides in.
+    if (anim === "flip") flipIn($("#fcCard"));
+    else if (anim === "next" && S.pos > 0) animate($("#fcCard"), [{ transform: "translateX(24px)", opacity: 0 }, { transform: "none", opacity: 1 }]);
+    anim = null;
     $("#fcCard").addEventListener("click", flip);
     $("#fcFlip")?.addEventListener("click", flip);
     $("#fcYes")?.addEventListener("click", () => { answer(S, it, true); advance(S); });
@@ -145,7 +156,7 @@ function distractors(e, n = 3) {
   const seen = new Set([e.w]), out = [];
   for (const group of pool) for (const x of group) {
     if (out.length >= n) break;
-    if (!seen.has(x.w)) { seen.add(x.w); out.push({ w: x.w, py: x.py || "" }); }
+    if (!seen.has(x.w)) { seen.add(x.w); out.push({ w: x.w, py: x.py || "", en: x.en || "" }); }
   }
   return out;
 }
@@ -172,6 +183,9 @@ function choice(S, it, { prompt, say: toSay, revealHtml, noPy = false }) {
     $("#qStatus").style.color = ok ? "" : "var(--cinnabar)";
     $("#qStatus").textContent = ok ? "对了！Correct!" : "Not quite.";
     $("#qAnswer").innerHTML = revealHtml;
+    // A mistake also shows what the chosen word is.
+    const mine = opts[+b.dataset.i];
+    if (!ok) $("#qAnswer").insertAdjacentHTML("beforeend", `<div class="why"><p><span class="why-lbl">You chose</span> ${reveal(mine)}</p></div>`);
     $("#qAnswer").hidden = false;
     $("#qNext").hidden = false;
     $("#qNext").focus({ preventScroll: true });

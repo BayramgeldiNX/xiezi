@@ -763,7 +763,7 @@
     "why": "A 离 B 远 means 'A is far from B': 你家离公司远吗.",
     "not": {
       "从": "从 marks a starting point of movement, not distance.",
-      "到": "到 means 'arrive/to'.",
+      "到": "离 is the word for distance: A 离 B 远. 到 needs 从 in front to give a distance: 从你家到公司远吗.",
       "往": "往 means 'towards'."
     }
   },
@@ -787,7 +787,7 @@
     "why": "离 can measure time too: 离我的生日还有一个多星期 means 'over a week until my birthday'.",
     "not": {
       "从": "从 marks a start point, not time left.",
-      "到": "到 means 'until/to'.",
+      "到": "到我的生日还有一个多星期 is also said. This lesson practises 离 + a time + 还有 to say how long is left, so 离 is the answer here.",
       "对": "对 means 'towards/to'."
     }
   },
@@ -931,7 +931,7 @@
     "why": "Doubling a verb makes it light and casual: 运动运动吧, let's get some exercise.",
     "not": {
       "着": "着 shows an ongoing state; it does not go with 吧 here.",
-      "一点儿": "一点儿 follows adjectives or nouns, not a verb like 运动.",
+      "一点儿": "运动一点儿 is not said: after a verb, 一点儿 means 'a little of something' (吃一点儿). To make an action short and casual, double the verb: 运动运动.",
       "了": "运动了吧 means 'exercised, right?', not a suggestion."
     }
   },
@@ -1483,7 +1483,7 @@
     "why": "Verb + 过 asks about experience: 你看过那个电影没有? Have you ever seen it?",
     "not": {
       "着": "看着 means 'watching'; it does not go with 没有 here.",
-      "在": "在 goes before the verb (在看), not after it.",
+      "在": "在 can follow a verb only when a place comes next (住在北京). 看在那个电影 is wrong; to ask about experience, use 过: 看过.",
       "的": "看的那个电影 means 'the film you watch', not a question."
     }
   },
@@ -1648,7 +1648,7 @@
       "rule": "already (impatient)",
       "en": "We've already waited half an hour for her!"
     },
-    "why": "都……了 shows impatience about time: 都等了半个小时了 is 'already waited half an hour'.",
+    "why": "都……了 shows impatience about time: 都等她半个小时了 means 'we've already waited half an hour for her!'",
     "not": {
       "也": "也 means 'also'.",
       "就": "就 means 'then/only', which loses the impatience.",

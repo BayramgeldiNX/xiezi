@@ -14,6 +14,19 @@ export function animate(el, keyframes, options = {}) {
   return el.animate(keyframes, { duration: MED, easing: EASE, ...options, fill: "none" });
 }
 
+// A card turning over: the front turns away, `swap` draws the back, which then turns in (flipIn on the new element).
+const TURN = "perspective(800px) rotateY";
+export function flipOut(el, swap) {
+  const a = animate(el, [{ transform: `${TURN}(0)` }, { transform: `${TURN}(90deg)` }], { duration: 140, easing: "ease-in" });
+  if (!a) return swap();
+  // Once only; the timer covers a page in the background, where animations may never finish.
+  let done = false;
+  const once = () => { if (!done) { done = true; swap(); } };
+  a.onfinish = a.oncancel = once;
+  setTimeout(once, 300);
+}
+export const flipIn = (el) => animate(el, [{ transform: `${TURN}(-90deg)` }, { transform: `${TURN}(0)` }], { duration: 180, easing: "ease-out" });
+
 /* ---------- Soft close for dialogs ---------- */
 export function softClose(dialog) {
   if (!dialog?.open || dialog.classList.contains("closing")) return;

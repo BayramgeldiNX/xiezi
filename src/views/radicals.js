@@ -87,7 +87,7 @@ function listPage() {
       ${due ? `<button class="btn" type="button" data-rp="due">Review due (${due})</button>` : ""}
     </div>
     <p class="note" id="radMsg" aria-live="polite"></p>
-    ${STAGES.map((s) => `<section class="rad-stage"><h3>${esc(s.title)}<span class="cn">${esc(s.cn || "")}</span></h3>
+    ${STAGES.map((s) => `<section class="rad-stage"><h3>${esc(s.title)}<span class="cn">${esc(s.cn || "")} · ${s.radicals.filter((x) => learned(x.r)).length}/${s.radicals.length}</span></h3>
       <div class="rad-grid">${s.radicals.map(tile).join("")}</div></section>`).join("")}`;
   body().querySelectorAll("[data-rp]").forEach((b) => b.addEventListener("click", () => startPractice(b.dataset.rp)));
 }
@@ -125,8 +125,17 @@ function radicalPage(x) {
       <button class="btn" type="button" data-rp="find">Find</button>
       <button class="btn" type="button" data-rp="guess">Guess</button>
     </div>
-    <p class="note" id="radMsg" aria-live="polite"></p>`;
+    <p class="note" id="radMsg" aria-live="polite"></p>
+    <div class="rad-actions">${[[ALL[ALL.indexOf(x) - 1], "Previous"], [ALL[ALL.indexOf(x) + 1], "Next"]].map(([o, label]) => o
+      ? `<a class="btn ghost" href="#/radical/${encodeURIComponent(o.r)}" data-rnav aria-label="${label} radical: ${esc(o.r)} ${esc(o.en)}">${label === "Previous" ? icon("back") : ""}<span class="hz">${esc(o.r)}</span> ${esc(o.en)}${label === "Next" ? icon("next") : ""}</a>` : "").join("")}</div>`;
   body().querySelectorAll("[data-rp]").forEach((b) => b.addEventListener("click", () => startPractice(b.dataset.rp)));
+  // Moving to the neighbour replaces this page in history, so Back still goes up to the list.
+  body().querySelectorAll("[data-rnav]").forEach((a) => a.addEventListener("click", (e) => {
+    e.preventDefault();
+    const oldURL = location.href;
+    history.replaceState(history.state, "", a.getAttribute("href"));
+    dispatchEvent(new HashChangeEvent("hashchange", { oldURL, newURL: location.href }));
+  }));
   strokes(x.r);
 }
 
@@ -137,11 +146,21 @@ async function strokes(r) {
     if (!STROKE_DATA[r] || current !== r || !box.isConnected) return;
     box.hidden = false;
     box.innerHTML = `<div class="box">${gridSVG()}<div class="hw"></div></div>
-      <div class="controls"><button class="btn" type="button">${icon("replay")} Replay</button></div>`;
+      <div class="controls"><button class="btn" type="button" data-rw="play">${icon("replay")} Replay</button><button class="btn" type="button" data-rw="quiz">Write it</button></div>
+      <p class="note" data-rw="msg" aria-live="polite"></p>`;
     const hw = box.querySelector(".hw");
     const wr = trackWriter(makeWriter(hw, r, Math.round(hw.getBoundingClientRect().width) || 160, { showCharacter: false }));
-    const play = () => wr.animateCharacter();
-    box.querySelector("button").addEventListener("click", play);
+    const msg = box.querySelector('[data-rw="msg"]');
+    const play = () => { wr.cancelQuiz(); msg.textContent = ""; wr.showOutline(); wr.animateCharacter(); };
+    box.querySelector('[data-rw="play"]').addEventListener("click", play);
+    // Write the radical yourself, stroke by stroke, over the grey outline.
+    box.querySelector('[data-rw="quiz"]').addEventListener("click", () => {
+      wr.hideCharacter();
+      msg.textContent = "Your turn: draw the strokes in order.";
+      wr.quiz({ showHintAfterMisses: 2, highlightOnComplete: true,
+        onMistake: () => { msg.textContent = "Try again, check the stroke order."; },
+        onComplete: (d) => { msg.textContent = d.totalMistakes ? `Done with ${d.totalMistakes} mistake${d.totalMistakes > 1 ? "s" : ""}.` : "太好了! Perfect!"; } });
+    });
     play();
   } catch { box.hidden = true; }
 }
