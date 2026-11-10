@@ -12,7 +12,7 @@ const okKey = (k, get) => {
   return (s?.ok || 0) > 0 || (isWriteKey(k) && (s?.n || 0) >= WRITE_TRIES);
 };
 const okOption = (o, get) => (Array.isArray(o) ? o.length > 0 && o.every((k) => okKey(k, get)) : okKey(o, get));
-const isDone = (item, get) => (Array.isArray(item) ? item : [item]).some((o) => okOption(o, get));
+export const isDone = (item, get) => (Array.isArray(item) ? item : [item]).some((o) => okOption(o, get));
 
 // itemsBySkill: { write: [item, …], … }  →  { pct (0–100), skills: { write: {done, total} }, finished }
 export function completion(itemsBySkill, get) {
