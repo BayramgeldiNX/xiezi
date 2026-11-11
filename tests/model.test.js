@@ -4,6 +4,12 @@ import { addResult, combine, charMastered, charStatus, wordStatus, weakness, wea
 const at = (n) => 1_700_000_000_000 + n;
 
 describe("addResult", () => {
+  it("counts a fix only on a not-perfect result, and adds fixes across devices", () => {
+    const s = addResult(addResult(null, { ok: false, miss: 1, fix: true }, at(1)), { ok: true, fix: true }, at(2));
+    expect(s.fix).toBe(1);
+    expect(s.lastOk).toBe(true);
+    expect(combine([s, { n: 1, ok: 0, miss: 1, fix: 2, last: at(0) }]).fix).toBe(3);
+  });
   it("counts attempts, perfects, mistakes and streaks", () => {
     let s = addResult(null, { ok: true }, at(1));
     s = addResult(s, { ok: false, miss: 2 }, at(2));

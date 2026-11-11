@@ -18,6 +18,10 @@ describe("completion", () => {
     const r = completion({ write: ["w:你"] }, stats({ "w:你": { ok: 1, miss: 5 } }));
     expect(r.pct).toBe(100);
   });
+  it("counts an answer put right after a mistake (fix > 0)", () => {
+    const r = completion({ read: ["o:你好", "o:再见"] }, stats({ "o:你好": { ok: 0, miss: 2, fix: 1 }, "o:再见": { ok: 0, miss: 1 } }));
+    expect(r.pct).toBe(50);
+  });
   it("counts writing keys after 5 tries even with mistakes", () => {
     const items = { write: ["w:你", "d:你好", "l:你"] };
     expect(completion(items, stats({ "w:你": { n: 4, ok: 0 }, "d:你好": { n: 4, ok: 0 } })).skills.write.done).toBe(0);

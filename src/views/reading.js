@@ -215,7 +215,7 @@ export function orderGame(ui, sentences, opts = {}) {
       tries++;
       if (ok) {
         if (tries === 1) right++; else { missed.push(s.hz); missedItems.push(s); }
-        progress.record("o:" + s.hz, { ok: tries === 1, miss: tries - 1 }, { sfx: "right" });
+        progress.record("o:" + s.hz, { ok: tries === 1, miss: tries - 1, fix: tries > 1 }, { sfx: "right" });
         $("#oStatus").style.color = "";
         $("#oStatus").textContent = tries === 1 ? "对了！Correct!" : "对了！Got it.";
         $("#oReveal").innerHTML = `<span class="hz" style="font-size:1.3rem">${s.hz}</span> <span class="py">${tonePy(s.py)}</span>`;

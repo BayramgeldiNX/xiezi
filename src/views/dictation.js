@@ -129,7 +129,7 @@ export function dictWord() {
     finished = true;
     const perfect = !gaveUp && mistakes === 0 && hintLevel === 0;
     if (perfect) dict.perfect++; else dict.missed.push(word.w);
-    progress.record("d:" + word.w, { ok: perfect, miss: mistakes + (gaveUp ? 3 : 0) + hintLevel });
+    progress.record("d:" + word.w, { ok: perfect, miss: mistakes + (gaveUp ? 3 : 0) + hintLevel, fix: !gaveUp });
     status.textContent = gaveUp ? "Here's the answer. You'll get it next time!" : perfect ? "太好了! Perfect!" : mistakes ? `很好! Done with ${mistakes} mistake${mistakes > 1 ? "s" : ""}.` : "很好! Done, with a hint.";
     $("#dictAnswer").innerHTML = `<span class="hz">${charLinks(word.w)}</span><span class="py">${tonePy(word.py)}</span><span class="muted">${esc(word.en)}</span>`;
     $("#dictAnswer").hidden = false;

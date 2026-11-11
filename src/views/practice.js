@@ -470,12 +470,13 @@ function matchGame(words) {
 
 /* ---------- Speaking ---------- */
 const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+const sKey = (it) => "s:" + it.w.w + (it.sentence ? "#ex" : "");
 
 // items: [{ w, text, py, en, sentence? }], or a function that picks them ("Again" then picks anew)
 export function speak({ title, items: pick, then, fullItems = pick }) {
   const items = typeof pick === "function" ? pick() : pick;
   if (!items.length) return notEnough();
-  let pos = 0, right = 0, useRecorder = !Recognition, answered = false, recTimer = null, recog = null, media = null, starting = false;
+  let pos = 0, right = 0, useRecorder = !Recognition, answered = false, wrong = false, recTimer = null, recog = null, media = null, starting = false;
   const missed = [], missedItems = [];
   // Stop anything still listening or recording (next item, skip, leaving the screen).
   const abortAll = () => {
@@ -486,7 +487,7 @@ export function speak({ title, items: pick, then, fullItems = pick }) {
   function show() {
     abortAll();
     if (pos >= items.length) return end();
-    answered = false;
+    answered = false; wrong = false;
     const it = items[pos];
     if (!pos) scrollTo(0, 0);
     body().innerHTML = `<div class="panel focus">
@@ -509,7 +510,8 @@ export function speak({ title, items: pick, then, fullItems = pick }) {
     $("#micBtn").addEventListener("click", () => (useRecorder ? recordToggle(it) : listen(it)));
     $("#sNext").addEventListener("click", () => { pos++; show(); });
     $("#sSkip").addEventListener("click", () => {
-      if (!answered) { answered = true; progress.record("s:" + it.w.w + (it.sentence ? "#ex" : ""), { ok: false, miss: 1 }); missed.push(it.text); missedItems.push(it); }
+      if (!answered && !wrong) { progress.record(sKey(it), { ok: false, miss: 1 }); missed.push(it.text); missedItems.push(it); }
+      answered = true;
       pos++; show();
     });
     $$("[data-back]", body()).forEach((b) => b.addEventListener("click", abortAll));
@@ -520,12 +522,23 @@ export function speak({ title, items: pick, then, fullItems = pick }) {
     abortAll();
     const mic = $("#micBtn");
     if (mic) { mic.disabled = true; mic.classList.remove("on"); }
-    progress.record("s:" + it.w.w + (it.sentence ? "#ex" : ""), { ok, miss: ok ? 0 : 1 });
-    if (ok) right++; else { missed.push(it.text); missedItems.push(it); }
+    // Right after a "Not yet": done for the lesson, but it was already counted as missed.
+    if (wrong) { if (ok) progress.record(sKey(it), { ok: false, fix: true }, { sfx: "right" }); }
+    else {
+      progress.record(sKey(it), { ok, miss: ok ? 0 : 1 });
+      if (ok) right++; else { missed.push(it.text); missedItems.push(it); }
+    }
     $("#heard").innerHTML = msg;
     $("#judge").innerHTML = "";
     revealNext($("#sNext"));
     $("#sSkip").hidden = true;
+  }
+  // Recorder "Not yet": counted as a miss once, then record again; "Sounded right" later still finishes it.
+  function tryAgain(it) {
+    if (!wrong) { wrong = true; progress.record(sKey(it), { ok: false, miss: 1 }); missed.push(it.text); missedItems.push(it); }
+    $("#heard").innerHTML = `Keep practicing <span class="hz">${it.text}</span>.`;
+    $("#judge").innerHTML = "";
+    $("#micNote").textContent = "Listen to the model, then tap to record again.";
   }
   function listen(it) {
     const mic = $("#micBtn");
@@ -592,7 +605,7 @@ export function speak({ title, items: pick, then, fullItems = pick }) {
         $("#heard").innerHTML = `<audio controls src="${url}" style="width:min(100%,320px)"></audio>`;
         $("#judge").innerHTML = `<button class="btn" type="button" id="jNo">Not yet</button><button class="btn primary" type="button" id="jYes">${icon("check")} Sounded right</button>`;
         $("#jYes").addEventListener("click", () => result(it, true, `<span class="ok-c">很好！</span>`));
-        $("#jNo").addEventListener("click", () => result(it, false, `Keep practicing <span class="hz">${it.text}</span>.`));
+        $("#jNo").addEventListener("click", () => tryAgain(it));
       };
       m.start();
       mic.classList.add("on");

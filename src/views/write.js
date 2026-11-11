@@ -213,7 +213,7 @@ export function buildCharCard(host, c, single = false) {
       onCorrectStroke: (d) => { status.textContent = d.strokesRemaining ? `Good! Stroke ${d.strokeNum + 2} next.` : ""; },
       onMistake: () => { status.textContent = "Try again, check the stroke order."; },
       onComplete: (d) => {
-        progress.record("w:" + c, { ok: d.totalMistakes === 0, miss: d.totalMistakes });
+        progress.record("w:" + c, { ok: d.totalMistakes === 0, miss: d.totalMistakes, fix: true });
         $(".count", el).innerHTML = metaText(c, n);
         markWords();
         status.textContent = d.totalMistakes === 0 ? "太好了! Tài hǎo le! Perfect!" : `很好! Hěn hǎo! Done with ${d.totalMistakes} mistake${d.totalMistakes > 1 ? "s" : ""}.`;
