@@ -31,6 +31,7 @@ import { hideGloss } from "./views/reading.js";
 import { initAccountChip } from "./views/account.js";
 import { initSync } from "./sync/sync.js";
 import { showLessonMeter, toggleLeft, noteHtml } from "./views/lessonmeter.js";
+import { timerEnter, timerLeave } from "./views/studytimer.js";
 import { initPWA } from "./pwa.js";
 import { animate, slideDirection, slidePage, moveTabPill, watchMotion, forgetQuestion, wireSoftClose } from "./lib/motion.js";
 
@@ -79,6 +80,7 @@ function showPage(id) {
   forgetQuestion();
   if (id !== "loading") hideLoading();
   current = id;
+  if (id !== "loading") (id === "lessonView" ? timerEnter : timerLeave)();
   for (const p of PAGES) $("#" + p).hidden = p !== id;
   clearHiddenHosts();
   scrollTo(0, 0);
