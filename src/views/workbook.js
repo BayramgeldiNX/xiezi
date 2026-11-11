@@ -11,6 +11,8 @@ import { sayBtns } from "../lib/speech.js";
 import { CHARINFO, RADICALS, LESSONS, wordsOf, lessonChars } from "../data/index.js";
 import { charLinks } from "./charsheet.js";
 import { keyOf } from "../lib/explain-key.js";
+import { pickRound } from "../lib/round.js";
+import * as progress from "../progress/store.js";
 
 // Every workbook item of the given lessons, each with a stable id and its kind.
 export function workbookOf(lessons) {
@@ -59,7 +61,7 @@ export function workbookQuiz(ui, { items, title = "练习册 · Workbook", kind 
 // 选词填空: blank the word in its own example sentence.
 export function fillQuiz(ui, words, { title = "选词填空 · Fill in the word", then } = {}) {
   const pool = words.filter((w) => w.ex?.hz?.includes(w.w));
-  const items = shuffle(pool).slice(0, 10);
+  const items = () => pickRound(pool, (w) => "wf:" + w.w, progress.get, 10);
   return ui.choiceQuiz({ kind: "fill", title, items, key: "wf:", then,
     ask: (w) => ({ html: `<p class="hint">Which word fills the gap?</p>
       <p class="hz wb-q" data-en-done="1">${esc(w.ex.hz.replace(/[AB]: /g, "").replace(w.w, "（　　）"))}</p><p class="muted q-en" lang="en">${esc(w.ex.en)}</p>` }),
@@ -105,7 +107,7 @@ export function radicalQuiz(ui, lesson, { title = "部首 · Which radical?", th
   const chars = lessonChars(lesson).filter((c) => CHARINFO[c]?.radical?.c && CHARINFO[c].radical.c !== c);
   const allRads = [...new Set(Object.values(CHARINFO).map((x) => x.radical?.c).filter(Boolean))];
   const name = (r) => RADICALS[r] || Object.values(CHARINFO).find((x) => x.radical?.c === r)?.radical?.en || "";
-  return radicalChoice(ui, { kind: "radical", title, items: shuffle(chars).slice(0, 10), key: "rad:", id: (c) => c, then,
+  return radicalChoice(ui, { kind: "radical", title, items: () => pickRound(chars, (c) => "rad:" + c, progress.get, 10), key: "rad:", id: (c) => c, then,
     charOf: (c) => c, radOf: (c) => CHARINFO[c].radical.c, nameOf: name,
     distractors: (c, r) => shuffle(allRads.filter((x) => x !== r && !c.includes(x))).slice(0, 3),
   });

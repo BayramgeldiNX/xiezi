@@ -22,11 +22,13 @@ let dict = null;
 let hostSel = null;
 
 // opts: { host, words, title, prompt, kind, back, lesson, autostart, then }
+// words: a list, or a function that picks one ("Again" then picks anew).
 // autostart: skip the start screen (Review). then(result): continue a review chain instead of showing results.
 export function dictIntro(opts = {}) {
   dict = null;
   hostSel = opts.host;
-  const words = opts.words || app.L().words;
+  const pick = typeof opts.words === "function" ? opts.words : null;
+  const words = (pick ? pick() : opts.words) || app.L().words;
   const prompt = opts.prompt || "audio";
   const p = PROMPT[prompt];
   const hintAfter = setting("hintAfter");
@@ -41,7 +43,7 @@ export function dictIntro(opts = {}) {
     </div>
   </div>`;
   const start = () => {
-    dict = { ...opts, words, prompt, order: shuffle(words.map((_, i) => i)), pos: 0, perfect: 0, missed: [], kind: opts.kind || "dict" };
+    dict = { ...opts, pick, words, prompt, order: shuffle(words.map((_, i) => i)), pos: 0, perfect: 0, missed: [], kind: opts.kind || "dict" };
     dictWord();
   };
   if (opts.autostart) return start();
@@ -181,7 +183,7 @@ function dictEnd() {
     </div>
   </div>`;
   const restart = (ws, title) => dictIntro({ host: hostSel, words: ws, prompt: opts.prompt, kind: opts.kind, back: opts.back, lesson: opts.lesson, title });
-  $("#dictAgain").addEventListener("click", () => restart(words, opts.title));
+  $("#dictAgain").addEventListener("click", () => restart(opts.pick || words, opts.title));
   $("#dictMissed")?.addEventListener("click", () => restart(words.filter((w) => missed.includes(w.w)), "Missed words"));
   $("#dictBack2")?.addEventListener("click", opts.back);
   dict = null;

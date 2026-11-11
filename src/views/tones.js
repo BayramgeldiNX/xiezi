@@ -5,6 +5,7 @@ import { say, autoSay, sayLater, sayBtns } from "../lib/speech.js";
 import { icon } from "../lib/icons.js";
 import { CHARS, TONE_SETS, TONE_SAMPLES } from "../data/index.js";
 import * as progress from "../progress/store.js";
+import { pickRound } from "../lib/round.js";
 import { nextHtml, wireNext } from "./practice.js";
 import { quizHead } from "../lib/qpinyin.js";
 
@@ -23,7 +24,7 @@ function toneQuestions(source) {
       seen.add(c);
       qs.push({ say: c, plain: stripTone(py), tone, hz: c });
     }));
-    return shuffle(qs).slice(0, 10);
+    return pickRound(qs, (q) => "t:" + q.hz, progress.get, 10); // the characters not done yet first
   }
   const qs = [];
   TONE_SETS.forEach(([plain, ...hz]) => hz.forEach((c, i) => c && qs.push({ say: c, plain, tone: i + 1, hz: c })));

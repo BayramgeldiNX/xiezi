@@ -13,6 +13,7 @@ import { charLinks } from "./charsheet.js";
 import { animate } from "../lib/motion.js";
 import { keyOf } from "../lib/explain-key.js";
 import { toneSyllables } from "../lib/typing-check.js";
+import { pickRound } from "../lib/round.js";
 
 const segment = makeSegmenter(DICT);
 
@@ -145,7 +146,10 @@ export function textQuiz(ui, readings, back, single) {
   }
   ui.choiceQuiz({
     kind: "reading-q", title: single ? `${single.title} · questions` : "Read & answer", key: "rq:", silent: true,
-    words: single ? qs : shuffle(qs).slice(0, 10), count: single ? qs.length : 10,
+    // One text: all its questions. All texts: a round of the questions still open (a question is
+    // done once answered right here, or when its text's own quiz was passed).
+    ...(single ? { words: qs, count: qs.length }
+      : { items: () => pickRound(qs, (x) => ["r:" + x.r.key, "rq:" + x.r.key + "#" + x.i], progress.get, 10) }),
     id: (x) => `${x.r.key}#${x.i}`, label: (x) => x.r.title,
     ask: (x) => ({ html: `<details class="rd-peek" ${single ? "" : "open"}><summary>${x.r.title} · show text</summary>
         <div class="rd-mini">${x.r.lines.map((l) => `<p><span class="who">${l.who}</span> <span data-en-src>${l.hz}</span></p>`).join("")}</div></details>
@@ -165,9 +169,10 @@ export function textQuiz(ui, readings, back, single) {
 export const buildable = (sentences) => sentences.map((s) => ({ ...s, parts: segment(s.hz).filter((p) => p.word).map((p) => p.t) }))
   .filter((s) => s.parts.length >= 3 && s.parts.length <= 8);
 
-// opts.all: use every sentence given (Review picks them); opts.then: continue a review chain.
+// opts.all: use every sentence given (Review picks them); otherwise a round of 8 of the ones not built yet.
+// opts.then: continue a review chain.
 export function orderGame(ui, sentences, opts = {}) {
-  const items = opts.all ? buildable(sentences) : shuffle(buildable(sentences)).slice(0, 8);
+  const items = opts.all ? buildable(sentences) : pickRound(buildable(sentences), (s) => "o:" + s.hz, progress.get, 8);
   if (!items.length) {
     ui.body().innerHTML = `<div class="panel"><p>No sentences to build yet.</p>${ui.backBtn()}</div>`;
     return ui.wireBack(ui.body());
@@ -260,7 +265,8 @@ function pinyinNote(x, w, words) {
 // Wrong choices: the same syllables with a different tone, plus another word's pinyin.
 export function pinyinQuiz(ui, words) {
   ui.choiceQuiz({
-    kind: "read-pinyin", title: "How do you read it?", words, key: "rp:", noPinyin: true,
+    kind: "read-pinyin", title: "How do you read it?", key: "rp:", noPinyin: true,
+    items: () => pickRound(words, (w) => "rp:" + w.w, progress.get, 10),
     ask: (w) => ({ html: `<div class="big-hz">${w.w}</div><p class="hint">Which pinyin is right?</p>` }),
     makeOptions: (w) => {
       const correct = w.py.replace(/\s/g, "");

@@ -10,11 +10,11 @@ import * as progress from "../progress/store.js";
 let deck = null;
 const ROUND = 12; // cards dealt per round; the rest wait for the next one
 
-// opts: { host, words, lesson, back }
+// opts: { host, words (a list, or a function that picks one each time the deck starts), lesson, back }
 export function cardsStart(dir, opts = deck?.opts || {}) {
   dir = dir || store.get("hz-cards-dir", "hz");
   store.set("hz-cards-dir", dir);
-  const words = opts.words || app.L().words;
+  const words = (typeof opts.words === "function" ? opts.words() : opts.words) || app.L().words;
   const all = shuffle(words.map((_, i) => i));
   deck = { dir, opts, words, host: opts.host, queue: all.slice(0, ROUND), waiting: all.slice(ROUND), round: 1, rounds: Math.ceil(all.length / ROUND),
     seen: new Set(), rated: new Set(), known: 0, again: new Set(), flipped: false };
