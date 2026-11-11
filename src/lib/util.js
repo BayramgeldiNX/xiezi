@@ -45,6 +45,14 @@ export function revealNext(btn) {
   if (!btn) return;
   btn.hidden = false;
   btn.focus({ preventScroll: true });
+  // In a bar fixed to the bottom edge (phones) the button is always in view: bring the answer above it into view instead.
+  const dock = btn.closest(".dock");
+  if (dock && getComputedStyle(dock).position === "fixed") {
+    let el = dock.previousElementSibling;
+    while (el && (el.hidden || !el.offsetHeight)) el = el.previousElementSibling;
+    el?.scrollIntoView?.({ block: "nearest", behavior: "smooth" });
+    return;
+  }
   // Keep it at least 24px (plus the iPhone home-indicator inset) above the bottom edge.
   const probe = document.createElement("div");
   probe.style.cssText = "position:fixed;visibility:hidden;height:0;padding-bottom:env(safe-area-inset-bottom,0px)";

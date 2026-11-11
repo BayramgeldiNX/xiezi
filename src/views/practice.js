@@ -4,7 +4,7 @@
 // book Review can chain several of them into one mixed session.
 import { $, $$, esc, shuffle, directionPicker, revealNext } from "../lib/util.js";
 import { tonePy } from "../lib/pinyin.js";
-import { pyToggleHtml, wirePinyin } from "../lib/qpinyin.js";
+import { quizHead, wirePinyin } from "../lib/qpinyin.js";
 import { matchesWord } from "../lib/search.js";
 import { say, autoSay, sayLater, sayBtns, stopSpeech } from "../lib/speech.js";
 import { sfx } from "../lib/sfx.js";
@@ -95,7 +95,7 @@ export const SKILLS = {
 let P = { host: "#tab-listen", skill: "listen", ctx: { words: [], readings: [] } };
 const body = () => $(P.host);
 const goBack = () => (P.ctx.back || showMenu)();
-const backBtn = (label = "Back") => `<button class="btn ghost" type="button" data-back>${label}</button>`;
+const backBtn = (label = "Back") => `<button class="btn ghost leave" type="button" data-back>${label}</button>`;
 const wireBack = (el) => $$("[data-back]", el).forEach((b) => b.addEventListener("click", goBack));
 const notEnough = () => { body().innerHTML = `<div class="panel"><p>Not enough words here yet.</p>${backBtn()}</div>`; wireBack(body()); };
 
@@ -324,18 +324,17 @@ export function choiceQuiz(cfg) {
     const w = items[pos];
     const q = cfg.ask(w);
     const opts = shuffle(cfg.makeOptions(w));
-    body().innerHTML = `<div class="panel">
-      <div class="head-row"><span class="lbl">${cfg.title}</span>${cfg.noPinyin ? "" : pyToggleHtml()}</div>
-      <div class="progress">Question ${pos + 1} of ${items.length} · ${right} right</div>
-      <div class="bar"><i style="width:${(pos / items.length) * 100}%"></i></div>
-      ${q.html}
+    if (!pos) scrollTo(0, 0);
+    body().innerHTML = `<div class="panel focus">
+      ${quizHead({ title: cfg.title, pos, total: items.length, toggles: !cfg.noPinyin, leave: cfg.then ? "Stop" : "Back" })}
+      <div class="q-stage">${q.html}
       ${q.say ? `<div class="controls"><button class="btn primary big" type="button" data-say="${esc(q.say)}" id="qListen">${icon("speaker")} Listen</button>
-        <button class="btn big" type="button" data-say="${esc(q.say)}" data-slow>${icon("slow")} Slow</button></div>` : ""}
+        <button class="btn big" type="button" data-say="${esc(q.say)}" data-slow>${icon("slow")} Slow</button></div>` : ""}</div>
       ${q.peek ? `<details class="peek"><summary>Show the text</summary>${q.peek}</details>` : ""}
       <div class="choices">${opts.map((o, i) => `<button class="choice" type="button" data-i="${i}">${o.html}</button>`).join("")}</div>
       <div class="status" id="qStatus" aria-live="polite"></div>
       <div class="answer" id="qAnswer" hidden></div>
-      <div class="controls"><button class="btn primary" type="button" id="qNext" hidden>${pos + 1 >= items.length ? (cfg.then ? "Continue" : "See results") : "Next"}</button><button class="btn ghost" type="button" id="qSkip">不知道 · Don't know</button>${backBtn(cfg.then ? "Stop" : "Back")}</div>
+      <div class="controls dock"><button class="btn primary" type="button" id="qNext" hidden>${pos + 1 >= items.length ? (cfg.then ? "Continue" : "See results") : "Next"}</button><button class="btn ghost" type="button" id="qSkip">不知道 · Don't know</button></div>
     </div>`;
     wire(body());
     if (!cfg.noPinyin) wirePinyin(body().firstElementChild);
@@ -475,10 +474,9 @@ export function speak({ title, items, then, fullItems = items }) {
     if (pos >= items.length) return end();
     answered = false;
     const it = items[pos];
-    body().innerHTML = `<div class="panel">
-      <div class="head-row"><span class="lbl">说 · ${title}</span>${pyToggleHtml()}</div>
-      <div class="progress">${pos + 1} of ${items.length} · ${right} correct</div>
-      <div class="bar"><i style="width:${(pos / items.length) * 100}%"></i></div>
+    if (!pos) scrollTo(0, 0);
+    body().innerHTML = `<div class="panel focus">
+      ${quizHead({ title: `说 · ${title}`, pos, total: items.length, leave: then ? "Stop" : "Back" })}
       <div class="speak-card">
         <div class="${it.sentence ? "prompt-big" : "big-hz"}" data-en-done="1" style="font-family:var(--display)">${it.text}</div>
         <div class="py q-py">${tonePy(it.py)}</div>
@@ -489,8 +487,8 @@ export function speak({ title, items, then, fullItems = items }) {
         <div class="heard" id="heard" aria-live="polite"></div>
         <div class="controls" id="judge" style="justify-content:center"></div>
       </div>
-      <div class="controls"><button class="btn primary" type="button" id="sNext" hidden>${pos + 1 >= items.length ? (then ? "Continue" : "See results") : "Next"}</button>
-        <button class="btn ghost" type="button" id="sSkip">Skip</button>${backBtn(then ? "Stop" : "Back")}</div>
+      <div class="controls dock"><button class="btn primary" type="button" id="sNext" hidden>${pos + 1 >= items.length ? (then ? "Continue" : "See results") : "Next"}</button>
+        <button class="btn ghost" type="button" id="sSkip">Skip</button></div>
     </div>`;
     wireBack(body());
     wirePinyin(body().firstElementChild, { annotateText: false });

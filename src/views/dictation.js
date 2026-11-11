@@ -1,6 +1,6 @@
 // Write a word from memory. Used by the lesson practice menu, Review, and the Writing section.
 // prompt: "audio" (听写: hear it), "pinyin" (see the pinyin) or "meaning" (see the English).
-import { $, $$, css, shuffle, esc } from "../lib/util.js";
+import { $, $$, css, shuffle, esc, revealNext } from "../lib/util.js";
 import { tonePy } from "../lib/pinyin.js";
 import { say, autoSay, sayLater, canSay } from "../lib/speech.js";
 import { setting } from "../lib/settings.js";
@@ -9,6 +9,7 @@ import { gridSVG, makeWriter, trackWriter, clearWriters } from "../lib/draw.js";
 import { app } from "../app.js";
 import { charLinks } from "./charsheet.js";
 import * as progress from "../progress/store.js";
+import { quizHead } from "../lib/qpinyin.js";
 
 const PROMPT = {
   audio: { title: "听写 tīngxiě · Dictation", how: "老师 says a word. Write it from memory, with no grey outline." },
@@ -67,9 +68,9 @@ export function dictWord() {
   const promptHtml = audio ? "" : prompt === "pinyin"
     ? `<div class="prompt-big py">${tonePy(word.py)}</div>`
     : `<div class="prompt-big">${esc(word.en)}</div>`;
-  host.innerHTML = `<div class="panel">
-    <div class="progress">Word ${dict.pos + 1} of ${total} · ${dict.perfect} perfect</div>
-    <div class="bar"><i style="width:${(dict.pos / total) * 100}%"></i></div>
+  if (!dict.pos) scrollTo(0, 0);
+  host.innerHTML = `<div class="panel dict focus">
+    ${quizHead({ title: dict.title || PROMPT[dict.prompt]?.title.split(" · ").pop(), pos: dict.pos, total, toggles: false, leave: dict.back ? (dict.then ? "Stop" : "Back") : null, leaveAttr: 'id="dictStop"' })}
     ${promptHtml}
     <div class="controls">
       ${audio ? `<button class="btn primary" type="button" data-say="${esc(word.w)}">${icon("speaker")} Listen</button>
@@ -77,24 +78,47 @@ export function dictWord() {
       <button class="btn" type="button" id="dictHint">${icon("hint")} Hint</button>
     </div>
     <div class="hint" id="dictHintText" hidden></div>
-    <div class="dict-boxes">${chars.map(() => `<div class="box">${gridSVG()}<div class="hw"></div></div>`).join("")}</div>
+    <div class="dict-slots" ${chars.length > 1 ? "" : "hidden"}>${chars.map((_, i) => `<button class="dict-slot" type="button" aria-label="Character ${i + 1} of ${chars.length}">${i + 1}</button>`).join("")}</div>
+    <div class="dict-boxes stack">${chars.map((_, i) => `<div class="box${i ? "" : " on"}">${gridSVG()}<div class="hw"></div></div>`).join("")}</div>
     <div class="status" id="dictStatus" aria-live="polite">Write the word${audio ? " you hear" : ""}.</div>
     <div class="answer" id="dictAnswer" hidden></div>
-    <div class="controls">
+    <div class="controls dock">
       <button class="btn" type="button" id="dictShow">Show answer</button>
       <button class="btn primary" type="button" id="dictNext" hidden>Next word</button>
-      ${dict.back ? `<button class="btn ghost" type="button" id="dictStop">${dict.then ? "Stop" : "Back"}</button>` : ""}
     </div>
   </div>`;
   let hintLevel = 0, mistakes = 0, doneCount = 0, gaveUp = false, finished = false;
   const status = $("#dictStatus");
+  // On a phone one big box shows at a time; the squares above it are the word's characters.
+  const boxes = $$(".dict-boxes .box", host), slots = $$(".dict-slot", host);
+  const written = new Set();
+  let active = 0;
+  const showBox = (i) => {
+    active = i;
+    boxes.forEach((b, j) => b.classList.toggle("on", j === i));
+    slots.forEach((s, j) => s.setAttribute("aria-pressed", j === i));
+  };
+  const markSlot = (i) => { if (slots[i]) { slots[i].textContent = chars[i]; slots[i].classList.add("done"); } };
+  slots.forEach((s, i) => s.addEventListener("click", () => showBox(i)));
+  showBox(0);
   const ws = $$(".dict-boxes .hw", host).map((b, i) => {
     const size = Math.round(b.getBoundingClientRect().width) || 160;
     const w = trackWriter(makeWriter(b, chars[i], size, { showOutline: false, highlightColor: css("--jade") }));
     w.quiz({
       showHintAfterMisses: setting("hintAfter") || false, highlightOnComplete: true,
       onMistake: () => { mistakes++; },
-      onComplete: () => { doneCount++; if (doneCount === chars.length) finish(); },
+      onComplete: () => {
+        doneCount++;
+        written.add(i);
+        markSlot(i);
+        if (doneCount === chars.length) return finish();
+        // Move on to the next character still to write, after a moment to see this one finished.
+        setTimeout(() => {
+          if (finished || active !== i || !host.contains(boxes[i])) return;
+          const rest = chars.map((_, j) => j).filter((j) => !written.has(j));
+          showBox(rest.find((j) => j > i) ?? rest[0]);
+        }, 600);
+      },
     });
     return w;
   });
@@ -108,9 +132,8 @@ export function dictWord() {
     $("#dictAnswer").innerHTML = `<span class="hz">${charLinks(word.w)}</span><span class="py">${tonePy(word.py)}</span><span class="muted">${esc(word.en)}</span>`;
     $("#dictAnswer").hidden = false;
     $("#dictShow").hidden = true;
-    $("#dictNext").hidden = false;
     $("#dictNext").textContent = dict.pos + 1 >= total ? (dict.then ? "Continue" : "See results") : "Next word";
-    $("#dictNext").focus({ preventScroll: true });
+    revealNext($("#dictNext"));
     if (!audio) autoSay(word.w);
   }
   // Hints: audio prompt → meaning, then pinyin. Pinyin prompt → meaning, then sound. Meaning prompt → pinyin, then sound.
@@ -127,6 +150,7 @@ export function dictWord() {
   $("#dictHint").addEventListener("click", () => showHint(hintLevel + 1));
   $("#dictShow").addEventListener("click", () => {
     gaveUp = true;
+    chars.forEach((_, i) => markSlot(i));
     ws.forEach((w) => { w.cancelQuiz(); w.animateCharacter(); });
     finish();
   });

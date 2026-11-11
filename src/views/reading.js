@@ -5,7 +5,7 @@ import { tonePy, toneVariants } from "../lib/pinyin.js";
 import { say, sayBtns, stopSpeech } from "../lib/speech.js";
 import { sfx } from "../lib/sfx.js";
 import { icon } from "../lib/icons.js";
-import { pyToggleHtml, wirePinyin, pyOf } from "../lib/qpinyin.js";
+import { quizHead, wirePinyin, pyOf } from "../lib/qpinyin.js";
 import { makeSegmenter } from "../lib/segment.js";
 import { DICT } from "../data/index.js";
 import * as progress from "../progress/store.js";
@@ -179,17 +179,16 @@ export function orderGame(ui, sentences, opts = {}) {
     if (pool.every((p, k) => p.i === k)) pool = pool.reverse();
     const picked = [];
     let tries = 0;
-    ui.body().innerHTML = `<div class="panel">
-      <div class="head-row"><span class="lbl">组句 · Build the sentence</span>${pyToggleHtml()}</div>
-      <div class="progress">${pos + 1} of ${items.length} · ${right} right</div>
-      <div class="bar"><i style="width:${(pos / items.length) * 100}%"></i></div>
+    if (!pos) scrollTo(0, 0);
+    ui.body().innerHTML = `<div class="panel focus">
+      ${quizHead({ title: "组句 · Build the sentence", pos, total: items.length, leave: opts.then ? "Stop" : "Back" })}
       <p class="prompt-big" style="font-size:1.2rem">${esc(s.en)}</p>
       <div class="controls"><button class="btn" type="button" data-say="${esc(s.hz)}">${icon("speaker")} Hint: listen</button></div>
       <div class="build" id="oAnswer" aria-label="Your sentence"></div>
       <div class="build pool" id="oPool"></div>
       <div class="status" id="oStatus" aria-live="polite"></div>
       <div class="answer" id="oReveal" hidden></div>
-      <div class="controls"><button class="btn primary" type="button" id="oNext" hidden>${pos + 1 >= items.length ? (opts.then ? "Continue" : "See results") : "Next"}</button>${ui.backBtn(opts.then ? "Stop" : "Back")}</div>
+      <div class="controls dock"><button class="btn primary" type="button" id="oNext" hidden>${pos + 1 >= items.length ? (opts.then ? "Continue" : "See results") : "Next"}</button></div>
     </div>`;
     ui.wireBack(ui.body());
     wirePinyin(ui.body().firstElementChild, { annotateText: false });

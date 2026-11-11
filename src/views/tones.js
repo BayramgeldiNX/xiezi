@@ -1,11 +1,12 @@
 // Tone quiz tab: listen to one syllable, pick its tone.
-import { $, $$, shuffle, esc } from "../lib/util.js";
+import { $, $$, shuffle, esc, revealNext } from "../lib/util.js";
 import { syllables, tonePy, stripTone, addTone } from "../lib/pinyin.js";
 import { say, autoSay, sayLater, sayBtns } from "../lib/speech.js";
 import { icon } from "../lib/icons.js";
 import { CHARS, TONE_SETS, TONE_SAMPLES } from "../data/index.js";
 import * as progress from "../progress/store.js";
 import { nextHtml, wireNext } from "./practice.js";
+import { quizHead } from "../lib/qpinyin.js";
 
 const TONE_NAMES = ["", "1st · high, flat", "2nd · rising", "3rd · dip", "4th · falling"];
 const TONE_PATHS = ["", "M4 6 L40 6", "M4 20 L40 4", "M4 10 L18 22 L40 4", "M4 4 L40 22"];
@@ -71,9 +72,9 @@ function toneAsk() {
   const host = $(tOpts.host);
   if (tq.pos >= tq.qs.length) return toneEnd();
   const q = tq.qs[tq.pos], total = tq.qs.length;
-  host.innerHTML = `<div class="panel">
-    <div class="progress">Question ${tq.pos + 1} of ${total} · ${tq.right} right</div>
-    <div class="bar"><i style="width:${(tq.pos / total) * 100}%"></i></div>
+  if (!tq.pos) scrollTo(0, 0);
+  host.innerHTML = `<div class="panel focus">
+    ${quizHead({ title: "声调 · Tones", pos: tq.pos, total, toggles: false, leaveAttr: 'id="toneQBack"' })}
     <div class="controls">
       <button class="btn primary big" type="button" data-say="${esc(q.say)}" id="toneListen">${icon("speaker")} Listen</button>
       <button class="btn big" type="button" data-say="${esc(q.say)}" data-slow>${icon("slow")} Slow</button>
@@ -83,7 +84,7 @@ function toneAsk() {
       <small>${TONE_NAMES[t].split(" · ")[0]}</small></button>`).join("")}</div>
     <div class="status" id="toneStatus" aria-live="polite">Which tone do you hear?</div>
     <div class="answer" id="toneAnswer" hidden></div>
-    <div class="controls"><button class="btn primary" type="button" id="toneNext" hidden>${tq.pos + 1 >= total ? "See results" : "Next"}</button><button class="btn ghost" type="button" id="toneQBack">Back</button></div>
+    <div class="controls dock"><button class="btn primary" type="button" id="toneNext" hidden>${tq.pos + 1 >= total ? "See results" : "Next"}</button></div>
   </div>`;
   $("#toneQBack").addEventListener("click", () => tonesIntro());
   $$(".tone-opt", host).forEach((b) => b.addEventListener("click", () => {
@@ -100,8 +101,7 @@ function toneAsk() {
     $("#toneAnswer").innerHTML = `<span class="hz">${q.hz}</span><span class="py">${tonePy(addTone(q.plain, q.tone))}</span>${sayBtns(q.say, q.plain, true)}`;
     if (!ok) $("#toneAnswer").insertAdjacentHTML("afterend", compareHtml(q, t));
     $("#toneAnswer").hidden = false;
-    $("#toneNext").hidden = false;
-    $("#toneNext").focus({ preventScroll: true });
+    revealNext($("#toneNext"));
     if (!ok) {
       // Your pick, then the right one, so the two can be compared straight away.
       const mine = toneSample(q.plain, t), at = tq.pos;

@@ -134,16 +134,16 @@ export function watchMotion(root) {
       lastBar = to;
     }
     if (panels) for (const p of panels) {
-      const prog = p.querySelector(":scope > .progress");
-      if (!prog || !p.querySelector(":scope > .bar")) continue;
+      const prog = p.querySelector(":scope > .progress, :scope > .q-head > .progress");
+      if (!prog || !p.querySelector(":scope > .bar, :scope > .q-head > .bar")) continue;
       const text = prog.textContent;
       if (text === lastQuestion) continue;
       lastQuestion = text;
       for (const c of p.children) {
-        if (c.matches(".lbl, .progress, .bar")) continue;
+        if (c.matches(".lbl, .progress, .bar, .q-head, .dock")) continue;
         animate(c, [{ transform: "translateX(16px)", opacity: 0 }, { transform: "none", opacity: 1 }]);
       }
-    } else if (removedProgress && !root.querySelector(".panel > .progress")) lastQuestion = null;
+    } else if (removedProgress && !root.querySelector(".panel > .progress, .q-head > .progress")) lastQuestion = null;
     if (scores) for (const s of scores) if (!s.closest(".review-hero")) animate(s, [{ transform: "translateY(8px)", opacity: 0 }, { transform: "none", opacity: 1 }], { duration: 250 });
     if (reveals) for (const el of reveals) reveal(el);
   }).observe(root, { childList: true, subtree: true, attributes: true, attributeFilter: ["hidden"] });
