@@ -3,14 +3,16 @@
 import { setting } from "./settings.js";
 import { louder, soundFor } from "./sfx-pick.js";
 
-let ctx = null;
+let ctx = null, master = null;
+// How loud the effects are (setting "sfxVolume"); every sound goes through one volume knob.
+export const VOLUME = { quiet: 0.4, normal: 1, loud: 2.2, max: 4 };
 const AC = globalThis.AudioContext || globalThis.webkitAudioContext;
 
 // Phones only allow sound after a touch: the context is made and woken inside taps and key presses.
 function wake() {
   if (!AC || !setting("sfx")) return;
   try {
-    ctx ||= new AC();
+    if (!ctx) { ctx = new AC(); master = ctx.createGain(); master.connect(ctx.destination); }
     if (ctx.state !== "running") ctx.resume().catch(() => {});
   } catch {}
 }
@@ -24,7 +26,7 @@ function tone(t, { f, to, dur = 0.12, gain = 0.08, type = "sine", attack = 0.005
   g.gain.setValueAtTime(0.0001, t);
   g.gain.exponentialRampToValueAtTime(gain, t + attack);
   g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
-  o.connect(g).connect(ctx.destination);
+  o.connect(g).connect(master);
   o.start(t);
   o.stop(t + dur + 0.02);
 }
@@ -50,7 +52,7 @@ function noise(t, { dur = 0.06, gain = 0.06, from = 2000, to = 800, q = 1 }) {
   g.gain.setValueAtTime(0.0001, t);
   g.gain.exponentialRampToValueAtTime(gain, t + 0.006);
   g.gain.exponentialRampToValueAtTime(0.0001, t + dur);
-  s.connect(f).connect(g).connect(ctx.destination);
+  s.connect(f).connect(g).connect(master);
   s.start(t);
   s.stop(t + dur + 0.02);
 }
@@ -81,6 +83,7 @@ function flush() {
   if (!name || !setting("sfx") || !ctx) return;
   played.push(name);
   if (played.length > 30) played.shift();
+  master.gain.value = VOLUME[setting("sfxVolume")] ?? 1;
   const go = () => { try { SOUNDS[name](ctx.currentTime + 0.005); } catch {} };
   if (ctx.state === "running") go(); else ctx.resume().then(go).catch(() => {});
 }
@@ -98,6 +101,7 @@ if (typeof document !== "undefined") {
     const b = e.target.closest?.("button, a[href], [role=button], summary");
     if (!b || b.disabled || b.closest("[data-say]")) return;
     wake();
-    sfx(b.classList.contains("fc") || /Flip$/.test(b.id) ? "flip" : "tick");
+    // Changing the effects settings plays a sample, so the new volume is heard at once.
+    sfx(/^sfx/.test(b.dataset.set || "") ? "right" : b.classList.contains("fc") || /Flip$/.test(b.id) ? "flip" : "tick");
   }, true);
 }

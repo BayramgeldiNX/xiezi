@@ -37,7 +37,7 @@ The owner uses it on iPhone 16 (home-screen PWA), Mi Pad 7 Pro and Windows. Prog
   - `pinyin.js`: syllable splitter, handles üe and erhua.
   - `search.js`: `matchesWord` (汉字, pinyin with or without tones, English).
   - `speech.js`: recordings first, then TTS; `addRecordings` adds private audio.
-  - `sfx.js`: sound effects made with Web Audio (no files), setting `sfx`. Taps tick by themselves; writing quizzes get stroke sounds in `makeWriter`; answers and finished exercises sound through `progress.setHooks` (`record(key, result, { sfx | quiet })`, rules in `sfx-pick.js`).
+  - `sfx.js`: sound effects made with Web Audio (no files), settings `sfx` and `sfxVolume`. Taps tick by themselves; writing quizzes get stroke sounds in `makeWriter`; answers and finished exercises sound through `progress.setHooks` (`record(key, result, { sfx | quiet })`, rules in `sfx-pick.js`).
   - `typing-check.js`, `draw.js`, `compare.js`, `settings.js`, `theme.js`.
   - `qpinyin.js`: the 拼 Pinyin and 英 English switches in quizzes. English comes from `data/sentence-en.gen.json` (made by `scripts/gen-sentence-en.mjs` from lesson `en` fields plus hand translations in `data/sentence-en/part-*.json`; `--todo N` lists new untranslated sentences).
 - `src/sync/`:
