@@ -153,7 +153,13 @@ details.panel p { margin: 0; }
 
 
 /* ---------- Lesson completion (header ring, tab fills, 完 seal) ---------- */
-.lmeter { margin-left: auto; display: flex; align-items: center; gap: 8px; flex: none; --meter: var(--jade); min-height: 44px; padding: 0; border: 0; background: none; font: inherit; color: inherit; cursor: pointer; }
+.stimer { margin-left: auto; display: flex; align-items: center; gap: 4px; flex: none; min-height: 44px; padding: 0 8px; border: 0; background: none; font: inherit; font-size: .8125rem; font-weight: 700; font-variant-numeric: tabular-nums; color: var(--muted); cursor: pointer; user-select: none; -webkit-user-select: none; touch-action: manipulation; -webkit-touch-callout: none; }
+.stimer[hidden] { display: none; }
+.stimer .ic { width: 14px; height: 14px; flex: none; }
+.stimer.paused .t { opacity: .5; }
+.stimer + .lmeter { margin-left: 0; }
+#lessonView .topbar > div { min-width: 0; }
+.lmeter { display: flex; align-items: center; gap: 8px; flex: none; --meter: var(--jade); min-height: 44px; padding: 0; border: 0; background: none; font: inherit; color: inherit; cursor: pointer; }
 /* What is left: a count on each exercise card, and the list that opens from the ring. */
 .todo-n { font-size: .75rem; font-weight: 600; color: var(--amber); white-space: nowrap; font-variant-numeric: tabular-nums; }
 .todo-n.done { color: var(--jade); }

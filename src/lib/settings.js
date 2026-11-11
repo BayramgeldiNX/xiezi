@@ -11,6 +11,7 @@ export const DEFAULTS = {
   slowRate: 0.65,       // speed of the "Slow" sound button
   autoplay: true,       // play the word automatically in exercises
   sfx: true,            // sound effects (taps, strokes, right and wrong answers)
+  studyTimer: true,     // show the study stopwatch in the lesson header
   sfxVolume: "normal",  // quiet | normal | loud | max
 };
 const KEY = "xz-settings";
@@ -30,6 +31,7 @@ export function apply() {
   const r = document.documentElement;
   r.dataset.size = S.textSize;
   r.dataset.py = S.pinyin;
+  document.dispatchEvent(new Event("xz-settings"));
 }
 
 // "Show on tap": a blurred pinyin reveals itself when tapped.
