@@ -25,6 +25,11 @@ import { keyOf } from "../lib/explain-key.js";
 import { workbookOf, workbookQuiz, fillQuiz, radicalQuiz } from "./workbook.js";
 import { hanziLesson, pronTips } from "./hanzi.js";
 import { noteHtml } from "./lessonmeter.js";
+import { pickRound, openFirst } from "../lib/round.js";
+
+// A lesson round: only what is not done yet while there is any (see lib/round.js).
+const round = (list, itemOf, n) => pickRound(list, itemOf, progress.get, n);
+const wordItem = (w) => ["f:" + w.w, "q:" + w.w]; // Flashcards, Match and Word quiz count together
 
 // Modes that only exist when the lesson has that content.
 export const modeAvailable = (id, L) =>
@@ -165,6 +170,8 @@ export function vocabQuiz({ items, pool, mode = "mixed", title = "Vocabulary", k
 }
 
 const sentenceItems = (words) => words.filter((w) => w.ex?.hz);
+// Two words can share one example sentence; the Sentences quiz asks it once (as the first word).
+export const uniqueSentences = (words) => sentenceItems(words).filter((w, i, a) => a.findIndex((x) => x.ex.hz === w.ex.hz) === i);
 const lessonSentences = (words, readings) => [
   ...sentenceItems(words).map((w) => ({ hz: w.ex.hz.replace(/[AB]: /g, ""), py: w.ex.py.replace(/[AB]: /g, ""), en: w.ex.en })),
   ...readings.flatMap((r) => r.lines),
@@ -192,39 +199,40 @@ function startMode(mode) {
   P.mode = mode;
   const { words, readings = [] } = P.ctx;
   const host = P.host, back = goBack, lesson = P.ctx.lesson;
-  const ten = (list) => shuffle(list).slice(0, 10);
+  // Rounds are functions, so "Again" picks a new round from what is still open.
+  const ten = (prefix, list = words, suffix = "") => () => round(list, (w) => prefix + w.w + suffix, 10);
+  const dictWords = () => round(words, (w) => "d:" + w.w);
   scrollTo(0, 0);
   switch (mode) {
-    case "dict": return dictIntro({ host, words, prompt: "audio", kind: "dict", back, lesson });
-    case "pinyin": return dictIntro({ host, words, prompt: "pinyin", kind: "dict-pinyin", back, lesson });
-    case "meaning": return dictIntro({ host, words, prompt: "meaning", kind: "dict-meaning", back, lesson });
-    case "hear": return words.length < 2 ? notEnough() : listenQuiz({ items: ten(words), pool: words, mode: "mixed", title: "Hear the word" });
+    case "dict": return dictIntro({ host, words: dictWords, prompt: "audio", kind: "dict", back, lesson });
+    case "pinyin": return dictIntro({ host, words: dictWords, prompt: "pinyin", kind: "dict-pinyin", back, lesson });
+    case "meaning": return dictIntro({ host, words: dictWords, prompt: "meaning", kind: "dict-meaning", back, lesson });
+    case "hear": return words.length < 2 ? notEnough() : listenQuiz({ items: ten("l:"), pool: words, mode: "mixed", title: "Hear the word" });
     case "sentence": {
-      // Two words can share one example sentence; ask it once.
-      const sw = sentenceItems(words).filter((w, i, a) => a.findIndex((x) => x.ex.hz === w.ex.hz) === i);
+      const sw = uniqueSentences(words);
       if (sw.length < 2) return notEnough();
-      return choiceQuiz({ kind: "listen-sentence", title: "Sentences", items: shuffle(sw).slice(0, 8), key: "ls:",
+      return choiceQuiz({ kind: "listen-sentence", title: "Sentences", items: () => round(sw, (w) => "ls:" + w.w, 8), key: "ls:",
         ask: (w) => ({ html: `<p class="hint">What does this sentence mean?</p>`, say: w.ex.hz }),
         makeOptions: (w) => [w, ...shuffle(sw.filter((x) => x.ex.en !== w.ex.en)).slice(0, 3)].map((o) => ({ html: `<span class="en">${esc(o.ex.en)}</span>`, correct: o === w, note: `<span class="hz">${esc(o.ex.hz)}</span> <span class="py">${tonePy(o.ex.py)}</span>` })),
         reveal: (w) => `<span class="hz" style="font-size:1.3rem">${w.ex.hz}</span> ${sayBtns(w.ex.hz, "sentence", true)}<span class="py c-py">${tonePy(w.ex.py)}</span>` });
     }
     case "tones": return tonesIntro({ host, words, label: "Characters from this lesson", lesson, back });
-    case "say-word": return speak({ title: "Say the word", items: ten(words).map((w) => ({ w, text: w.w, py: w.py, en: w.en })) });
-    case "say-sentence": return speak({ title: "Say the sentence", items: ten(sentenceItems(words)).map((w) => ({ w, text: w.ex.hz.replace(/[AB]: /g, ""), py: w.ex.py.replace(/[AB]: /g, ""), en: w.ex.en, sentence: true })) });
-    case "cards": return cardsOpen({ host, words, lesson, back, next: nextStep });
+    case "say-word": return speak({ title: "Say the word", items: () => ten("s:")().map((w) => ({ w, text: w.w, py: w.py, en: w.en })) });
+    case "say-sentence": return speak({ title: "Say the sentence", items: () => ten("s:", sentenceItems(words), "#ex")().map((w) => ({ w, text: w.ex.hz.replace(/[AB]: /g, ""), py: w.ex.py.replace(/[AB]: /g, ""), en: w.ex.en, sentence: true })) });
+    case "cards": return cardsOpen({ host, words: () => round(words, wordItem), lesson, back, next: nextStep });
     case "match": return matchGame(words);
-    case "word-quiz": return words.length < 2 ? notEnough() : vocabQuiz({ items: ten(words), pool: words, mode: "mixed", title: "Word quiz" });
+    case "word-quiz": return words.length < 2 ? notEnough() : vocabQuiz({ items: () => round(words, wordItem, 10), pool: words, mode: "mixed", title: "Word quiz" });
     case "list": return wordList(words);
     case "texts": return bookTexts(readings);
     case "grammar": return grammarNotes();
-    case "gr-fill": return grammarQuiz({ items: shuffle(grammarOf(thisLesson() ? [thisLesson()] : [])), title: "Grammar · fill the blank" });
+    case "gr-fill": return grammarQuiz({ items: grammarRound(grammarOf(thisLesson() ? [thisLesson()] : [])), title: "Grammar · fill the blank" });
     case "text-quiz": return textQuiz(ui, readings);
     case "order": return orderGame(ui, lessonSentences(words, readings));
     case "read-pinyin": return pinyinQuiz(ui, words);
     case "wb-dialog": case "wb-judge": case "wb-reply": {
       const kind = { "wb-dialog": "dialog", "wb-judge": "judge", "wb-reply": "reply" }[mode];
       const items = workbookOf(thisLesson() ? [thisLesson()] : []).filter((d) => d.kind === kind);
-      return items.length ? workbookQuiz(ui, { items: shuffle(items), title: SKILLS[P.skill].modes.find((m) => m.id === mode).name, kind: mode }) : notEnough();
+      return items.length ? workbookQuiz(ui, { items: () => round(items, (d) => "wb:" + d.id), title: SKILLS[P.skill].modes.find((m) => m.id === mode).name, kind: mode }) : notEnough();
     }
     case "fill": return words.filter((w) => w.ex?.hz?.includes(w.w)).length < 2 ? notEnough() : fillQuiz(ui, words);
     case "radical": return thisLesson() ? radicalQuiz(ui, thisLesson()) : notEnough();
@@ -272,13 +280,13 @@ function grammarNotes() {
     ${points.length ? `<section class="gr-note">
       <h3>Practice</h3>
       <ul>${points.map((g) => `<li><b>${esc(g.point)}</b> <span class="muted">${esc(g.en)}</span></li>`).join("")}</ul>
-      <div class="controls"><button class="btn primary" type="button" id="grGo">${icon("play")} Fill the blanks · ${drills.length} questions</button></div>
+      <div class="controls"><button class="btn primary" type="button" id="grGo">${icon("play")} Fill the blanks · ${grammarRound(drills)().length} questions</button></div>
     </section>` : ""}
     <div id="grBook"><p class="muted">Loading the book's notes…</p></div>
     ${backBtn()}
   </div>`;
   wireBack(body());
-  $("#grGo")?.addEventListener("click", () => grammarQuiz({ items: shuffle(drills), title: "Grammar · fill the blank" }));
+  $("#grGo")?.addEventListener("click", () => grammarQuiz({ items: grammarRound(drills), title: "Grammar · fill the blank" }));
   const slot = $("#grBook");
   const fill = (b) => {
     if (!slot.isConnected) return; // already moved on, for example into the questions
@@ -291,6 +299,9 @@ function grammarNotes() {
   };
   lessonContent(P.ctx.book, P.ctx.lesson).then(fill, () => fill({ status: "error" }));
 }
+
+// The lesson's grammar drills still open (all of them once every one is done).
+const grammarRound = (drills) => () => round(drills, (d) => "g:" + d.id);
 
 // Fill the blank: choose the word that completes the sentence. Results are saved as g:<drill id>.
 export function grammarQuiz(cfg) {
@@ -308,12 +319,13 @@ export const ui = { nextHtml, wireNext, wordNote, body: () => body(), backBtn: (
 export const setHost = (host, ctx) => { P = { ...P, host, ctx: { ...P.ctx, ...ctx } }; };
 
 /* ---------- Multiple choice ---------- */
-// cfg: { items (or words + count), makeOptions(w) → [{html, correct}], ask(w) → {html, say?},
+// cfg: { items (a list, or a function that picks one: "Again" then picks anew; or words + count),
+//        makeOptions(w) → [{html, correct}], ask(w) → {html, say?},
 //        reveal(w), key, id?(w), label?(w), title, kind, silent?, back?, onDone?, then?,
 //        explain?(w) → key in explain.gen.json (options then carry `t`, their text, to explain a wrong choice)
 //        why?(w) → html, a reason made from the data. An option's `note` (html) says what that wrong choice is. }
 export function choiceQuiz(cfg) {
-  const items = cfg.items || shuffle(cfg.words).slice(0, cfg.count || 10);
+  const items = typeof cfg.items === "function" ? cfg.items() : cfg.items || shuffle(cfg.words).slice(0, cfg.count || 10);
   const leave = cfg.back || goBack;
   const wire = (el) => $$("[data-back]", el).forEach((b) => b.addEventListener("click", leave));
   if (!items.length) return notEnough();
@@ -372,7 +384,7 @@ export function choiceQuiz(cfg) {
     progress.addSession({ type: cfg.kind, lesson: P.ctx.lesson ?? 0, score: right, total: items.length, missed });
     cfg.onDone?.(right, items.length);
     if (cfg.then) return cfg.then({ title: cfg.title, right, total: items.length, missed, missedItems });
-    const full = cfg.fullCfg || cfg; // "Again" always replays the original round, even after "Retry missed"
+    const full = cfg.fullCfg || cfg; // "Again" starts the original round (or picks a new one), even after "Retry missed"
     showResults(cfg.title, right, items.length, missed, () => choiceQuiz(full), "全对！Quán duì! Everything correct!",
       missedItems.length && (() => choiceQuiz({ ...cfg, items: missedItems, onDone: undefined, fullCfg: full })));
   }
@@ -397,8 +409,9 @@ export function showResults(title, right, total, missed, again, perfect = "全�
 /* ---------- Match pairs ---------- */
 function matchGame(words) {
   // Two words can share one meaning (for example two "happy"); keep only one so every pair is clear.
+  // Words not done yet come first; done ones only fill up the board.
   const seenEn = new Set(), set = [];
-  for (const w of shuffle(words)) {
+  for (const w of openFirst(words, wordItem, progress.get)) {
     const k = (w.en || "").trim().toLowerCase();
     if (seenEn.has(k)) continue;
     seenEn.add(k); set.push(w);
@@ -459,8 +472,9 @@ function matchGame(words) {
 /* ---------- Speaking ---------- */
 const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
-// items: [{ w, text, py, en, sentence? }]
-export function speak({ title, items, then, fullItems = items }) {
+// items: [{ w, text, py, en, sentence? }], or a function that picks them ("Again" then picks anew)
+export function speak({ title, items: pick, then, fullItems = pick }) {
+  const items = typeof pick === "function" ? pick() : pick;
   if (!items.length) return notEnough();
   let pos = 0, right = 0, useRecorder = !Recognition, answered = false, recTimer = null, recog = null, media = null, starting = false;
   const missed = [], missedItems = [];
