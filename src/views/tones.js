@@ -1,7 +1,7 @@
 // Tone quiz tab: listen to one syllable, pick its tone.
 import { $, $$, shuffle, esc } from "../lib/util.js";
 import { syllables, tonePy, stripTone, addTone } from "../lib/pinyin.js";
-import { say, autoSay, sayBtns } from "../lib/speech.js";
+import { say, autoSay, sayLater, sayBtns } from "../lib/speech.js";
 import { icon } from "../lib/icons.js";
 import { CHARS, TONE_SETS, TONE_SAMPLES } from "../data/index.js";
 import * as progress from "../progress/store.js";
@@ -109,7 +109,7 @@ function toneAsk() {
     }
   }));
   $("#toneNext").addEventListener("click", () => { tq.pos++; toneAsk(); });
-  setTimeout(() => autoSay(q.say), 250);
+  sayLater(q.say);
 }
 
 function toneEnd() {

@@ -15,10 +15,14 @@ import { shuffleWith, allCoreRadicals, pickRadicalDistractors, buildFindQuestion
 import * as progress from "../progress/store.js";
 import { radicalChoice } from "./workbook.js";
 import { setHost, ui as practiceUi } from "./practice.js";
+import { animate, flipOut, flipIn } from "../lib/motion.js";
 
 /* ---------- screens ---------- */
 const hzSpan = (t, size) => `<span class="hz" style="font-size:${size}rem">${esc(t)}</span>`;
 const all$ = (s, el) => [...el.querySelectorAll(s)];
+const POS = { left: "on the left", right: "on the right", top: "on top", bottom: "at the bottom", enclose: "around the outside", enclosing: "around the outside", outside: "around the outside" };
+// Why this radical: its meaning, where it usually sits, and what its characters are about.
+const radicalWhy = (r) => r ? `<span class="hz">${esc(r.r)}</span> ${esc(r.en)}${POS[r.pos] ? `, usually ${POS[r.pos]}` : ""}. ${esc(r.meaningNote || r.tip || "")}` : "";
 
 function nothing(ui, el, msg, back) {
   el.innerHTML = `<div class="panel"><p>${esc(msg)}</p>${ui.backBtn()}</div>`;
@@ -30,7 +34,7 @@ function findQuiz(ui, radicals, { then, back, title = "部首 · Which radical?"
   const byR = Object.fromEntries(all.map((x) => [x.r, x]));
   const items = buildFindQuestions(radicals.map((r) => byR[r.r] || r));
   return radicalChoice(ui, { kind: "radical-find", title, items, key: "bs:", id: (q) => q.r, then, back,
-    charOf: (q) => q.c, radOf: (q) => q.r, nameOf: (r) => byR[r]?.en || "",
+    charOf: (q) => q.c, radOf: (q) => q.r, nameOf: (r) => byR[r]?.en || "", why: (q) => radicalWhy(byR[q.r] || q.radical),
     distractors: (q) => pickRadicalDistractors(byR[q.r] || q.radical, all, Math.random, 3, q.c) });
 }
 
@@ -43,6 +47,7 @@ function guessQuiz(ui, radicals, { then, back, title = "猜意思 · Guess the m
       <p class="muted"><span class="hz" style="color:var(--jade)">${esc(q.radical.r)}</span> ${esc(q.radical.en)} + ?</p>` }),
     makeOptions: (q) => [q.en, ...pickGuessDistractors(q, pool)]
       .map((en, i) => ({ html: `<span class="en">${esc(en)}</span>`, correct: i === 0 })),
+    why: (q) => radicalWhy(q.radical),
     reveal: (q) => `${hzSpan(q.c, 1.4)} <span class="py">${esc(q.py)}</span> ${esc(q.en)} · <span class="hz" style="color:var(--jade)">${esc(q.radical.r)}</span> ${esc(q.radical.en)} ${sayBtns(q.c, q.py, true)}`,
   });
 }
@@ -51,7 +56,7 @@ function guessQuiz(ui, radicals, { then, back, title = "猜意思 · Guess the m
 function cardsQuiz(ui, el, radicals, { then, back }) {
   const queue = shuffleWith(radicals).slice(0, 12), total = queue.length;
   const again = new Set();
-  let flipped = false, known = 0;
+  let flipped = false, known = 0, anim = null, turning = false;
   const finish = () => {
     const missed = [...again];
     progress.addSession({ type: "radical-cards", lesson: 0, score: known, total, missed });
@@ -77,14 +82,23 @@ function cardsQuiz(ui, el, radicals, { then, back }) {
         : `<button class="btn primary big" type="button" id="rcFlip">Flip</button>`}</div>
       <div class="controls" style="justify-content:center">${ui.backBtn("Stop")}</div></div>`;
     all$("[data-back]", el).forEach((b) => b.addEventListener("click", back));
-    const flip = () => { if (!flipped) { flipped = true; render(); autoSay(r.full || r.r); } };
+    const flip = () => {
+      if (flipped || turning) return;
+      turning = true;
+      autoSay(r.full || r.r);
+      const card = $("#rcCard", el);
+      flipOut(card, () => { turning = false; if (flipped || !card.isConnected) return; flipped = true; anim = "flip"; render(); });
+    };
+    if (anim === "flip") flipIn($("#rcCard", el));
+    else if (anim === "next") animate($("#rcCard", el), [{ transform: "translateX(24px)", opacity: 0 }, { transform: "none", opacity: 1 }]);
+    anim = null;
     $("#rcCard", el).addEventListener("click", flip);
     $("#rcFlip", el)?.addEventListener("click", flip);
     const rate = (ok) => {
-      progress.record(radicalKey(r.r), ok ? { ok: true } : { ok: false, miss: 1 });
+      progress.record(radicalKey(r.r), ok ? { ok: true } : { ok: false, miss: 1 }, { quiet: true });
       queue.shift();
       if (ok) known++; else { again.add(r.r); queue.push(r); }
-      flipped = false; render();
+      flipped = false; anim = "next"; render();
     };
     $("#rcGot", el)?.addEventListener("click", () => rate(true));
     $("#rcAgain", el)?.addEventListener("click", () => rate(false));

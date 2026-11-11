@@ -93,7 +93,7 @@ details summary { cursor: pointer; color: var(--muted); }
 /* ---------- Practice menus ---------- */
 .scope { display: flex; flex-wrap: wrap; }
 .mode-grid { display: grid; gap: 8px; width: 100%; max-width: 560px; }
-.mode-card { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0 12px; align-items: center; min-height: 68px; padding: 12px; text-align: left; cursor: pointer; border: 0; border-radius: var(--r2); background: var(--card); color: var(--ink); transition: transform var(--fast) var(--spring), background-color var(--fast) var(--ease); }
+.mode-card { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 0 12px; align-items: center; min-height: 68px; padding: 12px; text-align: left; cursor: pointer; border: 0; border-radius: var(--r2); background: var(--card); color: var(--ink); transition: transform var(--fast) var(--spring), background-color var(--fast) var(--ease); }
 .mode-card:hover:not(:disabled) { background: var(--card2); }
 .mode-card .seal { grid-row: span 2; }
 .mode-card b { font-size: 1rem; }
@@ -148,7 +148,23 @@ details.panel p { margin: 0; }
 
 
 /* ---------- Lesson completion (header ring, tab fills, 完 seal) ---------- */
-.lmeter { margin-left: auto; display: flex; align-items: center; gap: 8px; flex: none; --meter: var(--jade); }
+.lmeter { margin-left: auto; display: flex; align-items: center; gap: 8px; flex: none; --meter: var(--jade); min-height: 44px; padding: 0; border: 0; background: none; font: inherit; color: inherit; cursor: pointer; }
+/* What is left: a count on each exercise card, and the list that opens from the ring. */
+.todo-n { font-size: .75rem; font-weight: 600; color: var(--amber); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.todo-n.done { color: var(--jade); }
+.mode-card .todo-n { grid-column: 3; grid-row: 1 / span 2; }
+.btn .todo-n { margin-left: 8px; }
+.lleft { display: grid; gap: 16px; width: 100%; max-width: 560px; padding: 16px; border-radius: var(--r2); background: var(--card); }
+.lleft[hidden] { display: none; }
+.lleft .ll-title { margin: 0; font-size: .8125rem; color: var(--muted); }
+.lleft h3 { display: flex; align-items: center; gap: 8px; margin: 0; font-size: .9375rem; }
+.lleft h3 .tz { font-family: var(--display); font-size: 1.125rem; }
+.lleft .ll-n { margin-left: auto; font-size: .8125rem; font-weight: 600; color: var(--muted); font-variant-numeric: tabular-nums; }
+.lleft .ll-n.done { color: var(--jade); }
+.ll-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0 12px; align-items: center; width: 100%; min-height: 44px; margin-top: 8px; padding: 8px 12px; border: 0; border-radius: var(--r2); background: var(--card2); color: var(--ink); font: inherit; text-align: left; cursor: pointer; }
+.ll-row b { font-size: .9375rem; }
+.ll-row small { grid-column: 1; color: var(--muted); font-size: .8125rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ll-row .todo-n { grid-column: 2; grid-row: 1 / span 2; }
 .lmeter svg { width: 34px; height: 34px; transform: rotate(-90deg); fill: none; stroke-width: 3.5; }
 .lmeter .ring-bg { stroke: var(--line2); }
 .lmeter .ring-fill { stroke: var(--meter); stroke-linecap: round; stroke-dasharray: 94.25; stroke-dashoffset: 94.25; transition: stroke-dashoffset .4s var(--ease), stroke .4s var(--ease); }
@@ -180,3 +196,8 @@ details.panel p { margin: 0; }
   .tab-fill { height: 3px; bottom: 4px; }
 }
 @media (prefers-reduced-motion: reduce) { .lmeter *,.tab-fill i { transition: none !important; animation: none !important; } }
+/* Why the answer is right (and why the chosen option is not), under the answer. */
+.answer .why { flex-basis: 100%; margin-top: 6px; color: var(--muted); font-size: .95rem; line-height: 1.5; }
+.answer .why p { margin: 2px 0; }
+.answer .why .hz { font-size: 1.05em; font-weight: 400; }
+.answer .why .why-lbl { color: var(--ink); font-weight: 600; margin-right: 4px; }

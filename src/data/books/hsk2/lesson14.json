@@ -197,8 +197,8 @@
           "options": [
             "过",
             "着",
-            "了",
-            "完"
+            "在",
+            "的"
           ],
           "answer": 0,
           "en": "Have you seen that movie?"
@@ -252,9 +252,9 @@
           "q": "我在这个商店买过一___东西。",
           "options": [
             "次",
-            "个",
+            "本",
             "下",
-            "件"
+            "岁"
           ],
           "answer": 0,
           "en": "I've bought something in this shop once."

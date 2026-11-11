@@ -1,0 +1,3411 @@
+[
+  {
+    "key": "r1bcivvd",
+    "type": "reading",
+    "lesson": 1,
+    "q": "How do you greet a group of people?",
+    "options": [
+      "你们好！",
+      "您好！",
+      "没关系。",
+      "对不起！"
+    ],
+    "answer": "你们好！",
+    "context": {
+      "title": "你好",
+      "lines": [
+        "A：你好！  (Hello!)",
+        "B：你好！  (Hello!)",
+        "A：您好！  (Hello! (polite))",
+        "B：你们好！  (Hello, everyone!)"
+      ]
+    },
+    "why": "你们 is the plural of 你, so 你们好 greets several people. B says it to everyone.",
+    "not": {
+      "您好！": "您 is polite for one person, not a group.",
+      "没关系。": "That answers an apology, not a greeting.",
+      "对不起！": "That is an apology, not a greeting."
+    }
+  },
+  {
+    "key": "r98ohce",
+    "type": "reading",
+    "lesson": 1,
+    "q": "Which greeting is the polite one?",
+    "options": [
+      "您好！",
+      "你好！",
+      "你们好！",
+      "没关系。"
+    ],
+    "answer": "您好！",
+    "context": {
+      "title": "你好",
+      "lines": [
+        "A：你好！  (Hello!)",
+        "B：你好！  (Hello!)",
+        "A：您好！  (Hello! (polite))",
+        "B：你们好！  (Hello, everyone!)"
+      ]
+    },
+    "why": "您 is the respectful form of 你. A says 您好 to show politeness.",
+    "not": {
+      "你好！": "It is the normal greeting, not the polite one.",
+      "你们好！": "It greets several people; it is not about politeness.",
+      "没关系。": "That means it is okay; it is not a greeting."
+    }
+  },
+  {
+    "key": "rvfd5qt",
+    "type": "reading",
+    "lesson": 1,
+    "q": "How does B answer “对不起”?",
+    "options": [
+      "没关系。",
+      "你好！",
+      "您好！",
+      "你们好！"
+    ],
+    "answer": "没关系。",
+    "context": {
+      "title": "没关系",
+      "lines": [
+        "A：对不起！  (Sorry!)",
+        "B：没关系。  (That's okay.)",
+        "A：对不起，对不起！  (Sorry, so sorry!)",
+        "B：没关系，没关系。  (It's fine, it's fine.)"
+      ]
+    },
+    "why": "A says 对不起 and B replies 没关系, meaning it is okay.",
+    "not": {
+      "你好！": "That is a greeting; B answers the apology differently.",
+      "您好！": "A polite greeting, not a reply to an apology.",
+      "你们好！": "A greeting for a group, not a reply to sorry."
+    }
+  },
+  {
+    "key": "rhhvxib",
+    "type": "reading",
+    "lesson": 1,
+    "q": "What does A say?",
+    "options": [
+      "Sorry",
+      "Hello",
+      "Goodbye",
+      "Thank you"
+    ],
+    "answer": "Sorry",
+    "context": {
+      "title": "没关系",
+      "lines": [
+        "A：对不起！  (Sorry!)",
+        "B：没关系。  (That's okay.)",
+        "A：对不起，对不起！  (Sorry, so sorry!)",
+        "B：没关系，没关系。  (It's fine, it's fine.)"
+      ]
+    },
+    "why": "A says 对不起, which means sorry.",
+    "not": {
+      "Hello": "Hello is 你好; A says 对不起.",
+      "Goodbye": "Goodbye is 再见, which A does not say.",
+      "Thank you": "Thank you is 谢谢, which A does not say."
+    }
+  },
+  {
+    "key": "d13ux0g7",
+    "type": "dialog",
+    "lesson": 1,
+    "q": "他们在说什么？",
+    "options": [
+      "你好",
+      "对不起",
+      "没关系"
+    ],
+    "answer": "你好",
+    "context": {
+      "lines": [
+        "男：你好！",
+        "女：你好！"
+      ]
+    },
+    "why": "Both people say 你好, so they are greeting each other.",
+    "not": {
+      "对不起": "Nobody says sorry in this talk.",
+      "没关系": "Nobody says 没关系 here."
+    }
+  },
+  {
+    "key": "d94gbpf",
+    "type": "dialog",
+    "lesson": 1,
+    "q": "女的说什么？",
+    "options": [
+      "没关系",
+      "你好",
+      "对不起"
+    ],
+    "answer": "没关系",
+    "context": {
+      "lines": [
+        "男：对不起！",
+        "女：没关系。"
+      ]
+    },
+    "why": "The man says 对不起 and the woman answers 没关系.",
+    "not": {
+      "你好": "She does not greet him; she replies to his apology.",
+      "对不起": "The man says that, not the woman."
+    }
+  },
+  {
+    "key": "dzqwxqi",
+    "type": "dialog",
+    "lesson": 1,
+    "q": "男的是谁？",
+    "options": [
+      "学生",
+      "老师",
+      "医生"
+    ],
+    "answer": "学生",
+    "context": {
+      "lines": [
+        "男：老师，您好！",
+        "女：你们好！"
+      ]
+    },
+    "why": "He calls the other person 老师, so he is talking to a teacher; he is the student.",
+    "not": {
+      "老师": "He says 老师 to the woman, so she is the teacher, not him.",
+      "医生": "Nothing in the lines mentions a doctor."
+    }
+  },
+  {
+    "key": "j1ojdxd",
+    "type": "judge",
+    "lesson": 1,
+    "q": "他说“对不起”。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "对不起！没关系。"
+    },
+    "why": "The text has 对不起, so he does say sorry. The claim is true.",
+    "not": {}
+  },
+  {
+    "key": "jxbgtq1",
+    "type": "judge",
+    "lesson": 1,
+    "q": "他在和一个人说话。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "你们好！"
+    },
+    "why": "The text says 你们好, which greets several people. The claim says one person, so it is false.",
+    "not": {}
+  },
+  {
+    "key": "r13de4eg",
+    "type": "reading",
+    "lesson": 2,
+    "q": "How does B answer “谢谢你”?",
+    "options": [
+      "不客气。",
+      "再见！",
+      "对不起。",
+      "你好！"
+    ],
+    "answer": "不客气。",
+    "context": {
+      "title": "谢谢",
+      "lines": [
+        "A：谢谢你！  (Thank you!)",
+        "B：不客气。  (You're welcome.)",
+        "A：再见！  (Goodbye!)",
+        "B：再见！  (Goodbye!)"
+      ]
+    },
+    "why": "A says 谢谢你, and B answers 不客气, meaning you are welcome.",
+    "not": {
+      "再见！": "B says that later, to end the talk, not to answer thanks.",
+      "对不起。": "B does not say sorry.",
+      "你好！": "That is a greeting, not an answer to thanks."
+    }
+  },
+  {
+    "key": "r1ff9zrj",
+    "type": "reading",
+    "lesson": 2,
+    "q": "How do they end the talk?",
+    "options": [
+      "再见！",
+      "谢谢！",
+      "没关系。",
+      "您好！"
+    ],
+    "answer": "再见！",
+    "context": {
+      "title": "谢谢",
+      "lines": [
+        "A：谢谢你！  (Thank you!)",
+        "B：不客气。  (You're welcome.)",
+        "A：再见！  (Goodbye!)",
+        "B：再见！  (Goodbye!)"
+      ]
+    },
+    "why": "Both A and B say 再见 in the last lines, so the talk ends with goodbye.",
+    "not": {
+      "谢谢！": "Thanks is said near the start, not the end.",
+      "没关系。": "Nobody says this in this talk.",
+      "您好！": "A greeting starts a talk; it is not the ending."
+    }
+  },
+  {
+    "key": "r34cjfv",
+    "type": "reading",
+    "lesson": 2,
+    "q": "Who does A thank politely?",
+    "options": [
+      "您",
+      "你们",
+      "老师",
+      "我"
+    ],
+    "answer": "您",
+    "context": {
+      "title": "不客气",
+      "lines": [
+        "A：您好！  (Hello!)",
+        "B：你好！  (Hello!)",
+        "A：谢谢您！  (Thank you!)",
+        "B：不客气，再见！  (You're welcome, goodbye!)"
+      ]
+    },
+    "why": "A says 谢谢您; 您 is the polite form of 你, so A thanks one person politely.",
+    "not": {
+      "你们": "A says 您, not 你们.",
+      "老师": "The lines never say 老师.",
+      "我": "A thanks the other person, not themselves."
+    }
+  },
+  {
+    "key": "r14puxl5",
+    "type": "reading",
+    "lesson": 2,
+    "q": "What does B say last?",
+    "options": [
+      "再见！",
+      "你好！",
+      "谢谢！",
+      "对不起！"
+    ],
+    "answer": "再见！",
+    "context": {
+      "title": "不客气",
+      "lines": [
+        "A：您好！  (Hello!)",
+        "B：你好！  (Hello!)",
+        "A：谢谢您！  (Thank you!)",
+        "B：不客气，再见！  (You're welcome, goodbye!)"
+      ]
+    },
+    "why": "B's last words are 不客气，再见, so the last thing B says is 再见.",
+    "not": {
+      "你好！": "B says 你好 near the start, not last.",
+      "谢谢！": "A says 谢谢您; B replies 不客气.",
+      "对不起！": "Nobody says sorry in this talk."
+    }
+  },
+  {
+    "key": "d6ui0j6",
+    "type": "dialog",
+    "lesson": 2,
+    "q": "女的说什么？",
+    "options": [
+      "不客气",
+      "再见",
+      "谢谢"
+    ],
+    "answer": "不客气",
+    "context": {
+      "lines": [
+        "男：谢谢你！",
+        "女：不客气。"
+      ]
+    },
+    "why": "The man says 谢谢你 and the woman replies 不客气.",
+    "not": {
+      "再见": "She does not say goodbye here.",
+      "谢谢": "The man says that, not the woman."
+    }
+  },
+  {
+    "key": "dl7zzpp",
+    "type": "dialog",
+    "lesson": 2,
+    "q": "他们在做什么？",
+    "options": [
+      "说再见",
+      "说谢谢",
+      "说你好"
+    ],
+    "answer": "说再见",
+    "context": {
+      "lines": [
+        "男：再见！",
+        "女：再见！"
+      ]
+    },
+    "why": "Both people say 再见, so they are saying goodbye.",
+    "not": {
+      "说谢谢": "Nobody says 谢谢 here.",
+      "说你好": "Nobody says 你好 here."
+    }
+  },
+  {
+    "key": "d1uoqp50",
+    "type": "dialog",
+    "lesson": 2,
+    "q": "男的谢谢谁？",
+    "options": [
+      "老师",
+      "同学",
+      "妈妈"
+    ],
+    "answer": "老师",
+    "context": {
+      "lines": [
+        "男：谢谢老师！",
+        "女：不客气。"
+      ]
+    },
+    "why": "He says 谢谢老师, so he thanks the teacher.",
+    "not": {
+      "同学": "He says 老师, not 同学.",
+      "妈妈": "He says 老师, not 妈妈."
+    }
+  },
+  {
+    "key": "j1m07r4z",
+    "type": "judge",
+    "lesson": 2,
+    "q": "他说“谢谢”。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "谢谢！不客气。"
+    },
+    "why": "The text starts with 谢谢, so he does say thanks. The claim is true.",
+    "not": {}
+  },
+  {
+    "key": "ji8dxvq",
+    "type": "judge",
+    "lesson": 2,
+    "q": "他是老师。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "我不是老师。"
+    },
+    "why": "The text says 我不是老师, I am not a teacher. The claim says he is a teacher, so it is false.",
+    "not": {}
+  },
+  {
+    "key": "r12ozk71",
+    "type": "reading",
+    "lesson": 3,
+    "q": "What is B's name?",
+    "options": [
+      "小李",
+      "小王",
+      "老师",
+      "学生"
+    ],
+    "answer": "小李",
+    "context": {
+      "title": "你叫什么名字",
+      "lines": [
+        "A：你好！我叫小王。你叫什么名字？  (Hi! I'm Xiao Wang. What's your name?)",
+        "B：我叫小李。  (I'm Xiao Li.)",
+        "A：你是老师吗？  (Are you a teacher?)",
+        "B：我不是老师，我是学生。  (I'm not a teacher, I'm a student.)"
+      ]
+    },
+    "why": "B says 我叫小李, so B's name is 小李. 小王 is A.",
+    "not": {
+      "小王": "A says 我叫小王; that is A's name.",
+      "老师": "That is a job, not a name; B says 不是老师.",
+      "学生": "That is a job, not a name."
+    }
+  },
+  {
+    "key": "rxrc9bm",
+    "type": "reading",
+    "lesson": 3,
+    "q": "Is B a teacher?",
+    "options": [
+      "No, a student",
+      "Yes",
+      "No, a doctor",
+      "We don't know"
+    ],
+    "answer": "No, a student",
+    "context": {
+      "title": "你叫什么名字",
+      "lines": [
+        "A：你好！我叫小王。你叫什么名字？  (Hi! I'm Xiao Wang. What's your name?)",
+        "B：我叫小李。  (I'm Xiao Li.)",
+        "A：你是老师吗？  (Are you a teacher?)",
+        "B：我不是老师，我是学生。  (I'm not a teacher, I'm a student.)"
+      ]
+    },
+    "why": "A asks 你是老师吗, and B answers 我不是老师，我是学生.",
+    "not": {
+      "Yes": "B says 不是, which means no.",
+      "No, a doctor": "B says 学生, not a doctor.",
+      "We don't know": "B answers clearly: not a teacher, a student."
+    }
+  },
+  {
+    "key": "rqechx",
+    "type": "reading",
+    "lesson": 3,
+    "q": "Where is B from?",
+    "options": [
+      "美国",
+      "中国",
+      "We don't know",
+      "Both"
+    ],
+    "answer": "美国",
+    "context": {
+      "title": "你是中国人吗",
+      "lines": [
+        "A：你是中国人吗？  (Are you Chinese?)",
+        "B：我不是中国人，我是美国人。  (I'm not Chinese, I'm American.)",
+        "A：你是学生吗？  (Are you a student?)",
+        "B：是，我是学生。  (Yes, I'm a student.)"
+      ]
+    },
+    "why": "B says 我是美国人, so B is American. 美国 means the USA.",
+    "not": {
+      "中国": "B says 我不是中国人, not Chinese.",
+      "We don't know": "B states it: 美国人.",
+      "Both": "B says no to Chinese, so not both."
+    }
+  },
+  {
+    "key": "r17wt2pc",
+    "type": "reading",
+    "lesson": 3,
+    "q": "What does B do?",
+    "options": [
+      "Student",
+      "Teacher",
+      "Doctor",
+      "Nothing"
+    ],
+    "answer": "Student",
+    "context": {
+      "title": "你是中国人吗",
+      "lines": [
+        "A：你是中国人吗？  (Are you Chinese?)",
+        "B：我不是中国人，我是美国人。  (I'm not Chinese, I'm American.)",
+        "A：你是学生吗？  (Are you a student?)",
+        "B：是，我是学生。  (Yes, I'm a student.)"
+      ]
+    },
+    "why": "B answers 是，我是学生 to the question 你是学生吗.",
+    "not": {
+      "Teacher": "Nobody says B is a teacher.",
+      "Doctor": "The lines never mention a doctor.",
+      "Nothing": "B says 我是学生, so B is a student."
+    }
+  },
+  {
+    "key": "d19jgw7t",
+    "type": "dialog",
+    "lesson": 3,
+    "q": "女的叫什么名字？",
+    "options": [
+      "小李",
+      "小王",
+      "李老师"
+    ],
+    "answer": "小李",
+    "context": {
+      "lines": [
+        "男：你叫什么名字？",
+        "女：我叫小李。"
+      ]
+    },
+    "why": "The woman says 我叫小李, so her name is 小李.",
+    "not": {
+      "小王": "She says 小李, not 小王.",
+      "李老师": "She gives the name 小李, not 李老师."
+    }
+  },
+  {
+    "key": "dulgvab",
+    "type": "dialog",
+    "lesson": 3,
+    "q": "女的是做什么的？",
+    "options": [
+      "学生",
+      "老师",
+      "医生"
+    ],
+    "answer": "学生",
+    "context": {
+      "lines": [
+        "男：你是老师吗？",
+        "女：不是，我是学生。"
+      ]
+    },
+    "why": "The man asks if she is a teacher; she says 不是，我是学生.",
+    "not": {
+      "老师": "She says 不是 to 老师.",
+      "医生": "She says 学生, not 医生."
+    }
+  },
+  {
+    "key": "dtmgj4e",
+    "type": "dialog",
+    "lesson": 3,
+    "q": "女的是哪国人？",
+    "options": [
+      "美国人",
+      "中国人",
+      "我们不知道"
+    ],
+    "answer": "美国人",
+    "context": {
+      "lines": [
+        "男：你是中国人吗？",
+        "女：不是，我是美国人。"
+      ]
+    },
+    "why": "She says 不是，我是美国人, so she is American.",
+    "not": {
+      "中国人": "She says 不是 to 中国人.",
+      "我们不知道": "She states her country: 美国人."
+    }
+  },
+  {
+    "key": "j14vtnzl",
+    "type": "judge",
+    "lesson": 3,
+    "q": "小王是老师。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "我叫小王，我是学生。"
+    },
+    "why": "The text says 我叫小王，我是学生, so 小王 is a student. The claim says teacher, so it is false.",
+    "not": {}
+  },
+  {
+    "key": "j1mgp2fs",
+    "type": "judge",
+    "lesson": 3,
+    "q": "他是美国人。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "我不是中国人，我是美国人。"
+    },
+    "why": "The text says 我是美国人, so he is American. The claim is true.",
+    "not": {}
+  },
+  {
+    "key": "jqm1wnd",
+    "type": "judge",
+    "lesson": 3,
+    "q": "李老师不是中国人。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "李老师是中国人。"
+    },
+    "why": "The text says 李老师是中国人, so he is Chinese. The claim says he is not, so it is false.",
+    "not": {}
+  },
+  {
+    "key": "r11a0lro",
+    "type": "reading",
+    "lesson": 4,
+    "q": "Who is she?",
+    "options": [
+      "B's Chinese teacher",
+      "B's friend",
+      "B's classmate",
+      "B's mother"
+    ],
+    "answer": "B's Chinese teacher",
+    "context": {
+      "title": "她是谁",
+      "lines": [
+        "A：她是谁？  (Who is she?)",
+        "B：她是我的汉语老师。  (She is my Chinese teacher.)",
+        "A：她是哪国人？  (Where is she from?)",
+        "B：她是中国人。  (She is Chinese.)"
+      ]
+    },
+    "why": "B says 她是我的汉语老师, she is my Chinese teacher.",
+    "not": {
+      "B's friend": "B says 老师, not 朋友.",
+      "B's classmate": "B says 老师, not 同学.",
+      "B's mother": "B says 老师, not 妈妈."
+    }
+  },
+  {
+    "key": "r12y0jin",
+    "type": "reading",
+    "lesson": 4,
+    "q": "Which country is she from?",
+    "options": [
+      "中国",
+      "美国",
+      "We don't know",
+      "Both"
+    ],
+    "answer": "中国",
+    "context": {
+      "title": "她是谁",
+      "lines": [
+        "A：她是谁？  (Who is she?)",
+        "B：她是我的汉语老师。  (She is my Chinese teacher.)",
+        "A：她是哪国人？  (Where is she from?)",
+        "B：她是中国人。  (She is Chinese.)"
+      ]
+    },
+    "why": "B says 她是中国人, so she is Chinese.",
+    "not": {
+      "美国": "B says she is 中国人.",
+      "We don't know": "B states it: 中国人.",
+      "Both": "B gives only one country, 中国."
+    }
+  },
+  {
+    "key": "rzg5s3e",
+    "type": "reading",
+    "lesson": 4,
+    "q": "Who is he to B?",
+    "options": [
+      "Classmate and friend",
+      "Teacher",
+      "Son",
+      "Doctor"
+    ],
+    "answer": "Classmate and friend",
+    "context": {
+      "title": "他是我的同学",
+      "lines": [
+        "A：他是你的朋友吗？  (Is he your friend?)",
+        "B：他是我的同学，也是我的朋友。  (He's my classmate and also my friend.)",
+        "A：他是美国人吗？  (Is he American?)",
+        "B：是。我是中国人，你呢？  (Yes. I'm Chinese, and you?)",
+        "A：我也是中国人。  (I'm Chinese too.)"
+      ]
+    },
+    "why": "B says 他是我的同学，也是我的朋友, classmate and also friend.",
+    "not": {
+      "Teacher": "B says 同学, not 老师.",
+      "Son": "No line says he is a son.",
+      "Doctor": "No line mentions a doctor."
+    }
+  },
+  {
+    "key": "r1oo2ozs",
+    "type": "reading",
+    "lesson": 4,
+    "q": "Which country is A from?",
+    "options": [
+      "中国",
+      "美国",
+      "We don't know",
+      "Both"
+    ],
+    "answer": "中国",
+    "context": {
+      "title": "他是我的同学",
+      "lines": [
+        "A：他是你的朋友吗？  (Is he your friend?)",
+        "B：他是我的同学，也是我的朋友。  (He's my classmate and also my friend.)",
+        "A：他是美国人吗？  (Is he American?)",
+        "B：是。我是中国人，你呢？  (Yes. I'm Chinese, and you?)",
+        "A：我也是中国人。  (I'm Chinese too.)"
+      ]
+    },
+    "why": "A says 我也是中国人, so A is Chinese.",
+    "not": {
+      "美国": "A asks about 美国人, but A says 中国人.",
+      "We don't know": "A says 我也是中国人.",
+      "Both": "A names only one country, 中国."
+    }
+  },
+  {
+    "key": "d17jucog",
+    "type": "dialog",
+    "lesson": 4,
+    "q": "她是谁？",
+    "options": [
+      "汉语老师",
+      "同学",
+      "朋友"
+    ],
+    "answer": "汉语老师",
+    "context": {
+      "lines": [
+        "男：她是谁？",
+        "女：她是我的汉语老师。"
+      ]
+    },
+    "why": "The woman says 她是我的汉语老师, my Chinese teacher.",
+    "not": {
+      "同学": "She says 老师, not 同学.",
+      "朋友": "She says 老师, not 朋友."
+    }
+  },
+  {
+    "key": "du6qhpd",
+    "type": "dialog",
+    "lesson": 4,
+    "q": "同学是哪国人？",
+    "options": [
+      "美国人",
+      "中国人",
+      "不知道"
+    ],
+    "answer": "美国人",
+    "context": {
+      "lines": [
+        "男：你的同学是哪国人？",
+        "女：他是美国人。"
+      ]
+    },
+    "why": "The woman says 他是美国人, so the classmate is American.",
+    "not": {
+      "中国人": "She says 美国人.",
+      "不知道": "She does answer: 美国人."
+    }
+  },
+  {
+    "key": "dzo8dta",
+    "type": "dialog",
+    "lesson": 4,
+    "q": "女的是做什么的？",
+    "options": [
+      "学生",
+      "老师",
+      "医生"
+    ],
+    "answer": "学生",
+    "context": {
+      "lines": [
+        "男：我是学生，你呢？",
+        "女：我也是学生。"
+      ]
+    },
+    "why": "The woman says 我也是学生, I am also a student.",
+    "not": {
+      "老师": "She says 学生, not 老师.",
+      "医生": "She says 学生, not 医生."
+    }
+  },
+  {
+    "key": "j1iprvp3",
+    "type": "judge",
+    "lesson": 4,
+    "q": "她是我的同学。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "她是我的朋友，也是我的同学。"
+    },
+    "why": "The text says 她是我的朋友，也是我的同学; 也 means also, so she is a classmate. The claim is true.",
+    "not": {}
+  },
+  {
+    "key": "jdfltot",
+    "type": "judge",
+    "lesson": 4,
+    "q": "那本书是我的。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "这是我的书，那是我朋友的书。"
+    },
+    "why": "The text says 这是我的书; 那是我朋友的书. 那本书 is the friend's, so the claim is false.",
+    "not": {}
+  },
+  {
+    "key": "j1csk90z",
+    "type": "judge",
+    "lesson": 4,
+    "q": "他是中国人。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "他是我的汉语老师，他是中国人。"
+    },
+    "why": "The text says 他是中国人, so he is Chinese. The claim is true.",
+    "not": {}
+  },
+  {
+    "key": "r12iay3e",
+    "type": "reading",
+    "lesson": 5,
+    "q": "How many people are in B's family?",
+    "options": [
+      "3",
+      "5",
+      "2",
+      "4"
+    ],
+    "answer": "3",
+    "context": {
+      "title": "你家有几口人",
+      "lines": [
+        "A：你家有几口人？  (How many people are in your family?)",
+        "B：我家有三口人。我有一个女儿。  (Three. I have a daughter.)",
+        "A：你女儿今年几岁了？  (How old is your daughter this year?)",
+        "B：她今年五岁了。  (She's five this year.)"
+      ]
+    },
+    "why": "B says 我家有三口人, so there are three people.",
+    "not": {
+      "2": "B says 三口人, three.",
+      "4": "B says 三口人, three, not four.",
+      "5": "Five is the daughter's age, not the family size."
+    }
+  },
+  {
+    "key": "r1wfc7xv",
+    "type": "reading",
+    "lesson": 5,
+    "q": "How old is B's daughter?",
+    "options": [
+      "5",
+      "3",
+      "10",
+      "20"
+    ],
+    "answer": "5",
+    "context": {
+      "title": "你家有几口人",
+      "lines": [
+        "A：你家有几口人？  (How many people are in your family?)",
+        "B：我家有三口人。我有一个女儿。  (Three. I have a daughter.)",
+        "A：你女儿今年几岁了？  (How old is your daughter this year?)",
+        "B：她今年五岁了。  (She's five this year.)"
+      ]
+    },
+    "why": "B says 她今年五岁了, she is five this year.",
+    "not": {
+      "3": "Three is the number of people in the family.",
+      "10": "B says 五岁, not ten.",
+      "20": "B says 五岁, not twenty."
+    }
+  },
+  {
+    "key": "r1i37t3s",
+    "type": "reading",
+    "lesson": 5,
+    "q": "How old is A?",
+    "options": [
+      "19",
+      "20",
+      "9",
+      "4"
+    ],
+    "answer": "19",
+    "context": {
+      "title": "你多大了",
+      "lines": [
+        "A：你今年多大了？  (How old are you this year?)",
+        "B：我今年二十岁。你呢？  (I'm twenty. And you?)",
+        "A：我十九岁。  (I'm nineteen.)",
+        "B：你家有几口人？  (How many people are in your family?)",
+        "A：我家有四口人。  (Four.)"
+      ]
+    },
+    "why": "A says 我十九岁, so A is nineteen. B is twenty.",
+    "not": {
+      "4": "Four is the size of A's family.",
+      "9": "A says 十九, nineteen, not nine.",
+      "20": "二十岁 is B's age, not A's."
+    }
+  },
+  {
+    "key": "r1atj1m0",
+    "type": "reading",
+    "lesson": 5,
+    "q": "How many people are in A's family?",
+    "options": [
+      "4",
+      "3",
+      "19",
+      "20"
+    ],
+    "answer": "4",
+    "context": {
+      "title": "你多大了",
+      "lines": [
+        "A：你今年多大了？  (How old are you this year?)",
+        "B：我今年二十岁。你呢？  (I'm twenty. And you?)",
+        "A：我十九岁。  (I'm nineteen.)",
+        "B：你家有几口人？  (How many people are in your family?)",
+        "A：我家有四口人。  (Four.)"
+      ]
+    },
+    "why": "A says 我家有四口人, four people.",
+    "not": {
+      "3": "A says 四口, four.",
+      "19": "Nineteen is A's age.",
+      "20": "Twenty is B's age."
+    }
+  },
+  {
+    "key": "daiyk0d",
+    "type": "dialog",
+    "lesson": 5,
+    "q": "女的家有几口人？",
+    "options": [
+      "三口",
+      "四口",
+      "五口"
+    ],
+    "answer": "三口",
+    "context": {
+      "lines": [
+        "男：你家有几口人？",
+        "女：三口人。"
+      ]
+    },
+    "why": "She answers 三口人, which is three people.",
+    "not": {
+      "四口": "She says 三口, three.",
+      "五口": "She says 三口, three."
+    }
+  },
+  {
+    "key": "d1yo3pr7",
+    "type": "dialog",
+    "lesson": 5,
+    "q": "女儿多大了？",
+    "options": [
+      "八岁",
+      "六岁",
+      "十八岁"
+    ],
+    "answer": "八岁",
+    "context": {
+      "lines": [
+        "男：你女儿几岁了？",
+        "女：她今年八岁。"
+      ]
+    },
+    "why": "The woman says 她今年八岁, so the daughter is eight.",
+    "not": {
+      "六岁": "She says 八岁, not six.",
+      "十八岁": "She says 八岁, not eighteen."
+    }
+  },
+  {
+    "key": "d17o3yec",
+    "type": "dialog",
+    "lesson": 5,
+    "q": "女的今年多大？",
+    "options": [
+      "二十岁",
+      "十二岁",
+      "二岁"
+    ],
+    "answer": "二十岁",
+    "context": {
+      "lines": [
+        "男：你今年多大了？",
+        "女：我二十岁。"
+      ]
+    },
+    "why": "The woman says 我二十岁, twenty years old.",
+    "not": {
+      "十二岁": "She says 二十, not 十二.",
+      "二岁": "She says 二十, not two."
+    }
+  },
+  {
+    "key": "j1pbg5ax",
+    "type": "judge",
+    "lesson": 5,
+    "q": "他有两个女儿。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "我家有四口人，我有一个女儿。"
+    },
+    "why": "The text says 我有一个女儿, one daughter. The claim says two, so it is false.",
+    "not": {}
+  },
+  {
+    "key": "j1mepnj6",
+    "type": "judge",
+    "lesson": 5,
+    "q": "李老师有女儿。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "李老师的女儿今年五岁了。"
+    },
+    "why": "The text mentions 李老师的女儿, so 李老师 has a daughter. The claim is true.",
+    "not": {}
+  },
+  {
+    "key": "j3x7rdo",
+    "type": "judge",
+    "lesson": 5,
+    "q": "他二十岁了。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "我今年十九岁。"
+    },
+    "why": "The text says 十九岁, nineteen. The claim says twenty, so it is false.",
+    "not": {}
+  },
+  {
+    "key": "r1wk6pvl",
+    "type": "reading",
+    "lesson": 6,
+    "q": "What can B do?",
+    "options": [
+      "Speak Chinese and write characters",
+      "Only speak",
+      "Only write",
+      "Neither"
+    ],
+    "answer": "Speak Chinese and write characters",
+    "context": {
+      "title": "你会说汉语吗",
+      "lines": [
+        "A：你会说汉语吗？  (Can you speak Chinese?)",
+        "B：我会说汉语。  (Yes, I can.)",
+        "A：你会写汉字吗？  (Can you write characters?)",
+        "B：我会写，我会写“你好”。  (Yes, I can write “nǐ hǎo”.)"
+      ]
+    },
+    "why": "B says 我会说汉语 and 我会写, so B can both speak and write.",
+    "not": {
+      "Only speak": "B also says 我会写.",
+      "Only write": "B also says 我会说汉语.",
+      "Neither": "B says 会 for both."
+    }
+  },
+  {
+    "key": "r1w8ctty",
+    "type": "reading",
+    "lesson": 6,
+    "q": "Which word can B write?",
+    "options": [
+      "你好",
+      "谢谢",
+      "再见",
+      "汉语"
+    ],
+    "answer": "你好",
+    "context": {
+      "title": "你会说汉语吗",
+      "lines": [
+        "A：你会说汉语吗？  (Can you speak Chinese?)",
+        "B：我会说汉语。  (Yes, I can.)",
+        "A：你会写汉字吗？  (Can you write characters?)",
+        "B：我会写，我会写“你好”。  (Yes, I can write “nǐ hǎo”.)"
+      ]
+    },
+    "why": "B says 我会写“你好”, so the word is 你好.",
+    "not": {
+      "谢谢": "B does not say B can write 谢谢.",
+      "再见": "B does not mention 再见.",
+      "汉语": "汉语 is the language B speaks, not the word written."
+    }
+  },
+  {
+    "key": "rmgy9kb",
+    "type": "reading",
+    "lesson": 6,
+    "q": "Who can cook Chinese food?",
+    "options": [
+      "B's mom",
+      "B",
+      "A",
+      "Nobody"
+    ],
+    "answer": "B's mom",
+    "context": {
+      "title": "妈妈的菜",
+      "lines": [
+        "A：你妈妈会做中国菜吗？  (Can your mom cook Chinese food?)",
+        "B：会，她做的菜很好吃。  (Yes, her cooking is delicious.)",
+        "A：你呢？你会做吗？  (And you? Can you?)",
+        "B：我不会。  (No, I can't.)"
+      ]
+    },
+    "why": "A asks about B's mom, and B answers 会, she can. B says 我不会, so B cannot.",
+    "not": {
+      "B": "B says 我不会, I cannot.",
+      "A": "A only asks questions and never says A can cook.",
+      "Nobody": "B says 会 about B's mom."
+    }
+  },
+  {
+    "key": "ro79gdy",
+    "type": "reading",
+    "lesson": 6,
+    "q": "How is the food B's mom makes?",
+    "options": [
+      "很好吃",
+      "不好吃",
+      "We don't know",
+      "Not Chinese"
+    ],
+    "answer": "很好吃",
+    "context": {
+      "title": "妈妈的菜",
+      "lines": [
+        "A：你妈妈会做中国菜吗？  (Can your mom cook Chinese food?)",
+        "B：会，她做的菜很好吃。  (Yes, her cooking is delicious.)",
+        "A：你呢？你会做吗？  (And you? Can you?)",
+        "B：我不会。  (No, I can't.)"
+      ]
+    },
+    "why": "B says 她做的菜很好吃, so the food is delicious.",
+    "not": {
+      "不好吃": "B says 很好吃, the opposite.",
+      "We don't know": "B states it: 很好吃.",
+      "Not Chinese": "A asks about 中国菜, so it is Chinese food."
+    }
+  },
+  {
+    "key": "dzq6po7",
+    "type": "dialog",
+    "lesson": 6,
+    "q": "女的会说汉语吗？",
+    "options": [
+      "会",
+      "不会",
+      "不知道"
+    ],
+    "answer": "会",
+    "context": {
+      "lines": [
+        "男：你会说汉语吗？",
+        "女：会，我会说一点儿。"
+      ]
+    },
+    "why": "She answers 会，我会说一点儿, so she can speak a little.",
+    "not": {
+      "不会": "She says 会, which means she can.",
+      "不知道": "She answers directly with 会."
+    }
+  },
+  {
+    "key": "d1e70nru",
+    "type": "dialog",
+    "lesson": 6,
+    "q": "谁会做中国菜？",
+    "options": [
+      "妈妈",
+      "女的",
+      "男的"
+    ],
+    "answer": "妈妈",
+    "context": {
+      "lines": [
+        "男：你妈妈会做中国菜吗？",
+        "女：会，她做的菜很好吃。"
+      ]
+    },
+    "why": "The man asks about 妈妈, and the woman says 会，她做的菜很好吃. 她 is the mom.",
+    "not": {
+      "女的": "She says 她, meaning the mom, not herself.",
+      "男的": "The man only asks; he does not say he can cook."
+    }
+  },
+  {
+    "key": "d1f9uvbu",
+    "type": "dialog",
+    "lesson": 6,
+    "q": "男的问什么？",
+    "options": [
+      "怎么读这个字",
+      "怎么写这个字",
+      "这是什么菜"
+    ],
+    "answer": "怎么读这个字",
+    "context": {
+      "lines": [
+        "男：这个字怎么读？",
+        "女：这个字读“名”。"
+      ]
+    },
+    "why": "He asks 这个字怎么读, how is this character read? The woman says it is read 名.",
+    "not": {
+      "怎么写这个字": "He says 读 (read), not 写 (write).",
+      "这是什么菜": "He asks about a character, not a dish."
+    }
+  },
+  {
+    "key": "j1gzokp",
+    "type": "judge",
+    "lesson": 6,
+    "q": "他会写汉字。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "我会说汉语，但我不会写汉字。"
+    },
+    "why": "The text says 我不会写汉字, I cannot write characters. The claim says he can, so it is false.",
+    "not": {}
+  },
+  {
+    "key": "j1ydx44r",
+    "type": "judge",
+    "lesson": 6,
+    "q": "他妈妈会做中国菜。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "我妈妈做的中国菜很好吃。"
+    },
+    "why": "The text says 我妈妈做的中国菜很好吃, so his mom cooks Chinese food. The claim is true.",
+    "not": {}
+  },
+  {
+    "key": "jfnlcq9",
+    "type": "judge",
+    "lesson": 6,
+    "q": "他会做菜。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "我不会做菜，我妈妈会。"
+    },
+    "why": "The text says 我不会做菜; only his mom can. The claim says he can cook, so it is false.",
+    "not": {}
+  },
+  {
+    "key": "rlzl05z",
+    "type": "reading",
+    "lesson": 7,
+    "q": "What's the date today?",
+    "options": [
+      "October 8",
+      "August 10",
+      "October 3",
+      "March 8"
+    ],
+    "answer": "October 8",
+    "context": {
+      "title": "今天几号",
+      "lines": [
+        "A：请问，今天几号？  (Excuse me, what's the date today?)",
+        "B：今天十月八号。  (Today is October 8th.)",
+        "A：今天星期几？  (What day is it today?)",
+        "B：今天星期三。  (It's Wednesday.)"
+      ]
+    },
+    "why": "B says 今天十月八号. 月 is month and 号 is day, so October 8.",
+    "not": {
+      "August 10": "That would be 八月十号; B says 十月八号.",
+      "October 3": "B says 八号, the eighth, not 三号.",
+      "March 8": "That would be 三月八号; B says 十月."
+    }
+  },
+  {
+    "key": "r1k0uluu",
+    "type": "reading",
+    "lesson": 7,
+    "q": "What day of the week is it?",
+    "options": [
+      "Wednesday",
+      "Monday",
+      "Thursday",
+      "Sunday"
+    ],
+    "answer": "Wednesday",
+    "context": {
+      "title": "今天几号",
+      "lines": [
+        "A：请问，今天几号？  (Excuse me, what's the date today?)",
+        "B：今天十月八号。  (Today is October 8th.)",
+        "A：今天星期几？  (What day is it today?)",
+        "B：今天星期三。  (It's Wednesday.)"
+      ]
+    },
+    "why": "B says 今天星期三, and 星期三 is Wednesday.",
+    "not": {
+      "Monday": "Monday is 星期一; B says 星期三.",
+      "Thursday": "Thursday is 星期四; B says 星期三.",
+      "Sunday": "Sunday is 星期天; B says 星期三."
+    }
+  },
+  {
+    "key": "rs8rxhh",
+    "type": "reading",
+    "lesson": 7,
+    "q": "Why is B going to school?",
+    "options": [
+      "To read",
+      "To teach",
+      "To eat",
+      "To see a friend"
+    ],
+    "answer": "To read",
+    "context": {
+      "title": "明天你去哪儿",
+      "lines": [
+        "A：明天你去学校吗？  (Are you going to school tomorrow?)",
+        "B：去。我去学校看书。  (Yes. I'm going to school to read.)",
+        "A：明天星期几？  (What day is tomorrow?)",
+        "B：明天星期六。  (Tomorrow is Saturday.)"
+      ]
+    },
+    "why": "B says 我去学校看书, I go to school to read.",
+    "not": {
+      "To teach": "B says 看书, read; B does not say teach.",
+      "To eat": "B does not mention eating.",
+      "To see a friend": "B says 看书, not seeing a friend."
+    }
+  },
+  {
+    "key": "rm87plo",
+    "type": "reading",
+    "lesson": 7,
+    "q": "What day is tomorrow?",
+    "options": [
+      "Saturday",
+      "Sunday",
+      "Monday",
+      "Friday"
+    ],
+    "answer": "Saturday",
+    "context": {
+      "title": "明天你去哪儿",
+      "lines": [
+        "A：明天你去学校吗？  (Are you going to school tomorrow?)",
+        "B：去。我去学校看书。  (Yes. I'm going to school to read.)",
+        "A：明天星期几？  (What day is tomorrow?)",
+        "B：明天星期六。  (Tomorrow is Saturday.)"
+      ]
+    },
+    "why": "B says 明天星期六, and 星期六 is Saturday.",
+    "not": {
+      "Sunday": "Sunday is 星期天; B says 星期六.",
+      "Monday": "Monday is 星期一; B says 星期六.",
+      "Friday": "Friday is 星期五; B says 星期六."
+    }
+  },
+  {
+    "key": "d15ru4jn",
+    "type": "dialog",
+    "lesson": 7,
+    "q": "今天几号？",
+    "options": [
+      "九月一号",
+      "九月七号",
+      "一月九号"
+    ],
+    "answer": "九月一号",
+    "context": {
+      "lines": [
+        "男：今天几号？",
+        "女：今天九月一号。"
+      ]
+    },
+    "why": "The woman says 今天九月一号, September 1. Month comes before day.",
+    "not": {
+      "九月七号": "She says 一号, the first, not 七号.",
+      "一月九号": "The order is wrong: 九月 is September, 一月 is January."
+    }
+  },
+  {
+    "key": "dc82ed7",
+    "type": "dialog",
+    "lesson": 7,
+    "q": "明天星期几？",
+    "options": [
+      "星期六",
+      "星期一",
+      "星期天"
+    ],
+    "answer": "星期六",
+    "context": {
+      "lines": [
+        "男：明天星期几？",
+        "女：明天星期六。"
+      ]
+    },
+    "why": "The woman says 明天星期六, Saturday.",
+    "not": {
+      "星期一": "She says 星期六, not Monday.",
+      "星期天": "She says 星期六, not Sunday."
+    }
+  },
+  {
+    "key": "dwt2w5q",
+    "type": "dialog",
+    "lesson": 7,
+    "q": "女的明天去学校做什么？",
+    "options": [
+      "看书",
+      "吃饭",
+      "工作"
+    ],
+    "answer": "看书",
+    "context": {
+      "lines": [
+        "男：你明天去哪儿？",
+        "女：我去学校看书。"
+      ]
+    },
+    "why": "She says 我去学校看书, I go to school to read.",
+    "not": {
+      "吃饭": "She says 看书, not 吃饭.",
+      "工作": "She says 看书, not 工作."
+    }
+  },
+  {
+    "key": "j1grk5d4",
+    "type": "judge",
+    "lesson": 7,
+    "q": "昨天是星期二。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "今天是星期三，明天是星期四。"
+    },
+    "why": "The text says today is Wednesday and tomorrow is Thursday, so yesterday was Tuesday. The claim is true.",
+    "not": {}
+  },
+  {
+    "key": "j15rmb2m",
+    "type": "judge",
+    "lesson": 7,
+    "q": "他今天去学校。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "我明天去学校看书。"
+    },
+    "why": "The text says 我明天去学校, I go to school tomorrow. The claim says today, so it is false.",
+    "not": {}
+  },
+  {
+    "key": "j1r3zins",
+    "type": "judge",
+    "lesson": 7,
+    "q": "今天是星期五。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "今天十月八号，星期五。"
+    },
+    "why": "The text says 星期五 for today, so the claim is true.",
+    "not": {}
+  },
+  {
+    "key": "rnr3qvk",
+    "type": "reading",
+    "lesson": 8,
+    "q": "What does B want to drink?",
+    "options": [
+      "茶",
+      "水",
+      "米饭",
+      "Nothing"
+    ],
+    "answer": "茶",
+    "context": {
+      "title": "你想吃什么",
+      "lines": [
+        "A：你想喝什么？  (What would you like to drink?)",
+        "B：我想喝茶。  (Tea, please.)",
+        "A：你想吃什么？  (And to eat?)",
+        "B：我想吃米饭和中国菜。  (Rice and Chinese dishes.)"
+      ]
+    },
+    "why": "B says 我想喝茶, I want to drink tea.",
+    "not": {
+      "水": "B says 茶, tea, not 水.",
+      "米饭": "米饭 is rice, which B wants to eat, not drink.",
+      "Nothing": "B says 我想喝茶."
+    }
+  },
+  {
+    "key": "r8zcvlu",
+    "type": "reading",
+    "lesson": 8,
+    "q": "What does B want to eat?",
+    "options": [
+      "Rice and Chinese dishes",
+      "Only rice",
+      "Fruit",
+      "Nothing"
+    ],
+    "answer": "Rice and Chinese dishes",
+    "context": {
+      "title": "你想吃什么",
+      "lines": [
+        "A：你想喝什么？  (What would you like to drink?)",
+        "B：我想喝茶。  (Tea, please.)",
+        "A：你想吃什么？  (And to eat?)",
+        "B：我想吃米饭和中国菜。  (Rice and Chinese dishes.)"
+      ]
+    },
+    "why": "B says 我想吃米饭和中国菜, rice and Chinese dishes.",
+    "not": {
+      "Only rice": "B also wants 中国菜; 和 means and.",
+      "Fruit": "B never mentions fruit.",
+      "Nothing": "B says 我想吃米饭和中国菜."
+    }
+  },
+  {
+    "key": "r1b172k9",
+    "type": "reading",
+    "lesson": 8,
+    "q": "How much is “this” cup?",
+    "options": [
+      "35 yuan",
+      "12 yuan",
+      "53 yuan",
+      "25 yuan"
+    ],
+    "answer": "35 yuan",
+    "context": {
+      "title": "多少钱",
+      "lines": [
+        "A：你好！这个杯子多少钱？  (Hello! How much is this cup?)",
+        "B：三十五块。  (Thirty-five yuan.)",
+        "A：那个呢？  (And that one?)",
+        "B：那个杯子十二块钱。  (That cup is twelve yuan.)",
+        "A：我买那个。  (I'll take that one.)"
+      ]
+    },
+    "why": "B says 三十五块 for this cup. 块 is yuan.",
+    "not": {
+      "12 yuan": "Twelve is the price of the other cup.",
+      "53 yuan": "The number is 三十五, thirty-five, not 五十三.",
+      "25 yuan": "B says 三十五, not 二十五."
+    }
+  },
+  {
+    "key": "rtji28c",
+    "type": "reading",
+    "lesson": 8,
+    "q": "Which cup does A buy?",
+    "options": [
+      "That one, 12 yuan",
+      "This one, 35 yuan",
+      "Both",
+      "Neither"
+    ],
+    "answer": "That one, 12 yuan",
+    "context": {
+      "title": "多少钱",
+      "lines": [
+        "A：你好！这个杯子多少钱？  (Hello! How much is this cup?)",
+        "B：三十五块。  (Thirty-five yuan.)",
+        "A：那个呢？  (And that one?)",
+        "B：那个杯子十二块钱。  (That cup is twelve yuan.)",
+        "A：我买那个。  (I'll take that one.)"
+      ]
+    },
+    "why": "A asks about 那个 and B says 十二块钱; then A says 我买那个, I buy that one.",
+    "not": {
+      "This one, 35 yuan": "A says 那个, that one, not this one.",
+      "Both": "A says 我买那个, only one cup.",
+      "Neither": "A says 我买那个, so A buys one."
+    }
+  },
+  {
+    "key": "d1dju58p",
+    "type": "dialog",
+    "lesson": 8,
+    "q": "女的想喝什么？",
+    "options": [
+      "茶",
+      "水",
+      "米饭"
+    ],
+    "answer": "茶",
+    "context": {
+      "lines": [
+        "男：你想喝什么？",
+        "女：我想喝茶。"
+      ]
+    },
+    "why": "The woman says 我想喝茶, tea.",
+    "not": {
+      "水": "She says 茶, not 水.",
+      "米饭": "米饭 is rice; it is eaten, and she says 茶."
+    }
+  },
+  {
+    "key": "d7ac9n3",
+    "type": "dialog",
+    "lesson": 8,
+    "q": "杯子多少钱？",
+    "options": [
+      "二十八块",
+      "十八块",
+      "八块"
+    ],
+    "answer": "二十八块",
+    "context": {
+      "lines": [
+        "男：这个杯子多少钱？",
+        "女：二十八块。"
+      ]
+    },
+    "why": "The woman says 二十八块, 28 yuan.",
+    "not": {
+      "十八块": "She says 二十八; 十八 is 18.",
+      "八块": "She says 二十八, not just 八."
+    }
+  },
+  {
+    "key": "dugh9ue",
+    "type": "dialog",
+    "lesson": 8,
+    "q": "女的下午想去哪儿？",
+    "options": [
+      "商店",
+      "学校",
+      "医院"
+    ],
+    "answer": "商店",
+    "context": {
+      "lines": [
+        "男：下午你想做什么？",
+        "女：我想去商店买东西。"
+      ]
+    },
+    "why": "She says 我想去商店买东西, I want to go to the shop to buy things.",
+    "not": {
+      "学校": "She says 商店, not 学校.",
+      "医院": "She says 商店, not 医院."
+    }
+  },
+  {
+    "key": "j1kh23x1",
+    "type": "judge",
+    "lesson": 8,
+    "q": "杯子二十块钱。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "我想买一个杯子，十八块钱。"
+    },
+    "why": "The text says 十八块钱, 18 yuan. The claim says 二十块, so it is false.",
+    "not": {}
+  },
+  {
+    "key": "j13b08qt",
+    "type": "judge",
+    "lesson": 8,
+    "q": "他下午去商店。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "下午我想去商店买杯子。"
+    },
+    "why": "The text says 下午我想去商店, so he plans to go to the shop in the afternoon. The claim is true.",
+    "not": {}
+  },
+  {
+    "key": "j1wgegyv",
+    "type": "judge",
+    "lesson": 8,
+    "q": "他想喝茶。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "我不想喝茶，我想喝水。"
+    },
+    "why": "The text says 我不想喝茶，我想喝水. The claim says he wants tea, so it is false.",
+    "not": {}
+  },
+  {
+    "key": "r6073k0",
+    "type": "reading",
+    "lesson": 9,
+    "q": "Where is the kitten?",
+    "options": [
+      "Under the chair",
+      "On the chair",
+      "Over there",
+      "At school"
+    ],
+    "answer": "Under the chair",
+    "context": {
+      "title": "小猫在哪儿",
+      "lines": [
+        "A：我的小猫在哪儿？  (Where's my kitten?)",
+        "B：小猫在椅子下面。  (It's under the chair.)",
+        "A：小狗呢？  (And the puppy?)",
+        "B：小狗在那儿。  (The puppy is over there.)"
+      ]
+    },
+    "why": "B says 小猫在椅子下面; 下面 means under.",
+    "not": {
+      "On the chair": "On is 上面; B says 下面.",
+      "Over there": "That is the puppy; B says 小狗在那儿.",
+      "At school": "No line mentions school for the kitten."
+    }
+  },
+  {
+    "key": "r13g1fiz",
+    "type": "reading",
+    "lesson": 9,
+    "q": "Where is the puppy?",
+    "options": [
+      "Over there",
+      "Under the chair",
+      "At home",
+      "At the hospital"
+    ],
+    "answer": "Over there",
+    "context": {
+      "title": "小猫在哪儿",
+      "lines": [
+        "A：我的小猫在哪儿？  (Where's my kitten?)",
+        "B：小猫在椅子下面。  (It's under the chair.)",
+        "A：小狗呢？  (And the puppy?)",
+        "B：小狗在那儿。  (The puppy is over there.)"
+      ]
+    },
+    "why": "B says 小狗在那儿; 那儿 means over there.",
+    "not": {
+      "Under the chair": "That is the kitten, not the puppy.",
+      "At home": "B says 那儿, not 家.",
+      "At the hospital": "B does not mention a hospital for the puppy."
+    }
+  },
+  {
+    "key": "rwqx4i0",
+    "type": "reading",
+    "lesson": 9,
+    "q": "What does B's dad do?",
+    "options": [
+      "Doctor",
+      "Teacher",
+      "Student",
+      "Shop worker"
+    ],
+    "answer": "Doctor",
+    "context": {
+      "title": "你爸爸在哪儿工作",
+      "lines": [
+        "A：你爸爸在哪儿工作？  (Where does your dad work?)",
+        "B：他在医院工作，他是医生。  (At a hospital; he's a doctor.)",
+        "A：你妈妈呢？  (And your mom?)",
+        "B：我妈妈在学校工作，她是老师。  (She works at a school; she's a teacher.)"
+      ]
+    },
+    "why": "B says 他在医院工作，他是医生, so B's dad is a doctor.",
+    "not": {
+      "Teacher": "B's mom is the teacher.",
+      "Student": "B says 医生 for dad.",
+      "Shop worker": "B says 医院, hospital, not a shop."
+    }
+  },
+  {
+    "key": "rkn6j4n",
+    "type": "reading",
+    "lesson": 9,
+    "q": "Where does B's mom work?",
+    "options": [
+      "School",
+      "Hospital",
+      "Shop",
+      "At home"
+    ],
+    "answer": "School",
+    "context": {
+      "title": "你爸爸在哪儿工作",
+      "lines": [
+        "A：你爸爸在哪儿工作？  (Where does your dad work?)",
+        "B：他在医院工作，他是医生。  (At a hospital; he's a doctor.)",
+        "A：你妈妈呢？  (And your mom?)",
+        "B：我妈妈在学校工作，她是老师。  (She works at a school; she's a teacher.)"
+      ]
+    },
+    "why": "B says 我妈妈在学校工作, so mom works at a school.",
+    "not": {
+      "Hospital": "Dad works at the hospital, not mom.",
+      "Shop": "No line mentions a shop.",
+      "At home": "B says 在学校工作."
+    }
+  },
+  {
+    "key": "d1wr8ifd",
+    "type": "dialog",
+    "lesson": 9,
+    "q": "小猫在哪儿？",
+    "options": [
+      "椅子下面",
+      "桌子上面",
+      "那儿"
+    ],
+    "answer": "椅子下面",
+    "context": {
+      "lines": [
+        "男：小猫在哪儿？",
+        "女：在椅子下面。"
+      ]
+    },
+    "why": "The woman says 在椅子下面, under the chair.",
+    "not": {
+      "桌子上面": "She says 椅子下面, not 桌子上面.",
+      "那儿": "She says 椅子下面; 那儿 is not said."
+    }
+  },
+  {
+    "key": "d1fn3i8w",
+    "type": "dialog",
+    "lesson": 9,
+    "q": "儿子在哪儿工作？",
+    "options": [
+      "医院",
+      "学校",
+      "商店"
+    ],
+    "answer": "医院",
+    "context": {
+      "lines": [
+        "男：你儿子在哪儿工作？",
+        "女：他在医院工作。"
+      ]
+    },
+    "why": "The woman says 他在医院工作, so he works at the hospital.",
+    "not": {
+      "学校": "She says 医院, not 学校.",
+      "商店": "She says 医院, not 商店."
+    }
+  },
+  {
+    "key": "d4adyom",
+    "type": "dialog",
+    "lesson": 9,
+    "q": "爸爸做什么工作？",
+    "options": [
+      "老师",
+      "医生",
+      "学生"
+    ],
+    "answer": "老师",
+    "context": {
+      "lines": [
+        "男：你爸爸是医生吗？",
+        "女：不是，他是老师。"
+      ]
+    },
+    "why": "The man asks if dad is a doctor; she says 不是，他是老师.",
+    "not": {
+      "医生": "She says 不是 to 医生.",
+      "学生": "She says 老师, not 学生."
+    }
+  },
+  {
+    "key": "j1sih8k5",
+    "type": "judge",
+    "lesson": 9,
+    "q": "小狗在桌子上。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "我的小狗在椅子下面。"
+    },
+    "why": "The text says 小狗在椅子下面, under the chair. The claim says on the table, so it is false.",
+    "not": {}
+  },
+  {
+    "key": "j10uvkcw",
+    "type": "judge",
+    "lesson": 9,
+    "q": "他爸爸在医院工作。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "我爸爸是医生，他在医院工作。"
+    },
+    "why": "The text says 他在医院工作, so he works at the hospital. The claim is true.",
+    "not": {}
+  },
+  {
+    "key": "jwoit1n",
+    "type": "judge",
+    "lesson": 9,
+    "q": "他儿子不工作。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "我儿子是学生，他不工作。"
+    },
+    "why": "The text says 他不工作 (he doesn't work), so the claim is true.",
+    "not": {}
+  },
+  {
+    "key": "rr1bafa",
+    "type": "reading",
+    "lesson": 10,
+    "q": "Is anyone sitting there?",
+    "options": [
+      "No",
+      "Yes",
+      "We don't know",
+      "B's friend"
+    ],
+    "answer": "No",
+    "context": {
+      "title": "我能坐这儿吗",
+      "lines": [
+        "A：这儿有人吗？  (Is anyone sitting here?)",
+        "B：没有。  (No.)",
+        "A：我能坐这儿吗？  (May I sit here?)",
+        "B：请坐。  (Please, have a seat.)"
+      ]
+    },
+    "why": "A asks 这儿有人吗, and B answers 没有, nobody is here.",
+    "not": {
+      "Yes": "B says 没有, which means no.",
+      "We don't know": "B answers clearly: 没有.",
+      "B's friend": "B says nobody is there."
+    }
+  },
+  {
+    "key": "rqw5up5",
+    "type": "reading",
+    "lesson": 10,
+    "q": "What does B say at the end?",
+    "options": [
+      "请坐。",
+      "没有。",
+      "谢谢。",
+      "再见。"
+    ],
+    "answer": "请坐。",
+    "context": {
+      "title": "我能坐这儿吗",
+      "lines": [
+        "A：这儿有人吗？  (Is anyone sitting here?)",
+        "B：没有。  (No.)",
+        "A：我能坐这儿吗？  (May I sit here?)",
+        "B：请坐。  (Please, have a seat.)"
+      ]
+    },
+    "why": "B ends with 请坐, please sit.",
+    "not": {
+      "没有。": "B says that first, not last.",
+      "谢谢。": "B does not say thanks.",
+      "再见。": "B does not say goodbye."
+    }
+  },
+  {
+    "key": "ryj5ab1",
+    "type": "reading",
+    "lesson": 10,
+    "q": "How many books are on the desk?",
+    "options": [
+      "3",
+      "1",
+      "2",
+      "None"
+    ],
+    "answer": "3",
+    "context": {
+      "title": "桌子上有什么",
+      "lines": [
+        "A：桌子上有什么？  (What's on the desk?)",
+        "B：桌子上有一个电脑和三本书。  (A computer and three books.)",
+        "A：杯子在哪儿？  (Where's the cup?)",
+        "B：杯子在电脑后面，杯子里有茶。  (Behind the computer, with tea in it.)"
+      ]
+    },
+    "why": "B says 三本书, three books, on the desk.",
+    "not": {
+      "1": "B says 一个电脑, one computer, not one book.",
+      "2": "B says 三本书, not two.",
+      "None": "B says the desk has 三本书."
+    }
+  },
+  {
+    "key": "r6l7nkj",
+    "type": "reading",
+    "lesson": 10,
+    "q": "Where is the cup?",
+    "options": [
+      "Behind the computer",
+      "In front of the computer",
+      "Under the desk",
+      "On the chair"
+    ],
+    "answer": "Behind the computer",
+    "context": {
+      "title": "桌子上有什么",
+      "lines": [
+        "A：桌子上有什么？  (What's on the desk?)",
+        "B：桌子上有一个电脑和三本书。  (A computer and three books.)",
+        "A：杯子在哪儿？  (Where's the cup?)",
+        "B：杯子在电脑后面，杯子里有茶。  (Behind the computer, with tea in it.)"
+      ]
+    },
+    "why": "B says 杯子在电脑后面; 后面 means behind.",
+    "not": {
+      "In front of the computer": "In front is 前面; B says 后面.",
+      "Under the desk": "B says 电脑后面, not under the desk.",
+      "On the chair": "B does not mention a chair."
+    }
+  },
+  {
+    "key": "d1yb61nz",
+    "type": "dialog",
+    "lesson": 10,
+    "q": "桌子上有几本书？",
+    "options": [
+      "一本",
+      "两本",
+      "三本"
+    ],
+    "answer": "一本",
+    "context": {
+      "lines": [
+        "男：桌子上有什么？",
+        "女：有一个电脑和一本书。"
+      ]
+    },
+    "why": "The woman says 一个电脑和一本书, so one book.",
+    "not": {
+      "两本": "She says 一本, one, not two.",
+      "三本": "She says 一本, one, not three."
+    }
+  },
+  {
+    "key": "d1ydgxa2",
+    "type": "dialog",
+    "lesson": 10,
+    "q": "男的想做什么？",
+    "options": [
+      "坐这儿",
+      "吃饭",
+      "看书"
+    ],
+    "answer": "坐这儿",
+    "context": {
+      "lines": [
+        "男：我能坐这儿吗？",
+        "女：请坐。"
+      ]
+    },
+    "why": "He asks 我能坐这儿吗, can I sit here? So he wants to sit.",
+    "not": {
+      "吃饭": "He asks about sitting, not eating.",
+      "看书": "He asks about sitting, not reading."
+    }
+  },
+  {
+    "key": "d1u0s8lp",
+    "type": "dialog",
+    "lesson": 10,
+    "q": "杯子在哪儿？",
+    "options": [
+      "电脑后面",
+      "电脑前面",
+      "桌子下面"
+    ],
+    "answer": "电脑后面",
+    "context": {
+      "lines": [
+        "男：你的杯子在哪儿？",
+        "女：在电脑后面。"
+      ]
+    },
+    "why": "The woman says 在电脑后面, behind the computer.",
+    "not": {
+      "电脑前面": "She says 后面, behind; 前面 is in front.",
+      "桌子下面": "She says 电脑后面, not 桌子下面."
+    }
+  },
+  {
+    "key": "j1vceqdu",
+    "type": "judge",
+    "lesson": 10,
+    "q": "商店在学校后面。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "学校前面有一个商店。"
+    },
+    "why": "The text says 学校前面有一个商店, in front of the school. The claim says behind, so it is false.",
+    "not": {}
+  },
+  {
+    "key": "j1xbmnec",
+    "type": "judge",
+    "lesson": 10,
+    "q": "这儿没有人坐。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "这儿没有人，你可以坐这儿。"
+    },
+    "why": "The text says 这儿没有人, nobody is here. The claim is true.",
+    "not": {}
+  },
+  {
+    "key": "j1ot6zt2",
+    "type": "judge",
+    "lesson": 10,
+    "q": "桌子上没有杯子。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "桌子上有三本书和一个杯子。"
+    },
+    "why": "The text says 桌子上有三本书和一个杯子, so there is a cup. The claim says there is none, so it is false.",
+    "not": {}
+  },
+  {
+    "key": "r1qnx6sq",
+    "type": "reading",
+    "lesson": 11,
+    "q": "What time is it now?",
+    "options": [
+      "11:50",
+      "12:00",
+      "5:11",
+      "10:50"
+    ],
+    "answer": "11:50",
+    "context": {
+      "title": "现在几点",
+      "lines": [
+        "A：现在几点？  (What time is it?)",
+        "B：现在十一点五十分。  (It's 11:50.)",
+        "A：我们什么时候吃饭？  (When are we eating?)",
+        "B：中午十二点。  (At twelve noon.)"
+      ]
+    },
+    "why": "B says 十一点五十分; 点 is o'clock and 分 is minutes, so 11:50.",
+    "not": {
+      "12:00": "That is the meal time, not the time now.",
+      "5:11": "B says 十一点五十分, not 5:11.",
+      "10:50": "B says 十一点, not 十点."
+    }
+  },
+  {
+    "key": "rb9n6w6",
+    "type": "reading",
+    "lesson": 11,
+    "q": "When do they eat?",
+    "options": [
+      "12 noon",
+      "11:50",
+      "1 pm",
+      "5 pm"
+    ],
+    "answer": "12 noon",
+    "context": {
+      "title": "现在几点",
+      "lines": [
+        "A：现在几点？  (What time is it?)",
+        "B：现在十一点五十分。  (It's 11:50.)",
+        "A：我们什么时候吃饭？  (When are we eating?)",
+        "B：中午十二点。  (At twelve noon.)"
+      ]
+    },
+    "why": "B says 中午十二点, noon at twelve.",
+    "not": {
+      "11:50": "That is the time now, not the meal time.",
+      "1 pm": "B says 十二点, not 一点.",
+      "5 pm": "B says 中午, noon, not evening."
+    }
+  },
+  {
+    "key": "reb7n63",
+    "type": "reading",
+    "lesson": 11,
+    "q": "When is the movie?",
+    "options": [
+      "3 o'clock",
+      "5 o'clock",
+      "Noon",
+      "12 o'clock"
+    ],
+    "answer": "3 o'clock",
+    "context": {
+      "title": "我们去看电影",
+      "lines": [
+        "A：下午我们去看电影，好吗？  (Shall we see a movie this afternoon?)",
+        "B：好！几点？  (Sure! What time?)",
+        "A：三点。  (At three.)",
+        "B：我五点回家。  (I'm going home at five.)"
+      ]
+    },
+    "why": "A says 下午我们去看电影, then 三点 answers 几点. So the movie is at three.",
+    "not": {
+      "5 o'clock": "Five is when B goes home, not the movie time.",
+      "Noon": "A says 下午, afternoon, not noon.",
+      "12 o'clock": "A says 三点, three, not twelve."
+    }
+  },
+  {
+    "key": "r8wju40",
+    "type": "reading",
+    "lesson": 11,
+    "q": "When does B go home?",
+    "options": [
+      "5 o'clock",
+      "3 o'clock",
+      "Noon",
+      "We don't know"
+    ],
+    "answer": "5 o'clock",
+    "context": {
+      "title": "我们去看电影",
+      "lines": [
+        "A：下午我们去看电影，好吗？  (Shall we see a movie this afternoon?)",
+        "B：好！几点？  (Sure! What time?)",
+        "A：三点。  (At three.)",
+        "B：我五点回家。  (I'm going home at five.)"
+      ]
+    },
+    "why": "B says 我五点回家, I go home at five.",
+    "not": {
+      "3 o'clock": "Three is the movie time, not B's home time.",
+      "Noon": "B says 五点, not noon.",
+      "We don't know": "B says it: 五点."
+    }
+  },
+  {
+    "key": "d1swbnk7",
+    "type": "dialog",
+    "lesson": 11,
+    "q": "现在几点？",
+    "options": [
+      "十点十分",
+      "十点",
+      "十一点"
+    ],
+    "answer": "十点十分",
+    "context": {
+      "lines": [
+        "男：现在几点？",
+        "女：现在十点十分。"
+      ]
+    },
+    "why": "The woman says 现在十点十分, ten past ten.",
+    "not": {
+      "十点": "She adds 十分, ten minutes, so not exactly ten.",
+      "十一点": "She says 十点, not 十一点."
+    }
+  },
+  {
+    "key": "dec4bz3",
+    "type": "dialog",
+    "lesson": 11,
+    "q": "女的几点回家？",
+    "options": [
+      "五点",
+      "三点",
+      "十二点"
+    ],
+    "answer": "五点",
+    "context": {
+      "lines": [
+        "男：你什么时候回家？",
+        "女：下午五点。"
+      ]
+    },
+    "why": "The woman says 下午五点, five in the afternoon.",
+    "not": {
+      "三点": "She says 五点, not 三点.",
+      "十二点": "She says 五点, not 十二点."
+    }
+  },
+  {
+    "key": "d1w6t6wk",
+    "type": "dialog",
+    "lesson": 11,
+    "q": "他们几点去吃饭？",
+    "options": [
+      "十二点",
+      "十点",
+      "下午两点"
+    ],
+    "answer": "十二点",
+    "context": {
+      "lines": [
+        "男：我们中午去吃饭，好吗？",
+        "女：好，十二点去。"
+      ]
+    },
+    "why": "The woman says 好，十二点去, so they go at twelve (noon).",
+    "not": {
+      "十点": "The woman says 十二点, not 十点.",
+      "下午两点": "They plan 中午, noon, at 十二点."
+    }
+  },
+  {
+    "key": "jqpuz7y",
+    "type": "judge",
+    "lesson": 11,
+    "q": "他下午三点看电影。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "我下午三点去看电影。"
+    },
+    "why": "The text says 下午三点去看电影, so the claim matches. It is true.",
+    "not": {}
+  },
+  {
+    "key": "j136s1oe",
+    "type": "judge",
+    "lesson": 11,
+    "q": "他现在在学校。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "现在八点，我九点去学校。"
+    },
+    "why": "The text says 现在八点，我九点去学校. He goes to school at nine, so he is not there now. False.",
+    "not": {}
+  },
+  {
+    "key": "j10d61yz",
+    "type": "judge",
+    "lesson": 11,
+    "q": "他中午吃饭。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "我中午十二点吃饭。"
+    },
+    "why": "The text says 我中午十二点吃饭, so he eats at noon. The claim is true.",
+    "not": {}
+  },
+  {
+    "key": "r1yn8fby",
+    "type": "reading",
+    "lesson": 12,
+    "q": "How is the weather today?",
+    "options": [
+      "Too hot",
+      "Cold",
+      "Rainy",
+      "Nice"
+    ],
+    "answer": "Too hot",
+    "context": {
+      "title": "明天天气怎么样",
+      "lines": [
+        "A：今天天气太热了！  (It's so hot today!)",
+        "B：是，太热了。  (Yes, way too hot.)",
+        "A：明天天气怎么样？  (What about tomorrow?)",
+        "B：明天下雨，不热。  (It'll rain tomorrow; not hot.)"
+      ]
+    },
+    "why": "A says 今天天气太热了 and B agrees. 太...了 means too much; 热 is hot.",
+    "not": {
+      "Cold": "Cold is 冷; they say 热.",
+      "Rainy": "Rain is tomorrow's weather, not today's.",
+      "Nice": "They say it is too hot, which is not nice."
+    }
+  },
+  {
+    "key": "rb0xekf",
+    "type": "reading",
+    "lesson": 12,
+    "q": "What will happen tomorrow?",
+    "options": [
+      "It will rain",
+      "It will be hot",
+      "It will be cold",
+      "We don't know"
+    ],
+    "answer": "It will rain",
+    "context": {
+      "title": "明天天气怎么样",
+      "lines": [
+        "A：今天天气太热了！  (It's so hot today!)",
+        "B：是，太热了。  (Yes, way too hot.)",
+        "A：明天天气怎么样？  (What about tomorrow?)",
+        "B：明天下雨，不热。  (It'll rain tomorrow; not hot.)"
+      ]
+    },
+    "why": "B says 明天下雨; 下雨 means it rains.",
+    "not": {
+      "It will be hot": "B says 不热 for tomorrow.",
+      "It will be cold": "B says 明天下雨, not cold.",
+      "We don't know": "B answers: 下雨."
+    }
+  },
+  {
+    "key": "rtygjmk",
+    "type": "reading",
+    "lesson": 12,
+    "q": "How is Miss Wang?",
+    "options": [
+      "Very well",
+      "Not well",
+      "Cold",
+      "We don't know"
+    ],
+    "answer": "Very well",
+    "context": {
+      "title": "你身体怎么样",
+      "lines": [
+        "A：王小姐，你身体怎么样？  (Miss Wang, how's your health?)",
+        "B：很好，谢谢！你来了！  (Very well, thanks! You came!)",
+        "A：我买了些水果。你爱吃水果吗？  (I bought some fruit. Do you like fruit?)",
+        "B：我很爱吃。谢谢你！  (I love it. Thank you!)"
+      ]
+    },
+    "why": "A asks about her health and B answers 很好, very well.",
+    "not": {
+      "Not well": "B says 很好, which is good.",
+      "Cold": "Nobody talks about the weather here.",
+      "We don't know": "B answers directly: 很好."
+    }
+  },
+  {
+    "key": "r6c799m",
+    "type": "reading",
+    "lesson": 12,
+    "q": "What did A bring?",
+    "options": [
+      "Some fruit",
+      "Tea",
+      "Water",
+      "Books"
+    ],
+    "answer": "Some fruit",
+    "context": {
+      "title": "你身体怎么样",
+      "lines": [
+        "A：王小姐，你身体怎么样？  (Miss Wang, how's your health?)",
+        "B：很好，谢谢！你来了！  (Very well, thanks! You came!)",
+        "A：我买了些水果。你爱吃水果吗？  (I bought some fruit. Do you like fruit?)",
+        "B：我很爱吃。谢谢你！  (I love it. Thank you!)"
+      ]
+    },
+    "why": "A says 我买了些水果; 水果 is fruit.",
+    "not": {
+      "Tea": "A does not mention tea.",
+      "Water": "水果 is fruit, not 水 water.",
+      "Books": "A does not mention books."
+    }
+  },
+  {
+    "key": "d1ugpqty",
+    "type": "dialog",
+    "lesson": 12,
+    "q": "明天天气怎么样？",
+    "options": [
+      "下雨",
+      "很热",
+      "很冷"
+    ],
+    "answer": "下雨",
+    "context": {
+      "lines": [
+        "男：明天天气怎么样？",
+        "女：明天会下雨。"
+      ]
+    },
+    "why": "The woman says 明天会下雨, it will rain.",
+    "not": {
+      "很热": "She says 下雨, not hot.",
+      "很冷": "She says 下雨, not cold."
+    }
+  },
+  {
+    "key": "d1cy90ov",
+    "type": "dialog",
+    "lesson": 12,
+    "q": "女的身体怎么样？",
+    "options": [
+      "很好",
+      "不太好",
+      "不知道"
+    ],
+    "answer": "很好",
+    "context": {
+      "lines": [
+        "男：你身体怎么样？",
+        "女：很好，谢谢。"
+      ]
+    },
+    "why": "She answers 很好，谢谢, so she is very well.",
+    "not": {
+      "不太好": "She says 很好, the opposite.",
+      "不知道": "She answers directly: 很好."
+    }
+  },
+  {
+    "key": "dtvb10l",
+    "type": "dialog",
+    "lesson": 12,
+    "q": "女的爱吃什么？",
+    "options": [
+      "苹果",
+      "米饭",
+      "中国菜"
+    ],
+    "answer": "苹果",
+    "context": {
+      "lines": [
+        "男：你爱吃什么水果？",
+        "女：我爱吃苹果。"
+      ]
+    },
+    "why": "She says 我爱吃苹果, I love eating apples.",
+    "not": {
+      "米饭": "The man asks about fruit; rice is not fruit.",
+      "中国菜": "She says 苹果, not Chinese food."
+    }
+  },
+  {
+    "key": "j1oovpai",
+    "type": "judge",
+    "lesson": 12,
+    "q": "今天很冷。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "今天太热了，明天会下雨。"
+    },
+    "why": "The text says 今天太热了, too hot. The claim says cold, so it is false.",
+    "not": {}
+  },
+  {
+    "key": "j1rzxhjt",
+    "type": "judge",
+    "lesson": 12,
+    "q": "他买了水果。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "我买了些水果，你来吃吧。"
+    },
+    "why": "The text says 我买了些水果, so he bought fruit. The claim is true.",
+    "not": {}
+  },
+  {
+    "key": "jmxmev9",
+    "type": "judge",
+    "lesson": 12,
+    "q": "北京今天不热。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "北京今天很冷。"
+    },
+    "why": "The text says 北京今天很冷, so it is cold, not hot. The claim is true.",
+    "not": {}
+  },
+  {
+    "key": "r1xfjpct",
+    "type": "reading",
+    "lesson": 13,
+    "q": "What is B doing?",
+    "options": [
+      "Watching TV",
+      "Cooking",
+      "Sleeping",
+      "Studying"
+    ],
+    "answer": "Watching TV",
+    "context": {
+      "title": "你在做什么呢",
+      "lines": [
+        "A：喂，你在做什么呢？  (Hello, what are you doing?)",
+        "B：我在看电视呢。  (I'm watching TV.)",
+        "A：你爸爸呢？  (And your dad?)",
+        "B：他在学做中国菜呢。  (He's learning to cook Chinese food.)"
+      ]
+    },
+    "why": "B says 我在看电视呢; 在...呢 shows an action happening now. So B is watching TV.",
+    "not": {
+      "Cooking": "Cooking is what B's dad is doing.",
+      "Sleeping": "B says 看电视, not sleeping.",
+      "Studying": "B says 看电视, not studying."
+    }
+  },
+  {
+    "key": "r1cqrmbg",
+    "type": "reading",
+    "lesson": 13,
+    "q": "What is B's dad doing?",
+    "options": [
+      "Learning to cook Chinese food",
+      "Watching TV",
+      "Sleeping",
+      "Working"
+    ],
+    "answer": "Learning to cook Chinese food",
+    "context": {
+      "title": "你在做什么呢",
+      "lines": [
+        "A：喂，你在做什么呢？  (Hello, what are you doing?)",
+        "B：我在看电视呢。  (I'm watching TV.)",
+        "A：你爸爸呢？  (And your dad?)",
+        "B：他在学做中国菜呢。  (He's learning to cook Chinese food.)"
+      ]
+    },
+    "why": "B says 他在学做中国菜呢; 学 is to learn and 做菜 is to cook.",
+    "not": {
+      "Watching TV": "That is what B is doing, not dad.",
+      "Sleeping": "No line says dad is sleeping.",
+      "Working": "B says 学做中国菜, not working."
+    }
+  },
+  {
+    "key": "r1g8upj2",
+    "type": "reading",
+    "lesson": 13,
+    "q": "When will they see the movie?",
+    "options": [
+      "Tomorrow morning",
+      "Tomorrow afternoon",
+      "Today",
+      "Never"
+    ],
+    "answer": "Tomorrow morning",
+    "context": {
+      "title": "我们去看电影吧",
+      "lines": [
+        "A：你喜欢看电影吗？  (Do you like movies?)",
+        "B：喜欢。我也喜欢看电视。  (Yes. I like TV too.)",
+        "A：明天上午我们去看电影吧。  (Let's see a movie tomorrow morning.)",
+        "B：好，明天我给你打电话。  (Okay, I'll call you tomorrow.)"
+      ]
+    },
+    "why": "A says 明天上午我们去看电影吧, tomorrow morning. B agrees with 好.",
+    "not": {
+      "Tomorrow afternoon": "A says 上午, morning; afternoon is 下午.",
+      "Today": "A says 明天, tomorrow.",
+      "Never": "B says 好, so they will go."
+    }
+  },
+  {
+    "key": "r1uzheyg",
+    "type": "reading",
+    "lesson": 13,
+    "q": "What will B do tomorrow?",
+    "options": [
+      "Call A",
+      "Cook",
+      "Go to school",
+      "Sleep"
+    ],
+    "answer": "Call A",
+    "context": {
+      "title": "我们去看电影吧",
+      "lines": [
+        "A：你喜欢看电影吗？  (Do you like movies?)",
+        "B：喜欢。我也喜欢看电视。  (Yes. I like TV too.)",
+        "A：明天上午我们去看电影吧。  (Let's see a movie tomorrow morning.)",
+        "B：好，明天我给你打电话。  (Okay, I'll call you tomorrow.)"
+      ]
+    },
+    "why": "B says 明天我给你打电话; 打电话 means to call.",
+    "not": {
+      "Cook": "B's dad learns to cook; B does not say B will.",
+      "Go to school": "B does not say school.",
+      "Sleep": "B does not mention sleeping."
+    }
+  },
+  {
+    "key": "drapcud",
+    "type": "dialog",
+    "lesson": 13,
+    "q": "女的在做什么？",
+    "options": [
+      "看电视",
+      "睡觉",
+      "学习"
+    ],
+    "answer": "看电视",
+    "context": {
+      "lines": [
+        "男：喂，你在做什么呢？",
+        "女：我在看电视呢。"
+      ]
+    },
+    "why": "The woman says 我在看电视呢, I am watching TV.",
+    "not": {
+      "睡觉": "She says 看电视, not 睡觉.",
+      "学习": "She says 看电视, not 学习."
+    }
+  },
+  {
+    "key": "d1o8vpgu",
+    "type": "dialog",
+    "lesson": 13,
+    "q": "女的喜欢做什么？",
+    "options": [
+      "看电影",
+      "看书",
+      "做菜"
+    ],
+    "answer": "看电影",
+    "context": {
+      "lines": [
+        "男：你喜欢做什么？",
+        "女：我喜欢看电影。"
+      ]
+    },
+    "why": "She says 我喜欢看电影, I like watching movies.",
+    "not": {
+      "看书": "She says 看电影; 看书 is reading.",
+      "做菜": "She says 看电影, not 做菜."
+    }
+  },
+  {
+    "key": "d1lk3s5y",
+    "type": "dialog",
+    "lesson": 13,
+    "q": "他们要做什么？",
+    "options": [
+      "吃饭",
+      "看电视",
+      "睡觉"
+    ],
+    "answer": "吃饭",
+    "context": {
+      "lines": [
+        "男：我们去吃饭吧。",
+        "女：好，你等我一下。"
+      ]
+    },
+    "why": "The man says 我们去吃饭吧, let's go eat. She agrees with 好.",
+    "not": {
+      "看电视": "Nobody mentions TV.",
+      "睡觉": "Nobody mentions sleeping."
+    }
+  },
+  {
+    "key": "jfk2lnq",
+    "type": "judge",
+    "lesson": 13,
+    "q": "他在看电视。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "他在学做中国菜呢。"
+    },
+    "why": "The text says 他在学做中国菜呢, learning to cook. The claim says watching TV, so it is false.",
+    "not": {}
+  },
+  {
+    "key": "j1syhe77",
+    "type": "judge",
+    "lesson": 13,
+    "q": "他下午在家。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "上午我在学校学习，下午我在家睡觉。"
+    },
+    "why": "The text says 下午我在家睡觉, so he is at home in the afternoon. The claim is true.",
+    "not": {}
+  },
+  {
+    "key": "j1ra9i8c",
+    "type": "judge",
+    "lesson": 13,
+    "q": "他今天打电话。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "我明天给你打电话。"
+    },
+    "why": "The text says 明天给你打电话, call tomorrow. The claim says today, so it is false.",
+    "not": {}
+  },
+  {
+    "key": "r1vjskan",
+    "type": "reading",
+    "lesson": 14,
+    "q": "What did B buy?",
+    "options": [
+      "Apples",
+      "Clothes",
+      "A car",
+      "Nothing"
+    ],
+    "answer": "Apples",
+    "context": {
+      "title": "你买了什么",
+      "lines": [
+        "A：你买什么东西了？  (What did you buy?)",
+        "B：我买了一点儿苹果。  (I bought a few apples.)",
+        "A：你没买衣服吗？  (You didn't buy clothes?)",
+        "B：没买。小李买了不少衣服，都很漂亮。  (No. Xiao Li bought lots of clothes; they're all pretty.)"
+      ]
+    },
+    "why": "B says 我买了一点儿苹果; 一点儿 is a little. So B bought some apples.",
+    "not": {
+      "Clothes": "B says 没买 clothes; 小李 bought them.",
+      "A car": "B does not mention a car.",
+      "Nothing": "B says 我买了一点儿苹果."
+    }
+  },
+  {
+    "key": "r1pq52eu",
+    "type": "reading",
+    "lesson": 14,
+    "q": "Who bought a lot of clothes?",
+    "options": [
+      "小李",
+      "B",
+      "A",
+      "Nobody"
+    ],
+    "answer": "小李",
+    "context": {
+      "title": "你买了什么",
+      "lines": [
+        "A：你买什么东西了？  (What did you buy?)",
+        "B：我买了一点儿苹果。  (I bought a few apples.)",
+        "A：你没买衣服吗？  (You didn't buy clothes?)",
+        "B：没买。小李买了不少衣服，都很漂亮。  (No. Xiao Li bought lots of clothes; they're all pretty.)"
+      ]
+    },
+    "why": "B says 小李买了不少衣服; 不少 means quite a lot.",
+    "not": {
+      "B": "B says 没买, B did not buy clothes.",
+      "A": "A only asks questions.",
+      "Nobody": "B says 小李买了不少衣服."
+    }
+  },
+  {
+    "key": "r1l8udzu",
+    "type": "reading",
+    "lesson": 14,
+    "q": "Where did Mr. Wang go?",
+    "options": [
+      "The shop",
+      "The hospital",
+      "School",
+      "Home"
+    ],
+    "answer": "The shop",
+    "context": {
+      "title": "王先生回来了吗",
+      "lines": [
+        "A：王先生回来了吗？  (Is Mr. Wang back?)",
+        "B：没有。他开车去商店了。  (No. He drove to the shop.)",
+        "A：他什么时候回来？  (When will he be back?)",
+        "B：二十分钟后回来。  (In twenty minutes.)"
+      ]
+    },
+    "why": "B says 他开车去商店了; 去商店 is go to the shop.",
+    "not": {
+      "The hospital": "No line mentions a hospital.",
+      "School": "No line mentions school.",
+      "Home": "A asks if he came back; B says 没有."
+    }
+  },
+  {
+    "key": "ri1rjsk",
+    "type": "reading",
+    "lesson": 14,
+    "q": "When will he be back?",
+    "options": [
+      "In 20 minutes",
+      "In 2 minutes",
+      "At 2 o'clock",
+      "Tomorrow"
+    ],
+    "answer": "In 20 minutes",
+    "context": {
+      "title": "王先生回来了吗",
+      "lines": [
+        "A：王先生回来了吗？  (Is Mr. Wang back?)",
+        "B：没有。他开车去商店了。  (No. He drove to the shop.)",
+        "A：他什么时候回来？  (When will he be back?)",
+        "B：二十分钟后回来。  (In twenty minutes.)"
+      ]
+    },
+    "why": "B says 二十分钟后回来; 分钟 is minutes and 后 is later.",
+    "not": {
+      "In 2 minutes": "B says 二十, twenty, not two.",
+      "At 2 o'clock": "二十分钟 is a length of time, not a clock time.",
+      "Tomorrow": "B says 分钟 (minutes), not a day."
+    }
+  },
+  {
+    "key": "dolbh2l",
+    "type": "dialog",
+    "lesson": 14,
+    "q": "女的买了什么？",
+    "options": [
+      "苹果",
+      "衣服",
+      "杯子"
+    ],
+    "answer": "苹果",
+    "context": {
+      "lines": [
+        "男：你买什么了？",
+        "女：我买了一些苹果。"
+      ]
+    },
+    "why": "The woman says 我买了一些苹果, some apples.",
+    "not": {
+      "衣服": "She says 苹果, not clothes.",
+      "杯子": "She says 苹果, not cups."
+    }
+  },
+  {
+    "key": "dcvprya",
+    "type": "dialog",
+    "lesson": 14,
+    "q": "王先生去哪儿了？",
+    "options": [
+      "商店",
+      "医院",
+      "学校"
+    ],
+    "answer": "商店",
+    "context": {
+      "lines": [
+        "男：王先生回来了吗？",
+        "女：没有，他开车去商店了。"
+      ]
+    },
+    "why": "The woman says 他开车去商店了, so Mr. Wang went to the shop.",
+    "not": {
+      "医院": "She says 商店, not 医院.",
+      "学校": "She says 商店, not 学校."
+    }
+  },
+  {
+    "key": "d1xykoch",
+    "type": "dialog",
+    "lesson": 14,
+    "q": "衣服怎么样？",
+    "options": [
+      "很漂亮",
+      "很少",
+      "不漂亮"
+    ],
+    "answer": "很漂亮",
+    "context": {
+      "lines": [
+        "男：她买了多少衣服？",
+        "女：不少，都很漂亮。"
+      ]
+    },
+    "why": "The woman says 不少，都很漂亮; 都 means all, 漂亮 means pretty. So the clothes are pretty.",
+    "not": {
+      "很少": "She says 不少, a lot, and 很少 means very few.",
+      "不漂亮": "She says 都很漂亮, the opposite."
+    }
+  },
+  {
+    "key": "jk8gdnc",
+    "type": "judge",
+    "lesson": 14,
+    "q": "他买了衣服。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "我没买衣服，我买了一点儿苹果。"
+    },
+    "why": "The text says 我没买衣服; 没 means did not. The claim says he bought clothes, so it is false.",
+    "not": {}
+  },
+  {
+    "key": "j1x1knre",
+    "type": "judge",
+    "lesson": 14,
+    "q": "他十分钟后回来。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "他开车去学校了，十分钟后回来。"
+    },
+    "why": "The text says 十分钟后回来, back in ten minutes. The claim is true.",
+    "not": {}
+  },
+  {
+    "key": "j1oaicoh",
+    "type": "judge",
+    "lesson": 14,
+    "q": "他们不是学生。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "我们都是学生。"
+    },
+    "why": "The text says 我们都是学生, we are all students. The claim says they are not, so it is false.",
+    "not": {}
+  },
+  {
+    "key": "r813agi",
+    "type": "reading",
+    "lesson": 15,
+    "q": "When did B come to Beijing?",
+    "options": [
+      "Yesterday",
+      "Today",
+      "Last year",
+      "Tomorrow"
+    ],
+    "answer": "Yesterday",
+    "context": {
+      "title": "你是怎么来的",
+      "lines": [
+        "A：你是什么时候来北京的？  (When did you come to Beijing?)",
+        "B：我是昨天来的。  (I came yesterday.)",
+        "A：你是怎么来的？  (How did you come?)",
+        "B：我是坐飞机来的。  (I came by plane.)"
+      ]
+    },
+    "why": "B says 我是昨天来的; 昨天 means yesterday.",
+    "not": {
+      "Today": "Today is 今天; B says 昨天.",
+      "Last year": "Last year is 去年; B says 昨天.",
+      "Tomorrow": "B says 来的, a past event; tomorrow is the future."
+    }
+  },
+  {
+    "key": "r1thvoes",
+    "type": "reading",
+    "lesson": 15,
+    "q": "How did B come?",
+    "options": [
+      "By plane",
+      "By taxi",
+      "By car",
+      "We don't know"
+    ],
+    "answer": "By plane",
+    "context": {
+      "title": "你是怎么来的",
+      "lines": [
+        "A：你是什么时候来北京的？  (When did you come to Beijing?)",
+        "B：我是昨天来的。  (I came yesterday.)",
+        "A：你是怎么来的？  (How did you come?)",
+        "B：我是坐飞机来的。  (I came by plane.)"
+      ]
+    },
+    "why": "B says 我是坐飞机来的; 坐飞机 is travel by plane.",
+    "not": {
+      "By taxi": "B says 飞机, plane, not 出租车.",
+      "By car": "B says 飞机, plane, not a car.",
+      "We don't know": "B answers: 坐飞机."
+    }
+  },
+  {
+    "key": "r1f9gs8b",
+    "type": "reading",
+    "lesson": 15,
+    "q": "What does Xiao Wang do?",
+    "options": [
+      "University teacher",
+      "Doctor",
+      "Student",
+      "Taxi driver"
+    ],
+    "answer": "University teacher",
+    "context": {
+      "title": "认识你很高兴",
+      "lines": [
+        "A：你好，我叫小王，是大学老师。  (Hi, I'm Xiao Wang, a university teacher.)",
+        "B：认识你很高兴！  (Nice to meet you!)",
+        "A：中午我们一起去饭店吃饭吧。  (Let's eat at a restaurant together at noon.)",
+        "B：好！我们坐出租车去吧。  (Great! Let's take a taxi.)"
+      ]
+    },
+    "why": "A says 我叫小王，是大学老师, a university teacher.",
+    "not": {
+      "Doctor": "A says 老师, not 医生.",
+      "Student": "A says 老师, not 学生.",
+      "Taxi driver": "The taxi is how they will travel, not A's job."
+    }
+  },
+  {
+    "key": "r5rmwfm",
+    "type": "reading",
+    "lesson": 15,
+    "q": "How will they go to the restaurant?",
+    "options": [
+      "By taxi",
+      "By plane",
+      "On foot",
+      "By bus"
+    ],
+    "answer": "By taxi",
+    "context": {
+      "title": "认识你很高兴",
+      "lines": [
+        "A：你好，我叫小王，是大学老师。  (Hi, I'm Xiao Wang, a university teacher.)",
+        "B：认识你很高兴！  (Nice to meet you!)",
+        "A：中午我们一起去饭店吃饭吧。  (Let's eat at a restaurant together at noon.)",
+        "B：好！我们坐出租车去吧。  (Great! Let's take a taxi.)"
+      ]
+    },
+    "why": "B says 我们坐出租车去吧; 出租车 is a taxi.",
+    "not": {
+      "By plane": "B says 出租车, taxi, not 飞机.",
+      "On foot": "B says 坐出租车, not walking.",
+      "By bus": "B says 出租车, taxi, not a bus."
+    }
+  },
+  {
+    "key": "d1ycwh6q",
+    "type": "dialog",
+    "lesson": 15,
+    "q": "女的是怎么来的？",
+    "options": [
+      "坐飞机",
+      "坐出租车",
+      "开车"
+    ],
+    "answer": "坐飞机",
+    "context": {
+      "lines": [
+        "男：你是怎么来的？",
+        "女：我是坐飞机来的。"
+      ]
+    },
+    "why": "The woman says 我是坐飞机来的, I came by plane.",
+    "not": {
+      "坐出租车": "She says 飞机, not 出租车.",
+      "开车": "She says 飞机, not driving."
+    }
+  },
+  {
+    "key": "d141wshu",
+    "type": "dialog",
+    "lesson": 15,
+    "q": "女的什么时候来的北京？",
+    "options": [
+      "昨天",
+      "今天",
+      "去年"
+    ],
+    "answer": "昨天",
+    "context": {
+      "lines": [
+        "男：你是什么时候来北京的？",
+        "女：我是昨天来的。"
+      ]
+    },
+    "why": "The woman says 我是昨天来的, yesterday.",
+    "not": {
+      "今天": "She says 昨天, not 今天.",
+      "去年": "She says 昨天, not 去年."
+    }
+  },
+  {
+    "key": "d1dl2yop",
+    "type": "dialog",
+    "lesson": 15,
+    "q": "他们在做什么？",
+    "options": [
+      "认识新朋友",
+      "买东西",
+      "看电影"
+    ],
+    "answer": "认识新朋友",
+    "context": {
+      "lines": [
+        "男：认识你很高兴！",
+        "女：我也很高兴。"
+      ]
+    },
+    "why": "The man says 认识你很高兴, nice to meet you. They have just met.",
+    "not": {
+      "买东西": "Nobody talks about buying.",
+      "看电影": "Nobody talks about movies."
+    }
+  },
+  {
+    "key": "jg3vf9k",
+    "type": "judge",
+    "lesson": 15,
+    "q": "他在大学工作。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "我是去年来中国的，我在大学学习汉语。"
+    },
+    "why": "The text says 在大学学习汉语, studying Chinese at a university. The claim says he works there, so it is false.",
+    "not": {}
+  },
+  {
+    "key": "j1ugm63e",
+    "type": "judge",
+    "lesson": 15,
+    "q": "他们要去饭店。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "我们坐出租车去饭店吃饭吧。"
+    },
+    "why": "The text says 我们坐出租车去饭店吃饭吧, so they plan to go to the restaurant. The claim is true.",
+    "not": {}
+  },
+  {
+    "key": "jou16pl",
+    "type": "judge",
+    "lesson": 15,
+    "q": "他是开车来的。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "我是坐飞机来的。"
+    },
+    "why": "The text says 我是坐飞机来的, by plane. The claim says by car, so it is false.",
+    "not": {}
+  }
+]

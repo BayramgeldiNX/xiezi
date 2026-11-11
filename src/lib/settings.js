@@ -10,6 +10,8 @@ export const DEFAULTS = {
   hintAfter: 2,         // mistakes before a hint when tracing; 0 = never
   slowRate: 0.65,       // speed of the "Slow" sound button
   autoplay: true,       // play the word automatically in exercises
+  sfx: true,            // sound effects (taps, strokes, right and wrong answers)
+  sfxVolume: "normal",  // quiet | normal | loud | max
 };
 const KEY = "xz-settings";
 let S = { ...DEFAULTS, ...store.get(KEY, {}) };

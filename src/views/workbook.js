@@ -10,6 +10,7 @@ import { tonePy } from "../lib/pinyin.js";
 import { sayBtns } from "../lib/speech.js";
 import { CHARINFO, RADICALS, LESSONS, wordsOf, lessonChars } from "../data/index.js";
 import { charLinks } from "./charsheet.js";
+import { keyOf } from "../lib/explain-key.js";
 
 // Every workbook item of the given lessons, each with a stable id and its kind.
 export function workbookOf(lessons) {
@@ -18,7 +19,7 @@ export function workbookOf(lessons) {
     return [
       ...(wb.dialogs || []).map((d, i) => ({ ...d, kind: "dialog", id: `${l.id}/d${i + 1}`, lesson: l.id })),
       ...(wb.judge || []).map((d, i) => ({ ...d, kind: "judge", id: `${l.id}/j${i + 1}`, lesson: l.id })),
-      ...(wb.replies || []).map((d, i, all) => ({ ...d, kind: "reply", id: `${l.id}/r${i + 1}`, lesson: l.id, others: all.filter((x) => x !== d && x.q !== x.a).map((x) => x.a) })),
+      ...(wb.replies || []).map((d, i, all) => ({ ...d, kind: "reply", id: `${l.id}/r${i + 1}`, lesson: l.id, others: all.filter((x) => x !== d && x.q !== x.a).map((x) => x.a), askedBy: Object.fromEntries(all.map((x) => [x.a, x.q])) })),
     ];
   });
 }
@@ -32,6 +33,7 @@ const LABEL ={ dialog: "听对话 · Dialogue", judge: "判断 · True or false"
 export function workbookQuiz(ui, { items, title = "练习册 · Workbook", kind = "workbook", then }) {
   return ui.choiceQuiz({ kind, title, items, key: "wb:", id: (d) => d.id, then,
     label: (d) => (d.kind === "dialog" ? d.q : d.kind === "judge" ? d.claim : d.q),
+    explain: (d) => (d.kind === "dialog" ? keyOf.dialog(d) : d.kind === "judge" ? keyOf.judge(d) : null),
     sayAfter: (d) => (d.kind === "judge" ? d.text : d.kind === "reply" ? d.a : ""),
     ask: (d) => {
       if (d.kind === "dialog") return { html: `<p class="hint">${LABEL.dialog}: listen, then answer.</p><p class="hz wb-q">问：${esc(d.q)}</p>`, say: dialogText(d),
@@ -41,10 +43,11 @@ export function workbookQuiz(ui, { items, title = "练习册 · Workbook", kind 
       return { html: `<p class="hint">${LABEL.reply}: which answer fits?</p><p class="wb-text">${hz(d.q, 1.5)} ${sayBtns(d.q, "sentence", true)}</p>` };
     },
     makeOptions: (d) => {
-      if (d.kind === "dialog") return d.options.map((o, i) => ({ html: plain(o), correct: i === d.answer }));
+      if (d.kind === "dialog") return d.options.map((o, i) => ({ t: o, html: plain(o), correct: i === d.answer }));
       if (d.kind === "judge") return [{ html: `<span class="en">✓ 对 · True</span>`, correct: d.ok }, { html: `<span class="en">✗ 错 · False</span>`, correct: !d.ok }];
       const bad = (o) => o === d.q || o === d.a; // never the prompt or the answer; self-answering greetings are left out of `others`
-      return [d.a, ...shuffle([...new Set(d.others)].filter((o) => !bad(o))).slice(0, 3)].map((o, i) => ({ html: plain(o), correct: i === 0 }));
+      return [d.a, ...shuffle([...new Set(d.others)].filter((o) => !bad(o))).slice(0, 3)].map((o, i) => ({ html: plain(o), correct: i === 0,
+        note: d.askedBy?.[o] ? `${plain(o)}<br>That answers another sentence: ${plain(d.askedBy[o])}` : "" }));
     },
     reveal: (d) => d.kind === "dialog"
       ? d.lines.map(([who, t]) => `<div class="wb-line"><span class="who">${esc(who)}</span> ${hz(t, 1.15)} ${sayBtns(t, "line", true)}</div>`).join("") + `<div class="muted">Answer: ${esc(d.options[d.answer])}</div>`
@@ -73,9 +76,10 @@ export function fillQuiz(ui, words, { title = "选词填空 · Fill in the word"
         for (const x of [...t.filter((y) => [...y.w].length === len), ...t.filter((y) => [...y.w].length !== len)]) if (picks.length < 3) picks.push(x);
         if (picks.length >= 3) break;
       }
-      return [w, ...picks].map((o) => ({ html: `<span class="hz" style="font-size:1.3rem">${o.w}</span>`, correct: o === w }));
+      return [w, ...picks].map((o) => ({ html: `<span class="hz" style="font-size:1.3rem">${o.w}</span>`, correct: o === w, note: ui.wordNote(o) }));
     },
     reveal: (w) => `${hz(w.ex.hz.replace(/[AB]: /g, ""), 1.2)} ${sayBtns(w.ex.hz, "sentence", true)}<br><span class="py">${tonePy(w.ex.py)}</span>`,
+    why: (w) => `The sentence needs ${ui.wordNote(w)}.`,
   });
 }
 
@@ -88,8 +92,10 @@ export function radicalChoice(ui, cfg) {
     makeOptions: (it) => {
       const r = radOf(it);
       return [r, ...cfg.distractors(it, r)]
-        .map((x) => ({ html: `<span class="hz" style="font-size:1.6rem">${x}</span> <span class="muted">${esc(nameOf(x))}</span>`, correct: x === r }));
+        .map((x) => ({ html: `<span class="hz" style="font-size:1.6rem">${x}</span> <span class="muted">${esc(nameOf(x))}</span>`, correct: x === r,
+          note: `<span class="hz">${x}</span> ${esc(nameOf(x))}. It is not a part of <span class="hz">${charOf(it)}</span>.` }));
     },
+    why: cfg.why,
     reveal: (it) => `${charLinks(charOf(it))} · <span class="hz">${radOf(it)}</span> <span class="muted">${esc(nameOf(radOf(it)))}</span>`,
   });
 }

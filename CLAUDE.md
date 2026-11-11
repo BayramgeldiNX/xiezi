@@ -28,7 +28,7 @@ The owner uses it on iPhone 16 (home-screen PWA), Mi Pad 7 Pro and Windows. Prog
   - `bookreview.js`: review and the HSK-style practice test.
   - `workbook.js`: workbook quizzes. `hanzi.js`: character lessons and pronunciation tips.
   - `search.js`: search all words (matcher in `lib/search.js`).
-  - `notebook.js`, `notebook-review.js`: Notebook (生词本) at `#/notebook[/<word>]`: words saved from daily life, with a word page and four review types (flashcards, listening, writing, sentence gap).
+  - `notebook.js`, `notebook-review.js`: Notebook (生词本) at `#/notebook[/<word>]`: words saved from daily life, with a word page and four review types (flashcards, listening, writing, sentence gap). Practice has its own address, `#/notebook/-/<review|flash|listen|write|gap>`, so Back returns to the list.
   - `radicals.js`, `radicals-practice.js`: Radicals (部首) at `#/radicals` and `#/radical/<r>`: 81 core radicals in 5 stages, with cards, find-the-radical and guess-the-meaning practice (progress key `bs:<r>`; helpers in `lib/radical-quiz.js`).
     Data: hand-written `data/radicals-core.json` (`kind` meaning/shape, `guess`, `lesson`), and `radical-families.gen.json` from `scripts/gen-radicals.mjs` (run by `gen:data`).
     Lessons: `radical-lesson.js` at `#/radical/<r>/learn/<step>` (6 steps; done key `bsl:<r>`). Pictures in `public/radicals/`: `pic/<hex>.svg` (own drawings) and `ancient/` (public-domain forms from Wikimedia Commons via `scripts/fetch-ancient.mjs`, credits in `ancient.gen.json`), shown with CSS mask, cached at runtime.
@@ -37,6 +37,7 @@ The owner uses it on iPhone 16 (home-screen PWA), Mi Pad 7 Pro and Windows. Prog
   - `pinyin.js`: syllable splitter, handles üe and erhua.
   - `search.js`: `matchesWord` (汉字, pinyin with or without tones, English).
   - `speech.js`: recordings first, then TTS; `addRecordings` adds private audio.
+  - `sfx.js`: sound effects made with Web Audio (no files), settings `sfx` and `sfxVolume`. Taps tick by themselves; writing quizzes get stroke sounds in `makeWriter`; answers and finished exercises sound through `progress.setHooks` (`record(key, result, { sfx | quiet })`, rules in `sfx-pick.js`).
   - `typing-check.js`, `draw.js`, `compare.js`, `settings.js`, `theme.js`.
   - `qpinyin.js`: the 拼 Pinyin and 英 English switches in quizzes. English comes from `data/sentence-en.gen.json` (made by `scripts/gen-sentence-en.mjs` from lesson `en` fields plus hand translations in `data/sentence-en/part-*.json`; `--todo N` lists new untranslated sentences).
 - `src/sync/`:

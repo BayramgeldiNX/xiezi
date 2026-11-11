@@ -30,8 +30,14 @@ topBtn.addEventListener("click", () => {
   topBtn.blur();
 });
 
-export function openNotebook(word) {
+// Practice has its own address (#/notebook/-/<kind>), so Back and the back gesture return to the word list, not Home.
+const PRACTICE = ["review", "flash", "listen", "write", "gap"];
+export function openNotebook(word, kind) {
   setTimeout(syncTop);
+  if (word === "-" && PRACTICE.includes(kind)) {
+    view = { kind: "review" };
+    return kind === "review" ? reviewDue("#notebookBody", leaveReview) : practice("#notebookBody", kind, leaveReview);
+  }
   // Quietly keep the whole dictionary on the device for offline lookups.
   setTimeout(() => (window.requestIdleCallback || ((f) => f()))(() => saveForOffline()), 3000);
   const e = word && nb.getWord(word);
@@ -104,9 +110,9 @@ function renderList() {
   });
 }
 
-const leaveReview = () => { listPage(); };
-function startDue() { view = { kind: "review" }; reviewDue("#notebookBody", leaveReview); }
-function startPractice(kind) { view = { kind: "review" }; practice("#notebookBody", kind, leaveReview); }
+const leaveReview = () => { if (history.state?.from === "#/notebook") history.back(); else location.hash = "#/notebook"; };
+function startDue() { location.hash = "#/notebook/-/review"; }
+function startPractice(kind) { location.hash = "#/notebook/-/" + kind; }
 
 async function addFromInput() {
   const input = $("#nbInput"), msg = $("#nbMsg");

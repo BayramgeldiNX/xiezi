@@ -143,13 +143,14 @@
     <div class="topbar">
       <button class="back" type="button" id="backBtn" aria-label="Lessons"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M15 5l-7 7 7 7"/></svg></button>
       <div><h2 id="lessonTitle"></h2><span class="eyebrow" id="lessonEyebrow"></span></div>
-      <div class="lmeter" id="lessonMeter" role="img" aria-label="Lesson progress">
+      <button type="button" class="lmeter" id="lessonMeter" aria-label="Lesson progress: show what is left" aria-expanded="false" aria-controls="lessonLeft">
         <span class="seal" id="lessonSeal" hidden>完</span>
         <span class="pct" id="lessonPct">0%</span>
         <svg viewBox="0 0 36 36" aria-hidden="true"><circle class="ring-bg" cx="18" cy="18" r="15"/><circle class="ring-fill" cx="18" cy="18" r="15"/></svg>
-      </div>
+      </button>
     </div>
     <p class="lfin" id="lessonFin" hidden>完 · lesson finished</p>
+    <div class="lleft" id="lessonLeft" hidden></div>
     <div class="tabs" role="tablist" aria-label="Practice type">
       <button class="tab" role="tab" data-tab="write"><span class="tz">写</span><span class="tl">Write</span><span class="tab-fill" hidden aria-hidden="true"><i></i></span></button>
       <button class="tab" role="tab" data-tab="listen"><span class="tz">听</span><span class="tl">Listen</span><span class="tab-fill" hidden aria-hidden="true"><i></i></span></button>

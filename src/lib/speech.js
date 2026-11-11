@@ -73,7 +73,14 @@ export function say(text, slow) {
   const file = AUDIO[t];
   if (file || EXTRA[t]) {
     return playing((settle) => {
-      const fallback = () => { if (token === playToken) tts(t, slow, settle); else settle(false); };
+      // The device voice steps in only when the recording never started: one that breaks half-way
+      // would otherwise be followed by the whole word again. It also runs once (error + rejected play).
+      let fell = false;
+      const fallback = () => {
+        if (fell) return;
+        fell = true;
+        if (token === playToken && !(player.currentTime > 0)) tts(t, slow, settle); else settle(false);
+      };
       player.muted = false; // the unlock trick may still be muting the player on the very first tap
       player.src = file ? `${import.meta.env.BASE_URL}audio/${file}.mp3` : EXTRA[t];
       // Players ask for audio in pieces, which the offline cache can't keep; one whole download keeps it.
@@ -108,7 +115,17 @@ function tts(text, slow, settle) {
 // Sound that plays by itself (not from a tap): respects the "auto-play" setting.
 export const autoSay = (text, slow) => (setting("autoplay") ? say(text, slow) : Promise.resolve(false));
 
+// A question that plays by itself a moment after it appears. Only one can wait at a time, and any
+// other sound (a tap on Listen, the next question, leaving the page) cancels it, so it never
+// restarts a sound that is already playing.
+let laterTimer = 0;
+export function sayLater(text, { ms = 250, auto = true } = {}) {
+  clearTimeout(laterTimer);
+  laterTimer = setTimeout(() => (auto ? autoSay(text) : say(text)), ms);
+}
+
 export function stopSpeech() {
+  clearTimeout(laterTimer);
   playToken++;
   settleCurrent?.(false);
   try { player.pause(); } catch {}

@@ -3,6 +3,7 @@ import HanziWriter from "hanzi-writer";
 import { css } from "./util.js";
 import { STROKE_DATA, ensureChars } from "../data/index.js";
 import { setting, STROKE_SPEED } from "./settings.js";
+import { sfx } from "./sfx.js";
 
 export function gridSVG() {
   return `<svg class="grid" viewBox="0 0 100 100" aria-hidden="true">
@@ -24,7 +25,7 @@ export function stripSVG(c, upto) {
 const loader = (c, onLoad, onError) => { ensureChars([c]).then(() => (STROKE_DATA[c] ? onLoad(STROKE_DATA[c]) : onError?.(new Error("no data for " + c))), onError); };
 
 export function makeWriter(el, c, size, extra = {}) {
-  return HanziWriter.create(el, c, Object.assign({
+  const w = HanziWriter.create(el, c, Object.assign({
     width: size, height: size, padding: Math.round(size * 0.05),
     charDataLoader: loader,
     strokeColor: css("--ink"), radicalColor: css("--jade"),
@@ -33,6 +34,14 @@ export function makeWriter(el, c, size, extra = {}) {
     strokeAnimationSpeed: STROKE_SPEED[setting("strokeSpeed")].anim, delayBetweenStrokes: STROKE_SPEED[setting("strokeSpeed")].delay,
     showCharacter: false, showOutline: true,
   }, extra));
+  // Every writing quiz sounds the same: a brush tap for a stroke, a knock for a mistake, a chime at the end.
+  const quiz = w.quiz.bind(w);
+  w.quiz = (o = {}) => quiz({ ...o,
+    onCorrectStroke: (d) => { sfx("stroke"); o.onCorrectStroke?.(d); },
+    onMistake: (d) => { sfx("miss"); o.onMistake?.(d); },
+    onComplete: (d) => { sfx("done"); o.onComplete?.(d); },
+  });
+  return w;
 }
 
 // Writers on screen; cleared whenever a view is replaced so quizzes stop listening.
