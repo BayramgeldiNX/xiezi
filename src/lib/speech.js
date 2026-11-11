@@ -50,36 +50,50 @@ function showVoiceNote() {
   if (n) n.hidden = false;
 }
 
-// Resolves when the sound has finished (or failed), so callers can play lines one after another.
-// It always settles: a stalled file or a speech engine that never reports the end (iOS) gives up
-// after a safety time, and stopping or starting another sound settles it with false.
+// Resolves when the sound has finished (true) or could not play (false), so callers can play lines
+// one after another. It always settles: a stalled file or a speech engine that never reports the end
+// (iOS) gives up after a safety time. Stopping, or another sound taking its place, settles it with
+// null, so a chain of lines (Listen to all) knows to end.
+// `run` may return a give-up function: on the safety time it drops a sound that never began, so a
+// slow download can't start playing much later, out of nowhere.
 let settleCurrent = null;
 function playing(run, text, slow) {
-  settleCurrent?.(false);
+  settleCurrent?.(null);
   return new Promise((resolve) => {
-    let timer;
+    let timer, giveUp = null;
     const settle = (v) => { if (settleCurrent !== settle) return; settleCurrent = null; clearTimeout(timer); resolve(v); };
     settleCurrent = settle;
     const secs = 2.5 + text.length * 0.35;
-    timer = setTimeout(() => settle(false), secs * (slow ? 2 : 1) * 1000);
-    run(settle);
+    timer = setTimeout(() => { giveUp?.(); settle(false); }, secs * (slow ? 2 : 1) * 1000);
+    giveUp = run(settle);
   });
+}
+
+// Empties the player when a sound ends or stops. A player that keeps its last word can be started
+// again from outside the app: a headset or Bluetooth button, a media key, the lock screen or
+// Control Center would replay that word out of nowhere.
+function emptyPlayer() {
+  player.onended = player.onerror = null;
+  try { player.pause(); } catch {}
+  if (player.getAttribute("src")) { player.removeAttribute("src"); try { player.load(); } catch {} }
 }
 
 export function say(text, slow) {
   const t = clean(text);
-  stopSpeech();
+  halt();
   const token = ++playToken;
   const file = AUDIO[t];
   if (file || EXTRA[t]) {
     return playing((settle) => {
       // The device voice steps in only when the recording never started: one that breaks half-way
-      // would otherwise be followed by the whole word again. It also runs once (error + rejected play).
-      let fell = false;
+      // would otherwise be followed by the whole word again. It also runs once (error + rejected play),
+      // and only while this sound is still wanted: a download that fails after giving up stays silent.
+      let fell = false, voice = null;
       const fallback = () => {
         if (fell) return;
         fell = true;
-        if (token === playToken && !(player.currentTime > 0)) tts(t, slow, settle); else settle(false);
+        if (token === playToken && settleCurrent === settle && !(player.currentTime > 0)) voice = tts(t, slow, settle);
+        else settle(false);
       };
       player.muted = false; // the unlock trick may still be muting the player on the very first tap
       player.src = file ? `${import.meta.env.BASE_URL}audio/${file}.mp3` : EXTRA[t];
@@ -87,21 +101,25 @@ export function say(text, slow) {
       if (file) fetch(player.src).catch(() => {});
       player.playbackRate = slow ? setting("slowRate") : 1;
       player.preservesPitch = true;
-      player.onended = () => settle(true);
+      player.onended = () => { emptyPlayer(); settle(true); };
       player.onerror = fallback;
       player.play().catch(fallback);
+      return () => { if (voice) voice(); else if (!(player.currentTime > 0)) emptyPlayer(); };
     }, t, slow);
   }
   return playing((settle) => tts(t, slow, settle), t, slow);
 }
 
+// Speaks with the device voice; returns its give-up function (see playing).
 function tts(text, slow, settle) {
+  let started = false;
   try {
     speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(text);
     u.lang = "zh-CN";
     u.rate = slow ? 0.5 : 0.85;
     if (zhVoice) u.voice = zhVoice;
+    u.onstart = () => { started = true; };
     u.onend = () => settle(true);
     u.onerror = () => settle(false);
     speechSynthesis.speak(u);
@@ -110,6 +128,8 @@ function tts(text, slow, settle) {
     showVoiceNote();
     settle(false);
   }
+  // Not begun by the safety time: take it out of the queue, so the voice doesn't speak much later.
+  return () => { if (!started) try { speechSynthesis.cancel(); } catch {} };
 }
 
 // Sound that plays by itself (not from a tap): respects the "auto-play" setting.
@@ -124,13 +144,29 @@ export function sayLater(text, { ms = 250, auto = true } = {}) {
   laterTimer = setTimeout(() => (auto ? autoSay(text) : say(text)), ms);
 }
 
-export function stopSpeech() {
+// Silences whatever sounds or waits to sound (say() starts with this before its own sound).
+function halt() {
   clearTimeout(laterTimer);
   playToken++;
-  settleCurrent?.(false);
+  settleCurrent?.(null);
+  player.onended = player.onerror = null;
   try { player.pause(); } catch {}
   try { speechSynthesis.cancel(); } catch {}
 }
+
+// Counts stops, so a chain of lines can tell it was stopped even between two lines.
+let stops = 0;
+export const stopCount = () => stops;
+export function stopSpeech() {
+  stops++;
+  halt();
+  emptyPlayer();
+}
+
+// Leaving the app (home screen, lock screen, another tab) stops the sound, so nothing is left to
+// start by itself on return: paused timers and half-loaded words would otherwise play the moment
+// the app comes back.
+document.addEventListener("visibilitychange", () => { if (document.hidden) stopSpeech(); });
 
 document.addEventListener("click", (e) => {
   const b = e.target.closest("[data-say]");

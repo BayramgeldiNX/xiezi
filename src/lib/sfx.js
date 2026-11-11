@@ -85,7 +85,11 @@ function flush() {
   if (played.length > 30) played.shift();
   master.gain.value = VOLUME[setting("sfxVolume")] ?? 1;
   const go = () => { try { SOUNDS[name](ctx.currentTime + 0.005); } catch {} };
-  if (ctx.state === "running") go(); else ctx.resume().then(go).catch(() => {});
+  if (ctx.state === "running") return go();
+  // Asleep (the app was in the background, a call, iOS audio interrupted): play only if it wakes at
+  // once. A sound kept waiting would play whenever the audio wakes, out of nowhere, with the others.
+  const asked = performance.now();
+  ctx.resume().then(() => { if (performance.now() - asked < 300) go(); }).catch(() => {});
 }
 
 // Hooks for the progress store: every saved answer and every finished exercise.
@@ -96,6 +100,8 @@ if (typeof document !== "undefined") {
   if (import.meta.env?.DEV) globalThis.__sfx = played;
   addEventListener("pointerdown", wake, { capture: true });
   addEventListener("keydown", wake, { capture: true });
+  // Leaving the app drops a sound still waiting to play.
+  document.addEventListener("visibilitychange", () => { if (document.hidden) { clearTimeout(timer); waiting = null; } });
   // Every button gets a soft tick; a flashcard gets a page-flip. Speaker buttons stay silent: the voice follows.
   document.addEventListener("click", (e) => {
     const b = e.target.closest?.("button, a[href], [role=button], summary");

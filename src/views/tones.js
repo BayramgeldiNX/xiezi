@@ -105,7 +105,7 @@ function toneAsk() {
     if (!ok) {
       // Your pick, then the right one, so the two can be compared straight away.
       const mine = toneSample(q.plain, t), at = tq.pos;
-      if (mine) autoSay(mine).then((done) => { if (done && tq?.pos === at) setTimeout(() => tq?.pos === at && say(q.say), 350); });
+      if (mine) autoSay(mine).then((done) => { if (done && tq?.pos === at) sayLater(q.say, { ms: 350, auto: false }); });
     }
   }));
   $("#toneNext").addEventListener("click", () => { tq.pos++; toneAsk(); });

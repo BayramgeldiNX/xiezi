@@ -2,7 +2,7 @@
 // and say how a word is read. `ui` comes from practice.js: { body, backBtn, wireBack, choiceQuiz }.
 import { $, $$, esc, shuffle, store, revealNext } from "../lib/util.js";
 import { tonePy, toneVariants } from "../lib/pinyin.js";
-import { say, sayBtns, stopSpeech } from "../lib/speech.js";
+import { say, sayBtns, stopSpeech, stopCount } from "../lib/speech.js";
 import { sfx } from "../lib/sfx.js";
 import { icon } from "../lib/icons.js";
 import { quizHead, wirePinyin, pyOf } from "../lib/qpinyin.js";
@@ -96,7 +96,8 @@ function reader(ui, r, back) {
   </div>`;
   const root = ui.body();
   const mark = (i) => $$(".rd-line", root).forEach((li) => li.classList.toggle("playing", +li.dataset.i === i));
-  const stop = () => { playing++; stopSpeech(); mark(-1); $("#rdPlay").hidden = false; $("#rdStop").hidden = true; };
+  const idle = () => { mark(-1); $("#rdPlay").hidden = false; $("#rdStop").hidden = true; };
+  const stop = () => { playing++; stopSpeech(); idle(); };
   $$(".tok", root).forEach((b) => b.addEventListener("click", () => { stop(); showGloss(b.dataset.t); }));
   $$("[data-line]", root).forEach((b) => b.addEventListener("click", async (e) => {
     e.stopPropagation();
@@ -116,14 +117,16 @@ function reader(ui, r, back) {
   }));
   $("#rdPlay").addEventListener("click", async () => {
     stop();
-    const token = playing;
+    const token = playing, stops = stopCount();
     $("#rdPlay").hidden = true; $("#rdStop").hidden = false;
     for (let i = 0; i < r.lines.length; i++) {
       if (token !== playing) return;
       mark(i);
       $$(".rd-line", root)[i].scrollIntoView({ block: "nearest", behavior: "smooth" });
-      await say(r.lines[i].hz);
+      const done = await say(r.lines[i].hz);
       await new Promise((res) => setTimeout(res, 450));
+      // Stopped from outside (leaving the app, another sound): end here, or the next line would start by itself.
+      if (done === null || stopCount() !== stops) { if (token === playing && root.contains($("#rdPlay"))) { playing++; idle(); } return; }
     }
     if (token === playing) stop();
   });
