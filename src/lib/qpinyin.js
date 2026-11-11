@@ -9,6 +9,7 @@ import { sentencePy } from "./sentence-py.js";
 import { setting, setSetting } from "./settings.js";
 import { DICT } from "../data/index.js";
 import { esc } from "./util.js";
+import { icon } from "./icons.js";
 
 const HAN = /\p{Script=Han}/u;
 export const pyOn = () => setting("quizPinyin") !== "hide";
@@ -16,7 +17,15 @@ export const pyOn = () => setting("quizPinyin") !== "hide";
 export const enOn = () => setting("quizEnglish") === "show";
 
 export const pyToggleHtml = () =>
-  `<div class="seg py-tog" role="group" aria-label="Pinyin and English"><button type="button" data-pytog aria-pressed="${pyOn()}">拼 Pinyin</button><button type="button" data-entog aria-pressed="${enOn()}">英 English</button></div>`;
+  `<div class="seg py-tog" role="group" aria-label="Pinyin and English"><button type="button" data-pytog aria-pressed="${pyOn()}" aria-label="Pinyin">拼<span class="tg-w"> Pinyin</span></button><button type="button" data-entog aria-pressed="${enOn()}" aria-label="English">英<span class="tg-w"> English</span></button></div>`;
+
+// The one-row top of a question: leave (✕), the exercise's name, the progress bar, the count and the 拼 / 英 switches.
+// leave: the ✕ button's name ("Back", "Stop"), or null for none; leaveAttr: how the exercise finds it.
+export const quizHead = ({ title = "", pos, total, toggles = true, leave = "Back", leaveAttr = "data-back" }) =>
+  `<div class="q-head">${leave ? `<button class="q-x" type="button" ${leaveAttr} aria-label="${leave}" title="${leave}">${icon("x")}</button>` : ""}
+    ${title ? `<span class="lbl q-title">${title}</span>` : ""}
+    <div class="bar"><i style="width:${(pos / total) * 100}%"></i></div>
+    <span class="progress" aria-label="Question ${pos + 1} of ${total}">${pos + 1}/${total}</span>${toggles ? pyToggleHtml() : ""}</div>`;
 
 // English of a Chinese sentence or phrase, or "" when there is none.
 let EN = null, enLoad = null;

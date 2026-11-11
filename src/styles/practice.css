@@ -40,8 +40,13 @@ body:has(#gloss:not([hidden])) { padding-bottom: calc(96px + var(--safe-b, 0px))
 .tone-opt { display: grid; gap: 4px; justify-items: center; padding: 12px 4px; }
 .tone-opt b { font-size: 1.5rem; }
 .tone-opt small { color: var(--muted); font-size: .8125rem; }
-.tone-opt.right, .choice.right { box-shadow: 0 0 0 2px var(--jade) inset; animation: pop 260ms var(--spring); }
-.tone-opt.wrong, .choice.wrong { box-shadow: 0 0 0 2px var(--cinnabar) inset; opacity: .7; animation: shake 200ms var(--ease); }
+/* Answered: the tile itself takes the colour of the result, with a mark in its corner; the other tiles step back. */
+.tone-opt, .choice { position: relative; }
+.tone-opt.right, .choice.right { background: color-mix(in srgb, var(--jade) 24%, var(--card2)); box-shadow: 0 0 0 2px var(--jade) inset; animation: pop 260ms var(--spring); }
+.tone-opt.wrong, .choice.wrong { background: color-mix(in srgb, var(--cinnabar) 22%, var(--card2)); box-shadow: 0 0 0 2px var(--cinnabar) inset; animation: shake 200ms var(--ease); }
+.tone-opt.right::after, .choice.right::after, .tone-opt.wrong::after, .choice.wrong::after { content: "\2713"; position: absolute; top: 6px; right: 6px; width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; font: 700 .8125rem/1 var(--body); background: var(--jade); color: var(--card); }
+.tone-opt.wrong::after, .choice.wrong::after { content: "\2715"; background: var(--cinnabar); }
+.tone-opt:disabled:not(.right, .wrong), .choice:disabled:not(.right, .wrong) { opacity: .6; }
 @keyframes pop { 50% { transform: scale(1.04); } }
 .revealing { overflow: clip; }
 @keyframes fade-in { from { opacity: 0; } }
@@ -201,3 +206,48 @@ details.panel p { margin: 0; }
 .answer .why p { margin: 2px 0; }
 .answer .why .hz { font-size: 1.05em; font-weight: 400; }
 .answer .why .why-lbl { color: var(--ink); font-weight: 600; margin-right: 4px; }
+
+/* ---------- Question screens: the question in the middle, Next under the thumb ---------- */
+.q-stage { display: grid; gap: 12px; justify-items: center; align-content: center; width: 100%; max-width: 560px; min-height: 96px; }
+.q-stage > p { margin: 0; }
+.q-stage .prompt-big, .q-stage .big-hz, .q-stage .hint { text-align: center; }
+.q-stage .prompt-big { font-size: clamp(1.6rem, 6.5vw, 2rem); font-weight: 700; line-height: 1.25; }
+.q-stage .controls { justify-content: center; }
+.q-stage details { justify-self: stretch; }
+.dict-slots { display: none; gap: 8px; justify-content: center; width: 100%; }
+.dict-slot { width: 44px; height: 44px; display: grid; place-items: center; padding: 0; border: 0; border-radius: var(--r); background: var(--card2); color: var(--muted); font: 700 1.25rem/1 var(--display); cursor: pointer; }
+.dict-slot[aria-pressed="true"] { box-shadow: 0 0 0 2px var(--ink) inset; color: var(--ink); }
+.dict-slot.done { color: var(--jade); }
+@media (max-width: 600px) {
+  .q-stage { min-height: 18dvh; }
+  .choice { min-height: 88px; }
+  .choice .hz { font-size: 1.75rem; }
+  .choice .en { font-size: 1.0625rem; }
+  /* The bar of an exercise stays at the bottom edge: Next is always in the same place. */
+  .controls.dock { position: fixed; left: 0; right: 0; bottom: 0; z-index: 7; flex-wrap: nowrap; justify-content: space-between; padding: 12px calc(16px + var(--safe-r)) calc(12px + var(--safe-b)) calc(16px + var(--safe-l)); background: color-mix(in srgb, var(--paper) 94%, transparent); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); border-top: 1px solid var(--line); }
+  .controls.dock .btn { min-height: 52px; white-space: nowrap; }
+  .controls.dock .btn.primary { flex: 1 1 auto; font-size: 1.0625rem; }
+  .controls.dock .btn:not(.primary) { margin-left: auto; }
+  .controls.dock:not(:has(.btn:not([hidden]))) { display: none; }
+  .q-head .q-title, .q-head .tg-w { display: none; }
+  .q-head .seg button { padding: 0 12px; min-width: 44px; }
+  body:has(.controls.dock) .wrap { padding-bottom: calc(112px + var(--safe-b)); }
+  html:has(.controls.dock) { scroll-padding-bottom: calc(92px + var(--safe-b)); }
+  /* Writing a word: one big box at a time, the word's characters as small squares above it. */
+  .panel.dict { justify-items: center; }
+  .panel.dict > .status, .panel.dict > .hint { text-align: center; }
+  .panel.dict > .controls, .panel.dict > .answer { justify-content: center; }
+  .dict-boxes.stack { display: grid; justify-items: center; gap: 0; }
+  .dict-boxes.stack .box { grid-area: 1 / 1; flex: none; width: min(100%, 300px); min-width: 0; max-width: none; justify-self: center; visibility: hidden; pointer-events: none; }
+  .dict-boxes.stack .box.on { visibility: visible; pointer-events: auto; }
+  .dict-slots:not([hidden]) { display: flex; }
+}
+
+/* ---------- One-row top of a question, and nothing else of the page while answering ---------- */
+.q-head { display: flex; align-items: center; gap: 8px; width: 100%; min-width: 0; }
+.q-head .bar { flex: 1 1 40px; min-width: 40px; height: 8px; }
+.q-head .progress { flex: none; }
+.q-head .q-title { flex: 0 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.q-x { flex: none; width: 44px; height: 44px; margin-left: -8px; display: grid; place-items: center; padding: 0; border: 0; border-radius: 50%; background: none; color: var(--muted); cursor: pointer; transition: background-color var(--fast) var(--ease), color var(--fast) var(--ease); }
+.q-x:hover { color: var(--ink); background: var(--card2); }
+section:has(.panel.focus) > .topbar, section:has(.panel.focus) > .tabs, section:has(.panel.focus) > .lfin, section:has(.panel.focus) > .lleft, section:has(.panel.focus) #lessonNav { display: none; }
