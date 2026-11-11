@@ -103,8 +103,8 @@ const head = (S, it) => `<span class="lbl">${esc(S.title)}${S.title === "Review"
 const stopBtn = `<button class="btn ghost" type="button" id="nbrStop">Stop</button>`;
 
 // Save one answer and go on.
-function answer(S, it, ok, miss = ok ? 0 : 1) {
-  progress.record(nb.nbKey(it.e.w), { ok, miss });
+function answer(S, it, ok, miss = ok ? 0 : 1, opts) {
+  progress.record(nb.nbKey(it.e.w), { ok, miss }, opts);
   S.answered++;
   if (ok) S.right++; else S.missed.push(it);
 }
@@ -142,8 +142,8 @@ function flash(S, it) {
     anim = null;
     $("#fcCard").addEventListener("click", flip);
     $("#fcFlip")?.addEventListener("click", flip);
-    $("#fcYes")?.addEventListener("click", () => { answer(S, it, true); advance(S); });
-    $("#fcNo")?.addEventListener("click", () => { answer(S, it, false); advance(S); });
+    $("#fcYes")?.addEventListener("click", () => { answer(S, it, true, 0, { quiet: true }); advance(S); });
+    $("#fcNo")?.addEventListener("click", () => { answer(S, it, false, 1, { quiet: true }); advance(S); });
     $("#nbrStop").addEventListener("click", () => results(S, true));
   };
   draw();

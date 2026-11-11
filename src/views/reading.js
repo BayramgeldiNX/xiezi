@@ -3,6 +3,7 @@
 import { $, $$, esc, shuffle, store, revealNext } from "../lib/util.js";
 import { tonePy, toneVariants } from "../lib/pinyin.js";
 import { say, sayBtns, stopSpeech } from "../lib/speech.js";
+import { sfx } from "../lib/sfx.js";
 import { icon } from "../lib/icons.js";
 import { pyToggleHtml, wirePinyin, pyOf } from "../lib/qpinyin.js";
 import { makeSegmenter } from "../lib/segment.js";
@@ -207,7 +208,7 @@ export function orderGame(ui, sentences, opts = {}) {
       tries++;
       if (ok) {
         if (tries === 1) right++; else { missed.push(s.hz); missedItems.push(s); }
-        progress.record("o:" + s.hz, { ok: tries === 1, miss: tries - 1 });
+        progress.record("o:" + s.hz, { ok: tries === 1, miss: tries - 1 }, { sfx: "right" });
         $("#oStatus").style.color = "";
         $("#oStatus").textContent = tries === 1 ? "对了！Correct!" : "对了！Got it.";
         $("#oReveal").innerHTML = `<span class="hz" style="font-size:1.3rem">${s.hz}</span> <span class="py">${tonePy(s.py)}</span>`;
@@ -217,6 +218,7 @@ export function orderGame(ui, sentences, opts = {}) {
         revealNext($("#oNext"));
         say(s.hz);
       } else {
+        sfx("wrong");
         $("#oStatus").style.color = "var(--cinnabar)";
         $("#oStatus").textContent = tries >= 2 ? `Not yet. It starts with “${s.parts[0]}”. Tap words to move them back.` : "Not quite. Tap words to move them back and try again.";
       }

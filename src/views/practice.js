@@ -7,6 +7,7 @@ import { tonePy } from "../lib/pinyin.js";
 import { pyToggleHtml, wirePinyin } from "../lib/qpinyin.js";
 import { matchesWord } from "../lib/search.js";
 import { say, autoSay, sayLater, sayBtns, stopSpeech } from "../lib/speech.js";
+import { sfx } from "../lib/sfx.js";
 import { icon } from "../lib/icons.js";
 import { clearWriters } from "../lib/draw.js";
 import { overlap } from "../lib/compare.js";
@@ -429,7 +430,7 @@ function matchGame(words) {
     if (a.t.w === t.w && a.t.side !== t.side) {
       a.b.classList.add("done"); b.classList.add("done");
       $("#mStatus").style.color = ""; $("#mStatus").textContent = "";
-      progress.record("q:" + t.w.w, { ok: firstTry.has(t.w.w), miss: firstTry.has(t.w.w) ? 0 : 1 });
+      progress.record("q:" + t.w.w, { ok: firstTry.has(t.w.w), miss: firstTry.has(t.w.w) ? 0 : 1 }, { sfx: "right" });
       say(t.w.w);
       if (++done === set.length) {
         const secs = Math.round((Date.now() - t0) / 1000);
@@ -444,6 +445,7 @@ function matchGame(words) {
       }
     } else {
       errors++;
+      sfx("wrong");
       firstTry.delete(a.t.w.w); firstTry.delete(t.w.w);
       // Say what the word really means, so the mistake teaches it.
       const hw = a.t.side === "hz" ? a.t.w : t.w;
