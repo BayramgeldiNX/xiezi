@@ -95,7 +95,7 @@ function cardsQuiz(ui, el, radicals, { then, back }) {
     $("#rcCard", el).addEventListener("click", flip);
     $("#rcFlip", el)?.addEventListener("click", flip);
     const rate = (ok) => {
-      progress.record(radicalKey(r.r), ok ? { ok: true } : { ok: false, miss: 1 });
+      progress.record(radicalKey(r.r), ok ? { ok: true } : { ok: false, miss: 1 }, { quiet: true });
       queue.shift();
       if (ok) known++; else { again.add(r.r); queue.push(r); }
       flipped = false; anim = "next"; render();

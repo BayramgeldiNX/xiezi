@@ -149,7 +149,7 @@ function check(x, el, go) {
 }
 
 function finish(x, end, host) {
-  progress.record(lessonKey(x.r), { ok: true });
+  progress.record(lessonKey(x.r), { ok: true }, { sfx: "finish" });
   if (host) host.innerHTML = "";
   const nx = nextRadical(ALL, x.r);
   end.innerHTML = `<div class="panel rad-fin"><div class="rad-lbig hz">${esc(x.r)}</div><h3>Lesson done</h3>

@@ -50,7 +50,13 @@ export function get(key) {
   return combine([P.mine[key], ...Object.values(P.others[key] || {})]);
 }
 
-export function record(key, result) {
+// Listeners for saved answers and finished exercises (the sound effects).
+let hooks = {};
+export const setHooks = (h) => { hooks = h || {}; };
+
+// `opts` is for the listeners only (see lib/sfx-pick.js); it is not saved.
+export function record(key, result, opts) {
+  hooks.record?.(key, result, opts);
   P.mine[key] = addResult(P.mine[key], result, Date.now(), get(key));
   P.unsent.items[key] = P.mine[key].n;
   changed();
@@ -59,6 +65,7 @@ export function record(key, result) {
 
 export function addSession(s) {
   const session = { id: `${P.device}-${Date.now().toString(36)}`, dev: P.device, at: Date.now(), ...s };
+  hooks.session?.(session);
   P.sessions.push(session);
   P.unsent.sessions[session.id] = 1;
   if (P.sessions.length > MAX_SESSIONS) P.sessions.splice(0, P.sessions.length - MAX_SESSIONS);

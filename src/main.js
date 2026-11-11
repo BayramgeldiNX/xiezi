@@ -10,6 +10,7 @@ import { icon } from "./lib/icons.js";
 import { BOOKS, LESSONS, READINGS, bookOf, lessonIndex, lessonChars, wordChars, loadStrokes } from "./data/index.js";
 import { app, TAB_NAME } from "./app.js";
 import * as progress from "./progress/store.js";
+import { onRecord, onSession } from "./lib/sfx.js";
 import { charStatus } from "./progress/model.js";
 import { completion } from "./progress/completion.js";
 import { lessonItems, lessonLeft } from "./lib/lesson-items.js";
@@ -378,6 +379,7 @@ notebook.onNotebook(() => {
   if (current === "home") renderHub();
   else if (current === "notebookView") notebookChanged();
 });
+progress.setHooks({ record: onRecord, session: onSession });
 progress.onProgress(() => {
   if (current === "home") { renderHub(); renderResume(); }
   else if (current === "bookView" && !$("#lessonCards").hidden) renderLessonList(BOOKS.find((b) => b.id === openBookId) || BOOKS[0]);

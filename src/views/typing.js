@@ -3,6 +3,7 @@
 import { $, $$, esc, store } from "../lib/util.js";
 import { tonePy } from "../lib/pinyin.js";
 import { say, autoSay, stopSpeech } from "../lib/speech.js";
+import { sfx } from "../lib/sfx.js";
 import { icon } from "../lib/icons.js";
 import { checkHanzi, checkPinyin, cleanHanzi, toneSyllables, TONE_HELP } from "../lib/typing-check.js";
 import { BOOKS, LESSONS, READINGS, wordsOf } from "../data/index.js";
@@ -144,7 +145,7 @@ function run(items) {
     const finish = (ok) => {
       done = true;
       const clean = ok && tries === 1 && hints === 0;
-      progress.record(KEY[o.mode] + it.id, { ok: clean, miss: (tries - (ok ? 1 : 0)) + hints + (ok ? 0 : 1) });
+      progress.record(KEY[o.mode] + it.id, { ok: clean, miss: (tries - (ok ? 1 : 0)) + hints + (ok ? 0 : 1) }, { sfx: ok ? "right" : "wrong" });
       if (clean) right++; else { missed.push(it.hz); missedItems.push(it); }
       input.readOnly = true;
       $("#tyCheck").hidden = $("#tyHint").hidden = $("#tyShow").hidden = true;
@@ -187,6 +188,7 @@ function run(items) {
         const spellBad = r.syllables.some((s) => !s.spellOk);
         fb.innerHTML = `<p class="status" style="color:var(--cinnabar)">${toneOnly ? "Spelling is right, check the tones." : spellBad ? "Check the spelling of the red syllable." : "There are extra letters at the end."}</p><div class="ty-chars">${chips}</div>`;
       }
+      sfx("wrong");
       if (tries >= 3) fb.insertAdjacentHTML("beforeend", `<p class="note">Stuck? Tap <b>Hint</b> or <b>Show answer</b>.</p>`);
       input.select();
     }
