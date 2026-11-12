@@ -6,6 +6,7 @@ import { icon } from "../lib/icons.js";
 import { animate, flipOut, flipIn } from "../lib/motion.js";
 import { app } from "../app.js";
 import * as progress from "../progress/store.js";
+import * as screen from "../lib/screen.js";
 
 let deck = null;
 const ROUND = 12; // cards dealt per round; the rest wait for the next one
@@ -18,6 +19,7 @@ export function cardsStart(dir, opts = deck?.opts || {}) {
   const all = shuffle(words.map((_, i) => i));
   deck = { dir, opts, words, host: opts.host, queue: all.slice(0, ROUND), waiting: all.slice(ROUND), round: 1, rounds: Math.ceil(all.length / ROUND),
     seen: new Set(), rated: new Set(), known: 0, again: new Set(), flipped: false };
+  screen.onKey(cardsKey);
   cardsRender();
 }
 export const cardsOpen = (opts) => { deck = null; cardsStart(null, opts); };
@@ -95,7 +97,7 @@ function cardsRender() {
 }
 
 // Keyboard: space / enter flips, 1 = again, 2 = got it.
-export function cardsKey(e) {
+function cardsKey(e) {
   if (!deck || !deck.queue.length || !$("#fcCard")) return false; // only while a card is on screen
   if (!deck.flipped && (e.key === " " || e.key === "Enter")) { $("#fcCard")?.click(); return true; }
   if (deck.flipped && e.key === "1") { $("#fcAgainOne")?.click(); return true; }

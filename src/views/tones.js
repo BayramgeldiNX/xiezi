@@ -61,7 +61,7 @@ function toneRound(src) {
     host: () => $(tOpts.host), back: () => (tOpts.back ? tOpts.back() : tonesIntro()), lesson: tOpts.lesson, then: tOpts.then,
     toggles: false, label: (q) => q.hz, perfect: "全对！Quán duì! Perfect ears!",
     missedHtml: (q) => `${q.hz} <span class="py">${tonePy(addTone(q.plain, q.tone))}</span> ${sayBtns(q.say, q.plain, true)}`,
-    more: [{ label: "Choose a set", run: () => tonesIntro() }],
+    more: [{ label: "Choose a set", run: () => tonesIntro() }], key: tonesKey,
     ask(x, q) {
       q.draw(`<div class="controls">
           <button class="btn primary big" type="button" data-say="${esc(x.say)}" id="toneListen">${icon("speaker")} Listen</button>
@@ -99,7 +99,7 @@ function toneRound(src) {
 }
 
 // Keyboard: 1–4 answer, space replays, enter goes on.
-export function tonesKey(e) {
+function tonesKey(e) {
   const host = $(tOpts.host);
   if (!host || !$(".tone-opt", host)) return false;
   if (/^[1-4]$/.test(e.key)) { const b = $(`.tone-opt[data-t="${e.key}"]`, host); if (b && !b.disabled) b.click(); return true; }

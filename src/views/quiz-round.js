@@ -15,12 +15,14 @@
 //   toggles    the 拼 / 英 switches (default on); pinyin: options for wirePinyin
 //   skip       the give-up button's text, or a function of the item; none = no button
 //   perfect, scoreNote, more: [{ label, run }]   results text, a note after the score, extra buttons
+//   key(e)     keyboard handler while the round runs (return true when handled)
 //   then(res), onDone(right, total)
 import { $, $$, esc, revealNext } from "../lib/util.js";
 import { icon } from "../lib/icons.js";
 import { quizHead, wirePinyin } from "../lib/qpinyin.js";
 import * as progress from "../progress/store.js";
 import { nextHtml, wireNext } from "./practice.js";
+import * as screen from "../lib/screen.js";
 
 const backHtml = (label = "Back") => `<button class="btn ghost leave" type="button" data-back>${label}</button>`;
 
@@ -38,6 +40,9 @@ export function runRound(cfg, full = cfg) {
     host().innerHTML = `<div class="panel"><p>Not enough here to practise yet.</p>${backHtml()}</div>`;
     return wireLeave(host());
   }
+
+  // Leaving the page or tab ends the item too (a microphone, a recording timer); so do the round's keys.
+  const offs = [screen.onLeave(stop), cfg.key && screen.onKey(cfg.key)];
 
   function show() {
     stop();
@@ -71,6 +76,7 @@ export function runRound(cfg, full = cfg) {
   }
 
   function end() {
+    offs.forEach((off) => off?.());
     const total = items.length;
     progress.addSession({ type: cfg.kind, lesson: cfg.lesson ?? 0, ...cfg.session, score: right, total, missed });
     cfg.onDone?.(right, total);
