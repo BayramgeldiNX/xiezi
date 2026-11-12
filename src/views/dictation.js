@@ -10,6 +10,7 @@ import { app } from "../app.js";
 import { charLinks } from "./charsheet.js";
 import * as progress from "../progress/store.js";
 import { quizHead } from "../lib/qpinyin.js";
+import * as screen from "../lib/screen.js";
 
 const PROMPT = {
   audio: { title: "听写 tīngxiě · Dictation", how: "老师 says a word. Write it from memory, with no grey outline." },
@@ -26,6 +27,7 @@ let hostSel = null;
 // autostart: skip the start screen (Review). then(result): continue a review chain instead of showing results.
 export function dictIntro(opts = {}) {
   dict = null;
+  screen.onResize(dictRedraw); // writing boxes have a fixed pixel size
   hostSel = opts.host;
   const pick = typeof opts.words === "function" ? opts.words : null;
   const words = (pick ? pick() : opts.words) || app.L().words;
@@ -191,6 +193,6 @@ function dictEnd() {
 }
 
 // Re-draw the current word after a resize / rotation (writers have a fixed size).
-export function dictRedraw() {
+function dictRedraw() {
   if (dictActive()) dictWord({ redraw: true });
 }

@@ -21,6 +21,7 @@ The owner uses it on iPhone 16 (home-screen PWA), Mi Pad 7 Pro and Windows. Prog
 - `src/main.js` and `src/app.js`: hash router and home. Pages: `#/` home, `#/books`, `#/book/<id>`, `#/lesson/<id>/<tab>`, `#/review` (all books), `#/search`, `#/typing`, `#/print/<id>`.
   The route waits for `loadStrokes()` before lesson and print pages.
 - `src/pwa.js`: updates install on a calm page or the next page change.
+- `src/lib/screen.js`: what is on screen now. A screen registers what must end when you leave it (`onLeave`: a mic, a timer) and its keys and resize handlers (`onKey`, `onResize`); page, tab and exercise changes call `leave()`. main.js routes keys and resizes through it instead of knowing each view.
 - `src/views/`: one file per screen.
   - `practice.js`: lesson modes; `available()` (in `progress/lesson-exercises.js`) hides modes that cannot run.
   - `quiz-round.js`: `runRound(cfg)`, the loop one-question-at-a-time exercises share (head, focus, Next bar, score, session, results with Again / Retry missed, `then` for Review chains). An exercise only draws and checks one item. Used by `choiceQuiz` (and everything built on it), Speak, Build the sentence, Tones and Notebook review.

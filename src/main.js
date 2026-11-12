@@ -15,9 +15,7 @@ import { charStatus } from "./progress/model.js";
 import { completion } from "./progress/completion.js";
 import { lessonItems, lessonLeft, available } from "./progress/lesson-exercises.js";
 import { renderWords, renderWord, markWords, writeKey } from "./views/write.js";
-import { dictRedraw } from "./views/dictation.js";
-import { cardsKey } from "./views/cards.js";
-import { tonesKey } from "./views/tones.js";
+import * as screen from "./lib/screen.js";
 import { openPractice, runMode, SKILLS } from "./views/practice.js";
 import { openReview, dueCount, ALL_BOOKS } from "./views/bookreview.js";
 import { openTyping, typingDue } from "./views/typing.js";
@@ -74,6 +72,7 @@ function clearHiddenHosts() {
   }
 }
 function showPage(id) {
+  screen.leave(); // the old page's microphone, timers, keys and resize handlers end here
   clearWriters();
   stopSpeech();
   hideGloss();
@@ -314,6 +313,7 @@ const lessonCtx = () => {
 };
 
 function showTab(tab, tapped = false) {
+  screen.leave();
   clearWriters();
   stopSpeech();
   hideGloss();
@@ -332,6 +332,7 @@ function showTab(tab, tapped = false) {
 
 // Write tab: stroke order study, with the writing exercises one tap away.
 function showWriteStudy() {
+  screen.leave(); // back from a writing exercise
   clearWriters();
   $("#writePractice").hidden = true;
   $("#writeStudy").hidden = false;
@@ -347,6 +348,8 @@ function showWriteStudy() {
     runMode("#writePractice", b.dataset.wmode, { ...lessonCtx(), back: showWriteStudy });
   }));
   renderWord(app.word);
+  screen.onKey(writeKey);
+  screen.onResize(() => renderWord(app.word));
 }
 
 $$("[data-tab]").forEach((b) => b.addEventListener("click", () => showTab(b.dataset.tab, true)));
@@ -399,9 +402,7 @@ addEventListener("keydown", (e) => {
   // Let a focused button handle its own Enter / space.
   if ((e.key === "Enter" || e.key === " ") && t.closest?.("button, label")) return;
   if (e.key === "Escape") { if (upFrom()) back(upFrom()); return; }
-  if (current !== "lessonView") return;
-  const handled = app.tab === "write" ? !$("#writeStudy").hidden && writeKey(e) : app.tab === "words" ? cardsKey(e) : app.tab === "listen" ? tonesKey(e) : false;
-  if (handled) e.preventDefault();
+  if (screen.key(e)) e.preventDefault(); // the screen shown answers its own keys (see lib/screen.js)
 });
 
 /* ---------- Full screen (browser tab only; the installed app is already full screen) ---------- */
@@ -423,9 +424,7 @@ fsBtn.addEventListener("click", async () => {
 /* ---------- Resize / rotation: writers have a fixed pixel size, so redraw ---------- */
 function redraw() {
   $$(".tabs").forEach((t) => moveTabPill(t, true));
-  // Write tab shows either stroke-order study or a writing exercise; redraw the one on screen.
-  if (current === "lessonView" && app.tab === "write" && !$("#writeStudy").hidden) renderWord(app.word);
-  else dictRedraw();
+  screen.resized(); // stroke-order study or a writing exercise, whichever is on screen
 }
 const fsSync = () => {
   fsBtn.textContent = fsEl() ? "✕" : "⛶";
