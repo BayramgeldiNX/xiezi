@@ -89,11 +89,20 @@ export function exerciseItems(id, L, texts = publicTexts(L)) {
   return f ? f(L, texts) : [];
 }
 
-// Can exercise `id` run in lesson L?
-export const available = (id, L) =>
-  id in WB ? workbookOf(L ? [L] : []).some((d) => d.kind === WB[id])
-  : id === "gr-fill" ? grammarOf(L ? [L] : []).length > 0
-  : id === "hanzi" ? !!L?.hanzi : id === "pron" ? !!L?.pron?.length : true;
+// The fewest items an exercise needs (choosing between words needs two); 1 for the rest.
+const MIN = { hear: 2, sentence: 2, match: 2, "word-quiz": 2, fill: 2 };
+const enough = (id, n) => n >= (MIN[id] || 1);
+// Exercises that ask nothing but need lesson content to show.
+const NEEDS = { hanzi: (L) => !!L.hanzi, pron: (L) => !!L.pron?.length };
+
+// Can exercise `id` run in lesson L? An exercise without enough items is not offered and does not
+// count toward lesson %. Texts, grammar notes and the word list always can.
+export function available(id, L) {
+  if (!L) return false;
+  if (NEEDS[id]) return NEEDS[id](L);
+  if (!EXERCISES[SAME[id] || id]) return true;
+  return enough(id, exerciseItems(id, L).length);
+}
 
 /* ---------- Lesson % ---------- */
 // Each skill as parts: the items one exercise (or a few that share them) asks, counted once.
@@ -119,11 +128,12 @@ function textItems(L) {
   };
 }
 
+// A part counts when at least one of its exercises can run (they share the same items).
 function partOf(L, name, exercises) {
   const id = exercises[0];
-  if (id === "text-quiz") return { name, exercises, ...textItems(L) };
   let entries = exerciseItems(id, L);
-  if (id === "fill" && entries.length < 2) entries = [];
+  if (!exercises.some((x) => enough(x, entries.length))) entries = [];
+  if (id === "text-quiz") return { name, exercises, ...(entries.length ? textItems(L) : { items: [] }) };
   const part = { name, exercises, items: entries.map((e) => e.item) };
   if (!UNLABELLED.has(id)) part.labels = entries.map((e) => e.label);
   return part;

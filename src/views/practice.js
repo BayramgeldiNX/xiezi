@@ -187,7 +187,7 @@ function startMode(mode) {
   P.mode = mode;
   const { words } = P.ctx;
   const host = P.host, back = goBack, lesson = P.ctx.lesson, L = thisLesson();
-  if (!L) return notEnough();
+  if (!available(mode, L)) return notEnough(); // the menu only offers exercises that can run
   // Rounds are functions, so "Again" picks a new round from what is still open.
   const dictWords = roundOf("dict");
   scrollTo(0, 0);
@@ -195,10 +195,9 @@ function startMode(mode) {
     case "dict": return dictIntro({ host, words: dictWords, prompt: "audio", kind: "dict", back, lesson });
     case "pinyin": return dictIntro({ host, words: dictWords, prompt: "pinyin", kind: "dict-pinyin", back, lesson });
     case "meaning": return dictIntro({ host, words: dictWords, prompt: "meaning", kind: "dict-meaning", back, lesson });
-    case "hear": return words.length < 2 ? notEnough() : listenQuiz({ items: roundOf("hear", 10), pool: words, mode: "mixed", title: "Hear the word" });
+    case "hear": return listenQuiz({ items: roundOf("hear", 10), pool: words, mode: "mixed", title: "Hear the word" });
     case "sentence": {
       const sw = entriesOf("sentence").map((e) => e.of);
-      if (sw.length < 2) return notEnough();
       return choiceQuiz({ kind: "listen-sentence", title: "Sentences", items: roundOf("sentence", 8), key: "ls:",
         ask: (w) => ({ html: `<p class="hint">What does this sentence mean?</p>`, say: w.ex.hz }),
         makeOptions: (w) => [w, ...shuffle(sw.filter((x) => x.ex.en !== w.ex.en)).slice(0, 3)].map((o) => ({ html: `<span class="en">${esc(o.ex.en)}</span>`, correct: o.w === w.w, note: `<span class="hz">${esc(o.ex.hz)}</span> <span class="py">${tonePy(o.ex.py)}</span>` })),
@@ -209,7 +208,7 @@ function startMode(mode) {
     case "say-sentence": { const r = roundOf("say-sentence", 10); return speak({ title: "Say the sentence", items: () => r().map((w) => ({ w, text: w.ex.hz.replace(/[AB]: /g, ""), py: w.ex.py.replace(/[AB]: /g, ""), en: w.ex.en, sentence: true })) }); }
     case "cards": return cardsOpen({ host, words: roundOf("cards"), lesson, back, next: nextStep });
     case "match": { const all = entriesOf("match"); return matchGame(() => openFirst(all, (e) => e.item, progress.get).map((e) => e.of)); }
-    case "word-quiz": return words.length < 2 ? notEnough() : vocabQuiz({ items: roundOf("word-quiz", 10), pool: words, mode: "mixed", title: "Word quiz" });
+    case "word-quiz": return vocabQuiz({ items: roundOf("word-quiz", 10), pool: words, mode: "mixed", title: "Word quiz" });
     case "list": return wordList(words);
     case "texts": return bookTexts(P.ctx.readings || []);
     case "grammar": return grammarNotes();
@@ -217,14 +216,12 @@ function startMode(mode) {
     case "text-quiz": return textQuiz(ui, P.ctx.readings || [], { items: roundOf("text-quiz", 10) });
     case "order": return orderGame(ui, [], { round: roundOf("order", 8) });
     case "read-pinyin": return pinyinQuiz(ui, words, roundOf("read-pinyin", 10));
-    case "wb-dialog": case "wb-judge": case "wb-reply": {
-      const r = roundOf(mode);
-      return r().length ? workbookQuiz(ui, { items: r, title: SKILLS[P.skill].modes.find((m) => m.id === mode).name, kind: mode }) : notEnough();
-    }
-    case "fill": return entriesOf("fill").length < 2 ? notEnough() : fillQuiz(ui, words, { items: roundOf("fill", 10) });
+    case "wb-dialog": case "wb-judge": case "wb-reply":
+      return workbookQuiz(ui, { items: roundOf(mode), title: SKILLS[P.skill].modes.find((m) => m.id === mode).name, kind: mode });
+    case "fill": return fillQuiz(ui, words, { items: roundOf("fill", 10) });
     case "radical": return radicalQuiz(ui, roundOf("radical", 10));
-    case "hanzi": return L.hanzi ? hanziLesson(ui, L, { onRadicals: () => radicalQuiz(ui, roundOf("radical", 10)) }) : notEnough();
-    case "pron": return L.pron ? pronTips(ui, L) : notEnough();
+    case "hanzi": return hanziLesson(ui, L, { onRadicals: () => radicalQuiz(ui, roundOf("radical", 10)) });
+    case "pron": return pronTips(ui, L);
   }
 }
 
