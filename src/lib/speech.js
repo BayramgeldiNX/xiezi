@@ -56,16 +56,22 @@ function showVoiceNote() {
 // null, so a chain of lines (Listen to all) knows to end.
 // `run` may return a give-up function: on the safety time it drops a sound that never began, so a
 // slow download can't start playing much later, out of nowhere.
+// A recording first has to download, which over a slow line (a VPN) can take a few seconds, so it
+// gets `wait` extra time to begin; once it begins, `run`'s `begun(secs)` restarts the safety time
+// from that moment, using the real length when it is known.
 let settleCurrent = null;
-function playing(run, text, slow) {
+export const START_WAIT = 6000;
+function playing(run, text, slow, wait = 0) {
   settleCurrent?.(null);
   return new Promise((resolve) => {
     let timer, giveUp = null;
     const settle = (v) => { if (settleCurrent !== settle) return; settleCurrent = null; clearTimeout(timer); resolve(v); };
     settleCurrent = settle;
-    const secs = 2.5 + text.length * 0.35;
-    timer = setTimeout(() => { giveUp?.(); settle(false); }, secs * (slow ? 2 : 1) * 1000);
-    giveUp = run(settle);
+    const guess = (2.5 + text.length * 0.35) * (slow ? 2 : 1);
+    const arm = (secs) => { clearTimeout(timer); timer = setTimeout(() => { giveUp?.(); settle(false); }, secs * 1000); };
+    arm(guess + wait / 1000);
+    const begun = (secs) => { if (settleCurrent === settle) arm(secs > 0 && isFinite(secs) ? Math.max(guess, secs + 1.5) : guess); };
+    giveUp = run(settle, begun);
   });
 }
 
@@ -73,7 +79,7 @@ function playing(run, text, slow) {
 // again from outside the app: a headset or Bluetooth button, a media key, the lock screen or
 // Control Center would replay that word out of nowhere.
 function emptyPlayer() {
-  player.onended = player.onerror = null;
+  player.onended = player.onerror = player.onplaying = null;
   try { player.pause(); } catch {}
   if (player.getAttribute("src")) { player.removeAttribute("src"); try { player.load(); } catch {} }
 }
@@ -84,7 +90,7 @@ export function say(text, slow) {
   const token = ++playToken;
   const file = AUDIO[t];
   if (file || EXTRA[t]) {
-    return playing((settle) => {
+    return playing((settle, begun) => {
       // The device voice steps in only when the recording never started: one that breaks half-way
       // would otherwise be followed by the whole word again. It also runs once (error + rejected play),
       // and only while this sound is still wanted: a download that fails after giving up stays silent.
@@ -101,11 +107,12 @@ export function say(text, slow) {
       if (file) fetch(player.src).catch(() => {});
       player.playbackRate = slow ? setting("slowRate") : 1;
       player.preservesPitch = true;
+      player.onplaying = () => { player.onplaying = null; begun(player.duration / player.playbackRate); };
       player.onended = () => { emptyPlayer(); settle(true); };
       player.onerror = fallback;
       player.play().catch(fallback);
       return () => { if (voice) voice(); else if (!(player.currentTime > 0)) emptyPlayer(); };
-    }, t, slow);
+    }, t, slow, START_WAIT);
   }
   return playing((settle) => tts(t, slow, settle), t, slow);
 }
@@ -149,7 +156,7 @@ function halt() {
   clearTimeout(laterTimer);
   playToken++;
   settleCurrent?.(null);
-  player.onended = player.onerror = null;
+  player.onended = player.onerror = player.onplaying = null;
   try { player.pause(); } catch {}
   try { speechSynthesis.cancel(); } catch {}
 }

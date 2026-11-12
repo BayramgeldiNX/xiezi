@@ -58,7 +58,8 @@ export const dictActive = () => {
   return dict.pos < dict.order.length && !!host?.querySelector(".dict-boxes") && !host.closest("[hidden]");
 };
 
-export function dictWord() {
+// `redraw`: the same word drawn again (the screen changed size), so it is not said again.
+export function dictWord({ redraw = false } = {}) {
   clearWriters();
   const host = $(hostSel);
   const total = dict.order.length;
@@ -161,7 +162,7 @@ export function dictWord() {
   if (audio) {
     // Without any sound for this word, dictation still works from meaning + pinyin (and that doesn't count as a hint).
     if (!canSay(word.w)) { showHint(2); hintLevel = 0; }
-    sayLater(word.w);
+    if (!redraw) sayLater(word.w);
   }
 }
 
@@ -191,5 +192,5 @@ function dictEnd() {
 
 // Re-draw the current word after a resize / rotation (writers have a fixed size).
 export function dictRedraw() {
-  if (dictActive()) dictWord();
+  if (dictActive()) dictWord({ redraw: true });
 }
