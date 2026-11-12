@@ -57,6 +57,7 @@ function renderLeft() {
 // Open or close the list (tap on the ring).
 export function toggleLeft(open = $("#lessonLeft").hidden) {
   $("#lessonLeft").hidden = !open;
+  if (open) document.dispatchEvent(new CustomEvent("xz-close-timer"));
   $("#lessonMeter").setAttribute("aria-expanded", open);
   renderLeft();
 }

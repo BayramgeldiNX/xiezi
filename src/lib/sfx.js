@@ -65,6 +65,7 @@ const SOUNDS = {
   right: (t) => { bell(t, 659.25, 0.12, 0.06); bell(t + 0.085, 987.77, 0.2, 0.06); },
   wrong: (t) => { tone(t, { f: 233, dur: 0.13, gain: 0.08, type: "triangle" }); tone(t + 0.1, { f: 185, dur: 0.2, gain: 0.08, type: "triangle" }); },
   done: (t) => { bell(t, 783.99, 0.3, 0.07); bell(t + 0.12, 1046.5, 0.45, 0.07); },
+  alarm: (t) => { bell(t, 783.99, 0.7, 0.09); bell(t + 0.5, 659.25, 0.7, 0.09); bell(t + 1, 523.25, 0.9, 0.1); },
   finish: (t) => { bell(t, 523.25, 0.3, 0.06); bell(t + 0.12, 659.25, 0.3, 0.06); bell(t + 0.24, 783.99, 0.6, 0.07); },
 };
 
@@ -90,6 +91,17 @@ function flush() {
   // once. A sound kept waiting would play whenever the audio wakes, out of nowhere, with the others.
   const asked = performance.now();
   ctx.resume().then(() => { if (performance.now() - asked < 300) go(); }).catch(() => {});
+}
+
+// The countdown alarm: plays even when Sound effects are off (the owner asked for it), at the effects volume.
+export function alarm() {
+  if (!AC) return;
+  try {
+    if (!ctx) { ctx = new AC(); master = ctx.createGain(); master.connect(ctx.destination); }
+    master.gain.value = VOLUME[setting("sfxVolume")] ?? 1;
+    const go = () => { try { SOUNDS.alarm(ctx.currentTime + 0.005); } catch {} };
+    if (ctx.state === "running") go(); else ctx.resume().then(go).catch(() => {});
+  } catch {}
 }
 
 // Hooks for the progress store: every saved answer and every finished exercise.

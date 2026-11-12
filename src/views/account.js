@@ -82,7 +82,7 @@ function renderSheet() {
     ${settingRow("strokeSpeed", "Stroke animation", [["slow", "Slow"], ["normal", "Normal"], ["fast", "Fast"]])}
     ${settingRow("hintAfter", "Hint when tracing after", [[1, "1 mistake"], [2, "2 mistakes"], [3, "3 mistakes"], [0, "Never"]])}
     ${settingRow("slowRate", "“Slow” sound speed", [[0.5, "Very slow"], [0.65, "Slow"], [0.8, "A bit slow"]])}
-    ${settingRow("studyTimer", "Study timer", [[true, "Show"], [false, "Hide"]], "A quiet stopwatch next to the lesson ring. Tap to pause, hold to reset.")}
+    ${settingRow("studyTimer", "Study timer", [[true, "Show"], [false, "Hide"]], "A stopwatch or countdown next to the lesson ring. Tap it for options.")}
     ${settingRow("autoplay", "Play sound automatically", [[true, "On"], [false, "Off"]], "Off: exercises stay silent until you tap Listen.")}
     ${settingRow("sfx", "Sound effects", [[true, "On"], [false, "Off"]], "Soft sounds for taps, strokes, and right and wrong answers.")}
     ${settingRow("sfxVolume", "Effects volume", [["quiet", "Quiet"], ["normal", "Normal"], ["loud", "Loud"], ["max", "Very loud"]], "Only the effects; the voice follows your device volume.")}
