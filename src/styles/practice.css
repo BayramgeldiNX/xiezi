@@ -158,6 +158,22 @@ details.panel p { margin: 0; }
 .stimer .ic { width: 14px; height: 14px; flex: none; }
 .stimer.paused .t { opacity: .5; }
 .stimer + .lmeter { margin-left: 0; }
+.stimer .t.rest { color: var(--amber); }
+.stimer.glow { animation: lm-glow 1.2s var(--ease); }
+/* Timer panel (under the topbar) and the finished card (off the lesson page). */
+.tpanel { justify-items: start; }
+.tpanel .seg button[aria-pressed="false"] { color: var(--muted); }
+.tp-time { margin: 0; font-size: 1.75rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.tp-step { display: flex; align-items: center; gap: 4px; }
+.tp-step span { min-width: 4.5em; text-align: center; font-weight: 700; font-variant-numeric: tabular-nums; }
+.tp-step button { width: 44px; min-height: 44px; border: 0; border-radius: var(--pill); background: var(--card2); color: var(--ink); font: inherit; font-size: 1.25rem; cursor: pointer; }
+.tp-step button:disabled { opacity: .4; cursor: default; }
+.tp-btns { display: flex; flex-wrap: wrap; gap: 8px; }
+.tp-note { margin: 0; font-size: .8125rem; color: var(--muted); }
+.tp-done { margin: 0; font-size: 1rem; font-weight: 700; color: var(--amber); }
+.tcard { position: fixed; z-index: 60; left: 50%; bottom: calc(16px + env(safe-area-inset-bottom)); transform: translateX(-50%); display: grid; gap: 12px; width: min(92vw, 360px); padding: 16px; border-radius: var(--r2); background: var(--card); color: var(--ink); box-shadow: 0 8px 28px rgb(0 0 0 / .25); border: 1px solid var(--line2); }
+.tcard[hidden] { display: none; }
+.tcard p { margin: 0; font-weight: 700; }
 #lessonView .topbar > div { min-width: 0; }
 .lmeter { display: flex; align-items: center; gap: 8px; flex: none; --meter: var(--jade); min-height: 44px; padding: 0; border: 0; background: none; font: inherit; color: inherit; cursor: pointer; }
 /* What is left: a count on each exercise card, and the list that opens from the ring. */

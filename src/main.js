@@ -31,7 +31,7 @@ import { hideGloss } from "./views/reading.js";
 import { initAccountChip } from "./views/account.js";
 import { initSync } from "./sync/sync.js";
 import { showLessonMeter, toggleLeft, noteHtml } from "./views/lessonmeter.js";
-import { timerEnter, timerLeave } from "./views/studytimer.js";
+import { timerBoot, timerEnter, timerLeave } from "./views/studytimer.js";
 import { initPWA } from "./pwa.js";
 import { animate, slideDirection, slidePage, moveTabPill, watchMotion, forgetQuestion, wireSoftClose } from "./lib/motion.js";
 
@@ -459,3 +459,4 @@ initSync();
 initPWA();
 // Load the stroke shapes in the background so the first lesson opens at once.
 setTimeout(() => loadStrokes().catch(() => {}), 1500);
+timerBoot();
