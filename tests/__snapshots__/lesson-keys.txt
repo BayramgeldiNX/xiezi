@@ -1,0 +1,2035 @@
+kouyu-rumen/1 · write · Write the characters
+  ["w:你","w:好","w:您","w:们","w:老","w:师","w:谢","w:不","w:客","w:气","w:对","w:起","w:没","w:关","w:系","w:再","w:见","w:请","w:进","w:坐","w:听","w:说","w:读","w:写"]
+kouyu-rumen/1 · write · Dictation
+  ["d:你好","d:您","d:你们","d:老师","d:谢谢","d:不客气","d:对不起","d:没关系","d:再见","d:请","d:进","d:坐","d:听","d:说","d:读","d:写"]
+kouyu-rumen/1 · listen · Hear the word
+  ["l:你好","l:您","l:你们","l:老师","l:谢谢","l:不客气","l:对不起","l:没关系","l:再见","l:请","l:进","l:坐","l:听","l:说","l:读","l:写"]
+kouyu-rumen/1 · listen · Sentences
+  ["ls:你好","ls:您","ls:你们","ls:老师","ls:谢谢","ls:不客气","ls:对不起","ls:没关系","ls:再见","ls:请","ls:进","ls:坐","ls:听","ls:说","ls:读","ls:写"]
+kouyu-rumen/1 · listen · Tones
+  ["t:你","t:好","t:您","t:老","t:师","t:谢","t:不","t:客","t:气","t:对","t:起","t:没","t:关","t:系","t:再","t:见","t:请","t:进","t:坐","t:听","t:说","t:读","t:写"]
+kouyu-rumen/1 · speak · Say the word
+  ["s:你好","s:您","s:你们","s:老师","s:谢谢","s:不客气","s:对不起","s:没关系","s:再见","s:请","s:进","s:坐","s:听","s:说","s:读","s:写"]
+kouyu-rumen/1 · speak · Say the sentence
+  ["s:你好#ex","s:您#ex","s:你们#ex","s:老师#ex","s:谢谢#ex","s:不客气#ex","s:对不起#ex","s:没关系#ex","s:再见#ex","s:请#ex","s:进#ex","s:坐#ex","s:听#ex","s:说#ex","s:读#ex","s:写#ex"]
+  ["你好","您","你们","老师","谢谢","不客气","对不起","没关系","再见","请","进","坐","听","说","读","写"]
+kouyu-rumen/1 · read · Read & answer
+  [["r:kouyu-rumen/1/r1",["rq:kouyu-rumen/1/r1#0","rq:kouyu-rumen/1/r1#1","rq:kouyu-rumen/1/r1#2"]],["r:kouyu-rumen/1/r2",["rq:kouyu-rumen/1/r2#0","rq:kouyu-rumen/1/r2#1","rq:kouyu-rumen/1/r2#2"]],["r:kouyu-rumen/1/r3",["rq:kouyu-rumen/1/r3#0","rq:kouyu-rumen/1/r3#1","rq:kouyu-rumen/1/r3#2"]]]
+  ["请进","请听，请读","再见"]
+kouyu-rumen/1 · read · Build the sentence
+  ["o:你好！我叫白怀诚。","o:老师，您好！","o:她是我的老师。","o:老师，我可以进吗？","o:请听我说。","o:请再说一遍。","o:请读一下。","o:我会写“你好”。","o:你好！请进。","o:不客气。请坐。","o:请听：你好，您好，你们好。","o:你好，您好，你们好。","o:很好！请再说一遍。","o:老师，我会写“你好”。","o:好，请写。","o:老师，谢谢您！"]
+kouyu-rumen/1 · read · How do you read it?
+  ["rp:你好","rp:您","rp:你们","rp:老师","rp:谢谢","rp:不客气","rp:对不起","rp:没关系","rp:再见","rp:请","rp:进","rp:坐","rp:听","rp:说","rp:读","rp:写"]
+kouyu-rumen/1 · words · Flashcards or Word quiz
+  [["f:你好","q:你好"],["f:您","q:您"],["f:你们","q:你们"],["f:老师","q:老师"],["f:谢谢","q:谢谢"],["f:不客气","q:不客气"],["f:对不起","q:对不起"],["f:没关系","q:没关系"],["f:再见","q:再见"],["f:请","q:请"],["f:进","q:进"],["f:坐","q:坐"],["f:听","q:听"],["f:说","q:说"],["f:读","q:读"],["f:写","q:写"]]
+  ["你好","您","你们","老师","谢谢","不客气","对不起","没关系","再见","请","进","坐","听","说","读","写"]
+kouyu-rumen/1 · words · Which radical?
+  ["rad:你","rad:好","rad:您","rad:们","rad:师","rad:谢","rad:不","rad:客","rad:对","rad:起","rad:没","rad:关","rad:系","rad:再","rad:请","rad:进","rad:坐","rad:听","rad:说","rad:读","rad:写"]
+kouyu-rumen/1 · exercises · Grammar
+  ["g:kouyu-rumen/1/1.1","g:kouyu-rumen/1/1.2","g:kouyu-rumen/1/2.1"]
+kouyu-rumen/1 · exercises · Dialogues
+  ["wb:kouyu-rumen/1/d1","wb:kouyu-rumen/1/d2"]
+kouyu-rumen/1 · exercises · True or false
+  ["wb:kouyu-rumen/1/j1","wb:kouyu-rumen/1/j2"]
+kouyu-rumen/1 · exercises · Pick the reply
+  ["wb:kouyu-rumen/1/r1","wb:kouyu-rumen/1/r2","wb:kouyu-rumen/1/r3","wb:kouyu-rumen/1/r4"]
+kouyu-rumen/1 · exercises · Fill in the word
+  ["wf:你好","wf:您","wf:你们","wf:老师","wf:谢谢","wf:不客气","wf:对不起","wf:没关系","wf:再见","wf:请","wf:进","wf:坐","wf:听","wf:说","wf:读","wf:写"]
+kouyu-rumen/2 · write · Write the characters
+  ["w:好","w:久","w:不","w:见","w:吗","w:我","w:很","w:呢","w:也","w:爸","w:妈","w:都","w:他","w:们","w:哥","w:姐","w:她","w:爱","w:人","w:弟","w:妹","w:忙","w:累","w:饿","w:渴"]
+kouyu-rumen/2 · write · Dictation
+  ["d:好久不见","d:吗","d:我","d:很","d:呢","d:也","d:爸爸","d:妈妈","d:都","d:他们","d:哥哥","d:他","d:姐姐","d:她","d:爱人","d:弟弟","d:妹妹","d:忙","d:累","d:饿","d:渴"]
+kouyu-rumen/2 · listen · Hear the word
+  ["l:好久不见","l:吗","l:我","l:很","l:呢","l:也","l:爸爸","l:妈妈","l:都","l:他们","l:哥哥","l:他","l:姐姐","l:她","l:爱人","l:弟弟","l:妹妹","l:忙","l:累","l:饿","l:渴"]
+kouyu-rumen/2 · listen · Sentences
+  ["ls:好久不见","ls:吗","ls:我","ls:很","ls:呢","ls:也","ls:爸爸","ls:妈妈","ls:都","ls:他们","ls:哥哥","ls:他","ls:姐姐","ls:她","ls:爱人","ls:弟弟","ls:妹妹","ls:忙","ls:累","ls:饿","ls:渴"]
+kouyu-rumen/2 · listen · Tones
+  ["t:好","t:久","t:不","t:见","t:我","t:很","t:也","t:爸","t:妈","t:都","t:他","t:哥","t:姐","t:她","t:爱","t:人","t:弟","t:妹","t:忙","t:累","t:饿","t:渴"]
+kouyu-rumen/2 · speak · Say the word
+  ["s:好久不见","s:吗","s:我","s:很","s:呢","s:也","s:爸爸","s:妈妈","s:都","s:他们","s:哥哥","s:他","s:姐姐","s:她","s:爱人","s:弟弟","s:妹妹","s:忙","s:累","s:饿","s:渴"]
+kouyu-rumen/2 · speak · Say the sentence
+  ["s:好久不见#ex","s:吗#ex","s:我#ex","s:很#ex","s:呢#ex","s:也#ex","s:爸爸#ex","s:妈妈#ex","s:都#ex","s:他们#ex","s:哥哥#ex","s:他#ex","s:姐姐#ex","s:她#ex","s:爱人#ex","s:弟弟#ex","s:妹妹#ex","s:忙#ex","s:累#ex","s:饿#ex","s:渴#ex"]
+  ["好久不见","吗","我","很","呢","也","爸爸","妈妈","都","他们","哥哥","他","姐姐","她","爱人","弟弟","妹妹","忙","累","饿","渴"]
+kouyu-rumen/2 · read · Read & answer
+  [["r:kouyu-rumen/2/r1",["rq:kouyu-rumen/2/r1#0","rq:kouyu-rumen/2/r1#1"]],["r:kouyu-rumen/2/r2",["rq:kouyu-rumen/2/r2#0","rq:kouyu-rumen/2/r2#1"]]]
+  ["你累吗","你哥哥好吗"]
+kouyu-rumen/2 · read · Build the sentence
+  ["o:好久不见！你好吗？","o:你忙吗？","o:我很好。","o:老师很忙。","o:我很好，你呢？","o:我也很累。","o:我爸爸很忙。","o:你妈妈好吗？","o:我们都很好。","o:他们都不忙。","o:我哥哥很累。","o:他饿吗？","o:你姐姐忙吗？","o:她很渴。","o:你爱人好吗？","o:我弟弟饿了。","o:妹妹也很好。","o:我不忙。","o:你累吗？","o:我很饿。","o:你渴吗？","o:你好！你累吗？","o:我很累，也很饿。","o:我不渴。","o:好久不见！你哥哥、姐姐好吗？","o:他们都很好，也都很忙。","o:你弟弟呢？","o:他不忙。"]
+kouyu-rumen/2 · read · How do you read it?
+  ["rp:好久不见","rp:吗","rp:我","rp:很","rp:呢","rp:也","rp:爸爸","rp:妈妈","rp:都","rp:他们","rp:哥哥","rp:他","rp:姐姐","rp:她","rp:爱人","rp:弟弟","rp:妹妹","rp:忙","rp:累","rp:饿","rp:渴"]
+kouyu-rumen/2 · words · Flashcards or Word quiz
+  [["f:好久不见","q:好久不见"],["f:吗","q:吗"],["f:我","q:我"],["f:很","q:很"],["f:呢","q:呢"],["f:也","q:也"],["f:爸爸","q:爸爸"],["f:妈妈","q:妈妈"],["f:都","q:都"],["f:他们","q:他们"],["f:哥哥","q:哥哥"],["f:他","q:他"],["f:姐姐","q:姐姐"],["f:她","q:她"],["f:爱人","q:爱人"],["f:弟弟","q:弟弟"],["f:妹妹","q:妹妹"],["f:忙","q:忙"],["f:累","q:累"],["f:饿","q:饿"],["f:渴","q:渴"]]
+  ["好久不见","吗","我","很","呢","也","爸爸","妈妈","都","他们","哥哥","他","姐姐","她","爱人","弟弟","妹妹","忙","累","饿","渴"]
+kouyu-rumen/2 · words · Which radical?
+  ["rad:好","rad:久","rad:不","rad:吗","rad:我","rad:很","rad:呢","rad:也","rad:爸","rad:妈","rad:都","rad:他","rad:们","rad:哥","rad:姐","rad:她","rad:爱","rad:弟","rad:妹","rad:忙","rad:累","rad:饿","rad:渴"]
+kouyu-rumen/2 · exercises · Grammar
+  ["g:kouyu-rumen/2/1.1","g:kouyu-rumen/2/2.1","g:kouyu-rumen/2/3.1","g:kouyu-rumen/2/3.2"]
+kouyu-rumen/2 · exercises · Dialogues
+  ["wb:kouyu-rumen/2/d1","wb:kouyu-rumen/2/d2"]
+kouyu-rumen/2 · exercises · True or false
+  ["wb:kouyu-rumen/2/j1","wb:kouyu-rumen/2/j2"]
+kouyu-rumen/2 · exercises · Pick the reply
+  ["wb:kouyu-rumen/2/r1","wb:kouyu-rumen/2/r2","wb:kouyu-rumen/2/r3","wb:kouyu-rumen/2/r4"]
+kouyu-rumen/2 · exercises · Fill in the word
+  ["wf:好久不见","wf:吗","wf:我","wf:很","wf:呢","wf:也","wf:爸爸","wf:妈妈","wf:都","wf:他们","wf:哥哥","wf:他","wf:姐姐","wf:她","wf:爱人","wf:弟弟","wf:妹妹","wf:忙","wf:累","wf:饿","wf:渴"]
+kouyu-rumen/3 · write · Write the characters
+  ["w:吃","w:什","w:么","w:饺","w:子","w:米","w:饭","w:面","w:条","w:儿","w:包","w:喝","w:茶","w:可","w:乐","w:啤","w:酒","w:咖","w:啡","w:矿","w:泉","w:水","w:牛","w:奶","w:买","w:词","w:典","w:本","w:书","w:笔"]
+kouyu-rumen/3 · write · Dictation
+  ["d:吃","d:什么","d:饺子","d:米饭","d:面条儿","d:面包","d:包子","d:喝","d:茶","d:可乐","d:啤酒","d:咖啡","d:矿泉水","d:牛奶","d:买","d:词典","d:本子","d:书","d:笔","d:书包"]
+kouyu-rumen/3 · listen · Hear the word
+  ["l:吃","l:什么","l:饺子","l:米饭","l:面条儿","l:面包","l:包子","l:喝","l:茶","l:可乐","l:啤酒","l:咖啡","l:矿泉水","l:牛奶","l:买","l:词典","l:本子","l:书","l:笔","l:书包"]
+kouyu-rumen/3 · listen · Sentences
+  ["ls:吃","ls:什么","ls:饺子","ls:米饭","ls:面条儿","ls:面包","ls:包子","ls:喝","ls:茶","ls:可乐","ls:啤酒","ls:咖啡","ls:矿泉水","ls:牛奶","ls:买","ls:词典","ls:本子","ls:书","ls:笔","ls:书包"]
+kouyu-rumen/3 · listen · Tones
+  ["t:吃","t:什","t:饺","t:子","t:米","t:饭","t:面","t:条","t:儿","t:包","t:喝","t:茶","t:可","t:乐","t:啤","t:酒","t:咖","t:啡","t:矿","t:泉","t:水","t:牛","t:奶","t:买","t:词","t:典","t:本","t:书","t:笔"]
+kouyu-rumen/3 · speak · Say the word
+  ["s:吃","s:什么","s:饺子","s:米饭","s:面条儿","s:面包","s:包子","s:喝","s:茶","s:可乐","s:啤酒","s:咖啡","s:矿泉水","s:牛奶","s:买","s:词典","s:本子","s:书","s:笔","s:书包"]
+kouyu-rumen/3 · speak · Say the sentence
+  ["s:吃#ex","s:什么#ex","s:饺子#ex","s:米饭#ex","s:面条儿#ex","s:面包#ex","s:包子#ex","s:喝#ex","s:茶#ex","s:可乐#ex","s:啤酒#ex","s:咖啡#ex","s:矿泉水#ex","s:牛奶#ex","s:买#ex","s:词典#ex","s:本子#ex","s:书#ex","s:笔#ex","s:书包#ex"]
+  ["吃","什么","饺子","米饭","面条儿","面包","包子","喝","茶","可乐","啤酒","咖啡","矿泉水","牛奶","买","词典","本子","书","笔","书包"]
+kouyu-rumen/3 · read · Read & answer
+  [["r:kouyu-rumen/3/r1",["rq:kouyu-rumen/3/r1#0","rq:kouyu-rumen/3/r1#1"]],["r:kouyu-rumen/3/r2",["rq:kouyu-rumen/3/r2#0","rq:kouyu-rumen/3/r2#1"]]]
+  ["你喝什么","你买什么"]
+kouyu-rumen/3 · read · Build the sentence
+  ["o:你吃什么？","o:你买什么？","o:我吃饺子。","o:我不吃米饭。","o:我爸爸吃面条儿。","o:你吃面包吗？","o:我很饿，我吃包子。","o:你喝什么？","o:弟弟喝可乐。","o:你喝啤酒吗？","o:我很累，我喝咖啡。","o:我渴，我喝矿泉水。","o:妹妹喝牛奶。","o:我买书。","o:你买词典吗？","o:我买本子。","o:我读书。","o:你买笔吗？","o:弟弟买书包。","o:我吃包子。你呢？","o:我吃面条儿。你喝什么？","o:我买本子和笔。你呢？","o:我买词典。","o:你也买书包吗？"]
+kouyu-rumen/3 · read · How do you read it?
+  ["rp:吃","rp:什么","rp:饺子","rp:米饭","rp:面条儿","rp:面包","rp:包子","rp:喝","rp:茶","rp:可乐","rp:啤酒","rp:咖啡","rp:矿泉水","rp:牛奶","rp:买","rp:词典","rp:本子","rp:书","rp:笔","rp:书包"]
+kouyu-rumen/3 · words · Flashcards or Word quiz
+  [["f:吃","q:吃"],["f:什么","q:什么"],["f:饺子","q:饺子"],["f:米饭","q:米饭"],["f:面条儿","q:面条儿"],["f:面包","q:面包"],["f:包子","q:包子"],["f:喝","q:喝"],["f:茶","q:茶"],["f:可乐","q:可乐"],["f:啤酒","q:啤酒"],["f:咖啡","q:咖啡"],["f:矿泉水","q:矿泉水"],["f:牛奶","q:牛奶"],["f:买","q:买"],["f:词典","q:词典"],["f:本子","q:本子"],["f:书","q:书"],["f:笔","q:笔"],["f:书包","q:书包"]]
+  ["吃","什么","饺子","米饭","面条儿","面包","包子","喝","茶","可乐","啤酒","咖啡","矿泉水","牛奶","买","词典","本子","书","笔","书包"]
+kouyu-rumen/3 · words · Which radical?
+  ["rad:吃","rad:什","rad:么","rad:饺","rad:饭","rad:条","rad:包","rad:喝","rad:茶","rad:可","rad:乐","rad:啤","rad:酒","rad:咖","rad:啡","rad:矿","rad:泉","rad:奶","rad:买","rad:词","rad:典","rad:本","rad:书","rad:笔"]
+kouyu-rumen/3 · exercises · Grammar
+  ["g:kouyu-rumen/3/1.1","g:kouyu-rumen/3/1.2","g:kouyu-rumen/3/2.1"]
+kouyu-rumen/3 · exercises · Dialogues
+  ["wb:kouyu-rumen/3/d1","wb:kouyu-rumen/3/d2"]
+kouyu-rumen/3 · exercises · True or false
+  ["wb:kouyu-rumen/3/j1","wb:kouyu-rumen/3/j2"]
+kouyu-rumen/3 · exercises · Pick the reply
+  ["wb:kouyu-rumen/3/r1","wb:kouyu-rumen/3/r2","wb:kouyu-rumen/3/r3","wb:kouyu-rumen/3/r4"]
+kouyu-rumen/3 · exercises · Fill in the word
+  ["wf:吃","wf:什么","wf:饺子","wf:米饭","wf:面条儿","wf:面包","wf:包子","wf:喝","wf:茶","wf:可乐","wf:啤酒","wf:咖啡","wf:矿泉水","wf:牛奶","wf:买","wf:词典","wf:本子","wf:书","wf:笔","wf:书包"]
+kouyu-rumen/4 · write · Write the characters
+  ["w:要","w:换","w:钱","w:多","w:少","w:一","w:百","w:美","w:元","w:二","w:三","w:四","w:五","w:两","w:杯","w:十","w:块","w:个","w:六","w:毛","w:分","w:瓶","w:七","w:八","w:本","w:九"]
+kouyu-rumen/4 · write · Dictation
+  ["d:要","d:换","d:钱","d:多少","d:一","d:百","d:美元","d:二","d:三","d:四","d:五","d:两","d:杯","d:十","d:块","d:个","d:六","d:毛","d:分","d:瓶","d:七","d:八","d:本","d:九"]
+kouyu-rumen/4 · listen · Hear the word
+  ["l:要","l:换","l:钱","l:多少","l:一","l:百","l:美元","l:二","l:三","l:四","l:五","l:两","l:杯","l:十","l:块","l:个","l:六","l:毛","l:分","l:瓶","l:七","l:八","l:本","l:九"]
+kouyu-rumen/4 · listen · Sentences
+  ["ls:要","ls:换","ls:钱","ls:多少","ls:一","ls:百","ls:美元","ls:二","ls:三","ls:四","ls:五","ls:两","ls:杯","ls:十","ls:块","ls:个","ls:六","ls:毛","ls:分","ls:瓶","ls:七","ls:八","ls:本","ls:九"]
+kouyu-rumen/4 · listen · Tones
+  ["t:要","t:换","t:钱","t:多","t:少","t:一","t:百","t:美","t:元","t:二","t:三","t:四","t:五","t:两","t:杯","t:十","t:块","t:个","t:六","t:毛","t:分","t:瓶","t:七","t:八","t:本","t:九"]
+kouyu-rumen/4 · speak · Say the word
+  ["s:要","s:换","s:钱","s:多少","s:一","s:百","s:美元","s:二","s:三","s:四","s:五","s:两","s:杯","s:十","s:块","s:个","s:六","s:毛","s:分","s:瓶","s:七","s:八","s:本","s:九"]
+kouyu-rumen/4 · speak · Say the sentence
+  ["s:要#ex","s:换#ex","s:钱#ex","s:多少#ex","s:一#ex","s:百#ex","s:美元#ex","s:二#ex","s:三#ex","s:四#ex","s:五#ex","s:两#ex","s:杯#ex","s:十#ex","s:块#ex","s:个#ex","s:六#ex","s:毛#ex","s:分#ex","s:瓶#ex","s:七#ex","s:八#ex","s:本#ex","s:九#ex"]
+  ["要","换","钱","多少","一","百","美元","二","三","四","五","两","杯","十","块","个","六","毛","分","瓶","七","八","本","九"]
+kouyu-rumen/4 · read · Read & answer
+  [["r:kouyu-rumen/4/r1",["rq:kouyu-rumen/4/r1#0","rq:kouyu-rumen/4/r1#1"]],["r:kouyu-rumen/4/r2",["rq:kouyu-rumen/4/r2#0","rq:kouyu-rumen/4/r2#1"]]]
+  ["一杯咖啡","换钱"]
+kouyu-rumen/4 · read · Build the sentence
+  ["o:我要一杯咖啡。","o:我要换钱。","o:你换多少？","o:我要一个面包。","o:一百块。","o:我换二百美元。","o:二十块。","o:三杯茶。","o:四瓶啤酒。","o:五块钱。","o:两杯咖啡。","o:我要一杯牛奶。","o:十块钱。","o:一瓶可乐三块。","o:我买两个包子。","o:六个饺子。","o:两块五毛。","o:六毛五分。","o:一瓶矿泉水。","o:七块二。","o:八块钱。","o:三本词典。","o:九十块。","o:我要两杯咖啡，多少钱？","o:三十块。","o:一瓶矿泉水多少钱？","o:你好，我要换钱。","o:换三百美元。"]
+kouyu-rumen/4 · read · How do you read it?
+  ["rp:要","rp:换","rp:钱","rp:多少","rp:一","rp:百","rp:美元","rp:二","rp:三","rp:四","rp:五","rp:两","rp:杯","rp:十","rp:块","rp:个","rp:六","rp:毛","rp:分","rp:瓶","rp:七","rp:八","rp:本","rp:九"]
+kouyu-rumen/4 · words · Flashcards or Word quiz
+  [["f:要","q:要"],["f:换","q:换"],["f:钱","q:钱"],["f:多少","q:多少"],["f:一","q:一"],["f:百","q:百"],["f:美元","q:美元"],["f:二","q:二"],["f:三","q:三"],["f:四","q:四"],["f:五","q:五"],["f:两","q:两"],["f:杯","q:杯"],["f:十","q:十"],["f:块","q:块"],["f:个","q:个"],["f:六","q:六"],["f:毛","q:毛"],["f:分","q:分"],["f:瓶","q:瓶"],["f:七","q:七"],["f:八","q:八"],["f:本","q:本"],["f:九","q:九"]]
+  ["要","换","钱","多少","一","百","美元","二","三","四","五","两","杯","十","块","个","六","毛","分","瓶","七","八","本","九"]
+kouyu-rumen/4 · words · Which radical?
+  ["rad:要","rad:换","rad:钱","rad:多","rad:少","rad:百","rad:美","rad:元","rad:三","rad:四","rad:五","rad:两","rad:杯","rad:块","rad:个","rad:六","rad:分","rad:瓶","rad:七","rad:本","rad:九"]
+kouyu-rumen/4 · exercises · Grammar
+  ["g:kouyu-rumen/4/1.1","g:kouyu-rumen/4/2.1","g:kouyu-rumen/4/2.2","g:kouyu-rumen/4/3.1"]
+kouyu-rumen/4 · exercises · Dialogues
+  ["wb:kouyu-rumen/4/d1","wb:kouyu-rumen/4/d2"]
+kouyu-rumen/4 · exercises · True or false
+  ["wb:kouyu-rumen/4/j1","wb:kouyu-rumen/4/j2"]
+kouyu-rumen/4 · exercises · Pick the reply
+  ["wb:kouyu-rumen/4/r1","wb:kouyu-rumen/4/r2","wb:kouyu-rumen/4/r3","wb:kouyu-rumen/4/r4"]
+kouyu-rumen/4 · exercises · Fill in the word
+  ["wf:要","wf:换","wf:钱","wf:多少","wf:一","wf:百","wf:美元","wf:二","wf:三","wf:四","wf:五","wf:两","wf:杯","wf:十","wf:块","wf:个","wf:六","wf:毛","wf:分","wf:瓶","wf:七","wf:八","wf:本","wf:九"]
+kouyu-rumen/5 · write · Write the characters
+  ["w:请","w:问","w:图","w:书","w:馆","w:在","w:哪","w:儿","w:那","w:食","w:堂","w:办","w:公","w:室","w:留","w:学","w:生","w:宿","w:舍","w:号","w:楼","w:银","w:行","w:知","w:道","w:邮","w:局","w:医","w:院","w:商","w:店","w:去"]
+kouyu-rumen/5 · write · Dictation
+  ["d:请问","d:图书馆","d:在","d:哪儿","d:那儿","d:食堂","d:办公室","d:留学生","d:宿舍","d:号","d:楼","d:银行","d:知道","d:邮局","d:医院","d:商店","d:书店","d:去"]
+kouyu-rumen/5 · listen · Hear the word
+  ["l:请问","l:图书馆","l:在","l:哪儿","l:那儿","l:食堂","l:办公室","l:留学生","l:宿舍","l:号","l:楼","l:银行","l:知道","l:邮局","l:医院","l:商店","l:书店","l:去"]
+kouyu-rumen/5 · listen · Sentences
+  ["ls:请问","ls:图书馆","ls:在","ls:哪儿","ls:那儿","ls:食堂","ls:办公室","ls:留学生","ls:宿舍","ls:号","ls:楼","ls:银行","ls:知道","ls:邮局","ls:医院","ls:商店","ls:书店"]
+kouyu-rumen/5 · listen · Tones
+  ["t:请","t:问","t:图","t:书","t:馆","t:在","t:哪","t:儿","t:那","t:食","t:堂","t:办","t:公","t:室","t:留","t:学","t:生","t:宿","t:舍","t:号","t:楼","t:银","t:行","t:知","t:道","t:邮","t:局","t:医","t:院","t:商","t:店","t:去"]
+kouyu-rumen/5 · speak · Say the word
+  ["s:请问","s:图书馆","s:在","s:哪儿","s:那儿","s:食堂","s:办公室","s:留学生","s:宿舍","s:号","s:楼","s:银行","s:知道","s:邮局","s:医院","s:商店","s:书店","s:去"]
+kouyu-rumen/5 · speak · Say the sentence
+  ["s:请问#ex","s:图书馆#ex","s:在#ex","s:哪儿#ex","s:那儿#ex","s:食堂#ex","s:办公室#ex","s:留学生#ex","s:宿舍#ex","s:号#ex","s:楼#ex","s:银行#ex","s:知道#ex","s:邮局#ex","s:医院#ex","s:商店#ex","s:书店#ex","s:去#ex"]
+  ["请问","图书馆","在","哪儿","那儿","食堂","办公室","留学生","宿舍","号","楼","银行","知道","邮局","医院","商店","书店","去"]
+kouyu-rumen/5 · read · Read & answer
+  [["r:kouyu-rumen/5/r1",["rq:kouyu-rumen/5/r1#0","rq:kouyu-rumen/5/r1#1"]],["r:kouyu-rumen/5/r2",["rq:kouyu-rumen/5/r2#0","rq:kouyu-rumen/5/r2#1"]]]
+  ["食堂在哪儿","你去哪儿"]
+kouyu-rumen/5 · read · Build the sentence
+  ["o:请问，银行在哪儿？","o:我去图书馆。","o:老师在办公室。","o:你去哪儿？","o:书店在那儿。","o:食堂在哪儿？","o:我去老师的办公室。","o:我是留学生。","o:我在宿舍。","o:七号楼在那儿。","o:八号楼在哪儿？","o:我去银行换钱。","o:我不知道。","o:邮局在哪儿？","o:医院在那儿。","o:我去商店买牛奶。","o:我去书店买书。","o:请问，食堂在哪儿？","o:留学生宿舍呢？","o:对不起，我不知道。","o:我去银行。你呢？","o:我去书店买词典。","o:书店在邮局那儿。"]
+kouyu-rumen/5 · read · How do you read it?
+  ["rp:请问","rp:图书馆","rp:在","rp:哪儿","rp:那儿","rp:食堂","rp:办公室","rp:留学生","rp:宿舍","rp:号","rp:楼","rp:银行","rp:知道","rp:邮局","rp:医院","rp:商店","rp:书店","rp:去"]
+kouyu-rumen/5 · words · Flashcards or Word quiz
+  [["f:请问","q:请问"],["f:图书馆","q:图书馆"],["f:在","q:在"],["f:哪儿","q:哪儿"],["f:那儿","q:那儿"],["f:食堂","q:食堂"],["f:办公室","q:办公室"],["f:留学生","q:留学生"],["f:宿舍","q:宿舍"],["f:号","q:号"],["f:楼","q:楼"],["f:银行","q:银行"],["f:知道","q:知道"],["f:邮局","q:邮局"],["f:医院","q:医院"],["f:商店","q:商店"],["f:书店","q:书店"],["f:去","q:去"]]
+  ["请问","图书馆","在","哪儿","那儿","食堂","办公室","留学生","宿舍","号","楼","银行","知道","邮局","医院","商店","书店","去"]
+kouyu-rumen/5 · words · Which radical?
+  ["rad:请","rad:问","rad:图","rad:书","rad:馆","rad:在","rad:哪","rad:那","rad:堂","rad:办","rad:公","rad:室","rad:留","rad:学","rad:宿","rad:舍","rad:号","rad:楼","rad:银","rad:知","rad:道","rad:邮","rad:局","rad:医","rad:院","rad:商","rad:店","rad:去"]
+kouyu-rumen/5 · exercises · Grammar
+  ["g:kouyu-rumen/5/1.1","g:kouyu-rumen/5/2.1","g:kouyu-rumen/5/3.1","g:kouyu-rumen/5/3.2"]
+kouyu-rumen/5 · exercises · Dialogues
+  ["wb:kouyu-rumen/5/d1","wb:kouyu-rumen/5/d2"]
+kouyu-rumen/5 · exercises · True or false
+  ["wb:kouyu-rumen/5/j1","wb:kouyu-rumen/5/j2"]
+kouyu-rumen/5 · exercises · Pick the reply
+  ["wb:kouyu-rumen/5/r1","wb:kouyu-rumen/5/r2","wb:kouyu-rumen/5/r3","wb:kouyu-rumen/5/r4"]
+kouyu-rumen/5 · exercises · Fill in the word
+  ["wf:请问","wf:图书馆","wf:在","wf:哪儿","wf:那儿","wf:食堂","wf:办公室","wf:留学生","wf:宿舍","wf:号","wf:楼","wf:银行","wf:知道","wf:邮局","wf:医院","wf:商店","wf:书店","wf:去"]
+kouyu-rumen/6 · write · Write the characters
+  ["w:认","w:识","w:高","w:兴","w:来","w:介","w:绍","w:一","w:下","w:儿","w:是","w:学","w:习","w:班","w:的","w:生","w:这","w:我","w:们","w:那","w:朋","w:友","w:和","w:人","w:教","w:室","w:大","w:厚","w:同","w:新","w:漂","w:亮","w:极","w:了","w:女","w:聪","w:明","w:可","w:爱","w:看","w:帅","w:小"]
+kouyu-rumen/6 · write · Dictation
+  ["d:认识","d:高兴","d:来","d:介绍","d:一下儿","d:是","d:学习","d:班","d:的","d:学生","d:这","d:我们","d:那","d:朋友","d:和","d:人","d:教室","d:大","d:厚","d:同学","d:新","d:漂亮","d:极了","d:女儿","d:聪明","d:可爱","d:看","d:帅","d:小"]
+kouyu-rumen/6 · listen · Hear the word
+  ["l:认识","l:高兴","l:来","l:介绍","l:一下儿","l:是","l:学习","l:班","l:的","l:学生","l:这","l:我们","l:那","l:朋友","l:和","l:人","l:教室","l:大","l:厚","l:同学","l:新","l:漂亮","l:极了","l:女儿","l:聪明","l:可爱","l:看","l:帅","l:小"]
+kouyu-rumen/6 · listen · Sentences
+  ["ls:认识","ls:高兴","ls:来","ls:介绍","ls:一下儿","ls:是","ls:学习","ls:班","ls:的","ls:学生","ls:这","ls:我们","ls:那","ls:朋友","ls:和","ls:人","ls:教室","ls:大","ls:厚","ls:同学","ls:新","ls:漂亮","ls:极了","ls:女儿","ls:聪明","ls:可爱","ls:看","ls:帅","ls:小"]
+kouyu-rumen/6 · listen · Tones
+  ["t:认","t:识","t:高","t:兴","t:来","t:介","t:绍","t:一","t:下","t:儿","t:是","t:学","t:习","t:班","t:生","t:这","t:我","t:那","t:朋","t:友","t:和","t:人","t:教","t:室","t:大","t:厚","t:同","t:新","t:漂","t:亮","t:极","t:女","t:聪","t:明","t:可","t:爱","t:看","t:帅","t:小"]
+kouyu-rumen/6 · speak · Say the word
+  ["s:认识","s:高兴","s:来","s:介绍","s:一下儿","s:是","s:学习","s:班","s:的","s:学生","s:这","s:我们","s:那","s:朋友","s:和","s:人","s:教室","s:大","s:厚","s:同学","s:新","s:漂亮","s:极了","s:女儿","s:聪明","s:可爱","s:看","s:帅","s:小"]
+kouyu-rumen/6 · speak · Say the sentence
+  ["s:认识#ex","s:高兴#ex","s:来#ex","s:介绍#ex","s:一下儿#ex","s:是#ex","s:学习#ex","s:班#ex","s:的#ex","s:学生#ex","s:这#ex","s:我们#ex","s:那#ex","s:朋友#ex","s:和#ex","s:人#ex","s:教室#ex","s:大#ex","s:厚#ex","s:同学#ex","s:新#ex","s:漂亮#ex","s:极了#ex","s:女儿#ex","s:聪明#ex","s:可爱#ex","s:看#ex","s:帅#ex","s:小#ex"]
+  ["认识","高兴","来","介绍","一下儿","是","学习","班","的","学生","这","我们","那","朋友","和","人","教室","大","厚","同学","新","漂亮","极了","女儿","聪明","可爱","看","帅","小"]
+kouyu-rumen/6 · read · Read & answer
+  [["r:kouyu-rumen/6/r1",["rq:kouyu-rumen/6/r1#0","rq:kouyu-rumen/6/r1#1"]],["r:kouyu-rumen/6/r2",["rq:kouyu-rumen/6/r2#0","rq:kouyu-rumen/6/r2#1"]]]
+  ["认识你很高兴","这是我的家"]
+kouyu-rumen/6 · read · Build the sentence
+  ["o:认识你很高兴。","o:我很高兴。","o:我来说。","o:我来介绍一下儿。","o:你看一下儿。","o:我是学生。","o:我学习中文。","o:我是一班的。","o:这是我的书。","o:他是我的学生。","o:这是我妈妈。","o:我们是同学。","o:那是我的书包。","o:他是我朋友。","o:我和我朋友去食堂。","o:他是中国人。","o:我们的教室很大。","o:这个书包很大。","o:这本词典很厚。","o:她是我的同学。","o:我的本子很新。","o:你妹妹很漂亮。","o:这是我的女儿。","o:她很聪明。","o:你女儿真可爱。","o:你们看，这是我。","o:你哥哥很帅。","o:我们的教室很小。","o:我是二班的。","o:这是我爸爸，这是我妈妈。","o:你妹妹漂亮极了！这是谁？","o:这是我，很帅吧？"]
+kouyu-rumen/6 · read · How do you read it?
+  ["rp:认识","rp:高兴","rp:来","rp:介绍","rp:一下儿","rp:是","rp:学习","rp:班","rp:的","rp:学生","rp:这","rp:我们","rp:那","rp:朋友","rp:和","rp:人","rp:教室","rp:大","rp:厚","rp:同学","rp:新","rp:漂亮","rp:极了","rp:女儿","rp:聪明","rp:可爱","rp:看","rp:帅","rp:小"]
+kouyu-rumen/6 · words · Flashcards or Word quiz
+  [["f:认识","q:认识"],["f:高兴","q:高兴"],["f:来","q:来"],["f:介绍","q:介绍"],["f:一下儿","q:一下儿"],["f:是","q:是"],["f:学习","q:学习"],["f:班","q:班"],["f:的","q:的"],["f:学生","q:学生"],["f:这","q:这"],["f:我们","q:我们"],["f:那","q:那"],["f:朋友","q:朋友"],["f:和","q:和"],["f:人","q:人"],["f:教室","q:教室"],["f:大","q:大"],["f:厚","q:厚"],["f:同学","q:同学"],["f:新","q:新"],["f:漂亮","q:漂亮"],["f:极了","q:极了"],["f:女儿","q:女儿"],["f:聪明","q:聪明"],["f:可爱","q:可爱"],["f:看","q:看"],["f:帅","q:帅"],["f:小","q:小"]]
+  ["认识","高兴","来","介绍","一下儿","是","学习","班","的","学生","这","我们","那","朋友","和","人","教室","大","厚","同学","新","漂亮","极了","女儿","聪明","可爱","看","帅","小"]
+kouyu-rumen/6 · words · Which radical?
+  ["rad:认","rad:识","rad:兴","rad:来","rad:介","rad:绍","rad:下","rad:是","rad:学","rad:习","rad:班","rad:的","rad:这","rad:我","rad:们","rad:那","rad:朋","rad:友","rad:和","rad:教","rad:室","rad:厚","rad:同","rad:新","rad:漂","rad:亮","rad:极","rad:了","rad:聪","rad:明","rad:可","rad:爱","rad:看","rad:帅"]
+kouyu-rumen/6 · exercises · Grammar
+  ["g:kouyu-rumen/6/1.1","g:kouyu-rumen/6/1.2","g:kouyu-rumen/6/2.1","g:kouyu-rumen/6/3.1"]
+kouyu-rumen/6 · exercises · Dialogues
+  ["wb:kouyu-rumen/6/d1","wb:kouyu-rumen/6/d2"]
+kouyu-rumen/6 · exercises · True or false
+  ["wb:kouyu-rumen/6/j1","wb:kouyu-rumen/6/j2"]
+kouyu-rumen/6 · exercises · Pick the reply
+  ["wb:kouyu-rumen/6/r1","wb:kouyu-rumen/6/r2","wb:kouyu-rumen/6/r3","wb:kouyu-rumen/6/r4"]
+kouyu-rumen/6 · exercises · Fill in the word
+  ["wf:认识","wf:高兴","wf:来","wf:介绍","wf:一下儿","wf:是","wf:学习","wf:班","wf:的","wf:学生","wf:这","wf:我们","wf:那","wf:朋友","wf:和","wf:人","wf:教室","wf:大","wf:厚","wf:同学","wf:新","wf:漂亮","wf:极了","wf:女儿","wf:聪明","wf:可爱","wf:看","wf:帅","wf:小"]
+kouyu-rumen/7 · write · Write the characters
+  ["w:最","w:近","w:身","w:体","w:比","w:较","w:成","w:绩","w:马","w:虎","w:努","w:力","w:非","w:常","w:太","w:里","w:有","w:没","w:空","w:调","w:同","w:屋","w:离","w:远","w:学","w:校","w:多","w:挺","w:怎","w:么","w:样","w:不","w:错","w:头","w:发","w:长","w:眼","w:睛","w:个","w:子","w:高","w:电","w:视"]
+kouyu-rumen/7 · write · Dictation
+  ["d:最近","d:身体","d:比较","d:成绩","d:马马虎虎","d:努力","d:非常","d:太","d:里","d:有","d:没有","d:空调","d:同屋","d:离","d:远","d:近","d:学校","d:多","d:挺","d:怎么样","d:不错","d:头发","d:长","d:眼睛","d:个子","d:高","d:电视"]
+kouyu-rumen/7 · listen · Hear the word
+  ["l:最近","l:身体","l:比较","l:成绩","l:马马虎虎","l:努力","l:非常","l:太","l:里","l:有","l:没有","l:空调","l:同屋","l:离","l:远","l:近","l:学校","l:多","l:挺","l:怎么样","l:不错","l:头发","l:长","l:眼睛","l:个子","l:高","l:电视"]
+kouyu-rumen/7 · listen · Sentences
+  ["ls:最近","ls:身体","ls:比较","ls:成绩","ls:马马虎虎","ls:努力","ls:非常","ls:太","ls:里","ls:有","ls:没有","ls:空调","ls:同屋","ls:离","ls:远","ls:近","ls:学校","ls:多","ls:挺","ls:怎么样","ls:不错","ls:头发","ls:长","ls:眼睛","ls:个子","ls:高","ls:电视"]
+kouyu-rumen/7 · listen · Tones
+  ["t:最","t:近","t:身","t:体","t:比","t:较","t:成","t:绩","t:马","t:虎","t:努","t:力","t:非","t:常","t:太","t:里","t:有","t:没","t:空","t:调","t:同","t:屋","t:离","t:远","t:学","t:校","t:多","t:挺","t:怎","t:样","t:不","t:错","t:头","t:发","t:长","t:眼","t:睛","t:个","t:子","t:高","t:电","t:视"]
+kouyu-rumen/7 · speak · Say the word
+  ["s:最近","s:身体","s:比较","s:成绩","s:马马虎虎","s:努力","s:非常","s:太","s:里","s:有","s:没有","s:空调","s:同屋","s:离","s:远","s:近","s:学校","s:多","s:挺","s:怎么样","s:不错","s:头发","s:长","s:眼睛","s:个子","s:高","s:电视"]
+kouyu-rumen/7 · speak · Say the sentence
+  ["s:最近#ex","s:身体#ex","s:比较#ex","s:成绩#ex","s:马马虎虎#ex","s:努力#ex","s:非常#ex","s:太#ex","s:里#ex","s:有#ex","s:没有#ex","s:空调#ex","s:同屋#ex","s:离#ex","s:远#ex","s:近#ex","s:学校#ex","s:多#ex","s:挺#ex","s:怎么样#ex","s:不错#ex","s:头发#ex","s:长#ex","s:眼睛#ex","s:个子#ex","s:高#ex","s:电视#ex"]
+  ["最近","身体","比较","成绩","马马虎虎","努力","非常","太","里","有","没有","空调","同屋","离","远","近","学校","多","挺","怎么样","不错","头发","长","眼睛","个子","高","电视"]
+kouyu-rumen/7 · read · Read & answer
+  [["r:kouyu-rumen/7/r1",["rq:kouyu-rumen/7/r1#0","rq:kouyu-rumen/7/r1#1"]],["r:kouyu-rumen/7/r2",["rq:kouyu-rumen/7/r2#0","rq:kouyu-rumen/7/r2#1"]]]
+  ["最近怎么样","你的宿舍"]
+kouyu-rumen/7 · read · Build the sentence
+  ["o:最近你忙吗？","o:你身体好吗？","o:我最近比较忙。","o:他的成绩很好。","o:我的成绩马马虎虎。","o:她学习很努力。","o:我非常高兴。","o:不太忙。","o:宿舍里有空调。","o:我有一个哥哥。","o:我没有同屋。","o:教室里有空调吗？","o:我的同屋是韩国人。","o:宿舍离教室很近。","o:医院远不远？","o:银行很近。","o:我们学校很大。","o:留学生很多。","o:挺好的。","o:食堂的菜不错。","o:她的头发很长。","o:我的头发不长。","o:她的眼睛很大。","o:他个子很高。","o:哥哥很高。","o:宿舍里有电视吗？","o:最近你身体好吗？","o:挺好的。我学习比较忙。","o:你成绩怎么样？","o:你的宿舍大不大？","o:不太大，里边有空调，没有电视。","o:宿舍离教室远吗？","o:不远，很近。"]
+kouyu-rumen/7 · read · How do you read it?
+  ["rp:最近","rp:身体","rp:比较","rp:成绩","rp:马马虎虎","rp:努力","rp:非常","rp:太","rp:里","rp:有","rp:没有","rp:空调","rp:同屋","rp:离","rp:远","rp:近","rp:学校","rp:多","rp:挺","rp:怎么样","rp:不错","rp:头发","rp:长","rp:眼睛","rp:个子","rp:高","rp:电视"]
+kouyu-rumen/7 · words · Flashcards or Word quiz
+  [["f:最近","q:最近"],["f:身体","q:身体"],["f:比较","q:比较"],["f:成绩","q:成绩"],["f:马马虎虎","q:马马虎虎"],["f:努力","q:努力"],["f:非常","q:非常"],["f:太","q:太"],["f:里","q:里"],["f:有","q:有"],["f:没有","q:没有"],["f:空调","q:空调"],["f:同屋","q:同屋"],["f:离","q:离"],["f:远","q:远"],["f:近","q:近"],["f:学校","q:学校"],["f:多","q:多"],["f:挺","q:挺"],["f:怎么样","q:怎么样"],["f:不错","q:不错"],["f:头发","q:头发"],["f:长","q:长"],["f:眼睛","q:眼睛"],["f:个子","q:个子"],["f:高","q:高"],["f:电视","q:电视"]]
+  ["最近","身体","比较","成绩","马马虎虎","努力","非常","太","里","有","没有","空调","同屋","离","远","近","学校","多","挺","怎么样","不错","头发","长","眼睛","个子","高","电视"]
+kouyu-rumen/7 · words · Which radical?
+  ["rad:最","rad:近","rad:体","rad:较","rad:成","rad:绩","rad:努","rad:常","rad:太","rad:有","rad:没","rad:空","rad:调","rad:同","rad:屋","rad:离","rad:远","rad:学","rad:校","rad:多","rad:挺","rad:怎","rad:么","rad:样","rad:不","rad:错","rad:头","rad:发","rad:眼","rad:睛","rad:个","rad:电","rad:视"]
+kouyu-rumen/7 · exercises · Grammar
+  ["g:kouyu-rumen/7/1.1","g:kouyu-rumen/7/1.2","g:kouyu-rumen/7/2.1","g:kouyu-rumen/7/3.1"]
+kouyu-rumen/7 · exercises · Dialogues
+  ["wb:kouyu-rumen/7/d1","wb:kouyu-rumen/7/d2"]
+kouyu-rumen/7 · exercises · True or false
+  ["wb:kouyu-rumen/7/j1","wb:kouyu-rumen/7/j2"]
+kouyu-rumen/7 · exercises · Pick the reply
+  ["wb:kouyu-rumen/7/r1","wb:kouyu-rumen/7/r2","wb:kouyu-rumen/7/r3","wb:kouyu-rumen/7/r4"]
+kouyu-rumen/7 · exercises · Fill in the word
+  ["wf:最近","wf:身体","wf:比较","wf:成绩","wf:马马虎虎","wf:努力","wf:非常","wf:太","wf:里","wf:有","wf:没有","wf:空调","wf:同屋","wf:离","wf:远","wf:近","wf:学校","wf:多","wf:挺","wf:怎么样","wf:不错","wf:头发","wf:长","wf:眼睛","wf:个子","wf:高","wf:电视"]
+kouyu-rumen/8 · write · Write the characters
+  ["w:哪","w:国","w:叫","w:名","w:字","w:贵","w:姓","w:几","w:位","w:教","w:住","w:房","w:间","w:电","w:话","w:号","w:码","w:每","w:天","w:下","w:午","w:做","w:有","w:时","w:候","w:休","w:息","w:常","w:跟","w:谁","w:一","w:起","w:睡","w:觉","w:这","w:儿","w:晚","w:上"]
+kouyu-rumen/8 · write · Dictation
+  ["d:哪","d:国","d:叫","d:名字","d:贵姓","d:姓","d:几","d:位","d:教","d:住","d:房间","d:电话","d:号码","d:每","d:天","d:下午","d:做","d:有时候","d:休息","d:常常","d:跟","d:谁","d:一起","d:睡觉","d:这儿","d:晚上"]
+kouyu-rumen/8 · listen · Hear the word
+  ["l:哪","l:国","l:叫","l:名字","l:贵姓","l:姓","l:几","l:位","l:教","l:住","l:房间","l:电话","l:号码","l:每","l:天","l:下午","l:做","l:有时候","l:休息","l:常常","l:跟","l:谁","l:一起","l:睡觉","l:这儿","l:晚上"]
+kouyu-rumen/8 · listen · Sentences
+  ["ls:哪","ls:国","ls:叫","ls:名字","ls:贵姓","ls:姓","ls:几","ls:位","ls:教","ls:住","ls:房间","ls:电话","ls:号码","ls:每","ls:天","ls:下午","ls:做","ls:有时候","ls:休息","ls:常常","ls:跟","ls:谁","ls:一起","ls:睡觉","ls:这儿","ls:晚上"]
+kouyu-rumen/8 · listen · Tones
+  ["t:哪","t:国","t:叫","t:名","t:字","t:贵","t:姓","t:几","t:位","t:教","t:住","t:房","t:间","t:电","t:话","t:号","t:码","t:每","t:天","t:下","t:午","t:做","t:有","t:时","t:候","t:休","t:息","t:常","t:跟","t:谁","t:一","t:起","t:睡","t:觉","t:这","t:儿","t:晚","t:上"]
+kouyu-rumen/8 · speak · Say the word
+  ["s:哪","s:国","s:叫","s:名字","s:贵姓","s:姓","s:几","s:位","s:教","s:住","s:房间","s:电话","s:号码","s:每","s:天","s:下午","s:做","s:有时候","s:休息","s:常常","s:跟","s:谁","s:一起","s:睡觉","s:这儿","s:晚上"]
+kouyu-rumen/8 · speak · Say the sentence
+  ["s:哪#ex","s:国#ex","s:叫#ex","s:名字#ex","s:贵姓#ex","s:姓#ex","s:几#ex","s:位#ex","s:教#ex","s:住#ex","s:房间#ex","s:电话#ex","s:号码#ex","s:每#ex","s:天#ex","s:下午#ex","s:做#ex","s:有时候#ex","s:休息#ex","s:常常#ex","s:跟#ex","s:谁#ex","s:一起#ex","s:睡觉#ex","s:这儿#ex","s:晚上#ex"]
+  ["哪","国","叫","名字","贵姓","姓","几","位","教","住","房间","电话","号码","每","天","下午","做","有时候","休息","常常","跟","谁","一起","睡觉","这儿","晚上"]
+kouyu-rumen/8 · read · Read & answer
+  [["r:kouyu-rumen/8/r1",["rq:kouyu-rumen/8/r1#0","rq:kouyu-rumen/8/r1#1"]],["r:kouyu-rumen/8/r2",["rq:kouyu-rumen/8/r2#0","rq:kouyu-rumen/8/r2#1"]]]
+  ["你住哪儿","每天下午"]
+kouyu-rumen/8 · read · Build the sentence
+  ["o:你是哪国人？","o:我是中国人。","o:我叫保罗。","o:你叫什么名字？","o:请问，您贵姓？","o:我姓王。","o:你有几个本子？","o:三位老师教我们。","o:王老师教我们中文。","o:你住哪儿？","o:我的房间很小。","o:你的电话号码是多少？","o:房间号码是多少？","o:我每天学习中文。","o:每天下午我去图书馆。","o:下午你做什么？","o:你在做什么？","o:我有时候喝咖啡。","o:我在宿舍休息。","o:我常常去书店。","o:我跟朋友一起学习。","o:他是谁？","o:我们一起去吧。","o:我很累，我想睡觉。","o:我住这儿。","o:晚上我看电视。","o:我住留学生宿舍，八号楼。","o:你的房间是多少号？","o:二一五号。","o:每天下午你做什么？","o:有时候休息，有时候去图书馆。","o:你常常跟谁一起学习？","o:跟我的同屋。"]
+kouyu-rumen/8 · read · How do you read it?
+  ["rp:哪","rp:国","rp:叫","rp:名字","rp:贵姓","rp:姓","rp:几","rp:位","rp:教","rp:住","rp:房间","rp:电话","rp:号码","rp:每","rp:天","rp:下午","rp:做","rp:有时候","rp:休息","rp:常常","rp:跟","rp:谁","rp:一起","rp:睡觉","rp:这儿","rp:晚上"]
+kouyu-rumen/8 · words · Flashcards or Word quiz
+  [["f:哪","q:哪"],["f:国","q:国"],["f:叫","q:叫"],["f:名字","q:名字"],["f:贵姓","q:贵姓"],["f:姓","q:姓"],["f:几","q:几"],["f:位","q:位"],["f:教","q:教"],["f:住","q:住"],["f:房间","q:房间"],["f:电话","q:电话"],["f:号码","q:号码"],["f:每","q:每"],["f:天","q:天"],["f:下午","q:下午"],["f:做","q:做"],["f:有时候","q:有时候"],["f:休息","q:休息"],["f:常常","q:常常"],["f:跟","q:跟"],["f:谁","q:谁"],["f:一起","q:一起"],["f:睡觉","q:睡觉"],["f:这儿","q:这儿"],["f:晚上","q:晚上"]]
+  ["哪","国","叫","名字","贵姓","姓","几","位","教","住","房间","电话","号码","每","天","下午","做","有时候","休息","常常","跟","谁","一起","睡觉","这儿","晚上"]
+kouyu-rumen/8 · words · Which radical?
+  ["rad:哪","rad:国","rad:叫","rad:名","rad:字","rad:贵","rad:姓","rad:位","rad:教","rad:住","rad:房","rad:间","rad:电","rad:话","rad:号","rad:码","rad:每","rad:天","rad:下","rad:午","rad:做","rad:有","rad:时","rad:候","rad:休","rad:息","rad:常","rad:跟","rad:谁","rad:起","rad:睡","rad:觉","rad:这","rad:晚","rad:上"]
+kouyu-rumen/8 · exercises · Grammar
+  ["g:kouyu-rumen/8/1.1","g:kouyu-rumen/8/1.2","g:kouyu-rumen/8/2.1","g:kouyu-rumen/8/3.1","g:kouyu-rumen/8/4.1","g:kouyu-rumen/8/4.2"]
+kouyu-rumen/8 · exercises · Dialogues
+  ["wb:kouyu-rumen/8/d1","wb:kouyu-rumen/8/d2"]
+kouyu-rumen/8 · exercises · True or false
+  ["wb:kouyu-rumen/8/j1","wb:kouyu-rumen/8/j2"]
+kouyu-rumen/8 · exercises · Pick the reply
+  ["wb:kouyu-rumen/8/r1","wb:kouyu-rumen/8/r2","wb:kouyu-rumen/8/r3","wb:kouyu-rumen/8/r4"]
+kouyu-rumen/8 · exercises · Fill in the word
+  ["wf:哪","wf:国","wf:叫","wf:名字","wf:贵姓","wf:姓","wf:几","wf:位","wf:教","wf:住","wf:房间","wf:电话","wf:号码","wf:每","wf:天","wf:下午","wf:做","wf:有时候","wf:休息","wf:常常","wf:跟","wf:谁","wf:一起","wf:睡觉","wf:这儿","wf:晚上"]
+kouyu-rumen/9 · write · Write the characters
+  ["w:想","w:家","w:当","w:然","w:口","w:兄","w:弟","w:姐","w:妹","w:独","w:生","w:女","w:父","w:亲","w:工","w:作","w:医","w:母","w:公","w:司","w:职","w:员","w:记","w:者","w:名","w:片","w:今","w:年","w:纪","w:岁","w:秘","w:密","w:孩","w:子","w:儿","w:真","w:售","w:货","w:经","w:理","w:机","w:爷","w:奶","w:多"]
+kouyu-rumen/9 · write · Dictation
+  ["d:想","d:家","d:当然","d:口","d:兄弟","d:姐妹","d:独生女","d:父亲","d:工作","d:医生","d:母亲","d:公司","d:职员","d:记者","d:名片","d:父母","d:今年","d:年纪","d:岁","d:秘密","d:孩子","d:儿子","d:真","d:售货员","d:经理","d:司机","d:爷爷","d:奶奶","d:多"]
+kouyu-rumen/9 · listen · Hear the word
+  ["l:想","l:家","l:当然","l:口","l:兄弟","l:姐妹","l:独生女","l:父亲","l:工作","l:医生","l:母亲","l:公司","l:职员","l:记者","l:名片","l:父母","l:今年","l:年纪","l:岁","l:秘密","l:孩子","l:儿子","l:真","l:售货员","l:经理","l:司机","l:爷爷","l:奶奶","l:多"]
+kouyu-rumen/9 · listen · Sentences
+  ["ls:想","ls:家","ls:当然","ls:口","ls:兄弟","ls:姐妹","ls:独生女","ls:父亲","ls:工作","ls:医生","ls:母亲","ls:公司","ls:职员","ls:记者","ls:名片","ls:父母","ls:今年","ls:年纪","ls:岁","ls:秘密","ls:孩子","ls:儿子","ls:真","ls:售货员","ls:经理","ls:司机","ls:爷爷","ls:奶奶","ls:多"]
+kouyu-rumen/9 · listen · Tones
+  ["t:想","t:家","t:当","t:然","t:口","t:兄","t:弟","t:姐","t:妹","t:独","t:生","t:女","t:父","t:亲","t:工","t:作","t:医","t:母","t:公","t:司","t:职","t:员","t:记","t:者","t:名","t:片","t:今","t:年","t:纪","t:岁","t:秘","t:密","t:孩","t:子","t:儿","t:真","t:售","t:货","t:经","t:理","t:机","t:爷","t:奶","t:多"]
+kouyu-rumen/9 · speak · Say the word
+  ["s:想","s:家","s:当然","s:口","s:兄弟","s:姐妹","s:独生女","s:父亲","s:工作","s:医生","s:母亲","s:公司","s:职员","s:记者","s:名片","s:父母","s:今年","s:年纪","s:岁","s:秘密","s:孩子","s:儿子","s:真","s:售货员","s:经理","s:司机","s:爷爷","s:奶奶","s:多"]
+kouyu-rumen/9 · speak · Say the sentence
+  ["s:想#ex","s:家#ex","s:当然#ex","s:口#ex","s:兄弟#ex","s:姐妹#ex","s:独生女#ex","s:父亲#ex","s:工作#ex","s:医生#ex","s:母亲#ex","s:公司#ex","s:职员#ex","s:记者#ex","s:名片#ex","s:父母#ex","s:今年#ex","s:年纪#ex","s:岁#ex","s:秘密#ex","s:孩子#ex","s:儿子#ex","s:真#ex","s:售货员#ex","s:经理#ex","s:司机#ex","s:爷爷#ex","s:奶奶#ex","s:多#ex"]
+  ["想","家","当然","口","兄弟","姐妹","独生女","父亲","工作","医生","母亲","公司","职员","记者","名片","父母","今年","年纪","岁","秘密","孩子","儿子","真","售货员","经理","司机","爷爷","奶奶","多"]
+kouyu-rumen/9 · read · Read & answer
+  [["r:kouyu-rumen/9/r1",["rq:kouyu-rumen/9/r1#0","rq:kouyu-rumen/9/r1#1"]],["r:kouyu-rumen/9/r2",["rq:kouyu-rumen/9/r2#0","rq:kouyu-rumen/9/r2#1"]]]
+  ["你家有几口人","你多大"]
+kouyu-rumen/9 · read · Build the sentence
+  ["o:你想家吗？","o:我家在北京。","o:我家有四口人。","o:你有兄弟吗？","o:我没有姐妹。","o:她是独生女。","o:我父亲是医生。","o:你在哪儿工作？","o:她是医院的医生。","o:我母亲不工作。","o:他在公司工作。","o:我哥哥是公司职员。","o:她是记者。","o:这是我的名片。","o:我父母都很好。","o:我今年二十岁。","o:你父亲多大年纪？","o:我弟弟五岁。","o:这是秘密！","o:这孩子真可爱。","o:这是我的儿子。","o:你真聪明！","o:她是商店的售货员。","o:我爸爸是经理。","o:他是司机。","o:我爷爷八十岁。","o:我奶奶身体很好。","o:你哥哥今年多大？","o:你家有几口人？","o:四口人：爸爸、妈妈、弟弟和我。","o:你爸爸做什么工作？","o:他是司机，我妈妈是医生。","o:你弟弟今年几岁？","o:八岁。他很聪明。","o:你呢？你今年多大？"]
+kouyu-rumen/9 · read · How do you read it?
+  ["rp:想","rp:家","rp:当然","rp:口","rp:兄弟","rp:姐妹","rp:独生女","rp:父亲","rp:工作","rp:医生","rp:母亲","rp:公司","rp:职员","rp:记者","rp:名片","rp:父母","rp:今年","rp:年纪","rp:岁","rp:秘密","rp:孩子","rp:儿子","rp:真","rp:售货员","rp:经理","rp:司机","rp:爷爷","rp:奶奶","rp:多"]
+kouyu-rumen/9 · words · Flashcards or Word quiz
+  [["f:想","q:想"],["f:家","q:家"],["f:当然","q:当然"],["f:口","q:口"],["f:兄弟","q:兄弟"],["f:姐妹","q:姐妹"],["f:独生女","q:独生女"],["f:父亲","q:父亲"],["f:工作","q:工作"],["f:医生","q:医生"],["f:母亲","q:母亲"],["f:公司","q:公司"],["f:职员","q:职员"],["f:记者","q:记者"],["f:名片","q:名片"],["f:父母","q:父母"],["f:今年","q:今年"],["f:年纪","q:年纪"],["f:岁","q:岁"],["f:秘密","q:秘密"],["f:孩子","q:孩子"],["f:儿子","q:儿子"],["f:真","q:真"],["f:售货员","q:售货员"],["f:经理","q:经理"],["f:司机","q:司机"],["f:爷爷","q:爷爷"],["f:奶奶","q:奶奶"],["f:多","q:多"]]
+  ["想","家","当然","口","兄弟","姐妹","独生女","父亲","工作","医生","母亲","公司","职员","记者","名片","父母","今年","年纪","岁","秘密","孩子","儿子","真","售货员","经理","司机","爷爷","奶奶","多"]
+kouyu-rumen/9 · words · Which radical?
+  ["rad:想","rad:家","rad:当","rad:然","rad:兄","rad:弟","rad:姐","rad:妹","rad:独","rad:亲","rad:作","rad:医","rad:公","rad:司","rad:职","rad:员","rad:记","rad:者","rad:名","rad:今","rad:年","rad:纪","rad:岁","rad:秘","rad:密","rad:孩","rad:真","rad:售","rad:货","rad:经","rad:理","rad:机","rad:爷","rad:奶","rad:多"]
+kouyu-rumen/9 · exercises · Grammar
+  ["g:kouyu-rumen/9/1.1","g:kouyu-rumen/9/2.1","g:kouyu-rumen/9/3.1","g:kouyu-rumen/9/3.2"]
+kouyu-rumen/9 · exercises · Dialogues
+  ["wb:kouyu-rumen/9/d1","wb:kouyu-rumen/9/d2"]
+kouyu-rumen/9 · exercises · True or false
+  ["wb:kouyu-rumen/9/j1","wb:kouyu-rumen/9/j2"]
+kouyu-rumen/9 · exercises · Pick the reply
+  ["wb:kouyu-rumen/9/r1","wb:kouyu-rumen/9/r2","wb:kouyu-rumen/9/r3","wb:kouyu-rumen/9/r4"]
+kouyu-rumen/9 · exercises · Fill in the word
+  ["wf:想","wf:家","wf:当然","wf:口","wf:兄弟","wf:姐妹","wf:独生女","wf:父亲","wf:工作","wf:医生","wf:母亲","wf:公司","wf:职员","wf:记者","wf:名片","wf:父母","wf:今年","wf:年纪","wf:岁","wf:秘密","wf:孩子","wf:儿子","wf:真","wf:售货员","wf:经理","wf:司机","wf:爷爷","wf:奶奶","wf:多"]
+kouyu-rumen/10 · write · Write the characters
+  ["w:现","w:在","w:点","w:刻","w:早","w:饭","w:半","w:时","w:候","w:上","w:课","w:从","w:午","w:今","w:天","w:月","w:号","w:星","w:期","w:吧","w:咱","w:们","w:啊","w:出","w:发","w:行","w:见","w:面","w:差","w:分","w:门","w:口","w:等","w:起","w:床","w:下","w:晚","w:年","w:大","w:前","w:昨","w:明","w:后","w:生","w:日","w:属","w:问","w:回","w:答"]
+kouyu-rumen/10 · write · Dictation
+  ["d:现在","d:点","d:刻","d:早饭","d:半","d:时候","d:上课","d:从","d:上午","d:今天","d:月","d:号","d:星期","d:星期天","d:吧","d:咱们","d:啊","d:出发","d:行","d:见面","d:差","d:分","d:门口","d:等","d:早上","d:起床","d:下课","d:午饭","d:晚饭","d:年","d:大前天","d:前天","d:昨天","d:明天","d:后天","d:大后天","d:生日","d:属","d:问","d:回答"]
+kouyu-rumen/10 · listen · Hear the word
+  ["l:现在","l:点","l:刻","l:早饭","l:半","l:时候","l:上课","l:从","l:上午","l:今天","l:月","l:号","l:星期","l:星期天","l:吧","l:咱们","l:啊","l:出发","l:行","l:见面","l:差","l:分","l:门口","l:等","l:早上","l:起床","l:下课","l:午饭","l:晚饭","l:年","l:大前天","l:前天","l:昨天","l:明天","l:后天","l:大后天","l:生日","l:属","l:问","l:回答"]
+kouyu-rumen/10 · listen · Sentences
+  ["ls:现在","ls:点","ls:刻","ls:早饭","ls:半","ls:时候","ls:上课","ls:从","ls:上午","ls:今天","ls:月","ls:号","ls:星期","ls:星期天","ls:吧","ls:咱们","ls:啊","ls:出发","ls:行","ls:见面","ls:差","ls:分","ls:门口","ls:等","ls:早上","ls:起床","ls:下课","ls:午饭","ls:晚饭","ls:年","ls:大前天","ls:前天","ls:昨天","ls:明天","ls:后天","ls:大后天","ls:生日","ls:属","ls:问","ls:回答"]
+kouyu-rumen/10 · listen · Tones
+  ["t:现","t:在","t:点","t:刻","t:早","t:饭","t:半","t:时","t:候","t:上","t:课","t:从","t:午","t:今","t:天","t:月","t:号","t:星","t:期","t:咱","t:出","t:发","t:行","t:见","t:面","t:差","t:分","t:门","t:口","t:等","t:起","t:床","t:下","t:晚","t:年","t:大","t:前","t:昨","t:明","t:后","t:生","t:日","t:属","t:问","t:回","t:答"]
+kouyu-rumen/10 · speak · Say the word
+  ["s:现在","s:点","s:刻","s:早饭","s:半","s:时候","s:上课","s:从","s:上午","s:今天","s:月","s:号","s:星期","s:星期天","s:吧","s:咱们","s:啊","s:出发","s:行","s:见面","s:差","s:分","s:门口","s:等","s:早上","s:起床","s:下课","s:午饭","s:晚饭","s:年","s:大前天","s:前天","s:昨天","s:明天","s:后天","s:大后天","s:生日","s:属","s:问","s:回答"]
+kouyu-rumen/10 · speak · Say the sentence
+  ["s:现在#ex","s:点#ex","s:刻#ex","s:早饭#ex","s:半#ex","s:时候#ex","s:上课#ex","s:从#ex","s:上午#ex","s:今天#ex","s:月#ex","s:号#ex","s:星期#ex","s:星期天#ex","s:吧#ex","s:咱们#ex","s:啊#ex","s:出发#ex","s:行#ex","s:见面#ex","s:差#ex","s:分#ex","s:门口#ex","s:等#ex","s:早上#ex","s:起床#ex","s:下课#ex","s:午饭#ex","s:晚饭#ex","s:年#ex","s:大前天#ex","s:前天#ex","s:昨天#ex","s:明天#ex","s:后天#ex","s:大后天#ex","s:生日#ex","s:属#ex","s:问#ex","s:回答#ex"]
+  ["现在","点","刻","早饭","半","时候","上课","从","上午","今天","月","号","星期","星期天","吧","咱们","啊","出发","行","见面","差","分","门口","等","早上","起床","下课","午饭","晚饭","年","大前天","前天","昨天","明天","后天","大后天","生日","属","问","回答"]
+kouyu-rumen/10 · read · Read & answer
+  [["r:kouyu-rumen/10/r1",["rq:kouyu-rumen/10/r1#0","rq:kouyu-rumen/10/r1#1"]],["r:kouyu-rumen/10/r2",["rq:kouyu-rumen/10/r2#0","rq:kouyu-rumen/10/r2#1"]]]
+  ["你几点起床","咱们几点见面"]
+kouyu-rumen/10 · read · Build the sentence
+  ["o:现在几点？","o:现在八点。","o:七点一刻。","o:你几点吃早饭？","o:八点半上课。","o:你什么时候上课？","o:我们八点上课。","o:上午我很忙。","o:今天星期几？","o:今天几月几号？","o:今天十月八号。","o:今天星期三。","o:星期天我休息。","o:你是留学生吧？","o:咱们一起去吧。","o:我们几点出发？","o:九点，行吗？","o:咱们几点见面？","o:差五分九点。","o:现在八点十分。","o:我在门口等你。","o:请等一下儿。","o:早上我喝咖啡。","o:我六点半起床。","o:我们十二点下课。","o:我在食堂吃午饭。","o:我们一起吃晚饭吧。","o:今年是二〇二六年。","o:大前天我去银行了。","o:前天是星期一。","o:昨天我很累。","o:明天你有课吗？","o:后天是星期六。","o:大后天是我的生日。","o:你的生日是几月几号？","o:你属什么？","o:我问一下儿老师。","o:请回答我的问题。","o:你每天几点起床？","o:七点。七点半吃早饭。","o:从八点到十二点。","o:星期六咱们去书店，怎么样？","o:好啊！几点出发？","o:上午十点，行吗？","o:行。我在宿舍门口等你。"]
+kouyu-rumen/10 · read · How do you read it?
+  ["rp:现在","rp:点","rp:刻","rp:早饭","rp:半","rp:时候","rp:上课","rp:从","rp:上午","rp:今天","rp:月","rp:号","rp:星期","rp:星期天","rp:吧","rp:咱们","rp:啊","rp:出发","rp:行","rp:见面","rp:差","rp:分","rp:门口","rp:等","rp:早上","rp:起床","rp:下课","rp:午饭","rp:晚饭","rp:年","rp:大前天","rp:前天","rp:昨天","rp:明天","rp:后天","rp:大后天","rp:生日","rp:属","rp:问","rp:回答"]
+kouyu-rumen/10 · words · Flashcards or Word quiz
+  [["f:现在","q:现在"],["f:点","q:点"],["f:刻","q:刻"],["f:早饭","q:早饭"],["f:半","q:半"],["f:时候","q:时候"],["f:上课","q:上课"],["f:从","q:从"],["f:上午","q:上午"],["f:今天","q:今天"],["f:月","q:月"],["f:号","q:号"],["f:星期","q:星期"],["f:星期天","q:星期天"],["f:吧","q:吧"],["f:咱们","q:咱们"],["f:啊","q:啊"],["f:出发","q:出发"],["f:行","q:行"],["f:见面","q:见面"],["f:差","q:差"],["f:分","q:分"],["f:门口","q:门口"],["f:等","q:等"],["f:早上","q:早上"],["f:起床","q:起床"],["f:下课","q:下课"],["f:午饭","q:午饭"],["f:晚饭","q:晚饭"],["f:年","q:年"],["f:大前天","q:大前天"],["f:前天","q:前天"],["f:昨天","q:昨天"],["f:明天","q:明天"],["f:后天","q:后天"],["f:大后天","q:大后天"],["f:生日","q:生日"],["f:属","q:属"],["f:问","q:问"],["f:回答","q:回答"]]
+  ["现在","点","刻","早饭","半","时候","上课","从","上午","今天","月","号","星期","星期天","吧","咱们","啊","出发","行","见面","差","分","门口","等","早上","起床","下课","午饭","晚饭","年","大前天","前天","昨天","明天","后天","大后天","生日","属","问","回答"]
+kouyu-rumen/10 · words · Which radical?
+  ["rad:现","rad:在","rad:点","rad:刻","rad:早","rad:饭","rad:半","rad:时","rad:候","rad:上","rad:课","rad:从","rad:午","rad:今","rad:天","rad:号","rad:星","rad:期","rad:吧","rad:咱","rad:们","rad:啊","rad:出","rad:发","rad:差","rad:分","rad:等","rad:起","rad:床","rad:下","rad:晚","rad:年","rad:前","rad:昨","rad:明","rad:后","rad:属","rad:问","rad:回","rad:答"]
+kouyu-rumen/10 · exercises · Grammar
+  ["g:kouyu-rumen/10/1.1","g:kouyu-rumen/10/1.2","g:kouyu-rumen/10/2.1","g:kouyu-rumen/10/3.1"]
+kouyu-rumen/10 · exercises · Dialogues
+  ["wb:kouyu-rumen/10/d1","wb:kouyu-rumen/10/d2"]
+kouyu-rumen/10 · exercises · True or false
+  ["wb:kouyu-rumen/10/j1","wb:kouyu-rumen/10/j2"]
+kouyu-rumen/10 · exercises · Pick the reply
+  ["wb:kouyu-rumen/10/r1","wb:kouyu-rumen/10/r2","wb:kouyu-rumen/10/r3","wb:kouyu-rumen/10/r4"]
+kouyu-rumen/10 · exercises · Fill in the word
+  ["wf:现在","wf:点","wf:刻","wf:早饭","wf:半","wf:时候","wf:上课","wf:从","wf:上午","wf:今天","wf:月","wf:号","wf:星期","wf:星期天","wf:吧","wf:咱们","wf:啊","wf:出发","wf:行","wf:见面","wf:差","wf:分","wf:门口","wf:等","wf:早上","wf:起床","wf:下课","wf:午饭","wf:晚饭","wf:年","wf:大前天","wf:前天","wf:昨天","wf:明天","wf:后天","wf:大后天","wf:生日","wf:属","wf:问","wf:回答"]
+kouyu-rumen/11 · write · Write the characters
+  ["w:里","w:边","w:教","w:学","w:楼","w:办","w:公","w:北","w:西","w:南","w:附","w:近","w:饭","w:馆","w:东","w:还","w:电","w:影","w:院","w:对","w:面","w:药","w:店","w:旁","w:超","w:市","w:照","w:片","w:左","w:右","w:中","w:间","w:后","w:桌","w:子","w:上","w:台","w:灯","w:张","w:男","w:朋","w:友","w:下","w:抽","w:屉","w:块","w:巧","w:克","w:力","w:前","w:鞋","w:眼","w:镜","w:闹","w:钟"]
+kouyu-rumen/11 · write · Dictation
+  ["d:里边","d:教学楼","d:办公楼","d:北边","d:西边","d:南边","d:附近","d:饭馆","d:东边","d:还","d:电影院","d:电影","d:对面","d:药店","d:药","d:旁边","d:超市","d:照片","d:左边","d:右边","d:中间","d:后边","d:桌子","d:上边","d:台灯","d:张","d:男朋友","d:男","d:下边","d:抽屉","d:块","d:巧克力","d:前边","d:鞋","d:眼镜","d:闹钟"]
+kouyu-rumen/11 · listen · Hear the word
+  ["l:里边","l:教学楼","l:办公楼","l:北边","l:西边","l:南边","l:附近","l:饭馆","l:东边","l:还","l:电影院","l:电影","l:对面","l:药店","l:药","l:旁边","l:超市","l:照片","l:左边","l:右边","l:中间","l:后边","l:桌子","l:上边","l:台灯","l:张","l:男朋友","l:男","l:下边","l:抽屉","l:块","l:巧克力","l:前边","l:鞋","l:眼镜","l:闹钟"]
+kouyu-rumen/11 · listen · Sentences
+  ["ls:里边","ls:教学楼","ls:办公楼","ls:北边","ls:西边","ls:南边","ls:附近","ls:饭馆","ls:东边","ls:还","ls:电影院","ls:电影","ls:对面","ls:药店","ls:药","ls:旁边","ls:超市","ls:照片","ls:左边","ls:右边","ls:中间","ls:后边","ls:桌子","ls:上边","ls:台灯","ls:张","ls:男朋友","ls:男","ls:下边","ls:抽屉","ls:块","ls:巧克力","ls:前边","ls:鞋","ls:眼镜","ls:闹钟"]
+kouyu-rumen/11 · listen · Tones
+  ["t:里","t:边","t:教","t:学","t:楼","t:办","t:公","t:北","t:西","t:南","t:附","t:近","t:饭","t:馆","t:东","t:还","t:电","t:影","t:院","t:对","t:面","t:药","t:店","t:旁","t:超","t:市","t:照","t:片","t:左","t:右","t:中","t:间","t:后","t:桌","t:子","t:上","t:台","t:灯","t:张","t:男","t:朋","t:友","t:下","t:抽","t:屉","t:块","t:巧","t:克","t:力","t:前","t:鞋","t:眼","t:镜","t:闹","t:钟"]
+kouyu-rumen/11 · speak · Say the word
+  ["s:里边","s:教学楼","s:办公楼","s:北边","s:西边","s:南边","s:附近","s:饭馆","s:东边","s:还","s:电影院","s:电影","s:对面","s:药店","s:药","s:旁边","s:超市","s:照片","s:左边","s:右边","s:中间","s:后边","s:桌子","s:上边","s:台灯","s:张","s:男朋友","s:男","s:下边","s:抽屉","s:块","s:巧克力","s:前边","s:鞋","s:眼镜","s:闹钟"]
+kouyu-rumen/11 · speak · Say the sentence
+  ["s:里边#ex","s:教学楼#ex","s:办公楼#ex","s:北边#ex","s:西边#ex","s:南边#ex","s:附近#ex","s:饭馆#ex","s:东边#ex","s:还#ex","s:电影院#ex","s:电影#ex","s:对面#ex","s:药店#ex","s:药#ex","s:旁边#ex","s:超市#ex","s:照片#ex","s:左边#ex","s:右边#ex","s:中间#ex","s:后边#ex","s:桌子#ex","s:上边#ex","s:台灯#ex","s:张#ex","s:男朋友#ex","s:男#ex","s:下边#ex","s:抽屉#ex","s:块#ex","s:巧克力#ex","s:前边#ex","s:鞋#ex","s:眼镜#ex","s:闹钟#ex"]
+  ["里边","教学楼","办公楼","北边","西边","南边","附近","饭馆","东边","还","电影院","电影","对面","药店","药","旁边","超市","照片","左边","右边","中间","后边","桌子","上边","台灯","张","男朋友","男","下边","抽屉","块","巧克力","前边","鞋","眼镜","闹钟"]
+kouyu-rumen/11 · read · Read & answer
+  [["r:kouyu-rumen/11/r1",["rq:kouyu-rumen/11/r1#0","rq:kouyu-rumen/11/r1#1"]],["r:kouyu-rumen/11/r2",["rq:kouyu-rumen/11/r2#0","rq:kouyu-rumen/11/r2#1"]]]
+  ["学校附近","我的桌子"]
+kouyu-rumen/11 · read · Build the sentence
+  ["o:教室里边有很多学生。","o:教学楼在那儿。","o:老师在办公楼。","o:银行在学校北边。","o:食堂在宿舍西边。","o:书店在南边。","o:学校附近有银行吗？","o:附近有很多饭馆。","o:邮局在东边。","o:我买了笔，还买了本子。","o:电影院在超市旁边。","o:咱们去看电影吧。","o:银行对面是书店。","o:附近有药店吗？","o:我去药店买药。","o:我坐你旁边。","o:我去超市买牛奶。","o:这是我家的照片。","o:左边是我哥哥。","o:右边是我姐姐。","o:中间是我。","o:我在你后边。","o:桌子上有一本书。","o:书在桌子上边。","o:我买一个台灯。","o:一张照片。","o:她有男朋友吗？","o:我们班有十个男学生。","o:书包在桌子下边。","o:抽屉里有什么？","o:一块巧克力。","o:我很爱吃巧克力。","o:前边是图书馆。","o:我的鞋在哪儿？","o:你的眼镜在桌子上边。","o:闹钟在台灯旁边。","o:学校附近有超市吗？","o:有，在学校东边，银行旁边。","o:药店在超市对面。","o:你的眼镜在哪儿？","o:在桌子上边，台灯旁边。","o:有两块巧克力。"]
+kouyu-rumen/11 · read · How do you read it?
+  ["rp:里边","rp:教学楼","rp:办公楼","rp:北边","rp:西边","rp:南边","rp:附近","rp:饭馆","rp:东边","rp:还","rp:电影院","rp:电影","rp:对面","rp:药店","rp:药","rp:旁边","rp:超市","rp:照片","rp:左边","rp:右边","rp:中间","rp:后边","rp:桌子","rp:上边","rp:台灯","rp:张","rp:男朋友","rp:男","rp:下边","rp:抽屉","rp:块","rp:巧克力","rp:前边","rp:鞋","rp:眼镜","rp:闹钟"]
+kouyu-rumen/11 · words · Flashcards or Word quiz
+  [["f:里边","q:里边"],["f:教学楼","q:教学楼"],["f:办公楼","q:办公楼"],["f:北边","q:北边"],["f:西边","q:西边"],["f:南边","q:南边"],["f:附近","q:附近"],["f:饭馆","q:饭馆"],["f:东边","q:东边"],["f:还","q:还"],["f:电影院","q:电影院"],["f:电影","q:电影"],["f:对面","q:对面"],["f:药店","q:药店"],["f:药","q:药"],["f:旁边","q:旁边"],["f:超市","q:超市"],["f:照片","q:照片"],["f:左边","q:左边"],["f:右边","q:右边"],["f:中间","q:中间"],["f:后边","q:后边"],["f:桌子","q:桌子"],["f:上边","q:上边"],["f:台灯","q:台灯"],["f:张","q:张"],["f:男朋友","q:男朋友"],["f:男","q:男"],["f:下边","q:下边"],["f:抽屉","q:抽屉"],["f:块","q:块"],["f:巧克力","q:巧克力"],["f:前边","q:前边"],["f:鞋","q:鞋"],["f:眼镜","q:眼镜"],["f:闹钟","q:闹钟"]]
+  ["里边","教学楼","办公楼","北边","西边","南边","附近","饭馆","东边","还","电影院","电影","对面","药店","药","旁边","超市","照片","左边","右边","中间","后边","桌子","上边","台灯","张","男朋友","男","下边","抽屉","块","巧克力","前边","鞋","眼镜","闹钟"]
+kouyu-rumen/11 · words · Which radical?
+  ["rad:边","rad:教","rad:学","rad:楼","rad:办","rad:公","rad:北","rad:南","rad:附","rad:近","rad:饭","rad:馆","rad:东","rad:还","rad:电","rad:影","rad:院","rad:对","rad:药","rad:店","rad:旁","rad:超","rad:市","rad:照","rad:左","rad:右","rad:中","rad:间","rad:后","rad:桌","rad:上","rad:台","rad:灯","rad:张","rad:男","rad:朋","rad:友","rad:下","rad:抽","rad:屉","rad:块","rad:巧","rad:克","rad:前","rad:鞋","rad:眼","rad:镜","rad:闹","rad:钟"]
+kouyu-rumen/11 · exercises · Grammar
+  ["g:kouyu-rumen/11/1.1","g:kouyu-rumen/11/1.2","g:kouyu-rumen/11/2.1","g:kouyu-rumen/11/2.2"]
+kouyu-rumen/11 · exercises · Dialogues
+  ["wb:kouyu-rumen/11/d1","wb:kouyu-rumen/11/d2"]
+kouyu-rumen/11 · exercises · True or false
+  ["wb:kouyu-rumen/11/j1","wb:kouyu-rumen/11/j2"]
+kouyu-rumen/11 · exercises · Pick the reply
+  ["wb:kouyu-rumen/11/r1","wb:kouyu-rumen/11/r2","wb:kouyu-rumen/11/r3","wb:kouyu-rumen/11/r4"]
+kouyu-rumen/11 · exercises · Fill in the word
+  ["wf:里边","wf:教学楼","wf:办公楼","wf:北边","wf:西边","wf:南边","wf:附近","wf:饭馆","wf:东边","wf:还","wf:电影院","wf:电影","wf:对面","wf:药店","wf:药","wf:旁边","wf:超市","wf:照片","wf:左边","wf:右边","wf:中间","wf:后边","wf:桌子","wf:上边","wf:台灯","wf:张","wf:男朋友","wf:男","wf:下边","wf:抽屉","wf:块","wf:巧克力","wf:前边","wf:鞋","wf:眼镜","wf:闹钟"]
+kouyu-rumen/12 · write · Write the characters
+  ["w:服","w:务","w:员","w:冰","w:还","w:是","w:热","w:样","w:别","w:的","w:了","w:再","w:听","w:一","w:共","w:微","w:信","w:扫","w:给","w:小","w:票","w:橘","w:子","w:斤","w:卖","w:东","w:西","w:甜","w:尝","w:红","w:柿","w:怎","w:么","w:新","w:鲜","w:摘","w:酸","w:辆","w:自","w:行","w:车","w:蓝","w:支","w:付","w:宝","w:现","w:金","w:苹","w:果","w:短","w:零","w:女","w:人","w:男","w:老"]
+kouyu-rumen/12 · write · Dictation
+  ["d:服务员","d:冰","d:还是","d:热","d:样","d:别的","d:了","d:再","d:听","d:一共","d:微信","d:扫","d:给","d:小票","d:橘子","d:斤","d:卖","d:东西","d:甜","d:尝","d:西红柿","d:怎么","d:新鲜","d:摘","d:酸","d:辆","d:自行车","d:红","d:蓝","d:支付宝","d:现金","d:苹果","d:短","d:零","d:女人","d:男人","d:老人"]
+kouyu-rumen/12 · listen · Hear the word
+  ["l:服务员","l:冰","l:还是","l:热","l:样","l:别的","l:了","l:再","l:听","l:一共","l:微信","l:扫","l:给","l:小票","l:橘子","l:斤","l:卖","l:东西","l:甜","l:尝","l:西红柿","l:怎么","l:新鲜","l:摘","l:酸","l:辆","l:自行车","l:红","l:蓝","l:支付宝","l:现金","l:苹果","l:短","l:零","l:女人","l:男人","l:老人"]
+kouyu-rumen/12 · listen · Sentences
+  ["ls:服务员","ls:冰","ls:还是","ls:热","ls:样","ls:别的","ls:了","ls:再","ls:听","ls:一共","ls:微信","ls:扫","ls:给","ls:小票","ls:橘子","ls:斤","ls:卖","ls:东西","ls:甜","ls:尝","ls:西红柿","ls:怎么","ls:新鲜","ls:摘","ls:酸","ls:辆","ls:自行车","ls:红","ls:蓝","ls:支付宝","ls:现金","ls:苹果","ls:短","ls:零","ls:女人","ls:男人","ls:老人"]
+kouyu-rumen/12 · listen · Tones
+  ["t:服","t:务","t:员","t:冰","t:还","t:是","t:热","t:样","t:别","t:再","t:听","t:一","t:共","t:微","t:信","t:扫","t:给","t:小","t:票","t:橘","t:子","t:斤","t:卖","t:东","t:西","t:甜","t:尝","t:红","t:柿","t:怎","t:新","t:鲜","t:摘","t:酸","t:辆","t:自","t:行","t:车","t:蓝","t:支","t:付","t:宝","t:现","t:金","t:苹","t:果","t:短","t:零","t:女","t:人","t:男","t:老"]
+kouyu-rumen/12 · speak · Say the word
+  ["s:服务员","s:冰","s:还是","s:热","s:样","s:别的","s:了","s:再","s:听","s:一共","s:微信","s:扫","s:给","s:小票","s:橘子","s:斤","s:卖","s:东西","s:甜","s:尝","s:西红柿","s:怎么","s:新鲜","s:摘","s:酸","s:辆","s:自行车","s:红","s:蓝","s:支付宝","s:现金","s:苹果","s:短","s:零","s:女人","s:男人","s:老人"]
+kouyu-rumen/12 · speak · Say the sentence
+  ["s:服务员#ex","s:冰#ex","s:还是#ex","s:热#ex","s:样#ex","s:别的#ex","s:了#ex","s:再#ex","s:听#ex","s:一共#ex","s:微信#ex","s:扫#ex","s:给#ex","s:小票#ex","s:橘子#ex","s:斤#ex","s:卖#ex","s:东西#ex","s:甜#ex","s:尝#ex","s:西红柿#ex","s:怎么#ex","s:新鲜#ex","s:摘#ex","s:酸#ex","s:辆#ex","s:自行车#ex","s:红#ex","s:蓝#ex","s:支付宝#ex","s:现金#ex","s:苹果#ex","s:短#ex","s:零#ex","s:女人#ex","s:男人#ex","s:老人#ex"]
+  ["服务员","冰","还是","热","样","别的","了","再","听","一共","微信","扫","给","小票","橘子","斤","卖","东西","甜","尝","西红柿","怎么","新鲜","摘","酸","辆","自行车","红","蓝","支付宝","现金","苹果","短","零","女人","男人","老人"]
+kouyu-rumen/12 · read · Read & answer
+  [["r:kouyu-rumen/12/r1",["rq:kouyu-rumen/12/r1#0","rq:kouyu-rumen/12/r1#1"]],["r:kouyu-rumen/12/r2",["rq:kouyu-rumen/12/r2#0","rq:kouyu-rumen/12/r2#1"]]]
+  ["在咖啡馆","在市场"]
+kouyu-rumen/12 · read · Build the sentence
+  ["o:服务员，我要一杯茶。","o:我要冰咖啡。","o:你喝茶还是喝咖啡？","o:我要热的。","o:一样一杯。","o:还要别的吗？","o:再要一瓶可乐。","o:两听可乐。","o:一共多少钱？","o:我用微信。","o:我扫您。","o:给您小票。","o:请给我小票。","o:橘子多少钱一斤？","o:我要两斤。","o:西红柿怎么卖？","o:你买什么东西？","o:这个橘子很甜。","o:你尝一下儿。","o:我买三斤西红柿。","o:您怎么付？","o:这些菜很新鲜。","o:这是今天早上摘的。","o:这个橘子有点儿酸。","o:一辆自行车。","o:我想买一辆自行车。","o:我要红的。","o:蓝的很漂亮。","o:我用支付宝。","o:你有现金吗？","o:苹果多少钱一斤？","o:她的头发很短。","o:一百零五块。","o:那个女人是谁？","o:那个男人是我爸爸。","o:那个老人八十岁了。","o:服务员，要两杯咖啡。","o:要冰的还是要热的？","o:再要一块巧克力。","o:苹果怎么卖？","o:十块。您用微信还是现金？"]
+kouyu-rumen/12 · read · How do you read it?
+  ["rp:服务员","rp:冰","rp:还是","rp:热","rp:样","rp:别的","rp:了","rp:再","rp:听","rp:一共","rp:微信","rp:扫","rp:给","rp:小票","rp:橘子","rp:斤","rp:卖","rp:东西","rp:甜","rp:尝","rp:西红柿","rp:怎么","rp:新鲜","rp:摘","rp:酸","rp:辆","rp:自行车","rp:红","rp:蓝","rp:支付宝","rp:现金","rp:苹果","rp:短","rp:零","rp:女人","rp:男人","rp:老人"]
+kouyu-rumen/12 · words · Flashcards or Word quiz
+  [["f:服务员","q:服务员"],["f:冰","q:冰"],["f:还是","q:还是"],["f:热","q:热"],["f:样","q:样"],["f:别的","q:别的"],["f:了","q:了"],["f:再","q:再"],["f:听","q:听"],["f:一共","q:一共"],["f:微信","q:微信"],["f:扫","q:扫"],["f:给","q:给"],["f:小票","q:小票"],["f:橘子","q:橘子"],["f:斤","q:斤"],["f:卖","q:卖"],["f:东西","q:东西"],["f:甜","q:甜"],["f:尝","q:尝"],["f:西红柿","q:西红柿"],["f:怎么","q:怎么"],["f:新鲜","q:新鲜"],["f:摘","q:摘"],["f:酸","q:酸"],["f:辆","q:辆"],["f:自行车","q:自行车"],["f:红","q:红"],["f:蓝","q:蓝"],["f:支付宝","q:支付宝"],["f:现金","q:现金"],["f:苹果","q:苹果"],["f:短","q:短"],["f:零","q:零"],["f:女人","q:女人"],["f:男人","q:男人"],["f:老人","q:老人"]]
+  ["服务员","冰","还是","热","样","别的","了","再","听","一共","微信","扫","给","小票","橘子","斤","卖","东西","甜","尝","西红柿","怎么","新鲜","摘","酸","辆","自行车","红","蓝","支付宝","现金","苹果","短","零","女人","男人","老人"]
+kouyu-rumen/12 · words · Which radical?
+  ["rad:服","rad:务","rad:员","rad:冰","rad:还","rad:是","rad:热","rad:样","rad:别","rad:的","rad:了","rad:再","rad:听","rad:共","rad:微","rad:信","rad:扫","rad:给","rad:票","rad:橘","rad:卖","rad:东","rad:甜","rad:尝","rad:红","rad:柿","rad:怎","rad:么","rad:新","rad:鲜","rad:摘","rad:酸","rad:辆","rad:蓝","rad:付","rad:宝","rad:现","rad:苹","rad:果","rad:短","rad:零","rad:男"]
+kouyu-rumen/12 · exercises · Grammar
+  ["g:kouyu-rumen/12/1.1","g:kouyu-rumen/12/2.1","g:kouyu-rumen/12/3.1","g:kouyu-rumen/12/4.1","g:kouyu-rumen/12/5.1","g:kouyu-rumen/12/5.2"]
+kouyu-rumen/12 · exercises · Dialogues
+  ["wb:kouyu-rumen/12/d1","wb:kouyu-rumen/12/d2"]
+kouyu-rumen/12 · exercises · True or false
+  ["wb:kouyu-rumen/12/j1","wb:kouyu-rumen/12/j2"]
+kouyu-rumen/12 · exercises · Pick the reply
+  ["wb:kouyu-rumen/12/r1","wb:kouyu-rumen/12/r2","wb:kouyu-rumen/12/r3","wb:kouyu-rumen/12/r4"]
+kouyu-rumen/12 · exercises · Fill in the word
+  ["wf:服务员","wf:冰","wf:还是","wf:热","wf:样","wf:别的","wf:了","wf:再","wf:听","wf:一共","wf:微信","wf:扫","wf:给","wf:小票","wf:橘子","wf:斤","wf:卖","wf:东西","wf:甜","wf:尝","wf:西红柿","wf:怎么","wf:新鲜","wf:摘","wf:酸","wf:辆","wf:自行车","wf:红","wf:蓝","wf:支付宝","wf:现金","wf:苹果","wf:短","wf:零","wf:女人","wf:男人","wf:老人"]
+kouyu-rumen/13 · write · Write the characters
+  ["w:想","w:手","w:机","w:给","w:千","w:左","w:右","w:牌","w:子","w:质","w:量","w:又","w:价","w:钱","w:便","w:宜","w:样","w:好","w:看","w:双","w:号","w:可","w:以","w:试","w:有","w:点","w:儿","w:一","w:合","w:适","w:客","w:服","w:件","w:白","w:衬","w:衣","w:真","w:丝","w:百","w:分","w:之","w:凉","w:快","w:舒","w:只","w:种","w:颜","w:色","w:黑","w:优","w:惠","w:券","w:就","w:下","w:单","w:带","w:雨","w:伞","w:天","w:气","w:用","w:算","w:条","w:裤","w:难","w:乱"]
+kouyu-rumen/13 · write · Dictation
+  ["d:想","d:手机","d:给","d:千","d:左右","d:牌子","d:质量","d:又","d:价钱","d:便宜","d:样子","d:好看","d:双","d:号","d:可以","d:试","d:有点儿","d:一点儿","d:合适","d:客服","d:件","d:白","d:衬衣","d:真丝","d:百分之","d:凉快","d:舒服","d:只","d:种","d:颜色","d:黑","d:优惠券","d:就","d:下单","d:带","d:雨伞","d:天气","d:用","d:算","d:条","d:裤子","d:难","d:乱"]
+kouyu-rumen/13 · listen · Hear the word
+  ["l:想","l:手机","l:给","l:千","l:左右","l:牌子","l:质量","l:又","l:价钱","l:便宜","l:样子","l:好看","l:双","l:号","l:可以","l:试","l:有点儿","l:一点儿","l:合适","l:客服","l:件","l:白","l:衬衣","l:真丝","l:百分之","l:凉快","l:舒服","l:只","l:种","l:颜色","l:黑","l:优惠券","l:就","l:下单","l:带","l:雨伞","l:天气","l:用","l:算","l:条","l:裤子","l:难","l:乱"]
+kouyu-rumen/13 · listen · Sentences
+  ["ls:想","ls:手机","ls:给","ls:千","ls:左右","ls:牌子","ls:质量","ls:又","ls:价钱","ls:便宜","ls:样子","ls:好看","ls:双","ls:号","ls:可以","ls:试","ls:有点儿","ls:一点儿","ls:合适","ls:客服","ls:件","ls:白","ls:衬衣","ls:真丝","ls:百分之","ls:凉快","ls:舒服","ls:只","ls:种","ls:颜色","ls:黑","ls:优惠券","ls:就","ls:下单","ls:带","ls:雨伞","ls:天气","ls:用","ls:算","ls:条","ls:裤子","ls:难","ls:乱"]
+kouyu-rumen/13 · listen · Tones
+  ["t:想","t:手","t:机","t:给","t:千","t:左","t:右","t:牌","t:子","t:质","t:量","t:又","t:价","t:钱","t:便","t:宜","t:样","t:好","t:看","t:双","t:号","t:可","t:以","t:试","t:有","t:点","t:儿","t:一","t:合","t:适","t:客","t:服","t:件","t:白","t:衬","t:衣","t:真","t:丝","t:百","t:分","t:之","t:凉","t:快","t:舒","t:只","t:种","t:颜","t:色","t:黑","t:优","t:惠","t:券","t:就","t:下","t:单","t:带","t:雨","t:伞","t:天","t:气","t:用","t:算","t:条","t:裤","t:难","t:乱"]
+kouyu-rumen/13 · speak · Say the word
+  ["s:想","s:手机","s:给","s:千","s:左右","s:牌子","s:质量","s:又","s:价钱","s:便宜","s:样子","s:好看","s:双","s:号","s:可以","s:试","s:有点儿","s:一点儿","s:合适","s:客服","s:件","s:白","s:衬衣","s:真丝","s:百分之","s:凉快","s:舒服","s:只","s:种","s:颜色","s:黑","s:优惠券","s:就","s:下单","s:带","s:雨伞","s:天气","s:用","s:算","s:条","s:裤子","s:难","s:乱"]
+kouyu-rumen/13 · speak · Say the sentence
+  ["s:想#ex","s:手机#ex","s:给#ex","s:千#ex","s:左右#ex","s:牌子#ex","s:质量#ex","s:又#ex","s:价钱#ex","s:便宜#ex","s:样子#ex","s:好看#ex","s:双#ex","s:号#ex","s:可以#ex","s:试#ex","s:有点儿#ex","s:一点儿#ex","s:合适#ex","s:客服#ex","s:件#ex","s:白#ex","s:衬衣#ex","s:真丝#ex","s:百分之#ex","s:凉快#ex","s:舒服#ex","s:只#ex","s:种#ex","s:颜色#ex","s:黑#ex","s:优惠券#ex","s:就#ex","s:下单#ex","s:带#ex","s:雨伞#ex","s:天气#ex","s:用#ex","s:算#ex","s:条#ex","s:裤子#ex","s:难#ex","s:乱#ex"]
+  ["想","手机","给","千","左右","牌子","质量","又","价钱","便宜","样子","好看","双","号","可以","试","有点儿","一点儿","合适","客服","件","白","衬衣","真丝","百分之","凉快","舒服","只","种","颜色","黑","优惠券","就","下单","带","雨伞","天气","用","算","条","裤子","难","乱"]
+kouyu-rumen/13 · read · Read & answer
+  [["r:kouyu-rumen/13/r1",["rq:kouyu-rumen/13/r1#0","rq:kouyu-rumen/13/r1#1"]],["r:kouyu-rumen/13/r2",["rq:kouyu-rumen/13/r2#0","rq:kouyu-rumen/13/r2#1"]]]
+  ["买鞋","网上买衬衣"]
+kouyu-rumen/13 · read · Build the sentence
+  ["o:我想买个手机。","o:你的手机是新的吗？","o:您给我介绍介绍。","o:这个手机三千块。","o:两千块左右。","o:这是什么牌子的？","o:这个牌子质量很好。","o:又好又便宜。","o:这个很便宜。","o:样子挺好看。","o:这件衣服很好看。","o:一双鞋。","o:您穿多大号的？","o:我可以试试吗？","o:您试试这双。","o:这双有点儿小。","o:有大一点儿的吗？","o:这双很合适。","o:我问一下儿客服。","o:这件衬衣多少钱？","o:我要白的。","o:这件衬衣很好看。","o:这是真丝的吗？","o:今天很凉快。","o:这双鞋很舒服。","o:我只有一百块。","o:只有这一种颜色吗？","o:你喜欢什么颜色？","o:黑的也很好看。","o:我有一张优惠券。","o:我现在就买。","o:我在手机上下单。","o:今天带雨伞吧。","o:我的雨伞是蓝的。","o:今天天气怎么样？","o:我可以用你的笔吗？","o:请算一下儿。","o:一条裤子。","o:这条裤子有点儿长。","o:汉字不太难。","o:我的房间有点儿乱。","o:这双鞋多少钱？","o:我可以试试吗？有点儿小。","o:您试试大一点儿的。","o:这双挺合适。","o:这件白衬衣是真丝的吗？","o:是，又凉快又舒服。","o:有黑的吗？","o:有。我给您一张优惠券。"]
+kouyu-rumen/13 · read · How do you read it?
+  ["rp:想","rp:手机","rp:给","rp:千","rp:左右","rp:牌子","rp:质量","rp:又","rp:价钱","rp:便宜","rp:样子","rp:好看","rp:双","rp:号","rp:可以","rp:试","rp:有点儿","rp:一点儿","rp:合适","rp:客服","rp:件","rp:白","rp:衬衣","rp:真丝","rp:百分之","rp:凉快","rp:舒服","rp:只","rp:种","rp:颜色","rp:黑","rp:优惠券","rp:就","rp:下单","rp:带","rp:雨伞","rp:天气","rp:用","rp:算","rp:条","rp:裤子","rp:难","rp:乱"]
+kouyu-rumen/13 · words · Flashcards or Word quiz
+  [["f:想","q:想"],["f:手机","q:手机"],["f:给","q:给"],["f:千","q:千"],["f:左右","q:左右"],["f:牌子","q:牌子"],["f:质量","q:质量"],["f:又","q:又"],["f:价钱","q:价钱"],["f:便宜","q:便宜"],["f:样子","q:样子"],["f:好看","q:好看"],["f:双","q:双"],["f:号","q:号"],["f:可以","q:可以"],["f:试","q:试"],["f:有点儿","q:有点儿"],["f:一点儿","q:一点儿"],["f:合适","q:合适"],["f:客服","q:客服"],["f:件","q:件"],["f:白","q:白"],["f:衬衣","q:衬衣"],["f:真丝","q:真丝"],["f:百分之","q:百分之"],["f:凉快","q:凉快"],["f:舒服","q:舒服"],["f:只","q:只"],["f:种","q:种"],["f:颜色","q:颜色"],["f:黑","q:黑"],["f:优惠券","q:优惠券"],["f:就","q:就"],["f:下单","q:下单"],["f:带","q:带"],["f:雨伞","q:雨伞"],["f:天气","q:天气"],["f:用","q:用"],["f:算","q:算"],["f:条","q:条"],["f:裤子","q:裤子"],["f:难","q:难"],["f:乱","q:乱"]]
+  ["想","手机","给","千","左右","牌子","质量","又","价钱","便宜","样子","好看","双","号","可以","试","有点儿","一点儿","合适","客服","件","白","衬衣","真丝","百分之","凉快","舒服","只","种","颜色","黑","优惠券","就","下单","带","雨伞","天气","用","算","条","裤子","难","乱"]
+kouyu-rumen/13 · words · Which radical?
+  ["rad:想","rad:机","rad:给","rad:千","rad:左","rad:右","rad:牌","rad:质","rad:量","rad:价","rad:钱","rad:便","rad:宜","rad:样","rad:好","rad:看","rad:双","rad:号","rad:可","rad:以","rad:试","rad:有","rad:点","rad:合","rad:适","rad:客","rad:服","rad:件","rad:衬","rad:真","rad:丝","rad:百","rad:分","rad:之","rad:凉","rad:快","rad:舒","rad:只","rad:种","rad:颜","rad:优","rad:惠","rad:券","rad:就","rad:下","rad:单","rad:带","rad:伞","rad:天","rad:算","rad:条","rad:裤","rad:难","rad:乱"]
+kouyu-rumen/13 · exercises · Grammar
+  ["g:kouyu-rumen/13/1.1","g:kouyu-rumen/13/1.2","g:kouyu-rumen/13/2.1","g:kouyu-rumen/13/3.1","g:kouyu-rumen/13/4.1","g:kouyu-rumen/13/4.2"]
+kouyu-rumen/13 · exercises · Dialogues
+  ["wb:kouyu-rumen/13/d1","wb:kouyu-rumen/13/d2"]
+kouyu-rumen/13 · exercises · True or false
+  ["wb:kouyu-rumen/13/j1","wb:kouyu-rumen/13/j2"]
+kouyu-rumen/13 · exercises · Pick the reply
+  ["wb:kouyu-rumen/13/r1","wb:kouyu-rumen/13/r2","wb:kouyu-rumen/13/r3","wb:kouyu-rumen/13/r4"]
+kouyu-rumen/13 · exercises · Fill in the word
+  ["wf:想","wf:手机","wf:给","wf:千","wf:左右","wf:牌子","wf:质量","wf:又","wf:价钱","wf:便宜","wf:样子","wf:好看","wf:双","wf:号","wf:可以","wf:试","wf:有点儿","wf:一点儿","wf:合适","wf:客服","wf:件","wf:白","wf:衬衣","wf:真丝","wf:百分之","wf:凉快","wf:舒服","wf:只","wf:种","wf:颜色","wf:黑","wf:优惠券","wf:就","wf:下单","wf:带","wf:雨伞","wf:天气","wf:用","wf:算","wf:条","wf:裤子","wf:难","wf:乱"]
+kouyu-rumen/14 · write · Write the characters
+  ["w:喜","w:欢","w:辣","w:菜","w:事","w:单","w:点","w:宫","w:保","w:鸡","w:丁","w:麻","w:婆","w:豆","w:腐","w:碗","w:酸","w:汤","w:饮","w:料","w:壶","w:菊","w:花","w:忌","w:口","w:香","w:稍","w:味","w:道","w:觉","w:得","w:好","w:吃","w:不","w:过","w:咸","w:油","w:腻","w:听","w:说","w:清","w:淡","w:结","w:账","w:打","w:包","w:盒","w:请","w:客","w:下","w:次","w:唱","w:歌","w:有","w:意","w:思","w:告","w:诉","w:问","w:题","w:特","w:南","w:方","w:北"]
+kouyu-rumen/14 · write · Dictation
+  ["d:喜欢","d:辣","d:菜","d:事","d:菜单","d:点菜","d:宫保鸡丁","d:麻婆豆腐","d:碗","d:酸辣汤","d:汤","d:饮料","d:壶","d:菊花","d:忌口","d:香菜","d:稍","d:味道","d:觉得","d:好吃","d:不过","d:咸","d:油腻","d:听说","d:清淡","d:结账","d:打包盒","d:请客","d:下次","d:唱歌","d:有意思","d:告诉","d:问题","d:问","d:特点","d:南方","d:北方"]
+kouyu-rumen/14 · listen · Hear the word
+  ["l:喜欢","l:辣","l:菜","l:事","l:菜单","l:点菜","l:宫保鸡丁","l:麻婆豆腐","l:碗","l:酸辣汤","l:汤","l:饮料","l:壶","l:菊花","l:忌口","l:香菜","l:稍","l:味道","l:觉得","l:好吃","l:不过","l:咸","l:油腻","l:听说","l:清淡","l:结账","l:打包盒","l:请客","l:下次","l:唱歌","l:有意思","l:告诉","l:问题","l:问","l:特点","l:南方","l:北方"]
+kouyu-rumen/14 · listen · Sentences
+  ["ls:喜欢","ls:辣","ls:菜","ls:事","ls:菜单","ls:点菜","ls:宫保鸡丁","ls:麻婆豆腐","ls:碗","ls:酸辣汤","ls:汤","ls:饮料","ls:壶","ls:菊花","ls:忌口","ls:香菜","ls:稍","ls:味道","ls:觉得","ls:好吃","ls:不过","ls:咸","ls:油腻","ls:听说","ls:清淡","ls:结账","ls:打包盒","ls:请客","ls:下次","ls:唱歌","ls:有意思","ls:告诉","ls:问题","ls:问","ls:特点","ls:南方","ls:北方"]
+kouyu-rumen/14 · listen · Tones
+  ["t:喜","t:欢","t:辣","t:菜","t:事","t:单","t:点","t:宫","t:保","t:鸡","t:丁","t:麻","t:婆","t:豆","t:腐","t:碗","t:酸","t:汤","t:饮","t:料","t:壶","t:菊","t:花","t:忌","t:口","t:香","t:稍","t:味","t:道","t:觉","t:好","t:吃","t:不","t:过","t:咸","t:油","t:腻","t:听","t:说","t:清","t:淡","t:结","t:账","t:打","t:包","t:盒","t:请","t:客","t:下","t:次","t:唱","t:歌","t:有","t:意","t:思","t:告","t:诉","t:问","t:题","t:特","t:南","t:方","t:北"]
+kouyu-rumen/14 · speak · Say the word
+  ["s:喜欢","s:辣","s:菜","s:事","s:菜单","s:点菜","s:宫保鸡丁","s:麻婆豆腐","s:碗","s:酸辣汤","s:汤","s:饮料","s:壶","s:菊花","s:忌口","s:香菜","s:稍","s:味道","s:觉得","s:好吃","s:不过","s:咸","s:油腻","s:听说","s:清淡","s:结账","s:打包盒","s:请客","s:下次","s:唱歌","s:有意思","s:告诉","s:问题","s:问","s:特点","s:南方","s:北方"]
+kouyu-rumen/14 · speak · Say the sentence
+  ["s:喜欢#ex","s:辣#ex","s:菜#ex","s:事#ex","s:菜单#ex","s:点菜#ex","s:宫保鸡丁#ex","s:麻婆豆腐#ex","s:碗#ex","s:酸辣汤#ex","s:汤#ex","s:饮料#ex","s:壶#ex","s:菊花#ex","s:忌口#ex","s:香菜#ex","s:稍#ex","s:味道#ex","s:觉得#ex","s:好吃#ex","s:不过#ex","s:咸#ex","s:油腻#ex","s:听说#ex","s:清淡#ex","s:结账#ex","s:打包盒#ex","s:请客#ex","s:下次#ex","s:唱歌#ex","s:有意思#ex","s:告诉#ex","s:问题#ex","s:问#ex","s:特点#ex","s:南方#ex","s:北方#ex"]
+  ["喜欢","辣","菜","事","菜单","点菜","宫保鸡丁","麻婆豆腐","碗","酸辣汤","汤","饮料","壶","菊花","忌口","香菜","稍","味道","觉得","好吃","不过","咸","油腻","听说","清淡","结账","打包盒","请客","下次","唱歌","有意思","告诉","问题","问","特点","南方","北方"]
+kouyu-rumen/14 · read · Read & answer
+  [["r:kouyu-rumen/14/r1",["rq:kouyu-rumen/14/r1#0","rq:kouyu-rumen/14/r1#1"]],["r:kouyu-rumen/14/r2",["rq:kouyu-rumen/14/r2#0","rq:kouyu-rumen/14/r2#1"]]]
+  ["去吃饭","点菜"]
+kouyu-rumen/14 · read · Build the sentence
+  ["o:我喜欢吃饺子。","o:你吃辣的吗？","o:四川菜很辣。","o:今天晚上我有事。","o:请给我菜单。","o:来一个宫保鸡丁。","o:麻婆豆腐很好吃。","o:两碗米饭。","o:我要一个酸辣汤。","o:这个汤很热。","o:要什么饮料？","o:来一壶茶。","o:我喜欢菊花茶。","o:您有忌口的吗？","o:我不吃香菜。","o:请稍等。","o:这个菜味道很好。","o:我觉得很好吃。","o:饺子真好吃！","o:好吃，不过有点儿辣。","o:这个汤有点儿咸。","o:这个菜太油腻了。","o:听说那个饭馆不错。","o:我喜欢清淡的菜。","o:请给我一个打包盒。","o:今天我请客。","o:下次我请你。","o:她很喜欢唱歌。","o:这个电影很有意思。","o:请告诉我你的电话号码。","o:我有一个问题。","o:我问一下儿老师。","o:四川菜的特点是辣。","o:南方人喜欢吃米饭。","o:北方人喜欢吃饺子。","o:你喜欢吃辣的吗？","o:好啊，今天晚上怎么样？","o:今天晚上我有事，明天吧。","o:这是菜单，请点菜。","o:有忌口的吗？","o:我们不吃香菜。"]
+kouyu-rumen/14 · read · How do you read it?
+  ["rp:喜欢","rp:辣","rp:菜","rp:事","rp:菜单","rp:点菜","rp:宫保鸡丁","rp:麻婆豆腐","rp:碗","rp:酸辣汤","rp:汤","rp:饮料","rp:壶","rp:菊花","rp:忌口","rp:香菜","rp:稍","rp:味道","rp:觉得","rp:好吃","rp:不过","rp:咸","rp:油腻","rp:听说","rp:清淡","rp:结账","rp:打包盒","rp:请客","rp:下次","rp:唱歌","rp:有意思","rp:告诉","rp:问题","rp:问","rp:特点","rp:南方","rp:北方"]
+kouyu-rumen/14 · words · Flashcards or Word quiz
+  [["f:喜欢","q:喜欢"],["f:辣","q:辣"],["f:菜","q:菜"],["f:事","q:事"],["f:菜单","q:菜单"],["f:点菜","q:点菜"],["f:宫保鸡丁","q:宫保鸡丁"],["f:麻婆豆腐","q:麻婆豆腐"],["f:碗","q:碗"],["f:酸辣汤","q:酸辣汤"],["f:汤","q:汤"],["f:饮料","q:饮料"],["f:壶","q:壶"],["f:菊花","q:菊花"],["f:忌口","q:忌口"],["f:香菜","q:香菜"],["f:稍","q:稍"],["f:味道","q:味道"],["f:觉得","q:觉得"],["f:好吃","q:好吃"],["f:不过","q:不过"],["f:咸","q:咸"],["f:油腻","q:油腻"],["f:听说","q:听说"],["f:清淡","q:清淡"],["f:结账","q:结账"],["f:打包盒","q:打包盒"],["f:请客","q:请客"],["f:下次","q:下次"],["f:唱歌","q:唱歌"],["f:有意思","q:有意思"],["f:告诉","q:告诉"],["f:问题","q:问题"],["f:问","q:问"],["f:特点","q:特点"],["f:南方","q:南方"],["f:北方","q:北方"]]
+  ["喜欢","辣","菜","事","菜单","点菜","宫保鸡丁","麻婆豆腐","碗","酸辣汤","汤","饮料","壶","菊花","忌口","香菜","稍","味道","觉得","好吃","不过","咸","油腻","听说","清淡","结账","打包盒","请客","下次","唱歌","有意思","告诉","问题","问","特点","南方","北方"]
+kouyu-rumen/14 · words · Which radical?
+  ["rad:喜","rad:欢","rad:辣","rad:菜","rad:事","rad:单","rad:点","rad:宫","rad:保","rad:鸡","rad:丁","rad:婆","rad:腐","rad:碗","rad:酸","rad:汤","rad:饮","rad:料","rad:壶","rad:菊","rad:花","rad:忌","rad:稍","rad:味","rad:道","rad:觉","rad:得","rad:好","rad:吃","rad:不","rad:过","rad:咸","rad:油","rad:腻","rad:听","rad:说","rad:清","rad:淡","rad:结","rad:账","rad:打","rad:包","rad:盒","rad:请","rad:客","rad:下","rad:次","rad:唱","rad:歌","rad:有","rad:意","rad:思","rad:告","rad:诉","rad:问","rad:题","rad:特","rad:南","rad:北"]
+kouyu-rumen/14 · exercises · Grammar
+  ["g:kouyu-rumen/14/1.1","g:kouyu-rumen/14/2.1","g:kouyu-rumen/14/3.1","g:kouyu-rumen/14/4.1","g:kouyu-rumen/14/5.1"]
+kouyu-rumen/14 · exercises · Dialogues
+  ["wb:kouyu-rumen/14/d1","wb:kouyu-rumen/14/d2"]
+kouyu-rumen/14 · exercises · True or false
+  ["wb:kouyu-rumen/14/j1","wb:kouyu-rumen/14/j2"]
+kouyu-rumen/14 · exercises · Pick the reply
+  ["wb:kouyu-rumen/14/r1","wb:kouyu-rumen/14/r2","wb:kouyu-rumen/14/r3","wb:kouyu-rumen/14/r4"]
+kouyu-rumen/14 · exercises · Fill in the word
+  ["wf:喜欢","wf:辣","wf:菜","wf:事","wf:菜单","wf:点菜","wf:宫保鸡丁","wf:麻婆豆腐","wf:碗","wf:酸辣汤","wf:汤","wf:饮料","wf:壶","wf:菊花","wf:忌口","wf:香菜","wf:稍","wf:味道","wf:觉得","wf:好吃","wf:不过","wf:咸","wf:油腻","wf:听说","wf:清淡","wf:结账","wf:打包盒","wf:请客","wf:下次","wf:唱歌","wf:有意思","wf:告诉","wf:问题","wf:问","wf:特点","wf:南方","wf:北方"]
+kouyu-rumen/15 · write · Write the characters
+  ["w:走","w:一","w:直","w:往","w:到","w:十","w:字","w:路","w:口","w:拐","w:米","w:导","w:航","w:公","w:里","w:车","w:过","w:马","w:先","w:站","w:共","w:汽","w:然","w:后","w:地","w:铁","w:博","w:物","w:馆","w:应","w:该","w:或","w:者","w:骑","w:技","w:术","w:还","w:是","w:周","w:末","w:高","w:飞","w:机","w:快","w:可","w:方","w:便","w:宽","w:重","w:出","w:租","w:送","w:礼","w:花"]
+kouyu-rumen/15 · write · Dictation
+  ["d:走","d:一直","d:往","d:到","d:十字路口","d:拐","d:米","d:导航","d:公里","d:车","d:过","d:马路","d:先","d:站","d:路","d:公共汽车","d:然后","d:地铁","d:博物馆","d:应该","d:或者","d:骑","d:技术","d:还是","d:周末","d:高铁","d:飞机","d:快","d:可是","d:方便","d:宽","d:重","d:出租车","d:送","d:礼物","d:花"]
+kouyu-rumen/15 · listen · Hear the word
+  ["l:走","l:一直","l:往","l:到","l:十字路口","l:拐","l:米","l:导航","l:公里","l:车","l:过","l:马路","l:先","l:站","l:路","l:公共汽车","l:然后","l:地铁","l:博物馆","l:应该","l:或者","l:骑","l:技术","l:还是","l:周末","l:高铁","l:飞机","l:快","l:可是","l:方便","l:宽","l:重","l:出租车","l:送","l:礼物","l:花"]
+kouyu-rumen/15 · listen · Sentences
+  ["ls:走","ls:一直","ls:往","ls:到","ls:十字路口","ls:拐","ls:米","ls:导航","ls:公里","ls:车","ls:过","ls:马路","ls:先","ls:站","ls:路","ls:公共汽车","ls:然后","ls:地铁","ls:博物馆","ls:应该","ls:或者","ls:骑","ls:技术","ls:还是","ls:周末","ls:高铁","ls:飞机","ls:快","ls:可是","ls:方便","ls:宽","ls:重","ls:出租车","ls:送","ls:礼物","ls:花"]
+kouyu-rumen/15 · listen · Tones
+  ["t:走","t:一","t:直","t:往","t:到","t:十","t:字","t:路","t:口","t:拐","t:米","t:导","t:航","t:公","t:里","t:车","t:过","t:马","t:先","t:站","t:共","t:汽","t:然","t:后","t:地","t:铁","t:博","t:物","t:馆","t:应","t:该","t:或","t:者","t:骑","t:技","t:术","t:还","t:是","t:周","t:末","t:高","t:飞","t:机","t:快","t:可","t:方","t:便","t:宽","t:重","t:出","t:租","t:送","t:礼","t:花"]
+kouyu-rumen/15 · speak · Say the word
+  ["s:走","s:一直","s:往","s:到","s:十字路口","s:拐","s:米","s:导航","s:公里","s:车","s:过","s:马路","s:先","s:站","s:路","s:公共汽车","s:然后","s:地铁","s:博物馆","s:应该","s:或者","s:骑","s:技术","s:还是","s:周末","s:高铁","s:飞机","s:快","s:可是","s:方便","s:宽","s:重","s:出租车","s:送","s:礼物","s:花"]
+kouyu-rumen/15 · speak · Say the sentence
+  ["s:走#ex","s:一直#ex","s:往#ex","s:到#ex","s:十字路口#ex","s:拐#ex","s:米#ex","s:导航#ex","s:公里#ex","s:车#ex","s:过#ex","s:马路#ex","s:先#ex","s:站#ex","s:路#ex","s:公共汽车#ex","s:然后#ex","s:地铁#ex","s:博物馆#ex","s:应该#ex","s:或者#ex","s:骑#ex","s:技术#ex","s:还是#ex","s:周末#ex","s:高铁#ex","s:飞机#ex","s:快#ex","s:可是#ex","s:方便#ex","s:宽#ex","s:重#ex","s:出租车#ex","s:送#ex","s:礼物#ex","s:花#ex"]
+  ["走","一直","往","到","十字路口","拐","米","导航","公里","车","过","马路","先","站","路","公共汽车","然后","地铁","博物馆","应该","或者","骑","技术","还是","周末","高铁","飞机","快","可是","方便","宽","重","出租车","送","礼物","花"]
+kouyu-rumen/15 · read · Read & answer
+  [["r:kouyu-rumen/15/r1",["rq:kouyu-rumen/15/r1#0","rq:kouyu-rumen/15/r1#1"]],["r:kouyu-rumen/15/r2",["rq:kouyu-rumen/15/r2#0","rq:kouyu-rumen/15/r2#1"]]]
+  ["去邮局怎么走","周末去哪儿"]
+kouyu-rumen/15 · read · Build the sentence
+  ["o:去银行怎么走？","o:一直往前走。","o:往右拐。","o:到十字路口往左拐。","o:银行在十字路口。","o:前边往左拐。","o:二百多米。","o:我用手机导航。","o:离这儿五公里。","o:怎么坐车？","o:咱们过马路吧。","o:过马路要小心。","o:我先去银行。","o:坐两站公共汽车。","o:坐八路公共汽车。","o:我坐公共汽车去学校。","o:先吃饭，然后去看电影。","o:坐地铁很方便。","o:星期天我去博物馆。","o:你应该多休息。","o:坐地铁或者坐公共汽车都行。","o:我骑自行车去。","o:他开车技术很高。","o:还是坐地铁吧。","o:周末你做什么？","o:坐高铁去上海。","o:坐飞机很快。","o:地铁很快。","o:飞机很快，可是太贵了。","o:这儿买东西很方便。","o:这条马路很宽。","o:我的书包很重。","o:我们坐出租车吧。","o:我送你一本书。","o:这是我的生日礼物。","o:我送妈妈花。","o:请问，去邮局怎么走？","o:离这儿远吗？","o:不远，三百多米。","o:周末咱们去博物馆，好吗？","o:好啊！坐地铁还是坐出租车？","o:出租车太贵了，还是坐地铁吧。","o:行，地铁也很方便。"]
+kouyu-rumen/15 · read · How do you read it?
+  ["rp:走","rp:一直","rp:往","rp:到","rp:十字路口","rp:拐","rp:米","rp:导航","rp:公里","rp:车","rp:过","rp:马路","rp:先","rp:站","rp:路","rp:公共汽车","rp:然后","rp:地铁","rp:博物馆","rp:应该","rp:或者","rp:骑","rp:技术","rp:还是","rp:周末","rp:高铁","rp:飞机","rp:快","rp:可是","rp:方便","rp:宽","rp:重","rp:出租车","rp:送","rp:礼物","rp:花"]
+kouyu-rumen/15 · words · Flashcards or Word quiz
+  [["f:走","q:走"],["f:一直","q:一直"],["f:往","q:往"],["f:到","q:到"],["f:十字路口","q:十字路口"],["f:拐","q:拐"],["f:米","q:米"],["f:导航","q:导航"],["f:公里","q:公里"],["f:车","q:车"],["f:过","q:过"],["f:马路","q:马路"],["f:先","q:先"],["f:站","q:站"],["f:路","q:路"],["f:公共汽车","q:公共汽车"],["f:然后","q:然后"],["f:地铁","q:地铁"],["f:博物馆","q:博物馆"],["f:应该","q:应该"],["f:或者","q:或者"],["f:骑","q:骑"],["f:技术","q:技术"],["f:还是","q:还是"],["f:周末","q:周末"],["f:高铁","q:高铁"],["f:飞机","q:飞机"],["f:快","q:快"],["f:可是","q:可是"],["f:方便","q:方便"],["f:宽","q:宽"],["f:重","q:重"],["f:出租车","q:出租车"],["f:送","q:送"],["f:礼物","q:礼物"],["f:花","q:花"]]
+  ["走","一直","往","到","十字路口","拐","米","导航","公里","车","过","马路","先","站","路","公共汽车","然后","地铁","博物馆","应该","或者","骑","技术","还是","周末","高铁","飞机","快","可是","方便","宽","重","出租车","送","礼物","花"]
+kouyu-rumen/15 · words · Which radical?
+  ["rad:直","rad:往","rad:到","rad:字","rad:路","rad:拐","rad:导","rad:航","rad:公","rad:过","rad:先","rad:站","rad:共","rad:汽","rad:然","rad:后","rad:地","rad:铁","rad:博","rad:物","rad:馆","rad:应","rad:该","rad:或","rad:者","rad:骑","rad:技","rad:术","rad:还","rad:是","rad:周","rad:末","rad:机","rad:快","rad:可","rad:便","rad:宽","rad:重","rad:出","rad:租","rad:送","rad:礼","rad:花"]
+kouyu-rumen/15 · exercises · Grammar
+  ["g:kouyu-rumen/15/1.1","g:kouyu-rumen/15/2.1","g:kouyu-rumen/15/3.1","g:kouyu-rumen/15/3.2","g:kouyu-rumen/15/4.1","g:kouyu-rumen/15/5.1","g:kouyu-rumen/15/6.1"]
+kouyu-rumen/15 · exercises · Dialogues
+  ["wb:kouyu-rumen/15/d1","wb:kouyu-rumen/15/d2"]
+kouyu-rumen/15 · exercises · True or false
+  ["wb:kouyu-rumen/15/j1","wb:kouyu-rumen/15/j2"]
+kouyu-rumen/15 · exercises · Pick the reply
+  ["wb:kouyu-rumen/15/r1","wb:kouyu-rumen/15/r2","wb:kouyu-rumen/15/r3","wb:kouyu-rumen/15/r4"]
+kouyu-rumen/15 · exercises · Fill in the word
+  ["wf:走","wf:一直","wf:往","wf:到","wf:十字路口","wf:拐","wf:米","wf:导航","wf:公里","wf:车","wf:过","wf:马路","wf:先","wf:站","wf:路","wf:公共汽车","wf:然后","wf:地铁","wf:博物馆","wf:应该","wf:或者","wf:骑","wf:技术","wf:还是","wf:周末","wf:高铁","wf:飞机","wf:快","wf:可是","wf:方便","wf:宽","wf:重","wf:出租车","wf:送","wf:礼物","wf:花"]
+hsk1/1 · write · Write the characters
+  ["w:你","w:好","w:您","w:们","w:对","w:不","w:起","w:没","w:关","w:系"]
+hsk1/1 · write · Dictation
+  ["d:你","d:好","d:您","d:你们","d:对不起","d:没关系"]
+hsk1/1 · listen · Hear the word
+  ["l:你","l:好","l:您","l:你们","l:对不起","l:没关系"]
+hsk1/1 · listen · Sentences
+  ["ls:你","ls:好","ls:您","ls:你们","ls:对不起","ls:没关系"]
+hsk1/1 · listen · Tones
+  ["t:你","t:好","t:您","t:对","t:不","t:起","t:没","t:关","t:系"]
+hsk1/1 · speak · Say the word
+  ["s:你","s:好","s:您","s:你们","s:对不起","s:没关系"]
+hsk1/1 · speak · Say the sentence
+  ["s:你#ex","s:好#ex","s:您#ex","s:你们#ex","s:对不起#ex","s:没关系#ex"]
+  ["你","好","您","你们","对不起","没关系"]
+hsk1/1 · read · Read & answer
+  [["r:hsk1/1/r1",["rq:hsk1/1/r1#0","rq:hsk1/1/r1#1"]],["r:hsk1/1/r2",["rq:hsk1/1/r2#0","rq:hsk1/1/r2#1"]]]
+  ["你好","没关系"]
+hsk1/1 · read · Build the sentence
+  ["o:老师，您好！","o:对不起，我不会说汉语。"]
+hsk1/1 · read · How do you read it?
+  ["rp:你","rp:好","rp:您","rp:你们","rp:对不起","rp:没关系"]
+hsk1/1 · words · Flashcards or Word quiz
+  [["f:你","q:你"],["f:好","q:好"],["f:您","q:您"],["f:你们","q:你们"],["f:对不起","q:对不起"],["f:没关系","q:没关系"]]
+  ["你","好","您","你们","对不起","没关系"]
+hsk1/1 · words · Which radical?
+  ["rad:你","rad:好","rad:您","rad:们","rad:对","rad:不","rad:起","rad:没","rad:关","rad:系"]
+hsk1/1 · exercises · Grammar
+  ["g:hsk1/1/1.1","g:hsk1/1/1.2","g:hsk1/1/1.3"]
+hsk1/1 · exercises · Dialogues
+  ["wb:hsk1/1/d1","wb:hsk1/1/d2","wb:hsk1/1/d3"]
+hsk1/1 · exercises · True or false
+  ["wb:hsk1/1/j1","wb:hsk1/1/j2"]
+hsk1/1 · exercises · Pick the reply
+  ["wb:hsk1/1/r1","wb:hsk1/1/r2","wb:hsk1/1/r3","wb:hsk1/1/r4"]
+hsk1/1 · exercises · Fill in the word
+  ["wf:你","wf:好","wf:您","wf:你们","wf:对不起","wf:没关系"]
+hsk1/2 · write · Write the characters
+  ["w:谢","w:不","w:客","w:气","w:再","w:见"]
+hsk1/2 · write · Dictation
+  ["d:谢谢","d:不","d:不客气","d:再见"]
+hsk1/2 · listen · Hear the word
+  ["l:谢谢","l:不","l:不客气","l:再见"]
+hsk1/2 · listen · Sentences
+  ["ls:谢谢","ls:不","ls:不客气","ls:再见"]
+hsk1/2 · listen · Tones
+  ["t:谢","t:不","t:客","t:气","t:再","t:见"]
+hsk1/2 · speak · Say the word
+  ["s:谢谢","s:不","s:不客气","s:再见"]
+hsk1/2 · speak · Say the sentence
+  ["s:谢谢#ex","s:不#ex","s:不客气#ex","s:再见#ex"]
+  ["谢谢","不","不客气","再见"]
+hsk1/2 · read · Read & answer
+  [["r:hsk1/2/r1",["rq:hsk1/2/r1#0","rq:hsk1/2/r1#1"]],["r:hsk1/2/r2",["rq:hsk1/2/r2#0","rq:hsk1/2/r2#1"]]]
+  ["谢谢","不客气"]
+hsk1/2 · read · Build the sentence
+  ["o:我不是老师。"]
+hsk1/2 · read · How do you read it?
+  ["rp:谢谢","rp:不","rp:不客气","rp:再见"]
+hsk1/2 · words · Flashcards or Word quiz
+  [["f:谢谢","q:谢谢"],["f:不","q:不"],["f:不客气","q:不客气"],["f:再见","q:再见"]]
+  ["谢谢","不","不客气","再见"]
+hsk1/2 · words · Which radical?
+  ["rad:谢","rad:不","rad:客","rad:再"]
+hsk1/2 · exercises · Grammar
+  ["g:hsk1/2/1.1","g:hsk1/2/1.2","g:hsk1/2/1.3"]
+hsk1/2 · exercises · Dialogues
+  ["wb:hsk1/2/d1","wb:hsk1/2/d2","wb:hsk1/2/d3"]
+hsk1/2 · exercises · True or false
+  ["wb:hsk1/2/j1","wb:hsk1/2/j2"]
+hsk1/2 · exercises · Pick the reply
+  ["wb:hsk1/2/r1","wb:hsk1/2/r2","wb:hsk1/2/r3","wb:hsk1/2/r4"]
+hsk1/2 · exercises · Fill in the word
+  ["wf:谢谢","wf:不","wf:不客气","wf:再见"]
+hsk1/3 · write · Write the characters
+  ["w:叫","w:什","w:么","w:名","w:字","w:我","w:是","w:老","w:师","w:吗","w:学","w:生","w:人"]
+hsk1/3 · write · Dictation
+  ["d:叫","d:什么","d:名字","d:我","d:是","d:老师","d:吗","d:学生","d:人"]
+hsk1/3 · listen · Hear the word
+  ["l:叫","l:什么","l:名字","l:我","l:是","l:老师","l:吗","l:学生","l:人"]
+hsk1/3 · listen · Sentences
+  ["ls:叫","ls:什么","ls:名字","ls:我","ls:是","ls:老师","ls:吗","ls:学生","ls:人"]
+hsk1/3 · listen · Tones
+  ["t:叫","t:什","t:名","t:字","t:我","t:是","t:老","t:师","t:学","t:生","t:人"]
+hsk1/3 · speak · Say the word
+  ["s:叫","s:什么","s:名字","s:我","s:是","s:老师","s:吗","s:学生","s:人"]
+hsk1/3 · speak · Say the sentence
+  ["s:叫#ex","s:什么#ex","s:名字#ex","s:我#ex","s:是#ex","s:老师#ex","s:吗#ex","s:学生#ex","s:人#ex"]
+  ["叫","什么","名字","我","是","老师","吗","学生","人"]
+hsk1/3 · read · Read & answer
+  [["r:hsk1/3/r1",["rq:hsk1/3/r1#0","rq:hsk1/3/r1#1"]],["r:hsk1/3/r2",["rq:hsk1/3/r2#0","rq:hsk1/3/r2#1"]]]
+  ["你叫什么名字","你是中国人吗"]
+hsk1/3 · read · Build the sentence
+  ["o:我叫小王。","o:你叫什么名字？","o:你的名字很好。","o:我是学生。","o:她是老师。","o:你是老师吗？","o:你是学生吗？","o:我不是老师，我是学生。","o:你是中国人吗？","o:你好！我叫小王。你叫什么名字？","o:我叫小李。","o:我不是中国人，我是美国人。","o:是，我是学生。"]
+hsk1/3 · read · How do you read it?
+  ["rp:叫","rp:什么","rp:名字","rp:我","rp:是","rp:老师","rp:吗","rp:学生","rp:人"]
+hsk1/3 · words · Flashcards or Word quiz
+  [["f:叫","q:叫"],["f:什么","q:什么"],["f:名字","q:名字"],["f:我","q:我"],["f:是","q:是"],["f:老师","q:老师"],["f:吗","q:吗"],["f:学生","q:学生"],["f:人","q:人"]]
+  ["叫","什么","名字","我","是","老师","吗","学生","人"]
+hsk1/3 · words · Which radical?
+  ["rad:叫","rad:什","rad:么","rad:名","rad:字","rad:我","rad:是","rad:师","rad:吗","rad:学"]
+hsk1/3 · exercises · Grammar
+  ["g:hsk1/3/1.1","g:hsk1/3/1.2","g:hsk1/3/2.1","g:hsk1/3/2.2","g:hsk1/3/3.1","g:hsk1/3/3.2"]
+hsk1/3 · exercises · Dialogues
+  ["wb:hsk1/3/d1","wb:hsk1/3/d2","wb:hsk1/3/d3"]
+hsk1/3 · exercises · True or false
+  ["wb:hsk1/3/j1","wb:hsk1/3/j2","wb:hsk1/3/j3"]
+hsk1/3 · exercises · Pick the reply
+  ["wb:hsk1/3/r1","wb:hsk1/3/r2","wb:hsk1/3/r3","wb:hsk1/3/r4"]
+hsk1/3 · exercises · Fill in the word
+  ["wf:叫","wf:什么","wf:名字","wf:我","wf:是","wf:老师","wf:吗","wf:学生","wf:人"]
+hsk1/4 · write · Write the characters
+  ["w:她","w:谁","w:的","w:汉","w:语","w:哪","w:国","w:呢","w:他","w:同","w:学","w:朋","w:友"]
+hsk1/4 · write · Dictation
+  ["d:她","d:谁","d:的","d:汉语","d:哪","d:国","d:呢","d:他","d:同学","d:朋友"]
+hsk1/4 · listen · Hear the word
+  ["l:她","l:谁","l:的","l:汉语","l:哪","l:国","l:呢","l:他","l:同学","l:朋友"]
+hsk1/4 · listen · Sentences
+  ["ls:她","ls:谁","ls:的","ls:汉语","ls:哪","ls:国","ls:呢","ls:他","ls:同学","ls:朋友"]
+hsk1/4 · listen · Tones
+  ["t:她","t:谁","t:汉","t:语","t:哪","t:国","t:他","t:同","t:学","t:朋","t:友"]
+hsk1/4 · speak · Say the word
+  ["s:她","s:谁","s:的","s:汉语","s:哪","s:国","s:呢","s:他","s:同学","s:朋友"]
+hsk1/4 · speak · Say the sentence
+  ["s:她#ex","s:谁#ex","s:的#ex","s:汉语#ex","s:哪#ex","s:国#ex","s:呢#ex","s:他#ex","s:同学#ex","s:朋友#ex"]
+  ["她","谁","的","汉语","哪","国","呢","他","同学","朋友"]
+hsk1/4 · read · Read & answer
+  [["r:hsk1/4/r1",["rq:hsk1/4/r1#0","rq:hsk1/4/r1#1"]],["r:hsk1/4/r2",["rq:hsk1/4/r2#0","rq:hsk1/4/r2#1"]]]
+  ["她是谁","他是我的同学"]
+hsk1/4 · read · Build the sentence
+  ["o:她是我的老师。","o:她是谁？","o:这是我的书。","o:我学汉语。","o:你是哪国人？","o:他是哪国人？","o:我是学生，你呢？","o:他是我的同学。","o:你的同学是哪国人？","o:她是我的朋友。","o:她是我的汉语老师。","o:她是哪国人？","o:她是中国人。","o:他是你的朋友吗？","o:他是美国人吗？","o:是。我是中国人，你呢？","o:我也是中国人。"]
+hsk1/4 · read · How do you read it?
+  ["rp:她","rp:谁","rp:的","rp:汉语","rp:哪","rp:国","rp:呢","rp:他","rp:同学","rp:朋友"]
+hsk1/4 · words · Flashcards or Word quiz
+  [["f:她","q:她"],["f:谁","q:谁"],["f:的","q:的"],["f:汉语","q:汉语"],["f:哪","q:哪"],["f:国","q:国"],["f:呢","q:呢"],["f:他","q:他"],["f:同学","q:同学"],["f:朋友","q:朋友"]]
+  ["她","谁","的","汉语","哪","国","呢","他","同学","朋友"]
+hsk1/4 · words · Which radical?
+  ["rad:她","rad:谁","rad:的","rad:汉","rad:语","rad:哪","rad:国","rad:呢","rad:他","rad:同","rad:学","rad:朋","rad:友"]
+hsk1/4 · exercises · Grammar
+  ["g:hsk1/4/1.1","g:hsk1/4/1.2","g:hsk1/4/2.1","g:hsk1/4/2.2","g:hsk1/4/3.1","g:hsk1/4/3.2"]
+hsk1/4 · exercises · Dialogues
+  ["wb:hsk1/4/d1","wb:hsk1/4/d2","wb:hsk1/4/d3"]
+hsk1/4 · exercises · True or false
+  ["wb:hsk1/4/j1","wb:hsk1/4/j2","wb:hsk1/4/j3"]
+hsk1/4 · exercises · Pick the reply
+  ["wb:hsk1/4/r1","wb:hsk1/4/r2","wb:hsk1/4/r3","wb:hsk1/4/r4"]
+hsk1/4 · exercises · Fill in the word
+  ["wf:她","wf:谁","wf:的","wf:汉语","wf:哪","wf:国","wf:呢","wf:他","wf:同学","wf:朋友"]
+hsk1/5 · write · Write the characters
+  ["w:家","w:有","w:口","w:女","w:儿","w:几","w:岁","w:了","w:今","w:年","w:多","w:大","w:一","w:二","w:三","w:四","w:五","w:六","w:七","w:八","w:九","w:十","w:爷","w:奶","w:哥","w:姐","w:弟","w:妹"]
+hsk1/5 · write · Dictation
+  ["d:家","d:有","d:口","d:女儿","d:几","d:岁","d:了","d:今年","d:多","d:大","d:一","d:二","d:三","d:四","d:五","d:六","d:七","d:八","d:九","d:十","d:爷爷","d:奶奶","d:哥哥","d:姐姐","d:弟弟","d:妹妹"]
+hsk1/5 · listen · Hear the word
+  ["l:家","l:有","l:口","l:女儿","l:几","l:岁","l:了","l:今年","l:多","l:大","l:一","l:二","l:三","l:四","l:五","l:六","l:七","l:八","l:九","l:十","l:爷爷","l:奶奶","l:哥哥","l:姐姐","l:弟弟","l:妹妹"]
+hsk1/5 · listen · Sentences
+  ["ls:家","ls:有","ls:口","ls:女儿","ls:几","ls:岁","ls:了","ls:今年","ls:多","ls:大","ls:一","ls:二","ls:四","ls:五","ls:六","ls:七","ls:八","ls:九","ls:十","ls:爷爷","ls:奶奶","ls:哥哥","ls:姐姐","ls:弟弟","ls:妹妹"]
+hsk1/5 · listen · Tones
+  ["t:家","t:有","t:口","t:女","t:儿","t:几","t:岁","t:今","t:年","t:多","t:大","t:一","t:二","t:三","t:四","t:五","t:六","t:七","t:八","t:九","t:十","t:爷","t:奶","t:哥","t:姐","t:弟","t:妹"]
+hsk1/5 · speak · Say the word
+  ["s:家","s:有","s:口","s:女儿","s:几","s:岁","s:了","s:今年","s:多","s:大","s:一","s:二","s:三","s:四","s:五","s:六","s:七","s:八","s:九","s:十","s:爷爷","s:奶奶","s:哥哥","s:姐姐","s:弟弟","s:妹妹"]
+hsk1/5 · speak · Say the sentence
+  ["s:家#ex","s:有#ex","s:口#ex","s:女儿#ex","s:几#ex","s:岁#ex","s:了#ex","s:今年#ex","s:多#ex","s:大#ex","s:一#ex","s:二#ex","s:三#ex","s:四#ex","s:五#ex","s:六#ex","s:七#ex","s:八#ex","s:九#ex","s:十#ex","s:爷爷#ex","s:奶奶#ex","s:哥哥#ex","s:姐姐#ex","s:弟弟#ex","s:妹妹#ex"]
+  ["家","有","口","女儿","几","岁","了","今年","多","大","一","二","三","四","五","六","七","八","九","十","爷爷","奶奶","哥哥","姐姐","弟弟","妹妹"]
+hsk1/5 · read · Read & answer
+  [["r:hsk1/5/r1",["rq:hsk1/5/r1#0","rq:hsk1/5/r1#1"]],["r:hsk1/5/r2",["rq:hsk1/5/r2#0","rq:hsk1/5/r2#1"]]]
+  ["你家有几口人","你多大了"]
+hsk1/5 · read · Build the sentence
+  ["o:你家有几个人？","o:我有一个女儿。","o:我家有三口人。","o:她女儿今年八岁。","o:你女儿几岁了？","o:我今年二十岁。","o:她十岁了。","o:你今年多大？","o:你多大了？","o:你家大吗？","o:我有一个朋友。","o:她女儿四岁了。","o:我有五个同学。","o:李老师家有六口人。","o:他七岁了。","o:我女儿今年八岁。","o:九十九","o:我有十个汉语老师。","o:我爷爷今年八十岁。","o:我奶奶身体很好。","o:我有一个哥哥。","o:我姐姐是老师。","o:我弟弟八岁。","o:我妹妹很可爱。","o:你家有几口人？","o:你女儿今年几岁了？","o:她今年五岁了。","o:你今年多大了？","o:我今年二十岁。你呢？","o:我十九岁。","o:我家有四口人。"]
+hsk1/5 · read · How do you read it?
+  ["rp:家","rp:有","rp:口","rp:女儿","rp:几","rp:岁","rp:了","rp:今年","rp:多","rp:大","rp:一","rp:二","rp:三","rp:四","rp:五","rp:六","rp:七","rp:八","rp:九","rp:十","rp:爷爷","rp:奶奶","rp:哥哥","rp:姐姐","rp:弟弟","rp:妹妹"]
+hsk1/5 · words · Flashcards or Word quiz
+  [["f:家","q:家"],["f:有","q:有"],["f:口","q:口"],["f:女儿","q:女儿"],["f:几","q:几"],["f:岁","q:岁"],["f:了","q:了"],["f:今年","q:今年"],["f:多","q:多"],["f:大","q:大"],["f:一","q:一"],["f:二","q:二"],["f:三","q:三"],["f:四","q:四"],["f:五","q:五"],["f:六","q:六"],["f:七","q:七"],["f:八","q:八"],["f:九","q:九"],["f:十","q:十"],["f:爷爷","q:爷爷"],["f:奶奶","q:奶奶"],["f:哥哥","q:哥哥"],["f:姐姐","q:姐姐"],["f:弟弟","q:弟弟"],["f:妹妹","q:妹妹"]]
+  ["家","有","口","女儿","几","岁","了","今年","多","大","一","二","三","四","五","六","七","八","九","十","爷爷","奶奶","哥哥","姐姐","弟弟","妹妹"]
+hsk1/5 · words · Which radical?
+  ["rad:家","rad:有","rad:岁","rad:了","rad:今","rad:年","rad:多","rad:三","rad:四","rad:五","rad:六","rad:七","rad:九","rad:爷","rad:奶","rad:哥","rad:姐","rad:弟","rad:妹"]
+hsk1/5 · exercises · Grammar
+  ["g:hsk1/5/1.1","g:hsk1/5/1.2","g:hsk1/5/2.1","g:hsk1/5/3.1","g:hsk1/5/3.2"]
+hsk1/5 · exercises · Dialogues
+  ["wb:hsk1/5/d1","wb:hsk1/5/d2","wb:hsk1/5/d3"]
+hsk1/5 · exercises · True or false
+  ["wb:hsk1/5/j1","wb:hsk1/5/j2","wb:hsk1/5/j3"]
+hsk1/5 · exercises · Pick the reply
+  ["wb:hsk1/5/r1","wb:hsk1/5/r2","wb:hsk1/5/r3","wb:hsk1/5/r4"]
+hsk1/5 · exercises · Fill in the word
+  ["wf:家","wf:有","wf:口","wf:女儿","wf:几","wf:岁","wf:了","wf:今年","wf:多","wf:大","wf:一","wf:二","wf:三","wf:四","wf:五","wf:六","wf:七","wf:八","wf:九","wf:十","wf:爷爷","wf:奶奶","wf:哥哥","wf:姐姐","wf:弟弟","wf:妹妹"]
+hsk1/6 · write · Write the characters
+  ["w:会","w:说","w:妈","w:菜","w:很","w:好","w:吃","w:做","w:写","w:汉","w:字","w:怎","w:么","w:读","w:英","w:语","w:法","w:日"]
+hsk1/6 · write · Dictation
+  ["d:会","d:说","d:妈妈","d:菜","d:很","d:好吃","d:做","d:写","d:汉字","d:字","d:怎么","d:读","d:英语","d:法语","d:日语"]
+hsk1/6 · listen · Hear the word
+  ["l:会","l:说","l:妈妈","l:菜","l:很","l:好吃","l:做","l:写","l:汉字","l:字","l:怎么","l:读","l:英语","l:法语","l:日语"]
+hsk1/6 · listen · Sentences
+  ["ls:会","ls:说","ls:妈妈","ls:菜","ls:很","ls:好吃","ls:做","ls:写","ls:汉字","ls:字","ls:怎么","ls:读","ls:英语","ls:法语","ls:日语"]
+hsk1/6 · listen · Tones
+  ["t:会","t:说","t:妈","t:菜","t:很","t:好","t:吃","t:做","t:写","t:汉","t:字","t:怎","t:读","t:英","t:语","t:法","t:日"]
+hsk1/6 · speak · Say the word
+  ["s:会","s:说","s:妈妈","s:菜","s:很","s:好吃","s:做","s:写","s:汉字","s:字","s:怎么","s:读","s:英语","s:法语","s:日语"]
+hsk1/6 · speak · Say the sentence
+  ["s:会#ex","s:说#ex","s:妈妈#ex","s:菜#ex","s:很#ex","s:好吃#ex","s:做#ex","s:写#ex","s:汉字#ex","s:字#ex","s:怎么#ex","s:读#ex","s:英语#ex","s:法语#ex","s:日语#ex"]
+  ["会","说","妈妈","菜","很","好吃","做","写","汉字","字","怎么","读","英语","法语","日语"]
+hsk1/6 · read · Read & answer
+  [["r:hsk1/6/r1",["rq:hsk1/6/r1#0","rq:hsk1/6/r1#1"]],["r:hsk1/6/r2",["rq:hsk1/6/r2#0","rq:hsk1/6/r2#1"]]]
+  ["你会说汉语吗","妈妈的菜"]
+hsk1/6 · read · Build the sentence
+  ["o:我会说汉语。","o:请你说汉语。","o:我妈妈会做中国菜。","o:中国菜很好吃。","o:汉语很好。","o:妈妈做的菜很好吃。","o:你会做中国菜吗？","o:你会写汉字吗？","o:这个汉字怎么写？","o:这个字怎么读？","o:“谢谢”怎么说？","o:请你读一读。","o:你会说英语吗？","o:我不会说法语。","o:她会写日语。","o:你会说汉语吗？","o:我会写，我会写“你好”。","o:你妈妈会做中国菜吗？","o:会，她做的菜很好吃。","o:你呢？你会做吗？","o:我不会。"]
+hsk1/6 · read · How do you read it?
+  ["rp:会","rp:说","rp:妈妈","rp:菜","rp:很","rp:好吃","rp:做","rp:写","rp:汉字","rp:字","rp:怎么","rp:读","rp:英语","rp:法语","rp:日语"]
+hsk1/6 · words · Flashcards or Word quiz
+  [["f:会","q:会"],["f:说","q:说"],["f:妈妈","q:妈妈"],["f:菜","q:菜"],["f:很","q:很"],["f:好吃","q:好吃"],["f:做","q:做"],["f:写","q:写"],["f:汉字","q:汉字"],["f:字","q:字"],["f:怎么","q:怎么"],["f:读","q:读"],["f:英语","q:英语"],["f:法语","q:法语"],["f:日语","q:日语"]]
+  ["会","说","妈妈","菜","很","好吃","做","写","汉字","字","怎么","读","英语","法语","日语"]
+hsk1/6 · words · Which radical?
+  ["rad:会","rad:说","rad:妈","rad:菜","rad:很","rad:好","rad:吃","rad:做","rad:写","rad:汉","rad:字","rad:怎","rad:么","rad:读","rad:英","rad:语","rad:法"]
+hsk1/6 · exercises · Grammar
+  ["g:hsk1/6/1.1","g:hsk1/6/1.2","g:hsk1/6/2.1","g:hsk1/6/3.1","g:hsk1/6/3.2"]
+hsk1/6 · exercises · Dialogues
+  ["wb:hsk1/6/d1","wb:hsk1/6/d2","wb:hsk1/6/d3"]
+hsk1/6 · exercises · True or false
+  ["wb:hsk1/6/j1","wb:hsk1/6/j2","wb:hsk1/6/j3"]
+hsk1/6 · exercises · Pick the reply
+  ["wb:hsk1/6/r1","wb:hsk1/6/r2","wb:hsk1/6/r3","wb:hsk1/6/r4"]
+hsk1/6 · exercises · Fill in the word
+  ["wf:会","wf:说","wf:妈妈","wf:菜","wf:很","wf:好吃","wf:做","wf:写","wf:汉字","wf:字","wf:怎么","wf:读","wf:英语","wf:法语","wf:日语"]
+hsk1/7 · write · Write the characters
+  ["w:请","w:问","w:今","w:天","w:号","w:月","w:星","w:期","w:昨","w:明","w:去","w:学","w:校","w:看","w:书","w:生","w:日"]
+hsk1/7 · write · Dictation
+  ["d:请","d:问","d:今天","d:号","d:月","d:星期","d:昨天","d:明天","d:去","d:学校","d:看","d:书","d:生日"]
+hsk1/7 · listen · Hear the word
+  ["l:请","l:问","l:今天","l:号","l:月","l:星期","l:昨天","l:明天","l:去","l:学校","l:看","l:书","l:生日"]
+hsk1/7 · listen · Sentences
+  ["ls:请","ls:问","ls:今天","ls:号","ls:月","ls:星期","ls:昨天","ls:明天","ls:去","ls:学校","ls:看","ls:书","ls:生日"]
+hsk1/7 · listen · Tones
+  ["t:请","t:问","t:今","t:天","t:号","t:月","t:星","t:期","t:昨","t:明","t:去","t:学","t:校","t:看","t:书","t:生","t:日"]
+hsk1/7 · speak · Say the word
+  ["s:请","s:问","s:今天","s:号","s:月","s:星期","s:昨天","s:明天","s:去","s:学校","s:看","s:书","s:生日"]
+hsk1/7 · speak · Say the sentence
+  ["s:请#ex","s:问#ex","s:今天#ex","s:号#ex","s:月#ex","s:星期#ex","s:昨天#ex","s:明天#ex","s:去#ex","s:学校#ex","s:看#ex","s:书#ex","s:生日#ex"]
+  ["请","问","今天","号","月","星期","昨天","明天","去","学校","看","书","生日"]
+hsk1/7 · read · Read & answer
+  [["r:hsk1/7/r1",["rq:hsk1/7/r1#0","rq:hsk1/7/r1#1"]],["r:hsk1/7/r2",["rq:hsk1/7/r2#0","rq:hsk1/7/r2#1"]]]
+  ["今天几号","明天你去哪儿"]
+hsk1/7 · read · Build the sentence
+  ["o:请问，今天几号？","o:今天是星期一。","o:今天九月一号。","o:我十月去中国。","o:明天星期几？","o:昨天是星期天。","o:明天我去学校。","o:你去哪儿？","o:我们学校很大。","o:我去学校看书。","o:这是谁的书？","o:你的生日是几月几号？","o:今天十月八号。","o:今天星期几？","o:今天星期三。","o:明天你去学校吗？","o:去。我去学校看书。","o:明天星期六。"]
+hsk1/7 · read · How do you read it?
+  ["rp:请","rp:问","rp:今天","rp:号","rp:月","rp:星期","rp:昨天","rp:明天","rp:去","rp:学校","rp:看","rp:书","rp:生日"]
+hsk1/7 · words · Flashcards or Word quiz
+  [["f:请","q:请"],["f:问","q:问"],["f:今天","q:今天"],["f:号","q:号"],["f:月","q:月"],["f:星期","q:星期"],["f:昨天","q:昨天"],["f:明天","q:明天"],["f:去","q:去"],["f:学校","q:学校"],["f:看","q:看"],["f:书","q:书"],["f:生日","q:生日"]]
+  ["请","问","今天","号","月","星期","昨天","明天","去","学校","看","书","生日"]
+hsk1/7 · words · Which radical?
+  ["rad:请","rad:问","rad:今","rad:天","rad:号","rad:星","rad:期","rad:昨","rad:明","rad:去","rad:学","rad:校","rad:看","rad:书"]
+hsk1/7 · exercises · Grammar
+  ["g:hsk1/7/1.1","g:hsk1/7/1.2","g:hsk1/7/2.1","g:hsk1/7/2.2"]
+hsk1/7 · exercises · Dialogues
+  ["wb:hsk1/7/d1","wb:hsk1/7/d2","wb:hsk1/7/d3"]
+hsk1/7 · exercises · True or false
+  ["wb:hsk1/7/j1","wb:hsk1/7/j2","wb:hsk1/7/j3"]
+hsk1/7 · exercises · Pick the reply
+  ["wb:hsk1/7/r1","wb:hsk1/7/r2","wb:hsk1/7/r3","wb:hsk1/7/r4"]
+hsk1/7 · exercises · Fill in the word
+  ["wf:请","wf:问","wf:今天","wf:号","wf:月","wf:星期","wf:昨天","wf:明天","wf:去","wf:学校","wf:看","wf:书","wf:生日"]
+hsk1/8 · write · Write the characters
+  ["w:想","w:喝","w:茶","w:吃","w:米","w:饭","w:下","w:午","w:商","w:店","w:买","w:个","w:杯","w:子","w:这","w:多","w:少","w:钱","w:块","w:那"]
+hsk1/8 · write · Dictation
+  ["d:想","d:喝","d:茶","d:吃","d:米饭","d:下午","d:商店","d:买","d:个","d:杯子","d:这","d:多少","d:钱","d:块","d:那"]
+hsk1/8 · listen · Hear the word
+  ["l:想","l:喝","l:茶","l:吃","l:米饭","l:下午","l:商店","l:买","l:个","l:杯子","l:这","l:多少","l:钱","l:块","l:那"]
+hsk1/8 · listen · Sentences
+  ["ls:想","ls:喝","ls:茶","ls:吃","ls:米饭","ls:下午","ls:商店","ls:买","ls:个","ls:杯子","ls:这","ls:多少","ls:钱","ls:块","ls:那"]
+hsk1/8 · listen · Tones
+  ["t:想","t:喝","t:茶","t:吃","t:米","t:饭","t:下","t:午","t:商","t:店","t:买","t:个","t:杯","t:子","t:这","t:多","t:少","t:钱","t:块","t:那"]
+hsk1/8 · speak · Say the word
+  ["s:想","s:喝","s:茶","s:吃","s:米饭","s:下午","s:商店","s:买","s:个","s:杯子","s:这","s:多少","s:钱","s:块","s:那"]
+hsk1/8 · speak · Say the sentence
+  ["s:想#ex","s:喝#ex","s:茶#ex","s:吃#ex","s:米饭#ex","s:下午#ex","s:商店#ex","s:买#ex","s:个#ex","s:杯子#ex","s:这#ex","s:多少#ex","s:钱#ex","s:块#ex","s:那#ex"]
+  ["想","喝","茶","吃","米饭","下午","商店","买","个","杯子","这","多少","钱","块","那"]
+hsk1/8 · read · Read & answer
+  [["r:hsk1/8/r1",["rq:hsk1/8/r1#0","rq:hsk1/8/r1#1"]],["r:hsk1/8/r2",["rq:hsk1/8/r2#0","rq:hsk1/8/r2#1"]]]
+  ["你想吃什么","多少钱"]
+hsk1/8 · read · Build the sentence
+  ["o:我想去中国。","o:你想喝什么？","o:我想喝茶。","o:你想吃什么？","o:我想吃米饭。","o:下午你做什么？","o:我下午去商店。","o:你想买什么？","o:我想买一个杯子。","o:这个杯子很好。","o:这是什么？","o:这个多少钱？","o:我没有钱。","o:这个杯子十块钱。","o:那个杯子多少钱？","o:我想吃米饭和中国菜。","o:你好！这个杯子多少钱？","o:三十五块。","o:那个呢？","o:那个杯子十二块钱。","o:我买那个。"]
+hsk1/8 · read · How do you read it?
+  ["rp:想","rp:喝","rp:茶","rp:吃","rp:米饭","rp:下午","rp:商店","rp:买","rp:个","rp:杯子","rp:这","rp:多少","rp:钱","rp:块","rp:那"]
+hsk1/8 · words · Flashcards or Word quiz
+  [["f:想","q:想"],["f:喝","q:喝"],["f:茶","q:茶"],["f:吃","q:吃"],["f:米饭","q:米饭"],["f:下午","q:下午"],["f:商店","q:商店"],["f:买","q:买"],["f:个","q:个"],["f:杯子","q:杯子"],["f:这","q:这"],["f:多少","q:多少"],["f:钱","q:钱"],["f:块","q:块"],["f:那","q:那"]]
+  ["想","喝","茶","吃","米饭","下午","商店","买","个","杯子","这","多少","钱","块","那"]
+hsk1/8 · words · Which radical?
+  ["rad:想","rad:喝","rad:茶","rad:吃","rad:饭","rad:下","rad:午","rad:商","rad:店","rad:买","rad:个","rad:杯","rad:这","rad:多","rad:少","rad:钱","rad:块","rad:那"]
+hsk1/8 · exercises · Grammar
+  ["g:hsk1/8/1.1","g:hsk1/8/1.2","g:hsk1/8/2.1","g:hsk1/8/3.1","g:hsk1/8/3.2"]
+hsk1/8 · exercises · Dialogues
+  ["wb:hsk1/8/d1","wb:hsk1/8/d2","wb:hsk1/8/d3"]
+hsk1/8 · exercises · True or false
+  ["wb:hsk1/8/j1","wb:hsk1/8/j2","wb:hsk1/8/j3"]
+hsk1/8 · exercises · Pick the reply
+  ["wb:hsk1/8/r1","wb:hsk1/8/r2","wb:hsk1/8/r3","wb:hsk1/8/r4"]
+hsk1/8 · exercises · Fill in the word
+  ["wf:想","wf:喝","wf:茶","wf:吃","wf:米饭","wf:下午","wf:商店","wf:买","wf:个","wf:杯子","wf:这","wf:多少","wf:钱","wf:块","wf:那"]
+hsk1/9 · write · Write the characters
+  ["w:小","w:猫","w:在","w:那","w:儿","w:狗","w:椅","w:子","w:下","w:面","w:哪","w:工","w:作","w:医","w:院","w:生","w:爸"]
+hsk1/9 · write · Dictation
+  ["d:小","d:猫","d:在","d:那儿","d:狗","d:椅子","d:下面","d:哪儿","d:工作","d:儿子","d:医院","d:医生","d:爸爸"]
+hsk1/9 · listen · Hear the word
+  ["l:小","l:猫","l:在","l:那儿","l:狗","l:椅子","l:下面","l:哪儿","l:工作","l:儿子","l:医院","l:医生","l:爸爸"]
+hsk1/9 · listen · Sentences
+  ["ls:小","ls:猫","ls:在","ls:那儿","ls:狗","ls:椅子","ls:下面","ls:哪儿","ls:工作","ls:儿子","ls:医院","ls:医生","ls:爸爸"]
+hsk1/9 · listen · Tones
+  ["t:小","t:猫","t:在","t:那","t:儿","t:狗","t:椅","t:子","t:下","t:面","t:哪","t:工","t:作","t:医","t:院","t:生","t:爸"]
+hsk1/9 · speak · Say the word
+  ["s:小","s:猫","s:在","s:那儿","s:狗","s:椅子","s:下面","s:哪儿","s:工作","s:儿子","s:医院","s:医生","s:爸爸"]
+hsk1/9 · speak · Say the sentence
+  ["s:小#ex","s:猫#ex","s:在#ex","s:那儿#ex","s:狗#ex","s:椅子#ex","s:下面#ex","s:哪儿#ex","s:工作#ex","s:儿子#ex","s:医院#ex","s:医生#ex","s:爸爸#ex"]
+  ["小","猫","在","那儿","狗","椅子","下面","哪儿","工作","儿子","医院","医生","爸爸"]
+hsk1/9 · read · Read & answer
+  [["r:hsk1/9/r1",["rq:hsk1/9/r1#0","rq:hsk1/9/r1#1"]],["r:hsk1/9/r2",["rq:hsk1/9/r2#0","rq:hsk1/9/r2#1"]]]
+  ["小猫在哪儿","你爸爸在哪儿工作"]
+hsk1/9 · read · Build the sentence
+  ["o:我家很小。","o:我有一个小猫。","o:小猫在哪儿？","o:我的书在那儿。","o:小狗在那儿。","o:猫在椅子上。","o:小狗在椅子下面。","o:你在哪儿？","o:你在哪儿工作？","o:我儿子是学生。","o:她在医院工作。","o:我妈妈是医生。","o:我爸爸在学校工作。","o:我的小猫在哪儿？","o:小猫在椅子下面。","o:小狗呢？","o:你爸爸在哪儿工作？","o:他在医院工作，他是医生。","o:你妈妈呢？","o:我妈妈在学校工作，她是老师。"]
+hsk1/9 · read · How do you read it?
+  ["rp:小","rp:猫","rp:在","rp:那儿","rp:狗","rp:椅子","rp:下面","rp:哪儿","rp:工作","rp:儿子","rp:医院","rp:医生","rp:爸爸"]
+hsk1/9 · words · Flashcards or Word quiz
+  [["f:小","q:小"],["f:猫","q:猫"],["f:在","q:在"],["f:那儿","q:那儿"],["f:狗","q:狗"],["f:椅子","q:椅子"],["f:下面","q:下面"],["f:哪儿","q:哪儿"],["f:工作","q:工作"],["f:儿子","q:儿子"],["f:医院","q:医院"],["f:医生","q:医生"],["f:爸爸","q:爸爸"]]
+  ["小","猫","在","那儿","狗","椅子","下面","哪儿","工作","儿子","医院","医生","爸爸"]
+hsk1/9 · words · Which radical?
+  ["rad:猫","rad:在","rad:那","rad:狗","rad:椅","rad:下","rad:哪","rad:作","rad:医","rad:院","rad:爸"]
+hsk1/9 · exercises · Grammar
+  ["g:hsk1/9/1.1","g:hsk1/9/1.2","g:hsk1/9/2.1"]
+hsk1/9 · exercises · Dialogues
+  ["wb:hsk1/9/d1","wb:hsk1/9/d2","wb:hsk1/9/d3"]
+hsk1/9 · exercises · True or false
+  ["wb:hsk1/9/j1","wb:hsk1/9/j2","wb:hsk1/9/j3"]
+hsk1/9 · exercises · Pick the reply
+  ["wb:hsk1/9/r1","wb:hsk1/9/r2","wb:hsk1/9/r3","wb:hsk1/9/r4"]
+hsk1/9 · exercises · Fill in the word
+  ["wf:小","wf:猫","wf:在","wf:那儿","wf:狗","wf:椅子","wf:下面","wf:哪儿","wf:工作","wf:儿子","wf:医院","wf:医生","wf:爸爸"]
+hsk1/10 · write · Write the characters
+  ["w:桌","w:子","w:上","w:电","w:脑","w:和","w:本","w:里","w:前","w:面","w:后","w:这","w:儿","w:没","w:有","w:能","w:坐","w:左","w:边","w:右"]
+hsk1/10 · write · Dictation
+  ["d:桌子","d:上","d:电脑","d:和","d:本","d:里","d:前面","d:后面","d:这儿","d:没有","d:能","d:坐","d:左边","d:右边"]
+hsk1/10 · listen · Hear the word
+  ["l:桌子","l:上","l:电脑","l:和","l:本","l:里","l:前面","l:后面","l:这儿","l:没有","l:能","l:坐","l:左边","l:右边"]
+hsk1/10 · listen · Sentences
+  ["ls:桌子","ls:上","ls:电脑","ls:和","ls:本","ls:里","ls:前面","ls:后面","ls:这儿","ls:没有","ls:能","ls:坐","ls:左边","ls:右边"]
+hsk1/10 · listen · Tones
+  ["t:桌","t:子","t:上","t:电","t:脑","t:和","t:本","t:里","t:前","t:面","t:后","t:这","t:儿","t:没","t:有","t:能","t:坐","t:左","t:边","t:右"]
+hsk1/10 · speak · Say the word
+  ["s:桌子","s:上","s:电脑","s:和","s:本","s:里","s:前面","s:后面","s:这儿","s:没有","s:能","s:坐","s:左边","s:右边"]
+hsk1/10 · speak · Say the sentence
+  ["s:桌子#ex","s:上#ex","s:电脑#ex","s:和#ex","s:本#ex","s:里#ex","s:前面#ex","s:后面#ex","s:这儿#ex","s:没有#ex","s:能#ex","s:坐#ex","s:左边#ex","s:右边#ex"]
+  ["桌子","上","电脑","和","本","里","前面","后面","这儿","没有","能","坐","左边","右边"]
+hsk1/10 · read · Read & answer
+  [["r:hsk1/10/r1",["rq:hsk1/10/r1#0","rq:hsk1/10/r1#1"]],["r:hsk1/10/r2",["rq:hsk1/10/r2#0","rq:hsk1/10/r2#1"]]]
+  ["我能坐这儿吗","桌子上有什么"]
+hsk1/10 · read · Build the sentence
+  ["o:桌子上有什么？","o:书在桌子上。","o:桌子上有一个电脑。","o:我和我朋友去商店。","o:我有三本书。","o:杯子里有茶。","o:学校前面有一个商店。","o:椅子在桌子后面。","o:你的书在这儿。","o:这儿没有人。","o:我能坐这儿吗？","o:请坐这儿。","o:大卫在我左边。","o:我的书在电脑右边。","o:这儿有人吗？","o:杯子在哪儿？","o:杯子在电脑后面，杯子里有茶。"]
+hsk1/10 · read · How do you read it?
+  ["rp:桌子","rp:上","rp:电脑","rp:和","rp:本","rp:里","rp:前面","rp:后面","rp:这儿","rp:没有","rp:能","rp:坐","rp:左边","rp:右边"]
+hsk1/10 · words · Flashcards or Word quiz
+  [["f:桌子","q:桌子"],["f:上","q:上"],["f:电脑","q:电脑"],["f:和","q:和"],["f:本","q:本"],["f:里","q:里"],["f:前面","q:前面"],["f:后面","q:后面"],["f:这儿","q:这儿"],["f:没有","q:没有"],["f:能","q:能"],["f:坐","q:坐"],["f:左边","q:左边"],["f:右边","q:右边"]]
+  ["桌子","上","电脑","和","本","里","前面","后面","这儿","没有","能","坐","左边","右边"]
+hsk1/10 · words · Which radical?
+  ["rad:桌","rad:上","rad:电","rad:脑","rad:和","rad:本","rad:前","rad:后","rad:这","rad:没","rad:有","rad:能","rad:坐","rad:左","rad:边","rad:右"]
+hsk1/10 · exercises · Grammar
+  ["g:hsk1/10/1.1","g:hsk1/10/1.2","g:hsk1/10/2.1","g:hsk1/10/3.1"]
+hsk1/10 · exercises · Dialogues
+  ["wb:hsk1/10/d1","wb:hsk1/10/d2","wb:hsk1/10/d3"]
+hsk1/10 · exercises · True or false
+  ["wb:hsk1/10/j1","wb:hsk1/10/j2","wb:hsk1/10/j3"]
+hsk1/10 · exercises · Pick the reply
+  ["wb:hsk1/10/r1","wb:hsk1/10/r2","wb:hsk1/10/r3","wb:hsk1/10/r4"]
+hsk1/10 · exercises · Fill in the word
+  ["wf:桌子","wf:上","wf:电脑","wf:和","wf:本","wf:里","wf:前面","wf:后面","wf:这儿","wf:没有","wf:能","wf:坐","wf:左边","wf:右边"]
+hsk1/11 · write · Write the characters
+  ["w:现","w:在","w:点","w:分","w:中","w:午","w:吃","w:饭","w:时","w:候","w:回","w:我","w:们","w:电","w:影","w:住","w:前"]
+hsk1/11 · write · Dictation
+  ["d:现在","d:点","d:分","d:中午","d:吃饭","d:时候","d:回","d:我们","d:电影","d:住","d:前"]
+hsk1/11 · listen · Hear the word
+  ["l:现在","l:点","l:分","l:中午","l:吃饭","l:时候","l:回","l:我们","l:电影","l:住","l:前"]
+hsk1/11 · listen · Sentences
+  ["ls:现在","ls:点","ls:分","ls:中午","ls:吃饭","ls:时候","ls:回","ls:我们","ls:电影","ls:住","ls:前"]
+hsk1/11 · listen · Tones
+  ["t:现","t:在","t:点","t:分","t:中","t:午","t:吃","t:饭","t:时","t:候","t:回","t:我","t:电","t:影","t:住","t:前"]
+hsk1/11 · speak · Say the word
+  ["s:现在","s:点","s:分","s:中午","s:吃饭","s:时候","s:回","s:我们","s:电影","s:住","s:前"]
+hsk1/11 · speak · Say the sentence
+  ["s:现在#ex","s:点#ex","s:分#ex","s:中午#ex","s:吃饭#ex","s:时候#ex","s:回#ex","s:我们#ex","s:电影#ex","s:住#ex","s:前#ex"]
+  ["现在","点","分","中午","吃饭","时候","回","我们","电影","住","前"]
+hsk1/11 · read · Read & answer
+  [["r:hsk1/11/r1",["rq:hsk1/11/r1#0","rq:hsk1/11/r1#1"]],["r:hsk1/11/r2",["rq:hsk1/11/r2#0","rq:hsk1/11/r2#1"]]]
+  ["现在几点","我们去看电影"]
+hsk1/11 · read · Build the sentence
+  ["o:现在几点？","o:现在十点。","o:现在八点十分。","o:我们中午吃饭。","o:什么时候吃饭？","o:你什么时候回家？","o:我五点回家。","o:我们去看电影。","o:我想看电影。","o:你住哪儿？","o:我三天前去了北京。","o:现在十一点五十分。","o:我们什么时候吃饭？","o:中午十二点。","o:下午我们去看电影，好吗？","o:好！几点？"]
+hsk1/11 · read · How do you read it?
+  ["rp:现在","rp:点","rp:分","rp:中午","rp:吃饭","rp:时候","rp:回","rp:我们","rp:电影","rp:住","rp:前"]
+hsk1/11 · words · Flashcards or Word quiz
+  [["f:现在","q:现在"],["f:点","q:点"],["f:分","q:分"],["f:中午","q:中午"],["f:吃饭","q:吃饭"],["f:时候","q:时候"],["f:回","q:回"],["f:我们","q:我们"],["f:电影","q:电影"],["f:住","q:住"],["f:前","q:前"]]
+  ["现在","点","分","中午","吃饭","时候","回","我们","电影","住","前"]
+hsk1/11 · words · Which radical?
+  ["rad:现","rad:在","rad:点","rad:分","rad:中","rad:午","rad:吃","rad:饭","rad:时","rad:候","rad:回","rad:我","rad:们","rad:电","rad:影","rad:住","rad:前"]
+hsk1/11 · exercises · Grammar
+  ["g:hsk1/11/1.1","g:hsk1/11/1.2","g:hsk1/11/2.1","g:hsk1/11/2.2"]
+hsk1/11 · exercises · Dialogues
+  ["wb:hsk1/11/d1","wb:hsk1/11/d2","wb:hsk1/11/d3"]
+hsk1/11 · exercises · True or false
+  ["wb:hsk1/11/j1","wb:hsk1/11/j2","wb:hsk1/11/j3"]
+hsk1/11 · exercises · Pick the reply
+  ["wb:hsk1/11/r1","wb:hsk1/11/r2","wb:hsk1/11/r3","wb:hsk1/11/r4"]
+hsk1/11 · exercises · Fill in the word
+  ["wf:现在","wf:点","wf:分","wf:中午","wf:吃饭","wf:时候","wf:回","wf:我们","wf:电影","wf:住","wf:前"]
+hsk1/12 · write · Write the characters
+  ["w:天","w:气","w:怎","w:么","w:样","w:太","w:热","w:冷","w:下","w:雨","w:小","w:姐","w:来","w:身","w:体","w:爱","w:些","w:水","w:果"]
+hsk1/12 · write · Dictation
+  ["d:天气","d:怎么样","d:太","d:热","d:冷","d:下雨","d:小姐","d:来","d:身体","d:爱","d:些","d:水果","d:水"]
+hsk1/12 · listen · Hear the word
+  ["l:天气","l:怎么样","l:太","l:热","l:冷","l:下雨","l:小姐","l:来","l:身体","l:爱","l:些","l:水果","l:水"]
+hsk1/12 · listen · Sentences
+  ["ls:天气","ls:怎么样","ls:太","ls:热","ls:冷","ls:下雨","ls:小姐","ls:来","ls:身体","ls:爱","ls:些","ls:水果","ls:水"]
+hsk1/12 · listen · Tones
+  ["t:天","t:气","t:怎","t:样","t:太","t:热","t:冷","t:下","t:雨","t:小","t:姐","t:来","t:身","t:体","t:爱","t:些","t:水","t:果"]
+hsk1/12 · speak · Say the word
+  ["s:天气","s:怎么样","s:太","s:热","s:冷","s:下雨","s:小姐","s:来","s:身体","s:爱","s:些","s:水果","s:水"]
+hsk1/12 · speak · Say the sentence
+  ["s:天气#ex","s:怎么样#ex","s:太#ex","s:热#ex","s:冷#ex","s:下雨#ex","s:小姐#ex","s:来#ex","s:身体#ex","s:爱#ex","s:些#ex","s:水果#ex","s:水#ex"]
+  ["天气","怎么样","太","热","冷","下雨","小姐","来","身体","爱","些","水果","水"]
+hsk1/12 · read · Read & answer
+  [["r:hsk1/12/r1",["rq:hsk1/12/r1#0","rq:hsk1/12/r1#1"]],["r:hsk1/12/r2",["rq:hsk1/12/r2#0","rq:hsk1/12/r2#1"]]]
+  ["明天天气怎么样","你身体怎么样"]
+hsk1/12 · read · Build the sentence
+  ["o:今天天气很好。","o:明天天气怎么样？","o:今天太热了！","o:北京的天气很热。","o:明天很冷。","o:今天下雨了。","o:王小姐，你好！","o:你什么时候来？","o:你身体怎么样？","o:我爱吃水果。","o:我想买些水果。","o:你爱吃什么水果？","o:我想喝水。","o:今天天气太热了！","o:是，太热了。","o:明天下雨，不热。","o:王小姐，你身体怎么样？","o:很好，谢谢！你来了！","o:我很爱吃。谢谢你！"]
+hsk1/12 · read · How do you read it?
+  ["rp:天气","rp:怎么样","rp:太","rp:热","rp:冷","rp:下雨","rp:小姐","rp:来","rp:身体","rp:爱","rp:些","rp:水果","rp:水"]
+hsk1/12 · words · Flashcards or Word quiz
+  [["f:天气","q:天气"],["f:怎么样","q:怎么样"],["f:太","q:太"],["f:热","q:热"],["f:冷","q:冷"],["f:下雨","q:下雨"],["f:小姐","q:小姐"],["f:来","q:来"],["f:身体","q:身体"],["f:爱","q:爱"],["f:些","q:些"],["f:水果","q:水果"],["f:水","q:水"]]
+  ["天气","怎么样","太","热","冷","下雨","小姐","来","身体","爱","些","水果","水"]
+hsk1/12 · words · Which radical?
+  ["rad:天","rad:怎","rad:么","rad:样","rad:太","rad:热","rad:冷","rad:下","rad:姐","rad:来","rad:体","rad:爱","rad:些","rad:果"]
+hsk1/12 · exercises · Grammar
+  ["g:hsk1/12/1.1","g:hsk1/12/2.1","g:hsk1/12/3.1"]
+hsk1/12 · exercises · Dialogues
+  ["wb:hsk1/12/d1","wb:hsk1/12/d2","wb:hsk1/12/d3"]
+hsk1/12 · exercises · True or false
+  ["wb:hsk1/12/j1","wb:hsk1/12/j2","wb:hsk1/12/j3"]
+hsk1/12 · exercises · Pick the reply
+  ["wb:hsk1/12/r1","wb:hsk1/12/r2","wb:hsk1/12/r3","wb:hsk1/12/r4"]
+hsk1/12 · exercises · Fill in the word
+  ["wf:天气","wf:怎么样","wf:太","wf:热","wf:冷","wf:下雨","wf:小姐","wf:来","wf:身体","wf:爱","wf:些","wf:水果","wf:水"]
+hsk1/13 · write · Write the characters
+  ["w:喂","w:也","w:学","w:习","w:上","w:午","w:睡","w:觉","w:电","w:视","w:喜","w:欢","w:给","w:打","w:话","w:吧"]
+hsk1/13 · write · Dictation
+  ["d:喂","d:也","d:学习","d:上午","d:睡觉","d:电视","d:喜欢","d:给","d:打电话","d:吧"]
+hsk1/13 · listen · Hear the word
+  ["l:喂","l:也","l:学习","l:上午","l:睡觉","l:电视","l:喜欢","l:给","l:打电话","l:吧"]
+hsk1/13 · listen · Sentences
+  ["ls:喂","ls:也","ls:学习","ls:上午","ls:睡觉","ls:电视","ls:喜欢","ls:给","ls:打电话","ls:吧"]
+hsk1/13 · listen · Tones
+  ["t:喂","t:也","t:学","t:习","t:上","t:午","t:睡","t:觉","t:电","t:视","t:喜","t:欢","t:给","t:打","t:话"]
+hsk1/13 · speak · Say the word
+  ["s:喂","s:也","s:学习","s:上午","s:睡觉","s:电视","s:喜欢","s:给","s:打电话","s:吧"]
+hsk1/13 · speak · Say the sentence
+  ["s:喂#ex","s:也#ex","s:学习#ex","s:上午#ex","s:睡觉#ex","s:电视#ex","s:喜欢#ex","s:给#ex","s:打电话#ex","s:吧#ex"]
+  ["喂","也","学习","上午","睡觉","电视","喜欢","给","打电话","吧"]
+hsk1/13 · read · Read & answer
+  [["r:hsk1/13/r1",["rq:hsk1/13/r1#0","rq:hsk1/13/r1#1"]],["r:hsk1/13/r2",["rq:hsk1/13/r2#0","rq:hsk1/13/r2#1"]]]
+  ["你在做什么呢","我们去看电影吧"]
+hsk1/13 · read · Build the sentence
+  ["o:我也是学生。","o:我在学习汉语。","o:上午我在学校。","o:他在睡觉呢。","o:爸爸在看电视。","o:我喜欢看电影。","o:我给你打电话。","o:妈妈在打电话。","o:我们去吃饭吧。","o:喂，你在做什么呢？","o:我在看电视呢。","o:你爸爸呢？","o:他在学做中国菜呢。","o:你喜欢看电影吗？","o:喜欢。我也喜欢看电视。","o:明天上午我们去看电影吧。","o:好，明天我给你打电话。"]
+hsk1/13 · read · How do you read it?
+  ["rp:喂","rp:也","rp:学习","rp:上午","rp:睡觉","rp:电视","rp:喜欢","rp:给","rp:打电话","rp:吧"]
+hsk1/13 · words · Flashcards or Word quiz
+  [["f:喂","q:喂"],["f:也","q:也"],["f:学习","q:学习"],["f:上午","q:上午"],["f:睡觉","q:睡觉"],["f:电视","q:电视"],["f:喜欢","q:喜欢"],["f:给","q:给"],["f:打电话","q:打电话"],["f:吧","q:吧"]]
+  ["喂","也","学习","上午","睡觉","电视","喜欢","给","打电话","吧"]
+hsk1/13 · words · Which radical?
+  ["rad:喂","rad:也","rad:学","rad:习","rad:上","rad:午","rad:睡","rad:觉","rad:电","rad:视","rad:喜","rad:欢","rad:给","rad:打","rad:话","rad:吧"]
+hsk1/13 · exercises · Grammar
+  ["g:hsk1/13/1.1","g:hsk1/13/1.2","g:hsk1/13/2.1","g:hsk1/13/3.1"]
+hsk1/13 · exercises · Dialogues
+  ["wb:hsk1/13/d1","wb:hsk1/13/d2","wb:hsk1/13/d3"]
+hsk1/13 · exercises · True or false
+  ["wb:hsk1/13/j1","wb:hsk1/13/j2","wb:hsk1/13/j3"]
+hsk1/13 · exercises · Pick the reply
+  ["wb:hsk1/13/r1","wb:hsk1/13/r2","wb:hsk1/13/r3","wb:hsk1/13/r4"]
+hsk1/13 · exercises · Fill in the word
+  ["wf:喂","wf:也","wf:学习","wf:上午","wf:睡觉","wf:电视","wf:喜欢","wf:给","wf:打电话","wf:吧"]
+hsk1/14 · write · Write the characters
+  ["w:东","w:西","w:一","w:点","w:儿","w:苹","w:果","w:看","w:见","w:先","w:生","w:开","w:车","w:回","w:来","w:分","w:钟","w:后","w:衣","w:服","w:漂","w:亮","w:啊","w:少","w:不","w:这","w:些","w:都"]
+hsk1/14 · write · Dictation
+  ["d:东西","d:一点儿","d:苹果","d:看见","d:先生","d:开","d:车","d:回来","d:分钟","d:后","d:衣服","d:漂亮","d:啊","d:少","d:不少","d:这些","d:都"]
+hsk1/14 · listen · Hear the word
+  ["l:东西","l:一点儿","l:苹果","l:看见","l:先生","l:开","l:车","l:回来","l:分钟","l:后","l:衣服","l:漂亮","l:啊","l:少","l:不少","l:这些","l:都"]
+hsk1/14 · listen · Sentences
+  ["ls:东西","ls:一点儿","ls:苹果","ls:看见","ls:先生","ls:开","ls:车","ls:回来","ls:分钟","ls:后","ls:衣服","ls:漂亮","ls:啊","ls:少","ls:不少","ls:这些","ls:都"]
+hsk1/14 · listen · Tones
+  ["t:东","t:西","t:一","t:点","t:儿","t:苹","t:果","t:看","t:见","t:先","t:生","t:开","t:车","t:回","t:来","t:分","t:钟","t:后","t:衣","t:服","t:漂","t:亮","t:少","t:不","t:这","t:些","t:都"]
+hsk1/14 · speak · Say the word
+  ["s:东西","s:一点儿","s:苹果","s:看见","s:先生","s:开","s:车","s:回来","s:分钟","s:后","s:衣服","s:漂亮","s:啊","s:少","s:不少","s:这些","s:都"]
+hsk1/14 · speak · Say the sentence
+  ["s:东西#ex","s:一点儿#ex","s:苹果#ex","s:看见#ex","s:先生#ex","s:开#ex","s:车#ex","s:回来#ex","s:分钟#ex","s:后#ex","s:衣服#ex","s:漂亮#ex","s:啊#ex","s:少#ex","s:不少#ex","s:这些#ex","s:都#ex"]
+  ["东西","一点儿","苹果","看见","先生","开","车","回来","分钟","后","衣服","漂亮","啊","少","不少","这些","都"]
+hsk1/14 · read · Read & answer
+  [["r:hsk1/14/r1",["rq:hsk1/14/r1#0","rq:hsk1/14/r1#1"]],["r:hsk1/14/r2",["rq:hsk1/14/r2#0","rq:hsk1/14/r2#1"]]]
+  ["你买了什么","王先生回来了吗"]
+hsk1/14 · read · Build the sentence
+  ["o:你买什么东西了？","o:我会说一点儿汉语。","o:我买了一些苹果。","o:你看见我的猫了吗？","o:王先生是医生。","o:他会开车。","o:这是谁的车？","o:你什么时候回来？","o:我十分钟后回来。","o:吃饭后我看电视。","o:她买了不少衣服。","o:这些衣服很漂亮。","o:你的衣服真漂亮啊！","o:我的钱很少。","o:她有不少朋友。","o:这些是什么？","o:我们都是学生。","o:我买了一点儿苹果。","o:你没买衣服吗？","o:王先生回来了吗？","o:没有。他开车去商店了。","o:他什么时候回来？","o:二十分钟后回来。"]
+hsk1/14 · read · How do you read it?
+  ["rp:东西","rp:一点儿","rp:苹果","rp:看见","rp:先生","rp:开","rp:车","rp:回来","rp:分钟","rp:后","rp:衣服","rp:漂亮","rp:啊","rp:少","rp:不少","rp:这些","rp:都"]
+hsk1/14 · words · Flashcards or Word quiz
+  [["f:东西","q:东西"],["f:一点儿","q:一点儿"],["f:苹果","q:苹果"],["f:看见","q:看见"],["f:先生","q:先生"],["f:开","q:开"],["f:车","q:车"],["f:回来","q:回来"],["f:分钟","q:分钟"],["f:后","q:后"],["f:衣服","q:衣服"],["f:漂亮","q:漂亮"],["f:啊","q:啊"],["f:少","q:少"],["f:不少","q:不少"],["f:这些","q:这些"],["f:都","q:都"]]
+  ["东西","一点儿","苹果","看见","先生","开","车","回来","分钟","后","衣服","漂亮","啊","少","不少","这些","都"]
+hsk1/14 · words · Which radical?
+  ["rad:东","rad:点","rad:苹","rad:果","rad:看","rad:先","rad:开","rad:回","rad:来","rad:分","rad:钟","rad:后","rad:服","rad:漂","rad:亮","rad:啊","rad:少","rad:不","rad:这","rad:些","rad:都"]
+hsk1/14 · exercises · Grammar
+  ["g:hsk1/14/1.1","g:hsk1/14/2.1","g:hsk1/14/3.1","g:hsk1/14/3.2"]
+hsk1/14 · exercises · Dialogues
+  ["wb:hsk1/14/d1","wb:hsk1/14/d2","wb:hsk1/14/d3"]
+hsk1/14 · exercises · True or false
+  ["wb:hsk1/14/j1","wb:hsk1/14/j2","wb:hsk1/14/j3"]
+hsk1/14 · exercises · Pick the reply
+  ["wb:hsk1/14/r1","wb:hsk1/14/r2","wb:hsk1/14/r3","wb:hsk1/14/r4"]
+hsk1/14 · exercises · Fill in the word
+  ["wf:东西","wf:一点儿","wf:苹果","wf:看见","wf:先生","wf:开","wf:车","wf:回来","wf:分钟","wf:后","wf:衣服","wf:漂亮","wf:啊","wf:少","wf:不少","wf:这些","wf:都"]
+hsk1/15 · write · Write the characters
+  ["w:认","w:识","w:年","w:大","w:学","w:饭","w:店","w:出","w:租","w:车","w:一","w:起","w:高","w:兴","w:听","w:飞","w:机"]
+hsk1/15 · write · Dictation
+  ["d:认识","d:年","d:大学","d:饭店","d:出租车","d:一起","d:高兴","d:听","d:飞机"]
+hsk1/15 · listen · Hear the word
+  ["l:认识","l:年","l:大学","l:饭店","l:出租车","l:一起","l:高兴","l:听","l:飞机"]
+hsk1/15 · listen · Sentences
+  ["ls:认识","ls:年","ls:大学","ls:饭店","ls:出租车","ls:一起","ls:高兴","ls:听","ls:飞机"]
+hsk1/15 · listen · Tones
+  ["t:认","t:识","t:年","t:大","t:学","t:饭","t:店","t:出","t:租","t:车","t:一","t:起","t:高","t:兴","t:听","t:飞","t:机"]
+hsk1/15 · speak · Say the word
+  ["s:认识","s:年","s:大学","s:饭店","s:出租车","s:一起","s:高兴","s:听","s:飞机"]
+hsk1/15 · speak · Say the sentence
+  ["s:认识#ex","s:年#ex","s:大学#ex","s:饭店#ex","s:出租车#ex","s:一起#ex","s:高兴#ex","s:听#ex","s:飞机#ex"]
+  ["认识","年","大学","饭店","出租车","一起","高兴","听","飞机"]
+hsk1/15 · read · Read & answer
+  [["r:hsk1/15/r1",["rq:hsk1/15/r1#0","rq:hsk1/15/r1#1"]],["r:hsk1/15/r2",["rq:hsk1/15/r2#0","rq:hsk1/15/r2#1"]]]
+  ["你是怎么来的","认识你很高兴"]
+hsk1/15 · read · Build the sentence
+  ["o:认识你很高兴。","o:我在北京住了三年。","o:他在大学学习汉语。","o:这个饭店的菜很好吃。","o:我坐出租车去饭店。","o:我们一起去吧。","o:我今天很高兴。","o:我喜欢听老师说汉语。","o:我是坐飞机来的。","o:你是什么时候来北京的？","o:我是昨天来的。","o:你是怎么来的？","o:你好，我叫小王，是大学老师。","o:认识你很高兴！","o:中午我们一起去饭店吃饭吧。","o:好！我们坐出租车去吧。"]
+hsk1/15 · read · How do you read it?
+  ["rp:认识","rp:年","rp:大学","rp:饭店","rp:出租车","rp:一起","rp:高兴","rp:听","rp:飞机"]
+hsk1/15 · words · Flashcards or Word quiz
+  [["f:认识","q:认识"],["f:年","q:年"],["f:大学","q:大学"],["f:饭店","q:饭店"],["f:出租车","q:出租车"],["f:一起","q:一起"],["f:高兴","q:高兴"],["f:听","q:听"],["f:飞机","q:飞机"]]
+  ["认识","年","大学","饭店","出租车","一起","高兴","听","飞机"]
+hsk1/15 · words · Which radical?
+  ["rad:认","rad:识","rad:年","rad:学","rad:饭","rad:店","rad:出","rad:租","rad:起","rad:兴","rad:听","rad:机"]
+hsk1/15 · exercises · Grammar
+  ["g:hsk1/15/1.1","g:hsk1/15/1.2","g:hsk1/15/2.1"]
+hsk1/15 · exercises · Dialogues
+  ["wb:hsk1/15/d1","wb:hsk1/15/d2","wb:hsk1/15/d3"]
+hsk1/15 · exercises · True or false
+  ["wb:hsk1/15/j1","wb:hsk1/15/j2","wb:hsk1/15/j3"]
+hsk1/15 · exercises · Pick the reply
+  ["wb:hsk1/15/r1","wb:hsk1/15/r2","wb:hsk1/15/r3","wb:hsk1/15/r4"]
+hsk1/15 · exercises · Fill in the word
+  ["wf:认识","wf:年","wf:大学","wf:饭店","wf:出租车","wf:一起","wf:高兴","wf:听","wf:飞机"]
+hsk2/1 · write · Write the characters
+  ["w:旅","w:游","w:觉","w:得","w:最","w:为","w:什","w:么","w:也","w:运","w:动","w:踢","w:足","w:球","w:一","w:起","w:要","w:新","w:它","w:眼","w:睛"]
+hsk2/1 · write · Dictation
+  ["d:旅游","d:觉得","d:最","d:为什么","d:也","d:运动","d:踢足球","d:一起","d:要","d:新","d:它","d:眼睛"]
+hsk2/1 · listen · Hear the word
+  ["l:旅游","l:觉得","l:最","l:为什么","l:也","l:运动","l:踢足球","l:一起","l:要","l:新","l:它","l:眼睛"]
+hsk2/1 · listen · Sentences
+  ["ls:旅游","ls:觉得","ls:最","ls:为什么","ls:也","ls:运动","ls:踢足球","ls:一起","ls:要","ls:新","ls:它","ls:眼睛"]
+hsk2/1 · listen · Tones
+  ["t:旅","t:游","t:觉","t:最","t:为","t:什","t:也","t:运","t:动","t:踢","t:足","t:球","t:一","t:起","t:要","t:新","t:它","t:眼","t:睛"]
+hsk2/1 · speak · Say the word
+  ["s:旅游","s:觉得","s:最","s:为什么","s:也","s:运动","s:踢足球","s:一起","s:要","s:新","s:它","s:眼睛"]
+hsk2/1 · speak · Say the sentence
+  ["s:旅游#ex","s:觉得#ex","s:最#ex","s:为什么#ex","s:也#ex","s:运动#ex","s:踢足球#ex","s:一起#ex","s:要#ex","s:新#ex","s:它#ex","s:眼睛#ex"]
+  ["旅游","觉得","最","为什么","也","运动","踢足球","一起","要","新","它","眼睛"]
+hsk2/1 · read · Read & answer
+  [["r:hsk2/1/r1",["rq:hsk2/1/r1#0","rq:hsk2/1/r1#1"]],["r:hsk2/1/r2",["rq:hsk2/1/r2#0","rq:hsk2/1/r2#1"]]]
+  ["去哪儿旅游","我的小狗"]
+hsk2/1 · read · Build the sentence
+  ["o:我想去中国旅游。","o:我觉得汉语很有意思。","o:我最喜欢吃苹果。","o:你为什么不去？","o:我也想去。","o:你喜欢什么运动？","o:下午我们去踢足球吧。","o:我们一起去吃饭吧。","o:我要去商店买东西。","o:这是我的新手机。","o:我有一只猫，它很小。","o:她的眼睛很漂亮。","o:你和我一起去吗？","o:好啊！我也想去。","o:这是你的新狗吗？","o:它的眼睛真漂亮！","o:是啊，它最喜欢运动。"]
+hsk2/1 · read · How do you read it?
+  ["rp:旅游","rp:觉得","rp:最","rp:为什么","rp:也","rp:运动","rp:踢足球","rp:一起","rp:要","rp:新","rp:它","rp:眼睛"]
+hsk2/1 · words · Flashcards or Word quiz
+  [["f:旅游","q:旅游"],["f:觉得","q:觉得"],["f:最","q:最"],["f:为什么","q:为什么"],["f:也","q:也"],["f:运动","q:运动"],["f:踢足球","q:踢足球"],["f:一起","q:一起"],["f:要","q:要"],["f:新","q:新"],["f:它","q:它"],["f:眼睛","q:眼睛"]]
+  ["旅游","觉得","最","为什么","也","运动","踢足球","一起","要","新","它","眼睛"]
+hsk2/1 · words · Which radical?
+  ["rad:旅","rad:游","rad:觉","rad:得","rad:最","rad:为","rad:什","rad:么","rad:也","rad:运","rad:动","rad:踢","rad:球","rad:起","rad:要","rad:新","rad:它","rad:眼","rad:睛"]
+hsk2/1 · exercises · Grammar
+  ["g:hsk2/1/1.1","g:hsk2/1/1.2","g:hsk2/1/2.1","g:hsk2/1/2.2","g:hsk2/1/3.1","g:hsk2/1/3.2"]
+hsk2/1 · exercises · Dialogues
+  ["wb:hsk2/1/d1","wb:hsk2/1/d2","wb:hsk2/1/d3","wb:hsk2/1/d4"]
+hsk2/1 · exercises · True or false
+  ["wb:hsk2/1/j1","wb:hsk2/1/j2","wb:hsk2/1/j3","wb:hsk2/1/j4"]
+hsk2/1 · exercises · Pick the reply
+  ["wb:hsk2/1/r1","wb:hsk2/1/r2","wb:hsk2/1/r3","wb:hsk2/1/r4","wb:hsk2/1/r5"]
+hsk2/1 · exercises · Fill in the word
+  ["wf:旅游","wf:觉得","wf:最","wf:为什么","wf:也","wf:运动","wf:踢足球","wf:一起","wf:要","wf:新","wf:它","wf:眼睛"]
+hsk2/2 · write · Write the characters
+  ["w:生","w:病","w:每","w:早","w:上","w:跑","w:步","w:起","w:床","w:药","w:出","w:院","w:高","w:米","w:知","w:道","w:休","w:息","w:忙","w:时","w:间"]
+hsk2/2 · write · Dictation
+  ["d:生病","d:每","d:早上","d:跑步","d:起床","d:药","d:出院","d:高","d:米","d:知道","d:休息","d:忙","d:时间"]
+hsk2/2 · listen · Hear the word
+  ["l:生病","l:每","l:早上","l:跑步","l:起床","l:药","l:出院","l:高","l:米","l:知道","l:休息","l:忙","l:时间"]
+hsk2/2 · listen · Sentences
+  ["ls:生病","ls:每","ls:早上","ls:跑步","ls:起床","ls:药","ls:出院","ls:高","ls:米","ls:知道","ls:休息","ls:忙","ls:时间"]
+hsk2/2 · listen · Tones
+  ["t:生","t:病","t:每","t:早","t:上","t:跑","t:步","t:起","t:床","t:药","t:出","t:院","t:高","t:米","t:知","t:道","t:休","t:息","t:忙","t:时","t:间"]
+hsk2/2 · speak · Say the word
+  ["s:生病","s:每","s:早上","s:跑步","s:起床","s:药","s:出院","s:高","s:米","s:知道","s:休息","s:忙","s:时间"]
+hsk2/2 · speak · Say the sentence
+  ["s:生病#ex","s:每#ex","s:早上#ex","s:跑步#ex","s:起床#ex","s:药#ex","s:出院#ex","s:高#ex","s:米#ex","s:知道#ex","s:休息#ex","s:忙#ex","s:时间#ex"]
+  ["生病","每","早上","跑步","起床","药","出院","高","米","知道","休息","忙","时间"]
+hsk2/2 · read · Read & answer
+  [["r:hsk2/2/r1",["rq:hsk2/2/r1#0","rq:hsk2/2/r1#1"]],["r:hsk2/2/r2",["rq:hsk2/2/r2#0","rq:hsk2/2/r2#1"]]]
+  ["每天早上","你多高"]
+hsk2/2 · read · Build the sentence
+  ["o:我昨天生病了。","o:我每天都学汉语。","o:早上我喝一杯茶。","o:他每天早上跑步。","o:你几点起床？","o:你吃药了吗？","o:她明天出院。","o:你哥哥多高？","o:他一米八。","o:我不知道他叫什么。","o:你累了，休息一下吧。","o:我这几天很忙。","o:你明天有时间吗？","o:你每天几点起床？","o:六点半。起床后我去跑步。","o:你每天都跑步吗？","o:是，所以我很少生病。","o:你知道小王多高吗？","o:一米八几。","o:他多大了？"]
+hsk2/2 · read · How do you read it?
+  ["rp:生病","rp:每","rp:早上","rp:跑步","rp:起床","rp:药","rp:出院","rp:高","rp:米","rp:知道","rp:休息","rp:忙","rp:时间"]
+hsk2/2 · words · Flashcards or Word quiz
+  [["f:生病","q:生病"],["f:每","q:每"],["f:早上","q:早上"],["f:跑步","q:跑步"],["f:起床","q:起床"],["f:药","q:药"],["f:出院","q:出院"],["f:高","q:高"],["f:米","q:米"],["f:知道","q:知道"],["f:休息","q:休息"],["f:忙","q:忙"],["f:时间","q:时间"]]
+  ["生病","每","早上","跑步","起床","药","出院","高","米","知道","休息","忙","时间"]
+hsk2/2 · words · Which radical?
+  ["rad:病","rad:每","rad:早","rad:上","rad:跑","rad:步","rad:起","rad:床","rad:药","rad:出","rad:院","rad:知","rad:道","rad:休","rad:息","rad:忙","rad:时","rad:间"]
+hsk2/2 · exercises · Grammar
+  ["g:hsk2/2/1.1","g:hsk2/2/2.1","g:hsk2/2/2.2","g:hsk2/2/3.1","g:hsk2/2/3.2"]
+hsk2/2 · exercises · Dialogues
+  ["wb:hsk2/2/d1","wb:hsk2/2/d2","wb:hsk2/2/d3","wb:hsk2/2/d4"]
+hsk2/2 · exercises · True or false
+  ["wb:hsk2/2/j1","wb:hsk2/2/j2","wb:hsk2/2/j3","wb:hsk2/2/j4"]
+hsk2/2 · exercises · Pick the reply
+  ["wb:hsk2/2/r1","wb:hsk2/2/r2","wb:hsk2/2/r3","wb:hsk2/2/r4","wb:hsk2/2/r5"]
+hsk2/2 · exercises · Fill in the word
+  ["wf:生病","wf:每","wf:早上","wf:跑步","wf:起床","wf:药","wf:出院","wf:高","wf:米","wf:知道","wf:休息","wf:忙","wf:时间"]
+hsk2/3 · write · Write the characters
+  ["w:手","w:表","w:千","w:报","w:纸","w:送","w:一","w:下","w:牛","w:奶","w:房","w:间","w:丈","w:夫","w:旁","w:边","w:真","w:粉","w:色","w:颜","w:左","w:红","w:白","w:黑","w:蓝"]
+hsk2/3 · write · Dictation
+  ["d:手表","d:千","d:报纸","d:送","d:一下","d:牛奶","d:房间","d:丈夫","d:旁边","d:真","d:粉色","d:颜色","d:左边","d:红色","d:白色","d:黑色","d:蓝色"]
+hsk2/3 · listen · Hear the word
+  ["l:手表","l:千","l:报纸","l:送","l:一下","l:牛奶","l:房间","l:丈夫","l:旁边","l:真","l:粉色","l:颜色","l:左边","l:红色","l:白色","l:黑色","l:蓝色"]
+hsk2/3 · listen · Sentences
+  ["ls:手表","ls:千","ls:报纸","ls:送","ls:一下","ls:牛奶","ls:房间","ls:丈夫","ls:旁边","ls:真","ls:粉色","ls:颜色","ls:左边","ls:红色","ls:白色","ls:黑色","ls:蓝色"]
+hsk2/3 · listen · Tones
+  ["t:手","t:表","t:千","t:报","t:纸","t:送","t:一","t:下","t:牛","t:奶","t:房","t:间","t:丈","t:夫","t:旁","t:边","t:真","t:粉","t:色","t:颜","t:左","t:红","t:白","t:黑","t:蓝"]
+hsk2/3 · speak · Say the word
+  ["s:手表","s:千","s:报纸","s:送","s:一下","s:牛奶","s:房间","s:丈夫","s:旁边","s:真","s:粉色","s:颜色","s:左边","s:红色","s:白色","s:黑色","s:蓝色"]
+hsk2/3 · speak · Say the sentence
+  ["s:手表#ex","s:千#ex","s:报纸#ex","s:送#ex","s:一下#ex","s:牛奶#ex","s:房间#ex","s:丈夫#ex","s:旁边#ex","s:真#ex","s:粉色#ex","s:颜色#ex","s:左边#ex","s:红色#ex","s:白色#ex","s:黑色#ex","s:蓝色#ex"]
+  ["手表","千","报纸","送","一下","牛奶","房间","丈夫","旁边","真","粉色","颜色","左边","红色","白色","黑色","蓝色"]
+hsk2/3 · read · Read & answer
+  [["r:hsk2/3/r1",["rq:hsk2/3/r1#0","rq:hsk2/3/r1#1"]],["r:hsk2/3/r2",["rq:hsk2/3/r2#0","rq:hsk2/3/r2#1"]]]
+  ["这是谁的","我的房间"]
+hsk2/3 · read · Build the sentence
+  ["o:这块手表很贵。","o:这个手机三千块。","o:爸爸在看报纸。","o:这是朋友送我的。","o:你看一下这本书。","o:我早上喝牛奶。","o:这是我的房间。","o:她丈夫是医生。","o:商店在学校旁边。","o:今天真热！","o:她喜欢粉色。","o:你喜欢什么颜色？","o:左边那个是我的杯子。","o:红色的那件衣服很漂亮。","o:我喜欢白色的杯子。","o:黑色的手表是我爸爸的。","o:那个蓝色的书包是谁的？","o:桌子上的手表是你的吗？","o:不是我的，是我丈夫的。","o:旁边那个红色的杯子呢？","o:那个是我的。","o:你的房间真漂亮！","o:谢谢！粉色是我最喜欢的颜色。","o:这是今天的报纸吗？","o:不是，是昨天的。"]
+hsk2/3 · read · How do you read it?
+  ["rp:手表","rp:千","rp:报纸","rp:送","rp:一下","rp:牛奶","rp:房间","rp:丈夫","rp:旁边","rp:真","rp:粉色","rp:颜色","rp:左边","rp:红色","rp:白色","rp:黑色","rp:蓝色"]
+hsk2/3 · words · Flashcards or Word quiz
+  [["f:手表","q:手表"],["f:千","q:千"],["f:报纸","q:报纸"],["f:送","q:送"],["f:一下","q:一下"],["f:牛奶","q:牛奶"],["f:房间","q:房间"],["f:丈夫","q:丈夫"],["f:旁边","q:旁边"],["f:真","q:真"],["f:粉色","q:粉色"],["f:颜色","q:颜色"],["f:左边","q:左边"],["f:红色","q:红色"],["f:白色","q:白色"],["f:黑色","q:黑色"],["f:蓝色","q:蓝色"]]
+  ["手表","千","报纸","送","一下","牛奶","房间","丈夫","旁边","真","粉色","颜色","左边","红色","白色","黑色","蓝色"]
+hsk2/3 · words · Which radical?
+  ["rad:表","rad:千","rad:报","rad:纸","rad:送","rad:下","rad:奶","rad:房","rad:间","rad:丈","rad:夫","rad:旁","rad:边","rad:真","rad:粉","rad:颜","rad:左","rad:红","rad:蓝"]
+hsk2/3 · exercises · Grammar
+  ["g:hsk2/3/1.1","g:hsk2/3/1.2","g:hsk2/3/2.1","g:hsk2/3/3.1"]
+hsk2/3 · exercises · Dialogues
+  ["wb:hsk2/3/d1","wb:hsk2/3/d2","wb:hsk2/3/d3","wb:hsk2/3/d4"]
+hsk2/3 · exercises · True or false
+  ["wb:hsk2/3/j1","wb:hsk2/3/j2","wb:hsk2/3/j3","wb:hsk2/3/j4"]
+hsk2/3 · exercises · Pick the reply
+  ["wb:hsk2/3/r1","wb:hsk2/3/r2","wb:hsk2/3/r3","wb:hsk2/3/r4","wb:hsk2/3/r5"]
+hsk2/3 · exercises · Fill in the word
+  ["wf:手表","wf:千","wf:报纸","wf:送","wf:一下","wf:牛奶","wf:房间","wf:丈夫","wf:旁边","wf:真","wf:粉色","wf:颜色","wf:左边","wf:红色","wf:白色","wf:黑色","wf:蓝色"]
+hsk2/4 · write · Write the characters
+  ["w:生","w:日","w:快","w:乐","w:给","w:接","w:晚","w:上","w:问","w:非","w:常","w:开","w:始","w:已","w:经","w:长","w:两","w:帮","w:介","w:绍"]
+hsk2/4 · write · Dictation
+  ["d:生日","d:快乐","d:给","d:接","d:晚上","d:问","d:非常","d:开始","d:已经","d:长","d:两","d:帮","d:介绍"]
+hsk2/4 · listen · Hear the word
+  ["l:生日","l:快乐","l:给","l:接","l:晚上","l:问","l:非常","l:开始","l:已经","l:长","l:两","l:帮","l:介绍"]
+hsk2/4 · listen · Sentences
+  ["ls:生日","ls:快乐","ls:给","ls:接","ls:晚上","ls:问","ls:非常","ls:开始","ls:已经","ls:长","ls:两","ls:帮","ls:介绍"]
+hsk2/4 · listen · Tones
+  ["t:生","t:日","t:快","t:乐","t:给","t:接","t:晚","t:上","t:问","t:非","t:常","t:开","t:始","t:已","t:经","t:长","t:两","t:帮","t:介","t:绍"]
+hsk2/4 · speak · Say the word
+  ["s:生日","s:快乐","s:给","s:接","s:晚上","s:问","s:非常","s:开始","s:已经","s:长","s:两","s:帮","s:介绍"]
+hsk2/4 · speak · Say the sentence
+  ["s:生日#ex","s:快乐#ex","s:给#ex","s:接#ex","s:晚上#ex","s:问#ex","s:非常#ex","s:开始#ex","s:已经#ex","s:长#ex","s:两#ex","s:帮#ex","s:介绍#ex"]
+  ["生日","快乐","给","接","晚上","问","非常","开始","已经","长","两","帮","介绍"]
+hsk2/4 · read · Read & answer
+  [["r:hsk2/4/r1",["rq:hsk2/4/r1#0","rq:hsk2/4/r1#1"]],["r:hsk2/4/r2",["rq:hsk2/4/r2#0","rq:hsk2/4/r2#1"]]]
+  ["生日快乐","你学了多长时间"]
+hsk2/4 · read · Build the sentence
+  ["o:今天是我的生日。","o:这是给你的。","o:电话是我接的。","o:晚上我在家看书。","o:我问一下老师。","o:我非常喜欢跳舞。","o:我们几点开始上课？","o:他已经回家了。","o:你学汉语多长时间了？","o:我有两个哥哥。","o:你能帮我一下吗？","o:我给你介绍一下，这是小王。","o:谢谢！是你买的吗？","o:不是，是我妈妈做的。","o:太漂亮了！","o:你是什么时候开始学汉语的？","o:你的汉语老师是谁介绍的？","o:是我朋友帮我介绍的。"]
+hsk2/4 · read · How do you read it?
+  ["rp:生日","rp:快乐","rp:给","rp:接","rp:晚上","rp:问","rp:非常","rp:开始","rp:已经","rp:长","rp:两","rp:帮","rp:介绍"]
+hsk2/4 · words · Flashcards or Word quiz
+  [["f:生日","q:生日"],["f:快乐","q:快乐"],["f:给","q:给"],["f:接","q:接"],["f:晚上","q:晚上"],["f:问","q:问"],["f:非常","q:非常"],["f:开始","q:开始"],["f:已经","q:已经"],["f:长","q:长"],["f:两","q:两"],["f:帮","q:帮"],["f:介绍","q:介绍"]]
+  ["生日","快乐","给","接","晚上","问","非常","开始","已经","长","两","帮","介绍"]
+hsk2/4 · words · Which radical?
+  ["rad:快","rad:乐","rad:给","rad:接","rad:晚","rad:上","rad:问","rad:常","rad:开","rad:始","rad:已","rad:经","rad:两","rad:帮","rad:介","rad:绍"]
+hsk2/4 · exercises · Grammar
+  ["g:hsk2/4/1.1","g:hsk2/4/1.2","g:hsk2/4/2.1","g:hsk2/4/3.1","g:hsk2/4/3.2"]
+hsk2/4 · exercises · Dialogues
+  ["wb:hsk2/4/d1","wb:hsk2/4/d2","wb:hsk2/4/d3","wb:hsk2/4/d4"]
+hsk2/4 · exercises · True or false
+  ["wb:hsk2/4/j1","wb:hsk2/4/j2","wb:hsk2/4/j3","wb:hsk2/4/j4"]
+hsk2/4 · exercises · Pick the reply
+  ["wb:hsk2/4/r1","wb:hsk2/4/r2","wb:hsk2/4/r3","wb:hsk2/4/r4","wb:hsk2/4/r5"]
+hsk2/4 · exercises · Fill in the word
+  ["wf:生日","wf:快乐","wf:给","wf:接","wf:晚上","wf:问","wf:非常","wf:开始","wf:已经","wf:长","wf:两","wf:帮","wf:介绍"]
+hsk2/5 · write · Write the characters
+  ["w:外","w:面","w:准","w:备","w:就","w:鱼","w:吧","w:件","w:还","w:可","w:以","w:不","w:错","w:考","w:试","w:意","w:思","w:咖","w:啡","w:对","w:后"]
+hsk2/5 · write · Dictation
+  ["d:外面","d:准备","d:就","d:鱼","d:吧","d:件","d:还","d:可以","d:不错","d:考试","d:意思","d:咖啡","d:对","d:以后"]
+hsk2/5 · listen · Hear the word
+  ["l:外面","l:准备","l:就","l:鱼","l:吧","l:件","l:还","l:可以","l:不错","l:考试","l:意思","l:咖啡","l:对","l:以后"]
+hsk2/5 · listen · Sentences
+  ["ls:外面","ls:准备","ls:就","ls:鱼","ls:吧","ls:件","ls:还","ls:可以","ls:不错","ls:考试","ls:意思","ls:咖啡","ls:对","ls:以后"]
+hsk2/5 · listen · Tones
+  ["t:外","t:面","t:准","t:备","t:就","t:鱼","t:件","t:还","t:可","t:以","t:不","t:错","t:考","t:试","t:意","t:思","t:咖","t:啡","t:对","t:后"]
+hsk2/5 · speak · Say the word
+  ["s:外面","s:准备","s:就","s:鱼","s:吧","s:件","s:还","s:可以","s:不错","s:考试","s:意思","s:咖啡","s:对","s:以后"]
+hsk2/5 · speak · Say the sentence
+  ["s:外面#ex","s:准备#ex","s:就#ex","s:鱼#ex","s:吧#ex","s:件#ex","s:还#ex","s:可以#ex","s:不错#ex","s:考试#ex","s:意思#ex","s:咖啡#ex","s:对#ex","s:以后#ex"]
+  ["外面","准备","就","鱼","吧","件","还","可以","不错","考试","意思","咖啡","对","以后"]
+hsk2/5 · read · Read & answer
+  [["r:hsk2/5/r1",["rq:hsk2/5/r1#0","rq:hsk2/5/r1#1"]],["r:hsk2/5/r2",["rq:hsk2/5/r2#0","rq:hsk2/5/r2#1"]]]
+  ["买衣服","少喝咖啡"]
+hsk2/5 · read · Build the sentence
+  ["o:外面很冷。","o:你准备什么时候去？","o:你喜欢就买吧。","o:我妈妈做的鱼很好吃。","o:我们走吧。","o:这件衣服多少钱？","o:这件衣服还可以。","o:我可以进来吗？","o:这个饭馆不错。","o:明天有汉语考试。","o:这个字是什么意思？","o:你喝咖啡吗？","o:跑步对身体好。","o:以后我每天跑步。","o:帮我看看这件衣服怎么样。","o:颜色不错，就是有点儿长。","o:那件短的呢？","o:你今天喝了几杯咖啡？","o:三杯了。","o:咖啡喝多了对身体不好。","o:好，以后我少喝一点儿。"]
+hsk2/5 · read · How do you read it?
+  ["rp:外面","rp:准备","rp:就","rp:鱼","rp:吧","rp:件","rp:还","rp:可以","rp:不错","rp:考试","rp:意思","rp:咖啡","rp:对","rp:以后"]
+hsk2/5 · words · Flashcards or Word quiz
+  [["f:外面","q:外面"],["f:准备","q:准备"],["f:就","q:就"],["f:鱼","q:鱼"],["f:吧","q:吧"],["f:件","q:件"],["f:还","q:还"],["f:可以","q:可以"],["f:不错","q:不错"],["f:考试","q:考试"],["f:意思","q:意思"],["f:咖啡","q:咖啡"],["f:对","q:对"],["f:以后","q:以后"]]
+  ["外面","准备","就","鱼","吧","件","还","可以","不错","考试","意思","咖啡","对","以后"]
+hsk2/5 · words · Which radical?
+  ["rad:外","rad:准","rad:备","rad:就","rad:吧","rad:件","rad:还","rad:可","rad:以","rad:不","rad:错","rad:考","rad:试","rad:意","rad:思","rad:咖","rad:啡","rad:对","rad:后"]
+hsk2/5 · exercises · Grammar
+  ["g:hsk2/5/1.1","g:hsk2/5/2.1","g:hsk2/5/3.1","g:hsk2/5/3.2"]
+hsk2/5 · exercises · Dialogues
+  ["wb:hsk2/5/d1","wb:hsk2/5/d2","wb:hsk2/5/d3","wb:hsk2/5/d4"]
+hsk2/5 · exercises · True or false
+  ["wb:hsk2/5/j1","wb:hsk2/5/j2","wb:hsk2/5/j3","wb:hsk2/5/j4"]
+hsk2/5 · exercises · Pick the reply
+  ["wb:hsk2/5/r1","wb:hsk2/5/r2","wb:hsk2/5/r3","wb:hsk2/5/r4","wb:hsk2/5/r5"]
+hsk2/5 · exercises · Fill in the word
+  ["wf:外面","wf:准备","wf:就","wf:鱼","wf:吧","wf:件","wf:还","wf:可以","wf:不错","wf:考试","wf:意思","wf:咖啡","wf:对","wf:以后"]
+hsk2/6 · write · Write the characters
+  ["w:门","w:外","w:自","w:行","w:车","w:羊","w:肉","w:好","w:吃","w:面","w:条","w:打","w:篮","w:球","w:因","w:为","w:所","w:以","w:游","w:泳","w:经","w:常","w:公","w:斤","w:姐"]
+hsk2/6 · write · Dictation
+  ["d:门","d:外","d:自行车","d:羊肉","d:好吃","d:面条","d:打篮球","d:因为","d:所以","d:游泳","d:经常","d:公斤","d:姐姐"]
+hsk2/6 · listen · Hear the word
+  ["l:门","l:外","l:自行车","l:羊肉","l:好吃","l:面条","l:打篮球","l:因为","l:所以","l:游泳","l:经常","l:公斤","l:姐姐"]
+hsk2/6 · listen · Sentences
+  ["ls:门","ls:外","ls:自行车","ls:羊肉","ls:好吃","ls:面条","ls:打篮球","ls:因为","ls:所以","ls:游泳","ls:经常","ls:公斤","ls:姐姐"]
+hsk2/6 · listen · Tones
+  ["t:门","t:外","t:自","t:行","t:车","t:羊","t:肉","t:好","t:吃","t:面","t:条","t:打","t:篮","t:球","t:因","t:为","t:所","t:以","t:游","t:泳","t:经","t:常","t:公","t:斤","t:姐"]
+hsk2/6 · speak · Say the word
+  ["s:门","s:外","s:自行车","s:羊肉","s:好吃","s:面条","s:打篮球","s:因为","s:所以","s:游泳","s:经常","s:公斤","s:姐姐"]
+hsk2/6 · speak · Say the sentence
+  ["s:门#ex","s:外#ex","s:自行车#ex","s:羊肉#ex","s:好吃#ex","s:面条#ex","s:打篮球#ex","s:因为#ex","s:所以#ex","s:游泳#ex","s:经常#ex","s:公斤#ex","s:姐姐#ex"]
+  ["门","外","自行车","羊肉","好吃","面条","打篮球","因为","所以","游泳","经常","公斤","姐姐"]
+hsk2/6 · read · Read & answer
+  [["r:hsk2/6/r1",["rq:hsk2/6/r1#0","rq:hsk2/6/r1#1"]],["r:hsk2/6/r2",["rq:hsk2/6/r2#0","rq:hsk2/6/r2#1"]]]
+  ["你怎么没来","在饭馆"]
+hsk2/6 · read · Build the sentence
+  ["o:请开门。","o:他在门外等你。","o:我骑自行车去学校。","o:我很爱吃羊肉。","o:这个菜真好吃！","o:我想吃面条。","o:他们在打篮球。","o:因为下雨，我没去。","o:我生病了，所以没去学校。","o:你会游泳吗？","o:我经常去那个饭馆。","o:我六十公斤。","o:我姐姐在北京工作。","o:昨天你怎么没来打篮球？","o:因为我姐姐来了，所以我在家。","o:你姐姐经常来看你吗？","o:不经常，一年来一次。","o:那来一点儿面条吧。"]
+hsk2/6 · read · How do you read it?
+  ["rp:门","rp:外","rp:自行车","rp:羊肉","rp:好吃","rp:面条","rp:打篮球","rp:因为","rp:所以","rp:游泳","rp:经常","rp:公斤","rp:姐姐"]
+hsk2/6 · words · Flashcards or Word quiz
+  [["f:门","q:门"],["f:外","q:外"],["f:自行车","q:自行车"],["f:羊肉","q:羊肉"],["f:好吃","q:好吃"],["f:面条","q:面条"],["f:打篮球","q:打篮球"],["f:因为","q:因为"],["f:所以","q:所以"],["f:游泳","q:游泳"],["f:经常","q:经常"],["f:公斤","q:公斤"],["f:姐姐","q:姐姐"]]
+  ["门","外","自行车","羊肉","好吃","面条","打篮球","因为","所以","游泳","经常","公斤","姐姐"]
+hsk2/6 · words · Which radical?
+  ["rad:外","rad:好","rad:吃","rad:条","rad:打","rad:篮","rad:球","rad:因","rad:为","rad:所","rad:以","rad:游","rad:泳","rad:经","rad:常","rad:公","rad:姐"]
+hsk2/6 · exercises · Grammar
+  ["g:hsk2/6/1.1","g:hsk2/6/2.1","g:hsk2/6/2.2","g:hsk2/6/3.1","g:hsk2/6/3.2"]
+hsk2/6 · exercises · Dialogues
+  ["wb:hsk2/6/d1","wb:hsk2/6/d2","wb:hsk2/6/d3","wb:hsk2/6/d4"]
+hsk2/6 · exercises · True or false
+  ["wb:hsk2/6/j1","wb:hsk2/6/j2","wb:hsk2/6/j3","wb:hsk2/6/j4"]
+hsk2/6 · exercises · Pick the reply
+  ["wb:hsk2/6/r1","wb:hsk2/6/r2","wb:hsk2/6/r3","wb:hsk2/6/r4","wb:hsk2/6/r5"]
+hsk2/6 · exercises · Fill in the word
+  ["wf:门","wf:外","wf:自行车","wf:羊肉","wf:好吃","wf:面条","wf:打篮球","wf:因为","wf:所以","wf:游泳","wf:经常","wf:公斤","wf:姐姐"]
+hsk2/7 · write · Write the characters
+  ["w:教","w:室","w:机","w:场","w:路","w:离","w:公","w:司","w:远","w:共","w:汽","w:车","w:小","w:时","w:慢","w:快","w:过","w:走","w:到"]
+hsk2/7 · write · Dictation
+  ["d:教室","d:机场","d:路","d:离","d:公司","d:远","d:公共汽车","d:小时","d:慢","d:快","d:过","d:走","d:到"]
+hsk2/7 · listen · Hear the word
+  ["l:教室","l:机场","l:路","l:离","l:公司","l:远","l:公共汽车","l:小时","l:慢","l:快","l:过","l:走","l:到"]
+hsk2/7 · listen · Sentences
+  ["ls:教室","ls:机场","ls:路","ls:离","ls:公司","ls:远","ls:公共汽车","ls:小时","ls:慢","ls:快","ls:过","ls:走","ls:到"]
+hsk2/7 · listen · Tones
+  ["t:教","t:室","t:机","t:场","t:路","t:离","t:公","t:司","t:远","t:共","t:汽","t:车","t:小","t:时","t:慢","t:快","t:过","t:走","t:到"]
+hsk2/7 · speak · Say the word
+  ["s:教室","s:机场","s:路","s:离","s:公司","s:远","s:公共汽车","s:小时","s:慢","s:快","s:过","s:走","s:到"]
+hsk2/7 · speak · Say the sentence
+  ["s:教室#ex","s:机场#ex","s:路#ex","s:离#ex","s:公司#ex","s:远#ex","s:公共汽车#ex","s:小时#ex","s:慢#ex","s:快#ex","s:过#ex","s:走#ex","s:到#ex"]
+  ["教室","机场","路","离","公司","远","公共汽车","小时","慢","快","过","走","到"]
+hsk2/7 · read · Read & answer
+  [["r:hsk2/7/r1",["rq:hsk2/7/r1#0","rq:hsk2/7/r1#1"]],["r:hsk2/7/r2",["rq:hsk2/7/r2#0","rq:hsk2/7/r2#1"]]]
+  ["你家离公司远吗","在去机场的路上"]
+hsk2/7 · read · Build the sentence
+  ["o:他还在教室学习呢。","o:我去机场接朋友。","o:路上车很多。","o:我家离学校很近。","o:你在哪个公司工作？","o:机场离这儿很远。","o:我坐公共汽车上班。","o:我每天学习两个小时。","o:请说慢一点儿。","o:他跑得很快。","o:我们一起过生日吧。","o:我们走路去吧。","o:我到家了。","o:你家离公司远吗？","o:不远，走路十分钟就到。","o:那太累了。","o:你在哪儿呢？","o:我已经下飞机了。"]
+hsk2/7 · read · How do you read it?
+  ["rp:教室","rp:机场","rp:路","rp:离","rp:公司","rp:远","rp:公共汽车","rp:小时","rp:慢","rp:快","rp:过","rp:走","rp:到"]
+hsk2/7 · words · Flashcards or Word quiz
+  [["f:教室","q:教室"],["f:机场","q:机场"],["f:路","q:路"],["f:离","q:离"],["f:公司","q:公司"],["f:远","q:远"],["f:公共汽车","q:公共汽车"],["f:小时","q:小时"],["f:慢","q:慢"],["f:快","q:快"],["f:过","q:过"],["f:走","q:走"],["f:到","q:到"]]
+  ["教室","机场","路","离","公司","远","公共汽车","小时","慢","快","过","走","到"]
+hsk2/7 · words · Which radical?
+  ["rad:教","rad:室","rad:机","rad:场","rad:路","rad:离","rad:公","rad:司","rad:远","rad:共","rad:汽","rad:时","rad:慢","rad:快","rad:过","rad:到"]
+hsk2/7 · exercises · Grammar
+  ["g:hsk2/7/1.1","g:hsk2/7/2.1","g:hsk2/7/3.1","g:hsk2/7/3.2","g:hsk2/7/4.1"]
+hsk2/7 · exercises · Dialogues
+  ["wb:hsk2/7/d1","wb:hsk2/7/d2","wb:hsk2/7/d3","wb:hsk2/7/d4"]
+hsk2/7 · exercises · True or false
+  ["wb:hsk2/7/j1","wb:hsk2/7/j2","wb:hsk2/7/j3","wb:hsk2/7/j4"]
+hsk2/7 · exercises · Pick the reply
+  ["wb:hsk2/7/r1","wb:hsk2/7/r2","wb:hsk2/7/r3","wb:hsk2/7/r4","wb:hsk2/7/r5"]
+hsk2/7 · exercises · Fill in the word
+  ["wf:教室","wf:机场","wf:路","wf:离","wf:公司","wf:远","wf:公共汽车","wf:小时","wf:慢","wf:快","wf:过","wf:走","wf:到"]
+hsk2/8 · write · Write the characters
+  ["w:再","w:让","w:告","w:诉","w:等","w:找","w:事","w:情","w:服","w:务","w:员","w:白","w:黑","w:贵"]
+hsk2/8 · write · Dictation
+  ["d:再","d:让","d:告诉","d:等","d:找","d:事情","d:服务员","d:白","d:黑","d:贵"]
+hsk2/8 · listen · Hear the word
+  ["l:再","l:让","l:告诉","l:等","l:找","l:事情","l:服务员","l:白","l:黑","l:贵"]
+hsk2/8 · listen · Sentences
+  ["ls:再","ls:让","ls:告诉","ls:等","ls:找","ls:事情","ls:服务员","ls:白","ls:黑","ls:贵"]
+hsk2/8 · listen · Tones
+  ["t:再","t:让","t:告","t:诉","t:等","t:找","t:事","t:情","t:服","t:务","t:员","t:白","t:黑","t:贵"]
+hsk2/8 · speak · Say the word
+  ["s:再","s:让","s:告诉","s:等","s:找","s:事情","s:服务员","s:白","s:黑","s:贵"]
+hsk2/8 · speak · Say the sentence
+  ["s:再#ex","s:让#ex","s:告诉#ex","s:等#ex","s:找#ex","s:事情#ex","s:服务员#ex","s:白#ex","s:黑#ex","s:贵#ex"]
+  ["再","让","告诉","等","找","事情","服务员","白","黑","贵"]
+hsk2/8 · read · Read & answer
+  [["r:hsk2/8/r1",["rq:hsk2/8/r1#0","rq:hsk2/8/r1#1"]],["r:hsk2/8/r2",["rq:hsk2/8/r2#0","rq:hsk2/8/r2#1"]]]
+  ["看电影","在饭馆"]
+hsk2/8 · read · Build the sentence
+  ["o:我明天再来。","o:妈妈让我早点儿睡觉。","o:请告诉我你的名字。","o:你等我一下。","o:你在找什么？","o:我有一件事情想问你。","o:服务员，我要一杯茶。","o:我喜欢白色的衣服。","o:那只黑猫是谁的？","o:这件衣服太贵了。","o:我们明天去看电影，好吗？","o:你想看什么电影？","o:让我想想再告诉你。","o:服务员，我们的菜怎么还没来？","o:对不起，请再等一下。","o:我们已经等了半个小时了。","o:我去看看，马上告诉您。"]
+hsk2/8 · read · How do you read it?
+  ["rp:再","rp:让","rp:告诉","rp:等","rp:找","rp:事情","rp:服务员","rp:白","rp:黑","rp:贵"]
+hsk2/8 · words · Flashcards or Word quiz
+  [["f:再","q:再"],["f:让","q:让"],["f:告诉","q:告诉"],["f:等","q:等"],["f:找","q:找"],["f:事情","q:事情"],["f:服务员","q:服务员"],["f:白","q:白"],["f:黑","q:黑"],["f:贵","q:贵"]]
+  ["再","让","告诉","等","找","事情","服务员","白","黑","贵"]
+hsk2/8 · words · Which radical?
+  ["rad:再","rad:让","rad:告","rad:诉","rad:等","rad:找","rad:事","rad:情","rad:服","rad:务","rad:员","rad:贵"]
+hsk2/8 · exercises · Grammar
+  ["g:hsk2/8/1.1","g:hsk2/8/2.1","g:hsk2/8/3.1","g:hsk2/8/3.2","g:hsk2/8/4.1"]
+hsk2/8 · exercises · Dialogues
+  ["wb:hsk2/8/d1","wb:hsk2/8/d2","wb:hsk2/8/d3","wb:hsk2/8/d4"]
+hsk2/8 · exercises · True or false
+  ["wb:hsk2/8/j1","wb:hsk2/8/j2","wb:hsk2/8/j3","wb:hsk2/8/j4"]
+hsk2/8 · exercises · Pick the reply
+  ["wb:hsk2/8/r1","wb:hsk2/8/r2","wb:hsk2/8/r3","wb:hsk2/8/r4","wb:hsk2/8/r5"]
+hsk2/8 · exercises · Fill in the word
+  ["wf:再","wf:让","wf:告诉","wf:等","wf:找","wf:事情","wf:服务员","wf:白","wf:黑","wf:贵"]
+hsk2/9 · write · Write the characters
+  ["w:错","w:从","w:跳","w:舞","w:第","w:一","w:希","w:望","w:问","w:题","w:欢","w:迎","w:上","w:班","w:懂","w:完"]
+hsk2/9 · write · Dictation
+  ["d:错","d:从","d:跳舞","d:第一","d:希望","d:问题","d:欢迎","d:上班","d:懂","d:完","d:题"]
+hsk2/9 · listen · Hear the word
+  ["l:错","l:从","l:跳舞","l:第一","l:希望","l:问题","l:欢迎","l:上班","l:懂","l:完","l:题"]
+hsk2/9 · listen · Sentences
+  ["ls:错","ls:从","ls:跳舞","ls:第一","ls:希望","ls:问题","ls:欢迎","ls:上班","ls:懂","ls:完","ls:题"]
+hsk2/9 · listen · Tones
+  ["t:错","t:从","t:跳","t:舞","t:第","t:一","t:希","t:望","t:问","t:题","t:欢","t:迎","t:上","t:班","t:懂","t:完"]
+hsk2/9 · speak · Say the word
+  ["s:错","s:从","s:跳舞","s:第一","s:希望","s:问题","s:欢迎","s:上班","s:懂","s:完","s:题"]
+hsk2/9 · speak · Say the sentence
+  ["s:错#ex","s:从#ex","s:跳舞#ex","s:第一#ex","s:希望#ex","s:问题#ex","s:欢迎#ex","s:上班#ex","s:懂#ex","s:完#ex","s:题#ex"]
+  ["错","从","跳舞","第一","希望","问题","欢迎","上班","懂","完","题"]
+hsk2/9 · read · Read & answer
+  [["r:hsk2/9/r1",["rq:hsk2/9/r1#0","rq:hsk2/9/r1#1"]],["r:hsk2/9/r2",["rq:hsk2/9/r2#0","rq:hsk2/9/r2#1"]]]
+  ["考试","第一天上班"]
+hsk2/9 · read · Build the sentence
+  ["o:你打错电话了。","o:我从八点开始工作。","o:她很喜欢跳舞。","o:这是我第一次来中国。","o:希望你明天能来。","o:我有一个问题。","o:欢迎你来我家！","o:你每天几点上班？","o:你听懂了吗？","o:我做完了。","o:这个题很难。","o:今天的考试怎么样？","o:题太多了！","o:你从什么时候开始上班？","o:希望你能喜欢。"]
+hsk2/9 · read · How do you read it?
+  ["rp:错","rp:从","rp:跳舞","rp:第一","rp:希望","rp:问题","rp:欢迎","rp:上班","rp:懂","rp:完","rp:题"]
+hsk2/9 · words · Flashcards or Word quiz
+  [["f:错","q:错"],["f:从","q:从"],["f:跳舞","q:跳舞"],["f:第一","q:第一"],["f:希望","q:希望"],["f:问题","q:问题"],["f:欢迎","q:欢迎"],["f:上班","q:上班"],["f:懂","q:懂"],["f:完","q:完"],["f:题","q:题"]]
+  ["错","从","跳舞","第一","希望","问题","欢迎","上班","懂","完","题"]
+hsk2/9 · words · Which radical?
+  ["rad:错","rad:从","rad:跳","rad:舞","rad:第","rad:希","rad:望","rad:问","rad:题","rad:欢","rad:迎","rad:上","rad:班","rad:懂","rad:完"]
+hsk2/9 · exercises · Grammar
+  ["g:hsk2/9/1.1","g:hsk2/9/1.2","g:hsk2/9/1.3","g:hsk2/9/2.1","g:hsk2/9/3.1"]
+hsk2/9 · exercises · Dialogues
+  ["wb:hsk2/9/d1","wb:hsk2/9/d2","wb:hsk2/9/d3","wb:hsk2/9/d4"]
+hsk2/9 · exercises · True or false
+  ["wb:hsk2/9/j1","wb:hsk2/9/j2","wb:hsk2/9/j3","wb:hsk2/9/j4"]
+hsk2/9 · exercises · Pick the reply
+  ["wb:hsk2/9/r1","wb:hsk2/9/r2","wb:hsk2/9/r3","wb:hsk2/9/r4","wb:hsk2/9/r5"]
+hsk2/9 · exercises · Fill in the word
+  ["wf:错","wf:从","wf:跳舞","wf:第一","wf:希望","wf:问题","wf:欢迎","wf:上班","wf:懂","wf:完","wf:题"]
+hsk2/10 · write · Write the characters
+  ["w:课","w:帮","w:助","w:别","w:哥","w:鸡","w:蛋","w:西","w:瓜","w:正","w:在","w:手","w:机","w:洗"]
+hsk2/10 · write · Dictation
+  ["d:课","d:帮助","d:别","d:哥哥","d:鸡蛋","d:西瓜","d:正在","d:手机","d:洗"]
+hsk2/10 · listen · Hear the word
+  ["l:课","l:帮助","l:别","l:哥哥","l:鸡蛋","l:西瓜","l:正在","l:手机","l:洗"]
+hsk2/10 · listen · Sentences
+  ["ls:课","ls:帮助","ls:别","ls:哥哥","ls:鸡蛋","ls:西瓜","ls:正在","ls:手机","ls:洗"]
+hsk2/10 · listen · Tones
+  ["t:课","t:帮","t:助","t:别","t:哥","t:鸡","t:蛋","t:西","t:瓜","t:正","t:在","t:手","t:机","t:洗"]
+hsk2/10 · speak · Say the word
+  ["s:课","s:帮助","s:别","s:哥哥","s:鸡蛋","s:西瓜","s:正在","s:手机","s:洗"]
+hsk2/10 · speak · Say the sentence
+  ["s:课#ex","s:帮助#ex","s:别#ex","s:哥哥#ex","s:鸡蛋#ex","s:西瓜#ex","s:正在#ex","s:手机#ex","s:洗#ex"]
+  ["课","帮助","别","哥哥","鸡蛋","西瓜","正在","手机","洗"]
+hsk2/10 · read · Read & answer
+  [["r:hsk2/10/r1",["rq:hsk2/10/r1#0","rq:hsk2/10/r1#1"]],["r:hsk2/10/r2",["rq:hsk2/10/r2#0","rq:hsk2/10/r2#1"]]]
+  ["我的手机呢","哥哥回来了"]
+hsk2/10 · read · Build the sentence
+  ["o:明天上午有汉语课。","o:谢谢你的帮助！","o:别看电视了！","o:我哥哥比我大三岁。","o:我早上吃两个鸡蛋。","o:西瓜多少钱一斤？","o:妈妈正在做饭。","o:我的手机在哪儿？","o:我帮你洗衣服。","o:你在找什么？","o:我的手机。你看见了吗？","o:别找了，在电脑旁边呢。","o:太好了，谢谢！","o:你怎么买了这么多东西？","o:哥哥今天回来，妈妈正在准备晚饭。","o:买了什么？","o:鸡蛋、羊肉，还有一个大西瓜。"]
+hsk2/10 · read · How do you read it?
+  ["rp:课","rp:帮助","rp:别","rp:哥哥","rp:鸡蛋","rp:西瓜","rp:正在","rp:手机","rp:洗"]
+hsk2/10 · words · Flashcards or Word quiz
+  [["f:课","q:课"],["f:帮助","q:帮助"],["f:别","q:别"],["f:哥哥","q:哥哥"],["f:鸡蛋","q:鸡蛋"],["f:西瓜","q:西瓜"],["f:正在","q:正在"],["f:手机","q:手机"],["f:洗","q:洗"]]
+  ["课","帮助","别","哥哥","鸡蛋","西瓜","正在","手机","洗"]
+hsk2/10 · words · Which radical?
+  ["rad:课","rad:帮","rad:助","rad:别","rad:哥","rad:鸡","rad:蛋","rad:正","rad:在","rad:机","rad:洗"]
+hsk2/10 · exercises · Grammar
+  ["g:hsk2/10/1.1","g:hsk2/10/1.2","g:hsk2/10/2.1","g:hsk2/10/3.1"]
+hsk2/10 · exercises · Dialogues
+  ["wb:hsk2/10/d1","wb:hsk2/10/d2","wb:hsk2/10/d3","wb:hsk2/10/d4"]
+hsk2/10 · exercises · True or false
+  ["wb:hsk2/10/j1","wb:hsk2/10/j2","wb:hsk2/10/j3","wb:hsk2/10/j4"]
+hsk2/10 · exercises · Pick the reply
+  ["wb:hsk2/10/r1","wb:hsk2/10/r2","wb:hsk2/10/r3","wb:hsk2/10/r4","wb:hsk2/10/r5"]
+hsk2/10 · exercises · Fill in the word
+  ["wf:课","wf:帮助","wf:别","wf:哥哥","wf:鸡蛋","wf:西瓜","wf:正在","wf:手机","wf:洗"]
+hsk2/11 · write · Write the characters
+  ["w:唱","w:歌","w:男","w:女","w:孩","w:子","w:右","w:边","w:比","w:便","w:宜","w:说","w:话","w:可","w:能","w:去","w:年","w:姓"]
+hsk2/11 · write · Dictation
+  ["d:唱歌","d:男","d:女","d:孩子","d:右边","d:比","d:便宜","d:说话","d:可能","d:去年","d:姓"]
+hsk2/11 · listen · Hear the word
+  ["l:唱歌","l:男","l:女","l:孩子","l:右边","l:比","l:便宜","l:说话","l:可能","l:去年","l:姓"]
+hsk2/11 · listen · Sentences
+  ["ls:唱歌","ls:男","ls:女","ls:孩子","ls:右边","ls:比","ls:便宜","ls:说话","ls:可能","ls:去年","ls:姓"]
+hsk2/11 · listen · Tones
+  ["t:唱","t:歌","t:男","t:女","t:孩","t:子","t:右","t:边","t:比","t:便","t:宜","t:说","t:话","t:可","t:能","t:去","t:年","t:姓"]
+hsk2/11 · speak · Say the word
+  ["s:唱歌","s:男","s:女","s:孩子","s:右边","s:比","s:便宜","s:说话","s:可能","s:去年","s:姓"]
+hsk2/11 · speak · Say the sentence
+  ["s:唱歌#ex","s:男#ex","s:女#ex","s:孩子#ex","s:右边#ex","s:比#ex","s:便宜#ex","s:说话#ex","s:可能#ex","s:去年#ex","s:姓#ex"]
+  ["唱歌","男","女","孩子","右边","比","便宜","说话","可能","去年","姓"]
+hsk2/11 · read · Read & answer
+  [["r:hsk2/11/r1",["rq:hsk2/11/r1#0","rq:hsk2/11/r1#1"]],["r:hsk2/11/r2",["rq:hsk2/11/r2#0","rq:hsk2/11/r2#1"]]]
+  ["比一比","买西瓜"]
+hsk2/11 · read · Build the sentence
+  ["o:她唱歌唱得很好。","o:那个男人是谁？","o:我们班有十个女学生。","o:你有几个孩子？","o:右边那个是我哥哥。","o:今天比昨天冷。","o:这个比那个便宜。","o:请别说话。","o:明天可能下雨。","o:我去年去了北京。","o:您贵姓？我姓王。","o:右边那个男孩子是你弟弟吗？","o:他比你高很多！","o:是啊，他一米九。","o:西瓜怎么卖？","o:两块五一斤，比昨天便宜。","o:苹果没有西瓜便宜，五块一斤。"]
+hsk2/11 · read · How do you read it?
+  ["rp:唱歌","rp:男","rp:女","rp:孩子","rp:右边","rp:比","rp:便宜","rp:说话","rp:可能","rp:去年","rp:姓"]
+hsk2/11 · words · Flashcards or Word quiz
+  [["f:唱歌","q:唱歌"],["f:男","q:男"],["f:女","q:女"],["f:孩子","q:孩子"],["f:右边","q:右边"],["f:比","q:比"],["f:便宜","q:便宜"],["f:说话","q:说话"],["f:可能","q:可能"],["f:去年","q:去年"],["f:姓","q:姓"]]
+  ["唱歌","男","女","孩子","右边","比","便宜","说话","可能","去年","姓"]
+hsk2/11 · words · Which radical?
+  ["rad:唱","rad:歌","rad:男","rad:孩","rad:右","rad:边","rad:便","rad:宜","rad:说","rad:话","rad:可","rad:能","rad:去","rad:年","rad:姓"]
+hsk2/11 · exercises · Grammar
+  ["g:hsk2/11/1.1","g:hsk2/11/2.1","g:hsk2/11/2.2","g:hsk2/11/2.3","g:hsk2/11/3.1"]
+hsk2/11 · exercises · Dialogues
+  ["wb:hsk2/11/d1","wb:hsk2/11/d2","wb:hsk2/11/d3","wb:hsk2/11/d4"]
+hsk2/11 · exercises · True or false
+  ["wb:hsk2/11/j1","wb:hsk2/11/j2","wb:hsk2/11/j3","wb:hsk2/11/j4"]
+hsk2/11 · exercises · Pick the reply
+  ["wb:hsk2/11/r1","wb:hsk2/11/r2","wb:hsk2/11/r3","wb:hsk2/11/r4","wb:hsk2/11/r5"]
+hsk2/11 · exercises · Fill in the word
+  ["wf:唱歌","wf:男","wf:女","wf:孩子","wf:右边","wf:比","wf:便宜","wf:说话","wf:可能","wf:去年","wf:姓"]
+hsk2/12 · write · Write the characters
+  ["w:得","w:妻","w:子","w:雪","w:零","w:度","w:穿","w:进","w:弟","w:近"]
+hsk2/12 · write · Dictation
+  ["d:得","d:妻子","d:雪","d:零","d:度","d:穿","d:进","d:弟弟","d:近"]
+hsk2/12 · listen · Hear the word
+  ["l:得","l:妻子","l:雪","l:零","l:度","l:穿","l:进","l:弟弟","l:近"]
+hsk2/12 · listen · Sentences
+  ["ls:得","ls:妻子","ls:雪","ls:零","ls:度","ls:穿","ls:进","ls:弟弟","ls:近"]
+hsk2/12 · listen · Tones
+  ["t:妻","t:子","t:雪","t:零","t:度","t:穿","t:进","t:弟","t:近"]
+hsk2/12 · speak · Say the word
+  ["s:得","s:妻子","s:雪","s:零","s:度","s:穿","s:进","s:弟弟","s:近"]
+hsk2/12 · speak · Say the sentence
+  ["s:得#ex","s:妻子#ex","s:雪#ex","s:零#ex","s:度#ex","s:穿#ex","s:进#ex","s:弟弟#ex","s:近#ex"]
+  ["得","妻子","雪","零","度","穿","进","弟弟","近"]
+hsk2/12 · read · Read & answer
+  [["r:hsk2/12/r1",["rq:hsk2/12/r1#0","rq:hsk2/12/r1#1"]],["r:hsk2/12/r2",["rq:hsk2/12/r2#0","rq:hsk2/12/r2#1"]]]
+  ["下雪了","他做饭做得很好"]
+hsk2/12 · read · Build the sentence
+  ["o:他跑得很快。","o:他妻子是老师。","o:外面下雪了。","o:今天零下五度。","o:今天三十度，很热。","o:今天很冷，多穿点儿衣服。","o:我弟弟八岁。","o:我家离公司很近。","o:外面下雪了，零下八度。","o:真冷啊！","o:你做饭做得怎么样？","o:你弟弟呢？","o:他做得最好！"]
+hsk2/12 · read · How do you read it?
+  ["rp:得","rp:妻子","rp:雪","rp:零","rp:度","rp:穿","rp:进","rp:弟弟","rp:近"]
+hsk2/12 · words · Flashcards or Word quiz
+  [["f:得","q:得"],["f:妻子","q:妻子"],["f:雪","q:雪"],["f:零","q:零"],["f:度","q:度"],["f:穿","q:穿"],["f:进","q:进"],["f:弟弟","q:弟弟"],["f:近","q:近"]]
+  ["得","妻子","雪","零","度","穿","进","弟弟","近"]
+hsk2/12 · words · Which radical?
+  ["rad:得","rad:妻","rad:雪","rad:零","rad:度","rad:穿","rad:进","rad:弟","rad:近"]
+hsk2/12 · exercises · Grammar
+  ["g:hsk2/12/1.1","g:hsk2/12/1.2","g:hsk2/12/1.3","g:hsk2/12/2.1"]
+hsk2/12 · exercises · Dialogues
+  ["wb:hsk2/12/d1","wb:hsk2/12/d2","wb:hsk2/12/d3","wb:hsk2/12/d4"]
+hsk2/12 · exercises · True or false
+  ["wb:hsk2/12/j1","wb:hsk2/12/j2","wb:hsk2/12/j3","wb:hsk2/12/j4"]
+hsk2/12 · exercises · Pick the reply
+  ["wb:hsk2/12/r1","wb:hsk2/12/r2","wb:hsk2/12/r3","wb:hsk2/12/r4","wb:hsk2/12/r5"]
+hsk2/12 · exercises · Fill in the word
+  ["wf:得","wf:妻子","wf:雪","wf:零","wf:度","wf:穿","wf:进","wf:弟弟","wf:近"]
+hsk2/13 · write · Write the characters
+  ["w:着","w:手","w:拿","w:铅","w:笔","w:班","w:笑","w:宾","w:馆","w:一","w:直","w:往","w:路","w:口"]
+hsk2/13 · write · Dictation
+  ["d:着","d:手","d:拿","d:铅笔","d:班","d:笑","d:宾馆","d:一直","d:往","d:路口"]
+hsk2/13 · listen · Hear the word
+  ["l:着","l:手","l:拿","l:铅笔","l:班","l:笑","l:宾馆","l:一直","l:往","l:路口"]
+hsk2/13 · listen · Sentences
+  ["ls:着","ls:手","ls:拿","ls:铅笔","ls:班","ls:笑","ls:宾馆","ls:一直","ls:往","ls:路口"]
+hsk2/13 · listen · Tones
+  ["t:手","t:拿","t:铅","t:笔","t:班","t:笑","t:宾","t:馆","t:一","t:直","t:往","t:路","t:口"]
+hsk2/13 · speak · Say the word
+  ["s:着","s:手","s:拿","s:铅笔","s:班","s:笑","s:宾馆","s:一直","s:往","s:路口"]
+hsk2/13 · speak · Say the sentence
+  ["s:着#ex","s:手#ex","s:拿#ex","s:铅笔#ex","s:班#ex","s:笑#ex","s:宾馆#ex","s:一直#ex","s:往#ex","s:路口#ex"]
+  ["着","手","拿","铅笔","班","笑","宾馆","一直","往","路口"]
+hsk2/13 · read · Read & answer
+  [["r:hsk2/13/r1",["rq:hsk2/13/r1#0","rq:hsk2/13/r1#1"]],["r:hsk2/13/r2",["rq:hsk2/13/r2#0","rq:hsk2/13/r2#1"]]]
+  ["怎么走","那个女孩儿是谁"]
+hsk2/13 · read · Build the sentence
+  ["o:门开着呢。","o:你手里拿着什么？","o:请拿一本书给我。","o:我可以用你的铅笔吗？","o:我们班有二十个学生。","o:她很爱笑。","o:这个宾馆离机场很近。","o:一直往前走。","o:往左走就是医院。","o:到了路口往右走。","o:请问，去宾馆怎么走？","o:不远，走路五分钟就到。","o:她是我们班的，很爱笑。","o:你知道她的名字吗？","o:不知道，她不是有男朋友吗？"]
+hsk2/13 · read · How do you read it?
+  ["rp:着","rp:手","rp:拿","rp:铅笔","rp:班","rp:笑","rp:宾馆","rp:一直","rp:往","rp:路口"]
+hsk2/13 · words · Flashcards or Word quiz
+  [["f:着","q:着"],["f:手","q:手"],["f:拿","q:拿"],["f:铅笔","q:铅笔"],["f:班","q:班"],["f:笑","q:笑"],["f:宾馆","q:宾馆"],["f:一直","q:一直"],["f:往","q:往"],["f:路口","q:路口"]]
+  ["着","手","拿","铅笔","班","笑","宾馆","一直","往","路口"]
+hsk2/13 · words · Which radical?
+  ["rad:着","rad:拿","rad:铅","rad:笔","rad:班","rad:笑","rad:宾","rad:馆","rad:直","rad:往","rad:路"]
+hsk2/13 · exercises · Grammar
+  ["g:hsk2/13/1.1","g:hsk2/13/1.2","g:hsk2/13/2.1","g:hsk2/13/3.1"]
+hsk2/13 · exercises · Dialogues
+  ["wb:hsk2/13/d1","wb:hsk2/13/d2","wb:hsk2/13/d3","wb:hsk2/13/d4"]
+hsk2/13 · exercises · True or false
+  ["wb:hsk2/13/j1","wb:hsk2/13/j2","wb:hsk2/13/j3","wb:hsk2/13/j4"]
+hsk2/13 · exercises · Pick the reply
+  ["wb:hsk2/13/r1","wb:hsk2/13/r2","wb:hsk2/13/r3","wb:hsk2/13/r4","wb:hsk2/13/r5"]
+hsk2/13 · exercises · Fill in the word
+  ["wf:着","wf:手","wf:拿","wf:铅笔","wf:班","wf:笑","wf:宾馆","wf:一直","wf:往","wf:路口"]
+hsk2/14 · write · Write the characters
+  ["w:有","w:意","w:思","w:但","w:是","w:虽","w:然","w:次","w:玩","w:儿","w:晴","w:百"]
+hsk2/14 · write · Dictation
+  ["d:有意思","d:但是","d:虽然","d:次","d:玩儿","d:晴","d:百"]
+hsk2/14 · listen · Hear the word
+  ["l:有意思","l:但是","l:虽然","l:次","l:玩儿","l:晴","l:百"]
+hsk2/14 · listen · Sentences
+  ["ls:有意思","ls:但是","ls:虽然","ls:次","ls:玩儿","ls:晴","ls:百"]
+hsk2/14 · listen · Tones
+  ["t:有","t:意","t:思","t:但","t:是","t:虽","t:然","t:次","t:玩","t:儿","t:晴","t:百"]
+hsk2/14 · speak · Say the word
+  ["s:有意思","s:但是","s:虽然","s:次","s:玩儿","s:晴","s:百"]
+hsk2/14 · speak · Say the sentence
+  ["s:有意思#ex","s:但是#ex","s:虽然#ex","s:次#ex","s:玩儿#ex","s:晴#ex","s:百#ex"]
+  ["有意思","但是","虽然","次","玩儿","晴","百"]
+hsk2/14 · read · Read & answer
+  [["r:hsk2/14/r1",["rq:hsk2/14/r1#0","rq:hsk2/14/r1#1"]],["r:hsk2/14/r2",["rq:hsk2/14/r2#0","rq:hsk2/14/r2#1"]]]
+  ["你去过中国吗","虽然贵"]
+hsk2/14 · read · Build the sentence
+  ["o:这本书很有意思。","o:我想去，但是没有时间。","o:虽然很累，但是很高兴。","o:我去过两次北京。","o:周末我们去公园玩儿吧。","o:今天是晴天。","o:这件衣服三百块。","o:你去过中国吗？","o:北京很有意思，我们一起去玩儿吧！","o:五百块。","o:喜欢就买吧。"]
+hsk2/14 · read · How do you read it?
+  ["rp:有意思","rp:但是","rp:虽然","rp:次","rp:玩儿","rp:晴","rp:百"]
+hsk2/14 · words · Flashcards or Word quiz
+  [["f:有意思","q:有意思"],["f:但是","q:但是"],["f:虽然","q:虽然"],["f:次","q:次"],["f:玩儿","q:玩儿"],["f:晴","q:晴"],["f:百","q:百"]]
+  ["有意思","但是","虽然","次","玩儿","晴","百"]
+hsk2/14 · words · Which radical?
+  ["rad:有","rad:意","rad:思","rad:但","rad:是","rad:虽","rad:然","rad:次","rad:玩","rad:晴","rad:百"]
+hsk2/14 · exercises · Grammar
+  ["g:hsk2/14/1.1","g:hsk2/14/1.2","g:hsk2/14/2.1","g:hsk2/14/2.2","g:hsk2/14/3.1"]
+hsk2/14 · exercises · Dialogues
+  ["wb:hsk2/14/d1","wb:hsk2/14/d2","wb:hsk2/14/d3","wb:hsk2/14/d4"]
+hsk2/14 · exercises · True or false
+  ["wb:hsk2/14/j1","wb:hsk2/14/j2","wb:hsk2/14/j3","wb:hsk2/14/j4"]
+hsk2/14 · exercises · Pick the reply
+  ["wb:hsk2/14/r1","wb:hsk2/14/r2","wb:hsk2/14/r3","wb:hsk2/14/r4","wb:hsk2/14/r5"]
+hsk2/14 · exercises · Fill in the word
+  ["wf:有意思","wf:但是","wf:虽然","wf:次","wf:玩儿","wf:晴","wf:百"]
+hsk2/15 · write · Write the characters
+  ["w:日","w:新","w:年","w:票","w:火","w:车","w:站","w:大","w:家","w:更","w:妹","w:阴"]
+hsk2/15 · write · Dictation
+  ["d:日","d:新年","d:票","d:火车站","d:大家","d:更","d:妹妹","d:阴"]
+hsk2/15 · listen · Hear the word
+  ["l:日","l:新年","l:票","l:火车站","l:大家","l:更","l:妹妹","l:阴"]
+hsk2/15 · listen · Sentences
+  ["ls:日","ls:新年","ls:票","ls:火车站","ls:大家","ls:更","ls:妹妹","ls:阴"]
+hsk2/15 · listen · Tones
+  ["t:日","t:新","t:年","t:票","t:火","t:车","t:站","t:大","t:家","t:更","t:妹","t:阴"]
+hsk2/15 · speak · Say the word
+  ["s:日","s:新年","s:票","s:火车站","s:大家","s:更","s:妹妹","s:阴"]
+hsk2/15 · speak · Say the sentence
+  ["s:日#ex","s:新年#ex","s:票#ex","s:火车站#ex","s:大家#ex","s:更#ex","s:妹妹#ex","s:阴#ex"]
+  ["日","新年","票","火车站","大家","更","妹妹","阴"]
+hsk2/15 · read · Read & answer
+  [["r:hsk2/15/r1",["rq:hsk2/15/r1#0","rq:hsk2/15/r1#1"]],["r:hsk2/15/r2",["rq:hsk2/15/r2#0","rq:hsk2/15/r2#1"]]]
+  ["新年快乐","等妹妹"]
+hsk2/15 · read · Build the sentence
+  ["o:今天是一月一日。","o:你买票了吗？","o:火车站离这儿很远。","o:明天会更好。","o:我妹妹在上学。","o:天阴了，要下雨了。","o:新年就要到了，你准备做什么？","o:我要回家看妈妈。","o:票买了吗？","o:还没有，明天去火车站买。","o:再等她十分钟吧。","o:天阴了，快要下雨了。","o:你看，她来了！"]
+hsk2/15 · read · How do you read it?
+  ["rp:日","rp:新年","rp:票","rp:火车站","rp:大家","rp:更","rp:妹妹","rp:阴"]
+hsk2/15 · words · Flashcards or Word quiz
+  [["f:日","q:日"],["f:新年","q:新年"],["f:票","q:票"],["f:火车站","q:火车站"],["f:大家","q:大家"],["f:更","q:更"],["f:妹妹","q:妹妹"],["f:阴","q:阴"]]
+  ["日","新年","票","火车站","大家","更","妹妹","阴"]
+hsk2/15 · words · Which radical?
+  ["rad:新","rad:年","rad:票","rad:站","rad:家","rad:更","rad:妹","rad:阴"]
+hsk2/15 · exercises · Grammar
+  ["g:hsk2/15/1.1","g:hsk2/15/1.2","g:hsk2/15/2.1","g:hsk2/15/2.2"]
+hsk2/15 · exercises · Dialogues
+  ["wb:hsk2/15/d1","wb:hsk2/15/d2","wb:hsk2/15/d3","wb:hsk2/15/d4"]
+hsk2/15 · exercises · True or false
+  ["wb:hsk2/15/j1","wb:hsk2/15/j2","wb:hsk2/15/j3","wb:hsk2/15/j4"]
+hsk2/15 · exercises · Pick the reply
+  ["wb:hsk2/15/r1","wb:hsk2/15/r2","wb:hsk2/15/r3","wb:hsk2/15/r4","wb:hsk2/15/r5"]
+hsk2/15 · exercises · Fill in the word
+  ["wf:日","wf:新年","wf:票","wf:火车站","wf:大家","wf:更","wf:妹妹","wf:阴"]
+ledu/1 · write · Write the characters
+  ["w:一","w:二","w:三","w:四","w:五","w:六","w:七","w:八","w:九","w:十","w:百","w:千","w:万"]
+ledu/1 · write · Dictation
+  ["d:一","d:二","d:三","d:四","d:五","d:六","d:七","d:八","d:九","d:十","d:百","d:千","d:万"]
+ledu/1 · listen · Hear the word
+  ["l:一","l:二","l:三","l:四","l:五","l:六","l:七","l:八","l:九","l:十","l:百","l:千","l:万"]
+ledu/1 · listen · Sentences
+  ["ls:一","ls:二","ls:三","ls:四","ls:五","ls:六","ls:七","ls:八","ls:九","ls:十","ls:百","ls:千","ls:万"]
+ledu/1 · listen · Tones
+  ["t:一","t:二","t:三","t:四","t:五","t:六","t:七","t:八","t:九","t:十","t:百","t:千","t:万"]
+ledu/1 · speak · Say the word
+  ["s:一","s:二","s:三","s:四","s:五","s:六","s:七","s:八","s:九","s:十","s:百","s:千","s:万"]
+ledu/1 · speak · Say the sentence
+  ["s:一#ex","s:二#ex","s:三#ex","s:四#ex","s:五#ex","s:六#ex","s:七#ex","s:八#ex","s:九#ex","s:十#ex","s:百#ex","s:千#ex","s:万#ex"]
+  ["一","二","三","四","五","六","七","八","九","十","百","千","万"]
+ledu/1 · read · Read & answer
+  [["r:ledu/1/r1",["rq:ledu/1/r1#0","rq:ledu/1/r1#1"]],["r:ledu/1/r2",["rq:ledu/1/r2#0","rq:ledu/1/r2#1"]]]
+  ["买杯子","数一数"]
+ledu/1 · read · Build the sentence
+  ["o:我有一个苹果。","o:现在是二月。","o:这里有三只猫。","o:我今年四岁。","o:他每天五点起床。","o:我们六点吃晚饭。","o:一个星期有七天。","o:他的女儿八岁了。","o:现在九点了。","o:我有十块钱。","o:这本书一百块。","o:这台电脑三千块。","o:这个小城有三万人。","o:这个杯子多少钱？","o:十八块。","o:那个呢？","o:那个二十五块。","o:我要这个。","o:好的，十八块。","o:你几岁了？","o:我七岁了。你呢？","o:我八岁。我有九本书。","o:我有十本书。","o:你的书比我多一本。"]
+ledu/1 · read · How do you read it?
+  ["rp:一","rp:二","rp:三","rp:四","rp:五","rp:六","rp:七","rp:八","rp:九","rp:十","rp:百","rp:千","rp:万"]
+ledu/1 · words · Flashcards or Word quiz
+  [["f:一","q:一"],["f:二","q:二"],["f:三","q:三"],["f:四","q:四"],["f:五","q:五"],["f:六","q:六"],["f:七","q:七"],["f:八","q:八"],["f:九","q:九"],["f:十","q:十"],["f:百","q:百"],["f:千","q:千"],["f:万","q:万"]]
+  ["一","二","三","四","五","六","七","八","九","十","百","千","万"]
+ledu/1 · words · Which radical?
+  ["rad:三","rad:四","rad:五","rad:六","rad:七","rad:九","rad:百","rad:千","rad:万"]
+ledu/1 · exercises · Grammar
+  ["g:ledu/1/1.1","g:ledu/1/1.2","g:ledu/1/1.3","g:ledu/1/1.4","g:ledu/1/1.5","g:ledu/1/2.1","g:ledu/1/2.2","g:ledu/1/2.3","g:ledu/1/2.4","g:ledu/1/2.5","g:ledu/1/3.1","g:ledu/1/3.2","g:ledu/1/3.3","g:ledu/1/3.4","g:ledu/1/3.5"]
+ledu/1 · exercises · Dialogues
+  ["wb:ledu/1/d1","wb:ledu/1/d2","wb:ledu/1/d3","wb:ledu/1/d4"]
+ledu/1 · exercises · True or false
+  ["wb:ledu/1/j1","wb:ledu/1/j2","wb:ledu/1/j3","wb:ledu/1/j4"]
+ledu/1 · exercises · Pick the reply
+  ["wb:ledu/1/r1","wb:ledu/1/r2","wb:ledu/1/r3","wb:ledu/1/r4"]
+ledu/1 · exercises · Fill in the word
+  ["wf:一","wf:二","wf:三","wf:四","wf:五","wf:六","wf:七","wf:八","wf:九","wf:十","wf:百","wf:千","wf:万"]
+ledu/2 · write · Write the characters
+  ["w:一","w:点","w:儿","w:起","w:共","w:样","w:半","w:些","w:定","w:心","w:意","w:独","w:无","w:二","w:三","w:不","w:四","w:五","w:颜","w:六","w:色","w:乱","w:七","w:八","w:糟","w:十","w:全","w:美","w:九","w:离","w:成","w:百","w:上","w:千","w:老","w:虎","w:在","w:家","w:看","w:见","w:松","w:鼠","w:有","w:几","w:只","w:手","w:冰","w:走","w:和","w:河","w:燕","w:子","w:来","w:牛"]
+ledu/2 · write · Dictation
+  ["d:一点儿","d:一起","d:一共","d:一样","d:一半","d:一些","d:一定","d:一心一意","d:独一无二","d:三心二意","d:不三不四","d:五颜六色","d:乱七八糟","d:十全十美","d:八九不离十","d:成百上千","d:老虎","d:在家","d:看见","d:松鼠","d:有","d:几","d:只","d:手","d:冰","d:走","d:和","d:河","d:看","d:燕子","d:来","d:牛"]
+ledu/2 · listen · Hear the word
+  ["l:一点儿","l:一起","l:一共","l:一样","l:一半","l:一些","l:一定","l:一心一意","l:独一无二","l:三心二意","l:不三不四","l:五颜六色","l:乱七八糟","l:十全十美","l:八九不离十","l:成百上千","l:老虎","l:在家","l:看见","l:松鼠","l:有","l:几","l:只","l:手","l:冰","l:走","l:和","l:河","l:看","l:燕子","l:来","l:牛"]
+ledu/2 · listen · Sentences
+  ["ls:一点儿","ls:一起","ls:一共","ls:一样","ls:一半","ls:一些","ls:一定","ls:一心一意","ls:独一无二","ls:三心二意","ls:不三不四","ls:五颜六色","ls:乱七八糟","ls:十全十美","ls:八九不离十","ls:成百上千","ls:老虎","ls:在家","ls:看见","ls:松鼠","ls:有","ls:几","ls:只","ls:手","ls:冰","ls:走","ls:和","ls:河","ls:看","ls:燕子","ls:来","ls:牛"]
+ledu/2 · listen · Tones
+  ["t:一","t:点","t:儿","t:起","t:共","t:样","t:半","t:些","t:定","t:心","t:意","t:独","t:无","t:二","t:三","t:不","t:四","t:五","t:颜","t:六","t:色","t:乱","t:七","t:八","t:糟","t:十","t:全","t:美","t:九","t:离","t:成","t:百","t:上","t:千","t:老","t:虎","t:在","t:家","t:看","t:见","t:松","t:鼠","t:有","t:几","t:只","t:手","t:冰","t:走","t:和","t:河","t:燕","t:子","t:来","t:牛"]
+ledu/2 · speak · Say the word
+  ["s:一点儿","s:一起","s:一共","s:一样","s:一半","s:一些","s:一定","s:一心一意","s:独一无二","s:三心二意","s:不三不四","s:五颜六色","s:乱七八糟","s:十全十美","s:八九不离十","s:成百上千","s:老虎","s:在家","s:看见","s:松鼠","s:有","s:几","s:只","s:手","s:冰","s:走","s:和","s:河","s:看","s:燕子","s:来","s:牛"]
+ledu/2 · speak · Say the sentence
+  ["s:一点儿#ex","s:一起#ex","s:一共#ex","s:一样#ex","s:一半#ex","s:一些#ex","s:一定#ex","s:一心一意#ex","s:独一无二#ex","s:三心二意#ex","s:不三不四#ex","s:五颜六色#ex","s:乱七八糟#ex","s:十全十美#ex","s:八九不离十#ex","s:成百上千#ex","s:老虎#ex","s:在家#ex","s:看见#ex","s:松鼠#ex","s:有#ex","s:几#ex","s:只#ex","s:手#ex","s:冰#ex","s:走#ex","s:和#ex","s:河#ex","s:看#ex","s:燕子#ex","s:来#ex","s:牛#ex"]
+  ["一点儿","一起","一共","一样","一半","一些","一定","一心一意","独一无二","三心二意","不三不四","五颜六色","乱七八糟","十全十美","八九不离十","成百上千","老虎","在家","看见","松鼠","有","几","只","手","冰","走","和","河","看","燕子","来","牛"]
+ledu/2 · read · Read & answer
+  [["r:ledu/2/r1",["rq:ledu/2/r1#0","rq:ledu/2/r1#1"]],["r:ledu/2/r2",["rq:ledu/2/r2#0","rq:ledu/2/r2#1"]]]
+  ["数一数","去河边"]
+ledu/2 · read · Build the sentence
+  ["o:我只会说一点儿汉语。","o:明天我们一起去公园。","o:这些苹果一共十块钱。","o:我的杯子和你的一样。","o:桌子上有一些书。","o:明天我一定来。","o:他一心一意地学汉语。","o:这只杯子是独一无二的。","o:做作业不要三心二意。","o:别和不三不四的人玩。","o:花园里的花五颜六色。","o:他的房间乱七八糟。","o:没有人十全十美。","o:你猜得八九不离十。","o:成百上千的人在看比赛。","o:动物园里有一只老虎。","o:今天我在家看书。","o:我看见一只小鸟。","o:树上有一只松鼠。","o:我有两个妹妹。","o:你要几个杯子？","o:我家有三只猫。","o:请洗洗你的手。","o:杯子里有冰。","o:我们走路去学校。","o:我喜欢苹果和香蕉。","o:河里有很多鱼。","o:我想看电影。","o:春天燕子飞回来了。","o:朋友明天来我家。","o:田里有一头牛。","o:你家有几只猫？","o:两只猫一样大吗？","o:不一样，小猫只有一半大。","o:明天我们一起去河边吧。","o:好啊！我们怎么去？","o:走路去，河边有一些燕子。","o:太好了，我一定来！"]
+ledu/2 · read · How do you read it?
+  ["rp:一点儿","rp:一起","rp:一共","rp:一样","rp:一半","rp:一些","rp:一定","rp:一心一意","rp:独一无二","rp:三心二意","rp:不三不四","rp:五颜六色","rp:乱七八糟","rp:十全十美","rp:八九不离十","rp:成百上千","rp:老虎","rp:在家","rp:看见","rp:松鼠","rp:有","rp:几","rp:只","rp:手","rp:冰","rp:走","rp:和","rp:河","rp:看","rp:燕子","rp:来","rp:牛"]
+ledu/2 · words · Flashcards or Word quiz
+  [["f:一点儿","q:一点儿"],["f:一起","q:一起"],["f:一共","q:一共"],["f:一样","q:一样"],["f:一半","q:一半"],["f:一些","q:一些"],["f:一定","q:一定"],["f:一心一意","q:一心一意"],["f:独一无二","q:独一无二"],["f:三心二意","q:三心二意"],["f:不三不四","q:不三不四"],["f:五颜六色","q:五颜六色"],["f:乱七八糟","q:乱七八糟"],["f:十全十美","q:十全十美"],["f:八九不离十","q:八九不离十"],["f:成百上千","q:成百上千"],["f:老虎","q:老虎"],["f:在家","q:在家"],["f:看见","q:看见"],["f:松鼠","q:松鼠"],["f:有","q:有"],["f:几","q:几"],["f:只","q:只"],["f:手","q:手"],["f:冰","q:冰"],["f:走","q:走"],["f:和","q:和"],["f:河","q:河"],["f:看","q:看"],["f:燕子","q:燕子"],["f:来","q:来"],["f:牛","q:牛"]]
+  ["一点儿","一起","一共","一样","一半","一些","一定","一心一意","独一无二","三心二意","不三不四","五颜六色","乱七八糟","十全十美","八九不离十","成百上千","老虎","在家","看见","松鼠","有","几","只","手","冰","走","和","河","看","燕子","来","牛"]
+ledu/2 · words · Which radical?
+  ["rad:点","rad:起","rad:共","rad:样","rad:半","rad:些","rad:定","rad:意","rad:独","rad:三","rad:不","rad:四","rad:五","rad:颜","rad:六","rad:乱","rad:七","rad:糟","rad:全","rad:美","rad:九","rad:离","rad:成","rad:百","rad:上","rad:千","rad:在","rad:家","rad:看","rad:松","rad:有","rad:只","rad:冰","rad:和","rad:河","rad:燕","rad:来"]
+ledu/2 · exercises · Grammar
+  ["g:ledu/2/1.1","g:ledu/2/1.2","g:ledu/2/1.3","g:ledu/2/1.4","g:ledu/2/2.1","g:ledu/2/2.2","g:ledu/2/2.3","g:ledu/2/2.4","g:ledu/2/2.5","g:ledu/2/2.6","g:ledu/2/2.7","g:ledu/2/3.1","g:ledu/2/3.2","g:ledu/2/3.3","g:ledu/2/3.4","g:ledu/2/3.5"]
+ledu/2 · exercises · Dialogues
+  ["wb:ledu/2/d1","wb:ledu/2/d2","wb:ledu/2/d3","wb:ledu/2/d4"]
+ledu/2 · exercises · True or false
+  ["wb:ledu/2/j1","wb:ledu/2/j2","wb:ledu/2/j3","wb:ledu/2/j4"]
+ledu/2 · exercises · Pick the reply
+  ["wb:ledu/2/r1","wb:ledu/2/r2","wb:ledu/2/r3","wb:ledu/2/r4"]
+ledu/2 · exercises · Fill in the word
+  ["wf:一点儿","wf:一起","wf:一共","wf:一样","wf:一半","wf:一些","wf:一定","wf:一心一意","wf:独一无二","wf:三心二意","wf:不三不四","wf:五颜六色","wf:乱七八糟","wf:十全十美","wf:八九不离十","wf:成百上千","wf:老虎","wf:在家","wf:看见","wf:松鼠","wf:有","wf:几","wf:只","wf:手","wf:冰","wf:走","wf:和","wf:河","wf:看","wf:燕子","wf:来","wf:牛"]
+ledu/3 · write · Write the characters
+  ["w:生","w:日","w:星","w:期","w:月","w:人","w:家","w:孩","w:子","w:儿","w:火","w:车","w:腿","w:热","w:水","w:冰","w:牛","w:奶","w:肉","w:下","w:雨","w:伞","w:女","w:朋","w:友","w:开","w:心","w:果","w:西","w:瓜","w:南","w:苹","w:芒","w:国","w:王","w:后","w:自","w:行","w:公","w:共","w:汽","w:鱼","w:三","w:文"]
+ledu/3 · write · Dictation
+  ["d:生日","d:星期日","d:月","d:人","d:家人","d:孩子","d:儿子","d:火车","d:火腿","d:热水","d:冰水","d:牛奶","d:牛肉","d:下雨","d:雨伞","d:女朋友","d:女儿","d:开心","d:开心果","d:西瓜","d:南瓜","d:水果","d:苹果","d:芒果","d:国王","d:王后","d:王子","d:自行车","d:公共汽车","d:开车","d:鱼","d:三文鱼"]
+ledu/3 · listen · Hear the word
+  ["l:生日","l:星期日","l:月","l:人","l:家人","l:孩子","l:儿子","l:火车","l:火腿","l:热水","l:冰水","l:牛奶","l:牛肉","l:下雨","l:雨伞","l:女朋友","l:女儿","l:开心","l:开心果","l:西瓜","l:南瓜","l:水果","l:苹果","l:芒果","l:国王","l:王后","l:王子","l:自行车","l:公共汽车","l:开车","l:鱼","l:三文鱼"]
+ledu/3 · listen · Sentences
+  ["ls:生日","ls:星期日","ls:月","ls:人","ls:家人","ls:孩子","ls:儿子","ls:火车","ls:火腿","ls:热水","ls:冰水","ls:牛奶","ls:牛肉","ls:下雨","ls:雨伞","ls:女朋友","ls:女儿","ls:开心","ls:开心果","ls:西瓜","ls:南瓜","ls:水果","ls:苹果","ls:芒果","ls:国王","ls:王后","ls:王子","ls:自行车","ls:公共汽车","ls:开车","ls:鱼","ls:三文鱼"]
+ledu/3 · listen · Tones
+  ["t:生","t:日","t:星","t:期","t:月","t:人","t:家","t:孩","t:子","t:儿","t:火","t:车","t:腿","t:热","t:水","t:冰","t:牛","t:奶","t:肉","t:下","t:雨","t:伞","t:女","t:朋","t:友","t:开","t:心","t:果","t:西","t:瓜","t:南","t:苹","t:芒","t:国","t:王","t:后","t:自","t:行","t:公","t:共","t:汽","t:鱼","t:三","t:文"]
+ledu/3 · speak · Say the word
+  ["s:生日","s:星期日","s:月","s:人","s:家人","s:孩子","s:儿子","s:火车","s:火腿","s:热水","s:冰水","s:牛奶","s:牛肉","s:下雨","s:雨伞","s:女朋友","s:女儿","s:开心","s:开心果","s:西瓜","s:南瓜","s:水果","s:苹果","s:芒果","s:国王","s:王后","s:王子","s:自行车","s:公共汽车","s:开车","s:鱼","s:三文鱼"]
+ledu/3 · speak · Say the sentence
+  ["s:生日#ex","s:星期日#ex","s:月#ex","s:人#ex","s:家人#ex","s:孩子#ex","s:儿子#ex","s:火车#ex","s:火腿#ex","s:热水#ex","s:冰水#ex","s:牛奶#ex","s:牛肉#ex","s:下雨#ex","s:雨伞#ex","s:女朋友#ex","s:女儿#ex","s:开心#ex","s:开心果#ex","s:西瓜#ex","s:南瓜#ex","s:水果#ex","s:苹果#ex","s:芒果#ex","s:国王#ex","s:王后#ex","s:王子#ex","s:自行车#ex","s:公共汽车#ex","s:开车#ex","s:鱼#ex","s:三文鱼#ex"]
+  ["生日","星期日","月","人","家人","孩子","儿子","火车","火腿","热水","冰水","牛奶","牛肉","下雨","雨伞","女朋友","女儿","开心","开心果","西瓜","南瓜","水果","苹果","芒果","国王","王后","王子","自行车","公共汽车","开车","鱼","三文鱼"]
+ledu/3 · read · Read & answer
+  [["r:ledu/3/r1",["rq:ledu/3/r1#0","rq:ledu/3/r1#1"]],["r:ledu/3/r2",["rq:ledu/3/r2#0","rq:ledu/3/r2#1"]]]
+  ["水果店","下雨天"]
+ledu/3 · read · Build the sentence
+  ["o:今天是我朋友的生日。","o:星期日我在家休息。","o:这个月我很忙。","o:公园里有很多人。","o:我很想我的家人。","o:那个孩子在笑。","o:他的儿子七岁了。","o:火车八点开。","o:我早饭吃火腿面包。","o:请给我一杯热水。","o:夏天我喜欢喝冰水。","o:这杯牛奶是热的。","o:今天晚饭吃牛肉面。","o:明天可能会下雨。","o:我的雨伞是红色的。","o:他的女朋友是老师。","o:她的女儿很喜欢唱歌。","o:见到你我很开心。","o:我买了一包开心果。","o:夏天的西瓜最甜。","o:妈妈做了南瓜汤。","o:我每天吃一点儿水果。","o:这个苹果又大又红。","o:芒果很甜。","o:故事里有一个国王。","o:王后住在大房子里。","o:这个王子很年轻。","o:我的自行车是新的。","o:公共汽车站在前面。","o:爸爸每天开车上班。","o:桌子上有一条鱼。","o:这条三文鱼很新鲜。","o:你好，我想买水果。","o:我们有苹果、芒果和西瓜。","o:西瓜多少钱？","o:一个二十块。","o:你看，下雨了！","o:我有雨伞，我们一起走吧。","o:我平时骑自行车，下雨天坐公共汽车。"]
+ledu/3 · read · How do you read it?
+  ["rp:生日","rp:星期日","rp:月","rp:人","rp:家人","rp:孩子","rp:儿子","rp:火车","rp:火腿","rp:热水","rp:冰水","rp:牛奶","rp:牛肉","rp:下雨","rp:雨伞","rp:女朋友","rp:女儿","rp:开心","rp:开心果","rp:西瓜","rp:南瓜","rp:水果","rp:苹果","rp:芒果","rp:国王","rp:王后","rp:王子","rp:自行车","rp:公共汽车","rp:开车","rp:鱼","rp:三文鱼"]
+ledu/3 · words · Flashcards or Word quiz
+  [["f:生日","q:生日"],["f:星期日","q:星期日"],["f:月","q:月"],["f:人","q:人"],["f:家人","q:家人"],["f:孩子","q:孩子"],["f:儿子","q:儿子"],["f:火车","q:火车"],["f:火腿","q:火腿"],["f:热水","q:热水"],["f:冰水","q:冰水"],["f:牛奶","q:牛奶"],["f:牛肉","q:牛肉"],["f:下雨","q:下雨"],["f:雨伞","q:雨伞"],["f:女朋友","q:女朋友"],["f:女儿","q:女儿"],["f:开心","q:开心"],["f:开心果","q:开心果"],["f:西瓜","q:西瓜"],["f:南瓜","q:南瓜"],["f:水果","q:水果"],["f:苹果","q:苹果"],["f:芒果","q:芒果"],["f:国王","q:国王"],["f:王后","q:王后"],["f:王子","q:王子"],["f:自行车","q:自行车"],["f:公共汽车","q:公共汽车"],["f:开车","q:开车"],["f:鱼","q:鱼"],["f:三文鱼","q:三文鱼"]]
+  ["生日","星期日","月","人","家人","孩子","儿子","火车","火腿","热水","冰水","牛奶","牛肉","下雨","雨伞","女朋友","女儿","开心","开心果","西瓜","南瓜","水果","苹果","芒果","国王","王后","王子","自行车","公共汽车","开车","鱼","三文鱼"]
+ledu/3 · words · Which radical?
+  ["rad:星","rad:期","rad:家","rad:孩","rad:腿","rad:热","rad:冰","rad:奶","rad:下","rad:伞","rad:朋","rad:友","rad:开","rad:果","rad:南","rad:苹","rad:芒","rad:国","rad:后","rad:公","rad:共","rad:汽","rad:三"]
+ledu/3 · exercises · Grammar
+  ["g:ledu/3/1.1","g:ledu/3/1.2","g:ledu/3/1.3","g:ledu/3/1.4","g:ledu/3/1.5","g:ledu/3/2.1","g:ledu/3/2.2","g:ledu/3/2.3","g:ledu/3/2.4","g:ledu/3/2.5","g:ledu/3/3.1","g:ledu/3/3.2","g:ledu/3/3.3","g:ledu/3/3.4"]
+ledu/3 · exercises · Dialogues
+  ["wb:ledu/3/d1","wb:ledu/3/d2","wb:ledu/3/d3","wb:ledu/3/d4"]
+ledu/3 · exercises · True or false
+  ["wb:ledu/3/j1","wb:ledu/3/j2","wb:ledu/3/j3","wb:ledu/3/j4"]
+ledu/3 · exercises · Pick the reply
+  ["wb:ledu/3/r1","wb:ledu/3/r2","wb:ledu/3/r3","wb:ledu/3/r4"]
+ledu/3 · exercises · Fill in the word
+  ["wf:生日","wf:星期日","wf:月","wf:人","wf:家人","wf:孩子","wf:儿子","wf:火车","wf:火腿","wf:热水","wf:冰水","wf:牛奶","wf:牛肉","wf:下雨","wf:雨伞","wf:女朋友","wf:女儿","wf:开心","wf:开心果","wf:西瓜","wf:南瓜","wf:水果","wf:苹果","wf:芒果","wf:国王","wf:王后","wf:王子","wf:自行车","wf:公共汽车","wf:开车","wf:鱼","wf:三文鱼"]
+ledu/4 · write · Write the characters
+  ["w:昨","w:天","w:今","w:明","w:每","w:气","w:上","w:午","w:课","w:班","w:网","w:下","w:中","w:国","w:文","w:周","w:末","w:期"]
+ledu/4 · write · Dictation
+  ["d:昨天","d:今天","d:明天","d:每天","d:天气","d:上午","d:上课","d:上班","d:上网","d:下午","d:下课","d:下班","d:中午","d:中国","d:中文","d:周末","d:期末"]
+ledu/4 · listen · Hear the word
+  ["l:昨天","l:今天","l:明天","l:每天","l:天气","l:上午","l:上课","l:上班","l:上网","l:下午","l:下课","l:下班","l:中午","l:中国","l:中文","l:周末","l:期末"]
+ledu/4 · listen · Sentences
+  ["ls:昨天","ls:今天","ls:明天","ls:每天","ls:天气","ls:上午","ls:上课","ls:上班","ls:上网","ls:下午","ls:下课","ls:下班","ls:中午","ls:中国","ls:中文","ls:周末","ls:期末"]
+ledu/4 · listen · Tones
+  ["t:昨","t:天","t:今","t:明","t:每","t:气","t:上","t:午","t:课","t:班","t:网","t:下","t:中","t:国","t:文","t:周","t:末","t:期"]
+ledu/4 · speak · Say the word
+  ["s:昨天","s:今天","s:明天","s:每天","s:天气","s:上午","s:上课","s:上班","s:上网","s:下午","s:下课","s:下班","s:中午","s:中国","s:中文","s:周末","s:期末"]
+ledu/4 · speak · Say the sentence
+  ["s:昨天#ex","s:今天#ex","s:明天#ex","s:每天#ex","s:天气#ex","s:上午#ex","s:上课#ex","s:上班#ex","s:上网#ex","s:下午#ex","s:下课#ex","s:下班#ex","s:中午#ex","s:中国#ex","s:中文#ex","s:周末#ex","s:期末#ex"]
+  ["昨天","今天","明天","每天","天气","上午","上课","上班","上网","下午","下课","下班","中午","中国","中文","周末","期末"]
+ledu/4 · read · Read & answer
+  [["r:ledu/4/r1",["rq:ledu/4/r1#0","rq:ledu/4/r1#1"]],["r:ledu/4/r2",["rq:ledu/4/r2#0","rq:ledu/4/r2#1"]]]
+  ["我的一天","周末"]
+ledu/4 · read · Build the sentence
+  ["o:昨天我在家看书。","o:今天我们去商店。","o:明天你有时间吗？","o:我每天喝一杯茶。","o:今天天气很好。","o:我上午在学校。","o:我们八点上课。","o:爸爸九点上班。","o:我在家上网。","o:下午我想睡觉。","o:十点下课。","o:妈妈五点下班。","o:中午我们一起吃饭。","o:他是中国人。","o:我在学中文。","o:周末你想做什么？","o:期末我们要考试。","o:你每天几点上班？","o:我九点上班，五点下班。","o:中午你在哪儿吃饭？","o:我在公司吃饭。","o:明天是周末，天气很好。","o:你想做什么？","o:上午我上网，下午去朋友家。","o:好，我上午也在家。"]
+ledu/4 · read · How do you read it?
+  ["rp:昨天","rp:今天","rp:明天","rp:每天","rp:天气","rp:上午","rp:上课","rp:上班","rp:上网","rp:下午","rp:下课","rp:下班","rp:中午","rp:中国","rp:中文","rp:周末","rp:期末"]
+ledu/4 · words · Flashcards or Word quiz
+  [["f:昨天","q:昨天"],["f:今天","q:今天"],["f:明天","q:明天"],["f:每天","q:每天"],["f:天气","q:天气"],["f:上午","q:上午"],["f:上课","q:上课"],["f:上班","q:上班"],["f:上网","q:上网"],["f:下午","q:下午"],["f:下课","q:下课"],["f:下班","q:下班"],["f:中午","q:中午"],["f:中国","q:中国"],["f:中文","q:中文"],["f:周末","q:周末"],["f:期末","q:期末"]]
+  ["昨天","今天","明天","每天","天气","上午","上课","上班","上网","下午","下课","下班","中午","中国","中文","周末","期末"]
+ledu/4 · words · Which radical?
+  ["rad:昨","rad:天","rad:今","rad:明","rad:每","rad:上","rad:午","rad:课","rad:班","rad:下","rad:中","rad:国","rad:周","rad:末","rad:期"]
+ledu/4 · exercises · Grammar
+  ["g:ledu/4/1.1","g:ledu/4/1.2","g:ledu/4/1.3","g:ledu/4/1.4","g:ledu/4/2.1","g:ledu/4/2.2","g:ledu/4/2.3","g:ledu/4/2.4","g:ledu/4/3.1","g:ledu/4/3.2","g:ledu/4/3.3","g:ledu/4/3.4"]
+ledu/4 · exercises · Dialogues
+  ["wb:ledu/4/d1","wb:ledu/4/d2","wb:ledu/4/d3","wb:ledu/4/d4"]
+ledu/4 · exercises · True or false
+  ["wb:ledu/4/j1","wb:ledu/4/j2","wb:ledu/4/j3","wb:ledu/4/j4"]
+ledu/4 · exercises · Pick the reply
+  ["wb:ledu/4/r1","wb:ledu/4/r2","wb:ledu/4/r3","wb:ledu/4/r4"]
+ledu/4 · exercises · Fill in the word
+  ["wf:昨天","wf:今天","wf:明天","wf:每天","wf:天气","wf:上午","wf:上课","wf:上班","wf:上网","wf:下午","wf:下课","wf:下班","wf:中午","wf:中国","wf:中文","wf:周末","wf:期末"]
+ledu/5 · write · Write the characters
+  ["w:跑","w:步","w:进","w:好","w:吃","w:看","w:玩","w:儿","w:书","w:电","w:视","w:影","w:铅","w:笔","w:钢","w:圆","w:珠","w:有","w:名","w:意","w:思","w:时","w:间","w:回","w:家","w:国","w:大","w:明","w:白","w:聪","w:休","w:息","w:退","w:美","w:女","w:食","w:安","w:静","w:全","w:比","w:赛","w:较","w:朋","w:友","w:谊","w:坐","w:公","w:共","w:汽","w:车","w:飞","w:机","w:地","w:铁","w:啤","w:酒","w:店","w:吧","w:祝","w:你","w:生","w:日","w:快","w:乐","w:一","w:路","w:平","w:运","w:学","w:习"]
+ledu/5 · write · Dictation
+  ["d:跑步","d:进步","d:好吃","d:好看","d:好玩儿","d:看书","d:看电视","d:看电影","d:铅笔","d:钢笔","d:圆珠笔","d:有名","d:有意思","d:有时间","d:回家","d:国家","d:大家","d:明白","d:聪明","d:休息","d:退休","d:美国","d:美女","d:美食","d:安静","d:安全","d:比赛","d:比较","d:朋友","d:友谊","d:坐公共汽车","d:坐飞机","d:坐地铁","d:啤酒","d:酒店","d:酒吧","d:祝你生日快乐","d:祝你一路平安","d:祝你好运","d:祝你学习进步"]
+ledu/5 · listen · Hear the word
+  ["l:跑步","l:进步","l:好吃","l:好看","l:好玩儿","l:看书","l:看电视","l:看电影","l:铅笔","l:钢笔","l:圆珠笔","l:有名","l:有意思","l:有时间","l:回家","l:国家","l:大家","l:明白","l:聪明","l:休息","l:退休","l:美国","l:美女","l:美食","l:安静","l:安全","l:比赛","l:比较","l:朋友","l:友谊","l:坐公共汽车","l:坐飞机","l:坐地铁","l:啤酒","l:酒店","l:酒吧","l:祝你生日快乐","l:祝你一路平安","l:祝你好运","l:祝你学习进步"]
+ledu/5 · listen · Sentences
+  ["ls:跑步","ls:进步","ls:好吃","ls:好看","ls:好玩儿","ls:看书","ls:看电视","ls:看电影","ls:铅笔","ls:钢笔","ls:圆珠笔","ls:有名","ls:有意思","ls:有时间","ls:回家","ls:国家","ls:大家","ls:明白","ls:聪明","ls:休息","ls:退休","ls:美国","ls:美女","ls:美食","ls:安静","ls:安全","ls:比赛","ls:比较","ls:朋友","ls:友谊","ls:坐公共汽车","ls:坐飞机","ls:坐地铁","ls:啤酒","ls:酒店","ls:酒吧","ls:祝你生日快乐","ls:祝你一路平安","ls:祝你好运","ls:祝你学习进步"]
+ledu/5 · listen · Tones
+  ["t:跑","t:步","t:进","t:好","t:吃","t:看","t:玩","t:儿","t:书","t:电","t:视","t:影","t:铅","t:笔","t:钢","t:圆","t:珠","t:有","t:名","t:意","t:思","t:时","t:间","t:回","t:家","t:国","t:大","t:明","t:白","t:聪","t:休","t:息","t:退","t:美","t:女","t:食","t:安","t:静","t:全","t:比","t:赛","t:较","t:朋","t:友","t:谊","t:坐","t:公","t:共","t:汽","t:车","t:飞","t:机","t:地","t:铁","t:啤","t:酒","t:店","t:祝","t:你","t:生","t:日","t:快","t:乐","t:一","t:路","t:平","t:运","t:学","t:习"]
+ledu/5 · speak · Say the word
+  ["s:跑步","s:进步","s:好吃","s:好看","s:好玩儿","s:看书","s:看电视","s:看电影","s:铅笔","s:钢笔","s:圆珠笔","s:有名","s:有意思","s:有时间","s:回家","s:国家","s:大家","s:明白","s:聪明","s:休息","s:退休","s:美国","s:美女","s:美食","s:安静","s:安全","s:比赛","s:比较","s:朋友","s:友谊","s:坐公共汽车","s:坐飞机","s:坐地铁","s:啤酒","s:酒店","s:酒吧","s:祝你生日快乐","s:祝你一路平安","s:祝你好运","s:祝你学习进步"]
+ledu/5 · speak · Say the sentence
+  ["s:跑步#ex","s:进步#ex","s:好吃#ex","s:好看#ex","s:好玩儿#ex","s:看书#ex","s:看电视#ex","s:看电影#ex","s:铅笔#ex","s:钢笔#ex","s:圆珠笔#ex","s:有名#ex","s:有意思#ex","s:有时间#ex","s:回家#ex","s:国家#ex","s:大家#ex","s:明白#ex","s:聪明#ex","s:休息#ex","s:退休#ex","s:美国#ex","s:美女#ex","s:美食#ex","s:安静#ex","s:安全#ex","s:比赛#ex","s:比较#ex","s:朋友#ex","s:友谊#ex","s:坐公共汽车#ex","s:坐飞机#ex","s:坐地铁#ex","s:啤酒#ex","s:酒店#ex","s:酒吧#ex","s:祝你生日快乐#ex","s:祝你一路平安#ex","s:祝你好运#ex","s:祝你学习进步#ex"]
+  ["跑步","进步","好吃","好看","好玩儿","看书","看电视","看电影","铅笔","钢笔","圆珠笔","有名","有意思","有时间","回家","国家","大家","明白","聪明","休息","退休","美国","美女","美食","安静","安全","比赛","比较","朋友","友谊","坐公共汽车","坐飞机","坐地铁","啤酒","酒店","酒吧","祝你生日快乐","祝你一路平安","祝你好运","祝你学习进步"]
+ledu/5 · read · Read & answer
+  [["r:ledu/5/r1",["rq:ledu/5/r1#0","rq:ledu/5/r1#1"]],["r:ledu/5/r2",["rq:ledu/5/r2#0","rq:ledu/5/r2#1"]]]
+  ["我的好朋友","周末去哪儿"]
+ledu/5 · read · Build the sentence
+  ["o:我早上去公园跑步。","o:你的汉语进步很快。","o:这个菜真好吃。","o:她的新衣服很好看。","o:那个公园很好玩儿。","o:我晚上喜欢看书。","o:爸爸在家看电视。","o:周末我们去看电影。","o:请给我一支铅笔。","o:这支钢笔是爸爸的。","o:我有一支红色的圆珠笔。","o:这家饭馆很有名。","o:这本书很有意思。","o:明天你有时间吗？","o:下课以后我回家。","o:中国是一个大国家。","o:这个字我不明白。","o:他的小狗很聪明。","o:我累了，想休息一下。","o:爷爷去年退休了。","o:他是美国人。","o:她是一位美女。","o:北京有很多美食。","o:图书馆里很安静。","o:这儿很安全。","o:明天有足球比赛。","o:今天比较冷。","o:他是我的好朋友。","o:我和他有很好的友谊。","o:我们坐公共汽车去公园吧。","o:我们明天坐飞机去北京。","o:坐地铁很快。","o:他喜欢喝啤酒。","o:这个酒店很大。","o:晚上他去酒吧听歌。","o:朋友说：“祝你生日快乐！”","o:明天考试，祝你好运！","o:老师说：“祝你学习进步！”","o:你的朋友是中国人吗？","o:不是，他是美国人，他很聪明。","o:你们下课以后做什么？","o:我们一起去跑步，然后回家休息。","o:周末你有时间吗？我们去看电影吧。","o:好啊！我们坐地铁去。","o:那个电影很有名，也很好看。","o:看完电影，我们去吃好吃的。"]
+ledu/5 · read · How do you read it?
+  ["rp:跑步","rp:进步","rp:好吃","rp:好看","rp:好玩儿","rp:看书","rp:看电视","rp:看电影","rp:铅笔","rp:钢笔","rp:圆珠笔","rp:有名","rp:有意思","rp:有时间","rp:回家","rp:国家","rp:大家","rp:明白","rp:聪明","rp:休息","rp:退休","rp:美国","rp:美女","rp:美食","rp:安静","rp:安全","rp:比赛","rp:比较","rp:朋友","rp:友谊","rp:坐公共汽车","rp:坐飞机","rp:坐地铁","rp:啤酒","rp:酒店","rp:酒吧","rp:祝你生日快乐","rp:祝你一路平安","rp:祝你好运","rp:祝你学习进步"]
+ledu/5 · words · Flashcards or Word quiz
+  [["f:跑步","q:跑步"],["f:进步","q:进步"],["f:好吃","q:好吃"],["f:好看","q:好看"],["f:好玩儿","q:好玩儿"],["f:看书","q:看书"],["f:看电视","q:看电视"],["f:看电影","q:看电影"],["f:铅笔","q:铅笔"],["f:钢笔","q:钢笔"],["f:圆珠笔","q:圆珠笔"],["f:有名","q:有名"],["f:有意思","q:有意思"],["f:有时间","q:有时间"],["f:回家","q:回家"],["f:国家","q:国家"],["f:大家","q:大家"],["f:明白","q:明白"],["f:聪明","q:聪明"],["f:休息","q:休息"],["f:退休","q:退休"],["f:美国","q:美国"],["f:美女","q:美女"],["f:美食","q:美食"],["f:安静","q:安静"],["f:安全","q:安全"],["f:比赛","q:比赛"],["f:比较","q:比较"],["f:朋友","q:朋友"],["f:友谊","q:友谊"],["f:坐公共汽车","q:坐公共汽车"],["f:坐飞机","q:坐飞机"],["f:坐地铁","q:坐地铁"],["f:啤酒","q:啤酒"],["f:酒店","q:酒店"],["f:酒吧","q:酒吧"],["f:祝你生日快乐","q:祝你生日快乐"],["f:祝你一路平安","q:祝你一路平安"],["f:祝你好运","q:祝你好运"],["f:祝你学习进步","q:祝你学习进步"]]
+  ["跑步","进步","好吃","好看","好玩儿","看书","看电视","看电影","铅笔","钢笔","圆珠笔","有名","有意思","有时间","回家","国家","大家","明白","聪明","休息","退休","美国","美女","美食","安静","安全","比赛","比较","朋友","友谊","坐公共汽车","坐飞机","坐地铁","啤酒","酒店","酒吧","祝你生日快乐","祝你一路平安","祝你好运","祝你学习进步"]
+ledu/5 · words · Which radical?
+  ["rad:跑","rad:步","rad:进","rad:好","rad:吃","rad:看","rad:玩","rad:书","rad:电","rad:视","rad:影","rad:铅","rad:笔","rad:钢","rad:圆","rad:珠","rad:有","rad:名","rad:意","rad:思","rad:时","rad:间","rad:回","rad:家","rad:国","rad:明","rad:聪","rad:休","rad:息","rad:退","rad:美","rad:安","rad:静","rad:全","rad:赛","rad:较","rad:朋","rad:友","rad:谊","rad:坐","rad:公","rad:共","rad:汽","rad:机","rad:地","rad:铁","rad:啤","rad:酒","rad:店","rad:吧","rad:祝","rad:你","rad:快","rad:乐","rad:路","rad:平","rad:运","rad:学","rad:习"]
+ledu/5 · exercises · Grammar
+  ["g:ledu/5/1.1","g:ledu/5/1.2","g:ledu/5/1.3","g:ledu/5/1.4","g:ledu/5/1.5","g:ledu/5/2.1","g:ledu/5/2.2","g:ledu/5/2.3","g:ledu/5/2.4","g:ledu/5/3.1","g:ledu/5/3.2","g:ledu/5/3.3","g:ledu/5/3.4"]
+ledu/5 · exercises · Dialogues
+  ["wb:ledu/5/d1","wb:ledu/5/d2","wb:ledu/5/d3","wb:ledu/5/d4"]
+ledu/5 · exercises · True or false
+  ["wb:ledu/5/j1","wb:ledu/5/j2","wb:ledu/5/j3","wb:ledu/5/j4"]
+ledu/5 · exercises · Pick the reply
+  ["wb:ledu/5/r1","wb:ledu/5/r2","wb:ledu/5/r3","wb:ledu/5/r4"]
+ledu/5 · exercises · Fill in the word
+  ["wf:跑步","wf:进步","wf:好吃","wf:好看","wf:好玩儿","wf:看书","wf:看电视","wf:看电影","wf:铅笔","wf:钢笔","wf:圆珠笔","wf:有名","wf:有意思","wf:有时间","wf:回家","wf:国家","wf:大家","wf:明白","wf:聪明","wf:休息","wf:退休","wf:美国","wf:美女","wf:美食","wf:安静","wf:安全","wf:比赛","wf:比较","wf:朋友","wf:友谊","wf:坐公共汽车","wf:坐飞机","wf:坐地铁","wf:啤酒","wf:酒店","wf:酒吧","wf:祝你生日快乐","wf:祝你一路平安","wf:祝你好运","wf:祝你学习进步"]
+ledu/6 · write · Write the characters
+  ["w:大","w:夫","w:丈","w:作","w:业","w:工","w:文","w:化","w:学","w:短","w:信","w:微","w:请","w:问","w:题","w:喜","w:欢","w:惊","w:知","w:道","w:识","w:喝","w:茶","w:酒","w:唱","w:歌","w:演","w:会","w:告","w:诉","w:报","w:广","w:奶","w:牛","w:酸","w:结","w:婚","w:离","w:礼","w:洗","w:澡","w:手","w:间","w:果","w:汁","w:苹","w:橙","w:海","w:滩","w:鲜","w:人","w:山","w:游","w:泳","w:旅","w:戏","w:晚","w:上","w:饭","w:一","w:天","w:到","w:时","w:有","w:候","w:小","w:中","w:房","w:星","w:期","w:风","w:景","w:夜"]
+ledu/6 · write · Dictation
+  ["d:大夫","d:丈夫","d:作业","d:工作","d:作文","d:文化","d:化学","d:短信","d:微信","d:请问","d:问题","d:喜欢","d:惊喜","d:知道","d:知识","d:喝茶","d:喝酒","d:唱歌","d:演唱会","d:告诉","d:报告","d:广告","d:奶奶","d:牛奶","d:酸奶","d:结婚","d:离婚","d:婚礼","d:洗澡","d:洗手","d:洗手间","d:果汁","d:苹果汁","d:橙汁","d:海滩","d:海鲜","d:人山人海","d:游泳","d:旅游","d:游戏","d:晚上","d:晚饭","d:一天到晚","d:时间","d:有时候","d:小时","d:中间","d:房间","d:星期","d:星星","d:歌星","d:风景","d:夜景"]
+ledu/6 · listen · Hear the word
+  ["l:大夫","l:丈夫","l:作业","l:工作","l:作文","l:文化","l:化学","l:短信","l:微信","l:请问","l:问题","l:喜欢","l:惊喜","l:知道","l:知识","l:喝茶","l:喝酒","l:唱歌","l:演唱会","l:告诉","l:报告","l:广告","l:奶奶","l:牛奶","l:酸奶","l:结婚","l:离婚","l:婚礼","l:洗澡","l:洗手","l:洗手间","l:果汁","l:苹果汁","l:橙汁","l:海滩","l:海鲜","l:人山人海","l:游泳","l:旅游","l:游戏","l:晚上","l:晚饭","l:一天到晚","l:时间","l:有时候","l:小时","l:中间","l:房间","l:星期","l:星星","l:歌星","l:风景","l:夜景"]
+ledu/6 · listen · Sentences
+  ["ls:大夫","ls:丈夫","ls:作业","ls:工作","ls:作文","ls:文化","ls:化学","ls:短信","ls:微信","ls:请问","ls:问题","ls:喜欢","ls:惊喜","ls:知道","ls:知识","ls:喝茶","ls:喝酒","ls:唱歌","ls:演唱会","ls:告诉","ls:报告","ls:广告","ls:奶奶","ls:牛奶","ls:酸奶","ls:结婚","ls:离婚","ls:婚礼","ls:洗澡","ls:洗手","ls:洗手间","ls:果汁","ls:苹果汁","ls:橙汁","ls:海滩","ls:海鲜","ls:人山人海","ls:游泳","ls:旅游","ls:游戏","ls:晚上","ls:晚饭","ls:一天到晚","ls:时间","ls:有时候","ls:小时","ls:中间","ls:房间","ls:星期","ls:星星","ls:歌星","ls:风景","ls:夜景"]
+ledu/6 · listen · Tones
+  ["t:大","t:夫","t:丈","t:作","t:业","t:工","t:文","t:化","t:学","t:短","t:信","t:微","t:请","t:问","t:题","t:喜","t:欢","t:惊","t:知","t:道","t:识","t:喝","t:茶","t:酒","t:唱","t:歌","t:演","t:会","t:告","t:诉","t:报","t:广","t:奶","t:牛","t:酸","t:结","t:婚","t:离","t:礼","t:洗","t:澡","t:手","t:间","t:果","t:汁","t:苹","t:橙","t:海","t:滩","t:鲜","t:人","t:山","t:游","t:泳","t:旅","t:戏","t:晚","t:上","t:饭","t:一","t:天","t:到","t:时","t:有","t:候","t:小","t:中","t:房","t:星","t:期","t:风","t:景","t:夜"]
+ledu/6 · speak · Say the word
+  ["s:大夫","s:丈夫","s:作业","s:工作","s:作文","s:文化","s:化学","s:短信","s:微信","s:请问","s:问题","s:喜欢","s:惊喜","s:知道","s:知识","s:喝茶","s:喝酒","s:唱歌","s:演唱会","s:告诉","s:报告","s:广告","s:奶奶","s:牛奶","s:酸奶","s:结婚","s:离婚","s:婚礼","s:洗澡","s:洗手","s:洗手间","s:果汁","s:苹果汁","s:橙汁","s:海滩","s:海鲜","s:人山人海","s:游泳","s:旅游","s:游戏","s:晚上","s:晚饭","s:一天到晚","s:时间","s:有时候","s:小时","s:中间","s:房间","s:星期","s:星星","s:歌星","s:风景","s:夜景"]
+ledu/6 · speak · Say the sentence
+  ["s:大夫#ex","s:丈夫#ex","s:作业#ex","s:工作#ex","s:作文#ex","s:文化#ex","s:化学#ex","s:短信#ex","s:微信#ex","s:请问#ex","s:问题#ex","s:喜欢#ex","s:惊喜#ex","s:知道#ex","s:知识#ex","s:喝茶#ex","s:喝酒#ex","s:唱歌#ex","s:演唱会#ex","s:告诉#ex","s:报告#ex","s:广告#ex","s:奶奶#ex","s:牛奶#ex","s:酸奶#ex","s:结婚#ex","s:离婚#ex","s:婚礼#ex","s:洗澡#ex","s:洗手#ex","s:洗手间#ex","s:果汁#ex","s:苹果汁#ex","s:橙汁#ex","s:海滩#ex","s:海鲜#ex","s:人山人海#ex","s:游泳#ex","s:旅游#ex","s:游戏#ex","s:晚上#ex","s:晚饭#ex","s:一天到晚#ex","s:时间#ex","s:有时候#ex","s:小时#ex","s:中间#ex","s:房间#ex","s:星期#ex","s:星星#ex","s:歌星#ex","s:风景#ex","s:夜景#ex"]
+  ["大夫","丈夫","作业","工作","作文","文化","化学","短信","微信","请问","问题","喜欢","惊喜","知道","知识","喝茶","喝酒","唱歌","演唱会","告诉","报告","广告","奶奶","牛奶","酸奶","结婚","离婚","婚礼","洗澡","洗手","洗手间","果汁","苹果汁","橙汁","海滩","海鲜","人山人海","游泳","旅游","游戏","晚上","晚饭","一天到晚","时间","有时候","小时","中间","房间","星期","星星","歌星","风景","夜景"]
+ledu/6 · read · Read & answer
+  [["r:ledu/6/r1",["rq:ledu/6/r1#0","rq:ledu/6/r1#1"]],["r:ledu/6/r2",["rq:ledu/6/r2#0","rq:ledu/6/r2#1"]]]
+  ["周末去海滩","我的奶奶"]
+ledu/6 · read · Build the sentence
+  ["o:我的大夫很好。","o:她的丈夫是老师。","o:今天的作业不多。","o:我哥哥在医院工作。","o:我写了一篇作文。","o:我喜欢中国文化。","o:他的化学课在上午。","o:他发短信给我。","o:我们在微信上说话。","o:请问，洗手间在哪儿？","o:老师，我有一个问题。","o:我喜欢喝茶。","o:这个礼物是一个惊喜。","o:我不知道他在哪儿。","o:书里有很多知识。","o:爷爷喜欢喝茶。","o:开车不能喝酒。","o:她喜欢唱歌。","o:我们去看他的演唱会。","o:请告诉我你的名字。","o:我要写一个报告。","o:电视上有很多广告。","o:奶奶今年七十岁。","o:我每天喝一杯牛奶。","o:这个酸奶很好喝。","o:他们明年结婚。","o:他们去年离婚了。","o:婚礼在酒店。","o:我晚上洗澡。","o:吃饭以前要洗手。","o:洗手间在那儿。","o:我想喝果汁。","o:我最喜欢苹果汁。","o:请给我一杯橙汁。","o:我们在海滩上玩儿。","o:这家饭馆的海鲜很好吃。","o:周末公园里人山人海。","o:他每天去游泳。","o:明年我想去中国旅游。","o:孩子们喜欢玩儿游戏。","o:晚上我在家看书。","o:我们六点吃晚饭。","o:他一天到晚都在工作。","o:我现在没有时间。","o:我有时候坐地铁上班。","o:我每天学习两个小时。","o:他坐在中间。","o:我的房间很小。","o:一个星期有七天。","o:晚上天上有很多星星。","o:他是一个有名的歌星。","o:这里的风景很美。","o:北京的夜景很漂亮。","o:周末你想做什么？","o:晚上我们吃海鲜，喝果汁。","o:我奶奶每天都喝茶，不喝果汁。","o:她喜欢唱歌吗？","o:喜欢，她一天到晚都唱歌。","o:她一定很高兴。"]
+ledu/6 · read · How do you read it?
+  ["rp:大夫","rp:丈夫","rp:作业","rp:工作","rp:作文","rp:文化","rp:化学","rp:短信","rp:微信","rp:请问","rp:问题","rp:喜欢","rp:惊喜","rp:知道","rp:知识","rp:喝茶","rp:喝酒","rp:唱歌","rp:演唱会","rp:告诉","rp:报告","rp:广告","rp:奶奶","rp:牛奶","rp:酸奶","rp:结婚","rp:离婚","rp:婚礼","rp:洗澡","rp:洗手","rp:洗手间","rp:果汁","rp:苹果汁","rp:橙汁","rp:海滩","rp:海鲜","rp:人山人海","rp:游泳","rp:旅游","rp:游戏","rp:晚上","rp:晚饭","rp:一天到晚","rp:时间","rp:有时候","rp:小时","rp:中间","rp:房间","rp:星期","rp:星星","rp:歌星","rp:风景","rp:夜景"]
+ledu/6 · words · Flashcards or Word quiz
+  [["f:大夫","q:大夫"],["f:丈夫","q:丈夫"],["f:作业","q:作业"],["f:工作","q:工作"],["f:作文","q:作文"],["f:文化","q:文化"],["f:化学","q:化学"],["f:短信","q:短信"],["f:微信","q:微信"],["f:请问","q:请问"],["f:问题","q:问题"],["f:喜欢","q:喜欢"],["f:惊喜","q:惊喜"],["f:知道","q:知道"],["f:知识","q:知识"],["f:喝茶","q:喝茶"],["f:喝酒","q:喝酒"],["f:唱歌","q:唱歌"],["f:演唱会","q:演唱会"],["f:告诉","q:告诉"],["f:报告","q:报告"],["f:广告","q:广告"],["f:奶奶","q:奶奶"],["f:牛奶","q:牛奶"],["f:酸奶","q:酸奶"],["f:结婚","q:结婚"],["f:离婚","q:离婚"],["f:婚礼","q:婚礼"],["f:洗澡","q:洗澡"],["f:洗手","q:洗手"],["f:洗手间","q:洗手间"],["f:果汁","q:果汁"],["f:苹果汁","q:苹果汁"],["f:橙汁","q:橙汁"],["f:海滩","q:海滩"],["f:海鲜","q:海鲜"],["f:人山人海","q:人山人海"],["f:游泳","q:游泳"],["f:旅游","q:旅游"],["f:游戏","q:游戏"],["f:晚上","q:晚上"],["f:晚饭","q:晚饭"],["f:一天到晚","q:一天到晚"],["f:时间","q:时间"],["f:有时候","q:有时候"],["f:小时","q:小时"],["f:中间","q:中间"],["f:房间","q:房间"],["f:星期","q:星期"],["f:星星","q:星星"],["f:歌星","q:歌星"],["f:风景","q:风景"],["f:夜景","q:夜景"]]
+  ["大夫","丈夫","作业","工作","作文","文化","化学","短信","微信","请问","问题","喜欢","惊喜","知道","知识","喝茶","喝酒","唱歌","演唱会","告诉","报告","广告","奶奶","牛奶","酸奶","结婚","离婚","婚礼","洗澡","洗手","洗手间","果汁","苹果汁","橙汁","海滩","海鲜","人山人海","游泳","旅游","游戏","晚上","晚饭","一天到晚","时间","有时候","小时","中间","房间","星期","星星","歌星","风景","夜景"]
+ledu/6 · words · Which radical?
+  ["rad:夫","rad:丈","rad:作","rad:业","rad:化","rad:学","rad:短","rad:信","rad:微","rad:请","rad:问","rad:题","rad:喜","rad:欢","rad:惊","rad:知","rad:道","rad:识","rad:喝","rad:茶","rad:酒","rad:唱","rad:歌","rad:演","rad:会","rad:告","rad:诉","rad:报","rad:奶","rad:酸","rad:结","rad:婚","rad:离","rad:礼","rad:洗","rad:澡","rad:间","rad:果","rad:汁","rad:苹","rad:橙","rad:海","rad:滩","rad:鲜","rad:游","rad:泳","rad:旅","rad:戏","rad:晚","rad:上","rad:饭","rad:天","rad:到","rad:时","rad:有","rad:候","rad:中","rad:房","rad:星","rad:期","rad:景","rad:夜"]
+ledu/6 · exercises · Grammar
+  ["g:ledu/6/1.1","g:ledu/6/1.2","g:ledu/6/1.3","g:ledu/6/1.4","g:ledu/6/2.1","g:ledu/6/2.2","g:ledu/6/2.3","g:ledu/6/2.4","g:ledu/6/3.1","g:ledu/6/3.2","g:ledu/6/3.3","g:ledu/6/3.4"]
+ledu/6 · exercises · Dialogues
+  ["wb:ledu/6/d1","wb:ledu/6/d2","wb:ledu/6/d3","wb:ledu/6/d4"]
+ledu/6 · exercises · True or false
+  ["wb:ledu/6/j1","wb:ledu/6/j2","wb:ledu/6/j3","wb:ledu/6/j4"]
+ledu/6 · exercises · Pick the reply
+  ["wb:ledu/6/r1","wb:ledu/6/r2","wb:ledu/6/r3","wb:ledu/6/r4"]
+ledu/6 · exercises · Fill in the word
+  ["wf:大夫","wf:丈夫","wf:作业","wf:工作","wf:作文","wf:文化","wf:化学","wf:短信","wf:微信","wf:请问","wf:问题","wf:喜欢","wf:惊喜","wf:知道","wf:知识","wf:喝茶","wf:喝酒","wf:唱歌","wf:演唱会","wf:告诉","wf:报告","wf:广告","wf:奶奶","wf:牛奶","wf:酸奶","wf:结婚","wf:离婚","wf:婚礼","wf:洗澡","wf:洗手","wf:洗手间","wf:果汁","wf:苹果汁","wf:橙汁","wf:海滩","wf:海鲜","wf:人山人海","wf:游泳","wf:旅游","wf:游戏","wf:晚上","wf:晚饭","wf:一天到晚","wf:时间","wf:有时候","wf:小时","wf:中间","wf:房间","wf:星期","wf:星星","wf:歌星","wf:风景","wf:夜景"]
+ledu/7 · write · Write the characters
+  ["w:认","w:识","w:知","w:外","w:语","w:汉","w:口","w:法","w:说","w:话","w:听","w:再","w:吧","w:生","w:词","w:名","w:动","w:形","w:容","w:讨","w:论","w:价","w:还","w:考","w:试","w:面","w:笔","w:记","w:住","w:性","w:学","w:期","w:末","w:假","w:希","w:望","w:失","w:看","w:病","w:上","w:眼","w:睛","w:镜","w:睡","w:觉","w:懒","w:着","w:校","w:长","w:园","w:手","w:机","w:照","w:相","w:自","w:取","w:款","w:树","w:叶","w:橙","w:子","w:橘","w:桃","w:猕","w:猴","w:樱","w:楼","w:梯","w:电","w:下","w:雪","w:滑","w:人","w:零","w:食","w:花","w:钱","w:分","w:倒","w:霉","w:雾"]
+ledu/7 · write · Dictation
+  ["d:认识","d:知识","d:外语","d:汉语","d:口语","d:语法","d:说话","d:听说","d:再说吧","d:生词","d:名词","d:动词","d:形容词","d:讨论","d:讨价还价","d:考试","d:面试","d:试试","d:笔记","d:记住","d:记性","d:学期","d:期末","d:假期","d:希望","d:失望","d:看病","d:看上","d:眼睛","d:眼镜","d:睡觉","d:睡懒觉","d:睡着","d:学校","d:校长","d:校园","d:手机","d:照相机","d:自动取款机","d:树","d:树叶","d:橙子","d:橘子","d:桃子","d:猕猴桃","d:樱桃","d:楼梯","d:电梯","d:下雪","d:滑雪","d:雪人","d:零食","d:零花钱","d:零分","d:倒霉","d:雾"]
+ledu/7 · listen · Hear the word
+  ["l:认识","l:知识","l:外语","l:汉语","l:口语","l:语法","l:说话","l:听说","l:再说吧","l:生词","l:名词","l:动词","l:形容词","l:讨论","l:讨价还价","l:考试","l:面试","l:试试","l:笔记","l:记住","l:记性","l:学期","l:期末","l:假期","l:希望","l:失望","l:看病","l:看上","l:眼睛","l:眼镜","l:睡觉","l:睡懒觉","l:睡着","l:学校","l:校长","l:校园","l:手机","l:照相机","l:自动取款机","l:树","l:树叶","l:橙子","l:橘子","l:桃子","l:猕猴桃","l:樱桃","l:楼梯","l:电梯","l:下雪","l:滑雪","l:雪人","l:零食","l:零花钱","l:零分","l:倒霉","l:雾"]
+ledu/7 · listen · Sentences
+  ["ls:认识","ls:知识","ls:外语","ls:汉语","ls:口语","ls:语法","ls:说话","ls:听说","ls:再说吧","ls:生词","ls:名词","ls:动词","ls:形容词","ls:讨论","ls:讨价还价","ls:考试","ls:面试","ls:试试","ls:笔记","ls:记住","ls:记性","ls:学期","ls:期末","ls:假期","ls:希望","ls:失望","ls:看病","ls:看上","ls:眼睛","ls:眼镜","ls:睡觉","ls:睡懒觉","ls:睡着","ls:学校","ls:校长","ls:校园","ls:手机","ls:照相机","ls:自动取款机","ls:树","ls:树叶","ls:橙子","ls:橘子","ls:桃子","ls:猕猴桃","ls:樱桃","ls:楼梯","ls:电梯","ls:下雪","ls:滑雪","ls:雪人","ls:零食","ls:零花钱","ls:零分","ls:倒霉","ls:雾"]
+ledu/7 · listen · Tones
+  ["t:认","t:识","t:知","t:外","t:语","t:汉","t:口","t:法","t:说","t:话","t:听","t:再","t:生","t:词","t:名","t:动","t:形","t:容","t:讨","t:论","t:价","t:还","t:考","t:试","t:面","t:笔","t:记","t:住","t:性","t:学","t:期","t:末","t:假","t:希","t:望","t:失","t:看","t:病","t:上","t:眼","t:睛","t:镜","t:睡","t:觉","t:懒","t:校","t:长","t:园","t:手","t:机","t:照","t:相","t:自","t:取","t:款","t:树","t:叶","t:橙","t:子","t:橘","t:桃","t:猕","t:猴","t:樱","t:楼","t:梯","t:电","t:下","t:雪","t:滑","t:人","t:零","t:食","t:花","t:钱","t:分","t:倒","t:霉","t:雾"]
+ledu/7 · speak · Say the word
+  ["s:认识","s:知识","s:外语","s:汉语","s:口语","s:语法","s:说话","s:听说","s:再说吧","s:生词","s:名词","s:动词","s:形容词","s:讨论","s:讨价还价","s:考试","s:面试","s:试试","s:笔记","s:记住","s:记性","s:学期","s:期末","s:假期","s:希望","s:失望","s:看病","s:看上","s:眼睛","s:眼镜","s:睡觉","s:睡懒觉","s:睡着","s:学校","s:校长","s:校园","s:手机","s:照相机","s:自动取款机","s:树","s:树叶","s:橙子","s:橘子","s:桃子","s:猕猴桃","s:樱桃","s:楼梯","s:电梯","s:下雪","s:滑雪","s:雪人","s:零食","s:零花钱","s:零分","s:倒霉","s:雾"]
+ledu/7 · speak · Say the sentence
+  ["s:认识#ex","s:知识#ex","s:外语#ex","s:汉语#ex","s:口语#ex","s:语法#ex","s:说话#ex","s:听说#ex","s:再说吧#ex","s:生词#ex","s:名词#ex","s:动词#ex","s:形容词#ex","s:讨论#ex","s:讨价还价#ex","s:考试#ex","s:面试#ex","s:试试#ex","s:笔记#ex","s:记住#ex","s:记性#ex","s:学期#ex","s:期末#ex","s:假期#ex","s:希望#ex","s:失望#ex","s:看病#ex","s:看上#ex","s:眼睛#ex","s:眼镜#ex","s:睡觉#ex","s:睡懒觉#ex","s:睡着#ex","s:学校#ex","s:校长#ex","s:校园#ex","s:手机#ex","s:照相机#ex","s:自动取款机#ex","s:树#ex","s:树叶#ex","s:橙子#ex","s:橘子#ex","s:桃子#ex","s:猕猴桃#ex","s:樱桃#ex","s:楼梯#ex","s:电梯#ex","s:下雪#ex","s:滑雪#ex","s:雪人#ex","s:零食#ex","s:零花钱#ex","s:零分#ex","s:倒霉#ex","s:雾#ex"]
+  ["认识","知识","外语","汉语","口语","语法","说话","听说","再说吧","生词","名词","动词","形容词","讨论","讨价还价","考试","面试","试试","笔记","记住","记性","学期","期末","假期","希望","失望","看病","看上","眼睛","眼镜","睡觉","睡懒觉","睡着","学校","校长","校园","手机","照相机","自动取款机","树","树叶","橙子","橘子","桃子","猕猴桃","樱桃","楼梯","电梯","下雪","滑雪","雪人","零食","零花钱","零分","倒霉","雾"]
+ledu/7 · read · Read & answer
+  [["r:ledu/7/r1",["rq:ledu/7/r1#0","rq:ledu/7/r1#1"]],["r:ledu/7/r2",["rq:ledu/7/r2#0","rq:ledu/7/r2#1"]]]
+  ["校园里的一天","下雪了"]
+ledu/7 · read · Build the sentence
+  ["o:我认识他的妹妹。","o:书里有很多知识。","o:他会三门外语。","o:我每天学汉语。","o:他的口语很好。","o:这个语法不难。","o:请不要在这里说话。","o:听说他明天不来。","o:现在太晚了，明天再说吧。","o:今天有十个生词。","o:“书”是名词。","o:“吃”是动词。","o:“大”是形容词。","o:我们在讨论这个问题。","o:她买东西的时候喜欢讨价还价。","o:明天有汉语考试。","o:他明天去公司面试。","o:你试试这件衣服吧。","o:我的笔记在桌子上。","o:我记住了他的名字。","o:她的记性很好。","o:这个学期我学汉语。","o:期末有三个考试。","o:假期我想去旅游。","o:我希望明天不下雨。","o:今天不能去玩，我很失望。","o:我今天要去医院看病。","o:她看上了那件红衣服。","o:他的眼睛很大。","o:我的眼镜不见了。","o:我晚上十点睡觉。","o:星期天我喜欢睡懒觉。","o:我昨天很晚才睡着。","o:我的学校很大。","o:校长在教室里。","o:校园里有很多花。","o:我的手机在桌子上。","o:他有一个新照相机。","o:商店旁边有一个自动取款机。","o:门口有一棵大树。","o:秋天的树叶是黄色的。","o:这个橙子很甜。","o:我喜欢吃橘子。","o:桃子又大又甜。","o:猕猴桃很好吃。","o:樱桃很小，也很好吃。","o:我家没有电梯，要走楼梯。","o:我们坐电梯上去吧。","o:北京的冬天常常下雪。","o:我想学滑雪。","o:孩子们在做雪人。","o:小朋友都爱吃零食。","o:爸爸每个星期给我零花钱。","o:他考了零分。","o:今天真倒霉！","o:今天早上有大雾。","o:你认识我们的校长吗？","o:认识。他每天都在校园里跑步。","o:还没有。我要看看笔记。","o:我们一起讨论吧。","o:好啊，我也希望考得好。","o:看，下雪了！","o:太好了！我们去做雪人吧。","o:先吃点零食，再出去。","o:好啊。我的橘子在桌子上。","o:在我的包里。"]
+ledu/7 · read · How do you read it?
+  ["rp:认识","rp:知识","rp:外语","rp:汉语","rp:口语","rp:语法","rp:说话","rp:听说","rp:再说吧","rp:生词","rp:名词","rp:动词","rp:形容词","rp:讨论","rp:讨价还价","rp:考试","rp:面试","rp:试试","rp:笔记","rp:记住","rp:记性","rp:学期","rp:期末","rp:假期","rp:希望","rp:失望","rp:看病","rp:看上","rp:眼睛","rp:眼镜","rp:睡觉","rp:睡懒觉","rp:睡着","rp:学校","rp:校长","rp:校园","rp:手机","rp:照相机","rp:自动取款机","rp:树","rp:树叶","rp:橙子","rp:橘子","rp:桃子","rp:猕猴桃","rp:樱桃","rp:楼梯","rp:电梯","rp:下雪","rp:滑雪","rp:雪人","rp:零食","rp:零花钱","rp:零分","rp:倒霉","rp:雾"]
+ledu/7 · words · Flashcards or Word quiz
+  [["f:认识","q:认识"],["f:知识","q:知识"],["f:外语","q:外语"],["f:汉语","q:汉语"],["f:口语","q:口语"],["f:语法","q:语法"],["f:说话","q:说话"],["f:听说","q:听说"],["f:再说吧","q:再说吧"],["f:生词","q:生词"],["f:名词","q:名词"],["f:动词","q:动词"],["f:形容词","q:形容词"],["f:讨论","q:讨论"],["f:讨价还价","q:讨价还价"],["f:考试","q:考试"],["f:面试","q:面试"],["f:试试","q:试试"],["f:笔记","q:笔记"],["f:记住","q:记住"],["f:记性","q:记性"],["f:学期","q:学期"],["f:期末","q:期末"],["f:假期","q:假期"],["f:希望","q:希望"],["f:失望","q:失望"],["f:看病","q:看病"],["f:看上","q:看上"],["f:眼睛","q:眼睛"],["f:眼镜","q:眼镜"],["f:睡觉","q:睡觉"],["f:睡懒觉","q:睡懒觉"],["f:睡着","q:睡着"],["f:学校","q:学校"],["f:校长","q:校长"],["f:校园","q:校园"],["f:手机","q:手机"],["f:照相机","q:照相机"],["f:自动取款机","q:自动取款机"],["f:树","q:树"],["f:树叶","q:树叶"],["f:橙子","q:橙子"],["f:橘子","q:橘子"],["f:桃子","q:桃子"],["f:猕猴桃","q:猕猴桃"],["f:樱桃","q:樱桃"],["f:楼梯","q:楼梯"],["f:电梯","q:电梯"],["f:下雪","q:下雪"],["f:滑雪","q:滑雪"],["f:雪人","q:雪人"],["f:零食","q:零食"],["f:零花钱","q:零花钱"],["f:零分","q:零分"],["f:倒霉","q:倒霉"],["f:雾","q:雾"]]
+  ["认识","知识","外语","汉语","口语","语法","说话","听说","再说吧","生词","名词","动词","形容词","讨论","讨价还价","考试","面试","试试","笔记","记住","记性","学期","期末","假期","希望","失望","看病","看上","眼睛","眼镜","睡觉","睡懒觉","睡着","学校","校长","校园","手机","照相机","自动取款机","树","树叶","橙子","橘子","桃子","猕猴桃","樱桃","楼梯","电梯","下雪","滑雪","雪人","零食","零花钱","零分","倒霉","雾"]
+ledu/7 · words · Which radical?
+  ["rad:认","rad:识","rad:知","rad:外","rad:语","rad:汉","rad:法","rad:说","rad:话","rad:听","rad:再","rad:吧","rad:词","rad:名","rad:动","rad:形","rad:容","rad:讨","rad:论","rad:价","rad:还","rad:考","rad:试","rad:笔","rad:记","rad:住","rad:性","rad:学","rad:期","rad:末","rad:假","rad:希","rad:望","rad:失","rad:看","rad:病","rad:上","rad:眼","rad:睛","rad:镜","rad:睡","rad:觉","rad:懒","rad:着","rad:校","rad:园","rad:机","rad:照","rad:相","rad:取","rad:款","rad:树","rad:叶","rad:橙","rad:橘","rad:桃","rad:猕","rad:猴","rad:樱","rad:楼","rad:梯","rad:电","rad:下","rad:雪","rad:滑","rad:零","rad:花","rad:钱","rad:分","rad:倒","rad:霉","rad:雾"]
+ledu/7 · exercises · Grammar
+  ["g:ledu/7/1.1","g:ledu/7/1.2","g:ledu/7/1.3","g:ledu/7/1.4","g:ledu/7/2.1","g:ledu/7/2.2","g:ledu/7/2.3","g:ledu/7/2.4","g:ledu/7/2.5","g:ledu/7/3.1","g:ledu/7/3.2","g:ledu/7/3.3"]
+ledu/7 · exercises · Dialogues
+  ["wb:ledu/7/d1","wb:ledu/7/d2","wb:ledu/7/d3","wb:ledu/7/d4"]
+ledu/7 · exercises · True or false
+  ["wb:ledu/7/j1","wb:ledu/7/j2","wb:ledu/7/j3","wb:ledu/7/j4"]
+ledu/7 · exercises · Pick the reply
+  ["wb:ledu/7/r1","wb:ledu/7/r2","wb:ledu/7/r3","wb:ledu/7/r4"]
+ledu/7 · exercises · Fill in the word
+  ["wf:认识","wf:知识","wf:外语","wf:汉语","wf:口语","wf:语法","wf:说话","wf:听说","wf:再说吧","wf:生词","wf:名词","wf:动词","wf:形容词","wf:讨论","wf:讨价还价","wf:考试","wf:面试","wf:试试","wf:笔记","wf:记住","wf:记性","wf:学期","wf:期末","wf:假期","wf:希望","wf:失望","wf:看病","wf:看上","wf:眼睛","wf:眼镜","wf:睡觉","wf:睡懒觉","wf:睡着","wf:学校","wf:校长","wf:校园","wf:手机","wf:照相机","wf:自动取款机","wf:树","wf:树叶","wf:橙子","wf:橘子","wf:桃子","wf:猕猴桃","wf:樱桃","wf:楼梯","wf:电梯","wf:下雪","wf:滑雪","wf:雪人","wf:零食","wf:零花钱","wf:零分","wf:倒霉","wf:雾"]
+ledu/8 · write · Write the characters
+  ["w:名","w:字","w:学","w:习","w:同","w:高","w:兴","w:商","w:店","w:住","w:往","w:休","w:息","w:身","w:体","w:非","w:常","w:食","w:堂","w:谁","w:准","w:备","w:工","w:作","w:公","w:司","w:医","w:生","w:衣","w:服","w:飞","w:机","w:咖","w:啡","w:蓝","w:色","w:篮","w:球","w:长","w:城","w:大","w:好","w:爱","w:觉","w:得","w:睡","w:懒","w:方","w:便","w:面","w:宜","w:快","w:乐","w:音","w:教","w:室"]
+ledu/8 · write · Dictation
+  ["d:名字","d:学习","d:同学","d:高兴","d:商店","d:住","d:往","d:休息","d:身体","d:非常","d:食堂","d:谁","d:准备","d:工作","d:公司","d:医生","d:衣服","d:飞机","d:咖啡","d:蓝色","d:篮球","d:长城","d:常常","d:长","d:长大","d:好","d:爱好","d:觉得","d:睡懒觉","d:方便","d:方便面","d:便宜","d:快乐","d:音乐","d:教","d:教室"]
+ledu/8 · listen · Hear the word
+  ["l:名字","l:学习","l:同学","l:高兴","l:商店","l:住","l:往","l:休息","l:身体","l:非常","l:食堂","l:谁","l:准备","l:工作","l:公司","l:医生","l:衣服","l:飞机","l:咖啡","l:蓝色","l:篮球","l:长城","l:常常","l:长","l:长大","l:好","l:爱好","l:觉得","l:睡懒觉","l:方便","l:方便面","l:便宜","l:快乐","l:音乐","l:教","l:教室"]
+ledu/8 · listen · Sentences
+  ["ls:名字","ls:学习","ls:同学","ls:高兴","ls:商店","ls:住","ls:往","ls:休息","ls:身体","ls:非常","ls:食堂","ls:谁","ls:准备","ls:工作","ls:公司","ls:医生","ls:衣服","ls:飞机","ls:咖啡","ls:蓝色","ls:篮球","ls:长城","ls:常常","ls:长","ls:长大","ls:好","ls:爱好","ls:觉得","ls:睡懒觉","ls:方便","ls:方便面","ls:便宜","ls:快乐","ls:音乐","ls:教","ls:教室"]
+ledu/8 · listen · Tones
+  ["t:名","t:字","t:学","t:习","t:同","t:高","t:兴","t:商","t:店","t:住","t:往","t:休","t:息","t:身","t:体","t:非","t:常","t:食","t:堂","t:谁","t:准","t:备","t:工","t:作","t:公","t:司","t:医","t:生","t:衣","t:服","t:飞","t:机","t:咖","t:啡","t:蓝","t:色","t:篮","t:球","t:长","t:城","t:大","t:好","t:爱","t:觉","t:睡","t:懒","t:方","t:便","t:面","t:宜","t:快","t:乐","t:音","t:教","t:室"]
+ledu/8 · speak · Say the word
+  ["s:名字","s:学习","s:同学","s:高兴","s:商店","s:住","s:往","s:休息","s:身体","s:非常","s:食堂","s:谁","s:准备","s:工作","s:公司","s:医生","s:衣服","s:飞机","s:咖啡","s:蓝色","s:篮球","s:长城","s:常常","s:长","s:长大","s:好","s:爱好","s:觉得","s:睡懒觉","s:方便","s:方便面","s:便宜","s:快乐","s:音乐","s:教","s:教室"]
+ledu/8 · speak · Say the sentence
+  ["s:名字#ex","s:学习#ex","s:同学#ex","s:高兴#ex","s:商店#ex","s:住#ex","s:往#ex","s:休息#ex","s:身体#ex","s:非常#ex","s:食堂#ex","s:谁#ex","s:准备#ex","s:工作#ex","s:公司#ex","s:医生#ex","s:衣服#ex","s:飞机#ex","s:咖啡#ex","s:蓝色#ex","s:篮球#ex","s:长城#ex","s:常常#ex","s:长#ex","s:长大#ex","s:好#ex","s:爱好#ex","s:觉得#ex","s:睡懒觉#ex","s:方便#ex","s:方便面#ex","s:便宜#ex","s:快乐#ex","s:音乐#ex","s:教#ex","s:教室#ex"]
+  ["名字","学习","同学","高兴","商店","住","往","休息","身体","非常","食堂","谁","准备","工作","公司","医生","衣服","飞机","咖啡","蓝色","篮球","长城","常常","长","长大","好","爱好","觉得","睡懒觉","方便","方便面","便宜","快乐","音乐","教","教室"]
+ledu/8 · read · Read & answer
+  [["r:ledu/8/r1",["rq:ledu/8/r1#0","rq:ledu/8/r1#1"]],["r:ledu/8/r2",["rq:ledu/8/r2#0","rq:ledu/8/r2#1"]]]
+  ["周末做什么","哥哥的公司"]
+ledu/8 · read · Build the sentence
+  ["o:你的名字很好听。","o:我每天学习汉语。","o:他是我的同学。","o:见到你我很高兴。","o:商店在学校旁边。","o:我住在北京。","o:往前走，就是商店。","o:你累了，休息一下吧。","o:他的身体很好。","o:今天非常冷。","o:我们在食堂吃午饭。","o:谁是你的老师？","o:妈妈在准备晚饭。","o:我哥哥在银行工作。","o:他的公司很大。","o:她是一位医生。","o:这件衣服很漂亮。","o:飞机下午三点到。","o:我早上喝一杯咖啡。","o:天空是蓝色的。","o:他每天打篮球。","o:我想去看长城。","o:我常常喝茶。","o:这条路很长。","o:小狗长大了。","o:今天天气很好。","o:我的爱好是看书。","o:我觉得今天很热。","o:周末我喜欢睡懒觉。","o:学校旁边有商店，很方便。","o:我晚上吃方便面。","o:这个杯子很便宜。","o:我喜欢听音乐。","o:王老师教我们汉语。","o:教室里有很多学生。","o:周末你常常做什么？","o:我常常和同学打篮球。","o:打完篮球去哪儿吃饭？","o:我周末喜欢睡懒觉。","o:睡太多对身体不好。","o:你哥哥在哪个公司工作？","o:他住在哪儿？","o:他住在公司旁边，很方便。","o:他喜欢喝咖啡吗？","o:喜欢，他的爱好是听音乐。"]
+ledu/8 · read · How do you read it?
+  ["rp:名字","rp:学习","rp:同学","rp:高兴","rp:商店","rp:住","rp:往","rp:休息","rp:身体","rp:非常","rp:食堂","rp:谁","rp:准备","rp:工作","rp:公司","rp:医生","rp:衣服","rp:飞机","rp:咖啡","rp:蓝色","rp:篮球","rp:长城","rp:常常","rp:长","rp:长大","rp:好","rp:爱好","rp:觉得","rp:睡懒觉","rp:方便","rp:方便面","rp:便宜","rp:快乐","rp:音乐","rp:教","rp:教室"]
+ledu/8 · words · Flashcards or Word quiz
+  [["f:名字","q:名字"],["f:学习","q:学习"],["f:同学","q:同学"],["f:高兴","q:高兴"],["f:商店","q:商店"],["f:住","q:住"],["f:往","q:往"],["f:休息","q:休息"],["f:身体","q:身体"],["f:非常","q:非常"],["f:食堂","q:食堂"],["f:谁","q:谁"],["f:准备","q:准备"],["f:工作","q:工作"],["f:公司","q:公司"],["f:医生","q:医生"],["f:衣服","q:衣服"],["f:飞机","q:飞机"],["f:咖啡","q:咖啡"],["f:蓝色","q:蓝色"],["f:篮球","q:篮球"],["f:长城","q:长城"],["f:常常","q:常常"],["f:长","q:长"],["f:长大","q:长大"],["f:好","q:好"],["f:爱好","q:爱好"],["f:觉得","q:觉得"],["f:睡懒觉","q:睡懒觉"],["f:方便","q:方便"],["f:方便面","q:方便面"],["f:便宜","q:便宜"],["f:快乐","q:快乐"],["f:音乐","q:音乐"],["f:教","q:教"],["f:教室","q:教室"]]
+  ["名字","学习","同学","高兴","商店","住","往","休息","身体","非常","食堂","谁","准备","工作","公司","医生","衣服","飞机","咖啡","蓝色","篮球","长城","常常","长","长大","好","爱好","觉得","睡懒觉","方便","方便面","便宜","快乐","音乐","教","教室"]
+ledu/8 · words · Which radical?
+  ["rad:名","rad:字","rad:学","rad:习","rad:同","rad:兴","rad:商","rad:店","rad:住","rad:往","rad:休","rad:息","rad:体","rad:常","rad:堂","rad:谁","rad:准","rad:备","rad:作","rad:公","rad:司","rad:医","rad:服","rad:机","rad:咖","rad:啡","rad:蓝","rad:篮","rad:球","rad:城","rad:好","rad:爱","rad:觉","rad:得","rad:睡","rad:懒","rad:便","rad:宜","rad:快","rad:乐","rad:教","rad:室"]
+ledu/8 · exercises · Grammar
+  ["g:ledu/8/1.1","g:ledu/8/1.2","g:ledu/8/1.3","g:ledu/8/1.4","g:ledu/8/1.5","g:ledu/8/2.1","g:ledu/8/2.2","g:ledu/8/2.3","g:ledu/8/2.4","g:ledu/8/2.5","g:ledu/8/3.1","g:ledu/8/3.2","g:ledu/8/3.3","g:ledu/8/3.4","g:ledu/8/3.5"]
+ledu/8 · exercises · Dialogues
+  ["wb:ledu/8/d1","wb:ledu/8/d2","wb:ledu/8/d3","wb:ledu/8/d4"]
+ledu/8 · exercises · True or false
+  ["wb:ledu/8/j1","wb:ledu/8/j2","wb:ledu/8/j3","wb:ledu/8/j4"]
+ledu/8 · exercises · Pick the reply
+  ["wb:ledu/8/r1","wb:ledu/8/r2","wb:ledu/8/r3","wb:ledu/8/r4"]
+ledu/8 · exercises · Fill in the word
+  ["wf:名字","wf:学习","wf:同学","wf:高兴","wf:商店","wf:住","wf:往","wf:休息","wf:身体","wf:非常","wf:食堂","wf:谁","wf:准备","wf:工作","wf:公司","wf:医生","wf:衣服","wf:飞机","wf:咖啡","wf:蓝色","wf:篮球","wf:长城","wf:常常","wf:长","wf:长大","wf:好","wf:爱好","wf:觉得","wf:睡懒觉","wf:方便","wf:方便面","wf:便宜","wf:快乐","wf:音乐","wf:教","wf:教室"]
+ledu/9 · write · Write the characters
+  ["w:学","w:生","w:数","w:自","w:手","w:表","w:套","w:菜","w:单","w:电","w:话","w:脑","w:子","w:邮","w:件","w:颜","w:色","w:白","w:红","w:运","w:动","w:鞋","w:拖","w:高","w:跟","w:足","w:球","w:网","w:羽","w:毛","w:肉","w:鸡","w:猪","w:面","w:粉","w:包","w:条","w:儿","w:语","w:言","w:英","w:成","w:现","w:在","w:金","w:服","w:务","w:员","w:售","w:货","w:演"]
+ledu/9 · write · Dictation
+  ["d:学生","d:数学","d:自学","d:手表","d:手套","d:菜","d:生菜","d:菜单","d:电话","d:电脑","d:电子邮件","d:颜色","d:白色","d:红色","d:运动鞋","d:拖鞋","d:高跟鞋","d:足球","d:网球","d:羽毛球","d:肉","d:鸡肉","d:猪肉","d:面粉","d:面包","d:面条儿","d:语言","d:英语","d:成语","d:现在","d:现金","d:服务员","d:售货员","d:演员"]
+ledu/9 · listen · Hear the word
+  ["l:学生","l:数学","l:自学","l:手表","l:手套","l:菜","l:生菜","l:菜单","l:电话","l:电脑","l:电子邮件","l:颜色","l:白色","l:红色","l:运动鞋","l:拖鞋","l:高跟鞋","l:足球","l:网球","l:羽毛球","l:肉","l:鸡肉","l:猪肉","l:面粉","l:面包","l:面条儿","l:语言","l:英语","l:成语","l:现在","l:现金","l:服务员","l:售货员","l:演员"]
+ledu/9 · listen · Sentences
+  ["ls:学生","ls:数学","ls:自学","ls:手表","ls:手套","ls:菜","ls:生菜","ls:菜单","ls:电话","ls:电脑","ls:电子邮件","ls:颜色","ls:白色","ls:红色","ls:运动鞋","ls:拖鞋","ls:高跟鞋","ls:足球","ls:网球","ls:羽毛球","ls:肉","ls:鸡肉","ls:猪肉","ls:面粉","ls:面包","ls:面条儿","ls:语言","ls:英语","ls:成语","ls:现在","ls:现金","ls:服务员","ls:售货员","ls:演员"]
+ledu/9 · listen · Tones
+  ["t:学","t:生","t:数","t:自","t:手","t:表","t:套","t:菜","t:单","t:电","t:话","t:脑","t:子","t:邮","t:件","t:颜","t:色","t:白","t:红","t:运","t:动","t:鞋","t:拖","t:高","t:跟","t:足","t:球","t:网","t:羽","t:毛","t:肉","t:鸡","t:猪","t:面","t:粉","t:包","t:条","t:儿","t:语","t:言","t:英","t:成","t:现","t:在","t:金","t:服","t:务","t:员","t:售","t:货","t:演"]
+ledu/9 · speak · Say the word
+  ["s:学生","s:数学","s:自学","s:手表","s:手套","s:菜","s:生菜","s:菜单","s:电话","s:电脑","s:电子邮件","s:颜色","s:白色","s:红色","s:运动鞋","s:拖鞋","s:高跟鞋","s:足球","s:网球","s:羽毛球","s:肉","s:鸡肉","s:猪肉","s:面粉","s:面包","s:面条儿","s:语言","s:英语","s:成语","s:现在","s:现金","s:服务员","s:售货员","s:演员"]
+ledu/9 · speak · Say the sentence
+  ["s:学生#ex","s:数学#ex","s:自学#ex","s:手表#ex","s:手套#ex","s:菜#ex","s:生菜#ex","s:菜单#ex","s:电话#ex","s:电脑#ex","s:电子邮件#ex","s:颜色#ex","s:白色#ex","s:红色#ex","s:运动鞋#ex","s:拖鞋#ex","s:高跟鞋#ex","s:足球#ex","s:网球#ex","s:羽毛球#ex","s:肉#ex","s:鸡肉#ex","s:猪肉#ex","s:面粉#ex","s:面包#ex","s:面条儿#ex","s:语言#ex","s:英语#ex","s:成语#ex","s:现在#ex","s:现金#ex","s:服务员#ex","s:售货员#ex","s:演员#ex"]
+  ["学生","数学","自学","手表","手套","菜","生菜","菜单","电话","电脑","电子邮件","颜色","白色","红色","运动鞋","拖鞋","高跟鞋","足球","网球","羽毛球","肉","鸡肉","猪肉","面粉","面包","面条儿","语言","英语","成语","现在","现金","服务员","售货员","演员"]
+ledu/9 · read · Read & answer
+  [["r:ledu/9/r1",["rq:ledu/9/r1#0","rq:ledu/9/r1#1"]],["r:ledu/9/r2",["rq:ledu/9/r2#0","rq:ledu/9/r2#1"]]]
+  ["在饭馆儿","买运动鞋"]
+ledu/9 · read · Build the sentence
+  ["o:我弟弟是学生。","o:我很喜欢数学。","o:他在家自学汉语。","o:他的手表很贵。","o:外面很冷，你戴手套吧。","o:这个菜很好吃。","o:我喜欢吃生菜。","o:请给我菜单。","o:我给你打电话。","o:我有一台电脑。","o:我给老师发电子邮件。","o:你喜欢什么颜色？","o:我的杯子是白色的。","o:她穿红色的衣服。","o:我要买一双运动鞋。","o:在家我穿拖鞋。","o:她不喜欢穿高跟鞋。","o:他们在踢足球。","o:我哥哥会打网球。","o:我们去打羽毛球吧。","o:我不吃肉。","o:我喜欢吃鸡肉。","o:他不吃猪肉。","o:做面包要用面粉。","o:早上我吃面包。","o:我想吃面条儿。","o:汉语是一种语言。","o:你会说英语吗？","o:这个成语很有意思。","o:现在几点？","o:我没有现金。","o:服务员，请给我一杯水。","o:她是商店的售货员。","o:这个演员很有名。","o:服务员，请给我菜单。","o:好的。你想吃什么？","o:我想吃鸡肉和面条儿。","o:你要不要生菜？","o:你好，我想买一双运动鞋。","o:我喜欢白色的。","o:好。我没有现金，可以用手机吗？"]
+ledu/9 · read · How do you read it?
+  ["rp:学生","rp:数学","rp:自学","rp:手表","rp:手套","rp:菜","rp:生菜","rp:菜单","rp:电话","rp:电脑","rp:电子邮件","rp:颜色","rp:白色","rp:红色","rp:运动鞋","rp:拖鞋","rp:高跟鞋","rp:足球","rp:网球","rp:羽毛球","rp:肉","rp:鸡肉","rp:猪肉","rp:面粉","rp:面包","rp:面条儿","rp:语言","rp:英语","rp:成语","rp:现在","rp:现金","rp:服务员","rp:售货员","rp:演员"]
+ledu/9 · words · Flashcards or Word quiz
+  [["f:学生","q:学生"],["f:数学","q:数学"],["f:自学","q:自学"],["f:手表","q:手表"],["f:手套","q:手套"],["f:菜","q:菜"],["f:生菜","q:生菜"],["f:菜单","q:菜单"],["f:电话","q:电话"],["f:电脑","q:电脑"],["f:电子邮件","q:电子邮件"],["f:颜色","q:颜色"],["f:白色","q:白色"],["f:红色","q:红色"],["f:运动鞋","q:运动鞋"],["f:拖鞋","q:拖鞋"],["f:高跟鞋","q:高跟鞋"],["f:足球","q:足球"],["f:网球","q:网球"],["f:羽毛球","q:羽毛球"],["f:肉","q:肉"],["f:鸡肉","q:鸡肉"],["f:猪肉","q:猪肉"],["f:面粉","q:面粉"],["f:面包","q:面包"],["f:面条儿","q:面条儿"],["f:语言","q:语言"],["f:英语","q:英语"],["f:成语","q:成语"],["f:现在","q:现在"],["f:现金","q:现金"],["f:服务员","q:服务员"],["f:售货员","q:售货员"],["f:演员","q:演员"]]
+  ["学生","数学","自学","手表","手套","菜","生菜","菜单","电话","电脑","电子邮件","颜色","白色","红色","运动鞋","拖鞋","高跟鞋","足球","网球","羽毛球","肉","鸡肉","猪肉","面粉","面包","面条儿","语言","英语","成语","现在","现金","服务员","售货员","演员"]
+ledu/9 · words · Which radical?
+  ["rad:学","rad:数","rad:表","rad:套","rad:菜","rad:单","rad:电","rad:话","rad:脑","rad:邮","rad:件","rad:颜","rad:红","rad:运","rad:动","rad:鞋","rad:拖","rad:跟","rad:球","rad:鸡","rad:猪","rad:粉","rad:包","rad:条","rad:语","rad:英","rad:成","rad:现","rad:在","rad:服","rad:务","rad:员","rad:售","rad:货","rad:演"]
+ledu/9 · exercises · Grammar
+  ["g:ledu/9/1.1","g:ledu/9/1.2","g:ledu/9/1.3","g:ledu/9/2.1","g:ledu/9/2.2","g:ledu/9/2.3","g:ledu/9/3.1","g:ledu/9/3.2","g:ledu/9/3.3","g:ledu/9/3.4"]
+ledu/9 · exercises · Dialogues
+  ["wb:ledu/9/d1","wb:ledu/9/d2","wb:ledu/9/d3","wb:ledu/9/d4"]
+ledu/9 · exercises · True or false
+  ["wb:ledu/9/j1","wb:ledu/9/j2","wb:ledu/9/j3","wb:ledu/9/j4"]
+ledu/9 · exercises · Pick the reply
+  ["wb:ledu/9/r1","wb:ledu/9/r2","wb:ledu/9/r3","wb:ledu/9/r4"]
+ledu/9 · exercises · Fill in the word
+  ["wf:学生","wf:数学","wf:自学","wf:手表","wf:手套","wf:菜","wf:生菜","wf:菜单","wf:电话","wf:电脑","wf:电子邮件","wf:颜色","wf:白色","wf:红色","wf:运动鞋","wf:拖鞋","wf:高跟鞋","wf:足球","wf:网球","wf:羽毛球","wf:肉","wf:鸡肉","wf:猪肉","wf:面粉","wf:面包","wf:面条儿","wf:语言","wf:英语","wf:成语","wf:现在","wf:现金","wf:服务员","wf:售货员","wf:演员"]
+ledu/10 · write · Write the characters
+  ["w:自","w:行","w:车","w:西","w:瓜","w:开","w:心","w:电","w:视","w:篮","w:球","w:飞","w:机","w:唱","w:歌","w:下","w:雨","w:牛","w:奶","w:作","w:业","w:昨","w:天","w:考","w:试","w:水","w:果","w:上","w:课","w:休","w:息","w:有","w:意","w:思","w:爱","w:好","w:比","w:赛","w:便","w:宜","w:照","w:相"]
+ledu/10 · write · Dictation
+  ["d:自行车","d:西瓜","d:开心","d:电视","d:篮球","d:飞机","d:唱歌","d:下雨","d:牛奶","d:作业","d:昨天","d:考试","d:水果","d:上课","d:休息","d:有意思","d:爱好","d:比赛","d:便宜","d:照相机"]
+ledu/10 · listen · Hear the word
+  ["l:自行车","l:西瓜","l:开心","l:电视","l:篮球","l:飞机","l:唱歌","l:下雨","l:牛奶","l:作业","l:昨天","l:考试","l:水果","l:上课","l:休息","l:有意思","l:爱好","l:比赛","l:便宜","l:照相机"]
+ledu/10 · listen · Sentences
+  ["ls:自行车","ls:西瓜","ls:开心","ls:电视","ls:篮球","ls:飞机","ls:唱歌","ls:下雨","ls:牛奶","ls:作业","ls:昨天","ls:考试","ls:水果","ls:上课","ls:休息","ls:有意思","ls:爱好","ls:比赛","ls:便宜","ls:照相机"]
+ledu/10 · listen · Tones
+  ["t:自","t:行","t:车","t:西","t:瓜","t:开","t:心","t:电","t:视","t:篮","t:球","t:飞","t:机","t:唱","t:歌","t:下","t:雨","t:牛","t:奶","t:作","t:业","t:昨","t:天","t:考","t:试","t:水","t:果","t:上","t:课","t:休","t:息","t:有","t:意","t:思","t:爱","t:好","t:比","t:赛","t:便","t:宜","t:照","t:相"]
+ledu/10 · speak · Say the word
+  ["s:自行车","s:西瓜","s:开心","s:电视","s:篮球","s:飞机","s:唱歌","s:下雨","s:牛奶","s:作业","s:昨天","s:考试","s:水果","s:上课","s:休息","s:有意思","s:爱好","s:比赛","s:便宜","s:照相机"]
+ledu/10 · speak · Say the sentence
+  ["s:自行车#ex","s:西瓜#ex","s:开心#ex","s:电视#ex","s:篮球#ex","s:飞机#ex","s:唱歌#ex","s:下雨#ex","s:牛奶#ex","s:作业#ex","s:昨天#ex","s:考试#ex","s:水果#ex","s:上课#ex","s:休息#ex","s:有意思#ex","s:爱好#ex","s:比赛#ex","s:便宜#ex","s:照相机#ex"]
+  ["自行车","西瓜","开心","电视","篮球","飞机","唱歌","下雨","牛奶","作业","昨天","考试","水果","上课","休息","有意思","爱好","比赛","便宜","照相机"]
+ledu/10 · read · Read & answer
+  [["r:ledu/10/r1",["rq:ledu/10/r1#0","rq:ledu/10/r1#1"]],["r:ledu/10/r2",["rq:ledu/10/r2#0","rq:ledu/10/r2#1"]]]
+  ["学校的比赛","我的爱好"]
+ledu/10 · read · Build the sentence
+  ["o:这辆自行车是我哥哥的。","o:夏天我爱吃西瓜。","o:今天我很开心。","o:他在看电视。","o:他喜欢打篮球。","o:我坐飞机去北京。","o:她会唱歌。","o:今天下雨了。","o:我每天喝牛奶。","o:我今天没有作业。","o:昨天我在家休息。","o:明天有汉语考试。","o:苹果是水果。","o:我们八点上课。","o:你累了，休息吧。","o:这本书很有意思。","o:我的爱好是看书。","o:我们明天有比赛。","o:这个很便宜。","o:他有一个新照相机。","o:昨天你做作业了吗？","o:今天学校有篮球比赛，你知道吗？","o:知道，我们一起去看吧。","o:好，我们骑自行车去。","o:太好了，我很开心！","o:你有什么爱好？","o:我喜欢唱歌，也喜欢看电视。","o:贵不贵？","o:不贵，很便宜。","o:那我也想买一个。"]
+ledu/10 · read · How do you read it?
+  ["rp:自行车","rp:西瓜","rp:开心","rp:电视","rp:篮球","rp:飞机","rp:唱歌","rp:下雨","rp:牛奶","rp:作业","rp:昨天","rp:考试","rp:水果","rp:上课","rp:休息","rp:有意思","rp:爱好","rp:比赛","rp:便宜","rp:照相机"]
+ledu/10 · words · Flashcards or Word quiz
+  [["f:自行车","q:自行车"],["f:西瓜","q:西瓜"],["f:开心","q:开心"],["f:电视","q:电视"],["f:篮球","q:篮球"],["f:飞机","q:飞机"],["f:唱歌","q:唱歌"],["f:下雨","q:下雨"],["f:牛奶","q:牛奶"],["f:作业","q:作业"],["f:昨天","q:昨天"],["f:考试","q:考试"],["f:水果","q:水果"],["f:上课","q:上课"],["f:休息","q:休息"],["f:有意思","q:有意思"],["f:爱好","q:爱好"],["f:比赛","q:比赛"],["f:便宜","q:便宜"],["f:照相机","q:照相机"]]
+  ["自行车","西瓜","开心","电视","篮球","飞机","唱歌","下雨","牛奶","作业","昨天","考试","水果","上课","休息","有意思","爱好","比赛","便宜","照相机"]
+ledu/10 · words · Which radical?
+  ["rad:开","rad:电","rad:视","rad:篮","rad:球","rad:机","rad:唱","rad:歌","rad:下","rad:奶","rad:作","rad:业","rad:昨","rad:天","rad:考","rad:试","rad:果","rad:上","rad:课","rad:休","rad:息","rad:有","rad:意","rad:思","rad:爱","rad:好","rad:赛","rad:便","rad:宜","rad:照","rad:相"]
+ledu/10 · exercises · Grammar
+  ["g:ledu/10/1.1","g:ledu/10/1.2","g:ledu/10/1.3","g:ledu/10/2.1","g:ledu/10/2.2","g:ledu/10/2.3","g:ledu/10/2.4","g:ledu/10/3.1","g:ledu/10/3.2","g:ledu/10/3.3","g:ledu/10/4.1","g:ledu/10/4.2","g:ledu/10/4.3"]
+ledu/10 · exercises · Dialogues
+  ["wb:ledu/10/d1","wb:ledu/10/d2","wb:ledu/10/d3","wb:ledu/10/d4"]
+ledu/10 · exercises · True or false
+  ["wb:ledu/10/j1","wb:ledu/10/j2","wb:ledu/10/j3","wb:ledu/10/j4"]
+ledu/10 · exercises · Pick the reply
+  ["wb:ledu/10/r1","wb:ledu/10/r2","wb:ledu/10/r3","wb:ledu/10/r4"]
+ledu/10 · exercises · Fill in the word
+  ["wf:自行车","wf:西瓜","wf:开心","wf:电视","wf:篮球","wf:飞机","wf:唱歌","wf:下雨","wf:牛奶","wf:作业","wf:昨天","wf:考试","wf:水果","wf:上课","wf:休息","wf:有意思","wf:爱好","wf:比赛","wf:便宜","wf:照相机"]
