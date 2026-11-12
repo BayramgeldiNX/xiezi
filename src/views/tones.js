@@ -1,12 +1,11 @@
 // Tone quiz tab: listen to one syllable, pick its tone.
-import { $, $$, shuffle, esc, revealNext } from "../lib/util.js";
+import { $, $$, shuffle, esc } from "../lib/util.js";
 import { tonePy, addTone } from "../lib/pinyin.js";
 import { say, autoSay, sayLater, sayBtns } from "../lib/speech.js";
 import { icon } from "../lib/icons.js";
 import { TONE_SETS, TONE_SAMPLES } from "../data/index.js";
 import * as progress from "../progress/store.js";
-import { nextHtml, wireNext } from "./practice.js";
-import { quizHead } from "../lib/qpinyin.js";
+import { runRound } from "./quiz-round.js";
 
 const TONE_NAMES = ["", "1st · high, flat", "2nd · rising", "3rd · dip", "4th · falling"];
 const TONE_PATHS = ["", "M4 6 L40 6", "M4 20 L40 4", "M4 10 L18 22 L40 4", "M4 4 L40 22"];
@@ -33,12 +32,10 @@ function compareHtml(q, picked) {
   }).join("")}</div><small class="note">Green is the right tone, red is your pick. Tap any to hear it.</small></div>`;
 }
 
-let tq = null;
 let tOpts = {};
 
 // opts: { host, questions (a function that picks a round), label, lesson, back }; no argument = same set again.
 export function tonesIntro(opts) {
-  tq = null;
   if (opts) tOpts = { ...opts };
   $(tOpts.host).innerHTML = `<div class="panel">
     <span class="lbl">声调 shēngdiào · Tone quiz</span>
@@ -53,79 +50,61 @@ export function tonesIntro(opts) {
   </div>`;
   $("#toneBack")?.addEventListener("click", tOpts.back);
   $$("[data-src]", $(tOpts.host)).forEach((b) => b.addEventListener("click", () => {
-    tq = { qs: toneQuestions(b.dataset.src), pos: 0, right: 0, missed: [], src: b.dataset.src };
-    toneAsk();
+    toneRound(b.dataset.src);
   }));
 }
 
-function toneAsk() {
-  const host = $(tOpts.host);
-  if (tq.pos >= tq.qs.length) return toneEnd();
-  const q = tq.qs[tq.pos], total = tq.qs.length;
-  if (!tq.pos) scrollTo(0, 0);
-  host.innerHTML = `<div class="panel focus">
-    ${quizHead({ title: "声调 · Tones", pos: tq.pos, total, toggles: false, leaveAttr: 'id="toneQBack"' })}
-    <div class="controls">
-      <button class="btn primary big" type="button" data-say="${esc(q.say)}" id="toneListen">${icon("speaker")} Listen</button>
-      <button class="btn big" type="button" data-say="${esc(q.say)}" data-slow>${icon("slow")} Slow</button>
-    </div>
-    <div class="tone-opts">${[1, 2, 3, 4].map((t) => `<button class="tone-opt" type="button" data-t="${t}">
-      <b class="t${t}">${addTone(q.plain, t)}</b>${shape(t, "t" + t)}
-      <small>${TONE_NAMES[t].split(" · ")[0]}</small></button>`).join("")}</div>
-    <div class="status" id="toneStatus" aria-live="polite">Which tone do you hear?</div>
-    <div class="answer" id="toneAnswer" hidden></div>
-    <div class="controls dock"><button class="btn primary" type="button" id="toneNext" hidden>${tq.pos + 1 >= total ? "See results" : "Next"}</button></div>
-  </div>`;
-  $("#toneQBack").addEventListener("click", () => tonesIntro());
-  $$(".tone-opt", host).forEach((b) => b.addEventListener("click", () => {
-    const t = +b.dataset.t, ok = t === q.tone;
-    $$(".tone-opt", host).forEach((o) => {
-      o.disabled = true;
-      if (+o.dataset.t === q.tone) o.classList.add("right");
-      else if (o === b) o.classList.add("wrong");
-    });
-    progress.record("t:" + q.hz, { ok, miss: ok ? 0 : 1 });
-    if (ok) tq.right++; else tq.missed.push(q);
-    $("#toneStatus").style.color = ok ? "" : "var(--cinnabar)";
-    $("#toneStatus").textContent = ok ? "对了！Duì le! Correct!" : `Not quite. It's the ${TONE_NAMES[q.tone].split(" · ")[0]} tone.`;
-    $("#toneAnswer").innerHTML = `<span class="hz">${q.hz}</span><span class="py">${tonePy(addTone(q.plain, q.tone))}</span>${sayBtns(q.say, q.plain, true)}`;
-    if (!ok) $("#toneAnswer").insertAdjacentHTML("afterend", compareHtml(q, t));
-    $("#toneAnswer").hidden = false;
-    revealNext($("#toneNext"));
-    if (!ok) {
-      // Your pick, then the right one, so the two can be compared straight away.
-      const mine = toneSample(q.plain, t), at = tq.pos;
-      if (mine) autoSay(mine).then((done) => { if (done && tq?.pos === at) sayLater(q.say, { ms: 350, auto: false }); });
-    }
-  }));
-  $("#toneNext").addEventListener("click", () => { tq.pos++; toneAsk(); });
-  sayLater(q.say);
-}
-
-function toneEnd() {
-  const total = tq.qs.length;
-  progress.addSession({ type: "tones", lesson: tOpts.lesson ?? 0, set: tq.src, score: tq.right, total, missed: tq.missed.map((q) => q.hz) });
-  $(tOpts.host).innerHTML = `<div class="panel">
-    <span class="lbl">Results</span>
-    <div class="score">${tq.right} / ${total} right</div>
-    ${tq.missed.length ? `<p>Listen to these again:</p><div class="result-list">${tq.missed.map((q) => `<span>${q.hz} <span class="py">${tonePy(addTone(q.plain, q.tone))}</span> ${sayBtns(q.say, q.plain, true)}</span>`).join("")}</div>`
-      : `<p>全对！Quán duì! Perfect ears!</p>`}
-    <div class="controls">${nextHtml()}<button class="btn big" type="button" id="toneAgain">${icon("replay")} Play again</button>${tq.missed.length ? `<button class="btn big" type="button" id="toneRetry">Retry missed</button>` : ""}<button class="btn big" type="button" id="toneMenu">Choose a set</button><button class="btn ghost" type="button" id="toneResBack">Back</button></div>
-  </div>`;
-  wireNext($(tOpts.host));
-  $("#toneResBack").addEventListener("click", () => (tOpts.back ? tOpts.back() : tonesIntro()));
-  const src = tq.src, missed = tq.missed;
-  $("#toneAgain").addEventListener("click", () => { tq = { qs: toneQuestions(src), pos: 0, right: 0, missed: [], src }; toneAsk(); });
-  $("#toneRetry")?.addEventListener("click", () => { tq = { qs: missed, pos: 0, right: 0, missed: [], src }; toneAsk(); });
-  $("#toneMenu").addEventListener("click", () => tonesIntro());
+// One round of 10: the shared quiz round (quiz-round.js) with a tone question.
+function toneRound(src) {
+  runRound({
+    kind: "tones", title: "Tones", head: "声调 · Tones", items: () => toneQuestions(src), session: { set: src },
+    host: () => $(tOpts.host), back: () => (tOpts.back ? tOpts.back() : tonesIntro()), lesson: tOpts.lesson, then: tOpts.then,
+    toggles: false, label: (q) => q.hz, perfect: "全对！Quán duì! Perfect ears!",
+    missedHtml: (q) => `${q.hz} <span class="py">${tonePy(addTone(q.plain, q.tone))}</span> ${sayBtns(q.say, q.plain, true)}`,
+    more: [{ label: "Choose a set", run: () => tonesIntro() }],
+    ask(x, q) {
+      q.draw(`<div class="controls">
+          <button class="btn primary big" type="button" data-say="${esc(x.say)}" id="toneListen">${icon("speaker")} Listen</button>
+          <button class="btn big" type="button" data-say="${esc(x.say)}" data-slow>${icon("slow")} Slow</button>
+        </div>
+        <div class="tone-opts">${[1, 2, 3, 4].map((t) => `<button class="tone-opt" type="button" data-t="${t}">
+          <b class="t${t}">${addTone(x.plain, t)}</b>${shape(t, "t" + t)}
+          <small>${TONE_NAMES[t].split(" · ")[0]}</small></button>`).join("")}</div>
+        <div class="status" id="toneStatus" aria-live="polite">Which tone do you hear?</div>
+        <div class="answer" id="toneAnswer" hidden></div>`);
+      const el = q.el, st = $("#toneStatus", el), ans = $("#toneAnswer", el);
+      $$(".tone-opt", el).forEach((b) => b.addEventListener("click", () => {
+        const t = +b.dataset.t, ok = t === x.tone;
+        $$(".tone-opt", el).forEach((o) => {
+          o.disabled = true;
+          if (+o.dataset.t === x.tone) o.classList.add("right");
+          else if (o === b) o.classList.add("wrong");
+        });
+        progress.record("t:" + x.hz, { ok, miss: ok ? 0 : 1 });
+        st.style.color = ok ? "" : "var(--cinnabar)";
+        st.textContent = ok ? "对了！Duì le! Correct!" : `Not quite. It's the ${TONE_NAMES[x.tone].split(" · ")[0]} tone.`;
+        ans.innerHTML = `<span class="hz">${x.hz}</span><span class="py">${tonePy(addTone(x.plain, x.tone))}</span>${sayBtns(x.say, x.plain, true)}`;
+        if (!ok) ans.insertAdjacentHTML("afterend", compareHtml(x, t));
+        ans.hidden = false;
+        q.done(ok);
+        if (!ok) {
+          // Your pick, then the right one, so the two can be compared straight away.
+          const mine = toneSample(x.plain, t);
+          if (mine) autoSay(mine).then((done) => { if (done && el.isConnected) sayLater(x.say, { ms: 350, auto: false }); });
+        }
+      }));
+      sayLater(x.say);
+    },
+  });
 }
 
 // Keyboard: 1–4 answer, space replays, enter goes on.
 export function tonesKey(e) {
-  if (!tq || tq.pos >= tq.qs.length) return false;
   const host = $(tOpts.host);
+  if (!host || !$(".tone-opt", host)) return false;
   if (/^[1-4]$/.test(e.key)) { const b = $(`.tone-opt[data-t="${e.key}"]`, host); if (b && !b.disabled) b.click(); return true; }
   if (e.key === " ") { $("#toneListen")?.click(); return true; }
-  if (e.key === "Enter" && !$("#toneNext").hidden) { $("#toneNext").click(); return true; }
+  const next = $("#qNext", host);
+  if (e.key === "Enter" && next && !next.hidden) { next.click(); return true; }
   return false;
 }

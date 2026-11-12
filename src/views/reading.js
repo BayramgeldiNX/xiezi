@@ -1,11 +1,11 @@
 // 读 Reading: read texts (tap any word for its meaning), answer questions, build sentences,
 // and say how a word is read. `ui` comes from practice.js: { body, backBtn, wireBack, choiceQuiz }.
-import { $, $$, esc, shuffle, store, revealNext } from "../lib/util.js";
+import { $, $$, esc, shuffle, store } from "../lib/util.js";
 import { tonePy, toneVariants } from "../lib/pinyin.js";
 import { say, sayBtns, stopSpeech, stopCount } from "../lib/speech.js";
 import { sfx } from "../lib/sfx.js";
 import { icon } from "../lib/icons.js";
-import { quizHead, wirePinyin, pyOf } from "../lib/qpinyin.js";
+import { pyOf } from "../lib/qpinyin.js";
 import { makeSegmenter } from "../lib/segment.js";
 import { DICT } from "../data/index.js";
 import * as progress from "../progress/store.js";
@@ -14,6 +14,7 @@ import { animate } from "../lib/motion.js";
 import { keyOf } from "../lib/explain-key.js";
 import { toneSyllables } from "../lib/typing-check.js";
 import { pickRound } from "../lib/round.js";
+import { runRound } from "./quiz-round.js";
 import { buildable } from "../progress/lesson-exercises.js";
 
 const segment = makeSegmenter(DICT);
@@ -168,84 +169,58 @@ export function textQuiz(ui, readings, { back, single, items } = {}) {
 
 // opts.all: use every sentence given (Review picks them); opts.round: a function that picks a round
 // (a lesson's, from lesson-exercises.js); otherwise a round of 8 of the ones not built yet.
-// opts.then: continue a review chain.
+// opts.then: continue a review chain. The loop itself is the shared quiz round (quiz-round.js).
 export function orderGame(ui, sentences, opts = {}) {
-  const items = opts.all ? buildable(sentences) : opts.round ? opts.round() : pickRound(buildable(sentences), (s) => "o:" + s.hz, progress.get, 8);
-  if (!items.length) {
-    ui.body().innerHTML = `<div class="panel"><p>No sentences to build yet.</p>${ui.backBtn()}</div>`;
-    return ui.wireBack(ui.body());
-  }
-  let pos = 0, right = 0;
-  const missed = [], missedItems = [];
-  function show() {
-    if (pos >= items.length) return end();
-    const s = items[pos];
-    let pool = shuffle(s.parts.map((t, i) => ({ t, i })));
-    // Never start already in order.
-    if (pool.every((p, k) => p.i === k)) pool = pool.reverse();
-    const picked = [];
-    let tries = 0;
-    if (!pos) scrollTo(0, 0);
-    ui.body().innerHTML = `<div class="panel focus">
-      ${quizHead({ title: "组句 · Build the sentence", pos, total: items.length, leave: opts.then ? "Stop" : "Back" })}
-      <p class="prompt-big" style="font-size:1.2rem">${esc(s.en)}</p>
-      <div class="controls"><button class="btn" type="button" data-say="${esc(s.hz)}">${icon("speaker")} Hint: listen</button></div>
-      <div class="build" id="oAnswer" aria-label="Your sentence"></div>
-      <div class="build pool" id="oPool"></div>
-      <div class="status" id="oStatus" aria-live="polite"></div>
-      <div class="answer" id="oReveal" hidden></div>
-      <div class="controls dock"><button class="btn primary" type="button" id="oNext" hidden>${pos + 1 >= items.length ? (opts.then ? "Continue" : "See results") : "Next"}</button></div>
-    </div>`;
-    ui.wireBack(ui.body());
-    wirePinyin(ui.body().firstElementChild, { annotateText: false });
-    const draw = () => {
-      $("#oAnswer").innerHTML = picked.map((p, k) => `<button type="button" class="chip on" data-k="${k}">${p.t}<span class="c-py">${pyOf(p.t)}</span></button>`).join("") || `<span class="muted">Tap the words below in the right order</span>`;
-      $("#oPool").innerHTML = pool.map((p, k) => `<button type="button" class="chip" data-p="${k}">${p.t}<span class="c-py">${pyOf(p.t)}</span></button>`).join("");
-      $$("[data-k]", ui.body()).forEach((b) => b.addEventListener("click", () => { pool.push(picked.splice(+b.dataset.k, 1)[0]); draw(); }));
-      $$("[data-p]", ui.body()).forEach((b) => b.addEventListener("click", () => {
-        picked.push(pool.splice(+b.dataset.p, 1)[0]);
-        draw();
-        if (!pool.length) check();
-      }));
-    };
-    const check = () => {
-      const ok = picked.map((p) => p.t).join("") === s.parts.join("");
-      tries++;
-      if (ok) {
-        if (tries === 1) right++; else { missed.push(s.hz); missedItems.push(s); }
-        progress.record("o:" + s.hz, { ok: tries === 1, miss: tries - 1, fix: tries > 1 }, { sfx: "right" });
-        $("#oStatus").style.color = "";
-        $("#oStatus").textContent = tries === 1 ? "对了！Correct!" : "对了！Got it.";
-        $("#oReveal").innerHTML = `<span class="hz" style="font-size:1.3rem">${s.hz}</span> <span class="py">${tonePy(s.py)}</span>`;
-        $("#oReveal").hidden = false;
-        $("#oPool").innerHTML = "";
-        $$("#oAnswer .chip").forEach((c) => (c.disabled = true));
-        revealNext($("#oNext"));
-        say(s.hz);
-      } else {
-        sfx("wrong");
-        $("#oStatus").style.color = "var(--cinnabar)";
-        $("#oStatus").textContent = tries >= 2 ? `Not yet. It starts with “${s.parts[0]}”. Tap words to move them back.` : "Not quite. Tap words to move them back and try again.";
-      }
-    };
-    $("#oNext").addEventListener("click", () => { pos++; show(); });
-    draw();
-  }
-  function end() {
-    progress.addSession({ type: "order", lesson: 0, score: right, total: items.length, missed });
-    if (opts.then) return opts.then({ title: "Build the sentence", right, total: items.length, missed, missedItems });
-    ui.body().innerHTML = `<div class="panel">
-      <span class="lbl">Results · Build the sentence</span>
-      <div class="score">${right} / ${items.length} first try</div>
-      ${missed.length ? `<p>Practice these again:</p><div class="result-list">${missed.map((t) => `<span>${t}</span>`).join("")}</div>` : `<p>全对！Quán duì!</p>`}
-      <div class="controls">${ui.nextHtml()}<button class="btn big" type="button" id="oAgain">${icon("replay")} Again</button>${missedItems.length ? `<button class="btn big" type="button" id="oRetry">Retry missed</button>` : ""}${ui.backBtn()}</div>
-    </div>`;
-    ui.wireBack(ui.body());
-    ui.wireNext(ui.body());
-    $("#oAgain").addEventListener("click", () => orderGame(ui, opts.full || sentences, { round: opts.round })); // the whole round, even after "Retry missed"
-    $("#oRetry")?.addEventListener("click", () => orderGame(ui, missedItems, { all: true, full: opts.full || sentences, round: opts.round }));
-  }
-  show();
+  return runRound({
+    kind: "order", title: "Build the sentence", head: "组句 · Build the sentence", scoreNote: "first try",
+    items: opts.all ? buildable(sentences) : opts.round || (() => pickRound(buildable(sentences), (s) => "o:" + s.hz, progress.get, 8)),
+    label: (s) => s.hz, then: opts.then, host: ui.body, back: ui.goBack, lesson: ui.lesson(), pinyin: { annotateText: false },
+    ask(s, q) {
+      let pool = shuffle(s.parts.map((t, i) => ({ t, i })));
+      // Never start already in order.
+      if (pool.every((p, k) => p.i === k)) pool = pool.reverse();
+      const picked = [];
+      let tries = 0;
+      q.draw(`<p class="prompt-big" style="font-size:1.2rem">${esc(s.en)}</p>
+        <div class="controls"><button class="btn" type="button" data-say="${esc(s.hz)}">${icon("speaker")} Hint: listen</button></div>
+        <div class="build" id="oAnswer" aria-label="Your sentence"></div>
+        <div class="build pool" id="oPool"></div>
+        <div class="status" id="oStatus" aria-live="polite"></div>
+        <div class="answer" id="oReveal" hidden></div>`);
+      const el = q.el, ans = $("#oAnswer", el), poolEl = $("#oPool", el), st = $("#oStatus", el), reveal = $("#oReveal", el);
+      const draw = () => {
+        ans.innerHTML = picked.map((p, k) => `<button type="button" class="chip on" data-k="${k}">${p.t}<span class="c-py">${pyOf(p.t)}</span></button>`).join("") || `<span class="muted">Tap the words below in the right order</span>`;
+        poolEl.innerHTML = pool.map((p, k) => `<button type="button" class="chip" data-p="${k}">${p.t}<span class="c-py">${pyOf(p.t)}</span></button>`).join("");
+        $$("[data-k]", ans).forEach((b) => b.addEventListener("click", () => { pool.push(picked.splice(+b.dataset.k, 1)[0]); draw(); }));
+        $$("[data-p]", poolEl).forEach((b) => b.addEventListener("click", () => {
+          picked.push(pool.splice(+b.dataset.p, 1)[0]);
+          draw();
+          if (!pool.length) check();
+        }));
+      };
+      // Tries until it is right: right the first time counts, put right later is done for the lesson.
+      const check = () => {
+        const ok = picked.map((p) => p.t).join("") === s.parts.join("");
+        tries++;
+        if (ok) {
+          progress.record("o:" + s.hz, { ok: tries === 1, miss: tries - 1, fix: tries > 1 }, { sfx: "right" });
+          st.style.color = "";
+          st.textContent = tries === 1 ? "对了！Correct!" : "对了！Got it.";
+          reveal.innerHTML = `<span class="hz" style="font-size:1.3rem">${s.hz}</span> <span class="py">${tonePy(s.py)}</span>`;
+          reveal.hidden = false;
+          poolEl.innerHTML = "";
+          $$(".chip", ans).forEach((c) => (c.disabled = true));
+          q.done(tries === 1);
+          say(s.hz);
+        } else {
+          sfx("wrong");
+          st.style.color = "var(--cinnabar)";
+          st.textContent = tries >= 2 ? `Not yet. It starts with “${s.parts[0]}”. Tap words to move them back.` : "Not quite. Tap words to move them back and try again.";
+        }
+      };
+      draw();
+    },
+  });
 }
 
 /* ---------- How do you read it? (pick the pinyin) ---------- */

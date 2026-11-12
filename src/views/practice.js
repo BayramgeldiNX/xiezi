@@ -2,9 +2,8 @@
 // openPractice(host, skill, ctx) shows a skill's exercises for ctx.words inside `host`.
 // Every exercise can also run on its own with fixed items and a `then` callback, so the
 // book Review can chain several of them into one mixed session.
-import { $, $$, esc, shuffle, directionPicker, revealNext } from "../lib/util.js";
+import { $, $$, esc, shuffle, directionPicker } from "../lib/util.js";
 import { tonePy } from "../lib/pinyin.js";
-import { quizHead, wirePinyin } from "../lib/qpinyin.js";
 import { matchesWord } from "../lib/search.js";
 import { say, autoSay, sayLater, sayBtns, stopSpeech } from "../lib/speech.js";
 import { sfx } from "../lib/sfx.js";
@@ -27,6 +26,7 @@ import { available, exerciseItems } from "../progress/lesson-exercises.js";
 import { hanziLesson, pronTips } from "./hanzi.js";
 import { noteHtml } from "./lessonmeter.js";
 import { pickRound, openFirst } from "../lib/round.js";
+import { runRound } from "./quiz-round.js";
 
 // A round of exercise `id` in this lesson: only what is not done yet while there is any (see lib/round.js).
 // Which items an exercise asks, and their keys, come from progress/lesson-exercises.js.
@@ -297,7 +297,7 @@ export function grammarQuiz(cfg) {
 }
 
 // What the reading screens need from this module.
-export const ui = { nextHtml, wireNext, wordNote, body: () => body(), backBtn: (l) => backBtn(l), wireBack: (el) => wireBack(el), choiceQuiz: (cfg) => choiceQuiz(cfg) };
+export const ui = { nextHtml, wireNext, wordNote, body: () => body(), backBtn: (l) => backBtn(l), wireBack: (el) => wireBack(el), goBack: () => goBack(), lesson: () => P.ctx.lesson, choiceQuiz: (cfg) => choiceQuiz(cfg) };
 export const setHost = (host, ctx) => { P = { ...P, host, ctx: { ...P.ctx, ...ctx } }; };
 
 /* ---------- Multiple choice ---------- */
@@ -307,84 +307,50 @@ export const setHost = (host, ctx) => { P = { ...P, host, ctx: { ...P.ctx, ...ct
 //        explain?(w) → key in explain.gen.json (options then carry `t`, their text, to explain a wrong choice)
 //        why?(w) → html, a reason made from the data. An option's `note` (html) says what that wrong choice is. }
 export function choiceQuiz(cfg) {
-  const items = typeof cfg.items === "function" ? cfg.items() : cfg.items || shuffle(cfg.words).slice(0, cfg.count || 10);
-  const leave = cfg.back || goBack;
-  const wire = (el) => $$("[data-back]", el).forEach((b) => b.addEventListener("click", leave));
-  if (!items.length) return notEnough();
-  let pos = 0, right = 0;
-  const missed = [], missedItems = [];
-  function ask() {
-    if (pos >= items.length) return end();
-    const w = items[pos];
-    const q = cfg.ask(w);
-    const opts = shuffle(cfg.makeOptions(w));
-    if (!pos) scrollTo(0, 0);
-    body().innerHTML = `<div class="panel focus">
-      ${quizHead({ title: cfg.title, pos, total: items.length, toggles: !cfg.noPinyin, leave: cfg.then ? "Stop" : "Back" })}
-      <div class="q-stage">${q.html}
-      ${q.say ? `<div class="controls"><button class="btn primary big" type="button" data-say="${esc(q.say)}" id="qListen">${icon("speaker")} Listen</button>
-        <button class="btn big" type="button" data-say="${esc(q.say)}" data-slow>${icon("slow")} Slow</button></div>` : ""}</div>
-      ${q.peek ? `<details class="peek"><summary>Show the text</summary>${q.peek}</details>` : ""}
-      <div class="choices">${opts.map((o, i) => `<button class="choice" type="button" data-i="${i}">${o.html}</button>`).join("")}</div>
-      <div class="status" id="qStatus" aria-live="polite"></div>
-      <div class="answer" id="qAnswer" hidden></div>
-      <div class="controls dock"><button class="btn primary" type="button" id="qNext" hidden>${pos + 1 >= items.length ? (cfg.then ? "Continue" : "See results") : "Next"}</button><button class="btn ghost" type="button" id="qSkip">不知道 · Don't know</button></div>
-    </div>`;
-    wire(body());
-    if (!cfg.noPinyin) wirePinyin(body().firstElementChild);
-    const answer = (b) => {
-      const ok = b ? opts[+b.dataset.i].correct : false;
-      $("#qSkip").hidden = true;
-      $$(".choice", body()).forEach((c) => {
-        c.disabled = true;
-        if (opts[+c.dataset.i].correct) c.classList.add("right");
-        else if (c === b) c.classList.add("wrong");
-      });
-      progress.record(cfg.key + (cfg.id ? cfg.id(w) : w.w), { ok, miss: ok ? 0 : 1 });
-      if (ok) right++; else { missed.push(cfg.label ? cfg.label(w) : w.w); missedItems.push(w); }
-      const st = $("#qStatus");
-      st.style.color = ok ? "" : "var(--cinnabar)";
-      st.textContent = ok ? "对了！Correct!" : b ? "Not quite." : "No problem. Here is the answer.";
-      $("#qAnswer").innerHTML = cfg.reveal(w);
-      // Every mistake gets a reason: what you chose, and why the answer is the answer.
-      const mine = b && !ok ? opts[+b.dataset.i].note : "";
-      const why = cfg.why?.(w) || "";
-      if (mine || (why && !ok)) $("#qAnswer").insertAdjacentHTML("beforeend", `<div class="why">${mine ? `<p><span class="why-lbl">You chose</span> ${mine}</p>` : ""}${why && !ok ? `<p><span class="why-lbl">Why</span> ${why}</p>` : ""}</div>`);
-      if (cfg.explain) showWhy($("#qAnswer"), cfg.explain(w), b && !ok ? opts[+b.dataset.i].t : null);
-      $("#qAnswer").hidden = false;
-      revealNext($("#qNext"));
-      const after = cfg.sayAfter ? cfg.sayAfter(w) : w.w;
-      if (!q.say && !cfg.silent && after) autoSay(after);
-    };
-    $$(".choice", body()).forEach((b) => b.addEventListener("click", () => answer(b)));
-    $("#qSkip").addEventListener("click", () => answer(null));
-    $("#qNext").addEventListener("click", () => { pos++; ask(); });
-    if (q.say) sayLater(q.say);
-  }
-  function end() {
-    progress.addSession({ type: cfg.kind, lesson: P.ctx.lesson ?? 0, score: right, total: items.length, missed });
-    cfg.onDone?.(right, items.length);
-    if (cfg.then) return cfg.then({ title: cfg.title, right, total: items.length, missed, missedItems });
-    const full = cfg.fullCfg || cfg; // "Again" starts the original round (or picks a new one), even after "Retry missed"
-    showResults(cfg.title, right, items.length, missed, () => choiceQuiz(full), "全对！Quán duì! Everything correct!",
-      missedItems.length && (() => choiceQuiz({ ...cfg, items: missedItems, onDone: undefined, fullCfg: full })));
-  }
-  ask();
-}
-
-// Shared results screen.
-// retry: given when something was missed; runs the same exercise on just those items.
-export function showResults(title, right, total, missed, again, perfect = "全对！Quán duì!", retry) {
-  body().innerHTML = `<div class="panel">
-    <span class="lbl">Results · ${esc(title)}</span>
-    <div class="score">${right} / ${total}</div>
-    ${missed.length ? `<p>Practice these again:</p><div class="result-list">${missed.map((w) => `<span>${esc(w)}</span>`).join("")}</div>` : `<p>${perfect}</p>`}
-    <div class="controls">${nextHtml()}${again ? `<button class="btn big" type="button" id="resAgain">${icon("replay")} Again</button>` : ""}${retry ? `<button class="btn big" type="button" id="resRetry">Retry missed</button>` : ""}${backBtn()}</div>
-  </div>`;
-  wireBack(body());
-  wireNext(body());
-  $("#resAgain")?.addEventListener("click", again);
-  $("#resRetry")?.addEventListener("click", retry);
+  const items = cfg.items || (() => shuffle(cfg.words).slice(0, cfg.count || 10));
+  return runRound({
+    kind: cfg.kind, title: cfg.title, items, label: cfg.label, then: cfg.then, onDone: cfg.onDone,
+    host: body, back: cfg.back || goBack, lesson: P.ctx.lesson, toggles: !cfg.noPinyin, skip: "不知道 · Don't know",
+    ask(w, round) {
+      const q = cfg.ask(w);
+      const opts = shuffle(cfg.makeOptions(w));
+      round.draw(`<div class="q-stage">${q.html}
+        ${q.say ? `<div class="controls"><button class="btn primary big" type="button" data-say="${esc(q.say)}" id="qListen">${icon("speaker")} Listen</button>
+          <button class="btn big" type="button" data-say="${esc(q.say)}" data-slow>${icon("slow")} Slow</button></div>` : ""}</div>
+        ${q.peek ? `<details class="peek"><summary>Show the text</summary>${q.peek}</details>` : ""}
+        <div class="choices">${opts.map((o, i) => `<button class="choice" type="button" data-i="${i}">${o.html}</button>`).join("")}</div>
+        <div class="status" id="qStatus" aria-live="polite"></div>
+        <div class="answer" id="qAnswer" hidden></div>`);
+      const el = round.el, st = $("#qStatus", el), ans = $("#qAnswer", el);
+      let done = false;
+      const answer = (b) => {
+        if (done) return;
+        done = true;
+        const ok = b ? opts[+b.dataset.i].correct : false;
+        $$(".choice", el).forEach((c) => {
+          c.disabled = true;
+          if (opts[+c.dataset.i].correct) c.classList.add("right");
+          else if (c === b) c.classList.add("wrong");
+        });
+        progress.record(cfg.key + (cfg.id ? cfg.id(w) : w.w), { ok, miss: ok ? 0 : 1 });
+        st.style.color = ok ? "" : "var(--cinnabar)";
+        st.textContent = ok ? "对了！Correct!" : b ? "Not quite." : "No problem. Here is the answer.";
+        ans.innerHTML = cfg.reveal(w);
+        // Every mistake gets a reason: what you chose, and why the answer is the answer.
+        const mine = b && !ok ? opts[+b.dataset.i].note : "";
+        const why = cfg.why?.(w) || "";
+        if (mine || (why && !ok)) ans.insertAdjacentHTML("beforeend", `<div class="why">${mine ? `<p><span class="why-lbl">You chose</span> ${mine}</p>` : ""}${why && !ok ? `<p><span class="why-lbl">Why</span> ${why}</p>` : ""}</div>`);
+        if (cfg.explain) showWhy(ans, cfg.explain(w), b && !ok ? opts[+b.dataset.i].t : null);
+        ans.hidden = false;
+        round.done(ok);
+        const after = cfg.sayAfter ? cfg.sayAfter(w) : w.w;
+        if (!q.say && !cfg.silent && after) autoSay(after);
+      };
+      $$(".choice", el).forEach((b) => b.addEventListener("click", () => answer(b)));
+      if (q.say) sayLater(q.say);
+      return { skip: () => answer(null) };
+    },
+  });
 }
 
 /* ---------- Match pairs ---------- */
@@ -456,157 +422,141 @@ const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 const sKey = (it) => "s:" + it.w.w + (it.sentence ? "#ex" : "");
 
 // items: [{ w, text, py, en, sentence? }], or a function that picks them ("Again" then picks anew)
-export function speak({ title, items: pick, then, fullItems = pick }) {
-  const items = typeof pick === "function" ? pick() : pick;
-  if (!items.length) return notEnough();
-  let pos = 0, right = 0, useRecorder = !Recognition, answered = false, wrong = false, recTimer = null, recog = null, media = null, starting = false;
-  const missed = [], missedItems = [];
-  // Stop anything still listening or recording (next item, skip, leaving the screen).
-  const abortAll = () => {
-    clearTimeout(recTimer); recTimer = null;
-    if (media) { const m = media; media = null; m.onstop = null; try { if (m.state === "recording") m.stop(); } catch {} m.stream?.getTracks().forEach((t) => t.stop()); }
-    if (recog) { const r = recog; recog = null; r.onresult = r.onend = r.onerror = null; try { r.abort(); } catch {} }
-  };
-  function show() {
-    abortAll();
-    if (pos >= items.length) return end();
-    answered = false; wrong = false;
-    const it = items[pos];
-    if (!pos) scrollTo(0, 0);
-    body().innerHTML = `<div class="panel focus">
-      ${quizHead({ title: `说 · ${title}`, pos, total: items.length, leave: then ? "Stop" : "Back" })}
-      <div class="speak-card">
-        <div class="${it.sentence ? "prompt-big" : "big-hz"}" data-en-done="1" style="font-family:var(--display)">${it.text}</div>
-        <div class="py q-py">${tonePy(it.py)}</div>
-        <div class="muted q-en">${esc(it.en)}</div>
-        <div class="controls" style="justify-content:center">${sayBtns(it.text, it.py)}</div>
-        <button class="mic" type="button" id="micBtn" aria-label="Speak">${icon("mic")}</button>
-        <div class="note" id="micNote">${useRecorder ? "Tap to record yourself, tap again to stop." : "Tap the microphone and say it."}</div>
-        <div class="heard" id="heard" aria-live="polite"></div>
-        <div class="controls" id="judge" style="justify-content:center"></div>
-      </div>
-      <div class="controls dock"><button class="btn primary" type="button" id="sNext" hidden>${pos + 1 >= items.length ? (then ? "Continue" : "See results") : "Next"}</button>
-        <button class="btn ghost" type="button" id="sSkip">Skip</button></div>
-    </div>`;
-    wireBack(body());
-    wirePinyin(body().firstElementChild, { annotateText: false });
+export function speak({ title, items, then }) {
+  let useRecorder = !Recognition; // stays switched once speech checking turned out not to work
+  return runRound({
+    kind: "speak", title, head: `说 · ${title}`, items, then, label: (it) => it.text,
+    host: body, back: goBack, lesson: P.ctx.lesson, pinyin: { annotateText: false }, skip: "Skip",
+    perfect: "说得很好！Shuō de hěn hǎo!",
+    ask: (it, q) => speakOne(it, q),
+  });
+  // One item: listen with speech recognition, or record and judge yourself.
+  function speakOne(it, q) {
+    let answered = false, wrong = false, recTimer = null, recog = null, media = null, starting = false;
+    // Stop anything still listening or recording (next item, skip, leaving the screen).
+    const abortAll = () => {
+      clearTimeout(recTimer); recTimer = null;
+      if (media) { const m = media; media = null; m.onstop = null; try { if (m.state === "recording") m.stop(); } catch {} m.stream?.getTracks().forEach((t) => t.stop()); }
+      if (recog) { const r = recog; recog = null; r.onresult = r.onend = r.onerror = null; try { r.abort(); } catch {} }
+    };
+    q.draw(`<div class="speak-card">
+          <div class="${it.sentence ? "prompt-big" : "big-hz"}" data-en-done="1" style="font-family:var(--display)">${it.text}</div>
+          <div class="py q-py">${tonePy(it.py)}</div>
+          <div class="muted q-en">${esc(it.en)}</div>
+          <div class="controls" style="justify-content:center">${sayBtns(it.text, it.py)}</div>
+          <button class="mic" type="button" id="micBtn" aria-label="Speak">${icon("mic")}</button>
+          <div class="note" id="micNote">${useRecorder ? "Tap to record yourself, tap again to stop." : "Tap the microphone and say it."}</div>
+          <div class="heard" id="heard" aria-live="polite"></div>
+          <div class="controls" id="judge" style="justify-content:center"></div>
+        </div>`);
     $("#micBtn").addEventListener("click", () => (useRecorder ? recordToggle(it) : listen(it)));
-    $("#sNext").addEventListener("click", () => { pos++; show(); });
-    $("#sSkip").addEventListener("click", () => {
-      if (!answered && !wrong) { progress.record(sKey(it), { ok: false, miss: 1 }); missed.push(it.text); missedItems.push(it); }
+    function result(it, ok, msg) {
+      if (answered) return;
       answered = true;
-      pos++; show();
-    });
-    $$("[data-back]", body()).forEach((b) => b.addEventListener("click", abortAll));
-  }
-  function result(it, ok, msg) {
-    if (answered) return;
-    answered = true;
-    abortAll();
-    const mic = $("#micBtn");
-    if (mic) { mic.disabled = true; mic.classList.remove("on"); }
-    // Right after a "Not yet": done for the lesson, but it was already counted as missed.
-    if (wrong) { if (ok) progress.record(sKey(it), { ok: false, fix: true }, { sfx: "right" }); }
-    else {
-      progress.record(sKey(it), { ok, miss: ok ? 0 : 1 });
-      if (ok) right++; else { missed.push(it.text); missedItems.push(it); }
+      abortAll();
+      const mic = $("#micBtn");
+      if (mic) { mic.disabled = true; mic.classList.remove("on"); }
+      if (wrong) { if (ok) progress.record(sKey(it), { ok: false, fix: true }, { sfx: "right" }); }
+      else progress.record(sKey(it), { ok, miss: ok ? 0 : 1 });
+      $("#heard").innerHTML = msg;
+      $("#judge").innerHTML = "";
+      q.done(ok && !wrong); // right after a "Not yet": done for the lesson, but missed in this round
     }
-    $("#heard").innerHTML = msg;
-    $("#judge").innerHTML = "";
-    revealNext($("#sNext"));
-    $("#sSkip").hidden = true;
-  }
-  // Recorder "Not yet": counted as a miss once, then record again; "Sounded right" later still finishes it.
-  function tryAgain(it) {
-    if (!wrong) { wrong = true; progress.record(sKey(it), { ok: false, miss: 1 }); missed.push(it.text); missedItems.push(it); }
-    $("#heard").innerHTML = `Keep practicing <span class="hz">${it.text}</span>.`;
-    $("#judge").innerHTML = "";
-    $("#micNote").textContent = "Listen to the model, then tap to record again.";
-  }
-  function listen(it) {
-    const mic = $("#micBtn");
-    if (answered) return;
-    abortAll();
-    const rec = recog = new Recognition();
-    rec.lang = "zh-CN";
-    rec.interimResults = false;
-    rec.maxAlternatives = 5;
-    mic.classList.add("on");
-    $("#micNote").textContent = "Listening… say it now.";
-    let got = false;
-    rec.onresult = (e) => {
-      got = true;
-      const alts = [...e.results[0]].map((a) => a.transcript);
-      const best = alts.reduce((b, t) => (overlap(it.text, t) > overlap(it.text, b) ? t : b), alts[0] || "");
-      const score = overlap(it.text, best);
-      const need = it.sentence ? 0.8 : 1;
-      if (score >= need) result(it, true, `<span class="ok-c">${icon("check")} 很好！</span> I heard <span class="hz">${esc(best)}</span>`);
-      else {
-        $("#heard").innerHTML = `I heard <span class="hz">${esc(best) || "nothing clear"}</span>. ${score >= 0.5 ? "Close! " : ""}Try again, or listen to the model first.`;
-        $("#judge").innerHTML = `<button class="btn" type="button" id="giveUp">Mark as not yet</button>`;
-        $("#giveUp").addEventListener("click", () => result(it, false, `Keep practicing <span class="hz">${it.text}</span>.`));
-      }
-    };
-    rec.onerror = (e) => {
-      mic.classList.remove("on");
-      if (e.error === "not-allowed" || e.error === "service-not-allowed") {
-        $("#micNote").textContent = e.error === "not-allowed"
-          ? "Microphone blocked. Allow it in your browser settings, or use record-and-compare instead."
-          : "Speech checking isn't available here. Switched to record-and-compare.";
-        useRecorder = true;
-      } else if (e.error === "network") {
-        $("#micNote").textContent = "Speech checking needs internet. Switched to record-and-compare.";
-        useRecorder = true;
-      } else if (e.error === "no-speech") $("#micNote").textContent = "I didn't hear anything. Tap and try again.";
-      else $("#micNote").textContent = `Couldn't listen (${e.error}). Tap to try again.`;
-    };
-    let failed = false;
-    const onerr = rec.onerror;
-    rec.onerror = (e) => { failed = true; onerr(e); };
-    rec.onend = () => { mic.classList.remove("on"); if ((got || !failed) && !answered) $("#micNote").textContent = "Tap the microphone to try again."; };
-    try { stopSpeech(); rec.start(); } catch { mic.classList.remove("on"); }
-  }
-  // Fallback without speech recognition: record, play it back next to the model, judge yourself.
-  async function recordToggle(it) {
-    const mic = $("#micBtn");
-    if (answered || starting) return;
-    if (media?.state === "recording") { media.stop(); return; }
-    starting = true;
-    try {
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      starting = false;
-      if (answered || $("#micBtn") !== mic) { stream.getTracks().forEach((t) => t.stop()); return; }
-      const chunks = [];
-      const m = media = new MediaRecorder(stream);
-      m.ondataavailable = (e) => chunks.push(e.data);
-      m.onstop = () => {
-        clearTimeout(recTimer); recTimer = null;
-        stream.getTracks().forEach((t) => t.stop());
-        mic.classList.remove("on");
-        const url = URL.createObjectURL(new Blob(chunks, { type: m.mimeType }));
-        $("#micNote").textContent = "Compare your voice with the model, then judge:";
-        $("#heard").innerHTML = `<audio controls src="${url}" style="width:min(100%,320px)"></audio>`;
-        $("#judge").innerHTML = `<button class="btn" type="button" id="jNo">Not yet</button><button class="btn primary" type="button" id="jYes">${icon("check")} Sounded right</button>`;
-        $("#jYes").addEventListener("click", () => result(it, true, `<span class="ok-c">很好！</span>`));
-        $("#jNo").addEventListener("click", () => tryAgain(it));
-      };
-      m.start();
+    // Recorder "Not yet": counted as a miss once, then record again; "Sounded right" later still finishes it.
+    function tryAgain(it) {
+      if (!wrong) { wrong = true; progress.record(sKey(it), { ok: false, miss: 1 }); }
+      $("#heard").innerHTML = `Keep practicing <span class="hz">${it.text}</span>.`;
+      $("#judge").innerHTML = "";
+      $("#micNote").textContent = "Listen to the model, then tap to record again.";
+    }
+    function listen(it) {
+      const mic = $("#micBtn");
+      if (answered) return;
+      abortAll();
+      const rec = recog = new Recognition();
+      rec.lang = "zh-CN";
+      rec.interimResults = false;
+      rec.maxAlternatives = 5;
       mic.classList.add("on");
-      $("#micNote").textContent = "Recording… tap again to stop.";
-      clearTimeout(recTimer);
-      recTimer = setTimeout(() => { if (media === m && m.state === "recording") m.stop(); }, it.sentence ? 8000 : 4000);
-    } catch {
-      starting = false;
-      $("#micNote").textContent = "Microphone not available. Allow microphone access for this app in Settings.";
+      $("#micNote").textContent = "Listening… say it now.";
+      let got = false;
+      rec.onresult = (e) => {
+        got = true;
+        const alts = [...e.results[0]].map((a) => a.transcript);
+        const best = alts.reduce((b, t) => (overlap(it.text, t) > overlap(it.text, b) ? t : b), alts[0] || "");
+        const score = overlap(it.text, best);
+        const need = it.sentence ? 0.8 : 1;
+        if (score >= need) result(it, true, `<span class="ok-c">${icon("check")} 很好！</span> I heard <span class="hz">${esc(best)}</span>`);
+        else {
+          $("#heard").innerHTML = `I heard <span class="hz">${esc(best) || "nothing clear"}</span>. ${score >= 0.5 ? "Close! " : ""}Try again, or listen to the model first.`;
+          $("#judge").innerHTML = `<button class="btn" type="button" id="giveUp">Mark as not yet</button>`;
+          $("#giveUp").addEventListener("click", () => result(it, false, `Keep practicing <span class="hz">${it.text}</span>.`));
+        }
+      };
+      rec.onerror = (e) => {
+        mic.classList.remove("on");
+        if (e.error === "not-allowed" || e.error === "service-not-allowed") {
+          $("#micNote").textContent = e.error === "not-allowed"
+            ? "Microphone blocked. Allow it in your browser settings, or use record-and-compare instead."
+            : "Speech checking isn't available here. Switched to record-and-compare.";
+          useRecorder = true;
+        } else if (e.error === "network") {
+          $("#micNote").textContent = "Speech checking needs internet. Switched to record-and-compare.";
+          useRecorder = true;
+        } else if (e.error === "no-speech") $("#micNote").textContent = "I didn't hear anything. Tap and try again.";
+        else $("#micNote").textContent = `Couldn't listen (${e.error}). Tap to try again.`;
+      };
+      let failed = false;
+      const onerr = rec.onerror;
+      rec.onerror = (e) => { failed = true; onerr(e); };
+      rec.onend = () => { mic.classList.remove("on"); if ((got || !failed) && !answered) $("#micNote").textContent = "Tap the microphone to try again."; };
+      try { stopSpeech(); rec.start(); } catch { mic.classList.remove("on"); }
     }
+    // Fallback without speech recognition: record, play it back next to the model, judge yourself.
+    async function recordToggle(it) {
+      const mic = $("#micBtn");
+      if (answered || starting) return;
+      if (media?.state === "recording") { media.stop(); return; }
+      starting = true;
+      try {
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        starting = false;
+        if (answered || $("#micBtn") !== mic) { stream.getTracks().forEach((t) => t.stop()); return; }
+        const chunks = [];
+        const m = media = new MediaRecorder(stream);
+        m.ondataavailable = (e) => chunks.push(e.data);
+        m.onstop = () => {
+          clearTimeout(recTimer); recTimer = null;
+          stream.getTracks().forEach((t) => t.stop());
+          mic.classList.remove("on");
+          const url = URL.createObjectURL(new Blob(chunks, { type: m.mimeType }));
+          $("#micNote").textContent = "Compare your voice with the model, then judge:";
+          $("#heard").innerHTML = `<audio controls src="${url}" style="width:min(100%,320px)"></audio>`;
+          $("#judge").innerHTML = `<button class="btn" type="button" id="jNo">Not yet</button><button class="btn primary" type="button" id="jYes">${icon("check")} Sounded right</button>`;
+          $("#jYes").addEventListener("click", () => result(it, true, `<span class="ok-c">很好！</span>`));
+          $("#jNo").addEventListener("click", () => tryAgain(it));
+        };
+        m.start();
+        mic.classList.add("on");
+        $("#micNote").textContent = "Recording… tap again to stop.";
+        clearTimeout(recTimer);
+        recTimer = setTimeout(() => { if (media === m && m.state === "recording") m.stop(); }, it.sentence ? 8000 : 4000);
+      } catch {
+        starting = false;
+        $("#micNote").textContent = "Microphone not available. Allow microphone access for this app in Settings.";
+      }
+    }
+    return {
+      stop: abortAll,
+      skip() {
+        if (!answered && !wrong) progress.record(sKey(it), { ok: false, miss: 1 });
+        answered = true;
+        abortAll();
+        q.done(false);
+        q.next();
+      },
+    };
   }
-  function end() {
-    progress.addSession({ type: "speak", lesson: P.ctx.lesson ?? 0, score: right, total: items.length, missed });
-    if (then) return then({ title, right, total: items.length, missed, missedItems });
-    showResults(title, right, items.length, missed, () => speak({ title, items: fullItems }), "说得很好！Shuō de hěn hǎo!", // "Again" replays the whole round, even after "Retry missed"
-      missedItems.length && (() => speak({ title, items: missedItems, fullItems })));
-  }
-  show();
 }
 
 /* ---------- Word list ---------- */
