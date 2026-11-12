@@ -1,13 +1,7 @@
 // Pure progress logic (no storage, no DOM) so it can be unit-tested.
 //
-// Every practice result updates one "item" stat. Item keys:
-//   w:<char>  writing a character in Write → "Write it"
-//   d:<word>  writing a word in Dictation
-//   f:<word>  a flashcard answer
-//   t:<char>  a tone-quiz answer
-//   l:<word>  listening: heard the word, picked it / its meaning   (ls:<word> = its example sentence)
-//   q:<word>  vocabulary quizzes and match pairs
-//   s:<word>  speaking the word                                     (s:<word>#ex = its example sentence)
+// Every practice result updates one "item" stat, under a progress key: every kind of key is
+// listed in keys.js.
 // fix counts answers that were wrong first and then put right (a miss for review, but done for the lesson %).
 // Each device keeps its own stat per item and only ever writes its own, so devices
 // can sync without overwriting each other; the totals are combined when read.

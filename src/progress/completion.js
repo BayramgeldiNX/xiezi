@@ -4,13 +4,14 @@
 // been answered right at least once, or put right after a mistake: ok > 0 or fix > 0. Writing keys
 // (w: characters, d: dictation words) also count after WRITE_TRIES tries, mistakes or not. None of these
 // counts goes down, so neither does the %.
+import { afterTries } from "./keys.js";
+
 export const FINISHED_AT = 0.6;
 export const WRITE_TRIES = 5;
 
-const isWriteKey = (k) => k.startsWith("w:") || k.startsWith("d:");
 const okKey = (k, get) => {
   const s = get(k);
-  return (s?.ok || 0) + (s?.fix || 0) > 0 || (isWriteKey(k) && (s?.n || 0) >= WRITE_TRIES);
+  return (s?.ok || 0) + (s?.fix || 0) > 0 || (afterTries(k) && (s?.n || 0) >= WRITE_TRIES);
 };
 const okOption = (o, get) => (Array.isArray(o) ? o.length > 0 && o.every((k) => okKey(k, get)) : okKey(o, get));
 export const isDone = (item, get) => (Array.isArray(item) ? item : [item]).some((o) => okOption(o, get));
