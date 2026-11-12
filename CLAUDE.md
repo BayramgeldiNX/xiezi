@@ -23,7 +23,7 @@ The owner uses it on iPhone 16 (home-screen PWA), Mi Pad 7 Pro and Windows. Prog
 - `src/pwa.js`: updates install on a calm page or the next page change.
 - `src/views/`: one file per screen.
   - `practice.js`: lesson modes; `available()` (in `progress/lesson-exercises.js`) hides modes that cannot run.
-  - `quiz-round.js`: `runRound(cfg)`, the loop one-question-at-a-time exercises share (head, focus, Next bar, score, session, results with Again / Retry missed, `then` for Review chains). An exercise only draws and checks one item. Used by `choiceQuiz` (and everything built on it), Speak, Build the sentence and Tones.
+  - `quiz-round.js`: `runRound(cfg)`, the loop one-question-at-a-time exercises share (head, focus, Next bar, score, session, results with Again / Retry missed, `then` for Review chains). An exercise only draws and checks one item. Used by `choiceQuiz` (and everything built on it), Speak, Build the sentence, Tones and Notebook review.
   - `write.js`: stroke animation, with a Non-stop loop that runs until Stop.
   - `cards.js`, `typing.js`, `dictation.js`, `tones.js`, `reading.js`.
   - `bookreview.js`: review and the HSK-style practice test.
