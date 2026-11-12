@@ -2,13 +2,14 @@
 // with spaced repetition. A word is due in a type when that type's schedule says so.
 import { $, $$, esc, shuffle } from "../lib/util.js";
 import { icon } from "../lib/icons.js";
-import { wordsOf, LESSONS, READINGS, grammarOf } from "../data/index.js";
+import { wordsOf, LESSONS, READINGS, grammarOf, workbookOf } from "../data/index.js";
 import * as progress from "../progress/store.js";
 import { latest, nextReview, isDue } from "../progress/model.js";
-import { setHost, listenQuiz, vocabQuiz, speak, lessonSentences, grammarQuiz, ui } from "./practice.js";
+import { setHost, listenQuiz, vocabQuiz, speak, grammarQuiz, ui } from "./practice.js";
+import { lessonSentences, buildable } from "../progress/lesson-exercises.js";
 import { dictIntro } from "./dictation.js";
-import { workbookOf, workbookQuiz } from "./workbook.js";
-import { orderGame, buildable } from "./reading.js";
+import { workbookQuiz } from "./workbook.js";
+import { orderGame } from "./reading.js";
 
 const MAX = 10;     // items per type in one session
 const MIXED = 12;   // items in a mixed session

@@ -8,23 +8,9 @@
 import { esc, shuffle } from "../lib/util.js";
 import { tonePy } from "../lib/pinyin.js";
 import { sayBtns } from "../lib/speech.js";
-import { CHARINFO, RADICALS, LESSONS, wordsOf, lessonChars } from "../data/index.js";
+import { CHARINFO, RADICALS, LESSONS, wordsOf } from "../data/index.js";
 import { charLinks } from "./charsheet.js";
 import { keyOf } from "../lib/explain-key.js";
-import { pickRound } from "../lib/round.js";
-import * as progress from "../progress/store.js";
-
-// Every workbook item of the given lessons, each with a stable id and its kind.
-export function workbookOf(lessons) {
-  return lessons.flatMap((l) => {
-    const wb = l.workbook || {};
-    return [
-      ...(wb.dialogs || []).map((d, i) => ({ ...d, kind: "dialog", id: `${l.id}/d${i + 1}`, lesson: l.id })),
-      ...(wb.judge || []).map((d, i) => ({ ...d, kind: "judge", id: `${l.id}/j${i + 1}`, lesson: l.id })),
-      ...(wb.replies || []).map((d, i, all) => ({ ...d, kind: "reply", id: `${l.id}/r${i + 1}`, lesson: l.id, others: all.filter((x) => x !== d && x.q !== x.a).map((x) => x.a), askedBy: Object.fromEntries(all.map((x) => [x.a, x.q])) })),
-    ];
-  });
-}
 
 const dialogText = (d) => d.lines.map((x) => x[1]).join("");
 const hz = (t, size = 1.3) => `<span class="hz" style="font-size:${size}rem">${charLinks(t)}</span>`;
@@ -59,9 +45,8 @@ export function workbookQuiz(ui, { items, title = "练习册 · Workbook", kind 
 }
 
 // 选词填空: blank the word in its own example sentence.
-export function fillQuiz(ui, words, { title = "选词填空 · Fill in the word", then } = {}) {
-  const pool = words.filter((w) => w.ex?.hz?.includes(w.w));
-  const items = () => pickRound(pool, (w) => "wf:" + w.w, progress.get, 10);
+// words: the pool for wrong answers; items(): the round (from lesson-exercises.js).
+export function fillQuiz(ui, words, { items, title = "选词填空 · Fill in the word", then } = {}) {
   return ui.choiceQuiz({ kind: "fill", title, items, key: "wf:", then,
     ask: (w) => ({ html: `<p class="hint">Which word fills the gap?</p>
       <p class="hz wb-q" data-en-done="1">${esc(w.ex.hz.replace(/[AB]: /g, "").replace(w.w, "（　　）"))}</p><p class="muted q-en" lang="en">${esc(w.ex.en)}</p>` }),
@@ -103,11 +88,11 @@ export function radicalChoice(ui, cfg) {
 }
 
 // 部首: which radical does this character have? (lesson version, saved as rad:<char>)
-export function radicalQuiz(ui, lesson, { title = "部首 · Which radical?", then } = {}) {
-  const chars = lessonChars(lesson).filter((c) => CHARINFO[c]?.radical?.c && CHARINFO[c].radical.c !== c);
+// items(): a round of the lesson's characters (from lesson-exercises.js).
+export function radicalQuiz(ui, items, { title = "部首 · Which radical?", then } = {}) {
   const allRads = [...new Set(Object.values(CHARINFO).map((x) => x.radical?.c).filter(Boolean))];
   const name = (r) => RADICALS[r] || Object.values(CHARINFO).find((x) => x.radical?.c === r)?.radical?.en || "";
-  return radicalChoice(ui, { kind: "radical", title, items: () => pickRound(chars, (c) => "rad:" + c, progress.get, 10), key: "rad:", id: (c) => c, then,
+  return radicalChoice(ui, { kind: "radical", title, items, key: "rad:", id: (c) => c, then,
     charOf: (c) => c, radOf: (c) => CHARINFO[c].radical.c, nameOf: name,
     distractors: (c, r) => shuffle(allRads.filter((x) => x !== r && !c.includes(x))).slice(0, 3),
   });

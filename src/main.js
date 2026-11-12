@@ -13,12 +13,12 @@ import * as progress from "./progress/store.js";
 import { onRecord, onSession } from "./lib/sfx.js";
 import { charStatus } from "./progress/model.js";
 import { completion } from "./progress/completion.js";
-import { lessonItems, lessonLeft } from "./lib/lesson-items.js";
+import { lessonItems, lessonLeft, available } from "./progress/lesson-exercises.js";
 import { renderWords, renderWord, markWords, writeKey } from "./views/write.js";
 import { dictRedraw } from "./views/dictation.js";
 import { cardsKey } from "./views/cards.js";
 import { tonesKey } from "./views/tones.js";
-import { openPractice, runMode, SKILLS, modeAvailable } from "./views/practice.js";
+import { openPractice, runMode, SKILLS } from "./views/practice.js";
 import { openReview, dueCount, ALL_BOOKS } from "./views/bookreview.js";
 import { openTyping, typingDue } from "./views/typing.js";
 import "./views/charsheet.js";
@@ -336,7 +336,7 @@ function showWriteStudy() {
   $("#writePractice").hidden = true;
   $("#writeStudy").hidden = false;
   $("#writeStrip").hidden = false;
-  $("#writeStrip").innerHTML = `<span class="lbl">Practice</span>${SKILLS.write.modes.filter((m) => modeAvailable(m.id, app.L())).map((m) =>
+  $("#writeStrip").innerHTML = `<span class="lbl">Practice</span>${SKILLS.write.modes.filter((m) => available(m.id, app.L())).map((m) =>
     `<button class="btn ghost" type="button" data-wmode="${m.id}">${m.name}${m.id === "dict" ? noteHtml("write", m.id) : ""}</button>`).join("")}
     <a class="btn ghost" href="#/print/${app.L().id}">Print sheet</a>`;
   $$("[data-wmode]").forEach((b) => b.addEventListener("click", () => {

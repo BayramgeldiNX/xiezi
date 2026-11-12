@@ -47,6 +47,7 @@ The owner uses it on iPhone 16 (home-screen PWA), Mi Pad 7 Pro and Windows. Prog
 - `src/lib/dict.js`: `lookup(word)` from the book words, then CC-CEDICT shards in `public/dict/` (made by `scripts/gen-dict.mjs`, CC BY-SA 4.0). Stroke data for any character: `public/strokes/` (generated at build by `scripts/gen-public-strokes.mjs`, gitignored) and `ensureChars()` in `data/strokes.js`.
 - `scripts/notebook.mjs` (`count`, `list`, `save <file>`, `hook`; `--emulator --uid`), `.claude/skills/fill-notebook/` and the SessionStart hook in `.claude/settings.json`: Claude fills new Notebook words with a sentence and memory tricks. `scripts/lib-firebase.mjs` holds the shared login and owner lookup (uid cached in `.cache/owner-uid`).
 - `src/progress/`: progress model and store. The store tracks what is not yet uploaded (`unsent`, `sentFor`), so sync sends only changes.
+  - `lesson-exercises.js`: the one place that knows what each lesson exercise asks and which keys it records (`exerciseItems`), lesson % and what is open (`lessonParts`, `lessonLeft`), and whether an exercise can run (`available`). Views take their rounds from it; `tests/lesson-keys.test.js` snapshots every lesson's keys. Terms: `GLOSSARY.md`.
 - `src/data/`:
   - `books/<id>/book.json` plus `lessonNN.json`.
   - `strokes.js`: `loadStrokes()` loads the big `strokes.gen.json` on demand; `stroke-chars.gen.json` is the small list of characters that have strokes.

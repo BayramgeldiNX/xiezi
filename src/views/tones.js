@@ -1,11 +1,10 @@
 // Tone quiz tab: listen to one syllable, pick its tone.
 import { $, $$, shuffle, esc, revealNext } from "../lib/util.js";
-import { syllables, tonePy, stripTone, addTone } from "../lib/pinyin.js";
+import { tonePy, addTone } from "../lib/pinyin.js";
 import { say, autoSay, sayLater, sayBtns } from "../lib/speech.js";
 import { icon } from "../lib/icons.js";
-import { CHARS, TONE_SETS, TONE_SAMPLES } from "../data/index.js";
+import { TONE_SETS, TONE_SAMPLES } from "../data/index.js";
 import * as progress from "../progress/store.js";
-import { pickRound } from "../lib/round.js";
 import { nextHtml, wireNext } from "./practice.js";
 import { quizHead } from "../lib/qpinyin.js";
 
@@ -13,19 +12,9 @@ const TONE_NAMES = ["", "1st · high, flat", "2nd · rising", "3rd · dip", "4th
 const TONE_PATHS = ["", "M4 6 L40 6", "M4 20 L40 4", "M4 10 L18 22 L40 4", "M4 4 L40 22"];
 const shape = (t, cls = "") => `<svg class="tone-shape ${cls}" viewBox="0 0 44 26" aria-hidden="true"><path d="${TONE_PATHS[t]}" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
 
+// "lesson": the round the caller picks (lesson-exercises.js); otherwise 10 from the classic sets.
 function toneQuestions(source) {
-  if (source === "lesson") {
-    const seen = new Set(), qs = [];
-    tOpts.words.forEach((w) => [...w.w].forEach((c) => {
-      const py = CHARS[c]?.py;
-      if (!py || seen.has(c)) return;
-      const tone = syllables(py)[0][1];
-      if (tone < 1 || tone > 4) return; // skip neutral-tone characters like 们
-      seen.add(c);
-      qs.push({ say: c, plain: stripTone(py), tone, hz: c });
-    }));
-    return pickRound(qs, (q) => "t:" + q.hz, progress.get, 10); // the characters not done yet first
-  }
+  if (source === "lesson") return tOpts.questions();
   const qs = [];
   TONE_SETS.forEach(([plain, ...hz]) => hz.forEach((c, i) => c && qs.push({ say: c, plain, tone: i + 1, hz: c })));
   return shuffle(qs).slice(0, 10);
@@ -47,7 +36,7 @@ function compareHtml(q, picked) {
 let tq = null;
 let tOpts = {};
 
-// opts: { host, words, label, lesson, back }; no argument = same set again.
+// opts: { host, questions (a function that picks a round), label, lesson, back }; no argument = same set again.
 export function tonesIntro(opts) {
   tq = null;
   if (opts) tOpts = { ...opts };

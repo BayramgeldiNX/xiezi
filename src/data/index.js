@@ -50,6 +50,18 @@ export const DICT = (() => {
 export const grammarOf = (lessons) => lessons.flatMap((l) => (l.grammar || []).flatMap((g, gi) =>
   g.drills.map((d, di) => ({ ...d, id: `${l.id}/${gi + 1}.${di + 1}`, point: g.point, rule: g.en, lesson: l.id }))));
 
+// Every workbook item of the given lessons, each with a stable id and its kind.
+export function workbookOf(lessons) {
+  return lessons.flatMap((l) => {
+    const wb = l.workbook || {};
+    return [
+      ...(wb.dialogs || []).map((d, i) => ({ ...d, kind: "dialog", id: `${l.id}/d${i + 1}`, lesson: l.id })),
+      ...(wb.judge || []).map((d, i) => ({ ...d, kind: "judge", id: `${l.id}/j${i + 1}`, lesson: l.id })),
+      ...(wb.replies || []).map((d, i, all) => ({ ...d, kind: "reply", id: `${l.id}/r${i + 1}`, lesson: l.id, others: all.filter((x) => x !== d && x.q !== x.a).map((x) => x.a), askedBy: Object.fromEntries(all.map((x) => [x.a, x.q])) })),
+    ];
+  });
+}
+
 // Which characters have stroke data (the shapes themselves load later, see strokes.js).
 const HAS_STROKES = new Set(strokeChars);
 export const wordChars = (w) => [...new Set(w.w)].filter((c) => HAS_STROKES.has(c));

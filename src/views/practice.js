@@ -22,20 +22,16 @@ import { tonesIntro } from "./tones.js";
 import { lessonContent } from "../sync/content.js";
 import { showWhy } from "../lib/explain.js";
 import { keyOf } from "../lib/explain-key.js";
-import { workbookOf, workbookQuiz, fillQuiz, radicalQuiz } from "./workbook.js";
+import { workbookQuiz, fillQuiz, radicalQuiz } from "./workbook.js";
+import { available, exerciseItems } from "../progress/lesson-exercises.js";
 import { hanziLesson, pronTips } from "./hanzi.js";
 import { noteHtml } from "./lessonmeter.js";
 import { pickRound, openFirst } from "../lib/round.js";
 
-// A lesson round: only what is not done yet while there is any (see lib/round.js).
-const round = (list, itemOf, n) => pickRound(list, itemOf, progress.get, n);
-const wordItem = (w) => ["f:" + w.w, "q:" + w.w]; // Flashcards, Match and Word quiz count together
-
-// Modes that only exist when the lesson has that content.
-export const modeAvailable = (id, L) =>
-  id.startsWith("wb-") ? workbookOf(L ? [L] : []).some((d) => "wb-" + d.kind === id)
-  : id === "gr-fill" ? grammarOf(L ? [L] : []).length > 0
-  : id === "hanzi" ? !!L?.hanzi : id === "pron" ? !!L?.pron?.length : true;
+// A round of exercise `id` in this lesson: only what is not done yet while there is any (see lib/round.js).
+// Which items an exercise asks, and their keys, come from progress/lesson-exercises.js.
+const entriesOf = (id) => exerciseItems(id, thisLesson(), P.ctx.readings || []);
+const roundOf = (id, n) => { const all = entriesOf(id); return () => pickRound(all, (e) => e.item, progress.get, n).map((e) => e.of); };
 
 export const SKILLS = {
   write: {
@@ -116,7 +112,7 @@ export function showMenu() {
   const s = SKILLS[P.skill];
   // Workbook exercises only where the lesson has them.
   const inLesson = String(P.host).startsWith("#tab-") && !!thisLesson(); // only there: how much of each exercise is left
-  body().innerHTML = `<div class="mode-grid">${s.modes.filter((m) => modeAvailable(m.id, thisLesson())).map((m) => `<button class="mode-card" type="button" data-mode="${m.id}">
+  body().innerHTML = `<div class="mode-grid">${s.modes.filter((m) => available(m.id, thisLesson())).map((m) => `<button class="mode-card" type="button" data-mode="${m.id}">
       <span class="seal" aria-hidden="true">${m.seal}</span><b>${m.name}</b><small>${m.sub}</small>${inLesson ? noteHtml(P.skill, m.id) : ""}</button>`).join("")}</div>`;
   $$("[data-mode]", body()).forEach((b) => b.addEventListener("click", () => startMode(b.dataset.mode)));
 }
@@ -169,14 +165,6 @@ export function vocabQuiz({ items, pool, mode = "mixed", title = "Vocabulary", k
     reveal });
 }
 
-const sentenceItems = (words) => words.filter((w) => w.ex?.hz);
-// Two words can share one example sentence; the Sentences quiz asks it once (as the first word).
-export const uniqueSentences = (words) => sentenceItems(words).filter((w, i, a) => a.findIndex((x) => x.ex.hz === w.ex.hz) === i);
-const lessonSentences = (words, readings) => [
-  ...sentenceItems(words).map((w) => ({ hz: w.ex.hz.replace(/[AB]: /g, ""), py: w.ex.py.replace(/[AB]: /g, ""), en: w.ex.en })),
-  ...readings.flatMap((r) => r.lines),
-].filter((s, i, a) => a.findIndex((x) => x.hz === s.hz) === i);
-export { lessonSentences };
 
 const thisLesson = () => LESSONS.find((l) => l.book === P.ctx.book && l.n === P.ctx.lesson);
 
@@ -184,7 +172,7 @@ const thisLesson = () => LESSONS.find((l) => l.book === P.ctx.book && l.n === P.
 // Only inside a lesson (not in the book Review, which chains its own exercises).
 export function nextStep() {
   if (!P.ctx.book || !P.ctx.lesson || !P.mode || !String(P.host).startsWith("#tab-")) return null;
-  const modes = SKILLS[P.skill].modes.filter((m) => modeAvailable(m.id, thisLesson()));
+  const modes = SKILLS[P.skill].modes.filter((m) => available(m.id, thisLesson()));
   const next = modes[modes.findIndex((m) => m.id === P.mode) + 1];
   if (next) return { label: next.name, go: () => startMode(next.id) };
   const tabs = $$("[data-tab]").map((b) => b.dataset.tab);
@@ -197,47 +185,43 @@ export const wireNext = (root, id = "resNext") => { const n = nextStep(); $("#" 
 
 function startMode(mode) {
   P.mode = mode;
-  const { words, readings = [] } = P.ctx;
-  const host = P.host, back = goBack, lesson = P.ctx.lesson;
+  const { words } = P.ctx;
+  const host = P.host, back = goBack, lesson = P.ctx.lesson, L = thisLesson();
+  if (!available(mode, L)) return notEnough(); // the menu only offers exercises that can run
   // Rounds are functions, so "Again" picks a new round from what is still open.
-  const ten = (prefix, list = words, suffix = "") => () => round(list, (w) => prefix + w.w + suffix, 10);
-  const dictWords = () => round(words, (w) => "d:" + w.w);
+  const dictWords = roundOf("dict");
   scrollTo(0, 0);
   switch (mode) {
     case "dict": return dictIntro({ host, words: dictWords, prompt: "audio", kind: "dict", back, lesson });
     case "pinyin": return dictIntro({ host, words: dictWords, prompt: "pinyin", kind: "dict-pinyin", back, lesson });
     case "meaning": return dictIntro({ host, words: dictWords, prompt: "meaning", kind: "dict-meaning", back, lesson });
-    case "hear": return words.length < 2 ? notEnough() : listenQuiz({ items: ten("l:"), pool: words, mode: "mixed", title: "Hear the word" });
+    case "hear": return listenQuiz({ items: roundOf("hear", 10), pool: words, mode: "mixed", title: "Hear the word" });
     case "sentence": {
-      const sw = uniqueSentences(words);
-      if (sw.length < 2) return notEnough();
-      return choiceQuiz({ kind: "listen-sentence", title: "Sentences", items: () => round(sw, (w) => "ls:" + w.w, 8), key: "ls:",
+      const sw = entriesOf("sentence").map((e) => e.of);
+      return choiceQuiz({ kind: "listen-sentence", title: "Sentences", items: roundOf("sentence", 8), key: "ls:",
         ask: (w) => ({ html: `<p class="hint">What does this sentence mean?</p>`, say: w.ex.hz }),
-        makeOptions: (w) => [w, ...shuffle(sw.filter((x) => x.ex.en !== w.ex.en)).slice(0, 3)].map((o) => ({ html: `<span class="en">${esc(o.ex.en)}</span>`, correct: o === w, note: `<span class="hz">${esc(o.ex.hz)}</span> <span class="py">${tonePy(o.ex.py)}</span>` })),
+        makeOptions: (w) => [w, ...shuffle(sw.filter((x) => x.ex.en !== w.ex.en)).slice(0, 3)].map((o) => ({ html: `<span class="en">${esc(o.ex.en)}</span>`, correct: o.w === w.w, note: `<span class="hz">${esc(o.ex.hz)}</span> <span class="py">${tonePy(o.ex.py)}</span>` })),
         reveal: (w) => `<span class="hz" style="font-size:1.3rem">${w.ex.hz}</span> ${sayBtns(w.ex.hz, "sentence", true)}<span class="py c-py">${tonePy(w.ex.py)}</span>` });
     }
-    case "tones": return tonesIntro({ host, words, label: "Characters from this lesson", lesson, back });
-    case "say-word": return speak({ title: "Say the word", items: () => ten("s:")().map((w) => ({ w, text: w.w, py: w.py, en: w.en })) });
-    case "say-sentence": return speak({ title: "Say the sentence", items: () => ten("s:", sentenceItems(words), "#ex")().map((w) => ({ w, text: w.ex.hz.replace(/[AB]: /g, ""), py: w.ex.py.replace(/[AB]: /g, ""), en: w.ex.en, sentence: true })) });
-    case "cards": return cardsOpen({ host, words: () => round(words, wordItem), lesson, back, next: nextStep });
-    case "match": return matchGame(words);
-    case "word-quiz": return words.length < 2 ? notEnough() : vocabQuiz({ items: () => round(words, wordItem, 10), pool: words, mode: "mixed", title: "Word quiz" });
+    case "tones": return tonesIntro({ host, questions: roundOf("tones", 10), label: "Characters from this lesson", lesson, back });
+    case "say-word": { const r = roundOf("say-word", 10); return speak({ title: "Say the word", items: () => r().map((w) => ({ w, text: w.w, py: w.py, en: w.en })) }); }
+    case "say-sentence": { const r = roundOf("say-sentence", 10); return speak({ title: "Say the sentence", items: () => r().map((w) => ({ w, text: w.ex.hz.replace(/[AB]: /g, ""), py: w.ex.py.replace(/[AB]: /g, ""), en: w.ex.en, sentence: true })) }); }
+    case "cards": return cardsOpen({ host, words: roundOf("cards"), lesson, back, next: nextStep });
+    case "match": { const all = entriesOf("match"); return matchGame(() => openFirst(all, (e) => e.item, progress.get).map((e) => e.of)); }
+    case "word-quiz": return vocabQuiz({ items: roundOf("word-quiz", 10), pool: words, mode: "mixed", title: "Word quiz" });
     case "list": return wordList(words);
-    case "texts": return bookTexts(readings);
+    case "texts": return bookTexts(P.ctx.readings || []);
     case "grammar": return grammarNotes();
-    case "gr-fill": return grammarQuiz({ items: grammarRound(grammarOf(thisLesson() ? [thisLesson()] : [])), title: "Grammar · fill the blank" });
-    case "text-quiz": return textQuiz(ui, readings);
-    case "order": return orderGame(ui, lessonSentences(words, readings));
-    case "read-pinyin": return pinyinQuiz(ui, words);
-    case "wb-dialog": case "wb-judge": case "wb-reply": {
-      const kind = { "wb-dialog": "dialog", "wb-judge": "judge", "wb-reply": "reply" }[mode];
-      const items = workbookOf(thisLesson() ? [thisLesson()] : []).filter((d) => d.kind === kind);
-      return items.length ? workbookQuiz(ui, { items: () => round(items, (d) => "wb:" + d.id), title: SKILLS[P.skill].modes.find((m) => m.id === mode).name, kind: mode }) : notEnough();
-    }
-    case "fill": return words.filter((w) => w.ex?.hz?.includes(w.w)).length < 2 ? notEnough() : fillQuiz(ui, words);
-    case "radical": return thisLesson() ? radicalQuiz(ui, thisLesson()) : notEnough();
-    case "hanzi": return thisLesson()?.hanzi ? hanziLesson(ui, thisLesson(), { onRadicals: () => radicalQuiz(ui, thisLesson()) }) : notEnough();
-    case "pron": return thisLesson()?.pron ? pronTips(ui, thisLesson()) : notEnough();
+    case "gr-fill": return grammarQuiz({ items: roundOf("gr-fill"), title: "Grammar · fill the blank" });
+    case "text-quiz": return textQuiz(ui, P.ctx.readings || [], { items: roundOf("text-quiz", 10) });
+    case "order": return orderGame(ui, [], { round: roundOf("order", 8) });
+    case "read-pinyin": return pinyinQuiz(ui, words, roundOf("read-pinyin", 10));
+    case "wb-dialog": case "wb-judge": case "wb-reply":
+      return workbookQuiz(ui, { items: roundOf(mode), title: SKILLS[P.skill].modes.find((m) => m.id === mode).name, kind: mode });
+    case "fill": return fillQuiz(ui, words, { items: roundOf("fill", 10) });
+    case "radical": return radicalQuiz(ui, roundOf("radical", 10));
+    case "hanzi": return hanziLesson(ui, L, { onRadicals: () => radicalQuiz(ui, roundOf("radical", 10)) });
+    case "pron": return pronTips(ui, L);
   }
 }
 
@@ -280,13 +264,13 @@ function grammarNotes() {
     ${points.length ? `<section class="gr-note">
       <h3>Practice</h3>
       <ul>${points.map((g) => `<li><b>${esc(g.point)}</b> <span class="muted">${esc(g.en)}</span></li>`).join("")}</ul>
-      <div class="controls"><button class="btn primary" type="button" id="grGo">${icon("play")} Fill the blanks · ${grammarRound(drills)().length} questions</button></div>
+      <div class="controls"><button class="btn primary" type="button" id="grGo">${icon("play")} Fill the blanks · ${drills.length} questions</button></div>
     </section>` : ""}
     <div id="grBook"><p class="muted">Loading the book's notes…</p></div>
     ${backBtn()}
   </div>`;
   wireBack(body());
-  $("#grGo")?.addEventListener("click", () => grammarQuiz({ items: grammarRound(drills), title: "Grammar · fill the blank" }));
+  $("#grGo")?.addEventListener("click", () => grammarQuiz({ items: roundOf("gr-fill"), title: "Grammar · fill the blank" }));
   const slot = $("#grBook");
   const fill = (b) => {
     if (!slot.isConnected) return; // already moved on, for example into the questions
@@ -300,8 +284,6 @@ function grammarNotes() {
   lessonContent(P.ctx.book, P.ctx.lesson).then(fill, () => fill({ status: "error" }));
 }
 
-// The lesson's grammar drills still open (all of them once every one is done).
-const grammarRound = (drills) => () => round(drills, (d) => "g:" + d.id);
 
 // Fill the blank: choose the word that completes the sentence. Results are saved as g:<drill id>.
 export function grammarQuiz(cfg) {
@@ -406,11 +388,12 @@ export function showResults(title, right, total, missed, again, perfect = "全�
 }
 
 /* ---------- Match pairs ---------- */
+// words(): the lesson's words, the ones not done yet first.
 function matchGame(words) {
   // Two words can share one meaning (for example two "happy"); keep only one so every pair is clear.
   // Words not done yet come first; done ones only fill up the board.
   const seenEn = new Set(), set = [];
-  for (const w of openFirst(words, wordItem, progress.get)) {
+  for (const w of words()) {
     const k = (w.en || "").trim().toLowerCase();
     if (seenEn.has(k)) continue;
     seenEn.add(k); set.push(w);
@@ -453,7 +436,7 @@ function matchGame(words) {
         wireBack(body());
         wireNext(body());
         $("#mAgain").addEventListener("click", () => matchGame(words));
-        $("#mRetry")?.addEventListener("click", () => matchGame(notFirst));
+        $("#mRetry")?.addEventListener("click", () => matchGame(() => shuffle(notFirst)));
       }
     } else {
       errors++;

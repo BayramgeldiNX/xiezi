@@ -14,6 +14,7 @@ import { animate } from "../lib/motion.js";
 import { keyOf } from "../lib/explain-key.js";
 import { toneSyllables } from "../lib/typing-check.js";
 import { pickRound } from "../lib/round.js";
+import { buildable } from "../progress/lesson-exercises.js";
 
 const segment = makeSegmenter(DICT);
 
@@ -133,12 +134,13 @@ function reader(ui, r, back) {
   });
   $("#rdStop").addEventListener("click", stop);
   $("#rdBack").addEventListener("click", () => { stop(); hideGloss(); back(); });
-  $("#rdQuiz")?.addEventListener("click", () => { stop(); hideGloss(); textQuiz(ui, [r], () => reader(ui, r, back), r); });
+  $("#rdQuiz")?.addEventListener("click", () => { stop(); hideGloss(); textQuiz(ui, [r], { back: () => reader(ui, r, back), single: r }); });
   scrollTo(0, 0);
 }
 
 /* ---------- Questions about texts ---------- */
-export function textQuiz(ui, readings, back, single) {
+// opts: { back, single (one text: all its questions), items (otherwise: a round, from lesson-exercises.js) }
+export function textQuiz(ui, readings, { back, single, items } = {}) {
   const qs = readings.flatMap((r) => (r.questions || []).map((q, i) => ({ r, q, i })));
   if (!qs.length) {
     ui.body().innerHTML = `<div class="panel"><p>No questions in these lessons yet.</p>${ui.backBtn()}</div>`;
@@ -146,10 +148,8 @@ export function textQuiz(ui, readings, back, single) {
   }
   ui.choiceQuiz({
     kind: "reading-q", title: single ? `${single.title} · questions` : "Read & answer", key: "rq:", silent: true,
-    // One text: all its questions. All texts: a round of the questions still open (a question is
-    // done once answered right here, or when its text's own quiz was passed).
-    ...(single ? { words: qs, count: qs.length }
-      : { items: () => pickRound(qs, (x) => ["r:" + x.r.key, "rq:" + x.r.key + "#" + x.i], progress.get, 10) }),
+    // One text: all its questions. All texts: the round the caller picks.
+    ...(single ? { words: qs, count: qs.length } : { items }),
     id: (x) => `${x.r.key}#${x.i}`, label: (x) => x.r.title,
     ask: (x) => ({ html: `<details class="rd-peek" ${single ? "" : "open"}><summary>${x.r.title} · show text</summary>
         <div class="rd-mini">${x.r.lines.map((l) => `<p><span class="who">${l.who}</span> <span data-en-src>${l.hz}</span></p>`).join("")}</div></details>
@@ -165,14 +165,12 @@ export function textQuiz(ui, readings, back, single) {
 }
 
 /* ---------- Build the sentence ---------- */
-// Sentences that can be built: 3–8 words (punctuation is shown at the end, not placed).
-export const buildable = (sentences) => sentences.map((s) => ({ ...s, parts: segment(s.hz).filter((p) => p.word).map((p) => p.t) }))
-  .filter((s) => s.parts.length >= 3 && s.parts.length <= 8);
 
-// opts.all: use every sentence given (Review picks them); otherwise a round of 8 of the ones not built yet.
+// opts.all: use every sentence given (Review picks them); opts.round: a function that picks a round
+// (a lesson's, from lesson-exercises.js); otherwise a round of 8 of the ones not built yet.
 // opts.then: continue a review chain.
 export function orderGame(ui, sentences, opts = {}) {
-  const items = opts.all ? buildable(sentences) : pickRound(buildable(sentences), (s) => "o:" + s.hz, progress.get, 8);
+  const items = opts.all ? buildable(sentences) : opts.round ? opts.round() : pickRound(buildable(sentences), (s) => "o:" + s.hz, progress.get, 8);
   if (!items.length) {
     ui.body().innerHTML = `<div class="panel"><p>No sentences to build yet.</p>${ui.backBtn()}</div>`;
     return ui.wireBack(ui.body());
@@ -244,8 +242,8 @@ export function orderGame(ui, sentences, opts = {}) {
     </div>`;
     ui.wireBack(ui.body());
     ui.wireNext(ui.body());
-    $("#oAgain").addEventListener("click", () => orderGame(ui, opts.full || sentences)); // the whole round, even after "Retry missed"
-    $("#oRetry")?.addEventListener("click", () => orderGame(ui, missedItems, { all: true, full: opts.full || sentences }));
+    $("#oAgain").addEventListener("click", () => orderGame(ui, opts.full || sentences, { round: opts.round })); // the whole round, even after "Retry missed"
+    $("#oRetry")?.addEventListener("click", () => orderGame(ui, missedItems, { all: true, full: opts.full || sentences, round: opts.round }));
   }
   show();
 }
@@ -263,10 +261,11 @@ function pinyinNote(x, w, words) {
   return diff.length ? `<span class="py">${tonePy(x)}</span>: same sounds, wrong tone. ${diff.join("; ")}.` : "";
 }
 // Wrong choices: the same syllables with a different tone, plus another word's pinyin.
-export function pinyinQuiz(ui, words) {
+// words: the pool for wrong answers; items(): the round (from lesson-exercises.js).
+export function pinyinQuiz(ui, words, items) {
   ui.choiceQuiz({
     kind: "read-pinyin", title: "How do you read it?", key: "rp:", noPinyin: true,
-    items: () => pickRound(words, (w) => "rp:" + w.w, progress.get, 10),
+    items,
     ask: (w) => ({ html: `<div class="big-hz">${w.w}</div><p class="hint">Which pinyin is right?</p>` }),
     makeOptions: (w) => {
       const correct = w.py.replace(/\s/g, "");
