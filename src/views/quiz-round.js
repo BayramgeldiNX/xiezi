@@ -10,10 +10,10 @@
 //              give-up button, stop ends a microphone or a timer when the round moves on or is left.
 //   host()     the element to draw in; back() leaves
 //   kind, lesson, session   the saved session (session: extra fields)
-//   title      results title; head: the title over the questions (default title)
+//   title      results title; head: the title over the questions (default title), or a function of the item
 //   label(x)   names x in the missed list and the saved session (default x.w); missedHtml(x) shows it
 //   toggles    the 拼 / 英 switches (default on); pinyin: options for wirePinyin
-//   skip       the give-up button's text; none = no button
+//   skip       the give-up button's text, or a function of the item; none = no button
 //   perfect, scoreNote, more: [{ label, run }]   results text, a note after the score, extra buttons
 //   then(res), onDone(right, total)
 import { $, $$, esc, revealNext } from "../lib/util.js";
@@ -43,10 +43,11 @@ export function runRound(cfg, full = cfg) {
     stop();
     if (pos >= items.length) return end();
     const x = items[pos], last = pos + 1 >= items.length;
+    const of = (v) => (typeof v === "function" ? v(x) : v), skipText = of(cfg.skip);
     if (!pos) scrollTo(0, 0);
     host().innerHTML = `<div class="panel focus">
-      ${quizHead({ title: cfg.head || cfg.title, pos, total: items.length, toggles: cfg.toggles !== false, leave: cfg.then ? "Stop" : "Back" })}
-      <div class="controls dock"><button class="btn primary" type="button" id="qNext" hidden>${last ? (cfg.then ? "Continue" : "See results") : "Next"}</button>${cfg.skip ? `<button class="btn ghost" type="button" id="qSkip">${cfg.skip}</button>` : ""}</div>
+      ${quizHead({ title: of(cfg.head) || cfg.title, pos, total: items.length, toggles: cfg.toggles !== false, leave: cfg.then ? "Stop" : "Back" })}
+      <div class="controls dock"><button class="btn primary" type="button" id="qNext" hidden>${last ? (cfg.then ? "Continue" : "See results") : "Next"}</button>${skipText ? `<button class="btn ghost" type="button" id="qSkip">${skipText}</button>` : ""}</div>
     </div>`;
     const panel = host().firstElementChild, dock = $(".dock", panel), next = $("#qNext", panel), skip = $("#qSkip", panel);
     wireLeave(panel);

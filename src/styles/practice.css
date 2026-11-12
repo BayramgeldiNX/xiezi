@@ -29,6 +29,9 @@ body:has(#gloss:not([hidden])) { padding-bottom: calc(96px + var(--safe-b, 0px))
 .fc .fc-back .py { font-size: 1.5rem; }
 .fc .fc-back .en { color: var(--muted); font-size: 1.25rem; }
 .fc .tap { font-size: .8125rem; color: var(--muted); margin-top: 12px; }
+/* A card inside a quiz round's panel (Notebook review): full width, and a tone apart from the panel. */
+.panel .fc-wrap { justify-self: stretch; }
+.panel .fc { background: var(--card2); }
 .fc-controls { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; align-items: center; }
 
 /* ---------- Answer options (real targets: fill, states are rings) ---------- */

@@ -6,11 +6,11 @@ import { autoSay, sayLater, canSay, sayBtns } from "../lib/speech.js";
 import { icon } from "../lib/icons.js";
 import { gridSVG, makeWriter, trackWriter, clearWriters } from "../lib/draw.js";
 import { setting } from "../lib/settings.js";
-import { pyToggleHtml, wirePinyin } from "../lib/qpinyin.js";
 import { LESSONS, wordsOf, ensureChars, STROKE_DATA } from "../data/index.js";
 import * as progress from "../progress/store.js";
 import * as nb from "../notebook/store.js";
 import { animate, flipOut, flipIn } from "../lib/motion.js";
+import { runRound } from "./quiz-round.js";
 
 const isHan = (c) => /\p{Script=Han}/u.test(c);
 const TYPES = ["flash", "listen", "write", "gap"];
@@ -82,69 +82,57 @@ function flashChoice(words, back) {
     run({ items: words.map((e) => ({ e, type: "flash" })), title: "Flashcards", back, flashDir: b.dataset.dir })));
 }
 
-/* ---------- the run ---------- */
+/* ---------- the run: the shared quiz round, one item asked in its own way ---------- */
+// S: { items: [{ e, type }], title, back, flashDir? }
 function run(S) {
-  S.pos = 0; S.right = 0; S.answered = 0; S.missed = [];
-  S.dir = new Map();
-  next(S);
+  const dir = new Map(); // a flashcard keeps its side for the whole run, Retry included
+  runRound({
+    kind: "notebook", title: S.title, items: S.items, label: (it) => it.e.w,
+    head: (it) => (S.title === "Review" ? `${S.title} · ${TITLE[it.type]}` : S.title),
+    skip: (it) => ({ listen: "不知道 · Don't know", gap: "不知道 · Don't know", write: "Show answer" })[it.type],
+    host: body, back: () => { clearWriters(); S.back(); }, pinyin: { annotateText: false },
+    ask: (it, q) => ({ flash, listen, write, gap })[it.type](it, q, S, dir),
+  });
 }
 
-function next(S) {
-  clearWriters();
-  if (S.pos >= S.items.length) return results(S);
-  const it = S.items[S.pos];
-  const ask = { flash, listen, write, gap }[it.type];
-  ask(S, it);
-}
-
-const head = (S, it) => `<span class="lbl">${esc(S.title)}${S.title === "Review" ? ` · ${TITLE[it.type]}` : ""}</span>
-  <div class="progress">${S.pos + 1} of ${S.items.length} · ${S.right} right</div>
-  <div class="bar"><i style="width:${(S.pos / S.items.length) * 100}%"></i></div>`;
-const stopBtn = `<button class="btn ghost" type="button" id="nbrStop">Stop</button>`;
-
-// Save one answer and go on.
-function answer(S, it, ok, miss = ok ? 0 : 1, opts) {
-  progress.record(nb.nbKey(it.e.w), { ok, miss }, opts);
-  S.answered++;
-  if (ok) S.right++; else S.missed.push(it);
-}
-const advance = (S) => { S.pos++; next(S); };
+// Save one answer to the Notebook schedule.
+const record = (it, ok, miss = ok ? 0 : 1, opts) => progress.record(nb.nbKey(it.e.w), { ok, miss }, opts);
 
 // What we show once the answer is known.
 const reveal = (e) => `<span class="hz">${esc(e.w)}</span> <span class="py">${tonePy(esc(e.py || ""))}</span> <span class="muted">${esc(e.en || "")}</span>`;
 
-/* ----- flashcards ----- */
-function flash(S, it) {
+/* ----- flashcards: you say whether you knew it, then the next card comes ----- */
+function flash(it, q, S, dirs) {
   const e = it.e;
-  if (!S.dir.has(e.w)) S.dir.set(e.w, S.flashDir === "mixed" ? (Math.random() < 0.5 ? "hz" : "en") : S.flashDir);
+  if (!dirs.has(e.w)) dirs.set(e.w, S.flashDir === "mixed" ? (Math.random() < 0.5 ? "hz" : "en") : S.flashDir || "hz");
   // A card with no meaning can only be shown from the word side.
-  const dir = e.en ? S.dir.get(e.w) : "hz";
+  const dir = e.en ? dirs.get(e.w) : "hz";
   let flipped = false, anim = "next", turning = false;
+  q.draw(`<div class="fc-wrap" id="nbCard"></div>`);
+  const wrap = $("#nbCard", q.el);
   const draw = () => {
     const front = dir === "hz" ? `<div class="fc-front">${esc(e.w)}</div>` : `<div class="fc-front en">${esc(e.en)}</div>`;
     const back = `<div class="fc-back"><div class="hz">${esc(e.w)}</div><div class="py">${tonePy(esc(e.py || ""))}</div><div class="en">${esc(e.en || "")}</div></div>`;
-    body().innerHTML = `<div class="fc-wrap">${head(S, it)}
-      <button class="fc" type="button" id="fcCard" aria-label="Flip card">${flipped ? back : front + `<div class="tap">Tap to flip</div>`}</button>
+    wrap.innerHTML = `<button class="fc" type="button" id="fcCard" aria-label="Flip card">${flipped ? back : front + `<div class="tap">Tap to flip</div>`}</button>
       <div class="fc-controls">${flipped
         ? `<button class="btn big" type="button" id="fcNo">Again</button>${sayBtns(e.w, e.py || e.w)}<button class="btn primary big" type="button" id="fcYes">${icon("check")} Got it</button>`
-        : `<button class="btn primary big" type="button" id="fcFlip">Flip</button>`}</div>
-      ${stopBtn}</div>`;
+        : `<button class="btn primary big" type="button" id="fcFlip">Flip</button>`}</div>`;
+    const card = $("#fcCard", wrap);
     const flip = () => {
       if (flipped || turning) return;
       turning = true;
       autoSay(e.w);
-      const card = $("#fcCard");
       flipOut(card, () => { turning = false; if (flipped || !card.isConnected) return; flipped = true; anim = "flip"; draw(); });
     };
     // The same motion as the lesson flashcards: the card turns over, the next one slides in.
-    if (anim === "flip") flipIn($("#fcCard"));
-    else if (anim === "next" && S.pos > 0) animate($("#fcCard"), [{ transform: "translateX(24px)", opacity: 0 }, { transform: "none", opacity: 1 }]);
+    if (anim === "flip") flipIn(card);
+    else if (anim === "next" && q.pos > 0) animate(card, [{ transform: "translateX(24px)", opacity: 0 }, { transform: "none", opacity: 1 }]);
     anim = null;
-    $("#fcCard").addEventListener("click", flip);
-    $("#fcFlip")?.addEventListener("click", flip);
-    $("#fcYes")?.addEventListener("click", () => { answer(S, it, true, 0, { quiet: true }); advance(S); });
-    $("#fcNo")?.addEventListener("click", () => { answer(S, it, false, 1, { quiet: true }); advance(S); });
-    $("#nbrStop").addEventListener("click", () => results(S, true));
+    card.addEventListener("click", flip);
+    $("#fcFlip", wrap)?.addEventListener("click", flip);
+    const rate = (ok) => { record(it, ok, ok ? 0 : 1, { quiet: true }); q.done(ok); q.next(); };
+    $("#fcYes", wrap)?.addEventListener("click", () => rate(true));
+    $("#fcNo", wrap)?.addEventListener("click", () => rate(false));
   };
   draw();
 }
@@ -161,68 +149,65 @@ function distractors(e, n = 3) {
   return out;
 }
 
-function choice(S, it, { prompt, say: toSay, revealHtml, noPy = false }) {
+function choice(it, q, { prompt, say: toSay, revealHtml, noPy = false }) {
   const e = it.e;
   const opts = shuffle([{ w: e.w, py: e.py || "", correct: true }, ...distractors(e).map((d) => ({ ...d, correct: false }))]);
-  body().innerHTML = `<div class="panel">${noPy ? "" : `<div class="head-row">${pyToggleHtml()}</div>`}${head(S, it)}${prompt}
+  q.draw(`${prompt}
     ${toSay ? `<div class="controls"><button class="btn primary big" type="button" data-say="${esc(toSay)}">${icon("speaker")} Listen</button>
       <button class="btn big" type="button" data-say="${esc(toSay)}" data-slow>${icon("slow")} Slow</button></div>` : ""}
     <div class="choices">${opts.map((o, i) => `<button class="choice" type="button" data-i="${i}"><span class="hz" style="font-size:1.3rem">${esc(o.w)}</span>${o.py && !noPy ? ` <span class="py">${tonePy(esc(o.py))}</span>` : ""}</button>`).join("")}</div>
     <div class="status" id="qStatus" aria-live="polite"></div>
-    <div class="answer" id="qAnswer" hidden></div>
-    <div class="controls"><button class="btn primary" type="button" id="qNext" hidden>${S.pos + 1 >= S.items.length ? "See results" : "Next"}</button>${stopBtn}</div></div>`;
-  $("#nbrStop").addEventListener("click", () => results(S, true));
-  if (!noPy) wirePinyin(body().firstElementChild, { annotateText: false });
-  $$(".choice", body()).forEach((b) => b.addEventListener("click", () => {
-    const ok = opts[+b.dataset.i].correct;
-    $$(".choice", body()).forEach((c) => {
+    <div class="answer" id="qAnswer" hidden></div>`);
+  const el = q.el, st = $("#qStatus", el), ans = $("#qAnswer", el);
+  let done = false;
+  const pick = (b) => {
+    if (done) return;
+    done = true;
+    const ok = b ? opts[+b.dataset.i].correct : false;
+    $$(".choice", el).forEach((c) => {
       c.disabled = true;
       if (opts[+c.dataset.i].correct) c.classList.add("right"); else if (c === b) c.classList.add("wrong");
     });
-    answer(S, it, ok);
-    $("#qStatus").style.color = ok ? "" : "var(--cinnabar)";
-    $("#qStatus").textContent = ok ? "对了！Correct!" : "Not quite.";
-    $("#qAnswer").innerHTML = revealHtml;
+    record(it, ok);
+    st.style.color = ok ? "" : "var(--cinnabar)";
+    st.textContent = ok ? "对了！Correct!" : b ? "Not quite." : "No problem. Here is the answer.";
+    ans.innerHTML = revealHtml;
     // A mistake also shows what the chosen word is.
-    const mine = opts[+b.dataset.i];
-    if (!ok) $("#qAnswer").insertAdjacentHTML("beforeend", `<div class="why"><p><span class="why-lbl">You chose</span> ${reveal(mine)}</p></div>`);
-    $("#qAnswer").hidden = false;
-    $("#qNext").hidden = false;
-    $("#qNext").focus({ preventScroll: true });
+    if (b && !ok) ans.insertAdjacentHTML("beforeend", `<div class="why"><p><span class="why-lbl">You chose</span> ${reveal(opts[+b.dataset.i])}</p></div>`);
+    ans.hidden = false;
+    q.done(ok);
     if (!toSay) autoSay(e.w);
-  }));
-  $("#qNext").addEventListener("click", () => advance(S));
+  };
+  $$(".choice", el).forEach((b) => b.addEventListener("click", () => pick(b)));
   if (toSay) sayLater(toSay, { auto: false }); // the question is the sound, so always play it
+  return { skip: () => pick(null) };
 }
 
-function listen(S, it) {
-  choice(S, it, { prompt: `<p>Which word do you hear?</p>`, say: it.e.w, revealHtml: reveal(it.e), noPy: true });
+function listen(it, q) {
+  return choice(it, q, { prompt: `<p>Which word do you hear?</p>`, say: it.e.w, revealHtml: reveal(it.e), noPy: true });
 }
 
-function gap(S, it) {
+function gap(it, q) {
   const e = it.e, s = e.sentence;
   const blanked = esc(s.cn).replace(esc(e.w), `<span class="gr-blank">？</span>`);
   const filled = esc(s.cn).replace(esc(e.w), `<u class="gr-fill">${esc(e.w)}</u>`);
-  choice(S, it, {
+  return choice(it, q, {
     prompt: `<p class="hz gr-q" data-en-done="1">${blanked}</p>${s.en ? `<p class="muted q-en" lang="en">${esc(s.en)}</p>` : ""}`,
     revealHtml: `<span class="hz">${filled}</span> ${sayBtns(s.cn, "sentence", true)}<br>${reveal(e)}`,
   });
 }
 
 /* ----- writing ----- */
-function write(S, it) {
+function write(it, q) {
   const e = it.e, chars = [...e.w].filter(isHan);
-  body().innerHTML = `<div class="panel">${head(S, it)}
-    ${e.py ? `<div class="prompt-big py">${tonePy(esc(e.py))}</div>` : ""}${e.en ? `<div class="prompt-big">${esc(e.en)}</div>` : ""}
+  q.draw(`${e.py ? `<div class="prompt-big py">${tonePy(esc(e.py))}</div>` : ""}${e.en ? `<div class="prompt-big">${esc(e.en)}</div>` : ""}
     <div class="controls"><button class="btn primary" type="button" data-say="${esc(e.w)}">${icon("speaker")} Listen</button></div>
     <div class="dict-boxes">${chars.map(() => `<div class="box">${gridSVG()}<div class="hw"></div></div>`).join("")}</div>
     <div class="status" id="wStatus" aria-live="polite">Write the word.</div>
-    <div class="answer" id="wAnswer" hidden></div>
-    <div class="controls"><button class="btn" type="button" id="wShow">Show answer</button>
-      <button class="btn primary" type="button" id="wNext" hidden>${S.pos + 1 >= S.items.length ? "See results" : "Next"}</button>${stopBtn}</div></div>`;
-  $("#nbrStop").addEventListener("click", () => { clearWriters(); results(S, true); });
+    <div class="answer" id="wAnswer" hidden></div>`);
+  const el = q.el;
   let mistakes = 0, done = 0, gaveUp = false, finished = false;
-  const ws = $$(".dict-boxes .hw", body()).map((b, i) => {
+  const ws = $$(".dict-boxes .hw", el).map((b, i) => {
     const size = Math.round(b.getBoundingClientRect().width) || 160;
     const w = trackWriter(makeWriter(b, chars[i], size, { showOutline: false, highlightColor: css("--jade") }));
     w.quiz({
@@ -236,30 +221,15 @@ function write(S, it) {
     if (finished) return;
     finished = true;
     const ok = !gaveUp && mistakes === 0;
-    answer(S, it, ok, mistakes + (gaveUp ? 3 : 0));
-    $("#wStatus").textContent = gaveUp ? "Here's the answer. You'll get it next time!" : ok ? "太好了! Perfect!" : `很好! Done with ${mistakes} mistake${mistakes > 1 ? "s" : ""}.`;
-    $("#wAnswer").innerHTML = reveal(e);
-    $("#wAnswer").hidden = false;
-    $("#wShow").hidden = true;
-    $("#wNext").hidden = false;
-    $("#wNext").focus({ preventScroll: true });
+    record(it, ok, mistakes + (gaveUp ? 3 : 0));
+    $("#wStatus", el).textContent = gaveUp ? "Here's the answer. You'll get it next time!" : ok ? "太好了! Perfect!" : `很好! Done with ${mistakes} mistake${mistakes > 1 ? "s" : ""}.`;
+    $("#wAnswer", el).innerHTML = reveal(e);
+    $("#wAnswer", el).hidden = false;
+    q.done(ok);
     autoSay(e.w);
   }
-  $("#wShow").addEventListener("click", () => { gaveUp = true; ws.forEach((w) => { w.cancelQuiz(); w.animateCharacter(); }); finish(); });
-  $("#wNext").addEventListener("click", () => advance(S));
-}
-
-/* ---------- results ---------- */
-function results(S, stopped = false) {
-  clearWriters();
-  const asked = stopped ? S.answered : S.items.length;
-  const retry = S.missed.length ? () => run({ ...S, items: S.missed.slice() }) : null;
-  body().innerHTML = `<div class="panel">
-    <span class="lbl">Results · ${esc(S.title)}</span>
-    <div class="score">${S.right} / ${asked}</div>
-    ${S.missed.length ? `<p>Practise these again:</p><div class="result-list">${S.missed.map((m) => `<span>${esc(m.e.w)}</span>`).join("")}</div>` : `<p>${asked ? "全对！Quán duì! Everything correct!" : "Nothing answered yet."}</p>`}
-    <div class="controls">${retry ? `<button class="btn primary big" type="button" id="resRetry">Retry missed</button>` : ""}
-      <button class="btn big" type="button" id="resBack">Back</button></div></div>`;
-  $("#resRetry")?.addEventListener("click", retry);
-  $("#resBack").addEventListener("click", S.back);
+  return {
+    skip() { gaveUp = true; ws.forEach((w) => { w.cancelQuiz(); w.animateCharacter(); }); finish(); },
+    stop: clearWriters,
+  };
 }
