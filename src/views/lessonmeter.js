@@ -32,7 +32,7 @@ let left = null; // lessonLeft() of the open lesson
 
 // The small "5 left" / ✓ on an exercise card. Empty for exercises that are not counted.
 export function noteHtml(skill, mode) {
-  const p = left?.[skill]?.find((x) => x.modes.includes(mode));
+  const p = left?.[skill]?.find((x) => x.exercises.includes(mode));
   if (!p) return "";
   return p.left ? `<span class="todo-n">${p.left} left</span>` : `<span class="todo-n done" aria-label="Done">✓</span>`;
 }
@@ -46,7 +46,7 @@ function renderLeft() {
     const total = ps.reduce((n, p) => n + p.total, 0), open = ps.reduce((n, p) => n + p.left, 0);
     const rows = ps.filter((p) => p.left).map((p) => {
       const names = p.labels.slice(0, 8).join(" · ") + (p.labels.length > 8 ? " …" : "");
-      return `<button type="button" class="ll-row" data-skill="${k}" data-mode="${p.modes[0] || ""}"><b>${esc(p.name)}</b>${names ? `<small>${esc(names)}</small>` : ""}<span class="todo-n">${p.left} left</span></button>`;
+      return `<button type="button" class="ll-row" data-skill="${k}" data-mode="${p.exercises[0] || ""}"><b>${esc(p.name)}</b>${names ? `<small>${esc(names)}</small>` : ""}<span class="todo-n">${p.left} left</span></button>`;
     }).join("");
     return `<section><h3><span class="tz">${b.querySelector(".tz").textContent}</span>${b.querySelector(".tl").textContent}<span class="ll-n${open ? "" : " done"}">${open ? `${total - open} / ${total}` : "✓ done"}</span></h3>${rows}</section>`;
   }).join("");

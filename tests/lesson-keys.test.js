@@ -1,10 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { LESSONS } from "../src/data/index.js";
-
-// lesson-items pulls in the views, which touch the page when loaded: give them an empty one.
-const el = () => new Proxy(function () {}, { get: (_, k) => (k === Symbol.toPrimitive ? () => "" : el()), apply: () => el(), construct: () => el(), set: () => true });
-for (const k of ["document", "window", "localStorage", "navigator", "addEventListener", "matchMedia", "Audio"]) globalThis[k] ??= el();
-const { lessonParts } = await import("../src/lib/lesson-items.js");
+import { lessonParts } from "../src/progress/lesson-exercises.js";
 
 // Progress keys are saved on every device: a change here orphans the owner's progress.
 // Every part of every lesson, one line each: lesson · skill · part, then its items and labels.

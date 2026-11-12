@@ -8,23 +8,11 @@
 import { esc, shuffle } from "../lib/util.js";
 import { tonePy } from "../lib/pinyin.js";
 import { sayBtns } from "../lib/speech.js";
-import { CHARINFO, RADICALS, LESSONS, wordsOf, lessonChars } from "../data/index.js";
+import { CHARINFO, RADICALS, LESSONS, wordsOf, lessonChars, workbookOf } from "../data/index.js";
 import { charLinks } from "./charsheet.js";
 import { keyOf } from "../lib/explain-key.js";
 import { pickRound } from "../lib/round.js";
 import * as progress from "../progress/store.js";
-
-// Every workbook item of the given lessons, each with a stable id and its kind.
-export function workbookOf(lessons) {
-  return lessons.flatMap((l) => {
-    const wb = l.workbook || {};
-    return [
-      ...(wb.dialogs || []).map((d, i) => ({ ...d, kind: "dialog", id: `${l.id}/d${i + 1}`, lesson: l.id })),
-      ...(wb.judge || []).map((d, i) => ({ ...d, kind: "judge", id: `${l.id}/j${i + 1}`, lesson: l.id })),
-      ...(wb.replies || []).map((d, i, all) => ({ ...d, kind: "reply", id: `${l.id}/r${i + 1}`, lesson: l.id, others: all.filter((x) => x !== d && x.q !== x.a).map((x) => x.a), askedBy: Object.fromEntries(all.map((x) => [x.a, x.q])) })),
-    ];
-  });
-}
 
 const dialogText = (d) => d.lines.map((x) => x[1]).join("");
 const hz = (t, size = 1.3) => `<span class="hz" style="font-size:${size}rem">${charLinks(t)}</span>`;

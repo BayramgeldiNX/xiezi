@@ -11,7 +11,7 @@ import { sfx } from "../lib/sfx.js";
 import { icon } from "../lib/icons.js";
 import { clearWriters } from "../lib/draw.js";
 import { overlap } from "../lib/compare.js";
-import { LESSONS, wordsOf, wordChars, grammarOf } from "../data/index.js";
+import { LESSONS, wordsOf, wordChars, grammarOf, workbookOf } from "../data/index.js";
 import { textList, textQuiz, orderGame, pinyinQuiz, hideGloss } from "./reading.js";
 import * as progress from "../progress/store.js";
 import { wordStatus } from "../progress/model.js";
@@ -22,7 +22,8 @@ import { tonesIntro } from "./tones.js";
 import { lessonContent } from "../sync/content.js";
 import { showWhy } from "../lib/explain.js";
 import { keyOf } from "../lib/explain-key.js";
-import { workbookOf, workbookQuiz, fillQuiz, radicalQuiz } from "./workbook.js";
+import { workbookQuiz, fillQuiz, radicalQuiz } from "./workbook.js";
+import { available, uniqueSentences, lessonSentences } from "../progress/lesson-exercises.js";
 import { hanziLesson, pronTips } from "./hanzi.js";
 import { noteHtml } from "./lessonmeter.js";
 import { pickRound, openFirst } from "../lib/round.js";
@@ -30,12 +31,6 @@ import { pickRound, openFirst } from "../lib/round.js";
 // A lesson round: only what is not done yet while there is any (see lib/round.js).
 const round = (list, itemOf, n) => pickRound(list, itemOf, progress.get, n);
 const wordItem = (w) => ["f:" + w.w, "q:" + w.w]; // Flashcards, Match and Word quiz count together
-
-// Modes that only exist when the lesson has that content.
-export const modeAvailable = (id, L) =>
-  id.startsWith("wb-") ? workbookOf(L ? [L] : []).some((d) => "wb-" + d.kind === id)
-  : id === "gr-fill" ? grammarOf(L ? [L] : []).length > 0
-  : id === "hanzi" ? !!L?.hanzi : id === "pron" ? !!L?.pron?.length : true;
 
 export const SKILLS = {
   write: {
@@ -116,7 +111,7 @@ export function showMenu() {
   const s = SKILLS[P.skill];
   // Workbook exercises only where the lesson has them.
   const inLesson = String(P.host).startsWith("#tab-") && !!thisLesson(); // only there: how much of each exercise is left
-  body().innerHTML = `<div class="mode-grid">${s.modes.filter((m) => modeAvailable(m.id, thisLesson())).map((m) => `<button class="mode-card" type="button" data-mode="${m.id}">
+  body().innerHTML = `<div class="mode-grid">${s.modes.filter((m) => available(m.id, thisLesson())).map((m) => `<button class="mode-card" type="button" data-mode="${m.id}">
       <span class="seal" aria-hidden="true">${m.seal}</span><b>${m.name}</b><small>${m.sub}</small>${inLesson ? noteHtml(P.skill, m.id) : ""}</button>`).join("")}</div>`;
   $$("[data-mode]", body()).forEach((b) => b.addEventListener("click", () => startMode(b.dataset.mode)));
 }
@@ -170,13 +165,6 @@ export function vocabQuiz({ items, pool, mode = "mixed", title = "Vocabulary", k
 }
 
 const sentenceItems = (words) => words.filter((w) => w.ex?.hz);
-// Two words can share one example sentence; the Sentences quiz asks it once (as the first word).
-export const uniqueSentences = (words) => sentenceItems(words).filter((w, i, a) => a.findIndex((x) => x.ex.hz === w.ex.hz) === i);
-const lessonSentences = (words, readings) => [
-  ...sentenceItems(words).map((w) => ({ hz: w.ex.hz.replace(/[AB]: /g, ""), py: w.ex.py.replace(/[AB]: /g, ""), en: w.ex.en })),
-  ...readings.flatMap((r) => r.lines),
-].filter((s, i, a) => a.findIndex((x) => x.hz === s.hz) === i);
-export { lessonSentences };
 
 const thisLesson = () => LESSONS.find((l) => l.book === P.ctx.book && l.n === P.ctx.lesson);
 
@@ -184,7 +172,7 @@ const thisLesson = () => LESSONS.find((l) => l.book === P.ctx.book && l.n === P.
 // Only inside a lesson (not in the book Review, which chains its own exercises).
 export function nextStep() {
   if (!P.ctx.book || !P.ctx.lesson || !P.mode || !String(P.host).startsWith("#tab-")) return null;
-  const modes = SKILLS[P.skill].modes.filter((m) => modeAvailable(m.id, thisLesson()));
+  const modes = SKILLS[P.skill].modes.filter((m) => available(m.id, thisLesson()));
   const next = modes[modes.findIndex((m) => m.id === P.mode) + 1];
   if (next) return { label: next.name, go: () => startMode(next.id) };
   const tabs = $$("[data-tab]").map((b) => b.dataset.tab);

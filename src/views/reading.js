@@ -14,6 +14,7 @@ import { animate } from "../lib/motion.js";
 import { keyOf } from "../lib/explain-key.js";
 import { toneSyllables } from "../lib/typing-check.js";
 import { pickRound } from "../lib/round.js";
+import { buildable } from "../progress/lesson-exercises.js";
 
 const segment = makeSegmenter(DICT);
 
@@ -165,9 +166,6 @@ export function textQuiz(ui, readings, back, single) {
 }
 
 /* ---------- Build the sentence ---------- */
-// Sentences that can be built: 3–8 words (punctuation is shown at the end, not placed).
-export const buildable = (sentences) => sentences.map((s) => ({ ...s, parts: segment(s.hz).filter((p) => p.word).map((p) => p.t) }))
-  .filter((s) => s.parts.length >= 3 && s.parts.length <= 8);
 
 // opts.all: use every sentence given (Review picks them); otherwise a round of 8 of the ones not built yet.
 // opts.then: continue a review chain.
