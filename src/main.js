@@ -26,7 +26,7 @@ import * as notebook from "./notebook/store.js";
 import { openRadicals, radicalsUp, learnedCount, radicalTotal } from "./views/radicals.js";
 import { openPrint } from "./views/printsheet.js";
 import { hideGloss } from "./views/reading.js";
-import { initAccountChip } from "./views/account.js";
+import { initAccountChip, openAccount } from "./views/account.js";
 import { initSync } from "./sync/sync.js";
 import { showLessonMeter, toggleLeft, noteHtml } from "./views/lessonmeter.js";
 import { timerBoot, timerEnter, timerLeave } from "./views/studytimer.js";
@@ -71,6 +71,14 @@ function clearHiddenHosts() {
     if (el && el.firstChild && (el.hidden || el.closest("[hidden]"))) el.replaceChildren();
   }
 }
+// PC sidebar: the section the page belongs to is the chosen one (a lesson belongs to Books).
+const SIDE = { home: "home", booksView: "books", bookView: "books", lessonView: "books", printView: "books", reviewView: "review", typingView: "typing", searchView: "search", notebookView: "notebook", radicalsView: "radicals" };
+function markSide(id) {
+  for (const a of $$("[data-side]")) {
+    if (a.dataset.side === SIDE[id]) a.setAttribute("aria-current", "page");
+    else a.removeAttribute("aria-current");
+  }
+}
 function showPage(id) {
   screen.leave(); // the old page's microphone, timers, keys and resize handlers end here
   clearWriters();
@@ -81,6 +89,7 @@ function showPage(id) {
   current = id;
   if (id !== "loading") (id === "lessonView" ? timerEnter : timerLeave)();
   for (const p of PAGES) $("#" + p).hidden = p !== id;
+  if (id !== "loading") markSide(id);
   clearHiddenHosts();
   scrollTo(0, 0);
   if (id === "loading") return;
@@ -395,15 +404,39 @@ progress.onProgress(() => {
 });
 
 /* ---------- Keyboard (Windows) ---------- */
+// Any question with choices, on any page: 1-9 picks a choice, Enter is Next.
+function quizKey(e) {
+  const page = $("#" + current);
+  if (!page) return false;
+  if (/^[1-9]$/.test(e.key)) {
+    const b = $$(".choices .choice", page)[+e.key - 1];
+    if (!b) return false;
+    if (!b.disabled) b.click();
+    return true;
+  }
+  const next = $("#qNext", page);
+  if (e.key === "Enter" && next && !next.hidden) { next.click(); return true; }
+  return false;
+}
 addEventListener("keydown", (e) => {
   if (e.ctrlKey || e.metaKey || e.altKey) return;
   const t = e.target;
   if (t.closest?.("input, textarea, select, dialog")) return;
-  // Let a focused button handle its own Enter / space.
-  if ((e.key === "Enter" || e.key === " ") && t.closest?.("button, label")) return;
+  // Let a focused button handle its own Enter / space. An answered choice has nothing left to do, so Enter there is Next.
+  const onChoice = e.key === "Enter" && t.closest?.(".choice, .tone-opt");
+  if ((e.key === "Enter" || e.key === " ") && t.closest?.("button, label, a") && !onChoice) return;
   if (e.key === "Escape") { if (upFrom()) back(upFrom()); return; }
-  if (screen.key(e)) e.preventDefault(); // the screen shown answers its own keys (see lib/screen.js)
+  if (e.key === "/") {
+    e.preventDefault();
+    // The search page is drawn by the route, so the box is focused after it.
+    if (current === "searchView") $("#searchInput")?.focus();
+    else { addEventListener("hashchange", () => $("#searchInput")?.focus(), { once: true }); go("#/search"); }
+    return;
+  }
+  // The screen shown answers its own keys first (see lib/screen.js); a question with choices takes the rest.
+  if (screen.key(e) || quizKey(e)) e.preventDefault();
 });
+$("#sideAccount").addEventListener("click", openAccount);
 
 /* ---------- Full screen (browser tab only; the installed app is already full screen) ---------- */
 const fsBtn = $("#fsBtn");
