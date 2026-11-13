@@ -27,6 +27,7 @@ import { hanziLesson, pronTips } from "./hanzi.js";
 import { noteHtml } from "./lessonmeter.js";
 import { pickRound, openFirst } from "../lib/round.js";
 import { runRound } from "./quiz-round.js";
+import * as screen from "../lib/screen.js";
 
 // A round of exercise `id` in this lesson: only what is not done yet while there is any (see lib/round.js).
 // Which items an exercise asks, and their keys, come from progress/lesson-exercises.js.
@@ -106,6 +107,7 @@ export function openPractice(host, skill, ctx) {
 }
 
 export function showMenu() {
+  screen.leave(); // an exercise left for the menu
   clearWriters();
   stopSpeech();
   hideGloss();
@@ -184,6 +186,7 @@ export const nextHtml = (id = "resNext") => { const n = nextStep(); return n ? '
 export const wireNext = (root, id = "resNext") => { const n = nextStep(); $("#" + id, root)?.addEventListener("click", () => n?.go()); };
 
 function startMode(mode) {
+  screen.leave();
   P.mode = mode;
   const { words } = P.ctx;
   const host = P.host, back = goBack, lesson = P.ctx.lesson, L = thisLesson();

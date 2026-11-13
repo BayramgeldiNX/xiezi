@@ -22,7 +22,8 @@ The owner uses it on iPhone 16 (home-screen PWA), Mi Pad 7 Pro and Windows. Prog
   The route waits for `loadStrokes()` before lesson and print pages.
 - `src/pwa.js`: updates install on a calm page or the next page change.
 - PC layout (`src/styles/desktop.css`): only at 1200px or wider with a mouse, so phones and tablets never get it. A sidebar (`.side` in `index.html`, current section set by `markSide` in `main.js`), wider pages, and a key number on each quiz choice.
-  Keys live in the `keydown` handler in `main.js`: `/` search, `Esc` back, `1`–`9` pick a choice and `Enter` is Next (`quizKey`), plus the per-tab keys of Write, Words and Tones.
+  Global keys live in the `keydown` handler in `main.js`: `/` search, `Esc` back, then the screen's own keys (`screen.key`), then `1`–`9` pick a choice and `Enter` is Next (`quizKey`).
+- `src/lib/screen.js`: what is on screen now. A screen registers what must end when you leave it (`onLeave`: a mic, a timer) and its keys and resize handlers (`onKey`, `onResize`); page, tab and exercise changes call `leave()`. main.js routes keys and resizes through it instead of knowing each view.
 - `src/views/`: one file per screen.
   - `practice.js`: lesson modes; `available()` (in `progress/lesson-exercises.js`) hides modes that cannot run.
   - `quiz-round.js`: `runRound(cfg)`, the loop one-question-at-a-time exercises share (head, focus, Next bar, score, session, results with Again / Retry missed, `then` for Review chains). An exercise only draws and checks one item. Used by `choiceQuiz` (and everything built on it), Speak, Build the sentence, Tones and Notebook review.
@@ -49,7 +50,7 @@ The owner uses it on iPhone 16 (home-screen PWA), Mi Pad 7 Pro and Windows. Prog
 - `src/notebook/store.js`: Notebook words (localStorage `xz-notebook-v1`), synced to `users/{uid}/notebook/{word}` as field-level patches. Its schedule is the progress key `nb:<word>`; Notebook never records book keys.
 - `src/lib/dict.js`: `lookup(word)` from the book words, then CC-CEDICT shards in `public/dict/` (made by `scripts/gen-dict.mjs`, CC BY-SA 4.0). Stroke data for any character: `public/strokes/` (generated at build by `scripts/gen-public-strokes.mjs`, gitignored) and `ensureChars()` in `data/strokes.js`.
 - `scripts/notebook.mjs` (`count`, `list`, `save <file>`, `hook`; `--emulator --uid`), `.claude/skills/fill-notebook/` and the SessionStart hook in `.claude/settings.json`: Claude fills new Notebook words with a sentence and memory tricks. `scripts/lib-firebase.mjs` holds the shared login and owner lookup (uid cached in `.cache/owner-uid`).
-- `src/progress/`: progress model and store. The store tracks what is not yet uploaded (`unsent`, `sentFor`), so sync sends only changes.
+- `src/progress/`: progress model and store. `keys.js` lists every kind of progress key (w:, d:, nb:, bs:…) and what it means for lesson % and sounds. The store tracks what is not yet uploaded (`unsent`, `sentFor`), so sync sends only changes.
   - `lesson-exercises.js`: the one place that knows what each lesson exercise asks and which keys it records (`exerciseItems`), lesson % and what is open (`lessonParts`, `lessonLeft`), and whether an exercise can run (`available`). Views take their rounds from it; `tests/lesson-keys.test.js` snapshots every lesson's keys. Terms: `GLOSSARY.md`.
 - `src/data/`:
   - `books/<id>/book.json` plus `lessonNN.json`.
