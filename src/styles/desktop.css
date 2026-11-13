@@ -1,0 +1,43 @@
+/* ---------- PC: a sidebar, wider pages, key hints ----------
+   Only on a wide screen with a mouse. Phones and tablets never match, so they keep their layout.
+   The sidebar is the same six sections as Home; the current one is a solid ink pill, like a chosen tab. */
+.side { display: none; }
+@media screen and (min-width: 1200px) and (hover: hover) and (pointer: fine) {
+  :root { --side: 224px; }
+  body { padding-left: var(--side); }
+  .side { display: flex; flex-direction: column; gap: 4px; position: fixed; inset: 0 auto 0 0; z-index: 3; width: var(--side); padding: 32px 12px 16px; background: var(--card); overflow-y: auto; }
+  .side-brand { padding: 0 12px 20px; font-family: var(--display); font-size: 1.5rem; font-weight: 700; line-height: 1.15; letter-spacing: -.01em; color: var(--ink); text-decoration: none; }
+  .side-link { display: flex; align-items: center; gap: 12px; width: 100%; min-height: 44px; padding: 4px 12px 4px 4px; border: 0; border-radius: var(--r); background: none; color: var(--muted); font: inherit; font-weight: 700; text-align: left; text-decoration: none; cursor: pointer; transition: background-color var(--fast) var(--ease), color var(--fast) var(--ease); }
+  .side-link .seal { width: 36px; height: 36px; font-size: 1.125rem; transition: background-color var(--fast) var(--ease); }
+  .side-link:hover { color: var(--ink); background: var(--press); }
+  .side-link:focus-visible, .side-brand:focus-visible { outline: 2px solid var(--jade); outline-offset: 2px; }
+  .side-link[aria-current="page"] { color: var(--paper); background: var(--ink); }
+  .side-link[aria-current="page"] .seal { color: var(--paper); background: color-mix(in srgb, var(--paper) 14%, transparent); }
+  .side-foot { margin-top: auto; display: grid; gap: 12px; padding-top: 16px; }
+  .side-keys { margin: 0; padding: 0 12px; font-size: .75rem; line-height: 1.7; color: var(--muted); }
+  .side-keys kbd { font: inherit; font-weight: 700; color: var(--ink); }
+
+  /* Pages use the room: Home is a board of cards, lists are wider. */
+  .home { max-width: 960px; gap: 24px; }
+  .hub { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .hub .row { grid-template-columns: auto minmax(0, 1fr); min-height: 88px; }
+  .hub .row .chev { display: none; }
+  .hub .row .row-n { white-space: normal; }
+  .page { max-width: 760px; }
+  .book-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #booksView { max-width: 960px; }
+
+  /* The writing box is sized from the page, which is the window minus the sidebar. */
+  .box { width: clamp(320px, calc((100vw - var(--side)) * .34), 520px); }
+
+  /* A question sits in the middle of the screen, not stretched across it. */
+  .panel.focus { width: 100%; max-width: 760px; margin-inline: auto; }
+  .panel.focus .choices { max-width: none; }
+  /* Number keys answer: each choice shows its key. */
+  .choices { counter-reset: key; }
+  .choices .choice { counter-increment: key; }
+  .choices .choice::before { content: counter(key); position: absolute; top: 8px; left: 8px; width: 22px; height: 22px; display: grid; place-items: center; border-radius: var(--r-seal); background: var(--card); color: var(--muted); font: 700 .75rem/1 var(--body); }
+
+  /* The toast is centred on the page, not on the window. */
+  .toast { left: calc(50% + var(--side) / 2); }
+}

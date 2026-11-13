@@ -21,6 +21,8 @@ The owner uses it on iPhone 16 (home-screen PWA), Mi Pad 7 Pro and Windows. Prog
 - `src/main.js` and `src/app.js`: hash router and home. Pages: `#/` home, `#/books`, `#/book/<id>`, `#/lesson/<id>/<tab>`, `#/review` (all books), `#/search`, `#/typing`, `#/print/<id>`.
   The route waits for `loadStrokes()` before lesson and print pages.
 - `src/pwa.js`: updates install on a calm page or the next page change.
+- PC layout (`src/styles/desktop.css`): only at 1200px or wider with a mouse, so phones and tablets never get it. A sidebar (`.side` in `index.html`, current section set by `markSide` in `main.js`), wider pages, and a key number on each quiz choice.
+  Keys live in the `keydown` handler in `main.js`: `/` search, `Esc` back, `1`–`9` pick a choice and `Enter` is Next (`quizKey`), plus the per-tab keys of Write, Words and Tones.
 - `src/views/`: one file per screen.
   - `practice.js`: lesson modes; `available()` (in `progress/lesson-exercises.js`) hides modes that cannot run.
   - `quiz-round.js`: `runRound(cfg)`, the loop one-question-at-a-time exercises share (head, focus, Next bar, score, session, results with Again / Retry missed, `then` for Review chains). An exercise only draws and checks one item. Used by `choiceQuiz` (and everything built on it), Speak, Build the sentence, Tones and Notebook review.
