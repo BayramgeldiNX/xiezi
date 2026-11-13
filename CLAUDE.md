@@ -22,6 +22,7 @@ The owner uses it on iPhone 16 (home-screen PWA), Mi Pad 7 Pro and Windows. Prog
   The route waits for `loadStrokes()` before lesson and print pages.
 - `src/pwa.js`: updates install on a calm page or the next page change.
 - PC layout (`src/styles/desktop.css`): only at 1200px or wider with a mouse, so phones and tablets never get it. A sidebar (`.side` in `index.html`, current section set by `markSide` in `main.js`), wider pages, and a key number on each quiz choice.
+  The sidebar folds to a rail of seals (button or `Ctrl+B`; `data-rail` on `<html>`, saved per device in `xz-rail`, `setRail` in `main.js`). The slide is a CSS transition on `--side`.
   Global keys live in the `keydown` handler in `main.js`: `/` search, `Esc` back, then the screen's own keys (`screen.key`), then `1`–`9` pick a choice and `Enter` is Next (`quizKey`).
 - `src/lib/screen.js`: what is on screen now. A screen registers what must end when you leave it (`onLeave`: a mic, a timer) and its keys and resize handlers (`onKey`, `onResize`); page, tab and exercise changes call `leave()`. main.js routes keys and resizes through it instead of knowing each view.
 - `src/views/`: one file per screen.
