@@ -24,22 +24,27 @@
       document.querySelector('meta[name="theme-color"]').content = c[t];
       document.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]').content = t === "spring" || t === "paper" ? "default" : "black-translucent";
     } catch (e) {}
+    // PC sidebar folded to a rail of seals: set before anything draws, so it does not slide on load.
+    try { if (JSON.parse(localStorage.getItem("xz-rail"))) document.documentElement.setAttribute("data-rail", ""); } catch (e) {}
   </script>
 </head>
 <body>
 <!-- PC only (wide screen with a mouse): the sections of Home, always at hand -->
 <nav class="side" id="side" aria-label="Sections">
-  <a class="side-brand" href="#/">写字本</a>
-  <a class="side-link" href="#/" data-side="home"><span class="seal" aria-hidden="true">家</span>Home</a>
-  <a class="side-link" href="#/books" data-side="books"><span class="seal" aria-hidden="true">书</span>Books</a>
-  <a class="side-link" href="#/notebook" data-side="notebook"><span class="seal" aria-hidden="true">记</span>Notebook</a>
-  <a class="side-link" href="#/radicals" data-side="radicals"><span class="seal" aria-hidden="true">部</span>Radicals</a>
-  <a class="side-link" href="#/typing" data-side="typing"><span class="seal" aria-hidden="true">键</span>Typing</a>
-  <a class="side-link" href="#/review" data-side="review"><span class="seal" aria-hidden="true">复</span>Review</a>
-  <a class="side-link" href="#/search" data-side="search"><span class="seal" aria-hidden="true">查</span>Search</a>
+  <div class="side-head">
+    <a class="side-brand" href="#/">写字本</a>
+    <button class="side-toggle" type="button" id="sideToggle" aria-controls="side" aria-expanded="true" aria-label="Hide the sidebar" title="Hide the sidebar (Ctrl+B)"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="14" rx="2.5"/><path d="M9.5 5v14"/></svg></button>
+  </div>
+  <a class="side-link" href="#/" data-side="home" title="Home"><span class="seal" aria-hidden="true">家</span>Home</a>
+  <a class="side-link" href="#/books" data-side="books" title="Books"><span class="seal" aria-hidden="true">书</span>Books</a>
+  <a class="side-link" href="#/notebook" data-side="notebook" title="Notebook"><span class="seal" aria-hidden="true">记</span>Notebook</a>
+  <a class="side-link" href="#/radicals" data-side="radicals" title="Radicals"><span class="seal" aria-hidden="true">部</span>Radicals</a>
+  <a class="side-link" href="#/typing" data-side="typing" title="Typing"><span class="seal" aria-hidden="true">键</span>Typing</a>
+  <a class="side-link" href="#/review" data-side="review" title="Review"><span class="seal" aria-hidden="true">复</span>Review</a>
+  <a class="side-link" href="#/search" data-side="search" title="Search"><span class="seal" aria-hidden="true">查</span>Search</a>
   <div class="side-foot">
     <p class="side-keys"><kbd>/</kbd> search · <kbd>Esc</kbd> back<br><kbd>1</kbd>–<kbd>4</kbd> answer · <kbd>Enter</kbd> next</p>
-    <button class="side-link" type="button" id="sideAccount"><span class="seal" aria-hidden="true">设</span>Settings</button>
+    <button class="side-link" type="button" id="sideAccount" title="Settings"><span class="seal" aria-hidden="true">设</span>Settings</button>
   </div>
 </nav>
 <div class="wrap">

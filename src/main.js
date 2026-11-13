@@ -3,7 +3,7 @@ import "@fontsource/atkinson-hyperlegible/700.css";
 import "./styles.css";
 import "./lib/settings.js";
 import "./lib/theme.js";
-import { $, $$, esc } from "./lib/util.js";
+import { $, $$, esc, store } from "./lib/util.js";
 import { stopSpeech } from "./lib/speech.js";
 import { clearWriters } from "./lib/draw.js";
 import { icon } from "./lib/icons.js";
@@ -419,6 +419,10 @@ function quizKey(e) {
   return false;
 }
 addEventListener("keydown", (e) => {
+  if (e.ctrlKey && !e.shiftKey && !e.altKey && !e.metaKey && e.key.toLowerCase() === "b" && sideShown()) {
+    e.preventDefault();
+    return setRail(!railOn());
+  }
   if (e.ctrlKey || e.metaKey || e.altKey) return;
   const t = e.target;
   if (t.closest?.("input, textarea, select, dialog")) return;
@@ -437,6 +441,28 @@ addEventListener("keydown", (e) => {
   if (screen.key(e) || quizKey(e)) e.preventDefault();
 });
 $("#sideAccount").addEventListener("click", openAccount);
+
+/* ---------- PC sidebar: wide, or folded to a rail of seals (per device) ----------
+   index.html sets data-rail before the first paint; the slide itself is CSS (styles/desktop.css). */
+const RAIL_KEY = "xz-rail";
+const railOn = () => document.documentElement.hasAttribute("data-rail");
+const sideShown = () => getComputedStyle($("#side")).display !== "none";
+function labelRail() {
+  const b = $("#sideToggle"), text = railOn() ? "Show the sidebar" : "Hide the sidebar";
+  b.setAttribute("aria-expanded", String(!railOn()));
+  b.setAttribute("aria-label", text);
+  b.title = `${text} (Ctrl+B)`;
+}
+function setRail(on) {
+  document.documentElement.toggleAttribute("data-rail", on);
+  store.set(RAIL_KEY, on);
+  labelRail();
+  // The page is wider or narrower once the slide ends: writers have a fixed pixel size, so redraw then.
+  clearTimeout(window.__rs);
+  window.__rs = setTimeout(redraw, 260);
+}
+$("#sideToggle").addEventListener("click", () => setRail(!railOn()));
+labelRail();
 
 /* ---------- Full screen (browser tab only; the installed app is already full screen) ---------- */
 const fsBtn = $("#fsBtn");

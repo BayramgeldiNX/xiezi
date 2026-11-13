@@ -4,18 +4,29 @@
 .side { display: none; }
 @media screen and (min-width: 1200px) and (hover: hover) and (pointer: fine) {
   :root { --side: 224px; }
-  body { padding-left: var(--side); }
-  .side { display: flex; flex-direction: column; gap: 4px; position: fixed; inset: 0 auto 0 0; z-index: 3; width: var(--side); padding: 32px 12px 16px; background: var(--card); overflow-y: auto; }
-  .side-brand { padding: 0 12px 20px; font-family: var(--display); font-size: 1.5rem; font-weight: 700; line-height: 1.15; letter-spacing: -.01em; color: var(--ink); text-decoration: none; }
-  .side-link { display: flex; align-items: center; gap: 12px; width: 100%; min-height: 44px; padding: 4px 12px 4px 4px; border: 0; border-radius: var(--r); background: none; color: var(--muted); font: inherit; font-weight: 700; text-align: left; text-decoration: none; cursor: pointer; transition: background-color var(--fast) var(--ease), color var(--fast) var(--ease); }
+  :root[data-rail] { --side: 68px; }
+  /* Folding slides: the sidebar narrows to its seals and the page follows. Width is animated here on
+     purpose (the page has to reflow once either way); it is one short move, not a running animation. */
+  body { padding-left: var(--side); transition: padding-left var(--med) var(--ease); }
+  .side { display: flex; flex-direction: column; gap: 4px; position: fixed; inset: 0 auto 0 0; z-index: 3; width: var(--side); padding: 24px 12px 16px; background: var(--card); overflow: hidden auto; transition: width var(--med) var(--ease); }
+  .side-head { display: flex; align-items: center; min-height: 44px; margin-bottom: 12px; }
+  .side-brand { flex: 1 1 0; min-width: 0; overflow: hidden; padding-left: 12px; font-family: var(--display); font-size: 1.5rem; font-weight: 700; line-height: 1.15; letter-spacing: -.01em; white-space: nowrap; color: var(--ink); text-decoration: none; transition: opacity var(--fast) var(--ease), padding-left var(--med) var(--ease), visibility 0s; }
+  .side-toggle { flex: 0 0 44px; width: 44px; height: 44px; display: grid; place-items: center; padding: 0; border: 0; border-radius: var(--r); background: none; color: var(--muted); cursor: pointer; transition: background-color var(--fast) var(--ease), color var(--fast) var(--ease); }
+  .side-toggle .ic { width: 20px; height: 20px; }
+  .side-toggle:hover { color: var(--ink); background: var(--press); }
+  .side-toggle:focus-visible { outline: 2px solid var(--jade); outline-offset: 2px; }
+  .side-link { display: flex; align-items: center; gap: 12px; width: 100%; min-height: 44px; padding: 4px 12px 4px 4px; border: 0; border-radius: var(--r); background: none; color: var(--muted); font: inherit; font-weight: 700; text-align: left; text-decoration: none; white-space: nowrap; overflow: hidden; cursor: pointer; transition: background-color var(--fast) var(--ease), color var(--fast) var(--ease); }
   .side-link .seal { width: 36px; height: 36px; font-size: 1.125rem; transition: background-color var(--fast) var(--ease); }
   .side-link:hover { color: var(--ink); background: var(--press); }
   .side-link:focus-visible, .side-brand:focus-visible { outline: 2px solid var(--jade); outline-offset: 2px; }
   .side-link[aria-current="page"] { color: var(--paper); background: var(--ink); }
   .side-link[aria-current="page"] .seal { color: var(--paper); background: color-mix(in srgb, var(--paper) 14%, transparent); }
   .side-foot { margin-top: auto; display: grid; gap: 12px; padding-top: 16px; }
-  .side-keys { margin: 0; padding: 0 12px; font-size: .75rem; line-height: 1.7; color: var(--muted); }
+  .side-keys { margin: 0; padding: 0 12px; font-size: .75rem; line-height: 1.7; color: var(--muted); white-space: nowrap; overflow: hidden; transition: opacity var(--fast) var(--ease); }
   .side-keys kbd { font: inherit; font-weight: 700; color: var(--ink); }
+  /* Folded: only the seals. The words are cut off by the narrow links; the name and key hints fade out. */
+  :root[data-rail] .side-brand { opacity: 0; padding-left: 0; visibility: hidden; transition: opacity var(--fast) var(--ease), padding-left var(--med) var(--ease), visibility 0s var(--med); }
+  :root[data-rail] .side-keys { opacity: 0; }
 
   /* Pages use the room: Home is a board of cards, lists are wider. */
   .home { max-width: 960px; gap: 24px; }
