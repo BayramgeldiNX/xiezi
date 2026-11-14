@@ -1,0 +1,31 @@
+{
+  "papers": {
+    "s1": "This is a fair, well-pitched test of lessons 1–3, with the three lessons covered evenly and nothing unanswerable or wrong. Because the pool is thin, a few sentences come back (我很累，也很饿 twice in Reading, 我很好，你呢 in Grammar and Reading, 谢谢→不客气 in Vocabulary and Reading, and one text printed twice), so the Reading part is a little easier than it should be. It would feel like a real first quiz.",
+    "final": "This is a big improvement: the cross-part leaks and second correct answers from round 2 are almost all gone, and all 15 lessons are covered sensibly across the five parts. What remains is a set of fill and blank items whose wrong options are of another word class, so the noun answer is the only noun (Q69, Q76, Q77, Q79, Q85, Q104). There is also a Reading part tilted to 22 judge against 13 reply and 10 text, with each text passage printed twice. Difficulty and timing feel like a real final exam."
+  },
+  "findings": [
+    { "paper": "s1", "n": 29, "kind": "blank", "problem": "weak-options", "reason": "你买什么？ 我买___。 needs a noun, and the wrong options 吃, 很, 喝 are verbs or an adverb, so 词典 is the only candidate.", "cause": "builder", "suggest": "Offer nouns that cannot be bought: 词典 / 老师 / 哥哥 / 你们." },
+    { "paper": "s1", "n": 32, "kind": "judge", "problem": "duplicate", "reason": "The judge text 我很累，也很饿。 is printed again in Q40's text in the same Reading part.", "cause": "builder", "suggest": "Do not use a text line as a judge sentence when the same part prints that text; pick another lesson 2 judge or another text." },
+    { "paper": "s1", "n": 35, "kind": "reply", "problem": "duplicate", "reason": "谢谢！ → 不客气。 repeats Q20's fill 谢谢！ ___！ with the same answer.", "cause": "builder", "suggest": "Test a fixed pair once per paper; use 对不起！ → 没关系。 here instead." },
+    { "paper": "s1", "n": 37, "kind": "reply", "problem": "duplicate", "reason": "The marked reply 我很好，你呢？ is the Q28 grammar sentence 我很好，你___？ again.", "cause": "builder", "suggest": "Under relaxed rules, still prefer a reply whose answer is not another item's sentence (e.g. 你忙吗？ → 我不忙)." },
+    { "paper": "s1", "n": 42, "kind": "text", "problem": "duplicate", "reason": "The passage 你买什么？/我买本子和笔… is printed again for a second question instead of being shown once with both questions.", "cause": "builder", "suggest": "Print a passage once with all its questions grouped under it." },
+
+    { "paper": "final", "n": 69, "kind": "fill", "problem": "weak-options", "reason": "她是我的___。 needs a person noun, and the wrong options 你们, 谢谢, 再见 are a pronoun and two set phrases, so only 老师 fits.", "cause": "builder", "suggest": "Offer non-person nouns from lessons 1–3 (other relatives would also be right): 老师 / 可乐 / 书包 / 面包." },
+    { "paper": "final", "n": 76, "kind": "fill", "problem": "weak-options", "reason": "咱们去看___吧。 needs a noun, and the wrong options 张, 男, 还 are a measure word, an adjective and an adverb.", "cause": "builder", "suggest": "Offer nouns that cannot be 看-ed as an outing: 电影 / 超市 / 抽屉 / 台灯." },
+    { "paper": "final", "n": 77, "kind": "fill", "problem": "weak-options", "reason": "请给我___。 needs a noun, and the wrong options 怎么, 辆, 一共 are a question word, a measure word and an adverb.", "cause": "builder", "suggest": "Offer nouns from lesson 12 that make a clearly wrong request: 小票 / 西红柿 / 老人 / 男人." },
+    { "paper": "final", "n": 79, "kind": "fill", "problem": "weak-options", "reason": "要什么___？ needs a noun, and the wrong options 稍, 觉得, 结账 are an adverb and two verbs.", "cause": "builder", "suggest": "Offer nouns that do not fit a waiter's question: 饮料 / 饭馆 / 老人 / 事." },
+    { "paper": "final", "n": 85, "kind": "blank", "problem": "weak-options", "reason": "你买什么？ 我买___。 needs a noun, and the wrong options 很, 吃, 喝 are an adverb and verbs (same item as s1 Q29).", "cause": "builder", "suggest": "Move it to fill with noun distractors, or offer 词典 / 老师 / 哥哥 / 你们." },
+    { "paper": "final", "n": 104, "kind": "blank", "problem": "weak-options", "reason": "___要两听可乐。 needs a sentence-opening adverb, and 的, 吗, 呢 are particles that cannot open a sentence (flagged in round 2 and unchanged).", "cause": "builder", "suggest": "Offer adverbs: 再 / 都 / 很 / 太." },
+    { "paper": "final", "n": 106, "kind": "blank", "problem": "two-right", "reason": "质量还好，价钱又便宜。 (the quality's all right, and it's cheap) is acceptable next to 质量又好，价钱又便宜。", "cause": "builder", "suggest": "Never offer 还 here; options e.g. 又 / 都 / 很 / 太." },
+    { "paper": "final", "n": 108, "kind": "blank", "problem": "duplicate", "reason": "王老师___我们汉字。 tests 教 in the same frame as Q73's fill 王老师___我们中文。", "cause": "builder", "suggest": "Treat 王老师教我们中文/汉字 as one sentence for the once-per-paper rule, or test 教 only once." },
+    { "paper": "final", "n": 151, "kind": "text", "problem": "language", "reason": "The shopper's single turn 我可以试试吗？有点儿小。 asks to try the shoes and judges them in one breath, with no try in between.", "cause": "source", "suggest": "Split it: 我可以试试吗？ / 可以。 / 有点儿小。 / 您试试大一点儿的。" },
+    { "paper": "final", "n": 155, "kind": "text", "problem": "duplicate", "reason": "The 周末咱们去博物馆 passage of Q152 is printed again three questions later, and all five passages in this part (Q146–155) are printed twice.", "cause": "builder", "suggest": "Print each passage once with its questions grouped under it, and keep those questions consecutive." }
+  ],
+  "rules": [
+    "Fill and blank wrong options must share the answer's word class and slot: nouns for a noun slot, sentence-opening adverbs for an opening slot; reject a teacher-written option list in which the answer is the only member of its class.",
+    "Print a reading passage once with all its questions under it, keep those questions consecutive, and count the passage's lines as used sentences for the once-per-paper rule.",
+    "Treat items that share a frame (王老师___我们中文/汉字, 谢谢→不客气 as fill and as reply, a grammar sentence that is another item's reply) as the same sentence when applying the no-repeat rule.",
+    "Keep the Reading split close to the planned thirds; when text passages run short, take reply items before adding judge items.",
+    "Put each wrong option into the sentence and reject it if the result is a usable phrase (还好, 你们好 for a single teacher), even when the option list was written by hand."
+  ]
+}

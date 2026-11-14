@@ -25,6 +25,11 @@ import { openNotebook, notebookChanged } from "./views/notebook.js";
 import * as notebook from "./notebook/store.js";
 import { openRadicals, radicalsUp, learnedCount, radicalTotal } from "./views/radicals.js";
 import { openPrint } from "./views/printsheet.js";
+import { openExam, savedRun } from "./views/exam.js";
+import { openBestReport } from "./views/exam-report.js";
+import { resultOf, onResults } from "./exam/store.js";
+import { bookRows, sealFor, markOf, MAX } from "./exam/rows.js";
+import { testOf } from "./exam/plan.js";
 import { hideGloss } from "./views/reading.js";
 import { initAccountChip, openAccount } from "./views/account.js";
 import { initSync } from "./sync/sync.js";
@@ -47,8 +52,9 @@ const OLD_TABS = { dict: "write", review: "write", cards: "words", tones: "liste
    #/book/<book>[/review]       one book: its lessons, or its review
    #/lesson/<book>/<n>/<tab>    a lesson (tabs: write, listen, speak, read, words, exercises)
    #/print/<book>/<n>           printable practice sheet for a lesson
+   #/test/<book>/<id>           a timed test (s1…, mid1, mid2, final)
    Each page has its own address, so the Android / browser back gesture steps back one page. */
-const PAGES = ["home", "reviewView", "typingView", "searchView", "notebookView", "radicalsView", "booksView", "bookView", "lessonView", "printView"];
+const PAGES = ["home", "reviewView", "typingView", "searchView", "notebookView", "radicalsView", "booksView", "bookView", "lessonView", "printView", "testView"];
 let current = "home";
 let printLesson = null;
 let lastHash = null;       // the page hash of the last slide, null before the first page
@@ -64,7 +70,7 @@ function hideLoading() {
 // Exercises find their buttons by id (#qNext, #qStatus…), and document.querySelector returns the first match.
 // An old exercise left in a hidden tab or page would catch those lookups, so the visible one never showed
 // its answer or Next. Empty every exercise host that is not on screen; it is drawn again when shown.
-const EXERCISE_HOSTS = ["tab-listen", "tab-speak", "tab-read", "tab-words", "tab-exercises", "writePractice", "bookReview", "allReview", "typingBody", "notebookBody", "radicalsBody"];
+const EXERCISE_HOSTS = ["tab-listen", "tab-speak", "tab-read", "tab-words", "tab-exercises", "writePractice", "bookReview", "allReview", "typingBody", "notebookBody", "radicalsBody", "testBody"];
 function clearHiddenHosts() {
   for (const id of EXERCISE_HOSTS) {
     const el = $("#" + id);
@@ -72,7 +78,7 @@ function clearHiddenHosts() {
   }
 }
 // PC sidebar: the section the page belongs to is the chosen one (a lesson belongs to Books).
-const SIDE = { home: "home", booksView: "books", bookView: "books", lessonView: "books", printView: "books", reviewView: "review", typingView: "typing", searchView: "search", notebookView: "notebook", radicalsView: "radicals" };
+const SIDE = { home: "home", booksView: "books", bookView: "books", lessonView: "books", printView: "books", testView: "books", reviewView: "review", typingView: "typing", searchView: "search", notebookView: "notebook", radicalsView: "radicals" };
 function markSide(id) {
   for (const a of $$("[data-side]")) {
     if (a.dataset.side === SIDE[id]) a.setAttribute("aria-current", "page");
@@ -109,7 +115,7 @@ let routeToken = 0;
 async function route() {
   const token = ++routeToken;
   const [, page, a, b, c] = location.hash.split("/");
-  if ((page === "lesson" || page === "print") && lessonIndex(`${a}/${b}`) >= 0) {
+  if (((page === "lesson" || page === "print") && lessonIndex(`${a}/${b}`) >= 0) || (page === "test" && c !== "report" && BOOKS.some((x) => x.id === a))) {
     // Nothing on screen while the shapes load: no empty Home on a reload, and no lesson to redraw without them.
     showPage("loading");
     clearTimeout(loadTimer);
@@ -123,6 +129,8 @@ async function route() {
     if (token !== routeToken) return;
     hideLoading();
   }
+  if (page === "test" && c === "report") { showPage("testView"); const tb = BOOKS.find((x) => x.id === a), tt = tb && testOf(tb, b); document.title = `${tt ? tt.cn + " " : ""}成绩单 · 写字本`; return openBestReport($("#testBody"), a, b, () => back(`#/book/${a}`)); }
+  if (page === "test") { showPage("testView"); document.title = "Test · 写字本"; return openExam(a, b); }
   if (page === "books") return showBooks();
   if (page === "print" && lessonIndex(`${a}/${b}`) >= 0) {
     const L = LESSONS[lessonIndex(`${a}/${b}`)];
@@ -167,7 +175,7 @@ function back(to) {
   else go(to);
 }
 const upFrom = () => ({
-  booksView: "#/", reviewView: "#/", typingView: "#/", searchView: "#/", notebookView: location.hash.startsWith("#/notebook/") ? "#/notebook" : "#/", radicalsView: radicalsUp(location.hash), bookView: "#/books", printView: `#/lesson/${printLesson}/write`,
+  booksView: "#/", reviewView: "#/", typingView: "#/", searchView: "#/", notebookView: location.hash.startsWith("#/notebook/") ? "#/notebook" : "#/", radicalsView: radicalsUp(location.hash), bookView: "#/books", printView: `#/lesson/${printLesson}/write`, testView: `#/book/${location.hash.split("/")[2]}`,
   lessonView: `#/book/${app.L()?.book}`,
 })[current];
 
@@ -264,9 +272,11 @@ $$("[data-btab]").forEach((b) => b.addEventListener("click", () => {
 }));
 
 function renderLessonList(book) {
-  const list = $("#lessonCards");
+  const list = $("#lessonCards"), run = savedRun();
   list.innerHTML = "";
-  book.lessons.forEach((les) => {
+  bookRows(book).forEach((row) => {
+    if (row.type === "test") return list.appendChild(testRow(book, row.test, run));
+    const les = row.lesson;
     const c = lessonDone(les);
     const b = document.createElement("button");
     b.type = "button";
@@ -279,6 +289,21 @@ function renderLessonList(book) {
     });
     list.appendChild(b);
   });
+}
+
+// A test between the lessons: a link to its cover, and (after a result) a link to the score report.
+function testRow(book, t, run) {
+  const best = resultOf(book.id, t.id)?.best, seal = best ? sealFor(best.total) : null;
+  const mine = run && run.book === book.id && run.test === t.id;
+  const left = mine ? Math.ceil(Math.max(0, run.left) / 1000) : 0;
+  const line = [`Lessons ${t.lessons[0].n}${t.lessons.length > 1 ? "–" + t.lessons[t.lessons.length - 1].n : ""}`, `${t.total} questions`, `${t.minutes} min`];
+  const quiet = mine ? `In progress · ${Math.floor(left / 60)}:${String(left % 60).padStart(2, "0")} left` : line.join(" · ") + (best ? ` · best ${best.total} / ${MAX}` : "");
+  const row = document.createElement("div");
+  row.className = "lesson-row test-row";
+  row.dataset.test = t.id;
+  const href = `#/test/${esc(book.id)}/${esc(t.id)}`;
+  row.innerHTML = `<a class="tr-link" href="${href}"><span class="tr-seal${seal ? " passed" : ""}" aria-hidden="true">${seal || markOf(t)}</span><span class="lr-main"><b>${esc(t.cn)} · ${esc(t.en)}</b><span class="tr-line">${esc(quiet)}</span></span><span class="chev" aria-hidden="true">${icon("next")}</span></a>${best ? `<a class="tr-report" href="${href}/report" aria-label="成绩单 Score report · ${esc(t.cn)} ${esc(t.en)}">成绩单</a>` : ""}`;
+  return row;
 }
 
 /* ---------- Lesson: 写 听 说 读 词 练 ---------- */
@@ -392,6 +417,19 @@ $("#wordNav").addEventListener("click", (e) => {
 notebook.onNotebook(() => {
   if (current === "home") renderHub();
   else if (current === "notebookView") notebookChanged();
+});
+// Test results arriving from sync: the rows on the book page show the new best.
+onResults(() => {
+  if (current !== "bookView" || $("#lessonCards").hidden) return;
+  const book = BOOKS.find((b) => b.id === openBookId) || BOOKS[0], run = savedRun();
+  $$("[data-test]", $("#lessonCards")).forEach((old) => {
+    const t = testOf(book, old.dataset.test);
+    if (!t) return;
+    const had = old.contains(document.activeElement), onReport = had && document.activeElement.classList.contains("tr-report");
+    const row = testRow(book, t, run);
+    old.replaceWith(row);
+    if (had) (row.querySelector(onReport ? ".tr-report" : ".tr-link") || row.querySelector(".tr-link")).focus();
+  });
 });
 progress.setHooks({ record: onRecord, session: onSession });
 progress.onProgress(() => {

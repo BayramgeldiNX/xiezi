@@ -49,6 +49,15 @@
   .choices .choice { counter-increment: key; }
   .choices .choice::before { content: counter(key); position: absolute; top: 8px; left: 8px; width: 22px; height: 22px; display: grid; place-items: center; border-radius: var(--r-seal); background: var(--card); color: var(--muted); font: 700 .75rem/1 var(--body); }
 
+  /* Tests: the question keeps a reading width and the options stay in one column; the key number gets its own room. */
+  #testView .ex-q { max-width: 720px; }
+  .ex-choices .choice { padding-left: 44px; }
+  /* The answer sheet docks at the right instead of covering the question (the questions-before-hand-in box stays centred).
+     The scrim lets clicks through; the page makes room while the sheet is open. */
+  .ex-scrim:has(> .ex-sheet:not(.ex-sure)) { inset: 0 0 0 auto; width: 340px; background: none; pointer-events: none; align-items: stretch; }
+  .ex-scrim > .ex-sheet:not(.ex-sure) { pointer-events: auto; max-width: none; max-height: none; height: 100%; border-radius: 0; align-content: start; box-shadow: -1px 0 0 var(--line), -8px 0 24px var(--shadow); animation: none; }
+  #testView:has(.ex-scrim > .ex-sheet:not(.ex-sure)) { max-width: 1100px; padding-right: 356px; }
+
   /* The toast is centred on the page, not on the window. */
   .toast { left: calc(50% + var(--side) / 2); }
 }

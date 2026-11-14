@@ -367,8 +367,8 @@
           "options": [
             "两",
             "二",
-            "十",
-            "百"
+            "百",
+            "块"
           ],
           "answer": 0,
           "en": "Two cups of coffee."
@@ -385,7 +385,7 @@
             "本",
             "杯",
             "瓶",
-            "个"
+            "毛"
           ],
           "answer": 0,
           "en": "Three dictionaries."
@@ -395,8 +395,8 @@
           "options": [
             "瓶",
             "本",
-            "个",
-            "张"
+            "毛",
+            "分"
           ],
           "answer": 0,
           "en": "Four bottles of beer."
@@ -465,7 +465,7 @@
     "judge": [
       {
         "text": "一瓶矿泉水两块。",
-        "claim": "矿泉水很贵。",
+        "claim": "一瓶矿泉水十二块。",
         "ok": false
       },
       {

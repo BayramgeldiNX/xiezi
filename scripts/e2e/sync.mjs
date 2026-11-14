@@ -222,6 +222,29 @@ try {
   check("Notebook: Home's book counts do not change (A)", (await homeStats(A)) === homeA, `${homeA} -> ${await homeStats(A)}`);
   check("Notebook: Home's book counts do not change (B)", (await homeStats(B)) === homeB, `${homeB} -> ${await homeStats(B)}`);
 
+  // 14. Test results: a result reaches the other device; the better one wins on both, and n counts every hand-in.
+  const exDo = (d, code) => d.js(`const e = await import('/xiezi/src/exam/store.js'); ${code}`);
+  const exRes = (d) => exDo(d, `return e.resultOf('hsk1', 's1');`);
+  const res = (total, at) => `{ total: ${total}, parts: [${total / 5}, ${total / 5}, ${total / 5}, ${total / 5}, ${total / 5}], at: ${at}, secs: 600 }`;
+  await exDo(A, `e.saveResult('hsk1', 's1', ${res(300, 1000)}); return true;`);
+  const bTest = await waitFor(async () => (await exRes(B))?.best?.total === 300);
+  check("Tests: A saves a result, B sees it", !!bTest);
+  await exDo(B, `e.saveResult('hsk1', 's1', ${res(400, 2000)}); return true;`);
+  const aTest = await waitFor(async () => (await exRes(A))?.best?.total === 400);
+  const ra = await exRes(A), rb = await exRes(B);
+  check("Tests: B's better result becomes A's best, n is 2 on both", !!aTest && ra?.n === 2 && rb?.n === 2 && ra?.last?.total === 400, JSON.stringify([ra, rb]));
+
+  // B signs out, saves a worse result, signs in again: A's/B's better best stays the best on both devices.
+  await B.js(`document.querySelector('#accountChip').click(); await new Promise(r => setTimeout(r, 300)); document.querySelector('#signOut').click(); await new Promise(r => setTimeout(r, 1500)); return true;`);
+  await exDo(B, `e.saveResult('hsk1', 's1', ${res(100, 3000)}); return true;`);
+  check("Tests: signed out, B still shows its own worse result only", (await exRes(B))?.best?.total === 100);
+  check("Tests: B signs in again", (await B.signIn(false)) === "ok");
+  await B.waitStatus("synced");
+  const okBoth = await waitFor(async () => { const a = await exRes(A), b = await exRes(B); return a?.last?.total === 100 && b?.best?.total === 400 ? [a, b] : null; });
+  // Entries are per device: A made 1 attempt, B made 2 (one before signing out, one after), so n is 3 on both.
+  check("Tests: the better best is still the best on both, the worse one is the last, n is the sum of the devices",
+    !!okBoth && okBoth[0].best.total === 400 && okBoth[1].last.total === 100 && okBoth[0].n === 3 && okBoth[1].n === 3, JSON.stringify(okBoth));
+
   check("No JS errors on either device", A.errors.length === 0 && B.errors.length === 0, [...A.errors, ...B.errors].join(" | "));
 } finally {
   A.close(); B.close();

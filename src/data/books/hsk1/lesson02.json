@@ -135,7 +135,7 @@
       ],
       "questions": [
         {
-          "q": "Who does A thank politely?",
+          "q": "Which word for “you” does A use to thank B politely?",
           "options": [
             "您",
             "你们",

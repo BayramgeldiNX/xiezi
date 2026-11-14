@@ -414,9 +414,9 @@
           "q": "___位老师教你们？",
           "options": [
             "几",
-            "多少",
             "什么",
-            "哪"
+            "谁",
+            "吗"
           ],
           "answer": 0,
           "en": "How many teachers teach you?"

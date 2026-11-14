@@ -246,17 +246,17 @@
     }
   },
   {
-    "key": "rpd9mia",
+    "key": "r15swh1p",
     "type": "reading",
     "lesson": 1,
-    "q": "What is the student's name?",
+    "q": "Who says “很好！”?",
     "options": [
-      "白怀诚",
-      "老师",
-      "你们",
-      "谢谢"
+      "The teacher",
+      "The student",
+      "Both",
+      "Nobody"
     ],
-    "answer": "白怀诚",
+    "answer": "The teacher",
     "context": {
       "title": "再见",
       "lines": [
@@ -268,11 +268,11 @@
         "老师：再见！  (Goodbye!)"
       ]
     },
-    "why": "He says 我是白怀诚; 我是 means 'I am', so his name is 白怀诚.",
+    "why": "After the student says what he can say, 老师 answers 很好！",
     "not": {
-      "老师": "老师 means teacher; he is the student.",
-      "你们": "你们 means 'you' (plural), not a name.",
-      "谢谢": "谢谢 means thank you, not a name."
+      "The student": "The student thanks the teacher and says goodbye; he does not say 很好.",
+      "Both": "Only the teacher says 很好.",
+      "Nobody": "The teacher does say 很好."
     }
   },
   {
@@ -322,10 +322,10 @@
     }
   },
   {
-    "key": "jwaojx2",
+    "key": "jlk7r",
     "type": "judge",
     "lesson": 1,
-    "q": "她说“对不起”。",
+    "q": "他们说“对不起”和“没关系”。",
     "options": [
       "对",
       "错"
@@ -334,8 +334,10 @@
     "context": {
       "text": "对不起！没关系。"
     },
-    "why": "The text says 对不起！没关系。 One person says 对不起, so 'She says 对不起' is true.",
-    "not": {}
+    "why": "The text has both 对不起 and 没关系. The claim is true.",
+    "not": {
+      "错": "Both 对不起 and 没关系 are in the text."
+    }
   },
   {
     "key": "j1n2xciu",
@@ -894,10 +896,10 @@
     }
   },
   {
-    "key": "jlqjkns",
+    "key": "j1ftla6z",
     "type": "judge",
     "lesson": 4,
-    "q": "矿泉水很贵。",
+    "q": "一瓶矿泉水十二块。",
     "options": [
       "对",
       "错"
@@ -906,8 +908,10 @@
     "context": {
       "text": "一瓶矿泉水两块。"
     },
-    "why": "The text says 一瓶矿泉水两块, only two yuan. The claim says it is expensive (很贵), so it is false.",
-    "not": {}
+    "why": "The text says a bottle of water is 两块, not 十二块. The claim is false.",
+    "not": {
+      "对": "The price in the text is 两块."
+    }
   },
   {
     "key": "jutb6tu",
@@ -2814,20 +2818,22 @@
     "not": {}
   },
   {
-    "key": "j7ufcfm",
+    "key": "j1m7ck78",
     "type": "judge",
     "lesson": 14,
-    "q": "广东菜很清淡。",
+    "q": "这个饭馆的菜很清淡。",
     "options": [
       "对",
       "错"
     ],
     "answer": "错",
     "context": {
-      "text": "听说广东菜很油腻。"
+      "text": "听说这个饭馆的菜很油腻。"
     },
-    "why": "The text says 广东菜很油腻, greasy. The claim says it is light (清淡), the opposite, so it is false.",
-    "not": {}
+    "why": "The text says the food is 油腻 (oily), the opposite of 清淡 (light). The claim is false.",
+    "not": {
+      "对": "The text says 油腻, not 清淡."
+    }
   },
   {
     "key": "r13t2xy0",

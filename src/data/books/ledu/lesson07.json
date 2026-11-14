@@ -843,9 +843,9 @@
           "q": "形声字的声符不一定和整个字读音___一样。",
           "options": [
             "完全",
-            "一定",
-            "总是",
-            "都"
+            "已经",
+            "非常",
+            "以前"
           ],
           "answer": 0,
           "en": "The sound part of a pictophonetic character is not always exactly the same in reading as the whole character."

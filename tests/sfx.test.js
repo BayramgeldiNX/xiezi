@@ -1,4 +1,8 @@
 import { describe, it, expect } from "vitest";
+const noop = () => {};
+globalThis.document = { addEventListener: noop, dispatchEvent: noop, querySelector: () => null, documentElement: { dataset: {}, style: {} }, hidden: false };
+globalThis.Event ??= class {};
+globalThis.addEventListener ??= noop;
 import { soundFor, louder, PRIORITY } from "../src/lib/sfx-pick.js";
 
 describe("sound effects: which sound for a saved answer", () => {
@@ -26,5 +30,31 @@ describe("sound effects: only the most important sound of a moment plays", () =>
   });
   it("knows every sound", () => {
     expect(PRIORITY).toEqual(["tick", "flip", "stroke", "miss", "right", "wrong", "done", "finish"]);
+  });
+});
+
+const { pick, NAMES, sessionSound, onSession, played } = await import("../src/lib/sfx.js");
+
+describe("sound effects: the bell and the stamp of a test", () => {
+  it("are made, next to the others", () => {
+    expect(NAMES).toEqual(expect.arrayContaining(["bell", "stamp", "right", "finish"]));
+  });
+  it("win over a tap tick or an answer sound asked for in the same moment", () => {
+    expect(pick("tick", "bell")).toBe("bell");
+    expect(pick("stamp", "finish")).toBe("stamp");
+    expect(pick("tick", "right")).toBe("right");
+    expect(pick(null, "stamp")).toBe("stamp");
+  });
+  it("a quiet record makes no answer sound, and a test session no finish sound", async () => {
+    expect(soundFor("q:你", { ok: true }, { quiet: true })).toBe(null);
+    expect(soundFor("g:a/1.1", { ok: false }, { quiet: true })).toBe(null);
+    expect(sessionSound({ type: "test" })).toBe(null);
+    onSession({ type: "test" });
+    await new Promise((r) => setTimeout(r, 5)); // sfx() fires on a macrotask
+    expect(played).toEqual([]);
+  });
+  it("a normal session still ends with the finish sound", () => {
+    expect(sessionSound({ type: "cards" })).toBe("finish");
+    expect(sessionSound({ type: "dictation" })).toBe("finish");
   });
 });

@@ -397,12 +397,12 @@
           "answer": 0
         },
         {
-          "q": "What is the student's name?",
+          "q": "Who says “很好！”?",
           "options": [
-            "白怀诚",
-            "老师",
-            "你们",
-            "谢谢"
+            "The teacher",
+            "The student",
+            "Both",
+            "Nobody"
           ],
           "answer": 0
         }
@@ -418,9 +418,9 @@
           "q": "___进！",
           "options": [
             "请",
-            "你",
+            "们",
             "好",
-            "再"
+            "谢"
           ],
           "answer": 0,
           "en": "Please come in!"
@@ -500,7 +500,7 @@
     "judge": [
       {
         "text": "对不起！没关系。",
-        "claim": "她说“对不起”。",
+        "claim": "他们说“对不起”和“没关系”。",
         "ok": true
       },
       {

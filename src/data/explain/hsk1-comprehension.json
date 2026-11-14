@@ -197,10 +197,10 @@
     "not": {}
   },
   {
-    "key": "jxbgtq1",
+    "key": "jsi39aa",
     "type": "judge",
     "lesson": 1,
-    "q": "他在和一个人说话。",
+    "q": "他说“您好”。",
     "options": [
       "对",
       "错"
@@ -209,8 +209,10 @@
     "context": {
       "text": "你们好！"
     },
-    "why": "The text says 你们好, which greets several people. The claim says one person, so it is false.",
-    "not": {}
+    "why": "The text says 你们好, a greeting to several people, not 您好. The claim is false.",
+    "not": {
+      "对": "He says 你们好, not the polite 您好."
+    }
   },
   {
     "key": "r13de4eg",
@@ -269,10 +271,10 @@
     }
   },
   {
-    "key": "r34cjfv",
+    "key": "rhld9tn",
     "type": "reading",
     "lesson": 2,
-    "q": "Who does A thank politely?",
+    "q": "Which word for “you” does A use to thank B politely?",
     "options": [
       "您",
       "你们",
@@ -289,11 +291,11 @@
         "B：不客气，再见！  (You're welcome, goodbye!)"
       ]
     },
-    "why": "A says 谢谢您; 您 is the polite form of 你, so A thanks one person politely.",
+    "why": "A says 谢谢您. 您 is the polite form of 你.",
     "not": {
-      "你们": "A says 您, not 你们.",
-      "老师": "The lines never say 老师.",
-      "我": "A thanks the other person, not themselves."
+      "你们": "你们 is for several people; A thanks one person.",
+      "老师": "老师 means teacher; nobody says it here.",
+      "我": "我 means I, not you."
     }
   },
   {
@@ -1543,10 +1545,10 @@
     "not": {}
   },
   {
-    "key": "j15rmb2m",
+    "key": "j11v6h65",
     "type": "judge",
     "lesson": 7,
-    "q": "他今天去学校。",
+    "q": "他明天不去学校。",
     "options": [
       "对",
       "错"
@@ -1555,8 +1557,10 @@
     "context": {
       "text": "我明天去学校看书。"
     },
-    "why": "The text says 我明天去学校, I go to school tomorrow. The claim says today, so it is false.",
-    "not": {}
+    "why": "The text says 我明天去学校看书, so he is going to school tomorrow. The claim is false.",
+    "not": {
+      "对": "He says he will go to school tomorrow, not that he won't."
+    }
   },
   {
     "key": "j1r3zins",
@@ -2935,10 +2939,10 @@
     "not": {}
   },
   {
-    "key": "j1ra9i8c",
+    "key": "jv7yo4p",
     "type": "judge",
     "lesson": 13,
-    "q": "他今天打电话。",
+    "q": "他明天不打电话。",
     "options": [
       "对",
       "错"
@@ -2947,8 +2951,10 @@
     "context": {
       "text": "我明天给你打电话。"
     },
-    "why": "The text says 明天给你打电话, call tomorrow. The claim says today, so it is false.",
-    "not": {}
+    "why": "The text says 我明天给你打电话, so he will call tomorrow. The claim is false.",
+    "not": {
+      "对": "He says he will call you tomorrow, so 不打电话 is wrong."
+    }
   },
   {
     "key": "r1vjskan",

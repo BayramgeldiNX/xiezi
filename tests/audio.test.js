@@ -5,6 +5,7 @@ import chars from "../src/data/chars.json";
 import glossary from "../src/data/glossary.json";
 import toneSets from "../src/data/tone-sets.json";
 import toneSamples from "../src/data/tone-samples.gen.json";
+import examLines from "../src/data/exam-lines.json";
 
 const lessons = Object.values(import.meta.glob("../src/data/books/*/lesson*.json", { eager: true, import: "default" }));
 const clean = (t) => t.replace(/[AB]: /g, "").trim();
@@ -16,6 +17,7 @@ describe("recorded audio", () => {
     for (const w of l.words) { needed.add(w.w); if (w.ex?.hz) needed.add(clean(w.ex.hz)); }
     for (const r of l.readings || []) for (const line of r.lines) needed.add(line.hz);
   }
+  Object.values(examLines).forEach((t) => needed.add(t));
   Object.keys(chars).forEach((c) => needed.add(c));
   Object.keys(glossary).forEach((g) => needed.add(g));
   toneSets.forEach(([, ...hz]) => hz.filter(Boolean).forEach((c) => needed.add(c)));

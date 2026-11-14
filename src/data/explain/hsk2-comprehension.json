@@ -1056,10 +1056,10 @@
     "not": {}
   },
   {
-    "key": "j1ufmazj",
+    "key": "jax9lbk",
     "type": "judge",
     "lesson": 4,
-    "q": "今天是她的生日。",
+    "q": "今天是你的生日。",
     "options": [
       "对",
       "错"
@@ -1068,8 +1068,10 @@
     "context": {
       "text": "生日快乐！这是送给你的。"
     },
-    "why": "生日快乐 and a gift mean it is her birthday today. The claim is true.",
-    "not": {}
+    "why": "生日快乐 means happy birthday, and the gift is for you. So today is your birthday. The claim is true.",
+    "not": {
+      "错": "The text says 生日快乐 to you, so it is your birthday."
+    }
   },
   {
     "key": "rpgg360",
@@ -1988,26 +1990,26 @@
     }
   },
   {
-    "key": "dzgw97j",
+    "key": "dd6bjx4",
     "type": "dialog",
     "lesson": 8,
     "q": "他们什么时候去看电影？",
     "options": [
-      "明天下午",
+      "明天",
       "今天下午",
-      "明天上午"
+      "下个星期"
     ],
-    "answer": "明天下午",
+    "answer": "明天",
     "context": {
       "lines": [
         "男：我们下午去看电影，好吗？",
         "女：今天下午我没时间，明天再去吧。"
       ]
     },
-    "why": "女 says 今天下午我没时间，明天再去吧; the man said afternoon, so tomorrow afternoon.",
+    "why": "The woman says 明天再去吧, so they will go tomorrow.",
     "not": {
-      "今天下午": "She says 今天下午我没时间.",
-      "明天上午": "The man said 下午, not 上午."
+      "今天下午": "The man asks about this afternoon, but she has no time then.",
+      "下个星期": "Nobody talks about next week."
     }
   },
   {

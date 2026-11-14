@@ -768,14 +768,14 @@
     }
   },
   {
-    "key": "g1n2i201",
+    "key": "g1vbbrvu",
     "type": "grammar",
     "lesson": 7,
     "q": "___我的生日还有一个多星期呢！",
     "options": [
       "离",
       "从",
-      "到",
+      "给",
       "对"
     ],
     "answer": "离",
@@ -784,23 +784,23 @@
       "rule": "A 离 B 远 / 近: distance from",
       "en": "My birthday is still over a week away!"
     },
-    "why": "离 can measure time too: 离我的生日还有一个多星期 means 'over a week until my birthday'.",
+    "why": "离 tells the distance or time from something: 离我的生日还有一个多星期.",
     "not": {
-      "从": "从 marks a start point, not time left.",
-      "到": "到我的生日还有一个多星期 is also said. This lesson practises 离 + a time + 还有 to say how long is left, so 离 is the answer here.",
-      "对": "对 means 'towards/to'."
+      "从": "从 marks a starting point, often with 到; it does not say how far away.",
+      "给": "给 means for or to someone; it does not show distance.",
+      "对": "对 means to or towards a person; it does not show distance."
     }
   },
   {
-    "key": "gdwxbh3",
+    "key": "g10xs8c9",
     "type": "grammar",
     "lesson": 7,
     "q": "坐公共汽车要一个多小时___！",
     "options": [
       "呢",
-      "吗",
-      "吧",
-      "的"
+      "把",
+      "过",
+      "得"
     ],
     "answer": "呢",
     "context": {
@@ -808,11 +808,11 @@
       "rule": "statement + 呢: you know!",
       "en": "It takes over an hour by bus, you know!"
     },
-    "why": "呢 at the end of a statement adds emphasis: 要一个多小时呢 is 'it takes over an hour, you know'.",
+    "why": "呢 at the end of a statement stresses a fact the listener may not expect: it takes more than an hour, you know.",
     "not": {
-      "吗": "吗 would turn it into a question.",
-      "吧": "吧 suggests a guess or suggestion.",
-      "的": "的 does not give emphasis here."
+      "把": "把 comes before an object in the middle of a sentence (把书给我); it cannot end a sentence.",
+      "过": "过 follows a verb to say something has been experienced (去过); it does not follow an amount of time here.",
+      "得": "得 links a verb to how it is done (跑得快); nothing follows it here, so it cannot end the sentence."
     }
   },
   {

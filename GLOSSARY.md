@@ -41,3 +41,26 @@ _Avoid_: Score, progress, completion rate
 **Open**:
 An item of a lesson that is not done yet.
 _Avoid_: Left, remaining, pending
+
+## Tests
+
+**Test**:
+A timed, scored paper on the book page, taken in one sitting: a small test (小测) every three lessons, a mid-book test (期中) at each half, and a final test (期末) for the whole book.
+_Avoid_: Exam, quiz
+
+**Paper**:
+The questions picked for one attempt of a test, built from lesson content.
+_Avoid_: Question set, test sheet
+
+**Test part**:
+One of a paper's five sections: 听力, 词汇, 语法, 阅读, 书写. Not a lesson Part.
+_Avoid_: Section, skill, round
+
+**Run**:
+One sitting of a paper, saved on the device until it is handed in.
+_Avoid_: Attempt, session
+
+**Score report**:
+The 成绩单 of one result of a test (the best one when opened from the book page, the one just handed in when opened from the result page): total, seal and each part's score, printable or saved as a picture.
+_Avoid_: Result page, certificate
+

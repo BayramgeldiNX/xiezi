@@ -20,11 +20,25 @@ DATA = ROOT / "src" / "data"
 OUT = ROOT / "public" / "audio"
 MANIFEST = DATA / "audio.gen.json"
 VOICE = "zh-CN-XiaoxiaoNeural"
+MALE = "zh-CN-YunxiNeural"  # the man in the tests' listening dialogues
+MALE_TAG = "男："  # a recording named "男：<line>" is <line> in the man's voice
 
 
 def clean(text):
     # Must match speech.js: dialogue labels are not read aloud.
     return re.sub(r"[AB]: ", "", text).strip()
+
+
+def male_lines():
+    """Dialogue lines spoken by the man: { "男：<line>": "<line>" }. Tests play these so two voices are heard."""
+    out = {}
+    for lesson in sorted(DATA.glob("books/*/lesson*.json")):
+        data = json.loads(lesson.read_text(encoding="utf-8"))
+        for d in data.get("workbook", {}).get("dialogs", []):
+            for who, line in d["lines"]:
+                if who == "男" and line:
+                    out[MALE_TAG + line] = line
+    return out
 
 
 def collect():
@@ -51,6 +65,7 @@ def collect():
         for r in data.get("readings", []):
             for line in r["lines"]:
                 texts.add(line["hz"])
+    texts.update(json.loads((DATA / "exam-lines.json").read_text(encoding="utf-8")).values())
     texts.update(json.loads((DATA / "chars.json").read_text(encoding="utf-8")).keys())
     texts.update(json.loads((DATA / "glossary.json").read_text(encoding="utf-8")).keys())
     for plain, *chars in json.loads((DATA / "tone-sets.json").read_text(encoding="utf-8")):
@@ -64,14 +79,14 @@ def name(text):
     return hashlib.sha1(text.encode("utf-8")).hexdigest()[:12]
 
 
-async def record(text, sem, proxy):
+async def record(text, sem, proxy, voice=VOICE, speak=None):
     path = OUT / f"{name(text)}.mp3"
     if path.exists() and path.stat().st_size > 0:
         return False
     async with sem:
         for attempt in range(3):
             try:
-                await edge_tts.Communicate(text, VOICE, proxy=proxy).save(str(path))
+                await edge_tts.Communicate(speak or text, voice, proxy=proxy).save(str(path))
                 return True
             except Exception as e:  # network hiccups: retry
                 if attempt == 2:
@@ -86,7 +101,10 @@ async def main():
     texts = collect()
     proxy = os.environ.get("HTTPS_PROXY") or None
     sem = asyncio.Semaphore(4)
-    made = await asyncio.gather(*(record(t, sem, proxy) for t in texts))
+    male = male_lines()
+    made = await asyncio.gather(*(record(t, sem, proxy) for t in texts),
+                                *(record(k, sem, proxy, MALE, line) for k, line in male.items()))
+    texts = sorted(set(texts) | set(male))
     manifest = {t: name(t) for t in texts if (OUT / f"{name(t)}.mp3").exists()}
     MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=0) + "\n", encoding="utf-8")
     # Remove recordings no longer used by any text.

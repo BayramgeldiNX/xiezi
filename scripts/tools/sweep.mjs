@@ -4,6 +4,7 @@ import { spawn } from "node:child_process";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
+import { testsOf } from "../../src/exam/plan.js";
 const BASE = process.argv[2] || "http://localhost:5173/xiezi/";
 const BOOK = process.argv[3] || "hsk1", N = +(process.argv[4] || 15);
 const edgePath = ["C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe", "C:/Program Files/Microsoft/Edge/Application/msedge.exe"].find((p) => fs.existsSync(p));
@@ -67,6 +68,15 @@ for (let n = 1; n <= N; n++) {
       await sleep(600);
     }
   }
+}
+// Every test's cover: not empty, no errors. The plan only needs the lesson count.
+for (const t of testsOf({ lessons: Array.from({ length: N }, (_, i) => ({ n: i + 1 })) })) {
+  where = `${BOOK} test ${t.id}`;
+  await send("Page.navigate", { url: `${BASE}#/test/${BOOK}/${t.id}` });
+  await sleep(1500);
+  const txt = await js(`return (document.querySelector('#testBody')?.innerText || '').trim()`);
+  if (!txt || txt.length < 20) problems.push(`[${where}] EMPTY cover`);
+  else if (/undefined|NaN|\[object/.test(txt)) problems.push(`[${where}] BAD: ${txt.slice(0, 120)}`);
 }
 where = "review";
 await send("Page.navigate", { url: `${BASE}#/book/${BOOK}/review` });

@@ -792,10 +792,10 @@
     }
   },
   {
-    "key": "g1sj1lrx",
+    "key": "gz02ilx",
     "type": "grammar",
     "lesson": 3,
-    "q": "像一个侧面站着的人的字是“___”。",
+    "q": "看上去像一个侧面站着、两条腿分开的样子的字是“___”。",
     "options": [
       "人",
       "木",
@@ -808,18 +808,18 @@
       "rule": "Pictographs began as simple drawings of the thing itself; over time the lines became strokes",
       "en": "The character that looks like a person standing in profile is 人."
     },
-    "why": "人 is a person seen from the side, with two legs.",
+    "why": "人 began as a drawing of a person seen from the side, with two legs apart.",
     "not": {
-      "木": "木 is a tree.",
-      "山": "山 is a mountain.",
-      "水": "水 is water."
+      "木": "木 is a drawing of a tree.",
+      "山": "山 is a drawing of mountain peaks.",
+      "水": "水 is a drawing of flowing water."
     }
   },
   {
-    "key": "g114lmgh",
+    "key": "gjj3njn",
     "type": "grammar",
     "lesson": 3,
-    "q": "像一条鱼的字是“___”。",
+    "q": "看上去像水里游的动物的字是“___”。",
     "options": [
       "鱼",
       "牛",
@@ -832,11 +832,11 @@
       "rule": "Pictographs began as simple drawings of the thing itself; over time the lines became strokes",
       "en": "The character that looks like a fish is 鱼."
     },
-    "why": "鱼 means fish, and its shape comes from a fish.",
+    "why": "鱼 began as a drawing of a fish, the animal that swims in water.",
     "not": {
-      "牛": "牛 is a cow.",
-      "车": "车 is a car.",
-      "女": "女 is a woman."
+      "牛": "牛 is a drawing of an ox's head; it does not live in water.",
+      "车": "车 is a drawing of a cart, not an animal.",
+      "女": "女 is a drawing of a woman, not an animal."
     }
   },
   {
@@ -1344,15 +1344,15 @@
     }
   },
   {
-    "key": "gwt5l8r",
+    "key": "g144qajc",
     "type": "grammar",
     "lesson": 4,
     "q": "我___在家看电影，下午去商店。",
     "options": [
       "上午",
       "下午",
-      "周末",
-      "期末"
+      "中国",
+      "中文"
     ],
     "answer": "上午",
     "context": {
@@ -1360,11 +1360,11 @@
       "rule": "上课 starts class, 下课 ends it; 上班 starts work, 下班 ends it",
       "en": "In the morning I watch a film at home; in the afternoon I go to the shop."
     },
-    "why": "The sentence contrasts with 下午 (afternoon), so the first part is 上午, morning.",
+    "why": "上午 is the morning, before 下午. In the morning I stay home, and in the afternoon I go out.",
     "not": {
-      "下午": "下午 is used in the second part.",
-      "周末": "周末 is the weekend.",
-      "期末": "期末 is the end of term."
+      "下午": "The sentence already puts the shop in the 下午, so home must be another time.",
+      "中国": "中国 is a country, not a time.",
+      "中文": "中文 is the Chinese language, not a time."
     }
   },
   {
@@ -2232,15 +2232,15 @@
     }
   },
   {
-    "key": "g1upw30l",
+    "key": "gantv4d",
     "type": "grammar",
     "lesson": 7,
     "q": "形声字的声符不一定和整个字读音___一样。",
     "options": [
       "完全",
-      "一定",
-      "总是",
-      "都"
+      "已经",
+      "非常",
+      "以前"
     ],
     "answer": "完全",
     "context": {
@@ -2248,11 +2248,11 @@
       "rule": "Sometimes the sound part also gives the meaning",
       "en": "The sound part of a pictophonetic character is not always exactly the same in reading as the whole character."
     },
-    "why": "完全一样 means exactly the same. The sound part often only sounds close, like 每 měi in 海 hǎi.",
+    "why": "完全一样 means exactly the same. The sound part often sounds only close to the whole character.",
     "not": {
-      "一定": "一定 clashes with 不一定 earlier in the sentence.",
-      "总是": "总是 means always; the English says exactly, which is 完全.",
-      "都": "都 needs several things; here one part is compared with one character."
+      "已经": "已经 means already; it does not describe how alike two sounds are.",
+      "非常": "非常 means very; 非常一样 is not the usual way to say exactly the same.",
+      "以前": "以前 means before; it is about time, not about how alike things are."
     }
   },
   {
