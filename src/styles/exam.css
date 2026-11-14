@@ -1,0 +1,72 @@
+/* Tests (#/test/<book>/<id>): cover, part cards, questions, answer sheet, hand-in. Colours come from the theme variables only. */
+.ex-cover, .ex-card, .ex-none { justify-items: center; text-align: center; max-width: 560px; width: 100%; margin-inline: auto; gap: 14px; }
+.ex-card { position: relative; padding-block: 40px; }
+.ex-leave { position: absolute; top: 8px; left: 8px; }
+.ex-title { font-family: var(--display); font-size: clamp(1.75rem, 7vw, 2.5rem); line-height: 1.15; margin: 0; }
+.ex-sub { margin: 0; color: var(--muted); }
+.ex-no { font-family: var(--display); font-size: 2.25rem; color: var(--cinnabar); line-height: 1; }
+.ex-seal { width: 96px; height: 96px; display: grid; grid-template-rows: 1fr 1fr; place-items: center; border: 3px solid var(--cinnabar); border-radius: var(--r-seal); color: var(--cinnabar); font-family: var(--display); font-weight: 700; font-size: 2.25rem; line-height: 1; padding: 6px; transform: rotate(-3deg); }
+.ex-parts { width: 100%; border-collapse: collapse; text-align: left; }
+.ex-parts td { padding: 8px 6px; border-bottom: 1px solid var(--line); }
+.ex-parts td:first-child { width: 2.5em; font-family: var(--display); color: var(--muted); }
+.ex-parts .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.ex-parts .ex-sum td { border-bottom: 0; color: var(--muted); font-size: .9375rem; }
+.ex-rules { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; color: var(--muted); font-size: .9375rem; text-align: left; width: 100%; }
+.ex-rules li::before { content: "·"; margin-right: 8px; }
+.ex-note { width: 100%; padding: 12px; border-radius: var(--r); background: var(--card2); text-align: left; font-size: .9375rem; display: grid; gap: 8px; justify-items: start; }
+.ex-note a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+.ex-go { display: grid; gap: 8px; justify-items: stretch; width: 100%; }
+.ex-go .btn { white-space: normal; text-align: center; }
+
+/* Question page */
+.ex-q { width: 100%; max-width: 760px; margin-inline: auto; }
+.ex-q .lbl { justify-self: start; }
+.ex-clock { flex: none; font-variant-numeric: tabular-nums; font-size: .9375rem; color: var(--muted); min-width: 3.4em; text-align: right; }
+.ex-clock.low { color: var(--cinnabar); }
+.ex-sheet-btn { flex: none; width: 44px; height: 44px; display: grid; place-items: center; padding: 0; border: 0; border-radius: 50%; background: var(--card2); color: var(--ink); cursor: pointer; }
+.ex-sheet-btn:hover { background: color-mix(in srgb, var(--card2) 85%, var(--ink)); }
+.ex-stage { display: grid; gap: 16px; width: 100%; justify-items: stretch; }
+.ex-ctx { padding: 12px 14px; border-radius: var(--r); background: var(--card2); color: var(--muted); display: grid; gap: 4px; font-size: 1.0625rem; }
+.ex-ctx p { margin: 0; }
+.ex-text { margin: 0; font-size: 1.25rem; line-height: 1.5; }
+.ex-text.zh { font-family: var(--display); font-size: 1.5rem; }
+.ex-audio { color: var(--muted); font-size: .9375rem; min-height: 1.4em; }
+.ex-choices { grid-template-columns: 1fr; max-width: none; }
+.ex-choices .choice { min-height: 56px; padding: 10px 16px; }
+.ex-choices .choice .hz { font-size: 1.375rem; }
+.ex-choices .choice.sel { background: color-mix(in srgb, var(--ink) 10%, var(--card2)); box-shadow: 0 0 0 2px var(--ink) inset; }
+.ex-line { min-height: 64px; }
+.ex-tail { font-family: var(--display); font-size: 1.25rem; color: var(--muted); }
+.ex-write-head { display: grid; gap: 4px; justify-items: center; text-align: center; }
+.ex-py { font-size: 1.5rem; }
+.ex-written { margin: 0; text-align: center; color: var(--muted); }
+.ex-stage > .btn { justify-self: center; }
+.ex-q .dict-boxes { justify-content: center; }
+.ex-dock .btn[aria-pressed="true"] { background: var(--card2); box-shadow: 0 0 0 2px var(--amber) inset; }
+@media (max-width: 899px) {
+  .panel.ex-q .controls.dock .btn:not(.primary) { margin-left: 0; }
+  .panel.ex-q .controls.dock { gap: 8px; justify-content: flex-start; }
+}
+.ex-q ruby rt { font-family: var(--body); font-weight: 400; font-size: .5em; color: var(--muted); letter-spacing: 0; }
+
+/* Answer sheet and questions asked before something cannot be undone */
+.ex-scrim { position: fixed; inset: 0; z-index: 30; display: flex; align-items: flex-end; justify-content: center; background: var(--scrim); }
+.ex-sheet { width: 100%; max-width: 560px; max-height: 85vh; overflow: auto; display: grid; gap: 14px; padding: 16px calc(16px + var(--safe-r)) calc(20px + var(--safe-b)) calc(16px + var(--safe-l)); border-radius: var(--r2) var(--r2) 0 0; background: var(--card); color: var(--ink); box-shadow: 0 -8px 32px var(--shadow); }
+.ex-sheet h3 { margin: 0; font-family: var(--display); font-size: 1.25rem; }
+.ex-sheet-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.ex-sure .controls { display: flex; gap: 8px; }
+.ex-row { display: grid; gap: 8px; }
+.ex-row.done, .ex-row.later { opacity: .5; }
+.ex-bubs { display: flex; flex-wrap: wrap; gap: 8px; }
+.ex-bub { position: relative; width: 44px; height: 44px; display: grid; place-items: center; padding: 0; border: 1px solid var(--line2); border-radius: 50%; background: none; color: var(--ink); font: 700 .9375rem/1 var(--body); font-variant-numeric: tabular-nums; cursor: pointer; }
+.ex-bub:disabled { cursor: default; }
+.ex-bub.ans { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+.ex-bub.cur { box-shadow: 0 0 0 3px var(--paper), 0 0 0 5px var(--cinnabar); }
+.ex-bub.mk::after { content: ""; position: absolute; top: 3px; right: 3px; width: 9px; height: 9px; border-radius: 50%; background: var(--amber); box-shadow: 0 0 0 2px var(--card); }
+@media (min-width: 700px) { .ex-scrim { align-items: center; } .ex-sheet { border-radius: var(--r2); } }
+@media (prefers-reduced-motion: no-preference) { .ex-sheet { animation: ex-up 200ms var(--ease); } }
+@keyframes ex-up { from { transform: translateY(24px); opacity: 0; } }
+.ex-best { margin: 0; font-size: .8125rem; color: var(--muted); }
+.ex-best a { color: var(--muted); text-decoration: underline; text-underline-offset: 3px; display: inline-block; min-height: 24px; }
+.ex-scrim .ex-sheet.ex-docked { animation: none !important; }
+.has-fs .ex-head { padding-right: 56px; } /* clear of the floating fullscreen button, as .topbar does */

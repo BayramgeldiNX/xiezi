@@ -65,6 +65,7 @@ const STEPS = [
   ["book", "#/book/kouyu-rumen"],
   ["lesson-write", "#/lesson/kouyu-rumen/1/write", `document.querySelector('[data-m=step]').click(); ${W} document.querySelector('[data-a=next]').click(); ${W} document.querySelector('[data-m=quiz]').click(); ${W}`],
   ["book-review", "#/book/kouyu-rumen/review"],
+  ["test-cover", "#/test/kouyu-rumen/final"],
   ["review", "#/review"],
   ["typing", "#/typing"],
   ["search", "#/search"],

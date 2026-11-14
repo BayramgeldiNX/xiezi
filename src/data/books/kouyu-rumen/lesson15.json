@@ -520,9 +520,9 @@
           "q": "二环___三环都行。",
           "options": [
             "或者",
-            "还是",
-            "和",
-            "跟"
+            "很",
+            "也",
+            "吗"
           ],
           "answer": 0,
           "en": "The Second or Third Ring Road — either is fine."
@@ -549,8 +549,8 @@
           "options": [
             "多",
             "几",
-            "很",
-            "太"
+            "吗",
+            "的"
           ],
           "answer": 0,
           "en": "How far is it from here?"
@@ -582,9 +582,9 @@
           "q": "你___多休息。",
           "options": [
             "应该",
-            "可以",
-            "想",
-            "会"
+            "在",
+            "是",
+            "有"
           ],
           "answer": 0,
           "en": "You should rest more."

@@ -18,7 +18,7 @@ The owner uses it on iPhone 16 (home-screen PWA), Mi Pad 7 Pro and Windows. Prog
 
 ## Stack and layout
 - Vite + vite-plugin-pwa (generateSW, `registerType: prompt`), base `/xiezi/`. Plain JS modules, no framework.
-- `src/main.js` and `src/app.js`: hash router and home. Pages: `#/` home, `#/books`, `#/book/<id>`, `#/lesson/<id>/<tab>`, `#/review` (all books), `#/search`, `#/typing`, `#/print/<id>`.
+- `src/main.js` and `src/app.js`: hash router and home. Pages: `#/` home, `#/books`, `#/book/<id>`, `#/lesson/<id>/<tab>`, `#/review` (all books), `#/search`, `#/typing`, `#/print/<id>`, `#/test/<book>/<id>` (a test: `s1`…, `mid1`, `mid2`, `final`) and `#/test/<book>/<id>/report` (best score report).
   The route waits for `loadStrokes()` before lesson and print pages.
 - `src/pwa.js`: updates install on a calm page or the next page change.
 - PC layout (`src/styles/desktop.css`): only at 1200px or wider with a mouse, so phones and tablets never get it. A sidebar (`.side` in `index.html`, current section set by `markSide` in `main.js`), wider pages, and a key number on each quiz choice.
@@ -37,6 +37,7 @@ The owner uses it on iPhone 16 (home-screen PWA), Mi Pad 7 Pro and Windows. Prog
   - `radicals.js`, `radicals-practice.js`: Radicals (部首) at `#/radicals` and `#/radical/<r>`: 81 core radicals in 5 stages, with cards, find-the-radical and guess-the-meaning practice (progress key `bs:<r>`; helpers in `lib/radical-quiz.js`).
     Data: hand-written `data/radicals-core.json` (`kind` meaning/shape, `guess`, `lesson`), and `radical-families.gen.json` from `scripts/gen-radicals.mjs` (run by `gen:data`).
     Lessons: `radical-lesson.js` at `#/radical/<r>/learn/<step>` (6 steps; done key `bsl:<r>`). Pictures in `public/radicals/`: `pic/<hex>.svg` (own drawings) and `ancient/` (public-domain forms from Wikimedia Commons via `scripts/fetch-ancient.mjs`, credits in `ancient.gen.json`), shown with CSS mask, cached at runtime.
+  - `exam.js`, `exam-result.js`, `exam-report.js`: tests at `#/test/<book>/<id>`: cover, timed questions with an answer sheet, hand-in and result, then the score report (成绩单). The book page shows a row for each test between the lessons (`src/exam/rows.js`); a book's Review links to its final test.
   - `charsheet.js`, `printsheet.js`, `account.js`.
 - `src/lib/`:
   - `pinyin.js`: syllable splitter, handles üe and erhua.
@@ -45,6 +46,7 @@ The owner uses it on iPhone 16 (home-screen PWA), Mi Pad 7 Pro and Windows. Prog
   - `sfx.js`: sound effects made with Web Audio (no files), settings `sfx` and `sfxVolume`. Taps tick by themselves; writing quizzes get stroke sounds in `makeWriter`; answers and finished exercises sound through `progress.setHooks` (`record(key, result, { sfx | quiet })`, rules in `sfx-pick.js`).
   - `typing-check.js`, `draw.js`, `compare.js`, `settings.js`, `theme.js`.
   - `qpinyin.js`: the 拼 Pinyin and 英 English switches in quizzes. English comes from `data/sentence-en.gen.json` (made by `scripts/gen-sentence-en.mjs` from lesson `en` fields plus hand translations in `data/sentence-en/part-*.json`; `--todo N` lists new untranslated sentences).
+- `src/exam/`: tests. `plan.js` (where they sit and how big), `build.js` (picks a paper from lesson content), `grade.js` (scores and seals), `run.js` (one sitting, saved on the device), `store.js` (results, synced), `rows.js` (book-page rows).
 - `src/sync/`:
   - `sync.js`: Firebase sync; `bookContent()` reads private book content.
   - `content.js`: turns private texts into readings.
@@ -91,6 +93,9 @@ Pipeline:
 5. Private content: `npm run gen:private-audio`, then `npm run upload:private`.
 
 ## Tools for common jobs
+- **Tests:** papers are built from lesson content. `src/data/exam-exclude.json` and `exam-fill.json` are generated from `docs/test-audit/` by `scripts/tools/gen-exam-exclude.mjs` and `gen-exam-fill.mjs`.
+  - Run `scripts/tools/apply-test-fixes.mjs` after any re-import of a book.
+  - `node scripts/tools/exam-sample.mjs <book> <test> <seed>` prints a paper.
 - **New PDFs (scanned books):** scans have no text layer, so render the pages to images and read them.
   - Command: `python scripts/tools/pdf-pages.py <scratch-dir> 1100 "<pdf>"...` (needs PyMuPDF).
   - Read a few pages at a time; images are the most expensive input.

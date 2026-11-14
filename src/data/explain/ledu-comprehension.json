@@ -510,20 +510,22 @@
     "not": {}
   },
   {
-    "key": "jk6qiv4",
+    "key": "j74p4h0",
     "type": "judge",
     "lesson": 2,
-    "q": "他不在家。",
+    "q": "他一半时间在学校。",
     "options": [
       "对",
       "错"
     ],
-    "answer": "错",
+    "answer": "对",
     "context": {
       "text": "他一半时间在家，一半时间在学校。"
     },
-    "why": "He is at home 一半时间, half the time, so 他不在家 is false.",
-    "not": {}
+    "why": "The text says 一半时间在学校, so he spends half his time at school. The claim is true.",
+    "not": {
+      "错": "The text says exactly 一半时间在学校."
+    }
   },
   {
     "key": "j9uo1pe",
@@ -600,13 +602,13 @@
     }
   },
   {
-    "key": "r1itvn31",
+    "key": "rm4b4h",
     "type": "reading",
     "lesson": 3,
     "q": "What does B have?",
     "options": [
       "An umbrella",
-      "A bicycle",
+      "A raincoat",
       "A car",
       "A train ticket"
     ],
@@ -620,11 +622,11 @@
         "B：我平时骑自行车，下雨天坐公共汽车。  (I usually ride a bike, and take the bus on rainy days.)"
       ]
     },
-    "why": "B says 我有雨伞, so B has an umbrella.",
+    "why": "B says 我有雨伞, I have an umbrella.",
     "not": {
-      "A bicycle": "The question asks what B has now. B says 我有雨伞. 骑自行车 is how B usually goes to school, and B never says 我有自行车.",
-      "A car": "No car is mentioned.",
-      "A train ticket": "No ticket is mentioned."
+      "A raincoat": "Nobody talks about a raincoat.",
+      "A car": "B rides a bike or takes the bus; no car is mentioned.",
+      "A train ticket": "No train is mentioned."
     }
   },
   {
@@ -1300,20 +1302,22 @@
     "not": {}
   },
   {
-    "key": "j5p8h3i",
+    "key": "j1m5tom0",
     "type": "judge",
     "lesson": 5,
-    "q": "这个电影很有意思。",
+    "q": "这个电影不好看。",
     "options": [
       "对",
       "错"
     ],
-    "answer": "对",
+    "answer": "错",
     "context": {
       "text": "这个电影很有名，也很好看。"
     },
-    "why": "The text says 这个电影很有名，也很好看. A film that is 好看 (good to watch) is one people find 有意思 (interesting), so the claim fits the text.",
-    "not": {}
+    "why": "The text says the film is 很好看. The claim is false.",
+    "not": {
+      "对": "The text says 很好看, so it is a good film."
+    }
   },
   {
     "key": "j2f0a0n",
@@ -2309,10 +2313,10 @@
     }
   },
   {
-    "key": "d14isftu",
+    "key": "dv9zyi4",
     "type": "dialog",
     "lesson": 9,
-    "q": "说话的人想要什么？",
+    "q": "男的想要什么？",
     "options": [
       "菜单",
       "面包",
@@ -2325,10 +2329,10 @@
         "女：好的，您先坐。"
       ]
     },
-    "why": "The man says 请给我菜单: he wants the menu.",
+    "why": "The man says 请给我菜单, so he wants the menu.",
     "not": {
-      "面包": "Bread is not mentioned.",
-      "电话": "A phone is not mentioned."
+      "面包": "Nobody asks for bread.",
+      "电话": "Nobody asks for a phone."
     }
   },
   {

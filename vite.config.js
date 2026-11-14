@@ -60,5 +60,6 @@ export default defineConfig({
       devOptions: { enabled: false },
     }),
   ],
-  test: { environment: "node", include: ["tests/**/*.test.js"] },
+  // The paper-builder tests are heavy and run beside the others, so a slow machine (the deploy runner) gets time.
+  test: { environment: "node", include: ["tests/**/*.test.js"], testTimeout: 60000, hookTimeout: 60000 },
 });

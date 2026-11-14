@@ -1,0 +1,265 @@
+{
+ "note": "From the teachers' round 2 (sample papers): source questions kept out of tests. Made once from round2-mapped.json by the lead; a claim about 他 on a text in the first person was not counted as a fault.",
+ "books": {
+  "kouyu-rumen": [
+   {
+    "id": "fill:药",
+    "why": "我去___店买药。 shows 药 right after the blank, and Q8 plays the whole sentence 我去药店买药。"
+   },
+   {
+    "id": "order:星期六咱们去书店，怎么样？",
+    "why": "咱们星期六去书店怎么样？ is as correct as 星期六咱们去书店怎么样？"
+   },
+   {
+    "id": "order:十块。您用微信还是现金？",
+    "why": "十块您用现金还是微信？ is equally correct, and the expected answer 十块您用微信还是现金？ lacks the 。 after 十块."
+   },
+   {
+    "id": "kouyu-rumen/2/3.1",
+    "why": "我们很好。 (们) is as correct as 我也很好。"
+   },
+   {
+    "id": "kouyu-rumen/3/1.1",
+    "why": "你吃吗？ is correct next to 你吃什么？, and Q128 prints 你吃什么？"
+   },
+   {
+    "id": "kouyu-rumen/1/j1",
+    "why": "The claim 他们说“对不起”和“没关系”。 only quotes the text 对不起！没关系。, so nothing is tested."
+   },
+   {
+    "id": "kouyu-rumen/5/r4",
+    "why": "在那儿。 is a possible answer to 你在哪儿？, next to the marked 我在宿舍。"
+   },
+   {
+    "id": "order:她学习很努力。",
+    "why": "她很努力学习。 is a second correct order for 'She studies hard' next to 她学习很努力。"
+   }
+  ],
+  "hsk1": [
+   {
+    "id": "fill:家",
+    "why": "'你___有几个人？' teaches 几个人 where the book (and Q41 '几口人') uses 几口人; it is also the same sentence as order Q45, whose tiles show 家."
+   },
+   {
+    "id": "order:你家有几个人？",
+    "why": "Tiles 人|几|个|你|家|有 also make '你有几个家人？', a correct second order; and 几个人 is not the book's 几口人."
+   },
+   {
+    "id": "hsk1/4/r1#1",
+    "why": "Options mix Chinese '美国/中国' with English 'We don't know' and an absurd 'Both'."
+   },
+   {
+    "id": "hsk1/13/2.1",
+    "why": "'我们去吃饭吗？' is also grammatical, and the answer is printed in reply Q75 '我们去吃饭吧。' (heard in Q23 too)."
+   },
+   {
+    "id": "hsk1/2/j1",
+    "why": "In '谢谢！不客气。' two people speak, so who '他' is in '他说\"谢谢\"' is unclear; it also repeats Q24 and Q127."
+   },
+   {
+    "id": "hsk1/1/j1",
+    "why": "In '对不起！没关系。' two people speak, so '他说\"对不起\"' has no clear referent."
+   },
+   {
+    "id": "fill:汉语",
+    "why": "'我学电影' and '我学东西' are grammatical alongside '我学汉语'."
+   },
+   {
+    "id": "hsk1/8/j2",
+    "why": "The text says '我想去商店' (wants to go) but the claim '他下午去商店' is marked 对; strictly 想去 does not mean he goes."
+   },
+   {
+    "id": "order:老师，您好！",
+    "why": "Tiles 好|老师|您 also give '您好，老师！', as natural as '老师您好！'; the answer also lacks its comma."
+   },
+   {
+    "id": "order:去。我去学校看书。",
+    "why": "Answer '去我去学校看书。' joins two sentences ('去。我去学校看书。'), has two identical 去 tiles, and 'Yes.' as a bare 去 is unnatural."
+   },
+   {
+    "id": "order:好！几点？",
+    "why": "'好几点？' drops the punctuation of '好！几点？' and reads as 好几点 ('several o'clock')."
+   },
+   {
+    "id": "order:喂，你在做什么呢？",
+    "why": "The answer '喂你在做什么呢？' loses the comma after 喂, and 喂 is a separate interjection tile."
+   },
+   {
+    "id": "order:我在北京住了三年。",
+    "why": "Tiles 我|了|三|年|住|北京|在 also make '我住在北京三年了', a correct second order."
+   }
+  ],
+  "hsk2": [
+   {
+    "id": "hsk2/2/d4",
+    "why": "The dialogue only says '不休息，他这几天很忙'; '工作' is an inference, and '旅游' is just as possible from what is heard."
+   },
+   {
+    "id": "order:我这几天很忙。",
+    "why": "'这几天我很忙' is as correct as '我这几天很忙'."
+   },
+   {
+    "id": "order:你今天喝了几杯咖啡？",
+    "why": "'今天你喝了几杯咖啡' is also correct, and Q41's text prints '你今天喝了几杯咖啡？' word for word."
+   },
+   {
+    "id": "order:昨天你怎么没来打篮球？",
+    "why": "'你昨天怎么没来打篮球' is also correct, and Q42's text prints '昨天你怎么没来打篮球？' word for word."
+   },
+   {
+    "id": "hsk2/12/j4",
+    "why": "'我睡得也早' is a fragment that needs an earlier sentence; on its own it should be '我也睡得很早' or '我睡得很早'."
+   },
+   {
+    "id": "hsk2/14/j3",
+    "why": "'两百块，还可以' may mean the garment is OK rather than the price, so '不太贵' is debatable."
+   },
+   {
+    "id": "hsk2/9/r2#1",
+    "why": "The passage is printed again from Q78; for a yes/no question the option 'The second' makes no sense, and Q61 states '这是他的第一个工作'."
+   },
+   {
+    "id": "order:明天可能下雨。",
+    "why": "'可能明天下雨' is also correct."
+   },
+   {
+    "id": "hsk2/4/3.1",
+    "why": "'我就学了两年汉语了' (就 = only) is acceptable in speech, so 就 competes with 已经."
+   },
+   {
+    "id": "hsk2/8/1.1",
+    "why": "'我们下午去看电影，是吗？' is grammatical (checking a plan), so 是吗 competes with 好吗."
+   },
+   {
+    "id": "hsk2/8/4.1",
+    "why": "The stem shows '运动___吧' and the answer is '运动' itself, so matching the word next to the blank gives the answer."
+   },
+   {
+    "id": "hsk2/3/r5",
+    "why": "'左边那个。' is a natural answer to '你看见我的杯子了吗？' (it's the one on the left), as well as the marked answer."
+   },
+   {
+    "id": "hsk2/6/r3",
+    "why": "'我不想吃了。' is a fine answer to '你还想吃什么？' as well as '来一点儿面条吧。'."
+   },
+   {
+    "id": "hsk2/14/r3",
+    "why": "'可以，但是很冷。' is an acceptable reply to '我们一起去吧。'."
+   },
+   {
+    "id": "hsk2/15/r1",
+    "why": "The answer '新年快乐！' repeats the prompt '新年快乐！' word for word."
+   },
+   {
+    "id": "order:我每天都学汉语。",
+    "why": "'每天我都学汉语' is also correct."
+   },
+   {
+    "id": "order:因为下雨，我没去。",
+    "why": "'我因为下雨没去' is also correct, and Q72's fill prints '___下雨，我没去'."
+   },
+   {
+    "id": "order:机场离这儿很远。",
+    "why": "'这儿离机场很远' says the same thing as '机场离这儿很远'."
+   },
+   {
+    "id": "order:我家离公司很近。",
+    "why": "'公司离我家很近' is also correct."
+   }
+  ],
+  "ledu": [
+   {
+    "id": "ledu/8/2.2",
+    "why": "The stem '在医院工作' shows the answer character 医 next to the blank '___生'."
+   },
+   {
+    "id": "order:我们六点吃晚饭。",
+    "why": "'六点我们吃晚饭。' is as correct as '我们六点吃晚饭。'"
+   },
+   {
+    "id": "order:奶奶今年七十岁。",
+    "why": "'今年奶奶七十岁。' is as correct as '奶奶今年七十岁。'"
+   },
+   {
+    "id": "order:爸爸每个星期给我零花钱。",
+    "why": "'每个星期爸爸给我零花钱。' is as correct as '爸爸每个星期给我零花钱。'"
+   },
+   {
+    "id": "order:他住在公司旁边，很方便。",
+    "why": "'他住在公司旁边很方便' needs a comma to be natural, and '他在公司旁边住，很方便' is also possible with these tiles."
+   },
+   {
+    "id": "fill:婚礼",
+    "why": "'___在酒店。' is too short: '橘子在酒店。' is perfectly grammatical too."
+   },
+   {
+    "id": "ledu/9/3.4",
+    "why": "'服务员、售货员、演员都有“___”' prints 员 three times in the stem; no knowledge is needed."
+   },
+   {
+    "id": "ledu/9/3.1",
+    "why": "'电话、电脑、电子邮件都有“___”' prints 电 three times in the stem."
+   },
+   {
+    "id": "ledu/9/1.1",
+    "why": "The stem says '和“果”一起', so only '果苹' and '苹果' are candidates, and 苹果汁 is printed in Q33 and Q45."
+   },
+   {
+    "id": "ledu/6/j1",
+    "why": "'他们上个月结婚，现在…' lacks 了 for a completed event."
+   },
+   {
+    "id": "order:我想吃鸡肉和面条儿。",
+    "why": "'我想吃面条儿和鸡肉。' is as correct as '我想吃鸡肉和面条儿。'"
+   },
+   {
+    "id": "order:知道，我们一起去看吧。",
+    "why": "The answer '知道我们一起去看吧。' joins two sentences without a comma and reads as 'know that we…'."
+   },
+   {
+    "id": "ledu/4/d2",
+    "why": "From '十二点，然后我去吃饭', at twelve she finishes class and then eats, so '女的十二点做什么？ 去吃饭' is debatable."
+   },
+   {
+    "id": "ledu/3/3.4",
+    "why": "The stem says '它是一种鱼' and only '三文鱼' contains 鱼."
+   },
+   {
+    "id": "ledu/3/1.2",
+    "why": "The stem '像弯弯的月亮的字' contains the answer 月."
+   },
+   {
+    "id": "ledu/7/2.2",
+    "why": "The stem '和树木有关' contains the answer 木."
+   },
+   {
+    "id": "ledu/8/r2#0",
+    "why": "'他喜欢喝咖啡吗？' is answered '喜欢，他的爱好是听音乐。', a non sequitur."
+   },
+   {
+    "id": "order:见到你我很开心。",
+    "why": "'我很开心见到你。' is a common alternative to '见到你我很开心。'"
+   },
+   {
+    "id": "order:我每天喝一杯茶。",
+    "why": "'每天我喝一杯茶。' is as correct as '我每天喝一杯茶。'"
+   },
+   {
+    "id": "order:朋友说：“祝你生日快乐！”",
+    "why": "The answer '朋友说祝你生日快乐！”' has a stray closing quote and no colon or opening quote, and three tiles leave nothing to build."
+   },
+   {
+    "id": "order:我奶奶每天都喝茶，不喝果汁。",
+    "why": "'每天我奶奶都喝茶不喝果汁' also works, and the answer drops the comma between two clauses."
+   },
+   {
+    "id": "order:桃子又大又甜。",
+    "why": "'桃子又甜又大。' is as correct as '桃子又大又甜。'"
+   },
+   {
+    "id": "order:他住在哪儿？",
+    "why": "'他在哪儿住？' is as correct as '他住在哪儿？' with these tiles."
+   }
+  ]
+ }
+}

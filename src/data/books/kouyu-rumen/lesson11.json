@@ -497,9 +497,9 @@
           "q": "西蒙在小雨和英男___。",
           "options": [
             "中间",
-            "旁边",
-            "对面",
-            "里"
+            "里",
+            "下午",
+            "还是"
           ],
           "answer": 0,
           "en": "Simon is between Xiaoyu and Yeongnam."
@@ -515,7 +515,7 @@
           "options": [
             "有",
             "在",
-            "是",
+            "很",
             "去"
           ],
           "answer": 0,

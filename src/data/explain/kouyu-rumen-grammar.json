@@ -1,14 +1,14 @@
 [
   {
-    "key": "g1v1ps7p",
+    "key": "gy62vc4",
     "type": "grammar",
     "lesson": 1,
     "q": "___进！",
     "options": [
       "请",
-      "你",
+      "们",
       "好",
-      "再"
+      "谢"
     ],
     "answer": "请",
     "context": {
@@ -16,11 +16,11 @@
       "rule": "请: polite “please …”",
       "en": "Please come in!"
     },
-    "why": "请 + verb makes a polite request: 请进 means please come in.",
+    "why": "请 + verb makes a polite request: 请进, please come in.",
     "not": {
-      "你": "你进 is a plain statement, not a polite request.",
-      "好": "好进 is not a phrase.",
-      "再": "再 means again; 再进 does not mean please come in."
+      "们": "们 makes a plural after a person word; it cannot start a sentence.",
+      "好": "好进 does not mean come in.",
+      "谢": "谢 means thank; 谢进 is not a word."
     }
   },
   {
@@ -144,7 +144,7 @@
     }
   },
   {
-    "key": "g15io0wx",
+    "key": "g1e4bpf2",
     "type": "grammar",
     "lesson": 2,
     "q": "他们也___很好。",
@@ -152,7 +152,7 @@
       "都",
       "吗",
       "呢",
-      "不"
+      "们"
     ],
     "answer": "都",
     "context": {
@@ -160,11 +160,11 @@
       "rule": "也 and 都 go before the verb; 也 comes before 都",
       "en": "They're both fine too."
     },
-    "why": "都 means 'all/both' and goes after 也: 他们也都很好.",
+    "why": "也 and 都 both go before the verb, and 也 comes first: 也都很好.",
     "not": {
-      "吗": "吗 goes at the end of a question; this is a statement.",
-      "呢": "呢 asks 'and you?'; this is a statement.",
-      "不": "不 would make it negative: not fine."
+      "吗": "吗 goes at the end of a question.",
+      "呢": "呢 goes at the end, not before 很好.",
+      "们": "们 goes after a person word; 也们 is wrong."
     }
   },
   {
@@ -240,15 +240,15 @@
     }
   },
   {
-    "key": "g1fnhjdz",
+    "key": "g12i4yft",
     "type": "grammar",
     "lesson": 4,
     "q": "___杯咖啡。",
     "options": [
       "两",
       "二",
-      "十",
-      "百"
+      "百",
+      "块"
     ],
     "answer": "两",
     "context": {
@@ -256,15 +256,15 @@
       "rule": "Before a measure word use 两, not 二",
       "en": "Two cups of coffee."
     },
-    "why": "Before a measure word like 杯, say 两, not 二: 两杯.",
+    "why": "Before a measure word like 杯, two is 两: 两杯咖啡.",
     "not": {
-      "二": "Alone before a measure word, two is 两; 二杯 is not said.",
-      "十": "十 means ten, not two.",
-      "百": "百 means hundred, not two."
+      "二": "二 is for counting and numbers; before a measure word use 两.",
+      "百": "百 needs a number before it, like 一百杯.",
+      "块": "块 is a money or piece word; it cannot be the number."
     }
   },
   {
-    "key": "gcwk2ax",
+    "key": "gyvyhhi",
     "type": "grammar",
     "lesson": 4,
     "q": "三___词典。",
@@ -272,7 +272,7 @@
       "本",
       "杯",
       "瓶",
-      "个"
+      "毛"
     ],
     "answer": "本",
     "context": {
@@ -284,19 +284,19 @@
     "not": {
       "杯": "杯 is for cups of drinks.",
       "瓶": "瓶 is for bottles.",
-      "个": "个 is general, but books and dictionaries use 本."
+      "毛": "毛 is a unit of money, not a measure word for books."
     }
   },
   {
-    "key": "g14by9kz",
+    "key": "g7thxs6",
     "type": "grammar",
     "lesson": 4,
     "q": "四___啤酒。",
     "options": [
       "瓶",
       "本",
-      "个",
-      "张"
+      "毛",
+      "分"
     ],
     "answer": "瓶",
     "context": {
@@ -304,11 +304,11 @@
       "rule": "number + 杯 / 瓶 / 个 / 本 + noun",
       "en": "Four bottles of beer."
     },
-    "why": "瓶 is the measure word for bottles, so 四瓶啤酒.",
+    "why": "瓶 means bottle, so 四瓶啤酒 is four bottles of beer.",
     "not": {
       "本": "本 is for books.",
-      "个": "个 is heard in shops, but 'bottles' needs 瓶.",
-      "张": "张 is for flat things like paper or tickets."
+      "毛": "毛 is a unit of money.",
+      "分": "分 is a unit of money or minutes."
     }
   },
   {
@@ -672,15 +672,15 @@
     }
   },
   {
-    "key": "gk2emwd",
+    "key": "g98uz3g",
     "type": "grammar",
     "lesson": 8,
     "q": "___位老师教你们？",
     "options": [
       "几",
-      "多少",
       "什么",
-      "哪"
+      "谁",
+      "吗"
     ],
     "answer": "几",
     "context": {
@@ -688,11 +688,11 @@
       "rule": "几 for small numbers, 多少 for any number",
       "en": "How many teachers teach you?"
     },
-    "why": "几 asks about a small number, like teachers in a class: 几位老师.",
+    "why": "几 asks a small number and goes before a measure word: 几位老师.",
     "not": {
-      "多少": "多少位 is possible, but for a small number like teachers, use 几.",
-      "什么": "什么 would not fit before 位.",
-      "哪": "哪位 means which person, not how many."
+      "什么": "什么 asks what; it does not go before the measure word 位.",
+      "谁": "谁 asks who and does not take a measure word.",
+      "吗": "吗 goes at the end of a question."
     }
   },
   {
@@ -768,15 +768,15 @@
     }
   },
   {
-    "key": "g1wmlx2y",
+    "key": "gmg10jw",
     "type": "grammar",
     "lesson": 9,
     "q": "你家有几___人？",
     "options": [
       "口",
-      "个",
-      "位",
-      "本"
+      "杯",
+      "本",
+      "瓶"
     ],
     "answer": "口",
     "context": {
@@ -784,11 +784,11 @@
       "rule": "几口人 for family size",
       "en": "How many people are in your family?"
     },
-    "why": "Family size is counted with 口: 几口人.",
+    "why": "口 is the measure word for people in a family: 几口人.",
     "not": {
-      "个": "几个人 is heard, but 几口人 is the usual way to ask family size.",
-      "位": "位 is a polite measure word for guests, not for family size.",
-      "本": "本 is for books."
+      "杯": "杯 is for cups.",
+      "本": "本 is for books.",
+      "瓶": "瓶 is for bottles."
     }
   },
   {
@@ -864,15 +864,15 @@
     }
   },
   {
-    "key": "g17xzwuk",
+    "key": "gmmhb12",
     "type": "grammar",
     "lesson": 10,
     "q": "现在七点一___。",
     "options": [
       "刻",
       "半",
-      "分",
-      "号"
+      "号",
+      "年"
     ],
     "answer": "刻",
     "context": {
@@ -880,11 +880,11 @@
       "rule": "点 / 分 / 刻 / 半 / 差",
       "en": "It's quarter past seven."
     },
-    "why": "一刻 means 15 minutes, so 七点一刻 is 7:15.",
+    "why": "一刻 is a quarter of an hour, so 七点一刻 is 7:15.",
     "not": {
-      "半": "半 means half past, 7:30.",
-      "分": "一分 would be one minute, not a quarter.",
-      "号": "号 is for dates."
+      "半": "Half past is 七点半, with no 一.",
+      "号": "号 is for dates, not clock time.",
+      "年": "年 means year, not a time of day."
     }
   },
   {
@@ -936,15 +936,15 @@
     }
   },
   {
-    "key": "g1r9yihg",
+    "key": "g1fpcm8q",
     "type": "grammar",
     "lesson": 10,
     "q": "二十六号是星期天___？",
     "options": [
       "吧",
-      "吗",
       "呢",
-      "啊"
+      "也",
+      "的"
     ],
     "answer": "吧",
     "context": {
@@ -952,11 +952,11 @@
       "rule": "…吧？ when you're fairly sure",
       "en": "The 26th is a Sunday, right?"
     },
-    "why": "吧 at the end makes a guess you are fairly sure about.",
+    "why": "吧 at the end asks when you are fairly sure: 是星期天吧？",
     "not": {
-      "吗": "吗 asks a real yes/no question, not a guess.",
-      "呢": "呢 asks 'and …?'.",
-      "啊": "啊 only softens tone; it is not the 'right?' guess marker."
+      "呢": "呢 cannot turn this statement into a yes/no question.",
+      "也": "也 goes before the verb, not at the end.",
+      "的": "的 does not make a question."
     }
   },
   {
@@ -984,15 +984,15 @@
     }
   },
   {
-    "key": "g10nivgp",
+    "key": "giyhtmc",
     "type": "grammar",
     "lesson": 11,
     "q": "西蒙在小雨和英男___。",
     "options": [
       "中间",
-      "旁边",
-      "对面",
-      "里"
+      "里",
+      "下午",
+      "还是"
     ],
     "answer": "中间",
     "context": {
@@ -1000,22 +1000,22 @@
       "rule": "上边 / 下边 / 里边 / 旁边 / 对面 / 中间",
       "en": "Simon is between Xiaoyu and Yeongnam."
     },
-    "why": "中间 means 'in the middle', between two people.",
+    "why": "在 A 和 B 中间 means between A and B.",
     "not": {
-      "旁边": "旁边 means beside one thing, not between two.",
-      "对面": "对面 means opposite.",
-      "里": "里 means inside, not between two people."
+      "里": "里 means inside; you are not inside two people.",
+      "下午": "下午 is a time, not a position.",
+      "还是": "还是 means or in questions; it is not a position word."
     }
   },
   {
-    "key": "g105k6ux",
+    "key": "g10qyms4",
     "type": "grammar",
     "lesson": 11,
     "q": "抽屉里___一块巧克力。",
     "options": [
       "有",
       "在",
-      "是",
+      "很",
       "去"
     ],
     "answer": "有",
@@ -1024,11 +1024,11 @@
       "rule": "place + 有 + thing; thing + 在 + place",
       "en": "There's a piece of chocolate in the drawer."
     },
-    "why": "Place + 有 + thing says what exists in a place: 抽屉里有…",
+    "why": "Place + 有 + thing says what is there: 抽屉里有一块巧克力.",
     "not": {
-      "在": "在 goes after the thing: 巧克力在抽屉里.",
-      "是": "是 says what fills the place; for 'there is', use 有.",
-      "去": "去 means go."
+      "在": "在 needs the thing first: 巧克力在抽屉里.",
+      "很": "很 goes before adjectives, not before a noun phrase.",
+      "去": "去 means to go; chocolate does not go anywhere here."
     }
   },
   {
@@ -1104,15 +1104,15 @@
     }
   },
   {
-    "key": "gx1r0eg",
+    "key": "glldk1e",
     "type": "grammar",
     "lesson": 12,
     "q": "___要两听可乐。",
     "options": [
       "再",
-      "也",
-      "还是",
-      "都"
+      "吗",
+      "呢",
+      "的"
     ],
     "answer": "再",
     "context": {
@@ -1120,11 +1120,11 @@
       "rule": "再 + verb: more / another",
       "en": "Two more cans of cola."
     },
-    "why": "再 + verb means 'more/another': 再要两听可乐.",
+    "why": "再 + verb means more or another: 再要两听可乐.",
     "not": {
-      "也": "也要 means 'also want', not 'two more'.",
-      "还是": "还是要 means 'still want' or 'had better', not 'more'.",
-      "都": "都要 means 'all want', not 'two more'."
+      "吗": "吗 goes at the end of a question.",
+      "呢": "呢 goes at the end, not at the start.",
+      "的": "的 cannot start a sentence."
     }
   },
   {
@@ -1176,15 +1176,15 @@
     }
   },
   {
-    "key": "g5djokd",
+    "key": "g1u1fioi",
     "type": "grammar",
     "lesson": 12,
-    "q": "十块五___",
+    "q": "10.50元 = 十块五___",
     "options": [
       "毛",
       "分",
       "块",
-      "角钱"
+      "百"
     ],
     "answer": "毛",
     "context": {
@@ -1192,11 +1192,11 @@
       "rule": "块 / 毛 / 分; 两 for the number 2",
       "en": "10.50 yuan"
     },
-    "why": "The part after 块 is 毛 (0.10 yuan): 十块五毛.",
+    "why": "0.5 yuan is 五毛, so 10.50 is 十块五毛.",
     "not": {
-      "分": "分 is 0.01 yuan; 五分 would be 0.05.",
-      "块": "块 is the yuan unit and already used before 五.",
-      "角钱": "角 is the formal, written word for 0.10 yuan. In speech, and after 块, people say 毛: 十块五毛, or just 十块五."
+      "分": "十块五分 is 10.05, not 10.50.",
+      "块": "块 is already used for the 10 yuan.",
+      "百": "百 means hundred; 10.50 has no hundreds."
     }
   },
   {
@@ -1344,15 +1344,15 @@
     }
   },
   {
-    "key": "g1jzmn5",
+    "key": "gipehn4",
     "type": "grammar",
     "lesson": 14,
     "q": "___一个宫保鸡丁。",
     "options": [
       "来",
       "去",
-      "吃",
-      "买"
+      "在",
+      "很"
     ],
     "answer": "来",
     "context": {
@@ -1360,15 +1360,15 @@
       "rule": "来 + amount + dish: ordering food",
       "en": "One Kung Pao chicken, please."
     },
-    "why": "来 + amount + dish is how you order food: 来一个宫保鸡丁.",
+    "why": "When ordering food, 来 + amount + dish means “give me”: 来一个宫保鸡丁.",
     "not": {
-      "去": "去 means go; 去一个宫保鸡丁 is not said.",
-      "吃": "吃一个 means 'eat one'; to order a dish, say 来.",
-      "买": "买 means buy, not used when ordering in a restaurant."
+      "去": "去 means to go; it is not used to order food.",
+      "在": "在 marks a place; it does not order a dish.",
+      "很": "很 goes before adjectives, not before a dish."
     }
   },
   {
-    "key": "g1as9r22",
+    "key": "g1a86ydq",
     "type": "grammar",
     "lesson": 14,
     "q": "好吃是好吃，___有点儿咸。",
@@ -1376,7 +1376,7 @@
       "不过",
       "所以",
       "因为",
-      "还是"
+      "或者"
     ],
     "answer": "不过",
     "context": {
@@ -1384,23 +1384,23 @@
       "rule": "admit, then add “but”",
       "en": "It's tasty, but a bit salty."
     },
-    "why": "不过 means 'but' and adds a limit after 好吃是好吃.",
+    "why": "A 是 A，不过… admits one thing and then adds a “but”: tasty, but salty.",
     "not": {
-      "所以": "所以 means so, not but.",
-      "因为": "因为 means because.",
-      "还是": "还是 means or / still; this pattern needs a 'but' word."
+      "所以": "所以 means so; being salty is not a result of being tasty.",
+      "因为": "因为 means because; salty is not the reason it is tasty.",
+      "或者": "或者 means or; this is a contrast, not a choice."
     }
   },
   {
-    "key": "g1q7jt3b",
+    "key": "g1no2lye",
     "type": "grammar",
     "lesson": 14,
     "q": "下次我___你吃广东菜。",
     "options": [
       "请",
-      "给",
-      "让",
-      "跟"
+      "是",
+      "在",
+      "离"
     ],
     "answer": "请",
     "context": {
@@ -1408,11 +1408,11 @@
       "rule": "请 + person + verb: treat someone",
       "en": "Next time I'll treat you to Cantonese food."
     },
-    "why": "请 + person + verb means to treat someone: 请你吃.",
+    "why": "请 + person + verb means to treat someone: 我请你吃广东菜.",
     "not": {
-      "给": "给你吃 means give you to eat, not treat.",
-      "让": "让你吃 means let you eat, not treat you.",
-      "跟": "跟你吃 would mean eat with you, not treat you."
+      "是": "是 links nouns; it does not mean to treat.",
+      "在": "在 marks a place; 在你 makes no sense.",
+      "离": "离 shows distance; it does not mean to treat."
     }
   },
   {
@@ -1512,15 +1512,15 @@
     }
   },
   {
-    "key": "g1ta96ol",
+    "key": "gkuoke3",
     "type": "grammar",
     "lesson": 15,
     "q": "二环___三环都行。",
     "options": [
       "或者",
-      "还是",
-      "和",
-      "跟"
+      "很",
+      "也",
+      "吗"
     ],
     "answer": "或者",
     "context": {
@@ -1528,11 +1528,11 @@
       "rule": "或者 in statements; 还是 in questions",
       "en": "The Second or Third Ring Road — either is fine."
     },
-    "why": "或者 means 'or' in statements: 二环或者三环都行.",
+    "why": "或者 means or in a statement: 二环或者三环都行.",
     "not": {
-      "还是": "For 'or', 还是 is for questions; this is a statement.",
-      "和": "和 means and.",
-      "跟": "跟 means with."
+      "很": "很 goes before adjectives, not between two nouns.",
+      "也": "也 goes before a verb, not between two nouns.",
+      "吗": "吗 ends a question; it cannot join two nouns."
     }
   },
   {
@@ -1560,15 +1560,15 @@
     }
   },
   {
-    "key": "gw6u1xs",
+    "key": "gbkjl23",
     "type": "grammar",
     "lesson": 15,
     "q": "离这儿___远？",
     "options": [
       "多",
       "几",
-      "很",
-      "太"
+      "吗",
+      "的"
     ],
     "answer": "多",
     "context": {
@@ -1576,11 +1576,11 @@
       "rule": "多远 / 多大 / 多高",
       "en": "How far is it from here?"
     },
-    "why": "多 + adjective asks degree: 多远 means how far.",
+    "why": "多 + adjective asks how much: 多远 means how far.",
     "not": {
-      "几": "几远 is not said.",
-      "很": "很远 is a statement, not a question.",
-      "太": "太远 means too far."
+      "几": "几 asks small numbers; it does not go with 远.",
+      "吗": "吗 goes at the very end, not before 远.",
+      "的": "的 does not ask how far."
     }
   },
   {
@@ -1608,15 +1608,15 @@
     }
   },
   {
-    "key": "g3ckiyq",
+    "key": "gs9lzb1",
     "type": "grammar",
     "lesson": 15,
     "q": "你___多休息。",
     "options": [
       "应该",
-      "可以",
-      "想",
-      "会"
+      "在",
+      "是",
+      "有"
     ],
     "answer": "应该",
     "context": {
@@ -1624,11 +1624,11 @@
       "rule": "should",
       "en": "You should rest more."
     },
-    "why": "应该 means 'should': 你应该多休息.",
+    "why": "应该 means should and goes before the verb: 你应该多休息.",
     "not": {
-      "可以": "你可以多休息 means you may rest more, not should.",
-      "想": "你想多休息 means you want to; the English says should.",
-      "会": "会 means will or can, not should."
+      "在": "在多休息 is not correct; 在 does not mean should.",
+      "是": "是 links nouns; it does not give advice.",
+      "有": "有 means to have; it does not go before 多休息 here."
     }
   }
 ]

@@ -424,7 +424,7 @@
           "q": "What does B have?",
           "options": [
             "An umbrella",
-            "A bicycle",
+            "A raincoat",
             "A car",
             "A train ticket"
           ],
@@ -471,7 +471,7 @@
           "en": "The character that looks like a crescent moon is 月."
         },
         {
-          "q": "像一个侧面站着的人的字是“___”。",
+          "q": "看上去像一个侧面站着、两条腿分开的样子的字是“___”。",
           "options": [
             "人",
             "木",
@@ -482,7 +482,7 @@
           "en": "The character that looks like a person standing in profile is 人."
         },
         {
-          "q": "像一条鱼的字是“___”。",
+          "q": "看上去像水里游的动物的字是“___”。",
           "options": [
             "鱼",
             "牛",

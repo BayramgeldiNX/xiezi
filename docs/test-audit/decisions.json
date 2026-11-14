@@ -1,0 +1,42 @@
+{
+  "note": "The lead's decisions on the teachers' fixes. Every 'fix' in the four audit files is accepted as written, except the ids below, where the teacher's fix left a second acceptable answer.",
+  "override": {
+    "kouyu-rumen/5/r1": {
+      "q": "请问，他是老师吗？",
+      "a": "不是，他是学生。"
+    },
+    "kouyu-rumen/15/3.1": {
+      "options": [
+        "或者",
+        "很",
+        "也",
+        "吗"
+      ],
+      "answer": 0
+    },
+    "hsk1/12/2.1": {
+      "options": [
+        "太",
+        "吗",
+        "的",
+        "在"
+      ],
+      "answer": 0
+    },
+    "hsk2/7/4.1": {
+      "options": [
+        "呢",
+        "把",
+        "过",
+        "得"
+      ],
+      "answer": 0
+    }
+  },
+  "why": {
+    "kouyu-rumen/5/r1": "对不起，我不知道。 answers almost any question, so it stayed a second right option for the other replies of the lesson.",
+    "kouyu-rumen/15/3.1": "二环还是三环都行 is heard in speech, so 还是 could not stay as a wrong option.",
+    "hsk1/12/2.1": "今天很热了 is acceptable, so 很 could not stay as a wrong option.",
+    "hsk2/7/4.1": "要一个多小时吧 is a natural guess and 要一个多小时吗 a correct question, so neither 吧 nor 吗 could stay as a wrong option."
+  }
+}

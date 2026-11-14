@@ -5,10 +5,12 @@
 //   users/{uid}/sessions/{id}   one finished practice session
 //   users/{uid}/meta/place      { lid, word, tab, at }: where you were last (newest wins)
 //   users/{uid}/notebook/{word} a Notebook word; devices and Claude write single fields (merge)
+//   users/{uid}/tests/{docId(book/test)} { k, d: { [deviceId]: { best, last, tries } } }: a test's results, one entry per device (exam/store.js)
 // Each device writes only its own d.{deviceId} entry, so devices never overwrite each other.
 import realConfig from "./firebase-config.js";
 import * as progress from "../progress/store.js";
 import * as notebook from "../notebook/store.js";
+import * as exam from "../exam/store.js";
 import { docId } from "./ids.js";
 
 // Test mode (only when started with VITE_FIREBASE_EMULATOR=1): talk to the local Firebase emulators
@@ -78,7 +80,8 @@ function stop() {
   stopFns = [];
   progress.setSyncer(null);
   notebook.setSyncer(null);
-  if (state.email) { progress.clearRemote(); notebook.clearRemote(); }
+  exam.setSyncer(null);
+  if (state.email) { progress.clearRemote(); notebook.clearRemote(); exam.clearRemote(); }
   emit({ status: "signed-out", email: null });
 }
 
@@ -105,6 +108,13 @@ async function start(user) {
   const nbPush = (w, patch) => safely(() => F.setDoc(nbRef(w), { w, ...patch }, { merge: true }).then(() => notebook.confirm(w, patch)));
   notebook.setSyncer({ push: nbPush });
   notebook.pendingAll().forEach(([w, patch]) => nbPush(w, patch));
+  // Test results: like progress items, each device writes only its own entry d.{deviceId}.
+  const testRef = (k) => F.doc(db, "users", uid, "tests", docId(k));
+  const testPush = (k, rec) => safely(() => F.setDoc(testRef(k), { k, d: { [dev]: rec } }, { merge: true }).then(() => exam.markUploaded(k, rec)));
+  // Nothing is sent before the first cloud copy has arrived, so an entry saved while signed out
+  // is merged with this device's older cloud entry first and never replaces it.
+  let testsReady = false;
+  exam.setSyncer({ push: (k, rec) => { if (testsReady) testPush(k, rec); } }, uid);
   emit({ status: "syncing", email: user.email, error: null });
 
   // Upload what has not reached this account yet: everything the first time, then only changes.
@@ -157,7 +167,22 @@ async function start(user) {
     if (snap.docChanges().length) notebook.remoteDone();
   }, fail);
 
-  stopFns.push(items, sess, placeSub, nb);
+  // includeMetadataChanges: we must know when a snapshot comes from the server and not from the local cache.
+  const tests = F.onSnapshot(F.collection(db, "users", uid, "tests"), { includeMetadataChanges: true }, (snap) => {
+    const changes = snap.docChanges(); // metadata-only snapshots carry none
+    changes.forEach((ch) => {
+      const d = ch.doc.data();
+      if (!d.k) return;
+      const more = exam.applyRemote(d.k, ch.type === "removed" ? { d: {} } : d, ch.doc.metadata.hasPendingWrites); // true: we hold more than the cloud
+      const mine = more && testsReady && exam.unsentAll().find(([k]) => k === d.k);
+      if (mine) testPush(mine[0], mine[1]);
+    });
+    if (changes.length) exam.remoteDone();
+    // Only a server snapshot shows this device's own cloud entry; until then results wait in localStorage.
+    if (!testsReady && snap.metadata.fromCache === false) { testsReady = true; exam.unsentAll().forEach(([k, rec]) => testPush(k, rec)); }
+  }, fail);
+
+  stopFns.push(items, sess, placeSub, nb, tests);
 }
 
 /* ---------- private book content ---------- */

@@ -66,15 +66,23 @@ const SOUNDS = {
   wrong: (t) => { tone(t, { f: 233, dur: 0.13, gain: 0.08, type: "triangle" }); tone(t + 0.1, { f: 185, dur: 0.2, gain: 0.08, type: "triangle" }); },
   done: (t) => { bell(t, 783.99, 0.3, 0.07); bell(t + 0.12, 1046.5, 0.45, 0.07); },
   alarm: (t) => { bell(t, 783.99, 0.7, 0.09); bell(t + 0.5, 659.25, 0.7, 0.09); bell(t + 1, 523.25, 0.9, 0.1); },
+  // A soft struck bell (the test begins): a low note with two partials that ring out.
+  bell: (t) => { tone(t, { f: 392, dur: 1.2, gain: 0.07, attack: 0.004 }); tone(t, { f: 392 * 2.76, dur: 0.7, gain: 0.025 }); tone(t, { f: 392 * 5.4, dur: 0.3, gain: 0.012 }); },
+  // A seal pressed on paper: a short dull thud and a little paper noise.
+  stamp: (t) => { tone(t, { f: 150, to: 60, dur: 0.2, gain: 0.2, attack: 0.002 }); noise(t, { dur: 0.08, gain: 0.05, from: 1800, to: 500 }); },
   finish: (t) => { bell(t, 523.25, 0.3, 0.06); bell(t + 0.12, 659.25, 0.3, 0.06); bell(t + 0.24, 783.99, 0.6, 0.07); },
 };
 
 // Sounds asked for in the same moment are gathered, and the most important one plays.
 let waiting = null, timer = 0;
+// The test sounds are rare and chosen on purpose, so they win over the tap tick and the rest.
+const OWN = ["bell", "stamp"];
+export const pick = (a, b) => (OWN.includes(b) ? b : OWN.includes(a) ? a : louder(a, b));
+export const NAMES = Object.keys(SOUNDS);
 export const played = []; // the last few sounds, for tests
 export function sfx(name) {
   if (!name || !SOUNDS[name]) return;
-  waiting = louder(waiting, name);
+  waiting = pick(waiting, name);
   clearTimeout(timer);
   timer = setTimeout(flush, 0);
 }
@@ -106,7 +114,9 @@ export function alarm() {
 
 // Hooks for the progress store: every saved answer and every finished exercise.
 export const onRecord = (key, result, opts) => sfx(soundFor(key, result, opts));
-export const onSession = () => sfx("finish");
+// A handed-in test makes its own sound (the stamp, or none), so its session is quiet.
+export const sessionSound = (s) => (s?.type === "test" ? null : "finish");
+export const onSession = (s) => sfx(sessionSound(s));
 
 if (typeof document !== "undefined") {
   if (import.meta.env?.DEV) globalThis.__sfx = played;

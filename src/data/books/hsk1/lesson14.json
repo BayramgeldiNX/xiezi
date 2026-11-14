@@ -310,7 +310,7 @@
       "en": "没 makes a past action negative (no 了)",
       "drills": [
         {
-          "q": "我___买衣服。",
+          "q": "昨天我___买衣服。",
           "options": [
             "没",
             "不",
@@ -332,7 +332,7 @@
             "都",
             "很",
             "太",
-            "也"
+            "吗"
           ],
           "answer": 0,
           "en": "We're all students."

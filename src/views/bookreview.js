@@ -108,9 +108,13 @@ function showReview() {
         <b>${t.name} ${due.length ? `<span class="due">${due.length} due</span>` : ""}</b>
         <small>${t.sub} · ${practiced}/${n} practiced</small>
       </button>`).join("")}</div>
-    ${workbookOf(book.lessons).length ? `<div class="panel">
+    ${book.id !== "all" ? `<div class="panel">
+      <span class="lbl">期末 · Final test</span>
+      <p class="note">期末 Final test: the whole book, timed.</p>
+      <a class="btn big" id="rvFinal" href="#/test/${book.id}/final">${icon("play")} Open the final test</a>
+    </div>` : workbookOf(book.lessons).length ? `<div class="panel">
       <span class="lbl">模拟考试 · Practice test</span>
-      <p class="note">A test in the HSK style from ${book.id === "all" ? "all your books" : "the whole book"}: 10 listening questions (dialogues), then 10 reading questions (true or false, replies, grammar). Results count for your review too.</p>
+      <p class="note">A test in the HSK style from all your books: 10 listening questions (dialogues), then 10 reading questions (true or false, replies, grammar). Results count for your review too.</p>
       <button class="btn big" type="button" id="rvTest">${icon("play")} Start the practice test</button>
     </div>` : ""}
     <p class="note">How it works: each word has its own schedule for each type. Right answers come back later each time (1 day, 3 days, 1 week, 2 weeks, 1 month…); wrong answers come back the next day.</p>`;

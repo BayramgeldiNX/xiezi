@@ -144,14 +144,14 @@
     }
   },
   {
-    "key": "g1cdrnkt",
+    "key": "g1ep6fwf",
     "type": "grammar",
     "lesson": 3,
     "q": "我___学生。",
     "options": [
       "是",
       "叫",
-      "有",
+      "吗",
       "很"
     ],
     "answer": "是",
@@ -160,11 +160,11 @@
       "rule": "A 是 B: A is B",
       "en": "I am a student."
     },
-    "why": "是 links two nouns: 我是学生 means 'I am a student'.",
+    "why": "A 是 B says what someone is: 我是学生, I am a student.",
     "not": {
-      "叫": "叫 means 'be called' and needs a name after it.",
-      "有": "有 means 'have'; it does not say what someone is.",
-      "很": "很 goes with adjectives, not before a noun like 学生."
+      "叫": "叫 gives a name; 学生 is not a name.",
+      "吗": "吗 goes at the end of a question, not before a noun.",
+      "很": "很 goes before adjectives; 学生 is a noun."
     }
   },
   {
@@ -264,15 +264,15 @@
     }
   },
   {
-    "key": "g1n8kwci",
+    "key": "g192ctzw",
     "type": "grammar",
     "lesson": 3,
     "q": "这是___？",
     "options": [
       "什么",
       "吗",
-      "哪",
-      "几"
+      "几",
+      "的"
     ],
     "answer": "什么",
     "context": {
@@ -280,11 +280,11 @@
       "rule": "什么 asks “what”, in the place of the answer",
       "en": "What is this?"
     },
-    "why": "这是 asks about a thing, so 什么 ('what') fits: 这是什么？",
+    "why": "什么 asks “what” and sits where the answer would be: 这是什么？",
     "not": {
-      "吗": "这是吗 is missing what \"this\" is; 吗 needs a full statement.",
-      "哪": "哪 means 'which' and needs a noun after it.",
-      "几": "几 asks about small numbers, not what a thing is."
+      "吗": "吗 ends a yes/no question after a full sentence; 这是吗 is not complete.",
+      "几": "几 asks how many, and needs a measure word after it.",
+      "的": "的 links words; 这是的 is not a question."
     }
   },
   {
@@ -456,15 +456,15 @@
     }
   },
   {
-    "key": "g1wih7jy",
+    "key": "gx5qcrp",
     "type": "grammar",
     "lesson": 5,
     "q": "你今年___大了？",
     "options": [
       "多",
       "几",
-      "很",
-      "太"
+      "呢",
+      "谁"
     ],
     "answer": "多",
     "context": {
@@ -472,11 +472,11 @@
       "rule": "几 asks small numbers; 多大 asks age",
       "en": "How old are you this year?"
     },
-    "why": "多大 asks about age: 多 + the adjective 大. 你今年多大了？",
+    "why": "多大 asks someone's age: 你今年多大了？",
     "not": {
-      "几": "几 works for young kids (几岁), but 几大 is not a phrase.",
-      "很": "很大 says 'very big'; it is not a question.",
-      "太": "太大了 says 'too big'; it is not a question."
+      "几": "几 asks small numbers; it cannot go with 大 to ask age.",
+      "呢": "呢 goes at the end of a question, not before 大.",
+      "谁": "谁 asks who, not how old."
     }
   },
   {
@@ -552,14 +552,14 @@
     }
   },
   {
-    "key": "gagornb",
+    "key": "g1wrxd1u",
     "type": "grammar",
     "lesson": 6,
     "q": "我___说汉语。",
     "options": [
       "会",
       "是",
-      "在",
+      "叫",
       "有"
     ],
     "answer": "会",
@@ -568,11 +568,11 @@
       "rule": "会: can (a learned skill)",
       "en": "I can speak Chinese."
     },
-    "why": "会 means 'can' for a learned skill. Speaking Chinese is learned, so 我会说汉语.",
+    "why": "会 + verb means you can do something you learned, like speaking Chinese.",
     "not": {
-      "是": "是 links nouns; it cannot go before the verb 说 here.",
-      "在": "我在说汉语 means \"I am speaking Chinese\", not \"I can\".",
-      "有": "有 means 'have'; it does not mean 'can' here."
+      "是": "是 links two nouns; it does not mean can.",
+      "叫": "叫 gives a name; it cannot go before 说.",
+      "有": "有 means to have; it does not go before a verb like 说."
     }
   },
   {
@@ -744,7 +744,7 @@
     }
   },
   {
-    "key": "gv8zvxq",
+    "key": "gmfk7im",
     "type": "grammar",
     "lesson": 7,
     "q": "明天我去商店___杯子。",
@@ -752,7 +752,7 @@
       "买",
       "吃",
       "喝",
-      "看"
+      "叫"
     ],
     "answer": "买",
     "context": {
@@ -760,22 +760,22 @@
       "rule": "Going somewhere to do something",
       "en": "Tomorrow I'm going to the shop to buy a cup."
     },
-    "why": "买 means 'buy'. The sentence says I go to the shop to buy a cup: 去商店买杯子.",
+    "why": "去 + place + verb tells why you go. You go to a shop to 买 (buy) a cup.",
     "not": {
-      "吃": "吃 means 'eat'; you do not eat a cup.",
-      "喝": "喝 means 'drink'; you drink from a cup, not the cup itself.",
-      "看": "看 means \"look\"; the English says buy a cup."
+      "吃": "You do not eat a cup.",
+      "喝": "You drink from a cup, but 喝杯子 means drink the cup.",
+      "叫": "叫 means to call or be named; it does not fit 杯子."
     }
   },
   {
-    "key": "g1phlv2e",
+    "key": "gfzihol",
     "type": "grammar",
     "lesson": 8,
     "q": "我___喝茶。",
     "options": [
       "想",
       "是",
-      "在",
+      "有",
       "的"
     ],
     "answer": "想",
@@ -784,22 +784,22 @@
       "rule": "想: want to, would like to",
       "en": "I'd like some tea."
     },
-    "why": "想 goes before a verb to say 'would like to': 我想喝茶.",
+    "why": "想 + verb means would like to: 我想喝茶.",
     "not": {
-      "是": "是 does not go before a verb like 喝.",
-      "在": "在 + verb means 'is doing', not 'would like'.",
-      "的": "的 links nouns, so it cannot go here."
+      "是": "是 links nouns; 我是喝茶 is not correct.",
+      "有": "有 means to have; it does not go before 喝.",
+      "的": "的 links words to a noun; it cannot go before a verb here."
     }
   },
   {
-    "key": "gwfggn9",
+    "key": "g1l6kvnd",
     "type": "grammar",
     "lesson": 8,
     "q": "下午你___做什么？",
     "options": [
       "想",
       "是",
-      "在",
+      "的",
       "有"
     ],
     "answer": "想",
@@ -808,11 +808,11 @@
       "rule": "想: want to, would like to",
       "en": "What do you want to do this afternoon?"
     },
-    "why": "想 asks what you want to do. 你想做什么？ means 'what do you want to do?'",
+    "why": "想 + verb asks what someone wants to do: 你想做什么？",
     "not": {
-      "是": "是 does not go before a verb like 做.",
-      "在": "在 + verb means 'is doing'; the question is about wishes.",
-      "有": "有 means 'have', not 'want'."
+      "是": "是 links nouns; 你是做什么 does not ask about plans.",
+      "的": "的 cannot go between 你 and the verb.",
+      "有": "有 means to have; it does not go before 做."
     }
   },
   {
@@ -912,7 +912,7 @@
     }
   },
   {
-    "key": "g102aqoy",
+    "key": "g1ddrnzm",
     "type": "grammar",
     "lesson": 9,
     "q": "你爸爸___哪儿工作？",
@@ -920,7 +920,7 @@
       "在",
       "是",
       "有",
-      "去"
+      "叫"
     ],
     "answer": "在",
     "context": {
@@ -928,11 +928,11 @@
       "rule": "在 = to be at / in",
       "en": "Where does your dad work?"
     },
-    "why": "在 + place + verb says where someone does something: 在哪儿工作.",
+    "why": "在 + place + verb tells where something happens: 在哪儿工作.",
     "not": {
-      "是": "是 does not go before a place word with a verb here.",
-      "有": "有 means 'have'.",
-      "去": "去哪儿 asks where to go, but the English asks where he works."
+      "是": "是哪儿工作 is not correct; place words need 在.",
+      "有": "有 means to have; it does not mark a place before a verb.",
+      "叫": "叫 gives a name; it has nothing to do with place."
     }
   },
   {
@@ -960,15 +960,15 @@
     }
   },
   {
-    "key": "g1fh6zl3",
+    "key": "g1vy689a",
     "type": "grammar",
     "lesson": 10,
     "q": "桌子上___一个电脑。",
     "options": [
       "有",
       "在",
-      "是",
-      "能"
+      "能",
+      "的"
     ],
     "answer": "有",
     "context": {
@@ -978,9 +978,9 @@
     },
     "why": "Place + 有 + thing says what is there: 桌子上有一个电脑.",
     "not": {
-      "在": "在 puts the thing first (电脑在桌子上), not this order.",
-      "是": "是 would be 桌子上是…, but 有 is the normal word for 'there is'.",
-      "能": "能 means 'can'."
+      "在": "在 needs the thing first: 电脑在桌子上.",
+      "能": "能 means can; it needs a verb after it.",
+      "的": "的 cannot join a place to 一个电脑 like this."
     }
   },
   {
@@ -1080,7 +1080,7 @@
     }
   },
   {
-    "key": "gltu6iu",
+    "key": "g1nmg5cb",
     "type": "grammar",
     "lesson": 11,
     "q": "我们中午十二点___饭。",
@@ -1088,7 +1088,7 @@
       "吃",
       "喝",
       "看",
-      "买"
+      "读"
     ],
     "answer": "吃",
     "context": {
@@ -1096,15 +1096,15 @@
       "rule": "Time goes before the verb: 我五点回家",
       "en": "We eat at twelve noon."
     },
-    "why": "吃 means 'eat'. At noon we eat a meal: 吃饭.",
+    "why": "吃饭 means to eat a meal. The time 中午十二点 comes before the verb.",
     "not": {
-      "喝": "喝 is for drinks; 饭 is food.",
-      "看": "看 means 'look' and does not go with 饭.",
-      "买": "买饭 means 'buy a meal', not eat."
+      "喝": "喝 is for drinks; you do not drink 饭.",
+      "看": "看 means to look; 看饭 makes no sense.",
+      "读": "读 means to read; you do not read 饭."
     }
   },
   {
-    "key": "g1veye3j",
+    "key": "gyflea9",
     "type": "grammar",
     "lesson": 11,
     "q": "你___回家？",
@@ -1112,7 +1112,7 @@
       "什么时候",
       "哪儿",
       "几个",
-      "怎么"
+      "什么"
     ],
     "answer": "什么时候",
     "context": {
@@ -1120,11 +1120,11 @@
       "rule": "什么时候 asks “when”",
       "en": "When are you going home?"
     },
-    "why": "什么时候 asks 'when'. It goes before the verb: 你什么时候回家？",
+    "why": "什么时候 asks “when”, and goes before the verb: 你什么时候回家？",
     "not": {
-      "哪儿": "哪儿 asks 'where'.",
-      "几个": "几个 asks 'how many'.",
-      "怎么": "怎么回家 asks 'how', not when."
+      "哪儿": "哪儿 asks where, but 回家 already says where.",
+      "几个": "几个 asks how many and needs a noun after it.",
+      "什么": "什么 alone asks what, not when; 什么回家 is wrong."
     }
   },
   {
@@ -1176,15 +1176,15 @@
     }
   },
   {
-    "key": "g1ekt7j5",
+    "key": "g1vdoric",
     "type": "grammar",
     "lesson": 12,
     "q": "今天___热了！",
     "options": [
       "太",
-      "很",
-      "不",
-      "都"
+      "吗",
+      "的",
+      "在"
     ],
     "answer": "太",
     "context": {
@@ -1192,11 +1192,11 @@
       "rule": "太 + adjective + 了: too / so …",
       "en": "It's so hot today!"
     },
-    "why": "太 + adjective + 了 means 'too / so …'. 太热了 says it is very hot.",
+    "why": "太 + adjective + 了 means too or so: 太热了.",
     "not": {
-      "很": "For \"so hot!\" with 了, use 太热了; 很热 usually has no 了.",
-      "不": "不热了 means \"not hot any more\", the opposite of the English.",
-      "都": "都 means 'all' and does not fit 热了 here."
+      "吗": "吗 goes at the end of a question, not before 热.",
+      "的": "的 cannot go between 今天 and 热了.",
+      "在": "在 marks a place or an action now; it does not go with 热了."
     }
   },
   {
@@ -1224,7 +1224,7 @@
     }
   },
   {
-    "key": "gt9dz45",
+    "key": "g1fgi6lx",
     "type": "grammar",
     "lesson": 13,
     "q": "他___学做中国菜呢。",
@@ -1232,7 +1232,7 @@
       "在",
       "是",
       "有",
-      "去"
+      "叫"
     ],
     "answer": "在",
     "context": {
@@ -1240,11 +1240,11 @@
       "rule": "在 + verb + 呢: doing it right now",
       "en": "He is learning to cook Chinese food."
     },
-    "why": "在 + verb + 呢 says someone is doing it now: 在学做中国菜呢.",
+    "why": "在 + verb + 呢 says something is happening now: 他在学做中国菜呢.",
     "not": {
-      "是": "是 does not show an action in progress.",
-      "有": "有 means 'have'.",
-      "去": "他去学 means \"he goes to learn\"; 在…呢 says he is learning now."
+      "是": "是 does not go with 呢 to show an action in progress.",
+      "有": "有 means to have; it does not go before a verb here.",
+      "叫": "叫 gives a name; it does not fit before 学."
     }
   },
   {
@@ -1296,14 +1296,14 @@
     }
   },
   {
-    "key": "gccl4dz",
+    "key": "g52j6yk",
     "type": "grammar",
     "lesson": 13,
     "q": "明天我___你打电话。",
     "options": [
       "给",
       "在",
-      "和",
+      "有",
       "是"
     ],
     "answer": "给",
@@ -1312,11 +1312,11 @@
       "rule": "Calling someone",
       "en": "I'll call you tomorrow."
     },
-    "why": "给 + person + verb means doing something to or for a person: 给你打电话.",
+    "why": "给 + person + 打电话 means to call someone: 我给你打电话.",
     "not": {
-      "在": "在 shows where; it does not link a person to calling.",
-      "和": "和你打电话 means 'with you', not 'to you'.",
-      "是": "是 does not link a person to an action."
+      "在": "在你 would mean at you; it does not mark who you call.",
+      "有": "有 means to have; it cannot link 你 and 打电话.",
+      "是": "是 links nouns; it does not mark the person you call."
     }
   },
   {
@@ -1344,10 +1344,10 @@
     }
   },
   {
-    "key": "ghwbdtz",
+    "key": "g1l5xlis",
     "type": "grammar",
     "lesson": 14,
-    "q": "我___买衣服。",
+    "q": "昨天我___买衣服。",
     "options": [
       "没",
       "不",
@@ -1360,15 +1360,15 @@
       "rule": "没 makes a past action negative (no 了)",
       "en": "I didn't buy clothes."
     },
-    "why": "没 is used to negate a past action, with no 了: 我没买衣服.",
+    "why": "没 + verb says something did not happen in the past: 昨天我没买衣服.",
     "not": {
-      "不": "不买 usually refers to habit or future, not a past action.",
-      "了": "了 would show done; the English says 'didn't'.",
-      "很": "很 does not negate anything."
+      "不": "不 is for now, the future or habits; for yesterday use 没.",
+      "了": "了 goes after the verb, and a negative past uses 没 with no 了.",
+      "很": "很 goes before adjectives, not before 买."
     }
   },
   {
-    "key": "glb18v7",
+    "key": "g159mirf",
     "type": "grammar",
     "lesson": 14,
     "q": "我们___是学生。",
@@ -1376,7 +1376,7 @@
       "都",
       "很",
       "太",
-      "也"
+      "吗"
     ],
     "answer": "都",
     "context": {
@@ -1384,11 +1384,11 @@
       "rule": "都: all, both (before the verb)",
       "en": "We're all students."
     },
-    "why": "都 means 'all' and goes before the verb: 我们都是学生.",
+    "why": "都 means all and goes before the verb: 我们都是学生.",
     "not": {
       "很": "很 goes before adjectives, not before 是.",
-      "太": "太 goes with adjectives and ends with 了.",
-      "也": "我们也是学生 is fine, but 也 means \"also\"; the English says \"all\"."
+      "太": "太 goes before adjectives with 了; it does not fit 是学生.",
+      "吗": "吗 goes at the end of a question, not before 是."
     }
   },
   {
@@ -1464,13 +1464,13 @@
     }
   },
   {
-    "key": "g1er2hpj",
+    "key": "gk36h6e",
     "type": "grammar",
     "lesson": 15,
     "q": "我们___出租车去饭店吧。",
     "options": [
       "坐",
-      "开",
+      "是",
       "在",
       "去"
     ],
@@ -1480,11 +1480,11 @@
       "rule": "坐 飞机 / 出租车: travelling by …",
       "en": "Let's take a taxi to the restaurant."
     },
-    "why": "坐 is the verb for riding in a vehicle: 坐出租车 means 'take a taxi'.",
+    "why": "坐 + vehicle says how you travel: 坐出租车去饭店.",
     "not": {
-      "开": "开 means \"drive\"; the English says take a taxi as a passenger.",
-      "在": "在出租车上 means \"in the taxi\"; \"take a taxi\" uses 坐.",
-      "去": "去 needs a place, so 去出租车 is wrong; 去饭店 comes later."
+      "是": "是 links nouns; it does not mean to take a taxi.",
+      "在": "在出租车 means in the taxi; it does not say how you go.",
+      "去": "去 is already used for going to the restaurant; you take a taxi with 坐."
     }
   }
 ]
