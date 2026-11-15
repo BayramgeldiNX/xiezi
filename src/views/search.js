@@ -37,4 +37,5 @@ export function openSearch() {
     location.hash = `#/lesson/${L.id}/write?${Date.now()}`;
   });
   render();
+  $("#searchInput").focus({ preventScroll: true }); // ready to type as soon as the page opens
 }
