@@ -62,16 +62,18 @@ describe("exam run: flow", () => {
 });
 
 describe("exam run: moving", () => {
-  it("listening is one way", () => {
+  it("listening can go back, but a recording is never replayed", () => {
     let r = sit(fresh(), 0);
     const [q1, q2] = paper.parts[0].questions;
-    r = R.answer(r, q1.n, 1);
+    r = R.heardRound(R.heardRound(R.answer(r, q1.n, 1), q1.n), q1.n);
     r = R.next(r);
     expect(r.pos).toBe(1);
-    expect(R.prev(r)).toBe(r);
-    expect(R.goto(r, 0)).toBe(r);
-    expect(R.answer(r, q1.n, 0)).toBe(r); // left behind
-    expect(R.toggleMark(r, q1.n)).toBe(r);
+    expect(R.prev(r).pos).toBe(0);
+    expect(R.goto(r, 0).pos).toBe(0);
+    expect(R.answer(r, q1.n, 0).answers[q1.n]).toBe(0); // changed from question 2
+    expect(R.toggleMark(r, q1.n).marks[q1.n]).toBe(true);
+    const back = R.prev(r);
+    expect(R.heardRound(back, q1.n)).toBe(back); // already heard twice
     expect(R.answer(r, q2.n, 0).answers[q2.n]).toBe(0);
   });
   it("is free inside the other parts", () => {
