@@ -19,7 +19,7 @@ import { resultOf } from "../exam/store.js";
 
 const KEY = "xz-exam-run";
 const HOW = {
-  listen: "Each recording plays twice by itself. You cannot go back.",
+  listen: "Each recording plays twice by itself and is not replayed. Skip, mark and come back.",
   vocab: "Choose the right answer. Skip, mark and come back.",
   grammar: "Choose the word that fits the blank. Skip, mark and come back.",
   read: "Read carefully and choose the answer. Skip, mark and come back.",
@@ -233,7 +233,7 @@ function cover() {
         const n = Object.values(test.counts[id]).reduce((a, b) => a + b, 0), p = PART_NAMES[id];
         return `<tr><td>${NUM[i + 1]}</td><td>${p[0]} <span class="muted">${p[1]}</span></td><td class="num">${n}</td></tr>`;
       }).join("")}<tr class="ex-sum"><td></td><td>${test.total} questions · ${test.minutes} minutes</td><td></td></tr></tbody></table>
-      <ul class="ex-rules"><li>No help: nothing is marked until you hand in.</li><li>Listening plays twice and does not go back.</li>
+      <ul class="ex-rules"><li>No help: nothing is marked until you hand in.</li><li>Each recording plays twice and is not replayed.</li>
         <li>A finished part cannot be reopened.</li><li>Leaving saves the test and stops the clock.</li></ul>
       ${other}
       <div class="controls ex-go">
@@ -275,7 +275,7 @@ function card() {
 /* ---------- Question ---------- */
 function question() {
   const { run } = S, p = run.paper.parts[run.part], q = R.current(run);
-  const total = p.questions.length, last = run.pos === total - 1, one = p.id === "listen";
+  const total = p.questions.length, last = run.pos === total - 1;
   const fresh = new Set([...(q.newChars || "")]);
   S.host.innerHTML = `<div class="panel focus ex-q">
     <div class="q-head ex-head"><button class="q-x" type="button" data-leave aria-label="Leave" title="Leave">${icon("x")}</button>
@@ -286,7 +286,7 @@ function question() {
     <span class="lbl">${esc(partName(p, run.part))}</span>
     <div class="ex-stage" id="exStage"></div>
     <div class="controls dock ex-dock">
-      <button class="btn ghost" type="button" id="exPrev" ${one || !run.pos ? "hidden" : ""}>Back</button>
+      <button class="btn ghost" type="button" id="exPrev" ${!run.pos ? "hidden" : ""}>Back</button>
       <button class="btn ghost" type="button" id="exMark" aria-pressed="${!!run.marks[q.n]}">Mark</button>
       <button class="btn primary" type="button" id="exNext">${last ? (run.part === run.paper.parts.length - 1 ? "交卷 Hand in" : "Finish part") : "Next"}</button>
     </div>
@@ -467,7 +467,7 @@ function overlays() {
       ${run.paper.parts.map((p, i) => `<div class="ex-row${i < run.part ? " done" : i > run.part ? " later" : ""}"><span class="lbl">${esc(partName(p, i))}${i < run.part ? " · finished" : ""}</span>
         <div class="ex-bubs">${p.questions.map((q, k) => {
           const a = R.isAnswered(q, run.answers[q.n]), cls = ["ex-bub", a ? "ans" : "", run.marks[q.n] ? "mk" : "", i === run.part && k === run.pos ? "cur" : ""].join(" ");
-          const off = i !== run.part || (p.id === "listen" && k < run.pos);
+          const off = i !== run.part;
           return `<button type="button" class="${cls}" data-k="${k}" ${off ? "disabled" : ""} aria-label="Question ${k + 1}${a ? ", answered" : ""}${run.marks[q.n] ? ", marked" : ""}">${k + 1}</button>`;
         }).join("")}</div></div>`).join("")}</div>`;
     S.host.append(el);

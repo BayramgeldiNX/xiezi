@@ -9,8 +9,8 @@
 //   started  { [n]: true } a handwriting question the learner has begun; leaving it unfinished makes it wrong
 //   left     milliseconds left; spent: milliseconds used. Only a question page runs the clock (tick).
 // Every function returns a new run (the old one is never changed). A move that is not allowed returns the same run.
-// Rules: listening is one-way (no going back, a question left behind cannot be answered again); the other parts
-// move freely inside the part; a finished part is never reopened; a handwriting question is written once (an answer
+// Rules: every part moves freely inside the part (a listening recording still plays at most twice and is never
+// replayed when you come back); a finished part is never reopened; a handwriting question is written once (an answer
 // is final); after "done" nothing changes.
 
 export const STAGES = ["cover", "card", "q", "confirm", "done"];
@@ -23,7 +23,6 @@ export const newRun = ({ book, test, seed, paper, minutes, now = 0 }) => ({
 });
 
 const partOf = (run) => run.paper.parts[run.part];
-const listening = (run) => partOf(run)?.id === "listen";
 export const current = (run) => (run.stage === "q" ? partOf(run).questions[run.pos] || null : null);
 
 // A handwriting question begun but not finished is wrong: leaving it (any move, hand-in, time up, a restore) settles it.
@@ -39,13 +38,13 @@ export function settle(run) {
 }
 const leaving = (run, change) => settle({ ...run, ...change });
 
-// The question n may be changed now: on a question page, in the current part, and (listening) only the one on screen.
+// The question n may be changed now: on a question page and in the current part.
 function find(run, n) {
   if (run.stage !== "q") return null;
-  const qs = partOf(run).questions;
-  const i = qs.findIndex((q) => q.n === n);
-  return i >= 0 && (!listening(run) || i === run.pos) ? qs[i] : null;
+  return partOf(run).questions.find((q) => q.n === n) || null;
 }
+// Only the question on screen plays its audio.
+const onScreen = (run, n) => current(run)?.n === n;
 
 export const begin = (run) => (run.stage === "cover" ? { ...run, stage: "card", part: 0, pos: 0 } : run);
 export const startPart = (run) => (run.stage === "card" ? { ...run, stage: "q", pos: 0 } : run);
@@ -80,19 +79,18 @@ export function startWrite(run, n) {
 // Listening audio: a round is counted when it starts (so a reload cannot replay it); one cut off by hiding the app is given back.
 export const heardOf = (run, n) => run.heard[n] || 0;
 export function heardRound(run, n) {
-  if (!find(run, n) || heardOf(run, n) >= ROUNDS) return run;
+  if (!onScreen(run, n) || heardOf(run, n) >= ROUNDS) return run;
   return { ...run, heard: { ...run.heard, [n]: heardOf(run, n) + 1 } };
 }
 export function heardUndo(run, n) {
-  if (!find(run, n) || !heardOf(run, n)) return run;
+  if (!onScreen(run, n) || !heardOf(run, n)) return run;
   return { ...run, heard: { ...run.heard, [n]: heardOf(run, n) - 1 } };
 }
 
 export const next = (run) => (run.stage === "q" && run.pos < partOf(run).questions.length - 1 ? leaving(run, { pos: run.pos + 1 }) : run);
-export const prev = (run) => (run.stage === "q" && !listening(run) && run.pos > 0 ? leaving(run, { pos: run.pos - 1 }) : run);
+export const prev = (run) => (run.stage === "q" && run.pos > 0 ? leaving(run, { pos: run.pos - 1 }) : run);
 export function goto(run, pos) {
   if (run.stage !== "q" || !Number.isInteger(pos) || pos < 0 || pos >= partOf(run).questions.length) return run;
-  if (listening(run) && pos < run.pos) return run;
   return pos === run.pos ? run : leaving(run, { pos });
 }
 
