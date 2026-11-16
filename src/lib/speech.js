@@ -65,7 +65,7 @@ function playing(run, text, slow, wait = 0) {
   settleCurrent?.(null);
   return new Promise((resolve) => {
     let timer, giveUp = null;
-    const settle = (v) => { if (settleCurrent !== settle) return; settleCurrent = null; clearTimeout(timer); resolve(v); };
+    const settle = (v) => { if (settleCurrent !== settle) return; settleCurrent = null; clearTimeout(timer); setWaiting(null); resolve(v); };
     settleCurrent = settle;
     const guess = (2.5 + text.length * 0.35) * (slow ? 2 : 1);
     const arm = (secs) => { clearTimeout(timer); timer = setTimeout(() => { giveUp?.(); settle(false); }, secs * 1000); };
@@ -75,22 +75,52 @@ function playing(run, text, slow, wait = 0) {
   });
 }
 
+// Recordings are downloaded once, through the offline cache, and kept in memory for a while.
+// Letting the player download them itself fetched every word twice (its own pieces, which the cache
+// can't keep, and a whole copy for the cache), so on a slow line (a VPN) a tap took seconds to sound.
+const FILES = new Map(); // url → Promise<Blob | null>
+const fileUrl = (t) => (AUDIO[t] ? `${import.meta.env.BASE_URL}audio/${AUDIO[t]}.mp3` : null);
+function download(url) {
+  let p = FILES.get(url);
+  if (p) { FILES.delete(url); FILES.set(url, p); return p; }
+  p = fetch(url).then((r) => (r.ok ? r.blob() : null)).catch(() => null);
+  p.then((b) => { if (!b && FILES.get(url) === p) FILES.delete(url); }); // a failed download may be tried again
+  FILES.set(url, p);
+  if (FILES.size > 120) FILES.delete(FILES.keys().next().value);
+  return p;
+}
+// Starts a word's download early (a mouse over a speaker, a finger going down), so the tap plays at once.
+export const preload = (text) => { const u = fileUrl(clean(text)); if (u) download(u); };
+
+// The speaker that was tapped shows it is fetching its word until the sound begins or is dropped
+// (only when that takes a moment, so a word that is already here doesn't flicker).
+let waitingBtn = null, waitingTimer = 0;
+function setWaiting(b) {
+  clearTimeout(waitingTimer);
+  waitingBtn?.classList.remove("loading");
+  waitingBtn = b || null;
+  if (b) waitingTimer = setTimeout(() => b.classList.add("loading"), 250);
+}
+
 // Empties the player when a sound ends or stops. A player that keeps its last word can be started
 // again from outside the app: a headset or Bluetooth button, a media key, the lock screen or
 // Control Center would replay that word out of nowhere.
+let blobUrl = null;
 function emptyPlayer() {
   player.onended = player.onerror = player.onplaying = null;
   try { player.pause(); } catch {}
   if (player.getAttribute("src")) { player.removeAttribute("src"); try { player.load(); } catch {} }
+  if (blobUrl) { URL.revokeObjectURL(blobUrl); blobUrl = null; }
 }
 
 export function say(text, slow) {
   const t = clean(text);
   halt();
   const token = ++playToken;
-  const file = AUDIO[t];
-  if (file || EXTRA[t]) {
+  const url = fileUrl(t);
+  if (url || EXTRA[t]) {
     return playing((settle, begun) => {
+      const wanted = () => token === playToken && settleCurrent === settle;
       // The device voice steps in only when the recording never started: one that breaks half-way
       // would otherwise be followed by the whole word again. It also runs once (error + rejected play),
       // and only while this sound is still wanted: a download that fails after giving up stays silent.
@@ -98,21 +128,32 @@ export function say(text, slow) {
       const fallback = () => {
         if (fell) return;
         fell = true;
-        if (token === playToken && settleCurrent === settle && !(player.currentTime > 0)) voice = tts(t, slow, settle);
+        setWaiting(null);
+        if (wanted() && !(player.currentTime > 0)) voice = tts(t, slow, settle);
         else settle(false);
       };
-      player.muted = false; // the unlock trick may still be muting the player on the very first tap
-      player.src = file ? `${import.meta.env.BASE_URL}audio/${file}.mp3` : EXTRA[t];
-      // Players ask for audio in pieces, which the offline cache can't keep; one whole download keeps it.
-      if (file) fetch(player.src).catch(() => {});
-      player.playbackRate = slow ? setting("slowRate") : 1;
-      player.preservesPitch = true;
-      player.onplaying = () => { player.onplaying = null; begun(player.duration / player.playbackRate); };
-      player.onended = () => { emptyPlayer(); settle(true); };
-      player.onerror = fallback;
-      player.play().catch(fallback);
-      return () => { if (voice) voice(); else if (!(player.currentTime > 0)) emptyPlayer(); };
-    }, t, slow, START_WAIT);
+      const start = (src) => {
+        if (!wanted()) return;
+        player.muted = false; // the unlock trick may still be muting the player on the very first tap
+        player.src = src;
+        player.playbackRate = slow ? setting("slowRate") : 1;
+        player.preservesPitch = true;
+        player.onplaying = () => { player.onplaying = null; setWaiting(null); begun(player.duration / player.playbackRate); };
+        player.onended = () => { emptyPlayer(); settle(true); };
+        player.onerror = fallback;
+        player.play().catch(fallback);
+      };
+      if (!url) start(EXTRA[t]);
+      else download(url).then((blob) => {
+        if (!wanted()) return; // dropped or replaced while it downloaded: it stays silent
+        if (!blob) return fallback();
+        emptyPlayer();
+        blobUrl = URL.createObjectURL(blob);
+        start(blobUrl);
+      });
+      // Not begun by the safety time: drop it. The download carries on into the cache, so the next tap is quick.
+      return () => { setWaiting(null); if (voice) voice(); else if (!(player.currentTime > 0)) emptyPlayer(); };
+    }, t, slow, url ? START_WAIT : 0);
   }
   return playing((settle) => tts(t, slow, settle), t, slow);
 }
@@ -154,6 +195,7 @@ export function sayLater(text, { ms = 250, auto = true } = {}) {
 // Silences whatever sounds or waits to sound (say() starts with this before its own sound).
 function halt() {
   clearTimeout(laterTimer);
+  setWaiting(null);
   playToken++;
   settleCurrent?.(null);
   player.onended = player.onerror = player.onplaying = null;
@@ -177,8 +219,15 @@ document.addEventListener("visibilitychange", () => { if (document.hidden) stopS
 
 document.addEventListener("click", (e) => {
   const b = e.target.closest("[data-say]");
-  if (b) { e.stopPropagation(); say(b.dataset.say, b.hasAttribute("data-slow")); }
+  if (!b) return;
+  e.stopPropagation();
+  say(b.dataset.say, b.hasAttribute("data-slow"));
+  if (AUDIO[clean(b.dataset.say)]) setWaiting(b);
 }, true);
+// A mouse resting on a speaker, or a finger going down on one, starts its download.
+for (const ev of ["pointerover", "pointerdown"]) {
+  addEventListener(ev, (e) => { const b = e.target.closest?.("[data-say]"); if (b) preload(b.dataset.say); }, { capture: true, passive: true });
+}
 
 export const sayBtns = (text, label, sm) =>
   `<button class="say${sm ? " sm" : ""}" type="button" data-say="${esc(text)}" aria-label="Play ${esc(label)}">${icon("speaker")}</button>` +

@@ -98,6 +98,10 @@ code { font-size: .85em; }
 .say::before { content: ""; position: absolute; inset: 6px 0; border-radius: var(--pill); background: var(--card2); z-index: -1; transition: background-color var(--fast) var(--ease); }
 .say { isolation: isolate; }
 .say:hover::before { background: color-mix(in srgb, var(--card2) 80%, var(--ink)); }
+/* A speaker still fetching its word (slow line): the icon breathes until the sound begins. */
+[data-say].loading svg { animation: say-wait 1.1s ease-in-out infinite; }
+@keyframes say-wait { 50% { opacity: .3; } }
+@media (prefers-reduced-motion: reduce) { [data-say].loading svg { animation: none; opacity: .45; } }
 .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
 
 /* full screen button (browser tab only) */
