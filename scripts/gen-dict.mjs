@@ -71,7 +71,7 @@ const real = (senses) => senses.some((s) => !/^CL:/.test(s));
 
 // Every character's radical and parts, from Make Me a Hanzi (https://github.com/skishore/makemeahanzi).
 // public/dict/chars.json: { "语": ["yǔ", "words", "讠", "⿰讠吾", "pictophonetic", "吾", "words"] }
-//   = [pinyin, short meaning, radical, decomposition, type, sound part, origin hint]
+//   = [pinyin, short meaning, radical, decomposition, type, sound part, origin hint, tier 0-3 (see tierOf)]
 export function parseHanzi(text) {
   const out = {};
   for (const line of text.split("\n")) {
@@ -86,21 +86,52 @@ export function parseHanzi(text) {
 
 export const shardOf = (word) => word.codePointAt(0) % SHARDS;
 
+// "Common" is a proxy: how many CC-CEDICT words contain the character (surname and variant entries don't count).
+// Tier 3 = 100+ words, 2 = 15+ (these two are "common"), 1 = 3+, 0 = fewer.
+export const tierOf = (n) => (n >= 100 ? 3 : n >= 15 ? 2 : n >= 3 ? 1 : 0);
+
+export function wordCounts(dict) {
+  const n = {};
+  for (const [w, v] of Object.entries(dict)) {
+    if (typeof v === "string" || MINOR.test(v[0]?.[1].split("; ")[0] || "")) continue;
+    for (const c of new Set(w)) n[c] = (n[c] || 0) + 1;
+  }
+  return n;
+}
+
+// Adds the tier as the 8th field of every chars.json entry.
+export function addTiers(chars, dict) {
+  const n = wordCounts(dict);
+  for (const [c, e] of Object.entries(chars)) e[7] = tierOf(n[c] || 0);
+  return chars;
+}
+
+// The words of the dictionary as already written (CHARS_ONLY=1: rebuild chars.json without downloading CC-CEDICT again).
+function readShards(dir) {
+  const dict = {};
+  for (let n = 0; n < SHARDS; n++) Object.assign(dict, JSON.parse(fs.readFileSync(path.join(dir, `${n}.json`), "utf8")));
+  return dict;
+}
+
 async function main() {
   const src = process.argv[2];
-  const buf = src ? fs.readFileSync(src) : Buffer.from(await (await fetch(URL_)).arrayBuffer());
-  const text = (src && !src.endsWith(".gz")) ? buf.toString("utf8") : zlib.gunzipSync(buf).toString("utf8");
-  const dict = parseCedict(text);
-  const shards = Array.from({ length: SHARDS }, () => ({}));
-  for (const [w, v] of Object.entries(dict)) shards[shardOf(w)][w] = v;
   const dir = path.join(path.dirname(fileURLToPath(import.meta.url)), "../public/dict");
-  fs.mkdirSync(dir, { recursive: true });
-  shards.forEach((s, n) => fs.writeFileSync(path.join(dir, `${n}.json`), JSON.stringify(s)));
+  let dict;
+  if (process.env.CHARS_ONLY) dict = readShards(dir);
+  else {
+    const buf = src ? fs.readFileSync(src) : Buffer.from(await (await fetch(URL_)).arrayBuffer());
+    const text = (src && !src.endsWith(".gz")) ? buf.toString("utf8") : zlib.gunzipSync(buf).toString("utf8");
+    dict = parseCedict(text);
+    const shards = Array.from({ length: SHARDS }, () => ({}));
+    for (const [w, v] of Object.entries(dict)) shards[shardOf(w)][w] = v;
+    fs.mkdirSync(dir, { recursive: true });
+    shards.forEach((s, n) => fs.writeFileSync(path.join(dir, `${n}.json`), JSON.stringify(s)));
+  }
   const hanzi = process.env.HANZI || path.join(dir, "../../data-src/makemeahanzi-dictionary.txt");
   if (fs.existsSync(hanzi)) {
-    const chars = parseHanzi(fs.readFileSync(hanzi, "utf8"));
+    const chars = addTiers(parseHanzi(fs.readFileSync(hanzi, "utf8")), dict);
     fs.writeFileSync(path.join(dir, "chars.json"), JSON.stringify(chars));
-    console.log(`public/dict/chars.json: radicals and parts of ${Object.keys(chars).length} characters`);
+    console.log(`public/dict/chars.json: radicals, parts and tiers of ${Object.keys(chars).length} characters`);
   } else console.log("chars.json: Make Me a Hanzi not downloaded, keeping the existing file");
   console.log(`public/dict: ${Object.values(dict).filter((v) => typeof v !== "string").length} words, ${Object.values(dict).filter((v) => typeof v === "string").length} traditional forms, in ${SHARDS} files`);
 }
