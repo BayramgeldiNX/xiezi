@@ -129,3 +129,15 @@
   .box { width: clamp(320px, 34vw, 520px); }
   .dict-boxes .box { max-width: 340px; }
 }
+/* The trail 换 › 奂 › 央 on the character card, and what a character is worth */
+.cs-trail { display: flex; flex-wrap: wrap; align-items: center; gap: 2px; margin-bottom: -8px; color: var(--muted); font-family: var(--display); font-size: 1.25rem; }
+.cs-trail button { min-width: 44px; min-height: 44px; padding: 0 6px; border: 0; background: none; color: var(--muted); font: inherit; cursor: pointer; }
+.cs-trail button:hover { color: var(--ink); }
+.cs-trail b { color: var(--ink); padding: 0 6px; }
+.cs-trail .cs-back { font-size: 1.5rem; }
+.cs-verdict { font-size: .9375rem; line-height: 1.5; }
+.cs-verdict a, #charBody section a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+.cs-more { font-size: .875rem; }
+.cs-role { font-style: normal; font-size: .6875rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.cs-chip.snd small { opacity: .6; }
+.cs-loading { padding: 24px 0; }
