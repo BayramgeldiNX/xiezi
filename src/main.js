@@ -95,6 +95,7 @@ function showPage(id) {
   current = id;
   if (id !== "loading") (id === "lessonView" ? timerEnter : timerLeave)();
   for (const p of PAGES) $("#" + p).hidden = p !== id;
+  document.documentElement.removeAttribute("data-boot"); // set in index.html on a reload; pages show by `hidden` from here
   if (id !== "loading") markSide(id);
   clearHiddenHosts();
   scrollTo(0, 0);

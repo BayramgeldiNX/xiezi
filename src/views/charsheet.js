@@ -5,7 +5,7 @@
 import { $, esc } from "../lib/util.js";
 import { tonePy, syllables, stripTone } from "../lib/pinyin.js";
 import { autoSay, sayBtns } from "../lib/speech.js";
-import { CHARS, CHARINFO, RADICALS, RADICALS_CORE, STROKE_DATA, loadStrokes, ensureChars, LESSONS, DICT, wordsWith, bookOf } from "../data/index.js";
+import { CHARS, CHARINFO, RADICALS, RADICALS_CORE, STROKE_DATA, ensureChars, LESSONS, DICT, wordsWith, bookOf } from "../data/index.js";
 import { charParts, soundFamily, charSenses, wordsWithChar } from "../lib/dict.js";
 import { charKind } from "../lib/char-kind.js";
 import * as progress from "../progress/store.js";
@@ -102,14 +102,24 @@ async function openChar(c) {
     $("#charBody").innerHTML = `${trailHtml()}<p class="muted cs-loading">Loading ${c}…</p>`;
     if (!sheet().open) sheet().showModal();
   }, 150);
-  const entry = await charParts(c);
+  // A stalled download (a slow line, a connection that died while the app slept) must not leave the tap
+  // doing nothing: after a few seconds the card draws with what it has.
+  const until = Date.now() + PATIENCE, patient = (p, fallback) => Promise.race([Promise.resolve(p).catch(() => fallback),
+    new Promise((r) => setTimeout(() => r(fallback), Math.max(0, until - Date.now())))]);
+  const entry = await patient(charParts(c), null);
   const base = CHARS[c] || DICT[c] || (entry ? { py: entry.py, en: entry.en } : {});
-  const [family, senses, more] = await Promise.all([soundFamily(c), charSenses(c, base.py || entry?.py), mine ? [] : wordsWithChar(c),
-    STROKE_DATA[c] ? 0 : ensureChars(c)]);
+  const [family, senses, more] = await Promise.all([patient(soundFamily(c), []), patient(charSenses(c, base.py || entry?.py), []),
+    mine ? [] : patient(wordsWithChar(c), []), STROKE_DATA[c] ? 0 : patient(ensureChars(c), 0)]);
   clearTimeout(wait);
   if (token !== seq) return; // another character was opened meanwhile
-  draw(c, { entry, base, family, senses, more });
+  try { draw(c, { entry, base, family, senses, more }); } catch (e) {
+    // Never a silent tap: a card that cannot be drawn still says so.
+    console.error(e);
+    $("#charBody").innerHTML = `${trailHtml()}<p class="muted cs-loading">Could not show ${c} right now.</p>`;
+    if (!sheet().open) sheet().showModal();
+  }
 }
+const PATIENCE = 6000;
 
 function draw(c, { entry, base, family, senses, more }) {
   const mine = inBooks(c);
@@ -207,8 +217,8 @@ document.addEventListener("click", (e) => {
   if (!el) return;
   e.preventDefault();
   e.stopPropagation();
-  const inside = !!el.closest("#charSheet");
-  loadStrokes().catch(() => {}).then(() => showChar(el.dataset.char, inside));
+  // At once: the card waits for the stroke shapes itself (ensureChars), showing "Loading" if they are slow.
+  showChar(el.dataset.char, !!el.closest("#charSheet"));
 }, true);
 
 // A word with each known character tappable.

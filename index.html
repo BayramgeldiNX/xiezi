@@ -26,7 +26,10 @@
     } catch (e) {}
     // PC sidebar folded to a rail of seals: set before anything draws, so it does not slide on load.
     try { if (JSON.parse(localStorage.getItem("xz-rail"))) document.documentElement.setAttribute("data-rail", ""); } catch (e) {}
+    // A reload of another page (a lesson, a test…): keep Home off screen until the app shows that page.
+    if (location.hash && location.hash !== "#" && location.hash !== "#/") document.documentElement.setAttribute("data-boot", "");
   </script>
+  <style>html[data-boot] #home { display: none; }</style>
 </head>
 <body>
 <!-- PC only (wide screen with a mouse): the sections of Home, always at hand -->
