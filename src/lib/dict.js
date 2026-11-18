@@ -5,11 +5,19 @@ import { DICT, CHARS, RADICALS } from "../data/index.js";
 const shards = new Map(); // shard number -> Promise of { word: [[py, en], ...] }
 const shard = (word) => word.codePointAt(0) % 64;
 
+// One dictionary file. A failed or stalled download (a connection that died while the app slept) is
+// given up after a while and not kept, so the next tap tries again instead of waiting on it until a reload.
+function getJSON(name) {
+  const ctl = typeof AbortController === "function" ? new AbortController() : null;
+  const stop = setTimeout(() => ctl?.abort(), 30000);
+  return fetch(`${import.meta.env.BASE_URL}dict/${name}.json`, ctl ? { signal: ctl.signal } : undefined)
+    .then((r) => { if (!r.ok) throw new Error(`dict/${name}.json: ${r.status}`); return r.json(); })
+    .finally(() => clearTimeout(stop));
+}
+
 function loadShard(n) {
   if (!shards.has(n)) {
-    shards.set(n, fetch(`${import.meta.env.BASE_URL}dict/${n}.json`)
-      .then((r) => (r.ok ? r.json() : {}))
-      .catch(() => { shards.delete(n); return {}; }));
+    shards.set(n, getJSON(n).catch(() => { shards.delete(n); return {}; }));
   }
   return shards.get(n);
 }
@@ -25,8 +33,7 @@ async function cedict(word) {
 // Radical and parts of any character (public/dict/chars.json, from Make Me a Hanzi). null if unknown.
 // tier 0-3 is how many CC-CEDICT words use it (2 and 3 count as common, see scripts/gen-dict.mjs).
 let charsFile = null, families = null;
-const loadChars = () => (charsFile ||= fetch(`${import.meta.env.BASE_URL}dict/chars.json`).then((r) => (r.ok ? r.json() : {}))
-  .catch(() => { charsFile = null; return {}; }));
+const loadChars = () => (charsFile ||= getJSON("chars").catch(() => { charsFile = null; return {}; }));
 
 export async function charParts(c) {
   try {
@@ -43,7 +50,7 @@ export async function charParts(c) {
 export async function soundFamily(c) {
   try {
     const all = await loadChars();
-    if (!families) {
+    if (!families && Object.keys(all).length) { // not from an empty file left by a failed download
       families = new Map();
       for (const [k, e] of Object.entries(all)) if (e[5] && e[5] !== k && e[0]) (families.get(e[5]) || families.set(e[5], []).get(e[5])).push(k);
     }
