@@ -18,7 +18,7 @@ The owner uses it on iPhone 16 (home-screen PWA), Mi Pad 7 Pro and Windows. Prog
 
 ## Stack and layout
 - Vite + vite-plugin-pwa (generateSW, `registerType: prompt`), base `/xiezi/`. Plain JS modules, no framework.
-- `src/main.js` and `src/app.js`: hash router and home. Pages: `#/` home, `#/books`, `#/book/<id>`, `#/lesson/<id>/<tab>`, `#/review` (all books), `#/search`, `#/typing`, `#/print/<id>`, `#/test/<book>/<id>` (a test: `s1`…, `mid1`, `mid2`, `final`) and `#/test/<book>/<id>/report` (best score report).
+- `src/main.js` and `src/app.js`: hash router and home. Pages: `#/` home, `#/books`, `#/book/<id>`, `#/lesson/<id>/<tab>`, `#/review` (all books), `#/search`, `#/shelf`, `#/pdf/<id>/<page>`, `#/typing`, `#/print/<id>`, `#/test/<book>/<id>` (a test: `s1`…, `mid1`, `mid2`, `final`) and `#/test/<book>/<id>/report` (best score report).
   The route waits for `loadStrokes()` before lesson and print pages.
 - `src/pwa.js`: updates install on a calm page or the next page change.
 - PC layout (`src/styles/desktop.css`): only at 1200px or wider with a mouse, so phones and tablets never get it. A sidebar (`.side` in `index.html`, current section set by `markSide` in `main.js`), wider pages, and a key number on each quiz choice.
@@ -38,6 +38,7 @@ The owner uses it on iPhone 16 (home-screen PWA), Mi Pad 7 Pro and Windows. Prog
     Data: hand-written `data/radicals-core.json` (`kind` meaning/shape, `guess`, `lesson`), and `radical-families.gen.json` from `scripts/gen-radicals.mjs` (run by `gen:data`).
     Lessons: `radical-lesson.js` at `#/radical/<r>/learn/<step>` (6 steps; done key `bsl:<r>`). Pictures in `public/radicals/`: `pic/<hex>.svg` (own drawings) and `ancient/` (public-domain forms from Wikimedia Commons via `scripts/fetch-ancient.mjs`, credits in `ancient.gen.json`), shown with CSS mask, cached at runtime.
   - `exam.js`, `exam-result.js`, `exam-report.js`: tests at `#/test/<book>/<id>`: cover, timed questions with an answer sheet, hand-in and result, then the score report (成绩单). The book page shows a row for each test between the lessons (`src/exam/rows.js`); a book's Review links to its final test.
+  - `shelf.js`, `pdfview.js`: Shelf (书架) at `#/shelf` and the one-page reader at `#/pdf/<id>[/<pdfPage>]` (swipe, tap edges, arrows, pinch/double-tap zoom; last page per device in `xz-pdf-place`). The owner picks each book PDF once per device; it is kept in IndexedDB `xz-pdf` (`src/pdf/store.js`), never in the repo or on the server. Page map (lesson → PDF page, printed page runs) in `src/data/book-pdfs.json`, helpers in `src/pdf/pages.js`. Lessons show quiet "Book p. N" / "Workbook p. N" links when the file is on the device; Back returns to the lesson. pdfjs-dist loads only in the reader and is runtime-cached (`xz-pdfjs`), not precached. Phone-sized PDFs: `Documents\Bookspp\<id>.pdf`.
   - `charsheet.js`: the 字 character card for any character (not only the books'): parts open their own cards, with a trail (换 › 奂 › 央; Back and Esc go up one step), a verdict line from `lib/char-kind.js` (in your books / common / part / radical side form / basic shape), and a sound family.
   - `printsheet.js`, `account.js`.
 - `src/lib/`:

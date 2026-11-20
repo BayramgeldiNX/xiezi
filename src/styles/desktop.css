@@ -35,6 +35,8 @@
   .hub .row .chev { display: none; }
   .hub .row .row-n { white-space: normal; }
   .page { max-width: 760px; }
+  /* The PDF reader fills the window beside the sidebar and follows it when it folds. */
+  .pdfr { left: var(--side); transition: left var(--med) var(--ease); }
   .book-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   #booksView { max-width: 960px; }
 

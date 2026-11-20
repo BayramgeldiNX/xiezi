@@ -23,6 +23,10 @@ import "./views/charsheet.js";
 import { openSearch } from "./views/search.js";
 import { openNotebook, notebookChanged } from "./views/notebook.js";
 import * as notebook from "./notebook/store.js";
+import { openShelf } from "./views/shelf.js";
+import { bookLinksFor } from "./pdf/pages.js";
+import { pdfSet, knownPdfs, onPdfsChange } from "./pdf/store.js";
+import { openPdfView, pdfGoto, pdfOpenId } from "./views/pdfview.js";
 import { openRadicals, radicalsUp, learnedCount, radicalTotal } from "./views/radicals.js";
 import { openPrint } from "./views/printsheet.js";
 import { openExam, savedRun } from "./views/exam.js";
@@ -47,6 +51,8 @@ const OLD_TABS = { dict: "write", review: "write", cards: "words", tones: "liste
    #/typing                     typing practice
    #/radicals[/<mode>]          Radicals: the list, or practice (cards, find, guess, due)
    #/radical/<r>[/<mode>]       one radical, or practice of just that radical
+   #/shelf                      Shelf: the textbook PDFs kept on this device
+   #/pdf/<id>[/<page>]          the PDF reader (page = PDF page number)
    #/notebook[/<word>]          Notebook: the word list, or one word (#/notebook/-/<kind> is a practice)
    #/books                      all books
    #/book/<book>[/review]       one book: its lessons, or its review
@@ -54,7 +60,7 @@ const OLD_TABS = { dict: "write", review: "write", cards: "words", tones: "liste
    #/print/<book>/<n>           printable practice sheet for a lesson
    #/test/<book>/<id>           a timed test (s1…, mid1, mid2, final)
    Each page has its own address, so the Android / browser back gesture steps back one page. */
-const PAGES = ["home", "reviewView", "typingView", "searchView", "notebookView", "radicalsView", "booksView", "bookView", "lessonView", "printView", "testView"];
+const PAGES = ["home", "reviewView", "typingView", "searchView", "notebookView", "radicalsView", "shelfView", "pdfView", "booksView", "bookView", "lessonView", "printView", "testView"];
 let current = "home";
 let printLesson = null;
 let lastHash = null;       // the page hash of the last slide, null before the first page
@@ -78,7 +84,7 @@ function clearHiddenHosts() {
   }
 }
 // PC sidebar: the section the page belongs to is the chosen one (a lesson belongs to Books).
-const SIDE = { home: "home", booksView: "books", bookView: "books", lessonView: "books", printView: "books", testView: "books", reviewView: "review", typingView: "typing", searchView: "search", notebookView: "notebook", radicalsView: "radicals" };
+const SIDE = { home: "home", booksView: "books", bookView: "books", lessonView: "books", printView: "books", testView: "books", reviewView: "review", typingView: "typing", searchView: "search", notebookView: "notebook", radicalsView: "radicals", shelfView: "shelf", pdfView: "shelf" };
 function markSide(id) {
   for (const a of $$("[data-side]")) {
     if (a.dataset.side === SIDE[id]) a.setAttribute("aria-current", "page");
@@ -151,6 +157,14 @@ async function route() {
     try { r = page === "radical" && a ? decodeURIComponent(a) : null; } catch {}
     return openRadicals(r, page === "radical" ? b : a, c);
   }
+  if (page === "shelf") { showPage("shelfView"); document.title = "Shelf · 写字本"; return openShelf(); }
+  if (page === "pdf" && a) {
+    let id = a; try { id = decodeURIComponent(a); } catch {}
+    const pg = /^\d+$/.test(b || "") ? +b : null;
+    if (current === "pdfView" && pdfOpenId() === id) return pdfGoto(pg);   // a page inside the open book: no reload
+    pdfFrom = lastHash && !lastHash.startsWith("#/pdf/") ? lastHash : "#/shelf";   // Back and Esc return to where the reader was opened from
+    showPage("pdfView"); document.title = "Shelf · 写字本"; return openPdfView(id, pg);
+  }
   if (page === "typing") { showPage("typingView"); document.title = "Typing · 写字本"; return openTyping(); }
   if (page === "book" && BOOKS.some((x) => x.id === a)) return showBook(a, b === "review" ? "review" : "lessons");
   if (page === "lesson") {
@@ -175,8 +189,9 @@ function back(to) {
   if (from && (from === to || (to === "#/" && (from === "#" || from === "#/")))) history.back();
   else go(to);
 }
+let pdfFrom = "#/shelf";
 const upFrom = () => ({
-  booksView: "#/", reviewView: "#/", typingView: "#/", searchView: "#/", notebookView: location.hash.startsWith("#/notebook/") ? "#/notebook" : "#/", radicalsView: radicalsUp(location.hash), bookView: "#/books", printView: `#/lesson/${printLesson}/write`, testView: `#/book/${location.hash.split("/")[2]}`,
+  booksView: "#/", reviewView: "#/", typingView: "#/", searchView: "#/", notebookView: location.hash.startsWith("#/notebook/") ? "#/notebook" : "#/", radicalsView: radicalsUp(location.hash), shelfView: "#/", pdfView: pdfFrom, bookView: "#/books", printView: `#/lesson/${printLesson}/write`, testView: `#/book/${location.hash.split("/")[2]}`,
   lessonView: `#/book/${app.L()?.book}`,
 })[current];
 
@@ -319,8 +334,20 @@ function openLesson(li, wi = 0, tab = "write") {
   showLessonMeter(L.id, lessonDone(L), true, lessonLeft(L, progress.get));
   renderWords();
   renderLessonNav();
+  renderBookLinks();
   showTab(TABS.includes(tab) ? tab : OLD_TABS[tab] || "write", false);
 }
+
+// Quiet "Book p. 14" links to this lesson's pages in the PDFs kept on this device. Filled in when the file list is known.
+function renderBookLinks() {
+  const el = $("#lessonBook"), L = app.L();
+  if (!el || !L) return;
+  const links = bookLinksFor(L.book, L.n, knownPdfs());
+  el.hidden = !links.length;
+  el.innerHTML = links.map((k) => `<a href="${k.hash}">${esc(k.label)}</a>`).join("");
+}
+pdfSet().then(() => { if (current === "lessonView") renderBookLinks(); });
+onPdfsChange(() => { if (current === "lessonView") renderBookLinks(); });
 
 // Previous / next lesson of the same book, under every tab. The same tab opens there.
 function renderLessonNav() {
@@ -398,6 +425,7 @@ $("#lessonLeft").addEventListener("click", (e) => {
   showTab(skill, true);
   if (mode) $(`#tab-${skill} [data-mode="${mode}"], #tab-${skill} [data-wmode="${mode}"]`)?.click();
 });
+$("#pdfBack").addEventListener("click", () => back(upFrom()));
 $("#backBtn").addEventListener("click", () => back(upFrom()));
 $$("[data-back-to]").forEach((b) => b.addEventListener("click", () => back(b.dataset.backTo)));
 $("#openBooks").addEventListener("click", () => go("#/books"));
@@ -406,6 +434,7 @@ $("#openTyping").addEventListener("click", () => go("#/typing"));
 $("#openSearch").addEventListener("click", () => go("#/search"));
 $("#openNotebook").addEventListener("click", () => go("#/notebook"));
 $("#openRadicals").addEventListener("click", () => go("#/radicals"));
+$("#openShelf").addEventListener("click", () => go("#/shelf"));
 $("#radicalsBack").addEventListener("click", () => back(upFrom()));
 $("#notebookBack").addEventListener("click", () => back(upFrom()));
 $("#printBack").addEventListener("click", () => back(upFrom()));

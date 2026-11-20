@@ -206,6 +206,10 @@ details.panel p { margin: 0; }
 .lmeter.gold .pct { color: var(--amber); }
 .lmeter.glow svg { animation: lm-glow 1.2s var(--ease); }
 .lmeter .seal.stamp { animation: lm-stamp .6s var(--ease); }
+.lbook { display: flex; gap: 4px; margin: -15px 0 -16px; font-size: .8125rem; }
+.lbook[hidden] { display: none; }
+.lbook a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 10px; margin-left: -10px; color: var(--muted); text-decoration: none; border-radius: 8px; }
+.lbook a:hover, .lbook a:focus-visible { color: var(--ink, inherit); text-decoration: underline; text-underline-offset: 3px; }
 .lfin { margin: -6px 0 0; font-size: .75rem; color: var(--muted); }
 .tab-fill { position: absolute; left: 22%; right: 22%; bottom: 3px; height: 2px; border-radius: var(--pill); background: currentColor; background: color-mix(in srgb, currentColor 18%, transparent); overflow: hidden; pointer-events: none; }
 .tab-fill[hidden] { display: none; }
@@ -276,4 +280,4 @@ details.panel p { margin: 0; }
 .q-head .q-title { flex: 0 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .q-x { flex: none; width: 44px; height: 44px; margin-left: -8px; display: grid; place-items: center; padding: 0; border: 0; border-radius: 50%; background: none; color: var(--muted); cursor: pointer; transition: background-color var(--fast) var(--ease), color var(--fast) var(--ease); }
 .q-x:hover { color: var(--ink); background: var(--card2); }
-section:has(.panel.focus) > .topbar, section:has(.panel.focus) > .tabs, section:has(.panel.focus) > .lfin, section:has(.panel.focus) > .lleft, section:has(.panel.focus) #lessonNav { display: none; }
+section:has(.panel.focus) > .topbar, section:has(.panel.focus) > .tabs, section:has(.panel.focus) > .lfin, section:has(.panel.focus) > .lbook, section:has(.panel.focus) > .lleft, section:has(.panel.focus) #lessonNav { display: none; }
