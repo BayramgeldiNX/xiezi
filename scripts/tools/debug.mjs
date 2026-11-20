@@ -109,12 +109,15 @@ for (const [sk, modes] of Object.entries(SKILL_MODES)) {
   STEPS.push([`skill-${sk}`, `#/lesson/kouyu-rumen/1/${sk}`]);
   for (const m of modes) STEPS.push([`${sk}-${m}`, `#/lesson/kouyu-rumen/1/${sk}`, `document.querySelector('[data-mode="${m}"]')?.click(); ${W} ${MODE_STEP("#tab-" + sk)}`]);
 }
+STEPS.push(["shelf", "#/shelf"]);
+STEPS.push(["pdf", "#/pdf/ledu"]);   // no file on this device: the quiet line
 STEPS.push(["settings", "", `document.querySelector('#accountChip').click(); ${W}`]);
 
 for (const s of SIZES) {
   await send("Emulation.setDeviceMetricsOverride", { width: s.w, height: s.h, deviceScaleFactor: s.dpr, mobile: s.mobile });
   await send("Emulation.setTouchEmulationEnabled", { enabled: s.mobile });
   for (const [name, hash, act] of STEPS) {
+    if (process.env.ONLY && !new RegExp(process.env.ONLY).test(name)) continue; // e.g. ONLY=^shelf$
     where = `${s.name} ${name}`;
     await send("Page.navigate", { url: base + "#/" });   // leave the page so the next one starts fresh
     await sleep(250);
@@ -123,7 +126,7 @@ for (const s of SIZES) {
     if (act) await run(act);
     const found = await run(CHECK);
     for (const f of found || []) problems.push(`[${where}] ${f}`);
-    if (["home", "notebook-word", "notebook-write", "lesson-write", "read-texts", "words-match", "settings", "speak-say-word"].includes(name)) {
+    if (["home", "shelf", "pdf", "notebook-word", "notebook-write", "lesson-write", "read-texts", "words-match", "settings", "speak-say-word"].includes(name)) {
       const shot = await send("Page.captureScreenshot", { format: "png" });
       if (shot?.data) fs.writeFileSync(path.join(outDir, `${s.name}-${name}.png`), Buffer.from(shot.data, "base64"));
     }

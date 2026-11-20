@@ -35,7 +35,8 @@ export default defineConfig({
         // Recordings are not downloaded at install (there are 1,700+); each one is kept once it has played.
         globPatterns: ["**/*.{js,css,html,woff2,png,svg,json}"],
         // Per-character strokes (~9,500 files) and dictionary shards load on demand and are kept once used.
-        globIgnores: ["strokes/**", "dict/**", "radicals/**"],
+        globIgnores: ["strokes/**", "dict/**", "radicals/**", "assets/pdf.min-*", "assets/pdf.worker*"],
+        // pdf.js (the Shelf reader) is ~1.6 MB: kept after the first time the reader is opened, not for everyone at install.
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
         runtimeCaching: [{
           urlPattern: ({ url }) => url.pathname.includes("/audio/") && url.pathname.endsWith(".mp3"),
@@ -49,6 +50,10 @@ export default defineConfig({
           urlPattern: ({ url }) => url.pathname.includes("/dict/") && url.pathname.endsWith(".json"),
           handler: "CacheFirst",
           options: { cacheName: "xz-dict", expiration: { maxEntries: 80 } },
+        }, {
+          urlPattern: ({ url }) => /\/assets\/pdf\.(min|worker)/.test(url.pathname),
+          handler: "CacheFirst",
+          options: { cacheName: "xz-pdfjs", expiration: { maxEntries: 6 } },
         }, {
           urlPattern: ({ url }) => url.pathname.includes("/radicals/") && url.pathname.endsWith(".svg"),
           handler: "CacheFirst",
