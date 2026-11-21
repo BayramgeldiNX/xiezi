@@ -98,7 +98,7 @@ function familyStep(x) {
   const why = (x.lesson?.why || []).slice(0, 4);
   const shown = new Set(why.map((w) => w.c));
   const known = (c) => (charMastered(progress.get("w:" + c)) ? 0 : 1);
-  const book = ((RADICAL_FAMILIES[x.r] || {}).book || []).filter((c) => (CHARS[c] || CHARINFO[c]) && !shown.has(c))
+  const book = ((RADICAL_FAMILIES[x.r] || {}).book || []).filter((c) => (CHARS[c] || CHARINFO[c]) && !shown.has(c) && c !== x.r && c !== x.full)
     .map((c, i) => [c, i]).sort((a, b) => known(a[0]) - known(b[0]) || a[1] - b[1]).slice(0, 8).map((e) => e[0]);
   return sec("rad-l4", `<h3 class="rad-lh">Meet the family</h3>
     <div class="rad-cards">${why.map((w) => `<button type="button" class="rad-card" data-say="${esc(w.c)}"><span class="hz rad-cc">${esc(w.c)}</span>
