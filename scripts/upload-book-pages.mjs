@@ -4,6 +4,10 @@
 // Safe to run again: only missing pages, or pages whose stored v or bytes differ from the manifest, are written.
 // Uses the Firebase CLI login on this computer. Prints no secrets.
 //   npm run upload:pages [-- kouyu hsk1-tb ...] [--dry] [--dir <pages folder>]
+// With --thumbs it uploads the tiny previews instead (made by render-book-pages.py --thumbs), bundled 40 pages to a doc:
+//   books/{book}/thumbs/{id}-{k}   { from, imgs: [WebP bytes...], w: [...], h: [...], v, sig }   (w, h: the full-size page)
+// Only chunks whose stored v or sig differ are written.
+import crypto from "node:crypto";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
@@ -18,6 +22,8 @@ const meta = JSON.parse(fs.readFileSync(new URL("../src/data/book-pdfs.json", im
 const pdfs = want.length ? meta.filter((p) => want.includes(p.id)) : meta;
 if (want.length && pdfs.length !== want.length) throw new Error("Unknown id in: " + want.join(" "));
 
+const THUMBS = args.includes("--thumbs");
+const PER = 40, MAX_DOC = 900 * 1024;
 const token = await accessToken();
 const DOCS = `projects/${PROJECT}/databases/(default)/documents`;
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -48,6 +54,46 @@ async function stored(book) {
     pageToken = j.nextPageToken || "";
   } while (pageToken);
   return have;
+}
+
+if (THUMBS) {
+  const int = (n) => ({ integerValue: String(n) });
+  let n = 0, bytes = 0;
+  for (const p of pdfs) {
+    const dir = path.join(DIR, p.id);
+    const man = JSON.parse(fs.readFileSync(path.join(dir, "manifest.json"), "utf8"));
+    const tman = JSON.parse(fs.readFileSync(path.join(dir, "thumbs", "manifest.json"), "utf8"));
+    if (man.length !== p.pages || tman.length !== p.pages) throw new Error(`${p.id}: manifests do not match ${p.pages} pages`);
+    const v = p.img?.thumbs?.v ?? 1;
+    const have = new Map();
+    const j = await call(`${API}/books/${p.book}/thumbs?pageSize=300&mask.fieldPaths=v&mask.fieldPaths=sig`);
+    for (const d of j.documents || []) have.set(d.name.split("/").pop(), { v: +(d.fields?.v?.integerValue ?? 0), sig: d.fields?.sig?.stringValue });
+    for (let k = 0; k * PER < man.length; k++) {
+      const part = tman.slice(k * PER, (k + 1) * PER);
+      const imgs = part.map((m) => fs.readFileSync(path.join(dir, "thumbs", `${String(m.n).padStart(3, "0")}.webp`)));
+      const size = imgs.reduce((s, b) => s + b.length, 0);
+      if (size > MAX_DOC) throw new Error(`${p.id}-${k}: ${Math.round(size / 1024)} KB is over the limit; render again with a lower QUALITY`);
+      const sig = crypto.createHash("sha1").update(Buffer.concat(imgs)).update(JSON.stringify(man.slice(k * PER, (k + 1) * PER).map((m) => [m.w, m.h]))).digest("hex");
+      const id = `${p.id}-${k}`;
+      const h = have.get(id);
+      if (h && h.v === v && h.sig === sig) continue;
+      n++; bytes += size;
+      console.log(`${p.id}: chunk ${k} (${part.length} pages, ${Math.round(size / 1024)} KB)${dry ? " would write" : ""}`);
+      if (dry) continue;
+      await call(`https://firestore.googleapis.com/v1/${DOCS}:commit`, {
+        method: "POST",
+        body: JSON.stringify({ writes: [{ update: { name: `${DOCS}/books/${p.book}/thumbs/${id}`, fields: {
+          from: int(part[0].n),
+          imgs: { arrayValue: { values: imgs.map((b) => ({ bytesValue: b.toString("base64") })) } },
+          w: { arrayValue: { values: man.slice(k * PER, (k + 1) * PER).map((m) => int(m.w)) } },
+          h: { arrayValue: { values: man.slice(k * PER, (k + 1) * PER).map((m) => int(m.h)) } },
+          v: int(v), sig: { stringValue: sig },
+        } } }] }),
+      });
+    }
+  }
+  console.log(`${dry ? "would write" : "wrote"} ${n} thumb docs, ${(bytes / 1e6).toFixed(2)} MB`);
+  process.exit(0);
 }
 
 const int = (n) => ({ integerValue: String(n) });

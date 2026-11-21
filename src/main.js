@@ -36,7 +36,7 @@ import { bookRows, sealFor, markOf, MAX } from "./exam/rows.js";
 import { testOf } from "./exam/plan.js";
 import { hideGloss } from "./views/reading.js";
 import { initAccountChip, openAccount } from "./views/account.js";
-import { initSync, ownerCached, onOwner } from "./sync/sync.js";
+import { initSync, ownerCached, onOwner, warmBooks } from "./sync/sync.js";
 import { showLessonMeter, toggleLeft, noteHtml } from "./views/lessonmeter.js";
 import { timerBoot, timerEnter, timerLeave } from "./views/studytimer.js";
 import { initPWA } from "./pwa.js";
@@ -589,6 +589,8 @@ wireSoftClose($("#charSheet"));
 route();
 document.fonts?.ready.then(() => $$(".tabs").forEach((t) => moveTabPill(t, true)));
 initSync();
+// The owner's books: have the SDK, auth and the token ready once the first screen is drawn, so the Shelf opens fast.
+if (ownerCached()) (window.requestIdleCallback || ((f) => setTimeout(f, 1500)))(() => warmBooks(), { timeout: 4000 });
 initPWA();
 // Load the stroke shapes in the background so the first lesson opens at once.
 setTimeout(() => loadStrokes().catch(() => {}), 1500);

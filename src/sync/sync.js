@@ -24,6 +24,7 @@ export const syncAvailable = !!config;
 const state = { status: syncAvailable ? "starting" : "off", email: null, error: null };
 const subs = new Set();
 const emit = (patch) => {
+  if ("email" in patch && patch.email !== state.email) dropBookAuth();
   Object.assign(state, patch);
   subs.forEach((fn) => { try { fn({ ...state }); } catch (e) { console.error(e); } });
 };
@@ -245,34 +246,82 @@ export async function ownerStatus() {
 }
 export const isOwner = async () => (await ownerStatus()) === "owner";
 
-// One page image of a book: { status: "ok", blob (image/webp), w, h, v } or { status: "signed-out" | "not-owner" |
-// "none" | "offline" | "error" }. It is read over REST with the user's token, not with the Firestore SDK, so the
-// bytes are not also copied into Firestore's own offline cache: the device keeps one copy, in xz-pages.
-export async function bookPage(book, id, n) {
-  if (!syncAvailable) return { status: "none" };
-  try {
+// The auth header for the book downloads, kept ready: the SDK is loaded, auth has settled and the ID token is in
+// hand, so a page request starts at once. It is renewed shortly before the token expires, and dropped on sign-in/out.
+// Resolves to { Authorization } or null (signed out). Rejects when the SDK cannot load (offline).
+let bookHdr = null;
+function bookAuth() {
+  if (bookHdr && Date.now() < bookHdr.until) return bookHdr.p;
+  const slot = { until: Date.now() + 5 * 60 * 1000 };
+  slot.p = (async () => {
     const { auth } = await load();
     await auth.authStateReady();
-    if (!auth.currentUser) return { status: "signed-out" };
-    const token = await auth.currentUser.getIdToken();
+    const u = auth.currentUser;
+    if (!u) return null;
+    const t = await u.getIdTokenResult();
+    slot.until = Math.max(Date.now() + 60 * 1000, Date.parse(t.expirationTime) - 5 * 60 * 1000);
+    return { Authorization: `Bearer ${t.token}` };
+  })();
+  slot.p.then((h) => { if (!h && bookHdr === slot) bookHdr = null; }, () => { if (bookHdr === slot) bookHdr = null; });
+  bookHdr = slot;
+  return slot.p;
+}
+const dropBookAuth = () => { bookHdr = null; };
+// Get the SDK, auth and the token ready before the first page is asked for. Quiet; call it as often as you like.
+export function warmBooks() {
+  if (!syncAvailable) return Promise.resolve();
+  return bookAuth().then(() => {}, () => {});
+}
+
+// One document of a book's owner-only collections, over REST with the user's token (not the SDK, so the bytes are not
+// also copied into Firestore's own offline cache: the device keeps one copy, in xz-pages).
+// -> { status: "ok", fields } or { status: "signed-out" | "not-owner" | "none" | "offline" | "error" }.
+async function bookDoc(book, path) {
+  if (!syncAvailable) return { status: "none" };
+  try {
     const root = EMULATOR ? "http://127.0.0.1:8080" : "https://firestore.googleapis.com";
-    const doc = `${String(id)}-${String(n).padStart(3, "0")}`;
-    const res = await fetch(`${root}/v1/projects/${config.projectId}/databases/(default)/documents/books/${encodeURIComponent(book)}/pages/${doc}`, {
-      headers: { Authorization: `Bearer ${token}` },
-    });
-    if (res.status === 403 || res.status === 401) return { status: "not-owner" };
-    if (res.status === 404) return { status: "none" };
-    if (!res.ok) return { status: "error" };
-    const f = (await res.json()).fields || {};
-    const bin = atob(f.img?.bytesValue || "");
-    if (!bin) return { status: "none" };
-    const bytes = new Uint8Array(bin.length);
-    for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
-    const num = (x) => Number(x?.integerValue ?? x?.doubleValue ?? 0);
-    return { status: "ok", blob: new Blob([bytes], { type: "image/webp" }), w: num(f.w), h: num(f.h), v: num(f.v) || 1 };
+    for (let again = 0; ; again++) {
+      const hdr = await bookAuth();
+      if (!hdr) return { status: "signed-out" };
+      const res = await fetch(`${root}/v1/projects/${config.projectId}/databases/(default)/documents/books/${encodeURIComponent(book)}/${path}`, { headers: hdr });
+      if (res.status === 401 && !again) { dropBookAuth(); continue; }   // the token had run out: one fresh try
+      if (res.status === 403 || res.status === 401) return { status: "not-owner" };
+      if (res.status === 404) return { status: "none" };
+      if (!res.ok) return { status: "error" };
+      return { status: "ok", fields: (await res.json()).fields || {} };
+    }
   } catch (e) {
     return { status: navigator.onLine === false || e instanceof TypeError ? "offline" : "error" };
   }
+}
+const num = (x) => Number(x?.integerValue ?? x?.doubleValue ?? 0);
+const toBlob = (b64) => {
+  const bin = atob(b64 || "");
+  if (!bin) return null;
+  const bytes = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+  return new Blob([bytes], { type: "image/webp" });
+};
+
+// One page image of a book: { status: "ok", blob (image/webp), w, h, v } or { status: "signed-out" | "not-owner" |
+// "none" | "offline" | "error" }.
+export async function bookPage(book, id, n) {
+  const r = await bookDoc(book, `pages/${String(id)}-${String(n).padStart(3, "0")}`);
+  if (r.status !== "ok") return r;
+  const f = r.fields, blob = toBlob(f.img?.bytesValue);
+  if (!blob) return { status: "none" };
+  return { status: "ok", blob, w: num(f.w), h: num(f.h), v: num(f.v) || 1 };
+}
+
+// One chunk of previews (books/<book>/thumbs/<id>-<k>): { status: "ok", from, imgs: [Blob], w: [], h: [], v } (w and h
+// are the FULL page sizes) or the same failures as bookPage.
+export async function bookThumbs(book, id, k) {
+  const r = await bookDoc(book, `thumbs/${String(id)}-${k}`);
+  if (r.status !== "ok") return r;
+  const f = r.fields, list = (x) => (x?.arrayValue?.values || []);
+  const imgs = list(f.imgs).map((x) => toBlob(x.bytesValue));
+  if (!imgs.length || imgs.some((b) => !b)) return { status: "none" };
+  return { status: "ok", from: num(f.from) || 1, imgs, w: list(f.w).map(num), h: list(f.h).map(num), v: num(f.v) || 1 };
 }
 
 /* ---------- account actions (return an error message or null) ---------- */

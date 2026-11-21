@@ -1,10 +1,12 @@
 // 书架 reader (#/pdf/<id>[/<page>]): one page at a time, fitted to the screen. Each page is an image from the
-// device's page cache (src/pdf/store.js), which fills from the owner's Firestore. Swipe or tap the sides to turn,
-// pinch or double-tap to zoom. The page number lives in the address (replaceState, so Back leaves the book).
+// device's page cache (src/pdf/store.js), which fills from the owner's Firestore. A sheet shows the page's small
+// preview (softened) at once, and the sharp page fades in over it. Swipe or tap the sides to turn, pinch or
+// double-tap to zoom. The page number lives in the address (replaceState, so Back leaves the book).
 import { $, store, esc } from "../lib/util.js";
 import * as screen from "../lib/screen.js";
 import { pdfById, printedLabel, clampPage } from "../pdf/pages.js";
-import { getPage, prefetch } from "../pdf/store.js";
+import { getPage, getThumbs, prefetch, setFocus, saveBook } from "../pdf/store.js";
+import { chunkOf, chunkPages } from "../pdf/queue.js";
 import { onSync } from "../sync/sync.js";
 import { openAccount } from "./account.js";
 import { PLACE_KEY, pdfHash, savedPage, withPage, fitSize, clampZoom, clampPan, zoomAt, swipeResult, tapZone } from "../pdf/view-math.js";
@@ -37,6 +39,7 @@ function endBook() {
   S.dead = true;
   clearTimeout(S.zoomTimer);
   for (const e of S.entries.values()) if (e.url) URL.revokeObjectURL(e.url);
+  for (const t of S.thumbs.values()) if (t.url) URL.revokeObjectURL(t.url);
   S = null;
 }
 
@@ -58,7 +61,7 @@ export function openPdfView(id, wantPage) {
   if (!pdf) return note("This book isn't on the shelf.");
   const total = pdf.pages;
   const start = wantPage ? clampPage(pdf, wantPage) : savedPage(store.get(PLACE_KEY, {}), pdf);
-  S = { id, pdf, total, cur: start, z: 1, x: 0, y: 0, dx: 0, sizes: new Map(), entries: new Map(), box: null, anim: null, dead: false, track: null };
+  S = { id, pdf, total, cur: start, z: 1, x: 0, y: 0, dx: 0, sizes: new Map(), entries: new Map(), thumbs: new Map(), box: null, anim: null, dead: false, track: null };
   st.innerHTML = `<div class="pdfr-track"></div>`;
   S.track = st.firstChild;
   measure();
@@ -110,7 +113,7 @@ function layout() {
     slot.style.transform = k ? `translateX(${k * 100}%)` : "";
     const sheet = document.createElement("div");
     sheet.className = "pdfr-sheet"; sheet.dataset.n = n;
-    fill(sheet, S.entries.get(n));
+    fill(sheet);
     slot.append(sheet); track.append(slot);
   }
   sizeSheets();
@@ -132,15 +135,42 @@ function pan(tx, ty) {
   S.x = p.x; S.y = p.y;
 }
 
-/* ---------- drawing: current page first, then its neighbours; the next two are only saved ---------- */
-// What a sheet holds: the page image, or one quiet line when the page could not be had.
-function fill(sheet, e) {
-  if (e?.url) {
-    const img = new Image();
-    img.src = e.url; img.alt = ""; img.draggable = false;
-    sheet.replaceChildren(img);
-  } else if (e?.err) sheet.innerHTML = `<p class="pdfr-note"><span>${esc(e.err)}</span></p>`;
-  else sheet.replaceChildren();
+/* ---------- drawing: the preview at once, the sharp page over it; neighbours and the next few are only saved ---------- */
+const img = (url, cls) => {
+  const i = new Image();
+  i.src = url; i.alt = ""; i.draggable = false; i.className = cls;
+  return i;
+};
+const thumbUrl = (n) => {
+  const t = S.thumbs.get(n);
+  if (!t) return null;
+  return t.url || (t.url = URL.createObjectURL(t.blob));
+};
+// What a sheet holds: the small preview underneath (softened), the sharp page over it, or one quiet line when the
+// page could not be had. The preview is also what shows while the sharp image is still decoding.
+function fill(sheet) {
+  const n = +sheet.dataset.n, e = S.entries.get(n), pv = thumbUrl(n);
+  const kids = [];
+  if (pv) kids.push(img(pv, "pv"));
+  if (e?.url) kids.push(img(e.url, "fx"));
+  else if (e?.err) { const p = document.createElement("p"); p.className = "pdfr-note" + (pv ? " over" : ""); p.innerHTML = `<span>${esc(e.err)}</span>`; kids.push(p); }
+  sheet.replaceChildren(...kids);
+}
+const sheetFor = (n) => S.track.querySelector(`.pdfr-sheet[data-n="${n}"]`);
+
+// The sharp page has arrived: decode it, then fade it in over the preview.
+async function fadeIn(n, e) {
+  const mine = S, sheet = sheetFor(n);
+  if (!sheet) return;
+  if (!sheet.querySelector(".pv")) { fill(sheet); return; }   // nothing to fade over
+  const fx = img(e.url, "fx fade");
+  try { await fx.decode(); } catch {}
+  if (S !== mine || !sheet.isConnected || mine.entries.get(n) !== e) return;
+  sheet.querySelector(".fx")?.remove();
+  sheet.append(fx);
+  if (reduced()) { fx.classList.remove("fade"); return; }
+  fx.getBoundingClientRect();
+  fx.classList.add("in");
 }
 
 function fetchPage(n) {
@@ -154,19 +184,48 @@ function fetchPage(n) {
     e.url = URL.createObjectURL(r.blob);
     const known = mine.sizes.has(n);
     mine.sizes.set(n, { w: r.w, h: r.h });
-    show(n, e, !known);
+    if (known) fadeIn(n, e); else show(n, true);
   }, (err) => {
     if (S !== mine || mine.entries.get(n) !== e) return;
     if ((err.code === "signed-out" || err.code === "not-owner") && n === mine.cur) return fatal(err);
     e.err = err.message; e.code = err.code;
-    show(n, e, false);
+    show(n, false);
   });
   return e.p;
 }
-function show(n, e, resize) {
-  const sheet = S.track.querySelector(`.pdfr-sheet[data-n="${n}"]`);
-  if (sheet) fill(sheet, e);
+function show(n, resize) {
+  const sheet = sheetFor(n);
+  if (sheet) fill(sheet);
   if (resize) sizeSheets();   // the page's shape was a guess until now
+}
+
+// The previews of the chunks that hold the pages around `cur`. Their sizes are the full pages' sizes, so a sheet has
+// its exact shape before any image is in.
+function fetchThumbs(cur) {
+  const mine = S, per = mine.pdf.img?.thumbs?.per;
+  if (!per) return;
+  const ks = new Set([cur, cur + 1, cur - 1, cur + 5, cur - 2].filter((n) => n >= 1 && n <= mine.total).map((n) => chunkOf(n, per).k));
+  for (const k of [chunkOf(cur, per).k, ...ks]) {
+    if (mine.chunksAsked?.has(k) && !mine.chunksAsked.get(k).failed) continue;
+    const ask = { failed: false };
+    (mine.chunksAsked ||= new Map()).set(k, ask);
+    getThumbs(mine.pdf, k).then((arr) => {
+      if (S !== mine) return;
+      const pages = chunkPages(k, mine.total, per);
+      let resize = false;
+      pages.forEach((n, i) => {
+        const t = arr[i];
+        if (!t) return;
+        mine.thumbs.set(n, { blob: t.blob, url: null });
+        if (t.w > 0 && t.h > 0 && !mine.sizes.has(n)) { mine.sizes.set(n, { w: t.w, h: t.h }); resize = true; }
+      });
+      for (const n of pages) {
+        const sheet = sheetFor(n);
+        if (sheet && !sheet.querySelector("img")) fill(sheet);
+      }
+      if (resize) sizeSheets();
+    }, () => { ask.failed = true; });
+  }
 }
 
 function pump() {
@@ -175,11 +234,13 @@ function pump() {
   for (const [n, e] of mine.entries) {
     if (Math.abs(n - cur) > 1) { if (e.url) URL.revokeObjectURL(e.url); mine.entries.delete(n); }
   }
-  fetchPage(cur).then(() => {
-    if (S !== mine || mine.cur !== cur) return;
-    return Promise.all([fetchPage(cur + 1), fetchPage(cur - 1)]);
-  }).then(() => {
-    if (S === mine && mine.cur === cur && !mine.entries.get(cur)?.err) prefetch(mine.pdf, [cur + 2, cur + 3]);
+  setFocus(mine.pdf, cur);
+  fetchThumbs(cur);
+  const now = fetchPage(cur);
+  const near = now.then(() => { if (S === mine && mine.cur === cur) return Promise.all([fetchPage(cur + 1), fetchPage(cur - 1)]); });
+  prefetch(mine.pdf, [cur + 1, cur - 1, cur + 2, cur + 3, cur + 4, cur + 5, cur - 2]);   // the queue orders them; saved, not drawn
+  near.then(() => {
+    if (S === mine && mine.cur === cur && !mine.entries.get(cur)?.err) saveBook(mine.pdf);   // then the rest of the book, quietly
   });
 }
 
@@ -193,6 +254,7 @@ function slideTo(target, dx0 = 0, ms = 220) {
   finishAnim();
   if (target === S.cur) { snapBack(dx0); return; }
   const dir = target > S.cur ? 1 : -1;
+  setFocus(S.pdf, target);
   const done = () => {
     S.anim = null; S.cur = target; S.dx = 0; S.z = 1; S.x = 0; S.y = 0;
     S.track.style.transform = "";
@@ -211,7 +273,8 @@ function snapBack(dx0) {
   const a = S.track.animate([{ transform: `translateX(${dx0}px)` }, { transform: "translateX(0)" }], { duration: 180, easing: EASE });
   a.onfinish = () => a.cancel();
 }
-function turn(d) { const n = S.cur + d; if (n >= 1 && n <= S.total) slideTo(n, 0, 200); else showChrome(); }
+// A key pressed during a turn finishes that turn first, so quick presses add up (S.cur is only moved when a turn ends).
+function turn(d) { finishAnim(); const n = S.cur + d; if (n >= 1 && n <= S.total) slideTo(n, 0, 200); else showChrome(); }
 
 /* ---------- zoom ---------- */
 function setView(v, ease) {
