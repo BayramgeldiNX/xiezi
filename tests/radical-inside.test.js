@@ -46,3 +46,31 @@ describe("Find-the-radical never offers a radical inside the character", () => {
     expect(pickRadicalDistractors(all[0], all, () => 0.3, 3, "xe", { xe: "e" })).not.toContain("e");
   });
 });
+
+import { buildSpotQuestions, charGloss } from "../src/lib/radical-quiz.js";
+import { RADICAL_FAMILIES as FAM, CHAR_INSIDE as INS } from "../src/data/index.js";
+
+describe("spot the radical (lesson quick check)", () => {
+  const all = allCoreRadicals();
+  it("asks about a family character with three others that do not contain the radical", () => {
+    for (const t of all) {
+      const qs = buildSpotQuestions(t, all, { rand: () => 0.42, n: 2 });
+      for (const q of qs) {
+        expect(q.others).toHaveLength(3);
+        const forms = [t.r, t.full, ...(t.variants || [])].filter(Boolean);
+        for (const o of q.others) expect(forms.some((f) => (o.c + (INS[o.c] || "")).includes(f)), `${t.r} ${o.c}`).toBe(false);
+        expect(new Set([q.c, ...q.others.map((o) => o.c)]).size).toBe(4);
+      }
+    }
+  });
+  it("prefers words the lesson did not show", () => {
+    const t = all.find((x) => x.r === "耳");
+    const shown = new Set([...(t.lesson.part || []), ...t.lesson.why.map((w) => w.c), ...(t.lesson.sound || []).map((s) => s.c)]);
+    for (const seed of [0.1, 0.5, 0.9]) for (const q of buildSpotQuestions(t, all, { rand: () => seed })) expect(shown.has(q.c)).toBe(false);
+  });
+  it("glosses a character with its meaning", () => {
+    const t = all.find((x) => x.r === "耳");
+    expect(charGloss("聪", t).why).toMatch(/ear/);
+    for (const c of FAM["耳"].common.map((x) => x.c)) expect(charGloss(c, t).en, c).toBeTruthy();
+  });
+});
