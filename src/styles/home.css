@@ -197,9 +197,14 @@ html.pdf-on, html.pdf-on body { overflow: hidden; overscroll-behavior: none; }
   padding: calc(var(--safe-t) + 12px) calc(var(--safe-r) + 12px) calc(var(--safe-b) + 12px) calc(var(--safe-l) + 12px); }
 .pdfr-track { position: absolute; inset: 0; will-change: transform; }
 .pdfr-slot { position: absolute; inset: 0; }
-.pdfr-sheet { position: absolute; background: #fff; border-radius: 2px; transform-origin: 50% 50%;
+.pdfr-sheet { position: absolute; background: #fff; border-radius: 2px; transform-origin: 50% 50%; overflow: hidden;
   box-shadow: 0 0 0 1px var(--line2), 0 6px 24px var(--shadow); }
-.pdfr-sheet img { display: block; width: 100%; height: 100%; pointer-events: none; }
+.pdfr-sheet img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; pointer-events: none; }
+/* the small preview reads as "loading": softened, with the sharp page fading in over it */
+.pdfr-sheet img.pv { filter: blur(1.5px) saturate(.92); }
+.pdfr-sheet img.fx.fade { opacity: 0; transition: opacity 150ms linear; }
+.pdfr-sheet img.fx.fade.in { opacity: 1; }
+.pdfr-sheet .pdfr-note.over { background: rgb(255 255 255 / .6); }
 .pdfr-sheet .pdfr-note { color: #6b6b6b; }
 .pdfr-note { position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; gap: 8px; margin: 0; padding: 0 24px; text-align: center; color: var(--muted); line-height: 1.5; }
 .pdfr-note a { color: var(--ink); text-underline-offset: 3px; min-height: 44px; display: inline-grid; place-items: center; }
