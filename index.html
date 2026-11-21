@@ -40,7 +40,7 @@
   </div>
   <a class="side-link" href="#/" data-side="home" title="Home"><span class="seal" aria-hidden="true">家</span>Home</a>
   <a class="side-link" href="#/books" data-side="books" title="Books"><span class="seal" aria-hidden="true">书</span>Books</a>
-  <a class="side-link" href="#/shelf" data-side="shelf" title="Shelf"><span class="seal" aria-hidden="true">架</span>Shelf</a>
+  <a class="side-link" href="#/shelf" data-side="shelf" title="Shelf" id="sideShelf" hidden><span class="seal" aria-hidden="true">架</span>Shelf</a>
   <a class="side-link" href="#/notebook" data-side="notebook" title="Notebook"><span class="seal" aria-hidden="true">记</span>Notebook</a>
   <a class="side-link" href="#/radicals" data-side="radicals" title="Radicals"><span class="seal" aria-hidden="true">部</span>Radicals</a>
   <a class="side-link" href="#/typing" data-side="typing" title="Typing"><span class="seal" aria-hidden="true">键</span>Typing</a>
@@ -74,7 +74,7 @@
 
     <nav class="hub" aria-label="Sections">
       <button class="row" type="button" id="openBooks"><span class="seal" aria-hidden="true">书</span><span class="row-t"><b>Books<span class="cn">课本</span></b><span class="row-n" id="hubMeta"></span></span><span class="chev" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></span></button>
-      <button class="row" type="button" id="openShelf"><span class="seal" aria-hidden="true">架</span><span class="row-t"><b>Shelf<span class="cn">书架</span></b><span class="row-n">Your textbook PDFs</span></span><span class="chev" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></span></button>
+      <button class="row" type="button" id="openShelf" hidden><span class="seal" aria-hidden="true">架</span><span class="row-t"><b>Shelf<span class="cn">书架</span></b><span class="row-n">Your textbooks</span></span><span class="chev" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></span></button>
       <button class="row" type="button" id="openNotebook"><span class="seal" aria-hidden="true">记</span><span class="row-t"><b>Notebook<span class="cn">生词本</span></b><span class="row-n" id="notebookMeta"></span></span><span class="chev" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></span></button>
       <button class="row" type="button" id="openRadicals"><span class="seal" aria-hidden="true">部</span><span class="row-t"><b>Radicals<span class="cn">部首</span></b><span class="row-n" id="radicalsMeta"></span></span><span class="chev" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></span></button>
       <button class="row" type="button" id="openTyping"><span class="seal" aria-hidden="true">键</span><span class="row-t"><b>Typing<span class="cn">打字</span></b><span class="row-n" id="typingMeta"></span></span><span class="chev" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M9 5l7 7-7 7"/></svg></span></button>

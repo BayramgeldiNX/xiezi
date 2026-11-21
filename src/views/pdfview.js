@@ -1,83 +1,70 @@
-// 书架 reader (#/pdf/<id>[/<page>]): one page at a time, fitted to the screen. The file comes from
-// IndexedDB (src/pdf/store.js) and is drawn with pdf.js, loaded only here. Swipe or tap the sides to turn,
+// 书架 reader (#/pdf/<id>[/<page>]): one page at a time, fitted to the screen. Each page is an image from the
+// device's page cache (src/pdf/store.js), which fills from the owner's Firestore. Swipe or tap the sides to turn,
 // pinch or double-tap to zoom. The page number lives in the address (replaceState, so Back leaves the book).
-import { $, store } from "../lib/util.js";
+import { $, store, esc } from "../lib/util.js";
 import * as screen from "../lib/screen.js";
 import { pdfById, printedLabel, clampPage } from "../pdf/pages.js";
-import { getPdf } from "../pdf/store.js";
-import { PLACE_KEY, pdfHash, savedPage, withPage, fitSize, renderScale, clampZoom, clampPan, zoomAt, swipeResult, tapZone } from "../pdf/view-math.js";
-import workerUrl from "pdfjs-dist/legacy/build/pdf.worker.min.mjs?url";
+import { getPage, prefetch } from "../pdf/store.js";
+import { onSync } from "../sync/sync.js";
+import { openAccount } from "./account.js";
+import { PLACE_KEY, pdfHash, savedPage, withPage, fitSize, clampZoom, clampPan, zoomAt, swipeResult, tapZone } from "../pdf/view-math.js";
 
 let S = null;          // the open book, or null
-let openGen = 0;       // a newer open (or leaving) ends an older one that is still loading
+let bound = false;     // the stage's touch and mouse handlers are added once
 const reduced = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
 const EASE = "cubic-bezier(.2, .8, .2, 1)";
-const MISSING = `This book's PDF is not on this device yet. <a href="#/shelf">Shelf</a>`;
 
 export const pdfOpenId = () => S?.id ?? null;
 
-let libPromise = null;
-function loadLib() {
-  libPromise ||= import("pdfjs-dist/legacy/build/pdf.min.mjs").then((m) => { m.GlobalWorkerOptions.workerSrc = workerUrl; return m; });
-  return libPromise;
-}
-
 function note(html) {
-  $("#pdfStage").innerHTML = `<p class="pdfr-note">${html}</p>`;
+  $("#pdfStage").innerHTML = `<p class="pdfr-note"><span>${html}</span></p>`;
   showChrome(true);
 }
 
-export async function openPdfView(id, wantPage) {
-  const gen = ++openGen;
-  const dead = () => gen !== openGen;
+// Nothing can be shown for this account (signed out, or not the owner): one quiet line, no reader.
+function fatal(err) {
+  const { id, cur } = S;
+  endBook();
+  if (err.code !== "signed-out") return note(esc(err.message));
+  note(`<a href="#" data-signin>Sign in</a> to read your books.`);
+  $("#pdfStage").querySelector("[data-signin]").addEventListener("click", (e) => { e.preventDefault(); openAccount(); });
+  const off = onSync((s) => { if (s.email) { off(); openPdfView(id, cur); } });
+  screen.onLeave(off);
+}
+
+function endBook() {
+  if (!S) return;
+  S.dead = true;
+  clearTimeout(S.zoomTimer);
+  for (const e of S.entries.values()) if (e.url) URL.revokeObjectURL(e.url);
   S = null;
+}
+
+export function openPdfView(id, wantPage) {
+  endBook();
   const st = $("#pdfStage");
   st.innerHTML = "";
   $("#pdfBar").classList.remove("off");
   document.documentElement.classList.add("pdf-on");
   $("#pdfNo").textContent = "";
-  let doc = null;
   screen.onLeave(() => {
-    openGen++;
     document.documentElement.classList.remove("pdf-on");
     clearTimeout(chromeTimer);
-    if (S) {
-      S.dead = true;
-      try { S.running?.task?.cancel(); } catch {}
-      clearTimeout(S.settleTimer); clearTimeout(S.zoomTimer);
-      for (const e of S.entries.values()) drop(e);
-    }
-    try { (S?.doc || doc)?.destroy(); } catch {}
-    S = null;
+    endBook();
     st.innerHTML = "";
   });
   const pdf = pdfById(id);
   $("#pdfTitle").textContent = pdf ? pdf.title : "";
-  if (!pdf) return note(MISSING);
-  let rec = null;
-  try { rec = await getPdf(id); } catch {}
-  if (dead()) return;
-  if (!rec) return note(MISSING);
-  st.innerHTML = `<p class="pdfr-note" role="status">Opening…</p>`;
-  try {
-    const lib = await loadLib();
-    const data = await rec.blob.arrayBuffer();
-    doc = await lib.getDocument({ data, isEvalSupported: false }).promise;
-  } catch (e) {
-    console.error(e);
-    if (dead()) return;
-    return note(`This PDF could not be opened. <a href="#/shelf">Shelf</a>`);
-  }
-  if (dead()) { try { doc.destroy(); } catch {} return; }
-  const total = Math.min(pdf.pages, doc.numPages) || doc.numPages;
+  if (!pdf) return note("This book isn't on the shelf.");
+  const total = pdf.pages;
   const start = wantPage ? clampPage(pdf, wantPage) : savedPage(store.get(PLACE_KEY, {}), pdf);
-  S = { id, pdf, doc, total, cur: Math.min(start, total), z: 1, zs: 1, x: 0, y: 0, dx: 0, sizes: new Map(), entries: new Map(), running: null, box: null, anim: null, dead: false, track: null };
+  S = { id, pdf, total, cur: start, z: 1, x: 0, y: 0, dx: 0, sizes: new Map(), entries: new Map(), box: null, anim: null, dead: false, track: null };
   st.innerHTML = `<div class="pdfr-track"></div>`;
   S.track = st.firstChild;
   measure();
-  bindInput(st);
+  if (!bound) { bound = true; bindInput(st); }
   screen.onKey(onKey);
-  screen.onResize(() => { if (!S) return; measure(); layout(); pump(); });
+  screen.onResize(() => { if (!S) return; measure(); layout(); });
   layout();
   commit();
   showChrome();
@@ -109,7 +96,6 @@ function measure() {
 }
 const sizeOf = (n) => S.sizes.get(n) || S.sizes.get(S.cur) || S.sizes.values().next().value || { w: 1, h: 1.414 };
 const fitOf = (n) => { const s = sizeOf(n); return fitSize(s.w, s.h, S.box.w, S.box.h); };
-const dpr = () => Math.min(window.devicePixelRatio || 1, 3);
 const curSheet = () => S.track.querySelector(".pdfr-slot.cur .pdfr-sheet");
 const centre = () => ({ x: S.box.l + S.box.w / 2, y: S.box.t + S.box.h / 2 });
 
@@ -124,8 +110,7 @@ function layout() {
     slot.style.transform = k ? `translateX(${k * 100}%)` : "";
     const sheet = document.createElement("div");
     sheet.className = "pdfr-sheet"; sheet.dataset.n = n;
-    const e = S.entries.get(n);
-    if (e?.canvas) sheet.append(e.canvas);
+    fill(sheet, S.entries.get(n));
     slot.append(sheet); track.append(slot);
   }
   sizeSheets();
@@ -147,60 +132,55 @@ function pan(tx, ty) {
   S.x = p.x; S.y = p.y;
 }
 
-/* ---------- drawing: current page first, then its neighbours; one render at a time ---------- */
-function drop(e) { if (e.canvas) { e.canvas.width = 0; e.canvas.height = 0; e.canvas = null; } }
-function wanted() {
-  const out = [{ n: S.cur, z: S.zs }];
-  for (const k of [1, -1]) if (S.cur + k >= 1 && S.cur + k <= S.total) out.push({ n: S.cur + k, z: 1 });
-  for (const j of out) { const f = fitOf(j.n); j.scale = renderScale(f.w, f.h, dpr(), j.z); j.fw = f.w; }
-  return out;
+/* ---------- drawing: current page first, then its neighbours; the next two are only saved ---------- */
+// What a sheet holds: the page image, or one quiet line when the page could not be had.
+function fill(sheet, e) {
+  if (e?.url) {
+    const img = new Image();
+    img.src = e.url; img.alt = ""; img.draggable = false;
+    sheet.replaceChildren(img);
+  } else if (e?.err) sheet.innerHTML = `<p class="pdfr-note"><span>${esc(e.err)}</span></p>`;
+  else sheet.replaceChildren();
 }
-const fresh = (j) => { const e = S.entries.get(j.n); return e?.canvas && e.scale >= j.scale * 0.97 && Math.abs(e.fw - j.fw) < 1.5; };
-const same = (r, j) => r.n === j.n && Math.abs(r.scale - j.scale) < j.scale * 0.03 && Math.abs(r.fw - j.fw) < 1.5;
 
-async function pump() {
-  if (!S || S.dead) return;
-  const jobs = wanted();
-  if (S.running) {
-    // Stale (someone flipped or zoomed): cancel it; its finally block starts the next one.
-    if (!jobs.some((j) => same(S.running, j))) { try { S.running.task?.cancel(); } catch {} S.running.stale = true; }
-    return;
-  }
-  const job = jobs.find((j) => !fresh(j));
-  if (!job) {
-    for (const [n, e] of S.entries) if (Math.abs(n - S.cur) > 1) { drop(e); S.entries.delete(n); }
-    return;
-  }
-  const run = S.running = { n: job.n, scale: job.scale, fw: job.fw, task: null, stale: false };
+function fetchPage(n) {
   const mine = S;
-  try {
-    const page = await mine.doc.getPage(job.n);
-    if (mine.dead || run.stale) return;
-    const v1 = page.getViewport({ scale: 1 });
-    const known = mine.sizes.has(job.n);
-    mine.sizes.set(job.n, { w: v1.width, h: v1.height });
-    const f = fitSize(v1.width, v1.height, mine.box.w, mine.box.h);
-    const sc = renderScale(f.w, f.h, dpr(), job.z);
-    const vp = page.getViewport({ scale: (f.w * sc) / v1.width });
-    const canvas = document.createElement("canvas");
-    canvas.width = Math.max(1, Math.round(vp.width)); canvas.height = Math.max(1, Math.round(vp.height));
-    run.task = page.render({ canvas, viewport: vp });
-    await run.task.promise;
-    if (mine.dead) { canvas.width = 0; return; }
-    let e = mine.entries.get(job.n);
-    if (!e) mine.entries.set(job.n, e = {});
-    drop(e);
-    e.canvas = canvas; e.scale = sc; e.fw = f.w;
-    const sheet = mine.track.querySelector(`.pdfr-sheet[data-n="${job.n}"]`);
-    if (sheet) sheet.replaceChildren(canvas);
-    if (!known) sizeSheets();       // the page's shape was a guess until now
-    page.cleanup();
-  } catch (err) {
-    if (err?.name !== "RenderingCancelledException" && !mine.dead) console.error(err);
-  } finally {
-    if (mine.running === run) mine.running = null;
-    if (!mine.dead) pump();
+  if (n < 1 || n > mine.total) return Promise.resolve();
+  let e = mine.entries.get(n);
+  if (e && !e.err) return e.p;
+  mine.entries.set(n, e = {});
+  e.p = getPage(mine.pdf, n).then((r) => {
+    if (S !== mine || mine.entries.get(n) !== e) return;   // left, or the page is out of reach by now
+    e.url = URL.createObjectURL(r.blob);
+    const known = mine.sizes.has(n);
+    mine.sizes.set(n, { w: r.w, h: r.h });
+    show(n, e, !known);
+  }, (err) => {
+    if (S !== mine || mine.entries.get(n) !== e) return;
+    if ((err.code === "signed-out" || err.code === "not-owner") && n === mine.cur) return fatal(err);
+    e.err = err.message; e.code = err.code;
+    show(n, e, false);
+  });
+  return e.p;
+}
+function show(n, e, resize) {
+  const sheet = S.track.querySelector(`.pdfr-sheet[data-n="${n}"]`);
+  if (sheet) fill(sheet, e);
+  if (resize) sizeSheets();   // the page's shape was a guess until now
+}
+
+function pump() {
+  if (!S) return;
+  const mine = S, cur = S.cur;
+  for (const [n, e] of mine.entries) {
+    if (Math.abs(n - cur) > 1) { if (e.url) URL.revokeObjectURL(e.url); mine.entries.delete(n); }
   }
+  fetchPage(cur).then(() => {
+    if (S !== mine || mine.cur !== cur) return;
+    return Promise.all([fetchPage(cur + 1), fetchPage(cur - 1)]);
+  }).then(() => {
+    if (S === mine && mine.cur === cur && !mine.entries.get(cur)?.err) prefetch(mine.pdf, [cur + 2, cur + 3]);
+  });
 }
 
 /* ---------- turning ---------- */
@@ -214,7 +194,7 @@ function slideTo(target, dx0 = 0, ms = 220) {
   if (target === S.cur) { snapBack(dx0); return; }
   const dir = target > S.cur ? 1 : -1;
   const done = () => {
-    S.anim = null; S.cur = target; S.dx = 0; S.z = 1; S.zs = 1; S.x = 0; S.y = 0;
+    S.anim = null; S.cur = target; S.dx = 0; S.z = 1; S.x = 0; S.y = 0;
     S.track.style.transform = "";
     layout(); commit(); pump();
   };
@@ -234,10 +214,6 @@ function snapBack(dx0) {
 function turn(d) { const n = S.cur + d; if (n >= 1 && n <= S.total) slideTo(n, 0, 200); else showChrome(); }
 
 /* ---------- zoom ---------- */
-function settleSoon() {
-  clearTimeout(S.settleTimer);
-  S.settleTimer = setTimeout(() => { if (S) { S.zs = S.z; pump(); } }, 220);
-}
 function setView(v, ease) {
   const sheet = curSheet();
   const z = clampZoom(v.z);
@@ -249,7 +225,6 @@ function setView(v, ease) {
     S.zoomTimer = setTimeout(() => { sheet.style.transition = ""; }, 230);
   }
   applyView();
-  settleSoon();
 }
 const view = () => ({ z: S.z, x: S.x, y: S.y });
 function toggleZoom(px, py) {
@@ -312,7 +287,7 @@ function bindInput(st) {
     if (!ptrs.delete(e.pointerId) || !g) return;
     if (g.mode === "pinch") {
       if (ptrs.size < 2) {
-        if (S.z < 1.05) setView({ z: 1, x: 0, y: 0 }, true); else settleSoon();
+        if (S.z < 1.05) setView({ z: 1, x: 0, y: 0 }, true);
         g = ptrs.size ? { mode: "none" } : null;
       }
       return;

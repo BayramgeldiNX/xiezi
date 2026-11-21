@@ -39,7 +39,11 @@
     "14": 123,
     "15": 135
    },
-   "note": "Printed pages 1-11, 95-96 and 166-167 are missing from the scan. Lessons 1 and 2 start on missing pages, so both point to PDF page 1 (printed 12, the first page that exists; it belongs to Lesson 2). PDF page 149 starts the listening recording script."
+   "note": "Printed pages 1-11, 95-96 and 166-167 are missing from the scan. Lessons 1 and 2 start on missing pages, so both point to PDF page 1 (printed 12, the first page that exists; it belongs to Lesson 2). PDF page 149 starts the listening recording script.",
+   "img": {
+    "v": 1,
+    "w": 1600
+   }
   },
   {
    "id": "hsk1-tb",
@@ -75,6 +79,10 @@
     "13": 111,
     "14": 117,
     "15": 125
+   },
+   "img": {
+    "v": 1,
+    "w": 1600
    }
   },
   {
@@ -115,6 +123,10 @@
     "13": 98,
     "14": 107,
     "15": 115
+   },
+   "img": {
+    "v": 1,
+    "w": 1600
    }
   },
   {
@@ -151,6 +163,10 @@
     "13": 117,
     "14": 125,
     "15": 133
+   },
+   "img": {
+    "v": 1,
+    "w": 1600
    }
   },
   {
@@ -187,6 +203,10 @@
     "13": 123,
     "14": 132,
     "15": 141
+   },
+   "img": {
+    "v": 1,
+    "w": 1600
    }
   },
   {
@@ -219,7 +239,11 @@
     "9": 76,
     "10": 85
    },
-   "note": "Printed page 26 is missing from the scan. Lesson 4 starts on printed page 27 (PDF page 26)."
+   "note": "Printed page 26 is missing from the scan. Lesson 4 starts on printed page 27 (PDF page 26).",
+   "img": {
+    "v": 1,
+    "w": 1600
+   }
   }
  ]
 }

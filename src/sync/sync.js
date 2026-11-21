@@ -12,6 +12,7 @@ import * as progress from "../progress/store.js";
 import * as notebook from "../notebook/store.js";
 import * as exam from "../exam/store.js";
 import { docId } from "./ids.js";
+import { ownerFromStore } from "../pdf/pages.js";
 
 // Test mode (only when started with VITE_FIREBASE_EMULATOR=1): talk to the local Firebase emulators
 // with a throw-away demo project instead of the real one. Never on in the published app.
@@ -82,6 +83,7 @@ function stop() {
   notebook.setSyncer(null);
   exam.setSyncer(null);
   if (state.email) { progress.clearRemote(); notebook.clearRemote(); exam.clearRemote(); }
+  setOwner(false);
   emit({ status: "signed-out", email: null });
 }
 
@@ -116,6 +118,7 @@ async function start(user) {
   let testsReady = false;
   exam.setSyncer({ push: (k, rec) => { if (testsReady) testPush(k, rec); } }, uid);
   emit({ status: "syncing", email: user.email, error: null });
+  ownerStatus();
 
   // Upload what has not reached this account yet: everything the first time, then only changes.
   try {
@@ -205,6 +208,70 @@ export async function bookContent(book, n) {
   } catch (e) {
     console.warn(e);
     return { status: e?.code === "permission-denied" ? "none" : "error" };
+  }
+}
+
+/* ---------- the owner's books ---------- */
+// Only the owner's account (owners/{uid}, see firestore.rules) can read the book pages. The answer is
+// kept on the device (xz-owner), so the Shelf shows at once and offline, and is cleared on sign-out.
+const OWNER_KEY = "xz-owner";
+const ownerSubs = new Set();
+export function ownerCached() {
+  try { return ownerFromStore(localStorage.getItem(OWNER_KEY)); } catch { return false; }
+}
+function setOwner(on) {
+  const was = ownerCached();
+  try { on ? localStorage.setItem(OWNER_KEY, "1") : localStorage.removeItem(OWNER_KEY); } catch {}
+  if (was !== on) ownerSubs.forEach((f) => { try { f(on); } catch (e) { console.error(e); } });
+}
+// Hears a change of the owner flag (on sign-in, sign-out and the first check).
+export const onOwner = (f) => { ownerSubs.add(f); return () => ownerSubs.delete(f); };
+
+// "owner" | "not-owner" | "signed-out" | "unknown" (offline or an error: the device's last answer still holds).
+export async function ownerStatus() {
+  if (!syncAvailable) return "unknown";
+  try {
+    const { auth, db, F } = await load();
+    await auth.authStateReady();
+    const u = auth.currentUser;
+    if (!u) { setOwner(false); return "signed-out"; }
+    const d = await F.getDoc(F.doc(db, "owners", u.uid));
+    setOwner(d.exists());
+    return d.exists() ? "owner" : "not-owner";
+  } catch (e) {
+    if (e?.code === "permission-denied") { setOwner(false); return "not-owner"; }
+    return "unknown";
+  }
+}
+export const isOwner = async () => (await ownerStatus()) === "owner";
+
+// One page image of a book: { status: "ok", blob (image/webp), w, h, v } or { status: "signed-out" | "not-owner" |
+// "none" | "offline" | "error" }. It is read over REST with the user's token, not with the Firestore SDK, so the
+// bytes are not also copied into Firestore's own offline cache: the device keeps one copy, in xz-pages.
+export async function bookPage(book, id, n) {
+  if (!syncAvailable) return { status: "none" };
+  try {
+    const { auth } = await load();
+    await auth.authStateReady();
+    if (!auth.currentUser) return { status: "signed-out" };
+    const token = await auth.currentUser.getIdToken();
+    const root = EMULATOR ? "http://127.0.0.1:8080" : "https://firestore.googleapis.com";
+    const doc = `${String(id)}-${String(n).padStart(3, "0")}`;
+    const res = await fetch(`${root}/v1/projects/${config.projectId}/databases/(default)/documents/books/${encodeURIComponent(book)}/pages/${doc}`, {
+      headers: { Authorization: `Bearer ${token}` },
+    });
+    if (res.status === 403 || res.status === 401) return { status: "not-owner" };
+    if (res.status === 404) return { status: "none" };
+    if (!res.ok) return { status: "error" };
+    const f = (await res.json()).fields || {};
+    const bin = atob(f.img?.bytesValue || "");
+    if (!bin) return { status: "none" };
+    const bytes = new Uint8Array(bin.length);
+    for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+    const num = (x) => Number(x?.integerValue ?? x?.doubleValue ?? 0);
+    return { status: "ok", blob: new Blob([bytes], { type: "image/webp" }), w: num(f.w), h: num(f.h), v: num(f.v) || 1 };
+  } catch (e) {
+    return { status: navigator.onLine === false || e instanceof TypeError ? "offline" : "error" };
   }
 }
 
