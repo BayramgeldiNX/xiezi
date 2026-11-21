@@ -1,6 +1,9 @@
 // 部 Radical lesson: six or seven calm steps per radical, each its own address (#/radical/<r>/learn/<step>).
 // Steps: 1 picture + story, 2 how the shape changed, 3 as a part, look-alike twins (only for radicals that have them),
-// family, meaning + sound (skipped when empty), quick check.
+// family, meaning + sound (skipped when empty), check.
+// The check is ONE round of up to 10 questions, one per word of the radical's family, "Spot the radical" and "What does it
+// mean?" taking turns. The words change each time (lib/radical-quiz.js pickLessonWords: new words first, then missed ones).
+// Each answer saves bsw:<char>; the radical's own bs:<radical> is saved once at the end.
 // The lesson text comes from radicals-core.json `lesson`; drawings and ancient forms are optional and may be missing.
 import { $, esc, shuffle } from "../lib/util.js";
 import { tonePy } from "../lib/pinyin.js";
@@ -9,17 +12,17 @@ import { gridSVG, makeWriter, trackWriter } from "../lib/draw.js";
 import { STROKE_DATA, ensureChars, CHARS, CHARINFO, RADICAL_FAMILIES, CHAR_INSIDE } from "../data/index.js";
 import * as progress from "../progress/store.js";
 import { charMastered } from "../progress/model.js";
-import { allCoreRadicals, buildSpotQuestions, buildGuessQuestions, pickGuessDistractors, charGloss } from "../lib/radical-quiz.js";
+import { allCoreRadicals, buildLessonCheck, charGloss } from "../lib/radical-quiz.js";
 import { sayBtns } from "../lib/speech.js";
 import { setHost, ui } from "./practice.js";
-import { lessonSteps, stepIndex, nextRadical, learnHash, picId } from "../lib/radical-lesson.js";
+import { lessonSteps, stepIndex, nextRadical, learnHash, picId, posHeading } from "../lib/radical-lesson.js";
+import { radicalKey } from "../lib/radicals.js";
 import { firstUndone as firstUndoneIn } from "../lib/radical-lesson.js";
 export const firstUndone = (all) => firstUndoneIn(all, lessonDone);
 
 const ANCIENT_MOD = import.meta.glob("../data/ancient.gen.json", { eager: true });
 const ANCIENT = Object.values(ANCIENT_MOD)[0]?.default || {};
 const BASE = import.meta.env?.BASE_URL || "/";
-const POS = { left: "On the left", right: "On the right", top: "On top", bottom: "At the bottom", enclose: "Around the outside", enclosing: "Around the outside", outside: "Around the outside", inside: "Inside", any: "In many places", varies: "In many places", middle: "In the middle" };
 const SCRIPT = { oracle: "Oracle bone", bronze: "Bronze", seal: "Seal" };
 
 export const lessonKey = (r) => "bsl:" + r;
@@ -82,7 +85,7 @@ function shapeStep(x) {
 
 function partStep(x) {
   const chars = (x.lesson?.part || []).slice(0, 2);
-  return sec("rad-l3", `<h3 class="rad-lh">${esc(POS[x.pos] || "In many places")}</h3>
+  return sec("rad-l3", `<h3 class="rad-lh">${esc(posHeading(x.pos))}</h3>
     <p class="rad-ltext">${full(x) ? `Alone it is <b class="hz">${esc(full(x))}</b>; as a part it shrinks to <b class="hz rad-rad">${esc(x.r)}</b>.` : `It keeps the same shape as a part: <b class="hz rad-rad">${esc(x.r)}</b>.`}</p>
     <div id="radWrite" class="rad-write" hidden></div>
     <div class="rad-parts">${chars.map((c) => `<button type="button" class="rad-part" data-say="${esc(c)}" aria-label="Play ${esc(c)}"><span class="hz rad-pc">${esc(c)}</span><span class="rad-pl">← <span class="hz rad-rad">${esc(x.r)}</span></span></button>`).join("")}</div>`);
@@ -191,7 +194,6 @@ export async function radicalWriter(box, r, isCurrent = () => true) {
   } catch { box.hidden = true; }
 }
 
-// Quick check: two "find" questions and one "guess" (or three "find" when this radical has no guess list).
 // After an answer: the character, its sound and meaning, and how the radical gives it that meaning.
 export function glossHtml(c, radical) {
   const g = charGloss(c, radical);
@@ -204,20 +206,19 @@ export function glossHtml(c, radical) {
     ${how ? `<p class="note rad-gloss">${how}</p>` : ""}`;
 }
 
-// Quick check: "which character has this radical?" (it teaches a new family word each time), then one "guess the meaning".
+// The check: ten words in one round. "Spot the radical": which of four characters has it inside? "What does it mean?":
+// the character big, four meanings. Each answer shows glossHtml; a wrong choice adds a "You chose" note.
 function check(x, el, go) {
-  el.innerHTML = `<div class="rad-lstep rad-l6"><h3 class="rad-lh">Quick check</h3><div id="radLessonQuiz"></div><div id="radLessonEnd"></div></div>`;
+  el.innerHTML = `<div class="rad-lstep rad-l6"><h3 class="rad-lh">Check</h3><div id="radLessonQuiz"></div><div id="radLessonEnd"></div></div>`;
   const host = $("#radLessonQuiz");
   setHost("#radLessonQuiz", { back: go.back });
   const core = BY_R[x.r] || x;
-  const guess = buildGuessQuestions([core], undefined, Math.random, 1);
-  const spot = buildSpotQuestions(core, ALL, { n: guess.length ? 2 : 3, skip: guess.map((q) => q.c) });
-  const bad = [];
-  const take = (res) => { for (const q of res?.missedItems || []) if (!bad.includes(q.c)) bad.push(q.c); };
+  const items = buildLessonCheck(core, ALL, { seen: (c) => progress.get("bsw:" + c), n: 10 });
   const end = () => $("#radLessonEnd");
-  // Nothing missed: the lesson is done. Otherwise show what was missed first.
+  // Nothing missed: the lesson is done. Otherwise show what was missed first. The radical's own key is saved once, here.
   const fin = (res) => {
-    take(res);
+    const bad = [...new Set((res?.missedItems || []).map((q) => q.c))];
+    if (items.length) progress.record(radicalKey(x.r), { ok: !bad.length, miss: bad.length ? 1 : 0 }, { quiet: true });
     if (!bad.length) return finish(x, end(), host);
     host.innerHTML = "";
     end().innerHTML = `<div class="panel rad-fin"><h3>Look at these again</h3>
@@ -226,25 +227,23 @@ function check(x, el, go) {
     $("#rlAgain").addEventListener("click", () => { location.hash = learnHash(x.r, lessonSteps(x).indexOf("family") + 1); });
     $("#rlDone").addEventListener("click", () => finish(x, end(), null));
   };
-  const runGuess = (res) => {
-    take(res);
-    if (!guess.length) return fin();
-    const pool = ALL.filter((y) => (y.kind || "meaning") === "meaning");
-    ui.choiceQuiz({ kind: "radical-guess", title: "Guess the meaning", items: guess, key: "bs:", id: (q) => q.r, label: (q) => q.c, sayAfter: (q) => q.c, then: fin, back: go.back,
-      ask: (q) => ({ html: `<p class="hint">What does this character mean? The radical gives a clue.</p><div class="big-hz">${esc(q.c)}</div>
-        <p class="muted"><span class="hz" style="color:var(--jade)">${esc(q.radical.r)}</span> ${esc(q.radical.en)} + ?</p>` }),
-      makeOptions: (q) => [q.en, ...pickGuessDistractors(q, pool)].map((en, i) => ({ html: `<span class="en">${esc(en)}</span>`, correct: i === 0 })),
-      reveal: (q) => glossHtml(q.c, q.radical) });
-  };
-  if (!spot.length) return runGuess();
-  ui.choiceQuiz({ kind: "radical-spot", title: "Spot the radical", items: spot, key: "bs:", id: (q) => q.r, label: (q) => q.c, sayAfter: (q) => q.c, then: runGuess, back: go.back,
-    ask: (q) => ({ html: `<p class="hint">Which character has this radical inside?</p><div class="big-hz" data-en-done="1">${esc(q.r)}</div>
-      <p class="muted">${esc(q.radical.en)}</p>` }),
-    makeOptions: (q) => [{ c: q.c, r: q.r }, ...q.others].map((o) => {
-      const g = charGloss(o.c, BY_R[o.r]);
-      return { html: `<span class="hz" style="font-size:1.8rem">${esc(o.c)}</span><span class="c-py">${tonePy(g.py)}</span>`, correct: o.c === q.c,
-        note: `<span class="hz">${esc(o.c)}</span> ${tonePy(g.py)} ${esc(g.en)}: its radical is <span class="hz">${esc(o.r)}</span> ${esc(BY_R[o.r]?.en || "")}.` };
-    }),
+  if (!items.length) return fin();
+  const gloss = (o, y) => { const g = charGloss(o.c, y); return `<span class="hz">${esc(o.c)}</span> ${tonePy(g.py)} ${esc(g.en)}`; };
+  ui.choiceQuiz({ kind: "radical-check", title: "Check", items, key: "bsw:", id: (q) => q.c, label: (q) => q.c, sayAfter: (q) => q.c, then: fin, back: go.back,
+    ask: (q) => q.type === "spot"
+      ? { html: `<p class="hint">Which character has this radical inside?</p><div class="big-hz" data-en-done="1">${esc(q.r)}</div><p class="muted">${esc(q.radical.en)}</p>` }
+      : q.radical.kind === "shape"
+        ? { html: `<p class="hint">Which meaning?</p><div class="big-hz">${esc(q.c)}</div>` }
+        : { html: `<p class="hint">What does this character mean? The radical gives a clue.</p><div class="big-hz">${esc(q.c)}</div>
+          <p class="muted"><span class="hz" style="color:var(--jade)">${esc(q.radical.r)}</span> ${esc(q.radical.en)} + ?</p>` },
+    makeOptions: (q) => q.type === "spot"
+      ? [{ c: q.c, r: q.r }, ...q.others].map((o) => {
+        const g = charGloss(o.c, BY_R[o.r]);
+        return { html: `<span class="hz" style="font-size:1.8rem">${esc(o.c)}</span><span class="c-py">${tonePy(g.py)}</span>`, correct: o.c === q.c,
+          note: `${gloss(o, BY_R[o.r])}: its radical is <span class="hz">${esc(o.r)}</span> ${esc(BY_R[o.r]?.en || "")}.` };
+      })
+      : [{ en: q.en, correct: true }, ...q.others.map((o) => ({ en: o.en, o, correct: false }))].map((o) => ({ html: `<span class="en">${esc(o.en)}</span>`, correct: o.correct,
+        note: o.o ? `${esc(o.en)} is the meaning of ${gloss(o.o, BY_R[o.o.r])}.` : "" })),
     reveal: (q) => glossHtml(q.c, q.radical) });
 }
 
