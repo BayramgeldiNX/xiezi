@@ -11,6 +11,7 @@ import CHARINFO from "./charinfo.gen.json";
 import RADICALS from "./radicals.json";
 import RADICAL_FAMILIES from "./radical-families.gen.json";
 import RADICALS_CORE from "./radicals-core.json";
+import CHAR_INSIDE from "./char-inside.gen.json";
 
 const bookFiles = import.meta.glob("./books/*/book.json", { eager: true, import: "default" });
 const lessonFiles = import.meta.glob("./books/*/lesson*.json", { eager: true, import: "default" });
@@ -29,7 +30,7 @@ export const LESSONS = BOOKS.flatMap((b) => b.lessons);
 export const bookOf = (lesson) => BOOKS.find((b) => b.id === lesson.book);
 export const lessonIndex = (id) => LESSONS.findIndex((l) => l.id === id);
 
-export { CHARS, STROKE_NAMES, STROKE_DATA, loadStrokes, ensureChars, TONE_SETS, TONE_SAMPLES, GLOSSARY, CHARINFO, RADICALS, RADICAL_FAMILIES, RADICALS_CORE };
+export { CHARS, STROKE_NAMES, STROKE_DATA, loadStrokes, ensureChars, TONE_SETS, TONE_SAMPLES, GLOSSARY, CHARINFO, RADICALS, RADICAL_FAMILIES, RADICALS_CORE, CHAR_INSIDE };
 
 // Every word (from all lessons) that contains a character.
 export const wordsWith = (c) => wordsOf(LESSONS).filter((w) => w.w.includes(c));

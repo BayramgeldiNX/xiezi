@@ -1,6 +1,371 @@
 {
   "stages": [
     {
+      "id": "basic",
+      "title": "Basic shapes",
+      "cn": "基本字形",
+      "radicals": [
+        {
+          "r": "一",
+          "full": "一",
+          "variants": [],
+          "py": "yī",
+          "name": "横",
+          "en": "one",
+          "pos": "any",
+          "kind": "shape",
+          "origin": "One horizontal line.",
+          "tip": "One stroke: one.",
+          "meaningNote": "Mainly a sorting radical. It means one in 一 and 三 three, but in 不 and 世 it is only a stroke.",
+          "examples": [
+            "三",
+            "不",
+            "世",
+            "丈",
+            "与"
+          ],
+          "guess": [],
+          "lesson": {
+            "story": "The picture was one line lying flat. It means one and also stands for a flat surface. In many characters it is only a stroke, not a number.",
+            "picture": "one flat horizontal line",
+            "part": [
+              "三",
+              "上"
+            ],
+            "why": [
+              {
+                "c": "一",
+                "py": "yī",
+                "en": "one",
+                "why": "a single line"
+              },
+              {
+                "c": "三",
+                "py": "sān",
+                "en": "three",
+                "why": "three lines"
+              },
+              {
+                "c": "上",
+                "py": "shàng",
+                "en": "above",
+                "why": "a mark above the line"
+              },
+              {
+                "c": "下",
+                "py": "xià",
+                "en": "below",
+                "why": "a mark below the line"
+              }
+            ],
+            "sound": [],
+            "shape": "It is a number in 一 and 三. In 不, 世 and 万 it is just a stroke, so do not look for a number there."
+          }
+        },
+        {
+          "r": "十",
+          "full": "十",
+          "variants": [],
+          "py": "shí",
+          "name": "十字旁",
+          "en": "ten",
+          "pos": "any",
+          "kind": "shape",
+          "origin": "A cross: counting all ten on both hands.",
+          "tip": "A cross: ten.",
+          "meaningNote": "Mainly a sorting radical. It means ten in 十 and 千 thousand, but in 午 noon and 南 south it only gives the shape.",
+          "examples": [
+            "千",
+            "午",
+            "半",
+            "南",
+            "华",
+            "协"
+          ],
+          "guess": [],
+          "lesson": {
+            "story": "The old drawing was a simple cross, a way to count all ten fingers of both hands. It means ten. As a shape it appears in numbers and in a few other words.",
+            "picture": "a plain cross made of two crossing strokes",
+            "part": [
+              "千",
+              "半"
+            ],
+            "why": [
+              {
+                "c": "十",
+                "py": "shí",
+                "en": "ten",
+                "why": "a cross for counting ten"
+              },
+              {
+                "c": "千",
+                "py": "qiān",
+                "en": "thousand",
+                "why": "ten hundreds"
+              },
+              {
+                "c": "半",
+                "py": "bàn",
+                "en": "half",
+                "why": "a thing cut in two"
+              },
+              {
+                "c": "午",
+                "py": "wǔ",
+                "en": "noon",
+                "why": "only the shape here"
+              }
+            ],
+            "sound": [
+              {
+                "c": "华",
+                "sound": "化",
+                "soundPy": "huà",
+                "py": "huá",
+                "en": "splendid"
+              },
+              {
+                "c": "卖",
+                "sound": "买",
+                "soundPy": "mǎi",
+                "py": "mài",
+                "en": "sell"
+              }
+            ],
+            "shape": "It is a number in 十 and 千. In 午 and 南 it is just a shape, so treat it as a label."
+          }
+        },
+        {
+          "r": "八",
+          "full": "八",
+          "variants": [],
+          "py": "bā",
+          "name": "八字头",
+          "en": "eight / divide",
+          "pos": "top",
+          "kind": "shape",
+          "origin": "Two lines pulling apart, to divide.",
+          "tip": "Two strokes parting like a door opening.",
+          "meaningNote": "Mainly a sorting radical. It means eight in 八, but in 公 and 六 it is only a component.",
+          "examples": [
+            "公",
+            "六",
+            "兵",
+            "共",
+            "其"
+          ],
+          "guess": [],
+          "lesson": {
+            "story": "The picture was two lines parting, as if something were being split in two. It means eight, and also divide. In characters it often marks something splitting or spreading.",
+            "picture": "two strokes bending apart",
+            "part": [
+              "公",
+              "共"
+            ],
+            "why": [
+              {
+                "c": "八",
+                "py": "bā",
+                "en": "eight",
+                "why": "two lines apart"
+              },
+              {
+                "c": "公",
+                "py": "gōng",
+                "en": "public",
+                "why": "dividing among everyone"
+              },
+              {
+                "c": "共",
+                "py": "gòng",
+                "en": "together",
+                "why": "two hands holding something"
+              },
+              {
+                "c": "六",
+                "py": "liù",
+                "en": "six",
+                "why": "just a number"
+              }
+            ],
+            "sound": [],
+            "shape": "It means eight in 八 and 六. In 公 and 共 it is just a shape, so treat it as a label."
+          }
+        },
+        {
+          "r": "儿",
+          "full": "儿",
+          "variants": [],
+          "py": "ér",
+          "name": "儿字底",
+          "en": "legs / child",
+          "pos": "bottom",
+          "kind": "shape",
+          "origin": "A person with two legs, often at the foot of a character.",
+          "tip": "Two legs at the bottom: a person walking.",
+          "meaningNote": "Mainly a sorting radical. It shows a person with legs in 儿 child and 兄 elder brother, but in 先 and 光 it is only the bottom shape.",
+          "examples": [
+            "先",
+            "光",
+            "元",
+            "兄",
+            "克",
+            "党"
+          ],
+          "guess": [],
+          "lesson": {
+            "story": "The picture was a person with two legs, and these days it often sits at the foot of a character. On its own it also means child or son. Most of the time it is just the legs of a character.",
+            "picture": "a person standing on two legs",
+            "part": [
+              "兄",
+              "先"
+            ],
+            "why": [
+              {
+                "c": "儿",
+                "py": "ér",
+                "en": "child",
+                "why": "a small person"
+              },
+              {
+                "c": "兄",
+                "py": "xiōng",
+                "en": "elder brother",
+                "why": "a mouth above a person"
+              },
+              {
+                "c": "先",
+                "py": "xiān",
+                "en": "first",
+                "why": "a foot ahead of a person"
+              },
+              {
+                "c": "光",
+                "py": "guāng",
+                "en": "light",
+                "why": "a person under a fire"
+              }
+            ],
+            "sound": [],
+            "shape": "It means child in 儿 and 兄. In 先 and 光 it is just the legs at the bottom, so treat it as a label."
+          }
+        },
+        {
+          "r": "大",
+          "full": "大",
+          "variants": [],
+          "py": "dà",
+          "name": "大字头",
+          "en": "big",
+          "pos": "top",
+          "kind": "shape",
+          "origin": "A person stretching their arms and legs wide.",
+          "tip": "A person with arms wide: big!",
+          "meaningNote": "Mainly a sorting radical. It means big or a person in 大 and 天 sky, but in 夫 and 夹 it is only a component.",
+          "examples": [
+            "太",
+            "天",
+            "夫",
+            "奇",
+            "奋"
+          ],
+          "guess": [],
+          "lesson": {
+            "story": "The picture was a person with arms and legs spread wide, to show how big he is. It means big. As a shape it appears in many characters where something is large or a person stands out.",
+            "picture": "a person standing with arms and legs wide apart",
+            "part": [
+              "天",
+              "太"
+            ],
+            "why": [
+              {
+                "c": "大",
+                "py": "dà",
+                "en": "big",
+                "why": "a person with arms stretched wide"
+              },
+              {
+                "c": "天",
+                "py": "tiān",
+                "en": "sky",
+                "why": "the big thing above a person"
+              },
+              {
+                "c": "太",
+                "py": "tài",
+                "en": "too much",
+                "why": "bigger than needed"
+              },
+              {
+                "c": "夫",
+                "py": "fū",
+                "en": "man",
+                "why": "a grown man with a hairpin"
+              }
+            ],
+            "sound": [],
+            "shape": "It really means big in 大 and 太. In 头 and 奇 it is just a shape, so treat it as a label."
+          }
+        },
+        {
+          "r": "小",
+          "full": "小",
+          "variants": [],
+          "py": "xiǎo",
+          "name": "小字头",
+          "en": "small",
+          "pos": "top",
+          "kind": "shape",
+          "origin": "Three tiny dots for small bits.",
+          "tip": "Three little specks: small.",
+          "meaningNote": "Mainly a sorting radical. It means small in 小 and 尖 pointed, but in 少 it is only a component.",
+          "examples": [
+            "少",
+            "尘",
+            "尖",
+            "小"
+          ],
+          "guess": [],
+          "lesson": {
+            "story": "The picture was three small dots or specks, to show something tiny. It means small. In many characters it is a shape that stands for fine or little.",
+            "picture": "three tiny specks, one in the middle",
+            "part": [
+              "少",
+              "尖"
+            ],
+            "why": [
+              {
+                "c": "小",
+                "py": "xiǎo",
+                "en": "small",
+                "why": "three little specks"
+              },
+              {
+                "c": "少",
+                "py": "shǎo",
+                "en": "few",
+                "why": "a little bit less"
+              },
+              {
+                "c": "尖",
+                "py": "jiān",
+                "en": "sharp",
+                "why": "small at the top, big below"
+              },
+              {
+                "c": "尘",
+                "py": "chén",
+                "en": "dust",
+                "why": "tiny specks of earth"
+              }
+            ],
+            "sound": [],
+            "shape": "It really means small in 小, 少 and 尖. In 当 and 常 it is only a shape on top, so treat it as a label."
+          }
+        }
+      ]
+    },
+    {
       "id": "body",
       "title": "People & body",
       "cn": "人与身体",
@@ -31,20 +396,24 @@
           ],
           "guess": [
             {
-              "c": "位",
-              "en": "seat"
-            },
-            {
-              "c": "体",
-              "en": "body"
-            },
-            {
-              "c": "信",
-              "en": "letter"
-            },
-            {
               "c": "借",
               "en": "borrow"
+            },
+            {
+              "c": "仁",
+              "en": "kindness"
+            },
+            {
+              "c": "仙",
+              "en": "immortal"
+            },
+            {
+              "c": "伤",
+              "en": "hurt"
+            },
+            {
+              "c": "众",
+              "en": "crowd"
             }
           ],
           "lesson": {
@@ -96,7 +465,13 @@
                 "en": "plural for people"
               }
             ]
-          }
+          },
+          "twins": [
+            {
+              "r": "彳",
+              "tell": "Two strokes make a person. The three strokes of 彳 make a step on the road."
+            }
+          ]
         },
         {
           "r": "女",
@@ -201,10 +576,10 @@
           "name": "子字旁",
           "en": "child",
           "pos": "any",
-          "kind": "shape",
+          "kind": "meaning",
           "origin": "A baby with a big head and little arms wrapped below.",
           "tip": "A big round head on a small body: a child.",
-          "meaningNote": "Mainly a sorting radical. It means child in 孩 child and 孙 grandchild, but in 学 and 字 it is only part of the shape.",
+          "meaningNote": "Characters with 子 are usually about children and young ones: 孩 child, 孙 grandchild, 孕 pregnant, 孤 orphan. In 学 and 字 it is a child in a building.",
           "examples": [
             "孩",
             "学",
@@ -214,9 +589,26 @@
             "孔",
             "季"
           ],
-          "guess": [],
+          "guess": [
+            {
+              "c": "孕",
+              "en": "pregnant"
+            },
+            {
+              "c": "孝",
+              "en": "respect for parents"
+            },
+            {
+              "c": "孟",
+              "en": "eldest"
+            },
+            {
+              "c": "孤",
+              "en": "orphan"
+            }
+          ],
           "lesson": {
-            "story": "This was a baby with a big round head and arms stretched out, wrapped up below. It means child, and later it became a handy shape in characters about learning and young things.",
+            "story": "This was a baby with a big round head and arms stretched out, wrapped up below. It means a child, and it turns up in words about family, young ones and learning.",
             "picture": "a baby with a big round head and wrapped body",
             "part": [
               "孩",
@@ -255,9 +647,15 @@
                 "soundPy": "hài",
                 "py": "hái",
                 "en": "child"
+              },
+              {
+                "c": "孤",
+                "sound": "瓜",
+                "soundPy": "guā",
+                "py": "gū",
+                "en": "orphan"
               }
-            ],
-            "shape": "It really means child in 孩 and 孙. In 字 and 学 it is mostly just a part of the shape, so do not hunt for a child there."
+            ]
           }
         },
         {
@@ -353,7 +751,13 @@
                 "en": "taste"
               }
             ]
-          }
+          },
+          "twins": [
+            {
+              "r": "囗",
+              "tell": "A small box, a mouth. A big box that holds another character, as in 囗, is an enclosure."
+            }
+          ]
         },
         {
           "r": "目",
@@ -447,7 +851,17 @@
                 "en": "take aim"
               }
             ]
-          }
+          },
+          "twins": [
+            {
+              "r": "日",
+              "tell": "A tall box with two bars: the eye. 日 is short with one bar, and is the sun."
+            },
+            {
+              "r": "月",
+              "tell": "A tall box with two bars: the eye. 月 is open at the bottom and means flesh or moon."
+            }
+          ]
         },
         {
           "r": "耳",
@@ -470,10 +884,6 @@
           ],
           "guess": [
             {
-              "c": "聋",
-              "en": "deaf"
-            },
-            {
               "c": "聆",
               "en": "listen"
             },
@@ -484,6 +894,10 @@
             {
               "c": "聘",
               "en": "hire"
+            },
+            {
+              "c": "聊",
+              "en": "chat"
             }
           ],
           "lesson": {
@@ -927,12 +1341,12 @@
           ],
           "py": "ròu",
           "name": "月字旁",
-          "en": "flesh",
+          "en": "flesh · moon",
           "pos": "left",
-          "kind": "shape",
+          "kind": "meaning",
           "origin": "Meat on the ribs, squeezed into a moon-like shape when it sits on the left.",
-          "tip": "A moon on the left of a body word is flesh, not the moon.",
-          "meaningNote": "On the left, 月 is usually flesh and the body: 脸 face, 腿 leg, 脑 brain. In 朋 and 期 it is the moon instead, so watch the position.",
+          "tip": "On the left or bottom of a body word, 月 is flesh. In 朋 and 期 it is the moon.",
+          "meaningNote": "Two meanings, told by position. As a left or bottom part it is flesh and the body: 脸 face, 腿 leg, 脑 brain, 肚 belly. As a right-hand part, as in 朋, 期 and 明, it is the real moon.",
           "examples": [
             "脑",
             "脸",
@@ -943,9 +1357,34 @@
             "肚",
             "背"
           ],
-          "guess": [],
+          "guess": [
+            {
+              "c": "肚",
+              "en": "belly"
+            },
+            {
+              "c": "肩",
+              "en": "shoulder"
+            },
+            {
+              "c": "脖",
+              "en": "neck"
+            },
+            {
+              "c": "胸",
+              "en": "chest"
+            },
+            {
+              "c": "腰",
+              "en": "waist"
+            },
+            {
+              "c": "臂",
+              "en": "arm"
+            }
+          ],
           "lesson": {
-            "story": "This one is tricky. The ancient picture was a piece of flesh or meat, and in words about the body it looks just like the moon 月. So 月 in 脑, 腿 and 脚 is really flesh, not the moon.",
+            "story": "Two things look the same here. In body words 月 was once a slice of meat, so it means flesh and the body: 脸, 腿, 脑. In words like 朋, 期 and 明 it is the real moon. The rule: on the left or bottom of a body word, think flesh. Anywhere else, think moon.",
             "picture": "a slice of meat with a crescent shape",
             "part": [
               "脑",
@@ -992,9 +1431,18 @@
                 "py": "dǎn",
                 "en": "bold; gallbladder"
               }
-            ],
-            "shape": "In 有, 朋 and 期 the 月 is the moon or just a shape. Only in body words does it mean flesh."
-          }
+            ]
+          },
+          "twins": [
+            {
+              "r": "日",
+              "tell": "An open hook at the bottom, narrow and leaning: flesh or moon. 日 is a closed box, the sun."
+            },
+            {
+              "r": "目",
+              "tell": "Narrow with an open hook at the bottom: flesh or moon. 目 is a closed tall box, the eye."
+            }
+          ]
         },
         {
           "r": "舌",
@@ -1280,16 +1728,8 @@
           ],
           "guess": [
             {
-              "c": "湖",
-              "en": "lake"
-            },
-            {
               "c": "江",
               "en": "river"
-            },
-            {
-              "c": "洗",
-              "en": "wash"
             },
             {
               "c": "游",
@@ -1353,7 +1793,13 @@
                 "en": "oil"
               }
             ]
-          }
+          },
+          "twins": [
+            {
+              "r": "冫",
+              "tell": "Three drops mean water. Two drops, as in 冫, mean ice and cold."
+            }
+          ]
         },
         {
           "r": "火",
@@ -1380,10 +1826,6 @@
             "照"
           ],
           "guess": [
-            {
-              "c": "烤",
-              "en": "roast"
-            },
             {
               "c": "炸",
               "en": "fry"
@@ -1549,7 +1991,17 @@
                 "en": "kind"
               }
             ]
-          }
+          },
+          "twins": [
+            {
+              "r": "禾",
+              "tell": "A plain cross with legs: a tree. 禾 has a slanting stroke on top, and means grain."
+            },
+            {
+              "r": "米",
+              "tell": "A plain cross with legs: a tree. 米 has four dots around its cross, and means rice."
+            }
+          ]
         },
         {
           "r": "土",
@@ -1734,7 +2186,17 @@
                 "en": "morning"
               }
             ]
-          }
+          },
+          "twins": [
+            {
+              "r": "目",
+              "tell": "A short box with one bar: the sun. 目 is taller and has two bars, like an eye."
+            },
+            {
+              "r": "月",
+              "tell": "A square box with a middle bar: the sun. 月 is narrower and leans, with an open corner."
+            }
+          ]
         },
         {
           "r": "雨",
@@ -1773,10 +2235,6 @@
             {
               "c": "霜",
               "en": "frost"
-            },
-            {
-              "c": "雷",
-              "en": "thunder"
             }
           ],
           "lesson": {
@@ -1860,10 +2318,6 @@
             {
               "c": "硬",
               "en": "hard"
-            },
-            {
-              "c": "矿",
-              "en": "mine"
             },
             {
               "c": "砸",
@@ -1953,10 +2407,6 @@
             {
               "c": "岗",
               "en": "post"
-            },
-            {
-              "c": "岭",
-              "en": "ridge"
             },
             {
               "c": "崖",
@@ -2182,7 +2632,17 @@
                 "en": "steel"
               }
             ]
-          }
+          },
+          "twins": [
+            {
+              "r": "讠",
+              "tell": "Two bars and a hook: metal. 讠 is a dot and a bent line, and is speech."
+            },
+            {
+              "r": "饣",
+              "tell": "Two bars and a hook: metal. 饣 has a roof-like top and a bent line, and is food."
+            }
+          ]
         },
         {
           "r": "米",
@@ -2207,10 +2667,6 @@
           ],
           "guess": [
             {
-              "c": "粮",
-              "en": "grain"
-            },
-            {
               "c": "糕",
               "en": "cake"
             },
@@ -2221,6 +2677,10 @@
             {
               "c": "粘",
               "en": "sticky"
+            },
+            {
+              "c": "粥",
+              "en": "porridge"
             }
           ],
           "lesson": {
@@ -2272,7 +2732,17 @@
                 "en": "grain"
               }
             ]
-          }
+          },
+          "twins": [
+            {
+              "r": "木",
+              "tell": "Four dots around a cross: rice. 木 has no dots, and is a tree."
+            },
+            {
+              "r": "禾",
+              "tell": "Four dots around a cross: rice. 禾 has a slanting stroke on top, grain."
+            }
+          ]
         },
         {
           "r": "禾",
@@ -2296,10 +2766,6 @@
             "稳"
           ],
           "guess": [
-            {
-              "c": "稻",
-              "en": "rice plant"
-            },
             {
               "c": "税",
               "en": "tax"
@@ -2366,7 +2832,17 @@
                 "en": "draft"
               }
             ]
-          }
+          },
+          "twins": [
+            {
+              "r": "木",
+              "tell": "A slanting stroke on top of a tree: grain. 木 has none, and is a tree."
+            },
+            {
+              "r": "米",
+              "tell": "A slanting stroke on top: grain. 米 has four dots round a cross, rice."
+            }
+          ]
         },
         {
           "r": "冫",
@@ -2393,10 +2869,6 @@
           ],
           "guess": [
             {
-              "c": "冻",
-              "en": "freeze"
-            },
-            {
               "c": "凝",
               "en": "freeze solid"
             },
@@ -2405,8 +2877,12 @@
               "en": "bitter cold"
             },
             {
-              "c": "冷",
-              "en": "cold"
+              "c": "凄",
+              "en": "bleak"
+            },
+            {
+              "c": "凌",
+              "en": "icy"
             }
           ],
           "lesson": {
@@ -2458,7 +2934,13 @@
                 "en": "cold"
               }
             ]
-          }
+          },
+          "twins": [
+            {
+              "r": "氵",
+              "tell": "Two drops mean ice and cold. Three drops, as in 氵, mean water."
+            }
+          ]
         },
         {
           "r": "夕",
@@ -2571,10 +3053,6 @@
             {
               "c": "退",
               "en": "retreat"
-            },
-            {
-              "c": "近",
-              "en": "near"
             }
           ],
           "lesson": {
@@ -2727,7 +3205,17 @@
                 "en": "try"
               }
             ]
-          }
+          },
+          "twins": [
+            {
+              "r": "饣",
+              "tell": "A flat dot on top, then a bent line: speech. 饣 has a roof-like top and means food."
+            },
+            {
+              "r": "钅",
+              "tell": "A dot and a bent line: speech. 钅 has a cross stroke and a hook, and means metal."
+            }
+          ]
         },
         {
           "r": "刂",
@@ -2758,16 +3246,20 @@
               "en": "scrape"
             },
             {
-              "c": "割",
-              "en": "cut"
-            },
-            {
               "c": "刺",
               "en": "stab"
             },
             {
               "c": "划",
               "en": "slash"
+            },
+            {
+              "c": "切",
+              "en": "cut"
+            },
+            {
+              "c": "剪",
+              "en": "scissors"
             }
           ],
           "lesson": {
@@ -3062,8 +3554,8 @@
               "en": "hurry"
             },
             {
-              "c": "超",
-              "en": "overtake"
+              "c": "趋",
+              "en": "hurry"
             }
           ],
           "lesson": {
@@ -3152,8 +3644,8 @@
               "en": "service"
             },
             {
-              "c": "徒",
-              "en": "on foot"
+              "c": "征",
+              "en": "march"
             }
           ],
           "lesson": {
@@ -3191,11 +3683,11 @@
             ],
             "sound": [
               {
-                "c": "往",
-                "sound": "王",
-                "soundPy": "wáng",
-                "py": "wǎng",
-                "en": "go toward"
+                "c": "征",
+                "sound": "正",
+                "soundPy": "zhèng",
+                "py": "zhēng",
+                "en": "go on a journey"
               },
               {
                 "c": "很",
@@ -3205,7 +3697,13 @@
                 "en": "very"
               }
             ]
-          }
+          },
+          "twins": [
+            {
+              "r": "亻",
+              "tell": "Three strokes make a step on the road. Only two strokes, as in 亻, make a person."
+            }
+          ]
         },
         {
           "r": "见",
@@ -3233,20 +3731,16 @@
               "en": "view"
             },
             {
-              "c": "观",
-              "en": "look"
-            },
-            {
-              "c": "视",
-              "en": "watch"
-            },
-            {
-              "c": "觉",
-              "en": "feel"
-            },
-            {
               "c": "规",
               "en": "rule"
+            },
+            {
+              "c": "觑",
+              "en": "peek"
+            },
+            {
+              "c": "觐",
+              "en": "royal visit"
             }
           ],
           "lesson": {
@@ -3335,8 +3829,8 @@
               "en": "apology"
             },
             {
-              "c": "欲",
-              "en": "desire"
+              "c": "欣",
+              "en": "glad"
             }
           ],
           "lesson": {
@@ -3543,24 +4037,20 @@
           ],
           "guess": [
             {
-              "c": "弯",
-              "en": "bent"
-            },
-            {
               "c": "弹",
               "en": "shoot"
             },
             {
-              "c": "张",
-              "en": "stretch"
-            },
-            {
-              "c": "引",
-              "en": "pull"
-            },
-            {
               "c": "弧",
               "en": "arc"
+            },
+            {
+              "c": "弦",
+              "en": "bowstring"
+            },
+            {
+              "c": "强",
+              "en": "strong"
             }
           ],
           "lesson": {
@@ -3784,7 +4274,13 @@
                 "en": "examine"
               }
             ]
-          }
+          },
+          "twins": [
+            {
+              "r": "穴",
+              "tell": "A roof with a dot on top: a house. 穴 has 八 under the roof, a hole or cave."
+            }
+          ]
         },
         {
           "r": "广",
@@ -3875,7 +4371,17 @@
                 "en": "bottom"
               }
             ]
-          }
+          },
+          "twins": [
+            {
+              "r": "厂",
+              "tell": "A dot on top of the cliff makes a roof over a house. Without the dot, 厂 is a cliff."
+            },
+            {
+              "r": "疒",
+              "tell": "A roof over a house. 疒 adds two strokes inside, a bed: sickness."
+            }
+          ]
         },
         {
           "r": "门",
@@ -3900,10 +4406,6 @@
             "闭"
           ],
           "guess": [
-            {
-              "c": "闹",
-              "en": "noisy"
-            },
             {
               "c": "闲",
               "en": "idle"
@@ -4193,16 +4695,20 @@
               "en": "sleeve"
             },
             {
-              "c": "袋",
-              "en": "bag"
-            },
-            {
               "c": "裹",
               "en": "wrap"
             },
             {
               "c": "袄",
               "en": "padded coat"
+            },
+            {
+              "c": "裙",
+              "en": "skirt"
+            },
+            {
+              "c": "袜",
+              "en": "socks"
             }
           ],
           "lesson": {
@@ -4254,7 +4760,13 @@
                 "en": "pocket"
               }
             ]
-          }
+          },
+          "twins": [
+            {
+              "r": "礻",
+              "tell": "It has one more short stroke on the left, so it is clothes. Without it, 礻 is spirit."
+            }
+          ]
         },
         {
           "r": "礻",
@@ -4346,7 +4858,13 @@
                 "en": "fortune"
               }
             ]
-          }
+          },
+          "twins": [
+            {
+              "r": "衤",
+              "tell": "Only one short stroke on the left: spirit and worship. The extra stroke in 衤 makes it clothes."
+            }
+          ]
         },
         {
           "r": "饣",
@@ -4442,7 +4960,17 @@
                 "en": "dumpling"
               }
             ]
-          }
+          },
+          "twins": [
+            {
+              "r": "讠",
+              "tell": "A roof-like top over a bent line: food. 讠 starts with a dot and is speech."
+            },
+            {
+              "r": "钅",
+              "tell": "A roof-like top, then a bent line: food. 钅 has two bars and a hook, and is metal."
+            }
+          ]
         },
         {
           "r": "⺮",
@@ -4539,7 +5067,13 @@
                 "en": "simple"
               }
             ]
-          }
+          },
+          "twins": [
+            {
+              "r": "艹",
+              "tell": "Two slanting leaf pairs: bamboo. 艹 is a flat bar with two upright ticks, and means grass."
+            }
+          ]
         },
         {
           "r": "艹",
@@ -4636,7 +5170,13 @@
                 "en": "fragrant"
               }
             ]
-          }
+          },
+          "twins": [
+            {
+              "r": "⺮",
+              "tell": "A bar with two upright ticks: grass and plants. ⺮ is two slanting leaf pairs, and means bamboo."
+            }
+          ]
         },
         {
           "r": "车",
@@ -4672,8 +5212,8 @@
               "en": "axle"
             },
             {
-              "c": "轮",
-              "en": "wheel"
+              "c": "输",
+              "en": "carry"
             }
           ],
           "lesson": {
@@ -4875,7 +5415,13 @@
             ],
             "sound": [],
             "shape": "In 屋, 局 and 层 it works like a roof, not a body. Treat it as a sorting label."
-          }
+          },
+          "twins": [
+            {
+              "r": "户",
+              "tell": "A flat top, with a body leaning down: a body. 户 has a dot on top, a door."
+            }
+          ]
         },
         {
           "r": "阝",
@@ -4886,12 +5432,12 @@
           ],
           "py": "fù",
           "name": "耳刀旁",
-          "en": "mound / city",
+          "en": "hill (left) · town (right)",
           "pos": "left",
-          "kind": "shape",
+          "kind": "meaning",
           "origin": "On the left it is a hill with steps; on the right it is a walled town.",
-          "tip": "Left means hills, right means towns.",
-          "meaningNote": "Mainly a sorting radical. On the left it hints at hills (阳 sunny side, 陪 accompany), on the right at towns (都 capital, 邮 post), but many characters have no such link.",
+          "tip": "Left is a hill, right is a town.",
+          "meaningNote": "Position decides. On the left it is a hill or mound: 阳 sunny side, 陆 land, 阴 shady side. On the right it is a town: 都 capital, 邮 post, 邻 neighbor.",
           "examples": [
             "都",
             "部",
@@ -4902,13 +5448,34 @@
             "阿",
             "陪"
           ],
-          "guess": [],
+          "guess": [
+            {
+              "c": "阴",
+              "en": "shady side"
+            },
+            {
+              "c": "阶",
+              "en": "steps"
+            },
+            {
+              "c": "邻",
+              "en": "neighbor"
+            },
+            {
+              "c": "邦",
+              "en": "country"
+            },
+            {
+              "c": "降",
+              "en": "go down"
+            }
+          ],
           "lesson": {
-            "story": "This one has two lives. On the left it is a mound of earth, like stairs or a hill. On the right it is a city, a settlement. On the left it is about slopes and heights, on the right about places.",
+            "story": "Two different pictures look the same here. On the left, 阝 is a hill with steps, so the word is about slopes and heights. On the right, it is a walled town, so the word is about places where people live. Left means hill, right means town.",
             "picture": "a hill with steps on the left, a town on the right",
             "part": [
-              "都",
-              "那"
+              "阳",
+              "都"
             ],
             "why": [
               {
@@ -4918,10 +5485,10 @@
                 "why": "a sunny hillside"
               },
               {
-                "c": "院",
-                "py": "yuàn",
-                "en": "courtyard",
-                "why": "a walled space, like a hill"
+                "c": "陆",
+                "py": "lù",
+                "en": "land",
+                "why": "high ground, like a hill"
               },
               {
                 "c": "都",
@@ -4951,8 +5518,7 @@
                 "py": "yóu",
                 "en": "post"
               }
-            ],
-            "shape": "On the left it is a hill, on the right it is a city. Check the side to know which one is meant."
+            ]
           }
         },
         {
@@ -4963,12 +5529,12 @@
           ],
           "py": "yù",
           "name": "王字旁",
-          "en": "jade",
+          "en": "jade (king)",
           "pos": "left",
-          "kind": "shape",
+          "kind": "meaning",
           "origin": "Three pieces of jade strung on a cord.",
-          "tip": "Same as 王 the king, but it is a string of jade beads.",
-          "meaningNote": "Mainly a sorting radical. It means jade in 玉 and 琴 zither, but in 现 球 理 the jade meaning has faded.",
+          "tip": "Three jade beads on a string, with the dot left off.",
+          "meaningNote": "Characters with 王 on the left are usually about jade, gems and precious round things: 玩 play with, 珠 pearl, 环 ring, 球 ball. It is not the king here: it is 玉 jade without its dot.",
           "examples": [
             "现",
             "球",
@@ -4978,9 +5544,30 @@
             "玻",
             "琴"
           ],
-          "guess": [],
+          "guess": [
+            {
+              "c": "珍",
+              "en": "treasure"
+            },
+            {
+              "c": "珊",
+              "en": "coral"
+            },
+            {
+              "c": "瑞",
+              "en": "lucky"
+            },
+            {
+              "c": "琳",
+              "en": "gem"
+            },
+            {
+              "c": "玻",
+              "en": "glass"
+            }
+          ],
           "lesson": {
-            "story": "The full character 玉 was a string of jade beads. 王 here is the jade shape with the dot dropped. It stands for jade and jewels and is found in names of gems and round things.",
+            "story": "The full character 玉 was a string of three jade beads. On the left it loses its dot and looks like 王, the king, but it still means jade. Look for it in gems and in round, precious things.",
             "picture": "jade beads on a string",
             "part": [
               "球",
@@ -5006,10 +5593,10 @@
                 "why": "a gem"
               },
               {
-                "c": "现",
-                "py": "xiàn",
-                "en": "now",
-                "why": "the gleam of polished jade appears"
+                "c": "环",
+                "py": "huán",
+                "en": "ring",
+                "why": "a loop of jade"
               }
             ],
             "sound": [
@@ -5027,8 +5614,7 @@
                 "py": "zhū",
                 "en": "pearl"
               }
-            ],
-            "shape": "It is about jade in 球 and 珠. In 王 king and 班 it is just a shape, so treat it as a label."
+            ]
           }
         },
         {
@@ -5062,12 +5648,12 @@
               "en": "lamp cup"
             },
             {
-              "c": "盘",
-              "en": "plate"
+              "c": "盖",
+              "en": "cover"
             },
             {
-              "c": "盆",
-              "en": "basin"
+              "c": "盛",
+              "en": "abundant"
             }
           ],
           "lesson": {
@@ -5112,11 +5698,11 @@
                 "en": "box"
               },
               {
-                "c": "盘",
-                "sound": "般",
-                "soundPy": "bān",
-                "py": "pán",
-                "en": "plate"
+                "c": "盛",
+                "sound": "成",
+                "soundPy": "chéng",
+                "py": "shèng",
+                "en": "full; abundant"
               }
             ]
           }
@@ -5129,10 +5715,10 @@
           "name": "国字框",
           "en": "enclosure",
           "pos": "enclose",
-          "kind": "shape",
+          "kind": "meaning",
           "origin": "A walled boundary around something.",
           "tip": "A fence that holds another character in.",
-          "meaningNote": "Mainly a sorting radical. It is an enclosure in 国 country, 园 garden and 圆 round, but in 因 and 回 it is only the box shape.",
+          "meaningNote": "Characters with 囗 are usually about borders and being enclosed: 国 country, 园 garden, 围 surround. In 因 and 回 it is only a box.",
           "examples": [
             "国",
             "回",
@@ -5143,9 +5729,30 @@
             "圆",
             "困"
           ],
-          "guess": [],
+          "guess": [
+            {
+              "c": "围",
+              "en": "surround"
+            },
+            {
+              "c": "圈",
+              "en": "ring"
+            },
+            {
+              "c": "困",
+              "en": "trapped"
+            },
+            {
+              "c": "团",
+              "en": "group"
+            },
+            {
+              "c": "固",
+              "en": "firm"
+            }
+          ],
           "lesson": {
-            "story": "This is a square wall around something. Whatever is inside is enclosed. It marks places and limits: countries, gardens, circles.",
+            "story": "A square wall around something. Whatever sits inside is held in. It means an enclosure: a country inside its borders, a garden inside its fence, a circle that closes.",
             "picture": "a square wall around an open space",
             "part": [
               "国",
@@ -5192,9 +5799,14 @@
                 "py": "yuán",
                 "en": "garden"
               }
-            ],
-            "shape": "It is a boundary in 国, 园 and 圈. In 四 and 因 it is just a box, so treat it as a label."
-          }
+            ]
+          },
+          "twins": [
+            {
+              "r": "口",
+              "tell": "A big box that holds something inside: an enclosure. 口 is small, an open mouth."
+            }
+          ]
         },
         {
           "r": "厂",
@@ -5268,7 +5880,13 @@
               }
             ],
             "shape": "It is a cliff shelter in 厂 and 厚. In 历 and 压 it is just a shape, so treat it as a label."
-          }
+          },
+          "twins": [
+            {
+              "r": "广",
+              "tell": "A cliff with an open bottom: stone and slope. 广 adds a dot on top, a house with a roof."
+            }
+          ]
         },
         {
           "r": "酉",
@@ -5304,8 +5922,8 @@
               "en": "vinegar"
             },
             {
-              "c": "醒",
-              "en": "sober up"
+              "c": "配",
+              "en": "mix"
             }
           ],
           "lesson": {
@@ -5384,16 +6002,16 @@
               "en": "boat"
             },
             {
-              "c": "舰",
-              "en": "warship"
-            },
-            {
               "c": "舱",
               "en": "cabin"
             },
             {
-              "c": "船",
-              "en": "boat"
+              "c": "舵",
+              "en": "helm"
+            },
+            {
+              "c": "舶",
+              "en": "big ship"
             }
           ],
           "lesson": {
@@ -5516,7 +6134,13 @@
               }
             ],
             "shape": "It means door in 户, 房 and 扇. In 所 it is just a shape, so treat it as a label."
-          }
+          },
+          "twins": [
+            {
+              "r": "尸",
+              "tell": "A dot on top of a body-like shape: a door. Without the dot, 尸 is a body."
+            }
+          ]
         },
         {
           "r": "穴",
@@ -5554,10 +6178,6 @@
             {
               "c": "窑",
               "en": "kiln"
-            },
-            {
-              "c": "空",
-              "en": "empty"
             }
           ],
           "lesson": {
@@ -5609,7 +6229,13 @@
                 "en": "hole"
               }
             ]
-          }
+          },
+          "twins": [
+            {
+              "r": "宀",
+              "tell": "A roof with 八 below it: a hole or cave. 宀 has no 八 below, and means a house."
+            }
+          ]
         }
       ]
     },
@@ -5911,14 +6537,6 @@
           ],
           "guess": [
             {
-              "c": "鲸",
-              "en": "whale"
-            },
-            {
-              "c": "鲤",
-              "en": "carp"
-            },
-            {
               "c": "鲨",
               "en": "shark"
             },
@@ -5929,6 +6547,10 @@
             {
               "c": "鲫",
               "en": "crucian carp"
+            },
+            {
+              "c": "鳞",
+              "en": "scales"
             }
           ],
           "lesson": {
@@ -6015,10 +6637,6 @@
             {
               "c": "蜘",
               "en": "spider"
-            },
-            {
-              "c": "蛙",
-              "en": "frog"
             },
             {
               "c": "蜗",
@@ -6299,7 +6917,13 @@
                 "en": "pimple"
               }
             ]
-          }
+          },
+          "twins": [
+            {
+              "r": "广",
+              "tell": "Two extra strokes like a bed inside the roof: sickness. 广 has none and means a house."
+            }
+          ]
         },
         {
           "r": "白",
@@ -6358,63 +6982,6 @@
           }
         },
         {
-          "r": "大",
-          "full": "大",
-          "variants": [],
-          "py": "dà",
-          "name": "大字头",
-          "en": "big",
-          "pos": "top",
-          "kind": "shape",
-          "origin": "A person stretching their arms and legs wide.",
-          "tip": "A person with arms wide: big!",
-          "meaningNote": "Mainly a sorting radical. It means big or a person in 大 and 天 sky, but in 夫 and 夹 it is only a component.",
-          "examples": [
-            "太",
-            "天",
-            "夫",
-            "奇",
-            "奋"
-          ],
-          "guess": [],
-          "lesson": {
-            "story": "The picture was a person with arms and legs spread wide, to show how big he is. It means big. As a shape it appears in many characters where something is large or a person stands out.",
-            "picture": "a person standing with arms and legs wide apart",
-            "part": [
-              "天",
-              "太"
-            ],
-            "why": [
-              {
-                "c": "大",
-                "py": "dà",
-                "en": "big",
-                "why": "a person with arms stretched wide"
-              },
-              {
-                "c": "天",
-                "py": "tiān",
-                "en": "sky",
-                "why": "the big thing above a person"
-              },
-              {
-                "c": "太",
-                "py": "tài",
-                "en": "too much",
-                "why": "bigger than needed"
-              },
-              {
-                "c": "夫",
-                "py": "fū",
-                "en": "man",
-                "why": "a grown man with a hairpin"
-              }
-            ],
-            "sound": [],
-            "shape": "It really means big in 大 and 太. In 头 and 奇 it is just a shape, so treat it as a label."
-          }
-        },
-        {
           "r": "隹",
           "full": "隹",
           "variants": [],
@@ -6436,10 +7003,6 @@
           ],
           "guess": [
             {
-              "c": "雀",
-              "en": "sparrow"
-            },
-            {
               "c": "雁",
               "en": "wild goose"
             },
@@ -6452,8 +7015,8 @@
               "en": "eagle"
             },
             {
-              "c": "雌",
-              "en": "female"
+              "c": "雉",
+              "en": "pheasant"
             }
           ],
           "lesson": {
@@ -6530,20 +7093,20 @@
           ],
           "guess": [
             {
-              "c": "翔",
-              "en": "soar"
-            },
-            {
-              "c": "翅",
-              "en": "wing"
-            },
-            {
               "c": "翼",
               "en": "wing"
             },
             {
               "c": "翠",
               "en": "emerald"
+            },
+            {
+              "c": "翰",
+              "en": "writing brush"
+            },
+            {
+              "c": "翘",
+              "en": "stick up"
             }
           ],
           "lesson": {
@@ -6595,307 +7158,6 @@
                 "en": "wing"
               }
             ]
-          }
-        },
-        {
-          "r": "小",
-          "full": "小",
-          "variants": [],
-          "py": "xiǎo",
-          "name": "小字头",
-          "en": "small",
-          "pos": "top",
-          "kind": "shape",
-          "origin": "Three tiny dots for small bits.",
-          "tip": "Three little specks: small.",
-          "meaningNote": "Mainly a sorting radical. It means small in 小 and 尖 pointed, but in 少 it is only a component.",
-          "examples": [
-            "少",
-            "尘",
-            "尖",
-            "小"
-          ],
-          "guess": [],
-          "lesson": {
-            "story": "The picture was three small dots or specks, to show something tiny. It means small. In many characters it is a shape that stands for fine or little.",
-            "picture": "three tiny specks, one in the middle",
-            "part": [
-              "少",
-              "尖"
-            ],
-            "why": [
-              {
-                "c": "小",
-                "py": "xiǎo",
-                "en": "small",
-                "why": "three little specks"
-              },
-              {
-                "c": "少",
-                "py": "shǎo",
-                "en": "few",
-                "why": "a little bit less"
-              },
-              {
-                "c": "尖",
-                "py": "jiān",
-                "en": "sharp",
-                "why": "small at the top, big below"
-              },
-              {
-                "c": "尘",
-                "py": "chén",
-                "en": "dust",
-                "why": "tiny specks of earth"
-              }
-            ],
-            "sound": [],
-            "shape": "It really means small in 小, 少 and 尖. In 当 and 常 it is only a shape on top, so treat it as a label."
-          }
-        },
-        {
-          "r": "十",
-          "full": "十",
-          "variants": [],
-          "py": "shí",
-          "name": "十字旁",
-          "en": "ten",
-          "pos": "any",
-          "kind": "shape",
-          "origin": "A cross: counting all ten on both hands.",
-          "tip": "A cross: ten.",
-          "meaningNote": "Mainly a sorting radical. It means ten in 十 and 千 thousand, but in 午 noon and 南 south it only gives the shape.",
-          "examples": [
-            "千",
-            "午",
-            "半",
-            "南",
-            "华",
-            "协"
-          ],
-          "guess": [],
-          "lesson": {
-            "story": "The old drawing was a simple cross, a way to count all ten fingers of both hands. It means ten. As a shape it appears in numbers and in a few other words.",
-            "picture": "a plain cross made of two crossing strokes",
-            "part": [
-              "千",
-              "半"
-            ],
-            "why": [
-              {
-                "c": "十",
-                "py": "shí",
-                "en": "ten",
-                "why": "a cross for counting ten"
-              },
-              {
-                "c": "千",
-                "py": "qiān",
-                "en": "thousand",
-                "why": "ten hundreds"
-              },
-              {
-                "c": "半",
-                "py": "bàn",
-                "en": "half",
-                "why": "a thing cut in two"
-              },
-              {
-                "c": "午",
-                "py": "wǔ",
-                "en": "noon",
-                "why": "only the shape here"
-              }
-            ],
-            "sound": [
-              {
-                "c": "华",
-                "sound": "化",
-                "soundPy": "huà",
-                "py": "huá",
-                "en": "splendid"
-              },
-              {
-                "c": "卖",
-                "sound": "买",
-                "soundPy": "mǎi",
-                "py": "mài",
-                "en": "sell"
-              }
-            ],
-            "shape": "It is a number in 十 and 千. In 午 and 南 it is just a shape, so treat it as a label."
-          }
-        },
-        {
-          "r": "一",
-          "full": "一",
-          "variants": [],
-          "py": "yī",
-          "name": "横",
-          "en": "one",
-          "pos": "any",
-          "kind": "shape",
-          "origin": "One horizontal line.",
-          "tip": "One stroke: one.",
-          "meaningNote": "Mainly a sorting radical. It means one in 一 and 三 three, but in 不 and 世 it is only a stroke.",
-          "examples": [
-            "三",
-            "不",
-            "世",
-            "丈",
-            "与"
-          ],
-          "guess": [],
-          "lesson": {
-            "story": "The picture was one line lying flat. It means one and also stands for a flat surface. In many characters it is only a stroke, not a number.",
-            "picture": "one flat horizontal line",
-            "part": [
-              "三",
-              "上"
-            ],
-            "why": [
-              {
-                "c": "一",
-                "py": "yī",
-                "en": "one",
-                "why": "a single line"
-              },
-              {
-                "c": "三",
-                "py": "sān",
-                "en": "three",
-                "why": "three lines"
-              },
-              {
-                "c": "上",
-                "py": "shàng",
-                "en": "above",
-                "why": "a mark above the line"
-              },
-              {
-                "c": "下",
-                "py": "xià",
-                "en": "below",
-                "why": "a mark below the line"
-              }
-            ],
-            "sound": [],
-            "shape": "It is a number in 一 and 三. In 不, 世 and 万 it is just a stroke, so do not look for a number there."
-          }
-        },
-        {
-          "r": "儿",
-          "full": "儿",
-          "variants": [],
-          "py": "ér",
-          "name": "儿字底",
-          "en": "legs / child",
-          "pos": "bottom",
-          "kind": "shape",
-          "origin": "A person with two legs, often at the foot of a character.",
-          "tip": "Two legs at the bottom: a person walking.",
-          "meaningNote": "Mainly a sorting radical. It shows a person with legs in 儿 child and 兄 elder brother, but in 先 and 光 it is only the bottom shape.",
-          "examples": [
-            "先",
-            "光",
-            "元",
-            "兄",
-            "克",
-            "党"
-          ],
-          "guess": [],
-          "lesson": {
-            "story": "The picture was a person with two legs, and these days it often sits at the foot of a character. On its own it also means child or son. Most of the time it is just the legs of a character.",
-            "picture": "a person standing on two legs",
-            "part": [
-              "兄",
-              "先"
-            ],
-            "why": [
-              {
-                "c": "儿",
-                "py": "ér",
-                "en": "child",
-                "why": "a small person"
-              },
-              {
-                "c": "兄",
-                "py": "xiōng",
-                "en": "elder brother",
-                "why": "a mouth above a person"
-              },
-              {
-                "c": "先",
-                "py": "xiān",
-                "en": "first",
-                "why": "a foot ahead of a person"
-              },
-              {
-                "c": "光",
-                "py": "guāng",
-                "en": "light",
-                "why": "a person under a fire"
-              }
-            ],
-            "sound": [],
-            "shape": "It means child in 儿 and 兄. In 先 and 光 it is just the legs at the bottom, so treat it as a label."
-          }
-        },
-        {
-          "r": "八",
-          "full": "八",
-          "variants": [],
-          "py": "bā",
-          "name": "八字头",
-          "en": "eight / divide",
-          "pos": "top",
-          "kind": "shape",
-          "origin": "Two lines pulling apart, to divide.",
-          "tip": "Two strokes parting like a door opening.",
-          "meaningNote": "Mainly a sorting radical. It means eight in 八, but in 公 and 六 it is only a component.",
-          "examples": [
-            "公",
-            "六",
-            "兵",
-            "共",
-            "其"
-          ],
-          "guess": [],
-          "lesson": {
-            "story": "The picture was two lines parting, as if something were being split in two. It means eight, and also divide. In characters it often marks something splitting or spreading.",
-            "picture": "two strokes bending apart",
-            "part": [
-              "公",
-              "共"
-            ],
-            "why": [
-              {
-                "c": "八",
-                "py": "bā",
-                "en": "eight",
-                "why": "two lines apart"
-              },
-              {
-                "c": "公",
-                "py": "gōng",
-                "en": "public",
-                "why": "dividing among everyone"
-              },
-              {
-                "c": "共",
-                "py": "gòng",
-                "en": "together",
-                "why": "two hands holding something"
-              },
-              {
-                "c": "六",
-                "py": "liù",
-                "en": "six",
-                "why": "just a number"
-              }
-            ],
-            "sound": [],
-            "shape": "It means eight in 八 and 六. In 公 and 共 it is just a shape, so treat it as a label."
           }
         }
       ]
