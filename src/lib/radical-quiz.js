@@ -1,5 +1,5 @@
 // Pure helpers for 部首 practice (no DOM): distractors, question lists, due radicals. Used by views/radicals-practice.js.
-import { RADICALS_CORE, RADICAL_FAMILIES, CHAR_INSIDE } from "../data/index.js";
+import { RADICALS_CORE, RADICAL_FAMILIES, CHAR_INSIDE, CHARS } from "../data/index.js";
 import { radicalKey } from "./radicals.js";
 import { isDue, latest } from "../progress/model.js";
 
@@ -77,3 +77,63 @@ export function dueRadicals(radicals, getStat, now = Date.now()) {
   return radicals.filter((r) => isDue(latest([getStat(radicalKey(r.r))]), now));
 }
 
+
+// What a character means and how its radical takes part: { py, en, why (plain text), tip (html from the book data) }.
+// Sources, best first: the lesson's family cards, the book character data, the generated family lists.
+export function charGloss(c, radical, families = RADICAL_FAMILIES, chars = CHARS) {
+  const f = families[radical?.r] || {};
+  const card = (radical?.lesson?.why || []).find((x) => x.c === c);
+  const common = (f.common || []).find((x) => x.c === c);
+  const guess = (f.guess || []).find((x) => x.c === c) || (radical?.guess || []).find((x) => x.c === c);
+  const book = chars[c];
+  const sound = (radical?.lesson?.sound || []).find((x) => x.c === c)?.sound || common?.sound || "";
+  return {
+    py: card?.py || book?.py || common?.py || guess?.py || "",
+    en: card?.en || book?.en || guess?.en || common?.en || "",
+    why: card?.why || "",
+    tip: card ? "" : book?.tip || "",
+    sound,
+  };
+}
+
+const hasRadical = (c, y, inside) => {
+  const s = c + (inside[c] || "");
+  return [y.r, y.full, ...(y.variants || [])].some((f) => f && s.includes(f));
+};
+const familyChars = (y, families) => {
+  const f = families[y.r] || {};
+  return [...new Set([...(f.book || []), ...(f.common || []).map((x) => x.c)])].filter((c) => c !== y.r && c !== y.full);
+};
+
+// "Spot it" questions for a lesson's quick check: which of four characters has this radical inside?
+// The answer is a family character the lesson did not show (a new word), book characters first; the three others
+// come from other radicals (twins first, then the same stage) and never contain the radical.
+// Returns [{ c, r, radical, others: [{ c, r }] }].
+export function buildSpotQuestions(target, all, { families = RADICAL_FAMILIES, inside = CHAR_INSIDE, rand = Math.random, n = 2, skip = [] } = {}) {
+  const L = target.lesson || {};
+  const shown = new Set([...(L.part || []), ...(L.why || []).map((w) => w.c), ...(L.sound || []).map((s) => s.c)]);
+  const book = new Set(families[target.r]?.book || []);
+  const fam = familyChars(target, families);
+  const fam2 = fam.filter((c) => !skip.includes(c));
+  const fresh = fam2.filter((c) => !shown.has(c));
+  const pool = fresh.length >= n ? fresh : fam2;
+  const answers = [...shuffleWith(pool.filter((c) => book.has(c)), rand).slice(0, 1), ...shuffleWith(pool.filter((c) => !book.has(c)), rand)];
+  const others = all.filter((y) => y.r !== target.r);
+  const twins = new Set((target.twins || []).map((t) => t.r));
+  const order = [...shuffleWith(others.filter((y) => twins.has(y.r)), rand),
+    ...shuffleWith(others.filter((y) => !twins.has(y.r) && y.stage === target.stage), rand),
+    ...shuffleWith(others.filter((y) => !twins.has(y.r) && y.stage !== target.stage), rand)];
+  const used = new Set(skip);
+  const out = [];
+  for (const c of [...new Set(answers)]) {
+    if (out.length >= n) break;
+    const picks = [];
+    for (const y of order) {
+      if (picks.length >= 3) break;
+      const d = shuffleWith(familyChars(y, families), rand).find((d) => !used.has(d) && d !== c && !hasRadical(d, target, inside));
+      if (d) { picks.push({ c: d, r: y.r }); used.add(d); }
+    }
+    if (picks.length === 3) { used.add(c); out.push({ c, r: target.r, radical: target, others: picks }); }
+  }
+  return out;
+}

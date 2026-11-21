@@ -71,7 +71,7 @@ export function fillQuiz(ui, words, { items, title = "选词填空 · Fill in th
 }
 
 // 部首: shared core of "which radical does this character have?".
-// cfg: { items, charOf(item), radOf(item), distractors(item, r) → [radical…], nameOf(r), key, id(item), title, kind, then }
+// cfg: { items, charOf(item), radOf(item), distractors(item, r) → [radical…], nameOf(r), key, id(item), title, kind, then, reveal?(item) }
 export function radicalChoice(ui, cfg) {
   const { charOf, radOf, nameOf } = cfg;
   return ui.choiceQuiz({ kind: cfg.kind, title: cfg.title, items: cfg.items, key: cfg.key, id: cfg.id, label: charOf, sayAfter: charOf, then: cfg.then, back: cfg.back,
@@ -83,7 +83,7 @@ export function radicalChoice(ui, cfg) {
           note: `<span class="hz">${x}</span> ${esc(nameOf(x))}. It is not a part of <span class="hz">${charOf(it)}</span>.` }));
     },
     why: cfg.why,
-    reveal: (it) => `${charLinks(charOf(it))} · <span class="hz">${radOf(it)}</span> <span class="muted">${esc(nameOf(radOf(it)))}</span>`,
+    reveal: cfg.reveal || ((it) => `${charLinks(charOf(it))} · <span class="hz">${radOf(it)}</span> <span class="muted">${esc(nameOf(radOf(it)))}</span>`),
   });
 }
 

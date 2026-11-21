@@ -16,6 +16,7 @@ import * as progress from "../progress/store.js";
 import { radicalChoice } from "./workbook.js";
 import { setHost, ui as practiceUi } from "./practice.js";
 import { animate, flipOut, flipIn } from "../lib/motion.js";
+import { glossHtml } from "./radical-lesson.js";
 
 /* ---------- screens ---------- */
 const hzSpan = (t, size) => `<span class="hz" style="font-size:${size}rem">${esc(t)}</span>`;
@@ -34,7 +35,7 @@ function findQuiz(ui, radicals, { then, back, title = "部首 · Which radical?"
   const byR = Object.fromEntries(all.map((x) => [x.r, x]));
   const items = buildFindQuestions(radicals.map((r) => byR[r.r] || r));
   return radicalChoice(ui, { kind: "radical-find", title, items, key: "bs:", id: (q) => q.r, then, back,
-    charOf: (q) => q.c, radOf: (q) => q.r, nameOf: (r) => byR[r]?.en || "", why: (q) => radicalWhy(byR[q.r] || q.radical),
+    charOf: (q) => q.c, radOf: (q) => q.r, nameOf: (r) => byR[r]?.en || "", why: (q) => radicalWhy(byR[q.r] || q.radical), reveal: (q) => glossHtml(q.c, byR[q.r] || q.radical),
     distractors: (q) => pickRadicalDistractors(byR[q.r] || q.radical, all, Math.random, 3, q.c) });
 }
 
@@ -48,7 +49,7 @@ function guessQuiz(ui, radicals, { then, back, title = "猜意思 · Guess the m
     makeOptions: (q) => [q.en, ...pickGuessDistractors(q, pool)]
       .map((en, i) => ({ html: `<span class="en">${esc(en)}</span>`, correct: i === 0 })),
     why: (q) => radicalWhy(q.radical),
-    reveal: (q) => `${hzSpan(q.c, 1.4)} <span class="py">${esc(q.py)}</span> ${esc(q.en)} · <span class="hz" style="color:var(--jade)">${esc(q.radical.r)}</span> ${esc(q.radical.en)} ${sayBtns(q.c, q.py, true)}`,
+    reveal: (q) => glossHtml(q.c, q.radical),
   });
 }
 
