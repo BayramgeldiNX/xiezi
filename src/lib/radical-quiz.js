@@ -1,5 +1,5 @@
 // Pure helpers for 部首 practice (no DOM): distractors, question lists, due radicals. Used by views/radicals-practice.js.
-import { RADICALS_CORE, RADICAL_FAMILIES } from "../data/index.js";
+import { RADICALS_CORE, RADICAL_FAMILIES, CHAR_INSIDE } from "../data/index.js";
 import { radicalKey } from "./radicals.js";
 import { isDue, latest } from "../progress/model.js";
 
@@ -14,16 +14,22 @@ export function shuffleWith(list, rand = Math.random) {
 
 export const allCoreRadicals = (core = RADICALS_CORE) => core.stages.flatMap((s) => s.radicals.map((r) => ({ ...r, stage: s.id })));
 
-// n other radicals' glyphs: same stage + same position first, then same stage, then same position, then the rest.
-// Radicals contained in the character itself are skipped when `char` is given.
-export function pickRadicalDistractors(target, all, rand = Math.random, n = 3, char = "") {
-  const ok = (x) => x.r !== target.r && x.full !== target.full && !(char && char.includes(x.r));
+// n other radicals' glyphs: the target's look-alike twins first, then same stage + same position, then same stage,
+// then same position, then the rest. Radicals inside the character itself (any component, found through `inside`)
+// are never offered: they would be right answers.
+export function pickRadicalDistractors(target, all, rand = Math.random, n = 3, char = "", inside = CHAR_INSIDE) {
+  const within = char ? char + (inside[char] || "") : "";
+  const ok = (x) => x.r !== target.r && x.full !== target.full && !(char && [x.r, x.full, ...(x.variants || [])].some((f) => f && within.includes(f)));
   const pool = all.filter(ok);
+  const twinIds = new Set((target.twins || []).map((t) => t.r));
+  const twins = pool.filter((x) => twinIds.has(x.r));
+  const rest = pool.filter((x) => !twinIds.has(x.r));
   const tiers = [
-    pool.filter((x) => x.stage === target.stage && x.pos === target.pos),
-    pool.filter((x) => x.stage === target.stage && x.pos !== target.pos),
-    pool.filter((x) => x.stage !== target.stage && x.pos === target.pos),
-    pool.filter((x) => x.stage !== target.stage && x.pos !== target.pos),
+    twins,
+    rest.filter((x) => x.stage === target.stage && x.pos === target.pos),
+    rest.filter((x) => x.stage === target.stage && x.pos !== target.pos),
+    rest.filter((x) => x.stage !== target.stage && x.pos === target.pos),
+    rest.filter((x) => x.stage !== target.stage && x.pos !== target.pos),
   ];
   return tiers.flatMap((t) => shuffleWith(t, rand)).slice(0, n).map((x) => x.r);
 }

@@ -7,6 +7,12 @@ describe("radical lesson helpers", () => {
     expect(lessonSteps({ kind: "meaning", lesson: { sound: [{ c: "湖" }] } })).toHaveLength(6);
     expect(lessonSteps({ kind: "shape", lesson: { shape: "x" } })).toHaveLength(6);
   });
+  it("adds the twins step right after part, only for radicals with twins", () => {
+    const x = { kind: "meaning", twins: [{ r: "冫", tell: "t" }], lesson: { sound: [{ c: "湖" }] } };
+    expect(lessonSteps(x)).toEqual(["story", "shape", "part", "twins", "family", "sound", "check"]);
+    expect(lessonSteps({ ...x, twins: [] })).toHaveLength(6);
+    expect(lessonSteps({ kind: "meaning", twins: [{ r: "a" }], lesson: { sound: [] } })).toEqual(["story", "shape", "part", "twins", "family", "check"]);
+  });
   it("clamps step numbers", () => {
     expect(stepIndex("9", 6)).toBe(6);
     expect(stepIndex(undefined, 6)).toBe(1);

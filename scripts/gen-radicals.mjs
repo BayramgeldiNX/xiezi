@@ -8,6 +8,20 @@ import { fileURLToPath } from "node:url";
 import { ROOT, DATA_DIR, loadLessons, readJSON, isHanzi } from "./lib.mjs";
 
 const OUT = path.join(DATA_DIR, "radical-families.gen.json");
+const INSIDE_OUT = path.join(DATA_DIR, "char-inside.gen.json");
+const IDS_OP = /[⿰-⿻]/;
+// Every component of c, found recursively through the IDS (field 3 of chars.json).
+export function insideOf(c, chars, depth = 4, seen = new Set([c])) {
+  const ids = chars[c]?.[3] || "";
+  const out = [];
+  for (const x of ids) {
+    if (IDS_OP.test(x) || seen.has(x)) continue;
+    seen.add(x);
+    out.push(x);
+    if (depth > 1) out.push(...insideOf(x, chars, depth - 1, seen));
+  }
+  return [...new Set(out)];
+}
 const short = (en, max = 30) => {
   const s = (en || "").split(/[;,]/)[0].trim();
   return s.length > max ? s.slice(0, max).trim() : s;
@@ -66,6 +80,13 @@ export function genRadicals(corePath = process.argv[2] || process.env.RADICALS_C
     const guessC = (r.guess || []).filter((g) => g && g.c).map((g) => ({ c: g.c, py: chars[g.c]?.[0] || "", en: g.en }));
     out[r.r] = { book, common: commonC.map(entry), guess: guessC };
   }
+  const need = new Set(bookOrder);
+  for (const st of core.stages) for (const r of st.radicals) {
+    const f = out[r.r], L = r.lesson || {};
+    for (const c of [...f.book, ...f.common.map((x) => x.c), ...f.guess.map((x) => x.c), ...(L.part || []), ...(L.why || []).map((x) => x.c), ...(L.sound || []).flatMap((x) => [x.c, x.sound])]) if (c) need.add(c);
+  }
+  const insideLines = [...need].filter((c) => chars[c]).map((c) => [c, insideOf(c, chars).join("")]).filter(([, v]) => v).map(([k, v]) => `${JSON.stringify(k)}:${JSON.stringify(v)}`);
+  fs.writeFileSync(INSIDE_OUT, `{\n${insideLines.join(",\n")}\n}\n`);
   const lines = Object.entries(out).map(([k, v]) => `${JSON.stringify(k)}:${JSON.stringify(v)}`);
   fs.writeFileSync(OUT, `{\n${lines.join(",\n")}\n}\n`);
   const thin = Object.entries(out).filter(([, v]) => v.book.length + v.common.length < 4).map(([k]) => k);

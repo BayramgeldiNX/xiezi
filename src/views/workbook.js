@@ -8,7 +8,7 @@
 import { esc, shuffle } from "../lib/util.js";
 import { tonePy } from "../lib/pinyin.js";
 import { sayBtns } from "../lib/speech.js";
-import { CHARINFO, RADICALS, LESSONS, wordsOf } from "../data/index.js";
+import { CHARINFO, CHAR_INSIDE, RADICALS, LESSONS, wordsOf } from "../data/index.js";
 import { charLinks } from "./charsheet.js";
 import { keyOf } from "../lib/explain-key.js";
 

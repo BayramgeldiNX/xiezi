@@ -3,12 +3,11 @@
 import { $, esc } from "../lib/util.js";
 import { tonePy } from "../lib/pinyin.js";
 import { icon } from "../lib/icons.js";
-import { gridSVG, makeWriter, trackWriter } from "../lib/draw.js";
-import { CHARS, CHARINFO, RADICALS_CORE, RADICAL_FAMILIES, STROKE_DATA, ensureChars } from "../data/index.js";
+import { CHARS, CHARINFO, RADICALS_CORE, RADICAL_FAMILIES } from "../data/index.js";
 import * as progress from "../progress/store.js";
 import { charMastered, isDue } from "../progress/model.js";
 import { radicalKey } from "../lib/radicals.js";
-import { openRadicalLesson, lessonDone, firstUndone } from "./radical-lesson.js";
+import { openRadicalLesson, lessonDone, firstUndone, radicalWriter, bookChip } from "./radical-lesson.js";
 import { learnHash } from "../lib/radical-lesson.js";
 
 const STAGES = RADICALS_CORE?.stages || [];
@@ -113,11 +112,7 @@ function radicalPage(x) {
     ${sec("Memory tip", x.tip ? `<p>${esc(x.tip)}</p>` : "")}
     ${sec("How it shapes meaning", (x.meaningNote ? `<p>${esc(x.meaningNote)}</p>` : "") + (x.kind === "shape" ? `<p class="note">Mostly a sorting radical.</p>` : ""))}
     ${sec("Meaning + sound", phon.length ? `<ul class="rad-eq">${phon.map((c) => `<li><button type="button" class="rad-say" data-say="${esc(c.c)}"><b>${esc(c.c)}</b></button> = ${esc(x.r)} meaning + <b>${esc(c.sound)}</b> sound <span class="note">${tonePy(c.py || "")} · ${esc(c.en || "")}</span></li>`).join("")}</ul>` : "")}
-    ${sec("In your books", book.length ? `<div class="rad-chips">${book.map((c) => {
-      const py = CHARS[c]?.py || "", en = CHARS[c]?.en || "";
-      const ok = charMastered(progress.get("w:" + c));
-      return `<button type="button" class="cs-chip" ${CHARINFO[c] ? `data-char="${esc(c)}"` : `data-say="${esc(c)}"`}><b>${esc(c)}</b><span class="py">${tonePy(py)}</span><small>${esc(en)}${ok ? " · 已学" : ""}</small></button>`;
-    }).join("")}</div>` : "")}
+    ${sec("In your books", book.length ? `<div class="rad-chips">${book.map(bookChip).join("")}</div>` : "")}
     ${sec("More characters", more.length ? `<div class="rad-chips">${more.map((c) => famChip(c.c, c.py, c.en)).join("")}</div>` : "")}
     <div class="rad-actions">
       <span class="note">Practice ${esc(x.r)}</span>
@@ -136,31 +131,5 @@ function radicalPage(x) {
     history.replaceState(history.state, "", a.getAttribute("href"));
     dispatchEvent(new HashChangeEvent("hashchange", { oldURL, newURL: location.href }));
   }));
-  strokes(x.r);
-}
-
-async function strokes(r) {
-  const box = $("#radWrite");
-  try {
-    await ensureChars([r]);
-    if (!STROKE_DATA[r] || current !== r || !box.isConnected) return;
-    box.hidden = false;
-    box.innerHTML = `<div class="box">${gridSVG()}<div class="hw"></div></div>
-      <div class="controls"><button class="btn" type="button" data-rw="play">${icon("replay")} Replay</button><button class="btn" type="button" data-rw="quiz">Write it</button></div>
-      <p class="note" data-rw="msg" aria-live="polite"></p>`;
-    const hw = box.querySelector(".hw");
-    const wr = trackWriter(makeWriter(hw, r, Math.round(hw.getBoundingClientRect().width) || 160, { showCharacter: false }));
-    const msg = box.querySelector('[data-rw="msg"]');
-    const play = () => { wr.cancelQuiz(); msg.textContent = ""; wr.showOutline(); wr.animateCharacter(); };
-    box.querySelector('[data-rw="play"]').addEventListener("click", play);
-    // Write the radical yourself, stroke by stroke, over the grey outline.
-    box.querySelector('[data-rw="quiz"]').addEventListener("click", () => {
-      wr.hideCharacter();
-      msg.textContent = "Your turn: draw the strokes in order.";
-      wr.quiz({ showHintAfterMisses: 2, highlightOnComplete: true,
-        onMistake: () => { msg.textContent = "Try again, check the stroke order."; },
-        onComplete: (d) => { msg.textContent = d.totalMistakes ? `Done with ${d.totalMistakes} mistake${d.totalMistakes > 1 ? "s" : ""}.` : "太好了! Perfect!"; } });
-    });
-    play();
-  } catch { box.hidden = true; }
+  radicalWriter($("#radWrite"), x.r, () => current === x.r);
 }

@@ -1,12 +1,14 @@
-// 部 Radical lesson: six calm steps per radical, each its own address (#/radical/<r>/learn/<step>).
-// Steps: 1 picture + story, 2 how the shape changed, 3 as a part, 4 family, 5 meaning + sound (skipped when empty), 6 quick check.
+// 部 Radical lesson: six or seven calm steps per radical, each its own address (#/radical/<r>/learn/<step>).
+// Steps: 1 picture + story, 2 how the shape changed, 3 as a part, look-alike twins (only for radicals that have them),
+// family, meaning + sound (skipped when empty), quick check.
 // The lesson text comes from radicals-core.json `lesson`; drawings and ancient forms are optional and may be missing.
-import { $, esc } from "../lib/util.js";
+import { $, esc, shuffle } from "../lib/util.js";
 import { tonePy } from "../lib/pinyin.js";
 import { icon } from "../lib/icons.js";
 import { gridSVG, makeWriter, trackWriter } from "../lib/draw.js";
-import { STROKE_DATA, ensureChars } from "../data/index.js";
+import { STROKE_DATA, ensureChars, CHARS, CHARINFO, RADICAL_FAMILIES, CHAR_INSIDE } from "../data/index.js";
 import * as progress from "../progress/store.js";
+import { charMastered } from "../progress/model.js";
 import { allCoreRadicals, pickRadicalDistractors, buildFindQuestions, buildGuessQuestions, pickGuessDistractors } from "../lib/radical-quiz.js";
 import { radicalChoice } from "./workbook.js";
 import { setHost, ui } from "./practice.js";
@@ -26,6 +28,7 @@ export const picUrl = (r) => `${BASE}radicals/pic/${picId(r)}.svg`;
 export const maskPic = (url, cls = "") => `<span class="rad-pic ${cls}" style="--src:url('${esc(url)}')" aria-hidden="true"></span>`;
 
 const ALL = allCoreRadicals();
+const BY_R = Object.fromEntries(ALL.map((y) => [y.r, y]));
 let trail = [], current = null;
 
 function nav(r, n) {
@@ -85,11 +88,65 @@ function partStep(x) {
     <div class="rad-parts">${chars.map((c) => `<button type="button" class="rad-part" data-say="${esc(c)}" aria-label="Play ${esc(c)}"><span class="hz rad-pc">${esc(c)}</span><span class="rad-pl">← <span class="hz rad-rad">${esc(x.r)}</span></span></button>`).join("")}</div>`);
 }
 
+// A chip for a book character: opens its card when it has one, else plays it; "已学" when learned.
+export function bookChip(c) {
+  const ok = charMastered(progress.get("w:" + c));
+  return `<button type="button" class="cs-chip" ${CHARINFO[c] ? `data-char="${esc(c)}"` : `data-say="${esc(c)}"`}><b>${esc(c)}</b><span class="py">${tonePy(CHARS[c]?.py || "")}</span><small>${esc(CHARS[c]?.en || "")}${ok ? " · 已学" : ""}</small></button>`;
+}
+
 function familyStep(x) {
   const why = (x.lesson?.why || []).slice(0, 4);
+  const shown = new Set(why.map((w) => w.c));
+  const known = (c) => (charMastered(progress.get("w:" + c)) ? 0 : 1);
+  const book = ((RADICAL_FAMILIES[x.r] || {}).book || []).filter((c) => (CHARS[c] || CHARINFO[c]) && !shown.has(c) && c !== x.r && c !== x.full)
+    .map((c, i) => [c, i]).sort((a, b) => known(a[0]) - known(b[0]) || a[1] - b[1]).slice(0, 8).map((e) => e[0]);
   return sec("rad-l4", `<h3 class="rad-lh">Meet the family</h3>
     <div class="rad-cards">${why.map((w) => `<button type="button" class="rad-card" data-say="${esc(w.c)}"><span class="hz rad-cc">${esc(w.c)}</span>
-      <span class="rad-cb"><span class="py">${tonePy(w.py || "")}</span> <b>${esc(w.en)}</b><small>${esc(w.why)}</small></span></button>`).join("")}</div>`);
+      <span class="rad-cb"><span class="py">${tonePy(w.py || "")}</span> <b>${esc(w.en)}</b><small>${esc(w.why)}</small></span></button>`).join("")}</div>
+    ${book.length ? `<div class="rad-more"><span class="lbl">From your books</span><div class="rad-chips">${book.map(bookChip).join("")}</div></div>` : ""}`);
+}
+
+// Look-alikes: every form of a radical, and "does this character have it inside" through CHAR_INSIDE.
+const formsOf = (y) => [y.r, y.full, ...(y.variants || [])].filter(Boolean);
+const hasForm = (c, y) => { const s = c + (CHAR_INSIDE[c] || ""); return formsOf(y).some((f) => s.includes(f)); };
+const famChars = (y, other) => {
+  const f = RADICAL_FAMILIES[y.r] || {};
+  return [...(f.book || []), ...(f.common || []).map((c) => c.c)].filter((c) => !formsOf(y).includes(c) && !hasForm(c, other));
+};
+
+function twinsStep(x) {
+  const twins = (x.twins || []).map((t) => ({ y: BY_R[t.r], tell: BY_R[t.r]?.twins?.find((b) => b.r === x.r)?.tell || t.tell })).filter((t) => t.y);
+  const row = (y, tell, other) => {
+    const ex = famChars(y, other)[0];
+    return `<div class="rad-twin"><span class="hz rad-twg">${esc(y.r)}</span>
+      <p class="rad-twt"><b>${esc(y.en)}</b><br>${esc(tell)}</p>${ex ? say(ex) : ""}</div>`;
+  };
+  const mine = (x.twins || []).map((t) => t.tell).join(" ");
+  return sec("rad-l3b", `<h3 class="rad-lh">Tell them apart</h3>
+    <div class="rad-twins">${row(x, mine, twins[0]?.y || x)}${twins.map((t) => row(t.y, t.tell, x)).join("")}</div>
+    <div class="rad-tw-drill" id="radTwDrill"></div>`);
+}
+
+// Tiny drill under the twins: four characters, two buttons each. Records nothing.
+function twinsDrill(x) {
+  const box = $("#radTwDrill");
+  const t = shuffle((x.twins || []).map((t) => BY_R[t.r]).filter(Boolean))[0];
+  if (!box || !t) return;
+  const pick = (y, other) => shuffle(famChars(y, other)).slice(0, 2).map((c) => ({ c, ans: y.r }));
+  const items = shuffle([...pick(x, t), ...pick(t, x)]);
+  if (items.length < 2) return;
+  box.innerHTML = `<p class="note">Which one is inside?</p>${items.map((it) => `<div class="rad-tw-q" data-ans="${esc(it.ans)}">${say(it.c)}
+    <div class="rad-tw-opts">${[x, t].map((y) => `<button type="button" class="choice rad-tw-opt" data-pick="${esc(y.r)}"><span class="hz">${esc(y.r)}</span><small>${esc(y.en)}</small></button>`).join("")}</div></div>`).join("")}`;
+  box.addEventListener("click", (e) => {
+    const b = e.target.closest("[data-pick]");
+    if (!b) return;
+    const q = b.closest(".rad-tw-q"), opts = [...q.querySelectorAll("[data-pick]")];
+    if (opts.some((o) => o.disabled)) return;
+    opts.forEach((o) => { o.disabled = true; });
+    const right = b.dataset.pick === q.dataset.ans;
+    b.classList.add(right ? "right" : "wrong");
+    if (!right) opts.find((o) => o.dataset.pick === q.dataset.ans)?.classList.add("right");
+  });
 }
 
 function soundStep(x) {
@@ -106,19 +163,30 @@ function soundStep(x) {
       <span class="hz rad-snd">${esc(s.sound)}</span> <small>sound: ${tonePy(s.soundPy || "")}</small></p></div>`).join("")}`);
 }
 
-async function strokes(r) {
-  const box = $("#radWrite");
+// The writing box of a radical (animation, Replay, "Write it" with a message line); shared by the radical page and the lesson.
+// isCurrent(): false once the page has moved on, so a late load draws nothing.
+export async function radicalWriter(box, r, isCurrent = () => true) {
   if (!box) return;
   try {
     await ensureChars([r]);
-    if (!STROKE_DATA[r] || current !== r || !box.isConnected) return;
+    if (!STROKE_DATA[r] || !isCurrent() || !box.isConnected) return;
     box.hidden = false;
     box.innerHTML = `<div class="box">${gridSVG()}<div class="hw"></div></div>
-      <div class="controls"><button class="btn" type="button">${icon("replay")} Replay</button></div>`;
+      <div class="controls"><button class="btn" type="button" data-rw="play">${icon("replay")} Replay</button><button class="btn" type="button" data-rw="quiz">Write it</button></div>
+      <p class="note" data-rw="msg" aria-live="polite"></p>`;
     const hw = box.querySelector(".hw");
     const wr = trackWriter(makeWriter(hw, r, Math.round(hw.getBoundingClientRect().width) || 160, { showCharacter: false }));
-    const play = () => wr.animateCharacter();
-    box.querySelector("button").addEventListener("click", play);
+    const msg = box.querySelector('[data-rw="msg"]');
+    const play = () => { wr.cancelQuiz(); msg.textContent = ""; wr.showOutline(); wr.animateCharacter(); };
+    box.querySelector('[data-rw="play"]').addEventListener("click", play);
+    // Write the radical yourself, stroke by stroke, over the grey outline.
+    box.querySelector('[data-rw="quiz"]').addEventListener("click", () => {
+      wr.hideCharacter();
+      msg.textContent = "Your turn: draw the strokes in order.";
+      wr.quiz({ showHintAfterMisses: 2, highlightOnComplete: true,
+        onMistake: () => { msg.textContent = "Try again, check the stroke order."; },
+        onComplete: (d) => { msg.textContent = d.totalMistakes ? `Done with ${d.totalMistakes} mistake${d.totalMistakes > 1 ? "s" : ""}.` : "太好了! Perfect!"; } });
+    });
     play();
   } catch { box.hidden = true; }
 }
@@ -132,8 +200,22 @@ function check(x, el, go) {
   const core = byR[x.r] || x;
   const guess = buildGuessQuestions([core], undefined, Math.random, 1);
   const find = buildFindQuestions([core], undefined, Math.random, guess.length ? 2 : 3);
-  const fin = () => finish(x, $("#radLessonEnd"), host);
-  const runGuess = () => {
+  const bad = [];
+  const take = (res) => { for (const q of res?.missedItems || []) if (!bad.includes(q.c)) bad.push(q.c); };
+  const end = () => $("#radLessonEnd");
+  // Nothing missed: the lesson is done. Otherwise show what was missed first.
+  const fin = (res) => {
+    take(res);
+    if (!bad.length) return finish(x, end(), host);
+    host.innerHTML = "";
+    end().innerHTML = `<div class="panel rad-fin"><h3>Look at these again</h3>
+      <div class="rad-chips">${bad.map(say).join("")}</div>
+      <div class="controls"><button class="btn big" type="button" id="rlAgain">Look again</button><button class="btn primary big" type="button" id="rlDone">Done</button></div></div>`;
+    $("#rlAgain").addEventListener("click", () => { location.hash = learnHash(x.r, lessonSteps(x).indexOf("family") + 1); });
+    $("#rlDone").addEventListener("click", () => finish(x, end(), null));
+  };
+  const runGuess = (res) => {
+    take(res);
     if (!guess.length) return fin();
     const pool = ALL.filter((y) => (y.kind || "meaning") === "meaning");
     ui.choiceQuiz({ kind: "radical-guess", title: "Guess the meaning", items: guess, key: "bs:", id: (q) => q.r, label: (q) => q.c, sayAfter: (q) => q.c, then: fin, back: go.back,
@@ -167,11 +249,12 @@ export function openRadicalLesson(x, step) {
   const id = steps[n - 1];
   const el = $("#radicalsBody");
   const go = nav(x.r, n);
-  const view = { story, shape: shapeStep, part: partStep, family: familyStep, sound: soundStep }[id];
+  const view = { story, shape: shapeStep, part: partStep, twins: twinsStep, family: familyStep, sound: soundStep }[id];
   el.innerHTML = `<div class="rad-lesson">${head(x, n, total)}<div id="radLBody">${view ? view(x) : ""}</div>${foot(n, id === "check")}</div>`;
   window.scrollTo(0, 0);
   $("#rlNext")?.addEventListener("click", go.next);
   $("#rlBack")?.addEventListener("click", go.back);
-  if (id === "part") strokes(x.r);
+  if (id === "part") radicalWriter($("#radWrite"), x.r, () => current === x.r);
+  if (id === "twins") twinsDrill(x);
   if (id === "check") check(x, $("#radLBody"), go);
 }

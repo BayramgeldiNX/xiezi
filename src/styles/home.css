@@ -161,6 +161,17 @@
 .rad-fin { justify-items: center; text-align: center; }
 .rad-lfoot { display: flex; justify-content: space-between; gap: 12px; }
 .rad-lfoot .btn { min-height: 44px; min-width: 96px; }
+.rad-more { display: grid; gap: 8px; width: 100%; text-align: left; }
+.rad-fin .rad-chips { justify-content: center; }
+.rad-twins { display: grid; gap: 10px; width: 100%; text-align: left; }
+.rad-twin { display: flex; align-items: center; gap: 14px; padding: 12px 14px; border-radius: var(--r); background: var(--card); }
+.rad-twg { flex: none; min-width: 56px; text-align: center; font-size: 2.8rem; line-height: 1.1; font-weight: 700; color: var(--jade); }
+.rad-twt { flex: 1; margin: 0; min-width: 0; line-height: 1.5; overflow-wrap: anywhere; }
+.rad-twin .rad-sayc { min-width: 48px; min-height: 48px; font-size: 1.6rem; }
+.rad-tw-drill { display: grid; gap: 10px; width: 100%; }
+.rad-tw-q { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.rad-tw-opts { display: flex; gap: 8px; }
+.rad-tw-opt { min-width: 88px; min-height: 56px; }
 .rad-tile.ld { box-shadow: inset 0 0 0 1.5px var(--jade); }
 .rad-ftoday { display: flex; align-items: center; justify-content: center; height: 56px; line-height: 1; }
 .rad-farrow { align-self: flex-start; line-height: 56px; }
