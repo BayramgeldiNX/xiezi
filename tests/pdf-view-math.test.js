@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { parsePdfHash, pdfHash, savedPage, withPage, fitSize, renderScale, clampPan, zoomAt, swipeResult, tapZone, clampZoom } from "../src/pdf/view-math.js";
+import { parsePdfHash, pdfHash, savedPage, withPage, fitSize, clampPan, zoomAt, swipeResult, tapZone, clampZoom } from "../src/pdf/view-math.js";
 
 const pdf = { id: "ledu", pages: 50 };
 describe("pdf view math", () => {
@@ -20,12 +20,9 @@ describe("pdf view math", () => {
     expect(withPage({ a: 1 }, "b", 2)).toEqual({ a: 1, b: 2 });
     expect(withPage("junk", "b", 2)).toEqual({ b: 2 });
   });
-  it("fits and caps", () => {
+  it("fits and clamps", () => {
     expect(fitSize(100, 200, 400, 400)).toEqual({ w: 200, h: 400 });
     expect(fitSize(0, 1, 1, 1)).toEqual({ w: 0, h: 0 });
-    expect(renderScale(400, 600, 3, 1)).toBe(3);
-    const s = renderScale(400, 600, 3, 4);
-    expect(400 * 600 * s * s).toBeLessThanOrEqual(12e6 + 1);
     expect(clampZoom(9)).toBe(4);
     expect(clampZoom(0.3)).toBe(1);
   });

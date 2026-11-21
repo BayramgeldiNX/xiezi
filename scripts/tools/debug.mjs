@@ -110,7 +110,7 @@ for (const [sk, modes] of Object.entries(SKILL_MODES)) {
   for (const m of modes) STEPS.push([`${sk}-${m}`, `#/lesson/kouyu-rumen/1/${sk}`, `document.querySelector('[data-mode="${m}"]')?.click(); ${W} ${MODE_STEP("#tab-" + sk)}`]);
 }
 STEPS.push(["shelf", "#/shelf"]);
-STEPS.push(["pdf", "#/pdf/ledu"]);   // no file on this device: the quiet line
+STEPS.push(["pdf", "#/pdf/ledu"]);   // signed out: the quiet line
 STEPS.push(["settings", "", `document.querySelector('#accountChip').click(); ${W}`]);
 
 for (const s of SIZES) {

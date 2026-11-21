@@ -36,19 +36,39 @@ describe("pdf pages", () => {
   });
 });
 
-import { bookLinksFor } from "../src/pdf/pages.js";
+import { bookLinksFor, pageKey, isStale, ownerFromStore, shelfVisible } from "../src/pdf/pages.js";
 describe("bookLinksFor", () => {
-  it("lists only the files on the device, textbook first", () => {
-    const both = bookLinksFor("hsk1", 3, new Set(["hsk1-wb", "hsk1-tb"]));
+  it("lists both books for the owner, textbook first", () => {
+    const both = bookLinksFor("hsk1", 3, true);
     expect(both.map((l) => l.id)).toEqual(["hsk1-tb", "hsk1-wb"]);
     expect(both[0].hash).toBe("#/pdf/hsk1-tb/27");
     expect(both[0].label).toBe("Book p. 14");
     expect(both[1].label).toMatch(/^Workbook p\. \d+$/);
-    expect(bookLinksFor("hsk1", 3, new Set(["hsk1-wb"])).map((l) => l.id)).toEqual(["hsk1-wb"]);
   });
-  it("shows nothing when unknown, missing or no such lesson", () => {
+  it("shows nothing for anyone else, or for no such lesson", () => {
+    expect(bookLinksFor("hsk1", 3, false)).toEqual([]);
     expect(bookLinksFor("hsk1", 3, null)).toEqual([]);
-    expect(bookLinksFor("kouyu-rumen", 1, new Set(["hsk1-tb"]))).toEqual([]);
-    expect(bookLinksFor("hsk1", 99, new Set(["hsk1-tb"]))).toEqual([]);
+    expect(bookLinksFor("hsk1", 99, true)).toEqual([]);
+  });
+});
+describe("page cache rules", () => {
+  it("keys are the id and a 3-digit page", () => {
+    expect(pageKey("ledu", 3)).toBe("ledu-003");
+    expect(pageKey("hsk1-tb", 142)).toBe("hsk1-tb-142");
+  });
+  it("a page is stale when missing or older than the expected image version", () => {
+    const pdf = { img: { v: 2 } };
+    expect(isStale(null, pdf)).toBe(true);
+    expect(isStale({ v: 1 }, pdf)).toBe(true);
+    expect(isStale({ v: 2 }, pdf)).toBe(false);
+    expect(isStale({ v: 3 }, pdf)).toBe(false);
+    expect(isStale({ v: 1 }, { img: { v: 1 } })).toBe(false);
+  });
+  it("the owner flag is stored as 1 and read strictly", () => {
+    expect(ownerFromStore("1")).toBe(true);
+    for (const x of [null, "", "0", "true", undefined]) expect(ownerFromStore(x)).toBe(false);
+    expect(shelfVisible(true)).toBe(true);
+    expect(shelfVisible(false)).toBe(false);
+    expect(shelfVisible(null)).toBe(false);
   });
 });

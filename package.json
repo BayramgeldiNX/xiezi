@@ -25,14 +25,14 @@
     "import-book": "node scripts/import-book.mjs",
     "gen:private-audio": "python scripts/gen-private-audio.py",
     "upload:private": "node --use-env-proxy scripts/upload-private.mjs",
+    "upload:pages": "node --use-env-proxy scripts/upload-book-pages.mjs",
     "check": "node scripts/check-data.mjs",
     "setup:firebase": "node scripts/setup-firebase.mjs"
   },
   "dependencies": {
     "@fontsource/atkinson-hyperlegible": "^5.3.0",
     "firebase": "^13.1.0",
-    "hanzi-writer": "^3.7.3",
-    "pdfjs-dist": "5.4.624"
+    "hanzi-writer": "^3.7.3"
   },
   "devDependencies": {
     "hanzi-writer-data": "^2.0.1",

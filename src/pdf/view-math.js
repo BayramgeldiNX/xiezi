@@ -3,7 +3,6 @@ import { clampPage } from "./pages.js";
 
 export const PLACE_KEY = "xz-pdf-place";
 export const MAX_ZOOM = 4;
-export const MAX_PIXELS = 12e6;   // iOS Safari's canvas limit is about 16.7M; stay well inside
 
 // "#/pdf/ledu/12" -> { id: "ledu", page: 12 }; the page is null when the address has none or a bad one.
 export function parsePdfHash(hash) {
@@ -30,13 +29,6 @@ export function fitSize(pw, ph, bw, bh) {
   if (!(pw > 0 && ph > 0 && bw > 0 && bh > 0)) return { w: 0, h: 0 };
   const s = Math.min(bw / pw, bh / ph);
   return { w: pw * s, h: ph * s };
-}
-
-// Pixels per CSS px for a canvas: the screen's density times the zoom, kept under the area cap.
-export function renderScale(w, h, dpr, zoom, cap = MAX_PIXELS) {
-  const want = Math.max(1, dpr) * Math.max(1, zoom);
-  const most = Math.sqrt(cap / Math.max(1, w * h));
-  return Math.max(1, Math.min(want, most));
 }
 
 export const clampZoom = (z) => Math.min(Math.max(z, 1), MAX_ZOOM);

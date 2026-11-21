@@ -24,8 +24,8 @@ import { openSearch } from "./views/search.js";
 import { openNotebook, notebookChanged } from "./views/notebook.js";
 import * as notebook from "./notebook/store.js";
 import { openShelf } from "./views/shelf.js";
-import { bookLinksFor } from "./pdf/pages.js";
-import { pdfSet, knownPdfs, onPdfsChange } from "./pdf/store.js";
+import { bookLinksFor, shelfVisible } from "./pdf/pages.js";
+import { dropOldPdfs } from "./pdf/store.js";
 import { openPdfView, pdfGoto, pdfOpenId } from "./views/pdfview.js";
 import { openRadicals, radicalsUp, learnedCount, radicalTotal } from "./views/radicals.js";
 import { openPrint } from "./views/printsheet.js";
@@ -36,7 +36,7 @@ import { bookRows, sealFor, markOf, MAX } from "./exam/rows.js";
 import { testOf } from "./exam/plan.js";
 import { hideGloss } from "./views/reading.js";
 import { initAccountChip, openAccount } from "./views/account.js";
-import { initSync } from "./sync/sync.js";
+import { initSync, ownerCached, onOwner } from "./sync/sync.js";
 import { showLessonMeter, toggleLeft, noteHtml } from "./views/lessonmeter.js";
 import { timerBoot, timerEnter, timerLeave } from "./views/studytimer.js";
 import { initPWA } from "./pwa.js";
@@ -51,8 +51,8 @@ const OLD_TABS = { dict: "write", review: "write", cards: "words", tones: "liste
    #/typing                     typing practice
    #/radicals[/<mode>]          Radicals: the list, or practice (cards, find, guess, due)
    #/radical/<r>[/<mode>]       one radical, or practice of just that radical
-   #/shelf                      Shelf: the textbook PDFs kept on this device
-   #/pdf/<id>[/<page>]          the PDF reader (page = PDF page number)
+   #/shelf                      Shelf: the owner's textbooks (page images from the account)
+   #/pdf/<id>[/<page>]          the book reader (page = PDF page number)
    #/notebook[/<word>]          Notebook: the word list, or one word (#/notebook/-/<kind> is a practice)
    #/books                      all books
    #/book/<book>[/review]       one book: its lessons, or its review
@@ -338,16 +338,23 @@ function openLesson(li, wi = 0, tab = "write") {
   showTab(TABS.includes(tab) ? tab : OLD_TABS[tab] || "write", false);
 }
 
-// Quiet "Book p. 14" links to this lesson's pages in the PDFs kept on this device. Filled in when the file list is known.
+// Quiet "Book p. 14" links to this lesson's book pages. Only the owner's account has them.
 function renderBookLinks() {
   const el = $("#lessonBook"), L = app.L();
   if (!el || !L) return;
-  const links = bookLinksFor(L.book, L.n, knownPdfs());
+  const links = bookLinksFor(L.book, L.n, ownerCached());
   el.hidden = !links.length;
   el.innerHTML = links.map((k) => `<a href="${k.hash}">${esc(k.label)}</a>`).join("");
 }
-pdfSet().then(() => { if (current === "lessonView") renderBookLinks(); });
-onPdfsChange(() => { if (current === "lessonView") renderBookLinks(); });
+// The Shelf entries and the lesson links show only when this device knows the account is the owner's.
+function showShelfEntries() {
+  const on = shelfVisible(ownerCached());
+  $("#sideShelf").hidden = !on; $("#openShelf").hidden = !on;
+  if (current === "lessonView") renderBookLinks();
+}
+showShelfEntries();
+onOwner(showShelfEntries);
+dropOldPdfs();
 
 // Previous / next lesson of the same book, under every tab. The same tab opens there.
 function renderLessonNav() {

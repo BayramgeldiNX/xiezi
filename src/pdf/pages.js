@@ -29,13 +29,22 @@ export function clampPage(pdf, page) {
   return Math.min(Math.max(n, 1), pdf?.pages || 1);
 }
 
-// Quiet links from a lesson into the book PDFs that are on this device: [{ id, label, hash }].
-// `have` is a Set of pdf ids (or null while unknown). Textbook first. Label uses the printed number, else the PDF page.
-export function bookLinksFor(book, lessonNo, have) {
+// The key of one page image, in Firestore (books/<book>/pages/<key>) and in the device cache: "ledu-003".
+export const pageKey = (id, n) => `${id}-${String(n).padStart(3, "0")}`;
+
+// A cached page is stale when it is older than the images the app expects (`img.v` in book-pdfs.json).
+export const isStale = (rec, pdf) => !rec || !(rec.v >= (pdf?.img?.v ?? 1));
+
+// The Shelf, its links and the lesson links show only for the owner's account (`xz-owner` holds "1").
+export const ownerFromStore = (raw) => raw === "1";
+export const shelfVisible = (owner) => owner === true;
+
+// Quiet links from a lesson into its book pages: [{ id, label, hash }]. Only for the owner. Textbook first.
+// Label uses the printed number, else the PDF page.
+export function bookLinksFor(book, lessonNo, owner) {
   const out = [];
-  if (!have) return out;
+  if (!shelfVisible(owner)) return out;
   for (const pdf of pdfsForBook(book)) {
-    if (!have.has(pdf.id)) continue;
     const page = lessonPage(pdf, lessonNo);
     if (page == null) continue;
     const no = printedLabel(pdf, page) ?? page;

@@ -187,6 +187,7 @@ a.pdf-main:hover b { text-decoration: underline; text-underline-offset: 3px; }
 .pdf-row.asking .pdf-side { flex: 1 1 100%; margin-left: 0; }
 .shelf-err { margin: 0; font-size: .8125rem; color: var(--cinnabar); line-height: 1.4; }
 .shelf-note { margin: 0; font-size: .8125rem; line-height: 1.5; }
+.shelf-note a { color: var(--ink); text-underline-offset: 3px; min-height: 44px; display: inline-grid; place-items: center; }
 a.pdf-main { min-height: 44px; align-content: center; }
 
 /* ---------- PDF reader (#/pdf/<id>): one page on the theme background, a bar that fades ---------- */
@@ -198,7 +199,8 @@ html.pdf-on, html.pdf-on body { overflow: hidden; overscroll-behavior: none; }
 .pdfr-slot { position: absolute; inset: 0; }
 .pdfr-sheet { position: absolute; background: #fff; border-radius: 2px; transform-origin: 50% 50%;
   box-shadow: 0 0 0 1px var(--line2), 0 6px 24px var(--shadow); }
-.pdfr-sheet canvas { display: block; width: 100%; height: 100%; }
+.pdfr-sheet img { display: block; width: 100%; height: 100%; pointer-events: none; }
+.pdfr-sheet .pdfr-note { color: #6b6b6b; }
 .pdfr-note { position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; gap: 8px; margin: 0; padding: 0 24px; text-align: center; color: var(--muted); line-height: 1.5; }
 .pdfr-note a { color: var(--ink); text-underline-offset: 3px; min-height: 44px; display: inline-grid; place-items: center; }
 .pdfr-bar { position: absolute; top: 0; left: 0; right: 0; z-index: 1; display: flex; align-items: center; gap: 12px; min-height: 44px;
