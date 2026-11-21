@@ -377,26 +377,28 @@ function bindInput(st) {
   st.addEventListener("pointerup", up);
   st.addEventListener("pointercancel", up);
 
+  // Edge taps always turn, so quick taps to flip through pages never count as a double-tap; zoom is a double-tap in
+  // the middle (or anywhere once zoomed in, to come back out).
   function tap(p) {
     const now = performance.now();
-    if (last && now - last.t < 320 && Math.hypot(p.x - last.x, p.y - last.y) < 40) {
+    const zone = S.z === 1 ? tapZone(p.rx, S.box.W) : "mid";
+    if (zone === "mid" && last?.zone === "mid" && now - last.t < 320 && Math.hypot(p.x - last.x, p.y - last.y) < 40) {
       last.undo?.(); last = null;
       toggleZoom(p.x, p.y);
       return;
     }
     let undo = null;
     if (S.z === 1) {
-      const zone = tapZone(p.rx, S.box.W);
       if (zone === "mid") {
         const was = chromeOn();
         if (was) hideChrome(); else showChrome();
         undo = () => (was ? showChrome() : hideChrome());
       } else {
-        const from = S.cur, n = from + (zone === "next" ? 1 : -1);
-        if (n >= 1 && n <= S.total) { slideTo(n, 0, 240); undo = () => slideTo(from, 0, 0); }
+        const n = S.cur + (zone === "next" ? 1 : -1);
+        if (n >= 1 && n <= S.total) slideTo(n, 0, 240);
       }
     } else showChrome();
-    last = { t: now, x: p.x, y: p.y, undo };
+    last = { t: now, x: p.x, y: p.y, zone, undo };
   }
 
   st.addEventListener("wheel", (e) => {
