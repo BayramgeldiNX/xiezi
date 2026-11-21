@@ -8,13 +8,12 @@ import * as progress from "../progress/store.js";
 import { charMastered, isDue } from "../progress/model.js";
 import { radicalKey } from "../lib/radicals.js";
 import { openRadicalLesson, lessonDone, firstUndone, radicalWriter, bookChip } from "./radical-lesson.js";
-import { learnHash } from "../lib/radical-lesson.js";
+import { learnHash, POS } from "../lib/radical-lesson.js";
 
 const STAGES = RADICALS_CORE?.stages || [];
 const ALL = STAGES.flatMap((s) => s.radicals);
 const find = (r) => ALL.find((x) => x.r === r);
 const body = () => $("#radicalsBody");
-const POS = { left: "on the left", right: "on the right", top: "on top", bottom: "at the bottom", enclose: "around the outside", enclosing: "around the outside", outside: "around the outside", inside: "inside", any: "in many places", varies: "in many places", middle: "in the middle" };
 
 export const radicalTotal = () => ALL.length;
 export const learnedCount = () => ALL.filter((x) => learned(x.r)).length;
@@ -47,9 +46,12 @@ function leave() {
 }
 const startPractice = (m) => { location.hash = `${location.hash.replace(/\/$/, "")}/${m}`; };
 
+let seq = 0; // each opened page takes a number: a late import must not draw over the page the user moved to
 async function practice(mode, radicals) {
+  const mine = seq;
   try {
     const m = await import("./radicals-practice.js");
+    if (mine !== seq) return;
     window.scrollTo(0, 0);
     m.startRadicalPractice($("#radicalsBody"), { mode, radicals, then: leave, back: leave });
   } catch (e) {
@@ -62,6 +64,7 @@ async function practice(mode, radicals) {
 let current = null;
 export function openRadicals(r, mode, step) {
   current = r || null;
+  seq++;
   const x = r && find(r);
   if (x && mode === "learn") return openRadicalLesson(x, step);
   if (MODES.includes(mode)) return practice(mode, x ? [x.r] : mode === "due" ? dueRadicals() : scope());
@@ -118,7 +121,7 @@ function radicalPage(x) {
       <span class="note">Practice ${esc(x.r)}</span>
       <button class="btn" type="button" data-rp="cards">Cards</button>
       <button class="btn" type="button" data-rp="find">Find</button>
-      <button class="btn" type="button" data-rp="guess">Guess</button>
+      ${x.kind === "shape" || !(f.guess || []).length ? "" : `<button class="btn" type="button" data-rp="guess">Guess</button>`}
     </div>
     <p class="note" id="radMsg" aria-live="polite"></p>
     <div class="rad-actions">${[[ALL[ALL.indexOf(x) - 1], "Previous"], [ALL[ALL.indexOf(x) + 1], "Next"]].map(([o, label]) => o

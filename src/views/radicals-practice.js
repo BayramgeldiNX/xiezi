@@ -11,17 +11,17 @@ import { $, esc } from "../lib/util.js";
 import { autoSay, sayBtns } from "../lib/speech.js";
 import { icon } from "../lib/icons.js";
 import { radicalKey } from "../lib/radicals.js";
-import { shuffleWith, allCoreRadicals, pickRadicalDistractors, buildFindQuestions, buildGuessQuestions, pickGuessDistractors, dueRadicals } from "../lib/radical-quiz.js";
+import { shuffleWith, allCoreRadicals, pickRadicalDistractors, buildFindQuestions, buildGuessQuestions, guessOptions, dueRadicals } from "../lib/radical-quiz.js";
 import * as progress from "../progress/store.js";
 import { radicalChoice } from "./workbook.js";
 import { setHost, ui as practiceUi } from "./practice.js";
 import { animate, flipOut, flipIn } from "../lib/motion.js";
 import { glossHtml } from "./radical-lesson.js";
+import { POS } from "../lib/radical-lesson.js";
 
 /* ---------- screens ---------- */
 const hzSpan = (t, size) => `<span class="hz" style="font-size:${size}rem">${esc(t)}</span>`;
 const all$ = (s, el) => [...el.querySelectorAll(s)];
-const POS = { left: "on the left", right: "on the right", top: "on top", bottom: "at the bottom", enclose: "around the outside", enclosing: "around the outside", outside: "around the outside" };
 // Why this radical: its meaning, where it usually sits, and what its characters are about.
 const radicalWhy = (r) => r ? `<span class="hz">${esc(r.r)}</span> ${esc(r.en)}${POS[r.pos] ? `, usually ${POS[r.pos]}` : ""}. ${esc(r.meaningNote || r.tip || "")}` : "";
 
@@ -41,12 +41,13 @@ function findQuiz(ui, radicals, { then, back, title = "部首 · Which radical?"
 
 function guessQuiz(ui, radicals, { then, back, title = "猜意思 · Guess the meaning" }) {
   const items = buildGuessQuestions(radicals);
+  if (!items.length) return nothing(ui, ui.body(), "No guess questions for this radical. Its shape sorts characters rather than hinting at a meaning.", back);
   const pool = radicals.length >= 4 ? radicals : allCoreRadicals();
   return ui.choiceQuiz({ kind: "radical-guess", title, items, key: "bs:", id: (q) => q.r, label: (q) => q.c, sayAfter: (q) => q.c, then, back,
     ask: (q) => ({ html: `<p class="hint">What does this character mean? The radical gives a clue.</p>
       <div class="big-hz">${esc(q.c)}</div>
       <p class="muted"><span class="hz" style="color:var(--jade)">${esc(q.radical.r)}</span> ${esc(q.radical.en)} + ?</p>` }),
-    makeOptions: (q) => [q.en, ...pickGuessDistractors(q, pool)]
+    makeOptions: (q) => [q.en, ...guessOptions(q, pool)]
       .map((en, i) => ({ html: `<span class="en">${esc(en)}</span>`, correct: i === 0 })),
     why: (q) => radicalWhy(q.radical),
     reveal: (q) => glossHtml(q.c, q.radical),

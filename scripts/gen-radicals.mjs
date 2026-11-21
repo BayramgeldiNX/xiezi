@@ -28,6 +28,8 @@ const short = (en, max = 30) => {
 };
 const junk = /variant|surname|Kangxi|radical|abbr|archaic|\bsame as\b|used in|province|nationality|heavenly stem|earthly branch|ketone|amine|\bacid\b|ester|compound|Buddhis|Sanskrit|dialect|county|prefecture|\bcity\b|river in|name of|chemical|element/i;
 const MIN_WORDS = 8; // a common char appears in at least this many CC-CEDICT words
+const FILL_MIN_WORDS = 3; // a radical with few characters is filled up with rarer ones down to this many
+const COMMON_MAX = 24, TARGET = 24; // `common` holds up to 24; fill until book + common reach 24
 const basicCJK = (c) => { const n = c.codePointAt(0); return n >= 0x4e00 && n <= 0x9fff; };
 
 let singles;
@@ -74,9 +76,15 @@ export function genRadicals(corePath = process.argv[2] || process.env.RADICALS_C
       return o;
     };
     const ok = (c) => chars[c]?.[0] && short(chars[c][1]) && !junk.test(chars[c][1]);
-    const pool = byFreq.filter((c) => inFam(c) && !seen.has(c) && ok(c) && basicCJK(c) && freq.get(c) >= MIN_WORDS);
+    const famPool = byFreq.filter((c) => inFam(c) && !seen.has(c) && ok(c) && basicCJK(c));
+    const pool = famPool.filter((c) => freq.get(c) >= MIN_WORDS);
     const exCommon = (r.examples || []).filter((c) => !seen.has(c) && chars[c]?.[0] && short(chars[c][1]));
-    const commonC = [...new Set([...exCommon, ...pool])].slice(0, 12);
+    let commonC = [...new Set([...exCommon, ...pool])].slice(0, COMMON_MAX);
+    if (book.length + commonC.length < TARGET) { // fill up with lower-frequency family characters (byFreq is already in order)
+      const have = new Set([...book, ...commonC]);
+      const extra = famPool.filter((c) => !have.has(c) && freq.get(c) >= FILL_MIN_WORDS);
+      commonC = [...commonC, ...extra.slice(0, TARGET - book.length - commonC.length)].slice(0, COMMON_MAX);
+    }
     const guessC = (r.guess || []).filter((g) => g && g.c).map((g) => ({ c: g.c, py: chars[g.c]?.[0] || "", en: g.en }));
     out[r.r] = { book, common: commonC.map(entry), guess: guessC };
   }
@@ -89,8 +97,8 @@ export function genRadicals(corePath = process.argv[2] || process.env.RADICALS_C
   fs.writeFileSync(INSIDE_OUT, `{\n${insideLines.join(",\n")}\n}\n`);
   const lines = Object.entries(out).map(([k, v]) => `${JSON.stringify(k)}:${JSON.stringify(v)}`);
   fs.writeFileSync(OUT, `{\n${lines.join(",\n")}\n}\n`);
-  const thin = Object.entries(out).filter(([, v]) => v.book.length + v.common.length < 4).map(([k]) => k);
-  console.log(`radical-families.gen.json: ${lines.length} radicals${thin.length ? `, <4 chars: ${thin.join(" ")}` : ""}`);
+  const thin = Object.entries(out).filter(([, v]) => v.book.length + v.common.length < 10).map(([k, v]) => `${k}(${v.book.length + v.common.length})`);
+  console.log(`radical-families.gen.json: ${lines.length} radicals${thin.length ? `, <10 chars: ${thin.join(" ")}` : ""}`);
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) genRadicals();

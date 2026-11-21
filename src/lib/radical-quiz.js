@@ -72,6 +72,18 @@ export function pickGuessDistractors(q, radicals, families = RADICAL_FAMILIES, r
   return out;
 }
 
+// Always n wrong meanings when the data has them: other radicals of the scope first, then every meaning radical.
+export function guessOptions(q, scope, families = RADICAL_FAMILIES, rand = Math.random, n = 3, everyone = allCoreRadicals()) {
+  const out = pickGuessDistractors(q, scope, families, rand, n);
+  if (out.length >= n) return out;
+  const have = new Set([q.en.toLowerCase(), ...out.map((t) => t.toLowerCase())]);
+  for (const t of pickGuessDistractors(q, everyone.filter((y) => (y.kind || "meaning") === "meaning"), families, rand, n * 3)) {
+    if (out.length >= n) break;
+    if (!have.has(t.toLowerCase())) { have.add(t.toLowerCase()); out.push(t); }
+  }
+  return out;
+}
+
 // Radicals practised before whose schedule says they are due (same rule as Review).
 export function dueRadicals(radicals, getStat, now = Date.now()) {
   return radicals.filter((r) => isDue(latest([getStat(radicalKey(r.r))]), now));
@@ -105,6 +117,27 @@ const familyChars = (y, families) => {
   return [...new Set([...(f.book || []), ...(f.common || []).map((x) => x.c)])].filter((c) => c !== y.r && c !== y.full);
 };
 
+// Spot question for one given answer character c: which of four characters has this radical inside? The three others
+// come from other radicals (twins first, then the same stage) and never contain the radical. `used` (a Set) keeps
+// distractors from repeating between questions; when it leaves too few, they may repeat. Returns null when no 3 are found.
+export function spotQuestionFor(c, target, all, { families = RADICAL_FAMILIES, inside = CHAR_INSIDE, rand = Math.random, used = new Set() } = {}) {
+  const others = all.filter((y) => y.r !== target.r);
+  const twins = new Set((target.twins || []).map((t) => t.r));
+  const order = [...shuffleWith(others.filter((y) => twins.has(y.r)), rand),
+    ...shuffleWith(others.filter((y) => !twins.has(y.r) && y.stage === target.stage), rand),
+    ...shuffleWith(others.filter((y) => !twins.has(y.r) && y.stage !== target.stage), rand)];
+  for (const avoid of [used, new Set()]) {
+    const picks = [], got = new Set();
+    for (const y of order) {
+      if (picks.length >= 3) break;
+      const d = shuffleWith(familyChars(y, families), rand).find((d) => !avoid.has(d) && !got.has(d) && d !== c && !hasRadical(d, target, inside));
+      if (d) { picks.push({ c: d, r: y.r }); got.add(d); }
+    }
+    if (picks.length === 3) { picks.forEach((p) => used.add(p.c)); used.add(c); return { type: "spot", c, r: target.r, radical: target, others: picks }; }
+  }
+  return null;
+}
+
 // "Spot it" questions for a lesson's quick check: which of four characters has this radical inside?
 // The answer is a family character the lesson did not show (a new word), book characters first; the three others
 // come from other radicals (twins first, then the same stage) and never contain the radical.
@@ -118,22 +151,78 @@ export function buildSpotQuestions(target, all, { families = RADICAL_FAMILIES, i
   const fresh = fam2.filter((c) => !shown.has(c));
   const pool = fresh.length >= n ? fresh : fam2;
   const answers = [...shuffleWith(pool.filter((c) => book.has(c)), rand).slice(0, 1), ...shuffleWith(pool.filter((c) => !book.has(c)), rand)];
-  const others = all.filter((y) => y.r !== target.r);
-  const twins = new Set((target.twins || []).map((t) => t.r));
-  const order = [...shuffleWith(others.filter((y) => twins.has(y.r)), rand),
-    ...shuffleWith(others.filter((y) => !twins.has(y.r) && y.stage === target.stage), rand),
-    ...shuffleWith(others.filter((y) => !twins.has(y.r) && y.stage !== target.stage), rand)];
   const used = new Set(skip);
   const out = [];
   for (const c of [...new Set(answers)]) {
     if (out.length >= n) break;
-    const picks = [];
+    const q = spotQuestionFor(c, target, all, { families, inside, rand, used });
+    if (q) out.push(q);
+  }
+  return out;
+}
+
+export const DAY = 86400000;
+
+// The words a lesson teaches: up to n family characters (never the radical or its full form), book characters
+// before outside ones. Inside each group: never seen, then missed last time, then the rest oldest first.
+// With more than n candidates, a character answered right within the last 2 days goes behind all others, so every
+// lesson brings new words. seen(c) returns that character's progress stat (or undefined).
+export function pickLessonWords(radical, { families = RADICAL_FAMILIES, seen = () => undefined, rand = Math.random, n = 10, now = Date.now() } = {}) {
+  const f = families[radical?.r] || {};
+  const skip = (c) => c === radical?.r || c === radical?.full;
+  const book = [...new Set(f.book || [])].filter((c) => !skip(c));
+  const common = [...new Set((f.common || []).map((x) => x.c))].filter((c) => !skip(c) && !book.includes(c));
+  const group = (list) => {
+    const st = (c) => seen(c);
+    const fresh = shuffleWith(list.filter((c) => !st(c)?.n), rand);
+    const missed = shuffleWith(list.filter((c) => st(c)?.n && !st(c).lastOk), rand);
+    const rest = list.filter((c) => st(c)?.n && st(c).lastOk).sort((a, b) => st(a).last - st(b).last);
+    return [...fresh, ...missed, ...rest];
+  };
+  const all = [...group(book), ...group(common)];
+  if (all.length <= n) return all;
+  const recent = (c) => { const s = seen(c); return !!(s?.n && s.lastOk && now - s.last < 2 * DAY); };
+  return [...all.filter((c) => !recent(c)), ...all.filter(recent)].slice(0, n);
+}
+
+// Meaning question for one character: the right text comes from charGloss, the three wrong ones are meanings of other
+// radicals' family characters (distinct texts, never the right one, same stage first). Returns null when 3 are not found.
+export function meaningQuestionFor(c, target, all, { families = RADICAL_FAMILIES, rand = Math.random, chars = CHARS, used = new Set() } = {}) {
+  const en = charGloss(c, target, families, chars).en;
+  if (!en) return null;
+  const others = all.filter((y) => y.r !== target.r);
+  const order = [...shuffleWith(others.filter((y) => y.stage === target.stage), rand), ...shuffleWith(others.filter((y) => y.stage !== target.stage), rand)];
+  for (const avoid of [used, new Set()]) {
+    const wrong = [], got = new Set([en.toLowerCase()]);
     for (const y of order) {
-      if (picks.length >= 3) break;
-      const d = shuffleWith(familyChars(y, families), rand).find((d) => !used.has(d) && d !== c && !hasRadical(d, target, inside));
-      if (d) { picks.push({ c: d, r: y.r }); used.add(d); }
+      if (wrong.length >= 3) break;
+      for (const d of shuffleWith(familyChars(y, families), rand)) {
+        const t = charGloss(d, y, families, chars).en;
+        if (!t || got.has(t.toLowerCase()) || avoid.has(t.toLowerCase()) || d === c) continue;
+        got.add(t.toLowerCase()); wrong.push({ c: d, r: y.r, en: t });
+        break;
+      }
     }
-    if (picks.length === 3) { used.add(c); out.push({ c, r: target.r, radical: target, others: picks }); }
+    if (wrong.length === 3) { wrong.forEach((w) => used.add(w.en.toLowerCase())); return { type: "meaning", c, r: target.r, radical: target, en, others: wrong }; }
+  }
+  return null;
+}
+
+// The lesson's check: one question per word from pickLessonWords, "spot" and "meaning" taking turns.
+// A radical with fewer than n words gets as many questions as it has words (at least 3: words are reused as Spot questions).
+// Returns [{ type: "spot" | "meaning", c, r, radical, ... }].
+export function buildLessonCheck(target, all, { families = RADICAL_FAMILIES, inside = CHAR_INSIDE, chars = CHARS, seen, rand = Math.random, n = 10, now } = {}) {
+  const words = pickLessonWords(target, { families, seen, rand, n, now });
+  if (!words.length) return [];
+  const want = Math.max(Math.min(n, words.length), Math.min(3, n));
+  const used = new Set(), usedEn = new Set(), out = [];
+  for (let i = 0; i < want; i++) {
+    const reuse = i >= words.length;
+    const c = words[i % words.length];
+    const spot = () => spotQuestionFor(c, target, all, { families, inside, rand, used });
+    const meaning = () => meaningQuestionFor(c, target, all, { families, rand, chars, used: usedEn });
+    const q = reuse || i % 2 === 0 ? spot() || (reuse ? null : meaning()) : meaning() || spot();
+    if (q) out.push(q);
   }
   return out;
 }

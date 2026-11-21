@@ -29,6 +29,7 @@ export const KINDS = {
   nb: { what: "a Notebook word (its own schedule; never a book key)" },
   bs: { what: "a radical in Radicals practice (bs:<radical>)" },
   bsl: { what: "a radical's lesson finished (bsl:<radical>)" },
+  bsw: { what: "a word met in a radical lesson (bsw:<char>)" },
 };
 
 export const kindOf = (key) => key.slice(0, key.indexOf(":"));

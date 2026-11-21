@@ -1,4 +1,8 @@
 // Pure helpers for the radical lesson (no DOM): step list, addresses, next radical.
+// Where a radical usually sits, in plain words (lower case; posText() capitalises it for a heading). One map for all Radicals screens.
+export const POS = { left: "on the left", right: "on the right", top: "on top", bottom: "at the bottom", enclose: "around the outside", enclosing: "around the outside", outside: "around the outside", inside: "inside", any: "in many places", varies: "in many places", middle: "in the middle" };
+export const posText = (pos, fallback = "in many places") => POS[pos] || fallback;
+export const posHeading = (pos) => { const t = posText(pos); return t[0].toUpperCase() + t.slice(1); };
 export const learnHash = (r, n = 1) => `#/radical/${encodeURIComponent(r)}/learn/${n}`;
 export const picId = (r) => r.codePointAt(0).toString(16);
 // Step ids in order for a radical: "twins" (look-alikes) only when it has twins, "sound" only when there is something to show.
