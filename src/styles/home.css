@@ -202,17 +202,28 @@ html.pdf-on, html.pdf-on body { overflow: hidden; overscroll-behavior: none; }
 .pdfr-sheet img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; pointer-events: none; }
 /* the small preview reads as "loading": softened, with the sharp page fading in over it */
 .pdfr-sheet img.pv { filter: blur(1.5px) saturate(.92); }
-.pdfr-sheet img.fx.fade { opacity: 0; transition: opacity 150ms linear; }
+.pdfr-sheet img.fx.fade { opacity: 0; transition: opacity 260ms cubic-bezier(.2, .8, .2, 1); }
 .pdfr-sheet img.fx.fade.in { opacity: 1; }
+/* dark themes (Auto resolves to one of them at night): dim the white page against the dark room */
+:root[data-theme="lacquer"] .pdfr-sheet img, :root[data-theme="ink"] .pdfr-sheet img { filter: brightness(.88); }
+:root[data-theme="lacquer"] .pdfr-sheet img.pv, :root[data-theme="ink"] .pdfr-sheet img.pv { filter: blur(1.5px) saturate(.92) brightness(.88); }
+:root[data-theme="lacquer"] .pdfr-sheet, :root[data-theme="ink"] .pdfr-sheet { box-shadow: 0 0 0 1px var(--line2), 0 4px 16px rgb(0 0 0 / .2); }
+@media (min-aspect-ratio: 1/1) {
+  .pdfr-stage { padding-top: calc(var(--safe-t) + 52px); padding-bottom: calc(var(--safe-b) + 28px); }
+}
 .pdfr-sheet .pdfr-note.over { background: rgb(255 255 255 / .6); }
 .pdfr-sheet .pdfr-note { color: #6b6b6b; }
 .pdfr-note { position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; gap: 8px; margin: 0; padding: 0 24px; text-align: center; color: var(--muted); line-height: 1.5; }
 .pdfr-note a { color: var(--ink); text-underline-offset: 3px; min-height: 44px; display: inline-grid; place-items: center; }
 .pdfr-bar { position: absolute; top: 0; left: 0; right: 0; z-index: 1; display: flex; align-items: center; gap: 12px; min-height: 44px;
   padding: calc(var(--safe-t) + 8px) calc(var(--safe-r) + 12px) 8px calc(var(--safe-l) + 12px);
-  background: color-mix(in srgb, var(--paper) 90%, transparent); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
-  box-shadow: 0 1px 0 var(--line); transition: opacity var(--med) var(--ease), transform var(--med) var(--ease); }
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--paper) 85%, transparent), transparent);
+  transition: opacity var(--med) var(--ease), transform var(--med) var(--ease); }
 .pdfr-bar.off { opacity: 0; transform: translateY(-8px); pointer-events: none; }
-.pdfr-title { flex: 1 1 0; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-family: var(--display); font-size: 1rem; font-weight: 700; }
-.pdfr-no { flex: 0 0 auto; font-size: .8125rem; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
-.pdfr-no small { margin-left: 4px; font-size: .8125rem; font-weight: 400; color: var(--muted); }
+.pdfr-bar .back { width: 44px; height: 44px; min-width: 44px; padding: 0; margin: 0 0 0 -8px; background: transparent; border: 0; box-shadow: none; color: var(--muted); }
+.pdfr-bar .back:hover, .pdfr-bar .back:focus-visible { background: transparent; color: var(--ink); }
+.pdfr-title { flex: 1 1 0; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-family: var(--display); font-size: .9375rem; font-weight: 400; color: var(--muted); }
+.pdfr-no { flex: 0 0 auto; font-size: .8125rem; font-weight: 400; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.pdfr-prog { position: absolute; left: 0; right: 0; bottom: var(--safe-b); height: 2px; z-index: 1; pointer-events: none; transition: opacity var(--med) var(--ease); }
+.pdfr-prog i { display: block; height: 100%; width: 0; background: var(--muted); opacity: .5; }
+.pdfr-bar.off ~ .pdfr-prog { opacity: 0; }

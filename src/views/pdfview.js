@@ -80,7 +80,9 @@ function commit() {
   try { history.replaceState(history.state, "", pdfHash(id, cur)); } catch {}
   store.set(PLACE_KEY, withPage(store.get(PLACE_KEY, {}), id, cur));
   const p = printedLabel(pdf, cur);
-  $("#pdfNo").innerHTML = p != null ? `p. ${p} <small>${cur} / ${total}</small>` : `${cur} / ${total}`;
+  $("#pdfNo").textContent = p != null ? `p. ${p}` : `${cur} / ${total}`;
+  const bar = $("#pdfProg i");
+  if (bar) bar.style.width = `${total ? (cur / total) * 100 : 0}%`;
 }
 
 // Called by the router when the address changes inside the open book (a link from a lesson).
@@ -270,11 +272,11 @@ function snapBack(dx0) {
   S.dx = 0;
   S.track.style.transform = "";
   if (!dx0 || reduced()) return;
-  const a = S.track.animate([{ transform: `translateX(${dx0}px)` }, { transform: "translateX(0)" }], { duration: 180, easing: EASE });
+  const a = S.track.animate([{ transform: `translateX(${dx0}px)` }, { transform: "translateX(0)" }], { duration: 220, easing: EASE });
   a.onfinish = () => a.cancel();
 }
 // A key pressed during a turn finishes that turn first, so quick presses add up (S.cur is only moved when a turn ends).
-function turn(d) { finishAnim(); const n = S.cur + d; if (n >= 1 && n <= S.total) slideTo(n, 0, 200); else showChrome(); }
+function turn(d) { finishAnim(); const n = S.cur + d; if (n >= 1 && n <= S.total) slideTo(n, 0, 260); else showChrome(); }
 
 /* ---------- zoom ---------- */
 function setView(v, ease) {
@@ -318,7 +320,11 @@ function bindInput(st) {
 
   st.addEventListener("pointermove", (e) => {
     if (!S) return;
-    if (e.pointerType === "mouse" && !ptrs.size) { showChrome(); return; }
+    if (e.pointerType === "mouse" && !ptrs.size) {
+      const r = st.getBoundingClientRect();
+      if (e.clientY - r.top < 96 || r.bottom - e.clientY < 48) showChrome();
+      return;
+    }
     const p = ptrs.get(e.pointerId);
     if (!p || !g) return;
     p.x = e.clientX; p.y = e.clientY;
@@ -387,7 +393,7 @@ function bindInput(st) {
         undo = () => (was ? showChrome() : hideChrome());
       } else {
         const from = S.cur, n = from + (zone === "next" ? 1 : -1);
-        if (n >= 1 && n <= S.total) { slideTo(n, 0, 160); undo = () => slideTo(from, 0, 0); }
+        if (n >= 1 && n <= S.total) { slideTo(n, 0, 240); undo = () => slideTo(from, 0, 0); }
       }
     } else showChrome();
     last = { t: now, x: p.x, y: p.y, undo };
