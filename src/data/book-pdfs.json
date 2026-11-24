@@ -47,6 +47,52 @@
    }
   },
   {
+   "id": "kouyu2",
+   "book": "kouyu-rumen-2",
+   "kind": "textbook",
+   "title": "汉语口语速成 入门篇 下",
+   "en": "Short-term Spoken Chinese · Threshold, vol. 2",
+   "pages": 176,
+   "bytes": 23773430,
+   "printed": [
+    [
+     1,
+     1
+    ],
+    [
+     24,
+     25
+    ],
+    [
+     95,
+     97
+    ]
+   ],
+   "lessons": {
+    "16": 1,
+    "17": 14,
+    "18": 24,
+    "19": 36,
+    "20": 47,
+    "21": 60,
+    "22": 72,
+    "23": 83,
+    "24": 95,
+    "25": 109,
+    "26": 120,
+    "27": 136,
+    "28": 150,
+    "29": 160,
+    "30": 169
+   },
+   "note": "Printed pages 24 and 96 are missing from the scan. Lesson 30 (PDF 169-176) is the last lesson.",
+   "img": {
+    "v": 1,
+    "w": 1600,
+    "thumbs": { "v": 1, "per": 40 }
+   }
+  },
+  {
    "id": "hsk1-tb",
    "book": "hsk1",
    "kind": "textbook",
