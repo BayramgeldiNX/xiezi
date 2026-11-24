@@ -1127,5 +1127,9 @@
   "kouyu-rumen-2": {
     "exclude": [],
     "near": []
+  },
+  "hsk3": {
+    "exclude": [],
+    "near": []
   }
 }

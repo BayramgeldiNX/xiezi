@@ -1,0 +1,562 @@
+{
+  "n": 8,
+  "cn": "第八课",
+  "title": "你去哪儿我就去哪儿",
+  "en": "I'll go wherever you go",
+  "words": [
+    {
+      "w": "又",
+      "py": "yòu",
+      "en": "again",
+      "ex": {
+        "hz": "他昨天迟到了，今天又迟到了。",
+        "py": "Tā zuótiān chídào le, jīntiān yòu chídào le.",
+        "en": "He was late yesterday and late again today."
+      }
+    },
+    {
+      "w": "满意",
+      "py": "mǎnyì",
+      "en": "satisfied; to be satisfied",
+      "ex": {
+        "hz": "我对这个房子很满意。",
+        "py": "Wǒ duì zhège fángzi hěn mǎnyì.",
+        "en": "I'm very satisfied with this house."
+      }
+    },
+    {
+      "w": "电梯",
+      "py": "diàntī",
+      "en": "elevator; lift",
+      "ex": {
+        "hz": "我家有电梯，上楼很方便。",
+        "py": "Wǒ jiā yǒu diàntī, shàng lóu hěn fāngbiàn.",
+        "en": "There's a lift in my building, so going upstairs is easy."
+      }
+    },
+    {
+      "w": "层",
+      "py": "céng",
+      "en": "floor; storey",
+      "ex": {
+        "hz": "我家住在八层。",
+        "py": "Wǒ jiā zhù zài bā céng.",
+        "en": "I live on the eighth floor."
+      }
+    },
+    {
+      "w": "害怕",
+      "py": "hàipà",
+      "en": "to be afraid; to be scared",
+      "ex": {
+        "hz": "我很害怕大狗。",
+        "py": "Wǒ hěn hàipà dà gǒu.",
+        "en": "I'm very afraid of big dogs."
+      }
+    },
+    {
+      "w": "熊猫",
+      "py": "xióngmāo",
+      "en": "panda",
+      "ex": {
+        "hz": "我想去看熊猫。",
+        "py": "Wǒ xiǎng qù kàn xióngmāo.",
+        "en": "I want to go and see the pandas."
+      }
+    },
+    {
+      "w": "见面",
+      "py": "jiàn miàn",
+      "en": "to meet; to see each other",
+      "ex": {
+        "hz": "我们明天下午见面吧。",
+        "py": "Wǒmen míngtiān xiàwǔ jiàn miàn ba.",
+        "en": "Let's meet tomorrow afternoon."
+      }
+    },
+    {
+      "w": "安静",
+      "py": "ānjìng",
+      "en": "quiet",
+      "ex": {
+        "hz": "图书馆里很安静。",
+        "py": "Túshūguǎn lǐ hěn ānjìng.",
+        "en": "It's very quiet in the library."
+      }
+    },
+    {
+      "w": "可乐",
+      "py": "kělè",
+      "en": "cola",
+      "ex": {
+        "hz": "我想喝一杯可乐。",
+        "py": "Wǒ xiǎng hē yì bēi kělè.",
+        "en": "I'd like a glass of cola."
+      }
+    },
+    {
+      "w": "一会儿",
+      "py": "yíhuìr",
+      "en": "a moment; a little while",
+      "ex": {
+        "hz": "请等我一会儿。",
+        "py": "Qǐng děng wǒ yíhuìr.",
+        "en": "Please wait for me a moment."
+      }
+    },
+    {
+      "w": "马上",
+      "py": "mǎshàng",
+      "en": "at once; right away",
+      "ex": {
+        "hz": "我马上就到。",
+        "py": "Wǒ mǎshàng jiù dào.",
+        "en": "I'll be there right away."
+      }
+    },
+    {
+      "w": "洗手间",
+      "py": "xǐshǒujiān",
+      "en": "restroom; toilet",
+      "ex": {
+        "hz": "请问，洗手间在哪儿？",
+        "py": "Qǐngwèn, xǐshǒujiān zài nǎr?",
+        "en": "Excuse me, where is the restroom?"
+      }
+    },
+    {
+      "w": "老",
+      "py": "lǎo",
+      "en": "old (of friends or long acquaintance)",
+      "ex": {
+        "hz": "他是我的老朋友。",
+        "py": "Tā shì wǒ de lǎo péngyou.",
+        "en": "He's an old friend of mine."
+      }
+    },
+    {
+      "w": "几乎",
+      "py": "jīhū",
+      "en": "almost; nearly",
+      "ex": {
+        "hz": "我几乎每天都去跑步。",
+        "py": "Wǒ jīhū měi tiān dōu qù pǎobù.",
+        "en": "I go running almost every day."
+      }
+    },
+    {
+      "w": "变化",
+      "py": "biànhuà",
+      "en": "to change; change",
+      "ex": {
+        "hz": "这个城市的变化很大。",
+        "py": "Zhège chéngshì de biànhuà hěn dà.",
+        "en": "This city has changed a lot."
+      }
+    },
+    {
+      "w": "健康",
+      "py": "jiànkāng",
+      "en": "healthy; health",
+      "ex": {
+        "hz": "多运动，身体才健康。",
+        "py": "Duō yùndòng, shēntǐ cái jiànkāng.",
+        "en": "Exercise more and you'll stay healthy."
+      }
+    },
+    {
+      "w": "重要",
+      "py": "zhòngyào",
+      "en": "important",
+      "ex": {
+        "hz": "学汉语，听和说都很重要。",
+        "py": "Xué Hànyǔ, tīng hé shuō dōu hěn zhòngyào.",
+        "en": "When learning Chinese, listening and speaking are both important."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "在新家",
+      "py": "Zài xīn jiā",
+      "en": "In the new flat",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你的新家怎么样？你满意吗？",
+          "py": "Nǐ de xīn jiā zěnmeyàng? Nǐ mǎnyì ma?",
+          "en": "How's your new home? Are you happy with it?"
+        },
+        {
+          "who": "B",
+          "hz": "很满意，这儿很安静。",
+          "py": "Hěn mǎnyì, zhèr hěn ānjìng.",
+          "en": "Very happy. It's quiet here."
+        },
+        {
+          "who": "A",
+          "hz": "你住在几层？有电梯吗？",
+          "py": "Nǐ zhù zài jǐ céng? Yǒu diàntī ma?",
+          "en": "Which floor are you on? Is there a lift?"
+        },
+        {
+          "who": "B",
+          "hz": "住在十二层，有电梯，很方便。",
+          "py": "Zhù zài shí'èr céng, yǒu diàntī, hěn fāngbiàn.",
+          "en": "The twelfth floor, and there's a lift. Very handy."
+        },
+        {
+          "who": "A",
+          "hz": "太好了，我明天去看看你。",
+          "py": "Tài hǎo le, wǒ míngtiān qù kànkan nǐ.",
+          "en": "Great, I'll come and see you tomorrow."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Which floor does B live on?",
+          "options": [
+            "The twelfth floor",
+            "The second floor",
+            "The tenth floor",
+            "The eighth floor"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Why is B happy with the new home?",
+          "options": [
+            "It is quiet",
+            "It is cheap",
+            "It is very big",
+            "It is near the school"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "老同学",
+      "py": "Lǎo tóngxué",
+      "en": "An old classmate",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "好久不见，你几乎没变化！",
+          "py": "Hǎojiǔ bú jiàn, nǐ jīhū méi biànhuà!",
+          "en": "Long time no see. You've hardly changed!"
+        },
+        {
+          "who": "B",
+          "hz": "是吗？我每天都去跑步，身体很健康。",
+          "py": "Shì ma? Wǒ měi tiān dōu qù pǎobù, shēntǐ hěn jiànkāng.",
+          "en": "Really? I go running every day and I'm very healthy."
+        },
+        {
+          "who": "A",
+          "hz": "健康最重要。你现在在哪儿工作？",
+          "py": "Jiànkāng zuì zhòngyào. Nǐ xiànzài zài nǎr gōngzuò?",
+          "en": "Health matters most. Where do you work now?"
+        },
+        {
+          "who": "B",
+          "hz": "在北京。我们找个地方坐一会儿吧，边吃边聊。",
+          "py": "Zài Běijīng. Wǒmen zhǎo ge dìfang zuò yíhuìr ba, biān chī biān liáo.",
+          "en": "In Beijing. Let's find somewhere to sit for a while and chat as we eat."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What does A say about B?",
+          "options": [
+            "B has hardly changed",
+            "B has moved house",
+            "B is much taller",
+            "B looks tired"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What does B do every day?",
+          "options": [
+            "Goes running",
+            "Plays football",
+            "Swims",
+            "Dances"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "又 and 再",
+      "en": "Both mean \"again\". 又 + verb: it has already happened again. 再 + verb: it hasn't happened yet, it will happen again.",
+      "drills": [
+        {
+          "q": "他昨天来了，今天___来了。",
+          "options": [
+            "又",
+            "再",
+            "想",
+            "会"
+          ],
+          "answer": 0,
+          "en": "He came yesterday and came again today."
+        },
+        {
+          "q": "这个电影很好看，我明天想___看一次。",
+          "options": [
+            "再",
+            "又",
+            "就",
+            "也"
+          ],
+          "answer": 0,
+          "en": "This film is really good; I want to watch it once more tomorrow."
+        },
+        {
+          "q": "你怎么___忘了带手机？",
+          "options": [
+            "又",
+            "再",
+            "想",
+            "让"
+          ],
+          "answer": 0,
+          "en": "How come you forgot your phone again?"
+        },
+        {
+          "q": "菜不够了，我们___点一个吧。",
+          "options": [
+            "再",
+            "又",
+            "都",
+            "会"
+          ],
+          "answer": 0,
+          "en": "There isn't enough food; let's order one more dish."
+        },
+        {
+          "q": "上个月我去了北京，这个月___去了上海。",
+          "options": [
+            "又",
+            "再",
+            "会",
+            "想"
+          ],
+          "answer": 0,
+          "en": "Last month I went to Beijing, and this month I went to Shanghai too."
+        },
+        {
+          "q": "对不起，请您___说一次。",
+          "options": [
+            "再",
+            "又",
+            "已经",
+            "还是"
+          ],
+          "answer": 0,
+          "en": "Sorry, please say it once more."
+        }
+      ]
+    },
+    {
+      "point": "Question word + 就 + same question word",
+      "en": "The same question word appears twice, linked by 就: any person, thing, place or way, with no fixed answer.",
+      "drills": [
+        {
+          "q": "你想吃什么，我就做___。",
+          "options": [
+            "什么",
+            "谁",
+            "哪儿",
+            "怎么"
+          ],
+          "answer": 0,
+          "en": "Whatever you want to eat, I'll cook."
+        },
+        {
+          "q": "你想去哪儿，我们就去___。",
+          "options": [
+            "哪儿",
+            "什么",
+            "谁",
+            "几"
+          ],
+          "answer": 0,
+          "en": "Wherever you want to go, we'll go there."
+        },
+        {
+          "q": "谁先到，___就先坐。",
+          "options": [
+            "谁",
+            "哪个",
+            "哪儿",
+            "什么"
+          ],
+          "answer": 0,
+          "en": "Whoever arrives first sits down first."
+        },
+        {
+          "q": "你想怎么走，我们就___走。",
+          "options": [
+            "怎么",
+            "为什么",
+            "什么",
+            "哪儿"
+          ],
+          "answer": 0,
+          "en": "We'll go whichever way you like."
+        },
+        {
+          "q": "哪个便宜我就买___。",
+          "options": [
+            "哪个",
+            "谁",
+            "哪儿",
+            "怎么"
+          ],
+          "answer": 0,
+          "en": "I'll buy whichever one is cheaper."
+        },
+        {
+          "q": "你什么时候有时间，我们___什么时候见面。",
+          "options": [
+            "就",
+            "又",
+            "再",
+            "也"
+          ],
+          "answer": 0,
+          "en": "Whenever you have time, we'll meet."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你家在几层？有电梯吗？"
+          ],
+          [
+            "女",
+            "在九层，有电梯。"
+          ]
+        ],
+        "q": "女的家在几层？",
+        "options": [
+          "九层",
+          "五层",
+          "十九层"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "晚饭你想吃什么？"
+          ],
+          [
+            "女",
+            "你做什么我就吃什么。"
+          ]
+        ],
+        "q": "女的想吃什么？",
+        "options": [
+          "男的做的饭",
+          "面包",
+          "什么都不吃"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "听说你下个月要去北京了？"
+          ],
+          [
+            "女",
+            "是啊，下个月五号走。"
+          ]
+        ],
+        "q": "女的什么时候去北京？",
+        "options": [
+          "下个月五号",
+          "这个月五号",
+          "下个星期"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "请问，洗手间在哪儿？"
+          ],
+          [
+            "女",
+            "在二层，电梯旁边。"
+          ]
+        ],
+        "q": "洗手间在哪儿？",
+        "options": [
+          "二层",
+          "一层",
+          "电梯里"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "我昨天去超市买了面包，今天又去了一次。",
+        "claim": "他今天去了超市。",
+        "ok": true
+      },
+      {
+        "text": "小王不喜欢热闹的地方，所以每次都选安静的咖啡馆。",
+        "claim": "小王喜欢热闹的地方。",
+        "ok": false
+      },
+      {
+        "text": "我的老同学几乎没变化，还是那么瘦。",
+        "claim": "老同学变化很大。",
+        "ok": false
+      },
+      {
+        "text": "你想去哪儿，我们就去哪儿，我都可以。",
+        "claim": "他觉得去哪儿都可以。",
+        "ok": true
+      }
+    ],
+    "replies": [
+      {
+        "q": "我们周末去哪儿玩儿？",
+        "a": "哪儿人少就去哪儿。"
+      },
+      {
+        "q": "你对新房子满意吗？",
+        "a": "我很满意。"
+      },
+      {
+        "q": "你在门口等我一会儿，我马上下楼。",
+        "a": "好的，不着急。"
+      },
+      {
+        "q": "你怎么又迟到了？",
+        "a": "对不起，路上车太多了。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,536 @@
+{
+  "n": 10,
+  "cn": "第十课",
+  "title": "数学比历史难多了",
+  "en": "Maths is much harder than history",
+  "words": [
+    {
+      "w": "个子",
+      "py": "gèzi",
+      "en": "height; build",
+      "ex": {
+        "hz": "他个子很高，是我们班最高的。",
+        "py": "Tā gèzi hěn gāo, shì wǒmen bān zuì gāo de.",
+        "en": "He's tall, the tallest in our class."
+      }
+    },
+    {
+      "w": "矮",
+      "py": "ǎi",
+      "en": "short (not tall)",
+      "ex": {
+        "hz": "我弟弟比我矮一点儿。",
+        "py": "Wǒ dìdi bǐ wǒ ǎi yìdiǎnr.",
+        "en": "My younger brother is a bit shorter than me."
+      }
+    },
+    {
+      "w": "历史",
+      "py": "lìshǐ",
+      "en": "history",
+      "ex": {
+        "hz": "我对中国历史很有兴趣。",
+        "py": "Wǒ duì Zhōngguó lìshǐ hěn yǒu xìngqù.",
+        "en": "I'm very interested in Chinese history."
+      }
+    },
+    {
+      "w": "体育",
+      "py": "tǐyù",
+      "en": "P.E.; sports",
+      "ex": {
+        "hz": "下午第一节课是体育课。",
+        "py": "Xiàwǔ dì yī jié kè shì tǐyù kè.",
+        "en": "The first class this afternoon is P.E."
+      }
+    },
+    {
+      "w": "数学",
+      "py": "shùxué",
+      "en": "maths",
+      "ex": {
+        "hz": "数学考试比语文难。",
+        "py": "Shùxué kǎoshì bǐ yǔwén nán.",
+        "en": "The maths test is harder than the Chinese one."
+      }
+    },
+    {
+      "w": "方便",
+      "py": "fāngbiàn",
+      "en": "convenient",
+      "ex": {
+        "hz": "这儿坐地铁很方便。",
+        "py": "Zhèr zuò dìtiě hěn fāngbiàn.",
+        "en": "It's very convenient to take the metro here."
+      }
+    },
+    {
+      "w": "自行车",
+      "py": "zìxíngchē",
+      "en": "bicycle",
+      "ex": {
+        "hz": "我每天骑自行车上班。",
+        "py": "Wǒ měi tiān qí zìxíngchē shàng bān.",
+        "en": "I ride a bicycle to work every day."
+      }
+    },
+    {
+      "w": "骑",
+      "py": "qí",
+      "en": "to ride (a bike or horse)",
+      "ex": {
+        "hz": "你会骑马吗？",
+        "py": "Nǐ huì qí mǎ ma?",
+        "en": "Can you ride a horse?"
+      }
+    },
+    {
+      "w": "旧",
+      "py": "jiù",
+      "en": "old; used; worn",
+      "ex": {
+        "hz": "这件衣服太旧了，我不想穿了。",
+        "py": "Zhè jiàn yīfu tài jiù le, wǒ bù xiǎng chuān le.",
+        "en": "This shirt is too worn; I don't want to wear it any more."
+      }
+    },
+    {
+      "w": "换",
+      "py": "huàn",
+      "en": "to change; to exchange",
+      "ex": {
+        "hz": "我想把这个换成大的。",
+        "py": "Wǒ xiǎng bǎ zhège huànchéng dà de.",
+        "en": "I'd like to swap this for a bigger one."
+      }
+    },
+    {
+      "w": "地方",
+      "py": "dìfang",
+      "en": "place",
+      "ex": {
+        "hz": "这个地方很安静。",
+        "py": "Zhège dìfang hěn ānjìng.",
+        "en": "This place is very quiet."
+      }
+    },
+    {
+      "w": "中介",
+      "py": "zhōngjiè",
+      "en": "agent; intermediary",
+      "ex": {
+        "hz": "我们请中介帮我们找房子。",
+        "py": "Wǒmen qǐng zhōngjiè bāng wǒmen zhǎo fángzi.",
+        "en": "We asked an agent to help us find a flat."
+      }
+    },
+    {
+      "w": "主要",
+      "py": "zhǔyào",
+      "en": "main; chief",
+      "ex": {
+        "hz": "我喝茶主要是因为喜欢它的味道。",
+        "py": "Wǒ hē chá zhǔyào shì yīnwèi xǐhuan tā de wèidao.",
+        "en": "I drink tea mainly because I like its taste."
+      }
+    },
+    {
+      "w": "环境",
+      "py": "huánjìng",
+      "en": "environment; surroundings",
+      "ex": {
+        "hz": "这个学校的环境很好。",
+        "py": "Zhège xuéxiào de huánjìng hěn hǎo.",
+        "en": "This school has lovely surroundings."
+      }
+    },
+    {
+      "w": "附近",
+      "py": "fùjìn",
+      "en": "nearby; vicinity",
+      "ex": {
+        "hz": "我家附近有一个公园。",
+        "py": "Wǒ jiā fùjìn yǒu yí ge gōngyuán.",
+        "en": "There's a park near my home."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "买自行车",
+      "py": "Mǎi zìxíngchē",
+      "en": "Buying a bicycle",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你的自行车太旧了，换一辆吧。",
+          "py": "Nǐ de zìxíngchē tài jiù le, huàn yí liàng ba.",
+          "en": "Your bike is too old. Get a new one."
+        },
+        {
+          "who": "B",
+          "hz": "好啊，附近有个商店，我们去看看。",
+          "py": "Hǎo a, fùjìn yǒu ge shāngdiàn, wǒmen qù kànkan.",
+          "en": "OK, there's a shop nearby. Let's go and look."
+        },
+        {
+          "who": "A",
+          "hz": "这辆红的比那辆黑的便宜一点儿。",
+          "py": "Zhè liàng hóng de bǐ nà liàng hēi de piányi yìdiǎnr.",
+          "en": "The red one is a little cheaper than the black one."
+        },
+        {
+          "who": "B",
+          "hz": "可是红的没有黑的那么好看，我想买黑的。",
+          "py": "Kěshì hóng de méiyǒu hēi de nàme hǎokàn, wǒ xiǎng mǎi hēi de.",
+          "en": "But the red one isn't as nice-looking as the black one. I'd like the black one."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Why does B prefer the black bike?",
+          "options": [
+            "It looks nicer",
+            "It is cheaper",
+            "It is bigger",
+            "It is faster"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which bike is cheaper?",
+          "options": [
+            "The red one",
+            "The black one",
+            "They cost the same",
+            "We don't know"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "我的哥哥",
+      "py": "Wǒ de gēge",
+      "en": "My older brother",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你哥哥个子很高吧？",
+          "py": "Nǐ gēge gèzi hěn gāo ba?",
+          "en": "Your older brother is tall, isn't he?"
+        },
+        {
+          "who": "B",
+          "hz": "他比我高多了，我比他矮十几厘米。",
+          "py": "Tā bǐ wǒ gāo duō le, wǒ bǐ tā ǎi shí jǐ límǐ.",
+          "en": "He's much taller than me. I'm over ten centimetres shorter."
+        },
+        {
+          "who": "A",
+          "hz": "他也喜欢体育课吗？",
+          "py": "Tā yě xǐhuan tǐyù kè ma?",
+          "en": "Does he like P.E. too?"
+        },
+        {
+          "who": "B",
+          "hz": "他最喜欢体育，不太喜欢数学，上数学课的时候总是想睡觉。",
+          "py": "Tā zuì xǐhuan tǐyù, bú tài xǐhuan shùxué, shàng shùxué kè de shíhou zǒngshì xiǎng shuìjiào.",
+          "en": "He likes P.E. best and isn't keen on maths; in maths class he always wants to sleep."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Who is taller, B or B's brother?",
+          "options": [
+            "B's brother",
+            "B",
+            "They are the same",
+            "We don't know"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which subject does B's brother like best?",
+          "options": [
+            "P.E.",
+            "Maths",
+            "History",
+            "Chinese"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "A 比 B + adjective + 一点儿 / 一些 / 得多 / 多了",
+      "en": "一点儿 and 一些 mean a small difference; 得多 and 多了 mean a big difference. The negative is A 没有 B (+ 这么 / 那么) + adjective.",
+      "drills": [
+        {
+          "q": "今天比昨天冷___。",
+          "options": [
+            "多了",
+            "很多了",
+            "太多",
+            "多得"
+          ],
+          "answer": 0,
+          "en": "Today is much colder than yesterday."
+        },
+        {
+          "q": "我的手机比你的贵一___。",
+          "options": [
+            "点儿",
+            "个",
+            "些多",
+            "得多了"
+          ],
+          "answer": 0,
+          "en": "My phone is a little more expensive than yours."
+        },
+        {
+          "q": "北京的冬天比上海冷___。",
+          "options": [
+            "得多",
+            "多得",
+            "非常",
+            "一得多"
+          ],
+          "answer": 0,
+          "en": "Beijing's winters are much colder than Shanghai's."
+        },
+        {
+          "q": "这个房子___那个大。",
+          "options": [
+            "没有",
+            "不比有",
+            "比没",
+            "不有"
+          ],
+          "answer": 0,
+          "en": "This house is not as big as that one."
+        },
+        {
+          "q": "姐姐比我大___岁。",
+          "options": [
+            "两",
+            "很",
+            "太",
+            "多了"
+          ],
+          "answer": 0,
+          "en": "My older sister is two years older than me."
+        },
+        {
+          "q": "小王的个子没有小李___高。",
+          "options": [
+            "那么",
+            "比较",
+            "一点",
+            "得多"
+          ],
+          "answer": 0,
+          "en": "Xiao Wang isn't as tall as Xiao Li."
+        }
+      ]
+    },
+    {
+      "point": "Approximate numbers: two adjacent numerals",
+      "en": "Putting two neighbouring numbers together gives a rough amount, such as 一两, 三四, 七八.",
+      "drills": [
+        {
+          "q": "我家离学校很近，走路___分钟就到。",
+          "options": [
+            "五六",
+            "五和六",
+            "五加六",
+            "五个六"
+          ],
+          "answer": 0,
+          "en": "My home is close to school: five or six minutes on foot."
+        },
+        {
+          "q": "桌子上有___本书。",
+          "options": [
+            "三四",
+            "三和四",
+            "三加四",
+            "三个四"
+          ],
+          "answer": 0,
+          "en": "There are three or four books on the table."
+        },
+        {
+          "q": "他每天睡___个小时。",
+          "options": [
+            "七八",
+            "七和八",
+            "七加八",
+            "七再八"
+          ],
+          "answer": 0,
+          "en": "He sleeps seven or eight hours every day."
+        },
+        {
+          "q": "来参加比赛的有___个人。",
+          "options": [
+            "二三十",
+            "二和三十",
+            "二加三十",
+            "二个三十"
+          ],
+          "answer": 0,
+          "en": "Twenty or thirty people came to take part in the match."
+        },
+        {
+          "q": "请再等我___分钟，好吗？",
+          "options": [
+            "一两",
+            "一和两",
+            "一加两",
+            "一个两"
+          ],
+          "answer": 0,
+          "en": "Please wait for me one or two more minutes, OK?"
+        },
+        {
+          "q": "这件衣服要___百块钱。",
+          "options": [
+            "两三",
+            "两和三",
+            "两加三",
+            "两个三"
+          ],
+          "answer": 0,
+          "en": "This piece of clothing costs two or three hundred yuan."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你和你姐姐谁高？"
+          ],
+          [
+            "女",
+            "她比我高一点儿。"
+          ]
+        ],
+        "q": "谁比较高？",
+        "options": [
+          "女的的姐姐",
+          "女的",
+          "一样高"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你喜欢什么课？"
+          ],
+          [
+            "女",
+            "历史课很有意思，数学课太难了。"
+          ]
+        ],
+        "q": "女的觉得什么课太难？",
+        "options": [
+          "数学课",
+          "体育课",
+          "历史课"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你怎么来学校？"
+          ],
+          [
+            "女",
+            "我骑自行车，七八分钟就到了。"
+          ]
+        ],
+        "q": "女的怎么来学校？",
+        "options": [
+          "骑自行车",
+          "坐公共汽车",
+          "走路"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "这两个房子哪个更方便？"
+          ],
+          [
+            "女",
+            "外边的没有里边的方便，里边的离地铁站近。"
+          ]
+        ],
+        "q": "哪个房子更方便？",
+        "options": [
+          "里边的",
+          "外边的",
+          "一样方便"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "他每天骑自行车上班，二十分钟就到公司了。",
+        "claim": "他骑车上班。",
+        "ok": true
+      },
+      {
+        "text": "我的旧手机比新的好用多了，所以我不想换。",
+        "claim": "新手机更好用。",
+        "ok": false
+      },
+      {
+        "text": "这家店在学校附近，很方便，我们常去。",
+        "claim": "这家店离学校很远。",
+        "ok": false
+      },
+      {
+        "text": "我妹妹比我矮一点儿，也比我小三岁。",
+        "claim": "妹妹年纪比他小。",
+        "ok": true
+      }
+    ],
+    "replies": [
+      {
+        "q": "你们谁大？",
+        "a": "我比他大两岁。"
+      },
+      {
+        "q": "附近有超市吗？",
+        "a": "有，走三四分钟就到。"
+      },
+      {
+        "q": "你想买哪辆自行车？",
+        "a": "我想买那辆黑的。"
+      },
+      {
+        "q": "你的新自行车比旧的好吗？",
+        "a": "好多了，也比旧的轻。"
+      }
+    ]
+  }
+}

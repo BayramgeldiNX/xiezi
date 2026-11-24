@@ -1,0 +1,625 @@
+{
+  "n": 2,
+  "cn": "第二课",
+  "title": "他什么时候回来",
+  "en": "When will he be back?",
+  "words": [
+    {
+      "w": "腿",
+      "py": "tuǐ",
+      "en": "leg",
+      "ex": {
+        "hz": "我的腿很疼。",
+        "py": "Wǒ de tuǐ hěn téng.",
+        "en": "My leg really hurts."
+      }
+    },
+    {
+      "w": "疼",
+      "py": "téng",
+      "en": "to hurt; painful",
+      "ex": {
+        "hz": "你哪儿疼？",
+        "py": "Nǐ nǎr téng?",
+        "en": "Where does it hurt?"
+      }
+    },
+    {
+      "w": "脚",
+      "py": "jiǎo",
+      "en": "foot",
+      "ex": {
+        "hz": "他的脚很大。",
+        "py": "Tā de jiǎo hěn dà.",
+        "en": "His feet are big."
+      }
+    },
+    {
+      "w": "树",
+      "py": "shù",
+      "en": "tree",
+      "ex": {
+        "hz": "那棵树上有很多苹果。",
+        "py": "Nà kē shù shang yǒu hěn duō píngguǒ.",
+        "en": "There are lots of apples on that tree."
+      }
+    },
+    {
+      "w": "容易",
+      "py": "róngyì",
+      "en": "easy",
+      "ex": {
+        "hz": "今天的作业很容易。",
+        "py": "Jīntiān de zuòyè hěn róngyì.",
+        "en": "Today's homework is very easy."
+      }
+    },
+    {
+      "w": "难",
+      "py": "nán",
+      "en": "difficult",
+      "ex": {
+        "hz": "这个字太难写了。",
+        "py": "Zhège zì tài nán xiě le.",
+        "en": "This character is too hard to write."
+      }
+    },
+    {
+      "w": "太太",
+      "py": "tàitai",
+      "en": "Mrs.; wife",
+      "ex": {
+        "hz": "王太太今天不在家。",
+        "py": "Wáng tàitai jīntiān bú zài jiā.",
+        "en": "Mrs. Wang isn't at home today."
+      }
+    },
+    {
+      "w": "秘书",
+      "py": "mìshū",
+      "en": "secretary",
+      "ex": {
+        "hz": "他的秘书很忙。",
+        "py": "Tā de mìshū hěn máng.",
+        "en": "His secretary is very busy."
+      }
+    },
+    {
+      "w": "经理",
+      "py": "jīnglǐ",
+      "en": "manager",
+      "ex": {
+        "hz": "经理想跟你说几句话。",
+        "py": "Jīnglǐ xiǎng gēn nǐ shuō jǐ jù huà.",
+        "en": "The manager would like a word with you."
+      }
+    },
+    {
+      "w": "办公室",
+      "py": "bàngōngshì",
+      "en": "office",
+      "ex": {
+        "hz": "老师在办公室里。",
+        "py": "Lǎoshī zài bàngōngshì li.",
+        "en": "The teacher is in the office."
+      }
+    },
+    {
+      "w": "周",
+      "py": "Zhōu",
+      "en": "Zhou (a surname)",
+      "ex": {
+        "hz": "周先生是我们的经理。",
+        "py": "Zhōu xiānsheng shì wǒmen de jīnglǐ.",
+        "en": "Mr. Zhou is our manager."
+      }
+    },
+    {
+      "w": "周明",
+      "py": "Zhōu Míng",
+      "en": "Zhou Ming (a name)",
+      "ex": {
+        "hz": "周明在楼上休息。",
+        "py": "Zhōu Míng zài lóu shang xiūxi.",
+        "en": "Zhou Ming is resting upstairs."
+      }
+    },
+    {
+      "w": "辆",
+      "py": "liàng",
+      "en": "(measure word for vehicles)",
+      "ex": {
+        "hz": "我有一辆新自行车。",
+        "py": "Wǒ yǒu yí liàng xīn zìxíngchē.",
+        "en": "I have a new bicycle."
+      }
+    },
+    {
+      "w": "楼",
+      "py": "lóu",
+      "en": "building; floor",
+      "ex": {
+        "hz": "我家在三楼。",
+        "py": "Wǒ jiā zài sān lóu.",
+        "en": "My home is on the third floor."
+      }
+    },
+    {
+      "w": "拿",
+      "py": "ná",
+      "en": "to hold; to take (also: to fetch)",
+      "ex": {
+        "hz": "请帮我拿一下书。",
+        "py": "Qǐng bāng wǒ ná yíxià shū.",
+        "en": "Please fetch the book for me."
+      }
+    },
+    {
+      "w": "把",
+      "py": "bǎ",
+      "en": "(measure word for things with a handle)",
+      "ex": {
+        "hz": "桌子旁边有一把椅子。",
+        "py": "Zhuōzi pángbiān yǒu yì bǎ yǐzi.",
+        "en": "There is a chair beside the table."
+      }
+    },
+    {
+      "w": "伞",
+      "py": "sǎn",
+      "en": "umbrella",
+      "ex": {
+        "hz": "外边下雨了，你带伞了吗？",
+        "py": "Wàibian xià yǔ le, nǐ dài sǎn le ma?",
+        "en": "It's raining outside. Did you bring an umbrella?"
+      }
+    },
+    {
+      "w": "胖",
+      "py": "pàng",
+      "en": "fat; plump",
+      "ex": {
+        "hz": "那只小猫有点儿胖。",
+        "py": "Nà zhī xiǎo māo yǒudiǎnr pàng.",
+        "en": "That kitten is a bit plump."
+      }
+    },
+    {
+      "w": "其实",
+      "py": "qíshí",
+      "en": "actually",
+      "ex": {
+        "hz": "其实这个问题不难。",
+        "py": "Qíshí zhège wèntí bù nán.",
+        "en": "Actually this question isn't hard."
+      }
+    },
+    {
+      "w": "瘦",
+      "py": "shòu",
+      "en": "thin",
+      "ex": {
+        "hz": "他最近瘦了很多。",
+        "py": "Tā zuìjìn shòu le hěn duō.",
+        "en": "He has got a lot thinner recently."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "腿疼",
+      "py": "Tuǐ téng",
+      "en": "A sore leg",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你怎么了？走得这么慢。",
+          "py": "Nǐ zěnme le? Zǒu de zhème màn.",
+          "en": "What's wrong? You're walking so slowly."
+        },
+        {
+          "who": "B",
+          "hz": "昨天踢足球，我的腿现在很疼。",
+          "py": "Zuótiān tī zúqiú, wǒ de tuǐ xiànzài hěn téng.",
+          "en": "I played football yesterday and my leg hurts now."
+        },
+        {
+          "who": "A",
+          "hz": "那你别爬楼了，坐电梯上去吧。",
+          "py": "Nà nǐ bié pá lóu le, zuò diàntī shàngqu ba.",
+          "en": "Then don't climb the stairs; take the lift up."
+        },
+        {
+          "who": "B",
+          "hz": "好，我的办公室在五楼。",
+          "py": "Hǎo, wǒ de bàngōngshì zài wǔ lóu.",
+          "en": "OK. My office is on the fifth floor."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Why does B walk slowly?",
+          "options": [
+            "His leg hurts",
+            "He is fat",
+            "It is raining",
+            "He is late"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Where is B's office?",
+          "options": [
+            "The fifth floor",
+            "The first floor",
+            "Under a tree",
+            "At home"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "下雨了",
+      "py": "Xià yǔ le",
+      "en": "It's raining",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "外边下雨了，你带伞了吗？",
+          "py": "Wàibian xià yǔ le, nǐ dài sǎn le ma?",
+          "en": "It's raining outside. Have you got an umbrella?"
+        },
+        {
+          "who": "B",
+          "hz": "没带。我回办公室去拿一把。",
+          "py": "Méi dài. Wǒ huí bàngōngshì qù ná yì bǎ.",
+          "en": "No. I'll go back to the office and fetch one."
+        },
+        {
+          "who": "A",
+          "hz": "其实我有两把，给你一把吧。",
+          "py": "Qíshí wǒ yǒu liǎng bǎ, gěi nǐ yì bǎ ba.",
+          "en": "Actually I have two; I'll give you one."
+        },
+        {
+          "who": "B",
+          "hz": "太好了，谢谢你！",
+          "py": "Tài hǎo le, xièxie nǐ!",
+          "en": "Great, thank you!"
+        }
+      ],
+      "questions": [
+        {
+          "q": "What does B want to get?",
+          "options": [
+            "An umbrella",
+            "A taxi",
+            "Some bread",
+            "A map"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How many umbrellas does A have?",
+          "options": [
+            "Two",
+            "One",
+            "Three",
+            "None"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "来 / 去 after a verb",
+      "en": "V + 来 / 去: 来 = towards the speaker, 去 = away from the speaker; a place goes before 来/去",
+      "drills": [
+        {
+          "q": "我在楼上等你，你快上___吧。",
+          "options": [
+            "来",
+            "去",
+            "过",
+            "回"
+          ],
+          "answer": 0,
+          "en": "I'm waiting upstairs. Come on up."
+        },
+        {
+          "q": "我现在在公司，下了班就回家___。",
+          "options": [
+            "去",
+            "来",
+            "在",
+            "把"
+          ],
+          "answer": 0,
+          "en": "I'm at the company now; after work I'll go home."
+        },
+        {
+          "q": "我在办公室里，你在外边吧？我出___找你。",
+          "options": [
+            "去",
+            "来",
+            "回",
+            "过"
+          ],
+          "answer": 0,
+          "en": "I'm in the office and you're outside, right? I'll come out to find you."
+        },
+        {
+          "q": "老师在教室里等你，我们在外边，你快进___吧。",
+          "options": [
+            "去",
+            "来",
+            "出",
+            "过"
+          ],
+          "answer": 0,
+          "en": "The teacher is waiting in the classroom and we're outside. Go in quickly."
+        },
+        {
+          "q": "妈妈进___来叫我吃饭了。",
+          "options": [
+            "房间",
+            "汉语",
+            "面包",
+            "休息"
+          ],
+          "answer": 0,
+          "en": "Mum came into the room to call me for dinner."
+        }
+      ]
+    },
+    {
+      "point": "V1 了 … 就 V2",
+      "en": "V1 了 + (subject) + 就 + V2: the second action follows right after the first",
+      "drills": [
+        {
+          "q": "他下了课___去图书馆。",
+          "options": [
+            "就",
+            "要",
+            "和",
+            "太"
+          ],
+          "answer": 0,
+          "en": "As soon as he finishes class he goes to the library."
+        },
+        {
+          "q": "妈妈回了家___做饭。",
+          "options": [
+            "就",
+            "很",
+            "和",
+            "不"
+          ],
+          "answer": 0,
+          "en": "As soon as mum gets home she cooks."
+        },
+        {
+          "q": "我吃___饭就去睡觉。",
+          "options": [
+            "了",
+            "的",
+            "得",
+            "吗"
+          ],
+          "answer": 0,
+          "en": "I'll go to sleep right after I eat."
+        },
+        {
+          "q": "你到了机场我___去接你。",
+          "options": [
+            "就",
+            "很",
+            "太",
+            "不"
+          ],
+          "answer": 0,
+          "en": "As soon as you get to the airport I'll come and pick you up."
+        },
+        {
+          "q": "爸爸回了家，我们___吃饭。",
+          "options": [
+            "就",
+            "太",
+            "把",
+            "很"
+          ],
+          "answer": 0,
+          "en": "As soon as dad gets home, we'll eat."
+        }
+      ]
+    },
+    {
+      "point": "能……吗 as a rhetorical question",
+      "en": "能 + positive + 吗 means “no way”; 能 + negative + 吗 means “of course”",
+      "drills": [
+        {
+          "q": "你天天不运动，___不胖吗？",
+          "options": [
+            "能",
+            "对",
+            "把",
+            "为"
+          ],
+          "answer": 0,
+          "en": "You never exercise; how could you not get fat?"
+        },
+        {
+          "q": "这么难的题，我___做对吗？",
+          "options": [
+            "能",
+            "把",
+            "对",
+            "在"
+          ],
+          "answer": 0,
+          "en": "Such a hard question; how could I get it right?"
+        },
+        {
+          "q": "天这么冷，你___不穿衣服吗？",
+          "options": [
+            "能",
+            "在",
+            "把",
+            "和"
+          ],
+          "answer": 0,
+          "en": "It's so cold; could you really go without clothes?"
+        },
+        {
+          "q": "你一直玩游戏，作业___写完吗？",
+          "options": [
+            "能",
+            "对",
+            "在",
+            "把"
+          ],
+          "answer": 0,
+          "en": "You keep playing games; how could the homework get finished?"
+        },
+        {
+          "q": "他每天都复习，考试___不好吗？",
+          "options": [
+            "能",
+            "对",
+            "把",
+            "向"
+          ],
+          "answer": 0,
+          "en": "He revises every day; of course the exam will go well."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "周经理在办公室吗？"
+          ],
+          [
+            "女",
+            "他出去了，下午回来。"
+          ]
+        ],
+        "q": "周经理什么时候回来？",
+        "options": [
+          "下午",
+          "晚上",
+          "明天"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你的腿怎么了？"
+          ],
+          [
+            "女",
+            "昨天爬山，现在很疼。"
+          ]
+        ],
+        "q": "女的为什么腿疼？",
+        "options": [
+          "昨天爬山了",
+          "昨天跑步了",
+          "昨天踢球了"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "外边下雨了，你带伞了吗？"
+          ],
+          [
+            "女",
+            "没带，我上楼去拿。"
+          ]
+        ],
+        "q": "女的要去做什么？",
+        "options": [
+          "拿伞",
+          "买伞",
+          "找经理"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你现在在哪儿？"
+          ],
+          [
+            "女",
+            "我在楼下，你下来吧。"
+          ]
+        ],
+        "q": "女的现在在哪儿？",
+        "options": [
+          "楼下",
+          "楼上",
+          "办公室"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "他下了课就回家了，没去别的地方。",
+        "claim": "他下课以后直接回家。",
+        "ok": true
+      },
+      {
+        "text": "今天的作业很容易，他一个小时就写完了。",
+        "claim": "今天的作业很难。",
+        "ok": false
+      },
+      {
+        "text": "其实我没有那么胖，只是穿得多。",
+        "claim": "他穿得很少。",
+        "ok": false
+      },
+      {
+        "text": "秘书说经理出去了，下午三点回来。",
+        "claim": "经理下午才回来。",
+        "ok": true
+      }
+    ],
+    "replies": [
+      {
+        "q": "你的脚怎么了？",
+        "a": "昨天走了很多路，有点儿疼。"
+      },
+      {
+        "q": "周经理什么时候回来？",
+        "a": "他下午三点回来。"
+      },
+      {
+        "q": "你带伞了吗？",
+        "a": "带了，在包里。"
+      },
+      {
+        "q": "你家在几楼？",
+        "a": "我家在六楼。"
+      }
+    ]
+  }
+}

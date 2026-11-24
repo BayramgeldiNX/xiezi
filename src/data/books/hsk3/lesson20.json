@@ -1,0 +1,526 @@
+{
+  "n": 20,
+  "cn": "第二十课",
+  "title": "我被他影响了",
+  "en": "I've been influenced by him",
+  "words": [
+    {
+      "w": "照相机",
+      "py": "zhàoxiàngjī",
+      "en": "camera",
+      "ex": {
+        "hz": "我想买一个新的照相机。",
+        "py": "Wǒ xiǎng mǎi yí ge xīn de zhàoxiàngjī.",
+        "en": "I want to buy a new camera."
+      }
+    },
+    {
+      "w": "被",
+      "py": "bèi",
+      "en": "(marks the passive voice)",
+      "ex": {
+        "hz": "我的书被朋友借走了。",
+        "py": "Wǒ de shū bèi péngyou jiè zǒu le.",
+        "en": "My book was borrowed by a friend."
+      }
+    },
+    {
+      "w": "难过",
+      "py": "nánguò",
+      "en": "sad; upset",
+      "ex": {
+        "hz": "听到这个消息，他很难过。",
+        "py": "Tīngdào zhège xiāoxi, tā hěn nánguò.",
+        "en": "He was very sad to hear the news."
+      }
+    },
+    {
+      "w": "东",
+      "py": "dōng",
+      "en": "east",
+      "ex": {
+        "hz": "我家在学校的东边。",
+        "py": "Wǒ jiā zài xuéxiào de dōngbian.",
+        "en": "My home is east of the school."
+      }
+    },
+    {
+      "w": "信用卡",
+      "py": "xìnyòngkǎ",
+      "en": "credit card",
+      "ex": {
+        "hz": "我可以用信用卡买吗？",
+        "py": "Wǒ kěyǐ yòng xìnyòngkǎ mǎi ma?",
+        "en": "Can I pay with a credit card?"
+      }
+    },
+    {
+      "w": "关心",
+      "py": "guānxīn",
+      "en": "to care about; to be interested in",
+      "ex": {
+        "hz": "爸爸很关心我的学习。",
+        "py": "Bàba hěn guānxīn wǒ de xuéxí.",
+        "en": "Dad cares a lot about my studies."
+      }
+    },
+    {
+      "w": "只有",
+      "py": "zhǐyǒu",
+      "en": "only (只有…才… only if … then …)",
+      "ex": {
+        "hz": "只有多练习，才能说得好。",
+        "py": "Zhǐyǒu duō liànxí, cái néng shuō de hǎo.",
+        "en": "Only by practising a lot can you speak well."
+      }
+    },
+    {
+      "w": "成绩",
+      "py": "chéngjì",
+      "en": "grade; result; achievement",
+      "ex": {
+        "hz": "他这次的考试成绩很好。",
+        "py": "Tā zhè cì de kǎoshì chéngjì hěn hǎo.",
+        "en": "His result in this exam was very good."
+      }
+    },
+    {
+      "w": "碗",
+      "py": "wǎn",
+      "en": "bowl",
+      "ex": {
+        "hz": "请给我一个碗。",
+        "py": "Qǐng gěi wǒ yí ge wǎn.",
+        "en": "Please give me a bowl."
+      }
+    },
+    {
+      "w": "分",
+      "py": "fēn",
+      "en": "minute (also: to distinguish)",
+      "ex": {
+        "hz": "这两个字很像，你能分出来吗？",
+        "py": "Zhè liǎng ge zì hěn xiàng, nǐ néng fēn chūlai ma?",
+        "en": "These two characters look alike; can you tell them apart?"
+      }
+    },
+    {
+      "w": "解决",
+      "py": "jiějué",
+      "en": "to solve; to settle",
+      "ex": {
+        "hz": "这个问题很容易解决。",
+        "py": "Zhège wèntí hěn róngyì jiějué.",
+        "en": "This problem is easy to solve."
+      }
+    },
+    {
+      "w": "试",
+      "py": "shì",
+      "en": "to try",
+      "ex": {
+        "hz": "你可以试一试这件衣服。",
+        "py": "Nǐ kěyǐ shì yi shì zhè jiàn yīfu.",
+        "en": "You can try on this piece of clothing."
+      }
+    },
+    {
+      "w": "真正",
+      "py": "zhēnzhèng",
+      "en": "really; truly",
+      "ex": {
+        "hz": "她真正喜欢的是画画儿。",
+        "py": "Tā zhēnzhèng xǐhuan de shì huà huàr.",
+        "en": "What she truly likes is drawing."
+      }
+    },
+    {
+      "w": "多么",
+      "py": "duōme",
+      "en": "how; to what extent",
+      "ex": {
+        "hz": "你看，这里多么漂亮！",
+        "py": "Nǐ kàn, zhèli duōme piàoliang!",
+        "en": "Look, how beautiful it is here!"
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "不见了的信用卡",
+      "py": "Bú jiàn le de xìnyòngkǎ",
+      "en": "The missing credit card",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "我的信用卡不见了，我真难过。",
+          "py": "Wǒ de xìnyòngkǎ bú jiàn le, wǒ zhēn nánguò.",
+          "en": "My credit card is missing; I'm really upset."
+        },
+        {
+          "who": "B",
+          "hz": "你再找找，是不是被你放在公司了？",
+          "py": "Nǐ zài zhǎozhao, shì bu shì bèi nǐ fàng zài gōngsī le?",
+          "en": "Look again; did you leave it at the office?"
+        },
+        {
+          "who": "A",
+          "hz": "我已经找过了，没找到。",
+          "py": "Wǒ yǐjīng zhǎo guo le, méi zhǎodào.",
+          "en": "I've looked already and haven't found it."
+        },
+        {
+          "who": "B",
+          "hz": "别着急，明天我和你一起去商店问问。",
+          "py": "Bié zháojí, míngtiān wǒ hé nǐ yìqǐ qù shāngdiàn wènwen.",
+          "en": "Don't worry; tomorrow I'll go to the shop with you to ask."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Why is A upset?",
+          "options": [
+            "His credit card is missing",
+            "His camera is broken",
+            "His grades are poor",
+            "His bowl is gone"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What does B suggest?",
+          "options": [
+            "Asking at the shop together tomorrow",
+            "Buying a new card",
+            "Calling the teacher",
+            "Going to the east gate"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "提高成绩",
+      "py": "Tígāo chéngjì",
+      "en": "Improving grades",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你的成绩怎么提高得这么快？",
+          "py": "Nǐ de chéngjì zěnme tígāo de zhème kuài?",
+          "en": "How did your grades improve so fast?"
+        },
+        {
+          "who": "B",
+          "hz": "我觉得只有真正喜欢学习，才能学好。",
+          "py": "Wǒ juéde zhǐyǒu zhēnzhèng xǐhuan xuéxí, cái néng xué hǎo.",
+          "en": "I think only if you truly like studying can you do well."
+        },
+        {
+          "who": "A",
+          "hz": "这么难的问题，你也能解决吗？",
+          "py": "Zhème nán de wèntí, nǐ yě néng jiějué ma?",
+          "en": "Can you solve even a problem this hard?"
+        },
+        {
+          "who": "B",
+          "hz": "不一定，不过我会试一试。",
+          "py": "Bù yídìng, búguò wǒ huì shì yi shì.",
+          "en": "Not necessarily, but I'll give it a try."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What does B say is needed to study well?",
+          "options": [
+            "Truly liking studying",
+            "A good camera",
+            "A lot of money",
+            "A quiet room"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What will B do with a hard problem?",
+          "options": [
+            "Try it",
+            "Ignore it",
+            "Always ask the teacher",
+            "Give up"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "“被”字句",
+      "en": "S + 被 + (agent) + verb + other element: the passive",
+      "drills": [
+        {
+          "q": "我的自行车___谁骑走了？",
+          "options": [
+            "被",
+            "把",
+            "对",
+            "向"
+          ],
+          "answer": 0,
+          "en": "Who rode off on my bike?"
+        },
+        {
+          "q": "蛋糕___弟弟吃完了。",
+          "options": [
+            "被",
+            "把",
+            "向",
+            "对"
+          ],
+          "answer": 0,
+          "en": "The cake was all eaten by my younger brother."
+        },
+        {
+          "q": "我的作业还没有___老师检查呢。",
+          "options": [
+            "被",
+            "把",
+            "向",
+            "对"
+          ],
+          "answer": 0,
+          "en": "My homework hasn't been checked by the teacher yet."
+        },
+        {
+          "q": "我昨天买的书___朋友借走了。",
+          "options": [
+            "被",
+            "把",
+            "向",
+            "对"
+          ],
+          "answer": 0,
+          "en": "The book I bought yesterday was borrowed by a friend."
+        },
+        {
+          "q": "窗户___风刮开了。",
+          "options": [
+            "被",
+            "把",
+            "为",
+            "比"
+          ],
+          "answer": 0,
+          "en": "The window was blown open by the wind."
+        },
+        {
+          "q": "照相机已经___弟弟用坏了。",
+          "options": [
+            "被",
+            "把",
+            "向",
+            "在"
+          ],
+          "answer": 0,
+          "en": "The camera has already been broken by my younger brother."
+        }
+      ]
+    },
+    {
+      "point": "只有……才……",
+      "en": "只有 A，才 B: only if A, then B",
+      "drills": [
+        {
+          "q": "___你每天练习，才能提高水平。",
+          "options": [
+            "只有",
+            "只要",
+            "如果",
+            "虽然"
+          ],
+          "answer": 0,
+          "en": "Only if you practise every day can you improve your level."
+        },
+        {
+          "q": "只有周末，他___有时间打篮球。",
+          "options": [
+            "才",
+            "就",
+            "都",
+            "也"
+          ],
+          "answer": 0,
+          "en": "Only at the weekend does he have time to play basketball."
+        },
+        {
+          "q": "只有努力，才___有机会。",
+          "options": [
+            "能",
+            "把",
+            "被",
+            "对"
+          ],
+          "answer": 0,
+          "en": "Only by working hard can you get opportunities."
+        },
+        {
+          "q": "只有自己去过，你___能知道那儿有多漂亮。",
+          "options": [
+            "才",
+            "就",
+            "也",
+            "还"
+          ],
+          "answer": 0,
+          "en": "Only if you go yourself can you know how beautiful it is."
+        },
+        {
+          "q": "这个问题很难，只有王老师___能回答。",
+          "options": [
+            "才",
+            "就",
+            "却",
+            "也"
+          ],
+          "answer": 0,
+          "en": "This question is hard; only Teacher Wang can answer it."
+        },
+        {
+          "q": "___认真学习，成绩才能提高。",
+          "options": [
+            "只有",
+            "只要",
+            "如果",
+            "因为"
+          ],
+          "answer": 0,
+          "en": "Only if you study seriously can your grades improve."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你的照相机怎么了？"
+          ],
+          [
+            "女",
+            "被我弟弟用坏了。"
+          ]
+        ],
+        "q": "照相机怎么了？",
+        "options": [
+          "被弟弟用坏了",
+          "被朋友借走了",
+          "放在家里了"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你为什么难过？"
+          ],
+          [
+            "女",
+            "我的信用卡不见了。"
+          ]
+        ],
+        "q": "女的为什么难过？",
+        "options": [
+          "信用卡不见了",
+          "照相机坏了",
+          "成绩不好"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你的成绩怎么样？"
+          ],
+          [
+            "女",
+            "数学成绩很好，可是英语差极了。"
+          ]
+        ],
+        "q": "女的哪个成绩不好？",
+        "options": [
+          "英语",
+          "数学",
+          "历史"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "这两个杯子哪个是你的？"
+          ],
+          [
+            "女",
+            "我也看不出来，它们太像了。"
+          ]
+        ],
+        "q": "女的知道哪个杯子是她的吗？",
+        "options": [
+          "不知道",
+          "知道",
+          "都是她的"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "我的照相机被朋友借走了，下个星期才能还给我。",
+        "claim": "他的照相机在朋友那儿。",
+        "ok": true
+      },
+      {
+        "text": "只有每天练习，汉语才能提高得快。",
+        "claim": "不练习汉语也能提高得快。",
+        "ok": false
+      },
+      {
+        "text": "这个学期我天天玩儿游戏，考试成绩很差。",
+        "claim": "他的成绩很好。",
+        "ok": false
+      },
+      {
+        "text": "他很难过，因为他的信用卡被别人拿走了。",
+        "claim": "他的信用卡不在他那儿了。",
+        "ok": true
+      }
+    ],
+    "replies": [
+      {
+        "q": "你怎么这么难过？",
+        "a": "我的照相机被人拿走了。"
+      },
+      {
+        "q": "你的成绩怎么样？",
+        "a": "比以前好多了。"
+      },
+      {
+        "q": "我怎么才能学好汉语？",
+        "a": "只有多听多说才行。"
+      },
+      {
+        "q": "你试过这个吗？",
+        "a": "试过，很好吃。"
+      }
+    ]
+  }
+}

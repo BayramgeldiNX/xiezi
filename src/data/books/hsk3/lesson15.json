@@ -1,0 +1,706 @@
+{
+  "n": 15,
+  "cn": "第十五课",
+  "title": "其他都没什么问题",
+  "en": "The rest are all fine",
+  "words": [
+    {
+      "w": "留学",
+      "py": "liú xué",
+      "en": "to study abroad",
+      "ex": {
+        "hz": "他想去英国留学。",
+        "py": "Tā xiǎng qù Yīngguó liú xué.",
+        "en": "He wants to study in Britain."
+      }
+    },
+    {
+      "w": "水平",
+      "py": "shuǐpíng",
+      "en": "level; standard",
+      "ex": {
+        "hz": "她的英语水平很高。",
+        "py": "Tā de Yīngyǔ shuǐpíng hěn gāo.",
+        "en": "Her English level is high."
+      }
+    },
+    {
+      "w": "提高",
+      "py": "tígāo",
+      "en": "to improve; to raise",
+      "ex": {
+        "hz": "多听多说，你的汉语会提高得很快。",
+        "py": "Duō tīng duō shuō, nǐ de Hànyǔ huì tígāo de hěn kuài.",
+        "en": "Listen and speak more and your Chinese will improve fast."
+      }
+    },
+    {
+      "w": "练习",
+      "py": "liànxí",
+      "en": "exercise; to practise",
+      "ex": {
+        "hz": "这些练习不太难。",
+        "py": "Zhèxiē liànxí bú tài nán.",
+        "en": "These exercises are not too hard."
+      }
+    },
+    {
+      "w": "完成",
+      "py": "wánchéng",
+      "en": "to finish; to complete",
+      "ex": {
+        "hz": "我今天的工作还没完成。",
+        "py": "Wǒ jīntiān de gōngzuò hái méi wánchéng.",
+        "en": "I haven't finished today's work yet."
+      }
+    },
+    {
+      "w": "句子",
+      "py": "jùzi",
+      "en": "sentence",
+      "ex": {
+        "hz": "请你再写一个句子。",
+        "py": "Qǐng nǐ zài xiě yí ge jùzi.",
+        "en": "Please write one more sentence."
+      }
+    },
+    {
+      "w": "其他",
+      "py": "qítā",
+      "en": "the rest; other",
+      "ex": {
+        "hz": "我只认识小王，其他人我都不认识。",
+        "py": "Wǒ zhǐ rènshi Xiǎo Wáng, qítā rén wǒ dōu bú rènshi.",
+        "en": "I only know Xiao Wang; I don't know anyone else."
+      }
+    },
+    {
+      "w": "发",
+      "py": "fā",
+      "en": "to send",
+      "ex": {
+        "hz": "我给你发一个短信吧。",
+        "py": "Wǒ gěi nǐ fā yí ge duǎnxìn ba.",
+        "en": "I'll send you a text message."
+      }
+    },
+    {
+      "w": "要求",
+      "py": "yāoqiú",
+      "en": "requirement; demand",
+      "ex": {
+        "hz": "老师对我们的要求很高。",
+        "py": "Lǎoshī duì wǒmen de yāoqiú hěn gāo.",
+        "en": "The teacher's demands on us are high."
+      }
+    },
+    {
+      "w": "注意",
+      "py": "zhùyì",
+      "en": "to pay attention to",
+      "ex": {
+        "hz": "过马路要注意安全。",
+        "py": "Guò mǎlù yào zhùyì ānquán.",
+        "en": "Pay attention to safety when crossing the road."
+      }
+    },
+    {
+      "w": "小云",
+      "py": "Xiǎoyún",
+      "en": "Xiaoyun (name of a person)",
+      "ex": {
+        "hz": "小云是我的好朋友。",
+        "py": "Xiǎoyún shì wǒ de hǎo péngyou.",
+        "en": "Xiaoyun is my good friend."
+      }
+    },
+    {
+      "w": "上网",
+      "py": "shàng wǎng",
+      "en": "to go online",
+      "ex": {
+        "hz": "我晚上常常上网看电影。",
+        "py": "Wǒ wǎnshang chángcháng shàng wǎng kàn diànyǐng.",
+        "en": "In the evening I often go online to watch films."
+      }
+    },
+    {
+      "w": "除了",
+      "py": "chúle",
+      "en": "apart from; besides",
+      "ex": {
+        "hz": "除了苹果，我还想买一些香蕉。",
+        "py": "Chúle píngguǒ, wǒ hái xiǎng mǎi yìxiē xiāngjiāo.",
+        "en": "Besides apples, I also want to buy some bananas."
+      }
+    },
+    {
+      "w": "新闻",
+      "py": "xīnwén",
+      "en": "news",
+      "ex": {
+        "hz": "爸爸每天晚上看新闻。",
+        "py": "Bàba měi tiān wǎnshang kàn xīnwén.",
+        "en": "Dad watches the news every evening."
+      }
+    },
+    {
+      "w": "花",
+      "py": "huā",
+      "en": "to spend (money, time) (also: flower)",
+      "ex": {
+        "hz": "这件衣服花了我三百块。",
+        "py": "Zhè jiàn yīfu huā le wǒ sānbǎi kuài.",
+        "en": "This piece of clothing cost me 300 yuan."
+      }
+    },
+    {
+      "w": "极了",
+      "py": "jí le",
+      "en": "extremely",
+      "ex": {
+        "hz": "这个电影好看极了。",
+        "py": "Zhège diànyǐng hǎokàn jí le.",
+        "en": "This film is extremely good."
+      }
+    },
+    {
+      "w": "节日",
+      "py": "jiérì",
+      "en": "festival; holiday",
+      "ex": {
+        "hz": "春节是中国最重要的节日。",
+        "py": "Chūnjié shì Zhōngguó zuì zhòngyào de jiérì.",
+        "en": "Spring Festival is China's most important holiday."
+      }
+    },
+    {
+      "w": "举行",
+      "py": "jǔxíng",
+      "en": "to hold (an event)",
+      "ex": {
+        "hz": "学校明天举行比赛。",
+        "py": "Xuéxiào míngtiān jǔxíng bǐsài.",
+        "en": "The school is holding a competition tomorrow."
+      }
+    },
+    {
+      "w": "世界",
+      "py": "shìjiè",
+      "en": "world",
+      "ex": {
+        "hz": "他去过世界上很多地方。",
+        "py": "Tā qù guo shìjiè shang hěn duō dìfang.",
+        "en": "He has been to many places in the world."
+      }
+    },
+    {
+      "w": "街道",
+      "py": "jiēdào",
+      "en": "street",
+      "ex": {
+        "hz": "这条街道很干净。",
+        "py": "Zhè tiáo jiēdào hěn gānjìng.",
+        "en": "This street is very clean."
+      }
+    },
+    {
+      "w": "各",
+      "py": "gè",
+      "en": "each; every",
+      "ex": {
+        "hz": "各个国家都有自己的节日。",
+        "py": "Gègè guójiā dōu yǒu zìjǐ de jiérì.",
+        "en": "Every country has its own holidays."
+      }
+    },
+    {
+      "w": "文化",
+      "py": "wénhuà",
+      "en": "culture",
+      "ex": {
+        "hz": "我喜欢了解中国文化。",
+        "py": "Wǒ xǐhuan liǎojiě Zhōngguó wénhuà.",
+        "en": "I like learning about Chinese culture."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "在图书馆上网",
+      "py": "Zài túshūguǎn shàng wǎng",
+      "en": "Going online in the library",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你在做什么？",
+          "py": "Nǐ zài zuò shénme?",
+          "en": "What are you doing?"
+        },
+        {
+          "who": "B",
+          "hz": "我在上网看新闻，还想找几个句子练习写汉字。",
+          "py": "Wǒ zài shàng wǎng kàn xīnwén, hái xiǎng zhǎo jǐ ge jùzi liànxí xiě Hànzì.",
+          "en": "I'm reading the news online, and I want to find some sentences to practise writing characters."
+        },
+        {
+          "who": "A",
+          "hz": "你的汉语水平比以前高多了！",
+          "py": "Nǐ de Hànyǔ shuǐpíng bǐ yǐqián gāo duō le!",
+          "en": "Your Chinese is much better than before!"
+        },
+        {
+          "who": "B",
+          "hz": "谢谢。除了每天练习，我还常常看中国电影。",
+          "py": "Xièxie. Chúle měi tiān liànxí, wǒ hái chángcháng kàn Zhōngguó diànyǐng.",
+          "en": "Thanks. Besides practising every day, I often watch Chinese films."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What is B doing now?",
+          "options": [
+            "Reading the news online",
+            "Watching a film",
+            "Sending a message",
+            "Writing homework"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What else does B do to improve?",
+          "options": [
+            "Watches Chinese films",
+            "Travels abroad",
+            "Calls friends",
+            "Reads a newspaper"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "学校的比赛",
+      "py": "Xuéxiào de bǐsài",
+      "en": "The school competition",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "下个星期学校要举行唱歌比赛，你来不来？",
+          "py": "Xià ge xīngqī xuéxiào yào jǔxíng chàng gē bǐsài, nǐ lái bu lái?",
+          "en": "The school is holding a singing contest next week. Are you coming?"
+        },
+        {
+          "who": "B",
+          "hz": "当然来。小云也去吗？",
+          "py": "Dāngrán lái. Xiǎoyún yě qù ma?",
+          "en": "Of course. Is Xiaoyun going too?"
+        },
+        {
+          "who": "A",
+          "hz": "除了她，其他同学都说要去。",
+          "py": "Chúle tā, qítā tóngxué dōu shuō yào qù.",
+          "en": "Apart from her, all the other classmates say they will go."
+        },
+        {
+          "who": "B",
+          "hz": "那我给她发个短信吧。",
+          "py": "Nà wǒ gěi tā fā ge duǎnxìn ba.",
+          "en": "Then I'll send her a message."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What will the school hold next week?",
+          "options": [
+            "A singing contest",
+            "A football match",
+            "A film festival",
+            "A beer festival"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What will B do?",
+          "options": [
+            "Send Xiaoyun a message",
+            "Call the teacher",
+            "Go online",
+            "Buy tickets"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "除了……以外，都……",
+      "en": "除了 A 以外，都 …: everyone/everything except A does it",
+      "drills": [
+        {
+          "q": "___这本书以外，别的书我都看过。",
+          "options": [
+            "除了",
+            "因为",
+            "如果",
+            "还是"
+          ],
+          "answer": 0,
+          "en": "I've read every book except this one."
+        },
+        {
+          "q": "除了小李以外，其他同学___来了。",
+          "options": [
+            "都",
+            "还",
+            "也",
+            "只"
+          ],
+          "answer": 0,
+          "en": "Everyone except Xiao Li has come."
+        },
+        {
+          "q": "我们学校除了王老师，其他老师___是男的。",
+          "options": [
+            "都",
+            "还",
+            "才",
+            "就"
+          ],
+          "answer": 0,
+          "en": "In our school, all the teachers except Teacher Wang are men."
+        },
+        {
+          "q": "除了周末，我___天都要上班。",
+          "options": [
+            "每",
+            "各",
+            "多",
+            "这"
+          ],
+          "answer": 0,
+          "en": "Except at weekends, I work every day."
+        },
+        {
+          "q": "___他以外，我们都去过长城。",
+          "options": [
+            "除了",
+            "为了",
+            "对于",
+            "关于"
+          ],
+          "answer": 0,
+          "en": "Apart from him, all of us have been to the Great Wall."
+        }
+      ]
+    },
+    {
+      "point": "除了……以外，还/也……",
+      "en": "除了 A 以外，还 B: A and also B",
+      "drills": [
+        {
+          "q": "除了咖啡以外，他___喜欢喝茶。",
+          "options": [
+            "还",
+            "都",
+            "就",
+            "才"
+          ],
+          "answer": 0,
+          "en": "Besides coffee, he also likes tea."
+        },
+        {
+          "q": "除了英语，我___会说汉语。",
+          "options": [
+            "还",
+            "都",
+            "再",
+            "才"
+          ],
+          "answer": 0,
+          "en": "Besides English, I can speak Chinese too."
+        },
+        {
+          "q": "除了唱歌，她___会跳舞。",
+          "options": [
+            "也",
+            "都",
+            "再",
+            "才"
+          ],
+          "answer": 0,
+          "en": "Besides singing, she can dance too."
+        },
+        {
+          "q": "除了打篮球，他还喜欢___。",
+          "options": [
+            "游泳",
+            "游泳了",
+            "在游泳",
+            "游泳的"
+          ],
+          "answer": 0,
+          "en": "Besides basketball, he likes swimming too."
+        },
+        {
+          "q": "除了这件衣服以外，我___买了一条裤子。",
+          "options": [
+            "还",
+            "都",
+            "才",
+            "就"
+          ],
+          "answer": 0,
+          "en": "Besides this piece of clothing, I also bought a pair of trousers."
+        }
+      ]
+    },
+    {
+      "point": "什么 (soft, indefinite)",
+      "en": "有没有什么 …: “什么” makes a question softer, and the sentence means the same without it",
+      "drills": [
+        {
+          "q": "你想不想吃点儿___？",
+          "options": [
+            "什么",
+            "谁",
+            "哪儿",
+            "怎么"
+          ],
+          "answer": 0,
+          "en": "Would you like something to eat?"
+        },
+        {
+          "q": "你的作业有没有___问题？",
+          "options": [
+            "什么",
+            "怎么",
+            "多少",
+            "几"
+          ],
+          "answer": 0,
+          "en": "Are there any problems with your homework?"
+        },
+        {
+          "q": "你有没有___要买的东西？",
+          "options": [
+            "什么",
+            "哪儿",
+            "怎么样",
+            "为什么"
+          ],
+          "answer": 0,
+          "en": "Is there anything you want to buy?"
+        },
+        {
+          "q": "这个周末你有___打算吗？",
+          "options": [
+            "什么",
+            "谁",
+            "几",
+            "怎么"
+          ],
+          "answer": 0,
+          "en": "Do you have any plans for this weekend?"
+        },
+        {
+          "q": "这里没___人，我们坐下吧。",
+          "options": [
+            "什么",
+            "多么",
+            "一点",
+            "怎么"
+          ],
+          "answer": 0,
+          "en": "There aren't many people here; let's sit down."
+        }
+      ]
+    },
+    {
+      "point": "极了",
+      "en": "Adj / mental verb + 极了: extremely",
+      "drills": [
+        {
+          "q": "这个公园漂亮___。",
+          "options": [
+            "极了",
+            "得极",
+            "很极",
+            "太极"
+          ],
+          "answer": 0,
+          "en": "This park is extremely beautiful."
+        },
+        {
+          "q": "今天的天气好___，我们去爬山吧。",
+          "options": [
+            "极了",
+            "极是",
+            "很极",
+            "太极"
+          ],
+          "answer": 0,
+          "en": "The weather is wonderful today; let's go hiking."
+        },
+        {
+          "q": "我妈妈做的菜好吃___。",
+          "options": [
+            "极了",
+            "极是",
+            "极着",
+            "极过"
+          ],
+          "answer": 0,
+          "en": "The food my mother makes is extremely tasty."
+        },
+        {
+          "q": "听到这个好消息，他高兴___。",
+          "options": [
+            "极了",
+            "极要",
+            "极吗",
+            "极呢"
+          ],
+          "answer": 0,
+          "en": "He was extremely happy to hear the good news."
+        },
+        {
+          "q": "那个电影我喜欢___。",
+          "options": [
+            "极了",
+            "极是",
+            "极吗",
+            "极地"
+          ],
+          "answer": 0,
+          "en": "I like that film extremely."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你上网看什么？"
+          ],
+          [
+            "女",
+            "我看新闻，也听听歌。"
+          ]
+        ],
+        "q": "女的上网看什么？",
+        "options": [
+          "新闻",
+          "电影",
+          "书"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你们班的同学都来了吗？"
+          ],
+          [
+            "女",
+            "除了小王，大家都来了。"
+          ]
+        ],
+        "q": "谁没来？",
+        "options": [
+          "小王",
+          "小云",
+          "老师"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你的衣服花了多少钱？"
+          ],
+          [
+            "女",
+            "三百块，我满意极了。"
+          ]
+        ],
+        "q": "女的觉得衣服怎么样？",
+        "options": [
+          "满意极了",
+          "太贵了",
+          "太小了"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "学校什么时候举行比赛？"
+          ],
+          [
+            "女",
+            "下个星期六。"
+          ]
+        ],
+        "q": "比赛什么时候举行？",
+        "options": [
+          "下个星期六",
+          "明天",
+          "今天下午"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "我每天做练习，所以汉语提高得很快。",
+        "claim": "他的汉语提高得很慢。",
+        "ok": false
+      },
+      {
+        "text": "除了周末，我每天都去学校。",
+        "claim": "他周末也去学校。",
+        "ok": false
+      },
+      {
+        "text": "春节是中国最重要的节日，这一天大家都回家。",
+        "claim": "春节是重要的节日。",
+        "ok": true
+      },
+      {
+        "text": "今天要完成的作业太多了，我晚上还要写。",
+        "claim": "他的作业还没写完。",
+        "ok": true
+      }
+    ],
+    "replies": [
+      {
+        "q": "你怎么没来上课？",
+        "a": "对不起，我生病了。"
+      },
+      {
+        "q": "你的汉语怎么样？",
+        "a": "提高了很多。"
+      },
+      {
+        "q": "这件衣服你满意吗？",
+        "a": "满意极了！"
+      },
+      {
+        "q": "你在做什么？",
+        "a": "我在上网看新闻。"
+      }
+    ]
+  }
+}

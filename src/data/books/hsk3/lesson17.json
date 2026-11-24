@@ -1,0 +1,546 @@
+{
+  "n": 17,
+  "cn": "第十七课",
+  "title": "谁都有办法看好你的“病”",
+  "en": "Anyone can find a way to cure your \"illness\"",
+  "words": [
+    {
+      "w": "请假",
+      "py": "qǐng jià",
+      "en": "to ask for leave",
+      "ex": {
+        "hz": "我明天想请假一天。",
+        "py": "Wǒ míngtiān xiǎng qǐng jià yì tiān.",
+        "en": "I want to ask for a day off tomorrow."
+      }
+    },
+    {
+      "w": "一共",
+      "py": "yígòng",
+      "en": "in total",
+      "ex": {
+        "hz": "这些东西一共五十块。",
+        "py": "Zhèxiē dōngxi yígòng wǔshí kuài.",
+        "en": "These things cost fifty yuan in total."
+      }
+    },
+    {
+      "w": "邻居",
+      "py": "línjū",
+      "en": "neighbour",
+      "ex": {
+        "hz": "我的邻居是一位老师。",
+        "py": "Wǒ de línjū shì yí wèi lǎoshī.",
+        "en": "My neighbour is a teacher."
+      }
+    },
+    {
+      "w": "后来",
+      "py": "hòulái",
+      "en": "later; afterwards",
+      "ex": {
+        "hz": "他先去了北京，后来去了上海。",
+        "py": "Tā xiān qù le Běijīng, hòulái qù le Shànghǎi.",
+        "en": "He went to Beijing first and later to Shanghai."
+      }
+    },
+    {
+      "w": "爱好",
+      "py": "àihào",
+      "en": "hobby; interest",
+      "ex": {
+        "hz": "我的爱好是看书和游泳。",
+        "py": "Wǒ de àihào shì kàn shū hé yóu yǒng.",
+        "en": "My hobbies are reading and swimming."
+      }
+    },
+    {
+      "w": "办法",
+      "py": "bànfǎ",
+      "en": "way; method",
+      "ex": {
+        "hz": "我想不出好办法。",
+        "py": "Wǒ xiǎng bu chū hǎo bànfǎ.",
+        "en": "I can't think of a good way."
+      }
+    },
+    {
+      "w": "饱",
+      "py": "bǎo",
+      "en": "full (after eating)",
+      "ex": {
+        "hz": "我吃饱了，不想再吃了。",
+        "py": "Wǒ chī bǎo le, bù xiǎng zài chī le.",
+        "en": "I'm full and don't want to eat any more."
+      }
+    },
+    {
+      "w": "为了",
+      "py": "wèile",
+      "en": "for the sake of; in order to",
+      "ex": {
+        "hz": "为了学好汉语，他每天都练习。",
+        "py": "Wèile xuéhǎo Hànyǔ, tā měi tiān dōu liànxí.",
+        "en": "To learn Chinese well, he practises every day."
+      }
+    },
+    {
+      "w": "决定",
+      "py": "juédìng",
+      "en": "to decide; decision",
+      "ex": {
+        "hz": "我决定明年去中国学习。",
+        "py": "Wǒ juédìng míngnián qù Zhōngguó xuéxí.",
+        "en": "I've decided to study in China next year."
+      }
+    },
+    {
+      "w": "选择",
+      "py": "xuǎnzé",
+      "en": "to choose; choice",
+      "ex": {
+        "hz": "你选择哪个颜色？",
+        "py": "Nǐ xuǎnzé nǎge yánsè?",
+        "en": "Which colour do you choose?"
+      }
+    },
+    {
+      "w": "冬天",
+      "py": "dōngtiān",
+      "en": "winter",
+      "ex": {
+        "hz": "北京的冬天很冷。",
+        "py": "Běijīng de dōngtiān hěn lěng.",
+        "en": "Winter in Beijing is very cold."
+      }
+    },
+    {
+      "w": "必须",
+      "py": "bìxū",
+      "en": "must; have to",
+      "ex": {
+        "hz": "上课的时候必须关手机。",
+        "py": "Shàng kè de shíhou bìxū guān shǒujī.",
+        "en": "You must turn off your phone during class."
+      }
+    },
+    {
+      "w": "根据",
+      "py": "gēnjù",
+      "en": "according to; based on",
+      "ex": {
+        "hz": "我们根据明天的天气决定去不去。",
+        "py": "Wǒmen gēnjù míngtiān de tiānqì juédìng qù bu qù.",
+        "en": "We'll decide whether to go based on tomorrow's weather."
+      }
+    },
+    {
+      "w": "情况",
+      "py": "qíngkuàng",
+      "en": "situation; condition",
+      "ex": {
+        "hz": "请告诉我你家的情况。",
+        "py": "Qǐng gàosu wǒ nǐ jiā de qíngkuàng.",
+        "en": "Please tell me about your family situation."
+      }
+    },
+    {
+      "w": "口",
+      "py": "kǒu",
+      "en": "(measure word for family members) (also: mouth)",
+      "ex": {
+        "hz": "请张开口，我看看你的牙。",
+        "py": "Qǐng zhāngkāi kǒu, wǒ kànkan nǐ de yá.",
+        "en": "Please open your mouth and let me look at your teeth."
+      }
+    },
+    {
+      "w": "渴",
+      "py": "kě",
+      "en": "thirsty",
+      "ex": {
+        "hz": "跑了一个小时，我渴极了。",
+        "py": "Pǎo le yí ge xiǎoshí, wǒ kě jí le.",
+        "en": "After running for an hour I was extremely thirsty."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "去医院以前",
+      "py": "Qù yīyuàn yǐqián",
+      "en": "Before going to hospital",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "我最近睡不好，不太舒服，想请一天假去医院。",
+          "py": "Wǒ zuìjìn shuì bu hǎo, bú tài shūfu, xiǎng qǐng yì tiān jià qù yīyuàn.",
+          "en": "I haven't been sleeping well and don't feel well; I'd like a day off to go to the hospital."
+        },
+        {
+          "who": "B",
+          "hz": "你有几天没睡好了？",
+          "py": "Nǐ yǒu jǐ tiān méi shuì hǎo le?",
+          "en": "How many days has it been since you slept well?"
+        },
+        {
+          "who": "A",
+          "hz": "差不多一个星期了，我没有办法睡着。",
+          "py": "Chàbuduō yí ge xīngqī le, wǒ méiyǒu bànfǎ shuìzháo.",
+          "en": "Nearly a week; I can't fall asleep."
+        },
+        {
+          "who": "B",
+          "hz": "那你应该休息休息，明天我帮你请假。",
+          "py": "Nà nǐ yīnggāi xiūxi xiūxi, míngtiān wǒ bāng nǐ qǐng jià.",
+          "en": "Then you should get some rest; I'll ask for leave for you tomorrow."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Why does A want leave?",
+          "options": [
+            "He feels unwell",
+            "He wants to travel",
+            "He has a hobby class",
+            "His neighbour is visiting"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What will B do tomorrow?",
+          "options": [
+            "Ask for leave for A",
+            "Go to the hospital",
+            "Check A's homework",
+            "Buy medicine"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "我们的爱好",
+      "py": "Wǒmen de àihào",
+      "en": "Our hobbies",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你有什么爱好？",
+          "py": "Nǐ yǒu shénme àihào?",
+          "en": "What are your hobbies?"
+        },
+        {
+          "who": "B",
+          "hz": "我什么运动都喜欢，冬天去爬山，夏天去游泳。",
+          "py": "Wǒ shénme yùndòng dōu xǐhuan, dōngtiān qù pá shān, xiàtiān qù yóu yǒng.",
+          "en": "I like all sports: hiking in winter, swimming in summer."
+        },
+        {
+          "who": "A",
+          "hz": "我也想多运动，你觉得我应该选择什么？",
+          "py": "Wǒ yě xiǎng duō yùndòng, nǐ juéde wǒ yīnggāi xuǎnzé shénme?",
+          "en": "I want to exercise more too. What do you think I should choose?"
+        },
+        {
+          "who": "B",
+          "hz": "你可以跟我去游泳，游泳对身体很好。",
+          "py": "Nǐ kěyǐ gēn wǒ qù yóu yǒng, yóu yǒng duì shēntǐ hěn hǎo.",
+          "en": "You can come swimming with me; swimming is very good for you."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What does B do in summer?",
+          "options": [
+            "Swim",
+            "Climb mountains",
+            "Run",
+            "Play football"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What does B suggest?",
+          "options": [
+            "Going swimming together",
+            "Climbing mountains alone",
+            "Asking for leave",
+            "Changing jobs"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "Two-syllable verbs doubled (ABAB)",
+      "en": "ABAB: a short or tentative action, e.g. 休息休息",
+      "drills": [
+        {
+          "q": "你太累了，应该___。",
+          "options": [
+            "休息休息",
+            "休休息息",
+            "休息息休",
+            "休息一息"
+          ],
+          "answer": 0,
+          "en": "You're too tired; you should get some rest."
+        },
+        {
+          "q": "我的作业写完了，你帮我___吧。",
+          "options": [
+            "检查检查",
+            "检检查查",
+            "检查查",
+            "检一检查"
+          ],
+          "answer": 0,
+          "en": "I've finished my homework; please check it for me."
+        },
+        {
+          "q": "他是新同学，你___他吧。",
+          "options": [
+            "介绍介绍",
+            "介介绍绍",
+            "介绍绍",
+            "绍介绍介"
+          ],
+          "answer": 0,
+          "en": "He's a new classmate; introduce him around."
+        },
+        {
+          "q": "明天我们一起去公园___。",
+          "options": [
+            "锻炼锻炼",
+            "锻锻炼炼",
+            "锻炼炼",
+            "锻炼了锻"
+          ],
+          "answer": 0,
+          "en": "Tomorrow let's go to the park and get some exercise."
+        },
+        {
+          "q": "这本书不错，你也___吧。",
+          "options": [
+            "学习学习",
+            "学学习习",
+            "学习习",
+            "学习了学习"
+          ],
+          "answer": 0,
+          "en": "This book is good; study it a bit too."
+        },
+        {
+          "q": "你对他不太了解，可以去___他。",
+          "options": [
+            "认识认识",
+            "认认识识",
+            "认识识",
+            "识认识认"
+          ],
+          "answer": 0,
+          "en": "You don't know him well; go and get to know him."
+        }
+      ]
+    },
+    {
+      "point": "谁/什么/哪儿/怎么……都",
+      "en": "question word + 都: every … without exception",
+      "drills": [
+        {
+          "q": "这么晚了，___都不想出门。",
+          "options": [
+            "谁",
+            "什么",
+            "哪儿",
+            "怎么"
+          ],
+          "answer": 0,
+          "en": "It's so late that nobody wants to go out."
+        },
+        {
+          "q": "周末我___都不想做。",
+          "options": [
+            "什么",
+            "谁",
+            "哪儿",
+            "几"
+          ],
+          "answer": 0,
+          "en": "At the weekend I don't want to do anything."
+        },
+        {
+          "q": "这个地方很漂亮，___都可以拍照。",
+          "options": [
+            "哪儿",
+            "什么",
+            "为什么",
+            "几"
+          ],
+          "answer": 0,
+          "en": "This place is beautiful; you can take photos anywhere."
+        },
+        {
+          "q": "你想吃___都行，我请客。",
+          "options": [
+            "什么",
+            "谁",
+            "怎么",
+            "几"
+          ],
+          "answer": 0,
+          "en": "You can eat whatever you want; it's my treat."
+        },
+        {
+          "q": "这个问题太容易了，___都会做。",
+          "options": [
+            "谁",
+            "哪儿",
+            "为什么",
+            "怎么样"
+          ],
+          "answer": 0,
+          "en": "This question is so easy that anyone can do it."
+        },
+        {
+          "q": "我们___去都可以，只要不太晚。",
+          "options": [
+            "怎么",
+            "谁",
+            "哪个",
+            "为什么"
+          ],
+          "answer": 0,
+          "en": "We can go any way you like, as long as it's not too late."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你怎么没去上班？"
+          ],
+          [
+            "女",
+            "我病了，昨天请了一天假。"
+          ]
+        ],
+        "q": "女的为什么没去上班？",
+        "options": [
+          "她病了",
+          "她很忙",
+          "她去旅游了"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你们一共有几个人？"
+          ],
+          [
+            "女",
+            "五个，我们一家人都来了。"
+          ]
+        ],
+        "q": "女的家一共来了几个人？",
+        "options": [
+          "五个",
+          "三个",
+          "四个"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你的爱好是什么？"
+          ],
+          [
+            "女",
+            "我什么运动都喜欢，最喜欢游泳。"
+          ]
+        ],
+        "q": "女的最喜欢什么运动？",
+        "options": [
+          "游泳",
+          "跑步",
+          "爬山"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你吃饱了吗？"
+          ],
+          [
+            "女",
+            "吃饱了，不过有点儿渴。"
+          ]
+        ],
+        "q": "女的觉得怎么样？",
+        "options": [
+          "有点儿渴",
+          "还很饿",
+          "太累了"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "为了身体健康，他决定每天早上跑步。",
+        "claim": "他每天早上去跑步。",
+        "ok": true
+      },
+      {
+        "text": "我的邻居在大学工作，我们关系很好。",
+        "claim": "他和邻居关系不好。",
+        "ok": false
+      },
+      {
+        "text": "冬天的北京很冷，所以我们不去爬山了。",
+        "claim": "他们冬天去爬山。",
+        "ok": false
+      },
+      {
+        "text": "这次旅游一共花了三千块，比我想的多一点儿。",
+        "claim": "这次旅游花的钱比他想的多。",
+        "ok": true
+      }
+    ],
+    "replies": [
+      {
+        "q": "你有什么爱好？",
+        "a": "我喜欢唱歌和画画儿。"
+      },
+      {
+        "q": "你吃饱了吗？",
+        "a": "吃饱了，谢谢。"
+      },
+      {
+        "q": "你为什么请假？",
+        "a": "因为我不舒服。"
+      },
+      {
+        "q": "你决定去哪儿旅游了吗？",
+        "a": "决定了，去上海。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,556 @@
+{
+  "n": 14,
+  "cn": "第十四课",
+  "title": "你把水果拿过来",
+  "en": "Bring the fruit over",
+  "words": [
+    {
+      "w": "打扫",
+      "py": "dǎsǎo",
+      "en": "to clean; to sweep",
+      "ex": {
+        "hz": "星期六我们一起打扫房间。",
+        "py": "Xīngqīliù wǒmen yìqǐ dǎsǎo fángjiān.",
+        "en": "On Saturday we'll clean the house together."
+      }
+    },
+    {
+      "w": "干净",
+      "py": "gānjìng",
+      "en": "clean",
+      "ex": {
+        "hz": "你的房间真干净。",
+        "py": "Nǐ de fángjiān zhēn gānjìng.",
+        "en": "Your room is really clean."
+      }
+    },
+    {
+      "w": "然后",
+      "py": "ránhòu",
+      "en": "then; after that",
+      "ex": {
+        "hz": "先吃饭，然后去散步。",
+        "py": "Xiān chī fàn, ránhòu qù sànbù.",
+        "en": "Eat first, then go for a walk."
+      }
+    },
+    {
+      "w": "冰箱",
+      "py": "bīngxiāng",
+      "en": "refrigerator",
+      "ex": {
+        "hz": "冰箱里还有两个苹果。",
+        "py": "Bīngxiāng lǐ hái yǒu liǎng ge píngguǒ.",
+        "en": "There are still two apples in the fridge."
+      }
+    },
+    {
+      "w": "洗澡",
+      "py": "xǐ zǎo",
+      "en": "to take a bath or shower",
+      "ex": {
+        "hz": "我每天晚上洗澡以后看书。",
+        "py": "Wǒ měi tiān wǎnshang xǐ zǎo yǐhòu kàn shū.",
+        "en": "Every evening I read after taking a shower."
+      }
+    },
+    {
+      "w": "节目",
+      "py": "jiémù",
+      "en": "programme; show",
+      "ex": {
+        "hz": "这个节目很有意思。",
+        "py": "Zhège jiémù hěn yǒu yìsi.",
+        "en": "This programme is very interesting."
+      }
+    },
+    {
+      "w": "月亮",
+      "py": "yuèliang",
+      "en": "moon",
+      "ex": {
+        "hz": "今天晚上的月亮很大。",
+        "py": "Jīntiān wǎnshang de yuèliang hěn dà.",
+        "en": "The moon is big tonight."
+      }
+    },
+    {
+      "w": "像",
+      "py": "xiàng",
+      "en": "to be like; to resemble",
+      "ex": {
+        "hz": "你和你爸爸长得很像。",
+        "py": "Nǐ hé nǐ bàba zhǎng de hěn xiàng.",
+        "en": "You look very much like your dad."
+      }
+    },
+    {
+      "w": "盘子",
+      "py": "pánzi",
+      "en": "plate; dish",
+      "ex": {
+        "hz": "桌子上有三个盘子。",
+        "py": "Zhuōzi shàng yǒu sān ge pánzi.",
+        "en": "There are three plates on the table."
+      }
+    },
+    {
+      "w": "刮风",
+      "py": "guā fēng",
+      "en": "to be windy",
+      "ex": {
+        "hz": "今天刮大风，别骑车了。",
+        "py": "Jīntiān guā dà fēng, bié qí chē le.",
+        "en": "It's very windy today; don't ride your bike."
+      }
+    },
+    {
+      "w": "叔叔",
+      "py": "shūshu",
+      "en": "uncle (dad's younger brother); a polite term for a man of dad's age",
+      "ex": {
+        "hz": "叔叔每个周末都来我家。",
+        "py": "Shūshu měi ge zhōumò dōu lái wǒ jiā.",
+        "en": "My uncle comes to our home every weekend."
+      }
+    },
+    {
+      "w": "阿姨",
+      "py": "āyí",
+      "en": "aunt; a polite term for a woman of mum's age",
+      "ex": {
+        "hz": "阿姨做的饭很好吃。",
+        "py": "Āyí zuò de fàn hěn hǎochī.",
+        "en": "The meals auntie makes are delicious."
+      }
+    },
+    {
+      "w": "故事",
+      "py": "gùshi",
+      "en": "story",
+      "ex": {
+        "hz": "妈妈每天晚上给我讲故事。",
+        "py": "Māma měi tiān wǎnshang gěi wǒ jiǎng gùshi.",
+        "en": "Every night Mum tells me a story."
+      }
+    },
+    {
+      "w": "声音",
+      "py": "shēngyīn",
+      "en": "sound; voice",
+      "ex": {
+        "hz": "外边有奇怪的声音。",
+        "py": "Wàibian yǒu qíguài de shēngyīn.",
+        "en": "There's a strange sound outside."
+      }
+    },
+    {
+      "w": "菜单",
+      "py": "càidān",
+      "en": "menu",
+      "ex": {
+        "hz": "服务员，请给我菜单。",
+        "py": "Fúwùyuán, qǐng gěi wǒ càidān.",
+        "en": "Waiter, may I have the menu please?"
+      }
+    },
+    {
+      "w": "简单",
+      "py": "jiǎndān",
+      "en": "simple; easy",
+      "ex": {
+        "hz": "这个问题很简单。",
+        "py": "Zhège wèntí hěn jiǎndān.",
+        "en": "This question is very simple."
+      }
+    },
+    {
+      "w": "香蕉",
+      "py": "xiāngjiāo",
+      "en": "banana",
+      "ex": {
+        "hz": "我早饭常吃一个香蕉。",
+        "py": "Wǒ zǎofàn cháng chī yí ge xiāngjiāo.",
+        "en": "I often have a banana for breakfast."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "睡觉以前",
+      "py": "Shuìjiào yǐqián",
+      "en": "Before bed",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你先去洗澡，然后我给你讲个故事。",
+          "py": "Nǐ xiān qù xǐ zǎo, ránhòu wǒ gěi nǐ jiǎng ge gùshi.",
+          "en": "Go and have a bath first, then I'll tell you a story."
+        },
+        {
+          "who": "B",
+          "hz": "好！阿姨，我想听那个月亮上的故事。",
+          "py": "Hǎo! Āyí, wǒ xiǎng tīng nàge yuèliang shang de gùshi.",
+          "en": "OK! Auntie, I want to hear the story about the moon."
+        },
+        {
+          "who": "A",
+          "hz": "那个故事很简单，你昨天已经听过了。",
+          "py": "Nàge gùshi hěn jiǎndān, nǐ zuótiān yǐjīng tīng guo le.",
+          "en": "That story is simple; you already heard it yesterday."
+        },
+        {
+          "who": "B",
+          "hz": "没关系，我还想再听一次。",
+          "py": "Méi guānxi, wǒ hái xiǎng zài tīng yí cì.",
+          "en": "Never mind, I want to hear it once more."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What must B do before the story?",
+          "options": [
+            "Have a bath",
+            "Clean the room",
+            "Eat a banana",
+            "Wash the plates"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Which story does B want?",
+          "options": [
+            "The one about the moon",
+            "A new one",
+            "One about bananas",
+            "One about a city"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "在饭馆",
+      "py": "Zài fànguǎn",
+      "en": "At a restaurant",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "这是菜单，您想吃点儿什么？",
+          "py": "Zhè shì càidān, nín xiǎng chī diǎnr shénme?",
+          "en": "Here's the menu. What would you like?"
+        },
+        {
+          "who": "B",
+          "hz": "我们要两个菜，再来一盘水果吧。",
+          "py": "Wǒmen yào liǎng ge cài, zài lái yì pán shuǐguǒ ba.",
+          "en": "We'd like two dishes, and a plate of fruit as well."
+        },
+        {
+          "who": "A",
+          "hz": "好的。外边刮风了，你们坐里边吧。",
+          "py": "Hǎo de. Wàibian guā fēng le, nǐmen zuò lǐbian ba.",
+          "en": "Certainly. It's windy outside, so please sit inside."
+        },
+        {
+          "who": "B",
+          "hz": "好，里边也很干净。",
+          "py": "Hǎo, lǐbian yě hěn gānjìng.",
+          "en": "OK, it's nice and clean inside too."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What else do they order besides two dishes?",
+          "options": [
+            "A plate of fruit",
+            "A bowl of rice",
+            "Some beer",
+            "Some cola"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Why should they sit inside?",
+          "options": [
+            "It is windy outside",
+            "It is raining",
+            "It is too hot",
+            "Inside is quieter"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "把 + object + verb + result or direction complement",
+      "en": "The thing handled is put after 把; the verb is followed by a complement that says the result (好, 干净, 完) or the direction (出来, 过去).",
+      "drills": [
+        {
+          "q": "我把盘子洗___了。",
+          "options": [
+            "干净",
+            "高兴",
+            "安静",
+            "方便"
+          ],
+          "answer": 0,
+          "en": "I've washed the plates clean."
+        },
+        {
+          "q": "我还没把作业写___呢。",
+          "options": [
+            "好",
+            "高",
+            "长",
+            "远"
+          ],
+          "answer": 0,
+          "en": "I haven't finished my homework yet."
+        },
+        {
+          "q": "我在楼下，你把伞拿___吧。",
+          "options": [
+            "下来",
+            "上去",
+            "进去",
+            "过去"
+          ],
+          "answer": 0,
+          "en": "I'm downstairs; bring the umbrella down to me."
+        },
+        {
+          "q": "你把这个节目看___就去写作业。",
+          "options": [
+            "完",
+            "的",
+            "地",
+            "得"
+          ],
+          "answer": 0,
+          "en": "Finish watching this programme and then go and do your homework."
+        },
+        {
+          "q": "别着急，我把你的行李搬___房间里去了。",
+          "options": [
+            "进",
+            "出",
+            "上",
+            "下"
+          ],
+          "answer": 0,
+          "en": "Don't worry, I carried your luggage into the room."
+        },
+        {
+          "q": "请你把窗户打___。",
+          "options": [
+            "开",
+            "去",
+            "近",
+            "高"
+          ],
+          "answer": 0,
+          "en": "Please open the window."
+        }
+      ]
+    },
+    {
+      "point": "先……，再 / 又……，然后……",
+      "en": "First…, then…, after that…. 再 is for actions that have not happened yet; 又 is for ones that have.",
+      "drills": [
+        {
+          "q": "起床以后，我___洗澡，然后吃早饭。",
+          "options": [
+            "先",
+            "又",
+            "再",
+            "才"
+          ],
+          "answer": 0,
+          "en": "After I get up I take a shower first, then have breakfast."
+        },
+        {
+          "q": "你先把饭吃完，然后___出去玩儿。",
+          "options": [
+            "再",
+            "又",
+            "都",
+            "把"
+          ],
+          "answer": 0,
+          "en": "Finish your meal first, then go out and play."
+        },
+        {
+          "q": "昨天我先去了超市，___去了图书馆。",
+          "options": [
+            "又",
+            "再",
+            "才",
+            "先"
+          ],
+          "answer": 0,
+          "en": "Yesterday I went to the supermarket first, then to the library."
+        },
+        {
+          "q": "你先把桌子擦干净，然后___把盘子放上去。",
+          "options": [
+            "再",
+            "又",
+            "已经",
+            "都"
+          ],
+          "answer": 0,
+          "en": "Wipe the table clean first, then put the plates on it."
+        },
+        {
+          "q": "明天我先去图书馆，___去超市。",
+          "options": [
+            "然后",
+            "但是",
+            "因为",
+            "所以"
+          ],
+          "answer": 0,
+          "en": "Tomorrow I'll go to the library first and then the supermarket."
+        },
+        {
+          "q": "我先洗了澡，然后___看了一会儿电视。",
+          "options": [
+            "又",
+            "再",
+            "都",
+            "要"
+          ],
+          "answer": 0,
+          "en": "I took a shower first, and then watched TV for a while."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "明天朋友来家里玩儿，你帮我打扫一下吧。"
+          ],
+          [
+            "女",
+            "好，我先洗盘子，然后打扫房间。"
+          ]
+        ],
+        "q": "女的先做什么？",
+        "options": [
+          "洗盘子",
+          "打扫房间",
+          "做饭"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你把香蕉拿过来，好吗？"
+          ],
+          [
+            "女",
+            "好的，我先把手洗干净。"
+          ]
+        ],
+        "q": "女的先做什么？",
+        "options": [
+          "洗手",
+          "拿盘子",
+          "买香蕉"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你刚才怎么没接电话？"
+          ],
+          [
+            "女",
+            "对不起，我刚才在洗澡。"
+          ]
+        ],
+        "q": "女的刚才在做什么？",
+        "options": [
+          "洗澡",
+          "打扫房间",
+          "看电视"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "请给我菜单，我想点菜。"
+          ],
+          [
+            "女",
+            "好的，您先看看，然后再叫我。"
+          ]
+        ],
+        "q": "女的现在做什么？",
+        "options": [
+          "给男的菜单",
+          "点菜",
+          "做饭"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "今天刮大风，我们没出去，在家吃的饭。",
+        "claim": "他们在家吃饭了。",
+        "ok": true
+      },
+      {
+        "text": "我先去图书馆还了书，然后去超市买了水果。",
+        "claim": "他先去超市。",
+        "ok": false
+      },
+      {
+        "text": "他看完故事书以后，就去睡觉了。",
+        "claim": "他先睡觉，后看书。",
+        "ok": false
+      },
+      {
+        "text": "叔叔讲的故事都很有意思，我最喜欢听。",
+        "claim": "他喜欢听叔叔讲故事。",
+        "ok": true
+      }
+    ],
+    "replies": [
+      {
+        "q": "你想吃点儿什么水果？",
+        "a": "我想吃香蕉。"
+      },
+      {
+        "q": "外边怎么这么冷？",
+        "a": "因为今天刮大风。"
+      },
+      {
+        "q": "你的房间怎么这么干净？",
+        "a": "我昨天刚打扫过。"
+      },
+      {
+        "q": "客人来的时候你做什么？",
+        "a": "我先把盘子放好，然后给他们倒茶。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,516 @@
+{
+  "n": 9,
+  "cn": "第九课",
+  "title": "她的汉语说得跟中国人一样好",
+  "en": "She speaks Chinese as well as a native",
+  "words": [
+    {
+      "w": "中文",
+      "py": "Zhōngwén",
+      "en": "Chinese (language)",
+      "ex": {
+        "hz": "你会说中文吗？",
+        "py": "Nǐ huì shuō Zhōngwén ma?",
+        "en": "Can you speak Chinese?"
+      }
+    },
+    {
+      "w": "班",
+      "py": "bān",
+      "en": "class (group)",
+      "ex": {
+        "hz": "你在几班？",
+        "py": "Nǐ zài jǐ bān?",
+        "en": "Which class are you in?"
+      }
+    },
+    {
+      "w": "一样",
+      "py": "yíyàng",
+      "en": "the same; as … as",
+      "ex": {
+        "hz": "我的手机跟你的一样。",
+        "py": "Wǒ de shǒujī gēn nǐ de yíyàng.",
+        "en": "My phone is the same as yours."
+      }
+    },
+    {
+      "w": "最后",
+      "py": "zuìhòu",
+      "en": "the last; finally",
+      "ex": {
+        "hz": "这是最后一次，我不会再来了。",
+        "py": "Zhè shì zuìhòu yí cì, wǒ bú huì zài lái le.",
+        "en": "This is the last time; I won't come again."
+      }
+    },
+    {
+      "w": "放心",
+      "py": "fàng xīn",
+      "en": "to set one's mind at rest; not to worry",
+      "ex": {
+        "hz": "你放心，我不会忘的。",
+        "py": "Nǐ fàng xīn, wǒ bú huì wàng de.",
+        "en": "Don't worry, I won't forget."
+      }
+    },
+    {
+      "w": "一定",
+      "py": "yídìng",
+      "en": "definitely; certainly",
+      "ex": {
+        "hz": "明天我一定来。",
+        "py": "Míngtiān wǒ yídìng lái.",
+        "en": "I'll definitely come tomorrow."
+      }
+    },
+    {
+      "w": "担心",
+      "py": "dānxīn",
+      "en": "to worry",
+      "ex": {
+        "hz": "他还没回家，我有点儿担心。",
+        "py": "Tā hái méi huí jiā, wǒ yǒudiǎnr dānxīn.",
+        "en": "He isn't home yet and I'm a bit worried."
+      }
+    },
+    {
+      "w": "比较",
+      "py": "bǐjiào",
+      "en": "fairly; rather",
+      "ex": {
+        "hz": "这个房间比较小。",
+        "py": "Zhège fángjiān bǐjiào xiǎo.",
+        "en": "This room is rather small."
+      }
+    },
+    {
+      "w": "了解",
+      "py": "liǎojiě",
+      "en": "to know well; to understand",
+      "ex": {
+        "hz": "我对这个城市不太了解。",
+        "py": "Wǒ duì zhège chéngshì bú tài liǎojiě.",
+        "en": "I don't know this city very well."
+      }
+    },
+    {
+      "w": "先",
+      "py": "xiān",
+      "en": "first; in advance",
+      "ex": {
+        "hz": "你先吃吧，我再等一会儿。",
+        "py": "Nǐ xiān chī ba, wǒ zài děng yíhuìr.",
+        "en": "You eat first; I'll wait a bit longer."
+      }
+    },
+    {
+      "w": "中间",
+      "py": "zhōngjiān",
+      "en": "middle",
+      "ex": {
+        "hz": "他坐在我和小王中间。",
+        "py": "Tā zuò zài wǒ hé Xiǎo Wáng zhōngjiān.",
+        "en": "He sits between me and Xiao Wang."
+      }
+    },
+    {
+      "w": "参加",
+      "py": "cānjiā",
+      "en": "to take part in",
+      "ex": {
+        "hz": "你想参加明天的比赛吗？",
+        "py": "Nǐ xiǎng cānjiā míngtiān de bǐsài ma?",
+        "en": "Do you want to take part in tomorrow's match?"
+      }
+    },
+    {
+      "w": "影响",
+      "py": "yǐngxiǎng",
+      "en": "influence; to affect",
+      "ex": {
+        "hz": "天气不好会影响心情。",
+        "py": "Tiānqì bù hǎo huì yǐngxiǎng xīnqíng.",
+        "en": "Bad weather can affect your mood."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "学游泳",
+      "py": "Xué yóuyǒng",
+      "en": "Learning to swim",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你游泳游得真好，是跟谁学的？",
+          "py": "Nǐ yóu yǒng yóu de zhēn hǎo, shì gēn shéi xué de?",
+          "en": "You swim really well. Who did you learn from?"
+        },
+        {
+          "who": "B",
+          "hz": "是我哥哥教的。我们班的小李游得更好。",
+          "py": "Shì wǒ gēge jiāo de. Wǒmen bān de Xiǎo Lǐ yóu de gèng hǎo.",
+          "en": "My brother taught me. Xiao Li in our class swims even better."
+        },
+        {
+          "who": "A",
+          "hz": "我游得比较慢，你先教教我吧。",
+          "py": "Wǒ yóu de bǐjiào màn, nǐ xiān jiāojiao wǒ ba.",
+          "en": "I swim rather slowly. Teach me first."
+        },
+        {
+          "who": "B",
+          "hz": "好，你放心，多游几次就越游越好了。",
+          "py": "Hǎo, nǐ fàng xīn, duō yóu jǐ cì jiù yuè yóu yuè hǎo le.",
+          "en": "OK, don't worry. A few more tries and you'll get better and better."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Who taught B to swim?",
+          "options": [
+            "B's brother",
+            "B's teacher",
+            "Xiao Li",
+            "B's classmate"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How does A swim?",
+          "options": [
+            "Rather slowly",
+            "Very fast",
+            "Better than B",
+            "Not at all"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "比赛",
+      "py": "Bǐsài",
+      "en": "The match",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "下个星期的比赛你参加吗？",
+          "py": "Xià ge xīngqī de bǐsài nǐ cānjiā ma?",
+          "en": "Are you taking part in next week's match?"
+        },
+        {
+          "who": "B",
+          "hz": "我的脚还有点儿疼，不知道能不能参加。",
+          "py": "Wǒ de jiǎo hái yǒudiǎnr téng, bù zhīdào néng bu néng cānjiā.",
+          "en": "My foot still hurts a bit; I don't know if I can."
+        },
+        {
+          "who": "A",
+          "hz": "别担心，你休息几天，脚就会好的。",
+          "py": "Bié dānxīn, nǐ xiūxi jǐ tiān, jiǎo jiù huì hǎo de.",
+          "en": "Don't worry. Rest a few days and your foot will get better."
+        },
+        {
+          "who": "B",
+          "hz": "我希望能参加，这次比赛对我很重要。",
+          "py": "Wǒ xīwàng néng cānjiā, zhè cì bǐsài duì wǒ hěn zhòngyào.",
+          "en": "I hope I can. This match matters a lot to me."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What is wrong with B?",
+          "options": [
+            "His foot hurts",
+            "He has a cold",
+            "He is tired",
+            "He is hungry"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What does A advise?",
+          "options": [
+            "Rest more",
+            "Run more",
+            "Buy new shoes",
+            "Skip the match"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "越A越B",
+      "en": "The more A, the more B: B changes as A changes.",
+      "drills": [
+        {
+          "q": "雨越下___大，我们别出去了。",
+          "options": [
+            "越",
+            "又",
+            "也",
+            "都"
+          ],
+          "answer": 0,
+          "en": "The rain is getting heavier and heavier; let's not go out."
+        },
+        {
+          "q": "这首歌我听得越多，___喜欢。",
+          "options": [
+            "越",
+            "又",
+            "就是",
+            "很"
+          ],
+          "answer": 0,
+          "en": "The more I listen to this song, the more I like it."
+        },
+        {
+          "q": "他的汉语说得越来___好了。",
+          "options": [
+            "越",
+            "更",
+            "又",
+            "很"
+          ],
+          "answer": 0,
+          "en": "His Chinese is getting better and better."
+        },
+        {
+          "q": "你想得越多，就___担心。",
+          "options": [
+            "越",
+            "再",
+            "先",
+            "很"
+          ],
+          "answer": 0,
+          "en": "The more you think, the more you worry."
+        },
+        {
+          "q": "这本书我越看___想看。",
+          "options": [
+            "越",
+            "都",
+            "还",
+            "才"
+          ],
+          "answer": 0,
+          "en": "The more I read this book, the more I want to read it."
+        },
+        {
+          "q": "路越走越远，天___来越黑了。",
+          "options": [
+            "越",
+            "很",
+            "太",
+            "先"
+          ],
+          "answer": 0,
+          "en": "The further we walked, the darker it got."
+        }
+      ]
+    },
+    {
+      "point": "A 跟 B 一样 (+ adjective)",
+      "en": "A is the same as B. The negative puts 不 before 一样; an adjective after 一样 names what is the same.",
+      "drills": [
+        {
+          "q": "我的书包___你的一样。",
+          "options": [
+            "跟",
+            "比",
+            "在",
+            "让"
+          ],
+          "answer": 0,
+          "en": "My bag is the same as yours."
+        },
+        {
+          "q": "我们班的人数跟他们班___。",
+          "options": [
+            "一样多",
+            "比多",
+            "很多一样",
+            "多一样"
+          ],
+          "answer": 0,
+          "en": "Our class has as many students as theirs."
+        },
+        {
+          "q": "弟弟跟爸爸一样___。",
+          "options": [
+            "高",
+            "很高",
+            "比高",
+            "更高"
+          ],
+          "answer": 0,
+          "en": "My little brother is as tall as Dad."
+        },
+        {
+          "q": "这件衣服的颜色跟那件___。",
+          "options": [
+            "不一样",
+            "一样不",
+            "没一样",
+            "不比"
+          ],
+          "answer": 0,
+          "en": "The colour of this one is not the same as that one's."
+        },
+        {
+          "q": "她跑得___她哥哥一样快。",
+          "options": [
+            "跟",
+            "比",
+            "对",
+            "从"
+          ],
+          "answer": 0,
+          "en": "She runs as fast as her older brother."
+        },
+        {
+          "q": "今天的天气跟昨天___冷。",
+          "options": [
+            "一样",
+            "越",
+            "又",
+            "更"
+          ],
+          "answer": 0,
+          "en": "Today's weather is as cold as yesterday's."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你的中文说得越来越好了！"
+          ],
+          [
+            "女",
+            "谢谢，我每天都说一个小时。"
+          ]
+        ],
+        "q": "女的每天做什么？",
+        "options": [
+          "说一个小时中文",
+          "听一个小时音乐",
+          "写一个小时汉字"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你怎么还在吃？已经吃了三个苹果了。"
+          ],
+          [
+            "女",
+            "没关系，这是最后一个。"
+          ]
+        ],
+        "q": "女的还要吃几个？",
+        "options": [
+          "一个",
+          "三个",
+          "不吃了"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "我有点儿担心明天的考试。"
+          ],
+          [
+            "女",
+            "别担心，你一定能考好。"
+          ]
+        ],
+        "q": "女的觉得男的会怎么样？",
+        "options": [
+          "能考好",
+          "考不好",
+          "不参加考试"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你的新手机跟我的一样吗？"
+          ],
+          [
+            "女",
+            "不一样，我的比你的大。"
+          ]
+        ],
+        "q": "女的的手机怎么样？",
+        "options": [
+          "比男的大",
+          "跟男的一样",
+          "比男的小"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "我越学越喜欢汉语，现在每天都学两个小时。",
+        "claim": "他现在不太喜欢汉语。",
+        "ok": false
+      },
+      {
+        "text": "小李和小王的个子一样高，都是一米八。",
+        "claim": "他们两个一样高。",
+        "ok": true
+      },
+      {
+        "text": "这家商店的东西比较便宜，所以我常来。",
+        "claim": "这家商店的东西很贵。",
+        "ok": false
+      },
+      {
+        "text": "比赛是下个月的，我一定参加。",
+        "claim": "他想参加比赛。",
+        "ok": true
+      }
+    ],
+    "replies": [
+      {
+        "q": "你对这个地方了解吗？",
+        "a": "不太了解，我第一次来。"
+      },
+      {
+        "q": "你的脚怎么样了？",
+        "a": "好多了，别担心。"
+      },
+      {
+        "q": "我们先去吃饭，还是先去看电影？",
+        "a": "先去吃饭吧。"
+      },
+      {
+        "q": "你的汉字写得真好看！",
+        "a": "哪里哪里，我还要多练习。"
+      }
+    ]
+  }
+}

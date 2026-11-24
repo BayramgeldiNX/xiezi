@@ -1,0 +1,545 @@
+{
+  "n": 7,
+  "cn": "第七课",
+  "title": "我跟她都认识五年了",
+  "en": "She and I have known each other for five years",
+  "words": [
+    {
+      "w": "同事",
+      "py": "tóngshì",
+      "en": "colleague",
+      "ex": {
+        "hz": "我的同事都很热情。",
+        "py": "Wǒ de tóngshì dōu hěn rèqíng.",
+        "en": "My colleagues are all very warm."
+      }
+    },
+    {
+      "w": "以前",
+      "py": "yǐqián",
+      "en": "before; ago",
+      "ex": {
+        "hz": "以前我住在南方。",
+        "py": "Yǐqián wǒ zhù zài nánfāng.",
+        "en": "I used to live in the south."
+      }
+    },
+    {
+      "w": "银行",
+      "py": "yínháng",
+      "en": "bank",
+      "ex": {
+        "hz": "银行在公司的旁边。",
+        "py": "Yínháng zài gōngsī de pángbiān.",
+        "en": "The bank is next to the company."
+      }
+    },
+    {
+      "w": "久",
+      "py": "jiǔ",
+      "en": "long (of time)",
+      "ex": {
+        "hz": "我们好久没见面了。",
+        "py": "Wǒmen hǎojiǔ méi jiànmiàn le.",
+        "en": "We haven't seen each other for a long time."
+      }
+    },
+    {
+      "w": "感兴趣",
+      "py": "gǎn xìngqù",
+      "en": "to be interested in",
+      "ex": {
+        "hz": "我对中国音乐很感兴趣。",
+        "py": "Wǒ duì Zhōngguó yīnyuè hěn gǎn xìngqù.",
+        "en": "I'm very interested in Chinese music."
+      }
+    },
+    {
+      "w": "结婚",
+      "py": "jié hūn",
+      "en": "to marry; to get married",
+      "ex": {
+        "hz": "我哥哥明年结婚。",
+        "py": "Wǒ gēge míngnián jié hūn.",
+        "en": "My brother is getting married next year."
+      }
+    },
+    {
+      "w": "欢迎",
+      "py": "huānyíng",
+      "en": "to welcome",
+      "ex": {
+        "hz": "欢迎你来我家！",
+        "py": "Huānyíng nǐ lái wǒ jiā!",
+        "en": "Welcome to my home!"
+      }
+    },
+    {
+      "w": "迟到",
+      "py": "chídào",
+      "en": "to be late",
+      "ex": {
+        "hz": "对不起，我迟到了。",
+        "py": "Duìbuqǐ, wǒ chídào le.",
+        "en": "Sorry, I'm late."
+      }
+    },
+    {
+      "w": "半",
+      "py": "bàn",
+      "en": "half",
+      "ex": {
+        "hz": "现在是八点半。",
+        "py": "Xiànzài shì bā diǎn bàn.",
+        "en": "It's half past eight now."
+      }
+    },
+    {
+      "w": "接",
+      "py": "jiē",
+      "en": "to answer; to pick up (also: to meet someone)",
+      "ex": {
+        "hz": "我去机场接朋友。",
+        "py": "Wǒ qù jīchǎng jiē péngyou.",
+        "en": "I'm going to the airport to meet a friend."
+      }
+    },
+    {
+      "w": "刻",
+      "py": "kè",
+      "en": "quarter (of an hour)",
+      "ex": {
+        "hz": "现在是三点一刻。",
+        "py": "Xiànzài shì sān diǎn yí kè.",
+        "en": "It's a quarter past three."
+      }
+    },
+    {
+      "w": "差",
+      "py": "chà",
+      "en": "to be short of",
+      "ex": {
+        "hz": "现在差十分十点。",
+        "py": "Xiànzài chà shí fēn shí diǎn.",
+        "en": "It's ten to ten now."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "新同事",
+      "py": "Xīn tóngshì",
+      "en": "A new colleague",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你认识新来的同事吗？",
+          "py": "Nǐ rènshi xīn lái de tóngshì ma?",
+          "en": "Do you know the new colleague?"
+        },
+        {
+          "who": "B",
+          "hz": "认识，我们以前是同学，认识很久了。",
+          "py": "Rènshi, wǒmen yǐqián shì tóngxué, rènshi hěn jiǔ le.",
+          "en": "Yes. We used to be classmates; we've known each other a long time."
+        },
+        {
+          "who": "A",
+          "hz": "他结婚了吗？",
+          "py": "Tā jié hūn le ma?",
+          "en": "Is he married?"
+        },
+        {
+          "who": "B",
+          "hz": "结婚三年了，他的孩子已经两岁了。",
+          "py": "Jié hūn sān nián le, tā de háizi yǐjīng liǎng suì le.",
+          "en": "He's been married for three years, and his child is already two."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How does B know the new colleague?",
+          "options": [
+            "They were classmates",
+            "They met at a bank",
+            "They are neighbours",
+            "They met at a party"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How old is the colleague's child?",
+          "options": [
+            "Two",
+            "Three",
+            "Ten",
+            "One"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "去接朋友",
+      "py": "Qù jiē péngyou",
+      "en": "Meeting a friend",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你几点去接朋友？",
+          "py": "Nǐ jǐ diǎn qù jiē péngyou?",
+          "en": "What time are you meeting your friend?"
+        },
+        {
+          "who": "B",
+          "hz": "九点一刻，现在才八点半，还早。",
+          "py": "Jiǔ diǎn yí kè, xiànzài cái bā diǎn bàn, hái zǎo.",
+          "en": "At quarter past nine; it's only half past eight, so it's early."
+        },
+        {
+          "who": "A",
+          "hz": "路上要一个小时，快走吧，别迟到。",
+          "py": "Lùshang yào yí ge xiǎoshí, kuài zǒu ba, bié chídào.",
+          "en": "The trip takes an hour; go quickly and don't be late."
+        },
+        {
+          "who": "B",
+          "hz": "啊，那我现在就走。",
+          "py": "À, nà wǒ xiànzài jiù zǒu.",
+          "en": "Oh, then I'll go right now."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What time does B meet the friend?",
+          "options": [
+            "9:15",
+            "8:30",
+            "9:30",
+            "10:15"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How long is the trip?",
+          "options": [
+            "One hour",
+            "Half an hour",
+            "A quarter of an hour",
+            "Two hours"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "Duration after the verb",
+      "en": "S + V + 了 + duration (+ O): how long an action lasted; with a final 了 the action is still going on",
+      "drills": [
+        {
+          "q": "他打___两个小时篮球。",
+          "options": [
+            "了",
+            "着",
+            "的",
+            "得"
+          ],
+          "answer": 0,
+          "en": "He played basketball for two hours."
+        },
+        {
+          "q": "我昨天看了两个小时___。",
+          "options": [
+            "电视",
+            "看电视",
+            "在电视",
+            "个电视"
+          ],
+          "answer": 0,
+          "en": "Yesterday I watched TV for two hours."
+        },
+        {
+          "q": "我在北京住___五年了，还想再住几年。",
+          "options": [
+            "了",
+            "过",
+            "着",
+            "得"
+          ],
+          "answer": 0,
+          "en": "I've lived in Beijing for five years and want to stay a few more."
+        },
+        {
+          "q": "你学汉语学了___？",
+          "options": [
+            "多长时间",
+            "多长",
+            "什么时间",
+            "几个时间"
+          ],
+          "answer": 0,
+          "en": "How long have you studied Chinese?"
+        },
+        {
+          "q": "妹妹看了半个小时书___，还在看。",
+          "options": [
+            "了",
+            "过",
+            "着",
+            "的"
+          ],
+          "answer": 0,
+          "en": "My sister has been reading for half an hour and is still reading."
+        }
+      ]
+    },
+    {
+      "point": "对…感兴趣",
+      "en": "对 + thing + 感兴趣 / 有兴趣; negative 不感兴趣 / 没(有)兴趣; adverb goes before 感/有",
+      "drills": [
+        {
+          "q": "我___音乐感兴趣。",
+          "options": [
+            "对",
+            "跟",
+            "给",
+            "在"
+          ],
+          "answer": 0,
+          "en": "I'm interested in music."
+        },
+        {
+          "q": "我妹妹对唱歌___感兴趣。",
+          "options": [
+            "不",
+            "没",
+            "别",
+            "都"
+          ],
+          "answer": 0,
+          "en": "My younger sister isn't interested in singing."
+        },
+        {
+          "q": "我儿子对游泳没___兴趣。",
+          "options": [
+            "有",
+            "是",
+            "在",
+            "会"
+          ],
+          "answer": 0,
+          "en": "My son has no interest in swimming."
+        },
+        {
+          "q": "我对汉语___感兴趣。",
+          "options": [
+            "很",
+            "对",
+            "跟",
+            "给"
+          ],
+          "answer": 0,
+          "en": "I'm very interested in Chinese."
+        },
+        {
+          "q": "很多年轻人对中国电影___兴趣。",
+          "options": [
+            "有",
+            "是",
+            "在",
+            "会"
+          ],
+          "answer": 0,
+          "en": "Many young people are interested in Chinese films."
+        }
+      ]
+    },
+    {
+      "point": "半, 刻, 差 for clock time",
+      "en": "七点半 7:30; 八点一刻 8:15; 差一刻九点 8:45; 差五分十点 9:55; 一刻钟 = 15 minutes",
+      "drills": [
+        {
+          "q": "现在是七点___，我们该起床了。",
+          "options": [
+            "半",
+            "刻",
+            "差",
+            "分钟"
+          ],
+          "answer": 0,
+          "en": "It's half past seven; time to get up."
+        },
+        {
+          "q": "现在是八点一___，你来得很早。",
+          "options": [
+            "刻",
+            "半",
+            "差",
+            "个"
+          ],
+          "answer": 0,
+          "en": "It's quarter past eight; you've come early."
+        },
+        {
+          "q": "现在是八点四十五分，也就是差一刻___点。",
+          "options": [
+            "九",
+            "八",
+            "十",
+            "半"
+          ],
+          "answer": 0,
+          "en": "It is 8:45, that is, a quarter to nine."
+        },
+        {
+          "q": "现在___五分十点，快跑吧。",
+          "options": [
+            "差",
+            "半",
+            "刻",
+            "过"
+          ],
+          "answer": 0,
+          "en": "It's five to ten; run!"
+        },
+        {
+          "q": "他跑了___钟就累了。",
+          "options": [
+            "一刻",
+            "一半",
+            "一差",
+            "一点"
+          ],
+          "answer": 0,
+          "en": "He got tired after running for a quarter of an hour."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你在银行工作多长时间了？"
+          ],
+          [
+            "女",
+            "三年了。"
+          ]
+        ],
+        "q": "女的在银行工作多长时间了？",
+        "options": [
+          "三年",
+          "两年",
+          "五年"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你对什么运动感兴趣？"
+          ],
+          [
+            "女",
+            "我对游泳很感兴趣。"
+          ]
+        ],
+        "q": "女的对什么运动感兴趣？",
+        "options": [
+          "游泳",
+          "踢足球",
+          "跑步"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "现在几点了？你怎么迟到了？"
+          ],
+          [
+            "女",
+            "对不起，现在差一刻八点，是你的表快了。"
+          ]
+        ],
+        "q": "现在几点？",
+        "options": [
+          "七点四十五分",
+          "八点一刻",
+          "八点半"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你们什么时候结婚？"
+          ],
+          [
+            "女",
+            "下个月，欢迎你来。"
+          ]
+        ],
+        "q": "他们什么时候结婚？",
+        "options": [
+          "下个月",
+          "明年",
+          "下个星期"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "我在这家公司工作了两年，以前在银行工作。",
+        "claim": "他现在在银行工作。",
+        "ok": false
+      },
+      {
+        "text": "我对音乐感兴趣，每个星期都去听音乐会。",
+        "claim": "他喜欢音乐。",
+        "ok": true
+      },
+      {
+        "text": "现在差一刻九点，我们九点出发，不会迟到。",
+        "claim": "现在是八点四十五分。",
+        "ok": true
+      },
+      {
+        "text": "我们在公园跑了半个小时就回家了。",
+        "claim": "他们跑了两个小时。",
+        "ok": false
+      }
+    ],
+    "replies": [
+      {
+        "q": "你们认识多长时间了？",
+        "a": "我们认识三年了。"
+      },
+      {
+        "q": "你对什么感兴趣？",
+        "a": "我对汉语很感兴趣。"
+      },
+      {
+        "q": "你怎么迟到了？",
+        "a": "对不起，路上车太多了。"
+      },
+      {
+        "q": "你去哪儿接朋友？",
+        "a": "我去机场接他。"
+      }
+    ]
+  }
+}

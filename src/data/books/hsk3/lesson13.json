@@ -1,0 +1,536 @@
+{
+  "n": 13,
+  "cn": "第十三课",
+  "title": "我是走回来的",
+  "en": "I walked back",
+  "words": [
+    {
+      "w": "终于",
+      "py": "zhōngyú",
+      "en": "finally; at last",
+      "ex": {
+        "hz": "他终于找到工作了。",
+        "py": "Tā zhōngyú zhǎodào gōngzuò le.",
+        "en": "He has finally found a job."
+      }
+    },
+    {
+      "w": "爷爷",
+      "py": "yéye",
+      "en": "grandpa (dad's father)",
+      "ex": {
+        "hz": "我爷爷每天早上去公园。",
+        "py": "Wǒ yéye měi tiān zǎoshang qù gōngyuán.",
+        "en": "My grandpa goes to the park every morning."
+      }
+    },
+    {
+      "w": "礼物",
+      "py": "lǐwù",
+      "en": "gift; present",
+      "ex": {
+        "hz": "这是送给你的生日礼物。",
+        "py": "Zhè shì sòng gěi nǐ de shēngrì lǐwù.",
+        "en": "This is a birthday present for you."
+      }
+    },
+    {
+      "w": "奶奶",
+      "py": "nǎinai",
+      "en": "grandma (dad's mother)",
+      "ex": {
+        "hz": "奶奶做的菜很好吃。",
+        "py": "Nǎinai zuò de cài hěn hǎochī.",
+        "en": "Grandma's cooking is delicious."
+      }
+    },
+    {
+      "w": "遇到",
+      "py": "yùdào",
+      "en": "to run into; to come across",
+      "ex": {
+        "hz": "我在路上遇到了一个朋友。",
+        "py": "Wǒ zài lùshang yùdàole yí ge péngyou.",
+        "en": "I ran into a friend on the street."
+      }
+    },
+    {
+      "w": "一边",
+      "py": "yìbiān",
+      "en": "at the same time (doing two things)",
+      "ex": {
+        "hz": "他一边走路一边打电话。",
+        "py": "Tā yìbiān zǒu lù yìbiān dǎ diànhuà.",
+        "en": "He talks on the phone as he walks."
+      }
+    },
+    {
+      "w": "过去",
+      "py": "guòqù",
+      "en": "the past",
+      "ex": {
+        "hz": "过去这里没有地铁。",
+        "py": "Guòqù zhèlǐ méiyǒu dìtiě.",
+        "en": "In the past there was no metro here."
+      }
+    },
+    {
+      "w": "一般",
+      "py": "yìbān",
+      "en": "usually; ordinary",
+      "ex": {
+        "hz": "我一般七点起床。",
+        "py": "Wǒ yìbān qī diǎn qǐ chuáng.",
+        "en": "I usually get up at seven."
+      }
+    },
+    {
+      "w": "愿意",
+      "py": "yuànyì",
+      "en": "to be willing; would like to",
+      "ex": {
+        "hz": "你愿意跟我一起去吗？",
+        "py": "Nǐ yuànyì gēn wǒ yìqǐ qù ma?",
+        "en": "Would you like to go with me?"
+      }
+    },
+    {
+      "w": "起来",
+      "py": "qǐlai",
+      "en": "to rise; to get up (also after a verb: upward or beginning)",
+      "ex": {
+        "hz": "请大家站起来。",
+        "py": "Qǐng dàjiā zhàn qǐlai.",
+        "en": "Everyone, please stand up."
+      }
+    },
+    {
+      "w": "应该",
+      "py": "yīnggāi",
+      "en": "should; ought to",
+      "ex": {
+        "hz": "你生病了，应该去医院。",
+        "py": "Nǐ shēng bìng le, yīnggāi qù yīyuàn.",
+        "en": "You're ill; you should go to the hospital."
+      }
+    },
+    {
+      "w": "生活",
+      "py": "shēnghuó",
+      "en": "life; to live",
+      "ex": {
+        "hz": "在北京的生活很有意思。",
+        "py": "Zài Běijīng de shēnghuó hěn yǒu yìsi.",
+        "en": "Life in Beijing is very interesting."
+      }
+    },
+    {
+      "w": "校长",
+      "py": "xiàozhǎng",
+      "en": "headmaster; principal",
+      "ex": {
+        "hz": "我们的校长很年轻。",
+        "py": "Wǒmen de xiàozhǎng hěn niánqīng.",
+        "en": "Our headmaster is very young."
+      }
+    },
+    {
+      "w": "坏",
+      "py": "huài",
+      "en": "bad; broken; (after a verb) to the point of exhaustion",
+      "ex": {
+        "hz": "我的电脑坏了。",
+        "py": "Wǒ de diànnǎo huài le.",
+        "en": "My computer is broken."
+      }
+    },
+    {
+      "w": "经常",
+      "py": "jīngcháng",
+      "en": "often",
+      "ex": {
+        "hz": "我经常去图书馆看书。",
+        "py": "Wǒ jīngcháng qù túshūguǎn kàn shū.",
+        "en": "I often go to the library to read."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "生日礼物",
+      "py": "Shēngrì lǐwù",
+      "en": "A birthday present",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "明天是爷爷的生日，你准备礼物了吗？",
+          "py": "Míngtiān shì yéye de shēngrì, nǐ zhǔnbèi lǐwù le ma?",
+          "en": "Tomorrow is Grandpa's birthday. Have you got a present ready?"
+        },
+        {
+          "who": "B",
+          "hz": "准备好了，我在商店看到一个很好看的杯子，就买回来了。",
+          "py": "Zhǔnbèi hǎo le, wǒ zài shāngdiàn kàndào yí ge hěn hǎokàn de bēizi, jiù mǎi huílai le.",
+          "en": "Yes. I saw a lovely cup in a shop and bought it."
+        },
+        {
+          "who": "A",
+          "hz": "爷爷一般喜欢喝茶，他一定很高兴。",
+          "py": "Yéye yìbān xǐhuan hē chá, tā yídìng hěn gāoxìng.",
+          "en": "Grandpa usually likes tea; he'll be very pleased."
+        },
+        {
+          "who": "B",
+          "hz": "明天我们一起去爷爷家吧。",
+          "py": "Míngtiān wǒmen yìqǐ qù yéye jiā ba.",
+          "en": "Let's go to Grandpa's together tomorrow."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Whose birthday is tomorrow?",
+          "options": [
+            "Grandpa's",
+            "Grandma's",
+            "B's",
+            "The headmaster's"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What present did B buy?",
+          "options": [
+            "A cup",
+            "Some tea",
+            "A watermelon",
+            "A book"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "电脑坏了",
+      "py": "Diànnǎo huài le",
+      "en": "The computer is broken",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "我的电脑又坏了，怎么办？",
+          "py": "Wǒ de diànnǎo yòu huài le, zěnme bàn?",
+          "en": "My computer has broken down again. What shall I do?"
+        },
+        {
+          "who": "B",
+          "hz": "你应该拿到电脑店去看看。",
+          "py": "Nǐ yīnggāi ná dào diànnǎo diàn qù kànkan.",
+          "en": "You should take it to a computer shop."
+        },
+        {
+          "who": "A",
+          "hz": "我过去经常去那家店，可是今天它没开门。",
+          "py": "Wǒ guòqù jīngcháng qù nà jiā diàn, kěshì jīntiān tā méi kāi mén.",
+          "en": "I used to go to that shop often, but today it's closed."
+        },
+        {
+          "who": "B",
+          "hz": "那你先用我的吧，我愿意帮你。",
+          "py": "Nà nǐ xiān yòng wǒ de ba, wǒ yuànyì bāng nǐ.",
+          "en": "Then use mine for now; I'm happy to help."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What is wrong with A's computer?",
+          "options": [
+            "It is broken",
+            "It is too old",
+            "It is lost",
+            "It is too slow"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What does B offer?",
+          "options": [
+            "To lend A his computer",
+            "To buy A a new one",
+            "To mend it himself",
+            "To phone the shop"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "Compound direction complements: verb + 出 / 回 / 进 / 起 / 过 + 来 or 去",
+      "en": "A verb plus a direction word plus 来 (towards the speaker) or 去 (away from the speaker). A place object goes between the two parts.",
+      "drills": [
+        {
+          "q": "小狗从房间里跑___来了。",
+          "options": [
+            "出",
+            "进",
+            "上",
+            "下"
+          ],
+          "answer": 0,
+          "en": "The puppy ran out of the room."
+        },
+        {
+          "q": "我在房间里，妈妈走进房间___了。",
+          "options": [
+            "来",
+            "去",
+            "出",
+            "回"
+          ],
+          "answer": 0,
+          "en": "I'm in the room, and Mum has walked in."
+        },
+        {
+          "q": "我在家里，爸爸走出家门___了。",
+          "options": [
+            "去",
+            "来",
+            "起",
+            "里"
+          ],
+          "answer": 0,
+          "en": "I'm at home, and Dad has walked out of the door."
+        },
+        {
+          "q": "看了一天书了，你站___走走吧。",
+          "options": [
+            "起来",
+            "上来",
+            "进来",
+            "出去"
+          ],
+          "answer": 0,
+          "en": "You've been reading all day; stand up and walk about a bit."
+        },
+        {
+          "q": "我在家里，妹妹从超市拿回___两瓶牛奶。",
+          "options": [
+            "来",
+            "去",
+            "出",
+            "过"
+          ],
+          "answer": 0,
+          "en": "I'm at home, and my sister has brought two bottles of milk back from the supermarket."
+        },
+        {
+          "q": "哥哥从北京寄___来一些照片。",
+          "options": [
+            "回",
+            "起",
+            "下",
+            "上"
+          ],
+          "answer": 0,
+          "en": "My brother has posted some photos back from Beijing."
+        }
+      ]
+    },
+    {
+      "point": "一边……一边……",
+      "en": "Two actions happening at the same time. The first 一 can be dropped.",
+      "drills": [
+        {
+          "q": "我喜欢一边听音乐，___做作业。",
+          "options": [
+            "一边",
+            "一起",
+            "一样",
+            "一下"
+          ],
+          "answer": 0,
+          "en": "I like to listen to music while doing homework."
+        },
+        {
+          "q": "我和朋友一边喝咖啡，___聊天儿。",
+          "options": [
+            "一边",
+            "一起",
+            "一般",
+            "一定"
+          ],
+          "answer": 0,
+          "en": "My friend and I chatted while drinking coffee."
+        },
+        {
+          "q": "你不要一边开车___打电话。",
+          "options": [
+            "一边",
+            "一起",
+            "一共",
+            "一样"
+          ],
+          "answer": 0,
+          "en": "Don't make phone calls while driving."
+        },
+        {
+          "q": "妈妈___做饭一边跟我说话。",
+          "options": [
+            "一边",
+            "一般",
+            "一定",
+            "一直"
+          ],
+          "answer": 0,
+          "en": "Mum chats with me while she cooks."
+        },
+        {
+          "q": "他喜欢一边走路，一边___音乐。",
+          "options": [
+            "听",
+            "一听",
+            "听了",
+            "听着听"
+          ],
+          "answer": 0,
+          "en": "He likes to listen to music while walking."
+        },
+        {
+          "q": "妹妹边唱___跳，玩儿得很高兴。",
+          "options": [
+            "边",
+            "也",
+            "就",
+            "再"
+          ],
+          "answer": 0,
+          "en": "My sister sang and danced at the same time, having great fun."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你终于回来了！买了什么？"
+          ],
+          [
+            "女",
+            "我买了一个礼物，是送给爷爷的。"
+          ]
+        ],
+        "q": "礼物是送给谁的？",
+        "options": [
+          "爷爷",
+          "奶奶",
+          "校长"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "周末你一般做什么？"
+          ],
+          [
+            "女",
+            "我一般在家一边看书一边喝茶。"
+          ]
+        ],
+        "q": "女的周末一般做什么？",
+        "options": [
+          "在家看书喝茶",
+          "出去爬山",
+          "去看电影"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你怎么这么晚才回来？"
+          ],
+          [
+            "女",
+            "路上车太多，我是骑自行车回来的。"
+          ]
+        ],
+        "q": "女的是怎么回来的？",
+        "options": [
+          "骑自行车回来的",
+          "坐公共汽车回来的",
+          "走回来的"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你今天遇到谁了？"
+          ],
+          [
+            "女",
+            "一个老同学，我们一起喝了咖啡。"
+          ]
+        ],
+        "q": "女的和谁一起喝咖啡了？",
+        "options": [
+          "老同学",
+          "校长",
+          "爷爷"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "我弟弟一边吃饭一边看电视，妈妈不太高兴。",
+        "claim": "妈妈觉得这样很好。",
+        "ok": false
+      },
+      {
+        "text": "过去这里没有地铁，现在有两条了。",
+        "claim": "现在这里有地铁。",
+        "ok": true
+      },
+      {
+        "text": "她很忙，每天晚上都很晚才回家，累坏了。",
+        "claim": "她回家很晚。",
+        "ok": true
+      },
+      {
+        "text": "周末我不太喜欢出去，愿意在家休息。",
+        "claim": "他喜欢出去玩。",
+        "ok": false
+      }
+    ],
+    "replies": [
+      {
+        "q": "你周末一般做什么？",
+        "a": "我一般在家看电视。"
+      },
+      {
+        "q": "你愿意和我们一起去吗？",
+        "a": "愿意，几点出发？"
+      },
+      {
+        "q": "你的手机怎么了？",
+        "a": "坏了，我明天去买个新的。"
+      },
+      {
+        "q": "你是怎么去公司的？",
+        "a": "我是坐地铁去的。"
+      }
+    ]
+  }
+}
