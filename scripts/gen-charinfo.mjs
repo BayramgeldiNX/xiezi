@@ -8,6 +8,8 @@ import { ROOT, DATA_DIR, loadLessons, lessonChars, readJSON, writeJSON } from ".
 
 const SRC = path.join(ROOT, "data-src/makemeahanzi-dictionary.txt");
 const OUT = path.join(DATA_DIR, "charinfo.gen.json");
+// Hand-written breakdowns for characters the dictionary leaves unclear (see "_about" in the file).
+const FIX = path.join(DATA_DIR, "charinfo-fix.json");
 const IDS = /[⿰-⿿？]/u;
 
 export function genCharInfo() {
@@ -26,6 +28,7 @@ export function genCharInfo() {
     return e ? { py: e.pinyin?.[0] || "", en: (e.definition || "").split(/[;,]/)[0].trim() } : { py: "", en: "" };
   };
   const similar = readJSON(path.join(DATA_DIR, "similar.json"));
+  const fix = readJSON(FIX);
   const out = {};
   for (const c of lessonChars(loadLessons())) {
     const e = dict.get(c);
@@ -43,6 +46,11 @@ export function genCharInfo() {
       semantic: e.etymology?.semantic || "",
       similar: (similar[c] || []).filter((s) => s !== c).map((s) => ({ c: s, ...brief(s) })),
     };
+    const f = fix[c];
+    if (f) Object.assign(out[c], {
+      parts: (f.parts || []).map((p) => (typeof p === "string" ? { c: p, ...brief(p) } : { ...brief(p.c), ...p })),
+      hint: f.hint || "", type: "", phonetic: "", semantic: "",
+    });
   }
   writeJSON(OUT, out);
   console.log(`charinfo.gen.json: ${Object.keys(out).length} characters`);
