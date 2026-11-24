@@ -116,10 +116,10 @@
     }
   },
   {
-    "key": "dr3f51m",
+    "key": "dfgbs4e",
     "type": "dialog",
     "lesson": 16,
-    "q": "男的在做什么？",
+    "q": "女的在做什么？",
     "options": [
       "写邮件",
       "打电话",
@@ -132,7 +132,7 @@
         "女：我正在写邮件呢。"
       ]
     },
-    "why": "The speaker answers 我正在写邮件呢, I am writing an email, so 写邮件 is right (though the line is the woman's).",
+    "why": "The woman answers 我正在写邮件呢, I am writing an email, so 写邮件 is right.",
     "not": {
       "打电话": "Nobody says they are on the phone.",
       "听音乐": "Listening to music is not mentioned."
@@ -162,10 +162,10 @@
     }
   },
   {
-    "key": "dypkei1",
+    "key": "d1a1bls6",
     "type": "dialog",
     "lesson": 16,
-    "q": "他明年想做什么？",
+    "q": "她明年想做什么？",
     "options": [
       "去旅行",
       "找工作",
@@ -415,10 +415,10 @@
     }
   },
   {
-    "key": "de35dm6",
+    "key": "dh3fxo8",
     "type": "dialog",
     "lesson": 17,
-    "q": "他们去长城了吗？",
+    "q": "他们去公园了吗？",
     "options": [
       "还没去",
       "已经去了",
@@ -431,17 +431,17 @@
         "女：还没去呢，打算下午去。"
       ]
     },
-    "why": "The woman says 还没去呢, they have not gone yet and plan to go in the afternoon. (The question says 长城 but the text says 公园.)",
+    "why": "The woman says 还没去呢, they have not gone to the park yet and plan to go in the afternoon.",
     "not": {
       "已经去了": "She says 还没去, not yet.",
       "不想去": "She plans to go in the afternoon, so she does want to."
     }
   },
   {
-    "key": "d1t8mbx1",
+    "key": "dsndr35",
     "type": "dialog",
     "lesson": 17,
-    "q": "男的什么时候去？",
+    "q": "女的什么时候去？",
     "options": [
       "下班以后",
       "现在",
@@ -687,10 +687,10 @@
     }
   },
   {
-    "key": "dnaeebi",
+    "key": "d13zqlj7",
     "type": "dialog",
     "lesson": 18,
-    "q": "他冬天喜欢做什么？",
+    "q": "她冬天喜欢做什么？",
     "options": [
       "在家睡懒觉",
       "去爬山",
@@ -936,10 +936,10 @@
     }
   },
   {
-    "key": "dgcvp72",
+    "key": "dkh0gu1",
     "type": "dialog",
     "lesson": 19,
-    "q": "他打篮球打得怎么样？",
+    "q": "她打篮球打得怎么样？",
     "options": [
       "还不错",
       "不太好",
@@ -982,10 +982,10 @@
     }
   },
   {
-    "key": "d1echj6p",
+    "key": "deobxvo",
     "type": "dialog",
     "lesson": 19,
-    "q": "他觉得谁会赢？",
+    "q": "她觉得谁会赢？",
     "options": [
       "自己的队",
       "对方的队",
@@ -1005,10 +1005,10 @@
     }
   },
   {
-    "key": "d1pel46i",
+    "key": "d14it63f",
     "type": "dialog",
     "lesson": 19,
-    "q": "他周末要做什么？",
+    "q": "她周末要做什么？",
     "options": [
       "陪妈妈去商场",
       "踢足球",
@@ -3151,16 +3151,16 @@
     }
   },
   {
-    "key": "dfoqstt",
+    "key": "dqbev1y",
     "type": "dialog",
     "lesson": 27,
     "q": "信寄给谁？",
     "options": [
-      "她妈妈",
+      "他妈妈",
       "赵老师",
       "小雨"
     ],
-    "answer": "她妈妈",
+    "answer": "他妈妈",
     "context": {
       "lines": [
         "男：你去邮局吗？",
@@ -3168,7 +3168,7 @@
         "男：寄给我妈妈。"
       ]
     },
-    "why": "The man says 寄给我妈妈: the letter goes to his mother. (The option says 她妈妈.)",
+    "why": "The man says 寄给我妈妈: the letter goes to his mother, 他妈妈.",
     "not": {
       "赵老师": "A teacher is not mentioned.",
       "小雨": "Xiaoyu is not mentioned."
@@ -3968,10 +3968,10 @@
     }
   },
   {
-    "key": "d1s4exfa",
+    "key": "d1gdhwip",
     "type": "dialog",
     "lesson": 30,
-    "q": "他刚做了什么？",
+    "q": "她刚做了什么？",
     "options": [
       "买机票",
       "收拾行李",
@@ -4014,10 +4014,10 @@
     }
   },
   {
-    "key": "d250wt5",
+    "key": "d5olp05",
     "type": "dialog",
     "lesson": 30,
-    "q": "女的现在要做什么？",
+    "q": "男的现在要做什么？",
     "options": [
       "回家",
       "买机票",
@@ -4030,7 +4030,7 @@
         "女：好，路上小心！"
       ]
     },
-    "why": "The man says 我该回家了, so the one going home is the man; the woman only says take care.",
+    "why": "The man says 我该回家了: he is about to go home. The woman only says take care.",
     "not": {
       "买机票": "Tickets are not mentioned.",
       "收拾行李": "Packing is not mentioned."
