@@ -534,5 +534,13 @@
   "不是": {
     "py": "búshì",
     "en": "is not; to not be"
+  },
+  "厘米": {
+    "py": "límǐ",
+    "en": "centimetre"
+  },
+  "厘": {
+    "py": "lí",
+    "en": "centi- (as in 厘米 centimetre)"
   }
 }

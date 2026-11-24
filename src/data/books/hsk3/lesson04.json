@@ -1,0 +1,576 @@
+{
+  "n": 4,
+  "cn": "第四课",
+  "title": "她总是笑着跟客人说话",
+  "en": "She always smiles when talking to customers",
+  "words": [
+    {
+      "w": "比赛",
+      "py": "bǐsài",
+      "en": "match; competition",
+      "ex": {
+        "hz": "明天下午有足球比赛。",
+        "py": "Míngtiān xiàwǔ yǒu zúqiú bǐsài.",
+        "en": "There's a football match tomorrow afternoon."
+      }
+    },
+    {
+      "w": "照片",
+      "py": "zhàopiàn",
+      "en": "photo",
+      "ex": {
+        "hz": "这张照片是去年照的。",
+        "py": "Zhè zhāng zhàopiàn shì qùnián zhào de.",
+        "en": "This photo was taken last year."
+      }
+    },
+    {
+      "w": "年级",
+      "py": "niánjí",
+      "en": "grade; year (at school)",
+      "ex": {
+        "hz": "我弟弟上三年级。",
+        "py": "Wǒ dìdi shàng sān niánjí.",
+        "en": "My younger brother is in third grade."
+      }
+    },
+    {
+      "w": "又",
+      "py": "yòu",
+      "en": "(又…又…) both … and …; again",
+      "ex": {
+        "hz": "这件衬衫又好看又便宜。",
+        "py": "Zhè jiàn chènshān yòu hǎokàn yòu piányi.",
+        "en": "This shirt is both nice and cheap."
+      }
+    },
+    {
+      "w": "小明",
+      "py": "Xiǎomíng",
+      "en": "Xiaoming (a name)",
+      "ex": {
+        "hz": "小明是我的同学。",
+        "py": "Xiǎomíng shì wǒ de tóngxué.",
+        "en": "Xiaoming is my classmate."
+      }
+    },
+    {
+      "w": "马可",
+      "py": "Mǎkě",
+      "en": "Marco (a name)",
+      "ex": {
+        "hz": "马可是意大利人。",
+        "py": "Mǎkě shì Yìdàlì rén.",
+        "en": "Marco is Italian."
+      }
+    },
+    {
+      "w": "聪明",
+      "py": "cōngming",
+      "en": "clever; smart",
+      "ex": {
+        "hz": "这个孩子很聪明。",
+        "py": "Zhège háizi hěn cōngming.",
+        "en": "This child is very clever."
+      }
+    },
+    {
+      "w": "热情",
+      "py": "rèqíng",
+      "en": "warm; enthusiastic",
+      "ex": {
+        "hz": "他对客人很热情。",
+        "py": "Tā duì kèren hěn rèqíng.",
+        "en": "He is very warm to guests."
+      }
+    },
+    {
+      "w": "努力",
+      "py": "nǔlì",
+      "en": "hard-working; to work hard",
+      "ex": {
+        "hz": "你要努力学习汉语。",
+        "py": "Nǐ yào nǔlì xuéxí Hànyǔ.",
+        "en": "You should study Chinese hard."
+      }
+    },
+    {
+      "w": "总是",
+      "py": "zǒngshì",
+      "en": "always",
+      "ex": {
+        "hz": "他总是早上六点起床。",
+        "py": "Tā zǒngshì zǎoshang liù diǎn qǐchuáng.",
+        "en": "He always gets up at six in the morning."
+      }
+    },
+    {
+      "w": "回答",
+      "py": "huídá",
+      "en": "to answer",
+      "ex": {
+        "hz": "请回答我的问题。",
+        "py": "Qǐng huídá wǒ de wèntí.",
+        "en": "Please answer my question."
+      }
+    },
+    {
+      "w": "站",
+      "py": "zhàn",
+      "en": "to stand",
+      "ex": {
+        "hz": "请站在这儿等一下。",
+        "py": "Qǐng zhàn zài zhèr děng yíxià.",
+        "en": "Please stand here and wait a moment."
+      }
+    },
+    {
+      "w": "饿",
+      "py": "è",
+      "en": "hungry",
+      "ex": {
+        "hz": "我很饿，想吃点儿东西。",
+        "py": "Wǒ hěn è, xiǎng chī diǎnr dōngxi.",
+        "en": "I'm hungry and want something to eat."
+      }
+    },
+    {
+      "w": "超市",
+      "py": "chāoshì",
+      "en": "supermarket",
+      "ex": {
+        "hz": "我去超市买了一些水果。",
+        "py": "Wǒ qù chāoshì mǎile yìxiē shuǐguǒ.",
+        "en": "I went to the supermarket and bought some fruit."
+      }
+    },
+    {
+      "w": "蛋糕",
+      "py": "dàngāo",
+      "en": "cake",
+      "ex": {
+        "hz": "妹妹想吃一块蛋糕。",
+        "py": "Mèimei xiǎng chī yí kuài dàngāo.",
+        "en": "My younger sister wants a piece of cake."
+      }
+    },
+    {
+      "w": "年轻",
+      "py": "niánqīng",
+      "en": "young",
+      "ex": {
+        "hz": "她看起来很年轻。",
+        "py": "Tā kànqǐlai hěn niánqīng.",
+        "en": "She looks very young."
+      }
+    },
+    {
+      "w": "认真",
+      "py": "rènzhēn",
+      "en": "serious; conscientious",
+      "ex": {
+        "hz": "他做作业很认真。",
+        "py": "Tā zuò zuòyè hěn rènzhēn.",
+        "en": "He does his homework conscientiously."
+      }
+    },
+    {
+      "w": "客人",
+      "py": "kèren",
+      "en": "guest; customer",
+      "ex": {
+        "hz": "今天晚上家里有客人。",
+        "py": "Jīntiān wǎnshang jiā li yǒu kèren.",
+        "en": "We have guests tonight."
+      }
+    },
+    {
+      "w": "李小美",
+      "py": "Lǐ Xiǎoměi",
+      "en": "Li Xiaomei (a name)",
+      "ex": {
+        "hz": "李小美是我们的老师。",
+        "py": "Lǐ Xiǎoměi shì wǒmen de lǎoshī.",
+        "en": "Li Xiaomei is our teacher."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "比赛以后",
+      "py": "Bǐsài yǐhòu",
+      "en": "After the match",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "今天的比赛怎么样？",
+          "py": "Jīntiān de bǐsài zěnmeyàng?",
+          "en": "How was today's match?"
+        },
+        {
+          "who": "B",
+          "hz": "我们踢得很好，可是我又累又饿。",
+          "py": "Wǒmen tī de hěn hǎo, kěshì wǒ yòu lèi yòu è.",
+          "en": "We played well, but I'm tired and hungry."
+        },
+        {
+          "who": "A",
+          "hz": "超市里有蛋糕，我们去买一块吧。",
+          "py": "Chāoshì li yǒu dàngāo, wǒmen qù mǎi yí kuài ba.",
+          "en": "The supermarket has cake; let's buy a piece."
+        },
+        {
+          "who": "B",
+          "hz": "好，我们边走边吃吧。",
+          "py": "Hǎo, wǒmen biān zǒu biān chī ba.",
+          "en": "OK, let's eat as we walk."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How does B feel after the match?",
+          "options": [
+            "Tired and hungry",
+            "Cold and thirsty",
+            "Young and clever",
+            "Sick and sad"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Where do they want to buy cake?",
+          "options": [
+            "In the supermarket",
+            "At home",
+            "In the office",
+            "At the park"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "家里有客人",
+      "py": "Jiā li yǒu kèren",
+      "en": "Guests at home",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "今天家里有客人，你准备好了吗？",
+          "py": "Jīntiān jiā li yǒu kèren, nǐ zhǔnbèi hǎo le ma?",
+          "en": "We have guests today. Are you ready?"
+        },
+        {
+          "who": "B",
+          "hz": "准备好了。水果又新鲜又甜。",
+          "py": "Zhǔnbèi hǎo le. Shuǐguǒ yòu xīnxiān yòu tián.",
+          "en": "Yes. The fruit is fresh and sweet."
+        },
+        {
+          "who": "A",
+          "hz": "你总是做得这么认真。",
+          "py": "Nǐ zǒngshì zuò de zhème rènzhēn.",
+          "en": "You always do things so carefully."
+        },
+        {
+          "who": "B",
+          "hz": "客人快到了，我们站在门口等他们吧。",
+          "py": "Kèren kuài dào le, wǒmen zhàn zài ménkǒu děng tāmen ba.",
+          "en": "The guests will be here soon; let's stand at the door and wait."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What is the fruit like?",
+          "options": [
+            "Fresh and sweet",
+            "Cheap and big",
+            "Sour and old",
+            "Green and hard"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What does A say about B?",
+          "options": [
+            "B is always careful",
+            "B is hungry",
+            "B is young",
+            "B is late"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "又……又……",
+      "en": "又 + adjective + 又 + adjective: both … and … (two qualities at once)",
+      "drills": [
+        {
+          "q": "这个苹果又红___甜。",
+          "options": [
+            "又",
+            "也",
+            "很",
+            "太"
+          ],
+          "answer": 0,
+          "en": "This apple is both red and sweet."
+        },
+        {
+          "q": "这家饭馆的菜又多___好吃。",
+          "options": [
+            "又",
+            "就",
+            "太",
+            "才"
+          ],
+          "answer": 0,
+          "en": "The dishes in this restaurant are both generous and tasty."
+        },
+        {
+          "q": "小明又聪明___努力，老师很喜欢他。",
+          "options": [
+            "又",
+            "和",
+            "但是",
+            "因为"
+          ],
+          "answer": 0,
+          "en": "Xiaoming is both clever and hard-working; the teacher likes him a lot."
+        },
+        {
+          "q": "他做饭做得又快___好。",
+          "options": [
+            "又",
+            "和",
+            "很",
+            "太"
+          ],
+          "answer": 0,
+          "en": "He cooks both fast and well."
+        },
+        {
+          "q": "外边又黑___冷，我们别出去了。",
+          "options": [
+            "又",
+            "和",
+            "就",
+            "太"
+          ],
+          "answer": 0,
+          "en": "It's both dark and cold outside; let's not go out."
+        },
+        {
+          "q": "这个孩子又___又聪明。",
+          "options": [
+            "努力",
+            "太",
+            "很",
+            "都"
+          ],
+          "answer": 0,
+          "en": "This child is both hard-working and clever."
+        }
+      ]
+    },
+    {
+      "point": "V着 + V2",
+      "en": "V1着 (+ object) + V2: V1 is the manner or state in which V2 happens",
+      "drills": [
+        {
+          "q": "爷爷笑___看我们踢足球。",
+          "options": [
+            "着",
+            "了",
+            "过",
+            "得"
+          ],
+          "answer": 0,
+          "en": "Grandpa watches us play football with a smile."
+        },
+        {
+          "q": "妹妹喝___牛奶看电视。",
+          "options": [
+            "着",
+            "过",
+            "在",
+            "把"
+          ],
+          "answer": 0,
+          "en": "My younger sister watches TV while drinking milk."
+        },
+        {
+          "q": "我们站___等公共汽车。",
+          "options": [
+            "着",
+            "过",
+            "得",
+            "吗"
+          ],
+          "answer": 0,
+          "en": "We're standing and waiting for the bus."
+        },
+        {
+          "q": "他喜欢坐___看电视。",
+          "options": [
+            "着",
+            "了",
+            "过",
+            "得"
+          ],
+          "answer": 0,
+          "en": "He likes watching TV sitting down."
+        },
+        {
+          "q": "小明听___音乐做作业。",
+          "options": [
+            "着",
+            "过",
+            "得",
+            "在"
+          ],
+          "answer": 0,
+          "en": "Xiaoming does homework listening to music."
+        },
+        {
+          "q": "我们没有坐，我们___聊天儿。",
+          "options": [
+            "站着",
+            "坐着",
+            "睡着",
+            "住着"
+          ],
+          "answer": 0,
+          "en": "We didn't sit; we chatted standing up."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你觉得新同学怎么样？"
+          ],
+          [
+            "女",
+            "他又聪明又努力，我很喜欢他。"
+          ]
+        ],
+        "q": "女的觉得新同学怎么样？",
+        "options": [
+          "又聪明又努力",
+          "又高又瘦",
+          "不太认真"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你饿不饿？"
+          ],
+          [
+            "女",
+            "有点儿饿，我们去超市买点儿蛋糕吧。"
+          ]
+        ],
+        "q": "女的想去哪儿？",
+        "options": [
+          "超市",
+          "饭馆",
+          "学校"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "那个拿着书站在门口的人是谁？"
+          ],
+          [
+            "女",
+            "那是我们的老师。"
+          ]
+        ],
+        "q": "站在门口的人是谁？",
+        "options": [
+          "老师",
+          "客人",
+          "服务员"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "今天的比赛怎么样？"
+          ],
+          [
+            "女",
+            "我们赢了，大家都很高兴。"
+          ]
+        ],
+        "q": "比赛后大家怎么样？",
+        "options": [
+          "很高兴",
+          "很累",
+          "很饿"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "这个服务员总是很热情，客人都很喜欢她。",
+        "claim": "客人喜欢这个服务员。",
+        "ok": true
+      },
+      {
+        "text": "这张照片是我二年级的时候照的，那时候我又瘦又小。",
+        "claim": "他小时候很胖。",
+        "ok": false
+      },
+      {
+        "text": "我很饿，所以去超市买了一块蛋糕。",
+        "claim": "他买蛋糕是因为饿了。",
+        "ok": true
+      },
+      {
+        "text": "他做作业不太认真，老师常常说他。",
+        "claim": "他做作业很认真。",
+        "ok": false
+      }
+    ],
+    "replies": [
+      {
+        "q": "你觉得你的老师怎么样？",
+        "a": "她又年轻又热情。"
+      },
+      {
+        "q": "你为什么去超市？",
+        "a": "我去买点儿水果。"
+      },
+      {
+        "q": "比赛是什么时候？",
+        "a": "明天下午三点。"
+      },
+      {
+        "q": "那个站在门口的人是谁？",
+        "a": "那是我的朋友马可。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,585 @@
+{
+  "n": 16,
+  "cn": "第十六课",
+  "title": "我现在累得下了班就想睡觉",
+  "en": "I'm so tired that I want to sleep right after work",
+  "words": [
+    {
+      "w": "城市",
+      "py": "chéngshì",
+      "en": "city",
+      "ex": {
+        "hz": "北京是一个很大的城市。",
+        "py": "Běijīng shì yí ge hěn dà de chéngshì.",
+        "en": "Beijing is a very big city."
+      }
+    },
+    {
+      "w": "如果",
+      "py": "rúguǒ",
+      "en": "if; in case",
+      "ex": {
+        "hz": "如果明天下雨，我们就不去了。",
+        "py": "Rúguǒ míngtiān xià yǔ, wǒmen jiù bú qù le.",
+        "en": "If it rains tomorrow, we won't go."
+      }
+    },
+    {
+      "w": "认为",
+      "py": "rènwéi",
+      "en": "to think; to believe",
+      "ex": {
+        "hz": "我认为这个办法很好。",
+        "py": "Wǒ rènwéi zhège bànfǎ hěn hǎo.",
+        "en": "I think this way is very good."
+      }
+    },
+    {
+      "w": "皮鞋",
+      "py": "píxié",
+      "en": "leather shoes",
+      "ex": {
+        "hz": "爸爸有两双黑色的皮鞋。",
+        "py": "Bàba yǒu liǎng shuāng hēisè de píxié.",
+        "en": "Dad has two pairs of black leather shoes."
+      }
+    },
+    {
+      "w": "帽子",
+      "py": "màozi",
+      "en": "hat; cap",
+      "ex": {
+        "hz": "外面很冷，戴上帽子吧。",
+        "py": "Wàimian hěn lěng, dàishang màozi ba.",
+        "en": "It's cold outside; put on a hat."
+      }
+    },
+    {
+      "w": "长",
+      "py": "zhǎng",
+      "en": "to grow; to develop",
+      "ex": {
+        "hz": "这个小孩长得真快。",
+        "py": "Zhège xiǎohái zhǎng de zhēn kuài.",
+        "en": "This child is growing so fast."
+      }
+    },
+    {
+      "w": "可爱",
+      "py": "kě'ài",
+      "en": "lovely; cute",
+      "ex": {
+        "hz": "她的小狗可爱极了。",
+        "py": "Tā de xiǎo gǒu kě'ài jí le.",
+        "en": "Her puppy is extremely cute."
+      }
+    },
+    {
+      "w": "米",
+      "py": "mǐ",
+      "en": "metre",
+      "ex": {
+        "hz": "这条河有三米宽。",
+        "py": "Zhè tiáo hé yǒu sān mǐ kuān.",
+        "en": "This river is three metres wide."
+      }
+    },
+    {
+      "w": "公斤",
+      "py": "gōngjīn",
+      "en": "kilogram",
+      "ex": {
+        "hz": "我买了两公斤苹果。",
+        "py": "Wǒ mǎi le liǎng gōngjīn píngguǒ.",
+        "en": "I bought two kilograms of apples."
+      }
+    },
+    {
+      "w": "鼻子",
+      "py": "bízi",
+      "en": "nose",
+      "ex": {
+        "hz": "他的鼻子又高又大。",
+        "py": "Tā de bízi yòu gāo yòu dà.",
+        "en": "His nose is tall and big."
+      }
+    },
+    {
+      "w": "头发",
+      "py": "tóufa",
+      "en": "hair",
+      "ex": {
+        "hz": "我妹妹的头发很长。",
+        "py": "Wǒ mèimei de tóufa hěn cháng.",
+        "en": "My younger sister's hair is very long."
+      }
+    },
+    {
+      "w": "检查",
+      "py": "jiǎnchá",
+      "en": "to check; to examine",
+      "ex": {
+        "hz": "请你检查一下作业。",
+        "py": "Qǐng nǐ jiǎnchá yíxià zuòyè.",
+        "en": "Please check your homework."
+      }
+    },
+    {
+      "w": "刷牙",
+      "py": "shuā yá",
+      "en": "to brush one's teeth",
+      "ex": {
+        "hz": "我每天早上和晚上都刷牙。",
+        "py": "Wǒ měi tiān zǎoshang hé wǎnshang dōu shuā yá.",
+        "en": "I brush my teeth every morning and evening."
+      }
+    },
+    {
+      "w": "关系",
+      "py": "guānxì",
+      "en": "relationship",
+      "ex": {
+        "hz": "我和同学的关系都很好。",
+        "py": "Wǒ hé tóngxué de guānxì dōu hěn hǎo.",
+        "en": "I get on well with all my classmates."
+      }
+    },
+    {
+      "w": "别人",
+      "py": "biérén",
+      "en": "other people",
+      "ex": {
+        "hz": "别人的东西不能随便拿。",
+        "py": "Biérén de dōngxi bù néng suíbiàn ná.",
+        "en": "You shouldn't take other people's things freely."
+      }
+    },
+    {
+      "w": "词语",
+      "py": "cíyǔ",
+      "en": "word; expression",
+      "ex": {
+        "hz": "这个词语我不太懂。",
+        "py": "Zhège cíyǔ wǒ bú tài dǒng.",
+        "en": "I don't quite understand this word."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "新帽子",
+      "py": "Xīn màozi",
+      "en": "A new hat",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你看，我新买的帽子怎么样？",
+          "py": "Nǐ kàn, wǒ xīn mǎi de màozi zěnmeyàng?",
+          "en": "Look, what do you think of the hat I just bought?"
+        },
+        {
+          "who": "B",
+          "hz": "红红的，真可爱！多少钱？",
+          "py": "Hónghóng de, zhēn kě'ài! Duōshao qián?",
+          "en": "Nice and red, so cute! How much was it?"
+        },
+        {
+          "who": "A",
+          "hz": "不贵，八十块。如果你喜欢，我也给你买一个。",
+          "py": "Bú guì, bāshí kuài. Rúguǒ nǐ xǐhuan, wǒ yě gěi nǐ mǎi yí ge.",
+          "en": "Not expensive, eighty yuan. If you like it, I'll buy you one too."
+        },
+        {
+          "who": "B",
+          "hz": "好啊，不过我认为黑色的更好。",
+          "py": "Hǎo a, búguò wǒ rènwéi hēisè de gèng hǎo.",
+          "en": "Great, but I think a black one would be better."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What colour is A's new hat?",
+          "options": [
+            "Red",
+            "Black",
+            "White",
+            "Blue"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What will A do if B likes it?",
+          "options": [
+            "Buy B one too",
+            "Give B his own hat",
+            "Take it back to the shop",
+            "Buy some shoes"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "为什么不开心",
+      "py": "Wèi shénme bù kāixīn",
+      "en": "Why not happy",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你怎么了？看起来很累。",
+          "py": "Nǐ zěnme le? Kàn qǐlai hěn lèi.",
+          "en": "What's wrong? You look tired."
+        },
+        {
+          "who": "B",
+          "hz": "这几天工作太忙，我每天累得刷完牙就想睡觉。",
+          "py": "Zhè jǐ tiān gōngzuò tài máng, wǒ měi tiān lèi de shuāwán yá jiù xiǎng shuìjiào.",
+          "en": "Work has been so busy these days; every night I'm so tired I want to sleep the moment I've brushed my teeth."
+        },
+        {
+          "who": "A",
+          "hz": "我认为你应该多休息，别人的工作不要都做。",
+          "py": "Wǒ rènwéi nǐ yīnggāi duō xiūxi, biérén de gōngzuò bú yào dōu zuò.",
+          "en": "I think you should rest more and not do everyone else's work too."
+        },
+        {
+          "who": "B",
+          "hz": "你说得对。如果明天不忙，我就早点儿回家。",
+          "py": "Nǐ shuō de duì. Rúguǒ míngtiān bù máng, wǒ jiù zǎodiǎnr huí jiā.",
+          "en": "You're right. If I'm not busy tomorrow, I'll go home early."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Why is B so tired?",
+          "options": [
+            "Work is too busy",
+            "He is ill",
+            "He didn't sleep at night",
+            "He walked a lot"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What will B do if he is not busy tomorrow?",
+          "options": [
+            "Go home early",
+            "Go to bed at once",
+            "Go to the doctor",
+            "Do other people's work"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "如果……(的话)，(S)就……",
+      "en": "如果 A，就 B: if A, then B (the subject goes before 就)",
+      "drills": [
+        {
+          "q": "___明天不下雨，我们就去公园。",
+          "options": [
+            "如果",
+            "因为",
+            "虽然",
+            "除了"
+          ],
+          "answer": 0,
+          "en": "If it doesn't rain tomorrow, we'll go to the park."
+        },
+        {
+          "q": "如果你累了，___去休息吧。",
+          "options": [
+            "就",
+            "才",
+            "也",
+            "都"
+          ],
+          "answer": 0,
+          "en": "If you're tired, go and rest."
+        },
+        {
+          "q": "如果我有钱的话，我___买一辆新车。",
+          "options": [
+            "就",
+            "才",
+            "都",
+            "极"
+          ],
+          "answer": 0,
+          "en": "If I had money, I'd buy a new car."
+        },
+        {
+          "q": "如果你喜欢这件衣服，___买吧。",
+          "options": [
+            "就",
+            "但",
+            "却",
+            "还"
+          ],
+          "answer": 0,
+          "en": "If you like these clothes, then buy them."
+        },
+        {
+          "q": "如果你有问题，我们___一起想办法。",
+          "options": [
+            "就",
+            "才",
+            "可是",
+            "或者"
+          ],
+          "answer": 0,
+          "en": "If you have a problem, we'll think of a way together."
+        }
+      ]
+    },
+    {
+      "point": "V/Adj + 得 + (state)",
+      "en": "得 complement of state: 累得 … / 高兴得 …: so … that …",
+      "drills": [
+        {
+          "q": "听到这个消息，她高兴___哭了。",
+          "options": [
+            "得",
+            "的",
+            "地",
+            "了"
+          ],
+          "answer": 0,
+          "en": "She was so happy at the news that she cried."
+        },
+        {
+          "q": "她累___一回家就睡觉了。",
+          "options": [
+            "得",
+            "的",
+            "地",
+            "着"
+          ],
+          "answer": 0,
+          "en": "She was so tired that she went to sleep as soon as she got home."
+        },
+        {
+          "q": "我今天累得___想做饭了。",
+          "options": [
+            "不",
+            "没",
+            "别",
+            "也"
+          ],
+          "answer": 0,
+          "en": "I'm so tired today that I don't want to cook."
+        },
+        {
+          "q": "我忙得___时间吃午饭。",
+          "options": [
+            "没",
+            "不是",
+            "别",
+            "太"
+          ],
+          "answer": 0,
+          "en": "I was so busy that I had no time for lunch."
+        },
+        {
+          "q": "孩子们玩儿得___想回家。",
+          "options": [
+            "都不",
+            "才",
+            "就",
+            "极了"
+          ],
+          "answer": 0,
+          "en": "The children were having so much fun that they didn't even want to go home."
+        }
+      ]
+    },
+    {
+      "point": "AA的 (reduplicated adjective)",
+      "en": "a one-syllable adjective said twice + 的 paints a more vivid picture",
+      "drills": [
+        {
+          "q": "孩子的手___，很可爱。",
+          "options": [
+            "小小的",
+            "小小",
+            "很小小的",
+            "小了小"
+          ],
+          "answer": 0,
+          "en": "The child's hands are tiny and lovely."
+        },
+        {
+          "q": "这个孩子的脸___。",
+          "options": [
+            "红红的",
+            "红的红",
+            "红了红",
+            "很红红的"
+          ],
+          "answer": 0,
+          "en": "This child's face is red."
+        },
+        {
+          "q": "那条河宽宽___，水很干净。",
+          "options": [
+            "的",
+            "得",
+            "地",
+            "了"
+          ],
+          "answer": 0,
+          "en": "That river is wide and the water is clean."
+        },
+        {
+          "q": "这条路长长___，我们走了很久。",
+          "options": [
+            "的",
+            "得",
+            "地",
+            "着"
+          ],
+          "answer": 0,
+          "en": "This road is so long; we walked for ages."
+        },
+        {
+          "q": "她的眼睛___，笑起来很好看。",
+          "options": [
+            "大大的",
+            "大大",
+            "很大大的",
+            "大了大"
+          ],
+          "answer": 0,
+          "en": "Her eyes are big and she looks nice when she smiles."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你儿子多高了？"
+          ],
+          [
+            "女",
+            "快一米了，十五公斤。"
+          ]
+        ],
+        "q": "孩子多重？",
+        "options": [
+          "十五公斤",
+          "十公斤",
+          "五十公斤"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你的牙怎么样了？"
+          ],
+          [
+            "女",
+            "还是很疼，我明天去医院检查。"
+          ]
+        ],
+        "q": "女的明天要做什么？",
+        "options": [
+          "去医院检查",
+          "去刷牙",
+          "去上班"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你为什么不去旅游？"
+          ],
+          [
+            "女",
+            "如果有时间，我就去。"
+          ]
+        ],
+        "q": "女的为什么不去旅游？",
+        "options": [
+          "没有时间",
+          "没有钱",
+          "不喜欢"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你看那只小狗，眼睛大大的，真可爱！"
+          ],
+          [
+            "女",
+            "是啊，它是我朋友家的。"
+          ]
+        ],
+        "q": "小狗是谁家的？",
+        "options": [
+          "女的朋友家的",
+          "女的家的",
+          "男的家的"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "我最近忙得没时间见朋友，所以有点儿累。",
+        "claim": "他最近很忙。",
+        "ok": true
+      },
+      {
+        "text": "如果明天下雨，我们就在家看电影。",
+        "claim": "明天下雨的话，他们会在家看电影。",
+        "ok": true
+      },
+      {
+        "text": "他的鞋太小，所以他把它送给了弟弟。",
+        "claim": "他的鞋太大。",
+        "ok": false
+      },
+      {
+        "text": "我每天睡觉以前刷牙，早上也刷牙。",
+        "claim": "他早上不刷牙。",
+        "ok": false
+      }
+    ],
+    "replies": [
+      {
+        "q": "你认为这个办法怎么样？",
+        "a": "我认为很好。"
+      },
+      {
+        "q": "你儿子今年多高了？",
+        "a": "一米二了，长得很快。"
+      },
+      {
+        "q": "你怎么这么累？",
+        "a": "工作太忙了。"
+      },
+      {
+        "q": "如果你有钱，你想做什么？",
+        "a": "我想去旅游。"
+      }
+    ]
+  }
+}

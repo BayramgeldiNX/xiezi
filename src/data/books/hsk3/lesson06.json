@@ -1,0 +1,575 @@
+{
+  "n": 6,
+  "cn": "第六课",
+  "title": "怎么突然找不到了",
+  "en": "Why can't I suddenly find it?",
+  "words": [
+    {
+      "w": "眼镜",
+      "py": "yǎnjìng",
+      "en": "glasses",
+      "ex": {
+        "hz": "爷爷看书的时候要戴眼镜。",
+        "py": "Yéye kàn shū de shíhou yào dài yǎnjìng.",
+        "en": "Grandpa needs glasses when he reads."
+      }
+    },
+    {
+      "w": "突然",
+      "py": "tūrán",
+      "en": "suddenly",
+      "ex": {
+        "hz": "外边突然下雨了。",
+        "py": "Wàibian tūrán xià yǔ le.",
+        "en": "It suddenly started raining outside."
+      }
+    },
+    {
+      "w": "离开",
+      "py": "líkāi",
+      "en": "to leave; to part from",
+      "ex": {
+        "hz": "他昨天离开了北京。",
+        "py": "Tā zuótiān líkāile Běijīng.",
+        "en": "He left Beijing yesterday."
+      }
+    },
+    {
+      "w": "清楚",
+      "py": "qīngchu",
+      "en": "clear; distinct",
+      "ex": {
+        "hz": "你说得很清楚，我听明白了。",
+        "py": "Nǐ shuō de hěn qīngchu, wǒ tīng míngbai le.",
+        "en": "You spoke very clearly; I understood."
+      }
+    },
+    {
+      "w": "刚才",
+      "py": "gāngcái",
+      "en": "just now",
+      "ex": {
+        "hz": "刚才谁给你打电话了？",
+        "py": "Gāngcái shéi gěi nǐ dǎ diànhuà le?",
+        "en": "Who phoned you just now?"
+      }
+    },
+    {
+      "w": "帮忙",
+      "py": "bāng máng",
+      "en": "to help",
+      "ex": {
+        "hz": "你能来帮忙吗？我一个人搬不动。",
+        "py": "Nǐ néng lái bāng máng ma? Wǒ yí ge rén bān bu dòng.",
+        "en": "Can you come and help? I can't move it on my own."
+      }
+    },
+    {
+      "w": "特别",
+      "py": "tèbié",
+      "en": "especially; extra",
+      "ex": {
+        "hz": "今天特别冷，多穿点儿。",
+        "py": "Jīntiān tèbié lěng, duō chuān diǎnr.",
+        "en": "It's extra cold today; wear more."
+      }
+    },
+    {
+      "w": "讲",
+      "py": "jiǎng",
+      "en": "to explain; to speak",
+      "ex": {
+        "hz": "老师在给我们讲这个字。",
+        "py": "Lǎoshī zài gěi wǒmen jiǎng zhège zì.",
+        "en": "The teacher is explaining this character to us."
+      }
+    },
+    {
+      "w": "明白",
+      "py": "míngbai",
+      "en": "clear; to understand",
+      "ex": {
+        "hz": "这个问题我不太明白。",
+        "py": "Zhège wèntí wǒ bú tài míngbai.",
+        "en": "I don't quite understand this question."
+      }
+    },
+    {
+      "w": "锻炼",
+      "py": "duànliàn",
+      "en": "to exercise (physically)",
+      "ex": {
+        "hz": "早上他去公园锻炼身体。",
+        "py": "Zǎoshang tā qù gōngyuán duànliàn shēntǐ.",
+        "en": "In the morning he exercises in the park."
+      }
+    },
+    {
+      "w": "音乐",
+      "py": "yīnyuè",
+      "en": "music",
+      "ex": {
+        "hz": "我喜欢听中国音乐。",
+        "py": "Wǒ xǐhuan tīng Zhōngguó yīnyuè.",
+        "en": "I like listening to Chinese music."
+      }
+    },
+    {
+      "w": "公园",
+      "py": "gōngyuán",
+      "en": "park",
+      "ex": {
+        "hz": "公园里有很多花和树。",
+        "py": "Gōngyuán li yǒu hěn duō huā hé shù.",
+        "en": "There are lots of flowers and trees in the park."
+      }
+    },
+    {
+      "w": "聊天儿",
+      "py": "liáo tiānr",
+      "en": "to chat",
+      "ex": {
+        "hz": "我们在咖啡店聊天儿。",
+        "py": "Wǒmen zài kāfēidiàn liáo tiānr.",
+        "en": "We're chatting in the café."
+      }
+    },
+    {
+      "w": "睡着",
+      "py": "shuìzháo",
+      "en": "to fall asleep",
+      "ex": {
+        "hz": "昨天晚上我很晚才睡着。",
+        "py": "Zuótiān wǎnshang wǒ hěn wǎn cái shuìzháo.",
+        "en": "Last night I only fell asleep very late."
+      }
+    },
+    {
+      "w": "更",
+      "py": "gèng",
+      "en": "even more",
+      "ex": {
+        "hz": "今天比昨天更冷。",
+        "py": "Jīntiān bǐ zuótiān gèng lěng.",
+        "en": "Today is even colder than yesterday."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "去公园",
+      "py": "Qù gōngyuán",
+      "en": "Going to the park",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "请问，去公园怎么走？",
+          "py": "Qǐngwèn, qù gōngyuán zěnme zǒu?",
+          "en": "Excuse me, how do I get to the park?"
+        },
+        {
+          "who": "B",
+          "hz": "一直往前走，离这儿不太远。",
+          "py": "Yìzhí wǎng qián zǒu, lí zhèr bú tài yuǎn.",
+          "en": "Go straight on; it isn't far from here."
+        },
+        {
+          "who": "A",
+          "hz": "谢谢。那儿特别漂亮吧？",
+          "py": "Xièxie. Nàr tèbié piàoliang ba?",
+          "en": "Thanks. It's especially pretty there, isn't it?"
+        },
+        {
+          "who": "B",
+          "hz": "是啊，周末很多人去那儿聊天儿。",
+          "py": "Shì a, zhōumò hěn duō rén qù nàr liáo tiānr.",
+          "en": "Yes, lots of people go there at weekends to chat."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Where does A want to go?",
+          "options": [
+            "The park",
+            "The school",
+            "The office",
+            "The shop"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What do people do there at weekends?",
+          "options": [
+            "Chat",
+            "Swim",
+            "Sleep",
+            "Study"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "睡不着",
+      "py": "Shuì bu zháo",
+      "en": "Can't sleep",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你怎么了？看起来很累。",
+          "py": "Nǐ zěnme le? Kàn qǐlai hěn lèi.",
+          "en": "What's wrong? You look tired."
+        },
+        {
+          "who": "B",
+          "hz": "昨天晚上我睡不着，两点才睡着。",
+          "py": "Zuótiān wǎnshang wǒ shuì bu zháo, liǎng diǎn cái shuìzháo.",
+          "en": "I couldn't sleep last night; I only dropped off at two."
+        },
+        {
+          "who": "A",
+          "hz": "你白天多锻炼，晚上会睡得更好。",
+          "py": "Nǐ báitiān duō duànliàn, wǎnshang huì shuì de gèng hǎo.",
+          "en": "If you exercise more in the day, you'll sleep better at night."
+        },
+        {
+          "who": "B",
+          "hz": "好，我明天去公园跑步。",
+          "py": "Hǎo, wǒ míngtiān qù gōngyuán pǎo bù.",
+          "en": "OK, I'll go running in the park tomorrow."
+        }
+      ],
+      "questions": [
+        {
+          "q": "When did B fall asleep?",
+          "options": [
+            "At two o'clock",
+            "At ten o'clock",
+            "At six o'clock",
+            "He didn't sleep at all"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What will B do tomorrow?",
+          "options": [
+            "Run in the park",
+            "Listen to music",
+            "Go to school",
+            "See a doctor"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "V得/不 + complement",
+      "en": "V + 得 + complement: can; V + 不 + complement: can't (a result can or can't be reached)",
+      "drills": [
+        {
+          "q": "字太小了，我看___清楚。",
+          "options": [
+            "不",
+            "得",
+            "没",
+            "很"
+          ],
+          "answer": 0,
+          "en": "The characters are too small; I can't see them clearly."
+        },
+        {
+          "q": "今天的作业不多，七点以前我做___完。",
+          "options": [
+            "得",
+            "不",
+            "没",
+            "把"
+          ],
+          "answer": 0,
+          "en": "There isn't much homework today; I can finish it before seven."
+        },
+        {
+          "q": "那么多饭，我一个人吃___完，请你来帮我吧。",
+          "options": [
+            "不",
+            "得",
+            "没",
+            "把"
+          ],
+          "answer": 0,
+          "en": "There's too much food for me to finish alone; please come and help."
+        },
+        {
+          "q": "老师讲得很清楚，我听___懂。",
+          "options": [
+            "得",
+            "不",
+            "没",
+            "把"
+          ],
+          "answer": 0,
+          "en": "The teacher explained clearly, so I can understand."
+        },
+        {
+          "q": "这个字太难了，我写___出来。",
+          "options": [
+            "不",
+            "得",
+            "没",
+            "把"
+          ],
+          "answer": 0,
+          "en": "This character is too hard; I can't write it out."
+        }
+      ]
+    },
+    {
+      "point": "N + 呢",
+      "en": "noun + 呢? asks where someone or something is",
+      "drills": [
+        {
+          "q": "A：我的手机___？ B：在桌子上。",
+          "options": [
+            "呢",
+            "了",
+            "过",
+            "着"
+          ],
+          "answer": 0,
+          "en": "A: Where is my phone? B: On the table."
+        },
+        {
+          "q": "A：爸爸___？ B：他在办公室。",
+          "options": [
+            "呢",
+            "了",
+            "过",
+            "着"
+          ],
+          "answer": 0,
+          "en": "A: Where is dad? B: He's in the office."
+        },
+        {
+          "q": "A：你的眼镜___？ B：我放在包里了。",
+          "options": [
+            "呢",
+            "了",
+            "过",
+            "着"
+          ],
+          "answer": 0,
+          "en": "A: Where are your glasses? B: I put them in my bag."
+        },
+        {
+          "q": "A：小狗___？ B：它在花园里玩儿。",
+          "options": [
+            "呢",
+            "了",
+            "过",
+            "着"
+          ],
+          "answer": 0,
+          "en": "A: Where is the puppy? B: It's playing in the garden."
+        },
+        {
+          "q": "A：我的书___？ B：在你的椅子上。",
+          "options": [
+            "呢",
+            "了",
+            "过",
+            "着"
+          ],
+          "answer": 0,
+          "en": "A: Where is my book? B: On your chair."
+        }
+      ]
+    },
+    {
+      "point": "刚 and 刚才",
+      "en": "刚 + verb: a short time ago (to the speaker); 刚才 is a time word (minutes ago) and can start a sentence",
+      "drills": [
+        {
+          "q": "___你去哪儿了？我一直在找你。",
+          "options": [
+            "刚才",
+            "刚",
+            "就",
+            "才"
+          ],
+          "answer": 0,
+          "en": "Where did you go just now? I've been looking for you."
+        },
+        {
+          "q": "我___来中国两个月，还不会说汉语。",
+          "options": [
+            "刚",
+            "刚才",
+            "先",
+            "会"
+          ],
+          "answer": 0,
+          "en": "I only came to China two months ago and can't speak Chinese yet."
+        },
+        {
+          "q": "___我看见周明在花园里。",
+          "options": [
+            "刚才",
+            "刚",
+            "又",
+            "先"
+          ],
+          "answer": 0,
+          "en": "Just now I saw Zhou Ming in the garden."
+        },
+        {
+          "q": "他___从北京回来一个星期，还很累。",
+          "options": [
+            "刚",
+            "刚才",
+            "特别",
+            "突然"
+          ],
+          "answer": 0,
+          "en": "He came back from Beijing only a week ago and is still tired."
+        },
+        {
+          "q": "我___回到家，爸爸就打来了电话。",
+          "options": [
+            "刚",
+            "更",
+            "特别",
+            "讲"
+          ],
+          "answer": 0,
+          "en": "I had just got home when dad phoned."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你看见我的手机了吗？"
+          ],
+          [
+            "女",
+            "在桌子上呢，你看看。"
+          ]
+        ],
+        "q": "男的在找什么？",
+        "options": [
+          "手机",
+          "眼镜",
+          "书"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你听得懂他说的话吗？"
+          ],
+          [
+            "女",
+            "听不懂，他说得太快了。"
+          ]
+        ],
+        "q": "女的为什么听不懂？",
+        "options": [
+          "他说得太快",
+          "声音太小",
+          "她不想听"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "我们去哪儿聊天儿？"
+          ],
+          [
+            "女",
+            "去公园吧，那儿很安静。"
+          ]
+        ],
+        "q": "女的想去哪儿？",
+        "options": [
+          "公园",
+          "咖啡店",
+          "办公室"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你刚才去哪儿了？"
+          ],
+          [
+            "女",
+            "我去锻炼了，刚回来。"
+          ]
+        ],
+        "q": "女的刚才去做什么了？",
+        "options": [
+          "锻炼",
+          "帮忙",
+          "买东西"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "这个题特别难，老师讲了两次我才明白。",
+        "claim": "他很快就明白了。",
+        "ok": false
+      },
+      {
+        "text": "我的眼镜突然找不到了，是妈妈帮我找到的。",
+        "claim": "妈妈帮他找到了眼镜。",
+        "ok": true
+      },
+      {
+        "text": "昨天晚上太热，我一点儿也睡不着。",
+        "claim": "他昨天睡得很好。",
+        "ok": false
+      },
+      {
+        "text": "他刚才离开了办公室，现在在公园里。",
+        "claim": "他不在办公室。",
+        "ok": true
+      }
+    ],
+    "replies": [
+      {
+        "q": "你能帮我一个忙吗？",
+        "a": "当然可以，什么忙？"
+      },
+      {
+        "q": "你的手机呢？",
+        "a": "刚才还在桌子上。"
+      },
+      {
+        "q": "这个字你看得清楚吗？",
+        "a": "我看不清楚，太小了。"
+      },
+      {
+        "q": "你喜欢什么音乐？",
+        "a": "我最喜欢中国音乐。"
+      }
+    ]
+  }
+}

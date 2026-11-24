@@ -1,0 +1,6506 @@
+[
+  {
+    "key": "g199ove2",
+    "type": "grammar",
+    "lesson": 1,
+    "q": "菜还没买___，我们再去一次超市吧。",
+    "options": [
+      "好",
+      "远",
+      "少",
+      "贵"
+    ],
+    "answer": "好",
+    "context": {
+      "point": "好 as a result",
+      "rule": "动词 + 好: the action is done and done well, so you are ready",
+      "en": "We haven't finished buying the food; let's go to the supermarket again."
+    },
+    "why": "Verb + 好 shows a job is done properly: 买好 means 'finished buying'.",
+    "not": {
+      "远": "远 means 'far' and cannot describe the result of buying.",
+      "少": "少 means 'few' and 买少 does not mean 'finished buying'.",
+      "贵": "贵 means 'expensive' and is not a result of buying."
+    }
+  },
+  {
+    "key": "g1m1kp8g",
+    "type": "grammar",
+    "lesson": 1,
+    "q": "明天的考试，我已经复习___了。",
+    "options": [
+      "好",
+      "多",
+      "高",
+      "冷"
+    ],
+    "answer": "好",
+    "context": {
+      "point": "好 as a result",
+      "rule": "动词 + 好: the action is done and done well, so you are ready",
+      "en": "I've already revised properly for tomorrow's exam."
+    },
+    "why": "Verb + 好 gives a done-properly result: 复习好了 means 'revised well'.",
+    "not": {
+      "多": "多 means 'many' and does not fit as a result after 复习.",
+      "高": "高 means 'tall/high' and cannot follow 复习.",
+      "冷": "冷 means 'cold' and cannot follow 复习."
+    }
+  },
+  {
+    "key": "gb95fdu",
+    "type": "grammar",
+    "lesson": 1,
+    "q": "电影票我昨天就买___了。",
+    "options": [
+      "好",
+      "长",
+      "慢",
+      "白"
+    ],
+    "answer": "好",
+    "context": {
+      "point": "好 as a result",
+      "rule": "动词 + 好: the action is done and done well, so you are ready",
+      "en": "I already bought the film tickets yesterday."
+    },
+    "why": "Verb + 好 means finished: 买好了 is 'bought it'.",
+    "not": {
+      "长": "长 means 'long' and does not describe buying.",
+      "慢": "慢 means 'slow' and does not give the result 'done'.",
+      "白": "白 means 'white' and has no link to buying."
+    }
+  },
+  {
+    "key": "g1j75ob4",
+    "type": "grammar",
+    "lesson": 1,
+    "q": "行李已经准备___，我们可以走了。",
+    "options": [
+      "好",
+      "有",
+      "是",
+      "在"
+    ],
+    "answer": "好",
+    "context": {
+      "point": "好 as a result",
+      "rule": "动词 + 好: the action is done and done well, so you are ready",
+      "en": "The luggage is all ready; we can go."
+    },
+    "why": "准备好 means 'all ready': 行李已经准备好.",
+    "not": {
+      "有": "有 means 'have' and is not a result complement.",
+      "是": "是 means 'be' and cannot follow a verb here.",
+      "在": "在 marks location, not the result of 准备."
+    }
+  },
+  {
+    "key": "gcldndm",
+    "type": "grammar",
+    "lesson": 1,
+    "q": "你的作业写___了吗？",
+    "options": [
+      "好",
+      "很",
+      "太",
+      "和"
+    ],
+    "answer": "好",
+    "context": {
+      "point": "好 as a result",
+      "rule": "动词 + 好: the action is done and done well, so you are ready",
+      "en": "Have you finished your homework properly?"
+    },
+    "why": "写好 means 'written properly/finished': 作业写好了吗?",
+    "not": {
+      "很": "很 is 'very' and cannot be a result after a verb.",
+      "太": "太 is 'too' and cannot be a result after 写.",
+      "和": "和 means 'and' and joins nouns, not a verb result."
+    }
+  },
+  {
+    "key": "g1s567q1",
+    "type": "grammar",
+    "lesson": 1,
+    "q": "我一个字___不认识。",
+    "options": [
+      "也",
+      "是",
+      "很",
+      "太"
+    ],
+    "answer": "也",
+    "context": {
+      "point": "一 … 也/都 + 不/没",
+      "rule": "一 + measure word + noun + 也/都 + 不/没 + verb: not even one, none at all",
+      "en": "I don't know a single character."
+    },
+    "why": "一 + measure word + 也 + 不 + verb means 'not even one': 一个字也不认识.",
+    "not": {
+      "是": "是 means 'be'; 一个字是不认识 does not give 'not a single'.",
+      "很": "很 means 'very' and cannot replace 也 in this pattern.",
+      "太": "太 means 'too' and cannot replace 也 in this pattern."
+    }
+  },
+  {
+    "key": "g1fpwqwz",
+    "type": "grammar",
+    "lesson": 1,
+    "q": "今天他一口饭___没吃。",
+    "options": [
+      "都",
+      "要",
+      "会",
+      "在"
+    ],
+    "answer": "都",
+    "context": {
+      "point": "一 … 也/都 + 不/没",
+      "rule": "一 + measure word + noun + 也/都 + 不/没 + verb: not even one, none at all",
+      "en": "He didn't eat a single mouthful today."
+    },
+    "why": "一口饭都没吃 means 'did not eat a single mouthful'; 都 pairs with 没.",
+    "not": {
+      "要": "要 means 'want', and 要没吃 is not possible.",
+      "会": "会 means 'can/will' and does not fit before 没吃.",
+      "在": "在 marks an action in progress and does not fit with 没吃."
+    }
+  },
+  {
+    "key": "guxxl43",
+    "type": "grammar",
+    "lesson": 1,
+    "q": "这件衣服一点儿也___贵。",
+    "options": [
+      "不",
+      "没",
+      "很",
+      "太"
+    ],
+    "answer": "不",
+    "context": {
+      "point": "一 … 也/都 + 不/没",
+      "rule": "一 + measure word + noun + 也/都 + 不/没 + verb: not even one, none at all",
+      "en": "This piece of clothing isn't expensive at all."
+    },
+    "why": "一点儿也不贵 means 'not expensive at all'; 不 negates the adjective 贵.",
+    "not": {
+      "没": "没 negates past events and 有, not an adjective like 贵.",
+      "很": "很 would turn it positive: 一点儿也很贵 is wrong.",
+      "太": "太 would turn it positive: 一点儿也太贵 is wrong."
+    }
+  },
+  {
+    "key": "g1ewwa2z",
+    "type": "grammar",
+    "lesson": 1,
+    "q": "我昨天一杯水也___喝。",
+    "options": [
+      "没",
+      "很",
+      "都",
+      "太"
+    ],
+    "answer": "没",
+    "context": {
+      "point": "一 … 也/都 + 不/没",
+      "rule": "一 + measure word + noun + 也/都 + 不/没 + verb: not even one, none at all",
+      "en": "I didn't drink a single glass of water yesterday."
+    },
+    "why": "一杯水也没喝 means 'did not drink a single glass'; 没 negates a past action.",
+    "not": {
+      "很": "很 means 'very' and cannot negate the verb.",
+      "都": "都 would give 也都喝, which is not this pattern.",
+      "太": "太 means 'too' and cannot negate the verb."
+    }
+  },
+  {
+    "key": "g1ut1ymg",
+    "type": "grammar",
+    "lesson": 1,
+    "q": "我今天一点儿钱也___，不能请你吃饭了。",
+    "options": [
+      "没有",
+      "不有",
+      "很有",
+      "都有"
+    ],
+    "answer": "没有",
+    "context": {
+      "point": "一 … 也/都 + 不/没",
+      "rule": "一 + measure word + noun + 也/都 + 不/没 + verb: not even one, none at all",
+      "en": "I have no money at all today, so I can't treat you to a meal."
+    },
+    "why": "一点儿钱也没有 means 'no money at all'; 没有 is the negation needed.",
+    "not": {
+      "不有": "不有 is not Chinese; the negative of 有 is 没有.",
+      "很有": "很有 would be positive: 'very much have'.",
+      "都有": "都有 means 'all have', the opposite meaning."
+    }
+  },
+  {
+    "key": "g1vfe8r",
+    "type": "grammar",
+    "lesson": 1,
+    "q": "A：我不想去商店。 B：___我们在家看电影吧。",
+    "options": [
+      "那",
+      "和",
+      "因为",
+      "虽然"
+    ],
+    "answer": "那",
+    "context": {
+      "point": "那 at the start",
+      "rule": "那 + result: “in that case…”, a conclusion from what was just said",
+      "en": "A: I don't want to go to the shop. B: Then let's watch a film at home."
+    },
+    "why": "那 at the start of a reply means 'then, in that case': 那我们在家看电影吧.",
+    "not": {
+      "和": "和 means 'and' and cannot begin a reply.",
+      "因为": "因为 gives a reason, but this reply is a suggestion that follows from B's words.",
+      "虽然": "虽然 means 'although' and needs a 但是 clause."
+    }
+  },
+  {
+    "key": "gam6qjw",
+    "type": "grammar",
+    "lesson": 1,
+    "q": "A：明天下雨。 B：___我们不去爬山了。",
+    "options": [
+      "那",
+      "和",
+      "太",
+      "还"
+    ],
+    "answer": "那",
+    "context": {
+      "point": "那 at the start",
+      "rule": "那 + result: “in that case…”, a conclusion from what was just said",
+      "en": "A: It will rain tomorrow. B: Then we won't go hiking."
+    },
+    "why": "那 means 'in that case': since it will rain, 那我们不去爬山了.",
+    "not": {
+      "和": "和 means 'and' and cannot open a sentence like this.",
+      "太": "太 is 'too' and needs an adjective after it.",
+      "还": "还 means 'still' and does not link to the previous statement."
+    }
+  },
+  {
+    "key": "g10abp07",
+    "type": "grammar",
+    "lesson": 1,
+    "q": "A：我今天很累。 B：___你早点儿休息吧。",
+    "options": [
+      "那",
+      "和",
+      "但",
+      "因为"
+    ],
+    "answer": "那",
+    "context": {
+      "point": "那 at the start",
+      "rule": "那 + result: “in that case…”, a conclusion from what was just said",
+      "en": "A: I'm tired today. B: Then get some rest early."
+    },
+    "why": "那 means 'in that case': since you're tired, 那你早点儿休息吧.",
+    "not": {
+      "和": "和 means 'and' and does not open a reply.",
+      "但": "但 means 'but' and contradicts the logic here.",
+      "因为": "因为 gives a reason, but this sentence is advice."
+    }
+  },
+  {
+    "key": "gurixx3",
+    "type": "grammar",
+    "lesson": 1,
+    "q": "A：这个太贵了。 B：___我们买那个便宜的吧。",
+    "options": [
+      "那",
+      "和",
+      "因为",
+      "虽然"
+    ],
+    "answer": "那",
+    "context": {
+      "point": "那 at the start",
+      "rule": "那 + result: “in that case…”, a conclusion from what was just said",
+      "en": "A: This one is too expensive. B: Then let's buy the cheaper one."
+    },
+    "why": "那 means 'in that case': since it's too expensive, 那我们买那个便宜的吧.",
+    "not": {
+      "和": "和 means 'and' and cannot open a reply.",
+      "因为": "因为 would give a reason without a result.",
+      "虽然": "虽然 means 'although' and needs 但是 later."
+    }
+  },
+  {
+    "key": "grlf6a1",
+    "type": "grammar",
+    "lesson": 1,
+    "q": "A：我已经吃过饭了。 B：___我们不用去饭馆了。",
+    "options": [
+      "那",
+      "和",
+      "但",
+      "还"
+    ],
+    "answer": "那",
+    "context": {
+      "point": "那 at the start",
+      "rule": "那 + result: “in that case…”, a conclusion from what was just said",
+      "en": "A: I've already eaten. B: Then we don't need to go to a restaurant."
+    },
+    "why": "那 means 'in that case': since you've eaten, 那我们不用去饭馆了.",
+    "not": {
+      "和": "和 means 'and' and cannot open a reply.",
+      "但": "但 means 'but' and does not fit a logical conclusion.",
+      "还": "还 means 'still' and does not link to the previous statement."
+    }
+  },
+  {
+    "key": "g148b0wp",
+    "type": "grammar",
+    "lesson": 2,
+    "q": "我在楼上等你，你快上___吧。",
+    "options": [
+      "来",
+      "去",
+      "过",
+      "回"
+    ],
+    "answer": "来",
+    "context": {
+      "point": "来 / 去 after a verb",
+      "rule": "V + 来 / 去: 来 = towards the speaker, 去 = away from the speaker; a place goes before 来/去",
+      "en": "I'm waiting upstairs. Come on up."
+    },
+    "why": "上来 means 'come up' toward the speaker, who is upstairs: 你快上来吧.",
+    "not": {
+      "去": "去 means 'go' away from the speaker, but the speaker is upstairs.",
+      "过": "过 marks experience or passing by, not direction here.",
+      "回": "回 means 'return', which is not about going upstairs."
+    }
+  },
+  {
+    "key": "gq2or14",
+    "type": "grammar",
+    "lesson": 2,
+    "q": "我现在在公司，下了班就回家___。",
+    "options": [
+      "去",
+      "来",
+      "在",
+      "把"
+    ],
+    "answer": "去",
+    "context": {
+      "point": "来 / 去 after a verb",
+      "rule": "V + 来 / 去: 来 = towards the speaker, 去 = away from the speaker; a place goes before 来/去",
+      "en": "I'm at the company now; after work I'll go home."
+    },
+    "why": "回家去 means 'go home' (away from the speaker at the company).",
+    "not": {
+      "来": "在 is a preposition and cannot end the clause after 回家.",
+      "在": "把 starts a 把 sentence and cannot end the clause.",
+      "把": "来 would mean coming toward the speaker, but the speaker is at the company."
+    }
+  },
+  {
+    "key": "g4tk85u",
+    "type": "grammar",
+    "lesson": 2,
+    "q": "我在办公室里，你在外边吧？我出___找你。",
+    "options": [
+      "去",
+      "来",
+      "回",
+      "过"
+    ],
+    "answer": "去",
+    "context": {
+      "point": "来 / 去 after a verb",
+      "rule": "V + 来 / 去: 来 = towards the speaker, 去 = away from the speaker; a place goes before 来/去",
+      "en": "I'm in the office and you're outside, right? I'll come out to find you."
+    },
+    "why": "出去 means 'go out' away from the speaker, who is in the office.",
+    "not": {
+      "来": "来 means 'come' toward the speaker, but the speaker stays inside.",
+      "回": "回 means 'return' and doesn't fit 出___找你.",
+      "过": "过 means 'cross/pass' and does not fit this direction."
+    }
+  },
+  {
+    "key": "g4b8c9p",
+    "type": "grammar",
+    "lesson": 2,
+    "q": "老师在教室里等你，我们在外边，你快进___吧。",
+    "options": [
+      "去",
+      "来",
+      "出",
+      "过"
+    ],
+    "answer": "去",
+    "context": {
+      "point": "来 / 去 after a verb",
+      "rule": "V + 来 / 去: 来 = towards the speaker, 去 = away from the speaker; a place goes before 来/去",
+      "en": "The teacher is waiting in the classroom and we're outside. Go in quickly."
+    },
+    "why": "进去 means 'go in', away from the speakers who are outside.",
+    "not": {
+      "来": "来 would mean coming toward the speakers, but they are outside.",
+      "出": "出 means 'out', the opposite of going in.",
+      "过": "过 means 'cross/pass' and does not fit 进___吧."
+    }
+  },
+  {
+    "key": "g7otv5k",
+    "type": "grammar",
+    "lesson": 2,
+    "q": "妈妈进___来叫我吃饭了。",
+    "options": [
+      "房间",
+      "汉语",
+      "面包",
+      "休息"
+    ],
+    "answer": "房间",
+    "context": {
+      "point": "来 / 去 after a verb",
+      "rule": "V + 来 / 去: 来 = towards the speaker, 去 = away from the speaker; a place goes before 来/去",
+      "en": "Mum came into the room to call me for dinner."
+    },
+    "why": "进房间来 puts the place 房间 between 进 and 来: 妈妈进房间来.",
+    "not": {
+      "汉语": "汉语 is a language, not a place you can enter.",
+      "面包": "面包 means 'bread', not a place to enter.",
+      "休息": "休息 is a verb and cannot follow 进 as a place."
+    }
+  },
+  {
+    "key": "gncfsgo",
+    "type": "grammar",
+    "lesson": 2,
+    "q": "他下了课___去图书馆。",
+    "options": [
+      "就",
+      "要",
+      "和",
+      "太"
+    ],
+    "answer": "就",
+    "context": {
+      "point": "V1 了 … 就 V2",
+      "rule": "V1 了 + (subject) + 就 + V2: the second action follows right after the first",
+      "en": "As soon as he finishes class he goes to the library."
+    },
+    "why": "V1 了 ... 就 V2: after finishing class, he goes at once. 下了课就去.",
+    "not": {
+      "要": "要 means 'want' and does not show one action right after another.",
+      "和": "和 means 'and' and joins nouns, not actions.",
+      "太": "太 means 'too' and needs an adjective."
+    }
+  },
+  {
+    "key": "g1e3uezp",
+    "type": "grammar",
+    "lesson": 2,
+    "q": "妈妈回了家___做饭。",
+    "options": [
+      "就",
+      "很",
+      "和",
+      "不"
+    ],
+    "answer": "就",
+    "context": {
+      "point": "V1 了 … 就 V2",
+      "rule": "V1 了 + (subject) + 就 + V2: the second action follows right after the first",
+      "en": "As soon as mum gets home she cooks."
+    },
+    "why": "V1 了 ... 就 V2: 回了家就做饭 means 'cooks as soon as she gets home'.",
+    "not": {
+      "很": "很 means 'very' and does not link two actions.",
+      "和": "和 means 'and' and joins nouns.",
+      "不": "不 negates a verb and does not link actions in time."
+    }
+  },
+  {
+    "key": "glr5cxz",
+    "type": "grammar",
+    "lesson": 2,
+    "q": "我吃___饭就去睡觉。",
+    "options": [
+      "了",
+      "的",
+      "得",
+      "吗"
+    ],
+    "answer": "了",
+    "context": {
+      "point": "V1 了 … 就 V2",
+      "rule": "V1 了 + (subject) + 就 + V2: the second action follows right after the first",
+      "en": "I'll go to sleep right after I eat."
+    },
+    "why": "V1 了 + object + 就 V2: 吃了饭就去睡觉 means 'right after eating'.",
+    "not": {
+      "的": "的 marks possession, not completion.",
+      "得": "得 links a verb to a complement of degree, not completion.",
+      "吗": "吗 makes a question, but this is a statement."
+    }
+  },
+  {
+    "key": "gvg2gnn",
+    "type": "grammar",
+    "lesson": 2,
+    "q": "你到了机场我___去接你。",
+    "options": [
+      "就",
+      "很",
+      "太",
+      "不"
+    ],
+    "answer": "就",
+    "context": {
+      "point": "V1 了 … 就 V2",
+      "rule": "V1 了 + (subject) + 就 + V2: the second action follows right after the first",
+      "en": "As soon as you get to the airport I'll come and pick you up."
+    },
+    "why": "到了 ... 就: when you arrive, I'll pick you up at once; 就 links the two actions.",
+    "not": {
+      "很": "很 means 'very' and does not link two actions.",
+      "太": "太 means 'too' and needs an adjective.",
+      "不": "不 would negate 去接你, which changes the meaning."
+    }
+  },
+  {
+    "key": "g1k59pf6",
+    "type": "grammar",
+    "lesson": 2,
+    "q": "爸爸回了家，我们___吃饭。",
+    "options": [
+      "就",
+      "太",
+      "把",
+      "很"
+    ],
+    "answer": "就",
+    "context": {
+      "point": "V1 了 … 就 V2",
+      "rule": "V1 了 + (subject) + 就 + V2: the second action follows right after the first",
+      "en": "As soon as dad gets home, we'll eat."
+    },
+    "why": "V1 了 ... 就 V2: after dad gets home, we eat right away.",
+    "not": {
+      "太": "太 means 'too' and cannot link two actions.",
+      "把": "把 begins an object phrase and does not link time.",
+      "很": "很 means 'very' and does not link two actions."
+    }
+  },
+  {
+    "key": "go6cgge",
+    "type": "grammar",
+    "lesson": 2,
+    "q": "你天天不运动，___不胖吗？",
+    "options": [
+      "能",
+      "对",
+      "把",
+      "为"
+    ],
+    "answer": "能",
+    "context": {
+      "point": "能……吗 as a rhetorical question",
+      "rule": "能 + positive + 吗 means “no way”; 能 + negative + 吗 means “of course”",
+      "en": "You never exercise; how could you not get fat?"
+    },
+    "why": "能 + 不 + adjective + 吗 is a rhetorical question: 能不胖吗? means 'how could you not get fat?'",
+    "not": {
+      "对": "对 means 'toward/correct' and does not form this question.",
+      "把": "把 begins a 把 sentence and cannot precede 不胖.",
+      "为": "为 needs a pattern like 为什么 and does not mean 'can' here."
+    }
+  },
+  {
+    "key": "gltehyl",
+    "type": "grammar",
+    "lesson": 2,
+    "q": "这么难的题，我___做对吗？",
+    "options": [
+      "能",
+      "把",
+      "对",
+      "在"
+    ],
+    "answer": "能",
+    "context": {
+      "point": "能……吗 as a rhetorical question",
+      "rule": "能 + positive + 吗 means “no way”; 能 + negative + 吗 means “of course”",
+      "en": "Such a hard question; how could I get it right?"
+    },
+    "why": "能 ... 吗 asks 'how could I?' as a rhetorical question: 我能做对吗?",
+    "not": {
+      "把": "把 begins a 把 sentence and does not fit before 做对.",
+      "对": "对 means 'toward/correct' and does not mean 'can'.",
+      "在": "在 marks location or an ongoing action, not ability."
+    }
+  },
+  {
+    "key": "g1y5scl2",
+    "type": "grammar",
+    "lesson": 2,
+    "q": "天这么冷，你___不穿衣服吗？",
+    "options": [
+      "能",
+      "在",
+      "把",
+      "和"
+    ],
+    "answer": "能",
+    "context": {
+      "point": "能……吗 as a rhetorical question",
+      "rule": "能 + positive + 吗 means “no way”; 能 + negative + 吗 means “of course”",
+      "en": "It's so cold; could you really go without clothes?"
+    },
+    "why": "能不穿衣服吗 is a rhetorical question: 'can you really go without clothes?'",
+    "not": {
+      "在": "在 marks an ongoing action, but this needs the modal 能.",
+      "把": "把 begins a 把 sentence and does not take 不穿.",
+      "和": "和 means 'and' and cannot be a modal verb."
+    }
+  },
+  {
+    "key": "g1yogktf",
+    "type": "grammar",
+    "lesson": 2,
+    "q": "你一直玩游戏，作业___写完吗？",
+    "options": [
+      "能",
+      "对",
+      "在",
+      "把"
+    ],
+    "answer": "能",
+    "context": {
+      "point": "能……吗 as a rhetorical question",
+      "rule": "能 + positive + 吗 means “no way”; 能 + negative + 吗 means “of course”",
+      "en": "You keep playing games; how could the homework get finished?"
+    },
+    "why": "能 + 写完 + 吗 is a rhetorical question: 作业能写完吗? means 'how could it get done?'",
+    "not": {
+      "对": "对 means 'toward/correct' and does not fit before 写完.",
+      "在": "在 marks an ongoing action and does not give this meaning.",
+      "把": "把 begins a 把 sentence and does not fit before 写完."
+    }
+  },
+  {
+    "key": "gt6samn",
+    "type": "grammar",
+    "lesson": 2,
+    "q": "他每天都复习，考试___不好吗？",
+    "options": [
+      "能",
+      "对",
+      "把",
+      "向"
+    ],
+    "answer": "能",
+    "context": {
+      "point": "能……吗 as a rhetorical question",
+      "rule": "能 + positive + 吗 means “no way”; 能 + negative + 吗 means “of course”",
+      "en": "He revises every day; of course the exam will go well."
+    },
+    "why": "能不好吗 is a rhetorical question meaning 'of course it will be good'.",
+    "not": {
+      "对": "对 means 'toward/correct' and does not form this question.",
+      "把": "把 begins a 把 sentence and cannot precede 不好.",
+      "向": "向 means 'toward' and needs a direction."
+    }
+  },
+  {
+    "key": "g1r6b1wy",
+    "type": "grammar",
+    "lesson": 3,
+    "q": "你想喝茶___喝咖啡？",
+    "options": [
+      "还是",
+      "或者",
+      "因为",
+      "但是"
+    ],
+    "answer": "还是",
+    "context": {
+      "point": "还是 and 或者",
+      "rule": "还是 for choices in questions (and inside “I don't know whether…” clauses); 或者 for choices in statements",
+      "en": "Do you want tea or coffee?"
+    },
+    "why": "还是 offers a choice in a question: 茶还是咖啡?",
+    "not": {
+      "或者": "或者 is used in statements, not in questions asking for a choice.",
+      "因为": "因为 means 'because' and does not offer a choice.",
+      "但是": "但是 means 'but' and does not offer a choice."
+    }
+  },
+  {
+    "key": "g1o9nuwv",
+    "type": "grammar",
+    "lesson": 3,
+    "q": "你可以坐公共汽车___坐地铁去。",
+    "options": [
+      "或者",
+      "但是",
+      "因为",
+      "所以"
+    ],
+    "answer": "或者",
+    "context": {
+      "point": "还是 and 或者",
+      "rule": "还是 for choices in questions (and inside “I don't know whether…” clauses); 或者 for choices in statements",
+      "en": "You can go by bus or by metro."
+    },
+    "why": "或者 offers alternatives in a statement: 坐公共汽车或者坐地铁.",
+    "not": {
+      "但是": "但是 means 'but' and contrasts rather than offers a choice.",
+      "因为": "因为 means 'because' and gives a reason.",
+      "所以": "所以 means 'so' and gives a result."
+    }
+  },
+  {
+    "key": "g104hcs6",
+    "type": "grammar",
+    "lesson": 3,
+    "q": "我还没想好明天去爬山___去游泳。",
+    "options": [
+      "还是",
+      "或者",
+      "因为",
+      "但是"
+    ],
+    "answer": "还是",
+    "context": {
+      "point": "还是 and 或者",
+      "rule": "还是 for choices in questions (and inside “I don't know whether…” clauses); 或者 for choices in statements",
+      "en": "I haven't decided whether to go hiking or swimming tomorrow."
+    },
+    "why": "还是 offers a choice that is not decided yet: 爬山还是游泳.",
+    "not": {
+      "或者": "或者 is for statements, but 没想好 leaves an open choice between two options.",
+      "因为": "因为 means 'because' and does not offer a choice.",
+      "但是": "但是 means 'but' and contrasts rather than offers a choice."
+    }
+  },
+  {
+    "key": "gyzc8rb",
+    "type": "grammar",
+    "lesson": 3,
+    "q": "他是你哥哥___你弟弟？",
+    "options": [
+      "还是",
+      "或者",
+      "和",
+      "但是"
+    ],
+    "answer": "还是",
+    "context": {
+      "point": "还是 and 或者",
+      "rule": "还是 for choices in questions (and inside “I don't know whether…” clauses); 或者 for choices in statements",
+      "en": "Is he your older brother or your younger brother?"
+    },
+    "why": "还是 joins two options in a question: 哥哥还是弟弟?",
+    "not": {
+      "或者": "或者 is used in statements, not in this question.",
+      "和": "和 joins things together, but a choice needs 还是.",
+      "但是": "但是 means 'but' and does not offer a choice."
+    }
+  },
+  {
+    "key": "gbd91s8",
+    "type": "grammar",
+    "lesson": 3,
+    "q": "我想吃面包___米饭，都可以。",
+    "options": [
+      "或者",
+      "但是",
+      "因为",
+      "所以"
+    ],
+    "answer": "或者",
+    "context": {
+      "point": "还是 and 或者",
+      "rule": "还是 for choices in questions (and inside “I don't know whether…” clauses); 或者 for choices in statements",
+      "en": "I'd like bread or rice; either is fine."
+    },
+    "why": "或者 means 'or' in a statement: 面包或者米饭, either is fine.",
+    "not": {
+      "但是": "但是 means 'but' and contrasts instead of giving a choice.",
+      "因为": "因为 means 'because' and gives a reason.",
+      "所以": "所以 means 'so' and gives a result."
+    }
+  },
+  {
+    "key": "gjkz98w",
+    "type": "grammar",
+    "lesson": 3,
+    "q": "冰箱里放___很多鸡蛋。",
+    "options": [
+      "着",
+      "在",
+      "把",
+      "给"
+    ],
+    "answer": "着",
+    "context": {
+      "point": "Place + V着 + something",
+      "rule": "Location + 放/住/写/坐 + 着 + indefinite noun: there is something somewhere; negative: 没 + V着",
+      "en": "There are lots of eggs in the fridge."
+    },
+    "why": "Place + V着 + something describes what is there: 冰箱里放着很多鸡蛋.",
+    "not": {
+      "在": "在 marks location, and 放在 would need a place after it.",
+      "把": "把 begins a 把 sentence and does not fit here.",
+      "给": "给 means 'give' and does not describe a state."
+    }
+  },
+  {
+    "key": "gkwq7g1",
+    "type": "grammar",
+    "lesson": 3,
+    "q": "床上___着一只小猫。",
+    "options": [
+      "睡",
+      "吃",
+      "买",
+      "看"
+    ],
+    "answer": "睡",
+    "context": {
+      "point": "Place + V着 + something",
+      "rule": "Location + 放/住/写/坐 + 着 + indefinite noun: there is something somewhere; negative: 没 + V着",
+      "en": "A kitten is sleeping on the bed."
+    },
+    "why": "Place + V着 + something: a kitten is sleeping there. 床上睡着一只小猫.",
+    "not": {
+      "吃": "吃着 would need food as the thing; a kitten isn't being eaten on the bed.",
+      "买": "买 means 'buy' and does not describe a state with 着.",
+      "看": "看着 would not describe a kitten lying on the bed."
+    }
+  },
+  {
+    "key": "g1323tpp",
+    "type": "grammar",
+    "lesson": 3,
+    "q": "教室里坐___很多学生。",
+    "options": [
+      "着",
+      "在",
+      "把",
+      "对"
+    ],
+    "answer": "着",
+    "context": {
+      "point": "Place + V着 + something",
+      "rule": "Location + 放/住/写/坐 + 着 + indefinite noun: there is something somewhere; negative: 没 + V着",
+      "en": "Many students are sitting in the classroom."
+    },
+    "why": "Place + V着 + something: 教室里坐着很多学生.",
+    "not": {
+      "在": "在 marks location, and 坐在 would need a place after it.",
+      "把": "把 begins a 把 sentence and does not fit here.",
+      "对": "对 means 'toward/correct' and does not mark a state."
+    }
+  },
+  {
+    "key": "g2gj455",
+    "type": "grammar",
+    "lesson": 3,
+    "q": "我家旁边住着___医生。",
+    "options": [
+      "一个",
+      "这个",
+      "那个",
+      "是"
+    ],
+    "answer": "一个",
+    "context": {
+      "point": "Place + V着 + something",
+      "rule": "Location + 放/住/写/坐 + 着 + indefinite noun: there is something somewhere; negative: 没 + V着",
+      "en": "A doctor lives next door to me."
+    },
+    "why": "住着一个医生: a doctor lives there. 一个 introduces a new person.",
+    "not": {
+      "这个": "这个 means 'this' and points to a known person, but this introduces someone new.",
+      "那个": "那个 means 'that' and points to a known person, not a new one.",
+      "是": "是 means 'be' and 住着是医生 does not work."
+    }
+  },
+  {
+    "key": "gq5udhk",
+    "type": "grammar",
+    "lesson": 3,
+    "q": "书包里没___书。",
+    "options": [
+      "放着",
+      "放了",
+      "着放",
+      "放在"
+    ],
+    "answer": "放着",
+    "context": {
+      "point": "Place + V着 + something",
+      "rule": "Location + 放/住/写/坐 + 着 + indefinite noun: there is something somewhere; negative: 没 + V着",
+      "en": "There are no books in the schoolbag."
+    },
+    "why": "没放着书 is the negative of 放着 (a state): 书包里没放着书.",
+    "not": {
+      "放了": "放了 is for a finished action, and 没放了 is wrong.",
+      "着放": "着放 has the wrong word order.",
+      "放在": "放在 needs a place after it, not 书."
+    }
+  },
+  {
+    "key": "g1jowggf",
+    "type": "grammar",
+    "lesson": 3,
+    "q": "你穿这么少，___感冒的。",
+    "options": [
+      "会",
+      "在",
+      "把",
+      "对"
+    ],
+    "answer": "会",
+    "context": {
+      "point": "会 for possibility",
+      "rule": "会 + verb (+ 的): something is likely to happen",
+      "en": "You're wearing so little; you'll catch a cold."
+    },
+    "why": "会 shows something likely to happen: 你会感冒的.",
+    "not": {
+      "在": "在 marks an ongoing action and does not show a possibility.",
+      "把": "把 begins a 把 sentence and does not fit before 感冒.",
+      "对": "对 means 'toward/correct' and does not show a possibility."
+    }
+  },
+  {
+    "key": "gfuudoi",
+    "type": "grammar",
+    "lesson": 3,
+    "q": "别着急，他很快就___来的。",
+    "options": [
+      "会",
+      "在",
+      "把",
+      "让"
+    ],
+    "answer": "会",
+    "context": {
+      "point": "会 for possibility",
+      "rule": "会 + verb (+ 的): something is likely to happen",
+      "en": "Don't worry; he'll be here soon."
+    },
+    "why": "会 ... 的 shows a prediction: 他很快就会来的.",
+    "not": {
+      "在": "在 marks an ongoing action, but he hasn't arrived yet.",
+      "把": "把 begins a 把 sentence and does not fit here.",
+      "让": "让 means 'let/make' and needs a person after it."
+    }
+  },
+  {
+    "key": "gmdvkm",
+    "type": "grammar",
+    "lesson": 3,
+    "q": "坐在这把椅子上___很舒服的。",
+    "options": [
+      "会",
+      "在",
+      "把",
+      "对"
+    ],
+    "answer": "会",
+    "context": {
+      "point": "会 for possibility",
+      "rule": "会 + verb (+ 的): something is likely to happen",
+      "en": "You'll be comfortable sitting in this chair."
+    },
+    "why": "会 ... 的 expresses a prediction: 你会很舒服的.",
+    "not": {
+      "在": "在 marks an ongoing action and does not predict.",
+      "把": "把 begins a 把 sentence and does not fit before 很舒服.",
+      "对": "对 means 'toward/correct' and does not predict."
+    }
+  },
+  {
+    "key": "gnin9zk",
+    "type": "grammar",
+    "lesson": 3,
+    "q": "你不早点儿睡觉，明天___很累的。",
+    "options": [
+      "会",
+      "把",
+      "对",
+      "给"
+    ],
+    "answer": "会",
+    "context": {
+      "point": "会 for possibility",
+      "rule": "会 + verb (+ 的): something is likely to happen",
+      "en": "If you don't sleep early, you'll be tired tomorrow."
+    },
+    "why": "会 ... 的 expresses a prediction: 明天会很累的.",
+    "not": {
+      "把": "把 begins a 把 sentence and does not fit before 很累.",
+      "对": "对 means 'toward/correct' and does not predict.",
+      "给": "给 means 'give' and does not predict."
+    }
+  },
+  {
+    "key": "g3t41f8",
+    "type": "grammar",
+    "lesson": 3,
+    "q": "天气预报说明天___下雪。",
+    "options": [
+      "会",
+      "把",
+      "对",
+      "给"
+    ],
+    "answer": "会",
+    "context": {
+      "point": "会 for possibility",
+      "rule": "会 + verb (+ 的): something is likely to happen",
+      "en": "The forecast says it will snow tomorrow."
+    },
+    "why": "会 + verb says what will happen: 明天会下雪.",
+    "not": {
+      "把": "把 begins a 把 sentence and does not fit before 下雪.",
+      "对": "对 means 'toward/correct' and does not mean 'will'.",
+      "给": "给 means 'give' and does not mean 'will'."
+    }
+  },
+  {
+    "key": "g1c0iiyd",
+    "type": "grammar",
+    "lesson": 4,
+    "q": "这个苹果又红___甜。",
+    "options": [
+      "又",
+      "也",
+      "很",
+      "太"
+    ],
+    "answer": "又",
+    "context": {
+      "point": "又……又……",
+      "rule": "又 + adjective + 又 + adjective: both … and … (two qualities at once)",
+      "en": "This apple is both red and sweet."
+    },
+    "why": "又……又…… joins two qualities: 又红又甜.",
+    "not": {
+      "也": "也 means 'also' and does not form the 又A又B pattern.",
+      "很": "很 means 'very' and does not link two adjectives.",
+      "太": "太 means 'too' and cannot link two adjectives."
+    }
+  },
+  {
+    "key": "g1n74cgi",
+    "type": "grammar",
+    "lesson": 4,
+    "q": "这家饭馆的菜又多___好吃。",
+    "options": [
+      "又",
+      "就",
+      "太",
+      "才"
+    ],
+    "answer": "又",
+    "context": {
+      "point": "又……又……",
+      "rule": "又 + adjective + 又 + adjective: both … and … (two qualities at once)",
+      "en": "The dishes in this restaurant are both generous and tasty."
+    },
+    "why": "又……又…… joins two qualities: 又多又好吃.",
+    "not": {
+      "就": "就 means 'then/just' and does not link two adjectives.",
+      "太": "太 means 'too' and cannot link two adjectives.",
+      "才": "才 means 'only then' and does not link two adjectives."
+    }
+  },
+  {
+    "key": "g63wlno",
+    "type": "grammar",
+    "lesson": 4,
+    "q": "小明又聪明___努力，老师很喜欢他。",
+    "options": [
+      "又",
+      "和",
+      "但是",
+      "因为"
+    ],
+    "answer": "又",
+    "context": {
+      "point": "又……又……",
+      "rule": "又 + adjective + 又 + adjective: both … and … (two qualities at once)",
+      "en": "Xiaoming is both clever and hard-working; the teacher likes him a lot."
+    },
+    "why": "又……又…… joins two qualities of one person: 又聪明又努力.",
+    "not": {
+      "和": "和 means 'and' but this pattern needs 又 before each adjective.",
+      "但是": "但是 means 'but' and contrasts instead of adding.",
+      "因为": "因为 means 'because' and does not link two adjectives."
+    }
+  },
+  {
+    "key": "g1ioi5vo",
+    "type": "grammar",
+    "lesson": 4,
+    "q": "他做饭做得又快___好。",
+    "options": [
+      "又",
+      "和",
+      "很",
+      "太"
+    ],
+    "answer": "又",
+    "context": {
+      "point": "又……又……",
+      "rule": "又 + adjective + 又 + adjective: both … and … (two qualities at once)",
+      "en": "He cooks both fast and well."
+    },
+    "why": "又……又…… joins two qualities: 又快又好.",
+    "not": {
+      "和": "和 means 'and' but 又快和好 is not the pattern.",
+      "很": "很 means 'very' and does not link two adjectives.",
+      "太": "太 means 'too' and does not link two adjectives."
+    }
+  },
+  {
+    "key": "g5573a7",
+    "type": "grammar",
+    "lesson": 4,
+    "q": "外边又黑___冷，我们别出去了。",
+    "options": [
+      "又",
+      "和",
+      "就",
+      "太"
+    ],
+    "answer": "又",
+    "context": {
+      "point": "又……又……",
+      "rule": "又 + adjective + 又 + adjective: both … and … (two qualities at once)",
+      "en": "It's both dark and cold outside; let's not go out."
+    },
+    "why": "又……又…… joins two qualities: 又黑又冷.",
+    "not": {
+      "和": "和 means 'and' but 又黑和冷 is not the pattern.",
+      "就": "就 means 'then/just' and does not link two adjectives.",
+      "太": "太 means 'too' and does not link two adjectives."
+    }
+  },
+  {
+    "key": "ghcerky",
+    "type": "grammar",
+    "lesson": 4,
+    "q": "这个孩子又___又聪明。",
+    "options": [
+      "努力",
+      "太",
+      "很",
+      "都"
+    ],
+    "answer": "努力",
+    "context": {
+      "point": "又……又……",
+      "rule": "又 + adjective + 又 + adjective: both … and … (two qualities at once)",
+      "en": "This child is both hard-working and clever."
+    },
+    "why": "又……又…… joins two qualities of the same kind: 又努力又聪明.",
+    "not": {
+      "太": "太 means 'too' and does not fit the 又A又B pattern.",
+      "很": "很 means 'very' and does not fit the 又A又B pattern.",
+      "都": "都 means 'all' and does not fit the 又A又B pattern."
+    }
+  },
+  {
+    "key": "g1fjadyn",
+    "type": "grammar",
+    "lesson": 4,
+    "q": "爷爷笑___看我们踢足球。",
+    "options": [
+      "着",
+      "了",
+      "过",
+      "得"
+    ],
+    "answer": "着",
+    "context": {
+      "point": "V着 + V2",
+      "rule": "V1着 (+ object) + V2: V1 is the manner or state in which V2 happens",
+      "en": "Grandpa watches us play football with a smile."
+    },
+    "why": "V着 + V2 means doing the second action while keeping the first: 笑着看.",
+    "not": {
+      "了": "了 shows completion, not an action that continues alongside another.",
+      "过": "过 shows past experience, not simultaneous actions.",
+      "得": "得 introduces a complement of degree, not a second action."
+    }
+  },
+  {
+    "key": "gpzxfmz",
+    "type": "grammar",
+    "lesson": 4,
+    "q": "妹妹喝___牛奶看电视。",
+    "options": [
+      "着",
+      "过",
+      "在",
+      "把"
+    ],
+    "answer": "着",
+    "context": {
+      "point": "V着 + V2",
+      "rule": "V1着 (+ object) + V2: V1 is the manner or state in which V2 happens",
+      "en": "My younger sister watches TV while drinking milk."
+    },
+    "why": "V着 + V2 means doing one action while keeping the other: 喝着牛奶看电视.",
+    "not": {
+      "过": "过 shows past experience, not simultaneous actions.",
+      "在": "在 would need 在喝, not 喝在.",
+      "把": "把 begins a 把 sentence and does not fit here."
+    }
+  },
+  {
+    "key": "gcvq5bw",
+    "type": "grammar",
+    "lesson": 4,
+    "q": "我们站___等公共汽车。",
+    "options": [
+      "着",
+      "过",
+      "得",
+      "吗"
+    ],
+    "answer": "着",
+    "context": {
+      "point": "V着 + V2",
+      "rule": "V1着 (+ object) + V2: V1 is the manner or state in which V2 happens",
+      "en": "We're standing and waiting for the bus."
+    },
+    "why": "V着 + V2: 站着等 means 'wait while standing'.",
+    "not": {
+      "过": "过 shows past experience, not a state kept going.",
+      "得": "得 introduces a complement of degree.",
+      "吗": "吗 makes a question, but this is a statement."
+    }
+  },
+  {
+    "key": "g5omwuy",
+    "type": "grammar",
+    "lesson": 4,
+    "q": "他喜欢坐___看电视。",
+    "options": [
+      "着",
+      "了",
+      "过",
+      "得"
+    ],
+    "answer": "着",
+    "context": {
+      "point": "V着 + V2",
+      "rule": "V1着 (+ object) + V2: V1 is the manner or state in which V2 happens",
+      "en": "He likes watching TV sitting down."
+    },
+    "why": "V着 + V2: 坐着看电视 means 'watch TV sitting'.",
+    "not": {
+      "了": "了 shows completion, not a state kept going.",
+      "过": "过 shows past experience.",
+      "得": "得 introduces a complement of degree."
+    }
+  },
+  {
+    "key": "glgarem",
+    "type": "grammar",
+    "lesson": 4,
+    "q": "小明听___音乐做作业。",
+    "options": [
+      "着",
+      "过",
+      "得",
+      "在"
+    ],
+    "answer": "着",
+    "context": {
+      "point": "V着 + V2",
+      "rule": "V1着 (+ object) + V2: V1 is the manner or state in which V2 happens",
+      "en": "Xiaoming does homework listening to music."
+    },
+    "why": "V着 + V2: 听着音乐做作业 means 'do homework while listening'.",
+    "not": {
+      "过": "过 shows past experience, not simultaneous actions.",
+      "得": "得 introduces a complement of degree.",
+      "在": "在 would need 在听, not 听在."
+    }
+  },
+  {
+    "key": "g11qz9xt",
+    "type": "grammar",
+    "lesson": 4,
+    "q": "我们没有坐，我们___聊天儿。",
+    "options": [
+      "站着",
+      "坐着",
+      "睡着",
+      "住着"
+    ],
+    "answer": "站着",
+    "context": {
+      "point": "V着 + V2",
+      "rule": "V1着 (+ object) + V2: V1 is the manner or state in which V2 happens",
+      "en": "We didn't sit; we chatted standing up."
+    },
+    "why": "站着聊天儿 means 'chat while standing', since they didn't sit.",
+    "not": {
+      "坐着": "坐着 means 'sitting', which contradicts 'we didn't sit'.",
+      "睡着": "睡着 means 'fell asleep', which does not fit chatting.",
+      "住着": "住着 means 'living in', which does not fit chatting."
+    }
+  },
+  {
+    "key": "g1jvy14i",
+    "type": "grammar",
+    "lesson": 5,
+    "q": "上个星期他很忙，这个星期不忙___。",
+    "options": [
+      "了",
+      "过",
+      "着",
+      "吗"
+    ],
+    "answer": "了",
+    "context": {
+      "point": "了 for a change",
+      "rule": "sentence-final 了 shows a new situation or a change from before",
+      "en": "He was busy last week, but this week he isn't any more."
+    },
+    "why": "Sentence-final 了 shows a change in situation: 不忙了 means 'no longer busy'.",
+    "not": {
+      "过": "过 shows past experience, not a change of state.",
+      "着": "着 shows an ongoing state, not a change.",
+      "吗": "吗 makes a question, but this is a statement."
+    }
+  },
+  {
+    "key": "g3rs48i",
+    "type": "grammar",
+    "lesson": 5,
+    "q": "我以前不喜欢吃辣的，现在喜欢___。",
+    "options": [
+      "了",
+      "过",
+      "着",
+      "得"
+    ],
+    "answer": "了",
+    "context": {
+      "point": "了 for a change",
+      "rule": "sentence-final 了 shows a new situation or a change from before",
+      "en": "I didn't use to like spicy food, but now I do."
+    },
+    "why": "Sentence-final 了 shows a change: 现在喜欢了 means 'now I like it'.",
+    "not": {
+      "过": "过 shows past experience, not a change.",
+      "着": "着 shows an ongoing state, not a change.",
+      "得": "得 introduces a complement of degree."
+    }
+  },
+  {
+    "key": "g1wvh89j",
+    "type": "grammar",
+    "lesson": 5,
+    "q": "他以前不会游泳，现在会游泳___。",
+    "options": [
+      "了",
+      "过",
+      "着",
+      "得"
+    ],
+    "answer": "了",
+    "context": {
+      "point": "了 for a change",
+      "rule": "sentence-final 了 shows a new situation or a change from before",
+      "en": "He couldn't swim before; now he can."
+    },
+    "why": "Sentence-final 了 shows a change: 会游泳了 means 'can swim now'.",
+    "not": {
+      "过": "过 shows past experience, not a new ability.",
+      "着": "着 shows an ongoing state, not a change.",
+      "得": "得 introduces a complement of degree."
+    }
+  },
+  {
+    "key": "gt8ykrn",
+    "type": "grammar",
+    "lesson": 5,
+    "q": "春天到___，花开了。",
+    "options": [
+      "了",
+      "过",
+      "着",
+      "得"
+    ],
+    "answer": "了",
+    "context": {
+      "point": "了 for a change",
+      "rule": "sentence-final 了 shows a new situation or a change from before",
+      "en": "Spring has arrived and the flowers are out."
+    },
+    "why": "Sentence-final 了 shows a change: 春天到了 means 'spring has come'.",
+    "not": {
+      "过": "过 shows past experience, not a new situation.",
+      "着": "着 shows an ongoing state, not an arrival.",
+      "得": "得 introduces a complement of degree."
+    }
+  },
+  {
+    "key": "g1jumsya",
+    "type": "grammar",
+    "lesson": 5,
+    "q": "我现在不发烧___，可以去上班。",
+    "options": [
+      "了",
+      "吗",
+      "着",
+      "过"
+    ],
+    "answer": "了",
+    "context": {
+      "point": "了 for a change",
+      "rule": "sentence-final 了 shows a new situation or a change from before",
+      "en": "I don't have a fever any more; I can go to work."
+    },
+    "why": "不发烧了 means 'no longer feverish'; 了 marks the change.",
+    "not": {
+      "吗": "吗 makes a question, but this is a statement.",
+      "着": "着 shows an ongoing state, not a change.",
+      "过": "过 shows past experience, not a change."
+    }
+  },
+  {
+    "key": "g1dug6os",
+    "type": "grammar",
+    "lesson": 5,
+    "q": "昨天我很累，今天不累___。",
+    "options": [
+      "了",
+      "过",
+      "着",
+      "得"
+    ],
+    "answer": "了",
+    "context": {
+      "point": "了 for a change",
+      "rule": "sentence-final 了 shows a new situation or a change from before",
+      "en": "I was tired yesterday; today I'm not tired any more."
+    },
+    "why": "不累了 means 'no longer tired'; 了 marks the change from yesterday.",
+    "not": {
+      "过": "过 shows past experience, not a change.",
+      "着": "得 introduces a complement of degree.",
+      "得": "着 shows an ongoing state, not a change."
+    }
+  },
+  {
+    "key": "g1uty6qu",
+    "type": "grammar",
+    "lesson": 5,
+    "q": "天气越来越___，快穿上外套吧。",
+    "options": [
+      "冷",
+      "很冷",
+      "太冷",
+      "非常冷"
+    ],
+    "answer": "冷",
+    "context": {
+      "point": "越来越 + adjective",
+      "rule": "越来越 + adj / mental verb: more and more; no 很/非常/太 after it",
+      "en": "The weather is getting colder and colder; put your coat on."
+    },
+    "why": "越来越 + adjective: 越来越冷 means 'colder and colder'.",
+    "not": {
+      "很冷": "很冷 adds a degree word that 越来越 doesn't take.",
+      "太冷": "太冷 adds a degree word that 越来越 doesn't take.",
+      "非常冷": "非常冷 adds a degree word that 越来越 doesn't take."
+    }
+  },
+  {
+    "key": "gwfbtt9",
+    "type": "grammar",
+    "lesson": 5,
+    "q": "我越来越___这个城市。",
+    "options": [
+      "喜欢",
+      "很喜欢",
+      "太喜欢",
+      "非常喜欢"
+    ],
+    "answer": "喜欢",
+    "context": {
+      "point": "越来越 + adjective",
+      "rule": "越来越 + adj / mental verb: more and more; no 很/非常/太 after it",
+      "en": "I like this city more and more."
+    },
+    "why": "越来越 can take a feeling verb: 越来越喜欢 means 'like more and more'.",
+    "not": {
+      "很喜欢": "很喜欢 adds a degree word that 越来越 doesn't take.",
+      "太喜欢": "太喜欢 adds a degree word that 越来越 doesn't take.",
+      "非常喜欢": "非常喜欢 adds a degree word that 越来越 doesn't take."
+    }
+  },
+  {
+    "key": "g1pximyw",
+    "type": "grammar",
+    "lesson": 5,
+    "q": "这家店的面包越来越___。",
+    "options": [
+      "好吃",
+      "很好吃",
+      "太好吃",
+      "非常好吃"
+    ],
+    "answer": "好吃",
+    "context": {
+      "point": "越来越 + adjective",
+      "rule": "越来越 + adj / mental verb: more and more; no 很/非常/太 after it",
+      "en": "This shop's bread is getting tastier and tastier."
+    },
+    "why": "越来越 + adjective: 越来越好吃 means 'tastier and tastier'.",
+    "not": {
+      "很好吃": "很好吃 adds a degree word that 越来越 doesn't take.",
+      "太好吃": "太好吃 adds a degree word that 越来越 doesn't take.",
+      "非常好吃": "非常好吃 adds a degree word that 越来越 doesn't take."
+    }
+  },
+  {
+    "key": "ggurpy5",
+    "type": "grammar",
+    "lesson": 5,
+    "q": "他的汉语越来越___了。",
+    "options": [
+      "好",
+      "很好",
+      "太好",
+      "非常好"
+    ],
+    "answer": "好",
+    "context": {
+      "point": "越来越 + adjective",
+      "rule": "越来越 + adj / mental verb: more and more; no 很/非常/太 after it",
+      "en": "His Chinese is getting better and better."
+    },
+    "why": "越来越 + adjective: 越来越好了 means 'better and better'.",
+    "not": {
+      "很好": "很好 adds a degree word that 越来越 doesn't take.",
+      "太好": "太好 adds a degree word that 越来越 doesn't take.",
+      "非常好": "非常好 adds a degree word that 越来越 doesn't take."
+    }
+  },
+  {
+    "key": "gqpjfcg",
+    "type": "grammar",
+    "lesson": 5,
+    "q": "我的朋友越来越多，我越来越___。",
+    "options": [
+      "高兴",
+      "很高兴",
+      "太高兴",
+      "非常高兴"
+    ],
+    "answer": "高兴",
+    "context": {
+      "point": "越来越 + adjective",
+      "rule": "越来越 + adj / mental verb: more and more; no 很/非常/太 after it",
+      "en": "My friends are getting more numerous and I'm getting happier and happier."
+    },
+    "why": "越来越 + adjective/feeling: 越来越高兴 means 'happier and happier'.",
+    "not": {
+      "很高兴": "很高兴 adds a degree word that 越来越 doesn't take.",
+      "太高兴": "太高兴 adds a degree word that 越来越 doesn't take.",
+      "非常高兴": "非常高兴 adds a degree word that 越来越 doesn't take."
+    }
+  },
+  {
+    "key": "g1e8zij4",
+    "type": "grammar",
+    "lesson": 5,
+    "q": "孩子___来越高了。",
+    "options": [
+      "越",
+      "很",
+      "太",
+      "更"
+    ],
+    "answer": "越",
+    "context": {
+      "point": "越来越 + adjective",
+      "rule": "越来越 + adj / mental verb: more and more; no 很/非常/太 after it",
+      "en": "The child is getting taller and taller."
+    },
+    "why": "The pattern is 越来越, so the blank is 越: 孩子越来越高了.",
+    "not": {
+      "很": "很 means 'very' and does not make 很来越.",
+      "太": "太 means 'too' and does not make 太来越.",
+      "更": "更 means 'even more' and does not make 更来越."
+    }
+  },
+  {
+    "key": "g1yskh2o",
+    "type": "grammar",
+    "lesson": 6,
+    "q": "字太小了，我看___清楚。",
+    "options": [
+      "不",
+      "得",
+      "没",
+      "很"
+    ],
+    "answer": "不",
+    "context": {
+      "point": "V得/不 + complement",
+      "rule": "V + 得 + complement: can; V + 不 + complement: can't (a result can or can't be reached)",
+      "en": "The characters are too small; I can't see them clearly."
+    },
+    "why": "V + 不 + complement means 'can't': 看不清楚 is 'can't see clearly'.",
+    "not": {
+      "得": "得 would mean 'can' (看得清楚), the opposite of 'too small to see'.",
+      "没": "没 negates a past event and does not make 看没清楚.",
+      "很": "很 means 'very' and does not fit between 看 and 清楚."
+    }
+  },
+  {
+    "key": "g77p824",
+    "type": "grammar",
+    "lesson": 6,
+    "q": "今天的作业不多，七点以前我做___完。",
+    "options": [
+      "得",
+      "不",
+      "没",
+      "把"
+    ],
+    "answer": "得",
+    "context": {
+      "point": "V得/不 + complement",
+      "rule": "V + 得 + complement: can; V + 不 + complement: can't (a result can or can't be reached)",
+      "en": "There isn't much homework today; I can finish it before seven."
+    },
+    "why": "V + 得 + complement means 'can': 做得完 is 'can finish', since the work isn't much.",
+    "not": {
+      "不": "不 would give 做不完 'can't finish', the opposite meaning.",
+      "没": "没 negates a past event and does not make 做没完.",
+      "把": "把 begins a 把 sentence and does not fit here."
+    }
+  },
+  {
+    "key": "g1nlphp1",
+    "type": "grammar",
+    "lesson": 6,
+    "q": "那么多饭，我一个人吃___完，请你来帮我吧。",
+    "options": [
+      "不",
+      "得",
+      "没",
+      "把"
+    ],
+    "answer": "不",
+    "context": {
+      "point": "V得/不 + complement",
+      "rule": "V + 得 + complement: can; V + 不 + complement: can't (a result can or can't be reached)",
+      "en": "There's too much food for me to finish alone; please come and help."
+    },
+    "why": "V + 不 + complement means 'can't': 吃不完, since there is too much food.",
+    "not": {
+      "得": "得 would give 吃得完 'can finish', the opposite meaning.",
+      "没": "没 negates a past event and does not make 吃没完.",
+      "把": "把 begins a 把 sentence and does not fit here."
+    }
+  },
+  {
+    "key": "gvpxwqt",
+    "type": "grammar",
+    "lesson": 6,
+    "q": "老师讲得很清楚，我听___懂。",
+    "options": [
+      "得",
+      "不",
+      "没",
+      "把"
+    ],
+    "answer": "得",
+    "context": {
+      "point": "V得/不 + complement",
+      "rule": "V + 得 + complement: can; V + 不 + complement: can't (a result can or can't be reached)",
+      "en": "The teacher explained clearly, so I can understand."
+    },
+    "why": "V + 得 + complement means 'can': 听得懂 is 'can understand', since it was clear.",
+    "not": {
+      "不": "不 would give 听不懂 'can't understand', the opposite meaning.",
+      "没": "没 negates a past event and does not make 听没懂.",
+      "把": "把 begins a 把 sentence and does not fit here."
+    }
+  },
+  {
+    "key": "g14t4v1o",
+    "type": "grammar",
+    "lesson": 6,
+    "q": "这个字太难了，我写___出来。",
+    "options": [
+      "不",
+      "得",
+      "没",
+      "把"
+    ],
+    "answer": "不",
+    "context": {
+      "point": "V得/不 + complement",
+      "rule": "V + 得 + complement: can; V + 不 + complement: can't (a result can or can't be reached)",
+      "en": "This character is too hard; I can't write it out."
+    },
+    "why": "V + 不 + complement means 'can't': 写不出来 is 'can't write it out'.",
+    "not": {
+      "得": "得 would give 写得出来 'can write it out', the opposite meaning.",
+      "没": "没 negates a past event and does not make 写没出来.",
+      "把": "把 begins a 把 sentence and does not fit here."
+    }
+  },
+  {
+    "key": "g1n7x43n",
+    "type": "grammar",
+    "lesson": 6,
+    "q": "A：我的手机___？ B：在桌子上。",
+    "options": [
+      "呢",
+      "了",
+      "过",
+      "着"
+    ],
+    "answer": "呢",
+    "context": {
+      "point": "N + 呢",
+      "rule": "noun + 呢? asks where someone or something is",
+      "en": "A: Where is my phone? B: On the table."
+    },
+    "why": "N + 呢 asks 'where is N?': 我的手机呢?",
+    "not": {
+      "了": "了 marks a change or completion, not a where-question.",
+      "过": "过 marks past experience and can't end a noun question.",
+      "着": "着 marks an ongoing state and can't end a noun question."
+    }
+  },
+  {
+    "key": "g1r0cd2t",
+    "type": "grammar",
+    "lesson": 6,
+    "q": "A：爸爸___？ B：他在办公室。",
+    "options": [
+      "呢",
+      "了",
+      "过",
+      "着"
+    ],
+    "answer": "呢",
+    "context": {
+      "point": "N + 呢",
+      "rule": "noun + 呢? asks where someone or something is",
+      "en": "A: Where is dad? B: He's in the office."
+    },
+    "why": "N + 呢 asks 'where is N?': 爸爸呢?",
+    "not": {
+      "了": "了 marks a change or completion, not a where-question.",
+      "过": "过 marks past experience and can't end a noun question.",
+      "着": "着 marks an ongoing state and can't end a noun question."
+    }
+  },
+  {
+    "key": "g1olbx5j",
+    "type": "grammar",
+    "lesson": 6,
+    "q": "A：你的眼镜___？ B：我放在包里了。",
+    "options": [
+      "呢",
+      "了",
+      "过",
+      "着"
+    ],
+    "answer": "呢",
+    "context": {
+      "point": "N + 呢",
+      "rule": "noun + 呢? asks where someone or something is",
+      "en": "A: Where are your glasses? B: I put them in my bag."
+    },
+    "why": "N + 呢 asks 'where is N?': 你的眼镜呢?",
+    "not": {
+      "了": "了 marks a change or completion, not a where-question.",
+      "过": "过 marks past experience and can't end a noun question.",
+      "着": "着 marks an ongoing state and can't end a noun question."
+    }
+  },
+  {
+    "key": "g1h3gz46",
+    "type": "grammar",
+    "lesson": 6,
+    "q": "A：小狗___？ B：它在花园里玩儿。",
+    "options": [
+      "呢",
+      "了",
+      "过",
+      "着"
+    ],
+    "answer": "呢",
+    "context": {
+      "point": "N + 呢",
+      "rule": "noun + 呢? asks where someone or something is",
+      "en": "A: Where is the puppy? B: It's playing in the garden."
+    },
+    "why": "N + 呢 asks 'where is N?': 小狗呢?",
+    "not": {
+      "了": "了 marks a change or completion, not a where-question.",
+      "过": "过 marks past experience and can't end a noun question.",
+      "着": "着 marks an ongoing state and can't end a noun question."
+    }
+  },
+  {
+    "key": "g9q74d7",
+    "type": "grammar",
+    "lesson": 6,
+    "q": "A：我的书___？ B：在你的椅子上。",
+    "options": [
+      "呢",
+      "了",
+      "过",
+      "着"
+    ],
+    "answer": "呢",
+    "context": {
+      "point": "N + 呢",
+      "rule": "noun + 呢? asks where someone or something is",
+      "en": "A: Where is my book? B: On your chair."
+    },
+    "why": "N + 呢 asks 'where is N?': 我的书呢?",
+    "not": {
+      "了": "了 marks a change or completion, not a where-question.",
+      "过": "过 marks past experience and can't end a noun question.",
+      "着": "着 marks an ongoing state and can't end a noun question."
+    }
+  },
+  {
+    "key": "g2i0e8d",
+    "type": "grammar",
+    "lesson": 6,
+    "q": "___你去哪儿了？我一直在找你。",
+    "options": [
+      "刚才",
+      "刚",
+      "就",
+      "才"
+    ],
+    "answer": "刚才",
+    "context": {
+      "point": "刚 and 刚才",
+      "rule": "刚 + verb: a short time ago (to the speaker); 刚才 is a time word (minutes ago) and can start a sentence",
+      "en": "Where did you go just now? I've been looking for you."
+    },
+    "why": "刚才 means 'just now' and can start a sentence: 刚才你去哪儿了?",
+    "not": {
+      "刚": "刚 means 'only just' and goes after the subject, not at the start.",
+      "就": "就 means 'then/at once' and does not mean 'just now'.",
+      "才": "才 means 'only then' and does not mean 'just now'."
+    }
+  },
+  {
+    "key": "gb0swei",
+    "type": "grammar",
+    "lesson": 6,
+    "q": "我___来中国两个月，还不会说汉语。",
+    "options": [
+      "刚",
+      "刚才",
+      "先",
+      "会"
+    ],
+    "answer": "刚",
+    "context": {
+      "point": "刚 and 刚才",
+      "rule": "刚 + verb: a short time ago (to the speaker); 刚才 is a time word (minutes ago) and can start a sentence",
+      "en": "I only came to China two months ago and can't speak Chinese yet."
+    },
+    "why": "刚 means 'only just happened' and goes after the subject: 我刚来中国两个月.",
+    "not": {
+      "刚才": "刚才 means 'a moment ago' and does not fit a span of two months.",
+      "先": "先 means 'first' and does not fit.",
+      "会": "会 means 'can/will' and does not fit."
+    }
+  },
+  {
+    "key": "g15cfsjs",
+    "type": "grammar",
+    "lesson": 6,
+    "q": "___我看见周明在花园里。",
+    "options": [
+      "刚才",
+      "刚",
+      "又",
+      "先"
+    ],
+    "answer": "刚才",
+    "context": {
+      "point": "刚 and 刚才",
+      "rule": "刚 + verb: a short time ago (to the speaker); 刚才 is a time word (minutes ago) and can start a sentence",
+      "en": "Just now I saw Zhou Ming in the garden."
+    },
+    "why": "刚才 means 'just now' and starts the sentence: 刚才我看见周明.",
+    "not": {
+      "刚": "刚 goes after the subject, not before 我.",
+      "又": "又 means 'again' and does not mean 'just now'.",
+      "先": "先 means 'first' and does not mean 'just now'."
+    }
+  },
+  {
+    "key": "g6iaa8x",
+    "type": "grammar",
+    "lesson": 6,
+    "q": "他___从北京回来一个星期，还很累。",
+    "options": [
+      "刚",
+      "刚才",
+      "特别",
+      "突然"
+    ],
+    "answer": "刚",
+    "context": {
+      "point": "刚 and 刚才",
+      "rule": "刚 + verb: a short time ago (to the speaker); 刚才 is a time word (minutes ago) and can start a sentence",
+      "en": "He came back from Beijing only a week ago and is still tired."
+    },
+    "why": "刚 means 'only just' and goes after the subject: 他刚从北京回来一个星期.",
+    "not": {
+      "刚才": "刚才 means 'a moment ago' and does not fit a span of a week.",
+      "特别": "特别 means 'especially' and does not fit here.",
+      "突然": "突然 means 'suddenly' and does not fit here."
+    }
+  },
+  {
+    "key": "g1d5dac6",
+    "type": "grammar",
+    "lesson": 6,
+    "q": "我___回到家，爸爸就打来了电话。",
+    "options": [
+      "刚",
+      "更",
+      "特别",
+      "讲"
+    ],
+    "answer": "刚",
+    "context": {
+      "point": "刚 and 刚才",
+      "rule": "刚 + verb: a short time ago (to the speaker); 刚才 is a time word (minutes ago) and can start a sentence",
+      "en": "I had just got home when dad phoned."
+    },
+    "why": "刚 ... 就 means 'had just done X when Y': 我刚回到家.",
+    "not": {
+      "更": "更 means 'even more' and does not fit before a verb here.",
+      "特别": "特别 means 'especially' and does not fit here.",
+      "讲": "讲 means 'speak' and does not fit before 回."
+    }
+  },
+  {
+    "key": "gmoygsy",
+    "type": "grammar",
+    "lesson": 7,
+    "q": "他打___两个小时篮球。",
+    "options": [
+      "了",
+      "着",
+      "的",
+      "得"
+    ],
+    "answer": "了",
+    "context": {
+      "point": "Duration after the verb",
+      "rule": "S + V + 了 + duration (+ O): how long an action lasted; with a final 了 the action is still going on",
+      "en": "He played basketball for two hours."
+    },
+    "why": "Duration goes after the verb with 了: 打了两个小时篮球.",
+    "not": {
+      "着": "着 shows an ongoing state, not a counted duration.",
+      "的": "的 marks possession and does not follow a verb here.",
+      "得": "得 introduces a complement of degree."
+    }
+  },
+  {
+    "key": "g1q1n5e7",
+    "type": "grammar",
+    "lesson": 7,
+    "q": "我昨天看了两个小时___。",
+    "options": [
+      "电视",
+      "看电视",
+      "在电视",
+      "个电视"
+    ],
+    "answer": "电视",
+    "context": {
+      "point": "Duration after the verb",
+      "rule": "S + V + 了 + duration (+ O): how long an action lasted; with a final 了 the action is still going on",
+      "en": "Yesterday I watched TV for two hours."
+    },
+    "why": "The duration 两个小时 follows 看了, then the object 电视: 看了两个小时电视.",
+    "not": {
+      "看电视": "看电视 repeats the verb 看, which is already in the sentence.",
+      "在电视": "在电视 is not how you say 'watched TV'.",
+      "个电视": "个电视 is wrong because 电视 does not take 个 here."
+    }
+  },
+  {
+    "key": "g1omd564",
+    "type": "grammar",
+    "lesson": 7,
+    "q": "我在北京住___五年了，还想再住几年。",
+    "options": [
+      "了",
+      "过",
+      "着",
+      "得"
+    ],
+    "answer": "了",
+    "context": {
+      "point": "Duration after the verb",
+      "rule": "S + V + 了 + duration (+ O): how long an action lasted; with a final 了 the action is still going on",
+      "en": "I've lived in Beijing for five years and want to stay a few more."
+    },
+    "why": "Duration after the verb: 住了五年 means 'lived for five years'.",
+    "not": {
+      "过": "过 shows past experience, but 五年了 suggests it is still going on.",
+      "着": "着 shows an ongoing state and does not fit before a duration.",
+      "得": "得 introduces a complement of degree."
+    }
+  },
+  {
+    "key": "gefwlyr",
+    "type": "grammar",
+    "lesson": 7,
+    "q": "你学汉语学了___？",
+    "options": [
+      "多长时间",
+      "多长",
+      "什么时间",
+      "几个时间"
+    ],
+    "answer": "多长时间",
+    "context": {
+      "point": "Duration after the verb",
+      "rule": "S + V + 了 + duration (+ O): how long an action lasted; with a final 了 the action is still going on",
+      "en": "How long have you studied Chinese?"
+    },
+    "why": "多长时间 asks about a duration: 学了多长时间?",
+    "not": {
+      "多长": "多长 is incomplete: it needs 时间.",
+      "什么时间": "什么时间 asks 'what time', not 'how long'.",
+      "几个时间": "几个时间 is not a natural phrase."
+    }
+  },
+  {
+    "key": "g1akbl0",
+    "type": "grammar",
+    "lesson": 7,
+    "q": "妹妹看了半个小时书___，还在看。",
+    "options": [
+      "了",
+      "过",
+      "着",
+      "的"
+    ],
+    "answer": "了",
+    "context": {
+      "point": "Duration after the verb",
+      "rule": "S + V + 了 + duration (+ O): how long an action lasted; with a final 了 the action is still going on",
+      "en": "My sister has been reading for half an hour and is still reading."
+    },
+    "why": "Sentence-final 了 after 看了半个小时书 shows it has lasted so far and continues.",
+    "not": {
+      "过": "过 shows past experience, but she is still reading.",
+      "着": "着 shows an ongoing state and does not fit after the object.",
+      "的": "的 marks possession and does not fit here."
+    }
+  },
+  {
+    "key": "g1gjnliz",
+    "type": "grammar",
+    "lesson": 7,
+    "q": "我___音乐感兴趣。",
+    "options": [
+      "对",
+      "跟",
+      "给",
+      "在"
+    ],
+    "answer": "对",
+    "context": {
+      "point": "对…感兴趣",
+      "rule": "对 + thing + 感兴趣 / 有兴趣; negative 不感兴趣 / 没(有)兴趣; adverb goes before 感/有",
+      "en": "I'm interested in music."
+    },
+    "why": "对……感兴趣 means 'be interested in': 我对音乐感兴趣.",
+    "not": {
+      "跟": "跟 means 'with' and does not make 跟…感兴趣.",
+      "给": "给 means 'give' and does not make 给…感兴趣.",
+      "在": "在 marks location and does not make 在…感兴趣."
+    }
+  },
+  {
+    "key": "gimlrab",
+    "type": "grammar",
+    "lesson": 7,
+    "q": "我妹妹对唱歌___感兴趣。",
+    "options": [
+      "不",
+      "没",
+      "别",
+      "都"
+    ],
+    "answer": "不",
+    "context": {
+      "point": "对…感兴趣",
+      "rule": "对 + thing + 感兴趣 / 有兴趣; negative 不感兴趣 / 没(有)兴趣; adverb goes before 感/有",
+      "en": "My younger sister isn't interested in singing."
+    },
+    "why": "不 negates 感兴趣: 对唱歌不感兴趣 means 'not interested in singing'.",
+    "not": {
+      "没": "没 negates 有, but 感兴趣 uses 不.",
+      "别": "别 means 'don't' and is for commands.",
+      "都": "都 means 'all' and does not make a negative."
+    }
+  },
+  {
+    "key": "gyux4zu",
+    "type": "grammar",
+    "lesson": 7,
+    "q": "我儿子对游泳没___兴趣。",
+    "options": [
+      "有",
+      "是",
+      "在",
+      "会"
+    ],
+    "answer": "有",
+    "context": {
+      "point": "对…感兴趣",
+      "rule": "对 + thing + 感兴趣 / 有兴趣; negative 不感兴趣 / 没(有)兴趣; adverb goes before 感/有",
+      "en": "My son has no interest in swimming."
+    },
+    "why": "The negative of 有兴趣 is 没有兴趣, so 有 fits: 对游泳没有兴趣.",
+    "not": {
+      "是": "是 means 'be' and 没是兴趣 is wrong.",
+      "在": "在 marks location and does not fit before 兴趣.",
+      "会": "会 means 'can/will' and does not fit before 兴趣."
+    }
+  },
+  {
+    "key": "goudrgr",
+    "type": "grammar",
+    "lesson": 7,
+    "q": "我对汉语___感兴趣。",
+    "options": [
+      "很",
+      "对",
+      "跟",
+      "给"
+    ],
+    "answer": "很",
+    "context": {
+      "point": "对…感兴趣",
+      "rule": "对 + thing + 感兴趣 / 有兴趣; negative 不感兴趣 / 没(有)兴趣; adverb goes before 感/有",
+      "en": "I'm very interested in Chinese."
+    },
+    "why": "感兴趣 behaves like an adjective, so it takes 很: 我对汉语很感兴趣.",
+    "not": {
+      "对": "对 repeats the preposition already in the sentence.",
+      "跟": "跟 means 'with' and cannot replace 很.",
+      "给": "给 means 'give' and cannot replace 很."
+    }
+  },
+  {
+    "key": "gt4iqlz",
+    "type": "grammar",
+    "lesson": 7,
+    "q": "很多年轻人对中国电影___兴趣。",
+    "options": [
+      "有",
+      "是",
+      "在",
+      "会"
+    ],
+    "answer": "有",
+    "context": {
+      "point": "对…感兴趣",
+      "rule": "对 + thing + 感兴趣 / 有兴趣; negative 不感兴趣 / 没(有)兴趣; adverb goes before 感/有",
+      "en": "Many young people are interested in Chinese films."
+    },
+    "why": "有兴趣 is the other form: 对中国电影有兴趣.",
+    "not": {
+      "是": "是 means 'be' and 是兴趣 is not the pattern.",
+      "在": "在 marks location and does not fit before 兴趣.",
+      "会": "会 means 'can/will' and does not fit before 兴趣."
+    }
+  },
+  {
+    "key": "g1hk5sc4",
+    "type": "grammar",
+    "lesson": 7,
+    "q": "现在是七点___，我们该起床了。",
+    "options": [
+      "半",
+      "刻",
+      "差",
+      "分钟"
+    ],
+    "answer": "半",
+    "context": {
+      "point": "半, 刻, 差 for clock time",
+      "rule": "七点半 7:30; 八点一刻 8:15; 差一刻九点 8:45; 差五分十点 9:55; 一刻钟 = 15 minutes",
+      "en": "It's half past seven; time to get up."
+    },
+    "why": "半 means 'half': 七点半 is half past seven.",
+    "not": {
+      "刻": "刻 means 'quarter' and would be 七点一刻.",
+      "差": "差 means 'less than' and goes before the minutes.",
+      "分钟": "分钟 means 'minutes' and cannot follow 点 like this."
+    }
+  },
+  {
+    "key": "g8qiamz",
+    "type": "grammar",
+    "lesson": 7,
+    "q": "现在是八点一___，你来得很早。",
+    "options": [
+      "刻",
+      "半",
+      "差",
+      "个"
+    ],
+    "answer": "刻",
+    "context": {
+      "point": "半, 刻, 差 for clock time",
+      "rule": "七点半 7:30; 八点一刻 8:15; 差一刻九点 8:45; 差五分十点 9:55; 一刻钟 = 15 minutes",
+      "en": "It's quarter past eight; you've come early."
+    },
+    "why": "一刻 means 'quarter hour': 八点一刻 is 8:15.",
+    "not": {
+      "半": "半 would make 八点一半, which is not a time.",
+      "差": "差 means 'less than' and goes before the minutes.",
+      "个": "个 is a measure word and does not fit after 一 for time."
+    }
+  },
+  {
+    "key": "g1kap5g3",
+    "type": "grammar",
+    "lesson": 7,
+    "q": "现在是八点四十五分，也就是差一刻___点。",
+    "options": [
+      "九",
+      "八",
+      "十",
+      "半"
+    ],
+    "answer": "九",
+    "context": {
+      "point": "半, 刻, 差 for clock time",
+      "rule": "七点半 7:30; 八点一刻 8:15; 差一刻九点 8:45; 差五分十点 9:55; 一刻钟 = 15 minutes",
+      "en": "It is 8:45, that is, a quarter to nine."
+    },
+    "why": "差一刻九点 means 'a quarter to nine' (8:45).",
+    "not": {
+      "八": "八 would give 差一刻八点 (7:45), not 8:45.",
+      "十": "十 would give 差一刻十点 (9:45), not 8:45.",
+      "半": "半 does not fit after 差一刻."
+    }
+  },
+  {
+    "key": "g10amlz1",
+    "type": "grammar",
+    "lesson": 7,
+    "q": "现在___五分十点，快跑吧。",
+    "options": [
+      "差",
+      "半",
+      "刻",
+      "过"
+    ],
+    "answer": "差",
+    "context": {
+      "point": "半, 刻, 差 for clock time",
+      "rule": "七点半 7:30; 八点一刻 8:15; 差一刻九点 8:45; 差五分十点 9:55; 一刻钟 = 15 minutes",
+      "en": "It's five to ten; run!"
+    },
+    "why": "差 + minutes + hour means 'minutes to the hour': 差五分十点 is 9:55.",
+    "not": {
+      "半": "半 means 'half' and does not fit before 五分.",
+      "刻": "刻 means 'quarter' and does not fit before 五分.",
+      "过": "过 means 'after' and does not make 过五分十点."
+    }
+  },
+  {
+    "key": "g1vpnj2a",
+    "type": "grammar",
+    "lesson": 7,
+    "q": "他跑了___钟就累了。",
+    "options": [
+      "一刻",
+      "一半",
+      "一差",
+      "一点"
+    ],
+    "answer": "一刻",
+    "context": {
+      "point": "半, 刻, 差 for clock time",
+      "rule": "七点半 7:30; 八点一刻 8:15; 差一刻九点 8:45; 差五分十点 9:55; 一刻钟 = 15 minutes",
+      "en": "He got tired after running for a quarter of an hour."
+    },
+    "why": "一刻钟 means 'a quarter of an hour': 跑了一刻钟.",
+    "not": {
+      "一半": "一半 means 'half' of something, not a time span.",
+      "一差": "一差 is not a word.",
+      "一点": "一点 means 'a little' and does not fit before 钟."
+    }
+  },
+  {
+    "key": "g1hgzzo8",
+    "type": "grammar",
+    "lesson": 8,
+    "q": "他昨天来了，今天___来了。",
+    "options": [
+      "又",
+      "再",
+      "想",
+      "会"
+    ],
+    "answer": "又",
+    "context": {
+      "point": "又 and 再",
+      "rule": "Both mean \"again\". 又 + verb: it has already happened again. 再 + verb: it hasn't happened yet, it will happen again.",
+      "en": "He came yesterday and came again today."
+    },
+    "why": "又 is for repeats that have already happened: he came yesterday and again today.",
+    "not": {
+      "再": "再 is for repeats that have not happened yet.",
+      "想": "想 means 'want' and does not mean 'again'.",
+      "会": "会 means 'will' and does not mean 'again'."
+    }
+  },
+  {
+    "key": "g1pqg7mf",
+    "type": "grammar",
+    "lesson": 8,
+    "q": "这个电影很好看，我明天想___看一次。",
+    "options": [
+      "再",
+      "又",
+      "就",
+      "也"
+    ],
+    "answer": "再",
+    "context": {
+      "point": "又 and 再",
+      "rule": "Both mean \"again\". 又 + verb: it has already happened again. 再 + verb: it hasn't happened yet, it will happen again.",
+      "en": "This film is really good; I want to watch it once more tomorrow."
+    },
+    "why": "再 is for repeats that have not happened yet: 明天想再看一次.",
+    "not": {
+      "又": "又 is for repeats that already happened.",
+      "就": "就 means 'then/at once' and does not mean 'again'.",
+      "也": "也 means 'also' and does not mean 'again'."
+    }
+  },
+  {
+    "key": "g1lmpumn",
+    "type": "grammar",
+    "lesson": 8,
+    "q": "你怎么___忘了带手机？",
+    "options": [
+      "又",
+      "再",
+      "想",
+      "让"
+    ],
+    "answer": "又",
+    "context": {
+      "point": "又 and 再",
+      "rule": "Both mean \"again\". 又 + verb: it has already happened again. 再 + verb: it hasn't happened yet, it will happen again.",
+      "en": "How come you forgot your phone again?"
+    },
+    "why": "又 is for a repeat that already happened: he forgot the phone again.",
+    "not": {
+      "再": "再 is for repeats that have not happened yet.",
+      "想": "想 means 'want' and does not mean 'again'.",
+      "让": "让 means 'let/make' and does not mean 'again'."
+    }
+  },
+  {
+    "key": "g44k5iv",
+    "type": "grammar",
+    "lesson": 8,
+    "q": "菜不够了，我们___点一个吧。",
+    "options": [
+      "再",
+      "又",
+      "都",
+      "会"
+    ],
+    "answer": "再",
+    "context": {
+      "point": "又 and 再",
+      "rule": "Both mean \"again\". 又 + verb: it has already happened again. 再 + verb: it hasn't happened yet, it will happen again.",
+      "en": "There isn't enough food; let's order one more dish."
+    },
+    "why": "再 is for a repeat that has not happened yet: 再点一个.",
+    "not": {
+      "又": "又 is for repeats that already happened.",
+      "都": "都 means 'all' and does not mean 'again'.",
+      "会": "会 means 'will' and does not mean 'again'."
+    }
+  },
+  {
+    "key": "g15ag4ic",
+    "type": "grammar",
+    "lesson": 8,
+    "q": "上个月我去了北京，这个月___去了上海。",
+    "options": [
+      "又",
+      "再",
+      "会",
+      "想"
+    ],
+    "answer": "又",
+    "context": {
+      "point": "又 and 再",
+      "rule": "Both mean \"again\". 又 + verb: it has already happened again. 再 + verb: it hasn't happened yet, it will happen again.",
+      "en": "Last month I went to Beijing, and this month I went to Shanghai too."
+    },
+    "why": "又 is for a repeat that already happened: this month I went to Shanghai too.",
+    "not": {
+      "再": "再 is for repeats that have not happened yet.",
+      "会": "会 means 'will' and does not mean 'again'.",
+      "想": "想 means 'want' and does not mean 'again'."
+    }
+  },
+  {
+    "key": "gb4wuxc",
+    "type": "grammar",
+    "lesson": 8,
+    "q": "对不起，请您___说一次。",
+    "options": [
+      "再",
+      "又",
+      "已经",
+      "还是"
+    ],
+    "answer": "再",
+    "context": {
+      "point": "又 and 再",
+      "rule": "Both mean \"again\". 又 + verb: it has already happened again. 再 + verb: it hasn't happened yet, it will happen again.",
+      "en": "Sorry, please say it once more."
+    },
+    "why": "再 is for a repeat that has not happened yet: 再说一次 means 'say it once more'.",
+    "not": {
+      "又": "又 is for repeats that already happened.",
+      "已经": "已经 means 'already' and does not mean 'again'.",
+      "还是": "还是 means 'or / had better' and does not mean 'again'."
+    }
+  },
+  {
+    "key": "g1vdjiye",
+    "type": "grammar",
+    "lesson": 8,
+    "q": "你想吃什么，我就做___。",
+    "options": [
+      "什么",
+      "谁",
+      "哪儿",
+      "怎么"
+    ],
+    "answer": "什么",
+    "context": {
+      "point": "Question word + 就 + same question word",
+      "rule": "The same question word appears twice, linked by 就: any person, thing, place or way, with no fixed answer.",
+      "en": "Whatever you want to eat, I'll cook."
+    },
+    "why": "The same question word repeats: 想吃什么，就做什么.",
+    "not": {
+      "谁": "谁 asks 'who' and does not match 什么.",
+      "哪儿": "哪儿 asks 'where' and does not match 什么.",
+      "怎么": "怎么 asks 'how' and does not match 什么."
+    }
+  },
+  {
+    "key": "gurx1n8",
+    "type": "grammar",
+    "lesson": 8,
+    "q": "你想去哪儿，我们就去___。",
+    "options": [
+      "哪儿",
+      "什么",
+      "谁",
+      "几"
+    ],
+    "answer": "哪儿",
+    "context": {
+      "point": "Question word + 就 + same question word",
+      "rule": "The same question word appears twice, linked by 就: any person, thing, place or way, with no fixed answer.",
+      "en": "Wherever you want to go, we'll go there."
+    },
+    "why": "The same question word repeats: 想去哪儿，就去哪儿.",
+    "not": {
+      "什么": "什么 asks 'what' and does not match 哪儿.",
+      "谁": "谁 asks 'who' and does not match 哪儿.",
+      "几": "几 asks 'how many' and does not match 哪儿."
+    }
+  },
+  {
+    "key": "g1supn92",
+    "type": "grammar",
+    "lesson": 8,
+    "q": "谁先到，___就先坐。",
+    "options": [
+      "谁",
+      "哪个",
+      "哪儿",
+      "什么"
+    ],
+    "answer": "谁",
+    "context": {
+      "point": "Question word + 就 + same question word",
+      "rule": "The same question word appears twice, linked by 就: any person, thing, place or way, with no fixed answer.",
+      "en": "Whoever arrives first sits down first."
+    },
+    "why": "The same question word repeats: 谁先到，谁就先坐.",
+    "not": {
+      "哪个": "哪个 asks 'which' and does not match 谁.",
+      "哪儿": "哪儿 asks 'where' and does not match 谁.",
+      "什么": "什么 asks 'what' and does not match 谁."
+    }
+  },
+  {
+    "key": "g1o4olt2",
+    "type": "grammar",
+    "lesson": 8,
+    "q": "你想怎么走，我们就___走。",
+    "options": [
+      "怎么",
+      "为什么",
+      "什么",
+      "哪儿"
+    ],
+    "answer": "怎么",
+    "context": {
+      "point": "Question word + 就 + same question word",
+      "rule": "The same question word appears twice, linked by 就: any person, thing, place or way, with no fixed answer.",
+      "en": "We'll go whichever way you like."
+    },
+    "why": "The same question word repeats: 想怎么走，就怎么走.",
+    "not": {
+      "为什么": "为什么 asks 'why' and does not match 怎么.",
+      "什么": "什么 asks 'what' and does not match 怎么.",
+      "哪儿": "哪儿 asks 'where' and does not match 怎么."
+    }
+  },
+  {
+    "key": "g10akwvx",
+    "type": "grammar",
+    "lesson": 8,
+    "q": "哪个便宜我就买___。",
+    "options": [
+      "哪个",
+      "谁",
+      "哪儿",
+      "怎么"
+    ],
+    "answer": "哪个",
+    "context": {
+      "point": "Question word + 就 + same question word",
+      "rule": "The same question word appears twice, linked by 就: any person, thing, place or way, with no fixed answer.",
+      "en": "I'll buy whichever one is cheaper."
+    },
+    "why": "The same question word repeats: 哪个便宜，就买哪个.",
+    "not": {
+      "谁": "谁 asks 'who' and does not match 哪个.",
+      "哪儿": "哪儿 asks 'where' and does not match 哪个.",
+      "怎么": "怎么 asks 'how' and does not match 哪个."
+    }
+  },
+  {
+    "key": "gxgeiis",
+    "type": "grammar",
+    "lesson": 8,
+    "q": "你什么时候有时间，我们___什么时候见面。",
+    "options": [
+      "就",
+      "又",
+      "再",
+      "也"
+    ],
+    "answer": "就",
+    "context": {
+      "point": "Question word + 就 + same question word",
+      "rule": "The same question word appears twice, linked by 就: any person, thing, place or way, with no fixed answer.",
+      "en": "Whenever you have time, we'll meet."
+    },
+    "why": "The same question phrase repeats, joined by 就: 什么时候……就什么时候.",
+    "not": {
+      "又": "又 means 'again/and' and cannot link the two clauses.",
+      "再": "再 means 'again later' and cannot link the two clauses.",
+      "也": "也 means 'also' and cannot link the two clauses."
+    }
+  },
+  {
+    "key": "g1rx8rv1",
+    "type": "grammar",
+    "lesson": 9,
+    "q": "雨越下___大，我们别出去了。",
+    "options": [
+      "越",
+      "又",
+      "也",
+      "都"
+    ],
+    "answer": "越",
+    "context": {
+      "point": "越A越B",
+      "rule": "The more A, the more B: B changes as A changes.",
+      "en": "The rain is getting heavier and heavier; let's not go out."
+    },
+    "why": "越A越B means 'the more A, the more B': 越下越大.",
+    "not": {
+      "又": "又 means 'again/and' and does not make 又下又大.",
+      "也": "也 means 'also' and does not make 也下也大.",
+      "都": "都 means 'all' and does not make 都下大."
+    }
+  },
+  {
+    "key": "g12e7vsj",
+    "type": "grammar",
+    "lesson": 9,
+    "q": "这首歌我听得越多，___喜欢。",
+    "options": [
+      "越",
+      "又",
+      "就是",
+      "很"
+    ],
+    "answer": "越",
+    "context": {
+      "point": "越A越B",
+      "rule": "The more A, the more B: B changes as A changes.",
+      "en": "The more I listen to this song, the more I like it."
+    },
+    "why": "越A越B: 听得越多，越喜欢 means 'the more I listen, the more I like it'.",
+    "not": {
+      "又": "又 means 'again/and' and does not pair with 越.",
+      "就是": "就是 means 'exactly' and does not pair with 越.",
+      "很": "很 means 'very' and does not pair with 越."
+    }
+  },
+  {
+    "key": "gefha05",
+    "type": "grammar",
+    "lesson": 9,
+    "q": "他的汉语说得越来___好了。",
+    "options": [
+      "越",
+      "更",
+      "又",
+      "很"
+    ],
+    "answer": "越",
+    "context": {
+      "point": "越A越B",
+      "rule": "The more A, the more B: B changes as A changes.",
+      "en": "His Chinese is getting better and better."
+    },
+    "why": "越来越 + adjective: 越来越好 means 'better and better'.",
+    "not": {
+      "更": "更 means 'even more' and does not make 更来越.",
+      "又": "又 means 'again/and' and does not make 又来越.",
+      "很": "很 means 'very' and does not make 很来越."
+    }
+  },
+  {
+    "key": "g1cwbjc",
+    "type": "grammar",
+    "lesson": 9,
+    "q": "你想得越多，就___担心。",
+    "options": [
+      "越",
+      "再",
+      "先",
+      "很"
+    ],
+    "answer": "越",
+    "context": {
+      "point": "越A越B",
+      "rule": "The more A, the more B: B changes as A changes.",
+      "en": "The more you think, the more you worry."
+    },
+    "why": "越A越B: 想得越多，就越担心 means 'the more you think, the more you worry'.",
+    "not": {
+      "再": "再 means 'again' and does not pair with 越.",
+      "先": "先 means 'first' and does not pair with 越.",
+      "很": "很 means 'very' and does not pair with 越."
+    }
+  },
+  {
+    "key": "g69el2p",
+    "type": "grammar",
+    "lesson": 9,
+    "q": "这本书我越看___想看。",
+    "options": [
+      "越",
+      "都",
+      "还",
+      "才"
+    ],
+    "answer": "越",
+    "context": {
+      "point": "越A越B",
+      "rule": "The more A, the more B: B changes as A changes.",
+      "en": "The more I read this book, the more I want to read it."
+    },
+    "why": "越A越B: 越看越想看 means 'the more I read, the more I want to'.",
+    "not": {
+      "都": "都 means 'all' and does not pair with 越.",
+      "还": "还 means 'still' and does not pair with 越.",
+      "才": "才 means 'only then' and does not pair with 越."
+    }
+  },
+  {
+    "key": "gf18pte",
+    "type": "grammar",
+    "lesson": 9,
+    "q": "路越走越远，天___来越黑了。",
+    "options": [
+      "越",
+      "很",
+      "太",
+      "先"
+    ],
+    "answer": "越",
+    "context": {
+      "point": "越A越B",
+      "rule": "The more A, the more B: B changes as A changes.",
+      "en": "The further we walked, the darker it got."
+    },
+    "why": "The second part needs 越来越: 天越来越黑 means 'it got darker and darker'.",
+    "not": {
+      "很": "很 means 'very' and does not make 很来越.",
+      "太": "太 means 'too' and does not make 太来越.",
+      "先": "先 means 'first' and does not make 先来越."
+    }
+  },
+  {
+    "key": "gg3pibr",
+    "type": "grammar",
+    "lesson": 9,
+    "q": "我的书包___你的一样。",
+    "options": [
+      "跟",
+      "比",
+      "在",
+      "让"
+    ],
+    "answer": "跟",
+    "context": {
+      "point": "A 跟 B 一样 (+ adjective)",
+      "rule": "A is the same as B. The negative puts 不 before 一样; an adjective after 一样 names what is the same.",
+      "en": "My bag is the same as yours."
+    },
+    "why": "A 跟 B 一样 means 'A is the same as B': 我的书包跟你的一样.",
+    "not": {
+      "比": "比 compares with 'more than', not 'the same as'.",
+      "在": "在 marks location and does not mean 'same as'.",
+      "让": "让 means 'let/make' and does not mean 'same as'."
+    }
+  },
+  {
+    "key": "g14kp1vn",
+    "type": "grammar",
+    "lesson": 9,
+    "q": "我们班的人数跟他们班___。",
+    "options": [
+      "一样多",
+      "比多",
+      "很多一样",
+      "多一样"
+    ],
+    "answer": "一样多",
+    "context": {
+      "point": "A 跟 B 一样 (+ adjective)",
+      "rule": "A is the same as B. The negative puts 不 before 一样; an adjective after 一样 names what is the same.",
+      "en": "Our class has as many students as theirs."
+    },
+    "why": "A 跟 B 一样 + adjective: 一样多 means 'as many as'.",
+    "not": {
+      "比多": "比多 is not a complete comparison in this pattern.",
+      "很多一样": "很多一样 has the wrong word order.",
+      "多一样": "多一样 has the wrong word order."
+    }
+  },
+  {
+    "key": "g1qpktxs",
+    "type": "grammar",
+    "lesson": 9,
+    "q": "弟弟跟爸爸一样___。",
+    "options": [
+      "高",
+      "很高",
+      "比高",
+      "更高"
+    ],
+    "answer": "高",
+    "context": {
+      "point": "A 跟 B 一样 (+ adjective)",
+      "rule": "A is the same as B. The negative puts 不 before 一样; an adjective after 一样 names what is the same.",
+      "en": "My little brother is as tall as Dad."
+    },
+    "why": "A 跟 B 一样 + adjective: 跟爸爸一样高 means 'as tall as Dad'.",
+    "not": {
+      "很高": "很高 adds a degree word that 一样 does not take.",
+      "比高": "比高 is not a complete comparison after 一样.",
+      "更高": "更高 means 'taller' and contradicts 'as tall'."
+    }
+  },
+  {
+    "key": "g1yyfvhc",
+    "type": "grammar",
+    "lesson": 9,
+    "q": "这件衣服的颜色跟那件___。",
+    "options": [
+      "不一样",
+      "一样不",
+      "没一样",
+      "不比"
+    ],
+    "answer": "不一样",
+    "context": {
+      "point": "A 跟 B 一样 (+ adjective)",
+      "rule": "A is the same as B. The negative puts 不 before 一样; an adjective after 一样 names what is the same.",
+      "en": "The colour of this one is not the same as that one's."
+    },
+    "why": "A 跟 B 不一样 means 'A is different from B': 跟那件不一样.",
+    "not": {
+      "一样不": "一样不 has the wrong word order.",
+      "没一样": "没一样 is not the pattern; 没 does not negate 一样.",
+      "不比": "不比 means 'not more than' and does not mean 'different'."
+    }
+  },
+  {
+    "key": "g1d40yik",
+    "type": "grammar",
+    "lesson": 9,
+    "q": "她跑得___她哥哥一样快。",
+    "options": [
+      "跟",
+      "比",
+      "对",
+      "从"
+    ],
+    "answer": "跟",
+    "context": {
+      "point": "A 跟 B 一样 (+ adjective)",
+      "rule": "A is the same as B. The negative puts 不 before 一样; an adjective after 一样 names what is the same.",
+      "en": "She runs as fast as her older brother."
+    },
+    "why": "A + 得 + 跟 B 一样 + adjective: 跑得跟哥哥一样快 means 'runs as fast as her brother'.",
+    "not": {
+      "比": "比 gives 'faster than', but 一样 follows here.",
+      "对": "对 means 'toward/correct' and does not pair with 一样.",
+      "从": "从 means 'from' and does not pair with 一样."
+    }
+  },
+  {
+    "key": "goz5cbe",
+    "type": "grammar",
+    "lesson": 9,
+    "q": "今天的天气跟昨天___冷。",
+    "options": [
+      "一样",
+      "越",
+      "又",
+      "更"
+    ],
+    "answer": "一样",
+    "context": {
+      "point": "A 跟 B 一样 (+ adjective)",
+      "rule": "A is the same as B. The negative puts 不 before 一样; an adjective after 一样 names what is the same.",
+      "en": "Today's weather is as cold as yesterday's."
+    },
+    "why": "A 跟 B 一样 + adjective: 跟昨天一样冷 means 'as cold as yesterday'.",
+    "not": {
+      "越": "越 does not fit before 冷 after 跟.",
+      "又": "又 means 'again/and' and does not fit here.",
+      "更": "更 means 'even more' and contradicts 'as cold as'."
+    }
+  },
+  {
+    "key": "g18vd032",
+    "type": "grammar",
+    "lesson": 10,
+    "q": "今天比昨天冷___。",
+    "options": [
+      "多了",
+      "很多了",
+      "太多",
+      "多得"
+    ],
+    "answer": "多了",
+    "context": {
+      "point": "A 比 B + adjective + 一点儿 / 一些 / 得多 / 多了",
+      "rule": "一点儿 and 一些 mean a small difference; 得多 and 多了 mean a big difference. The negative is A 没有 B (+ 这么 / 那么) + adjective.",
+      "en": "Today is much colder than yesterday."
+    },
+    "why": "比 + adjective + 多了 means 'much more': 冷多了.",
+    "not": {
+      "很多了": "很多了 is not how you say 'much more' after an adjective.",
+      "太多": "太多 does not follow the pattern.",
+      "多得": "多得 has the wrong order; it should be 得多."
+    }
+  },
+  {
+    "key": "gdvoyrj",
+    "type": "grammar",
+    "lesson": 10,
+    "q": "我的手机比你的贵一___。",
+    "options": [
+      "点儿",
+      "个",
+      "些多",
+      "得多了"
+    ],
+    "answer": "点儿",
+    "context": {
+      "point": "A 比 B + adjective + 一点儿 / 一些 / 得多 / 多了",
+      "rule": "一点儿 and 一些 mean a small difference; 得多 and 多了 mean a big difference. The negative is A 没有 B (+ 这么 / 那么) + adjective.",
+      "en": "My phone is a little more expensive than yours."
+    },
+    "why": "A 比 B + adjective + 一点儿 means 'a little more': 贵一点儿.",
+    "not": {
+      "个": "个 is a measure word and does not mean 'a little'.",
+      "些多": "些多 is not a phrase.",
+      "得多了": "得多了 is not used after 一."
+    }
+  },
+  {
+    "key": "g1w3m5tt",
+    "type": "grammar",
+    "lesson": 10,
+    "q": "北京的冬天比上海冷___。",
+    "options": [
+      "得多",
+      "多得",
+      "非常",
+      "一得多"
+    ],
+    "answer": "得多",
+    "context": {
+      "point": "A 比 B + adjective + 一点儿 / 一些 / 得多 / 多了",
+      "rule": "一点儿 and 一些 mean a small difference; 得多 and 多了 mean a big difference. The negative is A 没有 B (+ 这么 / 那么) + adjective.",
+      "en": "Beijing's winters are much colder than Shanghai's."
+    },
+    "why": "A 比 B + adjective + 得多 means 'much more': 冷得多.",
+    "not": {
+      "多得": "多得 has the wrong order; it should be 得多.",
+      "非常": "非常 means 'very' and does not go after a 比 adjective.",
+      "一得多": "一得多 is not a phrase."
+    }
+  },
+  {
+    "key": "g3cvth9",
+    "type": "grammar",
+    "lesson": 10,
+    "q": "这个房子___那个大。",
+    "options": [
+      "没有",
+      "不比有",
+      "比没",
+      "不有"
+    ],
+    "answer": "没有",
+    "context": {
+      "point": "A 比 B + adjective + 一点儿 / 一些 / 得多 / 多了",
+      "rule": "一点儿 and 一些 mean a small difference; 得多 and 多了 mean a big difference. The negative is A 没有 B (+ 这么 / 那么) + adjective.",
+      "en": "This house is not as big as that one."
+    },
+    "why": "没有 gives 'not as ... as': 这个房子没有那个大.",
+    "not": {
+      "不比有": "不比 means 'not more than' and needs 不比那个大.",
+      "比没": "比没 has the wrong word order.",
+      "不有": "不有 is not Chinese; the negative of 有 is 没有."
+    }
+  },
+  {
+    "key": "g1ykbukt",
+    "type": "grammar",
+    "lesson": 10,
+    "q": "姐姐比我大___岁。",
+    "options": [
+      "两",
+      "很",
+      "太",
+      "多了"
+    ],
+    "answer": "两",
+    "context": {
+      "point": "A 比 B + adjective + 一点儿 / 一些 / 得多 / 多了",
+      "rule": "一点儿 and 一些 mean a small difference; 得多 and 多了 mean a big difference. The negative is A 没有 B (+ 这么 / 那么) + adjective.",
+      "en": "My older sister is two years older than me."
+    },
+    "why": "比 + adjective + number + measure gives the difference: 大两岁.",
+    "not": {
+      "很": "很 means 'very' and does not give an exact difference.",
+      "太": "太 means 'too' and does not give an exact difference.",
+      "多了": "多了 means 'much more' and does not take 岁."
+    }
+  },
+  {
+    "key": "g6q311t",
+    "type": "grammar",
+    "lesson": 10,
+    "q": "小王的个子没有小李___高。",
+    "options": [
+      "那么",
+      "比较",
+      "一点",
+      "得多"
+    ],
+    "answer": "那么",
+    "context": {
+      "point": "A 比 B + adjective + 一点儿 / 一些 / 得多 / 多了",
+      "rule": "一点儿 and 一些 mean a small difference; 得多 and 多了 mean a big difference. The negative is A 没有 B (+ 这么 / 那么) + adjective.",
+      "en": "Xiao Wang isn't as tall as Xiao Li."
+    },
+    "why": "没有 + B + 那么 + adjective means 'not as ... as': 没有小李那么高.",
+    "not": {
+      "比较": "比较 means 'fairly' and does not fit after 没有.",
+      "一点": "一点 means 'a little' and does not fit after 没有.",
+      "得多": "得多 means 'much more' and contradicts 没有."
+    }
+  },
+  {
+    "key": "g12fskeh",
+    "type": "grammar",
+    "lesson": 10,
+    "q": "我家离学校很近，走路___分钟就到。",
+    "options": [
+      "五六",
+      "五和六",
+      "五加六",
+      "五个六"
+    ],
+    "answer": "五六",
+    "context": {
+      "point": "Approximate numbers: two adjacent numerals",
+      "rule": "Putting two neighbouring numbers together gives a rough amount, such as 一两, 三四, 七八.",
+      "en": "My home is close to school: five or six minutes on foot."
+    },
+    "why": "Two adjacent numbers give an approximate count: 五六分钟 is 'five or six minutes'.",
+    "not": {
+      "五和六": "五和六 means 'five and six', not 'about five or six'.",
+      "五加六": "五加六 means 'five plus six'.",
+      "五个六": "五个六 means 'five sixes'."
+    }
+  },
+  {
+    "key": "g1ik97cd",
+    "type": "grammar",
+    "lesson": 10,
+    "q": "桌子上有___本书。",
+    "options": [
+      "三四",
+      "三和四",
+      "三加四",
+      "三个四"
+    ],
+    "answer": "三四",
+    "context": {
+      "point": "Approximate numbers: two adjacent numerals",
+      "rule": "Putting two neighbouring numbers together gives a rough amount, such as 一两, 三四, 七八.",
+      "en": "There are three or four books on the table."
+    },
+    "why": "Two adjacent numbers give an approximate count: 三四本 is 'three or four'.",
+    "not": {
+      "三和四": "三和四 means 'three and four', not 'about three or four'.",
+      "三加四": "三加四 means 'three plus four'.",
+      "三个四": "三个四 means 'three fours'."
+    }
+  },
+  {
+    "key": "gekdydh",
+    "type": "grammar",
+    "lesson": 10,
+    "q": "他每天睡___个小时。",
+    "options": [
+      "七八",
+      "七和八",
+      "七加八",
+      "七再八"
+    ],
+    "answer": "七八",
+    "context": {
+      "point": "Approximate numbers: two adjacent numerals",
+      "rule": "Putting two neighbouring numbers together gives a rough amount, such as 一两, 三四, 七八.",
+      "en": "He sleeps seven or eight hours every day."
+    },
+    "why": "Two adjacent numbers give an approximate count: 七八个小时 is 'seven or eight hours'.",
+    "not": {
+      "七和八": "七和八 means 'seven and eight', not 'about seven or eight'.",
+      "七加八": "七加八 means 'seven plus eight'.",
+      "七再八": "七再八 is not a phrase."
+    }
+  },
+  {
+    "key": "gc8xx",
+    "type": "grammar",
+    "lesson": 10,
+    "q": "来参加比赛的有___个人。",
+    "options": [
+      "二三十",
+      "二和三十",
+      "二加三十",
+      "二个三十"
+    ],
+    "answer": "二三十",
+    "context": {
+      "point": "Approximate numbers: two adjacent numerals",
+      "rule": "Putting two neighbouring numbers together gives a rough amount, such as 一两, 三四, 七八.",
+      "en": "Twenty or thirty people came to take part in the match."
+    },
+    "why": "二三十 is 'twenty or thirty', using adjacent numbers for an approximation.",
+    "not": {
+      "二和三十": "二和三十 means 'two and thirty', not an approximation.",
+      "二加三十": "二加三十 means 'two plus thirty'.",
+      "二个三十": "二个三十 means 'two thirties'."
+    }
+  },
+  {
+    "key": "g4cpaqo",
+    "type": "grammar",
+    "lesson": 10,
+    "q": "请再等我___分钟，好吗？",
+    "options": [
+      "一两",
+      "一和两",
+      "一加两",
+      "一个两"
+    ],
+    "answer": "一两",
+    "context": {
+      "point": "Approximate numbers: two adjacent numerals",
+      "rule": "Putting two neighbouring numbers together gives a rough amount, such as 一两, 三四, 七八.",
+      "en": "Please wait for me one or two more minutes, OK?"
+    },
+    "why": "Two adjacent numbers give an approximate count: 一两分钟 is 'one or two minutes'.",
+    "not": {
+      "一和两": "一和两 means 'one and two', not approximate.",
+      "一加两": "一加两 means 'one plus two'.",
+      "一个两": "一个两 means 'one two'."
+    }
+  },
+  {
+    "key": "g8ruoy4",
+    "type": "grammar",
+    "lesson": 10,
+    "q": "这件衣服要___百块钱。",
+    "options": [
+      "两三",
+      "两和三",
+      "两加三",
+      "两个三"
+    ],
+    "answer": "两三",
+    "context": {
+      "point": "Approximate numbers: two adjacent numerals",
+      "rule": "Putting two neighbouring numbers together gives a rough amount, such as 一两, 三四, 七八.",
+      "en": "This piece of clothing costs two or three hundred yuan."
+    },
+    "why": "两三百 is 'two or three hundred', using adjacent numbers for an approximation.",
+    "not": {
+      "两和三": "两和三 means 'two and three', not an approximation.",
+      "两加三": "两加三 means 'two plus three'.",
+      "两个三": "两个三 means 'two threes'."
+    }
+  },
+  {
+    "key": "g171sldn",
+    "type": "grammar",
+    "lesson": 11,
+    "q": "请你___灯关了。",
+    "options": [
+      "把",
+      "被",
+      "比",
+      "对"
+    ],
+    "answer": "把",
+    "context": {
+      "point": "把 sentence: A 把 B + verb + …",
+      "rule": "把 puts a known thing B in front of the verb to say what is done to it. It is often used for requests; the result or a complement must follow the verb. A negative word or modal verb goes before 把.",
+      "en": "Please turn off the light."
+    },
+    "why": "A 把 B + verb + ...: 请你把灯关了 means 'please turn off the light'.",
+    "not": {
+      "被": "被 makes the object the subject, but 灯 is the object of 关.",
+      "比": "比 compares two things and does not mean 'handle'.",
+      "对": "对 means 'toward/correct' and does not form this structure."
+    }
+  },
+  {
+    "key": "gd288tl",
+    "type": "grammar",
+    "lesson": 11,
+    "q": "你可以___这个杯子洗了吗？",
+    "options": [
+      "把",
+      "被",
+      "比",
+      "向"
+    ],
+    "answer": "把",
+    "context": {
+      "point": "把 sentence: A 把 B + verb + …",
+      "rule": "把 puts a known thing B in front of the verb to say what is done to it. It is often used for requests; the result or a complement must follow the verb. A negative word or modal verb goes before 把.",
+      "en": "Could you wash this cup?"
+    },
+    "why": "把 + object + verb: 你可以把这个杯子洗了吗 puts the cup before the verb 洗.",
+    "not": {
+      "被": "被 marks a passive (the object does the verb to the subject), so it can't bring this object before the verb.",
+      "比": "比 compares two things (A 比 B + adjective); nothing is compared here.",
+      "向": "向 means 'toward' and takes a person or direction; it doesn't move an object before the verb."
+    }
+  },
+  {
+    "key": "g1y42ymj",
+    "type": "grammar",
+    "lesson": 11,
+    "q": "别___手机忘在家里。",
+    "options": [
+      "把",
+      "被",
+      "比",
+      "往"
+    ],
+    "answer": "把",
+    "context": {
+      "point": "把 sentence: A 把 B + verb + …",
+      "rule": "把 puts a known thing B in front of the verb to say what is done to it. It is often used for requests; the result or a complement must follow the verb. A negative word or modal verb goes before 把.",
+      "en": "Don't leave your phone at home."
+    },
+    "why": "别把手机忘在家里: 把 puts the phone before the verb 忘, with 在家里 as the result.",
+    "not": {
+      "被": "被 marks a passive (the object does the verb to the subject), so it can't bring this object before the verb.",
+      "比": "比 compares two things (A 比 B + adjective); nothing is compared here.",
+      "往": "往 means 'toward' a place; it doesn't move an object before the verb."
+    }
+  },
+  {
+    "key": "g1mjegbz",
+    "type": "grammar",
+    "lesson": 11,
+    "q": "你没___书给我，我还在等。",
+    "options": [
+      "把",
+      "被",
+      "比",
+      "向"
+    ],
+    "answer": "把",
+    "context": {
+      "point": "把 sentence: A 把 B + verb + …",
+      "rule": "把 puts a known thing B in front of the verb to say what is done to it. It is often used for requests; the result or a complement must follow the verb. A negative word or modal verb goes before 把.",
+      "en": "You didn't give me the book; I'm still waiting."
+    },
+    "why": "没把书给我: 把 puts the book before the verb 给; the negative 没 goes before 把.",
+    "not": {
+      "被": "被 marks a passive (the object does the verb to the subject), so it can't bring this object before the verb.",
+      "比": "比 compares two things (A 比 B + adjective); nothing is compared here.",
+      "向": "向 means 'toward' and takes a person or direction; it doesn't move an object before the verb."
+    }
+  },
+  {
+    "key": "gr4w1rk",
+    "type": "grammar",
+    "lesson": 11,
+    "q": "我不能___电脑借给你。",
+    "options": [
+      "把",
+      "被",
+      "从",
+      "往"
+    ],
+    "answer": "把",
+    "context": {
+      "point": "把 sentence: A 把 B + verb + …",
+      "rule": "把 puts a known thing B in front of the verb to say what is done to it. It is often used for requests; the result or a complement must follow the verb. A negative word or modal verb goes before 把.",
+      "en": "I can't lend you the computer."
+    },
+    "why": "我不能把电脑借给你: 把 puts the computer before 借给; 不能 goes before 把.",
+    "not": {
+      "被": "被 marks a passive (the object does the verb to the subject), so it can't bring this object before the verb.",
+      "从": "从 means 'from' a time or place; it is not an object marker.",
+      "往": "往 means 'toward' a place; it doesn't move an object before the verb."
+    }
+  },
+  {
+    "key": "gil1m3m",
+    "type": "grammar",
+    "lesson": 11,
+    "q": "请___这本词典还给图书馆。",
+    "options": [
+      "把",
+      "被",
+      "比",
+      "对"
+    ],
+    "answer": "把",
+    "context": {
+      "point": "把 sentence: A 把 B + verb + …",
+      "rule": "把 puts a known thing B in front of the verb to say what is done to it. It is often used for requests; the result or a complement must follow the verb. A negative word or modal verb goes before 把.",
+      "en": "Please return this dictionary to the library."
+    },
+    "why": "请把这本词典还给图书馆: 把 puts the dictionary before the verb 还给.",
+    "not": {
+      "被": "被 marks a passive (the object does the verb to the subject), so it can't bring this object before the verb.",
+      "比": "比 compares two things (A 比 B + adjective); nothing is compared here.",
+      "对": "对 means 'to / towards' a person; it is not an object marker."
+    }
+  },
+  {
+    "key": "g1cwzurr",
+    "type": "grammar",
+    "lesson": 11,
+    "q": "这个城市的夏天一般三十度___。",
+    "options": [
+      "左右",
+      "的",
+      "和",
+      "一样"
+    ],
+    "answer": "左右",
+    "context": {
+      "point": "左右 (about)",
+      "rule": "左右 comes after a number or quantity to say \"about\" or \"or so\".",
+      "en": "Summers in this city are usually around thirty degrees."
+    },
+    "why": "左右 follows a number and means 'about': 三十度左右 is 'around thirty degrees'.",
+    "not": {
+      "的": "的 links a describing word to a noun; it doesn't give 'about' after a number.",
+      "和": "和 means 'and' and joins two things; it can't end the sentence.",
+      "一样": "一样 means 'the same as' and needs something to compare with."
+    }
+  },
+  {
+    "key": "g69lgyw",
+    "type": "grammar",
+    "lesson": 11,
+    "q": "我们班有二十个学生___。",
+    "options": [
+      "左右",
+      "几",
+      "多了",
+      "一点儿"
+    ],
+    "answer": "左右",
+    "context": {
+      "point": "左右 (about)",
+      "rule": "左右 comes after a number or quantity to say \"about\" or \"or so\".",
+      "en": "Our class has about twenty students."
+    },
+    "why": "左右 after a quantity means 'about': 二十个学生左右 is 'about twenty students'.",
+    "not": {
+      "几": "几 asks or means 'a few' and goes before the measure word, not after 学生.",
+      "多了": "多了 means 'much more' after an adjective; it doesn't mean 'about'.",
+      "一点儿": "一点儿 means 'a little' and doesn't work after 学生."
+    }
+  },
+  {
+    "key": "g7wu5bo",
+    "type": "grammar",
+    "lesson": 11,
+    "q": "这个电脑要五千块___。",
+    "options": [
+      "左右",
+      "比较",
+      "一样",
+      "附近"
+    ],
+    "answer": "左右",
+    "context": {
+      "point": "左右 (about)",
+      "rule": "左右 comes after a number or quantity to say \"about\" or \"or so\".",
+      "en": "This computer costs around five thousand yuan."
+    },
+    "why": "左右 after an amount means 'about': 五千块左右 is 'around 5,000 yuan'.",
+    "not": {
+      "比较": "比较 means 'fairly' and goes before an adjective, not after an amount.",
+      "一样": "一样 means 'the same' and needs something to compare with.",
+      "附近": "附近 means 'nearby' and goes with places, not prices."
+    }
+  },
+  {
+    "key": "gdodyvz",
+    "type": "grammar",
+    "lesson": 11,
+    "q": "他三十岁___，个子很高。",
+    "options": [
+      "左右",
+      "以前的",
+      "多了",
+      "比较"
+    ],
+    "answer": "左右",
+    "context": {
+      "point": "左右 (about)",
+      "rule": "左右 comes after a number or quantity to say \"about\" or \"or so\".",
+      "en": "He is about thirty and quite tall."
+    },
+    "why": "三十岁左右 means 'about thirty years old'; 左右 follows the number.",
+    "not": {
+      "以前的": "以前的 means 'earlier' or 'former' and can't follow 三十岁 to mean 'about'.",
+      "多了": "多了 means 'much more' and doesn't give 'about'.",
+      "比较": "比较 means 'fairly' and goes before an adjective, not after an age."
+    }
+  },
+  {
+    "key": "g2rtrv",
+    "type": "grammar",
+    "lesson": 11,
+    "q": "我每天走路二十分钟___。",
+    "options": [
+      "左右",
+      "的",
+      "比",
+      "先"
+    ],
+    "answer": "左右",
+    "context": {
+      "point": "左右 (about)",
+      "rule": "左右 comes after a number or quantity to say \"about\" or \"or so\".",
+      "en": "I walk about twenty minutes every day."
+    },
+    "why": "二十分钟左右 means 'about twenty minutes'; 左右 follows the amount.",
+    "not": {
+      "的": "的 can't follow 二十分钟 to say 'about'.",
+      "比": "比 compares two things; nothing is compared here.",
+      "先": "先 means 'first' and goes before a verb, not after an amount."
+    }
+  },
+  {
+    "key": "gn3aux9",
+    "type": "grammar",
+    "lesson": 11,
+    "q": "下午三点___，请给我打电话。",
+    "options": [
+      "左右",
+      "不太",
+      "又",
+      "越"
+    ],
+    "answer": "左右",
+    "context": {
+      "point": "左右 (about)",
+      "rule": "左右 comes after a number or quantity to say \"about\" or \"or so\".",
+      "en": "Please call me around three in the afternoon."
+    },
+    "why": "三点左右 means 'around three o'clock'; 左右 follows the time.",
+    "not": {
+      "不太": "不太 means 'not very' and goes before an adjective, not after a time.",
+      "又": "又 means 'again' and goes before a verb.",
+      "越": "越 is used in 越来越 or 越……越……, not after a time."
+    }
+  },
+  {
+    "key": "g1rhvca4",
+    "type": "grammar",
+    "lesson": 12,
+    "q": "他七点___到学校了，比老师还早。",
+    "options": [
+      "就",
+      "才",
+      "又",
+      "再"
+    ],
+    "answer": "就",
+    "context": {
+      "point": "就 and 才",
+      "rule": "Both go before the verb. 就 shows the speaker thinks something happens early, quickly or easily; 才 shows it happens late, slowly or with difficulty.",
+      "en": "He got to school as early as seven, even before the teacher."
+    },
+    "why": "七点就到学校了: 就 shows it was early, so he arrived even before the teacher.",
+    "not": {
+      "才": "才 means 'only then' and shows late; it doesn't fit 'even before the teacher'.",
+      "又": "又 means 'again', but he did not arrive twice.",
+      "再": "再 means 'again' later; this is a past event."
+    }
+  },
+  {
+    "key": "ggl6cc6",
+    "type": "grammar",
+    "lesson": 12,
+    "q": "电影七点开始，她七点半___到。",
+    "options": [
+      "才",
+      "又",
+      "再",
+      "常"
+    ],
+    "answer": "才",
+    "context": {
+      "point": "就 and 才",
+      "rule": "Both go before the verb. 就 shows the speaker thinks something happens early, quickly or easily; 才 shows it happens late, slowly or with difficulty.",
+      "en": "The film started at seven, and she didn't arrive until half past."
+    },
+    "why": "她七点半才到: 才 shows it was later than expected.",
+    "not": {
+      "又": "又 means 'again'; her arriving is not a repeat.",
+      "再": "再 means 'again' for a future action, not 'only then'.",
+      "常": "常 means 'often' and doesn't show lateness."
+    }
+  },
+  {
+    "key": "g1y6f7sw",
+    "type": "grammar",
+    "lesson": 12,
+    "q": "这个字很简单，我看了一次___会写了。",
+    "options": [
+      "就",
+      "才",
+      "再",
+      "还"
+    ],
+    "answer": "就",
+    "context": {
+      "point": "就 and 才",
+      "rule": "Both go before the verb. 就 shows the speaker thinks something happens early, quickly or easily; 才 shows it happens late, slowly or with difficulty.",
+      "en": "This character is simple; I could write it after seeing it once."
+    },
+    "why": "看了一次就会写了: 就 shows it took little effort, so it was quick.",
+    "not": {
+      "才": "才 would mean it took a long time, the opposite of the meaning.",
+      "再": "再 means 'again' for a later action; this is already done.",
+      "还": "还 means 'still' or 'also'; it doesn't show quickness."
+    }
+  },
+  {
+    "key": "g1iyymjy",
+    "type": "grammar",
+    "lesson": 12,
+    "q": "这本书很难，我看了一个月___看完。",
+    "options": [
+      "才",
+      "再",
+      "又",
+      "还"
+    ],
+    "answer": "才",
+    "context": {
+      "point": "就 and 才",
+      "rule": "Both go before the verb. 就 shows the speaker thinks something happens early, quickly or easily; 才 shows it happens late, slowly or with difficulty.",
+      "en": "This book is hard; it took me a whole month to finish it."
+    },
+    "why": "看了一个月才看完: 才 shows it took a long time before it finished.",
+    "not": {
+      "再": "再 means 'again' for a later action.",
+      "又": "又 means 'again' for a repeated action.",
+      "还": "还 means 'still'; it doesn't show 'only after a long time'."
+    }
+  },
+  {
+    "key": "gz98x8u",
+    "type": "grammar",
+    "lesson": 12,
+    "q": "我等了他一个小时，他___来。",
+    "options": [
+      "才",
+      "都",
+      "先",
+      "又"
+    ],
+    "answer": "才",
+    "context": {
+      "point": "就 and 才",
+      "rule": "Both go before the verb. 就 shows the speaker thinks something happens early, quickly or easily; 才 shows it happens late, slowly or with difficulty.",
+      "en": "I waited an hour for him before he finally came."
+    },
+    "why": "等了一个小时，他才来: 才 shows he came late, after a long wait.",
+    "not": {
+      "都": "都 means 'all' or 'even' and doesn't show lateness.",
+      "先": "先 means 'first' and doesn't show lateness.",
+      "又": "又 means 'again'; his coming isn't a repeat."
+    }
+  },
+  {
+    "key": "geryn8g",
+    "type": "grammar",
+    "lesson": 12,
+    "q": "现在才八点，你怎么___要走了？",
+    "options": [
+      "就",
+      "才",
+      "再",
+      "还"
+    ],
+    "answer": "就",
+    "context": {
+      "point": "就 and 才",
+      "rule": "Both go before the verb. 就 shows the speaker thinks something happens early, quickly or easily; 才 shows it happens late, slowly or with difficulty.",
+      "en": "It's only eight; why are you leaving already?"
+    },
+    "why": "现在才八点，你怎么就要走了: 就 shows it is early, so leaving feels too soon.",
+    "not": {
+      "才": "才 would repeat 'only' and shows late, which clashes with 要走了.",
+      "再": "再 means 'again' later, not 'already'.",
+      "还": "还要走了 doesn't give the meaning 'already leaving'."
+    }
+  },
+  {
+    "key": "gio6tf1",
+    "type": "grammar",
+    "lesson": 12,
+    "q": "请把书放___桌子上。",
+    "options": [
+      "在",
+      "给",
+      "对",
+      "从"
+    ],
+    "answer": "在",
+    "context": {
+      "point": "A 把 B + verb + 在 / 到 / 给 + place or person",
+      "rule": "This 把 pattern says that something is moved to a place or handed to someone.",
+      "en": "Please put the book on the table."
+    },
+    "why": "把书放在桌子上: 在 follows 放 to say where the book ends up.",
+    "not": {
+      "给": "给 means 'to' a person receiving something; the object here goes to a place.",
+      "对": "对 means 'towards / to' a person and does not follow a verb after 把.",
+      "从": "从 means 'from', but the sentence needs a destination or recipient."
+    }
+  },
+  {
+    "key": "gdtdrsf",
+    "type": "grammar",
+    "lesson": 12,
+    "q": "我把这封信寄___朋友了。",
+    "options": [
+      "给",
+      "在",
+      "从",
+      "比"
+    ],
+    "answer": "给",
+    "context": {
+      "point": "A 把 B + verb + 在 / 到 / 给 + place or person",
+      "rule": "This 把 pattern says that something is moved to a place or handed to someone.",
+      "en": "I posted the letter to a friend."
+    },
+    "why": "我把这封信寄给朋友了: 给 follows 寄 to say who received it.",
+    "not": {
+      "在": "在 marks a place; 朋友 is a person.",
+      "从": "从 means 'from', but the sentence needs a destination or recipient.",
+      "比": "比 compares two things; it cannot follow the verb here."
+    }
+  },
+  {
+    "key": "gjuk14m",
+    "type": "grammar",
+    "lesson": 12,
+    "q": "朋友把我送___火车站。",
+    "options": [
+      "到",
+      "给",
+      "在",
+      "对"
+    ],
+    "answer": "到",
+    "context": {
+      "point": "A 把 B + verb + 在 / 到 / 给 + place or person",
+      "rule": "This 把 pattern says that something is moved to a place or handed to someone.",
+      "en": "My friend took me to the railway station."
+    },
+    "why": "朋友把我送到火车站: 到 follows 送 to say the destination.",
+    "not": {
+      "给": "给 marks a person who receives something; 火车站 is a place.",
+      "在": "在 marks where something stays, not where someone is taken.",
+      "对": "对 means 'towards / to' a person and does not follow a verb after 把."
+    }
+  },
+  {
+    "key": "g6f4h25",
+    "type": "grammar",
+    "lesson": 12,
+    "q": "他把照片放___我的包里了。",
+    "options": [
+      "在",
+      "给",
+      "对",
+      "向"
+    ],
+    "answer": "在",
+    "context": {
+      "point": "A 把 B + verb + 在 / 到 / 给 + place or person",
+      "rule": "This 把 pattern says that something is moved to a place or handed to someone.",
+      "en": "He put the photos in my bag."
+    },
+    "why": "他把照片放在我的包里了: 在 follows 放 to say where the photos ended up.",
+    "not": {
+      "给": "给 means 'to' a person receiving something; the object here goes to a place.",
+      "对": "对 means 'towards / to' a person and does not follow a verb after 把.",
+      "向": "向 means 'toward' and is not used after the verb in a 把 sentence this way."
+    }
+  },
+  {
+    "key": "glecyp0",
+    "type": "grammar",
+    "lesson": 12,
+    "q": "请你把这本书拿___图书馆去。",
+    "options": [
+      "到",
+      "给",
+      "在",
+      "对"
+    ],
+    "answer": "到",
+    "context": {
+      "point": "A 把 B + verb + 在 / 到 / 给 + place or person",
+      "rule": "This 把 pattern says that something is moved to a place or handed to someone.",
+      "en": "Please take this book to the library."
+    },
+    "why": "请你把这本书拿到图书馆去: 到 follows 拿 to say where the book goes.",
+    "not": {
+      "给": "给 marks a person who receives something; 图书馆 is a place.",
+      "在": "在 marks where something stays, not where it is taken.",
+      "对": "对 means 'towards / to' a person and does not follow a verb after 把."
+    }
+  },
+  {
+    "key": "gelecmi",
+    "type": "grammar",
+    "lesson": 12,
+    "q": "我把礼物送___妈妈了。",
+    "options": [
+      "给",
+      "在",
+      "到",
+      "从"
+    ],
+    "answer": "给",
+    "context": {
+      "point": "A 把 B + verb + 在 / 到 / 给 + place or person",
+      "rule": "This 把 pattern says that something is moved to a place or handed to someone.",
+      "en": "I gave the present to Mum."
+    },
+    "why": "我把礼物送给妈妈了: 给 follows 送 to say who gets the present.",
+    "not": {
+      "在": "在 marks a place; 妈妈 is a person.",
+      "到": "到 marks a destination place; 妈妈 is a person.",
+      "从": "从 means 'from', but the sentence needs a destination or recipient."
+    }
+  },
+  {
+    "key": "g118ipzd",
+    "type": "grammar",
+    "lesson": 13,
+    "q": "小狗从房间里跑___来了。",
+    "options": [
+      "出",
+      "进",
+      "上",
+      "下"
+    ],
+    "answer": "出",
+    "context": {
+      "point": "Compound direction complements: verb + 出 / 回 / 进 / 起 / 过 + 来 or 去",
+      "rule": "A verb plus a direction word plus 来 (towards the speaker) or 去 (away from the speaker). A place object goes between the two parts.",
+      "en": "The puppy ran out of the room."
+    },
+    "why": "跑出来: 出 + 来 means coming out toward the speaker; the puppy ran out of the room.",
+    "not": {
+      "进": "进 means 'into', but 从房间里 shows it came out.",
+      "上": "上 means 'up', not 'out of a room'.",
+      "下": "下 means 'down', not 'out of a room'."
+    }
+  },
+  {
+    "key": "ghupeda",
+    "type": "grammar",
+    "lesson": 13,
+    "q": "我在房间里，妈妈走进房间___了。",
+    "options": [
+      "来",
+      "去",
+      "出",
+      "回"
+    ],
+    "answer": "来",
+    "context": {
+      "point": "Compound direction complements: verb + 出 / 回 / 进 / 起 / 过 + 来 or 去",
+      "rule": "A verb plus a direction word plus 来 (towards the speaker) or 去 (away from the speaker). A place object goes between the two parts.",
+      "en": "I'm in the room, and Mum has walked in."
+    },
+    "why": "走进房间来: 来 shows the movement is toward the speaker, who is in the room.",
+    "not": {
+      "去": "去 means moving away from the speaker; Mum comes toward me.",
+      "出": "出 means 'out', but she walked in.",
+      "回": "回 means 'back' and doesn't fit after 房间 here."
+    }
+  },
+  {
+    "key": "g1i9bgcu",
+    "type": "grammar",
+    "lesson": 13,
+    "q": "我在家里，爸爸走出家门___了。",
+    "options": [
+      "去",
+      "来",
+      "起",
+      "里"
+    ],
+    "answer": "去",
+    "context": {
+      "point": "Compound direction complements: verb + 出 / 回 / 进 / 起 / 过 + 来 or 去",
+      "rule": "A verb plus a direction word plus 来 (towards the speaker) or 去 (away from the speaker). A place object goes between the two parts.",
+      "en": "I'm at home, and Dad has walked out of the door."
+    },
+    "why": "走出家门去: 去 shows Dad moves away from the speaker, who is at home.",
+    "not": {
+      "来": "来 means toward the speaker; Dad went away from me.",
+      "起": "起 needs 来 and doesn't fit after 家门.",
+      "里": "里 means 'inside' and isn't a direction complement here."
+    }
+  },
+  {
+    "key": "g1p318lm",
+    "type": "grammar",
+    "lesson": 13,
+    "q": "看了一天书了，你站___走走吧。",
+    "options": [
+      "起来",
+      "上来",
+      "进来",
+      "出去"
+    ],
+    "answer": "起来",
+    "context": {
+      "point": "Compound direction complements: verb + 出 / 回 / 进 / 起 / 过 + 来 or 去",
+      "rule": "A verb plus a direction word plus 来 (towards the speaker) or 去 (away from the speaker). A place object goes between the two parts.",
+      "en": "You've been reading all day; stand up and walk about a bit."
+    },
+    "why": "站起来: 起来 after 站 means 'stand up'.",
+    "not": {
+      "上来": "上来 means 'come up', not 'rise from sitting'.",
+      "进来": "进来 means 'come in', not 'stand up'.",
+      "出去": "出去 means 'go out', not 'stand up'."
+    }
+  },
+  {
+    "key": "g1oq65z",
+    "type": "grammar",
+    "lesson": 13,
+    "q": "我在家里，妹妹从超市拿回___两瓶牛奶。",
+    "options": [
+      "来",
+      "去",
+      "出",
+      "过"
+    ],
+    "answer": "来",
+    "context": {
+      "point": "Compound direction complements: verb + 出 / 回 / 进 / 起 / 过 + 来 or 去",
+      "rule": "A verb plus a direction word plus 来 (towards the speaker) or 去 (away from the speaker). A place object goes between the two parts.",
+      "en": "I'm at home, and my sister has brought two bottles of milk back from the supermarket."
+    },
+    "why": "拿回来: 回 + 来 means bringing back toward the speaker, who is at home.",
+    "not": {
+      "去": "去 means moving away from the speaker; she brought it to me.",
+      "出": "出 means 'out' and doesn't fit 拿回___.",
+      "过": "过 means 'over / across' and doesn't fit 拿回___."
+    }
+  },
+  {
+    "key": "gkhhdwl",
+    "type": "grammar",
+    "lesson": 13,
+    "q": "哥哥从北京寄___来一些照片。",
+    "options": [
+      "回",
+      "起",
+      "下",
+      "上"
+    ],
+    "answer": "回",
+    "context": {
+      "point": "Compound direction complements: verb + 出 / 回 / 进 / 起 / 过 + 来 or 去",
+      "rule": "A verb plus a direction word plus 来 (towards the speaker) or 去 (away from the speaker). A place object goes between the two parts.",
+      "en": "My brother has posted some photos back from Beijing."
+    },
+    "why": "寄回来: 回 + 来 means sent back toward the speaker; 一些照片 sent from Beijing.",
+    "not": {
+      "起": "起 only works in 起来 and doesn't fit 寄___来.",
+      "下": "下 means 'down' and doesn't suit sending something back.",
+      "上": "上 means 'up' and doesn't suit sending something back."
+    }
+  },
+  {
+    "key": "g1bbqzcf",
+    "type": "grammar",
+    "lesson": 13,
+    "q": "我喜欢一边听音乐，___做作业。",
+    "options": [
+      "一边",
+      "一起",
+      "一样",
+      "一下"
+    ],
+    "answer": "一边",
+    "context": {
+      "point": "一边……一边……",
+      "rule": "Two actions happening at the same time. The first 一 can be dropped.",
+      "en": "I like to listen to music while doing homework."
+    },
+    "why": "一边……，一边……: 一边听音乐，一边做作业 means doing two things at once.",
+    "not": {
+      "一起": "一起 means 'together' and doesn't join two actions.",
+      "一样": "一样 means 'the same'.",
+      "一下": "一下 means 'a bit' after a verb."
+    }
+  },
+  {
+    "key": "gaj3q10",
+    "type": "grammar",
+    "lesson": 13,
+    "q": "我和朋友一边喝咖啡，___聊天儿。",
+    "options": [
+      "一边",
+      "一起",
+      "一般",
+      "一定"
+    ],
+    "answer": "一边",
+    "context": {
+      "point": "一边……一边……",
+      "rule": "Two actions happening at the same time. The first 一 can be dropped.",
+      "en": "My friend and I chatted while drinking coffee."
+    },
+    "why": "一边……，一边……: 一边喝咖啡，一边聊天儿 means doing two things at once.",
+    "not": {
+      "一起": "一起 means 'together' and doesn't join two actions.",
+      "一般": "一般 means 'usually'.",
+      "一定": "一定 means 'certainly'."
+    }
+  },
+  {
+    "key": "goi0xyc",
+    "type": "grammar",
+    "lesson": 13,
+    "q": "你不要一边开车___打电话。",
+    "options": [
+      "一边",
+      "一起",
+      "一共",
+      "一样"
+    ],
+    "answer": "一边",
+    "context": {
+      "point": "一边……一边……",
+      "rule": "Two actions happening at the same time. The first 一 can be dropped.",
+      "en": "Don't make phone calls while driving."
+    },
+    "why": "不要一边开车一边打电话: 一边……一边…… links two actions at once.",
+    "not": {
+      "一起": "一起 means 'together'.",
+      "一共": "一共 means 'in total'.",
+      "一样": "一样 means 'the same'."
+    }
+  },
+  {
+    "key": "g1ssil9q",
+    "type": "grammar",
+    "lesson": 13,
+    "q": "妈妈___做饭一边跟我说话。",
+    "options": [
+      "一边",
+      "一般",
+      "一定",
+      "一直"
+    ],
+    "answer": "一边",
+    "context": {
+      "point": "一边……一边……",
+      "rule": "Two actions happening at the same time. The first 一 can be dropped.",
+      "en": "Mum chats with me while she cooks."
+    },
+    "why": "妈妈一边做饭一边跟我说话: the first 一边 pairs with the second one.",
+    "not": {
+      "一般": "一般 means 'usually' and doesn't pair with 一边.",
+      "一定": "一定 means 'certainly'.",
+      "一直": "一直 means 'all the time'."
+    }
+  },
+  {
+    "key": "g1d2gqri",
+    "type": "grammar",
+    "lesson": 13,
+    "q": "他喜欢一边走路，一边___音乐。",
+    "options": [
+      "听",
+      "一听",
+      "听了",
+      "听着听"
+    ],
+    "answer": "听",
+    "context": {
+      "point": "一边……一边……",
+      "rule": "Two actions happening at the same time. The first 一 can be dropped.",
+      "en": "He likes to listen to music while walking."
+    },
+    "why": "一边走路，一边听音乐: after 一边 you need a bare verb, 听.",
+    "not": {
+      "一听": "一听 means 'hear it once' and can't follow 一边.",
+      "听了": "听了 marks a finished action; 一边 needs a bare verb.",
+      "听着听": "听着听 is not a pattern."
+    }
+  },
+  {
+    "key": "gv9cvys",
+    "type": "grammar",
+    "lesson": 13,
+    "q": "妹妹边唱___跳，玩儿得很高兴。",
+    "options": [
+      "边",
+      "也",
+      "就",
+      "再"
+    ],
+    "answer": "边",
+    "context": {
+      "point": "一边……一边……",
+      "rule": "Two actions happening at the same time. The first 一 can be dropped.",
+      "en": "My sister sang and danced at the same time, having great fun."
+    },
+    "why": "边唱边跳 is the short form of 一边唱一边跳: doing both at once.",
+    "not": {
+      "也": "也 means 'also'; 边唱也跳 is not this pattern.",
+      "就": "就 means 'then / right away' and doesn't pair with 边.",
+      "再": "再 means 'again / then' and doesn't pair with 边."
+    }
+  },
+  {
+    "key": "g1cxvgp6",
+    "type": "grammar",
+    "lesson": 14,
+    "q": "我把盘子洗___了。",
+    "options": [
+      "干净",
+      "高兴",
+      "安静",
+      "方便"
+    ],
+    "answer": "干净",
+    "context": {
+      "point": "把 + object + verb + result or direction complement",
+      "rule": "The thing handled is put after 把; the verb is followed by a complement that says the result (好, 干净, 完) or the direction (出来, 过去).",
+      "en": "I've washed the plates clean."
+    },
+    "why": "洗干净: 干净 after the verb tells the result, so the plates are clean.",
+    "not": {
+      "高兴": "高兴 means 'happy' and can't be the result of washing plates.",
+      "安静": "安静 means 'quiet', not a result of washing.",
+      "方便": "方便 means 'convenient', not a result of washing."
+    }
+  },
+  {
+    "key": "g141ubyx",
+    "type": "grammar",
+    "lesson": 14,
+    "q": "我还没把作业写___呢。",
+    "options": [
+      "好",
+      "高",
+      "长",
+      "远"
+    ],
+    "answer": "好",
+    "context": {
+      "point": "把 + object + verb + result or direction complement",
+      "rule": "The thing handled is put after 把; the verb is followed by a complement that says the result (好, 干净, 完) or the direction (出来, 过去).",
+      "en": "I haven't finished my homework yet."
+    },
+    "why": "写好: 好 after 写 means the writing is done properly; 还没……呢 says not yet.",
+    "not": {
+      "高": "高 means 'tall' and can't be a result of writing.",
+      "长": "长 means 'long' and isn't the result meant here.",
+      "远": "远 means 'far' and doesn't suit 写."
+    }
+  },
+  {
+    "key": "g16lzsnv",
+    "type": "grammar",
+    "lesson": 14,
+    "q": "我在楼下，你把伞拿___吧。",
+    "options": [
+      "下来",
+      "上去",
+      "进去",
+      "过去"
+    ],
+    "answer": "下来",
+    "context": {
+      "point": "把 + object + verb + result or direction complement",
+      "rule": "The thing handled is put after 把; the verb is followed by a complement that says the result (好, 干净, 完) or the direction (出来, 过去).",
+      "en": "I'm downstairs; bring the umbrella down to me."
+    },
+    "why": "拿下来: 下来 means bringing it down toward the speaker, who is downstairs.",
+    "not": {
+      "上去": "上去 means going up away from the speaker, but I'm downstairs.",
+      "进去": "进去 means 'go in', not 'come down'.",
+      "过去": "过去 means 'go over', not 'come down'."
+    }
+  },
+  {
+    "key": "ghj7ng0",
+    "type": "grammar",
+    "lesson": 14,
+    "q": "你把这个节目看___就去写作业。",
+    "options": [
+      "完",
+      "的",
+      "地",
+      "得"
+    ],
+    "answer": "完",
+    "context": {
+      "point": "把 + object + verb + result or direction complement",
+      "rule": "The thing handled is put after 把; the verb is followed by a complement that says the result (好, 干净, 完) or the direction (出来, 过去).",
+      "en": "Finish watching this programme and then go and do your homework."
+    },
+    "why": "把这个节目看完: 完 after 看 means finished watching.",
+    "not": {
+      "的": "的 can't follow a verb to give a result.",
+      "地": "地 links an adverb to a verb; it can't be a result.",
+      "得": "得 links a verb to a degree or result phrase; it is not a complement here."
+    }
+  },
+  {
+    "key": "g1focjo7",
+    "type": "grammar",
+    "lesson": 14,
+    "q": "别着急，我把你的行李搬___房间里去了。",
+    "options": [
+      "进",
+      "出",
+      "上",
+      "下"
+    ],
+    "answer": "进",
+    "context": {
+      "point": "把 + object + verb + result or direction complement",
+      "rule": "The thing handled is put after 把; the verb is followed by a complement that says the result (好, 干净, 完) or the direction (出来, 过去).",
+      "en": "Don't worry, I carried your luggage into the room."
+    },
+    "why": "搬进房间里去: 进 + 去 means carrying the luggage into the room.",
+    "not": {
+      "出": "出 means 'out', but the luggage goes into the room.",
+      "上": "上 means 'up' and doesn't fit 房间里.",
+      "下": "下 means 'down' and doesn't fit 房间里."
+    }
+  },
+  {
+    "key": "gefw2n2",
+    "type": "grammar",
+    "lesson": 14,
+    "q": "请你把窗户打___。",
+    "options": [
+      "开",
+      "去",
+      "近",
+      "高"
+    ],
+    "answer": "开",
+    "context": {
+      "point": "把 + object + verb + result or direction complement",
+      "rule": "The thing handled is put after 把; the verb is followed by a complement that says the result (好, 干净, 完) or the direction (出来, 过去).",
+      "en": "Please open the window."
+    },
+    "why": "把窗户打开: 开 after 打 means the window ends up open.",
+    "not": {
+      "去": "去 means 'go' and isn't the result of 打开.",
+      "近": "近 means 'near'; windows aren't opened that way.",
+      "高": "高 means 'tall' and isn't a result of 打."
+    }
+  },
+  {
+    "key": "g19e6r6y",
+    "type": "grammar",
+    "lesson": 14,
+    "q": "起床以后，我___洗澡，然后吃早饭。",
+    "options": [
+      "先",
+      "又",
+      "再",
+      "才"
+    ],
+    "answer": "先",
+    "context": {
+      "point": "先……，再 / 又……，然后……",
+      "rule": "First…, then…, after that…. 再 is for actions that have not happened yet; 又 is for ones that have.",
+      "en": "After I get up I take a shower first, then have breakfast."
+    },
+    "why": "先洗澡，然后吃早饭: 先 starts the first step in the order.",
+    "not": {
+      "又": "又 means 'again' and doesn't start a sequence.",
+      "再": "再 means 'then' for the later step, not the first.",
+      "才": "才 means 'only then' and shows lateness, not a first step."
+    }
+  },
+  {
+    "key": "g1jykz0l",
+    "type": "grammar",
+    "lesson": 14,
+    "q": "你先把饭吃完，然后___出去玩儿。",
+    "options": [
+      "再",
+      "又",
+      "都",
+      "把"
+    ],
+    "answer": "再",
+    "context": {
+      "point": "先……，再 / 又……，然后……",
+      "rule": "First…, then…, after that…. 再 is for actions that have not happened yet; 又 is for ones that have.",
+      "en": "Finish your meal first, then go out and play."
+    },
+    "why": "先……，然后再……: 再 follows 然后 to mean 'after that, then'.",
+    "not": {
+      "又": "又 means 'again' for a past event; this is a future instruction.",
+      "都": "都 means 'all'.",
+      "把": "把 can't stand here; 出去玩儿 needs no object."
+    }
+  },
+  {
+    "key": "g1pbc2lb",
+    "type": "grammar",
+    "lesson": 14,
+    "q": "昨天我先去了超市，___去了图书馆。",
+    "options": [
+      "又",
+      "再",
+      "才",
+      "先"
+    ],
+    "answer": "又",
+    "context": {
+      "point": "先……，再 / 又……，然后……",
+      "rule": "First…, then…, after that…. 再 is for actions that have not happened yet; 又 is for ones that have.",
+      "en": "Yesterday I went to the supermarket first, then to the library."
+    },
+    "why": "先去了……，又去了……: 又 links a second past action after the first.",
+    "not": {
+      "再": "再 is used for future actions; 去了 here is past.",
+      "才": "才 means 'only then' and doesn't suit a simple next step.",
+      "先": "先 would start a new sequence, but 先 was already used."
+    }
+  },
+  {
+    "key": "gejhehu",
+    "type": "grammar",
+    "lesson": 14,
+    "q": "你先把桌子擦干净，然后___把盘子放上去。",
+    "options": [
+      "再",
+      "又",
+      "已经",
+      "都"
+    ],
+    "answer": "再",
+    "context": {
+      "point": "先……，再 / 又……，然后……",
+      "rule": "First…, then…, after that…. 再 is for actions that have not happened yet; 又 is for ones that have.",
+      "en": "Wipe the table clean first, then put the plates on it."
+    },
+    "why": "先……，然后再……: 再把盘子放上去 is the later step in a future order.",
+    "not": {
+      "又": "又 is for a past or repeated action, not a future step.",
+      "已经": "已经 means 'already' and doesn't fit a plan.",
+      "都": "都 means 'all' and doesn't link steps."
+    }
+  },
+  {
+    "key": "g1lj0bnh",
+    "type": "grammar",
+    "lesson": 14,
+    "q": "明天我先去图书馆，___去超市。",
+    "options": [
+      "然后",
+      "但是",
+      "因为",
+      "所以"
+    ],
+    "answer": "然后",
+    "context": {
+      "point": "先……，再 / 又……，然后……",
+      "rule": "First…, then…, after that…. 再 is for actions that have not happened yet; 又 is for ones that have.",
+      "en": "Tomorrow I'll go to the library first and then the supermarket."
+    },
+    "why": "先去图书馆，然后去超市: 然后 links the first step to the next.",
+    "not": {
+      "但是": "但是 means 'but' and doesn't link steps.",
+      "因为": "因为 means 'because'.",
+      "所以": "所以 means 'so'."
+    }
+  },
+  {
+    "key": "gysqb3z",
+    "type": "grammar",
+    "lesson": 14,
+    "q": "我先洗了澡，然后___看了一会儿电视。",
+    "options": [
+      "又",
+      "再",
+      "都",
+      "要"
+    ],
+    "answer": "又",
+    "context": {
+      "point": "先……，再 / 又……，然后……",
+      "rule": "First…, then…, after that…. 再 is for actions that have not happened yet; 又 is for ones that have.",
+      "en": "I took a shower first, and then watched TV for a while."
+    },
+    "why": "先洗了澡，然后又看了一会儿电视: 又 adds a second past action.",
+    "not": {
+      "再": "再 is for future actions; 看了 is past.",
+      "都": "都 means 'all' and doesn't link steps.",
+      "要": "要 means 'want / will' and doesn't fit 看了."
+    }
+  },
+  {
+    "key": "gq6g60u",
+    "type": "grammar",
+    "lesson": 15,
+    "q": "___这本书以外，别的书我都看过。",
+    "options": [
+      "除了",
+      "因为",
+      "如果",
+      "还是"
+    ],
+    "answer": "除了",
+    "context": {
+      "point": "除了……以外，都……",
+      "rule": "除了 A 以外，都 …: everyone/everything except A does it",
+      "en": "I've read every book except this one."
+    },
+    "why": "除了……以外，别的书我都看过: 除了 means 'except' and pairs with 以外.",
+    "not": {
+      "因为": "因为 means 'because'.",
+      "如果": "如果 means 'if'.",
+      "还是": "还是 means 'or' or 'still'."
+    }
+  },
+  {
+    "key": "gusws4b",
+    "type": "grammar",
+    "lesson": 15,
+    "q": "除了小李以外，其他同学___来了。",
+    "options": [
+      "都",
+      "还",
+      "也",
+      "只"
+    ],
+    "answer": "都",
+    "context": {
+      "point": "除了……以外，都……",
+      "rule": "除了 A 以外，都 …: everyone/everything except A does it",
+      "en": "Everyone except Xiao Li has come."
+    },
+    "why": "除了小李以外，其他同学都来了: 都 covers everyone apart from the exception.",
+    "not": {
+      "还": "还 adds 'also', which means 'besides', not 'everyone else'.",
+      "也": "也 means 'also' and doesn't cover everyone.",
+      "只": "只 means 'only', which contradicts 'everyone came'."
+    }
+  },
+  {
+    "key": "g1gbrzum",
+    "type": "grammar",
+    "lesson": 15,
+    "q": "我们学校除了王老师，其他老师___是男的。",
+    "options": [
+      "都",
+      "还",
+      "才",
+      "就"
+    ],
+    "answer": "都",
+    "context": {
+      "point": "除了……以外，都……",
+      "rule": "除了 A 以外，都 …: everyone/everything except A does it",
+      "en": "In our school, all the teachers except Teacher Wang are men."
+    },
+    "why": "除了王老师，其他老师都是男的: 都 covers all the others besides the exception.",
+    "not": {
+      "还": "还 means 'also', but the sentence needs 'all'.",
+      "才": "才 means 'only then'.",
+      "就": "就 means 'then / just' and doesn't cover everyone."
+    }
+  },
+  {
+    "key": "g1v7zb3i",
+    "type": "grammar",
+    "lesson": 15,
+    "q": "除了周末，我___天都要上班。",
+    "options": [
+      "每",
+      "各",
+      "多",
+      "这"
+    ],
+    "answer": "每",
+    "context": {
+      "point": "除了……以外，都……",
+      "rule": "除了 A 以外，都 …: everyone/everything except A does it",
+      "en": "Except at weekends, I work every day."
+    },
+    "why": "每天 means 'every day': 除了周末，我每天都要上班.",
+    "not": {
+      "各": "各 means 'each' and goes before a measure word, not 天.",
+      "多": "多天 means 'many days', not 'every day'.",
+      "这": "这天 means 'this day', not 'every day'."
+    }
+  },
+  {
+    "key": "gnx4vv2",
+    "type": "grammar",
+    "lesson": 15,
+    "q": "___他以外，我们都去过长城。",
+    "options": [
+      "除了",
+      "为了",
+      "对于",
+      "关于"
+    ],
+    "answer": "除了",
+    "context": {
+      "point": "除了……以外，都……",
+      "rule": "除了 A 以外，都 …: everyone/everything except A does it",
+      "en": "Apart from him, all of us have been to the Great Wall."
+    },
+    "why": "除了他以外，我们都去过长城: 除了 means 'except', with 都 after it.",
+    "not": {
+      "为了": "为了 means 'in order to'.",
+      "对于": "对于 means 'regarding'.",
+      "关于": "关于 means 'about'."
+    }
+  },
+  {
+    "key": "gxvce9c",
+    "type": "grammar",
+    "lesson": 15,
+    "q": "除了咖啡以外，他___喜欢喝茶。",
+    "options": [
+      "还",
+      "都",
+      "就",
+      "才"
+    ],
+    "answer": "还",
+    "context": {
+      "point": "除了……以外，还/也……",
+      "rule": "除了 A 以外，还 B: A and also B",
+      "en": "Besides coffee, he also likes tea."
+    },
+    "why": "除了咖啡以外，他还喜欢喝茶: 还 adds something besides the coffee.",
+    "not": {
+      "都": "都 means 'all', but this sentence adds tea, not 'all'.",
+      "就": "就 means 'then / just' and doesn't add.",
+      "才": "才 means 'only then' and doesn't add."
+    }
+  },
+  {
+    "key": "g1pmreve",
+    "type": "grammar",
+    "lesson": 15,
+    "q": "除了英语，我___会说汉语。",
+    "options": [
+      "还",
+      "都",
+      "再",
+      "才"
+    ],
+    "answer": "还",
+    "context": {
+      "point": "除了……以外，还/也……",
+      "rule": "除了 A 以外，还 B: A and also B",
+      "en": "Besides English, I can speak Chinese too."
+    },
+    "why": "除了英语，我还会说汉语: 还 adds Chinese besides English.",
+    "not": {
+      "都": "都 means 'all', but this adds one more language.",
+      "再": "再 means 'again' and doesn't add here.",
+      "才": "才 means 'only then' and doesn't add."
+    }
+  },
+  {
+    "key": "g16pzvfh",
+    "type": "grammar",
+    "lesson": 15,
+    "q": "除了唱歌，她___会跳舞。",
+    "options": [
+      "也",
+      "都",
+      "再",
+      "才"
+    ],
+    "answer": "也",
+    "context": {
+      "point": "除了……以外，还/也……",
+      "rule": "除了 A 以外，还 B: A and also B",
+      "en": "Besides singing, she can dance too."
+    },
+    "why": "除了唱歌，她也会跳舞: 也 adds dancing besides singing.",
+    "not": {
+      "都": "都 means 'all', but this adds one more skill.",
+      "再": "再 means 'again' and doesn't add here.",
+      "才": "才 means 'only then' and doesn't add."
+    }
+  },
+  {
+    "key": "g16er3gq",
+    "type": "grammar",
+    "lesson": 15,
+    "q": "除了打篮球，他还喜欢___。",
+    "options": [
+      "游泳",
+      "游泳了",
+      "在游泳",
+      "游泳的"
+    ],
+    "answer": "游泳",
+    "context": {
+      "point": "除了……以外，还/也……",
+      "rule": "除了 A 以外，还 B: A and also B",
+      "en": "Besides basketball, he likes swimming too."
+    },
+    "why": "除了打篮球，他还喜欢游泳: 还喜欢 needs a bare verb 游泳 after it.",
+    "not": {
+      "游泳了": "游泳了 marks a finished action, not a liking.",
+      "在游泳": "在游泳 means 'is swimming right now'.",
+      "游泳的": "游泳的 means 'the one who swims' and leaves 喜欢 incomplete."
+    }
+  },
+  {
+    "key": "g1hxdj1b",
+    "type": "grammar",
+    "lesson": 15,
+    "q": "除了这件衣服以外，我___买了一条裤子。",
+    "options": [
+      "还",
+      "都",
+      "才",
+      "就"
+    ],
+    "answer": "还",
+    "context": {
+      "point": "除了……以外，还/也……",
+      "rule": "除了 A 以外，还 B: A and also B",
+      "en": "Besides this piece of clothing, I also bought a pair of trousers."
+    },
+    "why": "除了这件衣服以外，我还买了一条裤子: 还 adds another item.",
+    "not": {
+      "都": "都 means 'all', but this adds one more item.",
+      "才": "才 means 'only then' and doesn't add.",
+      "就": "就 means 'then / just' and doesn't add."
+    }
+  },
+  {
+    "key": "g1b8li3f",
+    "type": "grammar",
+    "lesson": 15,
+    "q": "你想不想吃点儿___？",
+    "options": [
+      "什么",
+      "谁",
+      "哪儿",
+      "怎么"
+    ],
+    "answer": "什么",
+    "context": {
+      "point": "什么 (soft, indefinite)",
+      "rule": "有没有什么 …: “什么” makes a question softer, and the sentence means the same without it",
+      "en": "Would you like something to eat?"
+    },
+    "why": "什么 here is soft and indefinite: 吃点儿什么 means 'something to eat'.",
+    "not": {
+      "谁": "谁 means 'who' and can't be eaten.",
+      "哪儿": "哪儿 means 'where' and doesn't fit after 吃点儿.",
+      "怎么": "怎么 means 'how' and doesn't fit after 吃点儿."
+    }
+  },
+  {
+    "key": "g1hjuwh",
+    "type": "grammar",
+    "lesson": 15,
+    "q": "你的作业有没有___问题？",
+    "options": [
+      "什么",
+      "怎么",
+      "多少",
+      "几"
+    ],
+    "answer": "什么",
+    "context": {
+      "point": "什么 (soft, indefinite)",
+      "rule": "有没有什么 …: “什么” makes a question softer, and the sentence means the same without it",
+      "en": "Are there any problems with your homework?"
+    },
+    "why": "什么 means 'any' in 有没有什么问题: 'any problems at all'.",
+    "not": {
+      "怎么": "怎么 means 'how' and doesn't go before 问题.",
+      "多少": "多少 asks 'how many' and doesn't fit 有没有.",
+      "几": "几 asks 'how many (small number)' and needs a measure word."
+    }
+  },
+  {
+    "key": "gm2a5to",
+    "type": "grammar",
+    "lesson": 15,
+    "q": "你有没有___要买的东西？",
+    "options": [
+      "什么",
+      "哪儿",
+      "怎么样",
+      "为什么"
+    ],
+    "answer": "什么",
+    "context": {
+      "point": "什么 (soft, indefinite)",
+      "rule": "有没有什么 …: “什么” makes a question softer, and the sentence means the same without it",
+      "en": "Is there anything you want to buy?"
+    },
+    "why": "有没有什么要买的东西: 什么 means 'any' in this yes/no question.",
+    "not": {
+      "哪儿": "哪儿 means 'where' and doesn't go before 要买的东西.",
+      "怎么样": "怎么样 means 'how is it' and doesn't go before a noun phrase.",
+      "为什么": "为什么 means 'why' and doesn't go before a noun phrase."
+    }
+  },
+  {
+    "key": "g1b72lni",
+    "type": "grammar",
+    "lesson": 15,
+    "q": "这个周末你有___打算吗？",
+    "options": [
+      "什么",
+      "谁",
+      "几",
+      "怎么"
+    ],
+    "answer": "什么",
+    "context": {
+      "point": "什么 (soft, indefinite)",
+      "rule": "有没有什么 …: “什么” makes a question softer, and the sentence means the same without it",
+      "en": "Do you have any plans for this weekend?"
+    },
+    "why": "有什么打算 means 'any plans': 什么 is soft and indefinite here.",
+    "not": {
+      "谁": "谁 means 'who' and doesn't fit before 打算.",
+      "几": "几 asks 'how many' and needs a measure word.",
+      "怎么": "怎么 means 'how' and doesn't fit before 打算."
+    }
+  },
+  {
+    "key": "g1qurj5g",
+    "type": "grammar",
+    "lesson": 15,
+    "q": "这里没___人，我们坐下吧。",
+    "options": [
+      "什么",
+      "多么",
+      "一点",
+      "怎么"
+    ],
+    "answer": "什么",
+    "context": {
+      "point": "什么 (soft, indefinite)",
+      "rule": "有没有什么 …: “什么” makes a question softer, and the sentence means the same without it",
+      "en": "There aren't many people here; let's sit down."
+    },
+    "why": "没什么人 means 'not many people': 什么 here softens the negative.",
+    "not": {
+      "多么": "多么 means 'how (very)' and doesn't go before 人.",
+      "一点": "一点 means 'a bit' and 没一点人 is not natural.",
+      "怎么": "怎么 means 'how' and doesn't go before 人."
+    }
+  },
+  {
+    "key": "g1bsbzs3",
+    "type": "grammar",
+    "lesson": 15,
+    "q": "这个公园漂亮___。",
+    "options": [
+      "极了",
+      "得极",
+      "很极",
+      "太极"
+    ],
+    "answer": "极了",
+    "context": {
+      "point": "极了",
+      "rule": "Adj / mental verb + 极了: extremely",
+      "en": "This park is extremely beautiful."
+    },
+    "why": "Adjective + 极了 means 'extremely': 漂亮极了.",
+    "not": {
+      "得极": "得极 is not a pattern; you say 极了 after the adjective.",
+      "很极": "很极 is not a pattern.",
+      "太极": "太极 is not a pattern (太极 is 'tai chi')."
+    }
+  },
+  {
+    "key": "g1gt7n1a",
+    "type": "grammar",
+    "lesson": 15,
+    "q": "今天的天气好___，我们去爬山吧。",
+    "options": [
+      "极了",
+      "极是",
+      "很极",
+      "太极"
+    ],
+    "answer": "极了",
+    "context": {
+      "point": "极了",
+      "rule": "Adj / mental verb + 极了: extremely",
+      "en": "The weather is wonderful today; let's go hiking."
+    },
+    "why": "好极了 means 'extremely good': 极了 follows the adjective 好.",
+    "not": {
+      "极是": "极是 is not a pattern.",
+      "很极": "很极 is not a pattern.",
+      "太极": "太极 is not a pattern (太极 is 'tai chi')."
+    }
+  },
+  {
+    "key": "g1n9qlg7",
+    "type": "grammar",
+    "lesson": 15,
+    "q": "我妈妈做的菜好吃___。",
+    "options": [
+      "极了",
+      "极是",
+      "极着",
+      "极过"
+    ],
+    "answer": "极了",
+    "context": {
+      "point": "极了",
+      "rule": "Adj / mental verb + 极了: extremely",
+      "en": "The food my mother makes is extremely tasty."
+    },
+    "why": "好吃极了 means 'extremely tasty': 极了 follows the adjective.",
+    "not": {
+      "极是": "极是 is not a pattern.",
+      "极着": "极着 is not a pattern.",
+      "极过": "极过 is not a pattern."
+    }
+  },
+  {
+    "key": "g1rxoimt",
+    "type": "grammar",
+    "lesson": 15,
+    "q": "听到这个好消息，他高兴___。",
+    "options": [
+      "极了",
+      "极要",
+      "极吗",
+      "极呢"
+    ],
+    "answer": "极了",
+    "context": {
+      "point": "极了",
+      "rule": "Adj / mental verb + 极了: extremely",
+      "en": "He was extremely happy to hear the good news."
+    },
+    "why": "高兴极了 means 'extremely happy': 极了 follows the adjective.",
+    "not": {
+      "极要": "极要 is not a pattern.",
+      "极吗": "极吗 is not a pattern; 吗 only makes questions.",
+      "极呢": "极呢 is not a pattern."
+    }
+  },
+  {
+    "key": "g3ys4zk",
+    "type": "grammar",
+    "lesson": 15,
+    "q": "那个电影我喜欢___。",
+    "options": [
+      "极了",
+      "极是",
+      "极吗",
+      "极地"
+    ],
+    "answer": "极了",
+    "context": {
+      "point": "极了",
+      "rule": "Adj / mental verb + 极了: extremely",
+      "en": "I like that film extremely."
+    },
+    "why": "喜欢极了 means 'like it extremely': 极了 can follow a verb like 喜欢.",
+    "not": {
+      "极是": "极是 is not a pattern.",
+      "极吗": "极吗 is not a pattern; 吗 only makes questions.",
+      "极地": "极地 means 'polar region', not a degree word."
+    }
+  },
+  {
+    "key": "gs2s4js",
+    "type": "grammar",
+    "lesson": 16,
+    "q": "___明天不下雨，我们就去公园。",
+    "options": [
+      "如果",
+      "因为",
+      "虽然",
+      "除了"
+    ],
+    "answer": "如果",
+    "context": {
+      "point": "如果……(的话)，(S)就……",
+      "rule": "如果 A，就 B: if A, then B (the subject goes before 就)",
+      "en": "If it doesn't rain tomorrow, we'll go to the park."
+    },
+    "why": "如果……，我们就……: 如果 means 'if'.",
+    "not": {
+      "因为": "因为 means 'because', but the meaning is conditional.",
+      "虽然": "虽然 means 'although'.",
+      "除了": "除了 means 'except'."
+    }
+  },
+  {
+    "key": "g1g25juz",
+    "type": "grammar",
+    "lesson": 16,
+    "q": "如果你累了，___去休息吧。",
+    "options": [
+      "就",
+      "才",
+      "也",
+      "都"
+    ],
+    "answer": "就",
+    "context": {
+      "point": "如果……(的话)，(S)就……",
+      "rule": "如果 A，就 B: if A, then B (the subject goes before 就)",
+      "en": "If you're tired, go and rest."
+    },
+    "why": "如果你累了，就去休息吧: 就 links the 'if' clause to the result.",
+    "not": {
+      "才": "才 means 'only then' and doesn't fit this advice.",
+      "也": "也 means 'also' and doesn't link a result to an 'if'.",
+      "都": "都 means 'all' and doesn't link a result."
+    }
+  },
+  {
+    "key": "g4n4csh",
+    "type": "grammar",
+    "lesson": 16,
+    "q": "如果我有钱的话，我___买一辆新车。",
+    "options": [
+      "就",
+      "才",
+      "都",
+      "极"
+    ],
+    "answer": "就",
+    "context": {
+      "point": "如果……(的话)，(S)就……",
+      "rule": "如果 A，就 B: if A, then B (the subject goes before 就)",
+      "en": "If I had money, I'd buy a new car."
+    },
+    "why": "如果……的话，我就买: 就 links the 'if' clause to the result.",
+    "not": {
+      "才": "才 means 'only then' and doesn't suit this meaning.",
+      "都": "都 means 'all' and doesn't link a result.",
+      "极": "极 only appears in 极了 and doesn't fit before 买."
+    }
+  },
+  {
+    "key": "guojo01",
+    "type": "grammar",
+    "lesson": 16,
+    "q": "如果你喜欢这件衣服，___买吧。",
+    "options": [
+      "就",
+      "但",
+      "却",
+      "还"
+    ],
+    "answer": "就",
+    "context": {
+      "point": "如果……(的话)，(S)就……",
+      "rule": "如果 A，就 B: if A, then B (the subject goes before 就)",
+      "en": "If you like these clothes, then buy them."
+    },
+    "why": "如果你喜欢，就买吧: 就 links the 'if' clause to the advice.",
+    "not": {
+      "但": "但 means 'but' and contradicts 如果.",
+      "却": "却 means 'yet' and contradicts 如果.",
+      "还": "还 means 'still' and doesn't link an 'if' clause to the result."
+    }
+  },
+  {
+    "key": "gxr6w4w",
+    "type": "grammar",
+    "lesson": 16,
+    "q": "如果你有问题，我们___一起想办法。",
+    "options": [
+      "就",
+      "才",
+      "可是",
+      "或者"
+    ],
+    "answer": "就",
+    "context": {
+      "point": "如果……(的话)，(S)就……",
+      "rule": "如果 A，就 B: if A, then B (the subject goes before 就)",
+      "en": "If you have a problem, we'll think of a way together."
+    },
+    "why": "如果你有问题，我们就一起想办法: 就 links the 'if' clause to the result.",
+    "not": {
+      "才": "才 means 'only then' and doesn't fit.",
+      "可是": "可是 means 'but' and contradicts 如果.",
+      "或者": "或者 means 'or' and doesn't link a result."
+    }
+  },
+  {
+    "key": "g10bgr45",
+    "type": "grammar",
+    "lesson": 16,
+    "q": "听到这个消息，她高兴___哭了。",
+    "options": [
+      "得",
+      "的",
+      "地",
+      "了"
+    ],
+    "answer": "得",
+    "context": {
+      "point": "V/Adj + 得 + (state)",
+      "rule": "得 complement of state: 累得 … / 高兴得 …: so … that …",
+      "en": "She was so happy at the news that she cried."
+    },
+    "why": "高兴得哭了: 得 links the adjective 高兴 to the result 哭了.",
+    "not": {
+      "的": "的 links a describing word to a noun.",
+      "地": "地 links an adverb to a verb.",
+      "了": "了 marks completion and can't link 高兴 to the result."
+    }
+  },
+  {
+    "key": "g8vkd8k",
+    "type": "grammar",
+    "lesson": 16,
+    "q": "她累___一回家就睡觉了。",
+    "options": [
+      "得",
+      "的",
+      "地",
+      "着"
+    ],
+    "answer": "得",
+    "context": {
+      "point": "V/Adj + 得 + (state)",
+      "rule": "得 complement of state: 累得 … / 高兴得 …: so … that …",
+      "en": "She was so tired that she went to sleep as soon as she got home."
+    },
+    "why": "累得一回家就睡觉了: 得 links 累 to the result clause.",
+    "not": {
+      "的": "的 links a describing word to a noun.",
+      "地": "地 links an adverb to a verb.",
+      "着": "着 marks an ongoing state and doesn't link a result."
+    }
+  },
+  {
+    "key": "g1g1enky",
+    "type": "grammar",
+    "lesson": 16,
+    "q": "我今天累得___想做饭了。",
+    "options": [
+      "不",
+      "没",
+      "别",
+      "也"
+    ],
+    "answer": "不",
+    "context": {
+      "point": "V/Adj + 得 + (state)",
+      "rule": "得 complement of state: 累得 … / 高兴得 …: so … that …",
+      "en": "I'm so tired today that I don't want to cook."
+    },
+    "why": "累得不想做饭: 不 makes the result negative, 'don't want to cook'.",
+    "not": {
+      "没": "没 negates 有 or past actions; it doesn't go before 想.",
+      "别": "别 means 'don't' as a command and doesn't fit a statement.",
+      "也": "也 means 'also' and doesn't say what the tiredness caused."
+    }
+  },
+  {
+    "key": "g14mzii1",
+    "type": "grammar",
+    "lesson": 16,
+    "q": "我忙得___时间吃午饭。",
+    "options": [
+      "没",
+      "不是",
+      "别",
+      "太"
+    ],
+    "answer": "没",
+    "context": {
+      "point": "V/Adj + 得 + (state)",
+      "rule": "得 complement of state: 累得 … / 高兴得 …: so … that …",
+      "en": "I was so busy that I had no time for lunch."
+    },
+    "why": "忙得没时间吃午饭: 没 negates 有 time: 'had no time'.",
+    "not": {
+      "不是": "不是 negates 'to be' and doesn't work before 时间 here.",
+      "别": "别 means 'don't' as a command and doesn't fit a statement.",
+      "太": "太 means 'too' and would not negate 时间."
+    }
+  },
+  {
+    "key": "g1ah2eo6",
+    "type": "grammar",
+    "lesson": 16,
+    "q": "孩子们玩儿得___想回家。",
+    "options": [
+      "都不",
+      "才",
+      "就",
+      "极了"
+    ],
+    "answer": "都不",
+    "context": {
+      "point": "V/Adj + 得 + (state)",
+      "rule": "得 complement of state: 累得 … / 高兴得 …: so … that …",
+      "en": "The children were having so much fun that they didn't even want to go home."
+    },
+    "why": "玩儿得都不想回家: 都不 shows the extreme result, 'not even wanting to go home'.",
+    "not": {
+      "才": "才 means 'only then' and doesn't give the extreme result.",
+      "就": "就 means 'then / just' and doesn't give the extreme result.",
+      "极了": "极了 means 'extremely' and can't go before 想回家."
+    }
+  },
+  {
+    "key": "g1g3qlmk",
+    "type": "grammar",
+    "lesson": 16,
+    "q": "孩子的手___，很可爱。",
+    "options": [
+      "小小的",
+      "小小",
+      "很小小的",
+      "小了小"
+    ],
+    "answer": "小小的",
+    "context": {
+      "point": "AA的 (reduplicated adjective)",
+      "rule": "a one-syllable adjective said twice + 的 paints a more vivid picture",
+      "en": "The child's hands are tiny and lovely."
+    },
+    "why": "小小的 is the AA的 form: 孩子的手小小的, tiny and cute.",
+    "not": {
+      "小小": "小小 without 的 can't be a predicate here.",
+      "很小小的": "很 can't be used with a reduplicated adjective.",
+      "小了小": "小了小 is not a pattern."
+    }
+  },
+  {
+    "key": "g538wsm",
+    "type": "grammar",
+    "lesson": 16,
+    "q": "这个孩子的脸___。",
+    "options": [
+      "红红的",
+      "红的红",
+      "红了红",
+      "很红红的"
+    ],
+    "answer": "红红的",
+    "context": {
+      "point": "AA的 (reduplicated adjective)",
+      "rule": "a one-syllable adjective said twice + 的 paints a more vivid picture",
+      "en": "This child's face is red."
+    },
+    "why": "红红的 is the AA的 form: the face is rosy.",
+    "not": {
+      "红的红": "红的红 is not a pattern.",
+      "红了红": "红了红 is not a pattern.",
+      "很红红的": "很 can't be used with a reduplicated adjective."
+    }
+  },
+  {
+    "key": "g6k7aoo",
+    "type": "grammar",
+    "lesson": 16,
+    "q": "那条河宽宽___，水很干净。",
+    "options": [
+      "的",
+      "得",
+      "地",
+      "了"
+    ],
+    "answer": "的",
+    "context": {
+      "point": "AA的 (reduplicated adjective)",
+      "rule": "a one-syllable adjective said twice + 的 paints a more vivid picture",
+      "en": "That river is wide and the water is clean."
+    },
+    "why": "宽宽的 is the AA的 form; 的 closes the reduplicated adjective.",
+    "not": {
+      "得": "得 links a verb to a result and can't close an AA adjective.",
+      "地": "地 links an adverb to a verb.",
+      "了": "了 marks a change and doesn't close an AA adjective."
+    }
+  },
+  {
+    "key": "gw4tpoy",
+    "type": "grammar",
+    "lesson": 16,
+    "q": "这条路长长___，我们走了很久。",
+    "options": [
+      "的",
+      "得",
+      "地",
+      "着"
+    ],
+    "answer": "的",
+    "context": {
+      "point": "AA的 (reduplicated adjective)",
+      "rule": "a one-syllable adjective said twice + 的 paints a more vivid picture",
+      "en": "This road is so long; we walked for ages."
+    },
+    "why": "长长的 is the AA的 form; 的 closes the reduplicated adjective.",
+    "not": {
+      "得": "得 links a verb to a result and can't close an AA adjective.",
+      "地": "地 links an adverb to a verb.",
+      "着": "着 marks an ongoing state and can't close an AA adjective."
+    }
+  },
+  {
+    "key": "g1w1j2sj",
+    "type": "grammar",
+    "lesson": 16,
+    "q": "她的眼睛___，笑起来很好看。",
+    "options": [
+      "大大的",
+      "大大",
+      "很大大的",
+      "大了大"
+    ],
+    "answer": "大大的",
+    "context": {
+      "point": "AA的 (reduplicated adjective)",
+      "rule": "a one-syllable adjective said twice + 的 paints a more vivid picture",
+      "en": "Her eyes are big and she looks nice when she smiles."
+    },
+    "why": "大大的 is the AA的 form: her eyes are big.",
+    "not": {
+      "大大": "大大 without 的 can't be a predicate here.",
+      "很大大的": "很 can't be used with a reduplicated adjective.",
+      "大了大": "大了大 is not a pattern."
+    }
+  },
+  {
+    "key": "g127q9zj",
+    "type": "grammar",
+    "lesson": 17,
+    "q": "你太累了，应该___。",
+    "options": [
+      "休息休息",
+      "休休息息",
+      "休息息休",
+      "休息一息"
+    ],
+    "answer": "休息休息",
+    "context": {
+      "point": "Two-syllable verbs doubled (ABAB)",
+      "rule": "ABAB: a short or tentative action, e.g. 休息休息",
+      "en": "You're too tired; you should get some rest."
+    },
+    "why": "休息休息 is the ABAB form of 休息, meaning 'rest a little'.",
+    "not": {
+      "休休息息": "休休息息 is not a pattern (the form is ABAB).",
+      "休息息休": "休息息休 is not a pattern.",
+      "休息一息": "休息一息 is not a pattern; it would be 休息一下."
+    }
+  },
+  {
+    "key": "g4rgipl",
+    "type": "grammar",
+    "lesson": 17,
+    "q": "我的作业写完了，你帮我___吧。",
+    "options": [
+      "检查检查",
+      "检检查查",
+      "检查查",
+      "检一检查"
+    ],
+    "answer": "检查检查",
+    "context": {
+      "point": "Two-syllable verbs doubled (ABAB)",
+      "rule": "ABAB: a short or tentative action, e.g. 休息休息",
+      "en": "I've finished my homework; please check it for me."
+    },
+    "why": "检查检查 is the ABAB form of 检查, meaning 'check it a bit'.",
+    "not": {
+      "检检查查": "检检查查 is not a pattern (the form is ABAB).",
+      "检查查": "检查查 is not a pattern.",
+      "检一检查": "检一检查 is not a pattern."
+    }
+  },
+  {
+    "key": "go9roo9",
+    "type": "grammar",
+    "lesson": 17,
+    "q": "他是新同学，你___他吧。",
+    "options": [
+      "介绍介绍",
+      "介介绍绍",
+      "介绍绍",
+      "绍介绍介"
+    ],
+    "answer": "介绍介绍",
+    "context": {
+      "point": "Two-syllable verbs doubled (ABAB)",
+      "rule": "ABAB: a short or tentative action, e.g. 休息休息",
+      "en": "He's a new classmate; introduce him around."
+    },
+    "why": "介绍介绍 is the ABAB form of 介绍, meaning 'introduce a bit'.",
+    "not": {
+      "介介绍绍": "介介绍绍 is not a pattern (the form is ABAB).",
+      "介绍绍": "介绍绍 is not a pattern.",
+      "绍介绍介": "绍介绍介 is not a pattern."
+    }
+  },
+  {
+    "key": "g1amkbgw",
+    "type": "grammar",
+    "lesson": 17,
+    "q": "明天我们一起去公园___。",
+    "options": [
+      "锻炼锻炼",
+      "锻锻炼炼",
+      "锻炼炼",
+      "锻炼了锻"
+    ],
+    "answer": "锻炼锻炼",
+    "context": {
+      "point": "Two-syllable verbs doubled (ABAB)",
+      "rule": "ABAB: a short or tentative action, e.g. 休息休息",
+      "en": "Tomorrow let's go to the park and get some exercise."
+    },
+    "why": "锻炼锻炼 is the ABAB form of 锻炼, meaning 'get some exercise'.",
+    "not": {
+      "锻锻炼炼": "锻锻炼炼 is not a pattern (the form is ABAB).",
+      "锻炼炼": "锻炼炼 is not a pattern.",
+      "锻炼了锻": "锻炼了锻 is not a pattern."
+    }
+  },
+  {
+    "key": "g11dsdfr",
+    "type": "grammar",
+    "lesson": 17,
+    "q": "这本书不错，你也___吧。",
+    "options": [
+      "学习学习",
+      "学学习习",
+      "学习习",
+      "学习了学习"
+    ],
+    "answer": "学习学习",
+    "context": {
+      "point": "Two-syllable verbs doubled (ABAB)",
+      "rule": "ABAB: a short or tentative action, e.g. 休息休息",
+      "en": "This book is good; study it a bit too."
+    },
+    "why": "学习学习 is the ABAB form of 学习, meaning 'study it a bit'.",
+    "not": {
+      "学学习习": "学学习习 is not a pattern (the form is ABAB).",
+      "学习习": "学习习 is not a pattern.",
+      "学习了学习": "学习了学习 marks a finished action; a suggestion needs the plain ABAB."
+    }
+  },
+  {
+    "key": "gy7y3n6",
+    "type": "grammar",
+    "lesson": 17,
+    "q": "你对他不太了解，可以去___他。",
+    "options": [
+      "认识认识",
+      "认认识识",
+      "认识识",
+      "识认识认"
+    ],
+    "answer": "认识认识",
+    "context": {
+      "point": "Two-syllable verbs doubled (ABAB)",
+      "rule": "ABAB: a short or tentative action, e.g. 休息休息",
+      "en": "You don't know him well; go and get to know him."
+    },
+    "why": "认识认识 is the ABAB form of 认识, meaning 'get to know'.",
+    "not": {
+      "认认识识": "认认识识 is not a pattern (the form is ABAB).",
+      "认识识": "认识识 is not a pattern.",
+      "识认识认": "识认识认 is not a pattern."
+    }
+  },
+  {
+    "key": "g8z82xu",
+    "type": "grammar",
+    "lesson": 17,
+    "q": "这么晚了，___都不想出门。",
+    "options": [
+      "谁",
+      "什么",
+      "哪儿",
+      "怎么"
+    ],
+    "answer": "谁",
+    "context": {
+      "point": "谁/什么/哪儿/怎么……都",
+      "rule": "question word + 都: every … without exception",
+      "en": "It's so late that nobody wants to go out."
+    },
+    "why": "谁都不想出门 means 'nobody wants to go out': 谁……都 covers everyone.",
+    "not": {
+      "什么": "什么 means 'what'; a thing can't want to go out.",
+      "哪儿": "哪儿 means 'where' and can't be the one who wants.",
+      "怎么": "怎么 means 'how' and can't be the one who wants."
+    }
+  },
+  {
+    "key": "g1yunq1f",
+    "type": "grammar",
+    "lesson": 17,
+    "q": "周末我___都不想做。",
+    "options": [
+      "什么",
+      "谁",
+      "哪儿",
+      "几"
+    ],
+    "answer": "什么",
+    "context": {
+      "point": "谁/什么/哪儿/怎么……都",
+      "rule": "question word + 都: every … without exception",
+      "en": "At the weekend I don't want to do anything."
+    },
+    "why": "什么都不想做 means 'don't want to do anything': 什么……都 means 'anything'.",
+    "not": {
+      "谁": "谁 means 'who' and can't be what is done.",
+      "哪儿": "哪儿 means 'where' and doesn't fit before 做.",
+      "几": "几 asks 'how many' and needs a measure word."
+    }
+  },
+  {
+    "key": "g16v6rvi",
+    "type": "grammar",
+    "lesson": 17,
+    "q": "这个地方很漂亮，___都可以拍照。",
+    "options": [
+      "哪儿",
+      "什么",
+      "为什么",
+      "几"
+    ],
+    "answer": "哪儿",
+    "context": {
+      "point": "谁/什么/哪儿/怎么……都",
+      "rule": "question word + 都: every … without exception",
+      "en": "This place is beautiful; you can take photos anywhere."
+    },
+    "why": "哪儿都可以拍照 means 'anywhere is fine': 哪儿……都 means 'anywhere'.",
+    "not": {
+      "什么": "什么 means 'what' and doesn't fit the idea of a place.",
+      "为什么": "为什么 means 'why' and doesn't mean 'anywhere'.",
+      "几": "几 asks 'how many' and needs a measure word."
+    }
+  },
+  {
+    "key": "gr1hzrk",
+    "type": "grammar",
+    "lesson": 17,
+    "q": "你想吃___都行，我请客。",
+    "options": [
+      "什么",
+      "谁",
+      "怎么",
+      "几"
+    ],
+    "answer": "什么",
+    "context": {
+      "point": "谁/什么/哪儿/怎么……都",
+      "rule": "question word + 都: every … without exception",
+      "en": "You can eat whatever you want; it's my treat."
+    },
+    "why": "想吃什么都行 means 'whatever you want is fine': 什么……都 means 'anything'.",
+    "not": {
+      "谁": "谁 means 'who' and can't be eaten.",
+      "怎么": "怎么 means 'how' and doesn't fit after 吃.",
+      "几": "几 asks 'how many' and needs a measure word."
+    }
+  },
+  {
+    "key": "g3ycqpb",
+    "type": "grammar",
+    "lesson": 17,
+    "q": "这个问题太容易了，___都会做。",
+    "options": [
+      "谁",
+      "哪儿",
+      "为什么",
+      "怎么样"
+    ],
+    "answer": "谁",
+    "context": {
+      "point": "谁/什么/哪儿/怎么……都",
+      "rule": "question word + 都: every … without exception",
+      "en": "This question is so easy that anyone can do it."
+    },
+    "why": "谁都会做 means 'anyone can do it': 谁……都 means 'anyone'.",
+    "not": {
+      "哪儿": "哪儿 means 'where' and can't be the one who does it.",
+      "为什么": "为什么 means 'why' and doesn't mean 'anyone'.",
+      "怎么样": "怎么样 means 'how is it' and doesn't mean 'anyone'."
+    }
+  },
+  {
+    "key": "g1cfmn3q",
+    "type": "grammar",
+    "lesson": 17,
+    "q": "我们___去都可以，只要不太晚。",
+    "options": [
+      "怎么",
+      "谁",
+      "哪个",
+      "为什么"
+    ],
+    "answer": "怎么",
+    "context": {
+      "point": "谁/什么/哪儿/怎么……都",
+      "rule": "question word + 都: every … without exception",
+      "en": "We can go any way you like, as long as it's not too late."
+    },
+    "why": "怎么去都可以 means 'any way of going is fine': 怎么……都 means 'any way'.",
+    "not": {
+      "谁": "谁 means 'who' and doesn't fit before 去.",
+      "哪个": "哪个 means 'which' and needs a noun, not a verb.",
+      "为什么": "为什么 means 'why' and doesn't mean 'any way'."
+    }
+  },
+  {
+    "key": "gwc41my",
+    "type": "grammar",
+    "lesson": 18,
+    "q": "___你努力学习，就一定能学好汉语。",
+    "options": [
+      "只要",
+      "虽然",
+      "除了",
+      "可是"
+    ],
+    "answer": "只要",
+    "context": {
+      "point": "只要……就……",
+      "rule": "只要 A，就 B: as long as A, then B",
+      "en": "As long as you study hard, you will certainly learn Chinese well."
+    },
+    "why": "只要……就……: 只要你努力学习 means 'as long as you study hard'.",
+    "not": {
+      "虽然": "虽然 means 'although'.",
+      "除了": "除了 means 'except'.",
+      "可是": "可是 means 'but'."
+    }
+  },
+  {
+    "key": "gkpyeph",
+    "type": "grammar",
+    "lesson": 18,
+    "q": "只要你有时间，我们___去旅游。",
+    "options": [
+      "就",
+      "才",
+      "但",
+      "却"
+    ],
+    "answer": "就",
+    "context": {
+      "point": "只要……就……",
+      "rule": "只要 A，就 B: as long as A, then B",
+      "en": "As long as you have time, we'll go travelling."
+    },
+    "why": "只要……就……: 就 follows 只要你有时间 to give the result.",
+    "not": {
+      "才": "才 pairs with 只有, not 只要.",
+      "但": "但 means 'but' and contradicts 只要.",
+      "却": "却 means 'yet' and contradicts 只要."
+    }
+  },
+  {
+    "key": "g1jfx5op",
+    "type": "grammar",
+    "lesson": 18,
+    "q": "只要天气好，我们___去公园玩儿。",
+    "options": [
+      "就",
+      "而",
+      "但",
+      "又"
+    ],
+    "answer": "就",
+    "context": {
+      "point": "只要……就……",
+      "rule": "只要 A，就 B: as long as A, then B",
+      "en": "As long as the weather is good, we'll go and play in the park."
+    },
+    "why": "只要天气好，我们就去公园玩儿: 就 pairs with 只要.",
+    "not": {
+      "而": "而 means 'and / but' and doesn't pair with 只要.",
+      "但": "但 means 'but' and contradicts 只要.",
+      "又": "又 means 'again' and doesn't pair with 只要."
+    }
+  },
+  {
+    "key": "g1c6zpzr",
+    "type": "grammar",
+    "lesson": 18,
+    "q": "你___想来，什么时候都可以。",
+    "options": [
+      "只要",
+      "虽然",
+      "除了",
+      "关于"
+    ],
+    "answer": "只要",
+    "context": {
+      "point": "只要……就……",
+      "rule": "只要 A，就 B: as long as A, then B",
+      "en": "As long as you want to come, any time is fine."
+    },
+    "why": "只要你想来，什么时候都可以: 只要 means 'as long as'.",
+    "not": {
+      "虽然": "虽然 means 'although'.",
+      "除了": "除了 means 'except'.",
+      "关于": "关于 means 'about'."
+    }
+  },
+  {
+    "key": "g1yuhnhx",
+    "type": "grammar",
+    "lesson": 18,
+    "q": "他只要有空，___会来帮我。",
+    "options": [
+      "就",
+      "才",
+      "而",
+      "向"
+    ],
+    "answer": "就",
+    "context": {
+      "point": "只要……就……",
+      "rule": "只要 A，就 B: as long as A, then B",
+      "en": "As long as he is free, he will come and help me."
+    },
+    "why": "他只要有空，就会来帮我: 就 pairs with 只要.",
+    "not": {
+      "才": "才 pairs with 只有, not 只要.",
+      "而": "而 means 'and / but' and doesn't pair with 只要.",
+      "向": "向 means 'toward' and doesn't link a result."
+    }
+  },
+  {
+    "key": "gp28glf",
+    "type": "grammar",
+    "lesson": 18,
+    "q": "只要你同意，我___去做。",
+    "options": [
+      "就",
+      "但",
+      "极",
+      "向"
+    ],
+    "answer": "就",
+    "context": {
+      "point": "只要……就……",
+      "rule": "只要 A，就 B: as long as A, then B",
+      "en": "As long as you agree, I'll do it."
+    },
+    "why": "只要你同意，我就去做: 就 pairs with 只要.",
+    "not": {
+      "但": "但 means 'but' and contradicts 只要.",
+      "极": "极 only appears in 极了 and doesn't link a result.",
+      "向": "向 means 'toward' and doesn't link a result."
+    }
+  },
+  {
+    "key": "gwedr26",
+    "type": "grammar",
+    "lesson": 18,
+    "q": "我想看一本___中国历史的书。",
+    "options": [
+      "关于",
+      "向",
+      "跟",
+      "比"
+    ],
+    "answer": "关于",
+    "context": {
+      "point": "关于",
+      "rule": "关于 + noun: about, regarding",
+      "en": "I'd like to read a book about Chinese history."
+    },
+    "why": "关于中国历史的书 means 'a book about Chinese history': 关于 introduces the topic.",
+    "not": {
+      "向": "向 means 'toward' and introduces a direction, not a topic.",
+      "跟": "跟 means 'with' a person.",
+      "比": "比 compares two things."
+    }
+  },
+  {
+    "key": "g1x7iecv",
+    "type": "grammar",
+    "lesson": 18,
+    "q": "___这个问题，我们明天再说。",
+    "options": [
+      "关于",
+      "向",
+      "给",
+      "比"
+    ],
+    "answer": "关于",
+    "context": {
+      "point": "关于",
+      "rule": "关于 + noun: about, regarding",
+      "en": "As for this question, let's talk tomorrow."
+    },
+    "why": "关于这个问题 means 'about this question': 关于 introduces the topic at the start.",
+    "not": {
+      "向": "向 means 'toward' and doesn't introduce a topic.",
+      "给": "给 means 'to / for' a person.",
+      "比": "比 compares two things."
+    }
+  },
+  {
+    "key": "gh0yw1f",
+    "type": "grammar",
+    "lesson": 18,
+    "q": "这是一部___动物的电影。",
+    "options": [
+      "关于",
+      "为了",
+      "向",
+      "从"
+    ],
+    "answer": "关于",
+    "context": {
+      "point": "关于",
+      "rule": "关于 + noun: about, regarding",
+      "en": "This is a film about animals."
+    },
+    "why": "关于动物的电影 means 'a film about animals': 关于 introduces the topic.",
+    "not": {
+      "为了": "为了 means 'in order to' and doesn't introduce a topic.",
+      "向": "向 means 'toward' and doesn't introduce a topic.",
+      "从": "从 means 'from' and doesn't introduce a topic."
+    }
+  },
+  {
+    "key": "g1t9ate3",
+    "type": "grammar",
+    "lesson": 18,
+    "q": "我有很多___学习汉语的问题。",
+    "options": [
+      "关于",
+      "向",
+      "把",
+      "被"
+    ],
+    "answer": "关于",
+    "context": {
+      "point": "关于",
+      "rule": "关于 + noun: about, regarding",
+      "en": "I have a lot of questions about learning Chinese."
+    },
+    "why": "关于学习汉语的问题 means 'questions about learning Chinese': 关于 introduces the topic.",
+    "not": {
+      "向": "向 means 'toward' and doesn't introduce a topic.",
+      "把": "把 is an object marker and doesn't introduce a topic.",
+      "被": "被 marks a passive and doesn't introduce a topic."
+    }
+  },
+  {
+    "key": "gdsl9ss",
+    "type": "grammar",
+    "lesson": 18,
+    "q": "___旅游的事，你决定了吗？",
+    "options": [
+      "关于",
+      "向",
+      "跟",
+      "比"
+    ],
+    "answer": "关于",
+    "context": {
+      "point": "关于",
+      "rule": "关于 + noun: about, regarding",
+      "en": "About the trip: have you decided?"
+    },
+    "why": "关于旅游的事 means 'about the trip': 关于 introduces the topic.",
+    "not": {
+      "向": "向 means 'toward' and doesn't introduce a topic.",
+      "跟": "跟 means 'with' a person.",
+      "比": "比 compares two things."
+    }
+  },
+  {
+    "key": "g1dbvjyi",
+    "type": "grammar",
+    "lesson": 18,
+    "q": "老师给我们讲了一个___世界各国文化的故事。",
+    "options": [
+      "关于",
+      "向",
+      "往",
+      "离"
+    ],
+    "answer": "关于",
+    "context": {
+      "point": "关于",
+      "rule": "关于 + noun: about, regarding",
+      "en": "The teacher told us a story about the cultures of countries around the world."
+    },
+    "why": "关于世界各国文化的故事 means 'a story about cultures': 关于 introduces the topic.",
+    "not": {
+      "向": "向 means 'toward' and doesn't introduce a topic.",
+      "往": "往 means 'toward' a place and doesn't introduce a topic.",
+      "离": "离 means 'away from' a place and doesn't introduce a topic."
+    }
+  },
+  {
+    "key": "gqwtct0",
+    "type": "grammar",
+    "lesson": 18,
+    "q": "这个城市___很大，而且很漂亮。",
+    "options": [
+      "不但",
+      "虽然",
+      "如果",
+      "因为"
+    ],
+    "answer": "不但",
+    "context": {
+      "point": "不但……而且……",
+      "rule": "不但 A，而且 B: not only A but also B",
+      "en": "This city is not only big but also beautiful."
+    },
+    "why": "不但……而且……: 这个城市不但很大，而且很漂亮 adds a second quality.",
+    "not": {
+      "虽然": "虽然 means 'although' and pairs with 但是.",
+      "如果": "如果 means 'if'.",
+      "因为": "因为 means 'because'."
+    }
+  },
+  {
+    "key": "g75mc1p",
+    "type": "grammar",
+    "lesson": 18,
+    "q": "他不但会唱歌，___会跳舞。",
+    "options": [
+      "而且",
+      "但是",
+      "所以",
+      "因为"
+    ],
+    "answer": "而且",
+    "context": {
+      "point": "不但……而且……",
+      "rule": "不但 A，而且 B: not only A but also B",
+      "en": "He not only sings but also dances."
+    },
+    "why": "不但……，而且……: 他不但会唱歌，而且会跳舞 adds a second skill.",
+    "not": {
+      "但是": "但是 means 'but' and doesn't pair with 不但.",
+      "所以": "所以 means 'so'.",
+      "因为": "因为 means 'because'."
+    }
+  },
+  {
+    "key": "g1g1t2w5",
+    "type": "grammar",
+    "lesson": 18,
+    "q": "这家饭馆不但菜好吃，___服务员也很热情。",
+    "options": [
+      "而且",
+      "所以",
+      "或者",
+      "但是"
+    ],
+    "answer": "而且",
+    "context": {
+      "point": "不但……而且……",
+      "rule": "不但 A，而且 B: not only A but also B",
+      "en": "At this restaurant not only is the food good, the waiters are friendly too."
+    },
+    "why": "不但菜好吃，而且服务员也很热情: 而且 pairs with 不但.",
+    "not": {
+      "所以": "所以 means 'so'.",
+      "或者": "或者 means 'or'.",
+      "但是": "但是 means 'but' and doesn't pair with 不但."
+    }
+  },
+  {
+    "key": "g1s6mek",
+    "type": "grammar",
+    "lesson": 18,
+    "q": "这个城市不但冬天很冷，___夏天也很热。",
+    "options": [
+      "而且",
+      "但是",
+      "所以",
+      "如果"
+    ],
+    "answer": "而且",
+    "context": {
+      "point": "不但……而且……",
+      "rule": "不但 A，而且 B: not only A but also B",
+      "en": "In this city it's not only cold in winter but hot in summer too."
+    },
+    "why": "不但冬天很冷，而且夏天也很热: 而且 pairs with 不但.",
+    "not": {
+      "但是": "但是 means 'but' and doesn't pair with 不但.",
+      "所以": "所以 means 'so'.",
+      "如果": "如果 means 'if'."
+    }
+  },
+  {
+    "key": "gsadya",
+    "type": "grammar",
+    "lesson": 18,
+    "q": "我的邻居不但爱唱歌，而且___画画儿。",
+    "options": [
+      "爱",
+      "但",
+      "所以",
+      "虽然"
+    ],
+    "answer": "爱",
+    "context": {
+      "point": "不但……而且……",
+      "rule": "不但 A，而且 B: not only A but also B",
+      "en": "My neighbour not only loves singing but also drawing."
+    },
+    "why": "不但爱唱歌，而且爱画画儿: 爱 repeats the verb after 而且.",
+    "not": {
+      "但": "但 means 'but' and contradicts the pattern.",
+      "所以": "所以 means 'so'.",
+      "虽然": "虽然 means 'although'."
+    }
+  },
+  {
+    "key": "g1bnzyu7",
+    "type": "grammar",
+    "lesson": 19,
+    "q": "这个字太难，我写不___。",
+    "options": [
+      "出来",
+      "过去",
+      "回去",
+      "进去"
+    ],
+    "answer": "出来",
+    "context": {
+      "point": "Direction complements with extended meanings",
+      "rule": "出来 / 下来 / 起来 / 上去: extended meanings of direction complements",
+      "en": "This character is too hard; I can't write it out."
+    },
+    "why": "写不出来 means 'can't write it out': 出来 here means producing a result.",
+    "not": {
+      "过去": "过去 means 'go over' and doesn't mean 'write out'.",
+      "回去": "回去 means 'go back'.",
+      "进去": "进去 means 'go in'."
+    }
+  },
+  {
+    "key": "gcmfs9u",
+    "type": "grammar",
+    "lesson": 19,
+    "q": "电话里的人是谁，你听___了吗？",
+    "options": [
+      "出来",
+      "回来",
+      "进去",
+      "起去"
+    ],
+    "answer": "出来",
+    "context": {
+      "point": "Direction complements with extended meanings",
+      "rule": "出来 / 下来 / 起来 / 上去: extended meanings of direction complements",
+      "en": "Could you tell who was on the phone?"
+    },
+    "why": "听出来 means 'make out by hearing': 出来 shows you identified who it was.",
+    "not": {
+      "回来": "回来 means 'come back' and doesn't mean 'make out'.",
+      "进去": "进去 means 'go in'.",
+      "起去": "起去 is not a pattern."
+    }
+  },
+  {
+    "key": "g1nzcid9",
+    "type": "grammar",
+    "lesson": 19,
+    "q": "他把这个电话号码记___了。",
+    "options": [
+      "下来",
+      "出来",
+      "过来",
+      "回去"
+    ],
+    "answer": "下来",
+    "context": {
+      "point": "Direction complements with extended meanings",
+      "rule": "出来 / 下来 / 起来 / 上去: extended meanings of direction complements",
+      "en": "He noted the phone number down."
+    },
+    "why": "记下来 means 'write down / record': 下来 fixes something in place.",
+    "not": {
+      "出来": "出来 means 'make out', not 'note down'.",
+      "过来": "过来 means 'come over' and doesn't mean 'note down'.",
+      "回去": "回去 means 'go back'."
+    }
+  },
+  {
+    "key": "g1p20ipv",
+    "type": "grammar",
+    "lesson": 19,
+    "q": "我终于想___她是谁了，她是我的小学同学。",
+    "options": [
+      "起来",
+      "下来",
+      "回去",
+      "上去"
+    ],
+    "answer": "起来",
+    "context": {
+      "point": "Direction complements with extended meanings",
+      "rule": "出来 / 下来 / 起来 / 上去: extended meanings of direction complements",
+      "en": "At last I remembered who she is: my primary school classmate."
+    },
+    "why": "想起来 means 'recall': 起来 shows a memory coming up.",
+    "not": {
+      "下来": "下来 means 'down / settle', not 'recall'.",
+      "回去": "回去 means 'go back'.",
+      "上去": "上去 means 'go up'."
+    }
+  },
+  {
+    "key": "ggxuleq",
+    "type": "grammar",
+    "lesson": 19,
+    "q": "这件蓝衣服___很漂亮。",
+    "options": [
+      "看上去",
+      "看出来",
+      "看下来",
+      "看过去"
+    ],
+    "answer": "看上去",
+    "context": {
+      "point": "Direction complements with extended meanings",
+      "rule": "出来 / 下来 / 起来 / 上去: extended meanings of direction complements",
+      "en": "This blue piece of clothing looks very pretty."
+    },
+    "why": "看上去 means 'looks (like)': 上去 here gives an impression.",
+    "not": {
+      "看出来": "看出来 means 'figure out by looking', which needs a different sentence.",
+      "看下来": "看下来 means 'after watching through' and doesn't mean 'looks'.",
+      "看过去": "看过去 means 'look over there'."
+    }
+  },
+  {
+    "key": "g13opr9s",
+    "type": "grammar",
+    "lesson": 19,
+    "q": "老师一进教室，学生们就安静___了。",
+    "options": [
+      "下来",
+      "出来",
+      "上去",
+      "回来"
+    ],
+    "answer": "下来",
+    "context": {
+      "point": "Direction complements with extended meanings",
+      "rule": "出来 / 下来 / 起来 / 上去: extended meanings of direction complements",
+      "en": "As soon as the teacher came into the classroom, the students quietened down."
+    },
+    "why": "安静下来 means 'quieten down': 下来 shows a change into a calmer state.",
+    "not": {
+      "出来": "出来 means 'come out'.",
+      "上去": "上去 means 'go up'.",
+      "回来": "回来 means 'come back'."
+    }
+  },
+  {
+    "key": "g11lim3w",
+    "type": "grammar",
+    "lesson": 19,
+    "q": "每天跑步___我的身体越来越好。",
+    "options": [
+      "使",
+      "把",
+      "被",
+      "对"
+    ],
+    "answer": "使",
+    "context": {
+      "point": "使 / 叫 / 让",
+      "rule": "使 / 叫 / 让 + person + verb phrase: to make someone …",
+      "en": "Running every day makes me healthier and healthier."
+    },
+    "why": "使 + person + result: 使我的身体越来越好 means 'makes me healthier'.",
+    "not": {
+      "把": "把 is an object marker and doesn't mean 'cause'.",
+      "被": "被 marks a passive and doesn't mean 'cause'.",
+      "对": "对 means 'to / towards' and doesn't mean 'cause'."
+    }
+  },
+  {
+    "key": "g1e8j556",
+    "type": "grammar",
+    "lesson": 19,
+    "q": "这个好消息___大家都很高兴。",
+    "options": [
+      "让",
+      "把",
+      "向",
+      "对"
+    ],
+    "answer": "让",
+    "context": {
+      "point": "使 / 叫 / 让",
+      "rule": "使 / 叫 / 让 + person + verb phrase: to make someone …",
+      "en": "This good news made everyone happy."
+    },
+    "why": "让 + person + feeling: 让大家都很高兴 means 'made everyone happy'.",
+    "not": {
+      "把": "把 is an object marker and doesn't mean 'cause'.",
+      "向": "向 means 'toward' and doesn't mean 'cause'.",
+      "对": "对 means 'to / towards' and doesn't mean 'cause'."
+    }
+  },
+  {
+    "key": "g1trafxh",
+    "type": "grammar",
+    "lesson": 19,
+    "q": "你___他快点儿来。",
+    "options": [
+      "叫",
+      "把",
+      "对",
+      "向"
+    ],
+    "answer": "叫",
+    "context": {
+      "point": "使 / 叫 / 让",
+      "rule": "使 / 叫 / 让 + person + verb phrase: to make someone …",
+      "en": "Tell him to come quickly."
+    },
+    "why": "叫 + person + verb: 叫他快点儿来 means 'tell him to come quickly'.",
+    "not": {
+      "把": "把 is an object marker and doesn't mean 'tell'.",
+      "对": "对 means 'to / towards' and doesn't mean 'tell someone to'.",
+      "向": "向 means 'toward' and doesn't mean 'tell someone to'."
+    }
+  },
+  {
+    "key": "g2mra76",
+    "type": "grammar",
+    "lesson": 19,
+    "q": "老师常常___我们多听多说。",
+    "options": [
+      "让",
+      "对",
+      "把",
+      "比"
+    ],
+    "answer": "让",
+    "context": {
+      "point": "使 / 叫 / 让",
+      "rule": "使 / 叫 / 让 + person + verb phrase: to make someone …",
+      "en": "The teacher often has us listen and speak more."
+    },
+    "why": "让 + person + verb: 让我们多听多说 means 'has us listen and speak more'.",
+    "not": {
+      "对": "对 means 'to / towards' and doesn't mean 'have someone do'.",
+      "把": "把 is an object marker and doesn't mean 'have someone do'.",
+      "比": "比 compares two things."
+    }
+  },
+  {
+    "key": "gjxkom7",
+    "type": "grammar",
+    "lesson": 19,
+    "q": "这条蓝裙子___她看上去更年轻。",
+    "options": [
+      "使",
+      "把",
+      "向",
+      "对"
+    ],
+    "answer": "使",
+    "context": {
+      "point": "使 / 叫 / 让",
+      "rule": "使 / 叫 / 让 + person + verb phrase: to make someone …",
+      "en": "This blue skirt makes her look younger."
+    },
+    "why": "使 + person + result: 使她看上去更年轻 means 'makes her look younger'.",
+    "not": {
+      "把": "把 is an object marker and doesn't mean 'cause'.",
+      "向": "向 means 'toward' and doesn't mean 'cause'.",
+      "对": "对 means 'to / towards' and doesn't mean 'cause'."
+    }
+  },
+  {
+    "key": "glgvyhh",
+    "type": "grammar",
+    "lesson": 19,
+    "q": "晚上喝咖啡会___我睡不着。",
+    "options": [
+      "让",
+      "把",
+      "给",
+      "比"
+    ],
+    "answer": "让",
+    "context": {
+      "point": "使 / 叫 / 让",
+      "rule": "使 / 叫 / 让 + person + verb phrase: to make someone …",
+      "en": "Drinking coffee in the evening keeps me awake."
+    },
+    "why": "让 + person + result: 让我睡不着 means 'keeps me awake'.",
+    "not": {
+      "把": "把 is an object marker and doesn't mean 'cause'.",
+      "给": "给 means 'to / for' a person and doesn't mean 'cause'.",
+      "比": "比 compares two things."
+    }
+  },
+  {
+    "key": "g1xuvykz",
+    "type": "grammar",
+    "lesson": 20,
+    "q": "我的自行车___谁骑走了？",
+    "options": [
+      "被",
+      "把",
+      "对",
+      "向"
+    ],
+    "answer": "被",
+    "context": {
+      "point": "“被”字句",
+      "rule": "S + 被 + (agent) + verb + other element: the passive",
+      "en": "Who rode off on my bike?"
+    },
+    "why": "被 marks the passive: 我的自行车被谁骑走了 means 'by whom was it ridden off'.",
+    "not": {
+      "把": "把 would put 自行车 as the object of a doer, but it is the one acted on.",
+      "对": "对 means 'to / towards' and doesn't mark a passive.",
+      "向": "向 means 'toward' and doesn't mark a passive."
+    }
+  },
+  {
+    "key": "g1rzrzle",
+    "type": "grammar",
+    "lesson": 20,
+    "q": "蛋糕___弟弟吃完了。",
+    "options": [
+      "被",
+      "把",
+      "向",
+      "对"
+    ],
+    "answer": "被",
+    "context": {
+      "point": "“被”字句",
+      "rule": "S + 被 + (agent) + verb + other element: the passive",
+      "en": "The cake was all eaten by my younger brother."
+    },
+    "why": "被 marks the passive: 蛋糕被弟弟吃完了 means 'was eaten up by my brother'.",
+    "not": {
+      "把": "把 would need the doer first: 弟弟把蛋糕吃完了.",
+      "向": "向 means 'toward' and doesn't mark a passive.",
+      "对": "对 means 'to / towards' and doesn't mark a passive."
+    }
+  },
+  {
+    "key": "g3lnsfq",
+    "type": "grammar",
+    "lesson": 20,
+    "q": "我的作业还没有___老师检查呢。",
+    "options": [
+      "被",
+      "把",
+      "向",
+      "对"
+    ],
+    "answer": "被",
+    "context": {
+      "point": "“被”字句",
+      "rule": "S + 被 + (agent) + verb + other element: the passive",
+      "en": "My homework hasn't been checked by the teacher yet."
+    },
+    "why": "被 marks the passive: 还没有被老师检查 means 'not yet checked by the teacher'.",
+    "not": {
+      "把": "把 would need the doer first.",
+      "向": "向 means 'toward' and doesn't mark a passive.",
+      "对": "对 means 'to / towards' and doesn't mark a passive."
+    }
+  },
+  {
+    "key": "g3p8ecw",
+    "type": "grammar",
+    "lesson": 20,
+    "q": "我昨天买的书___朋友借走了。",
+    "options": [
+      "被",
+      "把",
+      "向",
+      "对"
+    ],
+    "answer": "被",
+    "context": {
+      "point": "“被”字句",
+      "rule": "S + 被 + (agent) + verb + other element: the passive",
+      "en": "The book I bought yesterday was borrowed by a friend."
+    },
+    "why": "被 marks the passive: 书被朋友借走了 means 'was borrowed by a friend'.",
+    "not": {
+      "把": "把 would need the doer first: 朋友把书借走了.",
+      "向": "向 means 'toward' and doesn't mark a passive.",
+      "对": "对 means 'to / towards' and doesn't mark a passive."
+    }
+  },
+  {
+    "key": "ggx451r",
+    "type": "grammar",
+    "lesson": 20,
+    "q": "窗户___风刮开了。",
+    "options": [
+      "被",
+      "把",
+      "为",
+      "比"
+    ],
+    "answer": "被",
+    "context": {
+      "point": "“被”字句",
+      "rule": "S + 被 + (agent) + verb + other element: the passive",
+      "en": "The window was blown open by the wind."
+    },
+    "why": "被 marks the passive: 窗户被风刮开了 means 'was blown open by the wind'.",
+    "not": {
+      "把": "把 would need the doer first: 风把窗户刮开了.",
+      "为": "为 means 'for' or 'because of' and doesn't mark a passive.",
+      "比": "比 compares two things."
+    }
+  },
+  {
+    "key": "gymdayd",
+    "type": "grammar",
+    "lesson": 20,
+    "q": "照相机已经___弟弟用坏了。",
+    "options": [
+      "被",
+      "把",
+      "向",
+      "在"
+    ],
+    "answer": "被",
+    "context": {
+      "point": "“被”字句",
+      "rule": "S + 被 + (agent) + verb + other element: the passive",
+      "en": "The camera has already been broken by my younger brother."
+    },
+    "why": "被 marks the passive: 照相机被弟弟用坏了 means 'was broken by my brother'.",
+    "not": {
+      "把": "把 would need the doer first: 弟弟把照相机用坏了.",
+      "向": "向 means 'toward' and doesn't mark a passive.",
+      "在": "在 means 'at / in' and doesn't mark a passive."
+    }
+  },
+  {
+    "key": "gfvry5r",
+    "type": "grammar",
+    "lesson": 20,
+    "q": "___你每天练习，才能提高水平。",
+    "options": [
+      "只有",
+      "只要",
+      "如果",
+      "虽然"
+    ],
+    "answer": "只有",
+    "context": {
+      "point": "只有……才……",
+      "rule": "只有 A，才 B: only if A, then B",
+      "en": "Only if you practise every day can you improve your level."
+    },
+    "why": "只有……才……: 只有你每天练习，才能提高 means 'only if you practise'.",
+    "not": {
+      "只要": "只要 means 'as long as' and pairs with 就, not 才.",
+      "如果": "如果 means 'if' and pairs with 就.",
+      "虽然": "虽然 means 'although'."
+    }
+  },
+  {
+    "key": "gjjjcap",
+    "type": "grammar",
+    "lesson": 20,
+    "q": "只有周末，他___有时间打篮球。",
+    "options": [
+      "才",
+      "就",
+      "都",
+      "也"
+    ],
+    "answer": "才",
+    "context": {
+      "point": "只有……才……",
+      "rule": "只有 A，才 B: only if A, then B",
+      "en": "Only at the weekend does he have time to play basketball."
+    },
+    "why": "只有周末，他才有时间: 才 pairs with 只有.",
+    "not": {
+      "就": "就 pairs with 只要, not 只有.",
+      "都": "都 means 'all' and doesn't pair with 只有.",
+      "也": "也 means 'also' and doesn't pair with 只有."
+    }
+  },
+  {
+    "key": "g1ij54z7",
+    "type": "grammar",
+    "lesson": 20,
+    "q": "只有努力，才___有机会。",
+    "options": [
+      "能",
+      "把",
+      "被",
+      "对"
+    ],
+    "answer": "能",
+    "context": {
+      "point": "只有……才……",
+      "rule": "只有 A，才 B: only if A, then B",
+      "en": "Only by working hard can you get opportunities."
+    },
+    "why": "只有努力，才能有机会: 才 + 能 pairs with 只有.",
+    "not": {
+      "把": "把 is an object marker and doesn't fit after 才.",
+      "被": "被 marks a passive and doesn't fit after 才.",
+      "对": "对 means 'to / towards' and doesn't fit after 才."
+    }
+  },
+  {
+    "key": "gx3kelj",
+    "type": "grammar",
+    "lesson": 20,
+    "q": "只有自己去过，你___能知道那儿有多漂亮。",
+    "options": [
+      "才",
+      "就",
+      "也",
+      "还"
+    ],
+    "answer": "才",
+    "context": {
+      "point": "只有……才……",
+      "rule": "只有 A，才 B: only if A, then B",
+      "en": "Only if you go yourself can you know how beautiful it is."
+    },
+    "why": "只有自己去过，你才能知道: 才 pairs with 只有.",
+    "not": {
+      "就": "就 pairs with 只要, not 只有.",
+      "也": "也 means 'also' and doesn't pair with 只有.",
+      "还": "还 means 'still' and doesn't pair with 只有."
+    }
+  },
+  {
+    "key": "g12pp4y0",
+    "type": "grammar",
+    "lesson": 20,
+    "q": "这个问题很难，只有王老师___能回答。",
+    "options": [
+      "才",
+      "就",
+      "却",
+      "也"
+    ],
+    "answer": "才",
+    "context": {
+      "point": "只有……才……",
+      "rule": "只有 A，才 B: only if A, then B",
+      "en": "This question is hard; only Teacher Wang can answer it."
+    },
+    "why": "只有王老师才能回答: 才 pairs with 只有.",
+    "not": {
+      "就": "就 pairs with 只要, not 只有.",
+      "却": "却 means 'yet' and doesn't pair with 只有.",
+      "也": "也 means 'also' and doesn't pair with 只有."
+    }
+  },
+  {
+    "key": "g1llx2y4",
+    "type": "grammar",
+    "lesson": 20,
+    "q": "___认真学习，成绩才能提高。",
+    "options": [
+      "只有",
+      "只要",
+      "如果",
+      "因为"
+    ],
+    "answer": "只有",
+    "context": {
+      "point": "只有……才……",
+      "rule": "只有 A，才 B: only if A, then B",
+      "en": "Only if you study seriously can your grades improve."
+    },
+    "why": "只有认真学习，成绩才能提高: 只有 pairs with 才.",
+    "not": {
+      "只要": "只要 means 'as long as' and pairs with 就, not 才.",
+      "如果": "如果 means 'if' and pairs with 就.",
+      "因为": "因为 means 'because'."
+    }
+  }
+]

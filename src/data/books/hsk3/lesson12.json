@@ -1,0 +1,526 @@
+{
+  "n": 12,
+  "cn": "第十二课",
+  "title": "把重要的东西放在我这儿吧",
+  "en": "Keep the important things with me",
+  "words": [
+    {
+      "w": "太阳",
+      "py": "tàiyáng",
+      "en": "sun",
+      "ex": {
+        "hz": "今天太阳很大，别忘了带伞。",
+        "py": "Jīntiān tàiyáng hěn dà, bié wàng le dài sǎn.",
+        "en": "The sun is strong today; don't forget your umbrella."
+      }
+    },
+    {
+      "w": "西",
+      "py": "xī",
+      "en": "west",
+      "ex": {
+        "hz": "学校在公园的西边。",
+        "py": "Xuéxiào zài gōngyuán de xībian.",
+        "en": "The school is on the west side of the park."
+      }
+    },
+    {
+      "w": "生气",
+      "py": "shēng qì",
+      "en": "to be angry",
+      "ex": {
+        "hz": "妈妈生气了，因为我又忘了写作业。",
+        "py": "Māma shēng qì le, yīnwèi wǒ yòu wàng le xiě zuòyè.",
+        "en": "Mum is angry because I forgot my homework again."
+      }
+    },
+    {
+      "w": "行李箱",
+      "py": "xínglixiāng",
+      "en": "suitcase; luggage",
+      "ex": {
+        "hz": "他的行李箱很大，也很重。",
+        "py": "Tā de xínglixiāng hěn dà, yě hěn zhòng.",
+        "en": "His suitcase is big and heavy."
+      }
+    },
+    {
+      "w": "自己",
+      "py": "zìjǐ",
+      "en": "oneself; self",
+      "ex": {
+        "hz": "这件事我想自己做。",
+        "py": "Zhè jiàn shì wǒ xiǎng zìjǐ zuò.",
+        "en": "I want to do this myself."
+      }
+    },
+    {
+      "w": "包",
+      "py": "bāo",
+      "en": "bag; sack",
+      "ex": {
+        "hz": "我的包里有一本书和一瓶水。",
+        "py": "Wǒ de bāo lǐ yǒu yì běn shū hé yì píng shuǐ.",
+        "en": "There is a book and a bottle of water in my bag."
+      }
+    },
+    {
+      "w": "发现",
+      "py": "fāxiàn",
+      "en": "to discover; to notice",
+      "ex": {
+        "hz": "我回到家才发现手机不见了。",
+        "py": "Wǒ huídào jiā cái fāxiàn shǒujī bú jiàn le.",
+        "en": "Only when I got home did I notice my phone was gone."
+      }
+    },
+    {
+      "w": "护照",
+      "py": "hùzhào",
+      "en": "passport",
+      "ex": {
+        "hz": "出国一定要带护照。",
+        "py": "Chū guó yídìng yào dài hùzhào.",
+        "en": "You must bring your passport when going abroad."
+      }
+    },
+    {
+      "w": "起飞",
+      "py": "qǐfēi",
+      "en": "to take off (of a plane)",
+      "ex": {
+        "hz": "飞机十分钟以后起飞。",
+        "py": "Fēijī shí fēnzhōng yǐhòu qǐfēi.",
+        "en": "The plane takes off in ten minutes."
+      }
+    },
+    {
+      "w": "司机",
+      "py": "sījī",
+      "en": "driver",
+      "ex": {
+        "hz": "出租车司机对这个城市很了解。",
+        "py": "Chūzūchē sījī duì zhège chéngshì hěn liǎojiě.",
+        "en": "The taxi driver knows this city well."
+      }
+    },
+    {
+      "w": "教",
+      "py": "jiāo",
+      "en": "to teach",
+      "ex": {
+        "hz": "她教我们数学。",
+        "py": "Tā jiāo wǒmen shùxué.",
+        "en": "She teaches us maths."
+      }
+    },
+    {
+      "w": "画",
+      "py": "huà",
+      "en": "to draw; to paint; a picture",
+      "ex": {
+        "hz": "我弟弟喜欢画画儿。",
+        "py": "Wǒ dìdi xǐhuan huà huàr.",
+        "en": "My younger brother likes drawing."
+      }
+    },
+    {
+      "w": "需要",
+      "py": "xūyào",
+      "en": "to need",
+      "ex": {
+        "hz": "你需要帮忙吗？",
+        "py": "Nǐ xūyào bāng máng ma?",
+        "en": "Do you need help?"
+      }
+    },
+    {
+      "w": "黑板",
+      "py": "hēibǎn",
+      "en": "blackboard",
+      "ex": {
+        "hz": "老师把今天的作业写在黑板上。",
+        "py": "Lǎoshī bǎ jīntiān de zuòyè xiě zài hēibǎn shàng.",
+        "en": "The teacher wrote today's homework on the blackboard."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "去机场",
+      "py": "Qù jīchǎng",
+      "en": "To the airport",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你的行李箱准备好了吗？",
+          "py": "Nǐ de xínglixiāng zhǔnbèi hǎo le ma?",
+          "en": "Is your suitcase ready?"
+        },
+        {
+          "who": "B",
+          "hz": "准备好了，我已经把衣服都放进去了。",
+          "py": "Zhǔnbèi hǎo le, wǒ yǐjīng bǎ yīfu dōu fàng jìnqu le.",
+          "en": "Yes, I've put all my clothes in."
+        },
+        {
+          "who": "A",
+          "hz": "护照呢？别忘了带。",
+          "py": "Hùzhào ne? Bié wàng le dài.",
+          "en": "What about your passport? Don't forget it."
+        },
+        {
+          "who": "B",
+          "hz": "在包里。飞机九点起飞，我们六点就出门吧。",
+          "py": "Zài bāo lǐ. Fēijī jiǔ diǎn qǐfēi, wǒmen liù diǎn jiù chū mén ba.",
+          "en": "It's in my bag. The plane takes off at nine, so let's leave at six."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Where is B's passport?",
+          "options": [
+            "In the bag",
+            "In the suitcase",
+            "On the table",
+            "At home"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "When will they leave home?",
+          "options": [
+            "At six",
+            "At nine",
+            "At seven",
+            "At eight"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "小画家",
+      "py": "Xiǎo huàjiā",
+      "en": "A little painter",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你儿子画得真好，是谁教他的？",
+          "py": "Nǐ érzi huà de zhēn hǎo, shì shéi jiāo tā de?",
+          "en": "Your son draws really well. Who taught him?"
+        },
+        {
+          "who": "B",
+          "hz": "没有人教，他自己学的。",
+          "py": "Méiyǒu rén jiāo, tā zìjǐ xué de.",
+          "en": "Nobody did; he taught himself."
+        },
+        {
+          "who": "A",
+          "hz": "他需要什么东西吗？我可以帮忙。",
+          "py": "Tā xūyào shénme dōngxi ma? Wǒ kěyǐ bāng máng.",
+          "en": "Does he need anything? I can help."
+        },
+        {
+          "who": "B",
+          "hz": "谢谢，他只需要多一点儿时间。",
+          "py": "Xièxie, tā zhǐ xūyào duō yìdiǎnr shíjiān.",
+          "en": "Thanks. He only needs a bit more time."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Who taught the boy to draw?",
+          "options": [
+            "He taught himself",
+            "His mother",
+            "His teacher",
+            "His friend"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What does he need?",
+          "options": [
+            "A bit more time",
+            "A new pencil",
+            "A blackboard",
+            "Some money"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "就 and 才",
+      "en": "Both go before the verb. 就 shows the speaker thinks something happens early, quickly or easily; 才 shows it happens late, slowly or with difficulty.",
+      "drills": [
+        {
+          "q": "他七点___到学校了，比老师还早。",
+          "options": [
+            "就",
+            "才",
+            "又",
+            "再"
+          ],
+          "answer": 0,
+          "en": "He got to school as early as seven, even before the teacher."
+        },
+        {
+          "q": "电影七点开始，她七点半___到。",
+          "options": [
+            "才",
+            "又",
+            "再",
+            "常"
+          ],
+          "answer": 0,
+          "en": "The film started at seven, and she didn't arrive until half past."
+        },
+        {
+          "q": "这个字很简单，我看了一次___会写了。",
+          "options": [
+            "就",
+            "才",
+            "再",
+            "还"
+          ],
+          "answer": 0,
+          "en": "This character is simple; I could write it after seeing it once."
+        },
+        {
+          "q": "这本书很难，我看了一个月___看完。",
+          "options": [
+            "才",
+            "再",
+            "又",
+            "还"
+          ],
+          "answer": 0,
+          "en": "This book is hard; it took me a whole month to finish it."
+        },
+        {
+          "q": "我等了他一个小时，他___来。",
+          "options": [
+            "才",
+            "都",
+            "先",
+            "又"
+          ],
+          "answer": 0,
+          "en": "I waited an hour for him before he finally came."
+        },
+        {
+          "q": "现在才八点，你怎么___要走了？",
+          "options": [
+            "就",
+            "才",
+            "再",
+            "还"
+          ],
+          "answer": 0,
+          "en": "It's only eight; why are you leaving already?"
+        }
+      ]
+    },
+    {
+      "point": "A 把 B + verb + 在 / 到 / 给 + place or person",
+      "en": "This 把 pattern says that something is moved to a place or handed to someone.",
+      "drills": [
+        {
+          "q": "请把书放___桌子上。",
+          "options": [
+            "在",
+            "给",
+            "对",
+            "从"
+          ],
+          "answer": 0,
+          "en": "Please put the book on the table."
+        },
+        {
+          "q": "我把这封信寄___朋友了。",
+          "options": [
+            "给",
+            "在",
+            "从",
+            "比"
+          ],
+          "answer": 0,
+          "en": "I posted the letter to a friend."
+        },
+        {
+          "q": "朋友把我送___火车站。",
+          "options": [
+            "到",
+            "给",
+            "在",
+            "对"
+          ],
+          "answer": 0,
+          "en": "My friend took me to the railway station."
+        },
+        {
+          "q": "他把照片放___我的包里了。",
+          "options": [
+            "在",
+            "给",
+            "对",
+            "向"
+          ],
+          "answer": 0,
+          "en": "He put the photos in my bag."
+        },
+        {
+          "q": "请你把这本书拿___图书馆去。",
+          "options": [
+            "到",
+            "给",
+            "在",
+            "对"
+          ],
+          "answer": 0,
+          "en": "Please take this book to the library."
+        },
+        {
+          "q": "我把礼物送___妈妈了。",
+          "options": [
+            "给",
+            "在",
+            "到",
+            "从"
+          ],
+          "answer": 0,
+          "en": "I gave the present to Mum."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你怎么这么晚才来？"
+          ],
+          [
+            "女",
+            "对不起，路上车太多了。"
+          ]
+        ],
+        "q": "男的觉得女的来得怎么样？",
+        "options": [
+          "太晚了",
+          "很早",
+          "刚好"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你的护照呢？"
+          ],
+          [
+            "女",
+            "我把它放在包里了。"
+          ]
+        ],
+        "q": "女的把护照放在哪儿了？",
+        "options": [
+          "包里",
+          "桌子上",
+          "行李箱里"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你要去哪儿？"
+          ],
+          [
+            "女",
+            "我明天坐飞机去上海看朋友。"
+          ]
+        ],
+        "q": "女的明天做什么？",
+        "options": [
+          "坐飞机去上海",
+          "坐火车去上海",
+          "开车去北京"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你为什么生气了？"
+          ],
+          [
+            "女",
+            "我的朋友把我的词典忘在家里了。"
+          ]
+        ],
+        "q": "谁生气了？",
+        "options": [
+          "女的",
+          "男的",
+          "女的的朋友"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "老师把作业写在黑板上了，你自己看吧。",
+        "claim": "作业在黑板上。",
+        "ok": true
+      },
+      {
+        "text": "我昨晚十二点才睡觉，所以今天起得很晚。",
+        "claim": "他昨晚睡得很早。",
+        "ok": false
+      },
+      {
+        "text": "我的行李箱太重了，司机帮我把它放在了车上。",
+        "claim": "司机帮了他。",
+        "ok": true
+      },
+      {
+        "text": "到了机场，他发现护照还在家里，很着急。",
+        "claim": "他带了护照。",
+        "ok": false
+      }
+    ],
+    "replies": [
+      {
+        "q": "你怎么才来？",
+        "a": "对不起，路上车太多了。"
+      },
+      {
+        "q": "请把这本书放在桌子上。",
+        "a": "好的，放在这儿吗？"
+      },
+      {
+        "q": "你需要帮忙吗？",
+        "a": "不用，我自己可以。"
+      },
+      {
+        "q": "明天几点出发？",
+        "a": "八点就出发吧。"
+      }
+    ]
+  }
+}

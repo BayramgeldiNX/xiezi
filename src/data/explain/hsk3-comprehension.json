@@ -1,0 +1,5366 @@
+[
+  {
+    "key": "rt8y7lc",
+    "type": "reading",
+    "lesson": 1,
+    "q": "What is B going to do on Saturday?",
+    "options": [
+      "Move house",
+      "Watch a film",
+      "Do homework",
+      "Go south"
+    ],
+    "answer": "Move house",
+    "context": {
+      "title": "搬家",
+      "lines": [
+        "A：这个星期六你忙吗？  (Are you busy this Saturday?)",
+        "B：我打算搬家，东西太多了。  (I'm planning to move house, and I have far too many things.)",
+        "A：我跟我哥哥一起去帮你搬吧。  (My brother and I will come and help you move.)",
+        "B：太好了！我给你们准备面包和水。  (Great! I'll get some bread and water ready for you.)"
+      ]
+    },
+    "why": "B says 我打算搬家, so B plans to move house.",
+    "not": {
+      "Watch a film": "B never mentions a film.",
+      "Do homework": "B never mentions homework.",
+      "Go south": "南方 does not appear; B says 搬家."
+    }
+  },
+  {
+    "key": "r1es51wg",
+    "type": "reading",
+    "lesson": 1,
+    "q": "Who will help B?",
+    "options": [
+      "A and A's brother",
+      "B's classmates",
+      "Nobody",
+      "B's father"
+    ],
+    "answer": "A and A's brother",
+    "context": {
+      "title": "搬家",
+      "lines": [
+        "A：这个星期六你忙吗？  (Are you busy this Saturday?)",
+        "B：我打算搬家，东西太多了。  (I'm planning to move house, and I have far too many things.)",
+        "A：我跟我哥哥一起去帮你搬吧。  (My brother and I will come and help you move.)",
+        "B：太好了！我给你们准备面包和水。  (Great! I'll get some bread and water ready for you.)"
+      ]
+    },
+    "why": "A says 我跟我哥哥一起去帮你搬吧, so A and A's brother will help.",
+    "not": {
+      "B's classmates": "No classmates are mentioned.",
+      "Nobody": "A offers help, so it is not nobody.",
+      "B's father": "B's father is not mentioned; A offers to bring 我哥哥."
+    }
+  },
+  {
+    "key": "rztgx4k",
+    "type": "reading",
+    "lesson": 1,
+    "q": "Where does A want to go?",
+    "options": [
+      "The south",
+      "The north",
+      "Beijing",
+      "Home"
+    ],
+    "answer": "The south",
+    "context": {
+      "title": "去南方",
+      "lines": [
+        "A：下个月我想去南方旅游。  (Next month I'd like to travel to the south.)",
+        "B：你带地图了吗？  (Have you got a map?)",
+        "A：带了，面包和水也准备好了。  (Yes, and the bread and water are ready too.)",
+        "B：你别太着急，还有两个星期呢。  (Don't be too anxious; there are still two weeks.)",
+        "A：对，我一直在想这件事。  (True, I've been thinking about this the whole time.)"
+      ]
+    },
+    "why": "A says 下个月我想去南方旅游, so the south.",
+    "not": {
+      "The north": "A says 南方, not 北方.",
+      "Beijing": "Beijing is not mentioned.",
+      "Home": "A is going travelling, not home."
+    }
+  },
+  {
+    "key": "rtlwbxm",
+    "type": "reading",
+    "lesson": 1,
+    "q": "How much time is left before the trip?",
+    "options": [
+      "Two weeks",
+      "Two days",
+      "Two months",
+      "One week"
+    ],
+    "answer": "Two weeks",
+    "context": {
+      "title": "去南方",
+      "lines": [
+        "A：下个月我想去南方旅游。  (Next month I'd like to travel to the south.)",
+        "B：你带地图了吗？  (Have you got a map?)",
+        "A：带了，面包和水也准备好了。  (Yes, and the bread and water are ready too.)",
+        "B：你别太着急，还有两个星期呢。  (Don't be too anxious; there are still two weeks.)",
+        "A：对，我一直在想这件事。  (True, I've been thinking about this the whole time.)"
+      ]
+    },
+    "why": "B says 还有两个星期呢, so two weeks are left.",
+    "not": {
+      "Two days": "B says 星期 (weeks), not 天.",
+      "Two months": "B says 星期, not 月 (months).",
+      "One week": "B says 两个星期, not one."
+    }
+  },
+  {
+    "key": "d1wlk4bi",
+    "type": "dialog",
+    "lesson": 1,
+    "q": "女的周末打算做什么？",
+    "options": [
+      "看电影",
+      "买面包",
+      "写作业"
+    ],
+    "answer": "看电影",
+    "context": {
+      "lines": [
+        "男：你周末有什么打算？",
+        "女：我想去看电影。"
+      ]
+    },
+    "why": "女 says 我想去看电影.",
+    "not": {
+      "买面包": "She does not mention buying bread.",
+      "写作业": "Homework is not her weekend plan."
+    }
+  },
+  {
+    "key": "d3jkz6z",
+    "type": "dialog",
+    "lesson": 1,
+    "q": "女的写完作业了吗？",
+    "options": [
+      "还没有",
+      "写完了",
+      "不知道"
+    ],
+    "answer": "还没有",
+    "context": {
+      "lines": [
+        "男：你的作业写完了吗？",
+        "女：还没有，还有一点儿。"
+      ]
+    },
+    "why": "女 says 还没有，还有一点儿, so she has not finished.",
+    "not": {
+      "写完了": "写完了 is the opposite of 还没有.",
+      "不知道": "She clearly answers 还没有, so it is not unknown."
+    }
+  },
+  {
+    "key": "d1p57fil",
+    "type": "dialog",
+    "lesson": 1,
+    "q": "女的想去哪儿旅游？",
+    "options": [
+      "南方",
+      "北方",
+      "北京"
+    ],
+    "answer": "南方",
+    "context": {
+      "lines": [
+        "男：下个月你想去哪儿旅游？",
+        "女：我想去南方。"
+      ]
+    },
+    "why": "女 says 我想去南方.",
+    "not": {
+      "北方": "She says 南方, not 北方.",
+      "北京": "Beijing is not mentioned."
+    }
+  },
+  {
+    "key": "dkx2735",
+    "type": "dialog",
+    "lesson": 1,
+    "q": "地图在哪儿？",
+    "options": [
+      "在女的包里",
+      "在男的包里",
+      "在桌子上"
+    ],
+    "answer": "在女的包里",
+    "context": {
+      "lines": [
+        "男：你带地图了吗？",
+        "女：带了，在我的包里。"
+      ]
+    },
+    "why": "女 says 带了，在我的包里, so it is in her bag.",
+    "not": {
+      "在男的包里": "The bag is 女's (我的包), not 男's.",
+      "在桌子上": "She says 在我的包里, not on the table."
+    }
+  },
+  {
+    "key": "j7w2td2",
+    "type": "judge",
+    "lesson": 1,
+    "q": "他周末出去玩儿了。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "我周末一直在家，一次也没出去。"
+    },
+    "why": "The text says 一直在家，一次也没出去, but the claim says he went out. So it is false.",
+    "not": {}
+  },
+  {
+    "key": "j1o81hxn",
+    "type": "judge",
+    "lesson": 1,
+    "q": "他买了电影票。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "电影票已经买好了，你跟我一起去吧。"
+    },
+    "why": "The text says 电影票已经买好了, so the claim is true.",
+    "not": {}
+  },
+  {
+    "key": "j157q4rh",
+    "type": "judge",
+    "lesson": 1,
+    "q": "小刚很着急。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "下午就要考试了，可是小刚还在玩儿游戏，好像不着急。"
+    },
+    "why": "The text says 好像不着急 (seems not worried), but the claim says 很着急. So it is false.",
+    "not": {}
+  },
+  {
+    "key": "j11pmpdt",
+    "type": "judge",
+    "lesson": 1,
+    "q": "南方比北方热。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "北方的冬天很冷，南方比较热。"
+    },
+    "why": "The text says 南方比较热 compared with the cold north, so the claim is true.",
+    "not": {}
+  },
+  {
+    "key": "rghx5mt",
+    "type": "reading",
+    "lesson": 2,
+    "q": "Why does B walk slowly?",
+    "options": [
+      "His leg hurts",
+      "He is fat",
+      "It is raining",
+      "He is late"
+    ],
+    "answer": "His leg hurts",
+    "context": {
+      "title": "腿疼",
+      "lines": [
+        "A：你怎么了？走得这么慢。  (What's wrong? You're walking so slowly.)",
+        "B：昨天踢足球，我的腿现在很疼。  (I played football yesterday and my leg hurts now.)",
+        "A：那你别爬楼了，坐电梯上去吧。  (Then don't climb the stairs; take the lift up.)",
+        "B：好，我的办公室在五楼。  (OK. My office is on the fifth floor.)"
+      ]
+    },
+    "why": "B says 我的腿现在很疼, which is why he walks slowly.",
+    "not": {
+      "He is fat": "B never says he is fat.",
+      "It is raining": "There is no rain in the text; B says 腿疼.",
+      "He is late": "B is not late; he has a sore leg."
+    }
+  },
+  {
+    "key": "rwh1u32",
+    "type": "reading",
+    "lesson": 2,
+    "q": "Where is B's office?",
+    "options": [
+      "The fifth floor",
+      "The first floor",
+      "Under a tree",
+      "At home"
+    ],
+    "answer": "The fifth floor",
+    "context": {
+      "title": "腿疼",
+      "lines": [
+        "A：你怎么了？走得这么慢。  (What's wrong? You're walking so slowly.)",
+        "B：昨天踢足球，我的腿现在很疼。  (I played football yesterday and my leg hurts now.)",
+        "A：那你别爬楼了，坐电梯上去吧。  (Then don't climb the stairs; take the lift up.)",
+        "B：好，我的办公室在五楼。  (OK. My office is on the fifth floor.)"
+      ]
+    },
+    "why": "B says 我的办公室在五楼, the fifth floor.",
+    "not": {
+      "The first floor": "B says 五楼, not 一楼.",
+      "Under a tree": "The text gives no place under a tree.",
+      "At home": "B says the office is on 五楼; home is not mentioned."
+    }
+  },
+  {
+    "key": "r79svfm",
+    "type": "reading",
+    "lesson": 2,
+    "q": "What does B want to get?",
+    "options": [
+      "An umbrella",
+      "A taxi",
+      "Some bread",
+      "A map"
+    ],
+    "answer": "An umbrella",
+    "context": {
+      "title": "下雨了",
+      "lines": [
+        "A：外边下雨了，你带伞了吗？  (It's raining outside. Have you got an umbrella?)",
+        "B：没带。我回办公室去拿一把。  (No. I'll go back to the office and fetch one.)",
+        "A：其实我有两把，给你一把吧。  (Actually I have two; I'll give you one.)",
+        "B：太好了，谢谢你！  (Great, thank you!)"
+      ]
+    },
+    "why": "B says 我回办公室去拿一把 after A asks about 伞, so an umbrella.",
+    "not": {
+      "A taxi": "B wants 伞, not a taxi.",
+      "Some bread": "Bread is not mentioned here.",
+      "A map": "A map is not mentioned here."
+    }
+  },
+  {
+    "key": "r1nx4681",
+    "type": "reading",
+    "lesson": 2,
+    "q": "How many umbrellas does A have?",
+    "options": [
+      "Two",
+      "One",
+      "Three",
+      "None"
+    ],
+    "answer": "Two",
+    "context": {
+      "title": "下雨了",
+      "lines": [
+        "A：外边下雨了，你带伞了吗？  (It's raining outside. Have you got an umbrella?)",
+        "B：没带。我回办公室去拿一把。  (No. I'll go back to the office and fetch one.)",
+        "A：其实我有两把，给你一把吧。  (Actually I have two; I'll give you one.)",
+        "B：太好了，谢谢你！  (Great, thank you!)"
+      ]
+    },
+    "why": "A says 其实我有两把, so two.",
+    "not": {
+      "One": "A says 两把, not one.",
+      "Three": "A says 两把, not three.",
+      "None": "A has umbrellas, so not none."
+    }
+  },
+  {
+    "key": "dx44wid",
+    "type": "dialog",
+    "lesson": 2,
+    "q": "周经理什么时候回来？",
+    "options": [
+      "下午",
+      "晚上",
+      "明天"
+    ],
+    "answer": "下午",
+    "context": {
+      "lines": [
+        "男：周经理在办公室吗？",
+        "女：他出去了，下午回来。"
+      ]
+    },
+    "why": "女 says 下午回来, so he returns in the afternoon.",
+    "not": {
+      "晚上": "She says 下午, not 晚上.",
+      "明天": "She says 下午, not 明天."
+    }
+  },
+  {
+    "key": "d1fzbh9p",
+    "type": "dialog",
+    "lesson": 2,
+    "q": "女的为什么腿疼？",
+    "options": [
+      "昨天爬山了",
+      "昨天跑步了",
+      "昨天踢球了"
+    ],
+    "answer": "昨天爬山了",
+    "context": {
+      "lines": [
+        "男：你的腿怎么了？",
+        "女：昨天爬山，现在很疼。"
+      ]
+    },
+    "why": "女 says 昨天爬山, so she climbed a mountain.",
+    "not": {
+      "昨天跑步了": "She says 爬山, not 跑步.",
+      "昨天踢球了": "She says 爬山, not 踢球."
+    }
+  },
+  {
+    "key": "d1gzvj0h",
+    "type": "dialog",
+    "lesson": 2,
+    "q": "女的要去做什么？",
+    "options": [
+      "拿伞",
+      "买伞",
+      "找经理"
+    ],
+    "answer": "拿伞",
+    "context": {
+      "lines": [
+        "男：外边下雨了，你带伞了吗？",
+        "女：没带，我上楼去拿。"
+      ]
+    },
+    "why": "女 says 没带，我上楼去拿, so she will fetch her umbrella.",
+    "not": {
+      "买伞": "She has no plan to buy one; she says 去拿.",
+      "找经理": "She does not look for the manager."
+    }
+  },
+  {
+    "key": "dq0vba2",
+    "type": "dialog",
+    "lesson": 2,
+    "q": "女的现在在哪儿？",
+    "options": [
+      "楼下",
+      "楼上",
+      "办公室"
+    ],
+    "answer": "楼下",
+    "context": {
+      "lines": [
+        "男：你现在在哪儿？",
+        "女：我在楼下，你下来吧。"
+      ]
+    },
+    "why": "女 says 我在楼下, so downstairs.",
+    "not": {
+      "楼上": "She says 楼下 (downstairs), not 楼上.",
+      "办公室": "She asks him to come 下来; 办公室 is not mentioned."
+    }
+  },
+  {
+    "key": "jvaixfb",
+    "type": "judge",
+    "lesson": 2,
+    "q": "他下课以后直接回家。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "他下了课就回家了，没去别的地方。"
+    },
+    "why": "The text says 下了课就回家了，没去别的地方, so the claim is true.",
+    "not": {}
+  },
+  {
+    "key": "j15lxyz7",
+    "type": "judge",
+    "lesson": 2,
+    "q": "今天的作业很难。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "今天的作业很容易，他一个小时就写完了。"
+    },
+    "why": "The text says 今天的作业很容易, but the claim says 很难. So it is false.",
+    "not": {}
+  },
+  {
+    "key": "j15ctc64",
+    "type": "judge",
+    "lesson": 2,
+    "q": "他穿得很少。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "其实我没有那么胖，只是穿得多。"
+    },
+    "why": "The text says 穿得多, but the claim says 穿得很少. So it is false.",
+    "not": {}
+  },
+  {
+    "key": "j16uuznc",
+    "type": "judge",
+    "lesson": 2,
+    "q": "经理下午才回来。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "秘书说经理出去了，下午三点回来。"
+    },
+    "why": "The secretary says 下午三点回来, so he returns in the afternoon. The claim is true.",
+    "not": {}
+  },
+  {
+    "key": "ren52kd",
+    "type": "reading",
+    "lesson": 3,
+    "q": "Where do they decide to go?",
+    "options": [
+      "The park",
+      "A mountain",
+      "A shop",
+      "The office"
+    ],
+    "answer": "The park",
+    "context": {
+      "title": "去哪儿玩儿",
+      "lines": [
+        "A：周末你想去爬山还是去公园？  (At the weekend, do you want to hike or go to the park?)",
+        "B：我记得你的腿不太舒服，还是去公园吧。  (I remember your leg isn't great, so let's go to the park.)",
+        "A：好啊。公园里有很多花，很漂亮。  (Good. The park has lots of flowers and is pretty.)",
+        "B：我们可以带面包和饮料去。  (We can take bread and drinks.)"
+      ]
+    },
+    "why": "B says 还是去公园吧, so they choose the park.",
+    "not": {
+      "A mountain": "A offers 爬山, but B's leg hurts, so they do not go.",
+      "A shop": "No shop is mentioned.",
+      "The office": "No office is mentioned."
+    }
+  },
+  {
+    "key": "rpxfa71",
+    "type": "reading",
+    "lesson": 3,
+    "q": "What do they plan to take?",
+    "options": [
+      "Bread and drinks",
+      "Fruit and tea",
+      "Books",
+      "Umbrellas"
+    ],
+    "answer": "Bread and drinks",
+    "context": {
+      "title": "去哪儿玩儿",
+      "lines": [
+        "A：周末你想去爬山还是去公园？  (At the weekend, do you want to hike or go to the park?)",
+        "B：我记得你的腿不太舒服，还是去公园吧。  (I remember your leg isn't great, so let's go to the park.)",
+        "A：好啊。公园里有很多花，很漂亮。  (Good. The park has lots of flowers and is pretty.)",
+        "B：我们可以带面包和饮料去。  (We can take bread and drinks.)"
+      ]
+    },
+    "why": "B says 我们可以带面包和饮料去.",
+    "not": {
+      "Fruit and tea": "Fruit and tea are not mentioned.",
+      "Books": "Books are not mentioned.",
+      "Umbrellas": "Umbrellas are not mentioned."
+    }
+  },
+  {
+    "key": "rhb4gdj",
+    "type": "reading",
+    "lesson": 3,
+    "q": "What kind of tea does B choose?",
+    "options": [
+      "Green tea",
+      "Flower tea",
+      "Black tea",
+      "Coffee"
+    ],
+    "answer": "Green tea",
+    "context": {
+      "title": "买饮料",
+      "lines": [
+        "A：你好，要绿茶还是花茶？  (Hello, would you like green tea or flower tea?)",
+        "B：绿茶吧。多少钱一杯？  (Green tea. How much per cup?)",
+        "A：十二元一杯。  (Twelve yuan a cup.)",
+        "B：好，来两杯。我只带了三十元。  (OK, two cups. I only brought thirty yuan.)"
+      ]
+    },
+    "why": "B says 绿茶吧, so green tea.",
+    "not": {
+      "Flower tea": "A offers 花茶, but B chooses 绿茶.",
+      "Black tea": "Black tea is not mentioned.",
+      "Coffee": "Coffee is not mentioned."
+    }
+  },
+  {
+    "key": "r1vtr0am",
+    "type": "reading",
+    "lesson": 3,
+    "q": "How much does one cup cost?",
+    "options": [
+      "12 yuan",
+      "20 yuan",
+      "30 yuan",
+      "2 yuan"
+    ],
+    "answer": "12 yuan",
+    "context": {
+      "title": "买饮料",
+      "lines": [
+        "A：你好，要绿茶还是花茶？  (Hello, would you like green tea or flower tea?)",
+        "B：绿茶吧。多少钱一杯？  (Green tea. How much per cup?)",
+        "A：十二元一杯。  (Twelve yuan a cup.)",
+        "B：好，来两杯。我只带了三十元。  (OK, two cups. I only brought thirty yuan.)"
+      ]
+    },
+    "why": "A says 十二元一杯, so 12 yuan.",
+    "not": {
+      "20 yuan": "A says 十二, not 二十.",
+      "30 yuan": "B only has 三十元; the price is 十二元.",
+      "2 yuan": "A says 十二, not 二."
+    }
+  },
+  {
+    "key": "d18k1kcb",
+    "type": "dialog",
+    "lesson": 3,
+    "q": "女的想喝什么？",
+    "options": [
+      "茶",
+      "咖啡",
+      "水"
+    ],
+    "answer": "茶",
+    "context": {
+      "lines": [
+        "男：你想喝茶还是喝咖啡？",
+        "女：我喝茶，我不喜欢咖啡。"
+      ]
+    },
+    "why": "女 says 我喝茶.",
+    "not": {
+      "咖啡": "She says 不喜欢咖啡.",
+      "水": "Water is not mentioned."
+    }
+  },
+  {
+    "key": "d9zjrj1",
+    "type": "dialog",
+    "lesson": 3,
+    "q": "这条裤子多少钱？",
+    "options": [
+      "一百八十元",
+      "八十元",
+      "一百元"
+    ],
+    "answer": "一百八十元",
+    "context": {
+      "lines": [
+        "男：这条裤子多少钱？",
+        "女：一百八十元。"
+      ]
+    },
+    "why": "女 says 一百八十元.",
+    "not": {
+      "八十元": "She says 一百八十, not 八十.",
+      "一百元": "She says 一百八十, not 一百."
+    }
+  },
+  {
+    "key": "dnarhlx",
+    "type": "dialog",
+    "lesson": 3,
+    "q": "女的周末想做什么？",
+    "options": [
+      "爬山",
+      "看电影",
+      "在家休息"
+    ],
+    "answer": "爬山",
+    "context": {
+      "lines": [
+        "男：你周末想做什么？",
+        "女：我想去爬山，你呢？"
+      ]
+    },
+    "why": "女 says 我想去爬山.",
+    "not": {
+      "看电影": "She says 爬山, not 看电影.",
+      "在家休息": "She does not say she wants to stay home."
+    }
+  },
+  {
+    "key": "d1egktal",
+    "type": "dialog",
+    "lesson": 3,
+    "q": "女的为什么不吃西瓜？",
+    "options": [
+      "西瓜不太甜",
+      "西瓜不新鲜",
+      "她不喜欢水果"
+    ],
+    "answer": "西瓜不太甜",
+    "context": {
+      "lines": [
+        "男：你为什么不吃西瓜？",
+        "女：我觉得西瓜不太甜。"
+      ]
+    },
+    "why": "女 says 我觉得西瓜不太甜.",
+    "not": {
+      "西瓜不新鲜": "She does not say it is not fresh.",
+      "她不喜欢水果": "She does not say she dislikes fruit; the problem is 不太甜."
+    }
+  },
+  {
+    "key": "j1bxeokw",
+    "type": "judge",
+    "lesson": 3,
+    "q": "冰箱里有牛奶。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "冰箱里放着两瓶牛奶和一些水果。"
+    },
+    "why": "The text says 冰箱里放着两瓶牛奶, so there is milk. The claim is true.",
+    "not": {}
+  },
+  {
+    "key": "j6qgk1f",
+    "type": "judge",
+    "lesson": 3,
+    "q": "他买了裤子。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "他买了一件白衬衫，没买裤子。"
+    },
+    "why": "The text says 没买裤子 (he bought a shirt, not trousers). So it is false.",
+    "not": {}
+  },
+  {
+    "key": "j191h03l",
+    "type": "judge",
+    "lesson": 3,
+    "q": "他穿得很多。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "今天天气很冷，他只穿了一件衬衫。"
+    },
+    "why": "The text says 只穿了一件衬衫 in cold weather, so he wears little. The claim 穿得很多 is false.",
+    "not": {}
+  },
+  {
+    "key": "jox2cw1",
+    "type": "judge",
+    "lesson": 3,
+    "q": "说话人知道对方喜欢甜的。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "我记得你喜欢甜的，所以买了西瓜。"
+    },
+    "why": "The text says 我记得你喜欢甜的, so the speaker knows. The claim is true.",
+    "not": {}
+  },
+  {
+    "key": "rfdw6bp",
+    "type": "reading",
+    "lesson": 4,
+    "q": "How does B feel after the match?",
+    "options": [
+      "Tired and hungry",
+      "Cold and thirsty",
+      "Young and clever",
+      "Sick and sad"
+    ],
+    "answer": "Tired and hungry",
+    "context": {
+      "title": "比赛以后",
+      "lines": [
+        "A：今天的比赛怎么样？  (How was today's match?)",
+        "B：我们踢得很好，可是我又累又饿。  (We played well, but I'm tired and hungry.)",
+        "A：超市里有蛋糕，我们去买一块吧。  (The supermarket has cake; let's buy a piece.)",
+        "B：好，我们边走边吃吧。  (OK, let's eat as we walk.)"
+      ]
+    },
+    "why": "B says 我又累又饿, so tired and hungry.",
+    "not": {
+      "Cold and thirsty": "B says 累, not 冷; 渴 is not mentioned.",
+      "Young and clever": "Young and clever are not mentioned.",
+      "Sick and sad": "Sick and sad are not mentioned."
+    }
+  },
+  {
+    "key": "r1rorlnl",
+    "type": "reading",
+    "lesson": 4,
+    "q": "Where do they want to buy cake?",
+    "options": [
+      "In the supermarket",
+      "At home",
+      "In the office",
+      "At the park"
+    ],
+    "answer": "In the supermarket",
+    "context": {
+      "title": "比赛以后",
+      "lines": [
+        "A：今天的比赛怎么样？  (How was today's match?)",
+        "B：我们踢得很好，可是我又累又饿。  (We played well, but I'm tired and hungry.)",
+        "A：超市里有蛋糕，我们去买一块吧。  (The supermarket has cake; let's buy a piece.)",
+        "B：好，我们边走边吃吧。  (OK, let's eat as we walk.)"
+      ]
+    },
+    "why": "A says 超市里有蛋糕，我们去买一块吧.",
+    "not": {
+      "At home": "They do not buy cake at home.",
+      "In the office": "The office is not mentioned.",
+      "At the park": "The park is not mentioned."
+    }
+  },
+  {
+    "key": "r12zwty",
+    "type": "reading",
+    "lesson": 4,
+    "q": "What is the fruit like?",
+    "options": [
+      "Fresh and sweet",
+      "Cheap and big",
+      "Sour and old",
+      "Green and hard"
+    ],
+    "answer": "Fresh and sweet",
+    "context": {
+      "title": "家里有客人",
+      "lines": [
+        "A：今天家里有客人，你准备好了吗？  (We have guests today. Are you ready?)",
+        "B：准备好了。水果又新鲜又甜。  (Yes. The fruit is fresh and sweet.)",
+        "A：你总是做得这么认真。  (You always do things so carefully.)",
+        "B：客人快到了，我们站在门口等他们吧。  (The guests will be here soon; let's stand at the door and wait.)"
+      ]
+    },
+    "why": "B says 水果又新鲜又甜, so fresh and sweet.",
+    "not": {
+      "Cheap and big": "Cheap and big are not mentioned.",
+      "Sour and old": "Sour and old are the opposite of 新鲜 and 甜.",
+      "Green and hard": "Green and hard are not mentioned."
+    }
+  },
+  {
+    "key": "rsklxbj",
+    "type": "reading",
+    "lesson": 4,
+    "q": "What does A say about B?",
+    "options": [
+      "B is always careful",
+      "B is hungry",
+      "B is young",
+      "B is late"
+    ],
+    "answer": "B is always careful",
+    "context": {
+      "title": "家里有客人",
+      "lines": [
+        "A：今天家里有客人，你准备好了吗？  (We have guests today. Are you ready?)",
+        "B：准备好了。水果又新鲜又甜。  (Yes. The fruit is fresh and sweet.)",
+        "A：你总是做得这么认真。  (You always do things so carefully.)",
+        "B：客人快到了，我们站在门口等他们吧。  (The guests will be here soon; let's stand at the door and wait.)"
+      ]
+    },
+    "why": "A says 你总是做得这么认真, so B is careful.",
+    "not": {
+      "B is hungry": "Hunger is not mentioned in this dialogue.",
+      "B is young": "Age is not mentioned.",
+      "B is late": "B is ready, not late."
+    }
+  },
+  {
+    "key": "d173p5lh",
+    "type": "dialog",
+    "lesson": 4,
+    "q": "女的觉得新同学怎么样？",
+    "options": [
+      "又聪明又努力",
+      "又高又瘦",
+      "不太认真"
+    ],
+    "answer": "又聪明又努力",
+    "context": {
+      "lines": [
+        "男：你觉得新同学怎么样？",
+        "女：他又聪明又努力，我很喜欢他。"
+      ]
+    },
+    "why": "女 says 他又聪明又努力.",
+    "not": {
+      "又高又瘦": "She says 聪明, not 高 or 瘦.",
+      "不太认真": "She likes him; 不太认真 is not what she says."
+    }
+  },
+  {
+    "key": "d1y9lvff",
+    "type": "dialog",
+    "lesson": 4,
+    "q": "女的想去哪儿？",
+    "options": [
+      "超市",
+      "饭馆",
+      "学校"
+    ],
+    "answer": "超市",
+    "context": {
+      "lines": [
+        "男：你饿不饿？",
+        "女：有点儿饿，我们去超市买点儿蛋糕吧。"
+      ]
+    },
+    "why": "女 says 我们去超市买点儿蛋糕吧.",
+    "not": {
+      "饭馆": "She says 超市, not a restaurant.",
+      "学校": "She says 超市, not school."
+    }
+  },
+  {
+    "key": "dxtjpjm",
+    "type": "dialog",
+    "lesson": 4,
+    "q": "站在门口的人是谁？",
+    "options": [
+      "老师",
+      "客人",
+      "服务员"
+    ],
+    "answer": "老师",
+    "context": {
+      "lines": [
+        "男：那个拿着书站在门口的人是谁？",
+        "女：那是我们的老师。"
+      ]
+    },
+    "why": "女 says 那是我们的老师.",
+    "not": {
+      "客人": "She does not call the person a guest.",
+      "服务员": "She does not call the person a waiter."
+    }
+  },
+  {
+    "key": "d1i80aua",
+    "type": "dialog",
+    "lesson": 4,
+    "q": "比赛后大家怎么样？",
+    "options": [
+      "很高兴",
+      "很累",
+      "很饿"
+    ],
+    "answer": "很高兴",
+    "context": {
+      "lines": [
+        "男：今天的比赛怎么样？",
+        "女：我们赢了，大家都很高兴。"
+      ]
+    },
+    "why": "女 says 我们赢了，大家都很高兴.",
+    "not": {
+      "很累": "She says 高兴, not tired.",
+      "很饿": "She says 高兴, not hungry."
+    }
+  },
+  {
+    "key": "j1n6tyvc",
+    "type": "judge",
+    "lesson": 4,
+    "q": "客人喜欢这个服务员。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "这个服务员总是很热情，客人都很喜欢她。"
+    },
+    "why": "The text says 客人都很喜欢她, so the claim is true.",
+    "not": {}
+  },
+  {
+    "key": "jscgcpw",
+    "type": "judge",
+    "lesson": 4,
+    "q": "他小时候很胖。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "这张照片是我二年级的时候照的，那时候我又瘦又小。"
+    },
+    "why": "The text says 那时候我又瘦又小, but the claim says he was fat. So it is false.",
+    "not": {}
+  },
+  {
+    "key": "jb50gws",
+    "type": "judge",
+    "lesson": 4,
+    "q": "他买蛋糕是因为饿了。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "我很饿，所以去超市买了一块蛋糕。"
+    },
+    "why": "The text says 我很饿，所以去超市买了一块蛋糕, so the claim is true.",
+    "not": {}
+  },
+  {
+    "key": "jbi0k2k",
+    "type": "judge",
+    "lesson": 4,
+    "q": "他做作业很认真。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "他做作业不太认真，老师常常说他。"
+    },
+    "why": "The text says 他做作业不太认真, but the claim says he is careful. So it is false.",
+    "not": {}
+  },
+  {
+    "key": "r12jwexs",
+    "type": "reading",
+    "lesson": 5,
+    "q": "What season is coming?",
+    "options": [
+      "Summer",
+      "Spring",
+      "Winter",
+      "Autumn"
+    ],
+    "answer": "Summer",
+    "context": {
+      "title": "越来越热",
+      "lines": [
+        "A：最近天气越来越热了。  (The weather has been getting hotter lately.)",
+        "B：是啊，夏天快到了。你穿裙子了吗？  (Yes, summer is almost here. Have you started wearing skirts?)",
+        "A：穿了，我买了两条新的。  (Yes, I bought two new ones.)",
+        "B：真好！周末穿新裙子去公园吧。  (Great! Wear a new skirt to the park at the weekend.)"
+      ]
+    },
+    "why": "B says 夏天快到了, so summer.",
+    "not": {
+      "Spring": "B says 夏天, not 春天.",
+      "Winter": "B says 夏天, not 冬天.",
+      "Autumn": "B says 夏天, not 秋天."
+    }
+  },
+  {
+    "key": "r1y9wuno",
+    "type": "reading",
+    "lesson": 5,
+    "q": "What did A buy?",
+    "options": [
+      "Two skirts",
+      "Two shirts",
+      "Two umbrellas",
+      "Two cakes"
+    ],
+    "answer": "Two skirts",
+    "context": {
+      "title": "越来越热",
+      "lines": [
+        "A：最近天气越来越热了。  (The weather has been getting hotter lately.)",
+        "B：是啊，夏天快到了。你穿裙子了吗？  (Yes, summer is almost here. Have you started wearing skirts?)",
+        "A：穿了，我买了两条新的。  (Yes, I bought two new ones.)",
+        "B：真好！周末穿新裙子去公园吧。  (Great! Wear a new skirt to the park at the weekend.)"
+      ]
+    },
+    "why": "A says 我买了两条新的 about 裙子, so two skirts.",
+    "not": {
+      "Two shirts": "A bought 裙子, not 衬衫.",
+      "Two umbrellas": "Umbrellas are not mentioned here.",
+      "Two cakes": "Cakes are not mentioned here."
+    }
+  },
+  {
+    "key": "r728rhx",
+    "type": "reading",
+    "lesson": 5,
+    "q": "What does A ask B to do?",
+    "options": [
+      "Look after the puppy",
+      "Buy a puppy",
+      "Walk to school",
+      "Cook dinner"
+    ],
+    "answer": "Look after the puppy",
+    "context": {
+      "title": "照顾小狗",
+      "lines": [
+        "A：下个星期我要出去，你能照顾我的小狗吗？  (I'm going away next week. Can you look after my puppy?)",
+        "B：当然可以，你不用着急。  (Of course; no need to worry.)",
+        "A：它最近越来越能吃了，别给它太多。  (It's been eating more and more lately; don't give it too much.)",
+        "B：好的，我每天带它去外边走走。  (OK, I'll take it for a walk every day.)"
+      ]
+    },
+    "why": "A says 你能照顾我的小狗吗, so A wants B to look after the puppy.",
+    "not": {
+      "Buy a puppy": "A does not ask B to buy a puppy.",
+      "Walk to school": "Walking to school is not mentioned.",
+      "Cook dinner": "Cooking dinner is not mentioned."
+    }
+  },
+  {
+    "key": "r1ai6m58",
+    "type": "reading",
+    "lesson": 5,
+    "q": "What is the puppy like lately?",
+    "options": [
+      "Eating more and more",
+      "Getting thinner",
+      "Sick",
+      "Sleeping a lot"
+    ],
+    "answer": "Eating more and more",
+    "context": {
+      "title": "照顾小狗",
+      "lines": [
+        "A：下个星期我要出去，你能照顾我的小狗吗？  (I'm going away next week. Can you look after my puppy?)",
+        "B：当然可以，你不用着急。  (Of course; no need to worry.)",
+        "A：它最近越来越能吃了，别给它太多。  (It's been eating more and more lately; don't give it too much.)",
+        "B：好的，我每天带它去外边走走。  (OK, I'll take it for a walk every day.)"
+      ]
+    },
+    "why": "A says 它最近越来越能吃了, so it eats more and more.",
+    "not": {
+      "Getting thinner": "越来越能吃 means eating more, not thinner.",
+      "Sick": "Illness is not mentioned.",
+      "Sleeping a lot": "Sleeping is not mentioned."
+    }
+  },
+  {
+    "key": "dwlt22a",
+    "type": "dialog",
+    "lesson": 5,
+    "q": "女的怎么了？",
+    "options": [
+      "发烧了",
+      "腿疼",
+      "饿了"
+    ],
+    "answer": "发烧了",
+    "context": {
+      "lines": [
+        "男：你怎么了？",
+        "女：我有点儿发烧，不太舒服。"
+      ]
+    },
+    "why": "女 says 我有点儿发烧.",
+    "not": {
+      "腿疼": "She says 发烧, not 腿疼.",
+      "饿了": "She says 不太舒服, not 饿."
+    }
+  },
+  {
+    "key": "d1g0nvic",
+    "type": "dialog",
+    "lesson": 5,
+    "q": "女的为什么喜欢夏天？",
+    "options": [
+      "可以去游泳",
+      "天气不冷",
+      "可以穿裙子"
+    ],
+    "answer": "可以去游泳",
+    "context": {
+      "lines": [
+        "男：你喜欢什么季节？",
+        "女：夏天，因为可以去游泳。"
+      ]
+    },
+    "why": "女 says 夏天，因为可以去游泳.",
+    "not": {
+      "天气不冷": "She does not say it is because of cool weather; summer is hot.",
+      "可以穿裙子": "She does not mention skirts."
+    }
+  },
+  {
+    "key": "d16oxd6n",
+    "type": "dialog",
+    "lesson": 5,
+    "q": "女的为什么越来越瘦？",
+    "options": [
+      "每天运动",
+      "不吃饭",
+      "生病了"
+    ],
+    "answer": "每天运动",
+    "context": {
+      "lines": [
+        "男：你最近怎么越来越瘦了？",
+        "女：我最近每天都运动。"
+      ]
+    },
+    "why": "女 says 我最近每天都运动.",
+    "not": {
+      "不吃饭": "She does not say she skips meals.",
+      "生病了": "She says she exercises; she is not ill."
+    }
+  },
+  {
+    "key": "d1arnhoj",
+    "type": "dialog",
+    "lesson": 5,
+    "q": "女的要做什么？",
+    "options": [
+      "喝热水",
+      "吃药",
+      "去医院"
+    ],
+    "answer": "喝热水",
+    "context": {
+      "lines": [
+        "男：你要吃药吗？",
+        "女：不用了，我喝点儿热水就好了。"
+      ]
+    },
+    "why": "女 says 我喝点儿热水就好了.",
+    "not": {
+      "吃药": "She says 不用了 to 吃药.",
+      "去医院": "Going to hospital is not mentioned."
+    }
+  },
+  {
+    "key": "jlxm1pa",
+    "type": "judge",
+    "lesson": 5,
+    "q": "他现在喜欢冬天。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "我以前不喜欢冬天，现在喜欢了，因为可以看下雪。"
+    },
+    "why": "The text says 现在喜欢了 (likes winter now), so the claim is true.",
+    "not": {}
+  },
+  {
+    "key": "j1qmgqgo",
+    "type": "judge",
+    "lesson": 5,
+    "q": "他最近不忙。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "最近我越来越忙，每天都睡得很晚。"
+    },
+    "why": "The text says 最近我越来越忙, but the claim says he is not busy. So it is false.",
+    "not": {}
+  },
+  {
+    "key": "jj0kn2g",
+    "type": "judge",
+    "lesson": 5,
+    "q": "春天草是绿的。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "春天来了，公园里的草都绿了。"
+    },
+    "why": "The text says 草都绿了 in spring, so the claim is true.",
+    "not": {}
+  },
+  {
+    "key": "j1a1yxx3",
+    "type": "judge",
+    "lesson": 5,
+    "q": "他要在家照顾妈妈。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "妈妈生病了，爸爸在家照顾她，所以我可以去上课。"
+    },
+    "why": "The text says 爸爸在家照顾她, not the speaker. So the claim is false.",
+    "not": {}
+  },
+  {
+    "key": "r1kordph",
+    "type": "reading",
+    "lesson": 6,
+    "q": "Where does A want to go?",
+    "options": [
+      "The park",
+      "The school",
+      "The office",
+      "The shop"
+    ],
+    "answer": "The park",
+    "context": {
+      "title": "去公园",
+      "lines": [
+        "A：请问，去公园怎么走？  (Excuse me, how do I get to the park?)",
+        "B：一直往前走，离这儿不太远。  (Go straight on; it isn't far from here.)",
+        "A：谢谢。那儿特别漂亮吧？  (Thanks. It's especially pretty there, isn't it?)",
+        "B：是啊，周末很多人去那儿聊天儿。  (Yes, lots of people go there at weekends to chat.)"
+      ]
+    },
+    "why": "A asks 去公园怎么走, so A wants to go to the park.",
+    "not": {
+      "The school": "School is not mentioned.",
+      "The office": "The office is not mentioned.",
+      "The shop": "No shop is mentioned."
+    }
+  },
+  {
+    "key": "r37sgrp",
+    "type": "reading",
+    "lesson": 6,
+    "q": "What do people do there at weekends?",
+    "options": [
+      "Chat",
+      "Swim",
+      "Sleep",
+      "Study"
+    ],
+    "answer": "Chat",
+    "context": {
+      "title": "去公园",
+      "lines": [
+        "A：请问，去公园怎么走？  (Excuse me, how do I get to the park?)",
+        "B：一直往前走，离这儿不太远。  (Go straight on; it isn't far from here.)",
+        "A：谢谢。那儿特别漂亮吧？  (Thanks. It's especially pretty there, isn't it?)",
+        "B：是啊，周末很多人去那儿聊天儿。  (Yes, lots of people go there at weekends to chat.)"
+      ]
+    },
+    "why": "B says 周末很多人去那儿聊天儿.",
+    "not": {
+      "Swim": "Swimming is not mentioned.",
+      "Sleep": "Sleeping is not mentioned.",
+      "Study": "Studying is not mentioned."
+    }
+  },
+  {
+    "key": "r11zi6v",
+    "type": "reading",
+    "lesson": 6,
+    "q": "When did B fall asleep?",
+    "options": [
+      "At two o'clock",
+      "At ten o'clock",
+      "At six o'clock",
+      "He didn't sleep at all"
+    ],
+    "answer": "At two o'clock",
+    "context": {
+      "title": "睡不着",
+      "lines": [
+        "A：你怎么了？看起来很累。  (What's wrong? You look tired.)",
+        "B：昨天晚上我睡不着，两点才睡着。  (I couldn't sleep last night; I only dropped off at two.)",
+        "A：你白天多锻炼，晚上会睡得更好。  (If you exercise more in the day, you'll sleep better at night.)",
+        "B：好，我明天去公园跑步。  (OK, I'll go running in the park tomorrow.)"
+      ]
+    },
+    "why": "B says 两点才睡着, so two o'clock.",
+    "not": {
+      "At ten o'clock": "He says 两点, not 十点.",
+      "At six o'clock": "He says 两点, not 六点.",
+      "He didn't sleep at all": "He did sleep, at 两点."
+    }
+  },
+  {
+    "key": "rqcvysf",
+    "type": "reading",
+    "lesson": 6,
+    "q": "What will B do tomorrow?",
+    "options": [
+      "Run in the park",
+      "Listen to music",
+      "Go to school",
+      "See a doctor"
+    ],
+    "answer": "Run in the park",
+    "context": {
+      "title": "睡不着",
+      "lines": [
+        "A：你怎么了？看起来很累。  (What's wrong? You look tired.)",
+        "B：昨天晚上我睡不着，两点才睡着。  (I couldn't sleep last night; I only dropped off at two.)",
+        "A：你白天多锻炼，晚上会睡得更好。  (If you exercise more in the day, you'll sleep better at night.)",
+        "B：好，我明天去公园跑步。  (OK, I'll go running in the park tomorrow.)"
+      ]
+    },
+    "why": "B says 我明天去公园跑步.",
+    "not": {
+      "Listen to music": "Music is not mentioned.",
+      "Go to school": "Going to school is not mentioned.",
+      "See a doctor": "B does not plan to see a doctor."
+    }
+  },
+  {
+    "key": "d1wpf3b0",
+    "type": "dialog",
+    "lesson": 6,
+    "q": "男的在找什么？",
+    "options": [
+      "手机",
+      "眼镜",
+      "书"
+    ],
+    "answer": "手机",
+    "context": {
+      "lines": [
+        "男：你看见我的手机了吗？",
+        "女：在桌子上呢，你看看。"
+      ]
+    },
+    "why": "男 asks 你看见我的手机了吗, so he looks for his phone.",
+    "not": {
+      "眼镜": "Glasses are not mentioned here.",
+      "书": "Books are not mentioned."
+    }
+  },
+  {
+    "key": "d1hmtyoo",
+    "type": "dialog",
+    "lesson": 6,
+    "q": "女的为什么听不懂？",
+    "options": [
+      "他说得太快",
+      "声音太小",
+      "她不想听"
+    ],
+    "answer": "他说得太快",
+    "context": {
+      "lines": [
+        "男：你听得懂他说的话吗？",
+        "女：听不懂，他说得太快了。"
+      ]
+    },
+    "why": "女 says 他说得太快了.",
+    "not": {
+      "声音太小": "She says 太快, not that the sound is small.",
+      "她不想听": "She does not say she is unwilling; she says 听不懂."
+    }
+  },
+  {
+    "key": "dkn7t0y",
+    "type": "dialog",
+    "lesson": 6,
+    "q": "女的想去哪儿？",
+    "options": [
+      "公园",
+      "咖啡店",
+      "办公室"
+    ],
+    "answer": "公园",
+    "context": {
+      "lines": [
+        "男：我们去哪儿聊天儿？",
+        "女：去公园吧，那儿很安静。"
+      ]
+    },
+    "why": "女 says 去公园吧，那儿很安静.",
+    "not": {
+      "咖啡店": "She says 公园, not a coffee shop.",
+      "办公室": "She says 公园, not the office."
+    }
+  },
+  {
+    "key": "dezl83u",
+    "type": "dialog",
+    "lesson": 6,
+    "q": "女的刚才去做什么了？",
+    "options": [
+      "锻炼",
+      "帮忙",
+      "买东西"
+    ],
+    "answer": "锻炼",
+    "context": {
+      "lines": [
+        "男：你刚才去哪儿了？",
+        "女：我去锻炼了，刚回来。"
+      ]
+    },
+    "why": "女 says 我去锻炼了，刚回来.",
+    "not": {
+      "帮忙": "She does not say she helped anyone.",
+      "买东西": "She does not say she bought things."
+    }
+  },
+  {
+    "key": "j165fjg9",
+    "type": "judge",
+    "lesson": 6,
+    "q": "他很快就明白了。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "这个题特别难，老师讲了两次我才明白。"
+    },
+    "why": "The text says 老师讲了两次我才明白, so he did not understand quickly. The claim is false.",
+    "not": {}
+  },
+  {
+    "key": "j1ewvmzr",
+    "type": "judge",
+    "lesson": 6,
+    "q": "妈妈帮他找到了眼镜。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "我的眼镜突然找不到了，是妈妈帮我找到的。"
+    },
+    "why": "The text says 是妈妈帮我找到的, so the claim is true.",
+    "not": {}
+  },
+  {
+    "key": "jkj8m42",
+    "type": "judge",
+    "lesson": 6,
+    "q": "他昨天睡得很好。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "昨天晚上太热，我一点儿也睡不着。"
+    },
+    "why": "The text says 一点儿也睡不着, but the claim says he slept well. So it is false.",
+    "not": {}
+  },
+  {
+    "key": "j93rb2i",
+    "type": "judge",
+    "lesson": 6,
+    "q": "他不在办公室。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "他刚才离开了办公室，现在在公园里。"
+    },
+    "why": "The text says 刚才离开了办公室，现在在公园里, so the claim is true.",
+    "not": {}
+  },
+  {
+    "key": "r1ecf2dk",
+    "type": "reading",
+    "lesson": 7,
+    "q": "How does B know the new colleague?",
+    "options": [
+      "They were classmates",
+      "They met at a bank",
+      "They are neighbours",
+      "They met at a party"
+    ],
+    "answer": "They were classmates",
+    "context": {
+      "title": "新同事",
+      "lines": [
+        "A：你认识新来的同事吗？  (Do you know the new colleague?)",
+        "B：认识，我们以前是同学，认识很久了。  (Yes. We used to be classmates; we've known each other a long time.)",
+        "A：他结婚了吗？  (Is he married?)",
+        "B：结婚三年了，他的孩子已经两岁了。  (He's been married for three years, and his child is already two.)"
+      ]
+    },
+    "why": "B says 我们以前是同学, so they were classmates.",
+    "not": {
+      "They met at a bank": "No bank is mentioned here.",
+      "They are neighbours": "Neighbours are not mentioned.",
+      "They met at a party": "No party is mentioned."
+    }
+  },
+  {
+    "key": "r1xwmlml",
+    "type": "reading",
+    "lesson": 7,
+    "q": "How old is the colleague's child?",
+    "options": [
+      "Two",
+      "Three",
+      "Ten",
+      "One"
+    ],
+    "answer": "Two",
+    "context": {
+      "title": "新同事",
+      "lines": [
+        "A：你认识新来的同事吗？  (Do you know the new colleague?)",
+        "B：认识，我们以前是同学，认识很久了。  (Yes. We used to be classmates; we've known each other a long time.)",
+        "A：他结婚了吗？  (Is he married?)",
+        "B：结婚三年了，他的孩子已经两岁了。  (He's been married for three years, and his child is already two.)"
+      ]
+    },
+    "why": "B says 他的孩子已经两岁了, so two.",
+    "not": {
+      "Three": "He has been married three years; the child is 两岁.",
+      "Ten": "Ten is not mentioned.",
+      "One": "One is not mentioned."
+    }
+  },
+  {
+    "key": "r12v7uca",
+    "type": "reading",
+    "lesson": 7,
+    "q": "What time does B meet the friend?",
+    "options": [
+      "9:15",
+      "8:30",
+      "9:30",
+      "10:15"
+    ],
+    "answer": "9:15",
+    "context": {
+      "title": "去接朋友",
+      "lines": [
+        "A：你几点去接朋友？  (What time are you meeting your friend?)",
+        "B：九点一刻，现在才八点半，还早。  (At quarter past nine; it's only half past eight, so it's early.)",
+        "A：路上要一个小时，快走吧，别迟到。  (The trip takes an hour; go quickly and don't be late.)",
+        "B：啊，那我现在就走。  (Oh, then I'll go right now.)"
+      ]
+    },
+    "why": "B says 九点一刻, which is 9:15.",
+    "not": {
+      "8:30": "八点半 is the current time, not the meeting time.",
+      "9:30": "9:30 would be 九点半.",
+      "10:15": "10:15 is not mentioned."
+    }
+  },
+  {
+    "key": "ruhyq6d",
+    "type": "reading",
+    "lesson": 7,
+    "q": "How long is the trip?",
+    "options": [
+      "One hour",
+      "Half an hour",
+      "A quarter of an hour",
+      "Two hours"
+    ],
+    "answer": "One hour",
+    "context": {
+      "title": "去接朋友",
+      "lines": [
+        "A：你几点去接朋友？  (What time are you meeting your friend?)",
+        "B：九点一刻，现在才八点半，还早。  (At quarter past nine; it's only half past eight, so it's early.)",
+        "A：路上要一个小时，快走吧，别迟到。  (The trip takes an hour; go quickly and don't be late.)",
+        "B：啊，那我现在就走。  (Oh, then I'll go right now.)"
+      ]
+    },
+    "why": "A says 路上要一个小时, so one hour.",
+    "not": {
+      "Half an hour": "半个小时 is not said; the trip is 一个小时.",
+      "A quarter of an hour": "一刻 is part of the meeting time 九点一刻, not the trip length.",
+      "Two hours": "Two hours is not mentioned."
+    }
+  },
+  {
+    "key": "d1j44po2",
+    "type": "dialog",
+    "lesson": 7,
+    "q": "女的在银行工作多长时间了？",
+    "options": [
+      "三年",
+      "两年",
+      "五年"
+    ],
+    "answer": "三年",
+    "context": {
+      "lines": [
+        "男：你在银行工作多长时间了？",
+        "女：三年了。"
+      ]
+    },
+    "why": "女 says 三年了.",
+    "not": {
+      "两年": "She says 三年, not 两年.",
+      "五年": "She says 三年, not 五年."
+    }
+  },
+  {
+    "key": "dpicd4k",
+    "type": "dialog",
+    "lesson": 7,
+    "q": "女的对什么运动感兴趣？",
+    "options": [
+      "游泳",
+      "踢足球",
+      "跑步"
+    ],
+    "answer": "游泳",
+    "context": {
+      "lines": [
+        "男：你对什么运动感兴趣？",
+        "女：我对游泳很感兴趣。"
+      ]
+    },
+    "why": "女 says 我对游泳很感兴趣.",
+    "not": {
+      "踢足球": "She says 游泳, not 踢足球.",
+      "跑步": "She says 游泳, not 跑步."
+    }
+  },
+  {
+    "key": "d1pxlbn8",
+    "type": "dialog",
+    "lesson": 7,
+    "q": "现在几点？",
+    "options": [
+      "七点四十五分",
+      "八点一刻",
+      "八点半"
+    ],
+    "answer": "七点四十五分",
+    "context": {
+      "lines": [
+        "男：现在几点了？你怎么迟到了？",
+        "女：对不起，现在差一刻八点，是你的表快了。"
+      ]
+    },
+    "why": "女 says 现在差一刻八点, which is 7:45.",
+    "not": {
+      "八点一刻": "八点一刻 is 8:15; 差一刻八点 is 7:45.",
+      "八点半": "八点半 is 8:30, not what she says."
+    }
+  },
+  {
+    "key": "d19ns0yf",
+    "type": "dialog",
+    "lesson": 7,
+    "q": "他们什么时候结婚？",
+    "options": [
+      "下个月",
+      "明年",
+      "下个星期"
+    ],
+    "answer": "下个月",
+    "context": {
+      "lines": [
+        "男：你们什么时候结婚？",
+        "女：下个月，欢迎你来。"
+      ]
+    },
+    "why": "女 says 下个月，欢迎你来.",
+    "not": {
+      "明年": "She says 下个月, not 明年.",
+      "下个星期": "She says 下个月, not 下个星期."
+    }
+  },
+  {
+    "key": "j1afzbz",
+    "type": "judge",
+    "lesson": 7,
+    "q": "他现在在银行工作。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "我在这家公司工作了两年，以前在银行工作。"
+    },
+    "why": "The text says 以前在银行工作, but now he works at a company. So the claim is false.",
+    "not": {}
+  },
+  {
+    "key": "j1buu0is",
+    "type": "judge",
+    "lesson": 7,
+    "q": "他喜欢音乐。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "我对音乐感兴趣，每个星期都去听音乐会。"
+    },
+    "why": "The text says 我对音乐感兴趣, so the claim is true.",
+    "not": {}
+  },
+  {
+    "key": "j1e6cdag",
+    "type": "judge",
+    "lesson": 7,
+    "q": "现在是八点四十五分。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "现在差一刻九点，我们九点出发，不会迟到。"
+    },
+    "why": "The text says 现在差一刻九点, which is 8:45. The claim is true.",
+    "not": {}
+  },
+  {
+    "key": "j13j6eyf",
+    "type": "judge",
+    "lesson": 7,
+    "q": "他们跑了两个小时。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "我们在公园跑了半个小时就回家了。"
+    },
+    "why": "The text says 跑了半个小时, but the claim says two hours. So it is false.",
+    "not": {}
+  },
+  {
+    "key": "rxyod6y",
+    "type": "reading",
+    "lesson": 8,
+    "q": "Which floor does B live on?",
+    "options": [
+      "The twelfth floor",
+      "The second floor",
+      "The tenth floor",
+      "The eighth floor"
+    ],
+    "answer": "The twelfth floor",
+    "context": {
+      "title": "在新家",
+      "lines": [
+        "A：你的新家怎么样？你满意吗？  (How's your new home? Are you happy with it?)",
+        "B：很满意，这儿很安静。  (Very happy. It's quiet here.)",
+        "A：你住在几层？有电梯吗？  (Which floor are you on? Is there a lift?)",
+        "B：住在十二层，有电梯，很方便。  (The twelfth floor, and there's a lift. Very handy.)",
+        "A：太好了，我明天去看看你。  (Great, I'll come and see you tomorrow.)"
+      ]
+    },
+    "why": "B says 住在十二层, so the twelfth floor.",
+    "not": {
+      "The second floor": "B says 十二层, not 二层.",
+      "The tenth floor": "B says 十二层, not 十层.",
+      "The eighth floor": "B says 十二层, not 八层."
+    }
+  },
+  {
+    "key": "r1m9thfv",
+    "type": "reading",
+    "lesson": 8,
+    "q": "Why is B happy with the new home?",
+    "options": [
+      "It is quiet",
+      "It is cheap",
+      "It is very big",
+      "It is near the school"
+    ],
+    "answer": "It is quiet",
+    "context": {
+      "title": "在新家",
+      "lines": [
+        "A：你的新家怎么样？你满意吗？  (How's your new home? Are you happy with it?)",
+        "B：很满意，这儿很安静。  (Very happy. It's quiet here.)",
+        "A：你住在几层？有电梯吗？  (Which floor are you on? Is there a lift?)",
+        "B：住在十二层，有电梯，很方便。  (The twelfth floor, and there's a lift. Very handy.)",
+        "A：太好了，我明天去看看你。  (Great, I'll come and see you tomorrow.)"
+      ]
+    },
+    "why": "B says 很满意，这儿很安静.",
+    "not": {
+      "It is cheap": "Price is not mentioned.",
+      "It is very big": "Size is not mentioned.",
+      "It is near the school": "School is not mentioned."
+    }
+  },
+  {
+    "key": "rqsx175",
+    "type": "reading",
+    "lesson": 8,
+    "q": "What does A say about B?",
+    "options": [
+      "B has hardly changed",
+      "B has moved house",
+      "B is much taller",
+      "B looks tired"
+    ],
+    "answer": "B has hardly changed",
+    "context": {
+      "title": "老同学",
+      "lines": [
+        "A：好久不见，你几乎没变化！  (Long time no see. You've hardly changed!)",
+        "B：是吗？我每天都去跑步，身体很健康。  (Really? I go running every day and I'm very healthy.)",
+        "A：健康最重要。你现在在哪儿工作？  (Health matters most. Where do you work now?)",
+        "B：在北京。我们找个地方坐一会儿吧，边吃边聊。  (In Beijing. Let's find somewhere to sit for a while and chat as we eat.)"
+      ]
+    },
+    "why": "A says 你几乎没变化, so B has hardly changed.",
+    "not": {
+      "B has moved house": "B has not moved; A only says 好久不见.",
+      "B is much taller": "A does not say B is taller.",
+      "B looks tired": "A does not say B looks tired."
+    }
+  },
+  {
+    "key": "r17hpg3m",
+    "type": "reading",
+    "lesson": 8,
+    "q": "What does B do every day?",
+    "options": [
+      "Goes running",
+      "Plays football",
+      "Swims",
+      "Dances"
+    ],
+    "answer": "Goes running",
+    "context": {
+      "title": "老同学",
+      "lines": [
+        "A：好久不见，你几乎没变化！  (Long time no see. You've hardly changed!)",
+        "B：是吗？我每天都去跑步，身体很健康。  (Really? I go running every day and I'm very healthy.)",
+        "A：健康最重要。你现在在哪儿工作？  (Health matters most. Where do you work now?)",
+        "B：在北京。我们找个地方坐一会儿吧，边吃边聊。  (In Beijing. Let's find somewhere to sit for a while and chat as we eat.)"
+      ]
+    },
+    "why": "B says 我每天都去跑步.",
+    "not": {
+      "Plays football": "Football is not mentioned.",
+      "Swims": "Swimming is not mentioned.",
+      "Dances": "Dancing is not mentioned."
+    }
+  },
+  {
+    "key": "dnktody",
+    "type": "dialog",
+    "lesson": 8,
+    "q": "女的家在几层？",
+    "options": [
+      "九层",
+      "五层",
+      "十九层"
+    ],
+    "answer": "九层",
+    "context": {
+      "lines": [
+        "男：你家在几层？有电梯吗？",
+        "女：在九层，有电梯。"
+      ]
+    },
+    "why": "女 says 在九层，有电梯.",
+    "not": {
+      "五层": "She says 九层, not 五层.",
+      "十九层": "She says 九层, not 十九层."
+    }
+  },
+  {
+    "key": "di08eo8",
+    "type": "dialog",
+    "lesson": 8,
+    "q": "女的想吃什么？",
+    "options": [
+      "男的做的饭",
+      "面包",
+      "什么都不吃"
+    ],
+    "answer": "男的做的饭",
+    "context": {
+      "lines": [
+        "男：晚饭你想吃什么？",
+        "女：你做什么我就吃什么。"
+      ]
+    },
+    "why": "女 says 你做什么我就吃什么, so she will eat what he cooks.",
+    "not": {
+      "面包": "Bread is not mentioned.",
+      "什么都不吃": "She will eat, so it is not nothing."
+    }
+  },
+  {
+    "key": "d12iwmc9",
+    "type": "dialog",
+    "lesson": 8,
+    "q": "女的什么时候去北京？",
+    "options": [
+      "下个月五号",
+      "这个月五号",
+      "下个星期"
+    ],
+    "answer": "下个月五号",
+    "context": {
+      "lines": [
+        "男：听说你下个月要去北京了？",
+        "女：是啊，下个月五号走。"
+      ]
+    },
+    "why": "女 says 下个月五号走.",
+    "not": {
+      "这个月五号": "She says 下个月, not 这个月.",
+      "下个星期": "She says 五号 next month, not 下个星期."
+    }
+  },
+  {
+    "key": "db1xi5q",
+    "type": "dialog",
+    "lesson": 8,
+    "q": "洗手间在哪儿？",
+    "options": [
+      "二层",
+      "一层",
+      "电梯里"
+    ],
+    "answer": "二层",
+    "context": {
+      "lines": [
+        "男：请问，洗手间在哪儿？",
+        "女：在二层，电梯旁边。"
+      ]
+    },
+    "why": "女 says 在二层，电梯旁边.",
+    "not": {
+      "一层": "She says 二层, not 一层.",
+      "电梯里": "The lift is only the landmark: 电梯旁边, not inside."
+    }
+  },
+  {
+    "key": "jwdjbob",
+    "type": "judge",
+    "lesson": 8,
+    "q": "他今天去了超市。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "我昨天去超市买了面包，今天又去了一次。"
+    },
+    "why": "The text says 今天又去了一次, so he went to the supermarket today. The claim is true.",
+    "not": {}
+  },
+  {
+    "key": "j9l3k2b",
+    "type": "judge",
+    "lesson": 8,
+    "q": "小王喜欢热闹的地方。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "小王不喜欢热闹的地方，所以每次都选安静的咖啡馆。"
+    },
+    "why": "The text says 小王不喜欢热闹的地方, but the claim says he likes them. So it is false.",
+    "not": {}
+  },
+  {
+    "key": "j1cy1yu7",
+    "type": "judge",
+    "lesson": 8,
+    "q": "老同学变化很大。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "我的老同学几乎没变化，还是那么瘦。"
+    },
+    "why": "The text says 几乎没变化, but the claim says 变化很大. So it is false.",
+    "not": {}
+  },
+  {
+    "key": "j1pmfjge",
+    "type": "judge",
+    "lesson": 8,
+    "q": "他觉得去哪儿都可以。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "你想去哪儿，我们就去哪儿，我都可以。"
+    },
+    "why": "The text says 你想去哪儿，我们就去哪儿，我都可以, so the claim is true.",
+    "not": {}
+  },
+  {
+    "key": "r1c40uiy",
+    "type": "reading",
+    "lesson": 9,
+    "q": "Who taught B to swim?",
+    "options": [
+      "B's brother",
+      "B's teacher",
+      "Xiao Li",
+      "B's classmate"
+    ],
+    "answer": "B's brother",
+    "context": {
+      "title": "学游泳",
+      "lines": [
+        "A：你游泳游得真好，是跟谁学的？  (You swim really well. Who did you learn from?)",
+        "B：是我哥哥教的。我们班的小李游得更好。  (My brother taught me. Xiao Li in our class swims even better.)",
+        "A：我游得比较慢，你先教教我吧。  (I swim rather slowly. Teach me first.)",
+        "B：好，你放心，多游几次就越游越好了。  (OK, don't worry. A few more tries and you'll get better and better.)"
+      ]
+    },
+    "why": "B says 是我哥哥教的, so B's brother.",
+    "not": {
+      "B's teacher": "B does not say a teacher taught him.",
+      "Xiao Li": "小李 swims better than B, but B says 哥哥 taught him.",
+      "B's classmate": "A classmate is not who taught him."
+    }
+  },
+  {
+    "key": "r54apuj",
+    "type": "reading",
+    "lesson": 9,
+    "q": "How does A swim?",
+    "options": [
+      "Rather slowly",
+      "Very fast",
+      "Better than B",
+      "Not at all"
+    ],
+    "answer": "Rather slowly",
+    "context": {
+      "title": "学游泳",
+      "lines": [
+        "A：你游泳游得真好，是跟谁学的？  (You swim really well. Who did you learn from?)",
+        "B：是我哥哥教的。我们班的小李游得更好。  (My brother taught me. Xiao Li in our class swims even better.)",
+        "A：我游得比较慢，你先教教我吧。  (I swim rather slowly. Teach me first.)",
+        "B：好，你放心，多游几次就越游越好了。  (OK, don't worry. A few more tries and you'll get better and better.)"
+      ]
+    },
+    "why": "A says 我游得比较慢, so rather slowly.",
+    "not": {
+      "Very fast": "A says 慢, not fast.",
+      "Better than B": "A does not say A is better; B swims well.",
+      "Not at all": "A swims, only slowly."
+    }
+  },
+  {
+    "key": "rx5elv7",
+    "type": "reading",
+    "lesson": 9,
+    "q": "What is wrong with B?",
+    "options": [
+      "His foot hurts",
+      "He has a cold",
+      "He is tired",
+      "He is hungry"
+    ],
+    "answer": "His foot hurts",
+    "context": {
+      "title": "比赛",
+      "lines": [
+        "A：下个星期的比赛你参加吗？  (Are you taking part in next week's match?)",
+        "B：我的脚还有点儿疼，不知道能不能参加。  (My foot still hurts a bit; I don't know if I can.)",
+        "A：别担心，你休息几天，脚就会好的。  (Don't worry. Rest a few days and your foot will get better.)",
+        "B：我希望能参加，这次比赛对我很重要。  (I hope I can. This match matters a lot to me.)"
+      ]
+    },
+    "why": "B says 我的脚还有点儿疼.",
+    "not": {
+      "He has a cold": "B does not mention a cold.",
+      "He is tired": "B does not say he is tired.",
+      "He is hungry": "B does not say he is hungry."
+    }
+  },
+  {
+    "key": "r1bn2tsh",
+    "type": "reading",
+    "lesson": 9,
+    "q": "What does A advise?",
+    "options": [
+      "Rest more",
+      "Run more",
+      "Buy new shoes",
+      "Skip the match"
+    ],
+    "answer": "Rest more",
+    "context": {
+      "title": "比赛",
+      "lines": [
+        "A：下个星期的比赛你参加吗？  (Are you taking part in next week's match?)",
+        "B：我的脚还有点儿疼，不知道能不能参加。  (My foot still hurts a bit; I don't know if I can.)",
+        "A：别担心，你休息几天，脚就会好的。  (Don't worry. Rest a few days and your foot will get better.)",
+        "B：我希望能参加，这次比赛对我很重要。  (I hope I can. This match matters a lot to me.)"
+      ]
+    },
+    "why": "A says 你休息几天，脚就会好的.",
+    "not": {
+      "Run more": "Running more is not advised.",
+      "Buy new shoes": "New shoes are not mentioned.",
+      "Skip the match": "A hopes B can play; B hopes to take part."
+    }
+  },
+  {
+    "key": "d1kgdc5z",
+    "type": "dialog",
+    "lesson": 9,
+    "q": "女的每天做什么？",
+    "options": [
+      "说一个小时中文",
+      "听一个小时音乐",
+      "写一个小时汉字"
+    ],
+    "answer": "说一个小时中文",
+    "context": {
+      "lines": [
+        "男：你的中文说得越来越好了！",
+        "女：谢谢，我每天都说一个小时。"
+      ]
+    },
+    "why": "女 says 我每天都说一个小时 about 中文.",
+    "not": {
+      "听一个小时音乐": "Music is not mentioned.",
+      "写一个小时汉字": "Writing characters is not mentioned."
+    }
+  },
+  {
+    "key": "djd58ax",
+    "type": "dialog",
+    "lesson": 9,
+    "q": "女的还要吃几个？",
+    "options": [
+      "一个",
+      "三个",
+      "不吃了"
+    ],
+    "answer": "一个",
+    "context": {
+      "lines": [
+        "男：你怎么还在吃？已经吃了三个苹果了。",
+        "女：没关系，这是最后一个。"
+      ]
+    },
+    "why": "女 says 这是最后一个, so one more.",
+    "not": {
+      "三个": "三个 are the apples already eaten.",
+      "不吃了": "She says 这是最后一个, so she still eats one."
+    }
+  },
+  {
+    "key": "d12bgtw5",
+    "type": "dialog",
+    "lesson": 9,
+    "q": "女的觉得男的会怎么样？",
+    "options": [
+      "能考好",
+      "考不好",
+      "不参加考试"
+    ],
+    "answer": "能考好",
+    "context": {
+      "lines": [
+        "男：我有点儿担心明天的考试。",
+        "女：别担心，你一定能考好。"
+      ]
+    },
+    "why": "女 says 你一定能考好.",
+    "not": {
+      "考不好": "She says 一定能考好, not 考不好.",
+      "不参加考试": "男 only worries; he is not skipping the exam."
+    }
+  },
+  {
+    "key": "d1xn1you",
+    "type": "dialog",
+    "lesson": 9,
+    "q": "女的的手机怎么样？",
+    "options": [
+      "比男的大",
+      "跟男的一样",
+      "比男的小"
+    ],
+    "answer": "比男的大",
+    "context": {
+      "lines": [
+        "男：你的新手机跟我的一样吗？",
+        "女：不一样，我的比你的大。"
+      ]
+    },
+    "why": "女 says 我的比你的大, so her phone is bigger.",
+    "not": {
+      "跟男的一样": "She says 不一样.",
+      "比男的小": "She says 比你的大, not smaller."
+    }
+  },
+  {
+    "key": "j10ahqvo",
+    "type": "judge",
+    "lesson": 9,
+    "q": "他现在不太喜欢汉语。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "我越学越喜欢汉语，现在每天都学两个小时。"
+    },
+    "why": "The text says 我越学越喜欢汉语, but the claim says he likes it less. So it is false.",
+    "not": {}
+  },
+  {
+    "key": "jgh0bb5",
+    "type": "judge",
+    "lesson": 9,
+    "q": "他们两个一样高。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "小李和小王的个子一样高，都是一米八。"
+    },
+    "why": "The text says 个子一样高, so the claim is true.",
+    "not": {}
+  },
+  {
+    "key": "j18ijwz2",
+    "type": "judge",
+    "lesson": 9,
+    "q": "这家商店的东西很贵。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "这家商店的东西比较便宜，所以我常来。"
+    },
+    "why": "The text says 东西比较便宜, but the claim says 很贵. So it is false.",
+    "not": {}
+  },
+  {
+    "key": "j1dm5xrm",
+    "type": "judge",
+    "lesson": 9,
+    "q": "他想参加比赛。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "比赛是下个月的，我一定参加。"
+    },
+    "why": "The text says 我一定参加, so the claim is true.",
+    "not": {}
+  },
+  {
+    "key": "rhunsf3",
+    "type": "reading",
+    "lesson": 10,
+    "q": "Why does B prefer the black bike?",
+    "options": [
+      "It looks nicer",
+      "It is cheaper",
+      "It is bigger",
+      "It is faster"
+    ],
+    "answer": "It looks nicer",
+    "context": {
+      "title": "买自行车",
+      "lines": [
+        "A：你的自行车太旧了，换一辆吧。  (Your bike is too old. Get a new one.)",
+        "B：好啊，附近有个商店，我们去看看。  (OK, there's a shop nearby. Let's go and look.)",
+        "A：这辆红的比那辆黑的便宜一点儿。  (The red one is a little cheaper than the black one.)",
+        "B：可是红的没有黑的那么好看，我想买黑的。  (But the red one isn't as nice-looking as the black one. I'd like the black one.)"
+      ]
+    },
+    "why": "B says 红的没有黑的那么好看, so he prefers black for its looks.",
+    "not": {
+      "It is cheaper": "A says red is cheaper, but B still prefers black.",
+      "It is bigger": "Size is not mentioned.",
+      "It is faster": "Speed is not mentioned."
+    }
+  },
+  {
+    "key": "rb91gji",
+    "type": "reading",
+    "lesson": 10,
+    "q": "Which bike is cheaper?",
+    "options": [
+      "The red one",
+      "The black one",
+      "They cost the same",
+      "We don't know"
+    ],
+    "answer": "The red one",
+    "context": {
+      "title": "买自行车",
+      "lines": [
+        "A：你的自行车太旧了，换一辆吧。  (Your bike is too old. Get a new one.)",
+        "B：好啊，附近有个商店，我们去看看。  (OK, there's a shop nearby. Let's go and look.)",
+        "A：这辆红的比那辆黑的便宜一点儿。  (The red one is a little cheaper than the black one.)",
+        "B：可是红的没有黑的那么好看，我想买黑的。  (But the red one isn't as nice-looking as the black one. I'd like the black one.)"
+      ]
+    },
+    "why": "A says 这辆红的比那辆黑的便宜一点儿.",
+    "not": {
+      "The black one": "The black one costs a little more.",
+      "They cost the same": "The prices differ by 一点儿.",
+      "We don't know": "The text compares the prices, so we can tell."
+    }
+  },
+  {
+    "key": "ru9gteu",
+    "type": "reading",
+    "lesson": 10,
+    "q": "Who is taller, B or B's brother?",
+    "options": [
+      "B's brother",
+      "B",
+      "They are the same",
+      "We don't know"
+    ],
+    "answer": "B's brother",
+    "context": {
+      "title": "我的哥哥",
+      "lines": [
+        "A：你哥哥个子很高吧？  (Your older brother is tall, isn't he?)",
+        "B：他比我高多了，我比他矮十几厘米。  (He's much taller than me. I'm over ten centimetres shorter.)",
+        "A：他也喜欢体育课吗？  (Does he like P.E. too?)",
+        "B：他最喜欢体育，不太喜欢数学，上数学课的时候总是想睡觉。  (He likes P.E. best and isn't keen on maths; in maths class he always wants to sleep.)"
+      ]
+    },
+    "why": "B says 他比我高多了, so his brother is taller.",
+    "not": {
+      "B": "B is shorter: 我比他矮十几厘米.",
+      "They are the same": "They are not equal; the brother is much taller.",
+      "We don't know": "The text clearly says who is taller."
+    }
+  },
+  {
+    "key": "r183fcnd",
+    "type": "reading",
+    "lesson": 10,
+    "q": "Which subject does B's brother like best?",
+    "options": [
+      "P.E.",
+      "Maths",
+      "History",
+      "Chinese"
+    ],
+    "answer": "P.E.",
+    "context": {
+      "title": "我的哥哥",
+      "lines": [
+        "A：你哥哥个子很高吧？  (Your older brother is tall, isn't he?)",
+        "B：他比我高多了，我比他矮十几厘米。  (He's much taller than me. I'm over ten centimetres shorter.)",
+        "A：他也喜欢体育课吗？  (Does he like P.E. too?)",
+        "B：他最喜欢体育，不太喜欢数学，上数学课的时候总是想睡觉。  (He likes P.E. best and isn't keen on maths; in maths class he always wants to sleep.)"
+      ]
+    },
+    "why": "B says 他最喜欢体育.",
+    "not": {
+      "Maths": "B says 不太喜欢数学.",
+      "History": "History is not mentioned.",
+      "Chinese": "Chinese is not mentioned."
+    }
+  },
+  {
+    "key": "dcq4f1f",
+    "type": "dialog",
+    "lesson": 10,
+    "q": "谁比较高？",
+    "options": [
+      "女的的姐姐",
+      "女的",
+      "一样高"
+    ],
+    "answer": "女的的姐姐",
+    "context": {
+      "lines": [
+        "男：你和你姐姐谁高？",
+        "女：她比我高一点儿。"
+      ]
+    },
+    "why": "女 says 她比我高一点儿, so her sister is taller.",
+    "not": {
+      "女的": "She says 她比我高, so she herself is shorter.",
+      "一样高": "She says 比我高, so they are not the same."
+    }
+  },
+  {
+    "key": "d11evwo2",
+    "type": "dialog",
+    "lesson": 10,
+    "q": "女的觉得什么课太难？",
+    "options": [
+      "数学课",
+      "体育课",
+      "历史课"
+    ],
+    "answer": "数学课",
+    "context": {
+      "lines": [
+        "男：你喜欢什么课？",
+        "女：历史课很有意思，数学课太难了。"
+      ]
+    },
+    "why": "女 says 数学课太难了.",
+    "not": {
+      "体育课": "She does not call 体育课 hard.",
+      "历史课": "She calls 历史课 interesting: 很有意思."
+    }
+  },
+  {
+    "key": "d1x9dug0",
+    "type": "dialog",
+    "lesson": 10,
+    "q": "女的怎么来学校？",
+    "options": [
+      "骑自行车",
+      "坐公共汽车",
+      "走路"
+    ],
+    "answer": "骑自行车",
+    "context": {
+      "lines": [
+        "男：你怎么来学校？",
+        "女：我骑自行车，七八分钟就到了。"
+      ]
+    },
+    "why": "女 says 我骑自行车.",
+    "not": {
+      "坐公共汽车": "She does not mention the bus.",
+      "走路": "She says 骑自行车, not walking."
+    }
+  },
+  {
+    "key": "d71nn9c",
+    "type": "dialog",
+    "lesson": 10,
+    "q": "哪个房子更方便？",
+    "options": [
+      "里边的",
+      "外边的",
+      "一样方便"
+    ],
+    "answer": "里边的",
+    "context": {
+      "lines": [
+        "男：这两个房子哪个更方便？",
+        "女：外边的没有里边的方便，里边的离地铁站近。"
+      ]
+    },
+    "why": "女 says 外边的没有里边的方便, so the inside one is more convenient.",
+    "not": {
+      "外边的": "外边的 is less convenient: 没有里边的方便.",
+      "一样方便": "She compares them, so they are not the same."
+    }
+  },
+  {
+    "key": "j11y2ypx",
+    "type": "judge",
+    "lesson": 10,
+    "q": "他骑车上班。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "他每天骑自行车上班，二十分钟就到公司了。"
+    },
+    "why": "The text says 每天骑自行车上班, so the claim is true.",
+    "not": {}
+  },
+  {
+    "key": "j1s87nsk",
+    "type": "judge",
+    "lesson": 10,
+    "q": "新手机更好用。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "我的旧手机比新的好用多了，所以我不想换。"
+    },
+    "why": "The text says 旧手机比新的好用多了, but the claim says the new one is better. So it is false.",
+    "not": {}
+  },
+  {
+    "key": "je8c7u0",
+    "type": "judge",
+    "lesson": 10,
+    "q": "这家店离学校很远。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "这家店在学校附近，很方便，我们常去。"
+    },
+    "why": "The text says 这家店在学校附近, but the claim says it is far. So it is false.",
+    "not": {}
+  },
+  {
+    "key": "jq7f8mo",
+    "type": "judge",
+    "lesson": 10,
+    "q": "妹妹年纪比他小。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "我妹妹比我矮一点儿，也比我小三岁。"
+    },
+    "why": "The text says 比我小三岁 about the younger sister, so the claim is true.",
+    "not": {}
+  },
+  {
+    "key": "r2x2dr6",
+    "type": "reading",
+    "lesson": 11,
+    "q": "What should A take to the library?",
+    "options": [
+      "Two books",
+      "A dictionary",
+      "A laptop",
+      "Some bottles"
+    ],
+    "answer": "Two books",
+    "context": {
+      "title": "出门以前",
+      "lines": [
+        "A：我要出门了，你有什么事吗？  (I'm heading out. Anything you need?)",
+        "B：请你把这两本书还到图书馆。  (Please return these two books to the library.)",
+        "A：好的。还有别的吗？  (OK. Anything else?)",
+        "B：别忘了把空调和灯都关了。  (Don't forget to turn off the air conditioner and the lights.)"
+      ]
+    },
+    "why": "B says 请你把这两本书还到图书馆, so A takes two books.",
+    "not": {
+      "A dictionary": "No dictionary is mentioned.",
+      "A laptop": "No laptop is mentioned.",
+      "Some bottles": "No bottles are mentioned."
+    }
+  },
+  {
+    "key": "r5e5wd8",
+    "type": "reading",
+    "lesson": 11,
+    "q": "What should A switch off?",
+    "options": [
+      "The air conditioner and the lights",
+      "The computer",
+      "The television",
+      "The phone"
+    ],
+    "answer": "The air conditioner and the lights",
+    "context": {
+      "title": "出门以前",
+      "lines": [
+        "A：我要出门了，你有什么事吗？  (I'm heading out. Anything you need?)",
+        "B：请你把这两本书还到图书馆。  (Please return these two books to the library.)",
+        "A：好的。还有别的吗？  (OK. Anything else?)",
+        "B：别忘了把空调和灯都关了。  (Don't forget to turn off the air conditioner and the lights.)"
+      ]
+    },
+    "why": "B says 别忘了把空调和灯都关了: the air conditioner and the lights.",
+    "not": {
+      "The computer": "The computer is not mentioned.",
+      "The television": "The television is not mentioned.",
+      "The phone": "The phone is not mentioned."
+    }
+  },
+  {
+    "key": "r1wviu4m",
+    "type": "reading",
+    "lesson": 11,
+    "q": "What do they need?",
+    "options": [
+      "One more pair of chopsticks",
+      "Another bottle",
+      "A dictionary",
+      "A new lamp"
+    ],
+    "answer": "One more pair of chopsticks",
+    "context": {
+      "title": "在饭馆",
+      "lines": [
+        "A：服务员，请再给我们一双筷子。  (Waiter, could we have another pair of chopsticks?)",
+        "B：好的，马上给您拿。您想喝点儿什么？  (Right away. What would you like to drink?)",
+        "A：来一瓶啤酒吧，我朋友想尝一口。  (One bottle of beer, please. My friend wants a taste.)",
+        "B：好的，请等一会儿。  (Certainly, please wait a moment.)"
+      ]
+    },
+    "why": "A says 请再给我们一双筷子, so they need one more pair of chopsticks.",
+    "not": {
+      "Another bottle": "A orders beer later, but the first request is 筷子.",
+      "A dictionary": "No dictionary is mentioned.",
+      "A new lamp": "No lamp is mentioned."
+    }
+  },
+  {
+    "key": "rlujm4b",
+    "type": "reading",
+    "lesson": 11,
+    "q": "How many bottles of beer do they order?",
+    "options": [
+      "One",
+      "Two",
+      "Three",
+      "Four"
+    ],
+    "answer": "One",
+    "context": {
+      "title": "在饭馆",
+      "lines": [
+        "A：服务员，请再给我们一双筷子。  (Waiter, could we have another pair of chopsticks?)",
+        "B：好的，马上给您拿。您想喝点儿什么？  (Right away. What would you like to drink?)",
+        "A：来一瓶啤酒吧，我朋友想尝一口。  (One bottle of beer, please. My friend wants a taste.)",
+        "B：好的，请等一会儿。  (Certainly, please wait a moment.)"
+      ]
+    },
+    "why": "A says 来一瓶啤酒, and 一瓶 is one bottle.",
+    "not": {
+      "Two": "A says 一瓶, not 两瓶.",
+      "Three": "A says 一瓶, not 三瓶.",
+      "Four": "A says 一瓶, not 四瓶."
+    }
+  },
+  {
+    "key": "dicl5m",
+    "type": "dialog",
+    "lesson": 11,
+    "q": "女的要去哪儿？",
+    "options": [
+      "图书馆",
+      "商店",
+      "公司"
+    ],
+    "answer": "图书馆",
+    "context": {
+      "lines": [
+        "男：你去图书馆吗？帮我把这本书还了吧。",
+        "女：好的，放心吧。"
+      ]
+    },
+    "why": "男 says 你去图书馆吗？帮我把这本书还了吧, and 女 agrees: 好的.",
+    "not": {
+      "商店": "No shop is mentioned.",
+      "公司": "No company is mentioned."
+    }
+  },
+  {
+    "key": "d2i7vsa",
+    "type": "dialog",
+    "lesson": 11,
+    "q": "女的还会关什么？",
+    "options": [
+      "空调",
+      "电视",
+      "电脑"
+    ],
+    "answer": "空调",
+    "context": {
+      "lines": [
+        "男：离开房间的时候，别忘了关灯。",
+        "女：知道了，我也会把空调关了。"
+      ]
+    },
+    "why": "女 says 我也会把空调关了, so she will also turn off the air conditioner.",
+    "not": {
+      "电视": "电视 is not mentioned.",
+      "电脑": "电脑 is not mentioned."
+    }
+  },
+  {
+    "key": "d17mpiyf",
+    "type": "dialog",
+    "lesson": 11,
+    "q": "会议大概几点结束？",
+    "options": [
+      "四点",
+      "两点",
+      "六点"
+    ],
+    "answer": "四点",
+    "context": {
+      "lines": [
+        "男：请问，会议几点结束？",
+        "女：四点左右。"
+      ]
+    },
+    "why": "女 says 四点左右: around four o'clock.",
+    "not": {
+      "两点": "She says 四点, not 两点.",
+      "六点": "She says 四点, not 六点."
+    }
+  },
+  {
+    "key": "djwi8nf",
+    "type": "dialog",
+    "lesson": 11,
+    "q": "女的喝什么？",
+    "options": [
+      "可乐",
+      "啤酒",
+      "茶"
+    ],
+    "answer": "可乐",
+    "context": {
+      "lines": [
+        "男：这是你的啤酒吗？",
+        "女：不是，我不喝酒，我喝可乐。"
+      ]
+    },
+    "why": "女 says 我不喝酒，我喝可乐, so she drinks cola.",
+    "not": {
+      "啤酒": "The beer is 男's guess; 女 says 不是.",
+      "茶": "茶 is not mentioned."
+    }
+  },
+  {
+    "key": "j1f9nws9",
+    "type": "judge",
+    "lesson": 11,
+    "q": "他早上先工作。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "我习惯早上先看电子邮件，然后再工作。"
+    },
+    "why": "The text says 先看电子邮件，然后再工作, so he reads email first; the claim is false.",
+    "not": {}
+  },
+  {
+    "key": "j17bu7fs",
+    "type": "judge",
+    "lesson": 11,
+    "q": "他们的筷子不够。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "我们一共五个人，可是桌子上只有三双筷子。"
+    },
+    "why": "Five people but only three pairs of 筷子, so the claim is true.",
+    "not": {}
+  },
+  {
+    "key": "j1si2wnr",
+    "type": "judge",
+    "lesson": 11,
+    "q": "他昨天没带词典。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "昨天我忘记带词典了，所以向同学借了一本。"
+    },
+    "why": "The text says 昨天我忘记带词典了, so the claim is true.",
+    "not": {}
+  },
+  {
+    "key": "jjz89zo",
+    "type": "judge",
+    "lesson": 11,
+    "q": "小王已经把空调关了。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "小王出门的时候忘了把空调关了。"
+    },
+    "why": "The text says 忘了把空调关了, so he did not turn it off; the claim is false.",
+    "not": {}
+  },
+  {
+    "key": "r1shnn8r",
+    "type": "reading",
+    "lesson": 12,
+    "q": "Where is B's passport?",
+    "options": [
+      "In the bag",
+      "In the suitcase",
+      "On the table",
+      "At home"
+    ],
+    "answer": "In the bag",
+    "context": {
+      "title": "去机场",
+      "lines": [
+        "A：你的行李箱准备好了吗？  (Is your suitcase ready?)",
+        "B：准备好了，我已经把衣服都放进去了。  (Yes, I've put all my clothes in.)",
+        "A：护照呢？别忘了带。  (What about your passport? Don't forget it.)",
+        "B：在包里。飞机九点起飞，我们六点就出门吧。  (It's in my bag. The plane takes off at nine, so let's leave at six.)"
+      ]
+    },
+    "why": "B says 在包里 when A asks about the passport.",
+    "not": {
+      "In the suitcase": "B put the clothes in the suitcase, not the passport.",
+      "On the table": "No table is mentioned.",
+      "At home": "B says 在包里, so it is in the bag."
+    }
+  },
+  {
+    "key": "r1t0wfpx",
+    "type": "reading",
+    "lesson": 12,
+    "q": "When will they leave home?",
+    "options": [
+      "At six",
+      "At nine",
+      "At seven",
+      "At eight"
+    ],
+    "answer": "At six",
+    "context": {
+      "title": "去机场",
+      "lines": [
+        "A：你的行李箱准备好了吗？  (Is your suitcase ready?)",
+        "B：准备好了，我已经把衣服都放进去了。  (Yes, I've put all my clothes in.)",
+        "A：护照呢？别忘了带。  (What about your passport? Don't forget it.)",
+        "B：在包里。飞机九点起飞，我们六点就出门吧。  (It's in my bag. The plane takes off at nine, so let's leave at six.)"
+      ]
+    },
+    "why": "B says 我们六点就出门吧, so they leave at six.",
+    "not": {
+      "At nine": "九点 is when the plane takes off, not when they leave.",
+      "At seven": "七点 is not mentioned.",
+      "At eight": "八点 is not mentioned."
+    }
+  },
+  {
+    "key": "r1o5f407",
+    "type": "reading",
+    "lesson": 12,
+    "q": "Who taught the boy to draw?",
+    "options": [
+      "He taught himself",
+      "His mother",
+      "His teacher",
+      "His friend"
+    ],
+    "answer": "He taught himself",
+    "context": {
+      "title": "小画家",
+      "lines": [
+        "A：你儿子画得真好，是谁教他的？  (Your son draws really well. Who taught him?)",
+        "B：没有人教，他自己学的。  (Nobody did; he taught himself.)",
+        "A：他需要什么东西吗？我可以帮忙。  (Does he need anything? I can help.)",
+        "B：谢谢，他只需要多一点儿时间。  (Thanks. He only needs a bit more time.)"
+      ]
+    },
+    "why": "B says 没有人教，他自己学的: nobody taught him.",
+    "not": {
+      "His mother": "B says 没有人教, so no one taught him.",
+      "His teacher": "B says 没有人教, so no teacher.",
+      "His friend": "B says 没有人教, so no friend."
+    }
+  },
+  {
+    "key": "ra88ap9",
+    "type": "reading",
+    "lesson": 12,
+    "q": "What does he need?",
+    "options": [
+      "A bit more time",
+      "A new pencil",
+      "A blackboard",
+      "Some money"
+    ],
+    "answer": "A bit more time",
+    "context": {
+      "title": "小画家",
+      "lines": [
+        "A：你儿子画得真好，是谁教他的？  (Your son draws really well. Who taught him?)",
+        "B：没有人教，他自己学的。  (Nobody did; he taught himself.)",
+        "A：他需要什么东西吗？我可以帮忙。  (Does he need anything? I can help.)",
+        "B：谢谢，他只需要多一点儿时间。  (Thanks. He only needs a bit more time.)"
+      ]
+    },
+    "why": "B says 他只需要多一点儿时间: a bit more time.",
+    "not": {
+      "A new pencil": "No pencil is mentioned.",
+      "A blackboard": "No blackboard is mentioned.",
+      "Some money": "B says only time is needed, not money."
+    }
+  },
+  {
+    "key": "d1tcl731",
+    "type": "dialog",
+    "lesson": 12,
+    "q": "男的觉得女的来得怎么样？",
+    "options": [
+      "太晚了",
+      "很早",
+      "刚好"
+    ],
+    "answer": "太晚了",
+    "context": {
+      "lines": [
+        "男：你怎么这么晚才来？",
+        "女：对不起，路上车太多了。"
+      ]
+    },
+    "why": "男 asks 你怎么这么晚才来, so he thinks she is too late.",
+    "not": {
+      "很早": "男 says 这么晚, which is the opposite of early.",
+      "刚好": "这么晚才来 means late, not just on time."
+    }
+  },
+  {
+    "key": "d1ul89sk",
+    "type": "dialog",
+    "lesson": 12,
+    "q": "女的把护照放在哪儿了？",
+    "options": [
+      "包里",
+      "桌子上",
+      "行李箱里"
+    ],
+    "answer": "包里",
+    "context": {
+      "lines": [
+        "男：你的护照呢？",
+        "女：我把它放在包里了。"
+      ]
+    },
+    "why": "女 says 我把它放在包里了: in the bag.",
+    "not": {
+      "桌子上": "桌子 is not mentioned.",
+      "行李箱里": "行李箱 is not mentioned; she says 包里."
+    }
+  },
+  {
+    "key": "d190ak6a",
+    "type": "dialog",
+    "lesson": 12,
+    "q": "女的明天做什么？",
+    "options": [
+      "坐飞机去上海",
+      "坐火车去上海",
+      "开车去北京"
+    ],
+    "answer": "坐飞机去上海",
+    "context": {
+      "lines": [
+        "男：你要去哪儿？",
+        "女：我明天坐飞机去上海看朋友。"
+      ]
+    },
+    "why": "女 says 我明天坐飞机去上海看朋友.",
+    "not": {
+      "坐火车去上海": "She says 坐飞机, not 坐火车.",
+      "开车去北京": "She says 上海 and 飞机, not 北京 or driving."
+    }
+  },
+  {
+    "key": "d97sd84",
+    "type": "dialog",
+    "lesson": 12,
+    "q": "谁生气了？",
+    "options": [
+      "女的",
+      "男的",
+      "女的的朋友"
+    ],
+    "answer": "女的",
+    "context": {
+      "lines": [
+        "男：你为什么生气了？",
+        "女：我的朋友把我的词典忘在家里了。"
+      ]
+    },
+    "why": "男 asks 你为什么生气了, and 女 explains her friend forgot her dictionary.",
+    "not": {
+      "男的": "男 is the one asking why she is angry.",
+      "女的的朋友": "The friend forgot the dictionary; 女 is the one who is angry."
+    }
+  },
+  {
+    "key": "j6v6wqx",
+    "type": "judge",
+    "lesson": 12,
+    "q": "作业在黑板上。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "老师把作业写在黑板上了，你自己看吧。"
+    },
+    "why": "The text says 老师把作业写在黑板上了, so the claim is true.",
+    "not": {}
+  },
+  {
+    "key": "jq1t8cr",
+    "type": "judge",
+    "lesson": 12,
+    "q": "他昨晚睡得很早。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "我昨晚十二点才睡觉，所以今天起得很晚。"
+    },
+    "why": "The text says 十二点才睡觉, which is late; the claim is false.",
+    "not": {}
+  },
+  {
+    "key": "jcokizj",
+    "type": "judge",
+    "lesson": 12,
+    "q": "司机帮了他。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "我的行李箱太重了，司机帮我把它放在了车上。"
+    },
+    "why": "The text says 司机帮我把它放在了车上, so the claim is true.",
+    "not": {}
+  },
+  {
+    "key": "j1e7432w",
+    "type": "judge",
+    "lesson": 12,
+    "q": "他带了护照。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "到了机场，他发现护照还在家里，很着急。"
+    },
+    "why": "The text says 护照还在家里, so he did not bring it; the claim is false.",
+    "not": {}
+  },
+  {
+    "key": "r15tqqen",
+    "type": "reading",
+    "lesson": 13,
+    "q": "Whose birthday is tomorrow?",
+    "options": [
+      "Grandpa's",
+      "Grandma's",
+      "B's",
+      "The headmaster's"
+    ],
+    "answer": "Grandpa's",
+    "context": {
+      "title": "生日礼物",
+      "lines": [
+        "A：明天是爷爷的生日，你准备礼物了吗？  (Tomorrow is Grandpa's birthday. Have you got a present ready?)",
+        "B：准备好了，我在商店看到一个很好看的杯子，就买回来了。  (Yes. I saw a lovely cup in a shop and bought it.)",
+        "A：爷爷一般喜欢喝茶，他一定很高兴。  (Grandpa usually likes tea; he'll be very pleased.)",
+        "B：明天我们一起去爷爷家吧。  (Let's go to Grandpa's together tomorrow.)"
+      ]
+    },
+    "why": "A says 明天是爷爷的生日: tomorrow is grandpa's birthday.",
+    "not": {
+      "Grandma's": "A says 爷爷, not 奶奶.",
+      "B's": "A says 爷爷的生日, not B's.",
+      "The headmaster's": "No headmaster is mentioned."
+    }
+  },
+  {
+    "key": "r6cu34j",
+    "type": "reading",
+    "lesson": 13,
+    "q": "What present did B buy?",
+    "options": [
+      "A cup",
+      "Some tea",
+      "A watermelon",
+      "A book"
+    ],
+    "answer": "A cup",
+    "context": {
+      "title": "生日礼物",
+      "lines": [
+        "A：明天是爷爷的生日，你准备礼物了吗？  (Tomorrow is Grandpa's birthday. Have you got a present ready?)",
+        "B：准备好了，我在商店看到一个很好看的杯子，就买回来了。  (Yes. I saw a lovely cup in a shop and bought it.)",
+        "A：爷爷一般喜欢喝茶，他一定很高兴。  (Grandpa usually likes tea; he'll be very pleased.)",
+        "B：明天我们一起去爷爷家吧。  (Let's go to Grandpa's together tomorrow.)"
+      ]
+    },
+    "why": "B says 我在商店看到一个很好看的杯子，就买回来了: a cup.",
+    "not": {
+      "Some tea": "A says grandpa likes tea; B bought a cup.",
+      "A watermelon": "No watermelon is mentioned.",
+      "A book": "No book is mentioned."
+    }
+  },
+  {
+    "key": "rt0o0u7",
+    "type": "reading",
+    "lesson": 13,
+    "q": "What is wrong with A's computer?",
+    "options": [
+      "It is broken",
+      "It is too old",
+      "It is lost",
+      "It is too slow"
+    ],
+    "answer": "It is broken",
+    "context": {
+      "title": "电脑坏了",
+      "lines": [
+        "A：我的电脑又坏了，怎么办？  (My computer has broken down again. What shall I do?)",
+        "B：你应该拿到电脑店去看看。  (You should take it to a computer shop.)",
+        "A：我过去经常去那家店，可是今天它没开门。  (I used to go to that shop often, but today it's closed.)",
+        "B：那你先用我的吧，我愿意帮你。  (Then use mine for now; I'm happy to help.)"
+      ]
+    },
+    "why": "A says 我的电脑又坏了: the computer is broken.",
+    "not": {
+      "It is too old": "A says 坏了, not that it is old.",
+      "It is lost": "A says 坏了, not 不见了.",
+      "It is too slow": "A says 坏了, not that it is slow."
+    }
+  },
+  {
+    "key": "r18hefu7",
+    "type": "reading",
+    "lesson": 13,
+    "q": "What does B offer?",
+    "options": [
+      "To lend A his computer",
+      "To buy A a new one",
+      "To mend it himself",
+      "To phone the shop"
+    ],
+    "answer": "To lend A his computer",
+    "context": {
+      "title": "电脑坏了",
+      "lines": [
+        "A：我的电脑又坏了，怎么办？  (My computer has broken down again. What shall I do?)",
+        "B：你应该拿到电脑店去看看。  (You should take it to a computer shop.)",
+        "A：我过去经常去那家店，可是今天它没开门。  (I used to go to that shop often, but today it's closed.)",
+        "B：那你先用我的吧，我愿意帮你。  (Then use mine for now; I'm happy to help.)"
+      ]
+    },
+    "why": "B says 那你先用我的吧: use mine first.",
+    "not": {
+      "To buy A a new one": "B offers his own computer, not a new one.",
+      "To mend it himself": "B suggests the shop; he does not offer to fix it.",
+      "To phone the shop": "B does not offer to phone; the shop is closed anyway."
+    }
+  },
+  {
+    "key": "d1gt54nf",
+    "type": "dialog",
+    "lesson": 13,
+    "q": "礼物是送给谁的？",
+    "options": [
+      "爷爷",
+      "奶奶",
+      "校长"
+    ],
+    "answer": "爷爷",
+    "context": {
+      "lines": [
+        "男：你终于回来了！买了什么？",
+        "女：我买了一个礼物，是送给爷爷的。"
+      ]
+    },
+    "why": "女 says 是送给爷爷的.",
+    "not": {
+      "奶奶": "She says 爷爷, not 奶奶.",
+      "校长": "校长 is not mentioned."
+    }
+  },
+  {
+    "key": "d1wtg6kv",
+    "type": "dialog",
+    "lesson": 13,
+    "q": "女的周末一般做什么？",
+    "options": [
+      "在家看书喝茶",
+      "出去爬山",
+      "去看电影"
+    ],
+    "answer": "在家看书喝茶",
+    "context": {
+      "lines": [
+        "男：周末你一般做什么？",
+        "女：我一般在家一边看书一边喝茶。"
+      ]
+    },
+    "why": "女 says 我一般在家一边看书一边喝茶.",
+    "not": {
+      "出去爬山": "She stays at home; 爬山 is not mentioned.",
+      "去看电影": "看电影 is not mentioned; she reads at home."
+    }
+  },
+  {
+    "key": "d161dxeu",
+    "type": "dialog",
+    "lesson": 13,
+    "q": "女的是怎么回来的？",
+    "options": [
+      "骑自行车回来的",
+      "坐公共汽车回来的",
+      "走回来的"
+    ],
+    "answer": "骑自行车回来的",
+    "context": {
+      "lines": [
+        "男：你怎么这么晚才回来？",
+        "女：路上车太多，我是骑自行车回来的。"
+      ]
+    },
+    "why": "女 says 我是骑自行车回来的.",
+    "not": {
+      "坐公共汽车回来的": "She says 骑自行车, not a bus.",
+      "走回来的": "She says 骑自行车, not walking."
+    }
+  },
+  {
+    "key": "d12ozml9",
+    "type": "dialog",
+    "lesson": 13,
+    "q": "女的和谁一起喝咖啡了？",
+    "options": [
+      "老同学",
+      "校长",
+      "爷爷"
+    ],
+    "answer": "老同学",
+    "context": {
+      "lines": [
+        "男：你今天遇到谁了？",
+        "女：一个老同学，我们一起喝了咖啡。"
+      ]
+    },
+    "why": "女 says 一个老同学，我们一起喝了咖啡.",
+    "not": {
+      "校长": "校长 is not mentioned.",
+      "爷爷": "爷爷 is not mentioned."
+    }
+  },
+  {
+    "key": "j1rz447z",
+    "type": "judge",
+    "lesson": 13,
+    "q": "妈妈觉得这样很好。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "我弟弟一边吃饭一边看电视，妈妈不太高兴。"
+    },
+    "why": "The text says 妈妈不太高兴; the claim says she is happy, so it is false.",
+    "not": {}
+  },
+  {
+    "key": "jf3xv47",
+    "type": "judge",
+    "lesson": 13,
+    "q": "现在这里有地铁。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "过去这里没有地铁，现在有两条了。"
+    },
+    "why": "The text says 现在有两条了, so there are subways now; the claim is true.",
+    "not": {}
+  },
+  {
+    "key": "j11ybrpr",
+    "type": "judge",
+    "lesson": 13,
+    "q": "她回家很晚。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "她很忙，每天晚上都很晚才回家，累坏了。"
+    },
+    "why": "The text says 每天晚上都很晚才回家, so the claim is true.",
+    "not": {}
+  },
+  {
+    "key": "j18fvexw",
+    "type": "judge",
+    "lesson": 13,
+    "q": "他喜欢出去玩。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "周末我不太喜欢出去，愿意在家休息。"
+    },
+    "why": "The text says 不太喜欢出去, but the claim says he likes going out. So it is false.",
+    "not": {}
+  },
+  {
+    "key": "rwq9iha",
+    "type": "reading",
+    "lesson": 14,
+    "q": "What must B do before the story?",
+    "options": [
+      "Have a bath",
+      "Clean the room",
+      "Eat a banana",
+      "Wash the plates"
+    ],
+    "answer": "Have a bath",
+    "context": {
+      "title": "睡觉以前",
+      "lines": [
+        "A：你先去洗澡，然后我给你讲个故事。  (Go and have a bath first, then I'll tell you a story.)",
+        "B：好！阿姨，我想听那个月亮上的故事。  (OK! Auntie, I want to hear the story about the moon.)",
+        "A：那个故事很简单，你昨天已经听过了。  (That story is simple; you already heard it yesterday.)",
+        "B：没关系，我还想再听一次。  (Never mind, I want to hear it once more.)"
+      ]
+    },
+    "why": "A says 你先去洗澡，然后我给你讲个故事: bath first.",
+    "not": {
+      "Clean the room": "No cleaning is mentioned.",
+      "Eat a banana": "No banana is mentioned.",
+      "Wash the plates": "No plates are mentioned."
+    }
+  },
+  {
+    "key": "r1drc2bd",
+    "type": "reading",
+    "lesson": 14,
+    "q": "Which story does B want?",
+    "options": [
+      "The one about the moon",
+      "A new one",
+      "One about bananas",
+      "One about a city"
+    ],
+    "answer": "The one about the moon",
+    "context": {
+      "title": "睡觉以前",
+      "lines": [
+        "A：你先去洗澡，然后我给你讲个故事。  (Go and have a bath first, then I'll tell you a story.)",
+        "B：好！阿姨，我想听那个月亮上的故事。  (OK! Auntie, I want to hear the story about the moon.)",
+        "A：那个故事很简单，你昨天已经听过了。  (That story is simple; you already heard it yesterday.)",
+        "B：没关系，我还想再听一次。  (Never mind, I want to hear it once more.)"
+      ]
+    },
+    "why": "B says 我想听那个月亮上的故事: the moon story.",
+    "not": {
+      "A new one": "B wants the one he has heard, 再听一次.",
+      "One about bananas": "No banana story is mentioned.",
+      "One about a city": "No city story is mentioned."
+    }
+  },
+  {
+    "key": "r1vn3868",
+    "type": "reading",
+    "lesson": 14,
+    "q": "What else do they order besides two dishes?",
+    "options": [
+      "A plate of fruit",
+      "A bowl of rice",
+      "Some beer",
+      "Some cola"
+    ],
+    "answer": "A plate of fruit",
+    "context": {
+      "title": "在饭馆",
+      "lines": [
+        "A：这是菜单，您想吃点儿什么？  (Here's the menu. What would you like?)",
+        "B：我们要两个菜，再来一盘水果吧。  (We'd like two dishes, and a plate of fruit as well.)",
+        "A：好的。外边刮风了，你们坐里边吧。  (Certainly. It's windy outside, so please sit inside.)",
+        "B：好，里边也很干净。  (OK, it's nice and clean inside too.)"
+      ]
+    },
+    "why": "B says 再来一盘水果: a plate of fruit.",
+    "not": {
+      "A bowl of rice": "No rice is mentioned.",
+      "Some beer": "No beer is mentioned.",
+      "Some cola": "No cola is mentioned."
+    }
+  },
+  {
+    "key": "r1fh1v8f",
+    "type": "reading",
+    "lesson": 14,
+    "q": "Why should they sit inside?",
+    "options": [
+      "It is windy outside",
+      "It is raining",
+      "It is too hot",
+      "Inside is quieter"
+    ],
+    "answer": "It is windy outside",
+    "context": {
+      "title": "在饭馆",
+      "lines": [
+        "A：这是菜单，您想吃点儿什么？  (Here's the menu. What would you like?)",
+        "B：我们要两个菜，再来一盘水果吧。  (We'd like two dishes, and a plate of fruit as well.)",
+        "A：好的。外边刮风了，你们坐里边吧。  (Certainly. It's windy outside, so please sit inside.)",
+        "B：好，里边也很干净。  (OK, it's nice and clean inside too.)"
+      ]
+    },
+    "why": "A says 外边刮风了，你们坐里边吧: it is windy outside.",
+    "not": {
+      "It is raining": "A says 刮风, not rain.",
+      "It is too hot": "Heat is not mentioned.",
+      "Inside is quieter": "B says inside is clean, not quiet."
+    }
+  },
+  {
+    "key": "d1nht8od",
+    "type": "dialog",
+    "lesson": 14,
+    "q": "女的先做什么？",
+    "options": [
+      "洗盘子",
+      "打扫房间",
+      "做饭"
+    ],
+    "answer": "洗盘子",
+    "context": {
+      "lines": [
+        "男：明天朋友来家里玩儿，你帮我打扫一下吧。",
+        "女：好，我先洗盘子，然后打扫房间。"
+      ]
+    },
+    "why": "女 says 我先洗盘子，然后打扫房间.",
+    "not": {
+      "打扫房间": "That comes second, after 然后.",
+      "做饭": "做饭 is not mentioned."
+    }
+  },
+  {
+    "key": "dlg6ypy",
+    "type": "dialog",
+    "lesson": 14,
+    "q": "女的先做什么？",
+    "options": [
+      "洗手",
+      "拿盘子",
+      "买香蕉"
+    ],
+    "answer": "洗手",
+    "context": {
+      "lines": [
+        "男：你把香蕉拿过来，好吗？",
+        "女：好的，我先把手洗干净。"
+      ]
+    },
+    "why": "女 says 我先把手洗干净: she washes her hands first.",
+    "not": {
+      "拿盘子": "盘子 is not mentioned; 男 asks for bananas.",
+      "买香蕉": "男 asks her to bring bananas, not buy them."
+    }
+  },
+  {
+    "key": "don3drw",
+    "type": "dialog",
+    "lesson": 14,
+    "q": "女的刚才在做什么？",
+    "options": [
+      "洗澡",
+      "打扫房间",
+      "看电视"
+    ],
+    "answer": "洗澡",
+    "context": {
+      "lines": [
+        "男：你刚才怎么没接电话？",
+        "女：对不起，我刚才在洗澡。"
+      ]
+    },
+    "why": "女 says 我刚才在洗澡.",
+    "not": {
+      "打扫房间": "打扫房间 is not mentioned.",
+      "看电视": "看电视 is not mentioned."
+    }
+  },
+  {
+    "key": "d176f9wp",
+    "type": "dialog",
+    "lesson": 14,
+    "q": "女的现在做什么？",
+    "options": [
+      "给男的菜单",
+      "点菜",
+      "做饭"
+    ],
+    "answer": "给男的菜单",
+    "context": {
+      "lines": [
+        "男：请给我菜单，我想点菜。",
+        "女：好的，您先看看，然后再叫我。"
+      ]
+    },
+    "why": "男 asks 请给我菜单, and 女 replies 好的, so she gives him the menu.",
+    "not": {
+      "点菜": "男 is the one who wants to order; 女 tells him to look first.",
+      "做饭": "做饭 is not mentioned."
+    }
+  },
+  {
+    "key": "jmmm737",
+    "type": "judge",
+    "lesson": 14,
+    "q": "他们在家吃饭了。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "今天刮大风，我们没出去，在家吃的饭。"
+    },
+    "why": "The text says 在家吃的饭, so the claim is true.",
+    "not": {}
+  },
+  {
+    "key": "j16txlme",
+    "type": "judge",
+    "lesson": 14,
+    "q": "他先去超市。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "我先去图书馆还了书，然后去超市买了水果。"
+    },
+    "why": "The text says 先去图书馆, then the supermarket; the claim says supermarket first, so it is false.",
+    "not": {}
+  },
+  {
+    "key": "jwdk3r3",
+    "type": "judge",
+    "lesson": 14,
+    "q": "他先睡觉，后看书。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "他看完故事书以后，就去睡觉了。"
+    },
+    "why": "The text says 看完故事书以后，就去睡觉, so he reads first and sleeps after; the claim is false.",
+    "not": {}
+  },
+  {
+    "key": "jgvkkx7",
+    "type": "judge",
+    "lesson": 14,
+    "q": "他喜欢听叔叔讲故事。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "叔叔讲的故事都很有意思，我最喜欢听。"
+    },
+    "why": "The text says 叔叔讲的故事...我最喜欢听, so the claim is true.",
+    "not": {}
+  },
+  {
+    "key": "r1zj7yd",
+    "type": "reading",
+    "lesson": 15,
+    "q": "What is B doing now?",
+    "options": [
+      "Reading the news online",
+      "Watching a film",
+      "Sending a message",
+      "Writing homework"
+    ],
+    "answer": "Reading the news online",
+    "context": {
+      "title": "在图书馆上网",
+      "lines": [
+        "A：你在做什么？  (What are you doing?)",
+        "B：我在上网看新闻，还想找几个句子练习写汉字。  (I'm reading the news online, and I want to find some sentences to practise writing characters.)",
+        "A：你的汉语水平比以前高多了！  (Your Chinese is much better than before!)",
+        "B：谢谢。除了每天练习，我还常常看中国电影。  (Thanks. Besides practising every day, I often watch Chinese films.)"
+      ]
+    },
+    "why": "B says 我在上网看新闻: reading the news online.",
+    "not": {
+      "Watching a film": "B only says he often watches films besides practising.",
+      "Sending a message": "No message is mentioned.",
+      "Writing homework": "B wants to find sentences to practise characters, not homework."
+    }
+  },
+  {
+    "key": "riwllpr",
+    "type": "reading",
+    "lesson": 15,
+    "q": "What else does B do to improve?",
+    "options": [
+      "Watches Chinese films",
+      "Travels abroad",
+      "Calls friends",
+      "Reads a newspaper"
+    ],
+    "answer": "Watches Chinese films",
+    "context": {
+      "title": "在图书馆上网",
+      "lines": [
+        "A：你在做什么？  (What are you doing?)",
+        "B：我在上网看新闻，还想找几个句子练习写汉字。  (I'm reading the news online, and I want to find some sentences to practise writing characters.)",
+        "A：你的汉语水平比以前高多了！  (Your Chinese is much better than before!)",
+        "B：谢谢。除了每天练习，我还常常看中国电影。  (Thanks. Besides practising every day, I often watch Chinese films.)"
+      ]
+    },
+    "why": "B says 除了每天练习，我还常常看中国电影.",
+    "not": {
+      "Travels abroad": "Travel is not mentioned.",
+      "Calls friends": "Calling friends is not mentioned.",
+      "Reads a newspaper": "B reads news online, not a newspaper."
+    }
+  },
+  {
+    "key": "r1w5ic65",
+    "type": "reading",
+    "lesson": 15,
+    "q": "What will the school hold next week?",
+    "options": [
+      "A singing contest",
+      "A football match",
+      "A film festival",
+      "A beer festival"
+    ],
+    "answer": "A singing contest",
+    "context": {
+      "title": "学校的比赛",
+      "lines": [
+        "A：下个星期学校要举行唱歌比赛，你来不来？  (The school is holding a singing contest next week. Are you coming?)",
+        "B：当然来。小云也去吗？  (Of course. Is Xiaoyun going too?)",
+        "A：除了她，其他同学都说要去。  (Apart from her, all the other classmates say they will go.)",
+        "B：那我给她发个短信吧。  (Then I'll send her a message.)"
+      ]
+    },
+    "why": "A says 下个星期学校要举行唱歌比赛: a singing contest.",
+    "not": {
+      "A football match": "A says 唱歌比赛, not football.",
+      "A film festival": "No film festival is mentioned.",
+      "A beer festival": "No beer festival is mentioned."
+    }
+  },
+  {
+    "key": "r1nhvu02",
+    "type": "reading",
+    "lesson": 15,
+    "q": "What will B do?",
+    "options": [
+      "Send Xiaoyun a message",
+      "Call the teacher",
+      "Go online",
+      "Buy tickets"
+    ],
+    "answer": "Send Xiaoyun a message",
+    "context": {
+      "title": "学校的比赛",
+      "lines": [
+        "A：下个星期学校要举行唱歌比赛，你来不来？  (The school is holding a singing contest next week. Are you coming?)",
+        "B：当然来。小云也去吗？  (Of course. Is Xiaoyun going too?)",
+        "A：除了她，其他同学都说要去。  (Apart from her, all the other classmates say they will go.)",
+        "B：那我给她发个短信吧。  (Then I'll send her a message.)"
+      ]
+    },
+    "why": "B says 我给她发个短信吧: send Xiaoyun a message.",
+    "not": {
+      "Call the teacher": "No call to the teacher is mentioned.",
+      "Go online": "Going online is not mentioned.",
+      "Buy tickets": "No tickets are mentioned."
+    }
+  },
+  {
+    "key": "d1o6g7iz",
+    "type": "dialog",
+    "lesson": 15,
+    "q": "女的上网看什么？",
+    "options": [
+      "新闻",
+      "电影",
+      "书"
+    ],
+    "answer": "新闻",
+    "context": {
+      "lines": [
+        "男：你上网看什么？",
+        "女：我看新闻，也听听歌。"
+      ]
+    },
+    "why": "女 says 我看新闻.",
+    "not": {
+      "电影": "电影 is not mentioned.",
+      "书": "书 is not mentioned; she also listens to songs."
+    }
+  },
+  {
+    "key": "d1y933ug",
+    "type": "dialog",
+    "lesson": 15,
+    "q": "谁没来？",
+    "options": [
+      "小王",
+      "小云",
+      "老师"
+    ],
+    "answer": "小王",
+    "context": {
+      "lines": [
+        "男：你们班的同学都来了吗？",
+        "女：除了小王，大家都来了。"
+      ]
+    },
+    "why": "女 says 除了小王，大家都来了: everyone but 小王.",
+    "not": {
+      "小云": "小云 is not mentioned.",
+      "老师": "老师 is not mentioned."
+    }
+  },
+  {
+    "key": "d1xk2duf",
+    "type": "dialog",
+    "lesson": 15,
+    "q": "女的觉得衣服怎么样？",
+    "options": [
+      "满意极了",
+      "太贵了",
+      "太小了"
+    ],
+    "answer": "满意极了",
+    "context": {
+      "lines": [
+        "男：你的衣服花了多少钱？",
+        "女：三百块，我满意极了。"
+      ]
+    },
+    "why": "女 says 我满意极了: very satisfied.",
+    "not": {
+      "太贵了": "She says 三百块 and 满意极了, not that it is expensive.",
+      "太小了": "Size is not mentioned."
+    }
+  },
+  {
+    "key": "diodzhh",
+    "type": "dialog",
+    "lesson": 15,
+    "q": "比赛什么时候举行？",
+    "options": [
+      "下个星期六",
+      "明天",
+      "今天下午"
+    ],
+    "answer": "下个星期六",
+    "context": {
+      "lines": [
+        "男：学校什么时候举行比赛？",
+        "女：下个星期六。"
+      ]
+    },
+    "why": "女 says 下个星期六.",
+    "not": {
+      "明天": "She says 下个星期六, not 明天.",
+      "今天下午": "She says 下个星期六, not 今天下午."
+    }
+  },
+  {
+    "key": "j1trfnvu",
+    "type": "judge",
+    "lesson": 15,
+    "q": "他的汉语提高得很慢。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "我每天做练习，所以汉语提高得很快。"
+    },
+    "why": "The text says 提高得很快 (fast), but the claim says 很慢 (slow). So it is false.",
+    "not": {}
+  },
+  {
+    "key": "j1ru7rkp",
+    "type": "judge",
+    "lesson": 15,
+    "q": "他周末也去学校。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "除了周末，我每天都去学校。"
+    },
+    "why": "The text says 除了周末，每天都去, so he does not go at weekends; the claim is false.",
+    "not": {}
+  },
+  {
+    "key": "j4ix1r8",
+    "type": "judge",
+    "lesson": 15,
+    "q": "春节是重要的节日。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "春节是中国最重要的节日，这一天大家都回家。"
+    },
+    "why": "The text says 春节是中国最重要的节日, so the claim is true.",
+    "not": {}
+  },
+  {
+    "key": "j71hqer",
+    "type": "judge",
+    "lesson": 15,
+    "q": "他的作业还没写完。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "今天要完成的作业太多了，我晚上还要写。"
+    },
+    "why": "The text says 我晚上还要写, so the homework is not done; the claim is true.",
+    "not": {}
+  },
+  {
+    "key": "r184fx5i",
+    "type": "reading",
+    "lesson": 16,
+    "q": "What colour is A's new hat?",
+    "options": [
+      "Red",
+      "Black",
+      "White",
+      "Blue"
+    ],
+    "answer": "Red",
+    "context": {
+      "title": "新帽子",
+      "lines": [
+        "A：你看，我新买的帽子怎么样？  (Look, what do you think of the hat I just bought?)",
+        "B：红红的，真可爱！多少钱？  (Nice and red, so cute! How much was it?)",
+        "A：不贵，八十块。如果你喜欢，我也给你买一个。  (Not expensive, eighty yuan. If you like it, I'll buy you one too.)",
+        "B：好啊，不过我认为黑色的更好。  (Great, but I think a black one would be better.)"
+      ]
+    },
+    "why": "B says 红红的, so the hat is red.",
+    "not": {
+      "Black": "B says 我认为黑色的更好, which is B's own preference.",
+      "White": "White is not mentioned.",
+      "Blue": "Blue is not mentioned."
+    }
+  },
+  {
+    "key": "r1b9eizq",
+    "type": "reading",
+    "lesson": 16,
+    "q": "What will A do if B likes it?",
+    "options": [
+      "Buy B one too",
+      "Give B his own hat",
+      "Take it back to the shop",
+      "Buy some shoes"
+    ],
+    "answer": "Buy B one too",
+    "context": {
+      "title": "新帽子",
+      "lines": [
+        "A：你看，我新买的帽子怎么样？  (Look, what do you think of the hat I just bought?)",
+        "B：红红的，真可爱！多少钱？  (Nice and red, so cute! How much was it?)",
+        "A：不贵，八十块。如果你喜欢，我也给你买一个。  (Not expensive, eighty yuan. If you like it, I'll buy you one too.)",
+        "B：好啊，不过我认为黑色的更好。  (Great, but I think a black one would be better.)"
+      ]
+    },
+    "why": "A says 如果你喜欢，我也给你买一个: buy one for B too.",
+    "not": {
+      "Give B his own hat": "A offers to buy a new one, 买一个.",
+      "Take it back to the shop": "Returning it is not mentioned.",
+      "Buy some shoes": "No shoes are mentioned."
+    }
+  },
+  {
+    "key": "r6fy3o9",
+    "type": "reading",
+    "lesson": 16,
+    "q": "Why is B so tired?",
+    "options": [
+      "Work is too busy",
+      "He is ill",
+      "He didn't sleep at night",
+      "He walked a lot"
+    ],
+    "answer": "Work is too busy",
+    "context": {
+      "title": "为什么不开心",
+      "lines": [
+        "A：你怎么了？看起来很累。  (What's wrong? You look tired.)",
+        "B：这几天工作太忙，我每天累得刷完牙就想睡觉。  (Work has been so busy these days; every night I'm so tired I want to sleep the moment I've brushed my teeth.)",
+        "A：我认为你应该多休息，别人的工作不要都做。  (I think you should rest more and not do everyone else's work too.)",
+        "B：你说得对。如果明天不忙，我就早点儿回家。  (You're right. If I'm not busy tomorrow, I'll go home early.)"
+      ]
+    },
+    "why": "B says 这几天工作太忙: work is too busy.",
+    "not": {
+      "He is ill": "B says he is tired from work, not ill.",
+      "He didn't sleep at night": "B says he wants to sleep at once, not that he can't.",
+      "He walked a lot": "Walking is not mentioned."
+    }
+  },
+  {
+    "key": "r1jkw4ol",
+    "type": "reading",
+    "lesson": 16,
+    "q": "What will B do if he is not busy tomorrow?",
+    "options": [
+      "Go home early",
+      "Go to bed at once",
+      "Go to the doctor",
+      "Do other people's work"
+    ],
+    "answer": "Go home early",
+    "context": {
+      "title": "为什么不开心",
+      "lines": [
+        "A：你怎么了？看起来很累。  (What's wrong? You look tired.)",
+        "B：这几天工作太忙，我每天累得刷完牙就想睡觉。  (Work has been so busy these days; every night I'm so tired I want to sleep the moment I've brushed my teeth.)",
+        "A：我认为你应该多休息，别人的工作不要都做。  (I think you should rest more and not do everyone else's work too.)",
+        "B：你说得对。如果明天不忙，我就早点儿回家。  (You're right. If I'm not busy tomorrow, I'll go home early.)"
+      ]
+    },
+    "why": "B says 如果明天不忙，我就早点儿回家.",
+    "not": {
+      "Go to bed at once": "That describes how tired he is these days, not tomorrow.",
+      "Go to the doctor": "No doctor is mentioned.",
+      "Do other people's work": "A tells him not to do others' work."
+    }
+  },
+  {
+    "key": "d3lpwoy",
+    "type": "dialog",
+    "lesson": 16,
+    "q": "孩子多重？",
+    "options": [
+      "十五公斤",
+      "十公斤",
+      "五十公斤"
+    ],
+    "answer": "十五公斤",
+    "context": {
+      "lines": [
+        "男：你儿子多高了？",
+        "女：快一米了，十五公斤。"
+      ]
+    },
+    "why": "女 says 快一米了，十五公斤.",
+    "not": {
+      "十公斤": "She says 十五公斤.",
+      "五十公斤": "She says 十五公斤."
+    }
+  },
+  {
+    "key": "d1fqgz7a",
+    "type": "dialog",
+    "lesson": 16,
+    "q": "女的明天要做什么？",
+    "options": [
+      "去医院检查",
+      "去刷牙",
+      "去上班"
+    ],
+    "answer": "去医院检查",
+    "context": {
+      "lines": [
+        "男：你的牙怎么样了？",
+        "女：还是很疼，我明天去医院检查。"
+      ]
+    },
+    "why": "女 says 我明天去医院检查.",
+    "not": {
+      "去刷牙": "刷牙 is not mentioned as her plan.",
+      "去上班": "去上班 is not mentioned."
+    }
+  },
+  {
+    "key": "d3vwwqm",
+    "type": "dialog",
+    "lesson": 16,
+    "q": "女的为什么不去旅游？",
+    "options": [
+      "没有时间",
+      "没有钱",
+      "不喜欢"
+    ],
+    "answer": "没有时间",
+    "context": {
+      "lines": [
+        "男：你为什么不去旅游？",
+        "女：如果有时间，我就去。"
+      ]
+    },
+    "why": "女 says 如果有时间，我就去, so she has no time.",
+    "not": {
+      "没有钱": "Money is not mentioned.",
+      "不喜欢": "She would go if she had time, so she likes it."
+    }
+  },
+  {
+    "key": "dtxyq0q",
+    "type": "dialog",
+    "lesson": 16,
+    "q": "小狗是谁家的？",
+    "options": [
+      "女的朋友家的",
+      "女的家的",
+      "男的家的"
+    ],
+    "answer": "女的朋友家的",
+    "context": {
+      "lines": [
+        "男：你看那只小狗，眼睛大大的，真可爱！",
+        "女：是啊，它是我朋友家的。"
+      ]
+    },
+    "why": "女 says 它是我朋友家的.",
+    "not": {
+      "女的家的": "She says 我朋友家的, not her own.",
+      "男的家的": "男 only asks; 女 says it is her friend's."
+    }
+  },
+  {
+    "key": "jcwwscj",
+    "type": "judge",
+    "lesson": 16,
+    "q": "他最近很忙。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "我最近忙得没时间见朋友，所以有点儿累。"
+    },
+    "why": "The text says 最近忙得没时间见朋友, so the claim is true.",
+    "not": {}
+  },
+  {
+    "key": "jd3f259",
+    "type": "judge",
+    "lesson": 16,
+    "q": "明天下雨的话，他们会在家看电影。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "如果明天下雨，我们就在家看电影。"
+    },
+    "why": "The text says 如果明天下雨，我们就在家看电影, so the claim is true.",
+    "not": {}
+  },
+  {
+    "key": "j15r2r42",
+    "type": "judge",
+    "lesson": 16,
+    "q": "他的鞋太大。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "他的鞋太小，所以他把它送给了弟弟。"
+    },
+    "why": "The text says 他的鞋太小, but the claim says 太大. So it is false.",
+    "not": {}
+  },
+  {
+    "key": "j1fxofif",
+    "type": "judge",
+    "lesson": 16,
+    "q": "他早上不刷牙。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "我每天睡觉以前刷牙，早上也刷牙。"
+    },
+    "why": "The text says 早上也刷牙, so he does brush in the morning; the claim is false.",
+    "not": {}
+  },
+  {
+    "key": "r1lfk2yw",
+    "type": "reading",
+    "lesson": 17,
+    "q": "Why does A want leave?",
+    "options": [
+      "He feels unwell",
+      "He wants to travel",
+      "He has a hobby class",
+      "His neighbour is visiting"
+    ],
+    "answer": "He feels unwell",
+    "context": {
+      "title": "去医院以前",
+      "lines": [
+        "A：我最近睡不好，不太舒服，想请一天假去医院。  (I haven't been sleeping well and don't feel well; I'd like a day off to go to the hospital.)",
+        "B：你有几天没睡好了？  (How many days has it been since you slept well?)",
+        "A：差不多一个星期了，我没有办法睡着。  (Nearly a week; I can't fall asleep.)",
+        "B：那你应该休息休息，明天我帮你请假。  (Then you should get some rest; I'll ask for leave for you tomorrow.)"
+      ]
+    },
+    "why": "A says 不太舒服，想请一天假去医院: he feels unwell.",
+    "not": {
+      "He wants to travel": "Travel is not mentioned.",
+      "He has a hobby class": "No class is mentioned.",
+      "His neighbour is visiting": "No neighbour is mentioned."
+    }
+  },
+  {
+    "key": "r169waqh",
+    "type": "reading",
+    "lesson": 17,
+    "q": "What will B do tomorrow?",
+    "options": [
+      "Ask for leave for A",
+      "Go to the hospital",
+      "Check A's homework",
+      "Buy medicine"
+    ],
+    "answer": "Ask for leave for A",
+    "context": {
+      "title": "去医院以前",
+      "lines": [
+        "A：我最近睡不好，不太舒服，想请一天假去医院。  (I haven't been sleeping well and don't feel well; I'd like a day off to go to the hospital.)",
+        "B：你有几天没睡好了？  (How many days has it been since you slept well?)",
+        "A：差不多一个星期了，我没有办法睡着。  (Nearly a week; I can't fall asleep.)",
+        "B：那你应该休息休息，明天我帮你请假。  (Then you should get some rest; I'll ask for leave for you tomorrow.)"
+      ]
+    },
+    "why": "B says 明天我帮你请假: ask for leave for A.",
+    "not": {
+      "Go to the hospital": "A is the one who wants to go to the hospital.",
+      "Check A's homework": "No homework is mentioned.",
+      "Buy medicine": "No medicine is mentioned."
+    }
+  },
+  {
+    "key": "r1mx6ruq",
+    "type": "reading",
+    "lesson": 17,
+    "q": "What does B do in summer?",
+    "options": [
+      "Swim",
+      "Climb mountains",
+      "Run",
+      "Play football"
+    ],
+    "answer": "Swim",
+    "context": {
+      "title": "我们的爱好",
+      "lines": [
+        "A：你有什么爱好？  (What are your hobbies?)",
+        "B：我什么运动都喜欢，冬天去爬山，夏天去游泳。  (I like all sports: hiking in winter, swimming in summer.)",
+        "A：我也想多运动，你觉得我应该选择什么？  (I want to exercise more too. What do you think I should choose?)",
+        "B：你可以跟我去游泳，游泳对身体很好。  (You can come swimming with me; swimming is very good for you.)"
+      ]
+    },
+    "why": "B says 夏天去游泳.",
+    "not": {
+      "Climb mountains": "B climbs mountains in winter (冬天), not summer.",
+      "Run": "Running is not mentioned.",
+      "Play football": "Football is not mentioned."
+    }
+  },
+  {
+    "key": "r8skzj9",
+    "type": "reading",
+    "lesson": 17,
+    "q": "What does B suggest?",
+    "options": [
+      "Going swimming together",
+      "Climbing mountains alone",
+      "Asking for leave",
+      "Changing jobs"
+    ],
+    "answer": "Going swimming together",
+    "context": {
+      "title": "我们的爱好",
+      "lines": [
+        "A：你有什么爱好？  (What are your hobbies?)",
+        "B：我什么运动都喜欢，冬天去爬山，夏天去游泳。  (I like all sports: hiking in winter, swimming in summer.)",
+        "A：我也想多运动，你觉得我应该选择什么？  (I want to exercise more too. What do you think I should choose?)",
+        "B：你可以跟我去游泳，游泳对身体很好。  (You can come swimming with me; swimming is very good for you.)"
+      ]
+    },
+    "why": "B says 你可以跟我去游泳: go swimming together.",
+    "not": {
+      "Climbing mountains alone": "B suggests going together, and swimming.",
+      "Asking for leave": "Leave is not mentioned here.",
+      "Changing jobs": "Jobs are not mentioned."
+    }
+  },
+  {
+    "key": "dy4a7kz",
+    "type": "dialog",
+    "lesson": 17,
+    "q": "女的为什么没去上班？",
+    "options": [
+      "她病了",
+      "她很忙",
+      "她去旅游了"
+    ],
+    "answer": "她病了",
+    "context": {
+      "lines": [
+        "男：你怎么没去上班？",
+        "女：我病了，昨天请了一天假。"
+      ]
+    },
+    "why": "女 says 我病了，昨天请了一天假.",
+    "not": {
+      "她很忙": "She says 病了, not busy.",
+      "她去旅游了": "旅游 is not mentioned."
+    }
+  },
+  {
+    "key": "d1dndu1d",
+    "type": "dialog",
+    "lesson": 17,
+    "q": "女的家一共来了几个人？",
+    "options": [
+      "五个",
+      "三个",
+      "四个"
+    ],
+    "answer": "五个",
+    "context": {
+      "lines": [
+        "男：你们一共有几个人？",
+        "女：五个，我们一家人都来了。"
+      ]
+    },
+    "why": "女 says 五个，我们一家人都来了.",
+    "not": {
+      "三个": "She says 五个.",
+      "四个": "She says 五个."
+    }
+  },
+  {
+    "key": "dh8ox24",
+    "type": "dialog",
+    "lesson": 17,
+    "q": "女的最喜欢什么运动？",
+    "options": [
+      "游泳",
+      "跑步",
+      "爬山"
+    ],
+    "answer": "游泳",
+    "context": {
+      "lines": [
+        "男：你的爱好是什么？",
+        "女：我什么运动都喜欢，最喜欢游泳。"
+      ]
+    },
+    "why": "女 says 最喜欢游泳; 最 means most.",
+    "not": {
+      "跑步": "跑步 is not mentioned.",
+      "爬山": "爬山 is not mentioned."
+    }
+  },
+  {
+    "key": "d6sk9n4",
+    "type": "dialog",
+    "lesson": 17,
+    "q": "女的觉得怎么样？",
+    "options": [
+      "有点儿渴",
+      "还很饿",
+      "太累了"
+    ],
+    "answer": "有点儿渴",
+    "context": {
+      "lines": [
+        "男：你吃饱了吗？",
+        "女：吃饱了，不过有点儿渴。"
+      ]
+    },
+    "why": "女 says 吃饱了，不过有点儿渴: a little thirsty.",
+    "not": {
+      "还很饿": "She says 吃饱了, so she is not hungry.",
+      "太累了": "累 is not mentioned."
+    }
+  },
+  {
+    "key": "j1dadmok",
+    "type": "judge",
+    "lesson": 17,
+    "q": "他每天早上去跑步。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "为了身体健康，他决定每天早上跑步。"
+    },
+    "why": "The text says 决定每天早上跑步, so the claim is true.",
+    "not": {}
+  },
+  {
+    "key": "j14eq0gx",
+    "type": "judge",
+    "lesson": 17,
+    "q": "他和邻居关系不好。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "我的邻居在大学工作，我们关系很好。"
+    },
+    "why": "The text says 我们关系很好, but the claim says 不好. So it is false.",
+    "not": {}
+  },
+  {
+    "key": "jqqohqr",
+    "type": "judge",
+    "lesson": 17,
+    "q": "他们冬天去爬山。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "冬天的北京很冷，所以我们不去爬山了。"
+    },
+    "why": "The text says 冬天...我们不去爬山了, so the claim is false.",
+    "not": {}
+  },
+  {
+    "key": "j1b1poqs",
+    "type": "judge",
+    "lesson": 17,
+    "q": "这次旅游花的钱比他想的多。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "这次旅游一共花了三千块，比我想的多一点儿。"
+    },
+    "why": "The text says 比我想的多一点儿, so it cost more than he thought; true.",
+    "not": {}
+  },
+  {
+    "key": "r1hkw4g5",
+    "type": "reading",
+    "lesson": 18,
+    "q": "What is odd about the animal?",
+    "options": [
+      "Its big mouth",
+      "Its long tail",
+      "Its small eyes",
+      "Its black hair"
+    ],
+    "answer": "Its big mouth",
+    "context": {
+      "title": "在动物园",
+      "lines": [
+        "A：你看那只动物，它的嘴大大的，真奇怪！  (Look at that animal; its mouth is so big. How odd!)",
+        "B：这种动物在很多国家都很有名。  (This kind of animal is famous in many countries.)",
+        "A：关于它，你知道什么？  (What do you know about it?)",
+        "B：我只知道它不但会游泳，而且很能吃。  (I only know it can not only swim but also eats a lot.)"
+      ]
+    },
+    "why": "A says 它的嘴大大的，真奇怪: its big mouth.",
+    "not": {
+      "Its long tail": "The tail is not mentioned.",
+      "Its small eyes": "The eyes are not mentioned.",
+      "Its black hair": "The hair is not mentioned."
+    }
+  },
+  {
+    "key": "r1krl0a",
+    "type": "reading",
+    "lesson": 18,
+    "q": "What does B know about the animal?",
+    "options": [
+      "It swims and eats a lot",
+      "It only eats fruit",
+      "It lives in the city",
+      "It can fly"
+    ],
+    "answer": "It swims and eats a lot",
+    "context": {
+      "title": "在动物园",
+      "lines": [
+        "A：你看那只动物，它的嘴大大的，真奇怪！  (Look at that animal; its mouth is so big. How odd!)",
+        "B：这种动物在很多国家都很有名。  (This kind of animal is famous in many countries.)",
+        "A：关于它，你知道什么？  (What do you know about it?)",
+        "B：我只知道它不但会游泳，而且很能吃。  (I only know it can not only swim but also eats a lot.)"
+      ]
+    },
+    "why": "B says 它不但会游泳，而且很能吃: it swims and eats a lot.",
+    "not": {
+      "It only eats fruit": "B says 很能吃, not only fruit.",
+      "It lives in the city": "The city is not mentioned.",
+      "It can fly": "B says 会游泳, not fly."
+    }
+  },
+  {
+    "key": "rmoow3h",
+    "type": "reading",
+    "lesson": 18,
+    "q": "Who works at a famous company?",
+    "options": [
+      "A's neighbour",
+      "A's teacher",
+      "B's brother",
+      "A's friend"
+    ],
+    "answer": "A's neighbour",
+    "context": {
+      "title": "找新工作",
+      "lines": [
+        "A：我想找一个新工作，你有什么好办法吗？  (I want a new job. Do you have any good ideas?)",
+        "B：你可以向你的邻居问问，他在一家有名的公司工作。  (You could ask your neighbour; he works at a famous company.)",
+        "A：那家公司的机会多吗？  (Are there many opportunities at that company?)",
+        "B：只要你努力，就会有机会。  (As long as you work hard, you'll get chances.)"
+      ]
+    },
+    "why": "B says 你的邻居...在一家有名的公司工作: A's neighbour.",
+    "not": {
+      "A's teacher": "No teacher is mentioned.",
+      "B's brother": "No brother is mentioned.",
+      "A's friend": "B says 你的邻居, not a friend."
+    }
+  },
+  {
+    "key": "rqk1jrx",
+    "type": "reading",
+    "lesson": 18,
+    "q": "What does B say about opportunities?",
+    "options": [
+      "Work hard and you'll get them",
+      "There are none",
+      "They are too few",
+      "Ask the manager"
+    ],
+    "answer": "Work hard and you'll get them",
+    "context": {
+      "title": "找新工作",
+      "lines": [
+        "A：我想找一个新工作，你有什么好办法吗？  (I want a new job. Do you have any good ideas?)",
+        "B：你可以向你的邻居问问，他在一家有名的公司工作。  (You could ask your neighbour; he works at a famous company.)",
+        "A：那家公司的机会多吗？  (Are there many opportunities at that company?)",
+        "B：只要你努力，就会有机会。  (As long as you work hard, you'll get chances.)"
+      ]
+    },
+    "why": "B says 只要你努力，就会有机会.",
+    "not": {
+      "There are none": "B says there will be chances if you try.",
+      "They are too few": "B does not say they are few.",
+      "Ask the manager": "No manager is mentioned."
+    }
+  },
+  {
+    "key": "dch98w",
+    "type": "dialog",
+    "lesson": 18,
+    "q": "女的想向谁借钱？",
+    "options": [
+      "邻居",
+      "朋友",
+      "经理"
+    ],
+    "answer": "邻居",
+    "context": {
+      "lines": [
+        "男：你想向谁借钱？",
+        "女：我想向我的邻居借。"
+      ]
+    },
+    "why": "女 says 我想向我的邻居借.",
+    "not": {
+      "朋友": "She says 邻居, not 朋友.",
+      "经理": "经理 is not mentioned."
+    }
+  },
+  {
+    "key": "dqsxcbq",
+    "type": "dialog",
+    "lesson": 18,
+    "q": "女的为什么选择这个公司？",
+    "options": [
+      "离家近，工作不太忙",
+      "公司很有名",
+      "钱比较多"
+    ],
+    "answer": "离家近，工作不太忙",
+    "context": {
+      "lines": [
+        "男：你为什么选择这个公司？",
+        "女：因为它离我家很近，而且工作不太忙。"
+      ]
+    },
+    "why": "女 says 因为它离我家很近，而且工作不太忙.",
+    "not": {
+      "公司很有名": "She does not say the company is famous.",
+      "钱比较多": "Pay is not mentioned."
+    }
+  },
+  {
+    "key": "d1gj3sny",
+    "type": "dialog",
+    "lesson": 18,
+    "q": "妈妈怎么说？",
+    "options": [
+      "孩子照顾它就同意",
+      "不同意",
+      "她自己照顾"
+    ],
+    "answer": "孩子照顾它就同意",
+    "context": {
+      "lines": [
+        "男：妈妈，我想买那只小狗。",
+        "女：只要你自己照顾它，我就同意。"
+      ]
+    },
+    "why": "女 says 只要你自己照顾它，我就同意.",
+    "not": {
+      "不同意": "女 says 就同意 if the child looks after it.",
+      "她自己照顾": "She says 你自己照顾, so the child looks after it."
+    }
+  },
+  {
+    "key": "d6eaf2b",
+    "type": "dialog",
+    "lesson": 18,
+    "q": "那个国家的夏天怎么样？",
+    "options": [
+      "不太热",
+      "很热",
+      "很冷"
+    ],
+    "answer": "不太热",
+    "context": {
+      "lines": [
+        "男：这个国家的冬天怎么样？",
+        "女：很冷，不过夏天不太热。"
+      ]
+    },
+    "why": "女 says 不过夏天不太热.",
+    "not": {
+      "很热": "She says 夏天不太热.",
+      "很冷": "很冷 is winter; summer is 不太热."
+    }
+  },
+  {
+    "key": "j1mdb1ct",
+    "type": "judge",
+    "lesson": 18,
+    "q": "他相信努力能学好汉语。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "我相信只要努力，就一定能学好汉语。"
+    },
+    "why": "The text says 我相信只要努力，就一定能学好汉语, so the claim is true.",
+    "not": {}
+  },
+  {
+    "key": "jjb6mo6",
+    "type": "judge",
+    "lesson": 18,
+    "q": "他想去那个城市工作。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "那个城市不但很大，而且很漂亮，可是我不想去那儿工作。"
+    },
+    "why": "The text says 我不想去那儿工作, so the claim is false.",
+    "not": {}
+  },
+  {
+    "key": "jydqks2",
+    "type": "judge",
+    "lesson": 18,
+    "q": "他想买房子。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "我想向朋友借五万块钱买房子。"
+    },
+    "why": "The text says 想向朋友借五万块钱买房子, so the claim is true.",
+    "not": {}
+  },
+  {
+    "key": "j1k1dzz",
+    "type": "judge",
+    "lesson": 18,
+    "q": "经理已经决定了。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "关于这件事，经理还没有决定，我们明天再问他。"
+    },
+    "why": "The text says 经理还没有决定, so the claim is false.",
+    "not": {}
+  },
+  {
+    "key": "r1dj0hwo",
+    "type": "reading",
+    "lesson": 19,
+    "q": "Who is in the photo?",
+    "options": [
+      "B's grandpa",
+      "B's father",
+      "B",
+      "B's teacher"
+    ],
+    "answer": "B's grandpa",
+    "context": {
+      "title": "爷爷的照片",
+      "lines": [
+        "A：这张照片上的人是谁？  (Who is the person in this photo?)",
+        "B：是我爷爷，那时候他才二十岁。  (It's my grandpa; he was only twenty then.)",
+        "A：真看不出来！他的脸跟你一样，耳朵也很像。  (I'd never have guessed! His face is just like yours, and the ears are alike too.)",
+        "B：大家都这么说。这张照片是在黄河边上照的。  (Everyone says so. This photo was taken by the Yellow River.)"
+      ]
+    },
+    "why": "B says 是我爷爷: it is B's grandpa.",
+    "not": {
+      "B's father": "B says 爷爷, not father.",
+      "B": "B says it is his grandpa, who looks like him.",
+      "B's teacher": "No teacher is mentioned."
+    }
+  },
+  {
+    "key": "rckt6sm",
+    "type": "reading",
+    "lesson": 19,
+    "q": "Where was the photo taken?",
+    "options": [
+      "By the Yellow River",
+      "At school",
+      "On a boat",
+      "At home"
+    ],
+    "answer": "By the Yellow River",
+    "context": {
+      "title": "爷爷的照片",
+      "lines": [
+        "A：这张照片上的人是谁？  (Who is the person in this photo?)",
+        "B：是我爷爷，那时候他才二十岁。  (It's my grandpa; he was only twenty then.)",
+        "A：真看不出来！他的脸跟你一样，耳朵也很像。  (I'd never have guessed! His face is just like yours, and the ears are alike too.)",
+        "B：大家都这么说。这张照片是在黄河边上照的。  (Everyone says so. This photo was taken by the Yellow River.)"
+      ]
+    },
+    "why": "B says 这张照片是在黄河边上照的.",
+    "not": {
+      "At school": "School is not mentioned.",
+      "On a boat": "The boat is tomorrow's plan, not the photo.",
+      "At home": "Home is not mentioned."
+    }
+  },
+  {
+    "key": "rsptqh9",
+    "type": "reading",
+    "lesson": 19,
+    "q": "How will they travel?",
+    "options": [
+      "By boat",
+      "By horse",
+      "By train",
+      "By bike"
+    ],
+    "answer": "By boat",
+    "context": {
+      "title": "坐船",
+      "lines": [
+        "A：我们明天坐船去玩儿吧。  (Let's take a boat trip tomorrow.)",
+        "B：好啊，船上可以看到很多鸟。  (Great, you can see lots of birds from the boat.)",
+        "A：经过黄河的时候，我们可以多照几张相。  (When we pass the Yellow River, we can take a few more photos.)",
+        "B：照片洗出来以后，我给你几张。  (After the photos are printed, I'll give you a few.)"
+      ]
+    },
+    "why": "A says 我们明天坐船去玩儿吧.",
+    "not": {
+      "By horse": "No horse is mentioned.",
+      "By train": "No train is mentioned.",
+      "By bike": "No bike is mentioned."
+    }
+  },
+  {
+    "key": "r17d6e9n",
+    "type": "reading",
+    "lesson": 19,
+    "q": "What will B do after the photos are printed?",
+    "options": [
+      "Give A a few",
+      "Send them to the teacher",
+      "Keep them all",
+      "Buy a frame"
+    ],
+    "answer": "Give A a few",
+    "context": {
+      "title": "坐船",
+      "lines": [
+        "A：我们明天坐船去玩儿吧。  (Let's take a boat trip tomorrow.)",
+        "B：好啊，船上可以看到很多鸟。  (Great, you can see lots of birds from the boat.)",
+        "A：经过黄河的时候，我们可以多照几张相。  (When we pass the Yellow River, we can take a few more photos.)",
+        "B：照片洗出来以后，我给你几张。  (After the photos are printed, I'll give you a few.)"
+      ]
+    },
+    "why": "B says 照片洗出来以后，我给你几张.",
+    "not": {
+      "Send them to the teacher": "No teacher is mentioned.",
+      "Keep them all": "B says 我给你几张, so he shares some.",
+      "Buy a frame": "No frame is mentioned."
+    }
+  },
+  {
+    "key": "d15vh75f",
+    "type": "dialog",
+    "lesson": 19,
+    "q": "女的为什么头发这么短？",
+    "options": [
+      "夏天太热",
+      "头发太多",
+      "没时间洗"
+    ],
+    "answer": "夏天太热",
+    "context": {
+      "lines": [
+        "男：你的头发怎么这么短？",
+        "女：夏天太热了，短一点儿舒服。"
+      ]
+    },
+    "why": "女 says 夏天太热了，短一点儿舒服.",
+    "not": {
+      "头发太多": "Too much hair is not mentioned.",
+      "没时间洗": "没时间洗 is not mentioned."
+    }
+  },
+  {
+    "key": "dc2wgwu",
+    "type": "dialog",
+    "lesson": 19,
+    "q": "女的觉得照片上的人像谁？",
+    "options": [
+      "小刚",
+      "周明",
+      "经理"
+    ],
+    "answer": "小刚",
+    "context": {
+      "lines": [
+        "男：这张照片上的人你认识吗？",
+        "女：看上去像小刚，可是他穿了蓝西服。"
+      ]
+    },
+    "why": "女 says 看上去像小刚.",
+    "not": {
+      "周明": "周明 is not mentioned.",
+      "经理": "经理 is not mentioned."
+    }
+  },
+  {
+    "key": "dlj0i15",
+    "type": "dialog",
+    "lesson": 19,
+    "q": "女的想在船上做什么？",
+    "options": [
+      "看黄河",
+      "听歌",
+      "吃饭"
+    ],
+    "answer": "看黄河",
+    "context": {
+      "lines": [
+        "男：我们去坐船吧！",
+        "女：好啊，我想在船上看看黄河。"
+      ]
+    },
+    "why": "女 says 我想在船上看看黄河.",
+    "not": {
+      "听歌": "听歌 is not mentioned.",
+      "吃饭": "吃饭 is not mentioned."
+    }
+  },
+  {
+    "key": "dmot1i8",
+    "type": "dialog",
+    "lesson": 19,
+    "q": "孩子为什么哭？",
+    "options": [
+      "他的小鸟不见了",
+      "他饿了",
+      "他不舒服"
+    ],
+    "answer": "他的小鸟不见了",
+    "context": {
+      "lines": [
+        "男：你的孩子怎么哭了？",
+        "女：他的小鸟不见了。"
+      ]
+    },
+    "why": "女 says 他的小鸟不见了.",
+    "not": {
+      "他饿了": "饿 is not mentioned.",
+      "他不舒服": "不舒服 is not mentioned."
+    }
+  },
+  {
+    "key": "jcfd6n2",
+    "type": "judge",
+    "lesson": 19,
+    "q": "他儿子两岁多了。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "我儿子是前年秋天出生的，现在两岁多了。"
+    },
+    "why": "The text says 现在两岁多了, so the claim is true.",
+    "not": {}
+  },
+  {
+    "key": "jpm81nk",
+    "type": "judge",
+    "lesson": 19,
+    "q": "他会写这个字。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "这个字太难了，我怎么也写不出来。"
+    },
+    "why": "The text says 我怎么也写不出来, so he cannot write it; the claim is false.",
+    "not": {}
+  },
+  {
+    "key": "j1bp8yxr",
+    "type": "judge",
+    "lesson": 19,
+    "q": "她穿的西服是蓝色的。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "她今天穿了蓝色的西服，看上去很年轻。"
+    },
+    "why": "The text says 穿了蓝色的西服, so the claim is true.",
+    "not": {}
+  },
+  {
+    "key": "j1fn8kcg",
+    "type": "judge",
+    "lesson": 19,
+    "q": "打电话的人是他弟弟。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "我听出来了，打电话的是我的邻居，不是我弟弟。"
+    },
+    "why": "The text says 打电话的是我的邻居，不是我弟弟; the claim is false.",
+    "not": {}
+  },
+  {
+    "key": "r164dj29",
+    "type": "reading",
+    "lesson": 20,
+    "q": "Why is A upset?",
+    "options": [
+      "His credit card is missing",
+      "His camera is broken",
+      "His grades are poor",
+      "His bowl is gone"
+    ],
+    "answer": "His credit card is missing",
+    "context": {
+      "title": "不见了的信用卡",
+      "lines": [
+        "A：我的信用卡不见了，我真难过。  (My credit card is missing; I'm really upset.)",
+        "B：你再找找，是不是被你放在公司了？  (Look again; did you leave it at the office?)",
+        "A：我已经找过了，没找到。  (I've looked already and haven't found it.)",
+        "B：别着急，明天我和你一起去商店问问。  (Don't worry; tomorrow I'll go to the shop with you to ask.)"
+      ]
+    },
+    "why": "A says 我的信用卡不见了，我真难过.",
+    "not": {
+      "His camera is broken": "No camera is mentioned.",
+      "His grades are poor": "No grades are mentioned.",
+      "His bowl is gone": "No bowl is mentioned."
+    }
+  },
+  {
+    "key": "rgqkg40",
+    "type": "reading",
+    "lesson": 20,
+    "q": "What does B suggest?",
+    "options": [
+      "Asking at the shop together tomorrow",
+      "Buying a new card",
+      "Calling the teacher",
+      "Going to the east gate"
+    ],
+    "answer": "Asking at the shop together tomorrow",
+    "context": {
+      "title": "不见了的信用卡",
+      "lines": [
+        "A：我的信用卡不见了，我真难过。  (My credit card is missing; I'm really upset.)",
+        "B：你再找找，是不是被你放在公司了？  (Look again; did you leave it at the office?)",
+        "A：我已经找过了，没找到。  (I've looked already and haven't found it.)",
+        "B：别着急，明天我和你一起去商店问问。  (Don't worry; tomorrow I'll go to the shop with you to ask.)"
+      ]
+    },
+    "why": "B says 明天我和你一起去商店问问.",
+    "not": {
+      "Buying a new card": "B suggests asking at the shop, not buying.",
+      "Calling the teacher": "No teacher is mentioned.",
+      "Going to the east gate": "No east gate is mentioned."
+    }
+  },
+  {
+    "key": "r1fivk6b",
+    "type": "reading",
+    "lesson": 20,
+    "q": "What does B say is needed to study well?",
+    "options": [
+      "Truly liking studying",
+      "A good camera",
+      "A lot of money",
+      "A quiet room"
+    ],
+    "answer": "Truly liking studying",
+    "context": {
+      "title": "提高成绩",
+      "lines": [
+        "A：你的成绩怎么提高得这么快？  (How did your grades improve so fast?)",
+        "B：我觉得只有真正喜欢学习，才能学好。  (I think only if you truly like studying can you do well.)",
+        "A：这么难的问题，你也能解决吗？  (Can you solve even a problem this hard?)",
+        "B：不一定，不过我会试一试。  (Not necessarily, but I'll give it a try.)"
+      ]
+    },
+    "why": "B says 只有真正喜欢学习，才能学好.",
+    "not": {
+      "A good camera": "No camera is mentioned.",
+      "A lot of money": "Money is not mentioned.",
+      "A quiet room": "A quiet room is not mentioned."
+    }
+  },
+  {
+    "key": "r1b4xx0h",
+    "type": "reading",
+    "lesson": 20,
+    "q": "What will B do with a hard problem?",
+    "options": [
+      "Try it",
+      "Ignore it",
+      "Always ask the teacher",
+      "Give up"
+    ],
+    "answer": "Try it",
+    "context": {
+      "title": "提高成绩",
+      "lines": [
+        "A：你的成绩怎么提高得这么快？  (How did your grades improve so fast?)",
+        "B：我觉得只有真正喜欢学习，才能学好。  (I think only if you truly like studying can you do well.)",
+        "A：这么难的问题，你也能解决吗？  (Can you solve even a problem this hard?)",
+        "B：不一定，不过我会试一试。  (Not necessarily, but I'll give it a try.)"
+      ]
+    },
+    "why": "B says 不过我会试一试: B will try it.",
+    "not": {
+      "Ignore it": "B says 我会试一试, so he does not ignore it.",
+      "Always ask the teacher": "No teacher is mentioned.",
+      "Give up": "B says 会试一试, so he does not give up."
+    }
+  },
+  {
+    "key": "datzxga",
+    "type": "dialog",
+    "lesson": 20,
+    "q": "照相机怎么了？",
+    "options": [
+      "被弟弟用坏了",
+      "被朋友借走了",
+      "放在家里了"
+    ],
+    "answer": "被弟弟用坏了",
+    "context": {
+      "lines": [
+        "男：你的照相机怎么了？",
+        "女：被我弟弟用坏了。"
+      ]
+    },
+    "why": "女 says 被我弟弟用坏了.",
+    "not": {
+      "被朋友借走了": "She says 弟弟 and 坏了, not a friend borrowing it.",
+      "放在家里了": "She says it is broken, not left at home."
+    }
+  },
+  {
+    "key": "d176t7he",
+    "type": "dialog",
+    "lesson": 20,
+    "q": "女的为什么难过？",
+    "options": [
+      "信用卡不见了",
+      "照相机坏了",
+      "成绩不好"
+    ],
+    "answer": "信用卡不见了",
+    "context": {
+      "lines": [
+        "男：你为什么难过？",
+        "女：我的信用卡不见了。"
+      ]
+    },
+    "why": "女 says 我的信用卡不见了.",
+    "not": {
+      "照相机坏了": "No broken camera in this dialogue.",
+      "成绩不好": "Grades are not mentioned."
+    }
+  },
+  {
+    "key": "dc6xsr2",
+    "type": "dialog",
+    "lesson": 20,
+    "q": "女的哪个成绩不好？",
+    "options": [
+      "英语",
+      "数学",
+      "历史"
+    ],
+    "answer": "英语",
+    "context": {
+      "lines": [
+        "男：你的成绩怎么样？",
+        "女：数学成绩很好，可是英语差极了。"
+      ]
+    },
+    "why": "女 says 英语差极了: her English is very bad.",
+    "not": {
+      "数学": "She says 数学成绩很好.",
+      "历史": "历史 is not mentioned."
+    }
+  },
+  {
+    "key": "d134hri8",
+    "type": "dialog",
+    "lesson": 20,
+    "q": "女的知道哪个杯子是她的吗？",
+    "options": [
+      "不知道",
+      "知道",
+      "都是她的"
+    ],
+    "answer": "不知道",
+    "context": {
+      "lines": [
+        "男：这两个杯子哪个是你的？",
+        "女：我也看不出来，它们太像了。"
+      ]
+    },
+    "why": "女 says 我也看不出来, so she cannot tell.",
+    "not": {
+      "知道": "She says 看不出来.",
+      "都是她的": "She cannot tell which is hers."
+    }
+  },
+  {
+    "key": "j1ie951m",
+    "type": "judge",
+    "lesson": 20,
+    "q": "他的照相机在朋友那儿。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "我的照相机被朋友借走了，下个星期才能还给我。"
+    },
+    "why": "The text says 被朋友借走了, so the camera is with a friend; true.",
+    "not": {}
+  },
+  {
+    "key": "jktvjiy",
+    "type": "judge",
+    "lesson": 20,
+    "q": "不练习汉语也能提高得快。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "只有每天练习，汉语才能提高得快。"
+    },
+    "why": "The text says 只有每天练习，汉语才能提高得快, so you must practise; the claim is false.",
+    "not": {}
+  },
+  {
+    "key": "jh2b5z1",
+    "type": "judge",
+    "lesson": 20,
+    "q": "他的成绩很好。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "错",
+    "context": {
+      "text": "这个学期我天天玩儿游戏，考试成绩很差。"
+    },
+    "why": "The text says 考试成绩很差, but the claim says his grades are good. So it is false.",
+    "not": {}
+  },
+  {
+    "key": "j1297pit",
+    "type": "judge",
+    "lesson": 20,
+    "q": "他的信用卡不在他那儿了。",
+    "options": [
+      "对",
+      "错"
+    ],
+    "answer": "对",
+    "context": {
+      "text": "他很难过，因为他的信用卡被别人拿走了。"
+    },
+    "why": "The text says 信用卡被别人拿走了, so he no longer has it; the claim is true.",
+    "not": {}
+  }
+]

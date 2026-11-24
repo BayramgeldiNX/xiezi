@@ -1,0 +1,546 @@
+{
+  "n": 5,
+  "cn": "第五课",
+  "title": "我最近越来越胖了",
+  "en": "I've been getting fatter and fatter lately",
+  "words": [
+    {
+      "w": "发烧",
+      "py": "fā shāo",
+      "en": "to have a fever",
+      "ex": {
+        "hz": "他昨天晚上发烧了。",
+        "py": "Tā zuótiān wǎnshang fā shāo le.",
+        "en": "He had a fever last night."
+      }
+    },
+    {
+      "w": "为",
+      "py": "wèi",
+      "en": "for",
+      "ex": {
+        "hz": "这杯茶是我为你准备的。",
+        "py": "Zhè bēi chá shì wǒ wèi nǐ zhǔnbèi de.",
+        "en": "This cup of tea is something I prepared for you."
+      }
+    },
+    {
+      "w": "照顾",
+      "py": "zhàogù",
+      "en": "to take care of",
+      "ex": {
+        "hz": "妈妈在家照顾小狗。",
+        "py": "Māma zài jiā zhàogù xiǎo gǒu.",
+        "en": "Mum is at home looking after the puppy."
+      }
+    },
+    {
+      "w": "用",
+      "py": "yòng",
+      "en": "to need; to use",
+      "ex": {
+        "hz": "你不用来了，我自己去。",
+        "py": "Nǐ bú yòng lái le, wǒ zìjǐ qù.",
+        "en": "You needn't come; I'll go myself."
+      }
+    },
+    {
+      "w": "感冒",
+      "py": "gǎnmào",
+      "en": "to catch a cold; a cold",
+      "ex": {
+        "hz": "我感冒了，不想吃饭。",
+        "py": "Wǒ gǎnmào le, bù xiǎng chī fàn.",
+        "en": "I've caught a cold and don't feel like eating."
+      }
+    },
+    {
+      "w": "张",
+      "py": "Zhāng",
+      "en": "Zhang (a surname)",
+      "ex": {
+        "hz": "张老师教我们汉语。",
+        "py": "Zhāng lǎoshī jiāo wǒmen Hànyǔ.",
+        "en": "Teacher Zhang teaches us Chinese."
+      }
+    },
+    {
+      "w": "季节",
+      "py": "jìjié",
+      "en": "season",
+      "ex": {
+        "hz": "一年有四个季节。",
+        "py": "Yì nián yǒu sì ge jìjié.",
+        "en": "There are four seasons in a year."
+      }
+    },
+    {
+      "w": "当然",
+      "py": "dāngrán",
+      "en": "of course",
+      "ex": {
+        "hz": "当然可以，请坐。",
+        "py": "Dāngrán kěyǐ, qǐng zuò.",
+        "en": "Of course; please sit down."
+      }
+    },
+    {
+      "w": "春天",
+      "py": "chūntiān",
+      "en": "spring",
+      "ex": {
+        "hz": "春天到了，花开了。",
+        "py": "Chūntiān dào le, huā kāi le.",
+        "en": "Spring has come and the flowers are out."
+      }
+    },
+    {
+      "w": "草",
+      "py": "cǎo",
+      "en": "grass",
+      "ex": {
+        "hz": "草地上有很多花。",
+        "py": "Cǎodì shang yǒu hěn duō huā.",
+        "en": "There are lots of flowers on the grass."
+      }
+    },
+    {
+      "w": "夏天",
+      "py": "xiàtiān",
+      "en": "summer",
+      "ex": {
+        "hz": "夏天我常常喝冷饮料。",
+        "py": "Xiàtiān wǒ chángcháng hē lěng yǐnliào.",
+        "en": "In summer I often drink cold drinks."
+      }
+    },
+    {
+      "w": "裙子",
+      "py": "qúnzi",
+      "en": "skirt; dress",
+      "ex": {
+        "hz": "她穿着一条白裙子。",
+        "py": "Tā chuānzhe yì tiáo bái qúnzi.",
+        "en": "She is wearing a white skirt."
+      }
+    },
+    {
+      "w": "最近",
+      "py": "zuìjìn",
+      "en": "recently; lately",
+      "ex": {
+        "hz": "最近我很忙。",
+        "py": "Zuìjìn wǒ hěn máng.",
+        "en": "I've been very busy lately."
+      }
+    },
+    {
+      "w": "越",
+      "py": "yuè",
+      "en": "the more (越来越: more and more)",
+      "ex": {
+        "hz": "天气越来越热了。",
+        "py": "Tiānqì yuè lái yuè rè le.",
+        "en": "The weather is getting hotter and hotter."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "越来越热",
+      "py": "Yuè lái yuè rè",
+      "en": "Hotter and hotter",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "最近天气越来越热了。",
+          "py": "Zuìjìn tiānqì yuè lái yuè rè le.",
+          "en": "The weather has been getting hotter lately."
+        },
+        {
+          "who": "B",
+          "hz": "是啊，夏天快到了。你穿裙子了吗？",
+          "py": "Shì a, xiàtiān kuài dào le. Nǐ chuān qúnzi le ma?",
+          "en": "Yes, summer is almost here. Have you started wearing skirts?"
+        },
+        {
+          "who": "A",
+          "hz": "穿了，我买了两条新的。",
+          "py": "Chuān le, wǒ mǎile liǎng tiáo xīn de.",
+          "en": "Yes, I bought two new ones."
+        },
+        {
+          "who": "B",
+          "hz": "真好！周末穿新裙子去公园吧。",
+          "py": "Zhēn hǎo! Zhōumò chuān xīn qúnzi qù gōngyuán ba.",
+          "en": "Great! Wear a new skirt to the park at the weekend."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What season is coming?",
+          "options": [
+            "Summer",
+            "Spring",
+            "Winter",
+            "Autumn"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What did A buy?",
+          "options": [
+            "Two skirts",
+            "Two shirts",
+            "Two umbrellas",
+            "Two cakes"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "照顾小狗",
+      "py": "Zhàogù xiǎo gǒu",
+      "en": "Looking after the puppy",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "下个星期我要出去，你能照顾我的小狗吗？",
+          "py": "Xià ge xīngqī wǒ yào chūqu, nǐ néng zhàogù wǒ de xiǎo gǒu ma?",
+          "en": "I'm going away next week. Can you look after my puppy?"
+        },
+        {
+          "who": "B",
+          "hz": "当然可以，你不用着急。",
+          "py": "Dāngrán kěyǐ, nǐ bú yòng zháojí.",
+          "en": "Of course; no need to worry."
+        },
+        {
+          "who": "A",
+          "hz": "它最近越来越能吃了，别给它太多。",
+          "py": "Tā zuìjìn yuè lái yuè néng chī le, bié gěi tā tài duō.",
+          "en": "It's been eating more and more lately; don't give it too much."
+        },
+        {
+          "who": "B",
+          "hz": "好的，我每天带它去外边走走。",
+          "py": "Hǎo de, wǒ měi tiān dài tā qù wàibian zǒuzou.",
+          "en": "OK, I'll take it for a walk every day."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What does A ask B to do?",
+          "options": [
+            "Look after the puppy",
+            "Buy a puppy",
+            "Walk to school",
+            "Cook dinner"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What is the puppy like lately?",
+          "options": [
+            "Eating more and more",
+            "Getting thinner",
+            "Sick",
+            "Sleeping a lot"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "了 for a change",
+      "en": "sentence-final 了 shows a new situation or a change from before",
+      "drills": [
+        {
+          "q": "上个星期他很忙，这个星期不忙___。",
+          "options": [
+            "了",
+            "过",
+            "着",
+            "吗"
+          ],
+          "answer": 0,
+          "en": "He was busy last week, but this week he isn't any more."
+        },
+        {
+          "q": "我以前不喜欢吃辣的，现在喜欢___。",
+          "options": [
+            "了",
+            "过",
+            "着",
+            "得"
+          ],
+          "answer": 0,
+          "en": "I didn't use to like spicy food, but now I do."
+        },
+        {
+          "q": "他以前不会游泳，现在会游泳___。",
+          "options": [
+            "了",
+            "过",
+            "着",
+            "得"
+          ],
+          "answer": 0,
+          "en": "He couldn't swim before; now he can."
+        },
+        {
+          "q": "春天到___，花开了。",
+          "options": [
+            "了",
+            "过",
+            "着",
+            "得"
+          ],
+          "answer": 0,
+          "en": "Spring has arrived and the flowers are out."
+        },
+        {
+          "q": "我现在不发烧___，可以去上班。",
+          "options": [
+            "了",
+            "吗",
+            "着",
+            "过"
+          ],
+          "answer": 0,
+          "en": "I don't have a fever any more; I can go to work."
+        },
+        {
+          "q": "昨天我很累，今天不累___。",
+          "options": [
+            "了",
+            "过",
+            "着",
+            "得"
+          ],
+          "answer": 0,
+          "en": "I was tired yesterday; today I'm not tired any more."
+        }
+      ]
+    },
+    {
+      "point": "越来越 + adjective",
+      "en": "越来越 + adj / mental verb: more and more; no 很/非常/太 after it",
+      "drills": [
+        {
+          "q": "天气越来越___，快穿上外套吧。",
+          "options": [
+            "冷",
+            "很冷",
+            "太冷",
+            "非常冷"
+          ],
+          "answer": 0,
+          "en": "The weather is getting colder and colder; put your coat on."
+        },
+        {
+          "q": "我越来越___这个城市。",
+          "options": [
+            "喜欢",
+            "很喜欢",
+            "太喜欢",
+            "非常喜欢"
+          ],
+          "answer": 0,
+          "en": "I like this city more and more."
+        },
+        {
+          "q": "这家店的面包越来越___。",
+          "options": [
+            "好吃",
+            "很好吃",
+            "太好吃",
+            "非常好吃"
+          ],
+          "answer": 0,
+          "en": "This shop's bread is getting tastier and tastier."
+        },
+        {
+          "q": "他的汉语越来越___了。",
+          "options": [
+            "好",
+            "很好",
+            "太好",
+            "非常好"
+          ],
+          "answer": 0,
+          "en": "His Chinese is getting better and better."
+        },
+        {
+          "q": "我的朋友越来越多，我越来越___。",
+          "options": [
+            "高兴",
+            "很高兴",
+            "太高兴",
+            "非常高兴"
+          ],
+          "answer": 0,
+          "en": "My friends are getting more numerous and I'm getting happier and happier."
+        },
+        {
+          "q": "孩子___来越高了。",
+          "options": [
+            "越",
+            "很",
+            "太",
+            "更"
+          ],
+          "answer": 0,
+          "en": "The child is getting taller and taller."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你怎么了？"
+          ],
+          [
+            "女",
+            "我有点儿发烧，不太舒服。"
+          ]
+        ],
+        "q": "女的怎么了？",
+        "options": [
+          "发烧了",
+          "腿疼",
+          "饿了"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你喜欢什么季节？"
+          ],
+          [
+            "女",
+            "夏天，因为可以去游泳。"
+          ]
+        ],
+        "q": "女的为什么喜欢夏天？",
+        "options": [
+          "可以去游泳",
+          "天气不冷",
+          "可以穿裙子"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你最近怎么越来越瘦了？"
+          ],
+          [
+            "女",
+            "我最近每天都运动。"
+          ]
+        ],
+        "q": "女的为什么越来越瘦？",
+        "options": [
+          "每天运动",
+          "不吃饭",
+          "生病了"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你要吃药吗？"
+          ],
+          [
+            "女",
+            "不用了，我喝点儿热水就好了。"
+          ]
+        ],
+        "q": "女的要做什么？",
+        "options": [
+          "喝热水",
+          "吃药",
+          "去医院"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "我以前不喜欢冬天，现在喜欢了，因为可以看下雪。",
+        "claim": "他现在喜欢冬天。",
+        "ok": true
+      },
+      {
+        "text": "最近我越来越忙，每天都睡得很晚。",
+        "claim": "他最近不忙。",
+        "ok": false
+      },
+      {
+        "text": "春天来了，公园里的草都绿了。",
+        "claim": "春天草是绿的。",
+        "ok": true
+      },
+      {
+        "text": "妈妈生病了，爸爸在家照顾她，所以我可以去上课。",
+        "claim": "他要在家照顾妈妈。",
+        "ok": false
+      }
+    ],
+    "replies": [
+      {
+        "q": "你怎么没去上班？",
+        "a": "我感冒了，有点儿发烧。"
+      },
+      {
+        "q": "这些水果是我为你准备的。",
+        "a": "谢谢你，你太好了。"
+      },
+      {
+        "q": "北京什么季节最漂亮？",
+        "a": "春天最漂亮，花都开了。"
+      },
+      {
+        "q": "你最近怎么样？",
+        "a": "我越来越忙了。"
+      }
+    ]
+  },
+  "hanzi": {
+    "chars": [
+      [
+        "明",
+        "Sun 日 and moon 月 side by side: bright."
+      ],
+      [
+        "休",
+        "A person 亻 leaning on a tree 木: to rest."
+      ],
+      [
+        "从",
+        "One person following another: to follow, “from”."
+      ],
+      [
+        "看",
+        "A hand 手 over the 目 eye: to look far."
+      ]
+    ]
+  }
+}

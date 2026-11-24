@@ -1,0 +1,576 @@
+{
+  "n": 11,
+  "cn": "第十一课",
+  "title": "别忘了把空调关了",
+  "en": "Don't forget to turn off the air conditioning",
+  "words": [
+    {
+      "w": "图书馆",
+      "py": "túshūguǎn",
+      "en": "library",
+      "ex": {
+        "hz": "我常去图书馆看书。",
+        "py": "Wǒ cháng qù túshūguǎn kàn shū.",
+        "en": "I often go to the library to read."
+      }
+    },
+    {
+      "w": "借",
+      "py": "jiè",
+      "en": "to borrow; to lend",
+      "ex": {
+        "hz": "我想借你的伞用一下。",
+        "py": "Wǒ xiǎng jiè nǐ de sǎn yòng yíxià.",
+        "en": "I'd like to borrow your umbrella for a moment."
+      }
+    },
+    {
+      "w": "词典",
+      "py": "cídiǎn",
+      "en": "dictionary",
+      "ex": {
+        "hz": "这本词典很好用。",
+        "py": "Zhè běn cídiǎn hěn hǎoyòng.",
+        "en": "This dictionary is very handy."
+      }
+    },
+    {
+      "w": "还",
+      "py": "huán",
+      "en": "to return (something)",
+      "ex": {
+        "hz": "明天我一定还你书。",
+        "py": "Míngtiān wǒ yídìng huán nǐ shū.",
+        "en": "I'll definitely return your book tomorrow."
+      }
+    },
+    {
+      "w": "灯",
+      "py": "dēng",
+      "en": "light; lamp",
+      "ex": {
+        "hz": "太黑了，请开一下灯。",
+        "py": "Tài hēi le, qǐng kāi yíxià dēng.",
+        "en": "It's too dark; please turn the light on."
+      }
+    },
+    {
+      "w": "会议",
+      "py": "huìyì",
+      "en": "meeting; conference",
+      "ex": {
+        "hz": "下午两点有一个会议。",
+        "py": "Xiàwǔ liǎng diǎn yǒu yí ge huìyì.",
+        "en": "There's a meeting at two this afternoon."
+      }
+    },
+    {
+      "w": "结束",
+      "py": "jiéshù",
+      "en": "to end; to finish",
+      "ex": {
+        "hz": "电影几点结束？",
+        "py": "Diànyǐng jǐ diǎn jiéshù?",
+        "en": "What time does the film end?"
+      }
+    },
+    {
+      "w": "忘记",
+      "py": "wàngjì",
+      "en": "to forget",
+      "ex": {
+        "hz": "我忘记带钥匙了。",
+        "py": "Wǒ wàngjì dài yàoshi le.",
+        "en": "I forgot to bring my keys."
+      }
+    },
+    {
+      "w": "空调",
+      "py": "kōngtiáo",
+      "en": "air conditioner",
+      "ex": {
+        "hz": "房间里太热，开空调吧。",
+        "py": "Fángjiān lǐ tài rè, kāi kōngtiáo ba.",
+        "en": "It's too hot in the room; turn on the air conditioning."
+      }
+    },
+    {
+      "w": "关",
+      "py": "guān",
+      "en": "to turn off; to close",
+      "ex": {
+        "hz": "请把门关上。",
+        "py": "Qǐng bǎ mén guānshàng.",
+        "en": "Please close the door."
+      }
+    },
+    {
+      "w": "地铁",
+      "py": "dìtiě",
+      "en": "subway; metro",
+      "ex": {
+        "hz": "我每天坐地铁上班。",
+        "py": "Wǒ měi tiān zuò dìtiě shàng bān.",
+        "en": "I take the metro to work every day."
+      }
+    },
+    {
+      "w": "双",
+      "py": "shuāng",
+      "en": "pair (measure word)",
+      "ex": {
+        "hz": "我买了一双新鞋。",
+        "py": "Wǒ mǎile yì shuāng xīn xié.",
+        "en": "I bought a pair of new shoes."
+      }
+    },
+    {
+      "w": "筷子",
+      "py": "kuàizi",
+      "en": "chopsticks",
+      "ex": {
+        "hz": "你会用筷子吗？",
+        "py": "Nǐ huì yòng kuàizi ma?",
+        "en": "Can you use chopsticks?"
+      }
+    },
+    {
+      "w": "啤酒",
+      "py": "píjiǔ",
+      "en": "beer",
+      "ex": {
+        "hz": "他晚饭时喜欢喝一瓶啤酒。",
+        "py": "Tā wǎnfàn shí xǐhuan hē yì píng píjiǔ.",
+        "en": "He likes a bottle of beer with dinner."
+      }
+    },
+    {
+      "w": "口",
+      "py": "kǒu",
+      "en": "(measure word for family members) (also: a mouthful or sip)",
+      "ex": {
+        "hz": "请你尝一口这个菜。",
+        "py": "Qǐng nǐ cháng yì kǒu zhège cài.",
+        "en": "Please try a bite of this dish."
+      }
+    },
+    {
+      "w": "瓶子",
+      "py": "píngzi",
+      "en": "bottle",
+      "ex": {
+        "hz": "桌子上有两个空瓶子。",
+        "py": "Zhuōzi shàng yǒu liǎng ge kōng píngzi.",
+        "en": "There are two empty bottles on the table."
+      }
+    },
+    {
+      "w": "笔记本电脑",
+      "py": "bǐjìběn diànnǎo",
+      "en": "laptop",
+      "ex": {
+        "hz": "他的笔记本电脑是新买的。",
+        "py": "Tā de bǐjìběn diànnǎo shì xīn mǎi de.",
+        "en": "His laptop is newly bought."
+      }
+    },
+    {
+      "w": "电子邮件",
+      "py": "diànzǐ yóujiàn",
+      "en": "email",
+      "ex": {
+        "hz": "我每天早上先看电子邮件。",
+        "py": "Wǒ měi tiān zǎoshang xiān kàn diànzǐ yóujiàn.",
+        "en": "Every morning I read my email first."
+      }
+    },
+    {
+      "w": "习惯",
+      "py": "xíguàn",
+      "en": "to be used to; habit",
+      "ex": {
+        "hz": "我已经习惯早起了。",
+        "py": "Wǒ yǐjīng xíguàn zǎo qǐ le.",
+        "en": "I'm already used to getting up early."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "出门以前",
+      "py": "Chū mén yǐqián",
+      "en": "Before leaving",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "我要出门了，你有什么事吗？",
+          "py": "Wǒ yào chū mén le, nǐ yǒu shénme shì ma?",
+          "en": "I'm heading out. Anything you need?"
+        },
+        {
+          "who": "B",
+          "hz": "请你把这两本书还到图书馆。",
+          "py": "Qǐng nǐ bǎ zhè liǎng běn shū huán dào túshūguǎn.",
+          "en": "Please return these two books to the library."
+        },
+        {
+          "who": "A",
+          "hz": "好的。还有别的吗？",
+          "py": "Hǎo de. Hái yǒu bié de ma?",
+          "en": "OK. Anything else?"
+        },
+        {
+          "who": "B",
+          "hz": "别忘了把空调和灯都关了。",
+          "py": "Bié wàng le bǎ kōngtiáo hé dēng dōu guān le.",
+          "en": "Don't forget to turn off the air conditioner and the lights."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What should A take to the library?",
+          "options": [
+            "Two books",
+            "A dictionary",
+            "A laptop",
+            "Some bottles"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What should A switch off?",
+          "options": [
+            "The air conditioner and the lights",
+            "The computer",
+            "The television",
+            "The phone"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "在饭馆",
+      "py": "Zài fànguǎn",
+      "en": "At a restaurant",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "服务员，请再给我们一双筷子。",
+          "py": "Fúwùyuán, qǐng zài gěi wǒmen yì shuāng kuàizi.",
+          "en": "Waiter, could we have another pair of chopsticks?"
+        },
+        {
+          "who": "B",
+          "hz": "好的，马上给您拿。您想喝点儿什么？",
+          "py": "Hǎo de, mǎshàng gěi nín ná. Nín xiǎng hē diǎnr shénme?",
+          "en": "Right away. What would you like to drink?"
+        },
+        {
+          "who": "A",
+          "hz": "来一瓶啤酒吧，我朋友想尝一口。",
+          "py": "Lái yì píng píjiǔ ba, wǒ péngyou xiǎng cháng yì kǒu.",
+          "en": "One bottle of beer, please. My friend wants a taste."
+        },
+        {
+          "who": "B",
+          "hz": "好的，请等一会儿。",
+          "py": "Hǎo de, qǐng děng yíhuìr.",
+          "en": "Certainly, please wait a moment."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What do they need?",
+          "options": [
+            "One more pair of chopsticks",
+            "Another bottle",
+            "A dictionary",
+            "A new lamp"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How many bottles of beer do they order?",
+          "options": [
+            "One",
+            "Two",
+            "Three",
+            "Four"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "把 sentence: A 把 B + verb + …",
+      "en": "把 puts a known thing B in front of the verb to say what is done to it. It is often used for requests; the result or a complement must follow the verb. A negative word or modal verb goes before 把.",
+      "drills": [
+        {
+          "q": "请你___灯关了。",
+          "options": [
+            "把",
+            "被",
+            "比",
+            "对"
+          ],
+          "answer": 0,
+          "en": "Please turn off the light."
+        },
+        {
+          "q": "你可以___这个杯子洗了吗？",
+          "options": [
+            "把",
+            "被",
+            "比",
+            "向"
+          ],
+          "answer": 0,
+          "en": "Could you wash this cup?"
+        },
+        {
+          "q": "别___手机忘在家里。",
+          "options": [
+            "把",
+            "被",
+            "比",
+            "往"
+          ],
+          "answer": 0,
+          "en": "Don't leave your phone at home."
+        },
+        {
+          "q": "你没___书给我，我还在等。",
+          "options": [
+            "把",
+            "被",
+            "比",
+            "向"
+          ],
+          "answer": 0,
+          "en": "You didn't give me the book; I'm still waiting."
+        },
+        {
+          "q": "我不能___电脑借给你。",
+          "options": [
+            "把",
+            "被",
+            "从",
+            "往"
+          ],
+          "answer": 0,
+          "en": "I can't lend you the computer."
+        },
+        {
+          "q": "请___这本词典还给图书馆。",
+          "options": [
+            "把",
+            "被",
+            "比",
+            "对"
+          ],
+          "answer": 0,
+          "en": "Please return this dictionary to the library."
+        }
+      ]
+    },
+    {
+      "point": "左右 (about)",
+      "en": "左右 comes after a number or quantity to say \"about\" or \"or so\".",
+      "drills": [
+        {
+          "q": "这个城市的夏天一般三十度___。",
+          "options": [
+            "左右",
+            "的",
+            "和",
+            "一样"
+          ],
+          "answer": 0,
+          "en": "Summers in this city are usually around thirty degrees."
+        },
+        {
+          "q": "我们班有二十个学生___。",
+          "options": [
+            "左右",
+            "几",
+            "多了",
+            "一点儿"
+          ],
+          "answer": 0,
+          "en": "Our class has about twenty students."
+        },
+        {
+          "q": "这个电脑要五千块___。",
+          "options": [
+            "左右",
+            "比较",
+            "一样",
+            "附近"
+          ],
+          "answer": 0,
+          "en": "This computer costs around five thousand yuan."
+        },
+        {
+          "q": "他三十岁___，个子很高。",
+          "options": [
+            "左右",
+            "以前的",
+            "多了",
+            "比较"
+          ],
+          "answer": 0,
+          "en": "He is about thirty and quite tall."
+        },
+        {
+          "q": "我每天走路二十分钟___。",
+          "options": [
+            "左右",
+            "的",
+            "比",
+            "先"
+          ],
+          "answer": 0,
+          "en": "I walk about twenty minutes every day."
+        },
+        {
+          "q": "下午三点___，请给我打电话。",
+          "options": [
+            "左右",
+            "不太",
+            "又",
+            "越"
+          ],
+          "answer": 0,
+          "en": "Please call me around three in the afternoon."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你去图书馆吗？帮我把这本书还了吧。"
+          ],
+          [
+            "女",
+            "好的，放心吧。"
+          ]
+        ],
+        "q": "女的要去哪儿？",
+        "options": [
+          "图书馆",
+          "商店",
+          "公司"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "离开房间的时候，别忘了关灯。"
+          ],
+          [
+            "女",
+            "知道了，我也会把空调关了。"
+          ]
+        ],
+        "q": "女的还会关什么？",
+        "options": [
+          "空调",
+          "电视",
+          "电脑"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "请问，会议几点结束？"
+          ],
+          [
+            "女",
+            "四点左右。"
+          ]
+        ],
+        "q": "会议大概几点结束？",
+        "options": [
+          "四点",
+          "两点",
+          "六点"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "这是你的啤酒吗？"
+          ],
+          [
+            "女",
+            "不是，我不喝酒，我喝可乐。"
+          ]
+        ],
+        "q": "女的喝什么？",
+        "options": [
+          "可乐",
+          "啤酒",
+          "茶"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "我习惯早上先看电子邮件，然后再工作。",
+        "claim": "他早上先工作。",
+        "ok": false
+      },
+      {
+        "text": "我们一共五个人，可是桌子上只有三双筷子。",
+        "claim": "他们的筷子不够。",
+        "ok": true
+      },
+      {
+        "text": "昨天我忘记带词典了，所以向同学借了一本。",
+        "claim": "他昨天没带词典。",
+        "ok": true
+      },
+      {
+        "text": "小王出门的时候忘了把空调关了。",
+        "claim": "小王已经把空调关了。",
+        "ok": false
+      }
+    ],
+    "replies": [
+      {
+        "q": "请你把灯关了。",
+        "a": "好的，我马上关。"
+      },
+      {
+        "q": "你借我的书什么时候还？",
+        "a": "下个星期还你。"
+      },
+      {
+        "q": "你每天几点睡觉？",
+        "a": "十一点左右。"
+      },
+      {
+        "q": "你习惯这里的天气了吗？",
+        "a": "已经习惯了。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,627 @@
+{
+  "n": 18,
+  "cn": "第十八课",
+  "title": "我相信他们会同意的",
+  "en": "I believe they will agree",
+  "words": [
+    {
+      "w": "向",
+      "py": "xiàng",
+      "en": "towards; to (someone)",
+      "ex": {
+        "hz": "我想向你借一本书。",
+        "py": "Wǒ xiǎng xiàng nǐ jiè yì běn shū.",
+        "en": "I'd like to borrow a book from you."
+      }
+    },
+    {
+      "w": "万",
+      "py": "wàn",
+      "en": "ten thousand",
+      "ex": {
+        "hz": "这辆车要三万块。",
+        "py": "Zhè liàng chē yào sān wàn kuài.",
+        "en": "This car costs thirty thousand yuan."
+      }
+    },
+    {
+      "w": "只",
+      "py": "zhī",
+      "en": "(measure word for certain animals)",
+      "ex": {
+        "hz": "我家有两只小猫。",
+        "py": "Wǒ jiā yǒu liǎng zhī xiǎo māo.",
+        "en": "We have two kittens at home."
+      }
+    },
+    {
+      "w": "嘴",
+      "py": "zuǐ",
+      "en": "mouth",
+      "ex": {
+        "hz": "这个小孩的嘴小小的。",
+        "py": "Zhège xiǎohái de zuǐ xiǎoxiǎo de.",
+        "en": "This child has a small mouth."
+      }
+    },
+    {
+      "w": "动物",
+      "py": "dòngwù",
+      "en": "animal",
+      "ex": {
+        "hz": "你喜欢什么动物？",
+        "py": "Nǐ xǐhuan shénme dòngwù?",
+        "en": "What animals do you like?"
+      }
+    },
+    {
+      "w": "段",
+      "py": "duàn",
+      "en": "(measure word for sections or periods)",
+      "ex": {
+        "hz": "我在北京住过一段时间。",
+        "py": "Wǒ zài Běijīng zhù guo yí duàn shíjiān.",
+        "en": "I lived in Beijing for a while."
+      }
+    },
+    {
+      "w": "不但",
+      "py": "búdàn",
+      "en": "not only (不但…而且… not only … but also …)",
+      "ex": {
+        "hz": "她不但会说汉语，而且说得很好。",
+        "py": "Tā búdàn huì shuō Hànyǔ, érqiě shuō de hěn hǎo.",
+        "en": "She not only speaks Chinese, but speaks it well."
+      }
+    },
+    {
+      "w": "而且",
+      "py": "érqiě",
+      "en": "and also; moreover",
+      "ex": {
+        "hz": "这家饭馆很便宜，而且菜很好吃。",
+        "py": "Zhè jiā fànguǎn hěn piányi, érqiě cài hěn hǎochī.",
+        "en": "This restaurant is cheap, and the food is good too."
+      }
+    },
+    {
+      "w": "有名",
+      "py": "yǒumíng",
+      "en": "famous",
+      "ex": {
+        "hz": "这家饭馆很有名。",
+        "py": "Zhè jiā fànguǎn hěn yǒumíng.",
+        "en": "This restaurant is very famous."
+      }
+    },
+    {
+      "w": "同意",
+      "py": "tóngyì",
+      "en": "to agree",
+      "ex": {
+        "hz": "我同意你的看法。",
+        "py": "Wǒ tóngyì nǐ de kànfǎ.",
+        "en": "I agree with your view."
+      }
+    },
+    {
+      "w": "相信",
+      "py": "xiāngxìn",
+      "en": "to believe; to trust",
+      "ex": {
+        "hz": "我相信你说的话。",
+        "py": "Wǒ xiāngxìn nǐ shuō de huà.",
+        "en": "I believe what you say."
+      }
+    },
+    {
+      "w": "关于",
+      "py": "guānyú",
+      "en": "about; regarding",
+      "ex": {
+        "hz": "我喜欢关于动物的电影。",
+        "py": "Wǒ xǐhuan guānyú dòngwù de diànyǐng.",
+        "en": "I like films about animals."
+      }
+    },
+    {
+      "w": "机会",
+      "py": "jīhuì",
+      "en": "opportunity; chance",
+      "ex": {
+        "hz": "这是一个很好的机会。",
+        "py": "Zhè shì yí ge hěn hǎo de jīhuì.",
+        "en": "This is a very good opportunity."
+      }
+    },
+    {
+      "w": "国家",
+      "py": "guójiā",
+      "en": "country; nation",
+      "ex": {
+        "hz": "你去过几个国家？",
+        "py": "Nǐ qù guo jǐ ge guójiā?",
+        "en": "How many countries have you been to?"
+      }
+    },
+    {
+      "w": "种",
+      "py": "zhǒng",
+      "en": "kind; type",
+      "ex": {
+        "hz": "这种水果很好吃。",
+        "py": "Zhè zhǒng shuǐguǒ hěn hǎochī.",
+        "en": "This kind of fruit is delicious."
+      }
+    },
+    {
+      "w": "特点",
+      "py": "tèdiǎn",
+      "en": "feature; characteristic",
+      "ex": {
+        "hz": "这个城市的特点是干净。",
+        "py": "Zhège chéngshì de tèdiǎn shì gānjìng.",
+        "en": "This city's feature is that it is clean."
+      }
+    },
+    {
+      "w": "奇怪",
+      "py": "qíguài",
+      "en": "strange; odd",
+      "ex": {
+        "hz": "他今天怎么没来，真奇怪。",
+        "py": "Tā jīntiān zěnme méi lái, zhēn qíguài.",
+        "en": "Why hasn't he come today? How odd."
+      }
+    },
+    {
+      "w": "地",
+      "py": "de",
+      "en": "(particle linking an adverbial and its verb)",
+      "ex": {
+        "hz": "她高兴地跳了起来。",
+        "py": "Tā gāoxìng de tiào le qǐlai.",
+        "en": "She jumped up happily."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "在动物园",
+      "py": "Zài dòngwùyuán",
+      "en": "At the zoo",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你看那只动物，它的嘴大大的，真奇怪！",
+          "py": "Nǐ kàn nà zhī dòngwù, tā de zuǐ dàdà de, zhēn qíguài!",
+          "en": "Look at that animal; its mouth is so big. How odd!"
+        },
+        {
+          "who": "B",
+          "hz": "这种动物在很多国家都很有名。",
+          "py": "Zhè zhǒng dòngwù zài hěn duō guójiā dōu hěn yǒumíng.",
+          "en": "This kind of animal is famous in many countries."
+        },
+        {
+          "who": "A",
+          "hz": "关于它，你知道什么？",
+          "py": "Guānyú tā, nǐ zhīdào shénme?",
+          "en": "What do you know about it?"
+        },
+        {
+          "who": "B",
+          "hz": "我只知道它不但会游泳，而且很能吃。",
+          "py": "Wǒ zhǐ zhīdào tā búdàn huì yóu yǒng, érqiě hěn néng chī.",
+          "en": "I only know it can not only swim but also eats a lot."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What is odd about the animal?",
+          "options": [
+            "Its big mouth",
+            "Its long tail",
+            "Its small eyes",
+            "Its black hair"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What does B know about the animal?",
+          "options": [
+            "It swims and eats a lot",
+            "It only eats fruit",
+            "It lives in the city",
+            "It can fly"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "找新工作",
+      "py": "Zhǎo xīn gōngzuò",
+      "en": "Looking for a new job",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "我想找一个新工作，你有什么好办法吗？",
+          "py": "Wǒ xiǎng zhǎo yí ge xīn gōngzuò, nǐ yǒu shénme hǎo bànfǎ ma?",
+          "en": "I want a new job. Do you have any good ideas?"
+        },
+        {
+          "who": "B",
+          "hz": "你可以向你的邻居问问，他在一家有名的公司工作。",
+          "py": "Nǐ kěyǐ xiàng nǐ de línjū wènwen, tā zài yì jiā yǒumíng de gōngsī gōngzuò.",
+          "en": "You could ask your neighbour; he works at a famous company."
+        },
+        {
+          "who": "A",
+          "hz": "那家公司的机会多吗？",
+          "py": "Nà jiā gōngsī de jīhuì duō ma?",
+          "en": "Are there many opportunities at that company?"
+        },
+        {
+          "who": "B",
+          "hz": "只要你努力，就会有机会。",
+          "py": "Zhǐyào nǐ nǔlì, jiù huì yǒu jīhuì.",
+          "en": "As long as you work hard, you'll get chances."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Who works at a famous company?",
+          "options": [
+            "A's neighbour",
+            "A's teacher",
+            "B's brother",
+            "A's friend"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What does B say about opportunities?",
+          "options": [
+            "Work hard and you'll get them",
+            "There are none",
+            "They are too few",
+            "Ask the manager"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "只要……就……",
+      "en": "只要 A，就 B: as long as A, then B",
+      "drills": [
+        {
+          "q": "___你努力学习，就一定能学好汉语。",
+          "options": [
+            "只要",
+            "虽然",
+            "除了",
+            "可是"
+          ],
+          "answer": 0,
+          "en": "As long as you study hard, you will certainly learn Chinese well."
+        },
+        {
+          "q": "只要你有时间，我们___去旅游。",
+          "options": [
+            "就",
+            "才",
+            "但",
+            "却"
+          ],
+          "answer": 0,
+          "en": "As long as you have time, we'll go travelling."
+        },
+        {
+          "q": "只要天气好，我们___去公园玩儿。",
+          "options": [
+            "就",
+            "而",
+            "但",
+            "又"
+          ],
+          "answer": 0,
+          "en": "As long as the weather is good, we'll go and play in the park."
+        },
+        {
+          "q": "你___想来，什么时候都可以。",
+          "options": [
+            "只要",
+            "虽然",
+            "除了",
+            "关于"
+          ],
+          "answer": 0,
+          "en": "As long as you want to come, any time is fine."
+        },
+        {
+          "q": "他只要有空，___会来帮我。",
+          "options": [
+            "就",
+            "才",
+            "而",
+            "向"
+          ],
+          "answer": 0,
+          "en": "As long as he is free, he will come and help me."
+        },
+        {
+          "q": "只要你同意，我___去做。",
+          "options": [
+            "就",
+            "但",
+            "极",
+            "向"
+          ],
+          "answer": 0,
+          "en": "As long as you agree, I'll do it."
+        }
+      ]
+    },
+    {
+      "point": "关于",
+      "en": "关于 + noun: about, regarding",
+      "drills": [
+        {
+          "q": "我想看一本___中国历史的书。",
+          "options": [
+            "关于",
+            "向",
+            "跟",
+            "比"
+          ],
+          "answer": 0,
+          "en": "I'd like to read a book about Chinese history."
+        },
+        {
+          "q": "___这个问题，我们明天再说。",
+          "options": [
+            "关于",
+            "向",
+            "给",
+            "比"
+          ],
+          "answer": 0,
+          "en": "As for this question, let's talk tomorrow."
+        },
+        {
+          "q": "这是一部___动物的电影。",
+          "options": [
+            "关于",
+            "为了",
+            "向",
+            "从"
+          ],
+          "answer": 0,
+          "en": "This is a film about animals."
+        },
+        {
+          "q": "我有很多___学习汉语的问题。",
+          "options": [
+            "关于",
+            "向",
+            "把",
+            "被"
+          ],
+          "answer": 0,
+          "en": "I have a lot of questions about learning Chinese."
+        },
+        {
+          "q": "___旅游的事，你决定了吗？",
+          "options": [
+            "关于",
+            "向",
+            "跟",
+            "比"
+          ],
+          "answer": 0,
+          "en": "About the trip: have you decided?"
+        },
+        {
+          "q": "老师给我们讲了一个___世界各国文化的故事。",
+          "options": [
+            "关于",
+            "向",
+            "往",
+            "离"
+          ],
+          "answer": 0,
+          "en": "The teacher told us a story about the cultures of countries around the world."
+        }
+      ]
+    },
+    {
+      "point": "不但……而且……",
+      "en": "不但 A，而且 B: not only A but also B",
+      "drills": [
+        {
+          "q": "这个城市___很大，而且很漂亮。",
+          "options": [
+            "不但",
+            "虽然",
+            "如果",
+            "因为"
+          ],
+          "answer": 0,
+          "en": "This city is not only big but also beautiful."
+        },
+        {
+          "q": "他不但会唱歌，___会跳舞。",
+          "options": [
+            "而且",
+            "但是",
+            "所以",
+            "因为"
+          ],
+          "answer": 0,
+          "en": "He not only sings but also dances."
+        },
+        {
+          "q": "这家饭馆不但菜好吃，___服务员也很热情。",
+          "options": [
+            "而且",
+            "所以",
+            "或者",
+            "但是"
+          ],
+          "answer": 0,
+          "en": "At this restaurant not only is the food good, the waiters are friendly too."
+        },
+        {
+          "q": "这个城市不但冬天很冷，___夏天也很热。",
+          "options": [
+            "而且",
+            "但是",
+            "所以",
+            "如果"
+          ],
+          "answer": 0,
+          "en": "In this city it's not only cold in winter but hot in summer too."
+        },
+        {
+          "q": "我的邻居不但爱唱歌，而且___画画儿。",
+          "options": [
+            "爱",
+            "但",
+            "所以",
+            "虽然"
+          ],
+          "answer": 0,
+          "en": "My neighbour not only loves singing but also drawing."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你想向谁借钱？"
+          ],
+          [
+            "女",
+            "我想向我的邻居借。"
+          ]
+        ],
+        "q": "女的想向谁借钱？",
+        "options": [
+          "邻居",
+          "朋友",
+          "经理"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你为什么选择这个公司？"
+          ],
+          [
+            "女",
+            "因为它离我家很近，而且工作不太忙。"
+          ]
+        ],
+        "q": "女的为什么选择这个公司？",
+        "options": [
+          "离家近，工作不太忙",
+          "公司很有名",
+          "钱比较多"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "妈妈，我想买那只小狗。"
+          ],
+          [
+            "女",
+            "只要你自己照顾它，我就同意。"
+          ]
+        ],
+        "q": "妈妈怎么说？",
+        "options": [
+          "孩子照顾它就同意",
+          "不同意",
+          "她自己照顾"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "这个国家的冬天怎么样？"
+          ],
+          [
+            "女",
+            "很冷，不过夏天不太热。"
+          ]
+        ],
+        "q": "那个国家的夏天怎么样？",
+        "options": [
+          "不太热",
+          "很热",
+          "很冷"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "我相信只要努力，就一定能学好汉语。",
+        "claim": "他相信努力能学好汉语。",
+        "ok": true
+      },
+      {
+        "text": "那个城市不但很大，而且很漂亮，可是我不想去那儿工作。",
+        "claim": "他想去那个城市工作。",
+        "ok": false
+      },
+      {
+        "text": "我想向朋友借五万块钱买房子。",
+        "claim": "他想买房子。",
+        "ok": true
+      },
+      {
+        "text": "关于这件事，经理还没有决定，我们明天再问他。",
+        "claim": "经理已经决定了。",
+        "ok": false
+      }
+    ],
+    "replies": [
+      {
+        "q": "你为什么选择这个工作？",
+        "a": "因为这个机会很好。"
+      },
+      {
+        "q": "你同意我的看法吗？",
+        "a": "我同意。"
+      },
+      {
+        "q": "你相信他说的吗？",
+        "a": "我相信他。"
+      },
+      {
+        "q": "这个国家有什么特点？",
+        "a": "冬天很冷，夏天很热。"
+      }
+    ]
+  }
+}

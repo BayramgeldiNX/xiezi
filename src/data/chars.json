@@ -12969,5 +12969,1203 @@
       "撇",
       "捺"
     ]
+  },
+  "丽": {
+    "py": "lì",
+    "en": "beautiful",
+    "tip": "A bright, ornamental pair of horns on a deer-like shape: <b>beautiful</b>. Common in girls' names such as 小丽.",
+    "strokes": [
+      "横",
+      "竖",
+      "横折钩",
+      "点",
+      "竖",
+      "横折钩",
+      "点"
+    ]
+  },
+  "脚": {
+    "py": "jiǎo",
+    "en": "foot",
+    "tip": "月 (flesh, body) + 却 (to step back). The body part you step back with: the <b>foot</b>.",
+    "strokes": [
+      "撇",
+      "横折钩",
+      "横",
+      "横",
+      "横",
+      "竖",
+      "横",
+      "撇折",
+      "点",
+      "横折钩",
+      "竖"
+    ]
+  },
+  "其": {
+    "py": "qí",
+    "en": "his; that; (其实 actually)",
+    "tip": "An old picture of a winnowing basket, later borrowed as “that / its”. In 其实 it means <b>actually</b>.",
+    "strokes": [
+      "横",
+      "竖",
+      "竖",
+      "横",
+      "横",
+      "横",
+      "撇",
+      "点"
+    ]
+  },
+  "衫": {
+    "py": "shān",
+    "en": "upper garment",
+    "tip": "衤 (clothing) + 彡 (soft strokes, like hanging cloth). A piece of <b>clothing</b> for the top: 衬衫 shirt.",
+    "strokes": [
+      "点",
+      "横撇",
+      "竖",
+      "撇",
+      "点",
+      "撇",
+      "撇",
+      "撇"
+    ]
+  },
+  "绿": {
+    "py": "lǜ",
+    "en": "green",
+    "tip": "纟 (silk) + 录. Silk dyed the colour of fresh leaves: <b>green</b>.",
+    "strokes": [
+      "撇折",
+      "撇折",
+      "提",
+      "横折",
+      "横",
+      "横",
+      "竖钩",
+      "点",
+      "提",
+      "撇",
+      "点"
+    ]
+  },
+  "级": {
+    "py": "jí",
+    "en": "grade; level",
+    "tip": "纟 (silk thread) + 及 (to reach). Threads reaching one step after another: a <b>grade</b>, 年级.",
+    "strokes": [
+      "撇折",
+      "撇折",
+      "提",
+      "撇",
+      "横折折撇",
+      "捺"
+    ]
+  },
+  "总": {
+    "py": "zǒng",
+    "en": "always; in total",
+    "tip": "丷 + 口 + 心 (heart). Gathering all the heart's words together: <b>total</b>, <b>always</b>.",
+    "strokes": [
+      "点",
+      "撇",
+      "竖",
+      "横折",
+      "横",
+      "点",
+      "卧钩",
+      "点",
+      "点"
+    ]
+  },
+  "糕": {
+    "py": "āo",
+    "en": "cake",
+    "tip": "米 (rice) + 羔 (lamb). Soft rice-flour food: <b>cake</b>, 蛋糕 (egg cake).",
+    "strokes": [
+      "点",
+      "撇",
+      "横",
+      "竖",
+      "撇",
+      "点",
+      "点",
+      "撇",
+      "横",
+      "横",
+      "竖",
+      "横",
+      "点",
+      "点",
+      "点",
+      "点"
+    ]
+  },
+  "轻": {
+    "py": "qīng",
+    "en": "light",
+    "tip": "车 (vehicle) + 又 over 工. A cart with little load: <b>light</b>. 年轻 = young.",
+    "strokes": [
+      "横",
+      "撇折",
+      "竖",
+      "提",
+      "横撇",
+      "捺",
+      "横",
+      "竖",
+      "横"
+    ]
+  },
+  "季": {
+    "py": "jì",
+    "en": "season; the youngest",
+    "tip": "禾 (grain) + 子 (child). The young shoots of grain: the <b>seasons</b> of the farming year.",
+    "strokes": [
+      "撇",
+      "横",
+      "竖",
+      "撇",
+      "点",
+      "横撇",
+      "弯钩",
+      "横"
+    ]
+  },
+  "节": {
+    "py": "jié",
+    "en": "festival; section",
+    "tip": "艹 (grass) + 卩 (a joint). A joint on a plant stem: a <b>section</b>, so a season or festival: 季节.",
+    "strokes": [
+      "横",
+      "竖",
+      "竖",
+      "横折钩",
+      "竖"
+    ]
+  },
+  "草": {
+    "py": "cǎo",
+    "en": "grass",
+    "tip": "艹 (grass) + 早 (early). The green that comes up early in spring: <b>grass</b>.",
+    "strokes": [
+      "横",
+      "竖",
+      "竖",
+      "竖",
+      "横折",
+      "横",
+      "横",
+      "横",
+      "竖"
+    ]
+  },
+  "越": {
+    "py": "yuè",
+    "en": "to exceed; the more",
+    "tip": "走 (to walk) + 戉 (axe). Striding over something: to <b>exceed</b>. 越来越 = more and more.",
+    "strokes": [
+      "横",
+      "竖",
+      "横",
+      "竖",
+      "横",
+      "撇",
+      "捺",
+      "横",
+      "竖提",
+      "斜钩",
+      "撇",
+      "点"
+    ]
+  },
+  "突": {
+    "py": "tū",
+    "en": "suddenly; to dash",
+    "tip": "穴 (a hole) + 犬 (dog). A dog bursting out of a hole: <b>suddenly</b>.",
+    "strokes": [
+      "点",
+      "点",
+      "横钩",
+      "撇",
+      "点",
+      "横",
+      "撇",
+      "捺",
+      "点"
+    ]
+  },
+  "锻": {
+    "py": "duàn",
+    "en": "to forge",
+    "tip": "钅 (metal) + 段. Hammering metal piece by piece: to <b>forge</b>; 锻炼 = to train the body.",
+    "strokes": [
+      "撇",
+      "横",
+      "横",
+      "横",
+      "竖提",
+      "撇",
+      "竖",
+      "横",
+      "横",
+      "提",
+      "撇",
+      "横折弯",
+      "横撇",
+      "捺"
+    ]
+  },
+  "炼": {
+    "py": "liàn",
+    "en": "to refine; to train",
+    "tip": "火 (fire) + 东. Metal refined in fire: to <b>refine</b>, to <b>train</b>.",
+    "strokes": [
+      "点",
+      "撇",
+      "撇",
+      "点",
+      "横",
+      "竖折",
+      "横折钩",
+      "撇",
+      "点"
+    ]
+  },
+  "满": {
+    "py": "mǎn",
+    "en": "full; satisfied",
+    "tip": "氵 (water) + 艹 + 两 (a pair, here a balanced shape): water up to the brim, <b>full</b>, so you feel <b>satisfied</b>.",
+    "strokes": [
+      "点",
+      "点",
+      "提",
+      "横",
+      "竖",
+      "竖",
+      "横",
+      "竖",
+      "横折钩",
+      "撇",
+      "点",
+      "撇",
+      "点"
+    ]
+  },
+  "层": {
+    "py": "céng",
+    "en": "floor; layer",
+    "tip": "尸 (a roof-like cover) over 云 (cloud): roofs stacked one on another, the <b>floors</b> of a building.",
+    "strokes": [
+      "横折",
+      "横",
+      "撇",
+      "横",
+      "横",
+      "撇折",
+      "点"
+    ]
+  },
+  "害": {
+    "py": "hài",
+    "en": "to harm; to fear",
+    "tip": "宀 (roof) over a messy tangle: trouble at home. Something that <b>harms</b> you makes you <b>afraid</b>.",
+    "strokes": [
+      "点",
+      "点",
+      "横钩",
+      "横",
+      "横",
+      "竖",
+      "横",
+      "竖",
+      "横折",
+      "横"
+    ]
+  },
+  "乎": {
+    "py": "hū",
+    "en": "(particle); almost",
+    "tip": "A breath rising up with a light stroke on top: a small puff, like <b>almost</b>, in 几乎.",
+    "strokes": [
+      "撇",
+      "点",
+      "撇",
+      "横",
+      "竖钩"
+    ]
+  },
+  "变": {
+    "py": "biàn",
+    "en": "to change",
+    "tip": "亦 on top and 又 (again) below: 又 shows up again and again as things <b>change</b>.",
+    "strokes": [
+      "点",
+      "横",
+      "竖",
+      "竖",
+      "撇",
+      "点",
+      "横撇",
+      "捺"
+    ]
+  },
+  "健": {
+    "py": "jiàn",
+    "en": "healthy; strong",
+    "tip": "亻 (person) + 建 (to build): a person who is built up is <b>strong</b>.",
+    "strokes": [
+      "撇",
+      "竖",
+      "横折",
+      "横",
+      "横",
+      "横",
+      "横",
+      "竖",
+      "横折折撇",
+      "捺"
+    ]
+  },
+  "康": {
+    "py": "kāng",
+    "en": "healthy; peaceful",
+    "tip": "A house-like shape over 水 (water) with legs: a well-supplied home keeps you <b>healthy</b>.",
+    "strokes": [
+      "点",
+      "横",
+      "撇",
+      "横折",
+      "横",
+      "横",
+      "竖钩",
+      "点",
+      "提",
+      "撇",
+      "点"
+    ]
+  },
+  "解": {
+    "py": "jiě",
+    "en": "to untie; to explain",
+    "tip": "角 (horn) + 刀 (knife) + 牛 (ox): cutting an ox apart piece by piece. Taking things apart is how you <b>understand</b> them.",
+    "strokes": [
+      "撇",
+      "横撇",
+      "撇",
+      "横折钩",
+      "横",
+      "横",
+      "竖",
+      "横折钩",
+      "撇",
+      "撇",
+      "横",
+      "横",
+      "竖"
+    ]
+  },
+  "参": {
+    "py": "cān",
+    "en": "to take part",
+    "tip": "A figure with three bright dots above: you stand under the stars and <b>join in</b>.",
+    "strokes": [
+      "撇折",
+      "点",
+      "横",
+      "撇",
+      "捺",
+      "撇",
+      "撇",
+      "撇"
+    ]
+  },
+  "加": {
+    "py": "jiā",
+    "en": "to add",
+    "tip": "力 (strength) + 口 (mouth): lending your strength and your voice. <b>Adding</b> to the group.",
+    "strokes": [
+      "横折钩",
+      "撇",
+      "竖",
+      "横折",
+      "横"
+    ]
+  },
+  "响": {
+    "py": "xiǎng",
+    "en": "to sound; to affect",
+    "tip": "口 (mouth) + 向 (towards): a sound heading toward you. A sound <b>affects</b> everyone it reaches.",
+    "strokes": [
+      "竖",
+      "横折",
+      "横",
+      "撇",
+      "竖",
+      "横折钩",
+      "竖",
+      "横折",
+      "横"
+    ]
+  },
+  "矮": {
+    "py": "ǎi",
+    "en": "short",
+    "tip": "矢 (arrow) + 委 (to leave to): a short arrow's length. Small in stature: <b>short</b>.",
+    "strokes": [
+      "撇",
+      "横",
+      "横",
+      "撇",
+      "点",
+      "撇",
+      "横",
+      "竖",
+      "撇",
+      "点",
+      "撇点",
+      "撇",
+      "横"
+    ]
+  },
+  "历": {
+    "py": "lì",
+    "en": "history; to pass through",
+    "tip": "厂 (cliff) with 力 (strength) inside: strength spent over the years that have <b>passed</b>.",
+    "strokes": [
+      "横",
+      "撇",
+      "横折钩",
+      "撇"
+    ]
+  },
+  "史": {
+    "py": "shǐ",
+    "en": "history; records",
+    "tip": "Picture a hand holding up a box of records: the keeper of <b>history</b>.",
+    "strokes": [
+      "竖",
+      "横折",
+      "横",
+      "撇",
+      "捺"
+    ]
+  },
+  "环": {
+    "py": "huán",
+    "en": "ring; to surround",
+    "tip": "王 (jade) + 不: a jade <b>ring</b> that goes all the way round.",
+    "strokes": [
+      "横",
+      "横",
+      "竖",
+      "提",
+      "横",
+      "撇",
+      "竖",
+      "点"
+    ]
+  },
+  "境": {
+    "py": "jìng",
+    "en": "border; condition",
+    "tip": "土 (earth) + 竟 (to finish): where the land ends, a <b>border</b>; surroundings.",
+    "strokes": [
+      "横",
+      "竖",
+      "提",
+      "点",
+      "横",
+      "点",
+      "撇",
+      "横",
+      "竖",
+      "横折",
+      "横",
+      "横",
+      "撇",
+      "竖弯钩"
+    ]
+  },
+  "筷": {
+    "py": "kuài",
+    "en": "chopsticks",
+    "tip": "⺮ (bamboo) + 快 (fast): bamboo sticks that help you eat <b>fast</b>.",
+    "strokes": [
+      "撇",
+      "横",
+      "点",
+      "撇",
+      "横",
+      "点",
+      "点",
+      "点",
+      "竖",
+      "横折",
+      "横",
+      "撇",
+      "捺"
+    ]
+  },
+  "惯": {
+    "py": "guàn",
+    "en": "to be used to",
+    "tip": "忄 (heart) + 贯 (to go through): your heart goes through the same thing again and again until you are <b>used to</b> it.",
+    "strokes": [
+      "点",
+      "点",
+      "竖",
+      "横折",
+      "竖",
+      "横",
+      "横",
+      "竖",
+      "横折",
+      "撇",
+      "点"
+    ]
+  },
+  "阳": {
+    "py": "yáng",
+    "en": "sun; bright side",
+    "tip": "阝 (hill) + 日 (sun): the sunny side of a hill, the <b>sun</b>.",
+    "strokes": [
+      "横撇弯钩",
+      "竖",
+      "竖",
+      "横折",
+      "横",
+      "横"
+    ]
+  },
+  "需": {
+    "py": "xū",
+    "en": "to need",
+    "tip": "雨 (rain) over 而: someone waiting in the rain, <b>needing</b> shelter.",
+    "strokes": [
+      "横",
+      "点",
+      "横钩",
+      "竖",
+      "点",
+      "点",
+      "点",
+      "点",
+      "横",
+      "撇",
+      "竖",
+      "横折钩",
+      "竖",
+      "竖"
+    ]
+  },
+  "终": {
+    "py": "zhōng",
+    "en": "end; finally",
+    "tip": "纟 (silk thread) + 冬 (winter): the end of the thread, the end of the year. <b>Finally</b>.",
+    "strokes": [
+      "撇折",
+      "撇折",
+      "提",
+      "撇",
+      "横撇",
+      "捺",
+      "点",
+      "点"
+    ]
+  },
+  "于": {
+    "py": "yú",
+    "en": "at; in; to",
+    "tip": "A plain stroke shape that marks a place: read as a small word meaning <b>at</b> or <b>in</b>, as in 终于.",
+    "strokes": [
+      "横",
+      "横",
+      "竖钩"
+    ]
+  },
+  "遇": {
+    "py": "yù",
+    "en": "to meet",
+    "tip": "辶 (walk) + 禺: you are walking along and <b>meet</b> someone by chance.",
+    "strokes": [
+      "竖",
+      "横折",
+      "横",
+      "横",
+      "竖",
+      "横折钩",
+      "竖",
+      "撇折",
+      "点",
+      "点",
+      "横折折撇",
+      "捺"
+    ]
+  },
+  "般": {
+    "py": "bān",
+    "en": "sort; kind",
+    "tip": "舟 (boat) + 殳 (to hit with a stick): paddling a boat the usual way. An <b>ordinary</b> kind of thing, as in 一般.",
+    "strokes": [
+      "撇",
+      "竖",
+      "横折钩",
+      "点",
+      "横",
+      "点",
+      "撇",
+      "横折弯",
+      "横撇",
+      "捺"
+    ]
+  },
+  "净": {
+    "py": "jìng",
+    "en": "clean; pure",
+    "tip": "冫 (ice) + 争 (to compete): ice is clear and <b>clean</b>.",
+    "strokes": [
+      "点",
+      "提",
+      "撇",
+      "横撇",
+      "横折",
+      "横",
+      "横",
+      "竖钩"
+    ]
+  },
+  "目": {
+    "py": "mù",
+    "en": "eye; item",
+    "tip": "A drawing of an eye turned on its side: <b>eye</b>. A list of <b>items</b>, as in 节目.",
+    "strokes": [
+      "竖",
+      "横折",
+      "横",
+      "横",
+      "横"
+    ]
+  },
+  "盘": {
+    "py": "pán",
+    "en": "plate; tray",
+    "tip": "舟 (boat) + 皿 (dish): a flat dish like a small boat, a <b>plate</b>.",
+    "strokes": [
+      "撇",
+      "竖",
+      "横折钩",
+      "点",
+      "横",
+      "点",
+      "竖",
+      "横折",
+      "竖",
+      "竖",
+      "横"
+    ]
+  },
+  "叔": {
+    "py": "shū",
+    "en": "uncle",
+    "tip": "又 (hand) + 尗 (a small bean): a younger man of the family, <b>uncle</b>.",
+    "strokes": [
+      "竖",
+      "横",
+      "横",
+      "竖钩",
+      "撇",
+      "点",
+      "横撇",
+      "捺"
+    ]
+  },
+  "阿": {
+    "py": "ā",
+    "en": "(prefix); hill",
+    "tip": "阝 (hill) + 可: used in 阿姨 as an affectionate prefix, <b>auntie</b>.",
+    "strokes": [
+      "横撇弯钩",
+      "竖",
+      "横",
+      "竖",
+      "横折",
+      "横",
+      "竖钩"
+    ]
+  },
+  "姨": {
+    "py": "yí",
+    "en": "aunt",
+    "tip": "女 (woman) + 夷 (calm, level): a woman of mother's family, <b>auntie</b>.",
+    "strokes": [
+      "撇点",
+      "撇",
+      "横",
+      "横",
+      "横折",
+      "横",
+      "竖折折钩",
+      "撇",
+      "捺"
+    ]
+  },
+  "故": {
+    "py": "gù",
+    "en": "reason; old",
+    "tip": "古 (old) + 攵 (to tap): an <b>old</b> thing that was done, a <b>story</b> with a <b>reason</b>.",
+    "strokes": [
+      "横",
+      "竖",
+      "竖",
+      "横折",
+      "横",
+      "撇",
+      "横",
+      "撇",
+      "捺"
+    ]
+  },
+  "蕉": {
+    "py": "jiāo",
+    "en": "banana; plantain",
+    "tip": "⺾ (plant) + 焦 (scorched, yellow): a yellow-brown plant, the <b>banana</b>.",
+    "strokes": [
+      "横",
+      "竖",
+      "竖",
+      "撇",
+      "竖",
+      "点",
+      "横",
+      "横",
+      "横",
+      "竖",
+      "横",
+      "点",
+      "点",
+      "点",
+      "点"
+    ]
+  },
+  "求": {
+    "py": "qiú",
+    "en": "to ask for; to seek",
+    "tip": "Once a drawing of a fur coat; now borrowed to mean <b>ask for</b>. A dot on top, then 水 below: reach out and <b>seek</b>.",
+    "strokes": [
+      "横",
+      "竖钩",
+      "点",
+      "提",
+      "撇",
+      "捺",
+      "点"
+    ]
+  },
+  "注": {
+    "py": "zhù",
+    "en": "to pay attention; to pour",
+    "tip": "氵 (water) + 主 (the master). Pouring water steadily, you <b>focus</b> on it.",
+    "strokes": [
+      "点",
+      "点",
+      "提",
+      "点",
+      "横",
+      "横",
+      "竖",
+      "横"
+    ]
+  },
+  "云": {
+    "py": "yún",
+    "en": "cloud",
+    "tip": "A cloud curling in the sky, with 二 as the sky layers: a <b>cloud</b>.",
+    "strokes": [
+      "横",
+      "横",
+      "撇折",
+      "点"
+    ]
+  },
+  "闻": {
+    "py": "wén",
+    "en": "news; to hear",
+    "tip": "门 (door) + 耳 (ear). An ear at the door picks up the <b>news</b>.",
+    "strokes": [
+      "点",
+      "竖",
+      "横折钩",
+      "横",
+      "竖",
+      "竖",
+      "横",
+      "横",
+      "横"
+    ]
+  },
+  "世": {
+    "py": "shì",
+    "en": "world; generation",
+    "tip": "Three tens joined: thirty years make a <b>generation</b>, the <b>world</b> of its time.",
+    "strokes": [
+      "横",
+      "竖",
+      "竖",
+      "横",
+      "竖折"
+    ]
+  },
+  "界": {
+    "py": "jiè",
+    "en": "boundary; world",
+    "tip": "田 (field) + 介 (between). The line between fields is a <b>boundary</b>; 世界 is the whole <b>world</b>.",
+    "strokes": [
+      "竖",
+      "横折",
+      "横",
+      "竖",
+      "横",
+      "撇",
+      "捺",
+      "撇",
+      "竖"
+    ]
+  },
+  "皮": {
+    "py": "pí",
+    "en": "skin; leather",
+    "tip": "A hand (又) peeling the hide off an animal: <b>skin</b>, <b>leather</b>.",
+    "strokes": [
+      "横钩",
+      "撇",
+      "竖",
+      "横撇",
+      "捺"
+    ]
+  },
+  "鼻": {
+    "py": "bí",
+    "en": "nose",
+    "tip": "自 (self) on top, since people pointed at the nose for \"me\", plus 畀 below: the <b>nose</b>.",
+    "strokes": [
+      "撇",
+      "竖",
+      "横折",
+      "横",
+      "横",
+      "横",
+      "竖",
+      "横折",
+      "横",
+      "竖",
+      "横",
+      "横",
+      "撇",
+      "竖"
+    ]
+  },
+  "查": {
+    "py": "chá",
+    "en": "to check",
+    "tip": "木 (tree) over 旦 (dawn): look the tree over in the first light, <b>check</b> it.",
+    "strokes": [
+      "横",
+      "竖",
+      "撇",
+      "点",
+      "竖",
+      "横折",
+      "横",
+      "横",
+      "横"
+    ]
+  },
+  "刷": {
+    "py": "shuā",
+    "en": "to brush",
+    "tip": "尸 + 巾 (cloth) + 刂 (knife): a tool with a handle for <b>brushing</b>.",
+    "strokes": [
+      "横折",
+      "横",
+      "撇",
+      "竖",
+      "横折钩",
+      "竖",
+      "竖",
+      "竖钩"
+    ]
+  },
+  "牙": {
+    "py": "yá",
+    "en": "tooth",
+    "tip": "Two interlocking teeth drawn as a zigzag: a <b>tooth</b>.",
+    "strokes": [
+      "横",
+      "竖折",
+      "竖钩",
+      "撇"
+    ]
+  },
+  "决": {
+    "py": "jué",
+    "en": "to decide",
+    "tip": "冫 + 夬 (to break open). The old form had 氵 (water): water bursting through a dyke, a clean break, so to <b>decide</b>.",
+    "strokes": [
+      "点",
+      "提",
+      "横折",
+      "横",
+      "撇",
+      "捺"
+    ]
+  },
+  "选": {
+    "py": "xuǎn",
+    "en": "to choose",
+    "tip": "先 (first) over 辶 (walk): walk on and pick who goes first, to <b>choose</b>.",
+    "strokes": [
+      "撇",
+      "横",
+      "竖",
+      "横",
+      "撇",
+      "竖弯钩",
+      "点",
+      "横折折撇",
+      "捺"
+    ]
+  },
+  "择": {
+    "py": "zé",
+    "en": "to select",
+    "tip": "扌 (hand) + 圣-like part: a hand picking out the best, to <b>select</b>.",
+    "strokes": [
+      "横",
+      "竖钩",
+      "提",
+      "横撇",
+      "点",
+      "横",
+      "横",
+      "竖"
+    ]
+  },
+  "必": {
+    "py": "bì",
+    "en": "must",
+    "tip": "Looks like 心 (heart) with a slash through it: the heart is set, so you <b>must</b>.",
+    "strokes": [
+      "点",
+      "卧钩",
+      "点",
+      "撇",
+      "点"
+    ]
+  },
+  "须": {
+    "py": "xū",
+    "en": "must; to need",
+    "tip": "彡 (hair) + 页 (head): a beard on the head, and you \"<b>need</b>\" a shave.",
+    "strokes": [
+      "撇",
+      "撇",
+      "撇",
+      "横",
+      "撇",
+      "竖",
+      "横折",
+      "撇",
+      "点"
+    ]
+  },
+  "根": {
+    "py": "gēn",
+    "en": "root",
+    "tip": "木 (tree) + 艮: what holds the tree down, the <b>root</b>; 根据 means to <b>base on</b>.",
+    "strokes": [
+      "横",
+      "竖",
+      "撇",
+      "点",
+      "横折",
+      "横",
+      "横",
+      "竖提",
+      "撇",
+      "捺"
+    ]
+  },
+  "据": {
+    "py": "jù",
+    "en": "according to",
+    "tip": "扌 (hand) + 居 (to dwell): a hand holding on to a place, to <b>rely on</b>.",
+    "strokes": [
+      "横",
+      "竖钩",
+      "提",
+      "横折",
+      "横",
+      "撇",
+      "横",
+      "竖",
+      "竖",
+      "横折",
+      "横"
+    ]
+  },
+  "况": {
+    "py": "kuàng",
+    "en": "situation",
+    "tip": "冫 (ice) + 兄 (elder brother): a cold, bare <b>situation</b>.",
+    "strokes": [
+      "点",
+      "提",
+      "竖",
+      "横折",
+      "横",
+      "撇",
+      "竖弯钩"
+    ]
+  },
+  "段": {
+    "py": "duàn",
+    "en": "section; period",
+    "tip": "A hand (殳) striking a piece off a block: a <b>section</b> cut out, a <b>period</b> of time.",
+    "strokes": [
+      "撇",
+      "竖",
+      "横",
+      "横",
+      "提",
+      "撇",
+      "横折弯",
+      "横撇",
+      "捺"
+    ]
+  },
+  "而": {
+    "py": "ér",
+    "en": "and yet; and",
+    "tip": "A beard hanging down on a face: two things linked in a row, so <b>and</b> / <b>yet</b>.",
+    "strokes": [
+      "横",
+      "撇",
+      "竖",
+      "横折钩",
+      "竖",
+      "竖"
+    ]
+  },
+  "且": {
+    "py": "qiě",
+    "en": "moreover; and",
+    "tip": "A stack of offerings on a table, piling one upon another: <b>moreover</b>.",
+    "strokes": [
+      "竖",
+      "横折",
+      "横",
+      "横",
+      "横"
+    ]
+  },
+  "奇": {
+    "py": "qí",
+    "en": "strange",
+    "tip": "大 (big) over 可 (can): a man doing something big and unusual, so <b>strange</b>.",
+    "strokes": [
+      "横",
+      "撇",
+      "点",
+      "横",
+      "竖",
+      "横折",
+      "横",
+      "竖钩"
+    ]
+  },
+  "怪": {
+    "py": "guài",
+    "en": "strange; to blame",
+    "tip": "忄 (heart) + 圣-like part: the heart feels uneasy, so <b>strange</b>, to <b>blame</b>.",
+    "strokes": [
+      "点",
+      "点",
+      "竖",
+      "横撇",
+      "点",
+      "横",
+      "竖",
+      "横"
+    ]
+  },
+  "耳": {
+    "py": "ěr",
+    "en": "ear",
+    "tip": "A drawing of an ear with its curl: the <b>ear</b>.",
+    "strokes": [
+      "横",
+      "竖",
+      "竖",
+      "横",
+      "横",
+      "横"
+    ]
+  },
+  "朵": {
+    "py": "duo",
+    "en": "(flower; ear)",
+    "tip": "几 over 木 (tree): a bloom hanging from a branch; 耳朵 is the <b>ear</b>, a flower on the side of the head.",
+    "strokes": [
+      "撇",
+      "横折弯",
+      "横",
+      "竖",
+      "撇",
+      "点"
+    ]
+  },
+  "鸟": {
+    "py": "niǎo",
+    "en": "bird",
+    "tip": "A bird with head, eye and tail feathers: a <b>bird</b>.",
+    "strokes": [
+      "撇",
+      "横折钩",
+      "点",
+      "竖折折钩",
+      "横"
+    ]
+  },
+  "黄": {
+    "py": "huáng",
+    "en": "yellow",
+    "tip": "A lid on top, 由 (a field) in the middle and 八 at the foot: picture a field of yellow earth, the <b>yellow</b> of 黄河.",
+    "strokes": [
+      "横",
+      "竖",
+      "竖",
+      "横",
+      "竖",
+      "横折",
+      "横",
+      "竖",
+      "横",
+      "撇",
+      "点"
+    ]
+  },
+  "卡": {
+    "py": "kǎ",
+    "en": "card",
+    "tip": "上 and 下 stacked: a thing that sticks between up and down, a <b>card</b> that gets swiped.",
+    "strokes": [
+      "竖",
+      "横",
+      "横",
+      "竖",
+      "点"
+    ]
   }
 }

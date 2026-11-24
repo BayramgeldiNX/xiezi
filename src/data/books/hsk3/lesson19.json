@@ -1,0 +1,526 @@
+{
+  "n": 19,
+  "cn": "第十九课",
+  "title": "你没看出来吗",
+  "en": "Couldn't you tell?",
+  "words": [
+    {
+      "w": "耳朵",
+      "py": "ěrduo",
+      "en": "ear",
+      "ex": {
+        "hz": "小狗的耳朵很长。",
+        "py": "Xiǎo gǒu de ěrduo hěn cháng.",
+        "en": "The puppy's ears are long."
+      }
+    },
+    {
+      "w": "脸",
+      "py": "liǎn",
+      "en": "face",
+      "ex": {
+        "hz": "她的脸红红的。",
+        "py": "Tā de liǎn hónghóng de.",
+        "en": "Her face is red."
+      }
+    },
+    {
+      "w": "短",
+      "py": "duǎn",
+      "en": "short",
+      "ex": {
+        "hz": "他的头发很短。",
+        "py": "Tā de tóufa hěn duǎn.",
+        "en": "His hair is very short."
+      }
+    },
+    {
+      "w": "马",
+      "py": "mǎ",
+      "en": "horse",
+      "ex": {
+        "hz": "我在草地上看见一匹白马。",
+        "py": "Wǒ zài cǎodì shang kànjiàn yì pǐ bái mǎ.",
+        "en": "I saw a white horse on the grass."
+      }
+    },
+    {
+      "w": "张",
+      "py": "zhāng",
+      "en": "(measure word for flat things such as paper or photos)",
+      "ex": {
+        "hz": "请给我两张纸。",
+        "py": "Qǐng gěi wǒ liǎng zhāng zhǐ.",
+        "en": "Please give me two sheets of paper."
+      }
+    },
+    {
+      "w": "位",
+      "py": "wèi",
+      "en": "(polite measure word for people)",
+      "ex": {
+        "hz": "这位是我的老师。",
+        "py": "Zhè wèi shì wǒ de lǎoshī.",
+        "en": "This is my teacher."
+      }
+    },
+    {
+      "w": "蓝",
+      "py": "lán",
+      "en": "blue",
+      "ex": {
+        "hz": "天空蓝蓝的，真漂亮。",
+        "py": "Tiānkōng lánlán de, zhēn piàoliang.",
+        "en": "The sky is so blue, really beautiful."
+      }
+    },
+    {
+      "w": "秋天",
+      "py": "qiūtiān",
+      "en": "autumn; fall",
+      "ex": {
+        "hz": "北京的秋天不冷也不热。",
+        "py": "Běijīng de qiūtiān bù lěng yě bú rè.",
+        "en": "Autumn in Beijing is neither cold nor hot."
+      }
+    },
+    {
+      "w": "过",
+      "py": "guò",
+      "en": "to spend (time); to celebrate (also: to pass)",
+      "ex": {
+        "hz": "时间过得真快。",
+        "py": "Shíjiān guò de zhēn kuài.",
+        "en": "Time passes so quickly."
+      }
+    },
+    {
+      "w": "鸟",
+      "py": "niǎo",
+      "en": "bird",
+      "ex": {
+        "hz": "树上有两只鸟。",
+        "py": "Shù shang yǒu liǎng zhī niǎo.",
+        "en": "There are two birds in the tree."
+      }
+    },
+    {
+      "w": "哭",
+      "py": "kū",
+      "en": "to cry",
+      "ex": {
+        "hz": "小孩子饿了就会哭。",
+        "py": "Xiǎo háizi è le jiù huì kū.",
+        "en": "A small child cries when he is hungry."
+      }
+    },
+    {
+      "w": "黄河",
+      "py": "Huáng Hé",
+      "en": "the Yellow River",
+      "ex": {
+        "hz": "黄河是中国很有名的大河。",
+        "py": "Huáng Hé shì Zhōngguó hěn yǒumíng de dà hé.",
+        "en": "The Yellow River is a very famous big river in China."
+      }
+    },
+    {
+      "w": "船",
+      "py": "chuán",
+      "en": "boat; ship",
+      "ex": {
+        "hz": "我们坐船去那个小城市。",
+        "py": "Wǒmen zuò chuán qù nàge xiǎo chéngshì.",
+        "en": "We're taking a boat to that small town."
+      }
+    },
+    {
+      "w": "经过",
+      "py": "jīngguò",
+      "en": "to pass by; to go through",
+      "ex": {
+        "hz": "去学校要经过一家商店。",
+        "py": "Qù xuéxiào yào jīngguò yì jiā shāngdiàn.",
+        "en": "On the way to school you pass a shop."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "爷爷的照片",
+      "py": "Yéye de zhàopiàn",
+      "en": "Grandpa's photo",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "这张照片上的人是谁？",
+          "py": "Zhè zhāng zhàopiàn shang de rén shì shéi?",
+          "en": "Who is the person in this photo?"
+        },
+        {
+          "who": "B",
+          "hz": "是我爷爷，那时候他才二十岁。",
+          "py": "Shì wǒ yéye, nà shíhou tā cái èrshí suì.",
+          "en": "It's my grandpa; he was only twenty then."
+        },
+        {
+          "who": "A",
+          "hz": "真看不出来！他的脸跟你一样，耳朵也很像。",
+          "py": "Zhēn kàn bu chūlai! Tā de liǎn gēn nǐ yíyàng, ěrduo yě hěn xiàng.",
+          "en": "I'd never have guessed! His face is just like yours, and the ears are alike too."
+        },
+        {
+          "who": "B",
+          "hz": "大家都这么说。这张照片是在黄河边上照的。",
+          "py": "Dàjiā dōu zhème shuō. Zhè zhāng zhàopiàn shì zài Huáng Hé biān shang zhào de.",
+          "en": "Everyone says so. This photo was taken by the Yellow River."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Who is in the photo?",
+          "options": [
+            "B's grandpa",
+            "B's father",
+            "B",
+            "B's teacher"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Where was the photo taken?",
+          "options": [
+            "By the Yellow River",
+            "At school",
+            "On a boat",
+            "At home"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "坐船",
+      "py": "Zuò chuán",
+      "en": "Taking a boat",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "我们明天坐船去玩儿吧。",
+          "py": "Wǒmen míngtiān zuò chuán qù wánr ba.",
+          "en": "Let's take a boat trip tomorrow."
+        },
+        {
+          "who": "B",
+          "hz": "好啊，船上可以看到很多鸟。",
+          "py": "Hǎo a, chuán shang kěyǐ kàndào hěn duō niǎo.",
+          "en": "Great, you can see lots of birds from the boat."
+        },
+        {
+          "who": "A",
+          "hz": "经过黄河的时候，我们可以多照几张相。",
+          "py": "Jīngguò Huáng Hé de shíhou, wǒmen kěyǐ duō zhào jǐ zhāng xiàng.",
+          "en": "When we pass the Yellow River, we can take a few more photos."
+        },
+        {
+          "who": "B",
+          "hz": "照片洗出来以后，我给你几张。",
+          "py": "Zhàopiàn xǐ chūlai yǐhòu, wǒ gěi nǐ jǐ zhāng.",
+          "en": "After the photos are printed, I'll give you a few."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How will they travel?",
+          "options": [
+            "By boat",
+            "By horse",
+            "By train",
+            "By bike"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What will B do after the photos are printed?",
+          "options": [
+            "Give A a few",
+            "Send them to the teacher",
+            "Keep them all",
+            "Buy a frame"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "Direction complements with extended meanings",
+      "en": "出来 / 下来 / 起来 / 上去: extended meanings of direction complements",
+      "drills": [
+        {
+          "q": "这个字太难，我写不___。",
+          "options": [
+            "出来",
+            "过去",
+            "回去",
+            "进去"
+          ],
+          "answer": 0,
+          "en": "This character is too hard; I can't write it out."
+        },
+        {
+          "q": "电话里的人是谁，你听___了吗？",
+          "options": [
+            "出来",
+            "回来",
+            "进去",
+            "起去"
+          ],
+          "answer": 0,
+          "en": "Could you tell who was on the phone?"
+        },
+        {
+          "q": "他把这个电话号码记___了。",
+          "options": [
+            "下来",
+            "出来",
+            "过来",
+            "回去"
+          ],
+          "answer": 0,
+          "en": "He noted the phone number down."
+        },
+        {
+          "q": "我终于想___她是谁了，她是我的小学同学。",
+          "options": [
+            "起来",
+            "下来",
+            "回去",
+            "上去"
+          ],
+          "answer": 0,
+          "en": "At last I remembered who she is: my primary school classmate."
+        },
+        {
+          "q": "这件蓝衣服___很漂亮。",
+          "options": [
+            "看上去",
+            "看出来",
+            "看下来",
+            "看过去"
+          ],
+          "answer": 0,
+          "en": "This blue piece of clothing looks very pretty."
+        },
+        {
+          "q": "老师一进教室，学生们就安静___了。",
+          "options": [
+            "下来",
+            "出来",
+            "上去",
+            "回来"
+          ],
+          "answer": 0,
+          "en": "As soon as the teacher came into the classroom, the students quietened down."
+        }
+      ]
+    },
+    {
+      "point": "使 / 叫 / 让",
+      "en": "使 / 叫 / 让 + person + verb phrase: to make someone …",
+      "drills": [
+        {
+          "q": "每天跑步___我的身体越来越好。",
+          "options": [
+            "使",
+            "把",
+            "被",
+            "对"
+          ],
+          "answer": 0,
+          "en": "Running every day makes me healthier and healthier."
+        },
+        {
+          "q": "这个好消息___大家都很高兴。",
+          "options": [
+            "让",
+            "把",
+            "向",
+            "对"
+          ],
+          "answer": 0,
+          "en": "This good news made everyone happy."
+        },
+        {
+          "q": "你___他快点儿来。",
+          "options": [
+            "叫",
+            "把",
+            "对",
+            "向"
+          ],
+          "answer": 0,
+          "en": "Tell him to come quickly."
+        },
+        {
+          "q": "老师常常___我们多听多说。",
+          "options": [
+            "让",
+            "对",
+            "把",
+            "比"
+          ],
+          "answer": 0,
+          "en": "The teacher often has us listen and speak more."
+        },
+        {
+          "q": "这条蓝裙子___她看上去更年轻。",
+          "options": [
+            "使",
+            "把",
+            "向",
+            "对"
+          ],
+          "answer": 0,
+          "en": "This blue skirt makes her look younger."
+        },
+        {
+          "q": "晚上喝咖啡会___我睡不着。",
+          "options": [
+            "让",
+            "把",
+            "给",
+            "比"
+          ],
+          "answer": 0,
+          "en": "Drinking coffee in the evening keeps me awake."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你的头发怎么这么短？"
+          ],
+          [
+            "女",
+            "夏天太热了，短一点儿舒服。"
+          ]
+        ],
+        "q": "女的为什么头发这么短？",
+        "options": [
+          "夏天太热",
+          "头发太多",
+          "没时间洗"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "这张照片上的人你认识吗？"
+          ],
+          [
+            "女",
+            "看上去像小刚，可是他穿了蓝西服。"
+          ]
+        ],
+        "q": "女的觉得照片上的人像谁？",
+        "options": [
+          "小刚",
+          "周明",
+          "经理"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "我们去坐船吧！"
+          ],
+          [
+            "女",
+            "好啊，我想在船上看看黄河。"
+          ]
+        ],
+        "q": "女的想在船上做什么？",
+        "options": [
+          "看黄河",
+          "听歌",
+          "吃饭"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你的孩子怎么哭了？"
+          ],
+          [
+            "女",
+            "他的小鸟不见了。"
+          ]
+        ],
+        "q": "孩子为什么哭？",
+        "options": [
+          "他的小鸟不见了",
+          "他饿了",
+          "他不舒服"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "我儿子是前年秋天出生的，现在两岁多了。",
+        "claim": "他儿子两岁多了。",
+        "ok": true
+      },
+      {
+        "text": "这个字太难了，我怎么也写不出来。",
+        "claim": "他会写这个字。",
+        "ok": false
+      },
+      {
+        "text": "她今天穿了蓝色的西服，看上去很年轻。",
+        "claim": "她穿的西服是蓝色的。",
+        "ok": true
+      },
+      {
+        "text": "我听出来了，打电话的是我的邻居，不是我弟弟。",
+        "claim": "打电话的人是他弟弟。",
+        "ok": false
+      }
+    ],
+    "replies": [
+      {
+        "q": "你还记得我吗？",
+        "a": "记得，你是小李，我们是小学同学。"
+      },
+      {
+        "q": "这张照片是什么时候照的？",
+        "a": "去年秋天照的。"
+      },
+      {
+        "q": "你看得出来哪个是我吗？",
+        "a": "看出来了，是穿蓝衣服的那个。"
+      },
+      {
+        "q": "他为什么哭了？",
+        "a": "因为他想妈妈了。"
+      }
+    ]
+  }
+}

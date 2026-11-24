@@ -1,0 +1,595 @@
+{
+  "n": 3,
+  "cn": "第三课",
+  "title": "桌子上放着很多饮料",
+  "en": "There are lots of drinks on the table",
+  "words": [
+    {
+      "w": "还是",
+      "py": "háishi",
+      "en": "or (in questions)",
+      "ex": {
+        "hz": "你喝茶还是喝咖啡？",
+        "py": "Nǐ hē chá háishi hē kāfēi?",
+        "en": "Do you want tea or coffee?"
+      }
+    },
+    {
+      "w": "爬山",
+      "py": "pá shān",
+      "en": "to climb a mountain; to hike",
+      "ex": {
+        "hz": "星期六我们去爬山吧。",
+        "py": "Xīngqīliù wǒmen qù pá shān ba.",
+        "en": "Let's go hiking on Saturday."
+      }
+    },
+    {
+      "w": "小心",
+      "py": "xiǎoxīn",
+      "en": "careful; to be careful",
+      "ex": {
+        "hz": "路上很滑，请小心。",
+        "py": "Lùshang hěn huá, qǐng xiǎoxīn.",
+        "en": "The road is slippery; please be careful."
+      }
+    },
+    {
+      "w": "条",
+      "py": "tiáo",
+      "en": "(measure word for pants, dresses, etc.)",
+      "ex": {
+        "hz": "我想买一条新裤子。",
+        "py": "Wǒ xiǎng mǎi yì tiáo xīn kùzi.",
+        "en": "I'd like to buy a new pair of trousers."
+      }
+    },
+    {
+      "w": "裤子",
+      "py": "kùzi",
+      "en": "trousers",
+      "ex": {
+        "hz": "这条裤子太长了。",
+        "py": "Zhè tiáo kùzi tài cháng le.",
+        "en": "These trousers are too long."
+      }
+    },
+    {
+      "w": "记得",
+      "py": "jìde",
+      "en": "to remember",
+      "ex": {
+        "hz": "你还记得他的名字吗？",
+        "py": "Nǐ hái jìde tā de míngzi ma?",
+        "en": "Do you still remember his name?"
+      }
+    },
+    {
+      "w": "衬衫",
+      "py": "chènshān",
+      "en": "shirt",
+      "ex": {
+        "hz": "他今天穿了一件白衬衫。",
+        "py": "Tā jīntiān chuānle yí jiàn bái chènshān.",
+        "en": "He is wearing a white shirt today."
+      }
+    },
+    {
+      "w": "元",
+      "py": "yuán",
+      "en": "yuan (unit of money)",
+      "ex": {
+        "hz": "这本书二十元。",
+        "py": "Zhè běn shū èrshí yuán.",
+        "en": "This book costs twenty yuan."
+      }
+    },
+    {
+      "w": "新鲜",
+      "py": "xīnxiān",
+      "en": "fresh",
+      "ex": {
+        "hz": "这些鱼很新鲜。",
+        "py": "Zhèxiē yú hěn xīnxiān.",
+        "en": "This fish is very fresh."
+      }
+    },
+    {
+      "w": "甜",
+      "py": "tián",
+      "en": "sweet",
+      "ex": {
+        "hz": "这个苹果很甜。",
+        "py": "Zhège píngguǒ hěn tián.",
+        "en": "This apple is very sweet."
+      }
+    },
+    {
+      "w": "只",
+      "py": "zhǐ",
+      "en": "only; just",
+      "ex": {
+        "hz": "我只喝了一杯茶。",
+        "py": "Wǒ zhǐ hēle yì bēi chá.",
+        "en": "I only had one cup of tea."
+      }
+    },
+    {
+      "w": "放",
+      "py": "fàng",
+      "en": "to put; to place",
+      "ex": {
+        "hz": "请把书放在桌子上。",
+        "py": "Qǐng bǎ shū fàng zài zhuōzi shang.",
+        "en": "Please put the book on the table."
+      }
+    },
+    {
+      "w": "饮料",
+      "py": "yǐnliào",
+      "en": "drink; beverage",
+      "ex": {
+        "hz": "你想喝什么饮料？",
+        "py": "Nǐ xiǎng hē shénme yǐnliào?",
+        "en": "What drink would you like?"
+      }
+    },
+    {
+      "w": "或者",
+      "py": "huòzhě",
+      "en": "or (in statements)",
+      "ex": {
+        "hz": "周末我看书或者看电影。",
+        "py": "Zhōumò wǒ kàn shū huòzhě kàn diànyǐng.",
+        "en": "At weekends I read or watch films."
+      }
+    },
+    {
+      "w": "舒服",
+      "py": "shūfu",
+      "en": "comfortable; well",
+      "ex": {
+        "hz": "这把椅子坐着很舒服。",
+        "py": "Zhè bǎ yǐzi zuòzhe hěn shūfu.",
+        "en": "This chair is comfortable to sit in."
+      }
+    },
+    {
+      "w": "花",
+      "py": "huā",
+      "en": "flower",
+      "ex": {
+        "hz": "她房间里有很多花。",
+        "py": "Tā fángjiān li yǒu hěn duō huā.",
+        "en": "There are lots of flowers in her room."
+      }
+    },
+    {
+      "w": "绿",
+      "py": "lǜ",
+      "en": "green",
+      "ex": {
+        "hz": "我喜欢绿色的衬衫。",
+        "py": "Wǒ xǐhuan lǜsè de chènshān.",
+        "en": "I like green shirts."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "去哪儿玩儿",
+      "py": "Qù nǎr wánr",
+      "en": "Where to go",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "周末你想去爬山还是去公园？",
+          "py": "Zhōumò nǐ xiǎng qù pá shān háishi qù gōngyuán?",
+          "en": "At the weekend, do you want to hike or go to the park?"
+        },
+        {
+          "who": "B",
+          "hz": "我记得你的腿不太舒服，还是去公园吧。",
+          "py": "Wǒ jìde nǐ de tuǐ bú tài shūfu, háishi qù gōngyuán ba.",
+          "en": "I remember your leg isn't great, so let's go to the park."
+        },
+        {
+          "who": "A",
+          "hz": "好啊。公园里有很多花，很漂亮。",
+          "py": "Hǎo a. Gōngyuán li yǒu hěn duō huā, hěn piàoliang.",
+          "en": "Good. The park has lots of flowers and is pretty."
+        },
+        {
+          "who": "B",
+          "hz": "我们可以带面包和饮料去。",
+          "py": "Wǒmen kěyǐ dài miànbāo hé yǐnliào qù.",
+          "en": "We can take bread and drinks."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Where do they decide to go?",
+          "options": [
+            "The park",
+            "A mountain",
+            "A shop",
+            "The office"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What do they plan to take?",
+          "options": [
+            "Bread and drinks",
+            "Fruit and tea",
+            "Books",
+            "Umbrellas"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "买饮料",
+      "py": "Mǎi yǐnliào",
+      "en": "Buying drinks",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你好，要绿茶还是花茶？",
+          "py": "Nǐ hǎo, yào lǜchá háishi huāchá?",
+          "en": "Hello, would you like green tea or flower tea?"
+        },
+        {
+          "who": "B",
+          "hz": "绿茶吧。多少钱一杯？",
+          "py": "Lǜchá ba. Duōshao qián yì bēi?",
+          "en": "Green tea. How much per cup?"
+        },
+        {
+          "who": "A",
+          "hz": "十二元一杯。",
+          "py": "Shí'èr yuán yì bēi.",
+          "en": "Twelve yuan a cup."
+        },
+        {
+          "who": "B",
+          "hz": "好，来两杯。我只带了三十元。",
+          "py": "Hǎo, lái liǎng bēi. Wǒ zhǐ dàile sānshí yuán.",
+          "en": "OK, two cups. I only brought thirty yuan."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What kind of tea does B choose?",
+          "options": [
+            "Green tea",
+            "Flower tea",
+            "Black tea",
+            "Coffee"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How much does one cup cost?",
+          "options": [
+            "12 yuan",
+            "20 yuan",
+            "30 yuan",
+            "2 yuan"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "还是 and 或者",
+      "en": "还是 for choices in questions (and inside “I don't know whether…” clauses); 或者 for choices in statements",
+      "drills": [
+        {
+          "q": "你想喝茶___喝咖啡？",
+          "options": [
+            "还是",
+            "或者",
+            "因为",
+            "但是"
+          ],
+          "answer": 0,
+          "en": "Do you want tea or coffee?"
+        },
+        {
+          "q": "你可以坐公共汽车___坐地铁去。",
+          "options": [
+            "或者",
+            "但是",
+            "因为",
+            "所以"
+          ],
+          "answer": 0,
+          "en": "You can go by bus or by metro."
+        },
+        {
+          "q": "我还没想好明天去爬山___去游泳。",
+          "options": [
+            "还是",
+            "或者",
+            "因为",
+            "但是"
+          ],
+          "answer": 0,
+          "en": "I haven't decided whether to go hiking or swimming tomorrow."
+        },
+        {
+          "q": "他是你哥哥___你弟弟？",
+          "options": [
+            "还是",
+            "或者",
+            "和",
+            "但是"
+          ],
+          "answer": 0,
+          "en": "Is he your older brother or your younger brother?"
+        },
+        {
+          "q": "我想吃面包___米饭，都可以。",
+          "options": [
+            "或者",
+            "但是",
+            "因为",
+            "所以"
+          ],
+          "answer": 0,
+          "en": "I'd like bread or rice; either is fine."
+        }
+      ]
+    },
+    {
+      "point": "Place + V着 + something",
+      "en": "Location + 放/住/写/坐 + 着 + indefinite noun: there is something somewhere; negative: 没 + V着",
+      "drills": [
+        {
+          "q": "冰箱里放___很多鸡蛋。",
+          "options": [
+            "着",
+            "在",
+            "把",
+            "给"
+          ],
+          "answer": 0,
+          "en": "There are lots of eggs in the fridge."
+        },
+        {
+          "q": "床上___着一只小猫。",
+          "options": [
+            "睡",
+            "吃",
+            "买",
+            "看"
+          ],
+          "answer": 0,
+          "en": "A kitten is sleeping on the bed."
+        },
+        {
+          "q": "教室里坐___很多学生。",
+          "options": [
+            "着",
+            "在",
+            "把",
+            "对"
+          ],
+          "answer": 0,
+          "en": "Many students are sitting in the classroom."
+        },
+        {
+          "q": "我家旁边住着___医生。",
+          "options": [
+            "一个",
+            "这个",
+            "那个",
+            "是"
+          ],
+          "answer": 0,
+          "en": "A doctor lives next door to me."
+        },
+        {
+          "q": "书包里没___书。",
+          "options": [
+            "放着",
+            "放了",
+            "着放",
+            "放在"
+          ],
+          "answer": 0,
+          "en": "There are no books in the schoolbag."
+        }
+      ]
+    },
+    {
+      "point": "会 for possibility",
+      "en": "会 + verb (+ 的): something is likely to happen",
+      "drills": [
+        {
+          "q": "你穿这么少，___感冒的。",
+          "options": [
+            "会",
+            "在",
+            "把",
+            "对"
+          ],
+          "answer": 0,
+          "en": "You're wearing so little; you'll catch a cold."
+        },
+        {
+          "q": "别着急，他很快就___来的。",
+          "options": [
+            "会",
+            "在",
+            "把",
+            "让"
+          ],
+          "answer": 0,
+          "en": "Don't worry; he'll be here soon."
+        },
+        {
+          "q": "坐在这把椅子上___很舒服的。",
+          "options": [
+            "会",
+            "在",
+            "把",
+            "对"
+          ],
+          "answer": 0,
+          "en": "You'll be comfortable sitting in this chair."
+        },
+        {
+          "q": "你不早点儿睡觉，明天___很累的。",
+          "options": [
+            "会",
+            "把",
+            "对",
+            "给"
+          ],
+          "answer": 0,
+          "en": "If you don't sleep early, you'll be tired tomorrow."
+        },
+        {
+          "q": "天气预报说明天___下雪。",
+          "options": [
+            "会",
+            "把",
+            "对",
+            "给"
+          ],
+          "answer": 0,
+          "en": "The forecast says it will snow tomorrow."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你想喝茶还是喝咖啡？"
+          ],
+          [
+            "女",
+            "我喝茶，我不喜欢咖啡。"
+          ]
+        ],
+        "q": "女的想喝什么？",
+        "options": [
+          "茶",
+          "咖啡",
+          "水"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "这条裤子多少钱？"
+          ],
+          [
+            "女",
+            "一百八十元。"
+          ]
+        ],
+        "q": "这条裤子多少钱？",
+        "options": [
+          "一百八十元",
+          "八十元",
+          "一百元"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你周末想做什么？"
+          ],
+          [
+            "女",
+            "我想去爬山，你呢？"
+          ]
+        ],
+        "q": "女的周末想做什么？",
+        "options": [
+          "爬山",
+          "看电影",
+          "在家休息"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你为什么不吃西瓜？"
+          ],
+          [
+            "女",
+            "我觉得西瓜不太甜。"
+          ]
+        ],
+        "q": "女的为什么不吃西瓜？",
+        "options": [
+          "西瓜不太甜",
+          "西瓜不新鲜",
+          "她不喜欢水果"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "冰箱里放着两瓶牛奶和一些水果。",
+        "claim": "冰箱里有牛奶。",
+        "ok": true
+      },
+      {
+        "text": "他买了一件白衬衫，没买裤子。",
+        "claim": "他买了裤子。",
+        "ok": false
+      },
+      {
+        "text": "今天天气很冷，他只穿了一件衬衫。",
+        "claim": "他穿得很多。",
+        "ok": false
+      },
+      {
+        "text": "我记得你喜欢甜的，所以买了西瓜。",
+        "claim": "说话人知道对方喜欢甜的。",
+        "ok": true
+      }
+    ],
+    "replies": [
+      {
+        "q": "你想喝茶还是喝咖啡？",
+        "a": "我想喝茶。"
+      },
+      {
+        "q": "这件衬衫多少钱？",
+        "a": "一百二十元。"
+      },
+      {
+        "q": "路上车很多，你要小心点儿。",
+        "a": "好，我知道了。"
+      },
+      {
+        "q": "桌子上放着什么？",
+        "a": "放着一些饮料和水果。"
+      }
+    ]
+  }
+}

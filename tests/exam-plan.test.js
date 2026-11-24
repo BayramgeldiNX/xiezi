@@ -49,7 +49,7 @@ describe("testsOf", () => {
   it("every real book", () => {
     for (const b of BOOKS) {
       const ts = testsOf(b);
-      expect(ts.length).toBe(b.lessons.length >= 15 ? 7 : 5);
+      expect(ts.length).toBe(b.lessons.length >= 20 ? 8 : b.lessons.length >= 15 ? 7 : 5); // 20 lessons (hsk3): one more small test
       expect(ts.at(-1).id).toBe("final");
       expect(ts.at(-2).id).toBe("mid2");
       expect(testOf(b, "final")).toEqual(ts.at(-1));
@@ -60,6 +60,6 @@ describe("testsOf", () => {
 
   it("exports parts and prior books", () => {
     expect(PARTS.map((p) => p.id)).toEqual(["listen", "vocab", "grammar", "read", "write"]);
-    expect(PRIOR).toEqual({ hsk2: ["hsk1"], "kouyu-rumen-2": ["kouyu-rumen"] });
+    expect(PRIOR).toEqual({ hsk2: ["hsk1"], hsk3: ["hsk1", "hsk2"], "kouyu-rumen-2": ["kouyu-rumen"] });
   });
 });

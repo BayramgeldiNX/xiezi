@@ -1,0 +1,613 @@
+{
+  "n": 1,
+  "cn": "第一课",
+  "title": "周末你有什么打算",
+  "en": "What are your plans for the weekend?",
+  "words": [
+    {
+      "w": "周末",
+      "py": "zhōumò",
+      "en": "weekend",
+      "ex": {
+        "hz": "这个周末我想在家休息。",
+        "py": "Zhège zhōumò wǒ xiǎng zài jiā xiūxi.",
+        "en": "This weekend I want to rest at home."
+      }
+    },
+    {
+      "w": "打算",
+      "py": "dǎsuàn",
+      "en": "plan; to plan to",
+      "ex": {
+        "hz": "你明天有什么打算？",
+        "py": "Nǐ míngtiān yǒu shénme dǎsuàn?",
+        "en": "What are your plans for tomorrow?"
+      }
+    },
+    {
+      "w": "啊",
+      "py": "a",
+      "en": "(softens or adds feeling) (also: confirming a point)",
+      "ex": {
+        "hz": "是啊，我知道了。",
+        "py": "Shì a, wǒ zhīdào le.",
+        "en": "Yes, I know."
+      }
+    },
+    {
+      "w": "跟",
+      "py": "gēn",
+      "en": "with",
+      "ex": {
+        "hz": "我想跟你一起去。",
+        "py": "Wǒ xiǎng gēn nǐ yìqǐ qù.",
+        "en": "I'd like to go with you."
+      }
+    },
+    {
+      "w": "小丽",
+      "py": "Xiǎolì",
+      "en": "Xiaoli (a name)",
+      "ex": {
+        "hz": "小丽是我的同学。",
+        "py": "Xiǎolì shì wǒ de tóngxué.",
+        "en": "Xiaoli is my classmate."
+      }
+    },
+    {
+      "w": "小刚",
+      "py": "Xiǎogāng",
+      "en": "Xiaogang (a name)",
+      "ex": {
+        "hz": "小刚今天不在家。",
+        "py": "Xiǎogāng jīntiān bú zài jiā.",
+        "en": "Xiaogang isn't at home today."
+      }
+    },
+    {
+      "w": "一直",
+      "py": "yìzhí",
+      "en": "straight; all along (also: all the time)",
+      "ex": {
+        "hz": "他一直在看书。",
+        "py": "Tā yìzhí zài kàn shū.",
+        "en": "He has been reading all the time."
+      }
+    },
+    {
+      "w": "游戏",
+      "py": "yóuxì",
+      "en": "game",
+      "ex": {
+        "hz": "孩子们喜欢玩儿游戏。",
+        "py": "Háizimen xǐhuan wánr yóuxì.",
+        "en": "Children like playing games."
+      }
+    },
+    {
+      "w": "作业",
+      "py": "zuòyè",
+      "en": "homework",
+      "ex": {
+        "hz": "我的作业还没写完。",
+        "py": "Wǒ de zuòyè hái méi xiěwán.",
+        "en": "I haven't finished my homework yet."
+      }
+    },
+    {
+      "w": "着急",
+      "py": "zháojí",
+      "en": "anxious; worried",
+      "ex": {
+        "hz": "别着急，我们还有时间。",
+        "py": "Bié zháojí, wǒmen hái yǒu shíjiān.",
+        "en": "Don't worry, we still have time."
+      }
+    },
+    {
+      "w": "复习",
+      "py": "fùxí",
+      "en": "to review",
+      "ex": {
+        "hz": "晚上我要复习汉语。",
+        "py": "Wǎnshang wǒ yào fùxí Hànyǔ.",
+        "en": "I'm going to review Chinese this evening."
+      }
+    },
+    {
+      "w": "南方",
+      "py": "nánfāng",
+      "en": "the south",
+      "ex": {
+        "hz": "他是南方人，不太喜欢冷天。",
+        "py": "Tā shì nánfāng rén, bú tài xǐhuan lěng tiān.",
+        "en": "He's from the south and doesn't much like cold weather."
+      }
+    },
+    {
+      "w": "北方",
+      "py": "běifāng",
+      "en": "the north",
+      "ex": {
+        "hz": "北方的冬天很冷。",
+        "py": "Běifāng de dōngtiān hěn lěng.",
+        "en": "Winters in the north are cold."
+      }
+    },
+    {
+      "w": "面包",
+      "py": "miànbāo",
+      "en": "bread",
+      "ex": {
+        "hz": "我早上吃面包，喝牛奶。",
+        "py": "Wǒ zǎoshang chī miànbāo, hē niúnǎi.",
+        "en": "In the morning I eat bread and drink milk."
+      }
+    },
+    {
+      "w": "带",
+      "py": "dài",
+      "en": "to bring; to take along",
+      "ex": {
+        "hz": "出门别忘了带手机。",
+        "py": "Chūmén bié wàngle dài shǒujī.",
+        "en": "Don't forget to take your phone when you go out."
+      }
+    },
+    {
+      "w": "地图",
+      "py": "dìtú",
+      "en": "map",
+      "ex": {
+        "hz": "你有北京的地图吗？",
+        "py": "Nǐ yǒu Běijīng de dìtú ma?",
+        "en": "Do you have a map of Beijing?"
+      }
+    },
+    {
+      "w": "搬",
+      "py": "bān",
+      "en": "to move; to carry",
+      "ex": {
+        "hz": "请帮我搬一下这张桌子。",
+        "py": "Qǐng bāng wǒ bān yíxià zhè zhāng zhuōzi.",
+        "en": "Please help me move this table."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "搬家",
+      "py": "Bān jiā",
+      "en": "Moving house",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "这个星期六你忙吗？",
+          "py": "Zhège xīngqīliù nǐ máng ma?",
+          "en": "Are you busy this Saturday?"
+        },
+        {
+          "who": "B",
+          "hz": "我打算搬家，东西太多了。",
+          "py": "Wǒ dǎsuàn bān jiā, dōngxi tài duō le.",
+          "en": "I'm planning to move house, and I have far too many things."
+        },
+        {
+          "who": "A",
+          "hz": "我跟我哥哥一起去帮你搬吧。",
+          "py": "Wǒ gēn wǒ gēge yìqǐ qù bāng nǐ bān ba.",
+          "en": "My brother and I will come and help you move."
+        },
+        {
+          "who": "B",
+          "hz": "太好了！我给你们准备面包和水。",
+          "py": "Tài hǎo le! Wǒ gěi nǐmen zhǔnbèi miànbāo hé shuǐ.",
+          "en": "Great! I'll get some bread and water ready for you."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What is B going to do on Saturday?",
+          "options": [
+            "Move house",
+            "Watch a film",
+            "Do homework",
+            "Go south"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Who will help B?",
+          "options": [
+            "A and A's brother",
+            "B's classmates",
+            "Nobody",
+            "B's father"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "去南方",
+      "py": "Qù nánfāng",
+      "en": "Going south",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "下个月我想去南方旅游。",
+          "py": "Xià ge yuè wǒ xiǎng qù nánfāng lǚyóu.",
+          "en": "Next month I'd like to travel to the south."
+        },
+        {
+          "who": "B",
+          "hz": "你带地图了吗？",
+          "py": "Nǐ dài dìtú le ma?",
+          "en": "Have you got a map?"
+        },
+        {
+          "who": "A",
+          "hz": "带了，面包和水也准备好了。",
+          "py": "Dài le, miànbāo hé shuǐ yě zhǔnbèi hǎo le.",
+          "en": "Yes, and the bread and water are ready too."
+        },
+        {
+          "who": "B",
+          "hz": "你别太着急，还有两个星期呢。",
+          "py": "Nǐ bié tài zháojí, hái yǒu liǎng ge xīngqī ne.",
+          "en": "Don't be too anxious; there are still two weeks."
+        },
+        {
+          "who": "A",
+          "hz": "对，我一直在想这件事。",
+          "py": "Duì, wǒ yìzhí zài xiǎng zhè jiàn shì.",
+          "en": "True, I've been thinking about this the whole time."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Where does A want to go?",
+          "options": [
+            "The south",
+            "The north",
+            "Beijing",
+            "Home"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How much time is left before the trip?",
+          "options": [
+            "Two weeks",
+            "Two days",
+            "Two months",
+            "One week"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "好 as a result",
+      "en": "动词 + 好: the action is done and done well, so you are ready",
+      "drills": [
+        {
+          "q": "菜还没买___，我们再去一次超市吧。",
+          "options": [
+            "好",
+            "远",
+            "少",
+            "贵"
+          ],
+          "answer": 0,
+          "en": "We haven't finished buying the food; let's go to the supermarket again."
+        },
+        {
+          "q": "明天的考试，我已经复习___了。",
+          "options": [
+            "好",
+            "多",
+            "高",
+            "冷"
+          ],
+          "answer": 0,
+          "en": "I've already revised properly for tomorrow's exam."
+        },
+        {
+          "q": "电影票我昨天就买___了。",
+          "options": [
+            "好",
+            "长",
+            "慢",
+            "白"
+          ],
+          "answer": 0,
+          "en": "I already bought the film tickets yesterday."
+        },
+        {
+          "q": "行李已经准备___，我们可以走了。",
+          "options": [
+            "好",
+            "有",
+            "是",
+            "在"
+          ],
+          "answer": 0,
+          "en": "The luggage is all ready; we can go."
+        },
+        {
+          "q": "你的作业写___了吗？",
+          "options": [
+            "好",
+            "很",
+            "太",
+            "和"
+          ],
+          "answer": 0,
+          "en": "Have you finished your homework properly?"
+        }
+      ]
+    },
+    {
+      "point": "一 … 也/都 + 不/没",
+      "en": "一 + measure word + noun + 也/都 + 不/没 + verb: not even one, none at all",
+      "drills": [
+        {
+          "q": "我一个字___不认识。",
+          "options": [
+            "也",
+            "是",
+            "很",
+            "太"
+          ],
+          "answer": 0,
+          "en": "I don't know a single character."
+        },
+        {
+          "q": "今天他一口饭___没吃。",
+          "options": [
+            "都",
+            "要",
+            "会",
+            "在"
+          ],
+          "answer": 0,
+          "en": "He didn't eat a single mouthful today."
+        },
+        {
+          "q": "这件衣服一点儿也___贵。",
+          "options": [
+            "不",
+            "没",
+            "很",
+            "太"
+          ],
+          "answer": 0,
+          "en": "This piece of clothing isn't expensive at all."
+        },
+        {
+          "q": "我昨天一杯水也___喝。",
+          "options": [
+            "没",
+            "很",
+            "都",
+            "太"
+          ],
+          "answer": 0,
+          "en": "I didn't drink a single glass of water yesterday."
+        },
+        {
+          "q": "我今天一点儿钱也___，不能请你吃饭了。",
+          "options": [
+            "没有",
+            "不有",
+            "很有",
+            "都有"
+          ],
+          "answer": 0,
+          "en": "I have no money at all today, so I can't treat you to a meal."
+        }
+      ]
+    },
+    {
+      "point": "那 at the start",
+      "en": "那 + result: “in that case…”, a conclusion from what was just said",
+      "drills": [
+        {
+          "q": "A：我不想去商店。 B：___我们在家看电影吧。",
+          "options": [
+            "那",
+            "和",
+            "因为",
+            "虽然"
+          ],
+          "answer": 0,
+          "en": "A: I don't want to go to the shop. B: Then let's watch a film at home."
+        },
+        {
+          "q": "A：明天下雨。 B：___我们不去爬山了。",
+          "options": [
+            "那",
+            "和",
+            "太",
+            "还"
+          ],
+          "answer": 0,
+          "en": "A: It will rain tomorrow. B: Then we won't go hiking."
+        },
+        {
+          "q": "A：我今天很累。 B：___你早点儿休息吧。",
+          "options": [
+            "那",
+            "和",
+            "但",
+            "因为"
+          ],
+          "answer": 0,
+          "en": "A: I'm tired today. B: Then get some rest early."
+        },
+        {
+          "q": "A：这个太贵了。 B：___我们买那个便宜的吧。",
+          "options": [
+            "那",
+            "和",
+            "因为",
+            "虽然"
+          ],
+          "answer": 0,
+          "en": "A: This one is too expensive. B: Then let's buy the cheaper one."
+        },
+        {
+          "q": "A：我已经吃过饭了。 B：___我们不用去饭馆了。",
+          "options": [
+            "那",
+            "和",
+            "但",
+            "还"
+          ],
+          "answer": 0,
+          "en": "A: I've already eaten. B: Then we don't need to go to a restaurant."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你周末有什么打算？"
+          ],
+          [
+            "女",
+            "我想去看电影。"
+          ]
+        ],
+        "q": "女的周末打算做什么？",
+        "options": [
+          "看电影",
+          "买面包",
+          "写作业"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你的作业写完了吗？"
+          ],
+          [
+            "女",
+            "还没有，还有一点儿。"
+          ]
+        ],
+        "q": "女的写完作业了吗？",
+        "options": [
+          "还没有",
+          "写完了",
+          "不知道"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "下个月你想去哪儿旅游？"
+          ],
+          [
+            "女",
+            "我想去南方。"
+          ]
+        ],
+        "q": "女的想去哪儿旅游？",
+        "options": [
+          "南方",
+          "北方",
+          "北京"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你带地图了吗？"
+          ],
+          [
+            "女",
+            "带了，在我的包里。"
+          ]
+        ],
+        "q": "地图在哪儿？",
+        "options": [
+          "在女的包里",
+          "在男的包里",
+          "在桌子上"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "我周末一直在家，一次也没出去。",
+        "claim": "他周末出去玩儿了。",
+        "ok": false
+      },
+      {
+        "text": "电影票已经买好了，你跟我一起去吧。",
+        "claim": "他买了电影票。",
+        "ok": true
+      },
+      {
+        "text": "下午就要考试了，可是小刚还在玩儿游戏，好像不着急。",
+        "claim": "小刚很着急。",
+        "ok": false
+      },
+      {
+        "text": "北方的冬天很冷，南方比较热。",
+        "claim": "南方比北方热。",
+        "ok": true
+      }
+    ],
+    "replies": [
+      {
+        "q": "明天有考试，你复习好了吗？",
+        "a": "复习好了，你放心吧。"
+      },
+      {
+        "q": "你周末有什么打算？",
+        "a": "我想在家休息。"
+      },
+      {
+        "q": "你想跟我一起去旅游吗？",
+        "a": "好啊，什么时候走？"
+      },
+      {
+        "q": "你带什么东西去？",
+        "a": "我带面包和地图去。"
+      }
+    ]
+  },
+  "hanzi": {
+    "chars": [
+      [
+        "本",
+        "A tree with a dot at its foot: the root, so “origin”, a root of things."
+      ],
+      [
+        "末",
+        "A tree with a mark at the top: the tip, so “end”, as in 周末."
+      ]
+    ]
+  }
+}
