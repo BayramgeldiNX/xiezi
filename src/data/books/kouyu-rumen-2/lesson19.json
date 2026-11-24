@@ -1,0 +1,704 @@
+{
+  "n": 19,
+  "cn": "第十九课",
+  "title": "你游泳游得怎么样",
+  "en": "How's your swimming",
+  "words": [
+    {
+      "w": "会",
+      "py": "huì",
+      "en": "can; to know how to; will",
+      "ex": {
+        "hz": "我会说一点儿汉语。",
+        "py": "Wǒ huì shuō yìdiǎnr Hànyǔ.",
+        "en": "I can speak a little Chinese."
+      }
+    },
+    {
+      "w": "游泳",
+      "py": "yóu yǒng",
+      "en": "to swim",
+      "ex": {
+        "hz": "夏天我常去游泳。",
+        "py": "Xiàtiān wǒ cháng qù yóu yǒng.",
+        "en": "I often go swimming in summer."
+      }
+    },
+    {
+      "w": "得",
+      "py": "de",
+      "en": "(links a verb to how it's done; also děi: must)",
+      "ex": {
+        "hz": "他说得很好。",
+        "py": "Tā shuō de hěn hǎo.",
+        "en": "He speaks very well."
+      }
+    },
+    {
+      "w": "羡慕",
+      "py": "xiànmù",
+      "en": "to envy; to admire",
+      "ex": {
+        "hz": "我很羡慕你。",
+        "py": "Wǒ hěn xiànmù nǐ.",
+        "en": "I really envy you."
+      }
+    },
+    {
+      "w": "旱鸭子",
+      "py": "hànyāzi",
+      "en": "non-swimmer (lit. \"land duck\")",
+      "ex": {
+        "hz": "我是个旱鸭子。",
+        "py": "Wǒ shì ge hànyāzi.",
+        "en": "I can't swim."
+      }
+    },
+    {
+      "w": "运动",
+      "py": "yùndòng",
+      "en": "sport; exercise",
+      "ex": {
+        "hz": "你喜欢什么运动？",
+        "py": "Nǐ xǐhuan shénme yùndòng?",
+        "en": "Which sports do you like?"
+      }
+    },
+    {
+      "w": "爱",
+      "py": "ài",
+      "en": "to love; to like",
+      "ex": {
+        "hz": "我爱我的家。",
+        "py": "Wǒ ài wǒ de jiā.",
+        "en": "I love my home."
+      }
+    },
+    {
+      "w": "踢",
+      "py": "tī",
+      "en": "to kick; to play (football)",
+      "ex": {
+        "hz": "他在踢球。",
+        "py": "Tā zài tī qiú.",
+        "en": "He is playing football."
+      }
+    },
+    {
+      "w": "足球",
+      "py": "zúqiú",
+      "en": "football; soccer",
+      "ex": {
+        "hz": "我哥哥喜欢足球。",
+        "py": "Wǒ gēge xǐhuan zúqiú.",
+        "en": "My older brother likes football."
+      }
+    },
+    {
+      "w": "队",
+      "py": "duì",
+      "en": "team",
+      "ex": {
+        "hz": "我们队有十个人。",
+        "py": "Wǒmen duì yǒu shí ge rén.",
+        "en": "Our team has ten people."
+      }
+    },
+    {
+      "w": "比赛",
+      "py": "bǐsài",
+      "en": "match; competition",
+      "ex": {
+        "hz": "明天有一场比赛。",
+        "py": "Míngtiān yǒu yì chǎng bǐsài.",
+        "en": "There's a match tomorrow."
+      }
+    },
+    {
+      "w": "女朋友",
+      "py": "nǚpéngyou",
+      "en": "girlfriend",
+      "ex": {
+        "hz": "他的女朋友很漂亮。",
+        "py": "Tā de nǚpéngyou hěn piàoliang.",
+        "en": "His girlfriend is pretty."
+      }
+    },
+    {
+      "w": "女",
+      "py": "nǚ",
+      "en": "female; woman",
+      "ex": {
+        "hz": "那个女学生是我同学。",
+        "py": "Nà ge nǚ xuésheng shì wǒ tóngxué.",
+        "en": "That girl is my classmate."
+      }
+    },
+    {
+      "w": "音乐会",
+      "py": "yīnyuèhuì",
+      "en": "concert",
+      "ex": {
+        "hz": "周末有一场音乐会。",
+        "py": "Zhōumò yǒu yì chǎng yīnyuèhuì.",
+        "en": "There's a concert at the weekend."
+      }
+    },
+    {
+      "w": "赢",
+      "py": "yíng",
+      "en": "to win",
+      "ex": {
+        "hz": "今天我们队赢了。",
+        "py": "Jīntiān wǒmen duì yíng le.",
+        "en": "Our team won today."
+      }
+    },
+    {
+      "w": "球星",
+      "py": "qiúxīng",
+      "en": "star player",
+      "ex": {
+        "hz": "他是有名的球星。",
+        "py": "Tā shì yǒu míng de qiúxīng.",
+        "en": "He's a famous star player."
+      }
+    },
+    {
+      "w": "球技",
+      "py": "qiújì",
+      "en": "ball skills",
+      "ex": {
+        "hz": "他的球技很好。",
+        "py": "Tā de qiújì hěn hǎo.",
+        "en": "His ball skills are very good."
+      }
+    },
+    {
+      "w": "估计",
+      "py": "gūjì",
+      "en": "to estimate; to reckon",
+      "ex": {
+        "hz": "我估计他不来了。",
+        "py": "Wǒ gūjì tā bù lái le.",
+        "en": "I reckon he won't come."
+      }
+    },
+    {
+      "w": "一定",
+      "py": "yídìng",
+      "en": "definitely; surely",
+      "ex": {
+        "hz": "明天我一定去。",
+        "py": "Míngtiān wǒ yídìng qù.",
+        "en": "I'll definitely go tomorrow."
+      }
+    },
+    {
+      "w": "输",
+      "py": "shū",
+      "en": "to lose",
+      "ex": {
+        "hz": "我们队输了。",
+        "py": "Wǒmen duì shū le.",
+        "en": "Our team lost."
+      }
+    },
+    {
+      "w": "打球",
+      "py": "dǎ qiú",
+      "en": "to play a ball game",
+      "ex": {
+        "hz": "周末我们去打球。",
+        "py": "Zhōumò wǒmen qù dǎ qiú.",
+        "en": "We're going to play ball at the weekend."
+      }
+    },
+    {
+      "w": "网球",
+      "py": "wǎngqiú",
+      "en": "tennis",
+      "ex": {
+        "hz": "她网球打得很好。",
+        "py": "Tā wǎngqiú dǎ de hěn hǎo.",
+        "en": "She plays tennis very well."
+      }
+    },
+    {
+      "w": "篮球",
+      "py": "lánqiú",
+      "en": "basketball",
+      "ex": {
+        "hz": "他爱打篮球。",
+        "py": "Tā ài dǎ lánqiú.",
+        "en": "He loves playing basketball."
+      }
+    },
+    {
+      "w": "做",
+      "py": "zuò",
+      "en": "to do; to cook",
+      "ex": {
+        "hz": "我会做中国菜。",
+        "py": "Wǒ huì zuò Zhōngguó cài.",
+        "en": "I can cook Chinese food."
+      }
+    },
+    {
+      "w": "打字",
+      "py": "dǎzì",
+      "en": "to type",
+      "ex": {
+        "hz": "他打字打得很快。",
+        "py": "Tā dǎzì dǎ de hěn kuài.",
+        "en": "He types very fast."
+      }
+    },
+    {
+      "w": "场",
+      "py": "chǎng",
+      "en": "(measure word for matches and shows)",
+      "ex": {
+        "hz": "昨天有一场电影。",
+        "py": "Zuótiān yǒu yì chǎng diànyǐng.",
+        "en": "There was a film showing yesterday."
+      }
+    },
+    {
+      "w": "早",
+      "py": "zǎo",
+      "en": "early",
+      "ex": {
+        "hz": "明天你要早点儿来。",
+        "py": "Míngtiān nǐ yào zǎodiǎnr lái.",
+        "en": "Come a bit early tomorrow."
+      }
+    },
+    {
+      "w": "晚",
+      "py": "wǎn",
+      "en": "late",
+      "ex": {
+        "hz": "对不起，我来晚了。",
+        "py": "Duìbuqǐ, wǒ lái wǎn le.",
+        "en": "Sorry, I'm late."
+      }
+    },
+    {
+      "w": "巴西",
+      "py": "Bāxī",
+      "en": "Brazil",
+      "ex": {
+        "hz": "他是巴西人。",
+        "py": "Tā shì Bāxī rén.",
+        "en": "He is Brazilian."
+      }
+    },
+    {
+      "w": "汉语",
+      "py": "Hànyǔ",
+      "en": "Chinese (language)",
+      "ex": {
+        "hz": "你的汉语很好。",
+        "py": "Nǐ de Hànyǔ hěn hǎo.",
+        "en": "Your Chinese is very good."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "教我游泳",
+      "py": "Jiāo wǒ yóu yǒng",
+      "en": "Teach me to swim",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你会游泳吗？",
+          "py": "Nǐ huì yóu yǒng ma?",
+          "en": "Can you swim?"
+        },
+        {
+          "who": "B",
+          "hz": "会一点儿，不过游得不太好。",
+          "py": "Huì yìdiǎnr, búguò yóu de bú tài hǎo.",
+          "en": "A little, but not very well."
+        },
+        {
+          "who": "A",
+          "hz": "我游得很好，周末教你吧。",
+          "py": "Wǒ yóu de hěn hǎo, zhōumò jiāo nǐ ba.",
+          "en": "I swim very well; I'll teach you at the weekend."
+        },
+        {
+          "who": "B",
+          "hz": "太好了！你能游多远？",
+          "py": "Tài hǎo le! Nǐ néng yóu duō yuǎn?",
+          "en": "Great! How far can you swim?"
+        },
+        {
+          "who": "A",
+          "hz": "我能游一千米。",
+          "py": "Wǒ néng yóu yìqiān mǐ.",
+          "en": "I can swim a thousand metres."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Can B swim?",
+          "options": [
+            "A little, not very well",
+            "Not at all",
+            "Very well",
+            "Only in winter"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How far can A swim?",
+          "options": [
+            "1,000 m",
+            "100 m",
+            "500 m",
+            "5,000 m"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "今晚的比赛",
+      "py": "Jīnwǎn de bǐsài",
+      "en": "Tonight's match",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "今晚有篮球比赛，一起看吧？",
+          "py": "Jīnwǎn yǒu lánqiú bǐsài, yìqǐ kàn ba?",
+          "en": "There's a basketball game tonight; shall we watch it together?"
+        },
+        {
+          "who": "B",
+          "hz": "想看，可是我得写作业。",
+          "py": "Xiǎng kàn, kěshì wǒ děi xiě zuòyè.",
+          "en": "I'd like to, but I have to do homework."
+        },
+        {
+          "who": "A",
+          "hz": "作业明天再写吧。",
+          "py": "Zuòyè míngtiān zài xiě ba.",
+          "en": "Do it tomorrow."
+        },
+        {
+          "who": "B",
+          "hz": "不行，明天要考试，我得今天写。",
+          "py": "Bù xíng, míngtiān yào kǎoshì, wǒ děi jīntiān xiě.",
+          "en": "No, I have an exam tomorrow, so I must do it today."
+        },
+        {
+          "who": "A",
+          "hz": "那你写完作业再看吧。",
+          "py": "Nà nǐ xiěwán zuòyè zài kàn ba.",
+          "en": "Then watch after you finish your homework."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Why must B do homework today?",
+          "options": [
+            "There is an exam tomorrow",
+            "The teacher is angry",
+            "B is bored",
+            "A friend is visiting"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What does B want to do tonight?",
+          "options": [
+            "Watch the basketball",
+            "Go swimming",
+            "Sleep early",
+            "Go to a concert"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "会",
+      "en": "会 shows a learned skill (\"know how to\") or a likelihood (\"will probably\")",
+      "drills": [
+        {
+          "q": "你___不会游泳？",
+          "options": [
+            "会",
+            "能",
+            "得",
+            "要"
+          ],
+          "answer": 0,
+          "en": "Can you swim or not?"
+        },
+        {
+          "q": "天阴了，下午___下雨吗？",
+          "options": [
+            "会",
+            "得",
+            "把",
+            "有"
+          ],
+          "answer": 0,
+          "en": "It's cloudy; will it rain this afternoon?"
+        },
+        {
+          "q": "她从小学游泳，所以___游泳。",
+          "options": [
+            "会",
+            "把",
+            "的",
+            "吧"
+          ],
+          "answer": 0,
+          "en": "She learned to swim as a child, so she can swim."
+        },
+        {
+          "q": "我估计他明天不___来。",
+          "options": [
+            "会",
+            "的",
+            "把",
+            "吧"
+          ],
+          "answer": 0,
+          "en": "I reckon he won't come tomorrow."
+        }
+      ]
+    },
+    {
+      "point": "得 (děi)",
+      "en": "得 means \"must\" because the situation requires it; the negative is 不用 (no need), not 不得",
+      "drills": [
+        {
+          "q": "明天有考试，我今晚___看书。",
+          "options": [
+            "得",
+            "把",
+            "的",
+            "吧"
+          ],
+          "answer": 0,
+          "en": "There's an exam tomorrow; I have to study tonight."
+        },
+        {
+          "q": "A：我得去机场接他吗？ B：___，他自己坐车来。",
+          "options": [
+            "不用",
+            "不对",
+            "不会",
+            "不是"
+          ],
+          "answer": 0,
+          "en": "A: Do I have to meet him at the airport? B: No need, he's coming by himself."
+        },
+        {
+          "q": "你不___给我打电话，我已经知道了。",
+          "options": [
+            "用",
+            "把",
+            "的",
+            "吗"
+          ],
+          "answer": 0,
+          "en": "You needn't call me; I already know."
+        },
+        {
+          "q": "外边下雨了，你___带伞。",
+          "options": [
+            "得",
+            "把",
+            "的",
+            "吗"
+          ],
+          "answer": 0,
+          "en": "It's raining outside; you must take an umbrella."
+        }
+      ]
+    },
+    {
+      "point": "verb + 得 + adjective",
+      "en": "verb + 得 + adjective says how well or how an action is done; repeat the verb after an object; the negative puts 不 before the adjective",
+      "drills": [
+        {
+          "q": "他足球踢___很好。",
+          "options": [
+            "得",
+            "的",
+            "地",
+            "了"
+          ],
+          "answer": 0,
+          "en": "He plays football very well."
+        },
+        {
+          "q": "你开车___得怎么样？",
+          "options": [
+            "开",
+            "是",
+            "会",
+            "在"
+          ],
+          "answer": 0,
+          "en": "How well do you drive?"
+        },
+        {
+          "q": "我做饭做得___太好。",
+          "options": [
+            "不",
+            "没",
+            "别",
+            "非"
+          ],
+          "answer": 0,
+          "en": "I don't cook very well."
+        },
+        {
+          "q": "他开车开得___，我有点儿怕。",
+          "options": [
+            "太快了",
+            "太快吗",
+            "太快的",
+            "太快过"
+          ],
+          "answer": 0,
+          "en": "He drives so fast that I'm a little scared."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你会打篮球吗？"
+          ],
+          [
+            "女",
+            "会，我打得还不错。"
+          ]
+        ],
+        "q": "他打篮球打得怎么样？",
+        "options": [
+          "还不错",
+          "不太好",
+          "很不好"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你喜欢什么运动？"
+          ],
+          [
+            "女",
+            "我爱踢足球，也爱游泳。"
+          ]
+        ],
+        "q": "她喜欢什么运动？",
+        "options": [
+          "足球和游泳",
+          "网球和篮球",
+          "打字"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "明天的比赛你看吗？"
+          ],
+          [
+            "女",
+            "看，我估计我们队会赢。"
+          ]
+        ],
+        "q": "他觉得谁会赢？",
+        "options": [
+          "自己的队",
+          "对方的队",
+          "不知道"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你周末有空吗？"
+          ],
+          [
+            "女",
+            "对不起，我得陪妈妈去商场。"
+          ]
+        ],
+        "q": "他周末要做什么？",
+        "options": [
+          "陪妈妈去商场",
+          "踢足球",
+          "写作业"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "我不会游泳，是个旱鸭子。",
+        "claim": "我游泳游得很好。",
+        "ok": false
+      },
+      {
+        "text": "他打字打得很快，一分钟打很多字。",
+        "claim": "他打字很慢。",
+        "ok": false
+      },
+      {
+        "text": "他估计他们队会赢，可是他们队输了。",
+        "claim": "他们队没有赢。",
+        "ok": true
+      },
+      {
+        "text": "她不太会做饭，做得不怎么样。",
+        "claim": "她做饭做得不太好。",
+        "ok": true
+      }
+    ],
+    "replies": [
+      {
+        "q": "你会说汉语吗？",
+        "a": "会一点儿。"
+      },
+      {
+        "q": "你汉语说得怎么样？",
+        "a": "说得不太好，还要多学。"
+      },
+      {
+        "q": "明天要考试，你准备好了吗？",
+        "a": "还没有，我今晚得看书。"
+      },
+      {
+        "q": "我可以先走吗？",
+        "a": "可以，你不用等我。"
+      }
+    ]
+  }
+}

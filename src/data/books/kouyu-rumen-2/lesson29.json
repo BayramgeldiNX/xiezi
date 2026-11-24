@@ -1,0 +1,718 @@
+{
+  "n": 29,
+  "cn": "第29课",
+  "title": "我被一辆电动车撞倒了",
+  "en": "I was knocked down by an electric bike",
+  "words": [
+    {
+      "w": "提",
+      "py": "tí",
+      "en": "to mention; to bring up",
+      "ex": {
+        "hz": "别提那件事了。",
+        "py": "Bié tí nà jiàn shì le.",
+        "en": "Don't mention that matter."
+      }
+    },
+    {
+      "w": "被",
+      "py": "bèi",
+      "en": "by (marks the doer in a passive)",
+      "ex": {
+        "hz": "我的书被朋友拿走了。",
+        "py": "Wǒ de shū bèi péngyou názǒu le.",
+        "en": "My book was taken by a friend."
+      }
+    },
+    {
+      "w": "撞",
+      "py": "zhuàng",
+      "en": "to bump into; to hit",
+      "ex": {
+        "hz": "他骑车撞到了人。",
+        "py": "Tā qí chē zhuàngdàole rén.",
+        "en": "He rode his bike into someone."
+      }
+    },
+    {
+      "w": "倒",
+      "py": "dǎo",
+      "en": "to fall down",
+      "ex": {
+        "hz": "小孩儿摔倒了。",
+        "py": "Xiǎoháir shuāidǎo le.",
+        "en": "The child fell over."
+      }
+    },
+    {
+      "w": "胳膊",
+      "py": "gēbo",
+      "en": "arm",
+      "ex": {
+        "hz": "我的胳膊很疼。",
+        "py": "Wǒ de gēbo hěn téng.",
+        "en": "My arm hurts a lot."
+      }
+    },
+    {
+      "w": "腿",
+      "py": "tuǐ",
+      "en": "leg",
+      "ex": {
+        "hz": "他的腿很疼。",
+        "py": "Tā de tuǐ hěn téng.",
+        "en": "His leg hurts a lot."
+      }
+    },
+    {
+      "w": "青",
+      "py": "qīng",
+      "en": "blue; bruised",
+      "ex": {
+        "hz": "我的腿撞青了。",
+        "py": "Wǒ de tuǐ zhuàngqīng le.",
+        "en": "My leg is bruised from the knock."
+      }
+    },
+    {
+      "w": "倒霉",
+      "py": "dǎoméi",
+      "en": "unlucky",
+      "ex": {
+        "hz": "今天真倒霉！",
+        "py": "Jīntiān zhēn dǎoméi!",
+        "en": "What bad luck today!"
+      }
+    },
+    {
+      "w": "小心",
+      "py": "xiǎoxīn",
+      "en": "careful; to be careful",
+      "ex": {
+        "hz": "过马路要小心。",
+        "py": "Guò mǎlù yào xiǎoxīn.",
+        "en": "Be careful crossing the road."
+      }
+    },
+    {
+      "w": "像话",
+      "py": "xiànghuà",
+      "en": "reasonable; proper",
+      "ex": {
+        "hz": "这么晚还不回家，真不像话！",
+        "py": "Zhème wǎn hái bù huí jiā, zhēn bú xiànghuà!",
+        "en": "Not home this late — that's outrageous!"
+      }
+    },
+    {
+      "w": "透",
+      "py": "tòu",
+      "en": "extremely; thoroughly",
+      "ex": {
+        "hz": "今天累透了。",
+        "py": "Jīntiān lèitòu le.",
+        "en": "I'm worn out today."
+      }
+    },
+    {
+      "w": "路过",
+      "py": "lùguò",
+      "en": "to pass by",
+      "ex": {
+        "hz": "我路过银行时进去了一下。",
+        "py": "Wǒ lùguò yínháng shí jìnqule yíxià.",
+        "en": "I dropped in when I passed the bank."
+      }
+    },
+    {
+      "w": "操场",
+      "py": "cāochǎng",
+      "en": "playground; sports ground",
+      "ex": {
+        "hz": "同学们在操场上踢球。",
+        "py": "Tóngxuémen zài cāochǎng shang tī qiú.",
+        "en": "The students are playing football on the field."
+      }
+    },
+    {
+      "w": "叫",
+      "py": "jiào",
+      "en": "by (marks the doer in a passive; also: to call; to be called)",
+      "ex": {
+        "hz": "我的杯子叫弟弟摔了。",
+        "py": "Wǒ de bēizi jiào dìdi shuāi le.",
+        "en": "My cup got broken by my little brother."
+      }
+    },
+    {
+      "w": "砸",
+      "py": "zá",
+      "en": "to hit; to smash",
+      "ex": {
+        "hz": "球砸到了他的头。",
+        "py": "Qiú zádàole tā de tóu.",
+        "en": "The ball hit his head."
+      }
+    },
+    {
+      "w": "气",
+      "py": "qì",
+      "en": "to be angry; to make angry",
+      "ex": {
+        "hz": "他气得不说话。",
+        "py": "Tā qì de bù shuō huà.",
+        "en": "He was too angry to speak."
+      }
+    },
+    {
+      "w": "考",
+      "py": "kǎo",
+      "en": "to take / give an exam",
+      "ex": {
+        "hz": "下星期考汉语。",
+        "py": "Xià xīngqī kǎo Hànyǔ.",
+        "en": "The Chinese exam is next week."
+      }
+    },
+    {
+      "w": "听力",
+      "py": "tīnglì",
+      "en": "listening (skill)",
+      "ex": {
+        "hz": "我的听力不太好。",
+        "py": "Wǒ de tīnglì bú tài hǎo.",
+        "en": "My listening isn't very good."
+      }
+    },
+    {
+      "w": "复习",
+      "py": "fùxí",
+      "en": "to review",
+      "ex": {
+        "hz": "考试以前要复习。",
+        "py": "Kǎoshì yǐqián yào fùxí.",
+        "en": "Review before the exam."
+      }
+    },
+    {
+      "w": "咳",
+      "py": "hāi",
+      "en": "oh (sigh)",
+      "ex": {
+        "hz": "咳，又下雨了。",
+        "py": "Hāi, yòu xià yǔ le.",
+        "en": "Oh dear, it's raining again."
+      }
+    },
+    {
+      "w": "让",
+      "py": "ràng",
+      "en": "by (marks the doer in a passive); to let",
+      "ex": {
+        "hz": "我的伞让朋友拿走了。",
+        "py": "Wǒ de sǎn ràng péngyou názǒu le.",
+        "en": "My umbrella was taken by a friend."
+      }
+    },
+    {
+      "w": "录音",
+      "py": "lùyīn",
+      "en": "recording; to record",
+      "ex": {
+        "hz": "我想听那个录音。",
+        "py": "Wǒ xiǎng tīng nàge lùyīn.",
+        "en": "I want to listen to that recording."
+      }
+    },
+    {
+      "w": "连",
+      "py": "lián",
+      "en": "even (连…也/都… even …)",
+      "ex": {
+        "hz": "他连饭也没吃。",
+        "py": "Tā lián fàn yě méi chī.",
+        "en": "He didn't even eat."
+      }
+    },
+    {
+      "w": "急",
+      "py": "jí",
+      "en": "worried; to worry",
+      "ex": {
+        "hz": "别急，慢慢说。",
+        "py": "Bié jí, mànmàn shuō.",
+        "en": "Don't worry, speak slowly."
+      }
+    },
+    {
+      "w": "电子",
+      "py": "diànzǐ",
+      "en": "electronic",
+      "ex": {
+        "hz": "我喜欢电子书。",
+        "py": "Wǒ xǐhuan diànzǐ shū.",
+        "en": "I like e-books."
+      }
+    },
+    {
+      "w": "阅览室",
+      "py": "yuèlǎnshì",
+      "en": "reading room",
+      "ex": {
+        "hz": "阅览室里很安静。",
+        "py": "Yuèlǎnshì li hěn ānjìng.",
+        "en": "The reading room is very quiet."
+      }
+    },
+    {
+      "w": "主意",
+      "py": "zhǔyi",
+      "en": "idea; plan",
+      "ex": {
+        "hz": "这个主意不错。",
+        "py": "Zhège zhǔyi búcuò.",
+        "en": "That's a good idea."
+      }
+    },
+    {
+      "w": "树",
+      "py": "shù",
+      "en": "tree",
+      "ex": {
+        "hz": "公园里有很多树。",
+        "py": "Gōngyuán li yǒu hěn duō shù.",
+        "en": "There are many trees in the park."
+      }
+    },
+    {
+      "w": "淋",
+      "py": "lín",
+      "en": "to get drenched",
+      "ex": {
+        "hz": "我被雨淋了。",
+        "py": "Wǒ bèi yǔ lín le.",
+        "en": "I got caught in the rain."
+      }
+    },
+    {
+      "w": "湿",
+      "py": "shī",
+      "en": "wet",
+      "ex": {
+        "hz": "我的衣服湿了。",
+        "py": "Wǒ de yīfu shī le.",
+        "en": "My clothes are wet."
+      }
+    },
+    {
+      "w": "批评",
+      "py": "pīpíng",
+      "en": "to criticize",
+      "ex": {
+        "hz": "老师批评了他。",
+        "py": "Lǎoshī pīpíngle tā.",
+        "en": "The teacher criticized him."
+      }
+    },
+    {
+      "w": "顿",
+      "py": "dùn",
+      "en": "(measure word for scoldings, meals)",
+      "ex": {
+        "hz": "我吃了一顿饭。",
+        "py": "Wǒ chīle yí dùn fàn.",
+        "en": "I had a meal."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "雨中的伞",
+      "py": "Yǔ zhōng de sǎn",
+      "en": "An umbrella in the rain",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你的衣服怎么湿了？",
+          "py": "Nǐ de yīfu zěnme shī le?",
+          "en": "Why are your clothes wet?"
+        },
+        {
+          "who": "B",
+          "hz": "别提了，我的伞让朋友拿走了，我被雨淋透了。",
+          "py": "Bié tí le, wǒ de sǎn ràng péngyou názǒu le, wǒ bèi yǔ líntòu le.",
+          "en": "Don't ask; a friend took my umbrella and I got soaked in the rain."
+        },
+        {
+          "who": "A",
+          "hz": "真倒霉！快去换衣服吧。",
+          "py": "Zhēn dǎoméi! Kuài qù huàn yīfu ba.",
+          "en": "What bad luck! Go and change quickly."
+        },
+        {
+          "who": "B",
+          "hz": "现在连手也冷了，我先去洗个热水澡。",
+          "py": "Xiànzài lián shǒu yě lěng le, wǒ xiān qù xǐ ge rèshuǐ zǎo.",
+          "en": "Even my hands are cold now; I'll take a hot bath first."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Why did B get wet?",
+          "options": [
+            "A friend took the umbrella",
+            "The umbrella was broken",
+            "B forgot the umbrella",
+            "It was too small"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What will B do first?",
+          "options": [
+            "Take a hot bath",
+            "Buy an umbrella",
+            "Go to the doctor",
+            "Call a friend"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "倒霉的一天",
+      "py": "Dǎoméi de yì tiān",
+      "en": "An unlucky day",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你今天怎么不高兴？",
+          "py": "Nǐ jīntiān zěnme bù gāoxìng?",
+          "en": "Why are you unhappy today?"
+        },
+        {
+          "who": "B",
+          "hz": "我今天真倒霉，上课迟到，被老师批评了一顿。",
+          "py": "Wǒ jīntiān zhēn dǎoméi, shàngkè chídào, bèi lǎoshī pīpíngle yí dùn.",
+          "en": "I've had an unlucky day: I was late for class and got told off by the teacher."
+        },
+        {
+          "who": "A",
+          "hz": "为什么迟到了？",
+          "py": "Wèi shénme chídào le?",
+          "en": "Why were you late?"
+        },
+        {
+          "who": "B",
+          "hz": "我的自行车叫人骑走了，我只能走路去学校。",
+          "py": "Wǒ de zìxíngchē jiào rén qízǒu le, wǒ zhǐ néng zǒu lù qù xuéxiào.",
+          "en": "Someone rode off on my bike, so I had to walk to school."
+        },
+        {
+          "who": "A",
+          "hz": "别急，我们一起去找找吧。",
+          "py": "Bié jí, wǒmen yìqǐ qù zhǎozhao ba.",
+          "en": "Don't worry, let's go and look for it together."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Why was B told off?",
+          "options": [
+            "B was late for class",
+            "B lost a book",
+            "B broke a cup",
+            "B didn't do the homework"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What happened to B's bike?",
+          "options": [
+            "Someone rode it away",
+            "It broke",
+            "It got wet",
+            "B lent it to a friend"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "被 / 叫 / 让 passive",
+      "en": "Subject (what is affected) + 被 / 叫 / 让 + doer + verb + result. 被 is more bookish, 叫 and 让 are spoken. The verb needs a result or other element, and the sentence often reports something unwelcome.",
+      "drills": [
+        {
+          "q": "我的钱包___人拿走了。",
+          "options": [
+            "被",
+            "对",
+            "比",
+            "跟"
+          ],
+          "answer": 0,
+          "en": "My wallet was taken by someone."
+        },
+        {
+          "q": "我的面包___小猫吃了。",
+          "options": [
+            "让",
+            "在",
+            "比",
+            "对"
+          ],
+          "answer": 0,
+          "en": "My bread was eaten by the cat."
+        },
+        {
+          "q": "我___老师批评了一顿。",
+          "options": [
+            "叫",
+            "对",
+            "在",
+            "比"
+          ],
+          "answer": 0,
+          "en": "I got a telling-off from the teacher."
+        },
+        {
+          "q": "我的电脑被他___坏了。",
+          "options": [
+            "摔",
+            "给",
+            "把",
+            "被"
+          ],
+          "answer": 0,
+          "en": "My computer was broken when he dropped it."
+        }
+      ]
+    },
+    {
+      "point": "Where things go in a passive",
+      "en": "Negatives and 可能 / 想 go before 被 / 叫 / 让. If the doer is unknown or unimportant, 被 can come straight before the verb, or 人 can stand for \"someone\".",
+      "drills": [
+        {
+          "q": "我的伞___被朋友拿走。",
+          "options": [
+            "没",
+            "在",
+            "把",
+            "对"
+          ],
+          "answer": 0,
+          "en": "My umbrella wasn't taken by a friend."
+        },
+        {
+          "q": "蛋糕都___吃完了。",
+          "options": [
+            "被",
+            "把",
+            "对",
+            "比"
+          ],
+          "answer": 0,
+          "en": "The cake has all been eaten."
+        },
+        {
+          "q": "他___被老师批评了。",
+          "options": [
+            "没",
+            "把",
+            "在",
+            "对"
+          ],
+          "answer": 0,
+          "en": "He wasn't criticized by the teacher."
+        },
+        {
+          "q": "我的自行车可能___人骑走了。",
+          "options": [
+            "让",
+            "对",
+            "在",
+            "比"
+          ],
+          "answer": 0,
+          "en": "Someone may have ridden off on my bike."
+        }
+      ]
+    },
+    {
+      "point": "连……也 / 都……",
+      "en": "\"Even …\": 连 puts a word in the spotlight, and 也 or 都 follows to say that even this is so, which shows how extreme things are.",
+      "drills": [
+        {
+          "q": "他忙得___吃饭的时间也没有。",
+          "options": [
+            "连",
+            "对",
+            "把",
+            "被"
+          ],
+          "answer": 0,
+          "en": "He is so busy he doesn't even have time to eat."
+        },
+        {
+          "q": "这个问题太容易了，连孩子___会做。",
+          "options": [
+            "都",
+            "就",
+            "又",
+            "还"
+          ],
+          "answer": 0,
+          "en": "This question is so easy that even a child can do it."
+        },
+        {
+          "q": "我感冒了，连饭___吃不下。",
+          "options": [
+            "也",
+            "就",
+            "又",
+            "还"
+          ],
+          "answer": 0,
+          "en": "I have a cold; I can't even eat."
+        },
+        {
+          "q": "他太累了，___话也不想说。",
+          "options": [
+            "连",
+            "对",
+            "被",
+            "比"
+          ],
+          "answer": 0,
+          "en": "He is so tired he doesn't even want to talk."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你的腿怎么了？"
+          ],
+          [
+            "女",
+            "别提了，下楼的时候摔倒了。"
+          ]
+        ],
+        "q": "他怎么了？",
+        "options": [
+          "摔倒了",
+          "感冒了",
+          "被撞倒了"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你复习得怎么样了？"
+          ],
+          [
+            "女",
+            "还没复习完，连生词也没看。"
+          ]
+        ],
+        "q": "他还没做什么？",
+        "options": [
+          "看生词",
+          "买书",
+          "考试"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你的衣服怎么湿了？"
+          ],
+          [
+            "女",
+            "我被雨淋了，没带伞。"
+          ]
+        ],
+        "q": "他为什么湿了？",
+        "options": [
+          "被雨淋了",
+          "洗澡了",
+          "摔倒了"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你的手机修好了吗？"
+          ],
+          [
+            "女",
+            "还没呢，我先用妈妈的。"
+          ]
+        ],
+        "q": "他用谁的手机？",
+        "options": [
+          "妈妈的",
+          "自己的",
+          "朋友的"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "我的自行车让哥哥骑走了。",
+        "claim": "哥哥的自行车不见了。",
+        "ok": false
+      },
+      {
+        "text": "他踢球的时候被人撞倒了，胳膊都青了。",
+        "claim": "他踢球时被撞倒了。",
+        "ok": true
+      },
+      {
+        "text": "这么晚还不回家，真不像话！",
+        "claim": "说话人很高兴。",
+        "ok": false
+      },
+      {
+        "text": "我忙得连午饭也没吃。",
+        "claim": "我没吃午饭。",
+        "ok": true
+      }
+    ],
+    "replies": [
+      {
+        "q": "你怎么了？",
+        "a": "别提了，我的钱包被人拿走了。"
+      },
+      {
+        "q": "你的杯子呢？",
+        "a": "叫弟弟摔坏了。"
+      },
+      {
+        "q": "考试以前你复习了吗？",
+        "a": "复习了，连听力也复习了。"
+      },
+      {
+        "q": "我的电脑坏了，怎么办？",
+        "a": "别急，先用我的吧。"
+      }
+    ]
+  }
+}

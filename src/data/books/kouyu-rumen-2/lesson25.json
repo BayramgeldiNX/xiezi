@@ -1,0 +1,690 @@
+{
+  "n": 25,
+  "cn": "第25课",
+  "title": "他恐怕去不了",
+  "en": "I'm Afraid He Won't Be Able to Go",
+  "words": [
+    {
+      "w": "空儿",
+      "py": "kòngr",
+      "en": "free time",
+      "ex": {
+        "hz": "你明天有空儿吗？",
+        "py": "Nǐ míngtiān yǒu kòngr ma?",
+        "en": "Are you free tomorrow?"
+      }
+    },
+    {
+      "w": "的话",
+      "py": "dehuà",
+      "en": "if (after a clause)",
+      "ex": {
+        "hz": "你累的话，就休息吧。",
+        "py": "Nǐ lèi dehuà, jiù xiūxi ba.",
+        "en": "If you're tired, have a rest."
+      }
+    },
+    {
+      "w": "对话",
+      "py": "duìhuà",
+      "en": "dialogue",
+      "ex": {
+        "hz": "这个对话不太难。",
+        "py": "Zhège duìhuà bú tài nán.",
+        "en": "This dialogue isn't too hard."
+      }
+    },
+    {
+      "w": "字幕",
+      "py": "zìmù",
+      "en": "subtitles",
+      "ex": {
+        "hz": "这个电影有英文字幕。",
+        "py": "Zhège diànyǐng yǒu Yīngwén zìmù.",
+        "en": "This film has English subtitles."
+      }
+    },
+    {
+      "w": "大概",
+      "py": "dàgài",
+      "en": "roughly; probably",
+      "ex": {
+        "hz": "我大概八点到。",
+        "py": "Wǒ dàgài bā diǎn dào.",
+        "en": "I'll arrive at about eight."
+      }
+    },
+    {
+      "w": "意思",
+      "py": "yìsi",
+      "en": "meaning",
+      "ex": {
+        "hz": "这个词是什么意思？",
+        "py": "Zhège cí shì shénme yìsi?",
+        "en": "What does this word mean?"
+      }
+    },
+    {
+      "w": "肯定",
+      "py": "kěndìng",
+      "en": "for sure",
+      "ex": {
+        "hz": "他肯定知道。",
+        "py": "Tā kěndìng zhīdào.",
+        "en": "He surely knows."
+      }
+    },
+    {
+      "w": "恐怕",
+      "py": "kǒngpà",
+      "en": "I'm afraid that",
+      "ex": {
+        "hz": "明天恐怕要下雨。",
+        "py": "Míngtiān kǒngpà yào xià yǔ.",
+        "en": "I'm afraid it will rain tomorrow."
+      }
+    },
+    {
+      "w": "为什么",
+      "py": "wèi shénme",
+      "en": "why",
+      "ex": {
+        "hz": "你为什么不吃？",
+        "py": "Nǐ wèi shénme bù chī?",
+        "en": "Why aren't you eating?"
+      }
+    },
+    {
+      "w": "受伤",
+      "py": "shòushāng",
+      "en": "to get hurt",
+      "ex": {
+        "hz": "弟弟打篮球受伤了。",
+        "py": "Dìdi dǎ lánqiú shòushāng le.",
+        "en": "My younger brother got hurt playing basketball."
+      }
+    },
+    {
+      "w": "俩",
+      "py": "liǎ",
+      "en": "the two (of us, of them)",
+      "ex": {
+        "hz": "咱俩一起去吧。",
+        "py": "Zán liǎ yìqǐ qù ba.",
+        "en": "Let's go together, the two of us."
+      }
+    },
+    {
+      "w": "座位",
+      "py": "zuòwèi",
+      "en": "seat",
+      "ex": {
+        "hz": "这个座位有人吗？",
+        "py": "Zhège zuòwèi yǒu rén ma?",
+        "en": "Is this seat taken?"
+      }
+    },
+    {
+      "w": "邀请",
+      "py": "yāoqǐng",
+      "en": "to invite",
+      "ex": {
+        "hz": "朋友邀请我去她家。",
+        "py": "Péngyou yāoqǐng wǒ qù tā jiā.",
+        "en": "A friend invited me to her home."
+      }
+    },
+    {
+      "w": "郊游",
+      "py": "jiāoyóu",
+      "en": "outing in the countryside",
+      "ex": {
+        "hz": "星期天我们去郊游。",
+        "py": "Xīngqītiān wǒmen qù jiāoyóu.",
+        "en": "We're going on an outing on Sunday."
+      }
+    },
+    {
+      "w": "约",
+      "py": "yuē",
+      "en": "to arrange to meet",
+      "ex": {
+        "hz": "我约了朋友吃饭。",
+        "py": "Wǒ yuē le péngyou chī fàn.",
+        "en": "I've arranged to eat with a friend."
+      }
+    },
+    {
+      "w": "长途",
+      "py": "chángtú",
+      "en": "long-distance",
+      "ex": {
+        "hz": "他坐长途汽车去上海。",
+        "py": "Tā zuò chángtú qìchē qù Shànghǎi.",
+        "en": "He goes to Shanghai by long-distance bus."
+      }
+    },
+    {
+      "w": "赶",
+      "py": "gǎn",
+      "en": "to rush to catch",
+      "ex": {
+        "hz": "快走，我们要赶火车。",
+        "py": "Kuài zǒu, wǒmen yào gǎn huǒchē.",
+        "en": "Hurry, we have a train to catch."
+      }
+    },
+    {
+      "w": "约会",
+      "py": "yuēhuì",
+      "en": "date; appointment",
+      "ex": {
+        "hz": "今晚我有个约会。",
+        "py": "Jīnwǎn wǒ yǒu ge yuēhuì.",
+        "en": "I have a date tonight."
+      }
+    },
+    {
+      "w": "放心",
+      "py": "fàngxīn",
+      "en": "to rest assured",
+      "ex": {
+        "hz": "你放心，我不会忘。",
+        "py": "Nǐ fàngxīn, wǒ bú huì wàng.",
+        "en": "Don't worry, I won't forget."
+      }
+    },
+    {
+      "w": "耽误",
+      "py": "dānwu",
+      "en": "to delay; to hold up",
+      "ex": {
+        "hz": "对不起，耽误你的时间了。",
+        "py": "Duìbuqǐ, dānwu nǐ de shíjiān le.",
+        "en": "Sorry to take up your time."
+      }
+    },
+    {
+      "w": "脏",
+      "py": "zāng",
+      "en": "dirty",
+      "ex": {
+        "hz": "这件衣服太脏了。",
+        "py": "Zhè jiàn yīfu tài zāng le.",
+        "en": "This piece of clothing is too dirty."
+      }
+    },
+    {
+      "w": "烫",
+      "py": "tàng",
+      "en": "scalding hot",
+      "ex": {
+        "hz": "这杯茶有点儿烫。",
+        "py": "Zhè bēi chá yǒudiǎnr tàng.",
+        "en": "This tea is a bit too hot."
+      }
+    },
+    {
+      "w": "忘",
+      "py": "wàng",
+      "en": "to forget",
+      "ex": {
+        "hz": "我忘了他的名字。",
+        "py": "Wǒ wàng le tā de míngzi.",
+        "en": "I forgot his name."
+      }
+    },
+    {
+      "w": "上闹钟",
+      "py": "shàng nàozhōng",
+      "en": "to set the alarm",
+      "ex": {
+        "hz": "我上了六点的闹钟。",
+        "py": "Wǒ shàng le liù diǎn de nàozhōng.",
+        "en": "I set the alarm for six."
+      }
+    },
+    {
+      "w": "病人",
+      "py": "bìngrén",
+      "en": "patient",
+      "ex": {
+        "hz": "医院里有很多病人。",
+        "py": "Yīyuàn li yǒu hěn duō bìngrén.",
+        "en": "There are many patients in the hospital."
+      }
+    },
+    {
+      "w": "看病",
+      "py": "kàn bìng",
+      "en": "to see a doctor",
+      "ex": {
+        "hz": "他去医院看病。",
+        "py": "Tā qù yīyuàn kàn bìng.",
+        "en": "He goes to the hospital to see a doctor."
+      }
+    },
+    {
+      "w": "大夫",
+      "py": "dàifu",
+      "en": "doctor",
+      "ex": {
+        "hz": "这位大夫很好。",
+        "py": "Zhè wèi dàifu hěn hǎo.",
+        "en": "This doctor is very good."
+      }
+    },
+    {
+      "w": "药方",
+      "py": "yàofāng",
+      "en": "prescription",
+      "ex": {
+        "hz": "大夫给我开了药方。",
+        "py": "Dàifu gěi wǒ kāi le yàofāng.",
+        "en": "The doctor wrote me a prescription."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "去爬山吗",
+      "py": "Qù pá shān ma",
+      "en": "Hiking, maybe",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "这个星期六你有空儿的话，咱们去爬山吧。",
+          "py": "Zhège xīngqīliù nǐ yǒu kòngr dehuà, zánmen qù pá shān ba.",
+          "en": "If you're free this Saturday, let's go hiking."
+        },
+        {
+          "who": "B",
+          "hz": "好啊，我们几点出发？",
+          "py": "Hǎo a, wǒmen jǐ diǎn chūfā?",
+          "en": "Sure, what time do we set off?"
+        },
+        {
+          "who": "A",
+          "hz": "早上七点，我们得赶第一辆长途汽车。",
+          "py": "Zǎoshang qī diǎn, wǒmen děi gǎn dì-yī liàng chángtú qìchē.",
+          "en": "Seven in the morning, we need to catch the first coach."
+        },
+        {
+          "who": "B",
+          "hz": "七点？我恐怕起不来。",
+          "py": "Qī diǎn? Wǒ kǒngpà qǐ bu lái.",
+          "en": "Seven? I'm afraid I can't get up."
+        },
+        {
+          "who": "A",
+          "hz": "放心吧，我给你打电话。",
+          "py": "Fàngxīn ba, wǒ gěi nǐ dǎ diànhuà.",
+          "en": "Don't worry, I'll phone you."
+        },
+        {
+          "who": "B",
+          "hz": "好，我也上个闹钟，肯定不会忘。",
+          "py": "Hǎo, wǒ yě shàng ge nàozhōng, kěndìng bú huì wàng.",
+          "en": "OK, I'll set an alarm too, I definitely won't forget."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How will they travel?",
+          "options": [
+            "By long-distance coach",
+            "By subway",
+            "By bike",
+            "By plane"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Why is B worried?",
+          "options": [
+            "Getting up early",
+            "The cost",
+            "The weather",
+            "No free time"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "听不清楚",
+      "py": "Tīng bu qīngchu",
+      "en": "Can't hear clearly",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "老师讲得太快了，我听不懂。",
+          "py": "Lǎoshī jiǎng de tài kuài le, wǒ tīng bu dǒng.",
+          "en": "The teacher speaks too fast, I can't follow."
+        },
+        {
+          "who": "B",
+          "hz": "你坐前边吧，那儿听得清楚。",
+          "py": "Nǐ zuò qiánbian ba, nàr tīng de qīngchu.",
+          "en": "Sit at the front, you can hear well there."
+        },
+        {
+          "who": "A",
+          "hz": "前边的座位都有人了。",
+          "py": "Qiánbian de zuòwèi dōu yǒu rén le.",
+          "en": "The front seats are all taken."
+        },
+        {
+          "who": "B",
+          "hz": "那我们换座位吧，我坐后边。",
+          "py": "Nà wǒmen huàn zuòwèi ba, wǒ zuò hòubian.",
+          "en": "Then let us swap seats; I will sit at the back."
+        },
+        {
+          "who": "A",
+          "hz": "谢谢你，你真好！",
+          "py": "Xièxie nǐ, nǐ zhēn hǎo!",
+          "en": "Thank you, you're so kind!"
+        }
+      ],
+      "questions": [
+        {
+          "q": "What can't A do?",
+          "options": [
+            "Understand the teacher",
+            "See the board",
+            "Find a pen",
+            "Get a seat at the back"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What does B suggest in the end?",
+          "options": [
+            "Swap seats",
+            "Leave early",
+            "Ask the teacher",
+            "Sit outside"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "可能补语 (verb + 得/不 + result)",
+      "en": "can or can't manage it: verb + 得 + result, negative verb + 不 + result; question: 看得懂看不懂?",
+      "drills": [
+        {
+          "q": "声音太小了，我听___清楚。",
+          "options": [
+            "不",
+            "没",
+            "别",
+            "很"
+          ],
+          "answer": 0,
+          "en": "The sound is too quiet, I can't hear clearly."
+        },
+        {
+          "q": "我太累了，站___起来了。",
+          "options": [
+            "不",
+            "没",
+            "别",
+            "否"
+          ],
+          "answer": 0,
+          "en": "I'm so tired I can't stand up."
+        },
+        {
+          "q": "他说得太快，我听___。",
+          "options": [
+            "不懂",
+            "没懂",
+            "别懂",
+            "很懂"
+          ],
+          "answer": 0,
+          "en": "He speaks too fast, I can't understand."
+        },
+        {
+          "q": "你看得懂___？",
+          "options": [
+            "看不懂",
+            "不看懂",
+            "没看懂",
+            "看了懂"
+          ],
+          "answer": 0,
+          "en": "Can you understand it or not?"
+        }
+      ]
+    },
+    {
+      "point": "得了 / 不了 (liǎo)",
+      "en": "verb + 得了 / 不了: whether it is possible, or whether it can all be finished",
+      "drills": [
+        {
+          "q": "这么多作业，我今天做___了。",
+          "options": [
+            "不",
+            "没",
+            "别",
+            "太"
+          ],
+          "answer": 0,
+          "en": "There's so much homework, I can't finish it today."
+        },
+        {
+          "q": "他生病了，今天来___了。",
+          "options": [
+            "不",
+            "没",
+            "别",
+            "太"
+          ],
+          "answer": 0,
+          "en": "He's ill and can't come today."
+        },
+        {
+          "q": "这件事你做___了做不了？",
+          "options": [
+            "得",
+            "不",
+            "没",
+            "别"
+          ],
+          "answer": 0,
+          "en": "Can you manage this or not?"
+        },
+        {
+          "q": "放心吧，我忘___了你。",
+          "options": [
+            "不",
+            "没",
+            "别",
+            "太"
+          ],
+          "answer": 0,
+          "en": "Don't worry, I could never forget you."
+        }
+      ]
+    },
+    {
+      "point": "怎么(能)……呢 (rhetorical)",
+      "en": "not a real question: it says the thing is impossible or absurd",
+      "drills": [
+        {
+          "q": "这么贵的东西，我___买得起呢？",
+          "options": [
+            "怎么",
+            "多么",
+            "那么",
+            "这么"
+          ],
+          "answer": 0,
+          "en": "I couldn't possibly afford something this expensive."
+        },
+        {
+          "q": "他病了，怎么___去上班呢？",
+          "options": [
+            "能",
+            "有",
+            "把",
+            "的"
+          ],
+          "answer": 0,
+          "en": "He's ill; how could he go to work?"
+        },
+        {
+          "q": "他是我最好的朋友，我___能忘了他呢？",
+          "options": [
+            "怎么",
+            "这么",
+            "那么",
+            "多么"
+          ],
+          "answer": 0,
+          "en": "He's my best friend, how could I forget him?"
+        },
+        {
+          "q": "这么远，我们怎么走得到___？",
+          "options": [
+            "呢",
+            "吗",
+            "吧",
+            "着"
+          ],
+          "answer": 0,
+          "en": "It's so far; how could we walk there?"
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你明天去得了吗？"
+          ],
+          [
+            "女",
+            "去不了，我要上班。"
+          ]
+        ],
+        "q": "他明天为什么去不了？",
+        "options": [
+          "要上班",
+          "受伤了",
+          "起不来"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "电视声音太小，我听不清楚。"
+          ],
+          [
+            "女",
+            "我去开大一点儿。"
+          ]
+        ],
+        "q": "电视怎么了？",
+        "options": [
+          "声音太小",
+          "太贵了",
+          "没开"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你上闹钟了吗？"
+          ],
+          [
+            "女",
+            "上了，放心吧。"
+          ]
+        ],
+        "q": "她上闹钟了吗？",
+        "options": [
+          "上了",
+          "没上",
+          "忘了"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "这么多书，你拿得了吗？"
+          ],
+          [
+            "女",
+            "拿不了，太多了。"
+          ]
+        ],
+        "q": "他觉得书怎么样？",
+        "options": [
+          "太多",
+          "太少",
+          "太新"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "我的手受伤了，今天写不了字。",
+        "claim": "我今天可以写字。",
+        "ok": false
+      },
+      {
+        "text": "明天早上六点出发，我恐怕起不来。",
+        "claim": "我担心起不来。",
+        "ok": true
+      },
+      {
+        "text": "这件衣服太脏了，我穿不了。",
+        "claim": "我不能穿这件衣服。",
+        "ok": true
+      },
+      {
+        "text": "朋友邀请我去郊游，我没有空儿。",
+        "claim": "我要去郊游。",
+        "ok": false
+      }
+    ],
+    "replies": [
+      {
+        "q": "明天你去得了去不了？",
+        "a": "恐怕去不了。"
+      },
+      {
+        "q": "这么早，你起得来吗？",
+        "a": "放心吧，我上了闹钟。"
+      },
+      {
+        "q": "咖啡太烫了，怎么喝呢？",
+        "a": "先放一会儿吧。"
+      },
+      {
+        "q": "这个字是什么意思？",
+        "a": "我也不太清楚。"
+      }
+    ]
+  }
+}

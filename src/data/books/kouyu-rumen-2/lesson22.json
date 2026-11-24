@@ -1,0 +1,796 @@
+{
+  "n": 22,
+  "cn": "第22课",
+  "title": "门开着",
+  "en": "The door is open",
+  "words": [
+    {
+      "w": "开",
+      "py": "kāi",
+      "en": "to open; to turn on",
+      "ex": {
+        "hz": "请开门。",
+        "py": "Qǐng kāi mén.",
+        "en": "Please open the door."
+      }
+    },
+    {
+      "w": "着",
+      "py": "zhe",
+      "en": "(after a verb) in the state of",
+      "ex": {
+        "hz": "桌子上放着一杯茶。",
+        "py": "Zhuōzi shang fàngzhe yì bēi chá.",
+        "en": "A cup of tea is sitting on the table."
+      }
+    },
+    {
+      "w": "书架",
+      "py": "shūjià",
+      "en": "bookshelf",
+      "ex": {
+        "hz": "书架上有很多书。",
+        "py": "Shūjià shang yǒu hěn duō shū.",
+        "en": "There are many books on the bookshelf."
+      }
+    },
+    {
+      "w": "放",
+      "py": "fàng",
+      "en": "to put; to place",
+      "ex": {
+        "hz": "书放在桌子上。",
+        "py": "Shū fàng zài zhuōzi shang.",
+        "en": "The book is put on the table."
+      }
+    },
+    {
+      "w": "椅子",
+      "py": "yǐzi",
+      "en": "chair",
+      "ex": {
+        "hz": "椅子上没有人。",
+        "py": "Yǐzi shang méiyǒu rén.",
+        "en": "Nobody is on the chair."
+      }
+    },
+    {
+      "w": "躺",
+      "py": "tǎng",
+      "en": "to lie (down)",
+      "ex": {
+        "hz": "他躺在床上看书。",
+        "py": "Tā tǎng zài chuáng shang kàn shū.",
+        "en": "He lies on the bed reading."
+      }
+    },
+    {
+      "w": "地",
+      "py": "de",
+      "en": "(marks an adverb before a verb)",
+      "ex": {
+        "hz": "她高兴地回家了。",
+        "py": "Tā gāoxìng de huí jiā le.",
+        "en": "She went home happily."
+      }
+    },
+    {
+      "w": "立",
+      "py": "lì",
+      "en": "to stand upright",
+      "ex": {
+        "hz": "那儿立着一个人。",
+        "py": "Nàr lìzhe yí ge rén.",
+        "en": "A person stands over there."
+      }
+    },
+    {
+      "w": "排",
+      "py": "pái",
+      "en": "row",
+      "ex": {
+        "hz": "我坐在第三排。",
+        "py": "Wǒ zuò zài dì sān pái.",
+        "en": "I sit in the third row."
+      }
+    },
+    {
+      "w": "货架",
+      "py": "huòjià",
+      "en": "goods shelf",
+      "ex": {
+        "hz": "货架上有很多水果。",
+        "py": "Huòjià shang yǒu hěn duō shuǐguǒ.",
+        "en": "There is lots of fruit on the shelves."
+      }
+    },
+    {
+      "w": "整整齐齐",
+      "py": "zhěngzhěngqíqí",
+      "en": "neatly arranged",
+      "ex": {
+        "hz": "他的书放得整整齐齐。",
+        "py": "Tā de shū fàng de zhěngzhěngqíqí.",
+        "en": "His books are put away neatly."
+      }
+    },
+    {
+      "w": "整齐",
+      "py": "zhěngqí",
+      "en": "tidy; in good order",
+      "ex": {
+        "hz": "房间很整齐。",
+        "py": "Fángjiān hěn zhěngqí.",
+        "en": "The room is tidy."
+      }
+    },
+    {
+      "w": "摆",
+      "py": "bǎi",
+      "en": "to arrange; to display",
+      "ex": {
+        "hz": "桌子上摆着水果。",
+        "py": "Zhuōzi shang bǎizhe shuǐguǒ.",
+        "en": "Fruit is laid out on the table."
+      }
+    },
+    {
+      "w": "各种",
+      "py": "gèzhǒng",
+      "en": "all kinds of",
+      "ex": {
+        "hz": "超市里有各种水果。",
+        "py": "Chāoshì li yǒu gèzhǒng shuǐguǒ.",
+        "en": "The supermarket has all kinds of fruit."
+      }
+    },
+    {
+      "w": "挂",
+      "py": "guà",
+      "en": "to hang",
+      "ex": {
+        "hz": "墙上挂着一件衣服。",
+        "py": "Qiáng shang guàzhe yí jiàn yīfu.",
+        "en": "A piece of clothing hangs on the wall."
+      }
+    },
+    {
+      "w": "牌子",
+      "py": "páizi",
+      "en": "sign; board (also: brand)",
+      "ex": {
+        "hz": "门口有一个牌子。",
+        "py": "Ménkǒu yǒu yí ge páizi.",
+        "en": "There is a sign at the door."
+      }
+    },
+    {
+      "w": "勿",
+      "py": "wù",
+      "en": "do not (on signs)",
+      "ex": {
+        "hz": "图书馆里请勿大声说话。",
+        "py": "Túshūguǎn li qǐng wù dàshēng shuōhuà.",
+        "en": "Please do not talk loudly in the library."
+      }
+    },
+    {
+      "w": "吸烟",
+      "py": "xīyān",
+      "en": "to smoke",
+      "ex": {
+        "hz": "这儿不能吸烟。",
+        "py": "Zhèr bù néng xīyān.",
+        "en": "You can't smoke here."
+      }
+    },
+    {
+      "w": "书房",
+      "py": "shūfáng",
+      "en": "study (room)",
+      "ex": {
+        "hz": "爸爸在书房里看书。",
+        "py": "Bàba zài shūfáng li kàn shū.",
+        "en": "Dad is reading in the study."
+      }
+    },
+    {
+      "w": "沙发",
+      "py": "shāfā",
+      "en": "sofa",
+      "ex": {
+        "hz": "我家有一个大沙发。",
+        "py": "Wǒ jiā yǒu yí ge dà shāfā.",
+        "en": "We have a big sofa at home."
+      }
+    },
+    {
+      "w": "报",
+      "py": "bào",
+      "en": "newspaper",
+      "ex": {
+        "hz": "爷爷每天看报。",
+        "py": "Yéye měi tiān kàn bào.",
+        "en": "Grandpa reads the paper every day."
+      }
+    },
+    {
+      "w": "客厅",
+      "py": "kètīng",
+      "en": "living room",
+      "ex": {
+        "hz": "客厅里有电视。",
+        "py": "Kètīng li yǒu diànshì.",
+        "en": "There is a TV in the living room."
+      }
+    },
+    {
+      "w": "猫",
+      "py": "māo",
+      "en": "cat",
+      "ex": {
+        "hz": "我家有一只猫。",
+        "py": "Wǒ jiā yǒu yì zhī māo.",
+        "en": "We have a cat at home."
+      }
+    },
+    {
+      "w": "窗台",
+      "py": "chuāngtái",
+      "en": "windowsill",
+      "ex": {
+        "hz": "窗台上有一盆花。",
+        "py": "Chuāngtái shang yǒu yì pén huā.",
+        "en": "There is a pot of flowers on the windowsill."
+      }
+    },
+    {
+      "w": "趴",
+      "py": "pā",
+      "en": "to lie on one's front",
+      "ex": {
+        "hz": "孩子趴在桌子上写字。",
+        "py": "Háizi pā zài zhuōzi shang xiě zì.",
+        "en": "The child leans over the table to write."
+      }
+    },
+    {
+      "w": "窗户",
+      "py": "chuānghu",
+      "en": "window",
+      "ex": {
+        "hz": "这个房间有两个窗户。",
+        "py": "Zhège fángjiān yǒu liǎng ge chuānghu.",
+        "en": "This room has two windows."
+      }
+    },
+    {
+      "w": "站",
+      "py": "zhàn",
+      "en": "to stand (also: station)",
+      "ex": {
+        "hz": "他站在门口。",
+        "py": "Tā zhàn zài ménkǒu.",
+        "en": "He is standing at the door."
+      }
+    },
+    {
+      "w": "戴",
+      "py": "dài",
+      "en": "to wear (hat, glasses)",
+      "ex": {
+        "hz": "他戴帽子。",
+        "py": "Tā dài màozi.",
+        "en": "He wears a hat."
+      }
+    },
+    {
+      "w": "穿",
+      "py": "chuān",
+      "en": "to wear (clothes)",
+      "ex": {
+        "hz": "今天她穿红衣服。",
+        "py": "Jīntiān tā chuān hóng yīfu.",
+        "en": "Today she is wearing red."
+      }
+    },
+    {
+      "w": "抱",
+      "py": "bào",
+      "en": "to hold in the arms",
+      "ex": {
+        "hz": "他抱着一只猫。",
+        "py": "Tā bàozhe yì zhī māo.",
+        "en": "He is holding a cat in his arms."
+      }
+    },
+    {
+      "w": "拿",
+      "py": "ná",
+      "en": "to hold; to take",
+      "ex": {
+        "hz": "你拿着我的包吧。",
+        "py": "Nǐ názhe wǒ de bāo ba.",
+        "en": "You hold my bag."
+      }
+    },
+    {
+      "w": "背",
+      "py": "bēi",
+      "en": "to carry on the back",
+      "ex": {
+        "hz": "他背着一个大书包。",
+        "py": "Tā bēizhe yí ge dà shūbāo.",
+        "en": "He carries a big schoolbag on his back."
+      }
+    },
+    {
+      "w": "墙",
+      "py": "qiáng",
+      "en": "wall",
+      "ex": {
+        "hz": "墙是白色的。",
+        "py": "Qiáng shì báisè de.",
+        "en": "The wall is white."
+      }
+    },
+    {
+      "w": "画儿",
+      "py": "huàr",
+      "en": "picture; drawing",
+      "ex": {
+        "hz": "她会画画儿。",
+        "py": "Tā huì huà huàr.",
+        "en": "She can draw pictures."
+      }
+    },
+    {
+      "w": "哭",
+      "py": "kū",
+      "en": "to cry",
+      "ex": {
+        "hz": "别哭了，没事儿。",
+        "py": "Bié kū le, méi shìr.",
+        "en": "Don't cry; it's nothing."
+      }
+    },
+    {
+      "w": "生气",
+      "py": "shēngqì",
+      "en": "to be angry",
+      "ex": {
+        "hz": "你别生气，我错了。",
+        "py": "Nǐ bié shēngqì, wǒ cuò le.",
+        "en": "Don't be angry; I was wrong."
+      }
+    },
+    {
+      "w": "认认真真",
+      "py": "rènrènzhēnzhēn",
+      "en": "very carefully",
+      "ex": {
+        "hz": "他认认真真地写作业。",
+        "py": "Tā rènrènzhēnzhēn de xiě zuòyè.",
+        "en": "He does his homework very carefully."
+      }
+    },
+    {
+      "w": "认真",
+      "py": "rènzhēn",
+      "en": "serious; careful",
+      "ex": {
+        "hz": "她学习很认真。",
+        "py": "Tā xuéxí hěn rènzhēn.",
+        "en": "She studies conscientiously."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "找朋友",
+      "py": "Zhǎo péngyou",
+      "en": "Looking for a friend",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "喂，你在哪儿呢？",
+          "py": "Wèi, nǐ zài nǎr ne?",
+          "en": "Hello, where are you?"
+        },
+        {
+          "who": "B",
+          "hz": "我在咖啡馆门口站着呢。",
+          "py": "Wǒ zài kāfēiguǎn ménkǒu zhànzhe ne.",
+          "en": "I'm standing at the café door."
+        },
+        {
+          "who": "A",
+          "hz": "你穿着什么衣服？",
+          "py": "Nǐ chuānzhe shénme yīfu?",
+          "en": "What are you wearing?"
+        },
+        {
+          "who": "B",
+          "hz": "我穿着红衣服，背着一个大书包。",
+          "py": "Wǒ chuānzhe hóng yīfu, bēizhe yí ge dà shūbāo.",
+          "en": "I'm in red, with a big bag on my back."
+        },
+        {
+          "who": "A",
+          "hz": "我看见你了！我戴着帽子，就在你后边。",
+          "py": "Wǒ kànjiàn nǐ le! Wǒ dàizhe màozi, jiù zài nǐ hòubian.",
+          "en": "I can see you! I'm wearing a hat, right behind you."
+        },
+        {
+          "who": "B",
+          "hz": "我也看见你了！",
+          "py": "Wǒ yě kànjiàn nǐ le!",
+          "en": "I can see you too!"
+        }
+      ],
+      "questions": [
+        {
+          "q": "Where is B standing?",
+          "options": [
+            "At the café door",
+            "In the park",
+            "At school",
+            "At the station"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What is B wearing?",
+          "options": [
+            "Red clothes and a big bag",
+            "A hat and a scarf",
+            "A blue coat",
+            "A white shirt"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "好好儿休息",
+      "py": "Hǎohāor xiūxi",
+      "en": "Rest well",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你怎么了？你很累吗？",
+          "py": "Nǐ zěnme le? Nǐ hěn lèi ma?",
+          "en": "What's wrong? Are you tired?"
+        },
+        {
+          "who": "B",
+          "hz": "是啊，这个星期我天天认认真真地工作，没有休息。",
+          "py": "Shì a, zhège xīngqī wǒ tiāntiān rènrènzhēnzhēn de gōngzuò, méiyǒu xiūxi.",
+          "en": "Yes. All week I worked hard every day and had no rest."
+        },
+        {
+          "who": "A",
+          "hz": "那今晚早点儿睡吧，明天是周末。",
+          "py": "Nà jīnwǎn zǎodiǎnr shuì ba, míngtiān shì zhōumò.",
+          "en": "Then go to bed early tonight; tomorrow is the weekend."
+        },
+        {
+          "who": "B",
+          "hz": "好，明天我要慢慢地吃早饭，慢慢地看书。",
+          "py": "Hǎo, míngtiān wǒ yào mànmàn de chī zǎofàn, mànmàn de kàn shū.",
+          "en": "OK. Tomorrow I'll eat breakfast slowly and read slowly."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Why is B tired?",
+          "options": [
+            "He worked hard all week",
+            "He studied all night",
+            "He travelled a lot",
+            "He was ill"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What will B do tomorrow?",
+          "options": [
+            "Eat and read slowly",
+            "Go to work",
+            "Go on an outing",
+            "See a doctor"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "着 (a continuing state or manner)",
+      "en": "Verb + 着 describes a state that lasts: 门开着. Negative: 没 + verb + 着. Question: …着没有？ It can also show the manner of another action: 喝着咖啡聊天儿.",
+      "drills": [
+        {
+          "q": "门口站___一个人。",
+          "options": [
+            "着",
+            "吗",
+            "地",
+            "得"
+          ],
+          "answer": 0,
+          "en": "A person is standing at the door."
+        },
+        {
+          "q": "灯没开___，房间里很黑。",
+          "options": [
+            "着",
+            "地",
+            "得",
+            "吗"
+          ],
+          "answer": 0,
+          "en": "The light isn't on; the room is dark."
+        },
+        {
+          "q": "你的手机开___没有？",
+          "options": [
+            "着",
+            "吗",
+            "地",
+            "得"
+          ],
+          "answer": 0,
+          "en": "Is your phone on?"
+        },
+        {
+          "q": "他们听___音乐做饭。",
+          "options": [
+            "着",
+            "地",
+            "得",
+            "吗"
+          ],
+          "answer": 0,
+          "en": "They cook while listening to music."
+        }
+      ]
+    },
+    {
+      "point": "地",
+      "en": "Put 地 between an adverb-like adjective and the verb: 认真地写. For the result after a verb use 得: 写得很认真.",
+      "drills": [
+        {
+          "q": "她认真___听老师讲话。",
+          "options": [
+            "地",
+            "的",
+            "得",
+            "着"
+          ],
+          "answer": 0,
+          "en": "She listens to the teacher carefully."
+        },
+        {
+          "q": "他慢慢___走进教室。",
+          "options": [
+            "地",
+            "的",
+            "得",
+            "着"
+          ],
+          "answer": 0,
+          "en": "He walked slowly into the classroom."
+        },
+        {
+          "q": "她很高兴___说：“你好！”",
+          "options": [
+            "地",
+            "的",
+            "得",
+            "着"
+          ],
+          "answer": 0,
+          "en": "She said happily, \"Hello!\""
+        },
+        {
+          "q": "他汉字写___很认真。",
+          "options": [
+            "得",
+            "地",
+            "的",
+            "着"
+          ],
+          "answer": 0,
+          "en": "He writes characters very carefully."
+        }
+      ]
+    },
+    {
+      "point": "形容词重叠",
+      "en": "Doubling an adjective makes it stronger: 大 → 大大, 高兴 → 高高兴兴 (AABB). As a manner before a verb, AABB needs 地.",
+      "drills": [
+        {
+          "q": "他的房间收拾得___。",
+          "options": [
+            "整整齐齐",
+            "整整齐",
+            "整齐整齐",
+            "整齐齐齐"
+          ],
+          "answer": 0,
+          "en": "His room is kept very tidy."
+        },
+        {
+          "q": "她的眼睛___的。",
+          "options": [
+            "大大",
+            "大大大",
+            "大的大",
+            "很大大"
+          ],
+          "answer": 0,
+          "en": "She has big, big eyes."
+        },
+        {
+          "q": "孩子们高高兴兴___回家了。",
+          "options": [
+            "地",
+            "得",
+            "着",
+            "过"
+          ],
+          "answer": 0,
+          "en": "The children went home happily."
+        },
+        {
+          "q": "教室里很多学生安安静静___坐着。",
+          "options": [
+            "地",
+            "得",
+            "着",
+            "过"
+          ],
+          "answer": 0,
+          "en": "Many students sit quietly in the classroom."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "请问，那个人在做什么？"
+          ],
+          [
+            "女",
+            "他在门口站着打电话呢。"
+          ]
+        ],
+        "q": "那个人在做什么？",
+        "options": [
+          "站着打电话",
+          "坐着看报",
+          "躺着睡觉"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你家的猫呢？"
+          ],
+          [
+            "女",
+            "它在椅子上躺着呢。"
+          ]
+        ],
+        "q": "猫在哪儿？",
+        "options": [
+          "在椅子上",
+          "在窗台上",
+          "在沙发上"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你怎么生气了？"
+          ],
+          [
+            "女",
+            "朋友说来，可是我等了一个小时他还没来。"
+          ]
+        ],
+        "q": "他为什么生气？",
+        "options": [
+          "朋友没来",
+          "菜不好吃",
+          "没有座位"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "书架上放着什么？"
+          ],
+          [
+            "女",
+            "整整齐齐地放着各种书。"
+          ]
+        ],
+        "q": "书架上有什么？",
+        "options": [
+          "各种书",
+          "各种水果",
+          "一只猫"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "桌子上放着两本书。",
+        "claim": "桌子上有书。",
+        "ok": true
+      },
+      {
+        "text": "我哥哥在床上躺着看手机。",
+        "claim": "哥哥站着看手机。",
+        "ok": false
+      },
+      {
+        "text": "妈妈抱着孩子，孩子在哭。",
+        "claim": "孩子在哭。",
+        "ok": true
+      },
+      {
+        "text": "这儿的牌子上写着“请勿大声说话”。",
+        "claim": "这儿可以大声说话。",
+        "ok": false
+      }
+    ],
+    "replies": [
+      {
+        "q": "你家的客厅里有什么？",
+        "a": "有一个大沙发和一台电视。"
+      },
+      {
+        "q": "你为什么生气？",
+        "a": "我等了他一个小时，他还没来。"
+      },
+      {
+        "q": "他穿着什么衣服？",
+        "a": "他穿着蓝衣服。"
+      },
+      {
+        "q": "请问，这儿可以吸烟吗？",
+        "a": "对不起，这儿不能吸烟。"
+      }
+    ]
+  },
+  "pron": [
+    {
+      "t": "Doubled adjectives in speech",
+      "en": "A doubled one-syllable adjective often turns its second syllable into a high, flat first tone with an r ending (好好儿 hǎohāor, 早早儿 zǎozāor). A doubled two-syllable adjective follows the AABB pattern with the second syllable light (漂漂亮亮 piàopiaoliāngliāng).",
+      "ex": [
+        "好好儿",
+        "早早儿",
+        "漂漂亮亮",
+        "整整齐齐"
+      ]
+    }
+  ]
+}

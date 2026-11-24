@@ -1,0 +1,667 @@
+{
+  "n": 23,
+  "cn": "第23课",
+  "title": "你打错了",
+  "en": "You've dialled the wrong number",
+  "words": [
+    {
+      "w": "喂",
+      "py": "wèi",
+      "en": "hello (on the phone)",
+      "ex": {
+        "hz": "喂，请问小李在吗？",
+        "py": "Wèi, qǐngwèn Xiǎo Lǐ zài ma?",
+        "en": "Hello, is Xiao Li there?"
+      }
+    },
+    {
+      "w": "错",
+      "py": "cuò",
+      "en": "wrong",
+      "ex": {
+        "hz": "我坐错车了。",
+        "py": "Wǒ zuò cuò chē le.",
+        "en": "I took the wrong bus."
+      }
+    },
+    {
+      "w": "清楚",
+      "py": "qīngchu",
+      "en": "clear",
+      "ex": {
+        "hz": "他说得很清楚。",
+        "py": "Tā shuō de hěn qīngchu.",
+        "en": "He speaks very clearly."
+      }
+    },
+    {
+      "w": "哦",
+      "py": "ò",
+      "en": "oh (I see)",
+      "ex": {
+        "hz": "哦，我明白了。",
+        "py": "Ò, wǒ míngbai le.",
+        "en": "Oh, I see."
+      }
+    },
+    {
+      "w": "怎么",
+      "py": "zěnme",
+      "en": "why; how come (also: how)",
+      "ex": {
+        "hz": "你怎么没吃饭？",
+        "py": "Nǐ zěnme méi chī fàn?",
+        "en": "How come you haven't eaten?"
+      }
+    },
+    {
+      "w": "头疼",
+      "py": "tóuténg",
+      "en": "headache",
+      "ex": {
+        "hz": "我今天头疼。",
+        "py": "Wǒ jīntiān tóuténg.",
+        "en": "I have a headache today."
+      }
+    },
+    {
+      "w": "发",
+      "py": "fā",
+      "en": "to send",
+      "ex": {
+        "hz": "我给朋友发了一封邮件。",
+        "py": "Wǒ gěi péngyou fā le yì fēng yóujiàn.",
+        "en": "I sent my friend an email."
+      }
+    },
+    {
+      "w": "回复",
+      "py": "huífù",
+      "en": "to reply",
+      "ex": {
+        "hz": "他没有回复我的邮件。",
+        "py": "Tā méiyǒu huífù wǒ de yóujiàn.",
+        "en": "He hasn't replied to my email."
+      }
+    },
+    {
+      "w": "一直",
+      "py": "yìzhí",
+      "en": "all the time; always (also: straight on)",
+      "ex": {
+        "hz": "他一直在等你。",
+        "py": "Tā yìzhí zài děng nǐ.",
+        "en": "He has been waiting for you all along."
+      }
+    },
+    {
+      "w": "对",
+      "py": "duì",
+      "en": "correct; right (also: to, towards)",
+      "ex": {
+        "hz": "你说得对。",
+        "py": "Nǐ shuō de duì.",
+        "en": "You are right."
+      }
+    },
+    {
+      "w": "看见",
+      "py": "kànjiàn",
+      "en": "to see",
+      "ex": {
+        "hz": "我看见他了。",
+        "py": "Wǒ kànjiàn tā le.",
+        "en": "I saw him."
+      }
+    },
+    {
+      "w": "叫",
+      "py": "jiào",
+      "en": "to call (a person) (also: to be called)",
+      "ex": {
+        "hz": "老师叫我的名字。",
+        "py": "Lǎoshī jiào wǒ de míngzi.",
+        "en": "The teacher called my name."
+      }
+    },
+    {
+      "w": "听见",
+      "py": "tīngjiàn",
+      "en": "to hear",
+      "ex": {
+        "hz": "你听见了吗？",
+        "py": "Nǐ tīngjiàn le ma?",
+        "en": "Did you hear that?"
+      }
+    },
+    {
+      "w": "行李箱",
+      "py": "xínglixiāng",
+      "en": "suitcase",
+      "ex": {
+        "hz": "我的行李箱很重。",
+        "py": "Wǒ de xínglixiāng hěn zhòng.",
+        "en": "My suitcase is very heavy."
+      }
+    },
+    {
+      "w": "完",
+      "py": "wán",
+      "en": "to finish",
+      "ex": {
+        "hz": "作业做完了。",
+        "py": "Zuòyè zuò wán le.",
+        "en": "The homework is done."
+      }
+    },
+    {
+      "w": "作业",
+      "py": "zuòyè",
+      "en": "homework",
+      "ex": {
+        "hz": "今天的作业不多。",
+        "py": "Jīntiān de zuòyè bù duō.",
+        "en": "There isn't much homework today."
+      }
+    },
+    {
+      "w": "修",
+      "py": "xiū",
+      "en": "to repair",
+      "ex": {
+        "hz": "我的手机坏了，要修一下。",
+        "py": "Wǒ de shǒujī huài le, yào xiū yíxià.",
+        "en": "My phone is broken and needs fixing."
+      }
+    },
+    {
+      "w": "元宵",
+      "py": "yuánxiāo",
+      "en": "sweet rice dumpling",
+      "ex": {
+        "hz": "我喜欢吃元宵。",
+        "py": "Wǒ xǐhuan chī yuánxiāo.",
+        "en": "I like eating sweet rice dumplings."
+      }
+    },
+    {
+      "w": "手表",
+      "py": "shǒubiǎo",
+      "en": "wristwatch",
+      "ex": {
+        "hz": "他有一块新手表。",
+        "py": "Tā yǒu yí kuài xīn shǒubiǎo.",
+        "en": "He has a new watch."
+      }
+    },
+    {
+      "w": "接",
+      "py": "jiē",
+      "en": "to pick up; to meet",
+      "ex": {
+        "hz": "我去机场接朋友。",
+        "py": "Wǒ qù jīchǎng jiē péngyou.",
+        "en": "I'm going to the airport to pick up a friend."
+      }
+    },
+    {
+      "w": "开始",
+      "py": "kāishǐ",
+      "en": "to start",
+      "ex": {
+        "hz": "电影八点开始。",
+        "py": "Diànyǐng bā diǎn kāishǐ.",
+        "en": "The film starts at eight."
+      }
+    },
+    {
+      "w": "讲",
+      "py": "jiǎng",
+      "en": "to explain; to tell",
+      "ex": {
+        "hz": "请你给我讲一下儿。",
+        "py": "Qǐng nǐ gěi wǒ jiǎng yíxiàr.",
+        "en": "Please explain it to me."
+      }
+    },
+    {
+      "w": "懂",
+      "py": "dǒng",
+      "en": "to understand",
+      "ex": {
+        "hz": "你懂我的意思吗？",
+        "py": "Nǐ dǒng wǒ de yìsi ma?",
+        "en": "Do you understand what I mean?"
+      }
+    },
+    {
+      "w": "夏",
+      "py": "Xià",
+      "en": "Xia (a surname)",
+      "ex": {
+        "hz": "夏老师是我的汉语老师。",
+        "py": "Xià lǎoshī shì wǒ de Hànyǔ lǎoshī.",
+        "en": "Teacher Xia is my Chinese teacher."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "找小李",
+      "py": "Zhǎo Xiǎo Lǐ",
+      "en": "Looking for Xiao Li",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "喂，请问小李在吗？",
+          "py": "Wèi, qǐngwèn Xiǎo Lǐ zài ma?",
+          "en": "Hello, is Xiao Li there?"
+        },
+        {
+          "who": "B",
+          "hz": "他不在，你是哪位？",
+          "py": "Tā bú zài, nǐ shì nǎ wèi?",
+          "en": "He's out. Who is this?"
+        },
+        {
+          "who": "A",
+          "hz": "我是他的同学，我想问一下明天的作业。",
+          "py": "Wǒ shì tā de tóngxué, wǒ xiǎng wèn yíxià míngtiān de zuòyè.",
+          "en": "I'm his classmate; I want to ask about tomorrow's homework."
+        },
+        {
+          "who": "B",
+          "hz": "他去医院了，晚上才回来。",
+          "py": "Tā qù yīyuàn le, wǎnshang cái huílai.",
+          "en": "He went to the hospital and will only be back this evening."
+        },
+        {
+          "who": "A",
+          "hz": "好，我晚上再打。",
+          "py": "Hǎo, wǒ wǎnshang zài dǎ.",
+          "en": "OK, I'll call again this evening."
+        },
+        {
+          "who": "B",
+          "hz": "好的，再见。",
+          "py": "Hǎo de, zàijiàn.",
+          "en": "All right, goodbye."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Who is the caller?",
+          "options": [
+            "A classmate",
+            "A teacher",
+            "His brother",
+            "A doctor"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Why isn't Xiao Li there?",
+          "options": [
+            "He went to the hospital",
+            "He is at school",
+            "He is asleep",
+            "He is on a trip"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "修手表",
+      "py": "Xiū shǒubiǎo",
+      "en": "Repairing a watch",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你的手表呢？怎么没戴？",
+          "py": "Nǐ de shǒubiǎo ne? Zěnme méi dài?",
+          "en": "Where's your watch? Why aren't you wearing it?"
+        },
+        {
+          "who": "B",
+          "hz": "坏了，我送去修了。",
+          "py": "Huài le, wǒ sòng qù xiū le.",
+          "en": "It broke, so I took it to be repaired."
+        },
+        {
+          "who": "A",
+          "hz": "修好了吗？",
+          "py": "Xiū hǎo le ma?",
+          "en": "Is it fixed?"
+        },
+        {
+          "who": "B",
+          "hz": "还没有，他们说明天下午才能修好。",
+          "py": "Hái méiyǒu, tāmen shuō míngtiān xiàwǔ cái néng xiū hǎo.",
+          "en": "Not yet; they say it will be ready tomorrow afternoon."
+        },
+        {
+          "who": "A",
+          "hz": "那你一取到就给我打电话，我们一起去吃饭。",
+          "py": "Nà nǐ yì qǔ dào jiù gěi wǒ dǎ diànhuà, wǒmen yìqǐ qù chī fàn.",
+          "en": "Then call me as soon as you collect it and we'll eat together."
+        },
+        {
+          "who": "B",
+          "hz": "好的，没问题。",
+          "py": "Hǎo de, méi wèntí.",
+          "en": "OK, no problem."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Where is B's watch?",
+          "options": [
+            "Being repaired",
+            "At home",
+            "In the car",
+            "At school"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "When will it be ready?",
+          "options": [
+            "Tomorrow afternoon",
+            "Tonight",
+            "Tomorrow morning",
+            "Next week"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "结果补语 (verb + result)",
+      "en": "A word right after the verb tells the result: 做完, 听清楚, 打错. Negative: 没(有) + verb + complement. Question: …了没有？",
+      "drills": [
+        {
+          "q": "作业还没做___，我不能出去玩儿。",
+          "options": [
+            "完",
+            "过",
+            "着",
+            "的"
+          ],
+          "answer": 0,
+          "en": "I haven't finished my homework, so I can't go out to play."
+        },
+        {
+          "q": "对不起，我没听___你的话。",
+          "options": [
+            "清楚",
+            "好吃",
+            "好玩",
+            "高兴"
+          ],
+          "answer": 0,
+          "en": "Sorry, I didn't hear what you said clearly."
+        },
+        {
+          "q": "我打___电话了，这不是他家。",
+          "options": [
+            "错",
+            "好吃",
+            "高兴",
+            "容易"
+          ],
+          "answer": 0,
+          "en": "I dialled the wrong number; this isn't his home."
+        },
+        {
+          "q": "你看___那个人了吗？",
+          "options": [
+            "见",
+            "看",
+            "的",
+            "不"
+          ],
+          "answer": 0,
+          "en": "Did you see that person?"
+        },
+        {
+          "q": "我还没吃___饭。",
+          "options": [
+            "完",
+            "完了",
+            "了",
+            "的"
+          ],
+          "answer": 0,
+          "en": "I haven't finished eating yet."
+        }
+      ]
+    },
+    {
+      "point": "到 as a result",
+      "en": "After a verb, 到 means reaching a place, a time or a goal.",
+      "drills": [
+        {
+          "q": "他昨天睡___十一点才起床。",
+          "options": [
+            "到",
+            "在",
+            "给",
+            "对"
+          ],
+          "answer": 0,
+          "en": "He slept until eleven o'clock yesterday."
+        },
+        {
+          "q": "我找___我的手表了！",
+          "options": [
+            "到",
+            "在",
+            "的",
+            "地"
+          ],
+          "answer": 0,
+          "en": "I found my watch!"
+        },
+        {
+          "q": "这封信下个星期才能寄___。",
+          "options": [
+            "到",
+            "在",
+            "的",
+            "着"
+          ],
+          "answer": 0,
+          "en": "This letter won't arrive until next week."
+        },
+        {
+          "q": "我们一直等___晚上八点。",
+          "options": [
+            "到",
+            "在",
+            "给",
+            "对"
+          ],
+          "answer": 0,
+          "en": "We waited until eight in the evening."
+        }
+      ]
+    },
+    {
+      "point": "一……就……",
+      "en": "Two events follow each other at once: 一 + first event, 就 + second event.",
+      "drills": [
+        {
+          "q": "我一到家___给你打电话。",
+          "options": [
+            "就",
+            "才",
+            "都",
+            "也"
+          ],
+          "answer": 0,
+          "en": "As soon as I get home I'll call you."
+        },
+        {
+          "q": "他一起床___开始看手机。",
+          "options": [
+            "就",
+            "才",
+            "又",
+            "还"
+          ],
+          "answer": 0,
+          "en": "As soon as he gets up he starts looking at his phone."
+        },
+        {
+          "q": "妹妹___看见小猫就笑了。",
+          "options": [
+            "一",
+            "要",
+            "都",
+            "还"
+          ],
+          "answer": 0,
+          "en": "My little sister laughed as soon as she saw the kitten."
+        },
+        {
+          "q": "天一黑，路上的人___少了。",
+          "options": [
+            "就",
+            "才",
+            "再",
+            "把"
+          ],
+          "answer": 0,
+          "en": "As soon as it gets dark, there are fewer people on the road."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "喂，是王老师家吗？"
+          ],
+          [
+            "女",
+            "对不起，这儿不是王家，这里是饭馆。"
+          ]
+        ],
+        "q": "他打到哪儿了？",
+        "options": [
+          "饭馆",
+          "学校",
+          "医院"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你的作业做完了吗？"
+          ],
+          [
+            "女",
+            "还没做完，还有两道题。"
+          ]
+        ],
+        "q": "他做完作业了吗？",
+        "options": [
+          "还没有",
+          "做完了",
+          "不知道"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你的手表修好了吗？"
+          ],
+          [
+            "女",
+            "修好了，我明天去取。"
+          ]
+        ],
+        "q": "手表怎么样了？",
+        "options": [
+          "修好了",
+          "还没修好",
+          "不见了"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你是怎么知道的？"
+          ],
+          [
+            "女",
+            "我听见他们说的。"
+          ]
+        ],
+        "q": "他是怎么知道的？",
+        "options": [
+          "听见他们说",
+          "看了微信",
+          "老师告诉他"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "我一下班就回家。",
+        "claim": "我下班以后马上回家。",
+        "ok": true
+      },
+      {
+        "text": "他没听清楚，老师又说了一遍。",
+        "claim": "他听得很清楚。",
+        "ok": false
+      },
+      {
+        "text": "我给她发了邮件，她还没回复。",
+        "claim": "她回复了。",
+        "ok": false
+      },
+      {
+        "text": "星期天我睡到了十点。",
+        "claim": "我星期天十点起床。",
+        "ok": true
+      }
+    ],
+    "replies": [
+      {
+        "q": "你昨天怎么没来？",
+        "a": "我昨天不太舒服。"
+      },
+      {
+        "q": "你听清楚了吗？",
+        "a": "听清楚了，谢谢。"
+      },
+      {
+        "q": "你的手表修好了没有？",
+        "a": "还没有，明天才能取。"
+      },
+      {
+        "q": "你一回家就做什么？",
+        "a": "我一回家就看电视。"
+      }
+    ]
+  }
+}

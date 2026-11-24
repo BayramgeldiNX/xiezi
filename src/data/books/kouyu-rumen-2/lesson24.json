@@ -1,0 +1,866 @@
+{
+  "n": 24,
+  "cn": "第24课",
+  "title": "她出去了",
+  "en": "She Has Gone Out",
+  "words": [
+    {
+      "w": "出去",
+      "py": "chūqu",
+      "en": "to go out",
+      "ex": {
+        "hz": "外边很冷，别出去了。",
+        "py": "Wàibian hěn lěng, bié chūqu le.",
+        "en": "It's cold outside, don't go out."
+      }
+    },
+    {
+      "w": "回来",
+      "py": "huílai",
+      "en": "to come back",
+      "ex": {
+        "hz": "你几点回来？",
+        "py": "Nǐ jǐ diǎn huílai?",
+        "en": "What time are you coming back?"
+      }
+    },
+    {
+      "w": "妨碍",
+      "py": "fáng'ài",
+      "en": "to get in the way of",
+      "ex": {
+        "hz": "我看书，会妨碍你吗？",
+        "py": "Wǒ kàn shū, huì fáng'ài nǐ ma?",
+        "en": "Will my reading disturb you?"
+      }
+    },
+    {
+      "w": "屋",
+      "py": "wū",
+      "en": "room",
+      "ex": {
+        "hz": "屋里很热。",
+        "py": "Wū li hěn rè.",
+        "en": "It's hot in the room."
+      }
+    },
+    {
+      "w": "那么",
+      "py": "nàme",
+      "en": "then; in that case",
+      "ex": {
+        "hz": "那么我们明天再来吧。",
+        "py": "Nàme wǒmen míngtiān zài lái ba.",
+        "en": "In that case let's come again tomorrow."
+      }
+    },
+    {
+      "w": "打扰",
+      "py": "dǎrǎo",
+      "en": "to disturb",
+      "ex": {
+        "hz": "对不起，打扰一下儿。",
+        "py": "Duìbuqǐ, dǎrǎo yíxiàr.",
+        "en": "Sorry to disturb you for a moment."
+      }
+    },
+    {
+      "w": "抱歉",
+      "py": "bàoqiàn",
+      "en": "sorry",
+      "ex": {
+        "hz": "抱歉，我来晚了。",
+        "py": "Bàoqiàn, wǒ lái wǎn le.",
+        "en": "Sorry, I'm late."
+      }
+    },
+    {
+      "w": "让",
+      "py": "ràng",
+      "en": "to let; to ask (someone to)",
+      "ex": {
+        "hz": "妈妈让我早点儿睡。",
+        "py": "Māma ràng wǒ zǎodiǎnr shuì.",
+        "en": "Mum tells me to go to bed early."
+      }
+    },
+    {
+      "w": "久",
+      "py": "jiǔ",
+      "en": "long (of time)",
+      "ex": {
+        "hz": "我们好久没见了。",
+        "py": "Wǒmen hǎojiǔ méi jiàn le.",
+        "en": "We haven't met for a long time."
+      }
+    },
+    {
+      "w": "叫",
+      "py": "jiào",
+      "en": "to ask; to let (also: to be called)",
+      "ex": {
+        "hz": "老师叫我们回家。",
+        "py": "Lǎoshī jiào wǒmen huí jiā.",
+        "en": "The teacher told us to go home."
+      }
+    },
+    {
+      "w": "帮",
+      "py": "bāng",
+      "en": "to help",
+      "ex": {
+        "hz": "请你帮我一下儿。",
+        "py": "Qǐng nǐ bāng wǒ yíxiàr.",
+        "en": "Please help me for a moment."
+      }
+    },
+    {
+      "w": "麻烦",
+      "py": "máfan",
+      "en": "to trouble; troublesome",
+      "ex": {
+        "hz": "对不起，麻烦你了。",
+        "py": "Duìbuqǐ, máfan nǐ le.",
+        "en": "Sorry to trouble you."
+      }
+    },
+    {
+      "w": "送",
+      "py": "sòng",
+      "en": "to send; to deliver (also: to give; to see off)",
+      "ex": {
+        "hz": "他给我送来一本书。",
+        "py": "Tā gěi wǒ sòng lai yì běn shū.",
+        "en": "He brought me a book."
+      }
+    },
+    {
+      "w": "不好意思",
+      "py": "bù hǎoyìsi",
+      "en": "embarrassed; sorry",
+      "ex": {
+        "hz": "不好意思，我忘了你的名字。",
+        "py": "Bù hǎoyìsi, wǒ wàng le nǐ de míngzi.",
+        "en": "Sorry, I've forgotten your name."
+      }
+    },
+    {
+      "w": "又",
+      "py": "yòu",
+      "en": "again (for what already happened; 又…又… both … and …)",
+      "ex": {
+        "hz": "他今天又来晚了。",
+        "py": "Tā jīntiān yòu lái wǎn le.",
+        "en": "He was late again today."
+      }
+    },
+    {
+      "w": "帮忙",
+      "py": "bāngmáng",
+      "en": "to help out",
+      "ex": {
+        "hz": "你能帮个忙吗？",
+        "py": "Nǐ néng bāng ge máng ma?",
+        "en": "Could you do me a favour?"
+      }
+    },
+    {
+      "w": "别",
+      "py": "bié",
+      "en": "don't",
+      "ex": {
+        "hz": "别说话，他在睡觉。",
+        "py": "Bié shuō huà, tā zài shuìjiào.",
+        "en": "Don't talk, he's sleeping."
+      }
+    },
+    {
+      "w": "上",
+      "py": "shàng",
+      "en": "to go up (上楼 go upstairs; also: on)",
+      "ex": {
+        "hz": "你上楼来吧。",
+        "py": "Nǐ shàng lóu lai ba.",
+        "en": "Come upstairs."
+      }
+    },
+    {
+      "w": "要是",
+      "py": "yàoshi",
+      "en": "if",
+      "ex": {
+        "hz": "要是下雨，我们就不去。",
+        "py": "Yàoshi xià yǔ, wǒmen jiù bú qù.",
+        "en": "If it rains, we won't go."
+      }
+    },
+    {
+      "w": "马上",
+      "py": "mǎshàng",
+      "en": "at once",
+      "ex": {
+        "hz": "你等一下儿，我马上来。",
+        "py": "Nǐ děng yíxiàr, wǒ mǎshàng lái.",
+        "en": "Wait a moment, I'll be right there."
+      }
+    },
+    {
+      "w": "下来",
+      "py": "xiàlai",
+      "en": "to come down",
+      "ex": {
+        "hz": "你快下来吧，我在楼下等你。",
+        "py": "Nǐ kuài xiàlai ba, wǒ zài lóu xià děng nǐ.",
+        "en": "Come down quickly, I'm waiting downstairs."
+      }
+    },
+    {
+      "w": "照相机",
+      "py": "zhàoxiàngjī",
+      "en": "camera",
+      "ex": {
+        "hz": "我的照相机很旧。",
+        "py": "Wǒ de zhàoxiàngjī hěn jiù.",
+        "en": "My camera is old."
+      }
+    },
+    {
+      "w": "照相",
+      "py": "zhàoxiàng",
+      "en": "to take a photo",
+      "ex": {
+        "hz": "请帮我们照张相。",
+        "py": "Qǐng bāng wǒmen zhào zhāng xiàng.",
+        "en": "Please take a photo of us."
+      }
+    },
+    {
+      "w": "借",
+      "py": "jiè",
+      "en": "to borrow; to lend",
+      "ex": {
+        "hz": "我想借你的书。",
+        "py": "Wǒ xiǎng jiè nǐ de shū.",
+        "en": "I'd like to borrow your book."
+      }
+    },
+    {
+      "w": "小说",
+      "py": "xiǎoshuō",
+      "en": "novel",
+      "ex": {
+        "hz": "这本小说很有意思。",
+        "py": "Zhè běn xiǎoshuō hěn yǒu yìsi.",
+        "en": "This novel is interesting."
+      }
+    },
+    {
+      "w": "杂志",
+      "py": "zázhì",
+      "en": "magazine",
+      "ex": {
+        "hz": "他每个月买一本杂志。",
+        "py": "Tā měi ge yuè mǎi yì běn zázhì.",
+        "en": "He buys a magazine every month."
+      }
+    },
+    {
+      "w": "起来",
+      "py": "qǐlai",
+      "en": "(verb + 起来: upward)",
+      "ex": {
+        "hz": "请站起来。",
+        "py": "Qǐng zhàn qǐlai.",
+        "en": "Please stand up."
+      }
+    },
+    {
+      "w": "跑",
+      "py": "pǎo",
+      "en": "to run",
+      "ex": {
+        "hz": "他每天早上跑步。",
+        "py": "Tā měi tiān zǎoshang pǎobù.",
+        "en": "He goes running every morning."
+      }
+    },
+    {
+      "w": "预习",
+      "py": "yùxí",
+      "en": "to prepare a lesson",
+      "ex": {
+        "hz": "明天有课，我今晚预习。",
+        "py": "Míngtiān yǒu kè, wǒ jīnwǎn yùxí.",
+        "en": "I have class tomorrow, so I'll prepare tonight."
+      }
+    },
+    {
+      "w": "生词",
+      "py": "shēngcí",
+      "en": "new word",
+      "ex": {
+        "hz": "这课有二十个生词。",
+        "py": "Zhè kè yǒu èrshí ge shēngcí.",
+        "en": "This lesson has twenty new words."
+      }
+    },
+    {
+      "w": "运动员",
+      "py": "yùndòngyuán",
+      "en": "athlete",
+      "ex": {
+        "hz": "他是一个有名的运动员。",
+        "py": "Tā shì yí ge yǒu míng de yùndòngyuán.",
+        "en": "He is a famous athlete."
+      }
+    },
+    {
+      "w": "体育场",
+      "py": "tǐyùchǎng",
+      "en": "stadium",
+      "ex": {
+        "hz": "体育场里有很多人。",
+        "py": "Tǐyùchǎng li yǒu hěn duō rén.",
+        "en": "There are lots of people in the stadium."
+      }
+    },
+    {
+      "w": "观众",
+      "py": "guānzhòng",
+      "en": "audience",
+      "ex": {
+        "hz": "观众都站起来了。",
+        "py": "Guānzhòng dōu zhàn qǐlai le.",
+        "en": "The whole audience stood up."
+      }
+    },
+    {
+      "w": "比",
+      "py": "bǐ",
+      "en": "than; to (in a score)",
+      "ex": {
+        "hz": "今天比昨天热。",
+        "py": "Jīntiān bǐ zuótiān rè.",
+        "en": "Today is hotter than yesterday."
+      }
+    },
+    {
+      "w": "光明中学",
+      "py": "Guāngmíng Zhōngxué",
+      "en": "Guangming Middle School",
+      "ex": {
+        "hz": "光明中学在我家旁边。",
+        "py": "Guāngmíng Zhōngxué zài wǒ jiā pángbiān.",
+        "en": "Guangming Middle School is next to my home."
+      }
+    },
+    {
+      "w": "队长",
+      "py": "duìzhǎng",
+      "en": "team captain",
+      "ex": {
+        "hz": "他是我们的队长。",
+        "py": "Tā shì wǒmen de duìzhǎng.",
+        "en": "He is our team captain."
+      }
+    },
+    {
+      "w": "和平中学",
+      "py": "Hépíng Zhōngxué",
+      "en": "Heping Middle School",
+      "ex": {
+        "hz": "和平中学有很多学生。",
+        "py": "Hépíng Zhōngxué yǒu hěn duō xuésheng.",
+        "en": "Heping Middle School has a lot of students."
+      }
+    },
+    {
+      "w": "结束",
+      "py": "jiéshù",
+      "en": "to finish; to end",
+      "ex": {
+        "hz": "比赛八点结束。",
+        "py": "Bǐsài bā diǎn jiéshù.",
+        "en": "The match ends at eight."
+      }
+    },
+    {
+      "w": "比分",
+      "py": "bǐfēn",
+      "en": "score",
+      "ex": {
+        "hz": "现在的比分是二比一。",
+        "py": "Xiànzài de bǐfēn shì èr bǐ yī.",
+        "en": "The score is two to one now."
+      }
+    },
+    {
+      "w": "秒",
+      "py": "miǎo",
+      "en": "second (of time)",
+      "ex": {
+        "hz": "他跑了十秒。",
+        "py": "Tā pǎo le shí miǎo.",
+        "en": "He ran for ten seconds."
+      }
+    },
+    {
+      "w": "队友",
+      "py": "duìyǒu",
+      "en": "teammate",
+      "ex": {
+        "hz": "他的队友都很高。",
+        "py": "Tā de duìyǒu dōu hěn gāo.",
+        "en": "His teammates are all tall."
+      }
+    },
+    {
+      "w": "传",
+      "py": "chuán",
+      "en": "to pass",
+      "ex": {
+        "hz": "他传给我一个球。",
+        "py": "Tā chuán gěi wǒ yí ge qiú.",
+        "en": "He passed me the ball."
+      }
+    },
+    {
+      "w": "跳",
+      "py": "tiào",
+      "en": "to jump",
+      "ex": {
+        "hz": "小孩子在床上跳。",
+        "py": "Xiǎo háizi zài chuáng shang tiào.",
+        "en": "The child is jumping on the bed."
+      }
+    },
+    {
+      "w": "投",
+      "py": "tóu",
+      "en": "to shoot (a ball)",
+      "ex": {
+        "hz": "他投了一个球，进了。",
+        "py": "Tā tóu le yí ge qiú, jìn le.",
+        "en": "He shot the ball, and it went in."
+      }
+    },
+    {
+      "w": "三分球",
+      "py": "sānfēnqiú",
+      "en": "three-pointer",
+      "ex": {
+        "hz": "他投进了一个三分球。",
+        "py": "Tā tóujìn le yí ge sānfēnqiú.",
+        "en": "He sank a three-pointer."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "借小说",
+      "py": "Jiè xiǎoshuō",
+      "en": "Borrowing a novel",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你在看什么？",
+          "py": "Nǐ zài kàn shénme?",
+          "en": "What are you reading?"
+        },
+        {
+          "who": "B",
+          "hz": "一本中文小说，很有意思。",
+          "py": "Yì běn Zhōngwén xiǎoshuō, hěn yǒu yìsi.",
+          "en": "A Chinese novel, it's very interesting."
+        },
+        {
+          "who": "A",
+          "hz": "我可以借回去看看吗？",
+          "py": "Wǒ kěyǐ jiè huiqu kànkan ma?",
+          "en": "Can I borrow it to read?"
+        },
+        {
+          "who": "B",
+          "hz": "当然可以。你明天来拿吧。",
+          "py": "Dāngrán kěyǐ. Nǐ míngtiān lái ná ba.",
+          "en": "Of course. Come and get it tomorrow."
+        },
+        {
+          "who": "A",
+          "hz": "我明天有事。你要是有空儿，就给我送来吧。",
+          "py": "Wǒ míngtiān yǒu shì. Nǐ yàoshi yǒu kòngr, jiù gěi wǒ sòng lai ba.",
+          "en": "I'm busy tomorrow. If you're free, bring it over."
+        },
+        {
+          "who": "B",
+          "hz": "好，我下午马上给你送去。",
+          "py": "Hǎo, wǒ xiàwǔ mǎshàng gěi nǐ sòng qu.",
+          "en": "OK, I'll bring it this afternoon."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What does A want to do?",
+          "options": [
+            "Borrow a novel",
+            "Buy a magazine",
+            "Take a photo",
+            "Return a book"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "When will B bring it?",
+          "options": [
+            "This afternoon",
+            "Tomorrow morning",
+            "Tonight",
+            "Next week"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "照相",
+      "py": "Zhàoxiàng",
+      "en": "Taking a photo",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "不好意思，麻烦你帮我们照张相，好吗？",
+          "py": "Bù hǎoyìsi, máfan nǐ bāng wǒmen zhào zhāng xiàng, hǎo ma?",
+          "en": "Sorry, would you take a photo of us?"
+        },
+        {
+          "who": "B",
+          "hz": "没问题。你们站近一点儿。",
+          "py": "Méi wèntí. Nǐmen zhàn jìn yìdiǎnr.",
+          "en": "No problem. Stand a bit closer."
+        },
+        {
+          "who": "A",
+          "hz": "好了吗？",
+          "py": "Hǎo le ma?",
+          "en": "Ready?"
+        },
+        {
+          "who": "B",
+          "hz": "再往后站一点儿，我要照到后边的山。",
+          "py": "Zài wǎng hòu zhàn yìdiǎnr, wǒ yào zhàodào hòubian de shān.",
+          "en": "Step back a little, I want the mountain behind you."
+        },
+        {
+          "who": "A",
+          "hz": "谢谢你，太麻烦你了！",
+          "py": "Xièxie nǐ, tài máfan nǐ le!",
+          "en": "Thank you, that was a lot of trouble!"
+        },
+        {
+          "who": "B",
+          "hz": "别客气。",
+          "py": "Bié kèqi.",
+          "en": "Not at all."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What does A ask B to do?",
+          "options": [
+            "Take a photo",
+            "Carry the bags",
+            "Show the way",
+            "Buy tickets"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What does B want in the photo?",
+          "options": [
+            "The mountain behind them",
+            "A river",
+            "A bridge",
+            "A temple"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "来 / 去 (direction)",
+      "en": "verb + 来 if it moves toward the speaker, + 去 if away; a place goes before 来 / 去",
+      "drills": [
+        {
+          "q": "我在楼上，你快上___吧。",
+          "options": [
+            "来",
+            "去",
+            "下",
+            "进"
+          ],
+          "answer": 0,
+          "en": "I'm upstairs; come on up."
+        },
+        {
+          "q": "我在楼下等你，你快下___！",
+          "options": [
+            "来",
+            "去",
+            "上",
+            "进"
+          ],
+          "answer": 0,
+          "en": "I'm waiting downstairs, come down quickly!"
+        },
+        {
+          "q": "我在家，妈妈从商店买回___一些水果。",
+          "options": [
+            "来",
+            "去",
+            "上",
+            "下"
+          ],
+          "answer": 0,
+          "en": "I'm at home, and Mum has bought some fruit and brought it back."
+        },
+        {
+          "q": "我在学校，这本书我晚上带回家___。",
+          "options": [
+            "去",
+            "来",
+            "上",
+            "下"
+          ],
+          "answer": 0,
+          "en": "I'm at school; I'll take this book home tonight."
+        }
+      ]
+    },
+    {
+      "point": "请 / 叫 / 让 (asking someone to do something)",
+      "en": "A + 请 / 叫 / 让 + B + verb: B does it; 请 is polite and can mean invite",
+      "drills": [
+        {
+          "q": "妈妈___我早点儿回家。",
+          "options": [
+            "叫",
+            "对",
+            "在",
+            "从"
+          ],
+          "answer": 0,
+          "en": "Mum tells me to come home early."
+        },
+        {
+          "q": "我想___朋友吃饭。",
+          "options": [
+            "请",
+            "对",
+            "在",
+            "从"
+          ],
+          "answer": 0,
+          "en": "I'd like to invite a friend to dinner."
+        },
+        {
+          "q": "请你___我拿一下这个包。",
+          "options": [
+            "帮",
+            "对",
+            "在",
+            "从"
+          ],
+          "answer": 0,
+          "en": "Please help me carry this bag."
+        },
+        {
+          "q": "他不___我走，我就不走。",
+          "options": [
+            "让",
+            "对",
+            "在",
+            "从"
+          ],
+          "answer": 0,
+          "en": "If he doesn't let me go, I won't go."
+        }
+      ]
+    },
+    {
+      "point": "要是……就…… (if … then)",
+      "en": "要是 states the condition; 就 comes in the second part",
+      "drills": [
+        {
+          "q": "___明天下雨，我们就不去了。",
+          "options": [
+            "要是",
+            "因为",
+            "虽然",
+            "所以"
+          ],
+          "answer": 0,
+          "en": "If it rains tomorrow, we won't go."
+        },
+        {
+          "q": "要是你饿了，___先吃点儿东西吧。",
+          "options": [
+            "就",
+            "才",
+            "都",
+            "还"
+          ],
+          "answer": 0,
+          "en": "If you're hungry, have something to eat first."
+        },
+        {
+          "q": "你要是有空儿，___给我打电话。",
+          "options": [
+            "就",
+            "只",
+            "才",
+            "都"
+          ],
+          "answer": 0,
+          "en": "If you're free, call me."
+        },
+        {
+          "q": "你___不喜欢，就别买了。",
+          "options": [
+            "要是",
+            "虽然",
+            "不但",
+            "所以"
+          ],
+          "answer": 0,
+          "en": "If you don't like it, don't buy it."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你看见我的杂志了吗？"
+          ],
+          [
+            "女",
+            "在桌子上，你自己拿吧。"
+          ]
+        ],
+        "q": "杂志在哪儿？",
+        "options": [
+          "桌子上",
+          "书包里",
+          "屋外"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "我下午有事，你能帮我借一本小说吗？"
+          ],
+          [
+            "女",
+            "没问题，我马上去。"
+          ]
+        ],
+        "q": "他要朋友做什么？",
+        "options": [
+          "借小说",
+          "买杂志",
+          "照相"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你妈妈叫你做什么？"
+          ],
+          [
+            "女",
+            "她叫我马上回家。"
+          ]
+        ],
+        "q": "妈妈要他做什么？",
+        "options": [
+          "马上回家",
+          "去买书",
+          "预习生词"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "他出去了吗？"
+          ],
+          [
+            "女",
+            "没有，他在屋里呢。"
+          ]
+        ],
+        "q": "他在哪儿？",
+        "options": [
+          "屋里",
+          "外边",
+          "书店"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "我妈妈让我多吃水果。",
+        "claim": "妈妈不让我吃水果。",
+        "ok": false
+      },
+      {
+        "text": "要是下雨，我们就在家看电影。",
+        "claim": "下雨的话，我们在家。",
+        "ok": true
+      },
+      {
+        "text": "我昨天借了一本小说，今天已经看完了。",
+        "claim": "我还没看完小说。",
+        "ok": false
+      },
+      {
+        "text": "他拿着照相机去公园了。",
+        "claim": "他带了照相机。",
+        "ok": true
+      }
+    ],
+    "replies": [
+      {
+        "q": "不好意思，让你久等了。",
+        "a": "没关系，我也刚到。"
+      },
+      {
+        "q": "我帮你拿吧。",
+        "a": "太好了，谢谢你！"
+      },
+      {
+        "q": "我可以借你的杂志看看吗？",
+        "a": "当然可以，你拿去吧。"
+      },
+      {
+        "q": "你什么时候回来？",
+        "a": "我马上就回来。"
+      }
+    ]
+  }
+}

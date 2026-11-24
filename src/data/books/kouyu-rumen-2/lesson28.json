@@ -1,0 +1,744 @@
+{
+  "n": 28,
+  "cn": "第28课",
+  "title": "快把空调关上",
+  "en": "Turn off the air conditioner quickly",
+  "words": [
+    {
+      "w": "关",
+      "py": "guān",
+      "en": "to turn off; to close",
+      "ex": {
+        "hz": "请关门。",
+        "py": "Qǐng guān mén.",
+        "en": "Please close the door."
+      }
+    },
+    {
+      "w": "感冒",
+      "py": "gǎnmào",
+      "en": "to catch a cold; a cold",
+      "ex": {
+        "hz": "我感冒了。",
+        "py": "Wǒ gǎnmào le.",
+        "en": "I've caught a cold."
+      }
+    },
+    {
+      "w": "发烧",
+      "py": "fāshāo",
+      "en": "to have a fever",
+      "ex": {
+        "hz": "孩子发烧了。",
+        "py": "Háizi fāshāo le.",
+        "en": "The child has a fever."
+      }
+    },
+    {
+      "w": "哟",
+      "py": "yō",
+      "en": "oh (surprise)",
+      "ex": {
+        "hz": "哟，下雪了！",
+        "py": "Yō, xià xuě le!",
+        "en": "Oh, it's snowing!"
+      }
+    },
+    {
+      "w": "赶快",
+      "py": "gǎnkuài",
+      "en": "at once; quickly",
+      "ex": {
+        "hz": "赶快走吧，车来了。",
+        "py": "Gǎnkuài zǒu ba, chē lái le.",
+        "en": "Hurry, the bus is here."
+      }
+    },
+    {
+      "w": "愿意",
+      "py": "yuànyì",
+      "en": "to be willing; to want to",
+      "ex": {
+        "hz": "你愿意跟我去吗？",
+        "py": "Nǐ yuànyì gēn wǒ qù ma?",
+        "en": "Would you like to come with me?"
+      }
+    },
+    {
+      "w": "怕",
+      "py": "pà",
+      "en": "to be afraid of",
+      "ex": {
+        "hz": "我怕冷。",
+        "py": "Wǒ pà lěng.",
+        "en": "I can't stand the cold."
+      }
+    },
+    {
+      "w": "打针",
+      "py": "dǎzhēn",
+      "en": "to have / give an injection",
+      "ex": {
+        "hz": "他怕打针。",
+        "py": "Tā pà dǎzhēn.",
+        "en": "He is afraid of injections."
+      }
+    },
+    {
+      "w": "大夫",
+      "py": "dàifu",
+      "en": "doctor",
+      "ex": {
+        "hz": "大夫说我没事。",
+        "py": "Dàifu shuō wǒ méi shì.",
+        "en": "The doctor says I'm fine."
+      }
+    },
+    {
+      "w": "嗓子",
+      "py": "sǎngzi",
+      "en": "throat",
+      "ex": {
+        "hz": "我嗓子不舒服。",
+        "py": "Wǒ sǎngzi bù shūfu.",
+        "en": "My throat feels bad."
+      }
+    },
+    {
+      "w": "疼",
+      "py": "téng",
+      "en": "painful; to hurt",
+      "ex": {
+        "hz": "我头很疼。",
+        "py": "Wǒ tóu hěn téng.",
+        "en": "I have a bad headache."
+      }
+    },
+    {
+      "w": "咳嗽",
+      "py": "késou",
+      "en": "to cough",
+      "ex": {
+        "hz": "他一直在咳嗽。",
+        "py": "Tā yìzhí zài késou.",
+        "en": "He keeps coughing."
+      }
+    },
+    {
+      "w": "量",
+      "py": "liáng",
+      "en": "to measure; to take (temperature)",
+      "ex": {
+        "hz": "大夫给我量体温。",
+        "py": "Dàifu gěi wǒ liáng tǐwēn.",
+        "en": "The doctor takes my temperature."
+      }
+    },
+    {
+      "w": "体温",
+      "py": "tǐwēn",
+      "en": "body temperature",
+      "ex": {
+        "hz": "你的体温是多少？",
+        "py": "Nǐ de tǐwēn shì duōshao?",
+        "en": "What is your temperature?"
+      }
+    },
+    {
+      "w": "体温计",
+      "py": "tǐwēnjì",
+      "en": "thermometer",
+      "ex": {
+        "hz": "体温计在哪儿？",
+        "py": "Tǐwēnjì zài nǎr?",
+        "en": "Where is the thermometer?"
+      }
+    },
+    {
+      "w": "度",
+      "py": "dù",
+      "en": "degree",
+      "ex": {
+        "hz": "今天三十五度。",
+        "py": "Jīntiān sānshíwǔ dù.",
+        "en": "It is 35 degrees today."
+      }
+    },
+    {
+      "w": "嘴",
+      "py": "zuǐ",
+      "en": "mouth",
+      "ex": {
+        "hz": "请张开嘴。",
+        "py": "Qǐng zhāngkāi zuǐ.",
+        "en": "Please open your mouth."
+      }
+    },
+    {
+      "w": "张",
+      "py": "zhāng",
+      "en": "to open (mouth) (also: measure word for flat things)",
+      "ex": {
+        "hz": "他张开了嘴。",
+        "py": "Tā zhāngkāile zuǐ.",
+        "en": "He opened his mouth."
+      }
+    },
+    {
+      "w": "开药",
+      "py": "kāiyào",
+      "en": "to prescribe medicine",
+      "ex": {
+        "hz": "大夫给我开了药。",
+        "py": "Dàifu gěi wǒ kāile yào.",
+        "en": "The doctor prescribed me some medicine."
+      }
+    },
+    {
+      "w": "按时",
+      "py": "ànshí",
+      "en": "on time; at the set time",
+      "ex": {
+        "hz": "药要按时吃。",
+        "py": "Yào yào ànshí chī.",
+        "en": "Take the medicine on time."
+      }
+    },
+    {
+      "w": "平时",
+      "py": "píngshí",
+      "en": "usually; normally",
+      "ex": {
+        "hz": "我平时七点起床。",
+        "py": "Wǒ píngshí qī diǎn qǐchuáng.",
+        "en": "I normally get up at seven."
+      }
+    },
+    {
+      "w": "劝",
+      "py": "quàn",
+      "en": "to advise; to persuade",
+      "ex": {
+        "hz": "我劝你早点儿睡觉。",
+        "py": "Wǒ quàn nǐ zǎodiǎnr shuìjiào.",
+        "en": "I advise you to go to bed earlier."
+      }
+    },
+    {
+      "w": "游戏",
+      "py": "yóuxì",
+      "en": "game",
+      "ex": {
+        "hz": "他喜欢玩儿游戏。",
+        "py": "Tā xǐhuan wánr yóuxì.",
+        "en": "He likes playing games."
+      }
+    },
+    {
+      "w": "好处",
+      "py": "hǎochu",
+      "en": "advantage; benefit",
+      "ex": {
+        "hz": "多运动有好处。",
+        "py": "Duō yùndòng yǒu hǎochu.",
+        "en": "Exercise does you good."
+      }
+    },
+    {
+      "w": "戒",
+      "py": "jiè",
+      "en": "to give up (a habit)",
+      "ex": {
+        "hz": "他想戒游戏。",
+        "py": "Tā xiǎng jiè yóuxì.",
+        "en": "He wants to give up gaming."
+      }
+    },
+    {
+      "w": "电脑",
+      "py": "diànnǎo",
+      "en": "computer",
+      "ex": {
+        "hz": "我的电脑坏了。",
+        "py": "Wǒ de diànnǎo huài le.",
+        "en": "My computer is broken."
+      }
+    },
+    {
+      "w": "打开",
+      "py": "dǎkāi",
+      "en": "to open; to turn on",
+      "ex": {
+        "hz": "请打开门。",
+        "py": "Qǐng dǎkāi mén.",
+        "en": "Please open the door."
+      }
+    },
+    {
+      "w": "空气",
+      "py": "kōngqì",
+      "en": "air",
+      "ex": {
+        "hz": "这儿的空气很好。",
+        "py": "Zhèr de kōngqì hěn hǎo.",
+        "en": "The air here is good."
+      }
+    },
+    {
+      "w": "手",
+      "py": "shǒu",
+      "en": "hand",
+      "ex": {
+        "hz": "吃饭以前要洗手。",
+        "py": "Chī fàn yǐqián yào xǐ shǒu.",
+        "en": "Wash your hands before eating."
+      }
+    },
+    {
+      "w": "旧",
+      "py": "jiù",
+      "en": "old (of things)",
+      "ex": {
+        "hz": "这是一辆旧自行车。",
+        "py": "Zhè shì yí liàng jiù zìxíngchē.",
+        "en": "This is an old bike."
+      }
+    },
+    {
+      "w": "拆",
+      "py": "chāi",
+      "en": "to take apart; to unwrap",
+      "ex": {
+        "hz": "他拆开了礼物。",
+        "py": "Tā chāikāile lǐwù.",
+        "en": "He unwrapped the gift."
+      }
+    },
+    {
+      "w": "玩具",
+      "py": "wánjù",
+      "en": "toy",
+      "ex": {
+        "hz": "孩子有很多玩具。",
+        "py": "Háizi yǒu hěn duō wánjù.",
+        "en": "The child has lots of toys."
+      }
+    },
+    {
+      "w": "花瓶",
+      "py": "huāpíng",
+      "en": "vase",
+      "ex": {
+        "hz": "桌子上有一个花瓶。",
+        "py": "Zhuōzi shang yǒu yí ge huāpíng.",
+        "en": "There is a vase on the table."
+      }
+    },
+    {
+      "w": "摔",
+      "py": "shuāi",
+      "en": "to fall; to break (by dropping)",
+      "ex": {
+        "hz": "小心，别摔了！",
+        "py": "Xiǎoxīn, bié shuāi le!",
+        "en": "Careful, don't fall!"
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "生病了",
+      "py": "Shēngbìng le",
+      "en": "Feeling ill",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "今天你怎么没去上班？",
+          "py": "Jīntiān nǐ zěnme méi qù shàngbān?",
+          "en": "Why didn't you go to work today?"
+        },
+        {
+          "who": "B",
+          "hz": "我感冒了，一直在咳嗽。",
+          "py": "Wǒ gǎnmào le, yìzhí zài késou.",
+          "en": "I've caught a cold; I keep coughing."
+        },
+        {
+          "who": "A",
+          "hz": "你发烧吗？体温计在桌子上，你量一下吧。",
+          "py": "Nǐ fāshāo ma? Tǐwēnjì zài zhuōzi shang, nǐ liáng yíxià ba.",
+          "en": "Do you have a fever? The thermometer is on the table; take your temperature."
+        },
+        {
+          "who": "B",
+          "hz": "三十七度，不发烧。",
+          "py": "Sānshíqī dù, bù fāshāo.",
+          "en": "37 degrees, no fever."
+        },
+        {
+          "who": "A",
+          "hz": "那你多喝水，早点儿休息。要是明天还咳嗽，就去看大夫。",
+          "py": "Nà nǐ duō hē shuǐ, zǎodiǎnr xiūxi. Yàoshi míngtiān hái késou, jiù qù kàn dàifu.",
+          "en": "Then drink plenty of water and rest early. If you're still coughing tomorrow, see a doctor."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Does B have a fever?",
+          "options": [
+            "No, it's 37 degrees",
+            "Yes, 38 degrees",
+            "Yes, 39 degrees",
+            "B didn't check"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "When should B see a doctor?",
+          "options": [
+            "If the cough goes on tomorrow",
+            "Right now",
+            "Next week",
+            "After work today"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "收拾房间",
+      "py": "Shōushi fángjiān",
+      "en": "Tidying the room",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "明天朋友来，我们把房间收拾一下吧。",
+          "py": "Míngtiān péngyou lái, wǒmen bǎ fángjiān shōushi yíxià ba.",
+          "en": "Friends are coming tomorrow; let's tidy the room."
+        },
+        {
+          "who": "B",
+          "hz": "好，我先把窗户打开，换换空气。",
+          "py": "Hǎo, wǒ xiān bǎ chuānghu dǎkāi, huànhuan kōngqì.",
+          "en": "OK, I'll open the window first and let some air in."
+        },
+        {
+          "who": "A",
+          "hz": "我把这些旧玩具拿出去。",
+          "py": "Wǒ bǎ zhèxiē jiù wánjù ná chūqu.",
+          "en": "I'll take these old toys out."
+        },
+        {
+          "who": "B",
+          "hz": "小心，别把花瓶摔了！",
+          "py": "Xiǎoxīn, bié bǎ huāpíng shuāi le!",
+          "en": "Careful, don't drop the vase!"
+        },
+        {
+          "who": "A",
+          "hz": "放心吧，我把它放好了。",
+          "py": "Fàngxīn ba, wǒ bǎ tā fàng hǎo le.",
+          "en": "Don't worry, I've put it somewhere safe."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Why are they tidying the room?",
+          "options": [
+            "Friends are coming tomorrow",
+            "It is New Year",
+            "They are moving",
+            "The teacher is coming"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What does B do first?",
+          "options": [
+            "Opens the window",
+            "Takes out the toys",
+            "Moves the vase",
+            "Buys a new vase"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "把 + object + verb + result (上 / 开 / 好 / 完)",
+      "en": "In a 把-sentence the verb carries a result: 关上 (shut), 张开 (open wide), 放好 (put properly), 吃完 (finish).",
+      "drills": [
+        {
+          "q": "请把书打___，看第二十页。",
+          "options": [
+            "开",
+            "上",
+            "好",
+            "完"
+          ],
+          "answer": 0,
+          "en": "Please open your books at page 20."
+        },
+        {
+          "q": "太晚了，快把电视关___吧。",
+          "options": [
+            "上",
+            "开",
+            "完",
+            "到"
+          ],
+          "answer": 0,
+          "en": "It's late; turn the TV off now."
+        },
+        {
+          "q": "外边很冷，把帽子戴___吧。",
+          "options": [
+            "上",
+            "开",
+            "出",
+            "过"
+          ],
+          "answer": 0,
+          "en": "It's cold outside; put your hat on."
+        },
+        {
+          "q": "我把作业都写___了。",
+          "options": [
+            "完",
+            "上",
+            "开",
+            "在"
+          ],
+          "answer": 0,
+          "en": "I've finished all my homework."
+        }
+      ]
+    },
+    {
+      "point": "With 把 or without",
+      "en": "Many sentences can go either way. 请关上门 is a plain request; 请把门关上 stresses what is to be done with the door and sounds firmer.",
+      "drills": [
+        {
+          "q": "请___窗户打开。",
+          "options": [
+            "把",
+            "在",
+            "是",
+            "和"
+          ],
+          "answer": 0,
+          "en": "Please open the window."
+        },
+        {
+          "q": "我___药放在桌子上了。",
+          "options": [
+            "把",
+            "有",
+            "是",
+            "在"
+          ],
+          "answer": 0,
+          "en": "I put the medicine on the table."
+        },
+        {
+          "q": "你快___门关上，不然会冷。",
+          "options": [
+            "把",
+            "很",
+            "太",
+            "非常"
+          ],
+          "answer": 0,
+          "en": "Close the door quickly, or it'll get cold."
+        },
+        {
+          "q": "你怎么还没把电脑关___？",
+          "options": [
+            "上",
+            "了",
+            "的",
+            "吗"
+          ],
+          "answer": 0,
+          "en": "Why haven't you turned the computer off yet?"
+        }
+      ]
+    },
+    {
+      "point": "要是……，就……",
+      "en": "If …, then …: 要是 opens the condition and 就 introduces what follows.",
+      "drills": [
+        {
+          "q": "要是你不舒服，___去医院吧。",
+          "options": [
+            "就",
+            "都",
+            "只",
+            "又"
+          ],
+          "answer": 0,
+          "en": "If you feel ill, go to the hospital."
+        },
+        {
+          "q": "___你发烧，就别去上课了。",
+          "options": [
+            "要是",
+            "虽然",
+            "但是",
+            "所以"
+          ],
+          "answer": 0,
+          "en": "If you have a fever, don't go to class."
+        },
+        {
+          "q": "要是明天不下雨，我们___去动物园。",
+          "options": [
+            "就",
+            "都",
+            "又",
+            "只"
+          ],
+          "answer": 0,
+          "en": "If it doesn't rain tomorrow, we'll go to the zoo."
+        },
+        {
+          "q": "你要是想家，___给妈妈打电话。",
+          "options": [
+            "就",
+            "了",
+            "的",
+            "吗"
+          ],
+          "answer": 0,
+          "en": "If you're homesick, call your mom."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你哪儿不舒服？"
+          ],
+          [
+            "女",
+            "我头疼，还有点儿发烧。"
+          ]
+        ],
+        "q": "他怎么了？",
+        "options": [
+          "头疼发烧",
+          "嗓子疼",
+          "咳嗽"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你为什么不去医院？"
+          ],
+          [
+            "女",
+            "我怕打针。"
+          ]
+        ],
+        "q": "他怕什么？",
+        "options": [
+          "打针",
+          "吃药",
+          "大夫"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "这个药一天吃几次？"
+          ],
+          [
+            "女",
+            "一天三次，吃了饭再吃。"
+          ]
+        ],
+        "q": "药一天吃几次？",
+        "options": [
+          "三次",
+          "一次",
+          "两次"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你怎么还在看电视？"
+          ],
+          [
+            "女",
+            "我马上把电视关上。"
+          ]
+        ],
+        "q": "他要做什么？",
+        "options": [
+          "关电视",
+          "打开电视",
+          "买电视"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "我嗓子疼，还咳嗽，可能感冒了。",
+        "claim": "我感冒了。",
+        "ok": true
+      },
+      {
+        "text": "体温计上是三十六度，我没发烧。",
+        "claim": "我发烧了。",
+        "ok": false
+      },
+      {
+        "text": "姐姐劝我多运动，说这对身体有好处。",
+        "claim": "姐姐觉得运动没有好处。",
+        "ok": false
+      },
+      {
+        "text": "平时我七点起床，周末睡得晚一点儿。",
+        "claim": "周末我起得晚一点儿。",
+        "ok": true
+      }
+    ],
+    "replies": [
+      {
+        "q": "你怎么了？",
+        "a": "我感冒了，嗓子很疼。"
+      },
+      {
+        "q": "大夫，我要打针吗？",
+        "a": "不用，吃点儿药就行。"
+      },
+      {
+        "q": "你愿意跟我去动物园吗？",
+        "a": "愿意，我很喜欢熊猫。"
+      },
+      {
+        "q": "请把门关上，好吗？",
+        "a": "好，我马上关。"
+      }
+    ]
+  }
+}

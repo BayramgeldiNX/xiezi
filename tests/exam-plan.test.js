@@ -60,6 +60,6 @@ describe("testsOf", () => {
 
   it("exports parts and prior books", () => {
     expect(PARTS.map((p) => p.id)).toEqual(["listen", "vocab", "grammar", "read", "write"]);
-    expect(PRIOR).toEqual({ hsk2: ["hsk1"] });
+    expect(PRIOR).toEqual({ hsk2: ["hsk1"], "kouyu-rumen-2": ["kouyu-rumen"] });
   });
 });

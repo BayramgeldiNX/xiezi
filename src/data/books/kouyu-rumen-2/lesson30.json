@@ -1,0 +1,730 @@
+{
+  "n": 30,
+  "cn": "第30课",
+  "title": "祝你一路平安",
+  "en": "Wish You a Safe Journey",
+  "words": [
+    {
+      "w": "向",
+      "py": "xiàng",
+      "en": "to; towards",
+      "ex": {
+        "hz": "请向右拐。",
+        "py": "Qǐng xiàng yòu guǎi.",
+        "en": "Please turn right."
+      }
+    },
+    {
+      "w": "告别",
+      "py": "gàobié",
+      "en": "to say goodbye",
+      "ex": {
+        "hz": "明天我要向朋友们告别。",
+        "py": "Míngtiān wǒ yào xiàng péngyoumen gàobié.",
+        "en": "Tomorrow I'll say goodbye to my friends."
+      }
+    },
+    {
+      "w": "行李",
+      "py": "xíngli",
+      "en": "luggage",
+      "ex": {
+        "hz": "我的行李很多。",
+        "py": "Wǒ de xíngli hěn duō.",
+        "en": "I have a lot of luggage."
+      }
+    },
+    {
+      "w": "收拾",
+      "py": "shōushi",
+      "en": "to pack; to tidy up",
+      "ex": {
+        "hz": "我在收拾房间。",
+        "py": "Wǒ zài shōushi fángjiān.",
+        "en": "I'm tidying up the room."
+      }
+    },
+    {
+      "w": "机票",
+      "py": "jīpiào",
+      "en": "plane ticket",
+      "ex": {
+        "hz": "我买了两张机票。",
+        "py": "Wǒ mǎi le liǎng zhāng jīpiào.",
+        "en": "I bought two plane tickets."
+      }
+    },
+    {
+      "w": "一路",
+      "py": "yílù",
+      "en": "all the way; the whole journey",
+      "ex": {
+        "hz": "一路上他都在睡觉。",
+        "py": "Yílù shang tā dōu zài shuìjiào.",
+        "en": "He slept the whole way."
+      }
+    },
+    {
+      "w": "平安",
+      "py": "píng'ān",
+      "en": "safe and sound",
+      "ex": {
+        "hz": "我希望你平安到家。",
+        "py": "Wǒ xīwàng nǐ píng'ān dào jiā.",
+        "en": "I hope you get home safe and sound."
+      }
+    },
+    {
+      "w": "保重",
+      "py": "bǎozhòng",
+      "en": "to take care of oneself",
+      "ex": {
+        "hz": "天冷了，请多保重。",
+        "py": "Tiān lěng le, qǐng duō bǎozhòng.",
+        "en": "It's getting cold, so take good care."
+      }
+    },
+    {
+      "w": "饯行",
+      "py": "jiànxíng",
+      "en": "to hold a farewell dinner",
+      "ex": {
+        "hz": "朋友们给他饯行。",
+        "py": "Péngyoumen gěi tā jiànxíng.",
+        "en": "His friends are giving him a farewell dinner."
+      }
+    },
+    {
+      "w": "祝",
+      "py": "zhù",
+      "en": "to wish",
+      "ex": {
+        "hz": "祝你生日快乐！",
+        "py": "Zhù nǐ shēngrì kuàilè!",
+        "en": "Happy birthday to you!"
+      }
+    },
+    {
+      "w": "幸福",
+      "py": "xìngfú",
+      "en": "happy; blessed",
+      "ex": {
+        "hz": "他们的生活很幸福。",
+        "py": "Tāmen de shēnghuó hěn xìngfú.",
+        "en": "They live a very happy life."
+      }
+    },
+    {
+      "w": "顺利",
+      "py": "shùnlì",
+      "en": "smooth; without a hitch",
+      "ex": {
+        "hz": "考试很顺利。",
+        "py": "Kǎoshì hěn shùnlì.",
+        "en": "The exam went smoothly."
+      }
+    },
+    {
+      "w": "刚",
+      "py": "gāng",
+      "en": "just (a moment ago)",
+      "ex": {
+        "hz": "我刚到北京。",
+        "py": "Wǒ gāng dào Běijīng.",
+        "en": "I've just arrived in Beijing."
+      }
+    },
+    {
+      "w": "句",
+      "py": "jù",
+      "en": "(measure word for sentences)",
+      "ex": {
+        "hz": "这句话我不懂。",
+        "py": "Zhè jù huà wǒ bù dǒng.",
+        "en": "I don't understand this sentence."
+      }
+    },
+    {
+      "w": "感谢",
+      "py": "gǎnxiè",
+      "en": "to thank",
+      "ex": {
+        "hz": "感谢你的帮助。",
+        "py": "Gǎnxiè nǐ de bāngzhù.",
+        "en": "Thank you for your help."
+      }
+    },
+    {
+      "w": "舍不得",
+      "py": "shěbude",
+      "en": "to hate to part with",
+      "ex": {
+        "hz": "我舍不得花钱。",
+        "py": "Wǒ shěbude huā qián.",
+        "en": "I hate to spend money."
+      }
+    },
+    {
+      "w": "举",
+      "py": "jǔ",
+      "en": "to raise; to lift",
+      "ex": {
+        "hz": "请举手。",
+        "py": "Qǐng jǔ shǒu.",
+        "en": "Please raise your hand."
+      }
+    },
+    {
+      "w": "为",
+      "py": "wèi",
+      "en": "for; on behalf of",
+      "ex": {
+        "hz": "我为你们高兴。",
+        "py": "Wǒ wèi nǐmen gāoxìng.",
+        "en": "I'm happy for you."
+      }
+    },
+    {
+      "w": "友谊",
+      "py": "yǒuyì",
+      "en": "friendship",
+      "ex": {
+        "hz": "我们的友谊很深。",
+        "py": "Wǒmen de yǒuyì hěn shēn.",
+        "en": "Our friendship is deep."
+      }
+    },
+    {
+      "w": "干杯",
+      "py": "gānbēi",
+      "en": "to drink a toast; cheers",
+      "ex": {
+        "hz": "大家一起干杯吧。",
+        "py": "Dàjiā yìqǐ gānbēi ba.",
+        "en": "Let's all drink a toast together."
+      }
+    },
+    {
+      "w": "茄子",
+      "py": "qiézi",
+      "en": "\"cheese\" (said for photos); eggplant",
+      "ex": {
+        "hz": "照相的时候说“茄子”。",
+        "py": "Zhàoxiàng de shíhou shuō \"qiézi\".",
+        "en": "When taking a photo, say \"cheese\"."
+      }
+    },
+    {
+      "w": "登",
+      "py": "dēng",
+      "en": "to board; to climb",
+      "ex": {
+        "hz": "请从这里登机。",
+        "py": "Qǐng cóng zhèlǐ dēng jī.",
+        "en": "Please board from here."
+      }
+    },
+    {
+      "w": "手续",
+      "py": "shǒuxù",
+      "en": "procedure; formalities",
+      "ex": {
+        "hz": "办手续要两个小时。",
+        "py": "Bàn shǒuxù yào liǎng ge xiǎoshí.",
+        "en": "The paperwork takes two hours."
+      }
+    },
+    {
+      "w": "该",
+      "py": "gāi",
+      "en": "should; ought to",
+      "ex": {
+        "hz": "太晚了，我该走了。",
+        "py": "Tài wǎn le, wǒ gāi zǒu le.",
+        "en": "It's too late; I should go."
+      }
+    },
+    {
+      "w": "安检",
+      "py": "ānjiǎn",
+      "en": "security check",
+      "ex": {
+        "hz": "安检的人很多。",
+        "py": "Ānjiǎn de rén hěn duō.",
+        "en": "There are many people at the security check."
+      }
+    },
+    {
+      "w": "护照",
+      "py": "hùzhào",
+      "en": "passport",
+      "ex": {
+        "hz": "我的护照在包里。",
+        "py": "Wǒ de hùzhào zài bāo li.",
+        "en": "My passport is in my bag."
+      }
+    },
+    {
+      "w": "登机牌",
+      "py": "dēngjīpái",
+      "en": "boarding pass",
+      "ex": {
+        "hz": "请给我看你的登机牌。",
+        "py": "Qǐng gěi wǒ kàn nǐ de dēngjīpái.",
+        "en": "Please show me your boarding pass."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "去机场的路上",
+      "py": "Qù jīchǎng de lù shang",
+      "en": "On the way to the airport",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你的飞机几点起飞？",
+          "py": "Nǐ de fēijī jǐ diǎn qǐfēi?",
+          "en": "What time does your plane take off?"
+        },
+        {
+          "who": "B",
+          "hz": "十二点，现在才九点，不急。",
+          "py": "Shí'èr diǎn, xiànzài cái jiǔ diǎn, bù jí.",
+          "en": "At twelve; it's only nine now, no rush."
+        },
+        {
+          "who": "A",
+          "hz": "路上可能堵车，我们还是早点儿到吧。",
+          "py": "Lù shang kěnéng dǔchē, wǒmen háishi zǎodiǎnr dào ba.",
+          "en": "The roads may be busy; we'd better get there early."
+        },
+        {
+          "who": "B",
+          "hz": "好。到了家，我一定给你打电话。",
+          "py": "Hǎo. Dàole jiā, wǒ yídìng gěi nǐ dǎ diànhuà.",
+          "en": "OK. When I get home, I'll be sure to call you."
+        },
+        {
+          "who": "A",
+          "hz": "好，一路平安！",
+          "py": "Hǎo, yílù píng'ān!",
+          "en": "Good, have a safe trip!"
+        }
+      ],
+      "questions": [
+        {
+          "q": "When does the plane take off?",
+          "options": [
+            "At twelve",
+            "At nine",
+            "At ten",
+            "At eleven"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "Why do they want to arrive early?",
+          "options": [
+            "The roads may be busy",
+            "They want a coffee",
+            "B forgot the passport",
+            "The plane leaves at nine"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "送礼物",
+      "py": "Sòng lǐwù",
+      "en": "A parting gift",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "听说你下个月就回国了？",
+          "py": "Tīngshuō nǐ xià ge yuè jiù huíguó le?",
+          "en": "I hear you're going home next month?"
+        },
+        {
+          "who": "B",
+          "hz": "是啊，我在这儿学了一年了。",
+          "py": "Shì a, wǒ zài zhèr xuéle yì nián le.",
+          "en": "Yes, I've studied here for a year now."
+        },
+        {
+          "who": "A",
+          "hz": "这是我送你的礼物，一本中文小说。",
+          "py": "Zhè shì wǒ sòng nǐ de lǐwù, yì běn Zhōngwén xiǎoshuō.",
+          "en": "This is a present for you, a Chinese novel."
+        },
+        {
+          "who": "B",
+          "hz": "太感谢你了！我会好好儿看的。",
+          "py": "Tài gǎnxiè nǐ le! Wǒ huì hǎohāor kàn de.",
+          "en": "Thank you so much! I'll read it carefully."
+        },
+        {
+          "who": "A",
+          "hz": "回国以后，别忘了我们。",
+          "py": "Huíguó yǐhòu, bié wàngle wǒmen.",
+          "en": "Don't forget us when you're back home."
+        },
+        {
+          "who": "B",
+          "hz": "怎么会呢？我们是好朋友。",
+          "py": "Zěnme huì ne? Wǒmen shì hǎo péngyou.",
+          "en": "How could I? We're good friends."
+        }
+      ],
+      "questions": [
+        {
+          "q": "When does B go home?",
+          "options": [
+            "Next month",
+            "Next week",
+            "Tomorrow",
+            "Next year"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What is the present?",
+          "options": [
+            "A Chinese novel",
+            "A photo",
+            "A watch",
+            "A plane ticket"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "Notional passive",
+      "en": "The thing acted on can be the subject with no 被: thing + verb + result + 了. Common with 好 / 完.",
+      "drills": [
+        {
+          "q": "房间都___好了吗？",
+          "options": [
+            "收拾",
+            "收拾了",
+            "收拾得",
+            "在收拾"
+          ],
+          "answer": 0,
+          "en": "Have all the rooms been tidied?"
+        },
+        {
+          "q": "饭做___了吗？",
+          "options": [
+            "好",
+            "的",
+            "吗",
+            "地"
+          ],
+          "answer": 0,
+          "en": "Is the meal ready?"
+        },
+        {
+          "q": "信已经___了。",
+          "options": [
+            "寄走",
+            "寄得",
+            "寄的",
+            "寄地"
+          ],
+          "answer": 0,
+          "en": "The letter has already been sent."
+        },
+        {
+          "q": "作业还没___完。",
+          "options": [
+            "写",
+            "被",
+            "把",
+            "在"
+          ],
+          "answer": 0,
+          "en": "The homework isn't finished yet."
+        }
+      ]
+    },
+    {
+      "point": "刚",
+      "en": "刚 + verb: something happened just a moment ago. 刚 goes right before the verb.",
+      "drills": [
+        {
+          "q": "我___到北京，还不太习惯。",
+          "options": [
+            "刚",
+            "吗",
+            "很",
+            "把"
+          ],
+          "answer": 0,
+          "en": "I've just arrived in Beijing and am not used to it yet."
+        },
+        {
+          "q": "我刚上大学___，一个朋友也没有。",
+          "options": [
+            "的时候",
+            "的时间",
+            "时候的",
+            "在时候"
+          ],
+          "answer": 0,
+          "en": "When I had just started university, I didn't have a single friend."
+        },
+        {
+          "q": "我哥哥___回国，现在在休息。",
+          "options": [
+            "刚",
+            "很",
+            "太",
+            "吗"
+          ],
+          "answer": 0,
+          "en": "My older brother has just returned home and is resting."
+        },
+        {
+          "q": "老师___走，你快去找他吧。",
+          "options": [
+            "刚",
+            "很",
+            "太",
+            "吗"
+          ],
+          "answer": 0,
+          "en": "The teacher has just left, so go and find him quickly."
+        }
+      ]
+    },
+    {
+      "point": "向 / 给 / 为",
+      "en": "向 = towards a person or direction; 给 = to / for someone; 为 = for the sake of.",
+      "drills": [
+        {
+          "q": "请___右拐。",
+          "options": [
+            "向",
+            "给",
+            "为",
+            "把"
+          ],
+          "answer": 0,
+          "en": "Please turn right."
+        },
+        {
+          "q": "妈妈___我买了一件新衣服。",
+          "options": [
+            "给",
+            "往",
+            "把",
+            "比"
+          ],
+          "answer": 0,
+          "en": "Mum bought me a new piece of clothing."
+        },
+        {
+          "q": "我们都___你高兴。",
+          "options": [
+            "为",
+            "向",
+            "往",
+            "把"
+          ],
+          "answer": 0,
+          "en": "We're all happy for you."
+        },
+        {
+          "q": "明天我要___老师告别。",
+          "options": [
+            "向",
+            "往",
+            "比",
+            "在"
+          ],
+          "answer": 0,
+          "en": "Tomorrow I'll say goodbye to the teacher."
+        }
+      ]
+    },
+    {
+      "point": "Verb + 不了",
+      "en": "verb + 不了 = can't (do it, finish it, or let it happen).",
+      "drills": [
+        {
+          "q": "这么多书，我一个人拿___。",
+          "options": [
+            "不了",
+            "的了",
+            "完不",
+            "没了"
+          ],
+          "answer": 0,
+          "en": "So many books; I can't carry them all by myself."
+        },
+        {
+          "q": "明天我有事，去___了。",
+          "options": [
+            "不",
+            "没",
+            "别",
+            "吗"
+          ],
+          "answer": 0,
+          "en": "I'm busy tomorrow, so I can't go."
+        },
+        {
+          "q": "这件事太难了，我做___。",
+          "options": [
+            "不了",
+            "没了",
+            "不去",
+            "吗了"
+          ],
+          "answer": 0,
+          "en": "This is too hard; I can't do it."
+        },
+        {
+          "q": "谁都忘___他的好。",
+          "options": [
+            "不了",
+            "没了",
+            "别了",
+            "吗了"
+          ],
+          "answer": 0,
+          "en": "Nobody can forget how good he was."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你的房间收拾好了吗？"
+          ],
+          [
+            "女",
+            "收拾好了，衣服也洗好了。"
+          ]
+        ],
+        "q": "她做完了什么？",
+        "options": [
+          "收拾房间、洗衣服",
+          "买机票",
+          "办手续"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你什么时候走？"
+          ],
+          [
+            "女",
+            "下个星期，我刚买了机票。"
+          ]
+        ],
+        "q": "他刚做了什么？",
+        "options": [
+          "买机票",
+          "收拾行李",
+          "办手续"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "我们去吃饭吧，我请客。"
+          ],
+          [
+            "女",
+            "好，谢谢你！"
+          ]
+        ],
+        "q": "他们要做什么？",
+        "options": [
+          "吃饭",
+          "干杯",
+          "告别"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "我该回家了。"
+          ],
+          [
+            "女",
+            "好，路上小心！"
+          ]
+        ],
+        "q": "女的现在要做什么？",
+        "options": [
+          "回家",
+          "买机票",
+          "收拾行李"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "我的行李都收拾好了，机票还没订。",
+        "claim": "我订了机票。",
+        "ok": false
+      },
+      {
+        "text": "同学们祝他考试顺利。",
+        "claim": "同学们希望他考得好。",
+        "ok": true
+      },
+      {
+        "text": "我刚到机场，还没办登机手续。",
+        "claim": "我已经办完手续了。",
+        "ok": false
+      },
+      {
+        "text": "这句话我忘不了。",
+        "claim": "我会记住这句话。",
+        "ok": true
+      }
+    ],
+    "replies": [
+      {
+        "q": "下个月我就要回国了。",
+        "a": "这么快？我们一起吃个饭吧。"
+      },
+      {
+        "q": "祝你一路平安！",
+        "a": "谢谢，你们多保重！"
+      },
+      {
+        "q": "你的行李多吗？",
+        "a": "不多，就一个箱子。"
+      },
+      {
+        "q": "别忘了给我打电话。",
+        "a": "一到家就给你打。"
+      }
+    ]
+  }
+}

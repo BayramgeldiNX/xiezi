@@ -1,0 +1,780 @@
+{
+  "n": 26,
+  "cn": "第26课",
+  "title": "西安比北京还热",
+  "en": "Xi'an is hotter than Beijing",
+  "words": [
+    {
+      "w": "结束",
+      "py": "jiéshù",
+      "en": "to finish; to end",
+      "ex": {
+        "hz": "电影几点结束？",
+        "py": "Diànyǐng jǐ diǎn jiéshù?",
+        "en": "What time does the film end?"
+      }
+    },
+    {
+      "w": "名胜",
+      "py": "míngshèng",
+      "en": "scenic spot",
+      "ex": {
+        "hz": "这个城市有很多名胜。",
+        "py": "Zhège chéngshì yǒu hěn duō míngshèng.",
+        "en": "This city has many scenic spots."
+      }
+    },
+    {
+      "w": "古迹",
+      "py": "gǔjì",
+      "en": "historical site",
+      "ex": {
+        "hz": "我喜欢看古迹。",
+        "py": "Wǒ xǐhuan kàn gǔjì.",
+        "en": "I like visiting historical sites."
+      }
+    },
+    {
+      "w": "比",
+      "py": "bǐ",
+      "en": "than; compared with",
+      "ex": {
+        "hz": "我比弟弟高。",
+        "py": "Wǒ bǐ dìdi gāo.",
+        "en": "I am taller than my younger brother."
+      }
+    },
+    {
+      "w": "建议",
+      "py": "jiànyì",
+      "en": "to suggest; suggestion",
+      "ex": {
+        "hz": "我建议你多休息。",
+        "py": "Wǒ jiànyì nǐ duō xiūxi.",
+        "en": "I suggest you rest more."
+      }
+    },
+    {
+      "w": "还",
+      "py": "hái",
+      "en": "even more (比…还…); still; also",
+      "ex": {
+        "hz": "今天比昨天还冷。",
+        "py": "Jīntiān bǐ zuótiān hái lěng.",
+        "en": "Today is even colder than yesterday."
+      }
+    },
+    {
+      "w": "凉快",
+      "py": "liángkuai",
+      "en": "cool (pleasantly)",
+      "ex": {
+        "hz": "下雨以后很凉快。",
+        "py": "Xià yǔ yǐhòu hěn liángkuai.",
+        "en": "It's nice and cool after rain."
+      }
+    },
+    {
+      "w": "预报",
+      "py": "yùbào",
+      "en": "to forecast",
+      "ex": {
+        "hz": "天气预报说明天下雨。",
+        "py": "Tiānqì yùbào shuō míngtiān xià yǔ.",
+        "en": "The weather forecast says it will rain tomorrow."
+      }
+    },
+    {
+      "w": "方便",
+      "py": "fāngbiàn",
+      "en": "convenient",
+      "ex": {
+        "hz": "坐地铁很方便。",
+        "py": "Zuò dìtiě hěn fāngbiàn.",
+        "en": "The subway is convenient."
+      }
+    },
+    {
+      "w": "最好",
+      "py": "zuìhǎo",
+      "en": "had better; it would be best",
+      "ex": {
+        "hz": "你最好带一把伞。",
+        "py": "Nǐ zuìhǎo dài yì bǎ sǎn.",
+        "en": "You'd better bring an umbrella."
+      }
+    },
+    {
+      "w": "伴儿",
+      "py": "bànr",
+      "en": "companion",
+      "ex": {
+        "hz": "我想找个伴儿一起学习。",
+        "py": "Wǒ xiǎng zhǎo ge bànr yìqǐ xuéxí.",
+        "en": "I want to find a partner to study with."
+      }
+    },
+    {
+      "w": "互相",
+      "py": "hùxiāng",
+      "en": "each other; mutually",
+      "ex": {
+        "hz": "我们互相学习。",
+        "py": "Wǒmen hùxiāng xuéxí.",
+        "en": "We learn from each other."
+      }
+    },
+    {
+      "w": "帮助",
+      "py": "bāngzhù",
+      "en": "to help",
+      "ex": {
+        "hz": "谢谢你帮助我。",
+        "py": "Xièxie nǐ bāngzhù wǒ.",
+        "en": "Thank you for helping me."
+      }
+    },
+    {
+      "w": "壮",
+      "py": "zhuàng",
+      "en": "strong; sturdy",
+      "ex": {
+        "hz": "他又高又壮。",
+        "py": "Tā yòu gāo yòu zhuàng.",
+        "en": "He is tall and sturdy."
+      }
+    },
+    {
+      "w": "一样",
+      "py": "yíyàng",
+      "en": "same",
+      "ex": {
+        "hz": "我们的手机一样。",
+        "py": "Wǒmen de shǒujī yíyàng.",
+        "en": "Our phones are the same."
+      }
+    },
+    {
+      "w": "希望",
+      "py": "xīwàng",
+      "en": "to hope; hope",
+      "ex": {
+        "hz": "我希望明天不下雨。",
+        "py": "Wǒ xīwàng míngtiān bú xià yǔ.",
+        "en": "I hope it doesn't rain tomorrow."
+      }
+    },
+    {
+      "w": "同意",
+      "py": "tóngyì",
+      "en": "to agree",
+      "ex": {
+        "hz": "妈妈同意我去。",
+        "py": "Māma tóngyì wǒ qù.",
+        "en": "Mom agrees to let me go."
+      }
+    },
+    {
+      "w": "办",
+      "py": "bàn",
+      "en": "to do; to handle",
+      "ex": {
+        "hz": "这件事怎么办？",
+        "py": "Zhè jiàn shì zěnme bàn?",
+        "en": "What should we do about this?"
+      }
+    },
+    {
+      "w": "国外",
+      "py": "guówài",
+      "en": "abroad; overseas",
+      "ex": {
+        "hz": "他在国外学习。",
+        "py": "Tā zài guówài xuéxí.",
+        "en": "He studies abroad."
+      }
+    },
+    {
+      "w": "生活",
+      "py": "shēnghuó",
+      "en": "to live; life",
+      "ex": {
+        "hz": "我在北京生活。",
+        "py": "Wǒ zài Běijīng shēnghuó.",
+        "en": "I live in Beijing."
+      }
+    },
+    {
+      "w": "国内",
+      "py": "guónèi",
+      "en": "domestic; within the country",
+      "ex": {
+        "hz": "我只去国内旅行。",
+        "py": "Wǒ zhǐ qù guónèi lǚxíng.",
+        "en": "I only travel within the country."
+      }
+    },
+    {
+      "w": "方面",
+      "py": "fāngmiàn",
+      "en": "aspect; respect",
+      "ex": {
+        "hz": "这方面我不太懂。",
+        "py": "Zhè fāngmiàn wǒ bú tài dǒng.",
+        "en": "I don't know much about this area."
+      }
+    },
+    {
+      "w": "确实",
+      "py": "quèshí",
+      "en": "really; indeed",
+      "ex": {
+        "hz": "这儿确实很安静。",
+        "py": "Zhèr quèshí hěn ānjìng.",
+        "en": "It really is quiet here."
+      }
+    },
+    {
+      "w": "对",
+      "py": "duì",
+      "en": "regarding; toward (also: right, correct)",
+      "ex": {
+        "hz": "我对汉语很感兴趣。",
+        "py": "Wǒ duì Hànyǔ hěn gǎn xìngqù.",
+        "en": "I'm very interested in Chinese."
+      }
+    },
+    {
+      "w": "感兴趣",
+      "py": "gǎn xìngqù",
+      "en": "to be interested in",
+      "ex": {
+        "hz": "他对音乐感兴趣。",
+        "py": "Tā duì yīnyuè gǎn xìngqù.",
+        "en": "He is interested in music."
+      }
+    },
+    {
+      "w": "依我看",
+      "py": "yī wǒ kàn",
+      "en": "in my opinion",
+      "ex": {
+        "hz": "依我看，这个办法很好。",
+        "py": "Yī wǒ kàn, zhège bànfǎ hěn hǎo.",
+        "en": "In my opinion, this is a good way."
+      }
+    },
+    {
+      "w": "商量",
+      "py": "shāngliang",
+      "en": "to talk over; to discuss",
+      "ex": {
+        "hz": "我们商量一下吧。",
+        "py": "Wǒmen shāngliang yíxià ba.",
+        "en": "Let's talk it over."
+      }
+    },
+    {
+      "w": "河",
+      "py": "hé",
+      "en": "river",
+      "ex": {
+        "hz": "这条河很长。",
+        "py": "Zhè tiáo hé hěn cháng.",
+        "en": "This river is very long."
+      }
+    },
+    {
+      "w": "深",
+      "py": "shēn",
+      "en": "deep",
+      "ex": {
+        "hz": "这条河不太深。",
+        "py": "Zhè tiáo hé bú tài shēn.",
+        "en": "This river isn't very deep."
+      }
+    },
+    {
+      "w": "容易",
+      "py": "róngyì",
+      "en": "easy",
+      "ex": {
+        "hz": "这个问题很容易。",
+        "py": "Zhège wèntí hěn róngyì.",
+        "en": "This question is easy."
+      }
+    },
+    {
+      "w": "西安",
+      "py": "Xī'ān",
+      "en": "Xi'an (city)",
+      "ex": {
+        "hz": "西安有很多古迹。",
+        "py": "Xī'ān yǒu hěn duō gǔjì.",
+        "en": "Xi'an has many historical sites."
+      }
+    },
+    {
+      "w": "湖南",
+      "py": "Húnán",
+      "en": "Hunan (province)",
+      "ex": {
+        "hz": "湖南菜很辣。",
+        "py": "Húnán cài hěn là.",
+        "en": "Hunan food is very spicy."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "夏天去哪儿",
+      "py": "Xiàtiān qù nǎr",
+      "en": "Where to go in summer",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "暑假你想去哪儿旅行？",
+          "py": "Shǔjià nǐ xiǎng qù nǎr lǚxíng?",
+          "en": "Where do you want to travel in the summer holiday?"
+        },
+        {
+          "who": "B",
+          "hz": "我想去海边，那儿比这儿凉快。",
+          "py": "Wǒ xiǎng qù hǎibiān, nàr bǐ zhèr liángkuai.",
+          "en": "I want to go to the seaside; it's cooler there than here."
+        },
+        {
+          "who": "A",
+          "hz": "天气预报说，海边没有这儿热。",
+          "py": "Tiānqì yùbào shuō, hǎibiān méiyǒu zhèr rè.",
+          "en": "The forecast says the seaside isn't as hot as here."
+        },
+        {
+          "who": "B",
+          "hz": "对，你最好也跟我一起去。",
+          "py": "Duì, nǐ zuìhǎo yě gēn wǒ yìqǐ qù.",
+          "en": "Right, you'd better come with me too."
+        },
+        {
+          "who": "A",
+          "hz": "好，我们商量一下时间吧。",
+          "py": "Hǎo, wǒmen shāngliang yíxià shíjiān ba.",
+          "en": "OK, let's talk about the dates."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Why does B want to go to the seaside?",
+          "options": [
+            "It is cooler than here",
+            "It is cheaper",
+            "It is closer",
+            "It has more people"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What will they do next?",
+          "options": [
+            "Talk about the time",
+            "Buy tickets",
+            "Pack bags",
+            "Call a taxi"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "两个哥哥",
+      "py": "Liǎng ge gēge",
+      "en": "Two older brothers",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你的两个哥哥一样高吗？",
+          "py": "Nǐ de liǎng ge gēge yíyàng gāo ma?",
+          "en": "Are your two older brothers the same height?"
+        },
+        {
+          "who": "B",
+          "hz": "不一样，大哥比二哥高一点儿。",
+          "py": "Bù yíyàng, dàgē bǐ èrgē gāo yìdiǎnr.",
+          "en": "No, the eldest is a bit taller than the second."
+        },
+        {
+          "who": "A",
+          "hz": "二哥有大哥壮吗？",
+          "py": "Èrgē yǒu dàgē zhuàng ma?",
+          "en": "Is the second as strong as the eldest?"
+        },
+        {
+          "who": "B",
+          "hz": "没有，大哥壮得多。",
+          "py": "Méiyǒu, dàgē zhuàng de duō.",
+          "en": "No, the eldest is much stronger."
+        },
+        {
+          "who": "A",
+          "hz": "他们互相帮助吗？",
+          "py": "Tāmen hùxiāng bāngzhù ma?",
+          "en": "Do they help each other?"
+        },
+        {
+          "who": "B",
+          "hz": "当然，他们是好伙伴。",
+          "py": "Dāngrán, tāmen shì hǎo huǒbàn.",
+          "en": "Of course, they are good friends."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Who is taller?",
+          "options": [
+            "The eldest brother",
+            "The second brother",
+            "They are the same",
+            "Nobody knows"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How is the second brother compared with the eldest?",
+          "options": [
+            "Not as strong",
+            "Stronger",
+            "Just as strong",
+            "Taller"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "A 比 B + adjective",
+      "en": "比 compares two things: A + 比 + B + adjective. Don't put 很 / 太 / 非常 after it; use 更 or 还 instead. The negative is 不比.",
+      "drills": [
+        {
+          "q": "他___我大两岁。",
+          "options": [
+            "比",
+            "跟",
+            "没",
+            "和"
+          ],
+          "answer": 0,
+          "en": "He is two years older than me."
+        },
+        {
+          "q": "今天比昨天___热。",
+          "options": [
+            "更",
+            "很",
+            "太",
+            "非常"
+          ],
+          "answer": 0,
+          "en": "Today is even hotter than yesterday."
+        },
+        {
+          "q": "他跑___比我快。",
+          "options": [
+            "得",
+            "的",
+            "地",
+            "了"
+          ],
+          "answer": 0,
+          "en": "He runs faster than me."
+        },
+        {
+          "q": "这个房间___那个房间大。",
+          "options": [
+            "不比",
+            "没比",
+            "不跟",
+            "比没"
+          ],
+          "answer": 0,
+          "en": "This room is no bigger than that one."
+        }
+      ]
+    },
+    {
+      "point": "How big is the difference?",
+      "en": "Put the amount after the adjective: 大一岁, 贵两块. 一点儿 means a little, 得多 or 多了 means a lot.",
+      "drills": [
+        {
+          "q": "他比我高___。",
+          "options": [
+            "一点儿",
+            "非常",
+            "很",
+            "太"
+          ],
+          "answer": 0,
+          "en": "He is a little taller than me."
+        },
+        {
+          "q": "这件衣服比那件贵二十___。",
+          "options": [
+            "块",
+            "有点儿",
+            "非常",
+            "比较"
+          ],
+          "answer": 0,
+          "en": "This piece costs 20 yuan more than that one."
+        },
+        {
+          "q": "西安比大同热___。",
+          "options": [
+            "得多",
+            "的多",
+            "多得",
+            "地多"
+          ],
+          "answer": 0,
+          "en": "Xi'an is much hotter than Datong."
+        },
+        {
+          "q": "弟弟比我小___。",
+          "options": [
+            "两岁",
+            "太",
+            "非常",
+            "特别"
+          ],
+          "answer": 0,
+          "en": "My younger brother is two years younger than me."
+        }
+      ]
+    },
+    {
+      "point": "A 跟 B 一样 (+ adjective)",
+      "en": "Same as: A + 跟 + B + 一样, and add an adjective to say in what way. The negative is 不一样.",
+      "drills": [
+        {
+          "q": "他的手机___我的一样。",
+          "options": [
+            "跟",
+            "比",
+            "没有",
+            "不比"
+          ],
+          "answer": 0,
+          "en": "His phone is the same as mine."
+        },
+        {
+          "q": "这条河跟那条河一样___。",
+          "options": [
+            "深",
+            "很深",
+            "太深",
+            "更深"
+          ],
+          "answer": 0,
+          "en": "This river is as deep as that one."
+        },
+        {
+          "q": "这个跟那个___一样。",
+          "options": [
+            "不",
+            "没",
+            "别",
+            "有"
+          ],
+          "answer": 0,
+          "en": "This one is not the same as that one."
+        },
+        {
+          "q": "北京的夏天___上海的夏天一样热。",
+          "options": [
+            "跟",
+            "比",
+            "对",
+            "离"
+          ],
+          "answer": 0,
+          "en": "Beijing's summer is as hot as Shanghai's."
+        }
+      ]
+    },
+    {
+      "point": "A 有 / 没有 B + adjective",
+      "en": "有 asks whether A reaches B's level, mostly in questions; 没有 says A falls short: A is not as … as B.",
+      "drills": [
+        {
+          "q": "你弟弟___你高吗？",
+          "options": [
+            "有",
+            "在",
+            "和",
+            "离"
+          ],
+          "answer": 0,
+          "en": "Is your younger brother as tall as you?"
+        },
+        {
+          "q": "坐公共汽车___坐地铁快。",
+          "options": [
+            "没有",
+            "不是",
+            "没在",
+            "没比"
+          ],
+          "answer": 0,
+          "en": "The bus is not as fast as the subway."
+        },
+        {
+          "q": "这个房间没有那个房间___。",
+          "options": [
+            "大",
+            "很大",
+            "更大",
+            "多大"
+          ],
+          "answer": 0,
+          "en": "This room is not as big as that one."
+        },
+        {
+          "q": "A：他有你高吗？ B：他___我高。",
+          "options": [
+            "没有",
+            "不有",
+            "没是",
+            "不是"
+          ],
+          "answer": 0,
+          "en": "A: Is he as tall as you? B: He is not as tall as me."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "听说广州比北京还热？"
+          ],
+          [
+            "女",
+            "对，广州比北京热得多。"
+          ]
+        ],
+        "q": "哪儿更热？",
+        "options": [
+          "广州",
+          "北京",
+          "一样热"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你有哥哥高吗？"
+          ],
+          [
+            "女",
+            "我跟他一样高。"
+          ]
+        ],
+        "q": "他们谁高？",
+        "options": [
+          "一样高",
+          "哥哥高",
+          "我高"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你对什么感兴趣？"
+          ],
+          [
+            "女",
+            "我对中国古迹感兴趣。"
+          ]
+        ],
+        "q": "他喜欢什么？",
+        "options": [
+          "古迹",
+          "音乐",
+          "电影"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你们商量好了吗？"
+          ],
+          [
+            "女",
+            "好了，我们去西安旅行。"
+          ]
+        ],
+        "q": "他们去哪儿？",
+        "options": [
+          "西安",
+          "湖南",
+          "北京"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "弟弟二十岁，我二十五岁。",
+        "claim": "我比弟弟小。",
+        "ok": false
+      },
+      {
+        "text": "这条河很深，那条河不深。",
+        "claim": "这条河比那条河深。",
+        "ok": true
+      },
+      {
+        "text": "我的书包跟你的书包一样重。",
+        "claim": "两个书包不一样。",
+        "ok": false
+      },
+      {
+        "text": "上海的夏天没有这儿凉快。",
+        "claim": "这儿比上海凉快。",
+        "ok": true
+      }
+    ],
+    "replies": [
+      {
+        "q": "你觉得这儿的冬天冷吗？",
+        "a": "没有我家那儿冷。"
+      },
+      {
+        "q": "这两件衣服一样吗？",
+        "a": "不一样，这件比那件贵。"
+      },
+      {
+        "q": "明天天气怎么样？",
+        "a": "预报说比今天还热。"
+      },
+      {
+        "q": "周末你想去哪儿？",
+        "a": "依我看，去海边吧。"
+      }
+    ]
+  }
+}
