@@ -1,0 +1,774 @@
+{
+  "n": 16,
+  "cn": "第十六课",
+  "title": "他正在等他爱人呢",
+  "en": "He is waiting for his wife",
+  "words": [
+    {
+      "w": "家",
+      "py": "jiā",
+      "en": "(measure word for shops and companies; also: home)",
+      "ex": {
+        "hz": "这家商店很大。",
+        "py": "Zhè jiā shāngdiàn hěn dà.",
+        "en": "This shop is big."
+      }
+    },
+    {
+      "w": "商场",
+      "py": "shāngchǎng",
+      "en": "shopping mall",
+      "ex": {
+        "hz": "周末我去商场买衣服。",
+        "py": "Zhōumò wǒ qù shāngchǎng mǎi yīfu.",
+        "en": "I go to the mall for clothes at the weekend."
+      }
+    },
+    {
+      "w": "正在",
+      "py": "zhèngzài",
+      "en": "(in the middle of doing)",
+      "ex": {
+        "hz": "妈妈正在做饭。",
+        "py": "Māma zhèngzài zuò fàn.",
+        "en": "Mom is cooking."
+      }
+    },
+    {
+      "w": "打折",
+      "py": "dǎzhé",
+      "en": "to be on sale; to give a discount",
+      "ex": {
+        "hz": "这件衣服打折了。",
+        "py": "Zhè jiàn yīfu dǎzhé le.",
+        "en": "This piece of clothing is on sale."
+      }
+    },
+    {
+      "w": "顾客",
+      "py": "gùkè",
+      "en": "customer",
+      "ex": {
+        "hz": "商店里有很多顾客。",
+        "py": "Shāngdiàn li yǒu hěn duō gùkè.",
+        "en": "There are lots of customers in the shop."
+      }
+    },
+    {
+      "w": "少",
+      "py": "shǎo",
+      "en": "few; little",
+      "ex": {
+        "hz": "今天人很少。",
+        "py": "Jīntiān rén hěn shǎo.",
+        "en": "There are few people today."
+      }
+    },
+    {
+      "w": "有的",
+      "py": "yǒude",
+      "en": "some",
+      "ex": {
+        "hz": "有的人喜欢喝茶。",
+        "py": "Yǒude rén xǐhuan hē chá.",
+        "en": "Some people like tea."
+      }
+    },
+    {
+      "w": "挑",
+      "py": "tiāo",
+      "en": "to choose; to pick",
+      "ex": {
+        "hz": "我想挑一件衣服。",
+        "py": "Wǒ xiǎng tiāo yí jiàn yīfu.",
+        "en": "I want to pick out a piece of clothing."
+      }
+    },
+    {
+      "w": "排队",
+      "py": "páiduì",
+      "en": "to queue; to line up",
+      "ex": {
+        "hz": "大家在排队买票。",
+        "py": "Dàjiā zài páiduì mǎi piào.",
+        "en": "Everyone is queuing for tickets."
+      }
+    },
+    {
+      "w": "交",
+      "py": "jiāo",
+      "en": "to pay; to hand in",
+      "ex": {
+        "hz": "我去交钱。",
+        "py": "Wǒ qù jiāo qián.",
+        "en": "I'm going to pay."
+      }
+    },
+    {
+      "w": "咦",
+      "py": "yí",
+      "en": "(surprise) hey; huh",
+      "ex": {
+        "hz": "咦，我的手机呢？",
+        "py": "Yí, wǒ de shǒujī ne?",
+        "en": "Huh, where's my phone?"
+      }
+    },
+    {
+      "w": "先生",
+      "py": "xiānsheng",
+      "en": "sir; Mr",
+      "ex": {
+        "hz": "王先生在等你。",
+        "py": "Wáng xiānsheng zài děng nǐ.",
+        "en": "Mr Wang is waiting for you."
+      }
+    },
+    {
+      "w": "找",
+      "py": "zhǎo",
+      "en": "to look for",
+      "ex": {
+        "hz": "我在找我的书。",
+        "py": "Wǒ zài zhǎo wǒ de shū.",
+        "en": "I'm looking for my book."
+      }
+    },
+    {
+      "w": "刚才",
+      "py": "gāngcái",
+      "en": "just now",
+      "ex": {
+        "hz": "刚才谁给你打电话？",
+        "py": "Gāngcái shéi gěi nǐ dǎ diànhuà?",
+        "en": "Who rang you just now?"
+      }
+    },
+    {
+      "w": "打电话",
+      "py": "dǎ diànhuà",
+      "en": "to make a phone call",
+      "ex": {
+        "hz": "我想给妈妈打电话。",
+        "py": "Wǒ xiǎng gěi māma dǎ diànhuà.",
+        "en": "I want to call my mom."
+      }
+    },
+    {
+      "w": "招聘",
+      "py": "zhāopìn",
+      "en": "to recruit; to advertise a job",
+      "ex": {
+        "hz": "这家公司在招聘。",
+        "py": "Zhè jiā gōngsī zài zhāopìn.",
+        "en": "This company is hiring."
+      }
+    },
+    {
+      "w": "打算",
+      "py": "dǎsuàn",
+      "en": "to plan; plan",
+      "ex": {
+        "hz": "你周末打算做什么？",
+        "py": "Nǐ zhōumò dǎsuàn zuò shénme?",
+        "en": "What do you plan to do at the weekend?"
+      }
+    },
+    {
+      "w": "应聘",
+      "py": "yìngpìn",
+      "en": "to apply for a job",
+      "ex": {
+        "hz": "他去那家公司应聘。",
+        "py": "Tā qù nà jiā gōngsī yìngpìn.",
+        "en": "He's going to apply at that company."
+      }
+    },
+    {
+      "w": "外边",
+      "py": "wàibian",
+      "en": "outside",
+      "ex": {
+        "hz": "外边很冷。",
+        "py": "Wàibian hěn lěng.",
+        "en": "It's cold outside."
+      }
+    },
+    {
+      "w": "下雨",
+      "py": "xià yǔ",
+      "en": "to rain",
+      "ex": {
+        "hz": "今天下雨，别去了。",
+        "py": "Jīntiān xià yǔ, bié qù le.",
+        "en": "It's raining today, so don't go."
+      }
+    },
+    {
+      "w": "雨",
+      "py": "yǔ",
+      "en": "rain",
+      "ex": {
+        "hz": "雨很大。",
+        "py": "Yǔ hěn dà.",
+        "en": "The rain is heavy."
+      }
+    },
+    {
+      "w": "一边",
+      "py": "yìbiān",
+      "en": "(一边…一边… doing two things at once)",
+      "ex": {
+        "hz": "我一边吃饭，一边看电视。",
+        "py": "Wǒ yìbiān chī fàn, yìbiān kàn diànshì.",
+        "en": "I eat while watching TV."
+      }
+    },
+    {
+      "w": "聊天儿",
+      "py": "liáotiānr",
+      "en": "to chat",
+      "ex": {
+        "hz": "我们在咖啡店聊天儿。",
+        "py": "Wǒmen zài kāfēidiàn liáotiānr.",
+        "en": "We chat in the café."
+      }
+    },
+    {
+      "w": "大家",
+      "py": "dàjiā",
+      "en": "everybody; all",
+      "ex": {
+        "hz": "大家好！",
+        "py": "Dàjiā hǎo!",
+        "en": "Hello, everyone!"
+      }
+    },
+    {
+      "w": "明年",
+      "py": "míngnián",
+      "en": "next year",
+      "ex": {
+        "hz": "明年我想去中国。",
+        "py": "Míngnián wǒ xiǎng qù Zhōngguó.",
+        "en": "Next year I want to go to China."
+      }
+    },
+    {
+      "w": "可能",
+      "py": "kěnéng",
+      "en": "may; might",
+      "ex": {
+        "hz": "他可能在家。",
+        "py": "Tā kěnéng zài jiā.",
+        "en": "He may be at home."
+      }
+    },
+    {
+      "w": "旅行",
+      "py": "lǚxíng",
+      "en": "to travel",
+      "ex": {
+        "hz": "我喜欢旅行。",
+        "py": "Wǒ xǐhuan lǚxíng.",
+        "en": "I like travelling."
+      }
+    },
+    {
+      "w": "回答",
+      "py": "huídá",
+      "en": "to answer",
+      "ex": {
+        "hz": "请回答我的问题。",
+        "py": "Qǐng huídá wǒ de wèntí.",
+        "en": "Please answer my question."
+      }
+    },
+    {
+      "w": "猜",
+      "py": "cāi",
+      "en": "to guess",
+      "ex": {
+        "hz": "你猜他多大？",
+        "py": "Nǐ cāi tā duō dà?",
+        "en": "Guess how old he is."
+      }
+    },
+    {
+      "w": "音乐",
+      "py": "yīnyuè",
+      "en": "music",
+      "ex": {
+        "hz": "我喜欢听音乐。",
+        "py": "Wǒ xǐhuan tīng yīnyuè.",
+        "en": "I like listening to music."
+      }
+    },
+    {
+      "w": "擦",
+      "py": "cā",
+      "en": "to wipe; to clean",
+      "ex": {
+        "hz": "请擦一下桌子。",
+        "py": "Qǐng cā yíxià zhuōzi.",
+        "en": "Please wipe the table."
+      }
+    },
+    {
+      "w": "黑板",
+      "py": "hēibǎn",
+      "en": "blackboard",
+      "ex": {
+        "hz": "黑板上有字。",
+        "py": "Hēibǎn shang yǒu zì.",
+        "en": "There is writing on the blackboard."
+      }
+    },
+    {
+      "w": "邮件",
+      "py": "yóujiàn",
+      "en": "mail; email",
+      "ex": {
+        "hz": "我给老师发邮件。",
+        "py": "Wǒ gěi lǎoshī fā yóujiàn.",
+        "en": "I'm emailing my teacher."
+      }
+    },
+    {
+      "w": "快递站",
+      "py": "kuàidìzhàn",
+      "en": "parcel station",
+      "ex": {
+        "hz": "快递站在学校外边。",
+        "py": "Kuàidìzhàn zài xuéxiào wàibian.",
+        "en": "The parcel station is outside the school."
+      }
+    },
+    {
+      "w": "快递",
+      "py": "kuàidì",
+      "en": "courier; express delivery",
+      "ex": {
+        "hz": "我的快递到了。",
+        "py": "Wǒ de kuàidì dào le.",
+        "en": "My parcel has arrived."
+      }
+    },
+    {
+      "w": "寄",
+      "py": "jì",
+      "en": "to send; to post",
+      "ex": {
+        "hz": "我去寄东西。",
+        "py": "Wǒ qù jì dōngxi.",
+        "en": "I'm going to send something."
+      }
+    },
+    {
+      "w": "取",
+      "py": "qǔ",
+      "en": "to collect; to pick up",
+      "ex": {
+        "hz": "我去取快递。",
+        "py": "Wǒ qù qǔ kuàidì.",
+        "en": "I'm going to pick up a parcel."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "在商场里",
+      "py": "Zài shāngchǎng li",
+      "en": "At the mall",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "喂，你在哪儿呢？",
+          "py": "Wèi, nǐ zài nǎr ne?",
+          "en": "Hello, where are you?"
+        },
+        {
+          "who": "B",
+          "hz": "我在商场呢，这家商场正在打折。",
+          "py": "Wǒ zài shāngchǎng ne, zhè jiā shāngchǎng zhèngzài dǎzhé.",
+          "en": "I'm at the mall; it has a sale on."
+        },
+        {
+          "who": "A",
+          "hz": "你在做什么呢？",
+          "py": "Nǐ zài zuò shénme ne?",
+          "en": "What are you doing?"
+        },
+        {
+          "who": "B",
+          "hz": "我正在挑衣服，有的很贵，有的很便宜。",
+          "py": "Wǒ zhèngzài tiāo yīfu, yǒude hěn guì, yǒude hěn piányi.",
+          "en": "I'm picking clothes; some are pricey, some cheap."
+        },
+        {
+          "who": "A",
+          "hz": "我也想去，等我一下。",
+          "py": "Wǒ yě xiǎng qù, děng wǒ yíxià.",
+          "en": "I want to come too, wait for me."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What is the mall doing?",
+          "options": [
+            "Having a sale",
+            "Closing",
+            "Hiring staff",
+            "Moving"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What is B doing?",
+          "options": [
+            "Choosing clothes",
+            "Queuing",
+            "Paying",
+            "Looking for a job"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "在家等快递",
+      "py": "Zài jiā děng kuàidì",
+      "en": "Waiting for a parcel at home",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你刚才在做什么？",
+          "py": "Nǐ gāngcái zài zuò shénme?",
+          "en": "What were you doing just now?"
+        },
+        {
+          "who": "B",
+          "hz": "我一边听音乐，一边写邮件。",
+          "py": "Wǒ yìbiān tīng yīnyuè, yìbiān xiě yóujiàn.",
+          "en": "I was listening to music and writing an email."
+        },
+        {
+          "who": "A",
+          "hz": "外边正在下雨，你还出去吗？",
+          "py": "Wàibian zhèngzài xià yǔ, nǐ hái chūqù ma?",
+          "en": "It's raining outside; are you still going out?"
+        },
+        {
+          "who": "B",
+          "hz": "不去了，我可能在家等快递。",
+          "py": "Bú qù le, wǒ kěnéng zài jiā děng kuàidì.",
+          "en": "No, I may stay in and wait for a parcel."
+        },
+        {
+          "who": "A",
+          "hz": "好，那我明天再给你打电话。",
+          "py": "Hǎo, nà wǒ míngtiān zài gěi nǐ dǎ diànhuà.",
+          "en": "OK, then I'll call you tomorrow."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What is the weather like outside?",
+          "options": [
+            "Raining",
+            "Sunny",
+            "Windy",
+            "Snowing"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What will B probably do?",
+          "options": [
+            "Wait for a parcel at home",
+            "Go shopping",
+            "Go to work",
+            "Travel"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "正在……呢",
+      "en": "正在 (also 正 or 在) before the verb, and/or 呢 at the end, shows an action in progress; the negative is 没(在)",
+      "drills": [
+        {
+          "q": "他___等朋友呢。",
+          "options": [
+            "正在",
+            "已经",
+            "一边",
+            "有的"
+          ],
+          "answer": 0,
+          "en": "He is waiting for a friend."
+        },
+        {
+          "q": "外边___下雨呢。",
+          "options": [
+            "正在",
+            "一边",
+            "有的",
+            "刚才"
+          ],
+          "answer": 0,
+          "en": "It's raining outside."
+        },
+        {
+          "q": "他没___看书，他在睡觉。",
+          "options": [
+            "在",
+            "呢",
+            "吗",
+            "有的"
+          ],
+          "answer": 0,
+          "en": "He isn't reading; he's sleeping."
+        },
+        {
+          "q": "我给他打电话的时候，他正在___。",
+          "options": [
+            "看书呢",
+            "看书了",
+            "有的看书",
+            "可能看书"
+          ],
+          "answer": 0,
+          "en": "When I phoned him, he was reading."
+        }
+      ]
+    },
+    {
+      "point": "有的……，有的……",
+      "en": "有的 means \"some of them\": it picks out parts of a group and is usually repeated",
+      "drills": [
+        {
+          "q": "我的朋友，___喜欢茶，有的喜欢咖啡。",
+          "options": [
+            "有的",
+            "大家",
+            "一边",
+            "正在"
+          ],
+          "answer": 0,
+          "en": "Some of my friends like tea, some like coffee."
+        },
+        {
+          "q": "教室里的学生，___在写字，有的在看书。",
+          "options": [
+            "有的",
+            "一边",
+            "正在",
+            "明年"
+          ],
+          "answer": 0,
+          "en": "Some of the students in the room are writing, some are reading."
+        },
+        {
+          "q": "这些衣服，有的大，___小。",
+          "options": [
+            "有的",
+            "一边",
+            "正在",
+            "先生"
+          ],
+          "answer": 0,
+          "en": "Some of these clothes are big, some are small."
+        },
+        {
+          "q": "同学们有的坐车来，有的___来。",
+          "options": [
+            "骑车",
+            "在骑车",
+            "正骑",
+            "一边骑车"
+          ],
+          "answer": 0,
+          "en": "Some classmates come by bus, some come by bike."
+        }
+      ]
+    },
+    {
+      "point": "一边……一边……",
+      "en": "two actions go on at the same time; put 一边 before each verb",
+      "drills": [
+        {
+          "q": "她___听音乐，一边做饭。",
+          "options": [
+            "一边",
+            "有的",
+            "正在",
+            "已经"
+          ],
+          "answer": 0,
+          "en": "She listens to music while cooking."
+        },
+        {
+          "q": "我们一边走路，一边___。",
+          "options": [
+            "聊天儿",
+            "一边聊天儿",
+            "有的聊天儿",
+            "明年聊天儿"
+          ],
+          "answer": 0,
+          "en": "We chat while we walk."
+        },
+        {
+          "q": "他一边吃饭，___看电视。",
+          "options": [
+            "一边",
+            "有的",
+            "刚才",
+            "明年"
+          ],
+          "answer": 0,
+          "en": "He watches TV while eating."
+        },
+        {
+          "q": "小雨一边打电话，一边___。",
+          "options": [
+            "走路",
+            "一边走路",
+            "有的走路",
+            "正在走路了"
+          ],
+          "answer": 0,
+          "en": "Xiaoyu walks while talking on the phone."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你在做什么呢？"
+          ],
+          [
+            "女",
+            "我正在写邮件呢。"
+          ]
+        ],
+        "q": "男的在做什么？",
+        "options": [
+          "写邮件",
+          "打电话",
+          "听音乐"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "这家商场打折吗？"
+          ],
+          [
+            "女",
+            "打折，顾客很多。"
+          ]
+        ],
+        "q": "商场怎么样？",
+        "options": [
+          "打折，人很多",
+          "不打折",
+          "人很少"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你明年打算做什么？"
+          ],
+          [
+            "女",
+            "我打算去旅行。"
+          ]
+        ],
+        "q": "他明年想做什么？",
+        "options": [
+          "去旅行",
+          "找工作",
+          "学音乐"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "外边在下雨吗？"
+          ],
+          [
+            "女",
+            "在下，你带伞了吗？"
+          ]
+        ],
+        "q": "外边怎么样？",
+        "options": [
+          "在下雨",
+          "很冷",
+          "不下雨"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "小王正在排队交钱。",
+        "claim": "小王在交钱的路上，没有排队。",
+        "ok": false
+      },
+      {
+        "text": "我一边吃饭，一边看电视。",
+        "claim": "我吃饭的时候看电视。",
+        "ok": true
+      },
+      {
+        "text": "这家公司在招聘，他去应聘。",
+        "claim": "他在找工作。",
+        "ok": true
+      },
+      {
+        "text": "我的朋友有的会说英语，有的会说法语。",
+        "claim": "我的朋友都会说英语。",
+        "ok": false
+      }
+    ],
+    "replies": [
+      {
+        "q": "你在做什么呢？",
+        "a": "我在听音乐呢。"
+      },
+      {
+        "q": "你明年打算做什么？",
+        "a": "我可能去旅行。"
+      },
+      {
+        "q": "商场里人多吗？",
+        "a": "很多，有的在排队。"
+      },
+      {
+        "q": "你刚才在哪儿？",
+        "a": "我在快递站取东西。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,670 @@
+{
+  "n": 20,
+  "cn": "第二十课",
+  "title": "明天我就要回国了",
+  "en": "I'm going home tomorrow",
+  "words": [
+    {
+      "w": "过",
+      "py": "guò",
+      "en": "to spend (time); to pass (also: to cross)",
+      "ex": {
+        "hz": "时间过得真快。",
+        "py": "Shíjiān guò de zhēn kuài.",
+        "en": "Time flies."
+      }
+    },
+    {
+      "w": "虽然",
+      "py": "suīrán",
+      "en": "although",
+      "ex": {
+        "hz": "虽然很累，我也想去。",
+        "py": "Suīrán hěn lèi, wǒ yě xiǎng qù.",
+        "en": "Although I'm tired, I still want to go."
+      }
+    },
+    {
+      "w": "紧张",
+      "py": "jǐnzhāng",
+      "en": "tense; nervous; busy",
+      "ex": {
+        "hz": "明天考试，我有点儿紧张。",
+        "py": "Míngtiān kǎoshì, wǒ yǒudiǎnr jǐnzhāng.",
+        "en": "I have an exam tomorrow and I'm a bit nervous."
+      }
+    },
+    {
+      "w": "但是",
+      "py": "dànshì",
+      "en": "but",
+      "ex": {
+        "hz": "菜很辣，但是很好吃。",
+        "py": "Cài hěn là, dànshì hěn hǎochī.",
+        "en": "The food is spicy, but delicious."
+      }
+    },
+    {
+      "w": "愉快",
+      "py": "yúkuài",
+      "en": "happy; cheerful",
+      "ex": {
+        "hz": "祝你周末愉快！",
+        "py": "Zhù nǐ zhōumò yúkuài!",
+        "en": "Have a nice weekend!"
+      }
+    },
+    {
+      "w": "小时",
+      "py": "xiǎoshí",
+      "en": "hour",
+      "ex": {
+        "hz": "我睡了八个小时。",
+        "py": "Wǒ shuìle bā ge xiǎoshí.",
+        "en": "I slept for eight hours."
+      }
+    },
+    {
+      "w": "送",
+      "py": "sòng",
+      "en": "to see off; to take (someone somewhere) (also: to give)",
+      "ex": {
+        "hz": "明天我去送你。",
+        "py": "Míngtiān wǒ qù sòng nǐ.",
+        "en": "I'll see you off tomorrow."
+      }
+    },
+    {
+      "w": "才",
+      "py": "cái",
+      "en": "only then; not until",
+      "ex": {
+        "hz": "他十点才起床。",
+        "py": "Tā shí diǎn cái qǐchuáng.",
+        "en": "He didn't get up until ten."
+      }
+    },
+    {
+      "w": "半天",
+      "py": "bàntiān",
+      "en": "a long time; half a day",
+      "ex": {
+        "hz": "我等了你半天。",
+        "py": "Wǒ děngle nǐ bàntiān.",
+        "en": "I've waited ages for you."
+      }
+    },
+    {
+      "w": "因为",
+      "py": "yīnwèi",
+      "en": "because",
+      "ex": {
+        "hz": "因为下雨，我们没去。",
+        "py": "Yīnwèi xià yǔ, wǒmen méi qù.",
+        "en": "Because of the rain, we didn't go."
+      }
+    },
+    {
+      "w": "堵车",
+      "py": "dǔchē",
+      "en": "to be stuck in traffic",
+      "ex": {
+        "hz": "早上路上常常堵车。",
+        "py": "Zǎoshang lù shang chángcháng dǔchē.",
+        "en": "The roads often jam in the morning."
+      }
+    },
+    {
+      "w": "所以",
+      "py": "suǒyǐ",
+      "en": "so; therefore",
+      "ex": {
+        "hz": "我病了，所以没去上课。",
+        "py": "Wǒ bìng le, suǒyǐ méi qù shàngkè.",
+        "en": "I was ill, so I didn't go to class."
+      }
+    },
+    {
+      "w": "好",
+      "py": "hǎo",
+      "en": "so; quite (好长时间 such a long time; also: good)",
+      "ex": {
+        "hz": "我等了好长时间。",
+        "py": "Wǒ děngle hǎo cháng shíjiān.",
+        "en": "I waited for ever so long."
+      }
+    },
+    {
+      "w": "一会儿",
+      "py": "yíhuìr",
+      "en": "a little while",
+      "ex": {
+        "hz": "请等一会儿。",
+        "py": "Qǐng děng yíhuìr.",
+        "en": "Please wait a moment."
+      }
+    },
+    {
+      "w": "准备",
+      "py": "zhǔnbèi",
+      "en": "to prepare; to plan",
+      "ex": {
+        "hz": "你准备去哪儿？",
+        "py": "Nǐ zhǔnbèi qù nǎr?",
+        "en": "Where are you planning to go?"
+      }
+    },
+    {
+      "w": "报纸",
+      "py": "bàozhǐ",
+      "en": "newspaper",
+      "ex": {
+        "hz": "爷爷每天看报纸。",
+        "py": "Yéye měi tiān kàn bàozhǐ.",
+        "en": "Grandpa reads the paper every day."
+      }
+    },
+    {
+      "w": "话",
+      "py": "huà",
+      "en": "words; speech",
+      "ex": {
+        "hz": "他说的话我听不懂。",
+        "py": "Tā shuō de huà wǒ tīng bu dǒng.",
+        "en": "I can't understand what he says."
+      }
+    },
+    {
+      "w": "流利",
+      "py": "liúlì",
+      "en": "fluent",
+      "ex": {
+        "hz": "她的英语很流利。",
+        "py": "Tā de Yīngyǔ hěn liúlì.",
+        "en": "Her English is fluent."
+      }
+    },
+    {
+      "w": "安静",
+      "py": "ānjìng",
+      "en": "quiet",
+      "ex": {
+        "hz": "图书馆里很安静。",
+        "py": "Túshūguǎn li hěn ānjìng.",
+        "en": "It's quiet in the library."
+      }
+    },
+    {
+      "w": "邻居",
+      "py": "línjū",
+      "en": "neighbour",
+      "ex": {
+        "hz": "我的邻居很热情。",
+        "py": "Wǒ de línjū hěn rèqíng.",
+        "en": "My neighbour is very friendly."
+      }
+    },
+    {
+      "w": "巴黎",
+      "py": "Bālí",
+      "en": "Paris",
+      "ex": {
+        "hz": "我想去巴黎旅行。",
+        "py": "Wǒ xiǎng qù Bālí lǚxíng.",
+        "en": "I'd like to travel to Paris."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "送你回国",
+      "py": "Sòng nǐ huíguó",
+      "en": "Seeing you off",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你后天回国，我们去机场送你吧。",
+          "py": "Nǐ hòutiān huíguó, wǒmen qù jīchǎng sòng nǐ ba.",
+          "en": "You fly home the day after tomorrow; let's see you off at the airport."
+        },
+        {
+          "who": "B",
+          "hz": "不用了，我坐出租车去机场。",
+          "py": "Búyòng le, wǒ zuò chūzūchē qù jīchǎng.",
+          "en": "No need, I'll take a taxi to the airport."
+        },
+        {
+          "who": "A",
+          "hz": "路上可能堵车，你得早点儿走。",
+          "py": "Lù shang kěnéng dǔchē, nǐ děi zǎodiǎnr zǒu.",
+          "en": "The roads may be jammed; you must leave early."
+        },
+        {
+          "who": "B",
+          "hz": "好，我七点就走。",
+          "py": "Hǎo, wǒ qī diǎn jiù zǒu.",
+          "en": "OK, I'll leave at seven."
+        },
+        {
+          "who": "A",
+          "hz": "回国以后，别忘了给我们打电话。",
+          "py": "Huíguó yǐhòu, bié wàngle gěi wǒmen dǎ diànhuà.",
+          "en": "After you get home, don't forget to call us."
+        }
+      ],
+      "questions": [
+        {
+          "q": "When does B go home?",
+          "options": [
+            "The day after tomorrow",
+            "Today",
+            "Tomorrow",
+            "Next week"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How will B get to the airport?",
+          "options": [
+            "By taxi",
+            "By subway",
+            "On foot",
+            "By bus"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "在中国的日子",
+      "py": "Zài Zhōngguó de rìzi",
+      "en": "Days in China",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你在中国住了多长时间了？",
+          "py": "Nǐ zài Zhōngguó zhùle duō cháng shíjiān le?",
+          "en": "How long have you lived in China?"
+        },
+        {
+          "who": "B",
+          "hz": "住了半年了，虽然有点儿累，但是很愉快。",
+          "py": "Zhùle bànnián le, suīrán yǒudiǎnr lèi, dànshì hěn yúkuài.",
+          "en": "Half a year; I'm a bit tired but very happy."
+        },
+        {
+          "who": "A",
+          "hz": "你的汉语说得真流利！",
+          "py": "Nǐ de Hànyǔ shuō de zhēn liúlì!",
+          "en": "Your Chinese is really fluent!"
+        },
+        {
+          "who": "B",
+          "hz": "谢谢，我还要多练习。",
+          "py": "Xièxie, wǒ hái yào duō liànxí.",
+          "en": "Thanks, I still need more practice."
+        },
+        {
+          "who": "A",
+          "hz": "你以后还想来吗？",
+          "py": "Nǐ yǐhòu hái xiǎng lái ma?",
+          "en": "Would you like to come again?"
+        },
+        {
+          "who": "B",
+          "hz": "当然，明年我还来。",
+          "py": "Dāngrán, míngnián wǒ hái lái.",
+          "en": "Of course, I'll come again next year."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How long has B lived in China?",
+          "options": [
+            "Half a year",
+            "One month",
+            "Two years",
+            "One week"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How does B feel about it?",
+          "options": [
+            "A bit tired but happy",
+            "Bored",
+            "Lonely",
+            "Angry"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "duration after the verb",
+      "en": "a length of time goes after the verb; with a pronoun object it goes after the pronoun; a final 了 shows it is still going on",
+      "drills": [
+        {
+          "q": "我等___半个小时。",
+          "options": [
+            "了他",
+            "他了",
+            "的他",
+            "了半"
+          ],
+          "answer": 0,
+          "en": "I waited for him for half an hour."
+        },
+        {
+          "q": "他每天睡___个小时。",
+          "options": [
+            "八",
+            "的八",
+            "在八",
+            "把八"
+          ],
+          "answer": 0,
+          "en": "He sleeps eight hours every day."
+        },
+        {
+          "q": "她打电话打___半个小时。",
+          "options": [
+            "了",
+            "的",
+            "在",
+            "把"
+          ],
+          "answer": 0,
+          "en": "She talked on the phone for half an hour."
+        },
+        {
+          "q": "他学汉语已经两年___。",
+          "options": [
+            "了",
+            "的",
+            "在",
+            "过"
+          ],
+          "answer": 0,
+          "en": "He has been learning Chinese for two years now."
+        }
+      ]
+    },
+    {
+      "point": "就 and 才",
+      "en": "就 means early, quick or easy (often with 了 at the end); 才 means late, slow or hard (\"not until\", without 了)",
+      "drills": [
+        {
+          "q": "电影七点开始，他七点半___到。",
+          "options": [
+            "才",
+            "很",
+            "把",
+            "的"
+          ],
+          "answer": 0,
+          "en": "The film started at seven; he didn't get there until half past."
+        },
+        {
+          "q": "他早上五点___起床了，真早！",
+          "options": [
+            "就",
+            "才",
+            "很",
+            "再"
+          ],
+          "answer": 0,
+          "en": "He got up at five in the morning, so early!"
+        },
+        {
+          "q": "路上堵车，汽车开了一个小时___到。",
+          "options": [
+            "才",
+            "都",
+            "很",
+            "把"
+          ],
+          "answer": 0,
+          "en": "The road was jammed, so the bus took an hour to arrive."
+        },
+        {
+          "q": "我家离学校很近，走五分钟___到了。",
+          "options": [
+            "就",
+            "才",
+            "很",
+            "把"
+          ],
+          "answer": 0,
+          "en": "My home is close to school; it's only a five-minute walk."
+        }
+      ]
+    },
+    {
+      "point": "虽然……但是……",
+      "en": "although …, but …; 但是 starts the second clause",
+      "drills": [
+        {
+          "q": "___工作很忙，但是我每天都去运动。",
+          "options": [
+            "虽然",
+            "因为",
+            "所以",
+            "一边"
+          ],
+          "answer": 0,
+          "en": "Although work is busy, I still exercise every day."
+        },
+        {
+          "q": "这件衣服虽然很漂亮，___太贵了。",
+          "options": [
+            "但是",
+            "因为",
+            "所以",
+            "才"
+          ],
+          "answer": 0,
+          "en": "This piece of clothing is pretty, but it's too expensive."
+        },
+        {
+          "q": "我虽然很累，___还想去看比赛。",
+          "options": [
+            "但是",
+            "所以",
+            "因为",
+            "虽然"
+          ],
+          "answer": 0,
+          "en": "I'm tired, but I still want to see the match."
+        },
+        {
+          "q": "这家商场___很大，但是东西不太多。",
+          "options": [
+            "虽然",
+            "所以",
+            "因为",
+            "比较"
+          ],
+          "answer": 0,
+          "en": "This mall is big, but it doesn't have much stock."
+        }
+      ]
+    },
+    {
+      "point": "因为……所以……",
+      "en": "because …, so …; one of the two can be left out",
+      "drills": [
+        {
+          "q": "___昨天下雨，所以我没去爬山。",
+          "options": [
+            "因为",
+            "虽然",
+            "但是",
+            "一边"
+          ],
+          "answer": 0,
+          "en": "It rained yesterday, so I didn't go hiking."
+        },
+        {
+          "q": "因为今天太冷了，___我们不出去了。",
+          "options": [
+            "所以",
+            "因为",
+            "虽然",
+            "但是"
+          ],
+          "answer": 0,
+          "en": "It's too cold today, so we're not going out."
+        },
+        {
+          "q": "因为她明天有考试，___今晚不能出去玩儿。",
+          "options": [
+            "所以",
+            "但是",
+            "虽然",
+            "才"
+          ],
+          "answer": 0,
+          "en": "She has an exam tomorrow, so she can't go out tonight."
+        },
+        {
+          "q": "我___忙，所以没去。",
+          "options": [
+            "因为",
+            "虽然",
+            "但是",
+            "一边"
+          ],
+          "answer": 0,
+          "en": "I was busy, so I didn't go."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你学了多长时间汉语了？"
+          ],
+          [
+            "女",
+            "学了一年了。"
+          ]
+        ],
+        "q": "他学汉语学了多久？",
+        "options": [
+          "一年",
+          "一个月",
+          "三年"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你怎么九点才到？"
+          ],
+          [
+            "女",
+            "对不起，路上堵车了。"
+          ]
+        ],
+        "q": "他为什么来晚了？",
+        "options": [
+          "路上堵车",
+          "起床晚了",
+          "生病了"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "明天几点出发？"
+          ],
+          [
+            "女",
+            "我们六点就出发，你早点儿睡。"
+          ]
+        ],
+        "q": "他们几点出发？",
+        "options": [
+          "六点",
+          "八点",
+          "十点"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你的邻居怎么样？"
+          ],
+          [
+            "女",
+            "他很热情，不过有点儿吵。"
+          ]
+        ],
+        "q": "邻居怎么样？",
+        "options": [
+          "热情，有点儿吵",
+          "很安静",
+          "不认识"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "他七点就到了，我八点才到。",
+        "claim": "他到得比我早。",
+        "ok": true
+      },
+      {
+        "text": "因为下雨，所以我们没去爬山。",
+        "claim": "他们去爬山了。",
+        "ok": false
+      },
+      {
+        "text": "虽然他会说汉语，但是说得不太流利。",
+        "claim": "他的汉语说得很流利。",
+        "ok": false
+      },
+      {
+        "text": "我坐了八个小时的汽车，才到朋友家。",
+        "claim": "我很快就到了朋友家。",
+        "ok": false
+      }
+    ],
+    "replies": [
+      {
+        "q": "你想在这儿等多长时间？",
+        "a": "再等一会儿吧。"
+      },
+      {
+        "q": "你准备什么时候回国？",
+        "a": "下个月就回国了。"
+      },
+      {
+        "q": "你过得怎么样？",
+        "a": "虽然很忙，但是很愉快。"
+      },
+      {
+        "q": "我送你去机场吧。",
+        "a": "不用了，谢谢。"
+      }
+    ]
+  }
+}

@@ -17,7 +17,7 @@ export const PARTS = [
 ];
 
 // Books whose words count as already taught (HSK 2 follows HSK 1).
-export const PRIOR = { hsk2: ["hsk1"] };
+export const PRIOR = { hsk2: ["hsk1"], "kouyu-rumen-2": ["kouyu-rumen"] };
 
 // Question kinds of each part, in paper order.
 //   listen: hear a word / hear a sentence / hear a dialogue     vocab: meaning / pick the word / fill the gap

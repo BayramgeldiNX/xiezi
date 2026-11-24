@@ -1,0 +1,791 @@
+{
+  "n": 21,
+  "cn": "第21课",
+  "title": "你去过香山吗",
+  "en": "Have you ever been to the Fragrant Hills",
+  "words": [
+    {
+      "w": "过",
+      "py": "guo",
+      "en": "(after a verb) have done before (also guò: to pass)",
+      "ex": {
+        "hz": "我去过北京。",
+        "py": "Wǒ qùguo Běijīng.",
+        "en": "I have been to Beijing."
+      }
+    },
+    {
+      "w": "自己",
+      "py": "zìjǐ",
+      "en": "oneself; by oneself",
+      "ex": {
+        "hz": "我自己做饭。",
+        "py": "Wǒ zìjǐ zuò fàn.",
+        "en": "I cook for myself."
+      }
+    },
+    {
+      "w": "行",
+      "py": "xíng",
+      "en": "capable; good at it (also: OK)",
+      "ex": {
+        "hz": "你哥哥做饭很行。",
+        "py": "Nǐ gēge zuò fàn hěn xíng.",
+        "en": "Your brother is good at cooking."
+      }
+    },
+    {
+      "w": "次",
+      "py": "cì",
+      "en": "time (occurrence)",
+      "ex": {
+        "hz": "我去过一次上海。",
+        "py": "Wǒ qùguo yí cì Shànghǎi.",
+        "en": "I have been to Shanghai once."
+      }
+    },
+    {
+      "w": "第",
+      "py": "dì",
+      "en": "(prefix for ordinal numbers)",
+      "ex": {
+        "hz": "这是我第一次来中国。",
+        "py": "Zhè shì wǒ dì yī cì lái Zhōngguó.",
+        "en": "This is my first time in China."
+      }
+    },
+    {
+      "w": "除了",
+      "py": "chúle",
+      "en": "besides; except (除了…以外)",
+      "ex": {
+        "hz": "除了周末以外，我每天都工作。",
+        "py": "Chúle zhōumò yǐwài, wǒ měi tiān dōu gōngzuò.",
+        "en": "I work every day except weekends."
+      }
+    },
+    {
+      "w": "哪些",
+      "py": "nǎxiē",
+      "en": "which (plural); what",
+      "ex": {
+        "hz": "你喜欢哪些菜？",
+        "py": "Nǐ xǐhuan nǎxiē cài?",
+        "en": "Which dishes do you like?"
+      }
+    },
+    {
+      "w": "有名",
+      "py": "yǒu míng",
+      "en": "famous",
+      "ex": {
+        "hz": "这家饭馆很有名。",
+        "py": "Zhè jiā fànguǎn hěn yǒu míng.",
+        "en": "This restaurant is famous."
+      }
+    },
+    {
+      "w": "风味",
+      "py": "fēngwèi",
+      "en": "local flavour",
+      "ex": {
+        "hz": "这个菜有北京风味。",
+        "py": "Zhège cài yǒu Běijīng fēngwèi.",
+        "en": "This dish has a Beijing flavour."
+      }
+    },
+    {
+      "w": "小吃",
+      "py": "xiǎochī",
+      "en": "snack",
+      "ex": {
+        "hz": "我喜欢吃中国小吃。",
+        "py": "Wǒ xǐhuan chī Zhōngguó xiǎochī.",
+        "en": "I like Chinese snacks."
+      }
+    },
+    {
+      "w": "差不多",
+      "py": "chàbuduō",
+      "en": "almost; about the same",
+      "ex": {
+        "hz": "他和我差不多高。",
+        "py": "Tā hé wǒ chàbuduō gāo.",
+        "en": "He and I are about the same height."
+      }
+    },
+    {
+      "w": "首",
+      "py": "shǒu",
+      "en": "(measure word for songs)",
+      "ex": {
+        "hz": "她会唱三首中文歌。",
+        "py": "Tā huì chàng sān shǒu Zhōngwén gē.",
+        "en": "She can sing three Chinese songs."
+      }
+    },
+    {
+      "w": "好听",
+      "py": "hǎotīng",
+      "en": "pleasant to hear",
+      "ex": {
+        "hz": "这首中文歌真好听。",
+        "py": "Zhè shǒu Zhōngwén gē zhēn hǎotīng.",
+        "en": "This Chinese song really sounds good."
+      }
+    },
+    {
+      "w": "可",
+      "py": "kě",
+      "en": "(for emphasis) really",
+      "ex": {
+        "hz": "今天可冷了！",
+        "py": "Jīntiān kě lěng le!",
+        "en": "It is really cold today!"
+      }
+    },
+    {
+      "w": "好多",
+      "py": "hǎoduō",
+      "en": "a lot; many",
+      "ex": {
+        "hz": "公园里有好多人。",
+        "py": "Gōngyuán li yǒu hǎoduō rén.",
+        "en": "There are lots of people in the park."
+      }
+    },
+    {
+      "w": "遍",
+      "py": "biàn",
+      "en": "time (one full run-through)",
+      "ex": {
+        "hz": "请再说一遍。",
+        "py": "Qǐng zài shuō yí biàn.",
+        "en": "Please say it once more."
+      }
+    },
+    {
+      "w": "简单",
+      "py": "jiǎndān",
+      "en": "simple; ordinary",
+      "ex": {
+        "hz": "这个问题很简单。",
+        "py": "Zhège wèntí hěn jiǎndān.",
+        "en": "This question is simple."
+      }
+    },
+    {
+      "w": "从来",
+      "py": "cónglái",
+      "en": "always; (with 不/没) never",
+      "ex": {
+        "hz": "我从来不喝咖啡。",
+        "py": "Wǒ cónglái bù hē kāfēi.",
+        "en": "I never drink coffee."
+      }
+    },
+    {
+      "w": "假",
+      "py": "jiǎ",
+      "en": "fake",
+      "ex": {
+        "hz": "这个包是假的。",
+        "py": "Zhège bāo shì jiǎ de.",
+        "en": "This bag is fake."
+      }
+    },
+    {
+      "w": "船",
+      "py": "chuán",
+      "en": "boat; ship",
+      "ex": {
+        "hz": "他喜欢坐船旅行。",
+        "py": "Tā xǐhuan zuò chuán lǚxíng.",
+        "en": "He likes to travel by boat."
+      }
+    },
+    {
+      "w": "去年",
+      "py": "qùnián",
+      "en": "last year",
+      "ex": {
+        "hz": "去年我在上海学习。",
+        "py": "Qùnián wǒ zài Shànghǎi xuéxí.",
+        "en": "Last year I studied in Shanghai."
+      }
+    },
+    {
+      "w": "毕业",
+      "py": "bìyè",
+      "en": "to graduate",
+      "ex": {
+        "hz": "我姐姐明年毕业。",
+        "py": "Wǒ jiějie míngnián bìyè.",
+        "en": "My older sister graduates next year."
+      }
+    },
+    {
+      "w": "出差",
+      "py": "chūchāi",
+      "en": "to be away on business",
+      "ex": {
+        "hz": "爸爸下个星期去北京出差。",
+        "py": "Bàba xià ge xīngqī qù Běijīng chūchāi.",
+        "en": "Dad goes to Beijing on business next week."
+      }
+    },
+    {
+      "w": "封",
+      "py": "fēng",
+      "en": "(measure word for letters)",
+      "ex": {
+        "hz": "我写了一封信。",
+        "py": "Wǒ xiě le yì fēng xìn.",
+        "en": "I wrote a letter."
+      }
+    },
+    {
+      "w": "乒乓球",
+      "py": "pīngpāngqiú",
+      "en": "table tennis",
+      "ex": {
+        "hz": "我弟弟喜欢打乒乓球。",
+        "py": "Wǒ dìdi xǐhuan dǎ pīngpāngqiú.",
+        "en": "My younger brother likes playing table tennis."
+      }
+    },
+    {
+      "w": "排球",
+      "py": "páiqiú",
+      "en": "volleyball",
+      "ex": {
+        "hz": "她打排球打得很好。",
+        "py": "Tā dǎ páiqiú dǎ de hěn hǎo.",
+        "en": "She plays volleyball very well."
+      }
+    },
+    {
+      "w": "田中",
+      "py": "Tiánzhōng",
+      "en": "Tanaka (a Japanese surname)",
+      "ex": {
+        "hz": "田中是日本人。",
+        "py": "Tiánzhōng shì Rìběnrén.",
+        "en": "Tanaka is Japanese."
+      }
+    },
+    {
+      "w": "英语",
+      "py": "Yīngyǔ",
+      "en": "English (language)",
+      "ex": {
+        "hz": "你会说英语吗？",
+        "py": "Nǐ huì shuō Yīngyǔ ma?",
+        "en": "Can you speak English?"
+      }
+    },
+    {
+      "w": "大同",
+      "py": "Dàtóng",
+      "en": "Datong (a Chinese city)",
+      "ex": {
+        "hz": "我想去大同看看。",
+        "py": "Wǒ xiǎng qù Dàtóng kànkan.",
+        "en": "I would like to visit Datong."
+      }
+    },
+    {
+      "w": "大连",
+      "py": "Dàlián",
+      "en": "Dalian (a Chinese city)",
+      "ex": {
+        "hz": "我没去过大连。",
+        "py": "Wǒ méi qùguo Dàlián.",
+        "en": "I have never been to Dalian."
+      }
+    },
+    {
+      "w": "汤姆",
+      "py": "Tāngmǔ",
+      "en": "Tom",
+      "ex": {
+        "hz": "汤姆是我的同学。",
+        "py": "Tāngmǔ shì wǒ de tóngxué.",
+        "en": "Tom is my classmate."
+      }
+    },
+    {
+      "w": "脸",
+      "py": "liǎn",
+      "en": "face",
+      "ex": {
+        "hz": "我的脸有点儿红。",
+        "py": "Wǒ de liǎn yǒudiǎnr hóng.",
+        "en": "My face is a bit red."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "去过长城吗",
+      "py": "Qùguo Chángchéng ma",
+      "en": "Have you been to the Great Wall?",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你去过长城吗？",
+          "py": "Nǐ qùguo Chángchéng ma?",
+          "en": "Have you been to the Great Wall?"
+        },
+        {
+          "who": "B",
+          "hz": "去过一次。",
+          "py": "Qùguo yí cì.",
+          "en": "Once."
+        },
+        {
+          "who": "A",
+          "hz": "你是哪一年去的？",
+          "py": "Nǐ shì nǎ yì nián qù de?",
+          "en": "Which year did you go?"
+        },
+        {
+          "who": "B",
+          "hz": "是去年去的。",
+          "py": "Shì qùnián qù de.",
+          "en": "It was last year."
+        },
+        {
+          "who": "A",
+          "hz": "你是怎么去的？",
+          "py": "Nǐ shì zěnme qù de?",
+          "en": "How did you get there?"
+        },
+        {
+          "who": "B",
+          "hz": "我们是坐火车去的。",
+          "py": "Wǒmen shì zuò huǒchē qù de.",
+          "en": "We went by train."
+        }
+      ],
+      "questions": [
+        {
+          "q": "When did B go to the Great Wall?",
+          "options": [
+            "Last year",
+            "This year",
+            "Two years ago",
+            "Last month"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "How did they get there?",
+          "options": [
+            "By train",
+            "By bus",
+            "By bike",
+            "By car"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "会唱三首歌",
+      "py": "Huì chàng sān shǒu gē",
+      "en": "Can sing three songs",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你会唱中文歌吗？",
+          "py": "Nǐ huì chàng Zhōngwén gē ma?",
+          "en": "Can you sing Chinese songs?"
+        },
+        {
+          "who": "B",
+          "hz": "会唱三首，都是我自己学的。",
+          "py": "Huì chàng sān shǒu, dōu shì wǒ zìjǐ xué de.",
+          "en": "I can sing three; I learned them all by myself."
+        },
+        {
+          "who": "A",
+          "hz": "太好了！除了唱歌以外，你还喜欢做什么？",
+          "py": "Tài hǎo le! Chúle chàng gē yǐwài, nǐ hái xǐhuan zuò shénme?",
+          "en": "Great! Besides singing, what else do you like to do?"
+        },
+        {
+          "who": "B",
+          "hz": "我还喜欢打乒乓球。",
+          "py": "Wǒ hái xǐhuan dǎ pīngpāngqiú.",
+          "en": "I also like playing table tennis."
+        },
+        {
+          "who": "A",
+          "hz": "我也喜欢，咱们下次一起打吧。",
+          "py": "Wǒ yě xǐhuan, zánmen xià cì yìqǐ dǎ ba.",
+          "en": "I like it too; let's play together next time."
+        }
+      ],
+      "questions": [
+        {
+          "q": "How many songs can B sing?",
+          "options": [
+            "Three",
+            "Two",
+            "Five",
+            "None"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What else does B like?",
+          "options": [
+            "Table tennis",
+            "Volleyball",
+            "Swimming",
+            "Football"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "过 (experience)",
+      "en": "Verb + 过 says you have done something before. Negative: 没(有) + verb + 过. Question: verb + 过 + object + 没有.",
+      "drills": [
+        {
+          "q": "我从来没吃___这种菜。",
+          "options": [
+            "过",
+            "了",
+            "着",
+            "的"
+          ],
+          "answer": 0,
+          "en": "I have never eaten this kind of dish."
+        },
+        {
+          "q": "你学___中文没有？",
+          "options": [
+            "过",
+            "吗",
+            "呢",
+            "的"
+          ],
+          "answer": 0,
+          "en": "Have you ever studied Chinese?"
+        },
+        {
+          "q": "他还___去过北京。",
+          "options": [
+            "没",
+            "不",
+            "别",
+            "很"
+          ],
+          "answer": 0,
+          "en": "He has not been to Beijing yet."
+        },
+        {
+          "q": "你去过颐和园___？",
+          "options": [
+            "没有",
+            "没吗",
+            "不有",
+            "没是"
+          ],
+          "answer": 0,
+          "en": "Have you ever been to the Summer Palace?"
+        }
+      ]
+    },
+    {
+      "point": "是……的",
+      "en": "Stress the time, place or manner of something that already happened: 是 + detail + verb + 的.",
+      "drills": [
+        {
+          "q": "他是昨天来___。",
+          "options": [
+            "的",
+            "着",
+            "们",
+            "地"
+          ],
+          "answer": 0,
+          "en": "He came yesterday."
+        },
+        {
+          "q": "你___怎么去的？",
+          "options": [
+            "是",
+            "有",
+            "在",
+            "很"
+          ],
+          "answer": 0,
+          "en": "How did you get there?"
+        },
+        {
+          "q": "我是___飞机去上海的。",
+          "options": [
+            "坐",
+            "在",
+            "了",
+            "过"
+          ],
+          "answer": 0,
+          "en": "I went to Shanghai by plane."
+        },
+        {
+          "q": "我们是___学校认识的。",
+          "options": [
+            "在",
+            "跟",
+            "有",
+            "很"
+          ],
+          "answer": 0,
+          "en": "We met at school."
+        }
+      ]
+    },
+    {
+      "point": "次 / 遍 / 一下儿 after the verb",
+      "en": "A number + 次 / 遍 counts how often; 一下儿 makes it short and casual. A noun object goes after the count, a pronoun object before it.",
+      "drills": [
+        {
+          "q": "这本书我看了三___，都看懂了。",
+          "options": [
+            "遍",
+            "个",
+            "件",
+            "把"
+          ],
+          "answer": 0,
+          "en": "I read this book three times through and understood all of it."
+        },
+        {
+          "q": "请你等我___。",
+          "options": [
+            "一下儿",
+            "一遍",
+            "一点儿",
+            "一个"
+          ],
+          "answer": 0,
+          "en": "Please wait for me a moment."
+        },
+        {
+          "q": "他去过北京三___。",
+          "options": [
+            "次",
+            "个",
+            "本",
+            "件"
+          ],
+          "answer": 0,
+          "en": "He has been to Beijing three times."
+        },
+        {
+          "q": "我叫了___两次，他没听见。",
+          "options": [
+            "他",
+            "的",
+            "吧",
+            "着"
+          ],
+          "answer": 0,
+          "en": "I called him twice, but he didn't hear."
+        },
+        {
+          "q": "这个电影我看过两___。",
+          "options": [
+            "遍",
+            "个",
+            "件",
+            "本"
+          ],
+          "answer": 0,
+          "en": "I have seen this film twice through."
+        }
+      ]
+    },
+    {
+      "point": "除了……以外",
+      "en": "Besides X there is more (还 / 也), or X is left out and the rest all do it (都).",
+      "drills": [
+        {
+          "q": "___周末以外，我每天都上班。",
+          "options": [
+            "除了",
+            "跟",
+            "在",
+            "从"
+          ],
+          "answer": 0,
+          "en": "I go to work every day except weekends."
+        },
+        {
+          "q": "除了小王以外，同学们___去过上海。",
+          "options": [
+            "都",
+            "又",
+            "再",
+            "才"
+          ],
+          "answer": 0,
+          "en": "All the classmates except Xiao Wang have been to Shanghai."
+        },
+        {
+          "q": "除了游泳___，他也喜欢打篮球。",
+          "options": [
+            "以外",
+            "以前",
+            "以后",
+            "以上"
+          ],
+          "answer": 0,
+          "en": "Besides swimming, he also likes basketball."
+        },
+        {
+          "q": "除了上海以外，我还去过___。",
+          "options": [
+            "北京",
+            "去北京",
+            "过北京",
+            "北京过"
+          ],
+          "answer": 0,
+          "en": "Besides Shanghai, I have also been to Beijing."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你吃过饺子吗？"
+          ],
+          [
+            "女",
+            "吃过，我吃过好几次。"
+          ]
+        ],
+        "q": "他吃过饺子吗？",
+        "options": [
+          "吃过",
+          "没吃过",
+          "不知道"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你是怎么去机场的？"
+          ],
+          [
+            "女",
+            "我是坐地铁去的。"
+          ]
+        ],
+        "q": "他怎么去的机场？",
+        "options": [
+          "坐地铁",
+          "坐出租车",
+          "骑自行车"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "这个电影好看吗？"
+          ],
+          [
+            "女",
+            "可好看了！我看了两遍。"
+          ]
+        ],
+        "q": "他觉得这个电影怎么样？",
+        "options": [
+          "很好看",
+          "不好看",
+          "他没看过"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "除了你以外，谁还会说中文？"
+          ],
+          [
+            "女",
+            "小雨也会说。"
+          ]
+        ],
+        "q": "谁还会说中文？",
+        "options": [
+          "小雨",
+          "我",
+          "没有人"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "我去过两次上海。",
+        "claim": "我去过上海。",
+        "ok": true
+      },
+      {
+        "text": "他从来没学过日语。",
+        "claim": "他学过日语。",
+        "ok": false
+      },
+      {
+        "text": "我是晚上到的北京。",
+        "claim": "我是晚上到的。",
+        "ok": true
+      },
+      {
+        "text": "除了周末以外，他每天都工作。",
+        "claim": "他星期六也工作。",
+        "ok": false
+      }
+    ],
+    "replies": [
+      {
+        "q": "你去过长城没有？",
+        "a": "去过一次。"
+      },
+      {
+        "q": "你是怎么来学校的？",
+        "a": "我是骑自行车来的。"
+      },
+      {
+        "q": "这本书你看过吗？",
+        "a": "没看过，有意思吗？"
+      },
+      {
+        "q": "除了汉语以外，你还学过什么？",
+        "a": "我还学过英语。"
+      }
+    ]
+  }
+}

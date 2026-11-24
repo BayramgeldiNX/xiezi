@@ -272,7 +272,7 @@ describe("buildPaper: the rules that hold across a paper (many seeds, real exclu
         }
         // E: with the teachers' words, a fill question has exactly their options
         const fillMap = FILL[b.id];
-        for (const q of qs.filter((x) => x.kind === "fill")) {
+        for (const q of qs.filter((x) => x.kind === "fill" && Object.keys(fillMap).length)) { // a book without teachers' sets (kouyu-rumen-2) draws its own wrong words
           const e = fillMap[q.src], L = b.lessons.find((l) => l.id === q.lesson);
           const set = Array.isArray(e) ? e : e?.[L.n];
           expect(set, "E has a set " + where + " " + q.src).toBeTruthy();

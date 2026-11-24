@@ -1,12 +1,12 @@
 // Open every lesson tab and practice mode of a book in headless Edge; report JS errors and empty screens.
-// node scripts/tools/sweep.mjs <url> <book> <lessons>
+// node scripts/tools/sweep.mjs <url> <book> <lessons | from-to>   e.g. 15 or 16-30
 import { spawn } from "node:child_process";
 import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { testsOf } from "../../src/exam/plan.js";
 const BASE = process.argv[2] || "http://localhost:5173/xiezi/";
-const BOOK = process.argv[3] || "hsk1", N = +(process.argv[4] || 15);
+const BOOK = process.argv[3] || "hsk1", [FROM, N] = (/^(\d+)-(\d+)$/.exec(process.argv[4] || "") || [0, 1, +(process.argv[4] || 15)]).slice(1).map(Number);
 const edgePath = ["C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe", "C:/Program Files/Microsoft/Edge/Application/msedge.exe"].find((p) => fs.existsSync(p));
 const proc = spawn(edgePath, ["--headless=new", "--disable-gpu", "--remote-debugging-port=9352", `--user-data-dir=${fs.mkdtempSync(path.join(os.tmpdir(), "xz-sw-"))}`, "--autoplay-policy=no-user-gesture-required", "about:blank"], { stdio: "ignore" });
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -34,7 +34,7 @@ await sleep(1500);
 await js(`localStorage.setItem('xz-settings', JSON.stringify({ ...(JSON.parse(localStorage.getItem('xz-settings') || '{}')), autoplay: true })); return 1`);
 await send("Emulation.setDeviceMetricsOverride", { width: 393, height: 852, deviceScaleFactor: 2, mobile: true });
 let modes = 0;
-for (let n = 1; n <= N; n++) {
+for (let n = FROM; n <= N; n++) {
   console.log(`${BOOK} lesson ${n}… (${problems.length} problems so far)`);
   for (const tab of ["write", "listen", "speak", "read", "words", "exercises"]) {
     where = `${BOOK} L${n} ${tab}`;
@@ -70,7 +70,7 @@ for (let n = 1; n <= N; n++) {
   }
 }
 // Every test's cover: not empty, no errors. The plan only needs the lesson count.
-for (const t of testsOf({ lessons: Array.from({ length: N }, (_, i) => ({ n: i + 1 })) })) {
+for (const t of testsOf({ lessons: Array.from({ length: N - FROM + 1 }, (_, i) => ({ n: FROM + i })) })) {
   where = `${BOOK} test ${t.id}`;
   await send("Page.navigate", { url: `${BASE}#/test/${BOOK}/${t.id}` });
   await sleep(1500);

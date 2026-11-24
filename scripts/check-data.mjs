@@ -22,7 +22,7 @@ export function checkData() {
 
   const perBook = {};
   lessons.forEach((l) => {
-    const expect = (perBook[l.book] = (perBook[l.book] || 0) + 1);
+    const expect = (perBook[l.book] = perBook[l.book] == null ? l.n : perBook[l.book] + 1); // a book may start above 1 (Vol. 2 starts at 16)
     if (l.n !== expect) problems.push(`${l.file}: lesson number ${l.n}, expected ${expect}`);
     for (const k of ["cn", "title"]) if (!l[k]) problems.push(`${l.file}: missing "${k}"`);
     const seen = new Set();

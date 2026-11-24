@@ -1,0 +1,666 @@
+{
+  "n": 17,
+  "cn": "第十七课",
+  "title": "刚才你去哪儿了",
+  "en": "Where did you just go",
+  "words": [
+    {
+      "w": "逛",
+      "py": "guàng",
+      "en": "to stroll; to browse around",
+      "ex": {
+        "hz": "周末我们去逛街。",
+        "py": "Zhōumò wǒmen qù guàngjiē.",
+        "en": "We're going window-shopping at the weekend."
+      }
+    },
+    {
+      "w": "裙子",
+      "py": "qúnzi",
+      "en": "skirt",
+      "ex": {
+        "hz": "这条裙子很漂亮。",
+        "py": "Zhè tiáo qúnzi hěn piàoliang.",
+        "en": "This skirt is pretty."
+      }
+    },
+    {
+      "w": "顶",
+      "py": "dǐng",
+      "en": "(measure word for hats)",
+      "ex": {
+        "hz": "我买了一顶新帽子。",
+        "py": "Wǒ mǎile yì dǐng xīn màozi.",
+        "en": "I bought a new hat."
+      }
+    },
+    {
+      "w": "帽子",
+      "py": "màozi",
+      "en": "hat; cap",
+      "ex": {
+        "hz": "外边冷，戴上帽子吧。",
+        "py": "Wàibian lěng, dàishang màozi ba.",
+        "en": "It's cold outside, put a hat on."
+      }
+    },
+    {
+      "w": "嗬",
+      "py": "hē",
+      "en": "(surprise) wow; oh",
+      "ex": {
+        "hz": "嗬，你的新车真大！",
+        "py": "Hē, nǐ de xīn chē zhēn dà!",
+        "en": "Wow, your new car is really big!"
+      }
+    },
+    {
+      "w": "这么",
+      "py": "zhème",
+      "en": "so; this much",
+      "ex": {
+        "hz": "今天这么热！",
+        "py": "Jīntiān zhème rè!",
+        "en": "It's so hot today!"
+      }
+    },
+    {
+      "w": "陪",
+      "py": "péi",
+      "en": "to accompany",
+      "ex": {
+        "hz": "我陪你去医院吧。",
+        "py": "Wǒ péi nǐ qù yīyuàn ba.",
+        "en": "I'll go with you to the hospital."
+      }
+    },
+    {
+      "w": "风景",
+      "py": "fēngjǐng",
+      "en": "scenery",
+      "ex": {
+        "hz": "这儿的风景很好看。",
+        "py": "Zhèr de fēngjǐng hěn hǎokàn.",
+        "en": "The scenery here is lovely."
+      }
+    },
+    {
+      "w": "特别",
+      "py": "tèbié",
+      "en": "especially; very",
+      "ex": {
+        "hz": "今天特别冷。",
+        "py": "Jīntiān tèbié lěng.",
+        "en": "It's especially cold today."
+      }
+    },
+    {
+      "w": "美",
+      "py": "měi",
+      "en": "beautiful",
+      "ex": {
+        "hz": "山上的花很美。",
+        "py": "Shān shang de huā hěn měi.",
+        "en": "The flowers on the hill are beautiful."
+      }
+    },
+    {
+      "w": "烤鸭",
+      "py": "kǎoyā",
+      "en": "roast duck",
+      "ex": {
+        "hz": "我想吃北京烤鸭。",
+        "py": "Wǒ xiǎng chī Běijīng kǎoyā.",
+        "en": "I'd like to eat Beijing roast duck."
+      }
+    },
+    {
+      "w": "只",
+      "py": "zhī",
+      "en": "(measure word for animals)",
+      "ex": {
+        "hz": "我家有两只小猫。",
+        "py": "Wǒ jiā yǒu liǎng zhī xiǎo māo.",
+        "en": "We have two kittens."
+      }
+    },
+    {
+      "w": "病",
+      "py": "bìng",
+      "en": "to be ill; illness",
+      "ex": {
+        "hz": "我弟弟病了。",
+        "py": "Wǒ dìdi bìng le.",
+        "en": "My younger brother is ill."
+      }
+    },
+    {
+      "w": "抽时间",
+      "py": "chōu shíjiān",
+      "en": "to find time",
+      "ex": {
+        "hz": "你抽时间来看我吧。",
+        "py": "Nǐ chōu shíjiān lái kàn wǒ ba.",
+        "en": "Find some time to come and see me."
+      }
+    },
+    {
+      "w": "时间",
+      "py": "shíjiān",
+      "en": "time",
+      "ex": {
+        "hz": "我今天没有时间。",
+        "py": "Wǒ jīntiān méiyǒu shíjiān.",
+        "en": "I have no time today."
+      }
+    },
+    {
+      "w": "看",
+      "py": "kàn",
+      "en": "to visit; to call on (also: to look)",
+      "ex": {
+        "hz": "周末我去看朋友。",
+        "py": "Zhōumò wǒ qù kàn péngyou.",
+        "en": "I'm visiting a friend at the weekend."
+      }
+    },
+    {
+      "w": "已经",
+      "py": "yǐjīng",
+      "en": "already",
+      "ex": {
+        "hz": "他已经回家了。",
+        "py": "Tā yǐjīng huí jiā le.",
+        "en": "He has already gone home."
+      }
+    },
+    {
+      "w": "以前",
+      "py": "yǐqián",
+      "en": "before; in the past",
+      "ex": {
+        "hz": "以前我不会做饭。",
+        "py": "Yǐqián wǒ bú huì zuò fàn.",
+        "en": "I couldn't cook before."
+      }
+    },
+    {
+      "w": "玩儿",
+      "py": "wánr",
+      "en": "to play; to have fun",
+      "ex": {
+        "hz": "周末来我家玩儿吧。",
+        "py": "Zhōumò lái wǒ jiā wánr ba.",
+        "en": "Come over to my place at the weekend."
+      }
+    },
+    {
+      "w": "上",
+      "py": "shàng",
+      "en": "last (上个月 last month; also: on, up)",
+      "ex": {
+        "hz": "上个月我去了北京。",
+        "py": "Shàng ge yuè wǒ qùle Běijīng.",
+        "en": "Last month I went to Beijing."
+      }
+    },
+    {
+      "w": "洗",
+      "py": "xǐ",
+      "en": "to wash",
+      "ex": {
+        "hz": "我要洗手。",
+        "py": "Wǒ yào xǐ shǒu.",
+        "en": "I'm going to wash my hands."
+      }
+    },
+    {
+      "w": "衣服",
+      "py": "yīfu",
+      "en": "clothes",
+      "ex": {
+        "hz": "这件衣服很贵。",
+        "py": "Zhè jiàn yīfu hěn guì.",
+        "en": "This piece of clothing is expensive."
+      }
+    },
+    {
+      "w": "枝",
+      "py": "zhī",
+      "en": "(measure word for flowers with stems)",
+      "ex": {
+        "hz": "他送了我一枝花。",
+        "py": "Tā sòngle wǒ yì zhī huā.",
+        "en": "He gave me a flower."
+      }
+    },
+    {
+      "w": "洗澡",
+      "py": "xǐ zǎo",
+      "en": "to take a bath or shower",
+      "ex": {
+        "hz": "我回家先洗澡。",
+        "py": "Wǒ huí jiā xiān xǐ zǎo.",
+        "en": "I'll shower first when I get home."
+      }
+    },
+    {
+      "w": "全聚德",
+      "py": "Quánjùdé",
+      "en": "Quanjude (a roast duck restaurant)",
+      "ex": {
+        "hz": "我们去全聚德吃饭吧。",
+        "py": "Wǒmen qù Quánjùdé chī fàn ba.",
+        "en": "Let's eat at Quanjude."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "周末做什么了",
+      "py": "Zhōumò zuò shénme le",
+      "en": "What did you do at the weekend",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "周末你做什么了？",
+          "py": "Zhōumò nǐ zuò shénme le?",
+          "en": "What did you do at the weekend?"
+        },
+        {
+          "who": "B",
+          "hz": "我跟朋友去逛商场了。",
+          "py": "Wǒ gēn péngyou qù guàng shāngchǎng le.",
+          "en": "I went to the mall with a friend."
+        },
+        {
+          "who": "A",
+          "hz": "你买东西了吗？",
+          "py": "Nǐ mǎi dōngxi le ma?",
+          "en": "Did you buy anything?"
+        },
+        {
+          "who": "B",
+          "hz": "买了，我买了一件衣服和两双鞋。",
+          "py": "Mǎi le, wǒ mǎile yí jiàn yīfu hé liǎng shuāng xié.",
+          "en": "Yes, a piece of clothing and two pairs of shoes."
+        },
+        {
+          "who": "A",
+          "hz": "你朋友呢？",
+          "py": "Nǐ péngyou ne?",
+          "en": "And your friend?"
+        },
+        {
+          "who": "B",
+          "hz": "她还没买呢，她还在挑。",
+          "py": "Tā hái méi mǎi ne, tā hái zài tiāo.",
+          "en": "She hasn't bought anything yet; she's still choosing."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What did B do at the weekend?",
+          "options": [
+            "Went to the mall",
+            "Stayed at home",
+            "Visited a sick friend",
+            "Went to the Great Wall"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What about B's friend?",
+          "options": [
+            "Hasn't bought anything yet",
+            "Bought a hat",
+            "Bought shoes",
+            "Went home early"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "去看朋友",
+      "py": "Qù kàn péngyou",
+      "en": "Visiting a friend",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "听说你朋友病了，你去看他了吗？",
+          "py": "Tīngshuō nǐ péngyou bìng le, nǐ qù kàn tā le ma?",
+          "en": "I hear your friend is ill; have you been to see him?"
+        },
+        {
+          "who": "B",
+          "hz": "还没去呢，我明天下了班就去。",
+          "py": "Hái méi qù ne, wǒ míngtiān xiàle bān jiù qù.",
+          "en": "Not yet; I'll go tomorrow right after work."
+        },
+        {
+          "who": "A",
+          "hz": "你打算带什么？",
+          "py": "Nǐ dǎsuàn dài shénme?",
+          "en": "What do you plan to take?"
+        },
+        {
+          "who": "B",
+          "hz": "我想带一枝花。",
+          "py": "Wǒ xiǎng dài yì zhī huā.",
+          "en": "I'd like to take a flower."
+        },
+        {
+          "who": "A",
+          "hz": "你应该先给他打个电话。",
+          "py": "Nǐ yīnggāi xiān gěi tā dǎ ge diànhuà.",
+          "en": "You should phone him first."
+        },
+        {
+          "who": "B",
+          "hz": "对，我已经给他打了电话。",
+          "py": "Duì, wǒ yǐjīng gěi tā dǎle diànhuà.",
+          "en": "Right, I've already phoned him."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Has B visited the friend yet?",
+          "options": [
+            "Not yet",
+            "Yes, yesterday",
+            "Yes, this morning",
+            "He is there now"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "When will B go?",
+          "options": [
+            "Tomorrow after work",
+            "Tonight",
+            "Next week",
+            "Right now"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "动词 + 了",
+      "en": "了 right after a verb shows the action is done; with an object, the object usually carries a number or other modifier",
+      "drills": [
+        {
+          "q": "我喝___一杯咖啡。",
+          "options": [
+            "了",
+            "呢",
+            "吗",
+            "的"
+          ],
+          "answer": 0,
+          "en": "I drank a cup of coffee."
+        },
+        {
+          "q": "昨天她洗___三件衣服。",
+          "options": [
+            "了",
+            "呢",
+            "吗",
+            "吧"
+          ],
+          "answer": 0,
+          "en": "Yesterday she washed three pieces of clothing."
+        },
+        {
+          "q": "昨天晚上你去哪儿___？",
+          "options": [
+            "了",
+            "吗",
+            "的",
+            "在"
+          ],
+          "answer": 0,
+          "en": "Where did you go last night?"
+        },
+        {
+          "q": "昨天我们在饭馆吃___三个菜。",
+          "options": [
+            "了",
+            "呢",
+            "吗",
+            "的"
+          ],
+          "answer": 0,
+          "en": "Yesterday we ate three dishes at the restaurant."
+        }
+      ]
+    },
+    {
+      "point": "没(有)……、还没……呢",
+      "en": "to deny a completed action put 没(有) before the verb and drop 了; 还没……呢 means \"not yet\"; ask with ……了吗 or ……了没有",
+      "drills": [
+        {
+          "q": "我___喝咖啡，他喝了。",
+          "options": [
+            "没",
+            "别",
+            "了",
+            "呢"
+          ],
+          "answer": 0,
+          "en": "I didn't have coffee; he did."
+        },
+        {
+          "q": "你吃饭了___？",
+          "options": [
+            "没有",
+            "不是",
+            "不有",
+            "别的"
+          ],
+          "answer": 0,
+          "en": "Have you eaten or not?"
+        },
+        {
+          "q": "他___去商场呢，还在家里。",
+          "options": [
+            "还没",
+            "一边",
+            "有的",
+            "已经"
+          ],
+          "answer": 0,
+          "en": "He hasn't gone to the mall yet; he's still at home."
+        },
+        {
+          "q": "A：你告诉他了吗？ B：还没___呢，等一下。",
+          "options": [
+            "告诉他",
+            "告诉他了",
+            "在告诉他",
+            "不告诉他"
+          ],
+          "answer": 0,
+          "en": "A: Have you told him? B: Not yet, wait a moment."
+        }
+      ]
+    },
+    {
+      "point": "……了……就……",
+      "en": "one action follows right after another: do A, then B immediately",
+      "drills": [
+        {
+          "q": "我下了班___去吃饭。",
+          "options": [
+            "就",
+            "和",
+            "或者",
+            "一边"
+          ],
+          "answer": 0,
+          "en": "I'll go to eat as soon as I finish work."
+        },
+        {
+          "q": "他吃___饭就去上课了。",
+          "options": [
+            "了",
+            "呢",
+            "吗",
+            "的"
+          ],
+          "answer": 0,
+          "en": "He went to class right after eating."
+        },
+        {
+          "q": "明天我到了北京___给你打电话。",
+          "options": [
+            "就",
+            "或者",
+            "和",
+            "正在"
+          ],
+          "answer": 0,
+          "en": "Tomorrow I'll call you as soon as I reach Beijing."
+        },
+        {
+          "q": "她洗了澡___睡觉了。",
+          "options": [
+            "就",
+            "一边",
+            "有的",
+            "正在"
+          ],
+          "answer": 0,
+          "en": "She went to bed right after her shower."
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "你买了什么？"
+          ],
+          [
+            "女",
+            "我买了一顶帽子和一条裙子。"
+          ]
+        ],
+        "q": "她买了什么？",
+        "options": [
+          "帽子和裙子",
+          "衣服和鞋",
+          "书和花"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你们去公园了吗？"
+          ],
+          [
+            "女",
+            "还没去呢，打算下午去。"
+          ]
+        ],
+        "q": "他们去长城了吗？",
+        "options": [
+          "还没去",
+          "已经去了",
+          "不想去"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你抽时间去看看王老师吧。"
+          ],
+          [
+            "女",
+            "好，我下了班就去。"
+          ]
+        ],
+        "q": "男的什么时候去？",
+        "options": [
+          "下班以后",
+          "现在",
+          "明天早上"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你在做什么？"
+          ],
+          [
+            "女",
+            "我刚洗了澡，正在看电视。"
+          ]
+        ],
+        "q": "她刚才做了什么？",
+        "options": [
+          "洗澡",
+          "买东西",
+          "做饭"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "我昨天没洗衣服，今天洗了。",
+        "claim": "她今天洗衣服了。",
+        "ok": true
+      },
+      {
+        "text": "他已经吃了饭，还没喝茶。",
+        "claim": "他还没吃饭。",
+        "ok": false
+      },
+      {
+        "text": "周末我陪朋友逛了商场，买了一枝花。",
+        "claim": "她周末去了商场。",
+        "ok": true
+      },
+      {
+        "text": "她病了，所以今天没来上课。",
+        "claim": "她今天来上课了。",
+        "ok": false
+      }
+    ],
+    "replies": [
+      {
+        "q": "你买东西了吗？",
+        "a": "买了，我买了两件衣服。"
+      },
+      {
+        "q": "你吃饭了没有？",
+        "a": "还没呢，你呢？"
+      },
+      {
+        "q": "这儿的风景怎么样？",
+        "a": "特别美！"
+      },
+      {
+        "q": "你朋友病了，你去看他了吗？",
+        "a": "我明天抽时间去。"
+      }
+    ]
+  }
+}

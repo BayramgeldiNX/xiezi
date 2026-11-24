@@ -1,0 +1,688 @@
+{
+  "n": 27,
+  "cn": "第27课",
+  "title": "你把电动车放在哪儿了",
+  "en": "Where did you put the electric bike",
+  "words": [
+    {
+      "w": "把",
+      "py": "bǎ",
+      "en": "(puts the object before the verb)",
+      "ex": {
+        "hz": "请把门关上。",
+        "py": "Qǐng bǎ mén guānshang.",
+        "en": "Please close the door."
+      }
+    },
+    {
+      "w": "电动车",
+      "py": "diàndòngchē",
+      "en": "electric bike; e-scooter",
+      "ex": {
+        "hz": "我骑电动车去上班。",
+        "py": "Wǒ qí diàndòngchē qù shàngbān.",
+        "en": "I ride my e-bike to work."
+      }
+    },
+    {
+      "w": "钥匙",
+      "py": "yàoshi",
+      "en": "key",
+      "ex": {
+        "hz": "我的钥匙在桌子上。",
+        "py": "Wǒ de yàoshi zài zhuōzi shang.",
+        "en": "My key is on the table."
+      }
+    },
+    {
+      "w": "车棚",
+      "py": "chēpéng",
+      "en": "bicycle shed",
+      "ex": {
+        "hz": "自行车在车棚里。",
+        "py": "Zìxíngchē zài chēpéng li.",
+        "en": "The bikes are in the shed."
+      }
+    },
+    {
+      "w": "还",
+      "py": "huán",
+      "en": "to return; to give back (also hái: still)",
+      "ex": {
+        "hz": "明天我还你书。",
+        "py": "Míngtiān wǒ huán nǐ shū.",
+        "en": "I'll give you your book back tomorrow."
+      }
+    },
+    {
+      "w": "着急",
+      "py": "zháojí",
+      "en": "worried; anxious",
+      "ex": {
+        "hz": "别着急，慢慢来。",
+        "py": "Bié zháojí, mànmàn lái.",
+        "en": "Don't worry, take your time."
+      }
+    },
+    {
+      "w": "表",
+      "py": "biǎo",
+      "en": "form; table",
+      "ex": {
+        "hz": "请你看一下这张表。",
+        "py": "Qǐng nǐ kàn yíxià zhè zhāng biǎo.",
+        "en": "Please have a look at this form."
+      }
+    },
+    {
+      "w": "交",
+      "py": "jiāo",
+      "en": "to hand in; to give",
+      "ex": {
+        "hz": "我要交作业。",
+        "py": "Wǒ yào jiāo zuòyè.",
+        "en": "I have to hand in my homework."
+      }
+    },
+    {
+      "w": "篇",
+      "py": "piān",
+      "en": "(measure word for articles)",
+      "ex": {
+        "hz": "我写了一篇文章。",
+        "py": "Wǒ xiěle yì piān wénzhāng.",
+        "en": "I wrote an article."
+      }
+    },
+    {
+      "w": "文章",
+      "py": "wénzhāng",
+      "en": "article; essay",
+      "ex": {
+        "hz": "这篇文章很有意思。",
+        "py": "Zhè piān wénzhāng hěn yǒu yìsi.",
+        "en": "This article is interesting."
+      }
+    },
+    {
+      "w": "翻译",
+      "py": "fānyì",
+      "en": "to translate",
+      "ex": {
+        "hz": "你会翻译这个词吗？",
+        "py": "Nǐ huì fānyì zhège cí ma?",
+        "en": "Can you translate this word?"
+      }
+    },
+    {
+      "w": "水平",
+      "py": "shuǐpíng",
+      "en": "level; standard",
+      "ex": {
+        "hz": "他的汉语水平很高。",
+        "py": "Tā de Hànyǔ shuǐpíng hěn gāo.",
+        "en": "His Chinese level is high."
+      }
+    },
+    {
+      "w": "当成",
+      "py": "dàngchéng",
+      "en": "to treat as; to take for",
+      "ex": {
+        "hz": "别把我当成外人。",
+        "py": "Bié bǎ wǒ dàngchéng wàirén.",
+        "en": "Don't treat me like a stranger."
+      }
+    },
+    {
+      "w": "成",
+      "py": "chéng",
+      "en": "to turn into; to become",
+      "ex": {
+        "hz": "水成了冰。",
+        "py": "Shuǐ chéngle bīng.",
+        "en": "The water turned into ice."
+      }
+    },
+    {
+      "w": "推",
+      "py": "tuī",
+      "en": "to push",
+      "ex": {
+        "hz": "请推一下门。",
+        "py": "Qǐng tuī yíxià mén.",
+        "en": "Please push the door."
+      }
+    },
+    {
+      "w": "搬",
+      "py": "bān",
+      "en": "to move (carry); to relocate",
+      "ex": {
+        "hz": "我们搬了一张桌子。",
+        "py": "Wǒmen bānle yì zhāng zhuōzi.",
+        "en": "We moved a table."
+      }
+    },
+    {
+      "w": "开",
+      "py": "kāi",
+      "en": "to hold (a meeting); to open",
+      "ex": {
+        "hz": "明天下午开会。",
+        "py": "Míngtiān xiàwǔ kāihuì.",
+        "en": "There is a meeting tomorrow afternoon."
+      }
+    },
+    {
+      "w": "晚会",
+      "py": "wǎnhuì",
+      "en": "evening party",
+      "ex": {
+        "hz": "今天晚上有晚会。",
+        "py": "Jīntiān wǎnshang yǒu wǎnhuì.",
+        "en": "There is an evening party tonight."
+      }
+    },
+    {
+      "w": "熊猫",
+      "py": "xióngmāo",
+      "en": "panda",
+      "ex": {
+        "hz": "熊猫很可爱。",
+        "py": "Xióngmāo hěn kě'ài.",
+        "en": "Pandas are cute."
+      }
+    },
+    {
+      "w": "动物园",
+      "py": "dòngwùyuán",
+      "en": "zoo",
+      "ex": {
+        "hz": "周末我们去动物园。",
+        "py": "Zhōumò wǒmen qù dòngwùyuán.",
+        "en": "We're going to the zoo at the weekend."
+      }
+    },
+    {
+      "w": "窗花",
+      "py": "chuānghuā",
+      "en": "paper-cut for windows",
+      "ex": {
+        "hz": "过年的时候家家贴窗花。",
+        "py": "Guònián de shíhou jiājiā tiē chuānghuā.",
+        "en": "At New Year every home puts up window paper-cuts."
+      }
+    },
+    {
+      "w": "贴",
+      "py": "tiē",
+      "en": "to stick; to paste",
+      "ex": {
+        "hz": "请把照片贴在这儿。",
+        "py": "Qǐng bǎ zhàopiàn tiē zài zhèr.",
+        "en": "Please stick the photo here."
+      }
+    },
+    {
+      "w": "坏",
+      "py": "huài",
+      "en": "broken; bad",
+      "ex": {
+        "hz": "我的手机坏了。",
+        "py": "Wǒ de shǒujī huài le.",
+        "en": "My phone is broken."
+      }
+    },
+    {
+      "w": "递",
+      "py": "dì",
+      "en": "to pass; to hand over",
+      "ex": {
+        "hz": "请把书递给我。",
+        "py": "Qǐng bǎ shū dì gěi wǒ.",
+        "en": "Please pass me the book."
+      }
+    },
+    {
+      "w": "它",
+      "py": "tā",
+      "en": "it",
+      "ex": {
+        "hz": "这只猫很可爱，我喜欢它。",
+        "py": "Zhè zhī māo hěn kě'ài, wǒ xǐhuan tā.",
+        "en": "This cat is cute; I like it."
+      }
+    },
+    {
+      "w": "人民币",
+      "py": "rénmínbì",
+      "en": "RMB (Chinese currency)",
+      "ex": {
+        "hz": "这本书三十块人民币。",
+        "py": "Zhè běn shū sānshí kuài rénmínbì.",
+        "en": "This book costs thirty yuan."
+      }
+    },
+    {
+      "w": "赵",
+      "py": "Zhào",
+      "en": "Zhao (surname)",
+      "ex": {
+        "hz": "赵老师是我们的汉语老师。",
+        "py": "Zhào lǎoshī shì wǒmen de Hànyǔ lǎoshī.",
+        "en": "Teacher Zhao is our Chinese teacher."
+      }
+    },
+    {
+      "w": "法语",
+      "py": "Fǎyǔ",
+      "en": "French (language)",
+      "ex": {
+        "hz": "她会说法语。",
+        "py": "Tā huì shuō Fǎyǔ.",
+        "en": "She can speak French."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "找钥匙",
+      "py": "Zhǎo yàoshi",
+      "en": "Looking for the key",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "你看见我的钥匙了吗？",
+          "py": "Nǐ kànjiàn wǒ de yàoshi le ma?",
+          "en": "Have you seen my key?"
+        },
+        {
+          "who": "B",
+          "hz": "你昨天把它放在哪儿了？",
+          "py": "Nǐ zuótiān bǎ tā fàng zài nǎr le?",
+          "en": "Where did you put it yesterday?"
+        },
+        {
+          "who": "A",
+          "hz": "我觉得放在包里了，可是包里没有。",
+          "py": "Wǒ juéde fàng zài bāo li le, kěshì bāo li méiyǒu.",
+          "en": "I think I put it in my bag, but it isn't there."
+        },
+        {
+          "who": "B",
+          "hz": "别着急，你看看桌子上。",
+          "py": "Bié zháojí, nǐ kànkan zhuōzi shang.",
+          "en": "Don't worry, look on the table."
+        },
+        {
+          "who": "A",
+          "hz": "啊，在这儿！我把书放在钥匙上了。",
+          "py": "À, zài zhèr! Wǒ bǎ shū fàng zài yàoshi shang le.",
+          "en": "Ah, here it is! I'd put a book on top of it."
+        }
+      ],
+      "questions": [
+        {
+          "q": "Where was the key?",
+          "options": [
+            "On the table, under a book",
+            "In the bag",
+            "In the bike shed",
+            "In the car"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What does B say first?",
+          "options": [
+            "Where did you put it?",
+            "Buy a new key",
+            "Go to the office",
+            "Call the teacher"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "搬家",
+      "py": "Bānjiā",
+      "en": "Moving house",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "明天我搬家，你能来帮忙吗？",
+          "py": "Míngtiān wǒ bānjiā, nǐ néng lái bāngmáng ma?",
+          "en": "I'm moving tomorrow; can you come and help?"
+        },
+        {
+          "who": "B",
+          "hz": "能，我早上就去。",
+          "py": "Néng, wǒ zǎoshang jiù qù.",
+          "en": "Yes, I'll come in the morning."
+        },
+        {
+          "who": "A",
+          "hz": "太好了。你帮我把这些书搬到车上吧。",
+          "py": "Tài hǎo le. Nǐ bāng wǒ bǎ zhèxiē shū bān dào chē shang ba.",
+          "en": "Great. Help me carry these books to the car."
+        },
+        {
+          "who": "B",
+          "hz": "好。那张桌子呢？",
+          "py": "Hǎo. Nà zhāng zhuōzi ne?",
+          "en": "OK. What about that table?"
+        },
+        {
+          "who": "A",
+          "hz": "桌子太重了，我们一起把它推出去吧。",
+          "py": "Zhuōzi tài zhòng le, wǒmen yìqǐ bǎ tā tuī chūqu ba.",
+          "en": "The table is too heavy; let's push it out together."
+        }
+      ],
+      "questions": [
+        {
+          "q": "What is A doing tomorrow?",
+          "options": [
+            "Moving house",
+            "Going on a trip",
+            "Having a party",
+            "Going to the zoo"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What will they do with the table?",
+          "options": [
+            "Push it out together",
+            "Sell it",
+            "Leave it behind",
+            "Carry it alone"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "把 + object + verb + 到 / 在 / 给 / 成",
+      "en": "A 把-sentence puts the thing being handled before the verb and says what happens to it. 到 = it ends up at a place, 在 = it is put somewhere, 给 = it is handed to someone, 成 = it turns into something.",
+      "drills": [
+        {
+          "q": "请把这封信寄___上海。",
+          "options": [
+            "到",
+            "在",
+            "给",
+            "成"
+          ],
+          "answer": 0,
+          "en": "Please post this letter to Shanghai."
+        },
+        {
+          "q": "我把手机放___桌子上了。",
+          "options": [
+            "在",
+            "给",
+            "成",
+            "过"
+          ],
+          "answer": 0,
+          "en": "I put my phone on the table."
+        },
+        {
+          "q": "我把他当___我哥哥了。",
+          "options": [
+            "成",
+            "在",
+            "到",
+            "给"
+          ],
+          "answer": 0,
+          "en": "I took him for my older brother."
+        },
+        {
+          "q": "我把照片发___妈妈了。",
+          "options": [
+            "给",
+            "成",
+            "在",
+            "的"
+          ],
+          "answer": 0,
+          "en": "I sent the photo to Mum."
+        }
+      ]
+    },
+    {
+      "point": "The verb needs something after it",
+      "en": "The verb in a 把-sentence is an action that does something to the object, and it can't stand bare. 有, 是 and 在 can't be used. Negatives and 想 / 能 / 快 go before 把.",
+      "drills": [
+        {
+          "q": "他把钥匙___了。",
+          "options": [
+            "忘",
+            "有",
+            "是",
+            "在"
+          ],
+          "answer": 0,
+          "en": "He forgot the key."
+        },
+        {
+          "q": "你快___窗花贴在门上吧。",
+          "options": [
+            "把",
+            "给",
+            "让",
+            "在"
+          ],
+          "answer": 0,
+          "en": "Hurry up and stick the paper-cut on the door."
+        },
+        {
+          "q": "我想把这本小说借___他。",
+          "options": [
+            "给",
+            "成",
+            "在",
+            "的"
+          ],
+          "answer": 0,
+          "en": "I'd like to lend this novel to him."
+        },
+        {
+          "q": "他没把文章翻译___。",
+          "options": [
+            "完",
+            "了",
+            "吗",
+            "的"
+          ],
+          "answer": 0,
+          "en": "He hasn't finished translating the article."
+        }
+      ]
+    },
+    {
+      "point": "不是……吗？",
+      "en": "A question that makes a point: it means \"surely you …?\", so you already believe the thing is true.",
+      "drills": [
+        {
+          "q": "你___是中国人吗？怎么不会说汉语？",
+          "options": [
+            "不",
+            "没",
+            "别",
+            "很"
+          ],
+          "answer": 0,
+          "en": "Aren't you Chinese? How come you can't speak Chinese?"
+        },
+        {
+          "q": "你不是喜欢熊猫___？",
+          "options": [
+            "吗",
+            "呢",
+            "的",
+            "了"
+          ],
+          "answer": 0,
+          "en": "Don't you like pandas?"
+        },
+        {
+          "q": "这不是你的手机___？",
+          "options": [
+            "吗",
+            "呢",
+            "了",
+            "过"
+          ],
+          "answer": 0,
+          "en": "Isn't this your phone?"
+        },
+        {
+          "q": "你不是___明天不上课吗？",
+          "options": [
+            "说",
+            "有",
+            "是",
+            "在"
+          ],
+          "answer": 0,
+          "en": "Didn't you say there's no class tomorrow?"
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "我的钥匙放在哪儿了？"
+          ],
+          [
+            "女",
+            "你把它放在桌子上了。"
+          ]
+        ],
+        "q": "钥匙在哪儿？",
+        "options": [
+          "桌子上",
+          "车棚里",
+          "包里"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你去邮局吗？"
+          ],
+          [
+            "女",
+            "去，要我把这封信寄给谁？"
+          ],
+          [
+            "男",
+            "寄给我妈妈。"
+          ]
+        ],
+        "q": "信寄给谁？",
+        "options": [
+          "她妈妈",
+          "赵老师",
+          "小雨"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你的手机怎么了？"
+          ],
+          [
+            "女",
+            "坏了，我想买新的。"
+          ]
+        ],
+        "q": "手机怎么了？",
+        "options": [
+          "坏了",
+          "很大",
+          "很贵"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "这个菜单是什么语？"
+          ],
+          [
+            "女",
+            "法语，请你翻译成汉语。"
+          ]
+        ],
+        "q": "要翻译成什么？",
+        "options": [
+          "汉语",
+          "法语",
+          "英语"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "我把自行车放在楼下了。",
+        "claim": "自行车在楼下。",
+        "ok": true
+      },
+      {
+        "text": "你把书还给我吧，我现在着急用。",
+        "claim": "说话人不着急。",
+        "ok": false
+      },
+      {
+        "text": "他把一篇文章翻译成了英语。",
+        "claim": "文章现在是英语。",
+        "ok": true
+      },
+      {
+        "text": "周末我们去动物园看熊猫。",
+        "claim": "他们去看电影。",
+        "ok": false
+      }
+    ],
+    "replies": [
+      {
+        "q": "你把钥匙放在哪儿了？",
+        "a": "放在桌子上了。"
+      },
+      {
+        "q": "你不是住在学校里吗？",
+        "a": "不，我去年就搬出去了。"
+      },
+      {
+        "q": "这些书放在哪儿？",
+        "a": "放在书架上吧。"
+      },
+      {
+        "q": "请你把窗户关上，好吗？",
+        "a": "没问题，我去关。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,764 @@
+{
+  "n": 18,
+  "cn": "第十八课",
+  "title": "秋天了",
+  "en": "It's autumn",
+  "words": [
+    {
+      "w": "秋天",
+      "py": "qiūtiān",
+      "en": "autumn",
+      "ex": {
+        "hz": "秋天天气很好。",
+        "py": "Qiūtiān tiānqì hěn hǎo.",
+        "en": "The weather is nice in autumn."
+      }
+    },
+    {
+      "w": "天气",
+      "py": "tiānqì",
+      "en": "weather",
+      "ex": {
+        "hz": "今天天气怎么样？",
+        "py": "Jīntiān tiānqì zěnmeyàng?",
+        "en": "What's the weather like today?"
+      }
+    },
+    {
+      "w": "山",
+      "py": "shān",
+      "en": "hill; mountain",
+      "ex": {
+        "hz": "我们周末去爬山。",
+        "py": "Wǒmen zhōumò qù pá shān.",
+        "en": "We're going hiking at the weekend."
+      }
+    },
+    {
+      "w": "树叶",
+      "py": "shùyè",
+      "en": "leaf",
+      "ex": {
+        "hz": "树叶掉下来了。",
+        "py": "Shùyè diào xiàlai le.",
+        "en": "The leaves are falling."
+      }
+    },
+    {
+      "w": "红叶",
+      "py": "hóngyè",
+      "en": "red autumn leaves",
+      "ex": {
+        "hz": "秋天可以去山上看红叶。",
+        "py": "Qiūtiān kěyǐ qù shān shang kàn hóngyè.",
+        "en": "In autumn you can go to the hills to see the red leaves."
+      }
+    },
+    {
+      "w": "巧",
+      "py": "qiǎo",
+      "en": "lucky; coincidental",
+      "ex": {
+        "hz": "真巧，在这儿看到你！",
+        "py": "Zhēn qiǎo, zài zhèr kàndào nǐ!",
+        "en": "What luck, running into you here!"
+      }
+    },
+    {
+      "w": "阴",
+      "py": "yīn",
+      "en": "overcast",
+      "ex": {
+        "hz": "今天天阴了。",
+        "py": "Jīntiān tiān yīn le.",
+        "en": "It's overcast today."
+      }
+    },
+    {
+      "w": "能",
+      "py": "néng",
+      "en": "can; to be able to",
+      "ex": {
+        "hz": "你能来吗？",
+        "py": "Nǐ néng lái ma?",
+        "en": "Can you come?"
+      }
+    },
+    {
+      "w": "睡懒觉",
+      "py": "shuì lǎnjiào",
+      "en": "to sleep in",
+      "ex": {
+        "hz": "周末我喜欢睡懒觉。",
+        "py": "Zhōumò wǒ xǐhuan shuì lǎnjiào.",
+        "en": "I like sleeping in at the weekend."
+      }
+    },
+    {
+      "w": "懒",
+      "py": "lǎn",
+      "en": "lazy",
+      "ex": {
+        "hz": "我弟弟很懒。",
+        "py": "Wǒ dìdi hěn lǎn.",
+        "en": "My younger brother is lazy."
+      }
+    },
+    {
+      "w": "瘦",
+      "py": "shòu",
+      "en": "thin",
+      "ex": {
+        "hz": "她比以前瘦了。",
+        "py": "Tā bǐ yǐqián shòu le.",
+        "en": "She's thinner than before."
+      }
+    },
+    {
+      "w": "看上去",
+      "py": "kàn shàngqu",
+      "en": "to look; it seems",
+      "ex": {
+        "hz": "你看上去很累。",
+        "py": "Nǐ kàn shàngqu hěn lèi.",
+        "en": "You look tired."
+      }
+    },
+    {
+      "w": "更",
+      "py": "gèng",
+      "en": "even more",
+      "ex": {
+        "hz": "今天比昨天更冷。",
+        "py": "Jīntiān bǐ zuótiān gèng lěng.",
+        "en": "Today is even colder than yesterday."
+      }
+    },
+    {
+      "w": "下",
+      "py": "xià",
+      "en": "next",
+      "ex": {
+        "hz": "下个星期我有时间。",
+        "py": "Xià ge xīngqī wǒ yǒu shíjiān.",
+        "en": "I'll have time next week."
+      }
+    },
+    {
+      "w": "回",
+      "py": "huí",
+      "en": "to return; to go back",
+      "ex": {
+        "hz": "我晚上六点回家。",
+        "py": "Wǒ wǎnshang liù diǎn huí jiā.",
+        "en": "I go home at six in the evening."
+      }
+    },
+    {
+      "w": "以后",
+      "py": "yǐhòu",
+      "en": "later; after",
+      "ex": {
+        "hz": "下课以后我去吃饭。",
+        "py": "Xiàkè yǐhòu wǒ qù chī fàn.",
+        "en": "After class I'm going to eat."
+      }
+    },
+    {
+      "w": "亲戚",
+      "py": "qīnqi",
+      "en": "relative",
+      "ex": {
+        "hz": "过年我去看亲戚。",
+        "py": "Guònián wǒ qù kàn qīnqi.",
+        "en": "At New Year I visit relatives."
+      }
+    },
+    {
+      "w": "冬天",
+      "py": "dōngtiān",
+      "en": "winter",
+      "ex": {
+        "hz": "北京的冬天很冷。",
+        "py": "Běijīng de dōngtiān hěn lěng.",
+        "en": "Winter in Beijing is very cold."
+      }
+    },
+    {
+      "w": "冷",
+      "py": "lěng",
+      "en": "cold",
+      "ex": {
+        "hz": "今天真冷！",
+        "py": "Jīntiān zhēn lěng!",
+        "en": "It's really cold today!"
+      }
+    },
+    {
+      "w": "春天",
+      "py": "chūntiān",
+      "en": "spring",
+      "ex": {
+        "hz": "春天花都开了。",
+        "py": "Chūntiān huā dōu kāi le.",
+        "en": "In spring the flowers all bloom."
+      }
+    },
+    {
+      "w": "暖和",
+      "py": "nuǎnhuo",
+      "en": "warm",
+      "ex": {
+        "hz": "屋子里很暖和。",
+        "py": "Wūzi li hěn nuǎnhuo.",
+        "en": "It's warm inside."
+      }
+    },
+    {
+      "w": "夏天",
+      "py": "xiàtiān",
+      "en": "summer",
+      "ex": {
+        "hz": "夏天我喜欢喝冰茶。",
+        "py": "Xiàtiān wǒ xǐhuan hē bīng chá.",
+        "en": "In summer I like iced tea."
+      }
+    },
+    {
+      "w": "晴",
+      "py": "qíng",
+      "en": "sunny; clear",
+      "ex": {
+        "hz": "明天是晴天。",
+        "py": "Míngtiān shì qíngtiān.",
+        "en": "Tomorrow will be sunny."
+      }
+    },
+    {
+      "w": "刮风",
+      "py": "guāfēng",
+      "en": "to be windy",
+      "ex": {
+        "hz": "外边刮风了，多穿点儿。",
+        "py": "Wàibian guāfēng le, duō chuān diǎnr.",
+        "en": "It's windy outside; wear more."
+      }
+    },
+    {
+      "w": "导游",
+      "py": "dǎoyóu",
+      "en": "tour guide",
+      "ex": {
+        "hz": "他是我们的导游。",
+        "py": "Tā shì wǒmen de dǎoyóu.",
+        "en": "He is our tour guide."
+      }
+    },
+    {
+      "w": "胖",
+      "py": "pàng",
+      "en": "fat; plump",
+      "ex": {
+        "hz": "那只小猫很胖。",
+        "py": "Nà zhī xiǎo māo hěn pàng.",
+        "en": "That kitten is plump."
+      }
+    },
+    {
+      "w": "饱",
+      "py": "bǎo",
+      "en": "full (after eating)",
+      "ex": {
+        "hz": "我吃饱了。",
+        "py": "Wǒ chībǎo le.",
+        "en": "I'm full."
+      }
+    },
+    {
+      "w": "开",
+      "py": "kāi",
+      "en": "to bloom; to leave (of a bus or train) (also: to open)",
+      "ex": {
+        "hz": "车八点开。",
+        "py": "Chē bā diǎn kāi.",
+        "en": "The bus leaves at eight."
+      }
+    },
+    {
+      "w": "考试",
+      "py": "kǎoshì",
+      "en": "exam; to take an exam",
+      "ex": {
+        "hz": "明天我有考试。",
+        "py": "Míngtiān wǒ yǒu kǎoshì.",
+        "en": "I have an exam tomorrow."
+      }
+    },
+    {
+      "w": "结婚",
+      "py": "jié hūn",
+      "en": "to get married",
+      "ex": {
+        "hz": "我姐姐明年结婚。",
+        "py": "Wǒ jiějie míngnián jié hūn.",
+        "en": "My older sister gets married next year."
+      }
+    },
+    {
+      "w": "关",
+      "py": "guān",
+      "en": "to close; to shut",
+      "ex": {
+        "hz": "请把门关上。",
+        "py": "Qǐng bǎ mén guānshang.",
+        "en": "Please shut the door."
+      }
+    },
+    {
+      "w": "门",
+      "py": "mén",
+      "en": "door",
+      "ex": {
+        "hz": "门口有一只猫。",
+        "py": "Ménkǒu yǒu yì zhī māo.",
+        "en": "There's a cat at the door."
+      }
+    },
+    {
+      "w": "分钟",
+      "py": "fēnzhōng",
+      "en": "minute",
+      "ex": {
+        "hz": "我走了十分钟。",
+        "py": "Wǒ zǒule shí fēnzhōng.",
+        "en": "I walked for ten minutes."
+      }
+    },
+    {
+      "w": "幼儿园",
+      "py": "yòu'éryuán",
+      "en": "kindergarten",
+      "ex": {
+        "hz": "我妹妹在上幼儿园。",
+        "py": "Wǒ mèimei zài shàng yòu'éryuán.",
+        "en": "My younger sister is in kindergarten."
+      }
+    },
+    {
+      "w": "小学",
+      "py": "xiǎoxué",
+      "en": "primary school",
+      "ex": {
+        "hz": "他儿子在上小学。",
+        "py": "Tā érzi zài shàng xiǎoxué.",
+        "en": "His son is in primary school."
+      }
+    },
+    {
+      "w": "香山",
+      "py": "Xiāng Shān",
+      "en": "Fragrant Hills (Beijing)",
+      "ex": {
+        "hz": "秋天香山的红叶很美。",
+        "py": "Qiūtiān Xiāng Shān de hóngyè hěn měi.",
+        "en": "The red leaves at Fragrant Hills are lovely in autumn."
+      }
+    }
+  ],
+  "readings": [
+    {
+      "id": "r1",
+      "source": "practice",
+      "title": "冬天要来了",
+      "py": "Dōngtiān yào lái le",
+      "en": "Winter is coming",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "天气冷了，冬天要来了。",
+          "py": "Tiānqì lěng le, dōngtiān yào lái le.",
+          "en": "It's getting cold; winter is coming."
+        },
+        {
+          "who": "B",
+          "hz": "是啊，现在已经十一月了。",
+          "py": "Shì a, xiànzài yǐjīng shíyī yuè le.",
+          "en": "Yes, it's already November."
+        },
+        {
+          "who": "A",
+          "hz": "你冬天喜欢做什么？",
+          "py": "Nǐ dōngtiān xǐhuan zuò shénme?",
+          "en": "What do you like doing in winter?"
+        },
+        {
+          "who": "B",
+          "hz": "我不喜欢冷，我想在家睡懒觉。",
+          "py": "Wǒ bù xǐhuan lěng, wǒ xiǎng zài jiā shuì lǎnjiào.",
+          "en": "I don't like the cold; I want to sleep in at home."
+        },
+        {
+          "who": "A",
+          "hz": "你真懒！",
+          "py": "Nǐ zhēn lǎn!",
+          "en": "You're so lazy!"
+        }
+      ],
+      "questions": [
+        {
+          "q": "Which season is coming?",
+          "options": [
+            "Winter",
+            "Spring",
+            "Summer",
+            "Autumn"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What does B want to do in winter?",
+          "options": [
+            "Sleep in at home",
+            "Travel",
+            "Go swimming",
+            "Go hiking"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "r2",
+      "source": "practice",
+      "title": "去看红叶",
+      "py": "Qù kàn hóngyè",
+      "en": "Going to see the red leaves",
+      "lines": [
+        {
+          "who": "A",
+          "hz": "秋天了，山上的树叶红了。",
+          "py": "Qiūtiān le, shān shang de shùyè hóng le.",
+          "en": "It's autumn; the leaves on the hills have turned red."
+        },
+        {
+          "who": "B",
+          "hz": "周末天气好吗？",
+          "py": "Zhōumò tiānqì hǎo ma?",
+          "en": "Will the weather be good at the weekend?"
+        },
+        {
+          "who": "A",
+          "hz": "听说周末是晴天，不刮风。",
+          "py": "Tīngshuō zhōumò shì qíngtiān, bù guāfēng.",
+          "en": "I hear it'll be sunny and not windy."
+        },
+        {
+          "who": "B",
+          "hz": "太好了，咱们周末去山上看红叶吧。",
+          "py": "Tài hǎo le, zánmen zhōumò qù shān shang kàn hóngyè ba.",
+          "en": "Great, let's go and see the red leaves at the weekend."
+        },
+        {
+          "who": "A",
+          "hz": "好，我们八点走，行吗？",
+          "py": "Hǎo, wǒmen bā diǎn zǒu, xíng ma?",
+          "en": "OK, shall we set off at eight?"
+        }
+      ],
+      "questions": [
+        {
+          "q": "What colour are the leaves now?",
+          "options": [
+            "Red",
+            "Green",
+            "Yellow",
+            "They have fallen"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What will the weather be at the weekend?",
+          "options": [
+            "Sunny, no wind",
+            "Rainy",
+            "Windy",
+            "Overcast"
+          ],
+          "answer": 0
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "point": "……了 (change)",
+      "en": "了 at the end of a sentence shows a change of state or a new situation",
+      "drills": [
+        {
+          "q": "天气暖和___，花都开了。",
+          "options": [
+            "了",
+            "吗",
+            "在",
+            "把"
+          ],
+          "answer": 0,
+          "en": "It's warmer now, and the flowers are all out."
+        },
+        {
+          "q": "以前他很胖，现在他瘦___。",
+          "options": [
+            "了",
+            "吗",
+            "在",
+            "有"
+          ],
+          "answer": 0,
+          "en": "He used to be plump, but now he's thin."
+        },
+        {
+          "q": "你看，外边下雨___！",
+          "options": [
+            "了",
+            "吗",
+            "没",
+            "不"
+          ],
+          "answer": 0,
+          "en": "Look, it's raining outside!"
+        },
+        {
+          "q": "我弟弟今年六岁___，明年上小学。",
+          "options": [
+            "了",
+            "的",
+            "在",
+            "把"
+          ],
+          "answer": 0,
+          "en": "My brother is six this year and starts primary school next year."
+        }
+      ]
+    },
+    {
+      "point": "要……了",
+      "en": "something is about to happen; 就要 or 快要 add urgency, and only 就要 can follow a time word",
+      "drills": [
+        {
+          "q": "电影___开始了，快进去吧。",
+          "options": [
+            "要",
+            "在",
+            "有",
+            "把"
+          ],
+          "answer": 0,
+          "en": "The film is about to start, let's go in."
+        },
+        {
+          "q": "我们下个星期___考试了。",
+          "options": [
+            "就要",
+            "正在",
+            "一边",
+            "有的"
+          ],
+          "answer": 0,
+          "en": "We have exams next week."
+        },
+        {
+          "q": "火车快___开了，快走吧！",
+          "options": [
+            "要",
+            "就",
+            "是",
+            "的"
+          ],
+          "answer": 0,
+          "en": "The train is about to leave, hurry!"
+        },
+        {
+          "q": "明天___下雨了，别出去了。",
+          "options": [
+            "就要",
+            "快要",
+            "正在",
+            "有的"
+          ],
+          "answer": 0,
+          "en": "It's about to rain tomorrow, so don't go out."
+        }
+      ]
+    },
+    {
+      "point": "能 / 可以",
+      "en": "能 for ability or possibility, 可以 for permission; both are negated by 不能 (不可以 only for a ban)",
+      "drills": [
+        {
+          "q": "你___帮我拿一下吗？",
+          "options": [
+            "能",
+            "在",
+            "把",
+            "吧"
+          ],
+          "answer": 0,
+          "en": "Can you carry this for me?"
+        },
+        {
+          "q": "外边下大雨，今天我们不___去爬山了。",
+          "options": [
+            "能",
+            "在",
+            "把",
+            "有"
+          ],
+          "answer": 0,
+          "en": "It's pouring outside, so we can't go hiking today."
+        },
+        {
+          "q": "教室里___吃东西，请出去吃。",
+          "options": [
+            "不能",
+            "不是",
+            "不有",
+            "不在"
+          ],
+          "answer": 0,
+          "en": "You can't eat in the classroom; please eat outside."
+        },
+        {
+          "q": "这本书我___看看吗？",
+          "options": [
+            "可以",
+            "已经",
+            "一边",
+            "正在"
+          ],
+          "answer": 0,
+          "en": "May I take a look at this book?"
+        }
+      ]
+    }
+  ],
+  "workbook": {
+    "dialogs": [
+      {
+        "lines": [
+          [
+            "男",
+            "今天天气怎么样？"
+          ],
+          [
+            "女",
+            "天阴了，要下雨了。"
+          ]
+        ],
+        "q": "今天天气怎么样？",
+        "options": [
+          "阴天，要下雨",
+          "晴天",
+          "刮风"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你冬天喜欢做什么？"
+          ],
+          [
+            "女",
+            "我喜欢在家睡懒觉。"
+          ]
+        ],
+        "q": "他冬天喜欢做什么？",
+        "options": [
+          "在家睡懒觉",
+          "去爬山",
+          "去旅行"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "你姐姐什么时候结婚？"
+          ],
+          [
+            "女",
+            "下个月就要结婚了。"
+          ]
+        ],
+        "q": "她姐姐什么时候结婚？",
+        "options": [
+          "下个月",
+          "明年",
+          "下星期"
+        ],
+        "answer": 0
+      },
+      {
+        "lines": [
+          [
+            "男",
+            "这儿可以拍照吗？"
+          ],
+          [
+            "女",
+            "对不起，这儿不能拍照。"
+          ]
+        ],
+        "q": "这儿可以做什么？",
+        "options": [
+          "不能拍照",
+          "可以拍照",
+          "可以吃饭"
+        ],
+        "answer": 0
+      }
+    ],
+    "judge": [
+      {
+        "text": "春天了，天气暖和了。",
+        "claim": "现在天气很冷。",
+        "ok": false
+      },
+      {
+        "text": "她比以前瘦了，看上去很累。",
+        "claim": "她现在瘦了。",
+        "ok": true
+      },
+      {
+        "text": "火车快要开了，我们得快点儿。",
+        "claim": "火车已经开了。",
+        "ok": false
+      },
+      {
+        "text": "他在上小学，明年就上中学了。",
+        "claim": "他现在在上小学。",
+        "ok": true
+      }
+    ],
+    "replies": [
+      {
+        "q": "周末的天气怎么样？",
+        "a": "听说是晴天。"
+      },
+      {
+        "q": "你想去看红叶吗？",
+        "a": "想，咱们周末去吧。"
+      },
+      {
+        "q": "你吃饱了吗？",
+        "a": "吃饱了，谢谢。"
+      },
+      {
+        "q": "现在几点了？",
+        "a": "快八点了，要上课了。"
+      }
+    ]
+  }
+}
