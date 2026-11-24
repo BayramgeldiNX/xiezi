@@ -365,8 +365,8 @@
       "py": "qì",
       "en": "air"
     },
-    "hint": "A person 亻 breathing air",
-    "type": "ideographic",
+    "hint": "Three wisps of steam or cloud drifting in the air: air, gas. The first stroke only looks like part of a person.",
+    "type": "",
     "phonetic": "",
     "semantic": "",
     "similar": [
@@ -959,7 +959,7 @@
       "py": "piě",
       "en": "slash"
     },
-    "hint": "",
+    "hint": "Once a person (人) with a mark on the back, from moxibustion (灸 = 久 + 火), a slow treatment: a long time.",
     "type": "",
     "phonetic": "",
     "semantic": "",
@@ -1153,7 +1153,7 @@
       "py": "gōu",
       "en": "secret"
     },
-    "hint": "",
+    "hint": "An old drawing (some say of a snake, some of a water jug), borrowed for its sound: also. It is the sound part of 他, 她, 地 and 池.",
     "type": "",
     "phonetic": "",
     "semantic": "",
@@ -1535,13 +1535,19 @@
   },
   "弟": {
     "dec": "⿱丷⿻弓？",
-    "parts": [],
+    "parts": [
+      {
+        "c": "弓",
+        "py": "gōng",
+        "en": "bow"
+      }
+    ],
     "radical": {
       "c": "弓",
       "py": "gōng",
       "en": "bow"
     },
-    "hint": "",
+    "hint": "A cord wound round a stick, one turn after another (it looks like 弓, a bow): order, so the brother who comes next.",
     "type": "",
     "phonetic": "",
     "semantic": "",
@@ -4137,13 +4143,24 @@
   },
   "那": {
     "dec": "⿰⿹？？阝",
-    "parts": [],
+    "parts": [
+      {
+        "py": "rǎn",
+        "en": "drooping hair",
+        "c": "冄"
+      },
+      {
+        "c": "阝",
+        "py": "yì",
+        "en": "place"
+      }
+    ],
     "radical": {
       "c": "阝",
       "py": "yì",
       "en": "place"
     },
-    "hint": "",
+    "hint": "The left side is an old form of 冄; 阝 on the right is 邑, a town. It first named a place, then was borrowed for 'that'.",
     "type": "",
     "phonetic": "",
     "semantic": "",
@@ -5335,14 +5352,20 @@
   },
   "介": {
     "dec": "⿱人？",
-    "parts": [],
+    "parts": [
+      {
+        "c": "人",
+        "py": "rén",
+        "en": "man"
+      }
+    ],
     "radical": {
       "c": "人",
       "py": "rén",
       "en": "man"
     },
-    "hint": "A border 八 dividing people 人",
-    "type": "ideographic",
+    "hint": "A person (人) between two plates of armour: in between, to come between (介绍 introduce).",
+    "type": "",
     "phonetic": "",
     "semantic": "",
     "similar": [
@@ -5488,13 +5511,19 @@
   },
   "习": {
     "dec": "⿹？冫",
-    "parts": [],
+    "parts": [
+      {
+        "c": "羽",
+        "py": "yǔ",
+        "en": "feather"
+      }
+    ],
     "radical": {
       "c": "冫",
       "py": "bīng",
       "en": "ice"
     },
-    "hint": "",
+    "hint": "Short for 習: 羽 (wings) over 白. A young bird flapping its wings again and again: to practise. 习 keeps one half of 羽.",
     "type": "",
     "phonetic": "",
     "semantic": "",
@@ -5677,14 +5706,25 @@
   },
   "友": {
     "dec": "⿸？又",
-    "parts": [],
+    "parts": [
+      {
+        "c": "又",
+        "py": "yòu",
+        "en": "and"
+      },
+      {
+        "c": "又",
+        "py": "yòu",
+        "en": "and"
+      }
+    ],
     "radical": {
       "c": "又",
       "py": "yòu",
       "en": "and"
     },
-    "hint": "Two hands 又 joined, representing friendship; 又 also provides the pronunciation",
-    "type": "ideographic",
+    "hint": "Two right hands (又) side by side: friends helping each other. The top hand is now written ナ. 又 (yòu) also gives the sound.",
+    "type": "",
     "phonetic": "",
     "semantic": "",
     "similar": [
@@ -6974,15 +7014,26 @@
   },
   "有": {
     "dec": "⿸？月",
-    "parts": [],
+    "parts": [
+      {
+        "c": "又",
+        "py": "yòu",
+        "en": "and"
+      },
+      {
+        "c": "月",
+        "py": "yuè",
+        "en": "moon"
+      }
+    ],
     "radical": {
       "c": "月",
       "py": "yuè",
       "en": "moon"
     },
-    "hint": "",
-    "type": "pictophonetic",
-    "phonetic": "月",
+    "hint": "A hand (又, written ナ here) holding 月, a piece of meat: to have. 又 (yòu) also gives the sound.",
+    "type": "",
+    "phonetic": "",
     "semantic": "",
     "similar": [
       {
@@ -7466,7 +7517,7 @@
       "py": "yòu",
       "en": "and"
     },
-    "hint": "",
+    "hint": "Simplified from two characters: 發, to shoot (弓 bow, 癶 feet), and 髮, hair. 发 is a quick handwritten form of 發.",
     "type": "",
     "phonetic": "",
     "semantic": "",
@@ -8222,15 +8273,21 @@
   },
   "每": {
     "dec": "⿱？母",
-    "parts": [],
+    "parts": [
+      {
+        "c": "母",
+        "py": "mǔ",
+        "en": "mother"
+      }
+    ],
     "radical": {
       "c": "母",
       "py": "mǔ",
       "en": "mother"
     },
-    "hint": "",
-    "type": "pictophonetic",
-    "phonetic": "母",
+    "hint": "The top was once 屮, a sprout: grass growing thick. 母 (mǔ) below gives the sound. Later borrowed for 'every'.",
+    "type": "",
+    "phonetic": "",
     "semantic": "",
     "similar": [
       {
@@ -9276,14 +9333,20 @@
   },
   "司": {
     "dec": "⿹？口",
-    "parts": [],
+    "parts": [
+      {
+        "c": "口",
+        "py": "kǒu",
+        "en": "mouth"
+      }
+    ],
     "radical": {
       "c": "口",
       "py": "kǒu",
       "en": "mouth"
     },
-    "hint": "A person speaking orders 口 and raising their arm",
-    "type": "ideographic",
+    "hint": "A person raising an arm and giving orders with the mouth (口): to manage (公司 company).",
+    "type": "",
     "phonetic": "",
     "semantic": "",
     "similar": [
@@ -9536,8 +9599,8 @@
       "py": "gàn",
       "en": "arid"
     },
-    "hint": "A man 干 carrying grain, representing the annual harvest",
-    "type": "ideographic",
+    "hint": "Once 禾 (grain) over 人 (a person): someone carrying the harvest home. One harvest, one year.",
+    "type": "",
     "phonetic": "",
     "semantic": "",
     "similar": [
@@ -9888,16 +9951,22 @@
   },
   "经": {
     "dec": "⿰纟⿱？工",
-    "parts": [],
+    "parts": [
+      {
+        "c": "纟",
+        "py": "sī",
+        "en": "silk"
+      }
+    ],
     "radical": {
       "c": "纟",
       "py": "sī",
       "en": "silk"
     },
-    "hint": "thread",
-    "type": "pictophonetic",
-    "phonetic": "工",
-    "semantic": "纟",
+    "hint": "纟 (silk thread) gives the meaning: the long threads on a loom, so 'pass through'. The right side is a short form of 巠 (jīng), which gives the sound (經 → 经).",
+    "type": "",
+    "phonetic": "",
+    "semantic": "",
     "similar": [
       {
         "c": "轻",
@@ -10850,13 +10919,19 @@
   },
   "后": {
     "dec": "⿸？口",
-    "parts": [],
+    "parts": [
+      {
+        "c": "口",
+        "py": "kǒu",
+        "en": "mouth"
+      }
+    ],
     "radical": {
       "c": "口",
       "py": "kǒu",
       "en": "mouth"
     },
-    "hint": "",
+    "hint": "A person (the bent top) with 口, a mouth giving orders: a ruler, later a queen (皇后). It is also the simple form of 後, behind.",
     "type": "",
     "phonetic": "",
     "semantic": "",
@@ -11085,14 +11160,20 @@
   },
   "北": {
     "dec": "⿰？匕",
-    "parts": [],
+    "parts": [
+      {
+        "c": "匕",
+        "py": "bǐ",
+        "en": "spoon"
+      }
+    ],
     "radical": {
       "c": "匕",
       "py": "bǐ",
       "en": "spoon"
     },
-    "hint": "Two people 匕 sitting back-to-back; phonetic loan for \"north\"",
-    "type": "pictographic",
+    "hint": "Two people (each like 匕) sitting back to back. It meant 'turn your back', then the side your back faces in the sun: north.",
+    "type": "",
     "phonetic": "",
     "semantic": "",
     "similar": [
@@ -11576,14 +11657,20 @@
   },
   "左": {
     "dec": "⿸？工",
-    "parts": [],
+    "parts": [
+      {
+        "c": "工",
+        "py": "gōng",
+        "en": "labor"
+      }
+    ],
     "radical": {
       "c": "工",
       "py": "gōng",
       "en": "labor"
     },
-    "hint": "A left hand; compare 又",
-    "type": "pictographic",
+    "hint": "A left hand (the ナ on top) holding 工, a tool: left, and to help. Compare 右, the hand over 口.",
+    "type": "",
     "phonetic": "",
     "semantic": "",
     "similar": [
@@ -11606,13 +11693,24 @@
   },
   "右": {
     "dec": "⿸？口",
-    "parts": [],
+    "parts": [
+      {
+        "c": "又",
+        "py": "yòu",
+        "en": "and"
+      },
+      {
+        "c": "口",
+        "py": "kǒu",
+        "en": "mouth"
+      }
+    ],
     "radical": {
       "c": "口",
       "py": "kǒu",
       "en": "mouth"
     },
-    "hint": "",
+    "hint": "A right hand (又, written ナ here) and 口, the mouth: hand and mouth helping each other. Compare 左, the hand over 工.",
     "type": "",
     "phonetic": "",
     "semantic": "",
@@ -13965,13 +14063,19 @@
   },
   "以": {
     "dec": "⿰？人",
-    "parts": [],
+    "parts": [
+      {
+        "c": "人",
+        "py": "rén",
+        "en": "man"
+      }
+    ],
     "radical": {
       "c": "人",
       "py": "rén",
       "en": "man"
     },
-    "hint": "",
+    "hint": "The left part is an old drawing of a plough; 人 on the right is the person working with it: to use, by means of.",
     "type": "",
     "phonetic": "",
     "semantic": "",
@@ -14607,14 +14711,20 @@
   },
   "黑": {
     "dec": "⿱？灬",
-    "parts": [],
+    "parts": [
+      {
+        "c": "灬",
+        "py": "huǒ",
+        "en": "fire"
+      }
+    ],
     "radical": {
       "c": "黑",
       "py": "hēi",
       "en": "black"
     },
-    "hint": "A man's face blacked by soot from a fire 灬",
-    "type": "ideographic",
+    "hint": "A face blackened by soot from the fire (灬) below: black.",
+    "type": "",
     "phonetic": "",
     "semantic": "",
     "similar": [
@@ -14678,16 +14788,27 @@
   },
   "惠": {
     "dec": "⿱？心",
-    "parts": [],
+    "parts": [
+      {
+        "py": "zhuān",
+        "en": "spindle",
+        "c": "叀"
+      },
+      {
+        "c": "心",
+        "py": "xīn",
+        "en": "heart"
+      }
+    ],
     "radical": {
       "c": "心",
       "py": "xīn",
       "en": "heart"
     },
-    "hint": "heart",
-    "type": "pictophonetic",
-    "phonetic": "叀",
-    "semantic": "心",
+    "hint": "心 (heart) under 叀, a spindle turned with care: a careful, kind heart. Kindness, favour (优惠 discount).",
+    "type": "",
+    "phonetic": "",
+    "semantic": "",
     "similar": [
       {
         "c": "惑",
@@ -14791,7 +14912,7 @@
       "py": "ha",
       "en": "kwukyel"
     },
-    "hint": "",
+    "hint": "Simplified from 單, an old drawing of a forked hunting tool: two prongs (丷) on a shaft. 'Single, alone' is a later meaning.",
     "type": "",
     "phonetic": "",
     "semantic": "",
@@ -14922,7 +15043,7 @@
       "py": "yòng",
       "en": "to use"
     },
-    "hint": "",
+    "hint": "An old drawing of a wooden bucket with its handle, the thing you use every day: to use.",
     "type": "",
     "phonetic": "",
     "semantic": "",
@@ -16950,7 +17071,7 @@
       "py": "fāng",
       "en": "square"
     },
-    "hint": "",
+    "hint": "An old drawing, most likely a plough with its handle (亠) on top. From the square plots it turned came 'square' and 'side, direction'.",
     "type": "",
     "phonetic": "",
     "semantic": "",
@@ -17061,16 +17182,27 @@
   },
   "往": {
     "dec": "⿰彳⿱？王",
-    "parts": [],
+    "parts": [
+      {
+        "c": "彳",
+        "py": "chì",
+        "en": "to step with the left foot"
+      },
+      {
+        "c": "主",
+        "py": "zhǔ",
+        "en": "to own"
+      }
+    ],
     "radical": {
       "c": "彳",
       "py": "chì",
       "en": "to step with the left foot"
     },
-    "hint": "step",
-    "type": "pictophonetic",
-    "phonetic": "王",
-    "semantic": "彳",
+    "hint": "彳 (step) gives the meaning: to go. The right side looks like 主, but was a foot (止) over 王 (wáng), which gave the sound.",
+    "type": "",
+    "phonetic": "",
+    "semantic": "",
     "similar": [
       {
         "c": "住",
@@ -17296,14 +17428,20 @@
   },
   "先": {
     "dec": "⿱⿰？土儿",
-    "parts": [],
+    "parts": [
+      {
+        "c": "儿",
+        "py": "ér",
+        "en": "son"
+      }
+    ],
     "radical": {
       "c": "儿",
       "py": "ér",
       "en": "son"
     },
-    "hint": "Someone stepping 止 in front of another person 儿",
-    "type": "ideographic",
+    "hint": "A foot (止, the top) stepping out in front of a person (儿): first, before.",
+    "type": "",
     "phonetic": "",
     "semantic": "",
     "similar": [
@@ -18841,14 +18979,20 @@
   },
   "旅": {
     "dec": "⿰方⿱？氏",
-    "parts": [],
+    "parts": [
+      {
+        "c": "方",
+        "py": "fāng",
+        "en": "square"
+      }
+    ],
     "radical": {
       "c": "方",
       "py": "fāng",
       "en": "square"
     },
-    "hint": "A man 方 traveling with a pack 氏 on his back",
-    "type": "ideographic",
+    "hint": "方 and the stroke over it are an old flag; the people below are marching under it. An army on the move, then a journey (旅游).",
+    "type": "",
     "phonetic": "",
     "semantic": "",
     "similar": [
@@ -19615,7 +19759,7 @@
       "py": "jǐ",
       "en": "self"
     },
-    "hint": "",
+    "hint": "Grew out of the same old drawing as 巳 (sì). Tell the three apart by the gap at the top: 己 jǐ open, 已 yǐ half closed, 巳 sì closed.",
     "type": "",
     "phonetic": "",
     "semantic": "",
@@ -20397,16 +20541,22 @@
   },
   "春": {
     "dec": "⿱？日",
-    "parts": [],
+    "parts": [
+      {
+        "c": "日",
+        "py": "rì",
+        "en": "sun"
+      }
+    ],
     "radical": {
       "c": "日",
       "py": "rì",
       "en": "sun"
     },
-    "hint": "sun",
-    "type": "pictophonetic",
+    "hint": "日 (sun) gives the meaning. The top is a squeezed form of 艸 (grass) and 屯 (tún), which gave the sound: plants pushing up in the spring sun.",
+    "type": "",
     "phonetic": "",
-    "semantic": "日",
+    "semantic": "",
     "similar": [
       {
         "c": "奉",
@@ -21252,14 +21402,25 @@
   },
   "足": {
     "dec": "⿱口？",
-    "parts": [],
+    "parts": [
+      {
+        "c": "口",
+        "py": "kǒu",
+        "en": "mouth"
+      },
+      {
+        "c": "止",
+        "py": "zhǐ",
+        "en": "to stop"
+      }
+    ],
     "radical": {
       "c": "足",
       "py": "zú",
       "en": "foot"
     },
-    "hint": "The leg 口 above the foot",
-    "type": "pictographic",
+    "hint": "口 here is the knee cap, not a mouth; below is 止, a foot, written a little differently: leg, foot.",
+    "type": "",
     "phonetic": "",
     "semantic": "",
     "similar": [
@@ -21323,16 +21484,27 @@
   },
   "赛": {
     "dec": "⿱宀⿱？贝",
-    "parts": [],
+    "parts": [
+      {
+        "c": "塞",
+        "py": "sāi",
+        "en": "to stop up"
+      },
+      {
+        "c": "贝",
+        "py": "bèi",
+        "en": "sea shell"
+      }
+    ],
     "radical": {
       "c": "贝",
       "py": "bèi",
       "en": "sea shell"
     },
-    "hint": "money",
-    "type": "pictophonetic",
-    "phonetic": "宀",
-    "semantic": "贝",
+    "hint": "贝 (shell, money) gives the meaning: a thank-you offering to the gods, later a contest. The top is 塞 (sài) without its 土, which gives the sound.",
+    "type": "",
+    "phonetic": "",
+    "semantic": "",
     "similar": [
       {
         "c": "寒",
@@ -21353,16 +21525,42 @@
   },
   "赢": {
     "dec": "⿱吂⿲⺼贝？",
-    "parts": [],
+    "parts": [
+      {
+        "c": "亡",
+        "py": "wáng",
+        "en": "death"
+      },
+      {
+        "c": "口",
+        "py": "kǒu",
+        "en": "mouth"
+      },
+      {
+        "c": "月",
+        "py": "yuè",
+        "en": "moon"
+      },
+      {
+        "c": "贝",
+        "py": "bèi",
+        "en": "sea shell"
+      },
+      {
+        "c": "凡",
+        "py": "fán",
+        "en": "any"
+      }
+    ],
     "radical": {
       "c": "贝",
       "py": "bèi",
       "en": "sea shell"
     },
-    "hint": "money",
-    "type": "pictophonetic",
+    "hint": "Five parts, top to bottom and left to right. 贝 (shell, money) gives the meaning: to gain, to win.",
+    "type": "",
     "phonetic": "",
-    "semantic": "贝",
+    "semantic": "",
     "similar": [
       {
         "c": "嬴",
@@ -21635,7 +21833,7 @@
       "py": "sì",
       "en": "the hours from 9 to 11"
     },
-    "hint": "",
+    "hint": "An old drawing of a big snake (one that could swallow an elephant, says an old dictionary). Now used for its sound: 尾巴, 嘴巴, 巴黎.",
     "type": "",
     "phonetic": "",
     "semantic": "",
@@ -21782,16 +21980,27 @@
   },
   "紧": {
     "dec": "⿱⿰？又糸",
-    "parts": [],
+    "parts": [
+      {
+        "c": "又",
+        "py": "yòu",
+        "en": "and"
+      },
+      {
+        "c": "糸",
+        "py": "mì",
+        "en": "silk"
+      }
+    ],
     "radical": {
       "c": "糸",
       "py": "mì",
       "en": "silk"
     },
-    "hint": "silk",
-    "type": "pictophonetic",
+    "hint": "糸 (silk thread) gives the meaning: thread pulled tight. The top is a hand (又) holding something firmly, a short form of 臤 (qiān), which gave the sound.",
+    "type": "",
     "phonetic": "",
-    "semantic": "糸",
+    "semantic": "",
     "similar": [
       {
         "c": "坚",
@@ -22473,13 +22682,24 @@
   },
   "黎": {
     "dec": "⿰黍？",
-    "parts": [],
+    "parts": [
+      {
+        "c": "黍",
+        "py": "shǔ",
+        "en": "broomcorn millet"
+      },
+      {
+        "c": "利",
+        "py": "lì",
+        "en": "gains"
+      }
+    ],
     "radical": {
       "c": "黍",
       "py": "shǔ",
       "en": "broomcorn millet"
     },
-    "hint": "",
+    "hint": "黍 (millet, a sticky grain) gives the meaning; the top right is a shortened 利 (lì), which gives the sound. Now mostly in 黎明 dawn and 巴黎 Paris.",
     "type": "",
     "phonetic": "",
     "semantic": "",
@@ -22913,7 +23133,7 @@
       "py": "yī",
       "en": "one"
     },
-    "hint": "",
+    "hint": "Simplified from 業: the toothed board on a rack where bells and drums hung. Later a task or line of work: 作业, 职业, 毕业.",
     "type": "",
     "phonetic": "",
     "semantic": "",
@@ -23563,7 +23783,7 @@
       "py": "qí",
       "en": "even"
     },
-    "hint": "",
+    "hint": "Simplified from 齊, ears of grain standing all the same height: even, all together. The top only looks like 文.",
     "type": "",
     "phonetic": "",
     "semantic": "",
@@ -26231,13 +26451,24 @@
   },
   "伤": {
     "dec": "⿰亻⿱？力",
-    "parts": [],
+    "parts": [
+      {
+        "c": "亻",
+        "py": "rén",
+        "en": "man"
+      },
+      {
+        "c": "力",
+        "py": "lì",
+        "en": "strength"
+      }
+    ],
     "radical": {
       "c": "亻",
       "py": "rén",
       "en": "man"
     },
-    "hint": "",
+    "hint": "Simplified from 傷: 亻 (person) gives the meaning, a hurt person. The right side, once the sound part, is now a short stroke over 力.",
     "type": "",
     "phonetic": "",
     "semantic": "",
@@ -28130,16 +28361,22 @@
   },
   "译": {
     "dec": "⿰讠？",
-    "parts": [],
+    "parts": [
+      {
+        "c": "讠",
+        "py": "yán",
+        "en": "words"
+      }
+    ],
     "radical": {
       "c": "讠",
       "py": "yán",
       "en": "words"
     },
-    "hint": "speech",
-    "type": "pictophonetic",
+    "hint": "讠 (speech) gives the meaning: turn speech into another language. The right side is a short form of 睪 (yì), which gave the sound (譯 → 译). 择 has the same right side.",
+    "type": "",
     "phonetic": "",
-    "semantic": "讠",
+    "semantic": "",
     "similar": [
       {
         "c": "泽",
@@ -30061,16 +30298,22 @@
   },
   "览": {
     "dec": "⿱？见",
-    "parts": [],
+    "parts": [
+      {
+        "c": "见",
+        "py": "jiàn",
+        "en": "to see"
+      }
+    ],
     "radical": {
       "c": "见",
       "py": "jiàn",
       "en": "to see"
     },
-    "hint": "see",
-    "type": "pictophonetic",
+    "hint": "见 (see) gives the meaning: to look over (游览, 展览). The top is a short form of 监 (jiān), which gave the sound (覽 → 览).",
+    "type": "",
     "phonetic": "",
-    "semantic": "见",
+    "semantic": "",
     "similar": [
       {
         "c": "见",
@@ -30337,13 +30580,19 @@
   },
   "向": {
     "dec": "⿵？口",
-    "parts": [],
+    "parts": [
+      {
+        "c": "口",
+        "py": "kǒu",
+        "en": "mouth"
+      }
+    ],
     "radical": {
       "c": "口",
       "py": "kǒu",
       "en": "mouth"
     },
-    "hint": "",
+    "hint": "A house with a window (口) in the wall; the stroke on top is the roof peak. A window faces one way: to face, towards.",
     "type": "",
     "phonetic": "",
     "semantic": "",
@@ -31069,14 +31318,20 @@
   },
   "步": {
     "dec": "⿱止？",
-    "parts": [],
+    "parts": [
+      {
+        "c": "止",
+        "py": "zhǐ",
+        "en": "to stop"
+      }
+    ],
     "radical": {
       "c": "止",
       "py": "zhǐ",
       "en": "to stop"
     },
-    "hint": "Modern form of 歨; putting one foot 止 in front of the other",
-    "type": "ideographic",
+    "hint": "Two feet, one in front of the other: 止 on top, and below another foot, flipped (it only looks like 少): a step.",
+    "type": "",
     "phonetic": "",
     "semantic": "",
     "similar": [
@@ -32260,14 +32515,25 @@
   },
   "节": {
     "dec": "⿱艹？",
-    "parts": [],
+    "parts": [
+      {
+        "c": "艹",
+        "py": "cǎo",
+        "en": "grass"
+      },
+      {
+        "c": "卩",
+        "py": "jié",
+        "en": "seal"
+      }
+    ],
     "radical": {
       "c": "艹",
       "py": "cǎo",
       "en": "grass"
     },
-    "hint": "Simplified form of 節; sections of bamboo ⺮",
-    "type": "ideographic",
+    "hint": "Simplified from 節 (⺮ bamboo + 即 jí, the sound). The bamboo top became 艹, the rest 卩: the joints of bamboo, so 'section, festival'.",
+    "type": "",
     "phonetic": "",
     "semantic": "",
     "similar": [
@@ -32716,7 +32982,7 @@
       "py": "piě",
       "en": "slash"
     },
-    "hint": "",
+    "hint": "An old drawing of breath or a sound rising: the strokes on top are the breath. Used as a particle: 似乎, 在乎.",
     "type": "",
     "phonetic": "",
     "semantic": "",
@@ -33991,8 +34257,8 @@
       "py": "shì",
       "en": "scholar"
     },
-    "hint": "Simplified form of 聲; see that character for the etymology",
-    "type": "ideographic",
+    "hint": "Simplified from 聲: 声, a stone chime on its frame; 殳, a hand striking it; and 耳, the ear hearing: sound. Only the chime is left.",
+    "type": "",
     "phonetic": "",
     "semantic": "",
     "similar": [
@@ -34455,14 +34721,20 @@
   },
   "皮": {
     "dec": "⿸？攴",
-    "parts": [],
+    "parts": [
+      {
+        "c": "又",
+        "py": "yòu",
+        "en": "and"
+      }
+    ],
     "radical": {
       "c": "皮",
       "py": "pí",
       "en": "skin"
     },
-    "hint": "A hand using a tool 攴 to strip the hide from a carcass",
-    "type": "pictographic",
+    "hint": "A hand (又) stripping the hide off an animal: skin.",
+    "type": "",
     "phonetic": "",
     "semantic": "",
     "similar": [
@@ -34619,7 +34891,7 @@
       "py": "yá",
       "en": "tooth"
     },
-    "hint": "",
+    "hint": "An old drawing of back teeth (molars) meeting, top and bottom: tooth.",
     "type": "",
     "phonetic": "",
     "semantic": "",
@@ -34725,13 +34997,19 @@
   },
   "择": {
     "dec": "⿰扌？",
-    "parts": [],
+    "parts": [
+      {
+        "c": "扌",
+        "py": "shǒu",
+        "en": "hand"
+      }
+    ],
     "radical": {
       "c": "扌",
       "py": "shǒu",
       "en": "hand"
     },
-    "hint": "",
+    "hint": "扌 (hand) gives the meaning: to pick out by hand. The right side is a short form of 睪 (yì), once the sound part (擇 → 择). 译 has the same right side.",
     "type": "",
     "phonetic": "",
     "semantic": "",
@@ -34966,7 +35244,7 @@
       "py": "yī",
       "en": "one"
     },
-    "hint": "",
+    "hint": "The old form 萬 was a drawing of a scorpion, borrowed for the number ten thousand. 万 is an old short form that replaced it.",
     "type": "",
     "phonetic": "",
     "semantic": "",
@@ -34990,14 +35268,20 @@
   },
   "段": {
     "dec": "⿰？殳",
-    "parts": [],
+    "parts": [
+      {
+        "c": "殳",
+        "py": "shū",
+        "en": "tool"
+      }
+    ],
     "radical": {
       "c": "殳",
       "py": "shū",
       "en": "tool"
     },
-    "hint": "A hand using a chisel 殳 to cut stone",
-    "type": "ideographic",
+    "hint": "A hand with a chisel (殳) cutting stone from a cliff (the left side): a piece, a section.",
+    "type": "",
     "phonetic": "",
     "semantic": "",
     "similar": [
@@ -35026,7 +35310,7 @@
       "py": "ér",
       "en": "and"
     },
-    "hint": "",
+    "hint": "An old drawing of a beard: the top line is the chin, the strokes below are hairs. Borrowed as a word: and, but (而且, 然而).",
     "type": "",
     "phonetic": "",
     "semantic": "",
