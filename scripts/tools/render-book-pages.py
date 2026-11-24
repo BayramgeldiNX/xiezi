@@ -10,7 +10,7 @@ import pymupdf
 from PIL import Image
 
 SRC = os.path.join(os.path.expanduser("~"), "Documents", "Books", "app")
-ALL = ["kouyu", "ledu", "hsk1-tb", "hsk1-wb", "hsk2-tb", "hsk2-wb"]
+ALL = ["kouyu", "kouyu2", "ledu", "hsk1-tb", "hsk1-wb", "hsk2-tb", "hsk2-wb"]
 LIMIT = 900 * 1024
 QUALITY = int(os.environ.get("QUALITY", "72"))
 
