@@ -28,20 +28,40 @@ export function flipOut(el, swap) {
 export const flipIn = (el) => animate(el, [{ transform: `${TURN}(-90deg)` }, { transform: `${TURN}(0)` }], { duration: 180, easing: "ease-out" });
 
 /* ---------- Soft close for dialogs ---------- */
+// A modal dialog blocks every tap on the page until it is really closed, and its faded backdrop is
+// invisible by then. So the close never waits on the animation alone: a timer ends it on time even when
+// frames stall (a busy or backgrounded page), and a cancelled animation ends it too.
+const CLOSE_MS = 150;
 export function softClose(dialog) {
   if (!dialog?.open || dialog.classList.contains("closing")) return;
-  const done = () => { dialog.close(); dialog.classList.remove("closing"); };
+  let timer;
+  const done = () => {
+    clearTimeout(timer);
+    if (!dialog.classList.contains("closing")) return; // closed or reopened meanwhile
+    dialog.classList.remove("closing");
+    if (dialog.open) dialog.close();
+  };
   dialog.classList.add("closing");
-  const a = animate(dialog, [{ opacity: 1, transform: "none" }, { opacity: 0, transform: "translateY(8px)" }], { duration: 150 });
+  const a = animate(dialog, [{ opacity: 1, transform: "none" }, { opacity: 0, transform: "translateY(8px)" }], { duration: CLOSE_MS });
   if (!a) return done();
-  a.onfinish = done;
+  a.onfinish = a.oncancel = done;
+  timer = setTimeout(done, CLOSE_MS + 50);
 }
-// Wire the close button and Esc of a dialog; the code's own .close() calls stay instant.
+// Wire the close button, Esc and a tap outside the dialog; the code's own .close() calls stay instant.
 export function wireSoftClose(dialog) {
   if (!dialog) return;
   dialog.addEventListener("close", () => dialog.classList.remove("closing"));
   dialog.querySelector('form[method="dialog"]')?.addEventListener("submit", (e) => { e.preventDefault(); softClose(dialog); });
   dialog.addEventListener("cancel", (e) => { e.preventDefault(); softClose(dialog); });
+  // A tap on the backdrop closes it (both press and release outside, so a text selection that ends there does not).
+  const outside = (e) => {
+    if (e.target !== dialog) return false;
+    const r = dialog.getBoundingClientRect();
+    return e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom;
+  };
+  let downOut = false;
+  dialog.addEventListener("pointerdown", (e) => { downOut = outside(e); });
+  dialog.addEventListener("click", (e) => { if (downOut && outside(e)) softClose(dialog); downOut = false; });
 }
 
 /* ---------- Page slides ---------- */
