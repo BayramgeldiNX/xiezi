@@ -186,7 +186,8 @@ addEventListener("hashchange", (e) => {
 // Leave a page the way the back gesture would, so history stays tidy.
 function back(to) {
   const from = history.state?.from;
-  if (from && (from === to || (to === "#/" && (from === "#" || from === "#/")))) history.back();
+  // A lesson opened from Search goes straight back to Search, not up to the book page.
+  if (from && ((current === "lessonView" && from.startsWith("#/search")) || from === to || (to === "#/" && (from === "#" || from === "#/")))) history.back();
   else go(to);
 }
 let pdfFrom = "#/shelf";

@@ -10,6 +10,8 @@ import * as progress from "../progress/store.js";
 import { charLinks } from "./charsheet.js";
 
 const MAX = 50;
+// The last search and where the list was scrolled, so coming back from a word restores it.
+let last = { q: "", y: 0 };
 const hasHan = (q) => /[㐀-鿿豈-﫿]/.test(q);
 
 export function openSearch() {
@@ -54,15 +56,18 @@ export function openSearch() {
     }).join("") + (list.length > MAX ? `<tr><td class="muted" colspan="3">Showing the first ${MAX} of ${list.length}. Type more to narrow it down.</td></tr>` : "")
       || `<tr><td class="muted">No words match.</td></tr>`;
   };
-  $("#searchInput").addEventListener("input", (e) => render(e.target.value));
+  $("#searchInput").addEventListener("input", (e) => { last = { q: e.target.value, y: 0 }; render(e.target.value); });
   // Same as "Practice writing" in the character sheet: open the word in its lesson.
   rows.addEventListener("click", (e) => {
     const b = e.target.closest("[data-practice]");
     if (!b) return;
+    last.y = scrollY;
     const w = all.find((x) => x.w === b.dataset.practice), L = LESSONS.find((l) => l.id === w.lesson);
     progress.place.set({ lid: L.id, word: L.words.findIndex((x) => x.w === w.w), tab: "write" });
     location.hash = `#/lesson/${L.id}/write?${Date.now()}`;
   });
-  render();
-  $("#searchInput").focus({ preventScroll: true }); // ready to type as soon as the page opens
+  $("#searchInput").value = last.q;
+  render(last.q);
+  if (last.y) scrollTo(0, last.y);
+  if (!last.q) $("#searchInput").focus({ preventScroll: true }); // ready to type as soon as the page opens
 }
