@@ -7,6 +7,7 @@ import { animate, flipOut, flipIn } from "../lib/motion.js";
 import { app } from "../app.js";
 import * as progress from "../progress/store.js";
 import * as screen from "../lib/screen.js";
+import { charLinks } from "./charsheet.js";
 
 let deck = null;
 const ROUND = 12; // cards dealt per round; the rest wait for the next one
@@ -52,14 +53,16 @@ function cardsRender() {
   }
   const w = words[deck.queue[0]];
   const front = deck.dir === "hz" ? `<div class="fc-front">${w.w}</div>` : `<div class="fc-front en">${w.en}</div>`;
-  const back = `<div class="fc-back"><div class="hz">${w.w}</div><div class="py">${tonePy(w.py)}</div><div class="en">${w.en}</div></div>`;
+  const back = `<div class="fc-back"><div class="hz">${charLinks(w.w)}</div><div class="py">${tonePy(w.py)}</div><div class="en">${w.en}</div></div>`;
   host.innerHTML = `<div class="fc-wrap">
     <div class="modes" role="tablist" aria-label="Card front">
       <button class="mode" role="tab" data-dir="hz" aria-selected="${deck.dir === "hz"}">汉字 → meaning</button>
       <button class="mode" role="tab" data-dir="en" aria-selected="${deck.dir === "en"}">English → 汉字</button>
     </div>
     <div class="progress">${deck.rounds > 1 ? `Round ${deck.round} of ${deck.rounds} · ` : ""}${deck.queue.length} left · ${deck.known} known</div>
-    <button class="fc" type="button" id="fcCard" aria-label="Flip card">${deck.flipped ? back : front + `<div class="tap">Tap to flip</div>`}</button>
+    ${deck.flipped // the back is not a button, so its characters can be (tap one for its 字 card)
+      ? `<div class="fc open" id="fcCard">${back}<div class="tap">Tap a character to see it up close</div></div>`
+      : `<button class="fc" type="button" id="fcCard" aria-label="Flip card">${front}<div class="tap">Tap to flip</div></button>`}
     <div class="fc-controls">
       ${deck.flipped
         ? `<button class="btn big" type="button" id="fcAgainOne">Again</button>${sayBtns(w.w, w.py)}<button class="btn primary big" type="button" id="fcGot">${icon("check")} Got it</button>`
