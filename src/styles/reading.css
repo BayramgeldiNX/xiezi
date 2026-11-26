@@ -25,6 +25,10 @@
 .rd-peek summary { font-size: .8125rem; }
 .rd-mini { padding: 8px 0 0; display: grid; gap: 4px; font-family: var(--display); font-size: 1.25rem; }
 .rd-mini p { margin: 0; }
+.rd-mline { display: grid; grid-template-columns: 1.4em 1fr; gap: 6px; align-items: start; }
+.rd-mline .who { padding-top: 0; }
+.rd-mini .q-py { margin: 0; }
+.rd-mini .q-en { font-family: var(--body); margin: 0 0 4px; }
 .build { display: flex; flex-wrap: wrap; gap: 8px; min-height: 56px; width: 100%; padding: 8px; border-radius: var(--r2); border: 1px dashed var(--line2); align-items: center; }
 .build.pool { border: 0; padding: 0; min-height: 0; }
 .chip { font-family: var(--display); font-size: 1.25rem; font-weight: 700; padding: 4px 16px; min-height: 44px; border-radius: var(--pill); border: 0; background: var(--card2); color: var(--ink); cursor: pointer; transition: transform var(--fast) var(--spring); }

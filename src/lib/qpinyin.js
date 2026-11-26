@@ -66,8 +66,8 @@ export function wirePinyin(root, { annotateText = true } = {}) {
 const PROMPTS = ".hz, .big-hz, .prompt-big, .wb-q, .gr-q";
 function annotate(root) {
   // prompts (and the "show the text" lines): not the answer boxes or choices
-  root.querySelectorAll(PROMPTS).forEach((el) => {
-    if (el.closest(".choices, .answer, .controls, .result-list") || el.parentElement?.closest(PROMPTS)) return;
+  root.querySelectorAll(PROMPTS + ", [data-en-src]").forEach((el) => {
+    if (el.closest(".choices, .answer, .controls, .result-list") || el.parentElement?.closest(PROMPTS + ", [data-en-src]")) return;
     if (el.querySelector(".py") || el.nextElementSibling?.classList.contains("q-py")) return;
     const t = el.textContent;
     if (!HAN.test(t)) return;
@@ -80,12 +80,13 @@ function annotate(root) {
 }
 
 // English under each Chinese prompt and dialog line (never inside choices or answers). When the
-// choices are English (a meaning quiz), the prompt's English would give the answer away: skip.
+// choices are English (a meaning quiz), the prompt's English would give the answer away: only the
+// text lines a question is about ([data-en-src], e.g. a dialog in Read & answer) get English then.
 const EN_SKIP = ".choices, .answer, .controls, .result-list, .choice, .q-py, .q-en, .c-py, button:not(.char-link), .lbl, .progress";
 function annotateEn(root) {
   const choices = [...root.querySelectorAll(".choice")];
-  if (choices.length && !choices.some((c) => HAN.test(c.textContent))) return;
-  const cands = [...root.querySelectorAll(PROMPTS + ", .rd-hz, [data-en-src]")];
+  const enChoices = choices.length && !choices.some((c) => HAN.test(c.textContent));
+  const cands = [...root.querySelectorAll(enChoices ? "[data-en-src]" : PROMPTS + ", .rd-hz, [data-en-src]")];
   for (const el of cands) {
     if (el.closest(EN_SKIP) || el.parentElement?.closest(PROMPTS + ", [data-en-src]")) continue;
     if (el.dataset.enDone) continue;

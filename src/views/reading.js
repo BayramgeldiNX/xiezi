@@ -153,7 +153,7 @@ export function textQuiz(ui, readings, { back, single, items } = {}) {
     ...(single ? { words: qs, count: qs.length } : { items }),
     id: (x) => `${x.r.key}#${x.i}`, label: (x) => x.r.title,
     ask: (x) => ({ html: `<details class="rd-peek" ${single ? "" : "open"}><summary>${x.r.title} · show text</summary>
-        <div class="rd-mini">${x.r.lines.map((l) => `<p><span class="who">${l.who}</span> <span data-en-src>${l.hz}</span></p>`).join("")}</div></details>
+        <div class="rd-mini">${x.r.lines.map((l) => `<div class="rd-mline"><span class="who">${l.who}</span><div><span data-en-src${l.en ? ` data-en-done="1"` : ""}>${l.hz}</span><span class="q-py">${l.py ? tonePy(l.py) : pyOf(l.hz)}</span>${l.en ? `<span class="q-en" lang="en">${esc(l.en)}</span>` : ""}</div></div>`).join("")}</div></details>
         <p class="hint">${esc(x.q.q)}</p>` }),
     explain: (x) => keyOf.reading(x.q),
     makeOptions: (x) => x.q.options.map((o, i) => ({ t: o, html: /\p{Script=Han}/u.test(o) ? `<span class="hz" style="font-size:1.25rem">${esc(o)}</span>` : `<span class="en">${esc(o)}</span>`, correct: i === x.q.answer })),
