@@ -221,5 +221,5 @@ document.addEventListener("click", (e) => {
   showChar(el.dataset.char, !!el.closest("#charSheet"));
 }, true);
 
-// A word with each known character tappable.
-export const charLinks = (word) => [...word].map((c) => (CHARINFO[c] ? `<button type="button" class="char-link" data-char="${c}" aria-label="About ${c}">${c}</button>` : c)).join("");
+// A word with each known character tappable (with all, every Chinese character: the card works for any).
+export const charLinks = (word, all = false) => [...word].map((c) => (CHARINFO[c] || (all && /\p{Script=Han}/u.test(c)) ? `<button type="button" class="char-link" data-char="${c}" aria-label="About ${c}">${c}</button>` : c)).join("");

@@ -11,6 +11,7 @@ import * as progress from "../progress/store.js";
 import * as nb from "../notebook/store.js";
 import { animate, flipOut, flipIn } from "../lib/motion.js";
 import { runRound } from "./quiz-round.js";
+import { charLinks } from "./charsheet.js";
 
 const isHan = (c) => /\p{Script=Han}/u.test(c);
 const TYPES = ["flash", "listen", "write", "gap"];
@@ -112,8 +113,10 @@ function flash(it, q, S, dirs) {
   const wrap = $("#nbCard", q.el);
   const draw = () => {
     const front = dir === "hz" ? `<div class="fc-front">${esc(e.w)}</div>` : `<div class="fc-front en">${esc(e.en)}</div>`;
-    const back = `<div class="fc-back"><div class="hz">${esc(e.w)}</div><div class="py">${tonePy(esc(e.py || ""))}</div><div class="en">${esc(e.en || "")}</div></div>`;
-    wrap.innerHTML = `<button class="fc" type="button" id="fcCard" aria-label="Flip card">${flipped ? back : front + `<div class="tap">Tap to flip</div>`}</button>
+    const back = `<div class="fc-back"><div class="hz">${charLinks(esc(e.w), true)}</div><div class="py">${tonePy(esc(e.py || ""))}</div><div class="en">${esc(e.en || "")}</div></div>`;
+    wrap.innerHTML = `${flipped // the back is not a button, so its characters can be (tap one for its 字 card)
+      ? `<div class="fc open" id="fcCard">${back}<div class="tap">Tap a character to see it up close</div></div>`
+      : `<button class="fc" type="button" id="fcCard" aria-label="Flip card">${front}<div class="tap">Tap to flip</div></button>`}
       <div class="fc-controls">${flipped
         ? `<button class="btn big" type="button" id="fcNo">Again</button>${sayBtns(e.w, e.py || e.w)}<button class="btn primary big" type="button" id="fcYes">${icon("check")} Got it</button>`
         : `<button class="btn primary big" type="button" id="fcFlip">Flip</button>`}</div>`;
