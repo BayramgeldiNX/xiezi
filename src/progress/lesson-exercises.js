@@ -72,8 +72,8 @@ const EXERCISES = {
   })),
   order: (L, texts) => buildable(lessonSentences(words(L), texts)).map((s) => ({ of: s, item: "o:" + s.hz })),
   "read-pinyin": (L) => words(L).map(word("rp:")),
-  // Flashcards, Match and Word quiz count together.
-  cards: (L) => words(L).map((w) => ({ of: w, item: ["f:" + w.w, "q:" + w.w], label: w.w })),
+  // Flashcards, Match and Word quiz count together for lesson %; each card's own ✓ uses its own key (OWN).
+  cards: (L) => words(L).map((w) => ({ of: w, item: ["f:" + w.w, "q:" + w.w, "mp:" + w.w], label: w.w })),
   radical: (L) => radicalChars(L).map((c) => ({ of: c, item: "rad:" + c, label: c })),
   "gr-fill": (L) => grammarOf([L]).map((d) => ({ of: d, item: "g:" + d.id })),
   ...Object.fromEntries(Object.entries(WB).map(([id, kind]) => [id,
@@ -148,9 +148,20 @@ export function lessonParts(L) {
 export const lessonItems = (L) =>
   Object.fromEntries(Object.entries(lessonParts(L)).map(([k, ps]) => [k, ps.flatMap((p) => p.items)]));
 
-// What is still open: { write: [{ name, exercises, total, left, labels (of the open items) }], … }
+// Exercises that share a part but each show their own ✓: the key kind each one records.
+const OWN = { cards: "f:", "word-quiz": "q:", match: "mp:" };
+// The item exercise `id` itself counts as done: its own key for exercises in OWN, else the shared item.
+export const ownItem = (id, item) => (OWN[id] && Array.isArray(item) && item.find((k) => k.startsWith(OWN[id]))) || item;
+const ownLeft = (p, get) => {
+  const by = {};
+  for (const x of p.exercises) if (OWN[x]) by[x] = p.items.filter((it) => !isDone(ownItem(x, it), get)).length;
+  return by;
+};
+
+// What is still open: { write: [{ name, exercises, total, left, labels (of the open items), byMode }], … }
+// byMode: how many items each exercise in OWN has left by itself (the part counts any of them).
 export const lessonLeft = (L, get) =>
   Object.fromEntries(Object.entries(lessonParts(L)).map(([k, ps]) => [k, ps.map((p) => {
     const open = p.items.map((it, i) => (isDone(it, get) ? -1 : i)).filter((i) => i >= 0);
-    return { name: p.name, exercises: p.exercises, total: p.items.length, left: open.length, labels: p.labels ? open.map((i) => p.labels[i]) : [] };
+    return { name: p.name, exercises: p.exercises, total: p.items.length, left: open.length, labels: p.labels ? open.map((i) => p.labels[i]) : [], byMode: ownLeft(p, get) };
   })]));

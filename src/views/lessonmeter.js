@@ -34,7 +34,8 @@ let left = null; // lessonLeft() of the open lesson
 export function noteHtml(skill, mode) {
   const p = left?.[skill]?.find((x) => x.exercises.includes(mode));
   if (!p) return "";
-  return p.left ? `<span class="todo-n">${p.left} left</span>` : `<span class="todo-n done" aria-label="Done">✓</span>`;
+  const n = p.byMode?.[mode] ?? p.left;
+  return n ? `<span class="todo-n">${n} left</span>` : `<span class="todo-n done" aria-label="Done">✓</span>`;
 }
 
 function renderLeft() {

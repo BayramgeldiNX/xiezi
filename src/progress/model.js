@@ -63,7 +63,7 @@ export function wordStatus(chars, get) {
 // How much a word needs review: 0 = fine, higher = weaker. null = never practiced.
 export function weakness(word, chars, get) {
   const d = get("d:" + word), f = get("f:" + word);
-  const extra = ["l:", "q:", "s:"].map((k) => get(k + word)).filter((s) => s?.n);
+  const extra = ["l:", "q:", "mp:", "s:"].map((k) => get(k + word)).filter((s) => s?.n);
   const ws = chars.map((c) => get("w:" + c)).filter((s) => s?.n);
   if (!d?.n && !f?.n && !ws.length && !extra.length) return null;
   let score = 0;
@@ -85,7 +85,7 @@ export function weakReasons(word, chars, get) {
   if (d?.n && !d.lastOk) out.push("missed in dictation");
   if (f?.n && !f.lastOk) out.push("flashcard “again”");
   if (get("l:" + word)?.n && !get("l:" + word).lastOk) out.push("missed in listening");
-  if (get("q:" + word)?.n && !get("q:" + word).lastOk) out.push("missed in a quiz");
+  if (["q:", "mp:"].some((k) => get(k + word)?.n && !get(k + word).lastOk)) out.push("missed in a quiz");
   if (get("s:" + word)?.n && !get("s:" + word).lastOk) out.push("not yet in speaking");
   const bad = chars.filter((c) => { const s = get("w:" + c); return s?.n && !s.lastOk; });
   if (bad.length) out.push(`mistakes writing ${bad.join("")}`);

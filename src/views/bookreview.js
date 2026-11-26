@@ -17,7 +17,7 @@ const MIXED = 12;   // items in a mixed session
 // Each type: which results count for its schedule (keys), what its items are, and how it is practiced.
 // open: can start here with questions not practiced yet, not only ones that came back.
 const TYPES = [
-  { id: "vocab", seal: "词", name: "Vocabulary", sub: "Meanings and words", keys: ["q:", "f:", "rp:"] },
+  { id: "vocab", seal: "词", name: "Vocabulary", sub: "Meanings and words", keys: ["q:", "mp:", "f:", "rp:"] },
   { id: "listen", seal: "听", name: "Listening", sub: "Hear a word, pick it or its meaning", keys: ["l:"] },
   { id: "write", seal: "写", name: "Writing", sub: "Write words from sound, pinyin or meaning", keys: ["d:"] },
   { id: "speak", seal: "说", name: "Speaking", sub: "Say words aloud", keys: ["s:"] },

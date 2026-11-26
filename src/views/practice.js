@@ -22,7 +22,7 @@ import { lessonContent } from "../sync/content.js";
 import { showWhy } from "../lib/explain.js";
 import { keyOf } from "../lib/explain-key.js";
 import { workbookQuiz, fillQuiz, radicalQuiz } from "./workbook.js";
-import { available, exerciseItems } from "../progress/lesson-exercises.js";
+import { available, exerciseItems, ownItem } from "../progress/lesson-exercises.js";
 import { hanziLesson, pronTips } from "./hanzi.js";
 import { noteHtml } from "./lessonmeter.js";
 import { pickRound, openFirst } from "../lib/round.js";
@@ -32,7 +32,7 @@ import * as screen from "../lib/screen.js";
 // A round of exercise `id` in this lesson: only what is not done yet while there is any (see lib/round.js).
 // Which items an exercise asks, and their keys, come from progress/lesson-exercises.js.
 const entriesOf = (id) => exerciseItems(id, thisLesson(), P.ctx.readings || []);
-const roundOf = (id, n) => { const all = entriesOf(id); return () => pickRound(all, (e) => e.item, progress.get, n).map((e) => e.of); };
+const roundOf = (id, n) => { const all = entriesOf(id); return () => pickRound(all, (e) => ownItem(id, e.item), progress.get, n).map((e) => e.of); };
 
 export const SKILLS = {
   write: {
@@ -210,7 +210,7 @@ function startMode(mode) {
     case "say-word": { const r = roundOf("say-word", 10); return speak({ title: "Say the word", items: () => r().map((w) => ({ w, text: w.w, py: w.py, en: w.en })) }); }
     case "say-sentence": { const r = roundOf("say-sentence", 10); return speak({ title: "Say the sentence", items: () => r().map((w) => ({ w, text: w.ex.hz.replace(/[AB]: /g, ""), py: w.ex.py.replace(/[AB]: /g, ""), en: w.ex.en, sentence: true })) }); }
     case "cards": return cardsOpen({ host, words: roundOf("cards"), lesson, back, next: nextStep });
-    case "match": { const all = entriesOf("match"); return matchGame(() => openFirst(all, (e) => e.item, progress.get).map((e) => e.of)); }
+    case "match": { const all = entriesOf("match"); return matchGame(() => openFirst(all, (e) => ownItem("match", e.item), progress.get).map((e) => e.of)); }
     case "word-quiz": return vocabQuiz({ items: roundOf("word-quiz", 10), pool: words, mode: "mixed", title: "Word quiz" });
     case "list": return wordList(words);
     case "texts": return bookTexts(P.ctx.readings || []);
@@ -394,7 +394,7 @@ function matchGame(words) {
     if (a.t.w === t.w && a.t.side !== t.side) {
       a.b.classList.add("done"); b.classList.add("done");
       $("#mStatus").style.color = ""; $("#mStatus").textContent = "";
-      progress.record("q:" + t.w.w, { ok: firstTry.has(t.w.w), miss: firstTry.has(t.w.w) ? 0 : 1 }, { sfx: "right" });
+      progress.record("mp:" + t.w.w, { ok: firstTry.has(t.w.w), miss: firstTry.has(t.w.w) ? 0 : 1 }, { sfx: "right" });
       say(t.w.w);
       if (++done === set.length) {
         const secs = Math.round((Date.now() - t0) / 1000);

@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { LESSONS } from "../src/data/index.js";
-import { exerciseItems, lessonParts, available } from "../src/progress/lesson-exercises.js";
+import { exerciseItems, lessonParts, lessonLeft, available } from "../src/progress/lesson-exercises.js";
 import { isDone } from "../src/progress/completion.js";
 
 const lesson = (id) => LESSONS.find((l) => l.id === id);
@@ -25,7 +25,17 @@ describe("exerciseItems", () => {
     const L = lesson("hsk1/3");
     expect(keysOf("pinyin", L)).toEqual(keysOf("dict", L));
     expect(keysOf("match", L)).toEqual(keysOf("cards", L));
-    expect(keysOf("cards", L)[0]).toEqual(["f:" + L.words[0].w, "q:" + L.words[0].w]);
+    expect(keysOf("cards", L)[0]).toEqual(["f:" + L.words[0].w, "q:" + L.words[0].w, "mp:" + L.words[0].w]);
+  });
+
+  it("Flashcards, Match and Word quiz each show their own ✓, while lesson % counts any of them", () => {
+    const L = lesson("hsk1/3");
+    const get = (k) => (k.startsWith("f:") ? { ok: 1 } : undefined); // every flashcard known
+    const p = lessonLeft(L, get).words.find((x) => x.exercises.includes("cards"));
+    expect(p.left).toBe(0);
+    expect(p.byMode.cards).toBe(0);
+    expect(p.byMode.match).toBe(p.total);
+    expect(p.byMode["word-quiz"]).toBe(p.total);
   });
 
   it("exercises that record nothing ask nothing", () => {
