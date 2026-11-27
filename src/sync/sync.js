@@ -4,6 +4,7 @@
 //   users/{uid}/items/{key}     { k: key, d: { [deviceId]: stat }, t: serverTime }
 //   users/{uid}/sessions/{id}   one finished practice session
 //   users/{uid}/meta/place      { lid, word, tab, at }: where you were last (newest wins)
+//   users/{uid}/meta/profile    { nick, photo, at }: nickname and small photo (newest wins; lib/profile.js)
 //   users/{uid}/notebook/{word} a Notebook word; devices and Claude write single fields (merge)
 //   users/{uid}/tests/{docId(book/test)} { k, d: { [deviceId]: { best, last, tries } } }: a test's results, one entry per device (exam/store.js)
 // Each device writes only its own d.{deviceId} entry, so devices never overwrite each other.
@@ -13,6 +14,7 @@ import * as notebook from "../notebook/store.js";
 import * as exam from "../exam/store.js";
 import { docId } from "./ids.js";
 import { ownerFromStore } from "../pdf/pages.js";
+import { getProfile, applyRemoteProfile, setProfilePush } from "../lib/profile.js";
 
 // Test mode (only when started with VITE_FIREBASE_EMULATOR=1): talk to the local Firebase emulators
 // with a throw-away demo project instead of the real one. Never on in the published app.
@@ -81,6 +83,7 @@ function stop() {
   stopFns.forEach((f) => f());
   stopFns = [];
   progress.setSyncer(null);
+  setProfilePush(null);
   notebook.setSyncer(null);
   exam.setSyncer(null);
   if (state.email) { progress.clearRemote(); notebook.clearRemote(); exam.clearRemote(); }
@@ -99,6 +102,8 @@ async function start(user) {
   const safely = (fn) => { try { fn().catch(fail); } catch (e) { fail(e); } };
 
   const placeRef = F.doc(db, "users", uid, "meta", "place");
+  const profileRef = F.doc(db, "users", uid, "meta", "profile");
+  setProfilePush((p) => safely(() => F.setDoc(profileRef, p)));
   progress.setSyncer({
     pushItem: (key, stat) =>
       safely(() => F.setDoc(itemRef(key), { k: key, d: { [dev]: stat }, t: F.serverTimestamp() }, { merge: true })
@@ -163,6 +168,14 @@ async function start(user) {
     else if ((progress.place.get()?.at || 0) > (remote?.at || 0)) safely(() => F.setDoc(placeRef, progress.place.get()));
   }, fail);
 
+  // Nickname and photo (newest wins, like the place above).
+  const profileSub = F.onSnapshot(profileRef, (snap) => {
+    const remote = snap.data();
+    if (applyRemoteProfile(remote)) return;
+    const mine = getProfile();
+    if (mine.at && mine.at > (remote?.at || 0)) safely(() => F.setDoc(profileRef, mine));
+  }, fail);
+
   const nb = F.onSnapshot(F.collection(db, "users", uid, "notebook"), (snap) => {
     snap.docChanges().forEach((ch) => {
       if (ch.type === "removed") notebook.applyRemoved(ch.doc.data().w);
@@ -186,7 +199,7 @@ async function start(user) {
     if (!testsReady && snap.metadata.fromCache === false) { testsReady = true; exam.unsentAll().forEach(([k, rec]) => testPush(k, rec)); }
   }, fail);
 
-  stopFns.push(items, sess, placeSub, nb, tests);
+  stopFns.push(items, sess, placeSub, profileSub, nb, tests);
 }
 
 /* ---------- private book content ---------- */

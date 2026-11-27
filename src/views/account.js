@@ -2,6 +2,7 @@
 import { $, esc } from "../lib/util.js";
 import { getTheme, setTheme } from "../lib/theme.js";
 import { setting, setSetting } from "../lib/settings.js";
+import { getProfile, setProfile, onProfile, initial, resizePhoto } from "../lib/profile.js";
 
 // One labelled row of choices for a setting.
 const settingRow = (key, label, choices, note = "") => `<div class="set-row"><span>${label}</span>
@@ -27,16 +28,107 @@ const STATUS = {
 export function initAccountChip() {
   const chip = $("#accountChip");
   chip.addEventListener("click", openAccount);
-  onSync((s) => {
+  const paint = () => {
+    const s = syncState();
     const [icon, text] = STATUS[s.status] || STATUS.off;
+    const p = getProfile();
     chip.dataset.status = s.status;
-    chip.innerHTML = `<span aria-hidden="true">${icon}</span> ${s.status === "signed-out" ? "Sign in" : s.status === "offline" ? "Offline" : text}`;
-    if ($("#accountSheet").open) renderSheet();
+    chip.innerHTML = `${p.photo || p.nick ? avatar(p, "") : ""}<span aria-hidden="true">${icon}</span> ${s.status === "signed-out" ? "Sign in" : s.status === "offline" ? "Offline" : text}`;
+  };
+  onSync(() => { paint(); if ($("#accountSheet").open) renderSheet(); });
+  const showProfile = () => {
+    const p = getProfile();
+    $("#home h1").textContent = `${p.nick || "白怀诚"}的写字本`;
+    paint();
+    const side = $("#sideAccount .seal");
+    if (side) {
+      side.classList.toggle("has-photo", !!p.photo);
+      side.innerHTML = p.photo ? `<img src="${esc(p.photo)}" alt="" decoding="async">` : "设";
+    }
+  };
+  showProfile();
+  onProfile(() => { showProfile(); if ($("#accountSheet").open) renderProfile(); });
+}
+
+// The round picture: the photo, or the first letter of the nickname.
+function avatar(p, extra = "") {
+  return `<span class="avatar ${extra}" aria-hidden="true">${p.photo
+    ? `<img src="${esc(p.photo)}" alt="" decoding="async">`
+    : `<span class="av-ch">${esc(initial(p.nick))}</span>`}</span>`;
+}
+
+let pmsg = "";
+let pbusy = false;
+let savedTimer = 0;
+
+function renderProfile() {
+  const box = $("#profileBox");
+  const p = getProfile();
+  const nick = $("#nickInput");
+  if (nick && box.contains(nick)) {
+    // Typing must never be interrupted: only refresh the picture and the buttons.
+    if (document.activeElement === nick) {
+      box.querySelector(".av-btn").innerHTML = avatar(p);
+      box.querySelector(".av-btn").classList.toggle("busy", pbusy);
+      box.querySelector(".prof-acts").innerHTML = profileActs(p);
+      bindActs(box);
+      return;
+    }
+  }
+  box.innerHTML = `<span class="lbl">Profile</span>
+    <div class="prof-card">
+      <button type="button" class="av-btn${pbusy ? " busy" : ""}" id="avBtn" aria-label="Change photo">${avatar(p)}</button>
+      <div class="prof-side">
+        <label class="prof-nick"><span class="prof-lab">Nickname<span class="saved" id="savedNote" role="status"></span></span>
+          <input id="nickInput" maxlength="20" autocomplete="nickname" enterkeyhint="done" placeholder="Your name" value="${esc(p.nick)}"></label>
+        <div class="prof-acts">${profileActs(p)}</div>
+        ${pmsg ? `<p class="prof-note err" role="alert">${esc(pmsg)}</p>` : ""}
+      </div>
+      <input type="file" id="photoFile" accept="image/*" hidden>
+    </div>
+    <hr>`;
+  const input = $("#nickInput");
+  const commit = () => {
+    if (input.value.trim() === getProfile().nick) return;
+    setProfile({ nick: input.value });
+    flashSaved();
+  };
+  input.addEventListener("change", commit);
+  input.addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); input.blur(); } if (e.key !== "Escape") e.stopPropagation(); });
+  $("#avBtn").addEventListener("click", () => $("#photoFile").click());
+  $("#photoFile").addEventListener("change", async (e) => {
+    const f = e.target.files?.[0];
+    e.target.value = "";
+    if (!f) return;
+    pmsg = ""; pbusy = true; renderProfile();
+    try { setProfile({ photo: await resizePhoto(f) }); flashSaved(); }
+    catch (err) { pmsg = err.message || "Couldn't use that photo."; }
+    pbusy = false; renderProfile();
   });
+  bindActs(box);
+}
+
+const profileActs = (p) => `<button type="button" class="btn" data-pact="pick">Change photo</button>${p.photo ? `<button type="button" class="btn link" data-pact="remove">Remove</button>` : ""}`;
+
+function bindActs(box) {
+  box.querySelectorAll("[data-pact]").forEach((b) => b.addEventListener("click", () => {
+    if (b.dataset.pact === "pick") $("#photoFile").click();
+    else { pmsg = ""; setProfile({ photo: null }); flashSaved(); renderProfile(); }
+  }));
+}
+
+function flashSaved() {
+  const el = $("#savedNote");
+  if (!el) return;
+  el.textContent = "Saved ✓";
+  clearTimeout(savedTimer);
+  savedTimer = setTimeout(() => { const n = $("#savedNote"); if (n) n.textContent = ""; }, 1500);
 }
 
 export function openAccount() {
   const d = $("#accountSheet");
+  pmsg = "";
+  renderProfile();
   renderSheet();
   if (!d.open) d.showModal();
 }

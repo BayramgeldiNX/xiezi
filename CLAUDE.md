@@ -46,6 +46,7 @@ The owner uses it on iPhone 16 (home-screen PWA), Mi Pad 7 Pro and Windows. Prog
   - `search.js`: `matchesWord` (汉字, pinyin with or without tones, English).
   - `speech.js`: recordings first, then TTS; `addRecordings` adds private audio.
   - `sfx.js`: sound effects made with Web Audio (no files), settings `sfx` and `sfxVolume`. Taps tick by themselves; writing quizzes get stroke sounds in `makeWriter`; answers and finished exercises sound through `progress.setHooks` (`record(key, result, { sfx | quiet })`, rules in `sfx-pick.js`).
+  - `profile.js`: nickname + photo (Settings → Profile), `xz-profile`, synced to `users/{uid}/meta/profile`, newest `at` wins; the photo is a 256px WebP/JPEG data URL (no Storage). Shown in the Home title, the account chip and the sidebar Settings seal.
   - `typing-check.js`, `draw.js`, `compare.js`, `settings.js`, `theme.js`.
   - `qpinyin.js`: the 拼 Pinyin and 英 English switches in quizzes. English comes from `data/sentence-en.gen.json` (made by `scripts/gen-sentence-en.mjs` from lesson `en` fields plus hand translations in `data/sentence-en/part-*.json`; `--todo N` lists new untranslated sentences).
 - `src/exam/`: tests. `plan.js` (where they sit and how big), `build.js` (picks a paper from lesson content), `grade.js` (scores and seals), `run.js` (one sitting, saved on the device), `store.js` (results, synced), `rows.js` (book-page rows).
