@@ -61,7 +61,12 @@
 .practice-strip .lbl { margin-right: 8px; }
 /* ---------- Character card ---------- */
 /* The tap area stays 44px, but the negative side margins leave each character only 1em wide, so sentences keep normal spacing. */
-.char-link { font: inherit; color: inherit; background: none; border: 0; padding: 0; margin: -8px min(0px, calc((1em - 44px) / 2)); display: inline-grid; place-items: center; min-width: 44px; min-height: 44px; cursor: pointer; text-decoration: underline dotted var(--line2); text-underline-offset: 6px; line-height: inherit; }
+/* Each character is tappable over its own width only (neighbours never overlap, so a tap on 北 never opens 京);
+   the tap area grows to 44px tall, and outward at both ends of a word. */
+.char-link { font: inherit; color: inherit; background: none; border: 0; padding: 0; margin: -8px 0; display: inline-grid; place-items: center; min-height: 44px; position: relative; cursor: pointer; text-decoration: underline dotted var(--line2); text-underline-offset: 6px; line-height: inherit; }
+.char-link::before { content: ""; position: absolute; inset: 0; }
+.char-run > .char-link:first-child::before, .char-link.solo::before { left: min(0px, calc((1em - 44px) / 2)); }
+.char-run > .char-link:last-child::before, .char-link.solo::before { right: min(0px, calc((1em - 44px) / 2)); }
 .char-link:hover { text-decoration-color: var(--muted); }
 .title-char { font-family: var(--display); font-size: 1.5rem; font-weight: 700; }
 .char-sheet { width: min(100% - 24px, 560px); }

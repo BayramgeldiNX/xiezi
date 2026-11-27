@@ -10,6 +10,7 @@ import { charParts, soundFamily, charSenses, wordsWithChar } from "../lib/dict.j
 import { charKind } from "../lib/char-kind.js";
 import * as progress from "../progress/store.js";
 import { charStatus } from "../progress/model.js";
+import { stopClose } from "../lib/motion.js";
 
 const sheet = () => $("#charSheet");
 const name = (c, fallback) => RADICALS[c] || fallback || DICT[c]?.en || "";
@@ -185,6 +186,7 @@ const mineMark = (x) => (inBooks(x.c) ? `✓ ${short(CHARS[x.c]?.en || x.en)}` :
 
 // Open a character's card. From a chip inside the card it goes one step deeper in the trail; from anywhere else it starts a new one.
 export function showChar(c, inside = false) {
+  stopClose(sheet()); // a tap while the card fades out keeps it open for the new character
   if (inside && sheet().open) { if (trail[trail.length - 1] !== c) trail.push(c); } else trail = [c];
   return openChar(c);
 }
@@ -221,5 +223,6 @@ document.addEventListener("click", (e) => {
   showChar(el.dataset.char, !!el.closest("#charSheet"));
 }, true);
 
-// A word with each known character tappable (with all, every Chinese character: the card works for any).
-export const charLinks = (word, all = false) => [...word].map((c) => (CHARINFO[c] || (all && /\p{Script=Han}/u.test(c)) ? `<button type="button" class="char-link" data-char="${c}" aria-label="About ${c}">${c}</button>` : c)).join("");
+// A word with every Chinese character tappable: the card works for any character, not only the books'.
+// The run wrapper lets the first and last character take a wider tap area without overlapping their neighbours.
+export const charLinks = (word) => `<span class="char-run">${[...word].map((c) => (/\p{Script=Han}/u.test(c) ? `<button type="button" class="char-link" data-char="${c}" aria-label="About ${c}">${c}</button>` : c)).join("")}</span>`;

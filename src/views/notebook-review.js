@@ -113,7 +113,7 @@ function flash(it, q, S, dirs) {
   const wrap = $("#nbCard", q.el);
   const draw = () => {
     const front = dir === "hz" ? `<div class="fc-front">${esc(e.w)}</div>` : `<div class="fc-front en">${esc(e.en)}</div>`;
-    const back = `<div class="fc-back"><div class="hz">${charLinks(esc(e.w), true)}</div><div class="py">${tonePy(esc(e.py || ""))}</div><div class="en">${esc(e.en || "")}</div></div>`;
+    const back = `<div class="fc-back"><div class="hz">${charLinks(esc(e.w))}</div><div class="py">${tonePy(esc(e.py || ""))}</div><div class="en">${esc(e.en || "")}</div></div>`;
     wrap.innerHTML = `${flipped // the back is not a button, so its characters can be (tap one for its 字 card)
       ? `<div class="fc open" id="fcCard">${back}<div class="tap">Tap a character to see it up close</div></div>`
       : `<button class="fc" type="button" id="fcCard" aria-label="Flip card">${front}<div class="tap">Tap to flip</div></button>`}
