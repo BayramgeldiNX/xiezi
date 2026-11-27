@@ -32,7 +32,7 @@ export function openSearch() {
     const found = await searchDict(q, (w) => inBooks.has(w));
     if (token !== seq || !found.length) return;
     more.innerHTML = `<h3 class="lbl" style="margin:16px 0 4px">Not in your books</h3><table class="word-table"><tbody>${found.map((w) => `<tr>
-      <td class="hz">${[...w.w].length === 1 ? `<button type="button" class="char-link" data-char="${esc(w.w)}" aria-label="About ${esc(w.w)}">${esc(w.w)}</button>` : esc(w.w)}</td>
+      <td class="hz">${[...w.w].length === 1 ? `<button type="button" class="char-link solo" data-char="${esc(w.w)}" aria-label="About ${esc(w.w)}">${esc(w.w)}</button>` : esc(w.w)}</td>
       <td><span class="py">${tonePy(w.py)}</span><br><span class="en">${esc(w.en.split("; ").slice(0, 3).join("; "))}</span></td>
       <td style="text-align:right;white-space:nowrap">${sayBtns(w.w, w.py, true)}<br>${saveBtn(w)}</td></tr>`).join("")}</tbody></table>`;
   };

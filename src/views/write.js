@@ -89,7 +89,7 @@ export function buildCharCard(host, c, single = false) {
   el.innerHTML = `
     <div class="box view">${gridSVG()}<div class="hw"></div><svg class="stepsvg" viewBox="0 0 1024 1024" hidden aria-hidden="true"></svg></div>
     <div class="info">
-      <div class="title"${single ? " hidden" : ""}><button type="button" class="char-link title-char" data-char="${c}" aria-label="About ${c}">${c}</button><span class="py">${tonePy(py)}</span><span style="color:var(--muted)">${en}</span>${sayBtns(c, py, true)}</div>
+      <div class="title"${single ? " hidden" : ""}><button type="button" class="char-link solo title-char" data-char="${c}" aria-label="About ${c}">${c}</button><span class="py">${tonePy(py)}</span><span style="color:var(--muted)">${en}</span>${sayBtns(c, py, true)}</div>
       <div class="count">${metaText(c, n)}</div>
       <div class="modes" role="tablist" aria-label="Mode">
         <button class="mode" role="tab" data-m="flow">Non-stop</button>

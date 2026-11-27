@@ -47,6 +47,13 @@ export function softClose(dialog) {
   a.onfinish = a.oncancel = done;
   timer = setTimeout(done, CLOSE_MS + 50);
 }
+// Call off a soft close that is still fading, so a dialog opened again at once stays open
+// (otherwise the close's own timer would shut what was just shown).
+export function stopClose(dialog) {
+  if (!dialog?.classList.contains("closing")) return;
+  dialog.classList.remove("closing"); // first, so the cancelled fade's done() does nothing
+  dialog.getAnimations?.().forEach((x) => x.cancel());
+}
 // Wire the close button, Esc and a tap outside the dialog; the code's own .close() calls stay instant.
 export function wireSoftClose(dialog) {
   if (!dialog) return;
