@@ -3,6 +3,7 @@
 import { FINISHED_AT } from "../progress/completion.js";
 import { motionOK } from "../lib/motion.js";
 import { esc } from "../lib/util.js";
+import { getProfile, onProfile } from "../lib/profile.js";
 
 // Which milestones did a rise from `prev` to `next` (ratios 0–1) cross?
 export function crossed(prev, next) {
@@ -13,6 +14,17 @@ const $ = (s) => document.querySelector(s);
 const C = 2 * Math.PI * 15; // ring circumference, r = 15
 let shown = null; // { lid, ratio, pct }
 let counter = 0;
+
+// The profile photo sits inside the ring (decorative). Subscribed once.
+let faceSub = false;
+function showFace(p = getProfile()) {
+  const box = $("#lessonMeter"), img = box?.querySelector(".lm-face");
+  if (!img) return;
+  const src = p.photo || "";
+  if (src) { if (img.getAttribute("src") !== src) img.src = src; } else img.removeAttribute("src");
+  img.hidden = !src;
+  box.classList.toggle("has-face", !!src);
+}
 
 // Count the number up to `to` over ~400ms (instantly under reduced motion).
 function countTo(el, from, to) {
@@ -69,6 +81,8 @@ export function showLessonMeter(lid, c, fresh, todo) {
   const box = $("#lessonMeter"), root = $("#lessonView");
   if (!box) return;
   left = todo || null;
+  showFace();
+  if (!faceSub) { faceSub = true; onProfile(showFace); }
   if (fresh) toggleLeft(false); else renderLeft();
   const prev = !fresh && shown?.lid === lid ? shown : null;
   const gold = c.ratio >= 1, seal = c.finished;

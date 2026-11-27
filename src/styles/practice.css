@@ -199,6 +199,11 @@ details.panel p { margin: 0; }
 .ll-row small { grid-column: 1; color: var(--muted); font-size: .8125rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .ll-row .todo-n { grid-column: 2; grid-row: 1 / span 2; }
 .lmeter svg { width: 34px; height: 34px; transform: rotate(-90deg); fill: none; stroke-width: 3.5; }
+.lm-ring { position: relative; display: block; flex: none; line-height: 0; }
+.lm-face { position: absolute; inset: 5px; width: calc(100% - 10px); height: calc(100% - 10px); border-radius: 50%; object-fit: cover; box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 12%, transparent); background: var(--card2); }
+.lm-face[hidden] { display: none; }
+.lmeter.has-face svg { width: 42px; height: 42px; }
+.lmeter.has-face .lm-face { inset: 6px; width: calc(100% - 12px); height: calc(100% - 12px); }
 .lmeter .ring-bg { stroke: var(--line2); }
 .lmeter .ring-fill { stroke: var(--meter); stroke-linecap: round; stroke-dasharray: 94.25; stroke-dashoffset: 94.25; transition: stroke-dashoffset .4s var(--ease), stroke .4s var(--ease); }
 .lmeter .pct { font-variant-numeric: tabular-nums; font-weight: 700; font-size: .8125rem; color: var(--muted); }
@@ -206,7 +211,7 @@ details.panel p { margin: 0; }
 .still .lmeter *, .still .tab-fill i { transition: none !important; }
 .lmeter.gold { --meter: var(--amber); }
 .lmeter.gold .pct { color: var(--amber); }
-.lmeter.glow svg { animation: lm-glow 1.2s var(--ease); }
+.lmeter.glow svg, .lmeter.glow .lm-face { animation: lm-glow 1.2s var(--ease); }
 .lmeter .seal.stamp { animation: lm-stamp .6s var(--ease); }
 .lbook { display: flex; gap: 4px; margin: -15px 0 -16px; font-size: .8125rem; }
 .lbook[hidden] { display: none; }
@@ -229,6 +234,11 @@ details.panel p { margin: 0; }
   .lmeter .ring-fill { filter: drop-shadow(0 0 3px color-mix(in srgb, var(--meter) 45%, transparent)); }
   .lmeter.gold { border-color: color-mix(in srgb, var(--amber) 50%, var(--line2)); background: color-mix(in srgb, var(--amber) 10%, var(--card, transparent)); }
   .lmeter.gold .pct { color: var(--amber); }
+  .lmeter.has-face svg { width: 64px; height: 64px; }
+  .lmeter.has-face .lm-face { inset: 7px; width: calc(100% - 14px); height: calc(100% - 14px); }
+  .lmeter.has-face .pct { position: static; width: auto; height: auto; display: block; order: 1; padding-right: 2px; }
+  .lmeter.has-face .seal { order: 2; margin-left: 0; }
+  .lmeter.has-face .lm-ring { order: 0; }
   .lfin { margin: 0; font-size: .8125rem; text-align: right; }
   .tab-fill { height: 3px; bottom: 4px; }
 }
