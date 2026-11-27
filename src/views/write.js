@@ -87,7 +87,7 @@ export function buildCharCard(host, c, single = false) {
   const el = document.createElement("article");
   el.className = "char";
   el.innerHTML = `
-    <div class="box">${gridSVG()}<div class="hw"></div><svg class="stepsvg" viewBox="0 0 1024 1024" hidden aria-hidden="true"></svg></div>
+    <div class="box view">${gridSVG()}<div class="hw"></div><svg class="stepsvg" viewBox="0 0 1024 1024" hidden aria-hidden="true"></svg></div>
     <div class="info">
       <div class="title"${single ? " hidden" : ""}><button type="button" class="char-link title-char" data-char="${c}" aria-label="About ${c}">${c}</button><span class="py">${tonePy(py)}</span><span style="color:var(--muted)">${en}</span>${sayBtns(c, py, true)}</div>
       <div class="count">${metaText(c, n)}</div>
@@ -172,6 +172,8 @@ export function buildCharCard(host, c, single = false) {
     $$(".mode", el).forEach((b) => b.setAttribute("aria-selected", b.dataset.m === mo));
     $$("[data-for]", el).forEach((g) => g.toggleAttribute("hidden", g.dataset.for !== mo));
     stepSvg.toggleAttribute("hidden", mo !== "step");
+    // Watching modes let a finger scroll the page over the box; writing modes keep every touch for the pen.
+    $(".box", el).classList.toggle("view", mo === "flow" || mo === "step");
     hw.style.visibility = mo === "step" ? "hidden" : "visible";
     figs.forEach((f) => f.classList.remove("on"));
     if (mo === "flow") play();
