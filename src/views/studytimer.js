@@ -123,10 +123,10 @@ function onPanel(e) {
 function doneHtml() {
   if (timer.phase() === "break") {
     return `<h2 id="tdoneTitle">Break over</h2><p>${timer.breakMinutes()} minutes of rest. Ready to study again?</p>
-      <div class="tp-btns"><button type="button" class="btn primary" data-a="again">Continue studying</button><button type="button" class="btn" data-a="break" data-n="5">5 more minutes</button><button type="button" class="btn ghost" data-a="stop">Stop</button></div>`;
+      <div class="tp-btns"><button type="button" class="btn primary" data-a="again">Continue studying</button><button type="button" class="btn ghost" data-a="break" data-n="5">5 more minutes</button><button type="button" class="btn ghost" data-a="stop">Stop</button></div>`;
   }
   return `<h2 id="tdoneTitle">${timer.minutes()} minutes done</h2><p>Take a break, or keep going?</p>
-    <div class="tdone-breaks">${BREAKS.map((n) => `<button type="button" class="btn${n === 10 ? " primary" : ""}" data-a="break" data-n="${n}">${n} min</button>`).join("")}</div>
+    <div class="tdone-breaks">${BREAKS.map((n) => `<button type="button" class="btn ${n === 10 ? "primary" : "ghost"}" data-a="break" data-n="${n}">${n} min</button>`).join("")}</div>
     <div class="tp-btns"><button type="button" class="btn ghost" data-a="again">Keep studying</button><button type="button" class="btn ghost" data-a="stop">Stop</button></div>`;
 }
 function answer(a, n) {
