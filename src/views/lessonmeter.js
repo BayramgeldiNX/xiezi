@@ -4,6 +4,7 @@ import { FINISHED_AT } from "../progress/completion.js";
 import { motionOK } from "../lib/motion.js";
 import { esc } from "../lib/util.js";
 import { getProfile, onProfile } from "../lib/profile.js";
+import { bindFacePeek } from "./face-peek.js";
 
 // Which milestones did a rise from `prev` to `next` (ratios 0–1) cross?
 export function crossed(prev, next) {
@@ -15,7 +16,7 @@ const C = 2 * Math.PI * 15; // ring circumference, r = 15
 let shown = null; // { lid, ratio, pct }
 let counter = 0;
 
-// The profile photo sits inside the ring (decorative). Subscribed once.
+// The profile photo sits inside the ring; hold it to see it large (face-peek.js). Subscribed once.
 let faceSub = false;
 function showFace(p = getProfile()) {
   const box = $("#lessonMeter"), img = box?.querySelector(".lm-face");
@@ -82,7 +83,7 @@ export function showLessonMeter(lid, c, fresh, todo) {
   if (!box) return;
   left = todo || null;
   showFace();
-  if (!faceSub) { faceSub = true; onProfile(showFace); }
+  if (!faceSub) { faceSub = true; onProfile(showFace); bindFacePeek(box); }
   if (fresh) toggleLeft(false); else renderLeft();
   const prev = !fresh && shown?.lid === lid ? shown : null;
   const gold = c.ratio >= 1, seal = c.finished;
