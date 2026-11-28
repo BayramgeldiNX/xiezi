@@ -1,15 +1,19 @@
 // Study timer: a stopwatch (mode "up") or a countdown (mode "down"). No DOM here so it can be tested.
 // Stopwatch time counts while a lesson is open (start/stop are automatic); toggle() is the user's own pause.
 // The countdown uses the wall clock (endsAt), so it keeps going in the background and after a reload.
+// After a study countdown, startBreak(min) runs a short break on the same countdown (phase "break").
 import { store as defaultStore } from "./util.js";
 
 export const TIMER_KEY = "xz-study-timer";
 export const NEW_SESSION_MS = 30 * 60 * 1000;
 export const MIN_DOWN = 5, MAX_DOWN = 180, DEFAULT_DOWN = 45;
+export const BREAKS = [5, 10, 15];
 export const clampMinutes = (n) => {
   n = Math.round(Number(n));
   return Number.isFinite(n) ? Math.min(MAX_DOWN, Math.max(MIN_DOWN, n)) : DEFAULT_DOWN;
 };
+
+const clampBreak = (n) => { n = Math.round(Number(n)); return Number.isFinite(n) ? Math.min(60, Math.max(1, n)) : 5; };
 
 export function formatElapsed(ms) {
   const s = Math.max(0, Math.floor(ms / 1000));
@@ -25,6 +29,8 @@ export function createTimer(now = () => Date.now(), store = defaultStore) {
   let lastSeen = Number(saved.lastSeen) || 0;
   let mode = saved.mode === "down" ? "down" : "up";
   let downMin = saved.downMin == null ? DEFAULT_DOWN : clampMinutes(saved.downMin);
+  let phase = saved.phase === "break" ? "break" : "study";   // "break": the countdown is a rest
+  let breakMin = saved.breakMin == null ? 5 : clampBreak(saved.breakMin);
   let endsAt = Number(saved.endsAt) > 0 ? Number(saved.endsAt) : null;   // set while the countdown runs
   let leftMs = saved.leftMs != null && Number(saved.leftMs) >= 0 && endsAt == null ? Number(saved.leftMs) : null; // set while paused
   let rang = !!saved.rang;   // the finished countdown was already announced
@@ -32,12 +38,12 @@ export function createTimer(now = () => Date.now(), store = defaultStore) {
   let runningSince = null;
 
   const elapsed = () => ms + (runningSince != null ? now() - runningSince : 0);
-  const save = () => store.set(TIMER_KEY, { ms: elapsed(), paused, lastSeen, mode, downMin, endsAt, leftMs, rang });
+  const save = () => store.set(TIMER_KEY, { ms: elapsed(), paused, lastSeen, mode, downMin, phase, breakMin, endsAt, leftMs, rang });
   const fold = () => { if (runningSince != null) { ms += now() - runningSince; runningSince = null; } };
 
-  const full = () => downMin * 60000;
+  const full = () => (phase === "break" ? breakMin : downMin) * 60000;
   const left = () => endsAt != null ? Math.max(0, endsAt - now()) : leftMs != null ? leftMs : full();
-  const clearDown = () => { endsAt = null; leftMs = null; rang = false; };
+  const clearDown = () => { phase = "study"; endsAt = null; leftMs = null; rang = false; };
 
   return {
     start() {
@@ -87,6 +93,7 @@ export function createTimer(now = () => Date.now(), store = defaultStore) {
       save();
     },
     setMinutes(n) {
+      if (phase === "break") { downMin = clampMinutes(n); save(); return; }   // the break keeps running
       const wasRunning = endsAt != null && !this.isDone();
       downMin = clampMinutes(n);
       if (wasRunning) { endsAt = now() + full(); rang = false; }
@@ -95,9 +102,18 @@ export function createTimer(now = () => Date.now(), store = defaultStore) {
     },
     startDown() {
       if (mode !== "down") this.setMode("down");
+      phase = "study";
       endsAt = now() + full(); leftMs = null; rang = false;
       save();
     },
+    startBreak(min) {
+      if (mode !== "down") this.setMode("down");
+      phase = "break"; breakMin = clampBreak(min);
+      endsAt = now() + full(); leftMs = null; rang = false;
+      save();
+    },
+    phase: () => phase,
+    breakMinutes: () => breakMin,
     pauseDown() {
       if (endsAt == null || this.isDone()) return;
       leftMs = left(); endsAt = null;

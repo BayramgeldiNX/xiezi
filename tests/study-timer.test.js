@@ -154,3 +154,69 @@ describe("countdown doneFor", () => {
     expect(tm.doneFor()).toBe(0);
   });
 });
+
+describe("breaks", () => {
+  const MIN = 60000;
+  it("starts a break after a study countdown and rings at its end", () => {
+    const { clock, store } = setup();
+    const tm = createTimer(clock.now, store);
+    tm.setMinutes(5); tm.startDown(); clock.adv(5 * MIN);
+    expect(tm.isDone()).toBe(true);
+    tm.startBreak(10);
+    expect(tm.phase()).toBe("break");
+    expect(tm.left()).toBe(10 * MIN);
+    expect(tm.isDone()).toBe(false);
+    clock.adv(10 * MIN);
+    expect(tm.isDone()).toBe(true);
+    expect(tm.needsRing()).toBe(true);
+  });
+  it("startDown after a break goes back to study", () => {
+    const { clock, store } = setup();
+    const tm = createTimer(clock.now, store);
+    tm.startBreak(5); tm.startDown();
+    expect(tm.phase()).toBe("study");
+    expect(tm.left()).toBe(tm.minutes() * MIN);
+  });
+  it("pause and resume keep the remaining time and phase", () => {
+    const { clock, store } = setup();
+    const tm = createTimer(clock.now, store);
+    tm.startBreak(10); clock.adv(3 * MIN);
+    tm.pauseDown(); clock.adv(20 * MIN);
+    expect(tm.left()).toBe(7 * MIN);
+    expect(tm.phase()).toBe("break");
+    tm.resumeDown(); clock.adv(MIN);
+    expect(tm.left()).toBe(6 * MIN);
+    expect(tm.phase()).toBe("break");
+  });
+  it("keeps the break through a reload", () => {
+    const { clock, store } = setup();
+    const tm = createTimer(clock.now, store);
+    tm.startBreak(15); clock.adv(4 * MIN);
+    const again = createTimer(clock.now, store);
+    expect(again.phase()).toBe("break");
+    expect(again.breakMinutes()).toBe(15);
+    expect(again.left()).toBe(11 * MIN);
+  });
+  it("ackDone goes back to study", () => {
+    const { clock, store } = setup();
+    const tm = createTimer(clock.now, store);
+    tm.startBreak(5); clock.adv(5 * MIN);
+    tm.ackDone();
+    expect(tm.phase()).toBe("study");
+  });
+  it("reads old saved data as study", () => {
+    const { clock, store } = setup({ [TIMER_KEY]: { mode: "down", downMin: 25 } });
+    const tm = createTimer(clock.now, store);
+    expect(tm.phase()).toBe("study");
+    expect(tm.breakMinutes()).toBe(5);
+  });
+  it("setMinutes during a break changes the study length only", () => {
+    const { clock, store } = setup();
+    const tm = createTimer(clock.now, store);
+    tm.startBreak(10); clock.adv(MIN);
+    tm.setMinutes(30);
+    expect(tm.left()).toBe(9 * MIN);
+    expect(tm.minutes()).toBe(30);
+    expect(tm.phase()).toBe("break");
+  });
+});
